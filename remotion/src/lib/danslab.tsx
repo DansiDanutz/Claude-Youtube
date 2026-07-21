@@ -95,6 +95,19 @@ export const SiteFrame: React.FC<{ src: string; url: string; w?: number; h?: num
   </div>
 );
 
+// The DansLab logo mark — red lab tile, serif D, gold terminal cursor.
+// size = tile edge in px. Same geometry as media/library/logos/danslab-mark.svg.
+export const DlLogo: React.FC<{ size?: number }> = ({ size = 120 }) => {
+  const s = size / 512; // author at 512, scale down
+  return (
+    <div style={{ width: size, height: size, position: 'relative' }}>
+      <div style={{ position: 'absolute', inset: 0, borderRadius: 104 * s, background: `linear-gradient(135deg, ${DL.red}, ${DL.redDeep})`, border: `${Math.max(1, 5 * s)}px solid #ffffff24` }} />
+      <span style={{ position: 'absolute', left: '46%', top: '47%', transform: 'translate(-50%,-50%)', fontFamily: DL_SERIF, fontWeight: 600, fontSize: 300 * s, lineHeight: 1, color: '#fffef7' }}>D</span>
+      <div style={{ position: 'absolute', left: 352 * s, top: 308 * s, width: 52 * s, height: 76 * s, borderRadius: 10 * s, background: DL.gold }} />
+    </div>
+  );
+};
+
 // The DansLab wordmark: "Dans" white + "Lab" red, serif, with mono suffix
 export const DlWordmark: React.FC<{ size?: number; suffix?: string }> = ({ size = 44, suffix }) => (
   <div style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>

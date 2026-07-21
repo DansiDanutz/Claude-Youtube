@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- DansLab mark — red lab tile, serif D, gold terminal cursor. Matches danslab.vercel.app. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e74c3c"/>
+      <stop offset="1" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="url(#tile)"/>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="6"/>
+  <!-- faint grid dots (the lab) -->
+  <g fill="#ffffff" fill-opacity="0.10">
+    <circle cx="96" cy="96" r="6"/><circle cx="416" cy="96" r="6"/>
+    <circle cx="96" cy="416" r="6"/><circle cx="256" cy="72" r="6"/>
+  </g>
+  <!-- serif D -->
+  <text x="236" y="352" text-anchor="middle" font-family="Newsreader, Iowan Old Style, Georgia, serif" font-weight="600" font-size="300" fill="#fffef7">D</text>
+  <!-- gold terminal cursor -->
+  <rect x="352" y="308" width="52" height="76" rx="10" fill="#d4a017"/>
+</svg>

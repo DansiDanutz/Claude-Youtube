@@ -4,18 +4,18 @@ import { Spade, Coins, Rocket, Heart } from 'lucide-react';
 import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise } from '../../lib/danslab';
 
 // =============================================================================
-// Origin 2/14 — who is Dan. VO 0.8s (22.7s): avatar left; the three ventures
+// Origin 2/14 — who is Dan. VO 0.8s (25.5s): avatar left; the three ventures
 // land on their mentions (poker ~f200, kryptostack ~f280, irise ~f380); the
 // family line closes (~f520).
 // =============================================================================
-export const compositionConfig = { id: 'DoDan', durationInSeconds: 24.4, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'DoDan', durationInSeconds: 27.2, fps: 30, width: 1920, height: 1080 };
 
 const ROLES = [
-  { icon: Spade, title: 'Player Poker Club', sub: 'co-owner · Cluj-Napoca', color: DL.red, at: 200 },
-  { icon: Coins, title: 'Kryptostack.com', sub: 'co-owner · 600k-user crypto exchange', color: DL.gold, at: 285 },
-  { icon: Rocket, title: 'iRise Coin', sub: 'CEO · Solana network', color: DL.sky, at: 385 },
+  { icon: Spade, title: 'Player Poker Club', sub: 'co-owner · Cluj-Napoca', color: DL.red, at: 189 },
+  { icon: Coins, title: 'Kryptostack.com', sub: 'co-owner · crypto ⇄ fiat · live exchanges · Romania', color: DL.gold, at: 282 },
+  { icon: Rocket, title: 'iRise Coin', sub: 'CEO · Solana network', color: DL.sky, at: 513 },
 ];
-const FAMILY = 505;
+const FAMILY = 618;
 
 const DoDan: React.FC = () => {
   const frame = useCurrentFrame();

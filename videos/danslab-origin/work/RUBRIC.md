@@ -1,4 +1,11 @@
-# RUBRIC — Episode 01: The Origin (graded 2026-07-21, post-delivery audit)
+# RUBRIC — Episode 01: The Origin v2 (re-graded 2026-07-21 after fact fixes + teaser)
+
+v2 changes: Kryptostack corrected to 10,000+ users / crypto⇄fiat / Romania live exchanges (narration
++ DoDan card + DoKrypto stats; outdated site stats blurred in the screenshot asset); new DoNext
+teaser scene (EP02-06 roadmap, "executing profitable business" takeover, EP02-in-production
+cliffhanger); DansLab logo (media/library/logos/) added to outro. 15 scenes, 4:59, 4K master.
+Dimension 6 (truth) re-verified: every on-screen number now matches Dan's own facts.
+
 
 | # | Dimension | Score | Evidence |
 |---|---|---|---|

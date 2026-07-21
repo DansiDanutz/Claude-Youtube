@@ -1,0 +1,21 @@
+<svg width="1760" height="512" viewBox="0 0 1760 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- DansLab horizontal lockup — mark + wordmark + mono tagline. Dark-surface version. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e74c3c"/>
+      <stop offset="1" stop-color="#c0392b"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e74c3c"/>
+      <stop offset="1" stop-color="#d4a017"/>
+    </linearGradient>
+  </defs>
+  <rect width="1760" height="512" fill="#050404"/>
+  <rect x="48" y="76" width="360" height="360" rx="78" fill="url(#tile)"/>
+  <rect x="48" y="76" width="360" height="360" rx="78" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="5"/>
+  <text x="212" y="330" text-anchor="middle" font-family="Newsreader, Iowan Old Style, Georgia, serif" font-weight="600" font-size="226" fill="#fffef7">D</text>
+  <rect x="300" y="296" width="40" height="58" rx="8" fill="#d4a017"/>
+  <text x="472" y="308" font-family="Newsreader, Iowan Old Style, Georgia, serif" font-weight="600" font-size="200" fill="#fafafa">Dans<tspan fill="#e74c3c">Lab</tspan></text>
+  <rect x="478" y="352" width="560" height="8" rx="4" fill="url(#rule)"/>
+  <text x="478" y="424" font-family="JetBrains Mono, Menlo, monospace" font-size="40" letter-spacing="8" fill="#71717a">A HUMAN-LED AUTONOMOUS AI LAB</text>
+</svg>

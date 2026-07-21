@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCurrentFrame, interpolate, AbsoluteFill } from 'remotion';
 import { Bell } from 'lucide-react';
-import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg } from '../../lib/danslab';
+import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, DlLogo } from '../../lib/danslab';
 
 // =============================================================================
 // Origin 14/14 — outro + CTA. VO 1.0s (16.4s): "This is the first video on
@@ -32,8 +32,11 @@ const DoOutro: React.FC = () => {
         <div style={{ opacity: epOp, fontFamily: DL_MONO, fontSize: 25, letterSpacing: 6, color: DL.red, border: `1px solid ${DL.red}55`, borderRadius: 999, padding: '10px 28px' }}>
           EPISODE 01 · THE ORIGIN
         </div>
-        <div style={{ opacity: markOp, transform: `translateY(${markY}px)`, fontFamily: DL_SERIF, fontWeight: 600, fontSize: 140, color: DL.text, marginTop: 34 }}>
-          Dans<span style={{ color: DL.red }}>Lab</span>
+        <div style={{ opacity: markOp, transform: `translateY(${markY}px)`, display: 'flex', alignItems: 'center', gap: 40, marginTop: 34 }}>
+          <DlLogo size={150} />
+          <span style={{ fontFamily: DL_SERIF, fontWeight: 600, fontSize: 140, color: DL.text }}>
+            Dans<span style={{ color: DL.red }}>Lab</span>
+          </span>
         </div>
         <div style={{ marginTop: 24, height: 5, width: 540, borderRadius: 999, background: '#ffffff10', overflow: 'hidden' }}>
           <div style={{ height: '100%', width: '100%', background: `linear-gradient(90deg, ${DL.red}, ${DL.gold})`, transform: `scaleX(${rule})`, transformOrigin: 'left' }} />
