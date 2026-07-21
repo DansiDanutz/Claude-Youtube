@@ -21,3 +21,10 @@ float+tilt). DoWorldCup now shows the real worldcup26.world mobile app on a floa
 DoTelegram renders a full Telegram chat (Sienna → Dan's "Approved" + read receipts) inside a phone
 with a thumb-tap ripple on approve. Dimensions 1 (tokens), 4 (motion), 6 (evidence: real mobile
 screenshot) all strengthened. Scene durations unchanged; audio re-muxed in sync. Still grade S.
+
+## v5 update (2026-07-21) — agent avatars + animated Hermes/OpenClaw logos
+Real character avatars (Dexter/Sienna/Memo/Nano/David) added to DoLabTour droplet rows, DoCrewWall
+lead chips, DoTelegram (Sienna beside her message). Animated HermesLogo (gold neural/winged emblem,
+orbiting nodes, glow pulse) and animated OpenClawLogo (official lobster mascot, bob+snap, wordmark)
+in DoBrain. Dimensions 1 (tokens), 4 (motion), 6 (evidence: real fleet assets) strengthened.
+Durations unchanged; audio in sync. Grade S.
