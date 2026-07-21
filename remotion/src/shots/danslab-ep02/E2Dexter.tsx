@@ -9,7 +9,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlR
 // thing. Security. Locked it down. No open doors. Then... he went to bed."
 // Security checks lock in one by one; the machine shields up.
 // =============================================================================
-export const compositionConfig = { id: 'E2Dexter', durationInSeconds: 17.4, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'E2Dexter', durationInSeconds: 18.5, fps: 30, width: 1920, height: 1080 };
 
 const LOCKS = [
   { Icon: Lock, txt: 'firewall · all ports closed', at: 150 },

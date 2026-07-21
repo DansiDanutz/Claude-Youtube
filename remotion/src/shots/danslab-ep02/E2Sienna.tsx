@@ -10,7 +10,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlR
 // OpenClaw to Dan's own crypto app... Zmarty." The three get configured; then
 // Sienna is born (spark), wired to Zmarty.
 // =============================================================================
-export const compositionConfig = { id: 'E2Sienna', durationInSeconds: 18, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'E2Sienna', durationInSeconds: 18.8, fps: 30, width: 1920, height: 1080 };
 
 const TEAM = [
   { name: 'Nano', avatar: 'nano.png', tag: 'configured', at: 110 },

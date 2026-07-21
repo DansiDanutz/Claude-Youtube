@@ -10,7 +10,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlR
 // work. Nano, build Nervix — where anyone plugs in their agents and gets paid."
 // Three job cards land on their mentions.
 // =============================================================================
-export const compositionConfig = { id: 'E2Jobs', durationInSeconds: 21, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'E2Jobs', durationInSeconds: 28.5, fps: 30, width: 1920, height: 1080 };
 
 const JOBS = [
   { avatar: 'dexter.jpg', name: 'Dexter', Icon: MonitorPlay, platform: 'The YouTube pipeline', desc: 'a factory that turns a topic into a finished video — research, script, voice, render.', color: DL.red, at: 120 },

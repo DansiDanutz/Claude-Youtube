@@ -9,7 +9,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlR
 // dead. Two machines. Two funerals. This was not going well." Nano's tombstone
 // sits at left; Memo boots then dies; the funeral tally rises.
 // =============================================================================
-export const compositionConfig = { id: 'E2Memo', durationInSeconds: 18, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'E2Memo', durationInSeconds: 19, fps: 30, width: 1920, height: 1080 };
 
 const HACK = 300;
 const DEAD = 360;

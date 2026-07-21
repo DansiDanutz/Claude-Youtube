@@ -9,7 +9,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlR
 // little bit better. A machine, teaching herself to trade. Day by day."
 // Shows the polished Sienna page (the equity curve) + the learning stat climb.
 // =============================================================================
-export const compositionConfig = { id: 'E2Zmarty', durationInSeconds: 26, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'E2Zmarty', durationInSeconds: 27.5, fps: 30, width: 1920, height: 1080 };
 
 const PAGE = 60;
 const CURVE = 340;   // "she got better"
