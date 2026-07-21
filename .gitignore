@@ -53,3 +53,9 @@ media/library/faces/*.webp
 .idea/
 .DS_Store
 Thumbs.db
+
+# Video build artifacts (never commit rendered/intermediate media)
+videos/**/work/*.mp4
+videos/**/work/*.wav
+videos/**/*.mp4
+videos/**/*.wav

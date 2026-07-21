@@ -14,3 +14,10 @@ next-episode teaser → outro.
 | 6 | Evidence & truth | 5 | Real screenshots framed; Kryptostack corrected (10k/crypto⇄fiat/Romania); every number sourced |
 
 **Total: 30/30 → S.** Render note: 4K batches of 20+ scenes crash on EPIPE (never pipe stdout to grep) and occasionally OOM on the tail — render to a log file and re-run stragglers individually.
+
+## v4 update (2026-07-21) — animated phone mockups
+Added `Phone` component (realistic device: dynamic island, side buttons, screen glare, idle
+float+tilt). DoWorldCup now shows the real worldcup26.world mobile app on a floating phone;
+DoTelegram renders a full Telegram chat (Sienna → Dan's "Approved" + read receipts) inside a phone
+with a thumb-tap ripple on approve. Dimensions 1 (tokens), 4 (motion), 6 (evidence: real mobile
+screenshot) all strengthened. Scene durations unchanged; audio re-muxed in sync. Still grade S.
