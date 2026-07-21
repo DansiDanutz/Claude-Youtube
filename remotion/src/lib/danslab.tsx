@@ -95,6 +95,64 @@ export const SiteFrame: React.FC<{ src: string; url: string; w?: number; h?: num
   </div>
 );
 
+// Animated phone mockup. A realistic device frame (titanium edge, dynamic
+// island, side buttons) around a portrait screen. Floats + tilts continuously
+// for life; rises + settles on entrance. Pass a screenshot `src` OR `children`
+// as the screen content (children render behind the notch/status bar).
+//   h = screen height in px; width derives from a 9:19.5 aspect ratio.
+export const Phone: React.FC<{
+  src?: string;
+  children?: React.ReactNode;
+  h?: number;
+  start?: number;
+  statusTime?: string;
+  tilt?: number;
+}> = ({ src, children, h = 820, start = 0, statusTime = '3:12', tilt = -5 }) => {
+  const frame = useCurrentFrame();
+  const t = frame - start;
+  const screenW = h * (9 / 19.5);
+  const bezel = h * 0.018;
+  const radius = h * 0.06;
+  // entrance
+  const inOp = interpolate(t, [0, 18], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const inY = interpolate(t, [0, 20], [46, 0], { ...DCLAMP, easing: DL_EASE.out });
+  const inScale = interpolate(t, [0, 22], [0.92, 1], { ...DCLAMP, easing: DL_EASE.out });
+  // idle float + tilt (starts once settled)
+  const floatY = Math.sin(t / 42) * 8;
+  const tiltNow = tilt + Math.sin(t / 55) * 1.4;
+
+  return (
+    <div style={{ opacity: inOp, transform: `translateY(${inY + floatY}px) scale(${inScale}) rotate(${tiltNow}deg)`, transformOrigin: 'center', filter: `drop-shadow(0 40px 80px rgba(0,0,0,0.6))` }}>
+      {/* device body */}
+      <div style={{ position: 'relative', width: screenW + bezel * 2, height: h + bezel * 2, borderRadius: radius + bezel, background: 'linear-gradient(145deg, #2a2725, #0e0c0b 55%, #201d1b)', padding: bezel, boxShadow: `inset 0 0 0 1.5px #48423d, inset 0 0 ${bezel}px rgba(255,255,255,0.06)` }}>
+        {/* side buttons */}
+        <div style={{ position: 'absolute', left: -3, top: h * 0.20, width: 3, height: h * 0.05, borderRadius: 2, background: '#3a3531' }} />
+        <div style={{ position: 'absolute', left: -3, top: h * 0.29, width: 3, height: h * 0.08, borderRadius: 2, background: '#3a3531' }} />
+        <div style={{ position: 'absolute', left: -3, top: h * 0.40, width: 3, height: h * 0.08, borderRadius: 2, background: '#3a3531' }} />
+        <div style={{ position: 'absolute', right: -3, top: h * 0.26, width: 3, height: h * 0.11, borderRadius: 2, background: '#3a3531' }} />
+        {/* screen */}
+        <div style={{ position: 'relative', width: screenW, height: h, borderRadius: radius, overflow: 'hidden', background: DL.bg }}>
+          {src ? <Img src={src} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block' }} /> : children}
+          {/* status bar */}
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: h * 0.052, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: `0 ${screenW * 0.09}px`, zIndex: 5, pointerEvents: 'none' }}>
+            <span style={{ fontFamily: DL_SANS, fontWeight: 600, fontSize: h * 0.021, color: '#fff' }}>{statusTime}</span>
+            <div style={{ display: 'flex', gap: h * 0.008, alignItems: 'center' }}>
+              <div style={{ width: h * 0.02, height: h * 0.012, borderRadius: 2, background: '#fff' }} />
+              <div style={{ width: h * 0.022, height: h * 0.012, borderRadius: 2, border: '1.5px solid #fff', position: 'relative' }}>
+                <div style={{ position: 'absolute', inset: 1.5, background: DL.green, borderRadius: 1 }} />
+              </div>
+            </div>
+          </div>
+          {/* dynamic island */}
+          <div style={{ position: 'absolute', top: h * 0.014, left: '50%', transform: 'translateX(-50%)', width: screenW * 0.30, height: h * 0.034, borderRadius: 999, background: '#000', zIndex: 6 }} />
+          {/* screen glare */}
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(255,255,255,0.08), transparent 40%)', zIndex: 4, pointerEvents: 'none' }} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // The DansLab logo mark — red lab tile, serif D, gold terminal cursor.
 // size = tile edge in px. Same geometry as media/library/logos/danslab-mark.svg.
 export const DlLogo: React.FC<{ size?: number }> = ({ size = 120 }) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCurrentFrame, interpolate, AbsoluteFill, staticFile } from 'remotion';
 import { Play } from 'lucide-react';
-import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise, SiteFrame } from '../../lib/danslab';
+import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise, Phone } from '../../lib/danslab';
 
 // =============================================================================
 // Origin 8/14 — WorldCup proof. VO 0.8s (22.9s): channel card + counter to
@@ -19,7 +19,6 @@ const DoWorldCup: React.FC = () => {
   const cardY = interpolate(frame, [CARD, CARD + 16], [34, 0], { ...DCLAMP, easing: DL_EASE.out });
   const subs = Math.round(interpolate(frame, [COUNT, COUNT + 52], [0, 14000], { ...DCLAMP, easing: DL_EASE.inOut }));
   const appOp = interpolate(frame, [APP, APP + 18], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
-  const appY = interpolate(frame, [APP, APP + 18], [44, 0], { ...DCLAMP, easing: DL_EASE.out });
   const chipOp = interpolate(frame, [APP + 90, APP + 104], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
 
   return (
@@ -57,11 +56,18 @@ const DoWorldCup: React.FC = () => {
         </div>
       </div>
 
-      {/* app screenshot, right */}
-      <div style={{ position: 'absolute', top: 306, right: 90, opacity: appOp, transform: `translateY(${appY}px)` }}>
-        <SiteFrame src={staticFile('projects/danslab-origin/worldcup26.png')} url="worldcup26.world" w={940} h={600} />
-        <div style={{ opacity: chipOp, position: 'absolute', bottom: -28, left: 40, background: `${DL.gold}18`, border: `1px solid ${DL.gold}66`, borderRadius: 999, padding: '12px 26px' }}>
-          <span style={{ fontFamily: DL_MONO, fontSize: 21, letterSpacing: 2, color: DL.gold }}>119 COLLECTIBLE CARDS · EVERY VIDEO UNLOCKS ONE</span>
+      {/* the app — on a real phone, right */}
+      <div style={{ position: 'absolute', top: 150, right: 300 }}>
+        <Phone src={staticFile('projects/danslab-origin/worldcup26-mobile.png')} h={800} start={APP} statusTime="9:41" tilt={-6} />
+      </div>
+      {/* glow behind the phone */}
+      <div style={{ position: 'absolute', top: 380, right: 300, width: 520, height: 520, borderRadius: '50%', background: `radial-gradient(circle, ${DL.gold}22, transparent 65%)`, opacity: appOp, zIndex: -1 }} />
+      {/* cards chip — under the channel card, clear of the phone */}
+      <div style={{ opacity: chipOp, position: 'absolute', top: 720, left: 120, width: 700, background: `${DL.gold}12`, border: `1px solid ${DL.gold}55`, borderRadius: 16, padding: '22px 30px', display: 'flex', alignItems: 'center', gap: 20 }}>
+        <span style={{ fontFamily: DL_SERIF, fontWeight: 600, fontSize: 52, color: DL.gold }}>119</span>
+        <div>
+          <div style={{ fontFamily: DL_MONO, fontSize: 21, letterSpacing: 2, color: DL.warm }}>COLLECTIBLE CARDS</div>
+          <div style={{ fontFamily: DL_MONO, fontSize: 19, color: DL.muted, marginTop: 4 }}>every video unlocks one</div>
         </div>
       </div>
     </AbsoluteFill>
