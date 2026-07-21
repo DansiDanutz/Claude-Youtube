@@ -16,11 +16,11 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 export const compositionConfig = { id: 'DoNext', durationInSeconds: 30, fps: 30, width: 1920, height: 1080 };
 
 const EPISODES = [
-  { ep: 'EP 02', Icon: MonitorPlay, title: 'Building the channel — in public', at: 152 },
-  { ep: 'EP 03', Icon: Server, title: 'The machines: full configuration', at: 245 },
-  { ep: 'EP 04', Icon: Clipboard, title: 'Paperclip: a company of agents', at: 335 },
-  { ep: 'EP 05', Icon: BrainCircuit, title: 'Why Hermes?', at: 425 },
-  { ep: 'EP 06', Icon: TrendingUp, title: 'The crypto AI', at: 490 },
+  { ep: 'NO. 02', name: 'The Survivors', Icon: Server, title: 'how the fleet was born', at: 152 },
+  { ep: 'NO. 03', name: 'The Overseer', Icon: Clipboard, title: 'Paperclip runs the company', at: 245 },
+  { ep: 'NO. 04', name: 'The Brain', Icon: BrainCircuit, title: 'why Hermes', at: 335 },
+  { ep: 'NO. 05', name: 'The Marketplace', Icon: TrendingUp, title: 'Nervix', at: 425 },
+  { ep: 'NO. 06', name: 'The Factory', Icon: MonitorPlay, title: 'the video pipeline', at: 490 },
 ];
 const PURPOSE = 585; // "one purpose"
 const W1 = 650, W2 = 685, W3 = 720; // executing / profitable / business
@@ -55,10 +55,11 @@ const DoNext: React.FC = () => {
           const op = interpolate(frame, [e.at, e.at + 13], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
           const x = interpolate(frame, [e.at, e.at + 13], [-26, 0], { ...DCLAMP, easing: DL_EASE.out });
           return (
-            <div key={e.ep} style={{ opacity: op, transform: `translateX(${x}px)`, display: 'flex', alignItems: 'center', gap: 26, background: DL.panel, border: `1px solid ${DL.border}`, borderRadius: 12, padding: '18px 30px' }}>
-              <span style={{ fontFamily: DL_MONO, fontSize: 24, letterSpacing: 2, color: DL.red, width: 96 }}>{e.ep}</span>
+            <div key={e.ep} style={{ opacity: op, transform: `translateX(${x}px)`, display: 'flex', alignItems: 'center', gap: 24, background: DL.panel, border: `1px solid ${DL.border}`, borderRadius: 12, padding: '18px 30px' }}>
+              <span style={{ fontFamily: DL_MONO, fontSize: 22, letterSpacing: 2, color: DL.red, width: 100 }}>{e.ep}</span>
               <e.Icon size={28} color={DL.warm} strokeWidth={1.9} />
-              <span style={{ fontSize: 32, fontWeight: 600, color: DL.text }}>{e.title}</span>
+              <span style={{ fontFamily: DL_SERIF, fontWeight: 600, fontSize: 34, color: DL.text, width: 340 }}>{e.name}</span>
+              <span style={{ fontSize: 26, color: DL.muted }}>{e.title}</span>
               <span style={{ marginLeft: 'auto', fontFamily: DL_MONO, fontSize: 22, color: DL.faint }}>▸ ▓▓▓▓▓▓</span>
             </div>
           );
@@ -76,7 +77,7 @@ const DoNext: React.FC = () => {
           </div>
           <div style={{ opacity: ep2Op, marginTop: 54, display: 'inline-flex', alignItems: 'center', gap: 16, border: `2px solid ${DL.red}`, borderRadius: 999, padding: '16px 38px', boxShadow: `0 0 ${44 * ep2Glow}px ${DL.red}44` }}>
             <div style={{ width: 12, height: 12, borderRadius: '50%', background: DL.red, opacity: ep2Glow }} />
-            <span style={{ fontFamily: DL_MONO, fontSize: 27, letterSpacing: 3, color: DL.text }}>EPISODE 02 · ALREADY IN PRODUCTION</span>
+            <span style={{ fontFamily: DL_MONO, fontSize: 27, letterSpacing: 3, color: DL.text }}>NO. 02 · THE SURVIVORS · IN PRODUCTION</span>
           </div>
           <div style={{ opacity: missOp, fontFamily: DL_MONO, fontSize: 27, color: DL.warm, marginTop: 34 }}>
             don&rsquo;t miss it <span style={{ opacity: cursorOn ? 1 : 0, color: DL.red }}>▌</span>
