@@ -1,0 +1,15 @@
+{
+  "voice": "Brian nPczCjzI2devNBz1zQrb eleven_flash_v2_5",
+  "scenes": [
+    {"id": "s01_intro",    "text": "This is DansLab. A human-led, autonomous AI lab, running while Dan sleeps. Thirty-plus agents. Five products. One human in charge."},
+    {"id": "s02_dan",      "text": "Meet Dan. An entrepreneur who decided that one person, with the right system, can run like a whole company. He doesn't manage employees. He orchestrates agents, and they work around the clock."},
+    {"id": "s03_fleetlog", "text": "Every night, the fleet log keeps scrolling. Dexter ships a new build to Vercel. Sienna opens a trade. The Pope bot merges a pull request. Memo runs the weekly cron. Nobody is awake. Everything still ships."},
+    {"id": "s04_numbers",  "text": "The numbers tell the story. Over thirty active agents across five droplets. Five products live. Thirty-eight cron jobs, every single day. And ninety-nine point nine four percent uptime over the last thirty days."},
+    {"id": "s05_crew",     "text": "Every agent owns a domain, and they message each other like colleagues. Dexter is the general manager. Memo runs projects. Sienna trades crypto. Nano creates new agents. And Hermes... Hermes is the brain."},
+    {"id": "s06_products1","text": "The products are real, and they are live. Nervix, an agent federation and marketplace, with two hundred forty-seven agents enrolled. CrawdBot, a YouTube automation suite that has processed over twelve thousand videos."},
+    {"id": "s07_products2","text": "MyWork-AI, a build and ship platform with seventy-two command-line tools. Zmarty, crypto trading signals with a ninety-six percent win rate. And SemeClaw, the war room, where every big decision gets signed."},
+    {"id": "s08_worldcup", "text": "And here is one Dan is proud of. The WorldCup YouTube channel, built with this very pipeline, now fourteen thousand subscribers strong. Real audience. Real growth. Shipped by agents, directed by one human."},
+    {"id": "s09_setup",    "text": "So how does it all work? A Mac Studio at the center. Five DigitalOcean droplets across Frankfurt and the US. OpenClaw orchestrates the fleet, running Claude, Qwen and Gemini. When something needs a human, it escalates straight to Dan, on Telegram. One approval per direction. Everything else just ships."},
+    {"id": "s10_outro",    "text": "That's DansLab. A lab where the agents do the work, and the human sets the direction. Build. Ship. Repeat."}
+  ]
+}
