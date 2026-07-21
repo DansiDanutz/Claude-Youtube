@@ -1,7 +1,7 @@
 // Brand 3-font system, loaded from Google Fonts (bundled by Remotion at render time).
 // Nothing to install — swap a family here and every shot follows. `/brand-setup` rewrites
 // this file alongside brand.ts and brand.md; keep all three in sync if you edit by hand.
-import { loadFont as loadDisplay } from '@remotion/google-fonts/SpaceGrotesk';
+import { loadFont as loadDisplay } from '@remotion/google-fonts/Sora';
 import { loadFont as loadBody } from '@remotion/google-fonts/Inter';
 import { loadFont as loadMono } from '@remotion/google-fonts/JetBrainsMono';
 import { loadFont as loadSerif } from '@remotion/google-fonts/Spectral';

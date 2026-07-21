@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCurrentFrame, interpolate, AbsoluteFill } from 'remotion';
-import { COLORS, GRADIENT, EASINGS } from '../../brand';
+import { BRAND, COLORS, GRADIENT, EASINGS } from '../../brand';
 import { FONT_DISPLAY, FONT_BODY, FONT_MONO } from '../../fonts';
 import { BrandBg, useRise, CLAMP, Sunburst } from '../../lib/kit';
 
@@ -23,14 +23,14 @@ const TestEndCard: React.FC = () => {
         <div style={{ ...rise(4, 16), display: 'flex', alignItems: 'center', gap: 22 }}>
           <Sunburst size={64} />
           <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 110, color: COLORS.ink }}>
-            Claude <span style={{ color: COLORS.accent }}>YouTube</span>
+            {BRAND.wordmark[0]}<span style={{ color: COLORS.accent }}>{BRAND.wordmark[1]}</span>{BRAND.wordmark[2]}
           </span>
         </div>
         <div style={{ marginTop: 44, height: 8, width: 620, borderRadius: 999, background: COLORS.line, overflow: 'hidden' }}>
           <div style={{ height: '100%', width: '100%', borderRadius: 999, background: GRADIENT, transform: `scaleX(${rule})`, transformOrigin: 'left' }} />
         </div>
         <div style={{ opacity: signOp, fontFamily: FONT_MONO, fontSize: 30, letterSpacing: 3, color: COLORS.muted, marginTop: 40 }}>
-          TEST&nbsp;PASSED&nbsp;·&nbsp;THE&nbsp;PIPELINE&nbsp;IS&nbsp;LIVE
+          {BRAND.signoff}
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
