@@ -51,7 +51,7 @@ const DoWorldCup: React.FC = () => {
           </div>
           <div style={{ display: 'flex', gap: 14, marginTop: 26 }}>
             {['IMPOSSIBLE MATCHUPS', 'FORGOTTEN LEGENDS', 'PREDICTIONS'].map((t) => (
-              <span key={t} style={{ fontFamily: DL_MONO, fontSize: 17, letterSpacing: 1, color: DL.warm, border: `1px solid ${DL.border}`, borderRadius: 999, padding: '8px 16px' }}>{t}</span>
+              <span key={t} style={{ fontFamily: DL_MONO, fontSize: 20, letterSpacing: 1, color: DL.warm, border: `1px solid ${DL.border}`, borderRadius: 999, padding: '8px 16px' }}>{t}</span>
             ))}
           </div>
         </div>

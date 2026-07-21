@@ -95,3 +95,10 @@ current brand (wordmark, palette, type) so you can see it. `/brand-setup` uses i
 Every finished output gets copied to `~/Desktop/claudeYouTube/<project>/` — the final video at the
 top level, per-shot clips in `shots/`, QA stills in `stills/`, thumbnails in `packaging/`. Rendered
 files are git-ignored in this repo, so the Desktop folder is where David finds and reviews them.
+
+## Design quality gate (mandatory)
+
+Every video follows `docs/VIDEO-DESIGN-SYSTEM.md` — DansLab tokens, om-typography sizing/safe-zone
+rules, om-color-grading contrast rules, narration-synced reveals — and gets a RUBRIC scorecard in
+`videos/<project>/work/RUBRIC.md` before delivery. Ship at grade A or S only. Final channel
+deliveries render at `--scale=2` (4K); QA stills at scale 1.
