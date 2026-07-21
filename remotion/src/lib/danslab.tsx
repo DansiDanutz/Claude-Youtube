@@ -332,3 +332,40 @@ export const DlWordmark: React.FC<{ size?: number; suffix?: string }> = ({ size 
     {suffix && <span style={{ fontFamily: DL_MONO, fontSize: size * 0.42, color: DL.faint }}>{suffix}</span>}
   </div>
 );
+
+// Free-standing character cutout presenter — a pre-rendered DansLab character,
+// matted to transparent, that rises + settles on entrance then idles with a
+// gentle float. h = render height in px; a soft ground shadow sits it on the
+// dark site bg. flip mirrors the figure so it can face the on-screen content.
+export const Cutout: React.FC<{ src: string; h?: number; start?: number; flip?: boolean; float?: boolean }> = ({ src, h = 760, start = 0, flip = false, float = true }) => {
+  const frame = useCurrentFrame();
+  const t = frame - start;
+  const op = interpolate(t, [0, 18], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const y = interpolate(t, [0, 22], [42, 0], { ...DCLAMP, easing: DL_EASE.out });
+  const sc = interpolate(t, [0, 24], [0.95, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const fY = float ? Math.sin(t / 46) * 6 : 0;
+  return (
+    <div style={{ opacity: op, transform: `translateY(${y + fY}px) scale(${sc})`, transformOrigin: 'bottom center' }}>
+      <div style={{ transform: flip ? 'scaleX(-1)' : undefined, filter: 'drop-shadow(0 26px 44px rgba(0,0,0,0.55))' }}>
+        <Img src={src} style={{ height: h, width: 'auto', display: 'block' }} />
+      </div>
+    </div>
+  );
+};
+
+// Roster mini-card: a character cutout standing in a dark panel with a role +
+// value line. Used for "the old way" team breakdown.
+export const RosterCard: React.FC<{ src: string; role: string; value: string; at: number; hot?: boolean }> = ({ src, role, value, at, hot = false }) => {
+  const frame = useCurrentFrame();
+  const op = interpolate(frame, [at, at + 14], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const y = interpolate(frame, [at, at + 14], [30, 0], { ...DCLAMP, easing: DL_EASE.out });
+  return (
+    <div style={{ opacity: op, transform: `translateY(${y}px)`, flex: 1, background: DL.panel, border: `1px solid ${hot ? DL.red : DL.border}`, borderRadius: 16, padding: '22px 22px 26px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ height: 300, display: 'flex', alignItems: 'flex-end', overflow: 'hidden' }}>
+        <Img src={src} style={{ height: 320, width: 'auto', display: 'block', filter: 'drop-shadow(0 16px 24px rgba(0,0,0,0.5))' }} />
+      </div>
+      <div style={{ fontFamily: DL_SANS, fontWeight: 600, fontSize: 30, color: DL.text, marginTop: 18 }}>{role}</div>
+      <div style={{ fontFamily: DL_MONO, fontSize: 34, color: hot ? DL.red : DL.gold, marginTop: 8 }}>{value}</div>
+    </div>
+  );
+};
