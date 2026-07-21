@@ -12,6 +12,16 @@ import path from 'path';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
+const KNOWN_FLAGS = ['--still'];
+const unknownFlags = args.filter((a) => a.startsWith('--') && !KNOWN_FLAGS.includes(a) && !a.startsWith('--scale='));
+if (unknownFlags.length) {
+  console.log('Usage: node scripts/render-all.mjs [shotId ...] [--still] [--scale=N]');
+  console.log('  no shotIds  -> render EVERY shot in the manifest');
+  console.log('  shotId ...  -> render only those ids');
+  console.log('  --still     -> poster PNG per shot instead of video');
+  console.log('  --scale=N   -> render scale (default 2 = 4K from 1080p authoring)');
+  process.exit(unknownFlags.includes('--help') ? 0 : 1);
+}
 const stillMode = args.includes('--still');
 const scaleArg = args.find((a) => a.startsWith('--scale='));
 const SCALE = scaleArg ? Number(scaleArg.split('=')[1]) : 2;
