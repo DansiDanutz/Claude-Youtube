@@ -89,3 +89,9 @@ current brand (wordmark, palette, type) so you can see it. `/brand-setup` uses i
 - **The brand contract is three files.** `brand.md`, `remotion/src/brand.ts`, `remotion/src/fonts.ts`.
   Nothing errors when they disagree — the docs just stop describing the videos. Change them together,
   or run `/brand-setup`.
+
+## Delivery folder (this machine)
+
+Every finished output gets copied to `~/Desktop/claudeYouTube/<project>/` — the final video at the
+top level, per-shot clips in `shots/`, QA stills in `stills/`, thumbnails in `packaging/`. Rendered
+files are git-ignored in this repo, so the Desktop folder is where David finds and reviews them.
