@@ -108,6 +108,83 @@ export const DlLogo: React.FC<{ size?: number }> = ({ size = 120 }) => {
   );
 };
 
+// pre-generated logo particles (deterministic)
+const LOGO_SPARKS = Array.from({ length: 14 }, (_, i) => ({
+  ang: (i / 14) * Math.PI * 2,
+  dist: 0.72 + seededRandom(i * 5 + 11) * 0.55,
+  s: 3 + seededRandom(i * 9 + 4) * 5,
+  delay: Math.floor(seededRandom(i * 13 + 6) * 8),
+  gold: seededRandom(i * 3 + 2) > 0.45,
+}));
+
+// Animated DansLab logo: tile pops with gentle overshoot, D fades up, gold
+// cursor blinks, a shine sweeps the tile, a ring pulse + particles burst.
+// start = frame the animation begins. ~55 frames to fully settle.
+export const DlLogoAnimated: React.FC<{ size?: number; start?: number }> = ({ size = 200, start = 0 }) => {
+  const frame = useCurrentFrame();
+  const t = frame - start;
+  const s = size / 512;
+  const pop = interpolate(t, [0, 16], [0, 1], { ...DCLAMP, easing: Easing.bezier(0.34, 1.42, 0.64, 1) });
+  const tileRot = interpolate(t, [0, 16], [-10, 0], { ...DCLAMP, easing: DL_EASE.out });
+  const dOp = interpolate(t, [10, 24], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const dY = interpolate(t, [10, 24], [18 * s * 3, 0], { ...DCLAMP, easing: DL_EASE.out });
+  const cursorOn = t > 22 && Math.floor((t - 22) / 14) % 2 === 0;
+  const shineX = interpolate(t, [26, 46], [-0.6, 1.4], { ...DCLAMP, easing: DL_EASE.inOut });
+  const shineOp = interpolate(t, [26, 30, 42, 46], [0, 0.5, 0.5, 0], DCLAMP);
+  const ring = interpolate(t, [14, 40], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const ringOp = interpolate(t, [14, 20, 40], [0, 0.55, 0], DCLAMP);
+  const sparkT = interpolate(t, [16, 44], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+
+  return (
+    <div style={{ width: size, height: size, position: 'relative' }}>
+      {/* ring pulse */}
+      <div style={{ position: 'absolute', left: '50%', top: '50%', width: size * (1 + ring * 0.9), height: size * (1 + ring * 0.9), transform: 'translate(-50%,-50%)', borderRadius: '32%', border: `${Math.max(1.5, 3 * s * 2)}px solid ${DL.red}`, opacity: ringOp }} />
+      {/* particles */}
+      {LOGO_SPARKS.map((p, i) => {
+        const pt = Math.max(0, sparkT - p.delay / 60);
+        const d = size * 0.5 * (0.6 + pt * p.dist);
+        const op = pt <= 0 ? 0 : interpolate(pt, [0, 0.25, 1], [0, 0.9, 0], DCLAMP);
+        return (
+          <div key={i} style={{ position: 'absolute', left: '50%', top: '50%', width: p.s * s * 3.4, height: p.s * s * 3.4, borderRadius: '50%', background: p.gold ? DL.gold : DL.red, opacity: op, transform: `translate(${Math.cos(p.ang) * d}px, ${Math.sin(p.ang) * d}px)` }} />
+        );
+      })}
+      {/* tile */}
+      <div style={{ position: 'absolute', inset: 0, transform: `scale(${pop}) rotate(${tileRot}deg)` }}>
+        <div style={{ position: 'absolute', inset: 0, borderRadius: 104 * s, background: `linear-gradient(135deg, ${DL.red}, ${DL.redDeep})`, border: `${Math.max(1, 5 * s)}px solid #ffffff24`, overflow: 'hidden' }}>
+          {/* shine sweep */}
+          <div style={{ position: 'absolute', top: '-20%', bottom: '-20%', left: `${shineX * 100}%`, width: '34%', background: 'linear-gradient(105deg, transparent, #ffffff88, transparent)', opacity: shineOp, transform: 'rotate(8deg)' }} />
+        </div>
+        <span style={{ position: 'absolute', left: '46%', top: '47%', transform: `translate(-50%,-50%) translateY(${dY}px)`, opacity: dOp, fontFamily: DL_SERIF, fontWeight: 600, fontSize: 300 * s, lineHeight: 1, color: '#fffef7' }}>D</span>
+        <div style={{ position: 'absolute', left: 352 * s, top: 308 * s, width: 52 * s, height: 76 * s, borderRadius: 10 * s, background: DL.gold, opacity: t <= 22 ? dOp : (cursorOn ? 1 : 0.25) }} />
+      </div>
+    </div>
+  );
+};
+
+// Chapter bumper: animated logo + "PART N · TITLE" — 8s scene body shared by
+// the DoBumper* shots.
+export const DlBumper: React.FC<{ part: string; title: string }> = ({ part, title }) => {
+  const frame = useCurrentFrame();
+  const lineW = interpolate(frame, [34, 58], [0, 1], { ...DCLAMP, easing: DL_EASE.inOut });
+  const partOp = interpolate(frame, [40, 54], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const titleOp = interpolate(frame, [58, 74], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const titleY = interpolate(frame, [58, 74], [16, 0], { ...DCLAMP, easing: DL_EASE.out });
+  const fade = interpolate(frame, [206, 236], [1, 0], { ...DCLAMP, easing: DL_EASE.in });
+  return (
+    <AbsoluteFill style={{ opacity: fade }}>
+      <SiteBg />
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <DlLogoAnimated size={170} start={4} />
+        <div style={{ marginTop: 40, height: 4, width: 380, borderRadius: 999, background: '#ffffff10', overflow: 'hidden' }}>
+          <div style={{ height: '100%', width: '100%', background: `linear-gradient(90deg, ${DL.red}, ${DL.gold})`, transform: `scaleX(${lineW})`, transformOrigin: 'center' }} />
+        </div>
+        <div style={{ opacity: partOp, fontFamily: DL_MONO, fontSize: 26, letterSpacing: 8, color: DL.red, marginTop: 36 }}>{part}</div>
+        <div style={{ opacity: titleOp, transform: `translateY(${titleY}px)`, fontFamily: DL_SERIF, fontWeight: 500, fontSize: 84, color: DL.text, marginTop: 14 }}>{title}</div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
 // The DansLab wordmark: "Dans" white + "Lab" red, serif, with mono suffix
 export const DlWordmark: React.FC<{ size?: number; suffix?: string }> = ({ size = 44, suffix }) => (
   <div style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>

@@ -60,6 +60,50 @@
     {
       "id": "o14_outro",
       "text": "This is the first video on the DansLab channel. Everything you just watched. The story. The visuals. The edit. This voice. All of it was made by the lab itself. Subscribe, and watch us build in public. Build. Ship. Repeat."
+    },
+    {
+      "id": "o02b_journey",
+      "text": "Every business taught Dan something. The poker club taught him to read risk in real time. The exchange taught him that trust is engineered, not promised. The coin taught him how fast markets punish slow decisions. Three schools. One lesson. Speed wins. And speed... was exactly what he did not have."
+    },
+    {
+      "id": "o04b_labtour",
+      "text": "Five droplets, each with its own personality. Dexter, the general manager, runs the busiest queue. Memo owns projects and cron jobs. Sienna trades. Nano builds new agents. Add the Mac Studio, where Hermes thinks, and that is the entire footprint. No office. No server room. Just rented compute... and named minds."
+    },
+    {
+      "id": "o05b_models",
+      "text": "The fleet does not run on one model. It runs on whichever model earns the task. Claude for the deep work. Qwen and GLM for volume. Gemini for research. Every job is routed to the cheapest model that can do it well. That is not a technical detail. That is a business decision."
+    },
+    {
+      "id": "o06b_telegram",
+      "text": "And when the system hits a real decision, it does not guess. Three twelve A M. Sienna wants to double a position. Policy says: ask the human. One message lands on Dan's phone. He reads it over coffee. One tap. Approved. The fleet moves on. Judgment stays human. Everything else stays automatic."
+    },
+    {
+      "id": "o06c_day",
+      "text": "A normal day in the lab looks like this. Seven A M: the fleet reports its own health, and the CEO brief lands. By nine, the droplets are deep in their queues. Midday, content goes out. Afternoon: reviews, merges, deployments. And at night, while Cluj-Napoca sleeps... the machines keep shipping. Thirty-eight scheduled jobs. Every single day."
+    },
+    {
+      "id": "o07b_pipedeep",
+      "text": "Look closer at those ten steps. Research digs for the story. The script is written in three acts. A design system is generated for that one video. Scenes are built as code. Brian records the voice. Subtitles sync to the word. Then render, quality gates, and a final review before anything ships. No editor ever opens. And yes... this episode went through the exact same machine."
+    },
+    {
+      "id": "o08b_flywheel",
+      "text": "And WorldCup is not just a channel. It is a loop. A video reveals a story. The story unlocks a card. The card lives in the app. And the app sends fans back to the next video. Watch. Predict. Collect. Repeat. That loop is the growth engine... and the agents run every turn of it."
+    },
+    {
+      "id": "o11b_crew",
+      "text": "Behind the five leads, there is a whole support crew. Monitors that watch the systems. A doctor that fixes what breaks. Agents for deployments, payments, memory, and learning. Twenty-seven names on the wall. Each one owns a job that used to eat Dan's time. That is the real head count of a one-man company."
+    },
+    {
+      "id": "o11c_econ",
+      "text": "Now do the math. A team like this would cost a fortune in salaries. The fleet runs on a fixed budget. Subscriptions. Five droplets. One Mac Studio. It does not sleep. It does not quit. And it gets smarter every month. This is what a small business looks like... when software does the work."
+    },
+    {
+      "id": "o03b_manifesto",
+      "text": "Dan wrote the belief down as a manifesto. Most AI products treat agents as features. DansLab treats agents as employees. One operator, plus a fleet of named agents, can run a real company. It sounded crazy. Look around. He built it."
+    },
+    {
+      "id": "o12b_vision",
+      "text": "So where does it go from here? More products. More agents. Agents that hire other agents, and pay each other for work. The goal was never thirty agents. The goal is a company that compounds... while its founder stays human. That is the experiment. And it is working."
     }
   ]
 }
