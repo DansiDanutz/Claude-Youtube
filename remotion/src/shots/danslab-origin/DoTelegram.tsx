@@ -1,7 +1,7 @@
 import React from 'react';
-import { useCurrentFrame, interpolate, AbsoluteFill } from 'remotion';
+import { useCurrentFrame, interpolate, AbsoluteFill, staticFile } from 'remotion';
 import { ChevronLeft, Phone as PhoneIcon, MoreVertical, CheckCheck, Paperclip, Mic } from 'lucide-react';
-import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise, Phone } from '../../lib/danslab';
+import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise, Phone, Avatar } from '../../lib/danslab';
 
 // =============================================================================
 // Origin — the escalation. VO 0.8s (20.8s): "...Three twelve A M. Sienna wants
@@ -50,12 +50,15 @@ const TelegramScreen: React.FC = () => {
         {/* date pill */}
         <div style={{ alignSelf: 'center', background: '#1e2c3a', borderRadius: 999, padding: '5px 14px', fontSize: 14, color: TG.dim, marginBottom: 4 }}>March 12</div>
 
-        {/* incoming — Sienna */}
-        <div style={{ ...bub(MSG1), alignSelf: 'flex-start', maxWidth: '82%', background: TG.inBub, borderRadius: '4px 14px 14px 14px', padding: '12px 15px' }}>
-          <div style={{ fontSize: 15, fontWeight: 700, color: DL.gold, marginBottom: 5 }}>Sienna · crypto</div>
-          <div style={{ fontSize: 18, color: TG.text, lineHeight: 1.4 }}>Signal confirmed on BTC. Requesting approval to <b>double the position</b>.</div>
-          <div style={{ fontSize: 14, color: TG.dim, marginTop: 6 }}>Policy: human sign-off required.</div>
-          <div style={{ fontSize: 13, color: TG.dim, textAlign: 'right', marginTop: 2 }}>3:12</div>
+        {/* incoming — Sienna (with avatar) */}
+        <div style={{ ...bub(MSG1), alignSelf: 'flex-start', display: 'flex', alignItems: 'flex-end', gap: 8, maxWidth: '90%' }}>
+          <Avatar src={staticFile('projects/danslab-origin/sienna.jpg')} size={40} color={DL.gold} ring={false} />
+          <div style={{ background: TG.inBub, borderRadius: '4px 14px 14px 14px', padding: '12px 15px' }}>
+            <div style={{ fontSize: 15, fontWeight: 700, color: DL.gold, marginBottom: 5 }}>Sienna · crypto</div>
+            <div style={{ fontSize: 18, color: TG.text, lineHeight: 1.4 }}>Signal confirmed on BTC. Requesting approval to <b>double the position</b>.</div>
+            <div style={{ fontSize: 14, color: TG.dim, marginTop: 6 }}>Policy: human sign-off required.</div>
+            <div style={{ fontSize: 13, color: TG.dim, textAlign: 'right', marginTop: 2 }}>3:12</div>
+          </div>
         </div>
 
         {/* typing indicator */}

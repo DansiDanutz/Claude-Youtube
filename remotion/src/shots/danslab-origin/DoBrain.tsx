@@ -1,7 +1,6 @@
 import React from 'react';
-import { useCurrentFrame, interpolate, AbsoluteFill } from 'remotion';
-import { BrainCircuit, Network } from 'lucide-react';
-import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from '../../lib/danslab';
+import { useCurrentFrame, interpolate, AbsoluteFill, staticFile } from 'remotion';
+import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, HermesLogo, Avatar, OpenClawLogo } from '../../lib/danslab';
 
 // =============================================================================
 // Origin 5/14 — Hermes & David. VO 0.8s (23.6s): "Two agents matter more than
@@ -28,41 +27,39 @@ const DoBrain: React.FC = () => {
 
       <div style={{ position: 'absolute', top: 200, left: 120, right: 120, display: 'flex', gap: 40 }}>
         {/* Hermes */}
-        <div style={{ ...panel(HERMES), flex: 1, background: DL.panel2, border: `1px solid ${DL.gold}55`, borderRadius: 18, padding: '44px 48px' }}>
+        <div style={{ ...panel(HERMES), flex: 1, background: DL.panel2, border: `1px solid ${DL.gold}55`, borderRadius: 18, padding: '40px 48px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-            <div style={{ width: 78, height: 78, borderRadius: 18, background: `${DL.gold}18`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <BrainCircuit size={42} color={DL.gold} strokeWidth={1.8} />
-            </div>
+            <HermesLogo size={104} start={HERMES + 6} />
             <div>
               <div style={{ fontFamily: DL_SERIF, fontWeight: 600, fontSize: 58, color: DL.text }}>Hermes</div>
               <div style={{ fontFamily: DL_MONO, fontSize: 22, letterSpacing: 3, color: DL.gold }}>THE BRAIN</div>
             </div>
           </div>
-          <div style={{ fontSize: 31, lineHeight: 1.55, color: DL.dim, marginTop: 30 }}>
+          <div style={{ fontSize: 31, lineHeight: 1.55, color: DL.dim, marginTop: 26 }}>
             The strategist. Lives on the Mac Studio. Decides what the fleet should care about — before anyone asks.
           </div>
         </div>
         {/* David */}
-        <div style={{ ...panel(DAVID), flex: 1, background: DL.panel2, border: `1px solid ${DL.red}55`, borderRadius: 18, padding: '44px 48px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-            <div style={{ width: 78, height: 78, borderRadius: 18, background: `${DL.red}18`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Network size={42} color={DL.red} strokeWidth={1.8} />
-            </div>
+        <div style={{ ...panel(DAVID), flex: 1, background: DL.panel2, border: `1px solid ${DL.red}55`, borderRadius: 18, padding: '40px 48px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
+            <Avatar src={staticFile('projects/danslab-origin/david.jpg')} size={104} color={DL.red} />
             <div>
               <div style={{ fontFamily: DL_SERIF, fontWeight: 600, fontSize: 58, color: DL.text }}>David</div>
               <div style={{ fontFamily: DL_MONO, fontSize: 22, letterSpacing: 3, color: DL.red }}>THE ORCHESTRATOR</div>
             </div>
           </div>
-          <div style={{ fontSize: 31, lineHeight: 1.55, color: DL.dim, marginTop: 30 }}>
+          <div style={{ fontSize: 31, lineHeight: 1.55, color: DL.dim, marginTop: 26 }}>
             Dan&rsquo;s digital twin inside <span style={{ color: DL.red, fontFamily: DL_MONO }}>OPENCLAW</span> — the system that connects every agent, every model, every machine.
           </div>
         </div>
       </div>
 
-      {/* openclaw strip */}
-      <div style={{ position: 'absolute', top: 700, left: 120, right: 120, opacity: clawOp }}>
-        <div style={{ borderTop: `1px solid ${DL.border}`, borderBottom: `1px solid ${DL.border}`, padding: '20px 0', display: 'flex', justifyContent: 'center', gap: 30 }}>
-          <span style={{ fontFamily: DL_MONO, fontSize: 22, letterSpacing: 3, color: DL.faint }}>OPENCLAW · CLAUDE · QWEN · ZAI · GEMINI · 5 DROPLETS · 1 MAC STUDIO</span>
+      {/* openclaw logo strip */}
+      <div style={{ position: 'absolute', top: 660, left: 120, right: 120, opacity: clawOp, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 40 }}>
+        <OpenClawLogo src={staticFile('projects/danslab-origin/openclaw-mascot.png')} size={130} start={DAVID + 110} wordmark={false} />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 34, letterSpacing: 2 }}><span style={{ color: DL.text }}>OPEN</span><span style={{ color: DL.red }}>CLAW</span></span>
+          <span style={{ fontFamily: DL_MONO, fontSize: 20, letterSpacing: 2, color: DL.faint }}>CLAUDE · QWEN · ZAI · GEMINI · 5 DROPLETS · 1 MAC STUDIO</span>
         </div>
       </div>
 

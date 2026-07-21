@@ -1,6 +1,6 @@
 import React from 'react';
-import { useCurrentFrame, interpolate, AbsoluteFill } from 'remotion';
-import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise } from '../../lib/danslab';
+import { useCurrentFrame, interpolate, AbsoluteFill, staticFile } from 'remotion';
+import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise, Avatar } from '../../lib/danslab';
 
 // =============================================================================
 // Origin — the crew wall. VO 0.8s (18.7s): "Behind the five leads, a whole
@@ -14,6 +14,9 @@ const NAMES = [
   'OpenClaw-04','ManusClaw','KiloClaw','KimiClaw','Monitor','Vercel','Github','ThePopeBot',
   'AutoForge','GSD','Vector','Update','Model','Doctor','Learning','Stripe','SSH','Supabase',
 ];
+const AVATARS: Record<string, string> = {
+  Dexter: 'dexter.jpg', David: 'david.jpg', Nano: 'nano.png', Memo: 'memo.jpg', Sienna: 'sienna.jpg',
+};
 const START = 120, GAP = 9;
 const LINE = 430; // "each one owns a job..."
 
@@ -43,8 +46,10 @@ const DoCrewWall: React.FC = () => {
           const at = START + i * GAP;
           const op = interpolate(frame, [at, at + 8], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
           const lead = i < 6;
+          const av = AVATARS[n];
           return (
-            <div key={n} style={{ opacity: op, background: lead ? DL.panel2 : DL.panel, border: `1px solid ${lead ? DL.red + '55' : DL.border}`, borderRadius: 10, padding: '14px 24px' }}>
+            <div key={n} style={{ opacity: op, display: 'flex', alignItems: 'center', gap: 12, background: lead ? DL.panel2 : DL.panel, border: `1px solid ${lead ? DL.red + '55' : DL.border}`, borderRadius: 10, padding: av ? '10px 22px 10px 12px' : '14px 24px' }}>
+              {av && <Avatar src={staticFile(`projects/danslab-origin/${av}`)} size={46} color={DL.red} />}
               <span style={{ fontFamily: DL_MONO, fontSize: 25, color: lead ? DL.text : DL.dim }}>{n}</span>
             </div>
           );

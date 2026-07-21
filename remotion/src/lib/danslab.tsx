@@ -153,6 +153,86 @@ export const Phone: React.FC<{
   );
 };
 
+// Circular avatar badge — a character portrait in a glowing ring.
+export const Avatar: React.FC<{ src: string; size?: number; color?: string; ring?: boolean }> = ({ src, size = 96, color = DL.gold, ring = true }) => (
+  <div style={{ width: size, height: size, borderRadius: '50%', padding: ring ? size * 0.03 : 0, background: ring ? `linear-gradient(135deg, ${color}, ${DL.redDeep})` : 'transparent', boxShadow: ring ? `0 0 ${size * 0.24}px ${color}44` : 'none', flexShrink: 0 }}>
+    <Img src={src} style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover', display: 'block', border: `2px solid ${DL.bg}` }} />
+  </div>
+);
+
+// Animated Hermes logo — "the brain": a gold neural emblem with a winged
+// mercury glyph, orbiting nodes, and a glow pulse. start = animation begin.
+export const HermesLogo: React.FC<{ size?: number; start?: number }> = ({ size = 180, start = 0 }) => {
+  const frame = useCurrentFrame();
+  const t = frame - start;
+  const ring = interpolate(t, [0, 22], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  const glyph = interpolate(t, [8, 26], [0, 1], { ...DCLAMP, easing: Easing.bezier(0.34, 1.4, 0.64, 1) });
+  const glow = 0.55 + 0.45 * Math.abs(Math.sin(t / 22));
+  const spin = (t * 0.6) % 360;
+  const nodes = 6;
+  return (
+    <div style={{ width: size, height: size, position: 'relative' }}>
+      <svg width={size} height={size} viewBox="0 0 200 200">
+        <defs>
+          <radialGradient id="hg" cx="50%" cy="42%" r="60%">
+            <stop offset="0" stopColor={DL.gold} />
+            <stop offset="1" stopColor="#8a6a12" />
+          </radialGradient>
+        </defs>
+        {/* glow disc */}
+        <circle cx="100" cy="100" r="72" fill={DL.gold} opacity={0.10 * glow} />
+        {/* outer ring, draws in */}
+        <circle cx="100" cy="100" r="82" fill="none" stroke={DL.gold} strokeWidth="2.5" strokeOpacity="0.5"
+          strokeDasharray={2 * Math.PI * 82} strokeDashoffset={2 * Math.PI * 82 * (1 - ring)} transform="rotate(-90 100 100)" />
+        {/* orbiting neural nodes */}
+        <g transform={`rotate(${spin} 100 100)`} opacity={ring}>
+          {Array.from({ length: nodes }).map((_, i) => {
+            const a = (i / nodes) * Math.PI * 2;
+            return <circle key={i} cx={100 + Math.cos(a) * 82} cy={100 + Math.sin(a) * 82} r="4" fill={DL.gold} opacity={0.8} />;
+          })}
+        </g>
+        {/* central emblem — winged brain glyph */}
+        <g transform={`scale(${glyph})`} style={{ transformOrigin: '100px 100px' }} opacity={glyph}>
+          {/* head/brain circle */}
+          <circle cx="100" cy="102" r="34" fill="url(#hg)" />
+          {/* neural lines */}
+          <g stroke="#3a2a05" strokeWidth="2.5" fill="none" opacity="0.6">
+            <path d="M100 74 v56 M82 88 q18 14 0 28 M118 88 q-18 14 0 28" />
+          </g>
+          {/* wings */}
+          <path d="M66 92 q-30 -6 -40 6 q22 2 34 12 z" fill={DL.gold} opacity="0.9" />
+          <path d="M134 92 q30 -6 40 6 q-22 2 -34 12 z" fill={DL.gold} opacity="0.9" />
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+// Animated OpenClaw logo — the red lobster mascot that snaps its claw + bobs,
+// with an optional wordmark. Uses the cropped mascot PNG (transparent).
+export const OpenClawLogo: React.FC<{ src: string; size?: number; start?: number; wordmark?: boolean }> = ({ src, size = 180, start = 0, wordmark = true }) => {
+  const frame = useCurrentFrame();
+  const t = frame - start;
+  const inScale = interpolate(t, [0, 16], [0, 1], { ...DCLAMP, easing: Easing.bezier(0.34, 1.45, 0.64, 1) });
+  const bob = Math.sin(t / 26) * 5;
+  const rot = Math.sin(t / 34) * 3;
+  // claw "snap" pulse every ~2s
+  const snap = 1 + 0.06 * Math.max(0, Math.sin(t / 15)) * (Math.floor(t / 47) % 2 === 0 ? 1 : 0);
+  const wOp = interpolate(t, [18, 34], [0, 1], { ...DCLAMP, easing: DL_EASE.out });
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: size * 0.06 }}>
+      <div style={{ transform: `scale(${inScale * snap}) translateY(${bob}px) rotate(${rot}deg)`, filter: `drop-shadow(0 ${size * 0.06}px ${size * 0.12}px rgba(192,57,43,0.4))` }}>
+        <Img src={src} style={{ width: size, height: 'auto', display: 'block' }} />
+      </div>
+      {wordmark && (
+        <div style={{ opacity: wOp, fontFamily: DL_MONO, fontWeight: 700, fontSize: size * 0.14, letterSpacing: 2 }}>
+          <span style={{ color: DL.text }}>OPEN</span><span style={{ color: DL.red }}>CLAW</span>
+        </div>
+      )}
+    </div>
+  );
+};
+
 // The DansLab logo mark — red lab tile, serif D, gold terminal cursor.
 // size = tile edge in px. Same geometry as media/library/logos/danslab-mark.svg.
 export const DlLogo: React.FC<{ size?: number }> = ({ size = 120 }) => {

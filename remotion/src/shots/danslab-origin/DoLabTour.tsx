@@ -1,7 +1,7 @@
 import React from 'react';
-import { useCurrentFrame, interpolate, AbsoluteFill } from 'remotion';
+import { useCurrentFrame, interpolate, AbsoluteFill, staticFile } from 'remotion';
 import { Server, Laptop } from 'lucide-react';
-import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise } from '../../lib/danslab';
+import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlRise, Avatar } from '../../lib/danslab';
 
 // =============================================================================
 // Origin — the footprint tour. VO 0.8s (23.7s): "Five droplets, each with its
@@ -12,11 +12,11 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlR
 export const compositionConfig = { id: 'DoLabTour', durationInSeconds: 25.8, fps: 30, width: 1920, height: 1080 };
 
 const NODES = [
-  { name: 'dexter', role: 'general manager · busiest queue', at: 128 },
-  { name: 'memo', role: 'projects · cron jobs', at: 222 },
-  { name: 'sienna', role: 'trades', at: 288 },
-  { name: 'nano', role: 'builds new agents', at: 342 },
-  { name: 'fleet-05', role: 'reserve', at: 400 },
+  { name: 'dexter', role: 'general manager · busiest queue', at: 128, avatar: 'dexter.jpg' },
+  { name: 'memo', role: 'projects · cron jobs', at: 222, avatar: 'memo.jpg' },
+  { name: 'sienna', role: 'trades', at: 288, avatar: 'sienna.jpg' },
+  { name: 'nano', role: 'builds new agents', at: 342, avatar: 'nano.png' },
+  { name: 'fleet-05', role: 'reserve', at: 400, avatar: null },
 ];
 const MAC = 428; // "add the Mac Studio"
 const CLOSE = 592; // "no office..."
@@ -48,9 +48,11 @@ const DoLabTour: React.FC = () => {
           const x = interpolate(frame, [n.at, n.at + 13], [-24, 0], { ...DCLAMP, easing: DL_EASE.out });
           const on = 0.5 + 0.5 * Math.abs(Math.sin((frame - n.at) / 17));
           return (
-            <div key={n.name} style={{ opacity: op, transform: `translateX(${x}px)`, display: 'flex', alignItems: 'center', gap: 22, background: DL.panel, border: `1px solid ${DL.border}`, borderRadius: 12, padding: '20px 30px' }}>
-              <Server size={28} color={DL.sky} strokeWidth={1.8} />
-              <span style={{ fontFamily: DL_MONO, fontSize: 28, color: DL.text, width: 190 }}>{n.name}</span>
+            <div key={n.name} style={{ opacity: op, transform: `translateX(${x}px)`, display: 'flex', alignItems: 'center', gap: 22, background: DL.panel, border: `1px solid ${DL.border}`, borderRadius: 12, padding: '16px 30px' }}>
+              {n.avatar
+                ? <Avatar src={staticFile(`projects/danslab-origin/${n.avatar}`)} size={62} color={DL.sky} />
+                : <div style={{ width: 62, height: 62, borderRadius: '50%', background: DL.panel2, border: `1px solid ${DL.border}`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Server size={26} color={DL.sky} strokeWidth={1.8} /></div>}
+              <span style={{ fontFamily: DL_MONO, fontSize: 28, color: DL.text, width: 180 }}>{n.name}</span>
               <span style={{ fontSize: 26, color: DL.dim }}>{n.role}</span>
               <div style={{ marginLeft: 'auto', width: 10, height: 10, borderRadius: '50%', background: DL.green, opacity: on }} />
             </div>
