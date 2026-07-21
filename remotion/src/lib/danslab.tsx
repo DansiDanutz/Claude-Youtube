@@ -4,7 +4,7 @@
 // This deliberately does NOT touch the channel brand (brand.ts) — it is the
 // look of one video about the DansLab product, not the channel look.
 import React from 'react';
-import { AbsoluteFill, interpolate, useCurrentFrame, Easing } from 'remotion';
+import { AbsoluteFill, Img, interpolate, useCurrentFrame, Easing } from 'remotion';
 import { loadFont as loadNewsreader } from '@remotion/google-fonts/Newsreader';
 import { loadFont as loadInterDl } from '@remotion/google-fonts/Inter';
 import { loadFont as loadMonoDl } from '@remotion/google-fonts/JetBrainsMono';
@@ -77,6 +77,23 @@ export const useDlRise = () => {
     transform: `translateY(${interpolate(frame, [start, start + dur], [dist, 0], { ...DCLAMP, easing: DL_EASE.out })}px)`,
   });
 };
+
+// Browser window frame around a full-bleed screenshot (site-style dark chrome).
+// Screenshot should be a 1920x1080 capture; scales to fit the given box.
+export const SiteFrame: React.FC<{ src: string; url: string; w?: number; h?: number }> = ({ src, url, w = 1480, h = 880 }) => (
+  <div style={{ width: w, background: DL.panel, border: `1px solid ${DL.border}`, borderRadius: 14, overflow: 'hidden', boxShadow: '0 30px 80px rgba(0,0,0,0.55)' }}>
+    <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '14px 20px', borderBottom: `1px solid ${DL.border}` }}>
+      <div style={{ width: 12, height: 12, borderRadius: '50%', background: DL.red }} />
+      <div style={{ width: 12, height: 12, borderRadius: '50%', background: DL.gold }} />
+      <div style={{ width: 12, height: 12, borderRadius: '50%', background: DL.green }} />
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+        <div style={{ background: DL.bg, border: `1px solid ${DL.border}`, borderRadius: 8, padding: '6px 26px', fontFamily: DL_MONO, fontSize: 19, color: DL.dim }}>{url}</div>
+      </div>
+      <div style={{ width: 40 }} />
+    </div>
+    <Img src={src} style={{ width: '100%', height: h - 50, objectFit: 'cover', objectPosition: 'top', display: 'block' }} />
+  </div>
+);
 
 // The DansLab wordmark: "Dans" white + "Lab" red, serif, with mono suffix
 export const DlWordmark: React.FC<{ size?: number; suffix?: string }> = ({ size = 44, suffix }) => (
