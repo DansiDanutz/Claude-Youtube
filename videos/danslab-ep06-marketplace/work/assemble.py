@@ -11,9 +11,9 @@ TAG = "4k" if "--tag" in sys.argv and sys.argv[sys.argv.index("--tag") + 1] == "
 ORDER = [
     ("MIntro", None, 0), ("MRecap", "s01_recap", 0.8),
     ("MB1", None, 0), ("MDan", "s02_dan", 0.8), ("MPoker", "s03_poker", 0.8), ("MLife", "s04_life", 0.8), ("MTable", "s05_table", 0.8),
-    ("MB2", None, 0), ("MEdge", "s06_edge", 0.8), ("MLocked", "s07_locked", 0.8), ("MIdea", "s08_idea", 0.8), ("MNervix", "s09_nervix", 0.8),
-    ("MWays", "s10_ways", 0.8), ("MReal", "s11_real", 0.8), ("MPowered", "s12_powered", 0.8),
-    ("MB3", None, 0), ("MWhy", "s13_why", 0.8), ("MAdopt", "s14_adopt", 0.8), ("MFuel", "s15_fuel", 0.8),
+    ("MB2", None, 0), ("MEdge", "s06_edge", 0.8), ("MLocked", "s07_locked", 0.8), ("MIdea", "s08_idea", 0.8), ("MNervix", "s09_nervix", 0.8), ("MEnroll", "s09b_enroll", 0.8),
+    ("MWays", "s10_ways", 0.8), ("MRoles", "s10b_roles", 0.8), ("MReal", "s11_real", 0.8), ("MEconomics", "s11b_economics", 0.8), ("MPowered", "s12_powered", 0.8), ("MReputation", "s12b_reputation", 0.8),
+    ("MB3", None, 0), ("MWhy", "s13_why", 0.8), ("MAdopt", "s14_adopt", 0.8), ("MFuel", "s15_fuel", 0.8), ("MOpen", "s15b_open", 0.8),
     ("MVision", "s16_vision", 0.8), ("MCliff", "s17_cliff", 0.8), ("MOutro", "s18_outro", 1.0),
 ]
 
@@ -51,6 +51,12 @@ for i, (s, vo, off) in enumerate(ORDER):
     cues.append((i, 0.0, f, 0.40))
 def sc(name): return [i for i,(s,_,_) in enumerate(ORDER) if s==name][0]
 beats = {
+ "MEnroll":[(2.6,"keys-typing-soft",.34),(4.2,"pop-reveal",.36),(5.6,"pop-reveal",.36),(7.0,"ui-toggle-on",.36),(8.4,"chime-reward",.44),(19.4,"warm-shimmer",.4)],
+ "MRoles":[(2.2,"pop-reveal",.32),(2.7,"pop-reveal",.3),(3.2,"pop-reveal",.3),(3.7,"pop-reveal",.3),(4.2,"pop-reveal",.3),(11.2,"whoosh-reverse",.34),(19.2,"chime-magic",.42)],
+ "MEconomics":[(2.6,"ui-click-soft",.32),(4.0,"trap-snap",.36),(5.4,"chime-magic",.34),(6.8,"stamp-hit",.38),(8.2,"chime-reward",.44),(9.6,"sparkle-soft",.4),(14.0,"warm-shimmer",.38)],
+ "MReputation":[(3.0,"scan-hum",.3),(4.2,"pop-reveal",.32),(5.4,"pop-reveal",.32),(6.6,"pop-reveal",.32),(11.4,"impact-soft",.46),(12.6,"glitch-zap",.32)],
+ "MOpen":[(2.4,"knock-solid",.4),(6.6,"whoosh-reverse",.36),(7.6,"chime-magic",.44),(12.4,"warm-shimmer",.4)],
+
  "MIntro":[(0.9,"impact-deep-soft",.5),(1.4,"sparkle-soft",.4),(5.0,"pop-reveal",.42)],
  "MRecap":[(9.0,"warm-shimmer",.4),(11.6,"impact-soft",.42)],
  "MB1":[(1.5,"impact-soft",.45),(2.4,"pop-reveal",.4)],
@@ -87,8 +93,8 @@ print(f"sfx: {len(cues)} cues")
 
 # MUSIC — reflective open -> tech middle -> reflective close (present bed)
 subprocess.run(["ffmpeg","-y","-v","error","-i",f"{MUSIC}/cinematic-min.mp3","-af","atrim=0:78","-ar","48000","-ac","2",f"{WORK}/mix/mA.wav"], check=True)
-subprocess.run(["ffmpeg","-y","-v","error","-stream_loop","4","-i",f"{MUSIC}/tech-pulse.mp3","-af","atrim=0:250","-ar","48000","-ac","2",f"{WORK}/mix/mB.wav"], check=True)
-subprocess.run(["ffmpeg","-y","-v","error","-i",f"{MUSIC}/cinematic-min.mp3","-af","atrim=0:95","-ar","48000","-ac","2",f"{WORK}/mix/mC.wav"], check=True)
+subprocess.run(["ffmpeg","-y","-v","error","-stream_loop","8","-i",f"{MUSIC}/tech-pulse.mp3","-af","atrim=0:380","-ar","48000","-ac","2",f"{WORK}/mix/mB.wav"], check=True)
+subprocess.run(["ffmpeg","-y","-v","error","-i",f"{MUSIC}/cinematic-min.mp3","-af","atrim=0:130","-ar","48000","-ac","2",f"{WORK}/mix/mC.wav"], check=True)
 subprocess.run(["ffmpeg","-y","-v","error","-i",f"{WORK}/mix/mA.wav","-i",f"{WORK}/mix/mB.wav","-i",f"{WORK}/mix/mC.wav",
                 "-filter_complex","[0:a][1:a]acrossfade=d=3:c1=tri:c2=tri[ab];[ab][2:a]acrossfade=d=3:c1=tri:c2=tri[abc]","-map","[abc]",f"{WORK}/mix/music_long.wav"], check=True)
 fadeout = float(TOTAL) - 5.0
