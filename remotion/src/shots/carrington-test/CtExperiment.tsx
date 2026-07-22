@@ -12,7 +12,7 @@ import { NightBg, AuroraCurtains, NightTag, PortraitCard, MorseStrip } from '../
 // on auroral current alone. Facts: RESEARCH.md #4, #5, #6; preserved by
 // Prescott. Reported speech only, no invented verbatim quotes.
 // =============================================================================
-export const compositionConfig = { id: 'CtExperiment', durationInSeconds: 15, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'CtExperiment', durationInSeconds: 16, fps: 30, width: 1920, height: 1080 };
 
 const D1 = 36;
 const D2 = 116;
@@ -32,7 +32,7 @@ const CtExperiment: React.FC = () => {
     opacity: interpolate(frame, [start, start + dur], [0, 1], { ...CLAMP, easing: EASINGS.easeOut }),
     transform: `translateY(${interpolate(frame, [start, start + dur + 2], [26, 0], { ...CLAMP, easing: EASINGS.easeOut })}px)`,
   });
-  const fadeOut = interpolate(frame, [432, 450], [1, 0], { ...CLAMP, easing: EASINGS.easeIn });
+  const fadeOut = interpolate(frame, [462, 480], [1, 0], { ...CLAMP, easing: EASINGS.easeIn });
 
   return (
     <AbsoluteFill style={{ fontFamily: FONT_BODY, opacity: fadeOut, backgroundColor: COLORS.d900 }}>

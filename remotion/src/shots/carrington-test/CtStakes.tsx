@@ -13,7 +13,7 @@ import { NightBg, AuroraCurtains, NightTag } from '../../lib/carringtonkit';
 // #7 (sparks, fires, one operator stunned), #8 (print readable ~1 a.m. Boston).
 // Direct-address beat per STORY.md beat 6.
 // =============================================================================
-export const compositionConfig = { id: 'CtStakes', durationInSeconds: 15, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'CtStakes', durationInSeconds: 16, fps: 30, width: 1920, height: 1080 };
 
 const C1 = 40;
 const C2 = 110;
@@ -33,7 +33,7 @@ const CtStakes: React.FC = () => {
     transform: `translateY(${interpolate(frame, [start, start + dur + 2], [26, 0], { ...CLAMP, easing: EASINGS.easeOut })}px)`,
   });
   const askSweep = interpolate(frame, [ASK + 20, ASK + 34], [0, 1], { ...CLAMP, easing: EASINGS.easeInOut });
-  const fadeOut = interpolate(frame, [432, 450], [1, 0], { ...CLAMP, easing: EASINGS.easeIn });
+  const fadeOut = interpolate(frame, [462, 480], [1, 0], { ...CLAMP, easing: EASINGS.easeIn });
 
   return (
     <AbsoluteFill style={{ fontFamily: FONT_BODY, opacity: fadeOut, backgroundColor: COLORS.d900 }}>

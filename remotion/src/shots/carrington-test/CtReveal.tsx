@@ -12,7 +12,7 @@ import { NightBg, AuroraCurtains, NightTag, PortraitCard } from '../../lib/carri
 // batteries, drove the circuit. Loomis assembled the scattered reports.
 // Facts: RESEARCH.md #3, #11, STORY.md beats 14-16. Zoe reacts at the payoff.
 // =============================================================================
-export const compositionConfig = { id: 'CtReveal', durationInSeconds: 13, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'CtReveal', durationInSeconds: 15, fps: 30, width: 1920, height: 1080 };
 
 const DIAG = 26;
 const L1 = 50;
@@ -29,7 +29,7 @@ const CtReveal: React.FC = () => {
   });
   const draw = interpolate(frame, [DIAG + 10, DIAG + 70], [0, 1], { ...CLAMP, easing: EASINGS.easeInOut });
   const wireGlow = 0.55 + 0.45 * Math.sin(frame / 7);
-  const fadeOut = interpolate(frame, [372, 390], [1, 0], { ...CLAMP, easing: EASINGS.easeIn });
+  const fadeOut = interpolate(frame, [432, 450], [1, 0], { ...CLAMP, easing: EASINGS.easeIn });
 
   return (
     <AbsoluteFill style={{ fontFamily: FONT_BODY, opacity: fadeOut, backgroundColor: COLORS.d900 }}>

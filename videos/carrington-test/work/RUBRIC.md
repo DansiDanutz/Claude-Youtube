@@ -1,7 +1,7 @@
-# RUBRIC — Carrington Event stack test (carrington-test, 94s, graded 2026-07-22)
+# RUBRIC — Carrington Event stack test (carrington-test, 98s, graded 2026-07-22, re-graded after VO pass)
 
 Full-stack test: Story Council treatment (`~/Desktop/DavidAi/Council/sessions/20260722-1330-the-1859-carrington-event/`)
-+ ClaudeYoutube fast lane + animated characters + Channel Law. 7 scenes, 1:34, 1920x1080/30.
++ ClaudeYoutube fast lane + animated characters + Channel Law. 7 scenes, 1:38, 1920x1080/30.
 Structure: real-logo cold open (<2s build) -> paradox hook by 0:04 ("Every battery, disconnected. /
 And the messages became clearer. / Why?") -> promise at 0:13 (two hours on a current nobody
 switched on) -> stakes 0:25-0:40 with direct address -> Carrington flashback -> the experiment ->
@@ -29,11 +29,12 @@ generated on the xAI subscription lane as 1859 steel-engraving illustrations.
 | 2 | Typography & legibility | 5 | Sora display 46-136px, body 27-42px, mono tags 22-25px; 130px gutters; paper-on-ink contrast; QA caught and fixed two overlaps (Arlo/portrait plate, diagram label/Loomis card) before delivery |
 | 3 | Narrative sync | 5 | Hook 0:04, promise 0:13, stakes+direct address by 0:35, reveal withheld until 1:17 (STORY.md kill-list: explanation held to finale), forward hook before end card |
 | 4 | Motion craft | 5 | Logo build <2s; 4 live i2v presenter clips loop in-shot (final-frame diff 20s vs 21s rms 11.6); animated key taps, wire draw+pulse, flare erupt/fade, aurora curtains; brand fade+rise easings |
-| 5 | Sound | 5 | cinematic-min bed (crossfaded, faded, 0.30) + 37 function-picked cues (ui-send per dispatch, riser->impact on payoffs, chime-reward at subscribe); limiter at -1dB |
+| 5 | Sound | 5 | VOICE narration leads (7 Brian segments via the zurich ElevenLabs lane, VO peaks -6dB vs -26dB bed; CtStakes/CtExperiment/CtReveal extended to fit the read) + cinematic-min bed at 0.22 + 37 function-picked cues; limiter at -1dB |
 | 6 | Evidence & truth | 5 | Every on-screen fact exists in RESEARCH.md (verified-findings section only); operators unnamed per the honesty rule; em-dash-free overlays audited |
 
-**Total: 30/30 -> S.** On-screen narration (no VO): the repo's tools/ has no TTS lane
-(transcribe.py is speech-to-text), so per the build rules narration stays on screen.
+**Total: 30/30 -> S.** Narration is VOICE ONLY per Dan (2026-07-22): ElevenLabs Brian via
+`zurich engines/step5_audio.elevenlabs_synthesize`; script + mp3s + measured durations in
+`work/narration/`. On-screen text is visual support, not the narration channel.
 
 QA stills: `~/Desktop/claudeYouTube/carrington-test/stills/`. Delivery:
 `~/Desktop/carrington-council-test.mp4` (+ `~/Desktop/claudeYouTube/carrington-test/final.mp4`).
