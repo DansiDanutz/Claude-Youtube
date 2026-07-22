@@ -4,7 +4,7 @@
 // blood-red aurora as the single big color note (brand danger rose + gold),
 // green kept for the "signal alive" moments. Sora/Inter/JetBrains throughout.
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
+import { AbsoluteFill, Img, interpolate, Loop, OffthreadVideo, staticFile, useCurrentFrame } from 'remotion';
 import { COLORS, EASINGS } from '../brand';
 import { FONT_DISPLAY, FONT_MONO } from '../fonts';
 
@@ -196,6 +196,35 @@ export const PortraitCard: React.FC<{
       </div>
       <div style={{ marginTop: 18, fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: w * 0.082, color: COLORS.d300, textAlign: 'center' }}>{name}</div>
       <div style={{ marginTop: 6, fontFamily: FONT_MONO, fontSize: w * 0.058, letterSpacing: 2, color: COLORS.d400, textAlign: 'center' }}>{role}</div>
+    </div>
+  );
+};
+
+// ---- period footage inset: looping i2v scene clip in a framed card --------
+// Clips are generated PER SCENE for this film (media/projects/carrington-test/
+// scene-*.mp4) — environment-native footage, never generic presenter cutouts.
+// Grok i2v clips are ~6s @ 24fps (~145 frames); loop early so the tail never freezes.
+const FOOTAGE_LOOP_FRAMES = 172;
+
+export const FootageCard: React.FC<{
+  src: string; caption: string; start?: number; w?: number; accent?: string;
+}> = ({ src, caption, start = 0, w = 620, accent = COLORS.danger }) => {
+  const frame = useCurrentFrame();
+  const op = interpolate(frame, [start, start + 16], [0, 1], { ...KCLAMP, easing: EASINGS.easeOut });
+  const y = interpolate(frame, [start, start + 18], [30, 0], { ...KCLAMP, easing: EASINGS.easeOut });
+  const h = (w * 9) / 16;
+  return (
+    <div style={{ opacity: op, transform: `translateY(${y}px)`, width: w }}>
+      <div style={{ width: w, height: h, borderRadius: 16, overflow: 'hidden', border: `1px solid ${COLORS.d600}`, boxShadow: '0 18px 54px rgba(0,0,0,0.5)', position: 'relative', background: COLORS.d800 }}>
+        <Loop durationInFrames={FOOTAGE_LOOP_FRAMES}>
+          <OffthreadVideo src={staticFile(src)} muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Loop>
+        <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 5, background: accent }} />
+      </div>
+      <div style={{ marginTop: 16, display: 'flex', alignItems: 'center', gap: 14 }}>
+        <div style={{ width: 10, height: 10, borderRadius: 3, background: accent }} />
+        <span style={{ fontFamily: FONT_MONO, fontSize: 21, letterSpacing: 4, color: COLORS.d400 }}>{caption}</span>
+      </div>
     </div>
   );
 };

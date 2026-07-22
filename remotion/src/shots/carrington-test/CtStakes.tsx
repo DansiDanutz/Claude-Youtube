@@ -4,8 +4,7 @@ import { Zap, Flame, BookOpen } from 'lucide-react';
 import { COLORS, EASINGS } from '../../brand';
 import { FONT_DISPLAY, FONT_BODY, FONT_MONO } from '../../fonts';
 import { CLAMP } from '../../lib/kit';
-import { MotionChar } from '../../lib/profilekit';
-import { NightBg, AuroraCurtains, NightTag } from '../../lib/carringtonkit';
+import { NightBg, AuroraCurtains, NightTag, FootageCard } from '../../lib/carringtonkit';
 
 // =============================================================================
 // Carrington 3/7 — the stakes (inside the first 30s). The network rebels.
@@ -41,9 +40,9 @@ const CtStakes: React.FC = () => {
       <AuroraCurtains strength={1} />
       <NightTag text="THE NETWORK REBELS" color={COLORS.danger} />
 
-      {/* Elena reports from the left */}
-      <div style={{ position: 'absolute', left: -260, bottom: -6 }}>
-        <MotionChar name="elena-talk" h={700} start={10} />
+      {/* the relay sparking — footage made for this scene */}
+      <div style={{ position: 'absolute', left: 130, top: 330 }}>
+        <FootageCard src="projects/carrington-test/scene-relay.mp4" caption="INDUCED CURRENT, ARRIVING" start={14} w={540} accent={COLORS.danger} />
       </div>
 
       <div style={{ position: 'absolute', left: 740, right: 130, top: 200, display: 'flex', flexDirection: 'column', gap: 40 }}>

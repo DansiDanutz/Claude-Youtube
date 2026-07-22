@@ -16,12 +16,14 @@ in Boston, battery-cut + grounded line, "more steadily without the batteries" (r
 no invented verbatim quotes), two hours of dispatches on auroral current, Loomis connecting the
 reports. No contested claims used (no Royce, no injuries beyond "stunned", no revenue).
 
-**Animated characters, never cutouts:** arlo-talk generated this session via the proven xAI i2v
-lane (ANIMATION-PROMPTS.md TALK template, 65s gen) and keyed with `hyperframes
-remove-background` -> `arlo-talk-alpha.webm`, joining the motion library. Cast: Arlo (storyteller,
-talk + point), Elena (stakes report), Zoe (reveal payoff) — all looping OffthreadVideo via
-`MotionChar`. Real people appear as period-styled STILL portraits (Carrington, Prescott, Loomis)
-generated on the xAI subscription lane as 1859 steel-engraving illustrations.
+**Environment-native animation, never generic presenters (Dan, 2026-07-22):** the first cut
+composited the library presenter cast (Arlo/Elena/Zoe) into the 1859 night world — rejected:
+out-of-world characters add no value and break immersion. Replaced with three scene clips
+generated FOR this film (new prompts, t2i still -> xAI i2v, ~63s each): the operator at his key
+under the red sky (CtPromise), the sparking relay with smoldering tape (CtStakes), the
+observatory sun projection (CtCarrington) — looping in framed `FootageCard` insets. Real people
+appear as period steel-engraving STILL portraits (Carrington, Prescott, Loomis). The presenter
+motion library remains for channel-brand films only (danslab-profile), never historical stories.
 
 | # | Dimension | Score | Evidence |
 |---|---|---|---|

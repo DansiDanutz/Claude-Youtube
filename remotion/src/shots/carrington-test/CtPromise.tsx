@@ -3,8 +3,7 @@ import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { COLORS, EASINGS } from '../../brand';
 import { FONT_DISPLAY, FONT_BODY, FONT_MONO } from '../../fonts';
 import { CLAMP } from '../../lib/kit';
-import { MotionChar } from '../../lib/profilekit';
-import { NightBg, AuroraCurtains, NightTag, WireMap } from '../../lib/carringtonkit';
+import { NightBg, AuroraCurtains, NightTag, WireMap, FootageCard } from '../../lib/carringtonkit';
 
 // =============================================================================
 // Carrington 2/7 — the promise (lands by 0:15 global). One thin wire joins
@@ -46,9 +45,9 @@ const CtPromise: React.FC = () => {
         History never recorded their names. Only their <span style={{ color: COLORS.warn, fontWeight: 600 }}>signal</span>.
       </div>
 
-      {/* Arlo, the storyteller, walks the promise in */}
-      <div style={{ position: 'absolute', right: -230, bottom: -10 }}>
-        <MotionChar name="arlo-talk" h={620} start={CHAR} />
+      {/* the operator at his key under the red sky — footage made for this scene */}
+      <div style={{ position: 'absolute', right: 120, bottom: 110 }}>
+        <FootageCard src="projects/carrington-test/scene-operator.mp4" caption="THE NIGHT SHIFT, BOSTON" start={CHAR} w={600} accent={COLORS.danger} />
       </div>
     </AbsoluteFill>
   );

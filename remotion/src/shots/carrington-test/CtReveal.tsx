@@ -3,7 +3,6 @@ import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { COLORS, EASINGS } from '../../brand';
 import { FONT_DISPLAY, FONT_BODY, FONT_MONO } from '../../fonts';
 import { CLAMP } from '../../lib/kit';
-import { MotionChar } from '../../lib/profilekit';
 import { NightBg, AuroraCurtains, NightTag, PortraitCard } from '../../lib/carringtonkit';
 
 // =============================================================================
@@ -18,7 +17,6 @@ const DIAG = 26;
 const L1 = 50;
 const L2 = 130;
 const BIG = 210;
-const CHAR = 220;
 const RES = 300;
 
 const CtReveal: React.FC = () => {
@@ -80,10 +78,6 @@ const CtReveal: React.FC = () => {
         <PortraitCard src="projects/carrington-test/portrait-loomis.png" name="Elias Loomis" role="YALE · CONNECTED THE REPORTS" start={L2} w={200} accent={COLORS.warn} />
       </div>
 
-      {/* Zoe reacts to the reveal */}
-      <div style={{ position: 'absolute', right: -240, bottom: -12 }}>
-        <MotionChar name="zoe-react-wow" h={560} start={CHAR} />
-      </div>
     </AbsoluteFill>
   );
 };

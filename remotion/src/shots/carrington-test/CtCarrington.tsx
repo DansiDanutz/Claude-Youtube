@@ -3,8 +3,7 @@ import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { COLORS, EASINGS } from '../../brand';
 import { FONT_DISPLAY, FONT_BODY, FONT_MONO } from '../../fonts';
 import { CLAMP } from '../../lib/kit';
-import { MotionChar } from '../../lib/profilekit';
-import { NightBg, NightTag, PortraitCard } from '../../lib/carringtonkit';
+import { NightBg, NightTag, PortraitCard, FootageCard } from '../../lib/carringtonkit';
 
 // =============================================================================
 // Carrington 4/7 — 17.6 hours earlier. Carrington's projected Sun, two white
@@ -79,9 +78,9 @@ const CtCarrington: React.FC = () => {
         </div>
       </div>
 
-      {/* Arlo points the sun diagram in from the right edge, below the portrait */}
-      <div style={{ position: 'absolute', right: -320, bottom: -14 }}>
-        <MotionChar name="arlo-point" h={440} start={110} flip />
+      {/* inside the observatory — footage made for this scene */}
+      <div style={{ position: 'absolute', right: 150, bottom: 66 }}>
+        <FootageCard src="projects/carrington-test/scene-observatory.mp4" caption="THE OBSERVATION" start={110} w={380} accent={COLORS.warn} />
       </div>
     </AbsoluteFill>
   );
