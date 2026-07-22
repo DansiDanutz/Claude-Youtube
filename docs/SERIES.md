@@ -24,7 +24,7 @@ Title card layout (see `DoLogoIntro` / outro): big serif **NAME** ("The Survivor
 | **05** | **The Brain** | ✅ shipped — Hermes: judgment, perceiving the board, scoring, routing, reasoning, learning & upgrading the fleet; real Paperclip screenshot |
 | **06** | **The Marketplace** | ✅ shipped — Nervix: the poker analogy (life = poker, agents need a table), why it was built, earn/hire/barter, powered by Hermes; real screenshots |
 | **07** | **The Factory** | ✅ shipped — the pipeline that builds the series: script → voice → scenes-as-code → 4K render → assembly → delivery; the meta reveal + the flywheel |
-| **08** | **The Studio** | 🎬 this one — the Mac Studio as the ground floor, and David, the resident right hand: the 07:00 briefing, the constitution, the lifeline, the wheel with a desk at the hub |
+| **08** | **The Studio** | ✅ shipped — the Mac Studio as the ground floor, and David, the resident right hand: the 07:00 briefing, the constitution, the lifeline, the wheel with a desk at the hub |
 | 09 | The Player | Dan himself — the finale tease |
 
 Each episode ends by naming the **next** one (number + name) so the series chains.
