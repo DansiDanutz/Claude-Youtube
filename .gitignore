@@ -63,9 +63,11 @@ videos/**/*.wav
 # ffmpeg concat lists are generated at assemble time
 videos/*/work/*concat*.txt
 
-# presenter cutouts are regenerable from source clips via tools/cutout_video.py
+# presenter library: manifest.json is the committed contract; the raw source
+# clips and generated cutouts are media, rebuilt via tools/presenter_library.py
 media/library/presenter/*.webm
 media/library/presenter/*.mov
+media/library/presenter/source/
 
 # compiled from tools/matte/PersonMatte.swift on first use
 tools/matte/person-matte

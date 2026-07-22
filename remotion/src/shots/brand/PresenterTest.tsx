@@ -1,8 +1,8 @@
 import React from 'react';
-import { AbsoluteFill, staticFile } from 'remotion';
+import { AbsoluteFill } from 'remotion';
 import { DL, DL_SANS, DL_SERIF, SiteBg, Kicker } from '../../lib/danslab';
 import { Headline } from '../../lib/ep03kit';
-import { Presenter, PresenterTag } from '../../lib/presenter';
+import { PresenterFrom, PresenterTag } from '../../lib/presenter';
 
 // Proof shot for the presenter layer: a cut-out clip standing inside a normal
 // DansLab scene. If the background of the clip is visible as a grey box, the
@@ -21,7 +21,8 @@ const PresenterTest: React.FC = () => (
       </div>
     </div>
 
-    <Presenter src={staticFile('library/presenter/_selftest.webm')} at={10} side="right" h={880} inset={140} />
+    {/* renders once dan-open exists in the library; skips cleanly until then */}
+    <PresenterFrom id="dan-open" at={10} side="right" h={880} inset={140} />
     <PresenterTag name="Dan Semenescu" role="DANSLAB · FOUNDER" at={40} side="right" inset={140} bottom={40} />
   </AbsoluteFill>
 );

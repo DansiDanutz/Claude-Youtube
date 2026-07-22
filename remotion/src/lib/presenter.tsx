@@ -1,6 +1,7 @@
 import React from 'react';
-import { useCurrentFrame, interpolate, OffthreadVideo } from 'remotion';
+import { useCurrentFrame, interpolate, OffthreadVideo, staticFile } from 'remotion';
 import { DL, DL_MONO, DL_SANS, DL_EASE, DCLAMP } from './danslab';
+import manifest from '../../../media/library/presenter/manifest.json';
 
 // ── The presenter layer ─────────────────────────────────────────────────────
 // Dan on camera, cut out of his background, standing inside the scene — so an
@@ -103,4 +104,41 @@ export const PresenterTag: React.FC<{
       )}
     </div>
   );
+};
+
+// ── The cast sheet ──────────────────────────────────────────────────────────
+// Scenes name a BEAT, never a file. Clips can be re-shot, re-cut or replaced
+// wholesale and no scene has to change. media/library/presenter/manifest.json
+// is written by tools/presenter_library.py and is the single source of truth.
+
+type Clip = {
+  id: string;
+  file: string;
+  beat: string;
+  durationSeconds: number;
+  width: number;
+  height: number;
+  usable: boolean;
+};
+
+const CLIPS: Clip[] = (manifest as { clips: Clip[] }).clips;
+
+export const presenterClip = (id: string): Clip | undefined => CLIPS.find((c) => c.id === id);
+
+/** Every clip currently in the library, for pickers and contact sheets. */
+export const presenterCast = (): Clip[] => CLIPS.filter((c) => c.usable);
+
+/**
+ * Presenter, addressed by library ID rather than by path.
+ *
+ * Renders nothing if the ID is missing or the clip failed its matte audit —
+ * a scene should degrade to graphics-only rather than ship a ghost, and a
+ * missing avatar must never take a whole episode render down.
+ */
+export const PresenterFrom: React.FC<
+  { id: string } & Omit<React.ComponentProps<typeof Presenter>, 'src'>
+> = ({ id, ...rest }) => {
+  const clip = presenterClip(id);
+  if (!clip || !clip.usable) return null;
+  return <Presenter src={staticFile(`library/presenter/${clip.file}`)} {...rest} />;
 };
