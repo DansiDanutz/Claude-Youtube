@@ -13,6 +13,7 @@ your cut. No screen recording, no video editor. The right skill is picked from t
 | remove background noise / isolate voice | `/clean-audio` | a cleaned master (levels preserved) |
 | add SFX / sound-design a beat | `/suggest-sfx` | `videos/<project>/work/sfx-plan.json` + an audition mix |
 | package a video / titles + thumbnails | `/packaging` | `videos/<project>/packaging/` (1 title × 3 thumbnail bets + rendered thumbs) |
+| develop the story: research + treatment via multi-model council | `/story-council` (`~/Desktop/DavidAi/Council/council.py`) | `STORY.md` beat sheet + `RESEARCH.md` to write the script against |
 | research a topic / pull real source pages before writing | `tools/crawl_web.py` | sourced Markdown in `videos/<project>/work/research/` |
 | upload it | `tools/yt_upload.py` | a private draft on YouTube |
 
