@@ -1,0 +1,6 @@
+file '/Users/davidai/Projects/Claude-Youtube/remotion/out/DpHook.mp4'
+file '/Users/davidai/Projects/Claude-Youtube/remotion/out/DpStakes.mp4'
+file '/Users/davidai/Projects/Claude-Youtube/remotion/out/DpProof.mp4'
+file '/Users/davidai/Projects/Claude-Youtube/remotion/out/DpDay.mp4'
+file '/Users/davidai/Projects/Claude-Youtube/remotion/out/DpVision.mp4'
+file '/Users/davidai/Projects/Claude-Youtube/remotion/out/DpEnd.mp4'
