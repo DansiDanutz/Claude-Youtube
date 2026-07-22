@@ -6,6 +6,8 @@
 # Then run tools as `python tools/<tool>.py ...` with that venv active.
 #
 # Also required on PATH (not pip): ffmpeg + ffprobe, and Node.js (for the Remotion render step).
+# tools/crawl_web.py also wants the Crawl4AI CLI on PATH (its own global install, not a venv dep):
+#     pipx install "crawl4ai[all]" && crawl4ai-setup
 
 requests                  # transcribe.py
 Pillow                    # gen_thumbnail.py (image handling)

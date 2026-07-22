@@ -13,6 +13,7 @@ your cut. No screen recording, no video editor. The right skill is picked from t
 | remove background noise / isolate voice | `/clean-audio` | a cleaned master (levels preserved) |
 | add SFX / sound-design a beat | `/suggest-sfx` | `videos/<project>/work/sfx-plan.json` + an audition mix |
 | package a video / titles + thumbnails | `/packaging` | `videos/<project>/packaging/` (1 title × 3 thumbnail bets + rendered thumbs) |
+| research a topic / pull real source pages before writing | `tools/crawl_web.py` | sourced Markdown in `videos/<project>/work/research/` |
 | upload it | `tools/yt_upload.py` | a private draft on YouTube |
 
 The pipeline order is: **cut → visuals → voice → SFX → packaging → upload.**
@@ -59,6 +60,12 @@ current brand (wordmark, palette, type) so you can see it. `/brand-setup` uses i
   Then either activate the venv or call `venv/Scripts/python tools/<tool>.py`. A bare `python` that
   resolves to a system interpreter will hit `ModuleNotFoundError` (requests, Pillow, google-*) — that
   error means you're not on the venv. `ffmpeg`/`ffprobe` and `node`/`npx` must be on PATH (not pip).
+
+- **Research is sourced, never recalled.** Before writing a script that makes factual claims, pull
+  the real pages with `python tools/crawl_web.py videos/<project> <url>...` and write against
+  `videos/<project>/work/research/`. It shells out to the Crawl4AI CLI (`crwl`) — a global install,
+  not a venv dep: `pipx install "crawl4ai[all]" && crawl4ai-setup`. Pairs with `capture_web.py`,
+  which screenshots the same pages for fake-screencast beats: crawl to learn, capture to show.
 
 - **API keys** live in `.env` at the repo root (copy `.env.example`). Never commit `.env`.
   `ASSEMBLYAI_API_KEY` = transcription · `ELEVENLABS_API_KEY` = voice-isolate + SFX + music ·
