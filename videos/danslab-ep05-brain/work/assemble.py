@@ -11,11 +11,11 @@ TAG = "4k" if "--tag" in sys.argv and sys.argv[sys.argv.index("--tag") + 1] == "
 ORDER = [
     ("NIntro", None, 0), ("NRecap", "s01_recap", 0.8),
     ("NB1", None, 0), ("NDefine", "s02_define", 0.8), ("NHermes", "s02b_hermes", 0.8), ("NProblem", "s03_problem", 0.8),
-    ("NAttention", "s03b_attention", 0.8), ("NPerceive", "s04_perceive", 0.8),
+    ("NAttention", "s03b_attention", 0.8), ("NPerceive", "s04_perceive", 0.8), ("NBoard", "s04b_board", 0.8),
     ("NB2", None, 0), ("NThink", "s05_think", 0.8), ("NScore", "s06_score", 0.8), ("NQueue", "s06b_queue", 0.8),
     ("NRoute", "s07_route", 0.8), ("NLanguage", "s07b_language", 0.8), ("NReason", "s08_reason", 0.8), ("NOptions", "s08b_options", 0.8),
-    ("NB3", None, 0), ("NWatch", "s09_watch", 0.8), ("NLearn", "s10_learn", 0.8), ("NUpgrade", "s11_upgrade", 0.8),
-    ("NNight", "s11b_night", 0.8), ("NResult", "s12_result", 0.8), ("NCliff", "s13_cliff", 0.8), ("NOutro", "s14_outro", 1.0),
+    ("NB3", None, 0), ("NWatch", "s09_watch", 0.8), ("NLearn", "s10_learn", 0.8), ("NDossier", "s10b_dossier", 0.8), ("NUpgrade", "s11_upgrade", 0.8),
+    ("NNight", "s11b_night", 0.8), ("NClock", "s11c_clock", 0.8), ("NResult", "s12_result", 0.8), ("NLimits", "s12b_limits", 0.8), ("NCliff", "s13_cliff", 0.8), ("NOutro", "s14_outro", 1.0),
 ]
 
 def dur(path):
@@ -52,6 +52,11 @@ for i, (s, vo, off) in enumerate(ORDER):
     cues.append((i, 0.0, f, 0.40))
 def sc(name): return [i for i,(s,_,_) in enumerate(ORDER) if s==name][0]
 beats = {
+ "NBoard":[(2.4,"ui-click-soft",.32),(4.0,"ui-click-soft",.3),(6.2,"scan-hum",.3),(10.4,"ui-click-soft",.3),(19.0,"warm-shimmer",.38)],
+ "NDossier":[(2.6,"page-flip",.36),(3.8,"page-flip",.36),(5.0,"page-flip",.36),(6.2,"page-flip",.36),(10.4,"warm-shimmer",.4)],
+ "NClock":[(3.0,"clock-tick-soft",.34),(3.9,"clock-tick-soft",.32),(4.8,"clock-tick-soft",.3),(5.7,"clock-tick-soft",.28),(12.4,"riser-soft",.4),(13.6,"chime-reward",.44)],
+ "NLimits":[(3.8,"knock-solid",.42),(4.7,"knock-solid",.38),(5.6,"knock-solid",.34),(8.6,"ui-send",.4),(9.8,"ui-send",.36),(11.2,"ui-send",.36),(14.6,"ui-send",.44)],
+
  "NIntro":[(0.9,"impact-deep-soft",.5),(1.4,"sparkle-soft",.4),(5.0,"pop-reveal",.42)],
  "NRecap":[(11.0,"riser-soft",.38),(11.4,"chime-magic",.5)],
  "NB1":[(1.5,"impact-soft",.45),(2.4,"pop-reveal",.4)],
@@ -90,8 +95,8 @@ print(f"sfx: {len(cues)} cues")
 
 # MUSIC — reflective open -> tech middle -> reflective close (present bed)
 subprocess.run(["ffmpeg","-y","-v","error","-i",f"{MUSIC}/cinematic-min.mp3","-af","atrim=0:80","-ar","48000","-ac","2",f"{WORK}/mix/mA.wav"], check=True)
-subprocess.run(["ffmpeg","-y","-v","error","-stream_loop","4","-i",f"{MUSIC}/tech-pulse.mp3","-af","atrim=0:270","-ar","48000","-ac","2",f"{WORK}/mix/mB.wav"], check=True)
-subprocess.run(["ffmpeg","-y","-v","error","-i",f"{MUSIC}/cinematic-min.mp3","-af","atrim=0:95","-ar","48000","-ac","2",f"{WORK}/mix/mC.wav"], check=True)
+subprocess.run(["ffmpeg","-y","-v","error","-stream_loop","8","-i",f"{MUSIC}/tech-pulse.mp3","-af","atrim=0:360","-ar","48000","-ac","2",f"{WORK}/mix/mB.wav"], check=True)
+subprocess.run(["ffmpeg","-y","-v","error","-i",f"{MUSIC}/cinematic-min.mp3","-af","atrim=0:140","-ar","48000","-ac","2",f"{WORK}/mix/mC.wav"], check=True)
 subprocess.run(["ffmpeg","-y","-v","error","-i",f"{WORK}/mix/mA.wav","-i",f"{WORK}/mix/mB.wav","-i",f"{WORK}/mix/mC.wav",
                 "-filter_complex","[0:a][1:a]acrossfade=d=3:c1=tri:c2=tri[ab];[ab][2:a]acrossfade=d=3:c1=tri:c2=tri[abc]","-map","[abc]",f"{WORK}/mix/music_long.wav"], check=True)
 fadeout = float(TOTAL) - 5.0
