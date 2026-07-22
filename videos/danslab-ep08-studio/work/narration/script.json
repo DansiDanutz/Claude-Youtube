@@ -1,0 +1,70 @@
+{
+  "episode": "danslab-ep08-studio",
+  "voice": "Brian",
+  "scenes": [
+    {
+      "id": "s01_recap",
+      "text": "By now, you know the company. The survivors in the cloud. The trader who prints her book every single night. The overseer that sees everything. The brain that decides. The marketplace where knowledge finally gets paid. And the factory that films it all. But every one of them lives in the cloud — rented metal, far away, in somebody else's building. And here is the thing about clouds. Every single one has a ground floor."
+    },
+    {
+      "id": "s02_desk",
+      "text": "This is the ground floor. A Mac Studio. One quiet box of aluminium, on an ordinary desk, in Cluj-Napoca, Romania. It does not look like the headquarters of anything. It is the headquarters of everything you have watched."
+    },
+    {
+      "id": "s03_home",
+      "text": "Because the cloud does the work — but the desk holds the truth. The fleet's memory lives here. Its skills. Its design systems. Its playbooks. The film factory from last episode? It runs right here. Every frame of every episode was rendered inches from Dan's coffee cup."
+    },
+    {
+      "id": "s04_david",
+      "text": "And this machine is not empty. It has a resident. An OpenClaw agent named David. Not a droplet. Not a rented server. David lives on the Mac itself — at arm's length from the founder. The right hand."
+    },
+    {
+      "id": "s05_role",
+      "text": "Think about the difference. Sienna trades. Dexter builds. Memo runs the frameworks. Nano builds the marketplace. They all have jobs. David has something else. David has the house. The one agent whose entire responsibility is the place where everything else gets decided."
+    },
+    {
+      "id": "s06_board",
+      "text": "And from this chair, nothing is out of sight. Paperclip — the control plane you met in episode four — runs right here on the desk. Every agent, every project, every run, one screen away. The company fits in a single window."
+    },
+    {
+      "id": "s07_morning",
+      "text": "Seven o'clock, every morning. Before Dan opens his eyes, David has already been to work. Fleet health — all four droplets, checked. The CEO brief — what happened overnight, what earned money, what needs a decision — typed up and waiting on Telegram. Dan does not wake up to the company. He wakes up to a briefing about it."
+    },
+    {
+      "id": "s08_watch",
+      "text": "And the watching never stops. A guard sits on the fleet's error stream — if an agent hits a critical failure at three in the morning, it escalates. Teacher sessions run at midday and in the evening, so the agents keep learning. Thirty-eight scheduled jobs, in a single day. The clock on that desk never truly sleeps."
+    },
+    {
+      "id": "s09_rules",
+      "text": "But maybe the most important thing on this Mac is not a program at all. It is a constitution. Hard rules, burned in. Never break a running Telegram bot — that is the team's lifeline. Never delete a repository. Always branch — never force-push over someone's work. Back up the live config before you touch it. Machines follow rules exactly as written. Which is why the rules had to be written like laws."
+    },
+    {
+      "id": "s10_lifeline",
+      "text": "And the lifeline itself? Telegram. Every escalation, every approval, every request lands on Dan's phone. Sienna wants to add margin — phone. A deploy touches real billing — phone. The desk talks to the pocket. That is the entire chain of command."
+    },
+    {
+      "id": "s11_memory",
+      "text": "Here is what makes the desk irreplaceable. A droplet can be rebuilt in an hour — wipe one, and Dexter heals it. You watched that happen in episode two. But memory cannot be rented. What worked. What failed. Which lesson came from which disaster. That is what the Mac holds. This company can lose any server it owns. It cannot lose the desk."
+    },
+    {
+      "id": "s12_numbers",
+      "text": "So put numbers on the ground floor. Thirty-plus agents, orchestrated from here. Five machines — four in the cloud, one on the desk. Thirty-eight scheduled jobs today. Seven finished films. And one human."
+    },
+    {
+      "id": "s13_wheel",
+      "text": "That is the real shape of DansLab. Not a pyramid, with a boss on top. A wheel — with a desk at the hub. The trader, the overseer, the brain, the marketplace, the factory — all of it spinning around one quiet machine, and one person deciding what actually matters."
+    },
+    {
+      "id": "s14_night",
+      "text": "And while you were watching this — the wheel kept turning. Somewhere, a trade closed. A task settled on the marketplace. And on the desk, a briefing is already being drafted for tomorrow. Seven o'clock, sharp. The Studio will be awake before Dan is."
+    },
+    {
+      "id": "s15_cliff",
+      "text": "Which leaves exactly one character you have never properly met. The one who built the desk. Hired the machines. Wrote the laws. Lost the servers, got hacked twice, and kept going anyway. Next time — the player himself."
+    },
+    {
+      "id": "s16_outro",
+      "text": "This was DansLab, number eight. The Studio. Machines in the cloud. A brain, a marketplace, a factory. And underneath all of it — one desk, one right hand, one human. Subscribe, so you are here when we finally meet him. Build. Ship. Repeat."
+    }
+  ]
+}

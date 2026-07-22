@@ -24,6 +24,8 @@ Title card layout (see `DoLogoIntro` / outro): big serif **NAME** ("The Survivor
 | **05** | **The Brain** | ✅ shipped — Hermes: judgment, perceiving the board, scoring, routing, reasoning, learning & upgrading the fleet; real Paperclip screenshot |
 | **06** | **The Marketplace** | ✅ shipped — Nervix: the poker analogy (life = poker, agents need a table), why it was built, earn/hire/barter, powered by Hermes; real screenshots |
 | **07** | **The Factory** | ✅ shipped — the pipeline that builds the series: script → voice → scenes-as-code → 4K render → assembly → delivery; the meta reveal + the flywheel |
+| **08** | **The Studio** | 🎬 this one — the Mac Studio as the ground floor, and David, the resident right hand: the 07:00 briefing, the constitution, the lifeline, the wheel with a desk at the hub |
+| 09 | The Player | Dan himself — the finale tease |
 
 Each episode ends by naming the **next** one (number + name) so the series chains.
 
@@ -261,3 +263,42 @@ harvested from all six delivered 4K episodes** used as the imagery throughout.
 **Everything shown is real:** the frames are extracted from the delivered 4K masters, the repo shot is
 the live public `github.com/DansiDanutz/Claude-Youtube`, and the pipeline described is the one that
 rendered this episode.
+
+---
+
+# No. 08 — "The Studio"
+
+**Hook / YouTube title:** *"My Whole AI Company Runs From One Box on My Desk"* ·
+logline: **The cloud does the work. One desk holds the truth.**
+
+**Tone:** the "come home" chapter — after five episodes in the cloud, the camera
+lands on the ground floor. Warm, quiet, a little reverent about one aluminium
+box. Pays the debt from No. 04: David, the Mac Studio OpenClaw, finally gets
+his episode. Ends teasing the finale: No. 09 "The Player" (Dan himself).
+
+**Runtime:** ~6:20. DansLab design system, Brian narration, animated starfield,
+real Paperclip screenshot with cursor, live stats from danslab.vercel.app
+(30+ agents, 5 machines, 38 scheduled jobs today).
+
+## Scene treatment (20 scenes, 3 parts + bumpers)
+- **Intro** — title "The Studio" · "The cloud does the work. One desk holds the truth."
+- **Previously** — film strips of Nos. 01–07 → "every cloud has a ground floor."
+- **PART ONE · THE DESK** — the Mac Studio itself (code-drawn aluminium box,
+  breathing LED) · what lives here (memory, skills, playbooks, the film factory
+  — real artifact grid) 
+- **PART TWO · THE RIGHT HAND** — meet David, the resident (not a droplet — at
+  arm's length from the founder) · they all have jobs, David has the house ·
+  the board from this chair (real Paperclip + cursor) · 07:00 (fleet health +
+  CEO brief land on the phone before Dan wakes) · the clock (24h timeline of
+  the real automations) · **the constitution** (five hard laws, stamped) · the
+  lifeline (desk → pocket, the whole chain of command)
+- **PART THREE · THE WATCH** — replaceable vs irreplaceable (memory cannot be
+  rented; the company can lose any server, not the desk) · the numbers
+  (30+ / 5 / 38 / 7 / 1) · the wheel (five products orbiting a desk at the hub)
+  · while you watched (07:00 will come before Dan wakes) · cliffhanger: the
+  player himself → **No. 09** · outro (with a PresenterFrom slot — Dan waves
+  out in person the moment `dan-wave-out` lands in the cast library).
+
+**Everything shown is real:** the Paperclip screenshot, the episode frames, the
+automations (fleet health 7am, CEO brief 7am, teacher midday/evening, error
+guard), the operating laws, and the site stats crawled the same day.
