@@ -36,6 +36,14 @@ import urllib.parse
 
 TIMEOUT_S = 90
 
+# Most of the pages worth crawling for these videos are our own SPAs (nervix.ai,
+# danslab.vercel.app, the Sienna page). Without a settle delay `crwl` returns the
+# pre-hydration shell — literally "Loading..." — so always give the JS time to
+# paint before reading the DOM.
+SETTLE = "wait_for=css:body,delay_before_return_html=4,page_timeout=45000"
+RETRY_SETTLE = "wait_for=css:body,delay_before_return_html=9,page_timeout=60000"
+THIN_MD = 400  # chars — below this we assume we caught the shell, not the page
+
 
 def find_crwl():
     """Locate the Crawl4AI CLI (PATH, or the usual pipx bin dir)."""
@@ -63,13 +71,28 @@ def first_heading(md, url):
 
 
 def crawl(crwl, url):
-    """Return the page as Markdown, or raise with a readable reason."""
+    """Return the page as Markdown, or raise with a readable reason.
+
+    A thin result means we almost certainly read the app shell before hydration,
+    so retry once with a longer settle before giving up on it.
+    """
+    md = _run(crwl, url, SETTLE)
+    if len(md) < THIN_MD:
+        slow = _run(crwl, url, RETRY_SETTLE)
+        if len(slow) > len(md):
+            md = slow
+    if not md:
+        raise RuntimeError("empty result")
+    return md
+
+
+def _run(crwl, url, crawler_opts):
     proc = subprocess.run(
-        [crwl, url, "-o", "markdown"],
+        [crwl, "crawl", url, "-o", "markdown", "-c", crawler_opts],
         capture_output=True, text=True, timeout=TIMEOUT_S,
     )
     md = (proc.stdout or "").strip()
-    if not md:
+    if not md and proc.returncode != 0:
         raise RuntimeError((proc.stderr or "empty result").strip()[:300])
     return md
 
