@@ -80,7 +80,7 @@ const CtCarrington: React.FC = () => {
 
       {/* inside the observatory — footage made for this scene */}
       <div style={{ position: 'absolute', right: 150, bottom: 66 }}>
-        <FootageCard src="projects/carrington-test/scene-observatory.mp4" caption="THE OBSERVATION" start={110} w={380} accent={COLORS.warn} />
+        <FootageCard src="projects/carrington-test/scene-observatory.mp4" caption="THE OBSERVATION" start={110} w={380} accent={COLORS.warn} durFrames={450 - 110} />
       </div>
     </AbsoluteFill>
   );

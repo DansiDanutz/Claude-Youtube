@@ -21,7 +21,8 @@ composited the library presenter cast (Arlo/Elena/Zoe) into the 1859 night world
 out-of-world characters add no value and break immersion. Replaced with three scene clips
 generated FOR this film (new prompts, t2i still -> xAI i2v, ~63s each): the operator at his key
 under the red sky (CtPromise), the sparking relay with smoldering tape (CtStakes), the
-observatory sun projection (CtCarrington) — looping in framed `FootageCard` insets. Real people
+observatory sun projection (CtCarrington) — framed `FootageCard` insets that play ONCE, slowed
+to span their full on-screen window (no loop restart — Dan 2026-07-22). Real people
 appear as period steel-engraving STILL portraits (Carrington, Prescott, Loomis). The presenter
 motion library remains for channel-brand films only (danslab-profile), never historical stories.
 

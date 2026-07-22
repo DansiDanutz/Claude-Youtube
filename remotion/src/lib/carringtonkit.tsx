@@ -4,7 +4,7 @@
 // blood-red aurora as the single big color note (brand danger rose + gold),
 // green kept for the "signal alive" moments. Sora/Inter/JetBrains throughout.
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, Loop, OffthreadVideo, staticFile, useCurrentFrame } from 'remotion';
+import { AbsoluteFill, Img, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from 'remotion';
 import { COLORS, EASINGS } from '../brand';
 import { FONT_DISPLAY, FONT_MONO } from '../fonts';
 
@@ -200,25 +200,31 @@ export const PortraitCard: React.FC<{
   );
 };
 
-// ---- period footage inset: looping i2v scene clip in a framed card --------
+// ---- period footage inset: i2v scene clip in a framed card ----------------
 // Clips are generated PER SCENE for this film (media/projects/carrington-test/
 // scene-*.mp4) — environment-native footage, never generic presenter cutouts.
-// Grok i2v clips are ~6s @ 24fps (~145 frames); loop early so the tail never freezes.
-const FOOTAGE_LOOP_FRAMES = 172;
+// The clip plays ONCE, slowed so it covers its full on-screen window (no loop
+// restart — Dan 2026-07-22). Grok i2v source ≈ 6.04s @ 24fps ≈ 181 comp frames
+// at 30fps; playbackRate = 181 / (visible window + margin) so it never runs out.
+const FOOTAGE_NATIVE_FRAMES = 181;
 
 export const FootageCard: React.FC<{
   src: string; caption: string; start?: number; w?: number; accent?: string;
-}> = ({ src, caption, start = 0, w = 620, accent = COLORS.danger }) => {
+  durFrames?: number; // frames the card stays on screen (from `start` to shot end)
+}> = ({ src, caption, start = 0, w = 620, accent = COLORS.danger, durFrames = 170 }) => {
   const frame = useCurrentFrame();
   const op = interpolate(frame, [start, start + 16], [0, 1], { ...KCLAMP, easing: EASINGS.easeOut });
   const y = interpolate(frame, [start, start + 18], [30, 0], { ...KCLAMP, easing: EASINGS.easeOut });
   const h = (w * 9) / 16;
+  const rate = Math.min(1, FOOTAGE_NATIVE_FRAMES / (durFrames + 14));
   return (
     <div style={{ opacity: op, transform: `translateY(${y}px)`, width: w }}>
       <div style={{ width: w, height: h, borderRadius: 16, overflow: 'hidden', border: `1px solid ${COLORS.d600}`, boxShadow: '0 18px 54px rgba(0,0,0,0.5)', position: 'relative', background: COLORS.d800 }}>
-        <Loop durationInFrames={FOOTAGE_LOOP_FRAMES}>
-          <OffthreadVideo src={staticFile(src)} muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </Loop>
+        {/* the clip's clock starts when the card appears, so one slowed pass
+            spans the whole visible window */}
+        <Sequence from={start} layout="none">
+          <OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ width: w, height: h, objectFit: 'cover' }} />
+        </Sequence>
         <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 5, background: accent }} />
       </div>
       <div style={{ marginTop: 16, display: 'flex', alignItems: 'center', gap: 14 }}>

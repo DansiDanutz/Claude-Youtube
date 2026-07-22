@@ -47,7 +47,7 @@ const CtPromise: React.FC = () => {
 
       {/* the operator at his key under the red sky — footage made for this scene */}
       <div style={{ position: 'absolute', right: 120, bottom: 110 }}>
-        <FootageCard src="projects/carrington-test/scene-operator.mp4" caption="THE NIGHT SHIFT, BOSTON" start={CHAR} w={600} accent={COLORS.danger} />
+        <FootageCard src="projects/carrington-test/scene-operator.mp4" caption="THE NIGHT SHIFT, BOSTON" start={CHAR} w={600} accent={COLORS.danger} durFrames={390 - CHAR} />
       </div>
     </AbsoluteFill>
   );

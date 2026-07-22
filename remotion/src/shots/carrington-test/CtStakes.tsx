@@ -42,7 +42,7 @@ const CtStakes: React.FC = () => {
 
       {/* the relay sparking — footage made for this scene */}
       <div style={{ position: 'absolute', left: 130, top: 330 }}>
-        <FootageCard src="projects/carrington-test/scene-relay.mp4" caption="INDUCED CURRENT, ARRIVING" start={14} w={540} accent={COLORS.danger} />
+        <FootageCard src="projects/carrington-test/scene-relay.mp4" caption="INDUCED CURRENT, ARRIVING" start={14} w={540} accent={COLORS.danger} durFrames={480 - 14} />
       </div>
 
       <div style={{ position: 'absolute', left: 740, right: 130, top: 200, display: 'flex', flexDirection: 'column', gap: 40 }}>
