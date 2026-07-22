@@ -34,27 +34,68 @@ const seededRandom = (seed: number): number => {
   const x = Math.sin(seed * 9999) * 10000;
   return x - Math.floor(x);
 };
-const STARS = Array.from({ length: 70 }, (_, i) => ({
+const STARS = Array.from({ length: 92 }, (_, i) => ({
   x: seededRandom(i * 3 + 1) * 1920,
   y: seededRandom(i * 7 + 2) * 1080,
-  s: 1 + seededRandom(i * 11 + 3) * 2.2,
-  o: 0.12 + seededRandom(i * 13 + 5) * 0.4,
-  warm: seededRandom(i * 17 + 7) > 0.8,
+  s: 0.8 + seededRandom(i * 11 + 3) * 2.2,
+  o: 0.10 + seededRandom(i * 13 + 5) * 0.4,
+  warm: seededRandom(i * 17 + 7) > 0.82,
+  tw: 0.5 + seededRandom(i * 19 + 9) * 1.8,        // twinkle speed
+  ph: seededRandom(i * 23 + 11) * Math.PI * 2,     // twinkle phase
+  depth: 0.25 + seededRandom(i * 29 + 13) * 0.75,  // parallax depth
+}));
+// far-off satellites: small dots crossing slowly on long diagonals with a faint trail
+const SATS = Array.from({ length: 3 }, (_, i) => ({
+  ay: 0.12 + seededRandom(i * 5 + 2) * 0.6,        // vertical anchor
+  slope: (seededRandom(i * 13 + 6) - 0.5) * 620,   // vertical drift over the crossing
+  spd: 0.00040 + seededRandom(i * 17 + 8) * 0.00045,
+  size: 1.5 + seededRandom(i * 21 + 10) * 1.3,
+  off: seededRandom(i * 25 + 12),                  // loop phase offset
+  warm: seededRandom(i * 29 + 14) > 0.55,
 }));
 
-// Site backdrop: near-black + faint red glow + star specks + dotted grid
-export const SiteBg: React.FC<{ glow?: string }> = ({ glow = DL.red }) => (
-  <>
-    <AbsoluteFill style={{ backgroundColor: DL.bg }} />
-    <AbsoluteFill style={{ background: `radial-gradient(1200px 640px at 50% -10%, ${glow}14, transparent 60%)` }} />
-    <AbsoluteFill style={{ backgroundImage: `radial-gradient(#ffffff08 1px, transparent 1px)`, backgroundSize: '44px 44px' }} />
-    <AbsoluteFill>
-      {STARS.map((st, i) => (
-        <div key={i} style={{ position: 'absolute', left: st.x, top: st.y, width: st.s, height: st.s, borderRadius: '50%', background: st.warm ? DL.gold : '#ffffff', opacity: st.o }} />
-      ))}
-    </AbsoluteFill>
-  </>
-);
+// Site backdrop: near-black + faint glow + ANIMATED star specks (twinkle + drift)
+// + a few far-off satellites, and the dotted grid.
+export const SiteBg: React.FC<{ glow?: string }> = ({ glow = DL.red }) => {
+  const frame = useCurrentFrame();
+  return (
+    <>
+      <AbsoluteFill style={{ backgroundColor: DL.bg }} />
+      <AbsoluteFill style={{ background: `radial-gradient(1200px 640px at 50% -10%, ${glow}14, transparent 60%)` }} />
+      <AbsoluteFill style={{ backgroundImage: `radial-gradient(#ffffff08 1px, transparent 1px)`, backgroundSize: '44px 44px' }} />
+      <AbsoluteFill>
+        {STARS.map((st, i) => {
+          const tw = 0.5 + 0.5 * Math.sin(frame * 0.045 * st.tw + st.ph);   // 0..1 twinkle
+          const dx = Math.sin(frame / 300 + st.ph) * 9 * st.depth;          // gentle parallax drift
+          const dy = Math.cos(frame / 340 + st.ph) * 7 * st.depth;
+          return (
+            <div key={i} style={{ position: 'absolute', left: st.x + dx, top: st.y + dy, width: st.s, height: st.s, borderRadius: '50%', background: st.warm ? DL.gold : '#ffffff', opacity: st.o * (0.5 + 0.55 * tw), boxShadow: st.s > 2.2 ? `0 0 ${st.s * 2}px ${st.warm ? DL.gold : '#ffffff'}66` : undefined }} />
+          );
+        })}
+      </AbsoluteFill>
+      <AbsoluteFill>
+        <svg width="1920" height="1080" viewBox="0 0 1920 1080" style={{ position: 'absolute', inset: 0 }}>
+          {SATS.map((s, i) => {
+            const t = (frame * s.spd + s.off) % 1;                          // 0..1 loop
+            const x = -140 + t * 2200;
+            const y = s.ay * 1080 + (t - 0.5) * s.slope;
+            const dirLen = Math.hypot(2200, s.slope) || 1;
+            const tx = x - (2200 / dirLen) * 46, ty = y - (s.slope / dirLen) * 46;  // trail behind
+            const col = s.warm ? DL.gold : '#eaf2ff';
+            const fade = Math.min(1, t * 6, (1 - t) * 6);                    // fade at the edges
+            const blink = 0.55 + 0.25 * Math.sin(frame * 0.12 + s.off * 8);
+            return (
+              <g key={i} opacity={fade * blink}>
+                <line x1={tx} y1={ty} x2={x} y2={y} stroke={col} strokeWidth={0.9} opacity={0.35} strokeLinecap="round" />
+                <circle cx={x} cy={y} r={s.size} fill={col} />
+              </g>
+            );
+          })}
+        </svg>
+      </AbsoluteFill>
+    </>
+  );
+};
 
 // "§ 0X  LABEL // SUB" kicker row, site-style
 export const Kicker: React.FC<{ n: string; label: string; start?: number }> = ({ n, label, start = 4 }) => {
