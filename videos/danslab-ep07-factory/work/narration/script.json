@@ -1,0 +1,24 @@
+{
+  "episode": "No. 07 — The Factory",
+  "voice": "Brian nPczCjzI2devNBz1zQrb eleven_flash_v2_5",
+  "scenes": [
+    {"id":"s01_recap","text":"You have met the fleet. The trader who taught herself to trade. The overseer that took control. The brain that decides what matters. And the marketplace where agents finally get paid. But every single one of those stories had to be told. Written. Designed. Voiced. Rendered. Shipped. So here is the last secret of this company. There is a factory behind it. And it never stops."},
+    {"id":"s02_dexter","text":"Go back to the beginning. When Dan handed out the jobs, Dexter — the survivor, the chief of droplets — got one assignment. Build the YouTube pipeline. A machine that makes the videos."},
+    {"id":"s03_problem","text":"Because here is the brutal math of video. One good ten-minute film is a week of human work. A script. A design system. A voice. Motion for every single frame. Sound design. An edit. Dan needed one of these every week, for a channel that would carry the whole story. Alone, that is simply impossible."},
+    {"id":"s04_idea","text":"So Dexter didn't build an editor. He built a factory. A production line that takes one idea in at one end... and pushes a finished, four-K film out the other."},
+    {"id":"s05_script","text":"Station one: the script. The story is written as narration — every scene, in order, in plain language, and tuned so that a machine can read it out loud without ever stumbling."},
+    {"id":"s06_voice","text":"Station two: the voice. Every scene is sent to a text-to-speech engine, and comes back as audio. It is the same narrator you are listening to right now. He has never once seen a script on paper."},
+    {"id":"s07_scenes","text":"Station three, and this is the strange one. The scenes are not filmed. They are not even animated by hand. Every frame you have watched in this entire series is code. React components, drawn fresh, thirty times every second."},
+    {"id":"s08_design","text":"And every one of them obeys a single design system. The same black. The same red and gold. The same serif type, the same drifting stars. That is why six episodes look like one series — instead of six different videos made by six different people."},
+    {"id":"s09_render","text":"Station four: the render. Scene by scene, the factory draws every frame at four-K — over eight million pixels each — and stacks them into finished video."},
+    {"id":"s10_assemble","text":"Station five: assembly. The narration is laid onto the timeline, the music is cut into three movements, and around ninety sound effects are dropped onto exact cues. The music ducks under the voice automatically. Then the whole mix is mastered to broadcast loudness."},
+    {"id":"s11_deliver","text":"Station six: delivery. A four-K master lands in a folder on Dan's desktop, with thumbnails, ready to publish. From an idea, to a finished film — without a camera, a studio, or an editor."},
+    {"id":"s12_catalog","text":"And this is what came off that line."},
+    {"id":"s13_numbers","text":"Seven episodes. More than a hundred and fifty scenes. Close to an hour of finished film. Every frame in four-K, every voice track generated, every sound cue placed. All of it built by the same machine, in a matter of days."},
+    {"id":"s14_meta","text":"And this video — the one you are watching, right now — came off that very same line. Same script station. Same voice. Same render. Nobody pointed a camera at anything. The factory simply... filmed itself."},
+    {"id":"s15_code","text":"And none of it is hidden. It all lives in one repository. Not a secret. Not magic. Just a pipeline that somebody finally bothered to sit down and build."},
+    {"id":"s16_flywheel","text":"And that closes the loop. The factory makes the videos. The videos bring the audience. The audience brings people to Nervix, to Zmarty, to the agents themselves. Which funds the fleet, that improves the factory, that makes the next video."},
+    {"id":"s17_close","text":"So look at what Dan actually built. Not six separate products. One company — that trades, governs itself, thinks for itself, sells, and now tells its own story. Run by machines. Directed by a single human. Mostly while he is asleep."},
+    {"id":"s18_outro","text":"This was DansLab, number seven. The Factory. Seven stories. One company. Built entirely in the open. If you have watched this far, you have seen the whole machine — from a hacked server, to an economy. Now go and build your own. Build. Ship. Repeat."}
+  ]
+}
