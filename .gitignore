@@ -66,3 +66,6 @@ videos/*/work/*concat*.txt
 # presenter cutouts are regenerable from source clips via tools/cutout_video.py
 media/library/presenter/*.webm
 media/library/presenter/*.mov
+
+# compiled from tools/matte/PersonMatte.swift on first use
+tools/matte/person-matte
