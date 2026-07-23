@@ -15,6 +15,7 @@ ORDER = [
     ("StB2", None, 0), ("StBoard", "s06_board", 0.8), ("StMorning", "s07_morning", 0.8),
     ("StWatch", "s08_watch", 0.8), ("StRules", "s09_rules", 0.8), ("StLifeline", "s10_lifeline", 0.8),
     ("StB3", None, 0), ("StMemory", "s11_memory", 0.8), ("StNumbers", "s12_numbers", 0.8),
+    ("StStack", "s12b_stack", 0.8),
     ("StWheel", "s13_wheel", 0.8), ("StNight", "s14_night", 0.8), ("StCliff", "s15_cliff", 0.8),
     ("StOutro", "s16_outro", 1.0),
 ]
@@ -69,6 +70,7 @@ beats = {
  "StB3":[(1.5,"impact-soft",.45),(2.4,"pop-reveal",.4)],
  "StMemory":[(2.6,"page-flip",.34),(6.0,"whoosh-reverse",.34),(7.2,"chime-magic",.42),(17.0,"impact-deep-soft",.48)],
  "StNumbers":[(2.4,"pop-reveal",.36),(3.2,"pop-reveal",.34),(4.0,"pop-reveal",.34),(4.8,"pop-reveal",.34),(5.6,"pop-reveal",.34),(9.0,"chime-reward",.44)],
+ "StStack":[(3.0,"pop-reveal",.36),(10.0,"pop-reveal",.34),(17.0,"pop-reveal",.34),(24.0,"pop-reveal",.34),(36.5,"chime-reward",.42)],
  "StWheel":[(2.8,"scan-hum",.32),(4.4,"pop-reveal",.34),(5.1,"pop-reveal",.32),(5.8,"pop-reveal",.32),(6.5,"pop-reveal",.32),(7.2,"pop-reveal",.32),(15.0,"warm-shimmer",.4)],
  "StNight":[(2.0,"wind-soft",.32),(4.4,"ui-click-soft",.28),(6.4,"ui-click-soft",.26),(11.6,"clock-tick-soft",.38),(12.4,"riser-soft",.36)],
  "StCliff":[(2.0,"riser-soft",.4),(6.6,"impact-deep-soft",.5),(11.6,"chime-magic",.44)],
