@@ -13,9 +13,9 @@ ORDER = [
     ("FB1", None, 0), ("FDexter", "s02_dexter", 0.8), ("FProblem", "s03_problem", 0.8), ("FIdea", "s04_idea", 0.8),
     ("FB2", None, 0), ("FScript", "s05_script", 0.8), ("FVoice", "s06_voice", 0.8), ("FScenes", "s07_scenes", 0.8),
     ("FDesign", "s08_design", 0.8), ("FRender", "s09_render", 0.8), ("FAssemble", "s10_assemble", 0.8),
-    ("FDeliver", "s11_deliver", 0.8),
+    ("FDeliver", "s11_deliver", 0.8), ("FStack", "s11b_stack", 0.8),
     ("FB3", None, 0), ("FCatalog", "s12_catalog", 0.8), ("FNumbers", "s13_numbers", 0.8), ("FMeta", "s14_meta", 0.8),
-    ("FCode", "s15_code", 0.8), ("FFlywheel", "s16_flywheel", 0.8), ("FClose", "s17_close", 0.8),
+    ("FCode", "s15_code", 0.8), ("FProduct", "s15b_product", 0.8), ("FFlywheel", "s16_flywheel", 0.8), ("FClose", "s17_close", 0.8),
     ("FOutro", "s18_outro", 1.0),
 ]
 
@@ -81,6 +81,8 @@ beats = {
  "FNumbers":[(2.6,"pop-reveal",.4),(3.5,"pop-reveal",.4),(4.4,"pop-reveal",.4),(5.3,"pop-reveal",.4),(11.4,"chime-reward",.45)],
  "FMeta":[(2.0,"whoosh-reverse",.34),(7.2,"glitch-zap",.34),(8.4,"glitch-zap",.3),(9.6,"glitch-zap",.28),(14.4,"impact-deep-soft",.5)],
  "FCode":[(2.2,"ui-click-soft",.32),(3.4,"scan-hum",.32),(8.6,"impact-soft",.4)],
+ "FStack":[(3.3,"pop-reveal",.36),(4.2,"pop-reveal",.34),(5.1,"pop-reveal",.34),(6.0,"pop-reveal",.34),(6.9,"pop-reveal",.34),(14.0,"chime-reward",.44)],
+ "FProduct":[(2.7,"pop-reveal",.36),(6.0,"scan-hum",.3),(8.0,"pop-reveal",.32),(8.6,"pop-reveal",.32),(9.2,"pop-reveal",.32),(15.7,"chime-reward",.45)],
  "FFlywheel":[(3.0,"pop-reveal",.36),(3.8,"pop-reveal",.36),(4.6,"pop-reveal",.36),(5.4,"pop-reveal",.36),
               (6.2,"pop-reveal",.36),(9.0,"scan-hum",.3),(15.5,"chime-magic",.45)],
  "FClose":[(2.4,"pop-reveal",.38),(3.3,"pop-reveal",.38),(4.2,"pop-reveal",.38),(5.1,"pop-reveal",.38),
