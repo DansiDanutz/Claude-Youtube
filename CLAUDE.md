@@ -128,15 +128,23 @@ repo/ledger, never recall them:
   corners — the optimist, the skeptic, the accountant (`/story-council`,
   `~/Desktop/DavidAi/Council/council.py`). One model has one blind spot; a council stress-tests the
   decision before Dan signs. Machines advise, the player decides — show the disagreement, not a clean
-  answer.
+  answer. **This is not just an internal habit — it is the shipped product, SemeClaw (below).**
 - **One workflow, end to end** — a real automated loop, every hop shown: trigger → agents → models →
   tools → output, running without Dan in the loop. That is what "automated" has to look like on screen.
 - **The profitability truth** — the real ledger, face-up. Running costs (low-hundreds €/mo) vs
   output; Sienna's drawdowns published, not hidden. We show the losses, not just the wins.
-- **SemeClaw — and WHY we built it.** The marketplace where outside users advertise their own AI
-  platforms. It is the front door of the business model: DansLab's autonomous products are built to be
-  *used by others*, and that outside adoption is what funds the next build. Explain the business, not
-  just the feature.
+- **SemeClaw — the productized War Room (and WHY it exists).** SemeClaw *is* the council, shipped as
+  open source (`semeclaw.fly.dev`): every task in your stack becomes a multi-agent meeting — Research,
+  Writer, Scraper, Coder + an orchestrator — that a human can join and interrupt up to 3×, until the
+  orchestrator commits the final decision back to the source system. It runs zero-key (deterministic
+  fallbacks) and upgrades when you add model keys. We built it because the council habit deserved to be
+  a product others can run — that is the whole thesis made shippable.
+- **Ad-SemeClaw ("Ad NOW") — the revenue surface (and the business model).** This is where outside
+  companies advertise their own AI platforms: 30-second pre-meeting ads inside the War Room, credit
+  top-ups, and a $50/mo Spotlight slot that features a subscriber for 7 days (Nervix.ai is the anchor).
+  This is the concrete flywheel — DansLab's autonomous products are built to be *used by others*, and
+  that outside adoption (ads + Spotlight subscriptions) funds the next build. Explain the business, not
+  just the feature. Frontend `ad-semeclaw.vercel.app` → backend `semeclaw.fly.dev`.
 - **How Dan leverages for profit — the flywheel.** One operator + a named fleet ships at the rate of
   a 15-person org for the price of a phone plan; the products (SemeClaw, Nervix, Sienna's trading,
   Dexter's pipeline, Memo's builder framework) ship so outsiders adopt them → revenue → more building.
