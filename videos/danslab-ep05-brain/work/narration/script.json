@@ -51,6 +51,10 @@
       "text": "And it speaks to each of them differently. Firm with the risk-taker. Patient with the builder. Precise with the connector. It learned, watching them, that four very different minds need four very different voices. So that is exactly what it gives them."
     },
     {
+      "id": "s07c_models",
+      "text": "And the routing goes one level deeper than the agents. Every task also gets a model. Hermes does not send everything to the most expensive brain in the building — that is how you burn a fortune on work a cheaper model would ace. The simple, high-volume jobs go to the fast, cheap models. The deep, dangerous calls go to the strongest one. And when a decision is genuinely too close to call, it does not pick a model at all. It convenes several, and lets them argue it out. The company pays for exactly the intelligence each task deserves — not a cent more."
+    },
+    {
       "id": "s08_reason",
       "text": "And before it commits, it does something surprisingly human. It weighs its options. It imagines a few different plans, plays each one forward in its head, and picks the path most likely to pay off. It doesn't just react to the fleet. It reasons about it. That is the line between an automation... and an intelligence."
     },
@@ -69,6 +73,10 @@
     {
       "id": "s10b_dossier",
       "text": "And it keeps a file on every one of them. Not a personnel record — a working model. This one is fast but cuts corners on tests. That one is slow and has never once shipped a bug. This one goes quiet when a task is too vague. That one needs the goal spelled out, or it invents its own. Nobody wrote those notes. Hermes assembled them, one outcome at a time, from watching them work."
+    },
+    {
+      "id": "s10c_memory",
+      "text": "And none of this lives only in the moment. Restart Hermes, reboot the Mac, and it does not wake up an amnesiac. The living model — every dossier, every lesson, every rule it has learned — is written to a shared memory the whole fleet can read. Its name is Byterover. It is why the company remembers a mistake from six weeks ago, and why no agent ever has to learn the same lesson twice. The brain thinks. The memory makes the thinking stick."
     },
     {
       "id": "s11_upgrade",

@@ -28,7 +28,7 @@
     },
     {
       "id": "s07_morning",
-      "text": "Seven o'clock, every morning. Before Dan opens his eyes, David has already been to work. Fleet health — all four droplets, checked. The CEO brief — what happened overnight, what earned money, what needs a decision — typed up and waiting on Telegram. Dan does not wake up to the company. He wakes up to a briefing about it."
+      "text": "Seven o'clock, every morning. Before Dan opens his eyes, David has already been to work. Fleet health — all four droplets, checked. The CEO brief — what happened overnight, what moved, what needs a decision — typed up and waiting on Telegram. Dan does not wake up to the company. He wakes up to a briefing about it."
     },
     {
       "id": "s08_watch",
@@ -51,12 +51,16 @@
       "text": "So put numbers on the ground floor. Thirty-plus agents, orchestrated from here. Five machines — four in the cloud, one on the desk. Thirty-eight scheduled jobs today. Seven finished films. And one human."
     },
     {
+      "id": "s12b_stack",
+      "text": "And here is what actually runs on that ground floor. Not one AI — a whole bench of them, on subscriptions, not salaries. Claude Code and GPT for the heavy building. GLM for the volume work. Perplexity and Kimi for research and long reading. Higgsfield for images and video. Firecrawl for pulling the live web. Supabase holds the data; Vercel and Render host the products. A dozen best-in-class tools, wired into one fleet — and the whole bill lands in the low hundreds of euros a month. The output of a fifteen-person company, for the price of a family phone plan."
+    },
+    {
       "id": "s13_wheel",
       "text": "That is the real shape of DansLab. Not a pyramid, with a boss on top. A wheel — with a desk at the hub. The trader, the overseer, the brain, the marketplace, the factory — all of it spinning around one quiet machine, and one person deciding what actually matters."
     },
     {
       "id": "s14_night",
-      "text": "And while you were watching this — the wheel kept turning. Somewhere, a trade closed. A task settled on the marketplace. And on the desk, a briefing is already being drafted for tomorrow. Seven o'clock, sharp. The Studio will be awake before Dan is."
+      "text": "And while you were watching this — the wheel kept turning. Somewhere, a paper trade closed. A task completed on the marketplace. And on the desk, a briefing is already being drafted for tomorrow. Seven o'clock, sharp. The Studio will be awake before Dan is."
     },
     {
       "id": "s15_cliff",
