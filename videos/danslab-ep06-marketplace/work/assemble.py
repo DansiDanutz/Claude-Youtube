@@ -13,7 +13,8 @@ ORDER = [
     ("MB1", None, 0), ("MDan", "s02_dan", 0.8), ("MPoker", "s03_poker", 0.8), ("MLife", "s04_life", 0.8), ("MTable", "s05_table", 0.8),
     ("MB2", None, 0), ("MEdge", "s06_edge", 0.8), ("MLocked", "s07_locked", 0.8), ("MIdea", "s08_idea", 0.8), ("MNervix", "s09_nervix", 0.8), ("MEnroll", "s09b_enroll", 0.8),
     ("MWays", "s10_ways", 0.8), ("MRoles", "s10b_roles", 0.8), ("MReal", "s11_real", 0.8), ("MEconomics", "s11b_economics", 0.8), ("MPowered", "s12_powered", 0.8), ("MReputation", "s12b_reputation", 0.8),
-    ("MB3", None, 0), ("MWhy", "s13_why", 0.8), ("MAdopt", "s14_adopt", 0.8), ("MFuel", "s15_fuel", 0.8), ("MOpen", "s15b_open", 0.8),
+    ("MB3", None, 0), ("MWhy", "s13_why", 0.8), ("MAdopt", "s14_adopt", 0.8), ("MNano", "s14b_nano", 0.8), ("MFuel", "s15_fuel", 0.8), ("MOpen", "s15b_open", 0.8),
+    ("MOutside", "s15c_outside", 0.8), ("MAdNow", "s15d_adnow", 0.8), ("MModel", "s15e_model", 0.8),
     ("MVision", "s16_vision", 0.8), ("MCliff", "s17_cliff", 0.8), ("MOutro", "s18_outro", 1.0),
 ]
 
@@ -56,6 +57,9 @@ beats = {
  "MEconomics":[(2.6,"ui-click-soft",.32),(4.0,"trap-snap",.36),(5.4,"chime-magic",.34),(6.8,"stamp-hit",.38),(8.2,"chime-reward",.44),(9.6,"sparkle-soft",.4),(14.0,"warm-shimmer",.38)],
  "MReputation":[(3.0,"scan-hum",.3),(4.2,"pop-reveal",.32),(5.4,"pop-reveal",.32),(6.6,"pop-reveal",.32),(11.4,"impact-soft",.46),(12.6,"glitch-zap",.32)],
  "MOpen":[(2.4,"knock-solid",.4),(6.6,"whoosh-reverse",.36),(7.6,"chime-magic",.44),(12.4,"warm-shimmer",.4)],
+ "MOutside":[(2.7,"pop-reveal",.36),(5.0,"pop-reveal",.34),(9.3,"chime-magic",.44)],
+ "MAdNow":[(2.0,"impact-deep-soft",.46),(2.3,"chime-magic",.44),(5.0,"pop-reveal",.34),(5.7,"pop-reveal",.32),(6.5,"pop-reveal",.32),(10.0,"chime-reward",.44),(14.3,"ui-toggle-on",.36)],
+ "MModel":[(3.7,"pop-reveal",.36),(5.7,"pop-reveal",.34),(7.7,"pop-reveal",.34),(14.3,"chime-reward",.45)],
 
  "MIntro":[(0.9,"impact-deep-soft",.5),(1.4,"sparkle-soft",.4),(5.0,"pop-reveal",.42)],
  "MRecap":[(9.0,"warm-shimmer",.4),(11.6,"impact-soft",.42)],
@@ -75,6 +79,7 @@ beats = {
  "MB3":[(1.5,"impact-soft",.45),(2.4,"pop-reveal",.4)],
  "MWhy":[(2.0,"warm-shimmer",.4),(7.0,"impact-soft",.42)],
  "MAdopt":[(5.0,"ui-toggle-on",.35),(5.7,"ui-toggle-on",.35),(6.4,"ui-toggle-on",.35),(7.1,"chime-reward",.4)],
+ "MNano":[(2.7,"pop-reveal",.36),(6.3,"scan-hum",.3),(10.0,"chime-reward",.44),(14.3,"impact-soft",.42)],
  "MFuel":[(2.4,"scan-hum",.35),(3.0,"stream-soft",.35),(10.0,"riser-soft",.4)],
  "MVision":[(2.0,"pop-reveal",.4),(3.3,"pop-reveal",.4),(4.6,"pop-reveal",.4),(8.0,"chime-magic",.45)],
  "MCliff":[(15.6,"riser-soft",.42),(16.6,"impact-deep-soft",.55)],
