@@ -110,3 +110,40 @@ Every video follows `docs/VIDEO-DESIGN-SYSTEM.md` — DansLab tokens, om-typogra
 rules, om-color-grading contrast rules, narration-synced reveals — and gets a RUBRIC scorecard in
 `videos/<project>/work/RUBRIC.md` before delivery. Ship at grade A or S only. Final channel
 deliveries render at `--scale=2` (4K); QA stills at scale 1.
+
+## Substance gate (mandatory)
+
+DansLab episodes are transparent documentaries, not tutorials — we don't *teach* like other
+channels, we *show*, in the open, whether this actually works and whether it is profitable. A
+character arc is not enough: every episode earns its runtime with real mechanics. Before a script
+locks, it must carry the pillars relevant to its subject — and pull the specifics from the
+repo/ledger, never recall them:
+
+- **The stack, and the job each tool is hired for** — Claude Code (max), GPT (max), ZAI GLM
+  (annual), Perplexity, Kimi, Higgsfield, Firecrawl, Byterover (shared memory), Supabase, Vercel,
+  Render. Not name-drops — show *why this tool for this job*. Pull the real per-task routing from the
+  repo config; don't guess it.
+- **Model switching** — how an agent routes a task cheap-vs-expensive, and when it escalates.
+- **The council / war room — and WHY.** Hard calls are argued by multiple models from different
+  corners — the optimist, the skeptic, the accountant (`/story-council`,
+  `~/Desktop/DavidAi/Council/council.py`). One model has one blind spot; a council stress-tests the
+  decision before Dan signs. Machines advise, the player decides — show the disagreement, not a clean
+  answer.
+- **One workflow, end to end** — a real automated loop, every hop shown: trigger → agents → models →
+  tools → output, running without Dan in the loop. That is what "automated" has to look like on screen.
+- **The profitability truth** — the real ledger, face-up. Running costs (low-hundreds €/mo) vs
+  output; Sienna's drawdowns published, not hidden. We show the losses, not just the wins.
+- **SemeClaw — and WHY we built it.** The marketplace where outside users advertise their own AI
+  platforms. It is the front door of the business model: DansLab's autonomous products are built to be
+  *used by others*, and that outside adoption is what funds the next build. Explain the business, not
+  just the feature.
+- **How Dan leverages for profit — the flywheel.** One operator + a named fleet ships at the rate of
+  a 15-person org for the price of a phone plan; the products (SemeClaw, Nervix, Sienna's trading,
+  Dexter's pipeline, Memo's builder framework) ship so outsiders adopt them → revenue → more building.
+  The thesis: by 2027 a company is measured by what one operator + a fleet can coordinate, not by
+  headcount.
+- **Current agent missions** — Sienna: prove AI leverage with credible live trades. Nano: spawn new
+  agents inside Nervix to fulfill any submitted task. Dexter: the YouTube pipeline as a
+  business-in-a-box for anyone with a story to tell. Memo: an automated framework for builders.
+
+Numbers and monetization specifics are sourced or confirmed with Dan — never invented.
