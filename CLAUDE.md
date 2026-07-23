@@ -155,3 +155,9 @@ repo/ledger, never recall them:
   business-in-a-box for anyone with a story to tell. Memo: an automated framework for builders.
 
 Numbers and monetization specifics are sourced or confirmed with Dan — never invented.
+
+**Payments status is canon (as of 2026-07): every app is pre-revenue — no payment method is live.**
+Never narrate money as flowing in the present tense — no "it earns", "takes its cut", "settles
+on-chain", "$X/mo puts you in the seat" as a live fact. Frame all monetization as *designed / built /
+next*: the rails are laid, payments are the next step. Payments are the next production milestone, and
+no app is "production-ready" until they are wired. Update this line the day that changes.
