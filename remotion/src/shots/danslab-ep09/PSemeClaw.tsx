@@ -4,7 +4,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep09 24c — the war room shipped: SemeClaw, open source. The council in a box. VO 0.8s (~16s).
-export const compositionConfig = { id: 'PSemeClaw', durationInSeconds: 18, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'PSemeClaw', durationInSeconds: 22, fps: 30, width: 1920, height: 1080 };
 
 const CHIPS = ['OPEN SOURCE', 'FREE', 'RUN IT YOURSELF'];
 

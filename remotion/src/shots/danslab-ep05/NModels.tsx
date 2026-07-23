@@ -4,7 +4,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep05 07c — model switching: cheap for volume, strongest for deep, council for too-close. VO 0.8s (~30s).
-export const compositionConfig = { id: 'NModels', durationInSeconds: 32, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'NModels', durationInSeconds: 36, fps: 30, width: 1920, height: 1080 };
 
 const TIERS: { tag: string; desc: string; color: string }[] = [
   { tag: 'VOLUME', desc: 'fast, cheap models', color: DL.green },

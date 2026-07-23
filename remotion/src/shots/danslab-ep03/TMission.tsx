@@ -5,7 +5,7 @@ import { Headline } from '../../lib/ep03kit';
 
 // Ep03 12c — Sienna's mission: not just to trade, to PROVE. Turn skeptics into
 // believers, one honest trade at a time. VO 0.8s (~18s).
-export const compositionConfig = { id: 'TMission', durationInSeconds: 20, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'TMission', durationInSeconds: 27, fps: 30, width: 1920, height: 1080 };
 
 const TMission: React.FC = () => {
   const frame = useCurrentFrame();

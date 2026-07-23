@@ -9,7 +9,7 @@ const OVERSHOOT = Easing.bezier(0.34, 1.42, 0.64, 1);
 // Ep02 08b — the keys. Chief of droplets meant chief of the keys: a central
 // key manager, one locked vault every agent draws from. VO 0.8s (~19s).
 // =============================================================================
-export const compositionConfig = { id: 'E2Keys', durationInSeconds: 20, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'E2Keys', durationInSeconds: 26, fps: 30, width: 1920, height: 1080 };
 
 const VAULT = 54;
 const KEYS = 150;

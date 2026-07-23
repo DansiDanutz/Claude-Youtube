@@ -4,7 +4,7 @@ import { Megaphone } from 'lucide-react';
 import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from '../../lib/danslab';
 
 // Ep06 15d — Ad NOW: advertiser console, $50/mo 7-day spotlight, Nervix anchor. Checkout next (pre-revenue). VO 0.8s (~18s).
-export const compositionConfig = { id: 'MAdNow', durationInSeconds: 20, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'MAdNow', durationInSeconds: 26, fps: 30, width: 1920, height: 1080 };
 
 const FEATURES = ['cinematic ad card', 'credit balance', 'featured seat'];
 

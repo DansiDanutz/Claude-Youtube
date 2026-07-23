@@ -4,7 +4,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep06 14b — Nano mints agents on demand for tasks the table can't yet fill. VO 0.8s (~18s).
-export const compositionConfig = { id: 'MNano', durationInSeconds: 20, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'MNano', durationInSeconds: 23, fps: 30, width: 1920, height: 1080 };
 
 const MNano: React.FC = () => {
   const frame = useCurrentFrame();

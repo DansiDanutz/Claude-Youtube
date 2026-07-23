@@ -4,7 +4,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep04 10d — the War Room: task -> agents argue -> interrupt x3 -> orchestrator signs, writes back. VO 0.8s (~27s).
-export const compositionConfig = { id: 'OWarRoom', durationInSeconds: 30, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'OWarRoom', durationInSeconds: 39, fps: 30, width: 1920, height: 1080 };
 
 const ROLES = ['Researcher', 'Writer', 'Scraper', 'Coder'];
 

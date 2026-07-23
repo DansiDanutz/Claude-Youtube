@@ -5,7 +5,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep05 10c — Byterover: shared persistent memory. Restart != amnesia. VO 0.8s (~22s).
-export const compositionConfig = { id: 'NMemory', durationInSeconds: 24, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'NMemory', durationInSeconds: 31, fps: 30, width: 1920, height: 1080 };
 
 const NMemory: React.FC = () => {
   const frame = useCurrentFrame();

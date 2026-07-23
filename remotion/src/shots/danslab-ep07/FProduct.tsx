@@ -4,7 +4,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep07 15b — business-in-a-box: point the factory at any story, it opens a business. VO 0.8s (~20s).
-export const compositionConfig = { id: 'FProduct', durationInSeconds: 22, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'FProduct', durationInSeconds: 29, fps: 30, width: 1920, height: 1080 };
 
 const OUT = ['a channel', 'a voice', 'a film a week'];
 

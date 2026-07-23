@@ -5,7 +5,7 @@ import { Headline } from '../../lib/ep03kit';
 
 // Ep08 12b — the stack. The subscriptions/tools that run on the ground floor,
 // grouped by job, then the cost punchline. VO ~44s -> duration 45s.
-export const compositionConfig = { id: 'StStack', durationInSeconds: 45, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'StStack', durationInSeconds: 42, fps: 30, width: 1920, height: 1080 };
 
 const GROUPS: { title: string; color: string; items: string[] }[] = [
   { title: 'BUILD', color: DL.sky, items: ['Claude Code', 'GPT', 'GLM'] },

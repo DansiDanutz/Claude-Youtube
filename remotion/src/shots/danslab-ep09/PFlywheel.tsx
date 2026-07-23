@@ -4,7 +4,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep09 33c — the flywheel: products built to be used by strangers, funds the build (pre-revenue). VO 0.8s (~28s).
-export const compositionConfig = { id: 'PFlywheel', durationInSeconds: 30, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'PFlywheel', durationInSeconds: 38, fps: 30, width: 1920, height: 1080 };
 
 const PRODUCTS = ['the trader', 'the marketplace', 'the war room', 'the factory'];
 const PLAN: [string, string][] = [

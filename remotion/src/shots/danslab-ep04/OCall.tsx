@@ -5,7 +5,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep04 10c — the gap: Paperclip tracks WHAT, not what they should DECIDE. VO 0.8s (~17s).
-export const compositionConfig = { id: 'OCall', durationInSeconds: 19, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'OCall', durationInSeconds: 21, fps: 30, width: 1920, height: 1080 };
 
 const OCall: React.FC = () => {
   const frame = useCurrentFrame();

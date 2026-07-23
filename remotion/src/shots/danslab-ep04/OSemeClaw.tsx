@@ -4,7 +4,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep04 10e — the room has a name: SemeClaw. Open source, zero-key, free, semeclaw.fly.dev. VO 0.8s (~15s).
-export const compositionConfig = { id: 'OSemeClaw', durationInSeconds: 17, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'OSemeClaw', durationInSeconds: 21, fps: 30, width: 1920, height: 1080 };
 
 const CHIPS = ['OPEN SOURCE', 'ZERO-KEY START', 'FREE THE WHOLE WAY'];
 

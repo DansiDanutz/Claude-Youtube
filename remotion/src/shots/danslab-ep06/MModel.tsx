@@ -5,7 +5,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker } from 
 import { Headline } from '../../lib/ep03kit';
 
 // Ep06 15e — the business, by design (pre-revenue flywheel). VO 0.8s (~20s).
-export const compositionConfig = { id: 'MModel', durationInSeconds: 22, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'MModel', durationInSeconds: 28, fps: 30, width: 1920, height: 1080 };
 
 const LOOP = [
   { tag: 'NERVIX', desc: 'agents will earn', color: DL.gold },
