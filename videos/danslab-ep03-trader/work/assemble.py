@@ -17,7 +17,7 @@ ORDER = [
     ("TEntry", "s07_entry", 0.8), ("TLadder", "s08_ladder", 0.8), ("TExit", "s09_exit", 0.8), ("TLosses", "s10_losses", 0.8),
     ("TWalk", "s07b_walk", 0.8), ("TWon", "s07c_won", 0.8),
     ("TB3", None, 0), ("TResults", "s11_results", 0.8), ("TBrief", "s11b_brief", 0.8), ("TJournal", "s12b_journal", 0.8),
-    ("TTrust", "s12_trust", 0.8), ("TRace", "s13_race", 0.8), ("TCliff", "s14_cliff", 0.8), ("TOutro", "s15_outro", 1.0),
+    ("TTrust", "s12_trust", 0.8), ("TMission", "s12c_mission", 0.8), ("TRace", "s13_race", 0.8), ("TCliff", "s14_cliff", 0.8), ("TOutro", "s15_outro", 1.0),
 ]
 
 def dur(path):
@@ -76,6 +76,7 @@ beats = {
  "TBrief":[(5.0,"ui-click-soft",.28),(8.6,"warm-shimmer",.4)],
  "TJournal":[(5.0,"stamp-hit",.4),(6.0,"stamp-hit",.4),(7.0,"stamp-hit",.4),(8.0,"stamp-hit",.45)],
  "TTrust":[(5.3,"chime-magic",.5),(7.6,"pop-reveal",.38),(8.3,"pop-reveal",.38)],
+ "TMission":[(5.0,"pop-reveal",.36),(7.0,"impact-soft",.42),(7.7,"chime-reward",.5),(14.3,"chime-magic",.5)],
  "TRace":[(5.3,"ui-click-soft",.3),(6.3,"ui-click-soft",.3),(7.3,"ui-click-soft",.3),(8.3,"impact-soft",.4)],
  "TCliff":[(15.6,"riser-soft",.42),(16.0,"impact-deep-soft",.55)],
  "TOutro":[(0.8,"impact-soft",.5),(2.0,"chime-reward",.45),(11.0,"ui-click-soft",.35),(14.3,"impact-soft",.45)],
