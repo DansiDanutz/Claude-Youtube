@@ -61,13 +61,13 @@ export const SiteBg: React.FC<{ glow?: string }> = ({ glow = DL.red }) => {
   return (
     <>
       <AbsoluteFill style={{ backgroundColor: DL.bg }} />
-      <AbsoluteFill style={{ background: `radial-gradient(1200px 640px at 50% -10%, ${glow}14, transparent 60%)` }} />
+      <AbsoluteFill style={{ background: `radial-gradient(${1200 + Math.sin(frame / 70) * 130}px 640px at 50% -10%, ${glow}1a, transparent 60%)`, opacity: 0.78 + 0.22 * Math.sin(frame / 52) }} />
       <AbsoluteFill style={{ backgroundImage: `radial-gradient(#ffffff08 1px, transparent 1px)`, backgroundSize: '44px 44px' }} />
-      <AbsoluteFill>
+      <AbsoluteFill style={{ transform: `translate(${Math.sin(frame / 185) * 30}px, ${Math.cos(frame / 225) * 22}px)` }}>
         {STARS.map((st, i) => {
-          const tw = 0.5 + 0.5 * Math.sin(frame * 0.045 * st.tw + st.ph);   // 0..1 twinkle
-          const dx = Math.sin(frame / 300 + st.ph) * 9 * st.depth;          // gentle parallax drift
-          const dy = Math.cos(frame / 340 + st.ph) * 7 * st.depth;
+          const tw = 0.5 + 0.5 * Math.sin(frame * 0.062 * st.tw + st.ph);   // 0..1 twinkle (livelier)
+          const dx = Math.sin(frame / 150 + st.ph) * 22 * st.depth;         // parallax drift (stronger)
+          const dy = Math.cos(frame / 170 + st.ph) * 17 * st.depth;
           return (
             <div key={i} style={{ position: 'absolute', left: st.x + dx, top: st.y + dy, width: st.s, height: st.s, borderRadius: '50%', background: st.warm ? DL.gold : '#ffffff', opacity: st.o * (0.5 + 0.55 * tw), boxShadow: st.s > 2.2 ? `0 0 ${st.s * 2}px ${st.warm ? DL.gold : '#ffffff'}66` : undefined }} />
           );
@@ -76,7 +76,7 @@ export const SiteBg: React.FC<{ glow?: string }> = ({ glow = DL.red }) => {
       <AbsoluteFill>
         <svg width="1920" height="1080" viewBox="0 0 1920 1080" style={{ position: 'absolute', inset: 0 }}>
           {SATS.map((s, i) => {
-            const t = (frame * s.spd + s.off) % 1;                          // 0..1 loop
+            const t = (frame * s.spd * 1.7 + s.off) % 1;                    // 0..1 loop (faster/more frequent)
             const x = -140 + t * 2200;
             const y = s.ay * 1080 + (t - 0.5) * s.slope;
             const dirLen = Math.hypot(2200, s.slope) || 1;
