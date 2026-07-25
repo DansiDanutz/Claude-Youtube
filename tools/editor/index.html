@@ -90,7 +90,7 @@
 </header>
 
 <div id="main">
-  <div id="left"><video id="vid" src="/media/proxy.mp4"></video></div>
+  <div id="left"><video id="vid"></video></div>
   <div id="right">
     <div id="inspector" class="panel"><h3>Segment</h3><div id="inspBody">Click a block on the timeline.</div>
       <div class="kbd"><b>Space</b> play · <b>E</b> mode · <b>←/→</b> ±2s · <b>Shift+←/→</b> ±10s · <b>,/.</b> ±1 frame ·
@@ -110,7 +110,7 @@
       &nbsp;— <span style="color:var(--dim)">live playback is approximate; rendered preview is exact</span></span>
   </div>
   <div id="timeline"><div id="tl-inner">
-    <img id="wave" src="/media/waveform.png" draggable="false">
+    <img id="wave" draggable="false" alt="Audio waveform">
     <div class="ruler" id="ruler"></div>
     <div id="playhead"></div>
   </div></div>
@@ -118,8 +118,15 @@
 
 <script>
 "use strict";
+const EDITOR_TOKEN = new URLSearchParams(location.search).get("token") || "";
+const apiFetch = (url, options = {}) => fetch(url, {
+  ...options,
+  headers: { ...(options.headers || {}), "X-Editor-Token": EDITOR_TOKEN },
+});
 const $ = id => document.getElementById(id);
 const vid = $("vid"), tl = $("timeline"), inner = $("tl-inner");
+vid.src = `/media/proxy.mp4?token=${encodeURIComponent(EDITOR_TOKEN)}`;
+$("wave").src = `/media/waveform.png?token=${encodeURIComponent(EDITOR_TOKEN)}`;
 
 let DATA = null, MANIFEST = null, OFFSETS = {}, TOTAL = 0;
 let events = [];            // {id, clip, s, e, kind, cat, text, note} local times
@@ -142,7 +149,7 @@ function fromGlobal(t) {
 }
 
 async function init() {
-  const r = await fetch("/api/data"); const j = await r.json();
+  const r = await apiFetch("/api/data"); const j = await r.json();
   DATA = j.cuts; MANIFEST = j.manifest; TOTAL = MANIFEST.total;
   for (const p of MANIFEST.parts) OFFSETS[p.id] = p.offset;
   events = [];
@@ -362,7 +369,7 @@ async function save() {
       .map(c => { const o = { s: +c.s.toFixed(3), e: +c.e.toFixed(3), cat: c.cat || "manual", text: c.text };
                   if (c.note) o.note = c.note; return o; });
   }
-  const r = await fetch("/api/save", { method: "POST", headers: { "Content-Type": "application/json" },
+  const r = await apiFetch("/api/save", { method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ cuts: out, changes }) });
   const j = await r.json();
   if (j.saved) { dirty = false; changes = []; $("saveBtn").disabled = true; DATA = out; setStatus("saved ✓ (" + j.backup + ")", "ok"); }
@@ -371,12 +378,12 @@ async function save() {
 async function render() {
   if (dirty) await save();
   const style = $("styleSel").value;
-  const r = await fetch("/api/render", { method: "POST", headers: { "Content-Type": "application/json" },
+  const r = await apiFetch("/api/render", { method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ style }) });
   if (!r.ok) { setStatus("render busy", "err"); return; }
   $("renderBtn").disabled = true;
   const poll = setInterval(async () => {
-    const s = await (await fetch("/api/render/status")).json();
+    const s = await (await apiFetch("/api/render/status")).json();
     const tail = s.log.trim().split("\n").pop() || "";
     if (s.running) setStatus("rendering… " + tail);
     else {

@@ -9,15 +9,15 @@
 # tools/crawl_web.py also wants the Crawl4AI CLI on PATH (its own global install, not a venv dep):
 #     pipx install "crawl4ai[all]" && crawl4ai-setup
 
-requests                  # transcribe.py
-Pillow                    # gen_thumbnail.py (image handling)
-google-genai              # gen_thumbnail.py (Gemini / Nano Banana Pro)
+requests==2.34.2                  # transcribe.py
+Pillow==12.3.0                    # gen_thumbnail.py (image handling)
+google-genai==2.14.0              # gen_thumbnail.py (Gemini / Nano Banana Pro)
 
 # YouTube stats + upload (tools/yt_stats.py, tools/yt_upload.py) — OAuth via .youtube/ token files:
-google-api-python-client
-google-auth
-google-auth-oauthlib
-google-auth-httplib2
+google-api-python-client==2.198.0
+google-auth==2.56.2
+google-auth-oauthlib==1.4.0
+google-auth-httplib2==0.4.0
 
 # Optional — only for tools/capture_web.py (auto-capturing public web pages to clone as beats):
 #   pip install playwright && playwright install chromium

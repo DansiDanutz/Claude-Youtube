@@ -6,7 +6,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, DlLogoAnimated
 // $100 Stack 1/8 — intro. Real animated DansLab logo (red tile + gold cursor,
 // staggered reveal) over the site backdrop, then the title lands. Fades at end.
 // =============================================================================
-export const compositionConfig = { id: 'StIntro', durationInSeconds: 5.6, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'StoryIntro', durationInSeconds: 5.6, fps: 30, width: 1920, height: 1080 };
 
 const StIntro: React.FC = () => {
   const frame = useCurrentFrame();

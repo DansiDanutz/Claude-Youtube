@@ -6,7 +6,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg, Kicker, useDlR
 // $100 Stack 5/8 — the payoff build. The four line items of the stack tick in
 // on a mono ledger and total $100/mo; leo (the scrappy builder) presents.
 // =============================================================================
-export const compositionConfig = { id: 'StStack', durationInSeconds: 12, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'StoryStack', durationInSeconds: 12, fps: 30, width: 1920, height: 1080 };
 
 const ITEMS = [
   { name: 'Claude Code', note: 'the engineer', price: '$20', at: 84 },
