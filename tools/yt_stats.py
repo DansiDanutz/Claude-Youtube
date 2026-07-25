@@ -50,6 +50,8 @@ def get_creds():
     from google.oauth2.credentials import Credentials
     from google_auth_oauthlib.flow import InstalledAppFlow
 
+    if TOKEN.exists():
+        os.chmod(TOKEN, 0o600)
     creds = Credentials.from_authorized_user_file(str(TOKEN), SCOPES) if TOKEN.exists() else None
     if creds and creds.valid:
         return creds
