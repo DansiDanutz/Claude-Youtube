@@ -26,6 +26,7 @@ see .claude/skills/packaging/references/channel-calibration.md.
 RUN VIA THE VENV PYTHON (google-api-python-client lives there).
 """
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -60,7 +61,8 @@ def get_creds():
         creds = InstalledAppFlow.from_client_secrets_file(
             str(CLIENT_SECRET), SCOPES).run_local_server(port=0)
     YT_DIR.mkdir(exist_ok=True)
-    TOKEN.write_text(creds.to_json())
+    TOKEN.write_text(creds.to_json(), encoding="utf-8")
+    os.chmod(TOKEN, 0o600)
     return creds
 
 

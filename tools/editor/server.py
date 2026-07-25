@@ -1,7 +1,7 @@
 """Local cut-editor server. Zero dependencies (Python stdlib only).
 
-Usage: python tools/editor/server.py video-1 [port]
-Then open http://localhost:8765
+Usage: python tools/editor/server.py videos/video-1 [port]
+Then open the authenticated localhost URL printed by the server.
 
 Endpoints:
   GET  /                    editor UI
@@ -15,6 +15,7 @@ Endpoints:
 
 import json
 import shutil
+import secrets
 import subprocess
 import sys
 import threading
@@ -22,10 +23,16 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+from security import MAX_BODY_BYTES, clean_path, request_token, resolve_project
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 EDITOR_DIR = Path(__file__).resolve().parent
-PROJECT = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "video-1")
+try:
+    PROJECT = resolve_project(ROOT, sys.argv[1] if len(sys.argv) > 1 else "videos/video-1")
+except ValueError as exc:
+    raise SystemExit(str(exc)) from exc
 PORT = int(sys.argv[2]) if len(sys.argv) > 2 else 8765
+TOKEN = secrets.token_urlsafe(32)
 
 CUTS = PROJECT / "work" / "analysis" / "cuts.json"
 MEDIA = {
@@ -39,7 +46,8 @@ render_state = {"running": False, "log": "", "ok": None}
 def run_render(style: str) -> None:
     render_state.update(running=True, log=f"rendering {style} preview...\n", ok=None)
     proc = subprocess.Popen(
-        [sys.executable, str(ROOT / "tools" / "render_cuts.py"), PROJECT.name,
+        [sys.executable, str(ROOT / "tools" / "render_cuts.py"),
+         PROJECT.relative_to(ROOT).as_posix(),
          "--style", style, "--mode", "preview"],
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, cwd=str(ROOT),
     )
@@ -60,6 +68,13 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    def authorized(self):
+        supplied = request_token(self.path, self.headers.get("X-Editor-Token"))
+        if secrets.compare_digest(supplied, TOKEN):
+            return True
+        self.send_json({"error": "unauthorized"}, 401)
+        return False
 
     def send_file_ranged(self, path: Path, ctype: str):
         if not path.exists():
@@ -94,29 +109,46 @@ class Handler(BaseHTTPRequestHandler):
                 remaining -= len(chunk)
 
     def do_GET(self):
-        if self.path in ("/", "/index.html"):
+        if not self.authorized():
+            return
+        path = clean_path(self.path)
+        if path in ("/", "/index.html"):
             body = (EDITOR_DIR / "index.html").read_bytes()
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(body)))
             self.end_headers()
             self.wfile.write(body)
-        elif self.path == "/api/data":
+        elif path == "/api/data":
             self.send_json({
                 "cuts": json.loads(CUTS.read_text(encoding="utf-8")),
                 "manifest": json.loads((PROJECT / "work" / "editor" / "manifest.json").read_text(encoding="utf-8")),
             })
-        elif self.path == "/api/render/status":
+        elif path == "/api/render/status":
             self.send_json(render_state)
-        elif self.path in MEDIA:
-            self.send_file_ranged(*MEDIA[self.path])
+        elif path in MEDIA:
+            self.send_file_ranged(*MEDIA[path])
         else:
             self.send_json({"error": "not found"}, 404)
 
     def do_POST(self):
-        length = int(self.headers.get("Content-Length", 0))
-        body = json.loads(self.rfile.read(length) or b"{}")
-        if self.path == "/api/save":
+        if not self.authorized():
+            return
+        try:
+            length = int(self.headers.get("Content-Length", 0))
+        except ValueError:
+            self.send_json({"error": "invalid content length"}, 400)
+            return
+        if length < 0 or length > MAX_BODY_BYTES:
+            self.send_json({"error": "payload too large"}, 413)
+            return
+        try:
+            body = json.loads(self.rfile.read(length) or b"{}")
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            self.send_json({"error": "invalid JSON"}, 400)
+            return
+        path = clean_path(self.path)
+        if path == "/api/save":
             data = body.get("cuts")
             if not data or "clips" not in data:
                 self.send_json({"error": "invalid cuts payload"}, 400)
@@ -133,11 +165,15 @@ class Handler(BaseHTTPRequestHandler):
                     for c in changes:
                         f.write(f"{stamp} {c}\n")
             self.send_json({"saved": True, "backup": f"backups/cuts-{stamp}.json"})
-        elif self.path == "/api/render":
+        elif path == "/api/render":
             if render_state["running"]:
                 self.send_json({"error": "render already running"}, 409)
                 return
             style = body.get("style", "tight")
+            cuts = json.loads(CUTS.read_text(encoding="utf-8"))
+            if not isinstance(style, str) or style not in cuts.get("styles", {}):
+                self.send_json({"error": "unknown render style"}, 400)
+                return
             threading.Thread(target=run_render, args=(style,), daemon=True).start()
             self.send_json({"started": True})
         else:
@@ -145,5 +181,5 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    print(f"Cut editor for {PROJECT.name}  ->  http://localhost:{PORT}")
+    print(f"Cut editor for {PROJECT.name}  ->  http://localhost:{PORT}/?token={TOKEN}")
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()

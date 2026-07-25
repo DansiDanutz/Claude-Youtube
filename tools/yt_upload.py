@@ -32,6 +32,7 @@ the YouTube API Services Audit & Quota Extension form (or use an older project t
 """
 import argparse
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -142,7 +143,8 @@ def get_creds():
             sys.exit(f"missing {CLIENT_SECRET} — see tools/yt_upload_SETUP.md (step 2)")
         creds = InstalledAppFlow.from_client_secrets_file(str(CLIENT_SECRET), SCOPES).run_local_server(port=0)
     YT_DIR.mkdir(exist_ok=True)
-    TOKEN.write_text(creds.to_json())
+    TOKEN.write_text(creds.to_json(), encoding="utf-8")
+    os.chmod(TOKEN, 0o600)
     return creds
 
 

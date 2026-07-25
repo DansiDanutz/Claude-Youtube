@@ -54,14 +54,16 @@ let files = [];
 try { files = walk(shotsDir); } catch { files = []; }
 
 const shots = [];
-const seen = new Set();
+const seen = new Map();
 for (const file of files.sort()) {
   const group = path.relative(shotsDir, file).split(path.sep)[0];
   if (typeArg && typeOfGroup(group) !== typeArg) continue;
   const cfg = parseConfig(readFileSync(file, 'utf8'));
   if (!cfg) { console.warn('  skip (no compositionConfig):', path.relative(root, file)); continue; }
-  if (seen.has(cfg.id)) { console.warn('  DUPLICATE id, skipping:', cfg.id, path.relative(root, file)); continue; }
-  seen.add(cfg.id);
+  if (seen.has(cfg.id)) {
+    throw new Error(`duplicate composition id ${cfg.id}: ${seen.get(cfg.id)} and ${path.relative(root, file)}`);
+  }
+  seen.set(cfg.id, path.relative(root, file));
   let imp = './' + path.relative(path.join(root, 'src'), file).replace(/\\/g, '/').replace(/\.tsx$/, '');
   shots.push({ ...cfg, imp });
 }
