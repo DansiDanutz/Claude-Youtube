@@ -1,0 +1,33 @@
+THE ROOM
+========
+USED AT   Ch7 · 20:50
+SAVE AS   img-7-the-room.png   (in this folder — any filename works, but this is tidiest)
+STATUS    Optional. Real room strongly preferred — it's the emotional close.
+
+
+PASTE THIS INTO CHATGPT
+-----------------------
+
+{
+  "type": "cinematic wide photograph",
+  "subject": "a small home office seen wide from the doorway — a desk, two computers, one lamp, a chair nobody is sitting in",
+  "setting": "night, a window showing a dark city, the rest of the flat unlit behind the camera",
+  "lighting": "one warm lamp, warm and generous this time rather than cold; screens dim in standby",
+  "palette": "warm amber and gold dominant, near-black surround",
+  "camera": "24mm, wide, slightly off-centre framing, natural and unstaged",
+  "mood": "warm, human, the end of a long day — this is where five companies are being built",
+  "constraints": "no people, no text, no logos"
+}
+
+16:9 widescreen. No text, no lettering, no watermarks anywhere in the image.
+
+
+ACCEPT / REJECT
+---------------
+WARM. Every other frame in this episode is cold — this one is the exhale. If it comes back cool-toned, regenerate.
+
+Also reject if: any text or lettering appears · a person or body part is visible ·
+the palette drifts to blue/teal (this series is black + gold + coral).
+
+Generate 2-3 and keep the best. Drop every keeper in this folder — if there is more
+than one PNG here I will use the most recent, or name your pick PICK.png to be explicit.

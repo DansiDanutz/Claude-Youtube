@@ -1,0 +1,33 @@
+FRANKFURT
+=========
+USED AT   Ch1 · 3:20
+SAVE AS   img-3-frankfurt.png   (in this folder — any filename works, but this is tidiest)
+STATUS    Needed — you can't film Frankfurt.
+
+
+PASTE THIS INTO CHATGPT
+-----------------------
+
+{
+  "type": "cinematic photograph",
+  "subject": "a data centre cold aisle, four server racks receding into perspective, status LEDs in rows",
+  "setting": "windowless, immaculate, cable management visible and tidy",
+  "lighting": "cool white from overhead strips, LED rows reading green and amber, strong perspective falloff into black",
+  "palette": "desaturated cool greys against near-black, amber and gold LED accents",
+  "camera": "24mm, centred one-point perspective down the aisle, tripod height",
+  "mood": "industrial, indifferent, permanent",
+  "constraints": "no people, no text, no logos, no visible branding on racks"
+}
+
+16:9 widescreen. No text, no lettering, no watermarks anywhere in the image.
+
+
+ACCEPT / REJECT
+---------------
+FOUR racks, not a generic corridor. Cool grey — if it comes back neon blue it fights the palette.
+
+Also reject if: any text or lettering appears · a person or body part is visible ·
+the palette drifts to blue/teal (this series is black + gold + coral).
+
+Generate 2-3 and keep the best. Drop every keeper in this folder — if there is more
+than one PNG here I will use the most recent, or name your pick PICK.png to be explicit.

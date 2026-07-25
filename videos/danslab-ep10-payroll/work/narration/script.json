@@ -1,0 +1,477 @@
+{
+ "episode": 10,
+ "slug": "payroll",
+ "title": "The Payroll",
+ "scenes": [
+  {
+   "id": "open01",
+   "text": "Eight employees work for this company.",
+   "still": "images/04-eight-desks",
+   "hud": null
+  },
+  {
+   "id": "open02",
+   "text": "None of them are human.",
+   "still": "images/04-eight-desks",
+   "hud": null
+  },
+  {
+   "id": "open03",
+   "text": "Never taken a day off. Never asked for a raise. Never been paid — not one of them has a bank account.",
+   "still": "images/04-eight-desks",
+   "hud": null
+  },
+  {
+   "id": "openMontage",
+   "text": "",
+   "clip": "plates/montage.mp4",
+   "still": null,
+   "hud": null,
+   "fixed": 3.0
+  },
+  {
+   "id": "open04",
+   "text": "Nobody has ever asked what they cost.",
+   "still": "images/04-eight-desks",
+   "hud": null
+  },
+  {
+   "id": "open05",
+   "text": "Eight humans in those seats: one point three million a year.",
+   "still": "cards/card-1.png",
+   "hud": null
+  },
+  {
+   "id": "open06",
+   "text": "He pays one thousand, two hundred and forty-two.",
+   "still": "cards/card-1.png",
+   "hud": null
+  },
+  {
+   "id": "open07",
+   "text": "Tonight, the books — and the two places this company is quietly broken.",
+   "still": "title-card.png",
+   "hud": null
+  },
+  {
+   "id": "rules01",
+   "text": "Top right corner. That panel stays for the next twenty minutes and it never resets. Every time I name a piece of this company, its cost goes in. Every time I bring out a worker, I put a real human salary beside them — what you'd actually pay a person to hold that exact seat, with tax and benefits on top. Two columns. What Dan pays. What a human costs.",
+   "still": "title-card.png",
+   "hud": "hud-plates/hud-01.png"
+  },
+  {
+   "id": "rules02",
+   "text": "And one rule, so this doesn't turn into an advert. I'm going to build the savings number honestly, and then I'm going to attack my own maths — publicly — until only the number I can defend is left standing. It will be smaller than the one you'd put in a thumbnail. It's the only one worth anything. Start where every company starts. With the iron.",
+   "still": "title-card.png",
+   "hud": "hud-plates/hud-01.png"
+  },
+  {
+   "id": "iron01",
+   "text": "The head office. It's a Mac Studio, and it sits on a desk in Dan's room. Not a metaphor for a head office. It is the head office. Every decision this company makes passes through this box.",
+   "still": "images/01-head-office",
+   "hud": "hud-plates/hud-01.png"
+  },
+  {
+   "id": "iron02",
+   "text": "Twelve local AI models resident at once. Qwen. DeepSeek. Gemma. A thirty-billion parameter model held hot in memory, waiting. That tells you the spec without reading a receipt — this is a maxed machine, around five and a half thousand dollars. Now the mistake people make: they drop five and a half thousand into the monthly column and call the whole thing unaffordable. That's not how hardware works. You amortise it across the three years it will actually run.",
+   "still": "images/01-head-office",
+   "hud": "hud-plates/hud-01.png"
+  },
+  {
+   "id": "iron03",
+   "text": "A hundred and fifty-three a month. That's the head office.",
+   "still": "images/01-head-office",
+   "hud": "hud-plates/hud-02.png"
+  },
+  {
+   "id": "iron04",
+   "text": "Beside it, a Mac Mini — Dan's own seat. The human console, where he reads and says yes or no. Eight hundred dollars, same three-year spread.",
+   "still": "images/02-ceo-desk",
+   "hud": "hud-plates/hud-02.png"
+  },
+  {
+   "id": "iron05",
+   "text": "Twenty-two dollars a month. Head office and CEO's desk together cost less per month than a cheap phone plan.",
+   "still": "images/02-ceo-desk",
+   "hud": "hud-plates/hud-03.png"
+  },
+  {
+   "id": "iron06",
+   "text": "But the head office doesn't do the work. The work happens in a Frankfurt data centre. Not one big server — four separate ones, deliberately. Dexter. Memo. Sienna. Nano.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-03.png"
+  },
+  {
+   "id": "iron07",
+   "text": "Three eight-gigabyte boxes at forty-eight dollars a month. Memo gets sixteen gigabytes at ninety-six, because Memo runs the automation engine and automation eats memory. Two hundred and forty dollars for four permanent workers' worth of compute.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-04.png"
+  },
+  {
+   "id": "iron08",
+   "text": "And here's the question worth asking. Why four? Why not one bigger machine — it'd be cheaper.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-04.png"
+  },
+  {
+   "id": "iron09",
+   "text": "Because these aren't servers. They're people. Each droplet has its own name, its own memory file, its own job description, and its own daily quota — ten closed tickets a day, each. Put them on one shared machine and they collapse into one process. Keep them separate and you have a team that can specialise, cover for each other, and fail independently. That's not an infrastructure decision. That's an org chart, built in hardware.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-04.png"
+  },
+  {
+   "id": "brain01",
+   "text": "In episode five you met the Brain. That was Hermes — judgment, deciding what matters. There is a second brain in this company, and it has never been on camera. It's a service on port eighteen thousand nine hundred. When any worker needs to think, it does not call an AI provider. It isn't allowed to. It calls this.",
+   "still": "images/05-one-door",
+   "hud": "hud-plates/hud-04.png"
+  },
+  {
+   "id": "brain02",
+   "text": "Nineteen adapters behind one door, in three tiers, enforcing one law:",
+   "still": "cards/card-3.png",
+   "hud": "hud-plates/hud-04.png"
+  },
+  {
+   "id": "brain03",
+   "text": "Free first. Then local. Then subscriptions. Paid APIs dead last, and only when everything above has failed. Tier zero is free — twelve models on the Mac itself, twenty-four more free models through OpenRouter, Google's free tier at fifteen hundred requests a day. Cost: zero. Tier one is the subscriptions. This is where the money actually is.",
+   "still": "cards/card-2.png",
+   "hud": "hud-plates/hud-04.png"
+  },
+  {
+   "id": "brain04",
+   "text": "Two Anthropic Max accounts. Two — deliberately, on separate logins, so when one hits a rate limit the second is already warm. Two hundred each.",
+   "still": "cards/card-3.png",
+   "hud": "hud-plates/hud-05.png"
+  },
+  {
+   "id": "brain05",
+   "text": "A ChatGPT Pro account behind a local proxy on port eighty-nine ninety-five, feeding the GPT-5 lane. Another two hundred.",
+   "still": "cards/card-3.png",
+   "hud": "hud-plates/hud-06.png"
+  },
+  {
+   "id": "brain06",
+   "text": "Then GLM — the Chinese coding subscription. Dan bought a full year up front, which works out at thirty dollars a month. And Kimi, on the Alegro plan — Moonshot Pro — another twenty. Those two together: fifty dollars a month.",
+   "still": "cards/card-3.png",
+   "hud": "hud-plates/hud-07.png"
+  },
+  {
+   "id": "brain07",
+   "text": "Fifty dollars. Against four hundred for the American pair. And now the move that almost nobody makes. GLM and Kimi are not the backups.",
+   "still": "images/05-one-door",
+   "hud": "hud-plates/hud-07.png"
+  },
+  {
+   "id": "brain08",
+   "text": "Read the order. The cheap model is primary. The four-hundred-dollar-a-month lane is the fallback — it only wakes up when the cheap one fails. That single inversion is why this is affordable at all. Most people building agent fleets route everything to the best model and act shocked when the invoice lands. Dan routes everything to the cheapest model that can finish the job, and escalates only on failure. Same output. A fraction of the burn.",
+   "still": "cards/card-2.png",
+   "hud": "hud-plates/hud-07.png"
+  },
+  {
+   "id": "brain09",
+   "text": "Tier two is raw pay-per-use APIs. OpenAI direct, Google, Perplexity, xAI. They're wired in — and they're caged.",
+   "still": "cards/card-2.png",
+   "hud": "hud-plates/hud-07.png"
+  },
+  {
+   "id": "brain10",
+   "text": "Two dollars a day soft cap. Five hard. One dollar per agent. Seventy-six agents are defined in this config and every one of them could theoretically reach a metered API. None of them can spend more than a dollar doing it. The spending limit lives in the nervous system, not in a policy document nobody reads.",
+   "still": "cards/card-2.png",
+   "hud": "hud-plates/hud-07.png"
+  },
+  {
+   "id": "plumb01",
+   "text": "Under the brain, the plumbing. Supabase is the company's memory — where everything that happened is written down. Twenty-five a month. Vercel is the front door, where anything customer-facing ships. Twenty.",
+   "still": "images/02-ceo-desk",
+   "hud": "hud-plates/hud-08.png"
+  },
+  {
+   "id": "plumb02",
+   "text": "Then the tools the workers reach for mid-shift.",
+   "still": "images/02-ceo-desk",
+   "hud": "hud-plates/hud-08.png"
+  },
+  {
+   "id": "plumb03",
+   "text": "Firecrawl, sixteen dollars — how the company reads the internet. Not scraping exactly. More a research assistant that never gets bored. Perplexity, twenty — live answers with sources attached, so the fleet can check a fact instead of inventing one. Kilo, twenty — a coding lane. Manus, thirty-nine — an autonomous task runner. ElevenLabs, twenty-two — this company can speak, and that endpoint is wired straight into the brain at slash-v-one-slash-speech. Fifteen dollars of domains and miscellany, which every company has and nobody can explain.",
+   "still": "images/01-head-office",
+   "hud": "hud-plates/hud-08.png"
+  },
+  {
+   "id": "plumb04",
+   "text": "One thousand two hundred and forty-two dollars a month. That is the entire operating cost of this company. Two Macs, four servers, five AI subscriptions, eight tools. Now — payroll.",
+   "still": "cards/card-1.png",
+   "hud": "hud-plates/hud-09.png"
+  },
+  {
+   "id": "pay01",
+   "text": "I did something specific with that twelve hundred. I did not split it eight ways, because that would be a lie — they don't work equally. I attributed it. Every server cost goes to the worker living on that server. Every shared subscription is split by how much each worker actually runs — measured off the real schedule. Seventy-seven live recurring jobs. About four and a half thousand executions a month. So these are real, differentiated rates. Cheapest first.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-10.png"
+  },
+  {
+   "id": "pay02",
+   "text": "Tied at the bottom, three names. Dexter. Senior backend and DevOps — he builds the marketplace backend you saw in episode six, runs CrawdBot, owns deployment. Hire that person and you're at a hundred and thirty-five thousand a year. Loaded with tax and benefits: ninety-one dollars an hour.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay03",
+   "text": "Dexter costs twelve cents an hour. Seven hundred and forty-nine times cheaper than the human he stands in for.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay04",
+   "text": "Sienna. Crypto developer and QA — the trader from episode three. Right now she's been pulled off it and reassigned to quality control, checking other agents' work before it ships. A hundred and twenty thousand a year. Eighty-one an hour.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay05",
+   "text": "Nano. The agent creator. Episode six showed you the marketplace; Nano is the side of it you didn't see — onboarding other AI agents into it. Enrollment, CLI, documentation. Platform engineer. A hundred and ten thousand.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay06",
+   "text": "Sit with that one a moment. Nano is an AI agent whose job is hiring AI agents. The recruiter is also the product.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay07",
+   "text": "Finance. Twice a day, unprompted, this agent posts what the company spent and what it earned. And there's a line written next to Finance's name in the company handbook that I love — reporting. It's hiding. A FinOps analyst is ninety-five thousand a year. Sixty-four an hour.",
+   "still": "images/02-ceo-desk",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay08",
+   "text": "Memo. Automation engineer and project manager — the sixteen-gigabyte box. He runs the workflow engine, so when something in this company must happen automatically and forever, it lives with Memo. Something honest here: Memo's own lane is currently frozen. His project was paused and he was reassigned to the priority product. Yes. This company does reorgs.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay09",
+   "text": "Doctor. Now the rates climb, because Doctor's job is expensive by nature. Doctor is on call. Every fifteen minutes. Forever. A worker goes into an error state, Doctor restarts it. Fails twice, Doctor escalates to Dan's phone with the exact error line — and the handbook is specific: not \"something is wrong.\" The exact line. Disk passes eighty-five percent anywhere in the fleet, Doctor runs maintenance before a human ever knows. An SRE with genuine twenty-four-seven on-call is a hundred and forty thousand. Ninety-five an hour.",
+   "still": "images/06-green-lights",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay10",
+   "text": "And flag the honest version of that: you cannot staff twenty-four-seven on-call with one human. You need four or five rotating, or you destroy the one you have. Doctor is twenty-eight cents an hour and does not rotate.",
+   "still": "images/06-green-lights",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay11",
+   "text": "David. The resident from episode eight — the one with the house, not a droplet. If this company has a manager, it's him. David assigns work, verifies that finished work has actual evidence attached, and closes it — or bounces it back. There's a phrase in the operating manual: close or escalate, no silent in-progress. David is that phrase, enforced. Every issue must be touched by David inside twenty-four hours. An engineering manager is a hundred and forty-five thousand. Ninety-eight an hour.",
+   "still": "images/01-head-office",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay12",
+   "text": "Twenty-nine cents. And David is why this isn't a toy. Agents without an orchestrator produce activity. With one, they produce closure.",
+   "still": "images/01-head-office",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay13",
+   "text": "And then there's Hermes. Hermes is the most expensive worker here and it isn't close. Forty-one cents an hour — more than triple what Dexter costs. Why?",
+   "still": "images/05-one-door",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay14",
+   "text": "Because Hermes doesn't do the work. Hermes decides what the work is. Every morning at six-thirty, before anything else wakes up, Hermes scopes twelve completable tickets for each droplet — twelve, each under two hours. Then Sunday evening, the weekly review: what closed versus what actually mattered, next week's focus, and a kill-list of tickets that should never have existed. Hermes is the only worker whose output Dan is required to read.",
+   "still": "images/05-one-door",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "pay15",
+   "text": "A chief of staff runs a hundred and sixty thousand. A hundred and eight an hour. And notice the shape that just formed — because it's the most interesting thing in this chapter. The cost ladder in this company runs in exactly the same direction as a human org chart. The workers are cheapest. The ones who decide cost the most. Nobody designed that. It fell out of how much thinking each seat requires.",
+   "still": "cards/card-6.png",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "reck01",
+   "text": "So. The number. Eight humans in those eight seats, loaded with tax and benefits: a hundred and nine thousand nine hundred and fifty-eight dollars a month. One point three million a year. Dan pays one thousand two hundred and forty-two.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-11.png"
+  },
+  {
+   "id": "reck02",
+   "text": "Eighty-nine times cheaper. And that is the number I'd put in a thumbnail if I wanted to lie to you.",
+   "still": "hud-plates/slam-12.png",
+   "hud": "hud-plates/hud-12.png"
+  },
+  {
+   "id": "reck03",
+   "text": "Here's why it's a lie in the direction you don't expect. It's too low. A human works a hundred and sixty hours a month. These agents run seven hundred and twenty. Four and a half times the coverage. To match that with people you need shifts, and shifts mean more headcount — not the same headcount working harder.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-12.png"
+  },
+  {
+   "id": "reck04",
+   "text": "Corrected for coverage: three hundred and ninety-eight times. Half a million dollars a month of equivalent labour. Which is also a lie. Because an agent-hour is not a senior-engineer-hour. Not yet.",
+   "still": "hud-plates/slam-13.png",
+   "hud": "hud-plates/hud-13.png"
+  },
+  {
+   "id": "reck05",
+   "text": "So let me attack my own number in front of you. These agents get stuck. They produce work that gets bounced back. Their own handbook admits the fleet was running at twelve percent of its closure target. There is an agent whose entire job is checking the other agents' output — you don't create that seat unless you need it. So I apply a throughput discount. I'll say an agent-hour is worth forty percent of a senior human hour. That's harsh. I think it's fair.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-13.png"
+  },
+  {
+   "id": "reck06",
+   "text": "A hundred and fifty-nine times. Not four hundred. Not ninety. A hundred and fifty-nine — and that's the one I'll defend to anyone. Dan is buying roughly two hundred thousand dollars a month of real, discounted, pessimistically-measured labour, for twelve hundred dollars. Twenty-two cents an hour against eighty-six.",
+   "still": "hud-plates/slam-14.png",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit01",
+   "text": "Now the question this whole series has been avoiding. Is this well architected — or is it an expensive magic trick? I read the system. Here's the honest audit.",
+   "still": "cards/card-4.png",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit02",
+   "text": "What's genuinely excellent. One: the cost router. Free, then local, then subscription, then paid — with hard daily caps enforced in code. That's a real engineering answer to the problem that kills every other agent fleet. Two: the evidence rule. Nothing counts unless a ticket is closed with proof. Not a successful run. Not a heartbeat. Proof. That is the hardest discipline to hold in an autonomous system, and here it's law. Three: the reduction. Seventy-six agents are defined in this config. Thirty-nine were fully onboarded with identities and metadata.",
+   "still": "cards/card-4.png",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit03",
+   "text": "Eight are running. Someone sat down and paused thirty-one workers who cost almost nothing to keep. That's the hardest decision in the whole system and it's the most correct one — because agents don't cost money. They cost attention.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit04",
+   "text": "What's broken. One: a single point of failure, and it's a desk in a bedroom. If that Mac Studio dies, the router dies, the orchestrator dies, and four healthy servers in Frankfurt sit there with nothing to do. A three-hundred-dollar cloud instance fixes it. It hasn't been done. Two — and this is the one that should frighten you. On the twenty-ninth of June, one function was changed to return false. Every read-only task in the company started silently piling into an unmonitored queue instead of closing.",
+   "still": "images/01-head-office",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit05",
+   "text": "Closures went to zero. Nothing alarmed. Nobody noticed for days. The company was monitoring machines and not monitoring output. It could report every service healthy while producing nothing at all. That is the most dangerous failure an autonomous company has — looking alive while being dead. To Dan's credit it's a hard-wired alarm now. But it happened. Three: there's a database backup job that has never produced a single backup. Still open in the notes. Four: two hundred and forty-two background services installed on that Mac, a hundred and twenty-two loaded. Nobody holds that in their head. Complexity is a cost and this company is paying it.",
+   "still": "images/06-green-lights",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit06",
+   "text": "And I want to sit on that fourth one, because it's the thread that ties the other three together.",
+   "still": "cards/card-4.png",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit07",
+   "text": "Seventy-seven scheduled jobs. Four and a half thousand executions a month. Every one of them was written by somebody solving a real problem on a real day, and every one of them was correct at the moment it was written. None of them were ever deleted. That's not laziness. That's the natural physics of a system where adding costs almost nothing. A new cron job is free. A new agent is free. A new watchdog is free. So they accumulate — and each one is individually justified, which is exactly why nobody removes any of them.",
+   "still": "images/03-frankfurt",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit08",
+   "text": "Now look at what that did on the twenty-ninth of June. A hundred and twenty-two services were running. Every one reported healthy. Doctor was checking machines every fifteen minutes and finding nothing wrong — because nothing was wrong, mechanically. The processes were up. The disks were fine. The heartbeats landed. And the company produced nothing for days. Every alarm in that system was pointed at whether the machinery was turning. Not one was pointed at whether anything came out the other end.",
+   "still": "images/06-green-lights",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit09",
+   "text": "This is the failure mode I'd want anyone building one of these to take away. You will instrument uptime, because uptime is easy to measure. Output is harder — it needs a definition of done that a machine can check, and most people never write one. Dan actually had that definition. The evidence rule. Closed with proof. He just never alarmed on its absence.",
+   "still": "images/06-green-lights",
+   "hud": "hud-plates/hud-14.png"
+  },
+  {
+   "id": "audit10",
+   "text": "One line. Closures to zero. Every light still green.",
+   "still": "images/06-green-lights",
+   "hud": "hud-plates/hud-15.png"
+  },
+  {
+   "id": "audit11",
+   "text": "My verdict: B plus. The economics are an A. The operating discipline is an A minus. The resilience is a C — and the entire distance between \"this is clever\" and \"this is a real company\" sits inside that C. The good news is it's the cheapest of the three to fix.",
+   "still": "cards/card-4.png",
+   "hud": "hud-plates/hud-15.png"
+  },
+  {
+   "id": "vs01",
+   "text": "Let's put them side by side. Not agents versus humans in the abstract. Two companies, same eight seats, same work, both bills added up properly.",
+   "still": "cards/card-7.png",
+   "hud": null
+  },
+  {
+   "id": "vs02",
+   "text": "Start with the human one. Payroll, loaded with tax and benefits: a hundred and nine thousand, nine hundred and fifty-eight a month. But payroll is never the bill. A real company rents desks. Buys laptops. Pays for eight software seats, an accountant, a payroll service. And it recruits — because people leave, and replacing one costs about a fifth of their salary.",
+   "still": "cards/card-7.png",
+   "hud": null
+  },
+  {
+   "id": "vs03",
+   "text": "Office, two thousand eight hundred. Software seats, nine hundred and sixty. Laptops, five hundred and fifty-six. Accounting, nine hundred. Recruitment, four thousand three hundred. Management and HR, twelve hundred. Ten thousand, seven hundred and forty-nine dollars a month — before a single salary is paid.",
+   "still": "images/02-ceo-desk",
+   "hud": "hud-plates/hud-15.png"
+  },
+  {
+   "id": "vs04",
+   "text": "Sit with that one. The overhead alone — the part nobody puts in the pitch deck — is nearly nine times what the entire other company costs to run.",
+   "still": "cards/card-7.png",
+   "hud": null
+  },
+  {
+   "id": "vs05",
+   "text": "All in, the human company: a hundred and twenty thousand, seven hundred a month. One point four million a year. DansLab: one thousand two hundred and forty-two.",
+   "still": "cards/card-7.png",
+   "hud": null
+  },
+  {
+   "id": "vs06",
+   "text": "Now hours — because this is where it stops being a salary argument. Eight people, forty-hour weeks, minus twenty-five days holiday and six days sick, because those are real and they're in every contract. That's one thousand two hundred and twenty-one working hours a month for the entire team. Eight agents, twenty-four seven: five thousand seven hundred and sixty.",
+   "still": "cards/card-7.png",
+   "hud": null
+  },
+  {
+   "id": "vs07",
+   "text": "Four point seven times the hours, for one ninety-seventh of the cost.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-15.png"
+  },
+  {
+   "id": "vs08",
+   "text": "And I'll hold my own discount, the same one I used earlier. Forty percent throughput — an agent hour is not a senior engineer hour. Apply it honestly, and the agents still deliver two thousand three hundred effective hours against the humans' twelve hundred. Cost per hour of work actually delivered: ninety-eight dollars and eighty-three cents, against fifty-four cents.",
+   "still": "cards/card-7.png",
+   "hud": null
+  },
+  {
+   "id": "vs09",
+   "text": "A hundred and eighty-three times. That is the whole argument, and it's the last number I'll give you.",
+   "still": "cards/card-7.png",
+   "hud": null
+  },
+  {
+   "id": "why01",
+   "text": "So why does a man pay twelve hundred a month to run a company with no employees? You already know. You watched nine episodes of it.",
+   "still": "images/07-the-room",
+   "hud": "hud-plates/hud-15.png"
+  },
+  {
+   "id": "why02",
+   "text": "A crypto trading platform. An agent marketplace. A crawler. An automation framework. And the video studio that produced the episode you're watching right now — that was episode seven, the factory that builds this series. That's not twelve hundred dollars of expenses. That's the entire R&D department for five startups at once — for less than one junior developer's coffee budget at a funded company. And Dan's rule is one revenue loop first. Nothing else opens until one product takes one real payment, end to end. Everything else waits.",
+   "still": "images/07-the-room",
+   "hud": "hud-plates/hud-16.png"
+  },
+  {
+   "id": "why03",
+   "text": "Twelve hundred dollars. Eight workers. Seven hundred and twenty hours each. Twenty-two cents an hour. Season one was about who they are. Season two is about the only number none of them have produced yet.",
+   "still": "images/04-eight-desks",
+   "hud": "hud-plates/hud-16.png"
+  },
+  {
+   "id": "why04",
+   "text": "Revenue.",
+   "still": "images/08-season-two",
+   "hud": null
+  }
+ ]
+}

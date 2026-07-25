@@ -1,0 +1,33 @@
+EIGHT DESKS, NOBODY THERE
+=========================
+USED AT   cold open + Ch4 · 10:15
+SAVE AS   img-4-eight-desks.png   (in this folder — any filename works, but this is tidiest)
+STATUS    ★ HIGHEST PRIORITY. Used twice. Get this one right before the others.
+
+
+PASTE THIS INTO CHATGPT
+-----------------------
+
+{
+  "type": "cinematic wide photograph",
+  "subject": "eight identical empty office desks in two rows of four, each with a screen switched on and glowing, every chair pushed in, not a single person present",
+  "setting": "an open-plan office at three in the morning, ceiling lights off",
+  "lighting": "the only light is the eight screens, cool and even, throwing long shadows across the floor; deep black ceiling and corners",
+  "palette": "near-black room, cool screen glow, a single warm gold #d4a017 pool of light on the far wall",
+  "camera": "28mm, symmetrical straight-on wide, slight high angle, strong vanishing point",
+  "mood": "eerie, productive, unattended — work happening with nobody doing it",
+  "constraints": "absolutely no people, no readable text on the screens, no logos"
+}
+
+16:9 widescreen. No text, no lettering, no watermarks anywhere in the image.
+
+
+ACCEPT / REJECT
+---------------
+COUNT THE DESKS — must be exactly eight, one per worker. Not a person, not a silhouette, not a reflection. This is the thesis image; spend extra generations here.
+
+Also reject if: any text or lettering appears · a person or body part is visible ·
+the palette drifts to blue/teal (this series is black + gold + coral).
+
+Generate 2-3 and keep the best. Drop every keeper in this folder — if there is more
+than one PNG here I will use the most recent, or name your pick PICK.png to be explicit.

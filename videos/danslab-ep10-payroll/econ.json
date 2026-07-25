@@ -1,0 +1,92 @@
+{
+ "total": 1242,
+ "amort": 175,
+ "droplets": 240,
+ "models": 650,
+ "tools": 177,
+ "rows": [
+  {
+   "agent": "dexter",
+   "title": "Senior Backend + DevOps",
+   "cost": 87.89,
+   "rate": 0.122,
+   "human_mo": 14625,
+   "human_rate": 91.41,
+   "mult": 749,
+   "runs": 30
+  },
+  {
+   "agent": "sienna",
+   "title": "Crypto Dev + QA",
+   "cost": 87.89,
+   "rate": 0.122,
+   "human_mo": 13000,
+   "human_rate": 81.25,
+   "mult": 666,
+   "runs": 30
+  },
+  {
+   "agent": "nano",
+   "title": "Platform / Agent Eng",
+   "cost": 87.89,
+   "rate": 0.122,
+   "human_mo": 11917,
+   "human_rate": 74.48,
+   "mult": 610,
+   "runs": 30
+  },
+  {
+   "agent": "finance",
+   "title": "FinOps Analyst",
+   "cost": 135.49,
+   "rate": 0.188,
+   "human_mo": 10292,
+   "human_rate": 64.32,
+   "mult": 342,
+   "runs": 69
+  },
+  {
+   "agent": "memo",
+   "title": "Automation Eng / PM",
+   "cost": 135.89,
+   "rate": 0.189,
+   "human_mo": 11917,
+   "human_rate": 74.48,
+   "mult": 395,
+   "runs": 30
+  },
+  {
+   "agent": "doctor",
+   "title": "SRE, on-call owner",
+   "cost": 203.3,
+   "rate": 0.282,
+   "human_mo": 15167,
+   "human_rate": 94.79,
+   "mult": 336,
+   "runs": 120
+  },
+  {
+   "agent": "david",
+   "title": "Orchestrator / Eng Manager",
+   "cost": 208.62,
+   "rate": 0.29,
+   "human_mo": 15708,
+   "human_rate": 98.18,
+   "mult": 339,
+   "runs": 124
+  },
+  {
+   "agent": "hermes",
+   "title": "Strategy Brain / Chief of Staff",
+   "cost": 295.04,
+   "rate": 0.41,
+   "human_mo": 17333,
+   "human_rate": 108.33,
+   "mult": 264,
+   "runs": 189
+  }
+ ],
+ "human_mo": 109958,
+ "blended_agent": 0.216,
+ "blended_human": 85.9
+}

@@ -1,0 +1,229 @@
+<meta charset="utf-8">
+<title>EP10 · full-frame design cards</title>
+<style>
+  :root{
+    --void:#040404;--gold:#d4a017;--gold-dim:#8f6c17;--coral:#c9584a;
+    --bone:#f2ede3;--dim:#8a8378;--faint:#5a554d;--rail:#241f1a;
+    --green:#5f9e6e;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--void);width:100vw;height:100vh;overflow:hidden;
+    color:var(--bone);font-family:var(--mono);display:grid;place-items:center}
+  body::before{content:"";position:fixed;inset:0;opacity:.5;pointer-events:none;
+    background-image:
+      radial-gradient(1px 1px at 9% 18%,#fff,transparent),
+      radial-gradient(1px 1px at 71% 12%,#e8ded0,transparent),
+      radial-gradient(1px 1px at 31% 74%,#fff,transparent),
+      radial-gradient(1px 1px at 86% 61%,#d8cfc0,transparent),
+      radial-gradient(1px 1px at 48% 39%,#fff,transparent),
+      radial-gradient(1px 1px at 94% 30%,#fff,transparent),
+      radial-gradient(1px 1px at 19% 91%,#cfc6b8,transparent)}
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse 72% 62% at 50% 50%,transparent 42%,rgba(0,0,0,.72) 100%)}
+  .card{display:none;position:relative;z-index:2;text-align:center}
+  .card.on{display:block}
+  .kick{font-size:16px;letter-spacing:.5em;color:var(--coral);text-transform:uppercase;margin-bottom:2.6em}
+
+  /* ── 1 · the two numbers ───────────────────────────────── */
+  #c1 .human{font-family:var(--serif);font-size:104px;color:var(--coral);position:relative;
+    display:inline-block;line-height:1.1}
+  #c1 .human::after{content:"";position:absolute;left:-3%;right:-3%;top:52%;height:3px;
+    background:var(--coral);opacity:.9}
+  #c1 .lab{font-size:13px;letter-spacing:.34em;color:var(--faint);text-transform:uppercase;margin-top:.9em}
+  #c1 .pay{font-family:var(--serif);font-size:176px;color:var(--gold);line-height:1;margin-top:.34em}
+  #c1 .lab2{font-size:13px;letter-spacing:.34em;color:var(--dim);text-transform:uppercase;margin-top:1.5em}
+
+  /* ── 2 · the law ───────────────────────────────────────── */
+  #c2 .law{display:flex;flex-direction:column;gap:.42em;align-items:center}
+  #c2 .step{font-family:var(--serif);font-size:92px;letter-spacing:.02em;line-height:1.05;
+    display:flex;align-items:baseline;gap:.5em}
+  #c2 .step .n{font-family:var(--mono);font-size:15px;letter-spacing:.28em;color:var(--faint);width:3.4em;text-align:right}
+  #c2 .s1{color:var(--green)} #c2 .s2{color:var(--gold)}
+  #c2 .s3{color:var(--bone)}  #c2 .s4{color:var(--coral)}
+  #c2 .foot{margin-top:1.9em;font-size:16px;letter-spacing:.24em;color:var(--faint);text-transform:uppercase}
+
+  /* ── 3 · the adapter fan ───────────────────────────────── */
+  #c3 .wrap{display:grid;grid-template-columns:430px 130px auto 130px 430px;align-items:center;gap:0;
+    font-size:15px;letter-spacing:.12em}
+  #c3 .agents{display:flex;flex-direction:column;gap:16px;text-align:right;color:var(--dim);text-transform:uppercase}
+  #c3 .agents b{font-weight:400;color:var(--bone)}
+  #c3 .gate{border:1px solid var(--gold);padding:38px 32px;background:rgba(212,160,23,.06)}
+  #c3 .gate .t{font-family:var(--serif);font-size:37px;color:var(--gold);line-height:1.15}
+  #c3 .gate .p{font-size:11px;letter-spacing:.2em;color:var(--faint);margin-top:9px}
+  #c3 .tiers{display:flex;flex-direction:column;gap:18px;text-align:left}
+  #c3 .tier{border-left:3px solid var(--tc);padding:14px 0 14px 20px}
+  #c3 .tier .n{font-family:var(--serif);font-size:31px;color:var(--tc)}
+  #c3 .tier .d{font-size:13px;letter-spacing:.14em;color:var(--faint);margin-top:5px;text-transform:uppercase}
+  #c3 .t0{--tc:var(--green)} #c3 .t1{--tc:var(--gold)} #c3 .t2{--tc:var(--coral)}
+  #c3 .line{height:1px;background:linear-gradient(90deg,transparent,var(--rail),var(--gold-dim))}
+  #c3 .line.r{background:linear-gradient(90deg,var(--gold-dim),var(--rail),transparent)}
+
+  /* ── 4 · the audit split ───────────────────────────────── */
+  #c4 .cols{display:grid;grid-template-columns:1fr 1px 1fr;gap:66px;width:1320px;text-align:left;align-items:start}
+  #c4 .div{background:var(--rail);height:100%;min-height:400px}
+  #c4 h3{font-family:var(--serif);font-size:41px;font-weight:400;margin-bottom:1.1em}
+  #c4 .g h3{color:var(--green)} #c4 .r h3{color:var(--coral)}
+  #c4 li{list-style:none;font-size:19px;line-height:1.5;color:var(--bone);
+    padding-left:26px;position:relative;margin-bottom:1.05em;letter-spacing:.01em}
+  #c4 li em{display:block;font-style:normal;font-size:14px;color:var(--faint);
+    letter-spacing:.08em;margin-top:5px;text-transform:uppercase}
+  #c4 .g li::before{content:"+";position:absolute;left:0;color:var(--green);font-size:19px;line-height:1}
+  #c4 .r li::before{content:"−";position:absolute;left:0;color:var(--coral);font-size:19px;line-height:1}
+
+  /* ── 5 · end card ──────────────────────────────────────── */
+  #c5 .m{font-family:var(--serif);font-size:112px;color:var(--bone);line-height:1}
+  #c5 .m em{font-style:italic;color:var(--gold)}
+  #c5 .r{width:340px;height:2px;margin:.5em auto 0;
+    background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+  #c5 .s{margin-top:1.9em;font-size:13px;letter-spacing:.4em;color:var(--faint);text-transform:uppercase}
+
+  /* ── 6 · the org ladder ────────────────────────────────── */
+  #c6 .rows{display:flex;flex-direction:column;gap:12px;width:1180px}
+  #c6 .r{display:grid;grid-template-columns:180px 1fr 130px;align-items:center;gap:22px}
+  #c6 .nm{font-size:17px;letter-spacing:.16em;text-transform:uppercase;text-align:right;color:var(--dim)}
+  #c6 .bar{height:31px;background:linear-gradient(90deg,var(--gold-dim),var(--gold));position:relative}
+  #c6 .amt{font-family:var(--serif);font-size:26px;color:var(--gold);text-align:left}
+  #c6 .r.hi .nm{color:var(--gold)}
+  #c6 .foot{margin-top:2.4em;font-size:14px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase}
+
+  /* ── 7 · human co. vs danslab ──────────────────────────── */
+  #c7 .tbl{display:grid;grid-template-columns:420px 260px 260px;gap:0;width:940px;text-align:left}
+  #c7 .hd{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);
+    padding:0 0 12px;border-bottom:1px solid var(--rail)}
+  #c7 .hd.h{color:var(--coral);text-align:right} #c7 .hd.d{color:var(--gold);text-align:right}
+  #c7 .r{display:contents}
+  #c7 .k{font-size:16px;color:var(--bone);padding:11px 0;border-bottom:1px solid rgba(36,31,26,.6)}
+  #c7 .k em{display:block;font-style:normal;font-size:11px;color:var(--faint);letter-spacing:.06em;margin-top:3px}
+  #c7 .v{font-family:var(--serif);font-size:23px;text-align:right;padding:11px 0;
+    border-bottom:1px solid rgba(36,31,26,.6);font-variant-numeric:tabular-nums}
+  #c7 .v.h{color:var(--coral)} #c7 .v.d{color:var(--gold)}
+  #c7 .tot .k,#c7 .tot .v{border-bottom:2px solid var(--rail);padding-top:16px}
+  #c7 .tot .v{font-size:32px}
+  #c7 .foot{margin-top:30px;display:flex;justify-content:center;gap:56px}
+  #c7 .foot div{text-align:center}
+  #c7 .foot .n{font-family:var(--serif);font-size:52px;color:var(--gold);line-height:1}
+  #c7 .foot .l{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);margin-top:8px}
+</style>
+
+<!-- 1 · cold open, the two numbers -->
+<div class="card" id="c1">
+  <div class="human">$1,319,500</div>
+  <div class="lab">what eight humans would cost — per year</div>
+  <div class="pay">$1,242</div>
+  <div class="lab2">what he pays — per month</div>
+</div>
+
+<!-- 2 · the routing law -->
+<div class="card" id="c2">
+  <div class="kick">the law</div>
+  <div class="law">
+    <div class="step"><span class="n">01</span><span class="s1">FREE</span></div>
+    <div class="step"><span class="n">02</span><span class="s2">LOCAL</span></div>
+    <div class="step"><span class="n">03</span><span class="s3">SUBSCRIPTION</span></div>
+    <div class="step"><span class="n">04</span><span class="s4">PAID API — LAST</span></div>
+  </div>
+  <div class="foot">$2 soft cap · $5 hard cap · $1 per agent per day</div>
+</div>
+
+<!-- 3 · the adapter fan -->
+<div class="card" id="c3">
+  <div class="kick">one door · nineteen adapters</div>
+  <div class="wrap">
+    <div class="agents">
+      <span><b>David</b></span><span><b>Hermes</b></span><span><b>Dexter</b></span><span><b>Memo</b></span>
+      <span><b>Sienna</b></span><span><b>Nano</b></span><span><b>Doctor</b></span><span><b>Finance</b></span>
+    </div>
+    <div class="line"></div>
+    <div class="gate">
+      <div class="t">Model<br>Agent</div>
+      <div class="p">:18900</div>
+    </div>
+    <div class="line r"></div>
+    <div class="tiers">
+      <div class="tier t0"><div class="n">T0 · FREE</div><div class="d">4 adapters — local models + free clouds</div></div>
+      <div class="tier t1"><div class="n">T1 · SUBSCRIPTION</div><div class="d">8 adapters — 6 active, 2 disabled</div></div>
+      <div class="tier t2"><div class="n">T2 · PAY-PER-USE</div><div class="d">7 adapters — gated, capped, last resort</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4 · the audit -->
+<div class="card" id="c4">
+  <div class="kick">architecture · b+</div>
+  <div class="cols">
+    <div class="g">
+      <h3>What works</h3>
+      <ul>
+        <li>Cost router with caps in code<em>free → local → sub → paid, enforced</em></li>
+        <li>Evidence or it didn't happen<em>a run is not a result</em></li>
+        <li>Paused 31 of 39 agents<em>agents cost attention, not money</em></li>
+      </ul>
+    </div>
+    <div class="div"></div>
+    <div class="r">
+      <h3>What doesn't</h3>
+      <ul>
+        <li>One desk is the whole control plane<em>Mac dies → fleet idles</em></li>
+        <li>Output was never monitored<em>one <code>return False</code>, days of silence</em></li>
+        <li>A backup job that has never run<em>zero backups produced</em></li>
+        <li>122 loaded services<em>nobody holds that in their head</em></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 5 · end card -->
+<div class="card" id="c5">
+  <div class="m">Danslab <em>Season II</em></div>
+  <div class="r"></div>
+  <div class="s">the only number they haven't produced yet</div>
+</div>
+
+
+<!-- 7 · the two companies -->
+<div class="card" id="c7">
+  <div class="kick">the two companies · same eight seats</div>
+  <div class="tbl">
+    <div class="hd">per month</div><div class="hd h">Human co.</div><div class="hd d">DansLab</div>
+    <div class="r"><div class="k">Payroll<em>8 seats, loaded ×1.30</em></div>
+      <div class="v h">$109,958</div><div class="v d">$0</div></div>
+    <div class="r"><div class="k">Overhead<em>office · laptops · seats · accounting · hiring · HR</em></div>
+      <div class="v h">$10,749</div><div class="v d">$0</div></div>
+    <div class="r"><div class="k">Machines + subscriptions<em>2 Macs · 4 servers · 5 subs · 8 tools</em></div>
+      <div class="v h">$0</div><div class="v d">$1,242</div></div>
+    <div class="r tot"><div class="k">Total</div>
+      <div class="v h">$120,707</div><div class="v d">$1,242</div></div>
+    <div class="r"><div class="k">Hours available<em>holiday + sick deducted</em></div>
+      <div class="v h">1,221</div><div class="v d">5,760</div></div>
+    <div class="r"><div class="k">Cost per effective hour<em>agents discounted to 40% throughput</em></div>
+      <div class="v h">$98.83</div><div class="v d">$0.54</div></div>
+  </div>
+  <div class="foot">
+    <div><div class="n">97×</div><div class="l">cheaper to run</div></div>
+    <div><div class="n">4.7×</div><div class="l">more hours</div></div>
+    <div><div class="n">183×</div><div class="l">per hour of work</div></div>
+  </div>
+</div>
+
+<!-- 6 · the cost ladder nobody designed -->
+<div class="card" id="c6">
+  <div class="kick">the org chart nobody designed</div>
+  <div class="rows" id="ladder"></div>
+  <div class="foot">cost per agent-hour · deciders cost more than workers</div>
+</div>
+
+<script>
+const L=[["dexter",.122],["sienna",.122],["nano",.122],["finance",.188],
+         ["memo",.189],["doctor",.282],["david",.290],["hermes",.410]];
+const max=.410;
+document.getElementById("ladder").innerHTML=L.map(([n,v])=>
+ `<div class="r${v===max?" hi":""}">
+    <div class="nm">${n}</div>
+    <div><div class="bar" style="width:${(v/max*100).toFixed(1)}%"></div></div>
+    <div class="amt">$${v.toFixed(3)}</div>
+  </div>`).join("");
+const n=+(new URLSearchParams(location.search).get("card")||1);
+document.getElementById("c"+n)?.classList.add("on");
+</script>

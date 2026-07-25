@@ -1,0 +1,33 @@
+THE HEAD OFFICE
+===============
+USED AT   Ch1 · 1:40
+SAVE AS   img-1-head-office.png   (in this folder — any filename works, but this is tidiest)
+STATUS    Optional. Shoot the real Mac Studio if you can; this is the stand-in.
+
+
+PASTE THIS INTO CHATGPT
+-----------------------
+
+{
+  "type": "cinematic photograph",
+  "subject": "a single aluminium desktop computer tower on a dark wooden desk, seen three-quarter from the front, one small amber status LED glowing on its face",
+  "setting": "a home office at night, blinds half-drawn, a city out of focus far beyond the window",
+  "lighting": "one warm tungsten desk lamp from the left, deep falloff, most of the frame in shadow; a faint cool spill from an off-screen monitor",
+  "palette": "near-black #040404 background, warm amber and gold #d4a017 highlights, muted bone",
+  "camera": "50mm, shallow depth of field, slight low angle, subject left-of-centre with negative space to the right",
+  "mood": "quiet, expensive, understated — a machine that is working while nobody watches",
+  "constraints": "no people, no text, no logos, no brand marks"
+}
+
+16:9 widescreen. No text, no lettering, no watermarks anywhere in the image.
+
+
+ACCEPT / REJECT
+---------------
+Negative space on the RIGHT — the HUD lives in that corner. If the machine is centred, regenerate.
+
+Also reject if: any text or lettering appears · a person or body part is visible ·
+the palette drifts to blue/teal (this series is black + gold + coral).
+
+Generate 2-3 and keep the best. Drop every keeper in this folder — if there is more
+than one PNG here I will use the most recent, or name your pick PICK.png to be explicit.

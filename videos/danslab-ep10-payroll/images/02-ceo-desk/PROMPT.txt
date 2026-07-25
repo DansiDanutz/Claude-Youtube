@@ -1,0 +1,33 @@
+THE CEO'S DESK
+==============
+USED AT   Ch1 · 2:40
+SAVE AS   img-2-ceo-desk.png   (in this folder — any filename works, but this is tidiest)
+STATUS    Optional. Real hardware preferred.
+
+
+PASTE THIS INTO CHATGPT
+-----------------------
+
+{
+  "type": "cinematic photograph",
+  "subject": "a small square desktop computer beside the base of a monitor, keyboard edge in the foreground, a cold cup of coffee just in frame",
+  "setting": "the same dark home office, late at night",
+  "lighting": "warm lamp from the right, monitor glow washing cool across the desk surface",
+  "palette": "near-black, warm amber, a single coral #c9584a accent from a notification light",
+  "camera": "35mm, low and close to the desk surface, shallow focus",
+  "mood": "human — this is where the person sits, not the machine",
+  "constraints": "no people, no text, no logos"
+}
+
+16:9 widescreen. No text, no lettering, no watermarks anywhere in the image.
+
+
+ACCEPT / REJECT
+---------------
+Must feel lived-in, not a product shot. If it looks like an Apple ad, regenerate.
+
+Also reject if: any text or lettering appears · a person or body part is visible ·
+the palette drifts to blue/teal (this series is black + gold + coral).
+
+Generate 2-3 and keep the best. Drop every keeper in this folder — if there is more
+than one PNG here I will use the most recent, or name your pick PICK.png to be explicit.

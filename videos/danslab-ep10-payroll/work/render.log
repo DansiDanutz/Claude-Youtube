@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/assemble.py", line 201, in <module>
+    # Resume: a segment already at the right length is reused. Renders get
+  File "/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/assemble.py", line 183, in segment
+    subprocess.run(cmd, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffmpeg', '-y', '-v', 'error', '-loop', '1', '-t', '30.893', '-i', '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/prepped/04-eight-desks.png', '-loop', '1', '-t', '30.893', '-i', '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/hud-plates/hud-10.png', '-filter_complex', "[0:v]scale=2112:1188:force_original_aspect_ratio=increase,crop=2112:1188,crop=1920:1080:x='190/2':y='max(0,min(106,106*(1-t/30.893)))',setsar=1[bg];[1:v]scale=1920:1080[hud];[bg][hud]overlay=0:0", '-r', '30', '-pix_fmt', 'yuv420p', '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/segments/pay01.mp4']' returned non-zero exit status 255.

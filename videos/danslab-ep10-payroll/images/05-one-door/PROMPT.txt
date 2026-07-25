@@ -1,0 +1,33 @@
+ONE DOOR
+========
+USED AT   Ch2 · 4:40
+SAVE AS   img-5-one-door.png   (in this folder — any filename works, but this is tidiest)
+STATUS    Needed — abstract, can't be filmed.
+
+
+PASTE THIS INTO CHATGPT
+-----------------------
+
+{
+  "type": "conceptual cinematic image",
+  "subject": "many faint converging lines of light funnelling into a single narrow illuminated doorway, and far fewer, brighter lines continuing out the other side",
+  "setting": "an abstract black void, no floor, no horizon",
+  "lighting": "the doorway is the only source, gold #d4a017, with the converging lines dim and cool by comparison",
+  "palette": "near-black, gold, a trace of coral at the edges",
+  "camera": "straight-on, symmetrical, centred",
+  "mood": "a gate, a filter, a decision point",
+  "constraints": "no people, no text, geometric and clean, not busy"
+}
+
+16:9 widescreen. No text, no lettering, no watermarks anywhere in the image.
+
+
+ACCEPT / REJECT
+---------------
+MANY lines in, FEWER lines out — that asymmetry is the whole idea. If in and out look equal, regenerate.
+
+Also reject if: any text or lettering appears · a person or body part is visible ·
+the palette drifts to blue/teal (this series is black + gold + coral).
+
+Generate 2-3 and keep the best. Drop every keeper in this folder — if there is more
+than one PNG here I will use the most recent, or name your pick PICK.png to be explicit.

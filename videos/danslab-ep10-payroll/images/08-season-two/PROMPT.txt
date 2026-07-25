@@ -1,0 +1,33 @@
+SEASON II
+=========
+USED AT   outro · 21:20
+SAVE AS   img-8-season-two.png   (in this folder — any filename works, but this is tidiest)
+STATUS    Needed — lands the final word.
+
+
+PASTE THIS INTO CHATGPT
+-----------------------
+
+{
+  "type": "minimal conceptual image",
+  "subject": "a single blinking terminal cursor rendered as a small vertical bar of gold light, alone in a vast black field",
+  "setting": "pure void",
+  "lighting": "the cursor is the only light, with a faint bloom",
+  "palette": "near-black and gold #d4a017 only",
+  "camera": "centred, distant, tiny subject in a large empty frame",
+  "mood": "waiting to be told what happens next",
+  "constraints": "no people, no text, no UI chrome, extreme negative space"
+}
+
+16:9 widescreen. No text, no lettering, no watermarks anywhere in the image.
+
+
+ACCEPT / REJECT
+---------------
+TINY subject, HUGE emptiness. If the cursor fills more than ~5% of frame, regenerate.
+
+Also reject if: any text or lettering appears · a person or body part is visible ·
+the palette drifts to blue/teal (this series is black + gold + coral).
+
+Generate 2-3 and keep the best. Drop every keeper in this folder — if there is more
+than one PNG here I will use the most recent, or name your pick PICK.png to be explicit.

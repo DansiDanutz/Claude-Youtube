@@ -1,0 +1,33 @@
+EVERY LIGHT GREEN
+=================
+USED AT   Ch6 · 20:05
+SAVE AS   img-6-green-lights.png   (in this folder — any filename works, but this is tidiest)
+STATUS    ★ HIGH PRIORITY. Pays off the return-False beat.
+
+
+PASTE THIS INTO CHATGPT
+-----------------------
+
+{
+  "type": "extreme close-up cinematic photograph",
+  "subject": "a dense grid of small status indicator lights on a dark equipment panel, almost all lit steady green, with exactly one light in the middle rows dark and dead",
+  "setting": "server hardware, shallow macro depth",
+  "lighting": "the lights are the only source, tight falloff, panel surface barely visible",
+  "palette": "near-black panel, saturated green points, one absence of light",
+  "camera": "macro, shallow focus, the dark light sitting just off-centre and in focus",
+  "mood": "everything reports healthy; nothing is",
+  "constraints": "no people, no text, no labels, the dead light must be clearly dark but not dramatic"
+}
+
+16:9 widescreen. No text, no lettering, no watermarks anywhere in the image.
+
+
+ACCEPT / REJECT
+---------------
+EXACTLY ONE dark light, and it must be IN FOCUS. Not red, not amber — DARK. If it reads as an error light instead of an absence, regenerate.
+
+Also reject if: any text or lettering appears · a person or body part is visible ·
+the palette drifts to blue/teal (this series is black + gold + coral).
+
+Generate 2-3 and keep the best. Drop every keeper in this folder — if there is more
+than one PNG here I will use the most recent, or name your pick PICK.png to be explicit.
