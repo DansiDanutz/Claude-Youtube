@@ -6,7 +6,11 @@
 > against the 77 recorded VO lines with SFX + ducked bed. Deliverable:
 > `danslab-episode-10-payroll-1080P-v2.mp4` (22:19). Rubric: **A (26/30)** — see `RUBRIC.md`.
 > Remaining: 4K render (`--scale=2` + `assemble.py --tag 4k`) before channel delivery.
-> Gotchas fixed this pass: VO wavs are **48 kHz** (silence gaps must match or the concat
+> NEW GOTCHA (2026-07-26): **ElevenLabs sometimes hallucinates extra garbled speech after the
+> scripted text ends** (plumb04 grew 'say it defend my mind' after 'Now — payroll'). Sounds like a
+> foreign voice; language detection misses it. Detect: whisper each wav, compare the last ~5 heard
+> words vs the script tail. Fix: trim the wav at the last scripted word (+0.15s fade), rebuild audio.
+> Gotchas fixed earlier: VO wavs are **48 kHz** (silence gaps must match or the concat
 > voice track stretches +8%); Remotion batch renders >18 shots can crash Node — batch smaller;
 > a crashed batch leaves a truncated MP4 (ffprobe returns empty — re-render that shot).
 
