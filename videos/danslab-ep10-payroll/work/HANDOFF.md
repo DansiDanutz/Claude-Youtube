@@ -1,6 +1,8 @@
 # EP10 — build handoff
 
-> **STATUS 2026-07-26: BUILD COMPLETE (1080p).** All 55 shots written + rendered, assembled
+> **STATUS 2026-07-26 (v3): SHIPPED — 4K + 1080p, 23:30, rubric A (27/30).**
+> Production system distilled into the `danslab-episode-production` skill (~/.claude/skills) — start ep11 from it.
+> Previous status: All 55 shots written + rendered, assembled
 > against the 77 recorded VO lines with SFX + ducked bed. Deliverable:
 > `danslab-episode-10-payroll-1080P-v2.mp4` (22:19). Rubric: **A (26/30)** — see `RUBRIC.md`.
 > Remaining: 4K render (`--scale=2` + `assemble.py --tag 4k`) before channel delivery.
