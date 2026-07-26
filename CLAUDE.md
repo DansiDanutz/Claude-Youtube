@@ -161,3 +161,15 @@ Never narrate money as flowing in the present tense — no "it earns", "takes it
 on-chain", "$X/mo puts you in the seat" as a live fact. Frame all monetization as *designed / built /
 next*: the rails are laid, payments are the next step. Payments are the next production milestone, and
 no app is "production-ready" until they are wired. Update this line the day that changes.
+
+## Channels in this repo
+
+| Channel | Folder | Brand contract | Kit | Shot prefix |
+|---|---|---|---|---|
+| **DansLab** — the story of the company | `videos/danslab*` | root `brand.md` + `remotion/src/brand.ts` | `lib/danslab.tsx` | `Y`, `Z`, `P`, `St`… |
+| **Nervix Explainers** — how to use the product | `videos/nervix-explainers/` | `videos/nervix-explainers/BRAND.md` | `lib/nervixkit.tsx` | `Nx` |
+
+Each channel owns its identity end to end: `CHANNEL.md` (the YouTube channel),
+`SERIES.md` (roadmap + format law), `BRAND.md` (palette/type/motion/sound). Read
+the channel's own three files before touching its episodes — the root `brand.md`
+governs DansLab ONLY.
