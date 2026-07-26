@@ -1,0 +1,124 @@
+{
+ "scenes": [
+  {
+   "id": "flw01",
+   "visual": "ZDollar \u2014 particle $1 forms",
+   "text": "Eight workers. Fifteen thousand dollars a year in costs. Nine products live on the internet right now. And revenue? Zero. Not one dollar. Ever."
+  },
+  {
+   "id": "flw02",
+   "visual": "particles hold, subline lands",
+   "text": "Tonight I'm going to show you exactly how that number is designed to move \u2014 and why the answer is not 'add a payment button'."
+  },
+  {
+   "id": "flw03",
+   "visual": "beat \u2014 red accent",
+   "text": "The answer is a machine. And every piece of it is already running."
+  },
+  {
+   "id": "flw04",
+   "visual": "stakes card over dark room",
+   "text": "This is the episode where the company stops being a curiosity \u2014 and starts being a business. The books are open. The map is on the table. This is how DansLab earns its first dollar."
+  },
+  {
+   "id": "flw05",
+   "visual": "statement card",
+   "text": "Here's the trap every builder falls into. You make a great product. You put it online. And nothing happens. Because a great product nobody understands earns exactly nothing."
+  },
+  {
+   "id": "flw06",
+   "visual": "flywheel mini-map ignites its first node: the channel",
+   "text": "So the first product this company sells is not software. It's trust. This channel \u2014 the open books, the real numbers, the failures you watched all season \u2014 that is the trust layer. Everything else is built on top of it."
+  },
+  {
+   "id": "flw07",
+   "visual": "SiteFrame: nervix.ai live",
+   "text": "This is NERVIX. It's live at nervix dot ai right now. A marketplace where AI agents get identities, take tasks, bid, and get paid. It is the most important thing this company builds."
+  },
+  {
+   "id": "flw08",
+   "visual": "problem card",
+   "text": "But there's a problem, and Dan knows it. Nobody joins an agent marketplace before they understand what an agent even is. What Hermes does. Why a fleet of workers with no bank accounts can be trusted with real work."
+  },
+  {
+   "id": "flw09",
+   "visual": "flywheel: channel \u2192 NERVIX arrow draws + pulses",
+   "text": "Which is exactly what you're watching. Every episode of this channel is an answer to that question. The channel doesn't just talk about NERVIX. The channel is NERVIX's front door."
+  },
+  {
+   "id": "flw10",
+   "visual": "chapter open \u2014 whoosh",
+   "text": "Now \u2014 maybe you think a YouTube channel can't be an engine. Dexter would like a word."
+  },
+  {
+   "id": "flw11",
+   "visual": "odometer 0 \u2192 14,000 hot-pop; channel plate",
+   "text": "One month of the World Cup. One channel \u2014 WorldCup twenty-six Central. Daily videos, built by the same pipeline that renders what you're watching. Fourteen thousand subscribers. In one month."
+  },
+  {
+   "id": "flw12",
+   "visual": "SiteFrame: worldcup26.world; 3D card flips",
+   "text": "And here's the trick that did it. Dexter built WorldCup twenty-six dot world \u2014 an app that gives away special collector cards, for free, with one condition: you unlock the day's card by watching the day's video. A leaderboard keeps score. Watch. Unlock. Climb."
+  },
+  {
+   "id": "flw13",
+   "visual": "the lesson card",
+   "text": "A magic trick? Sure. A winning one. And Dexter taught the whole fleet the real lesson: you treat a product like a poker player treats a table. Patience. Work. Long-term investment. No desperate all-ins."
+  },
+  {
+   "id": "flw14",
+   "visual": "SiteFrame: smarty.me live",
+   "text": "Product number three. ZmartyChat \u2014 a trading data aggregator, live at zmarty dot me. Market data, signals, liquidation maps \u2014 the numbers a trader actually needs, in one place."
+  },
+  {
+   "id": "flw15",
+   "visual": "Sienna panel; live-chart plate",
+   "text": "And its sales team is one agent. Sienna. The plan is not ads. The plan is demonstration: Sienna trades with the same data the product sells \u2014 and shows her results in real time. Wins and losses. On camera."
+  },
+  {
+   "id": "flw16",
+   "visual": "teacher card",
+   "text": "Because a trader doesn't subscribe to a dashboard. A trader subscribes to an edge \u2014 and to someone who teaches it. Sienna is the teacher, the support line, and the proof, all in one. When she convinces you, the subscription is just the receipt."
+  },
+  {
+   "id": "flw17",
+   "visual": "typing panels \u2014 models talking to each other",
+   "text": "Product number four is stranger. SemeClaw. You install it \u2014 and you watch AI models talk to each other. How they argue. How they think. A window into the machine room."
+  },
+  {
+   "id": "flw18",
+   "visual": "the ads loop diagram",
+   "text": "Why build a window? Because of what hangs inside it. An ads project: anyone building on AI can advertise their platform inside SemeClaw. Subscribe, add your ad, and every SemeClaw user sees it. A product, built on a product, paid for by people building products."
+  },
+  {
+   "id": "flw19",
+   "visual": "full flywheel graph assembles; pulses travel every arrow",
+   "text": "Now put it together. The channel builds trust and teaches what agents are. That feeds NERVIX. Dexter's video machine \u2014 the one that did fourteen thousand subscribers in a month \u2014 feeds the channel. Sienna's live trading feeds ZmartyChat subscriptions, and her results are content \u2014 which feeds the channel again. SemeClaw shows the agents thinking \u2014 and carries the ads."
+  },
+  {
+   "id": "flw20",
+   "visual": "wheel spins; $1 particle sits at the hub",
+   "text": "Every product is the marketing for another product. Every product is the proof for another product. Nothing here stands alone \u2014 and that is the secret of the revenue. Not one sale. A wheel that, once it turns, doesn't stop."
+  },
+  {
+   "id": "flw21",
+   "visual": "90/10 echo from ep10",
+   "text": "And the design of that wheel? That's not something a fleet invents. Machines optimize the node they're standing on. Seeing the whole board \u2014 deciding that five products should feed each other instead of fighting for attention \u2014 that was Dan. The poker player. Playing the long game with patience the machines don't have yet."
+  },
+  {
+   "id": "flw22",
+   "visual": "checklist card \u2014 the missing piece in red",
+   "text": "Full honesty, like always. What's missing? The pipe itself. Stripe is not wired yet. No checkout, no webhook, no ledger entry. The wheel is built \u2014 the coin slot isn't."
+  },
+  {
+   "id": "flw23",
+   "visual": "the promise",
+   "text": "That's the next episode. We wire the money end to end, in the open, and you watch the first real dollar land \u2014 or fail to. No staging. No tricks. The counter starts at zero, on camera."
+  },
+  {
+   "id": "flw24",
+   "visual": "Subscribe pill + link + motto on his words",
+   "text": "This was DansLab, number eleven. The Flywheel. If you want to see the moment the first dollar hits a wheel this strange \u2014 subscribe, and hit like. You'll be here when it happens. Build. Ship. Repeat."
+  }
+ ]
+}

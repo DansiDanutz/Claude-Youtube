@@ -6,7 +6,7 @@ import { DL, DL_SERIF, DL_MONO, DL_SANS, DL_EASE, DCLAMP, SiteBg } from '../../l
 // condense into "$1". Fully deterministic — particle starts come from a seeded
 // hash, targets from sampling the glyph raster once (fonts are loaded by the
 // danslab font loaders before render). VO lands after the number forms.
-export const compositionConfig = { id: 'ZDollar', durationInSeconds: 14, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'ZDollar', durationInSeconds: 26, fps: 30, width: 1920, height: 1080 };
 
 const W = 1920, H = 1080;
 const N = 2600;

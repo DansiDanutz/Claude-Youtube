@@ -1,52 +1,85 @@
-# EP11 — The First Dollar (Season Two, No. 1)
+# EP11 — The Flywheel (Season Two, No. 1)
 
-**Premise (set up by ep10's tease):** Eight workers who cost $1,242/mo try to earn their
-first real dollar. One product. One payment. No humans in the loop. Season one was who
-they are; season two is whether they can earn.
+**Working title:** *The Flywheel* (alt: *The Secret of the Revenue*)
+**Premise:** Stripe isn't wired yet — and that's the point of this episode. Before the first
+dollar can exist, the audience must understand HOW this company earns: five products that
+feed each other. Every product is the marketing, the fuel, or the proof for another one.
+Nothing stands alone. That loop is the secret of the revenue.
 
-**Shot prefix: `Z`** (verified free in shots.manifest.json).
-Build per the `danslab-episode-production` skill — same pipeline, same QA gate, same
-persistent surfaces (top-right panel becomes **THE REVENUE COUNTER: $0.00**, bottom bar
-keeps the link + a "days since launch" ticker).
+**Shot prefix `Z` (kept). Signature cold open `ZDollar` (particle $1) kept** — the dollar
+they're building toward. Persistent surfaces: top-right **THE FLYWHEEL mini-map** (nodes
+light up as each product is introduced, connections draw in as Brian names them);
+bottom bar: DansLab link + "products connected: N" ticker.
 
-## Dan's mandate for this episode
+## The five nodes (facts from Dan, 2026-07-26 — the evidence base)
 
-Maximum visual craft: heavy Remotion effects + HyperFrames segments. No boring cards —
-every chapter gets at least one signature effect. Sound interaction layer from day one.
+1. **NERVIX (nervix.ai)** — the most important project. An agent marketplace. But nobody
+   uses an agent marketplace before they understand what an agent IS and what Hermes does —
+   which is exactly what this channel teaches. **The channel exists to feed NERVIX**: examples
+   of agents working, and later, how others earn on it.
+2. **ZmartyChat** — trading data aggregator for users and traders. Its path to subscriptions:
+   **Sienna shows her own real-time results**, teaches, and supports traders — the agent as
+   teacher and support, convincing by demonstration, not ads.
+3. **The YouTube machine (Dexter)** — already PROVEN: **14,000 subscribers on WorldCup26
+   Central in one month** of World Cup videos. Built **WorldCup26.world**: free special cards +
+   a leaderboard; users watch the daily video to unlock cards → subscribers and followers.
+   "A magic trick — but a winning one." Dexter's lesson to the fleet: treat a product like a
+   poker player — patience, work, long-term investment.
+4. **SemeClaw** — install it and WATCH the models talk to each other: how they act, how they
+   think. Why it exists: the **ads project** — anyone with an AI platform can advertise;
+   subscribe → your ad shows to every SemeClaw user. A product built on another product.
+5. **The channel itself (DansLab)** — the trust layer. Architecture, transparency, real
+   numbers (ep10 opened the books). Trust and confidence are the first product.
 
-## Effects map (what makes this one look different)
+## The flywheel (the episode's one big idea — and its signature visual)
 
-| Effect | Tech | Where |
-|---|---|---|
-| Gold particle field that condenses into a **$1** | Remotion `<canvas>` particle sim (deterministic, seeded per frame) | cold open |
-| Audio-reactive title sting (beat-synced glow/pulse) | **HyperFrames** audio-reactive composition → rendered MP4 → CLIP segment in ORDER | intro |
-| Shader-style animated backgrounds (flowing gradient noise) | HyperFrames typegpu/three fragment shader clips as CLIP plates, or canvas noise in Remotion | chapter openers |
-| 3D flip-cards for product candidates (ZmartyChat/NERVIX/Studio…) | Remotion CSS 3D (`rotateY` + perspective, like ImagePlate but interactive-feeling flips) | "choosing the product" chapter |
-| Live "payment pipeline" diagram with pulses travelling the wires | Remotion SVG path + `offsetDistance` pulses (Stripe → webhook → ledger) | the revenue loop chapter |
-| Odometer revenue counter with hot-pop (from ep10 kit, upgraded to digit-roll) | Remotion | persistent top-right panel |
-| Marker-sweep / hand-drawn circle text highlights | **HyperFrames** highlight components rendered as alpha overlays | key claims |
-| Glitch/scanline moment when something breaks | Remotion (chromatic offset + slice displacement on the frame) | the failure beat |
-| Confetti/spark burst ONLY if a real payment lands | Remotion particles | the payoff (evidence-gated!) |
+```
+        DansLab channel (trust)
+        ↓ teaches "what is an agent / what Hermes does"
+NERVIX ←──────────────┐
+   ↑ examples of use   │ audience
+YouTube machine (Dexter's proven playbook: WorldCup26 14k/month)
+   ↑ daily content     │
+Sienna's live trading (ZmartyChat proof → subscriptions)
+   ↑ visibility        │
+SemeClaw (watch agents think) → carries the ads → advertisers subscribe
+        └── every arrow feeds another node ──┘
+```
 
-HyperFrames clips enter the pipeline as `("CLIP", path)` ORDER entries — same as the old
-montage plate, rendered at 3840×2160 30fps h264 to match the 4K concat (gotcha table).
+Rendered as the **flywheel effect shot**: a dark orbital graph; each node ignites as its
+chapter plays; gold pulses travel the arrows; by the finale the whole wheel spins and the
+particle $1 from the cold open sits at the hub — revenue is the wheel turning, not one sale.
 
-## Story spine (draft — beats, not final script)
+## Chapters (draft)
 
-1. Cold open: $0.00. "Eight workers. Fifteen thousand dollars a year of costs. Revenue: zero. Tonight that number has to move."
-2. Logo intro (classic) → stakes card.
-3. Ch1 — THE RULE: Dan's law from ep10: nothing else opens until one product takes one real payment end-to-end.
-4. Ch2 — THE CANDIDATES: 3D flip-card tournament — which product can actually charge money fastest? (real criteria: has users? has Stripe? has a deployable paywall?)
-5. Ch3 — THE LOOP: build the payment pipeline on screen (animated diagram): product → checkout → webhook → ledger → Finance posts it.
-6. Ch4 — THE ATTEMPT: what actually happened (REAL events only — needs Dan's facts).
-7. Human beat: what only Dan could do (pricing call? the legal/Stripe account step humans must sign?).
-8. Verdict + counter state at episode end (honest: $X.XX — whatever is true).
-9. Narrated outro: subscribe/like + BUILD. SHIP. REPEAT. + tease ep12.
+0. Cold open — `ZDollar` particles: "Revenue: zero. Tonight you learn exactly how this
+   number moves — and why it hasn't yet."
+1. Logo intro (classic) → stakes card.
+2. **THE PROBLEM** — a great product nobody understands earns nothing. Trust first.
+3. **NERVIX** — what it is; why it needs the channel (what's an agent? what does Hermes do?).
+4. **THE PROOF (Dexter)** — WorldCup26 case study: 14k subs in a month, the card/leaderboard
+   trick, the poker lesson. This is the chapter with the receipts.
+5. **THE TEACHER (Sienna)** — ZmartyChat + live results = subscriptions by demonstration.
+6. **THE WINDOW (SemeClaw)** — watch agents think; the ads loop (a product on a product).
+7. **THE FLYWHEEL** — the full graph spins; each product is another's marketing/fuel/proof.
+8. Human beat — Dan chose connection over isolated products; patience like a poker player.
+9. Verdict/close — what must still happen before dollar #1 (Stripe, launch order) → honest.
+10. Narrated outro — subscribe/like + BUILD. SHIP. REPEAT. + tease ep12 ("wiring the money").
 
-## FACTS NEEDED FROM DAN before scripting VO
+## Effects map (unchanged mandate: heavy Remotion + HyperFrames)
 
-1. **Which product goes first** for the revenue loop (ZmartyChat subscription? NERVIX fees? something else already decided)?
-2. What has ACTUALLY happened so far toward a first payment (Stripe account state, pricing, any real attempt/failure)? The evidence rule applies — we do not stage a fake dollar.
-3. Target length (ep10 was 23:30 — same, or shorter/punchier for season two, e.g. 12–15 min?).
+- `ZDollar` particle cold open (built, approved look)
+- **Flywheel orbital graph** with travelling pulses + node ignition (Remotion SVG/canvas) — the centerpiece
+- WorldCup26 chapter: odometer 0→14,000 with hot-pop; card-unlock 3D flips (the actual card mechanic re-enacted); leaderboard rows cascading
+- Sienna chapter: live-chart plates in SiteFrame + marker-sweep highlights (HyperFrames alpha overlays)
+- SemeClaw chapter: "conversation between models" typing panels, scan-hum, glitch accents
+- HyperFrames beat-synced sting for the season-two title; shader-noise chapter plates
+- Full interaction sound layer from day one (CLICKS table pattern)
 
-_Created 2026-07-26 · status: treatment + prototypes phase_
+## Needed from Dan before VO scripting
+
+- Screenshots/exports for receipts: WorldCup26 Central subscriber graph, WorldCup26.world app + cards + leaderboard, ZmartyChat UI, nervix.ai, SemeClaw war-room. (Real screenshots in SiteFrame — evidence rule.)
+- Target length (suggest 15–18 min for the season opener).
+- Confirm title: *The Flywheel* vs *The Secret of the Revenue*.
+
+_Rewritten 2026-07-26 after Dan's direction (no Stripe yet → teach the machine first)._
