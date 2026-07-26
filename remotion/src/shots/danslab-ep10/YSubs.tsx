@@ -12,7 +12,7 @@ const LINES: Line[] = [
   { label: 'Anthropic Max ×2', note: 'two logins — when one rate-limits, the second is warm', amount: 400, at: 60, color: DL.red },
   { label: 'ChatGPT Pro', note: 'codex proxy on :8995', amount: 200, at: 210, color: DL.red },
   { label: 'z.ai GLM', note: 'a full year bought up front', amount: 30, at: 380, color: DL.gold },
-  { label: 'Kimi — Alegro plan', note: 'Moonshot Pro', amount: 20, at: 470, color: DL.gold },
+  { label: 'Kimi — Alegro plan', note: 'Kimi 3 · Moonshot Pro', amount: 20, at: 470, color: DL.gold },
 ];
 
 const YSubs: React.FC = () => (

@@ -9,12 +9,16 @@ EP = os.path.dirname(WORK)
 OUT = os.path.expanduser("~/Projects/Claude-Youtube/remotion/out")
 TAG = "4k" if "--tag" in sys.argv and sys.argv[sys.argv.index("--tag") + 1] == "4k" else "1080p"
 W, H = (3840, 2160) if TAG == "4k" else (1920, 1080)
-HUDH = int(70 * H / 1080)
+HUDH = int(170 * H / 1080)  # YHud canvas is 1920x170 (chips above the 70px bar)
 CRF = "17" if TAG == "4k" else "18"
 
 VID = f"{WORK}/video_full_{TAG}.mp4"
 HUD = f"{OUT}/YHud.mov"
+HUDTOP = f"{OUT}/YHudTop.mov"
 AUD = f"{WORK}/mix/master.wav"
+SC = H / 1080.0
+TOPW, TOPH = int(1080 * SC), int(140 * SC)  # YHudTop canvas incl. the pointer sign
+TOPX, TOPY = W - TOPW - int(90 * SC), int(60 * SC)
 
 def dur(p):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -22,7 +26,7 @@ def dur(p):
 
 TOTAL = dur(VID)
 FADES = [45.221, 94.331, 221.584, 377.851, 452.005, 765.627, 877.925, 1147.429, 1288.763, 1351.909]
-CUTS = [0.0, 440.0, 900.0, TOTAL]
+CUTS = [0.0, 216.0, 440.0, 660.0, 900.0, 1120.0, TOTAL]  # short chunks: something SIGTERMs ffmpeg at ~6min wall
 for c in CUTS[1:-1]:
     assert all(abs(c - t) > 2 and abs(c - (t - 0.4)) > 2 for t in FADES), f"cut {c} hits a fade"
 
@@ -39,20 +43,35 @@ for i in range(len(CUTS) - 1):
             fades += (f",fade=t=out:st={o:.3f}:d=0.4:enable='between(t,{o:.3f},{n:.3f})'"
                       f",fade=t=in:st={n:.3f}:d=0.4:enable='between(t,{n:.3f},{n + 0.4:.3f})'")
     ck = f"{WORK}/_mux_{TAG}_{i}.mp4"
-    fc = (f"[0:v]null{fades}[base];[1:v]scale={W}:{HUDH}[hud];"
-          f"[base][hud]overlay=0:{H - HUDH}:shortest=0[v]")
-    for attempt in range(3):
+    mid = f"{WORK}/_mid_{TAG}_{i}.mp4"
+    # two passes per chunk: one ProRes decode at a time (two at once trips the
+    # machine's OOM killer reliably on 4K chunks)
+    fc1 = (f"[0:v]null{fades}[base];[1:v]scale={W}:{HUDH}[hud];"
+           f"[base][hud]overlay=0:{H - HUDH}:shortest=0[v]")
+    fc2 = (f"[1:v]scale={TOPW}:{TOPH}[top];"
+           f"[0:v][top]overlay={TOPX}:{TOPY}:shortest=0[v]")
+    for attempt in range(4):
         r = subprocess.run(["ffmpeg", "-y", "-v", "error",
                             "-ss", f"{s:.3f}", "-t", f"{d:.3f}", "-i", VID,
                             "-ss", f"{s:.3f}", "-t", f"{d:.3f}", "-i", HUD,
-                            "-filter_complex", fc, "-map", "[v]",
+                            "-filter_complex", fc1, "-map", "[v]",
+                            "-c:v", "libx264", "-preset", "faster", "-crf", "14",
+                            "-pix_fmt", "yuv420p", "-an", mid])
+        if r.returncode != 0 or abs(dur(mid) - d) > 1.0:
+            print(f"chunk {i} pass1 attempt {attempt + 1} failed (rc={r.returncode}), retrying")
+            continue
+        r = subprocess.run(["ffmpeg", "-y", "-v", "error",
+                            "-i", mid,
+                            "-ss", f"{s:.3f}", "-t", f"{d:.3f}", "-i", HUDTOP,
+                            "-filter_complex", fc2, "-map", "[v]",
                             "-c:v", "libx264", "-preset", "medium", "-crf", CRF,
                             "-pix_fmt", "yuv420p", "-an", ck])
         if r.returncode == 0 and abs(dur(ck) - d) < 1.0:
             break
-        print(f"chunk {i} attempt {attempt + 1} failed (rc={r.returncode}), retrying")
+        print(f"chunk {i} pass2 attempt {attempt + 1} failed (rc={r.returncode}), retrying")
     else:
-        sys.exit(f"chunk {i} failed after 3 attempts")
+        sys.exit(f"chunk {i} failed after 4 attempts")
+    os.remove(mid)
     print(f"chunk {i}: {dur(ck):.1f}s / {d:.1f}s")
     chunks.append(ck)
 

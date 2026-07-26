@@ -9,10 +9,10 @@ import { Headline } from '../../lib/ep03kit';
 export const compositionConfig = { id: 'YInvert', durationInSeconds: 38, fps: 30, width: 1920, height: 1080 };
 
 const ROWS: [string, string, number, boolean][] = [
-  ['"primary"', 'moonshot/kimi-k2.6', 60, true],
+  ['"primary"', 'moonshot/kimi-k3', 60, true],
   ['"fallbacks"[0]', 'omniroute/daily-coding', 118, false],
   ['"fallbacks"[1]', 'zai/glm-5', 150, false],
-  ['"fallbacks"[2]', 'claude-balancer/claude-sonnet-4-6', 182, false],
+  ['"fallbacks"[2]', 'claude-balancer/claude-opus-5', 182, false],
 ];
 
 const YInvert: React.FC = () => {
