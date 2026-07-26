@@ -1,7 +1,11 @@
 # EP10 — The Payroll · rubric scorecard (v2, Remotion rebuild)
 
-Graded against `docs/VIDEO-DESIGN-SYSTEM.md`. Deliverable: `danslab-episode-10-payroll-1080P-v2.mp4`
-(22:19, 56 segments, 77 VO lines, voice track drift 0.0s — measured, not assumed).
+Graded against `docs/VIDEO-DESIGN-SYSTEM.md`. Deliverables: `danslab-episode-10-payroll-4K-v2.mp4` + `-1080P-v2.mp4`
+(22:43, 58 segments, 77 VO lines, voice drift 0.0s). v2 final adds: mystery cold open
+(confidential payroll record), NEXT-ON-DANSLAB tease card, persistent bottom ledger
+bar (danslab.vercel.app + Dan-vs-human counters ticking on their narration beats),
+chapter dip-to-black fades, intro tick/riser + tease impact SFX. Brian VO whisper-checked:
+all 77 lines English, matching script.
 
 | # | Dimension | Score | Evidence |
 |---|---|---|---|
@@ -14,8 +18,9 @@ Graded against `docs/VIDEO-DESIGN-SYSTEM.md`. Deliverable: `danslab-episode-10-p
 
 **Total: 26 / 30 → A. Ship-eligible.**
 
-Remaining before channel delivery to `~/Desktop/claudeYouTube/`:
-- 4K master: `node scripts/render-all.mjs <all 55 Y ids> --scale=2` then `python3.13 assemble.py --tag 4k` (or drive via `tools/finish_episodes.py`).
-- Optional polish: pull loudnorm to a true −14 (currently −15.8).
+4K master shipped (chunked mux — long single-pass encodes get killed on this Mac;
+see work/mux_chunked.py, and note unscoped ffmpeg fade=in/out blacks the whole
+timeline — always scope with enable='between(t,..)').
+Optional polish: pull loudnorm to a true −14 (currently −15.8).
 
 _Last verified: 2026-07-26_

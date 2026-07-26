@@ -33,7 +33,10 @@ const YSeason2: React.FC = () => {
         </div>
       </div>
       <div style={{ position: 'absolute', bottom: 70, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: interpolate(f, [400, 430], [0, 1], DCLAMP) }}>
-        <DlWordmark size={40} suffix="— season two" />
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
+          <DlWordmark size={40} suffix="— season two" />
+          <span style={{ fontFamily: DL_MONO, fontSize: 26, letterSpacing: 4, color: DL.gold }}>danslab.vercel.app</span>
+        </div>
       </div>
     </AbsoluteFill>
   );

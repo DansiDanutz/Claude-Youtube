@@ -14,9 +14,10 @@ TAG = "4k" if "--tag" in sys.argv and sys.argv[sys.argv.index("--tag") + 1] == "
 
 # (shotId | ("CLIP", path), [(voId, offset_in_shot_s), ...])
 ORDER = [
+    ("YIntro",     []),
     ("YHook",      [("open01", 0.5), ("open02", 3.1), ("open03", 4.6)]),
     ("YAsk",       [("open04", 0.6), ("open05", 3.2), ("open06", 7.4)]),
-    (("CLIP", f"{EP}/plates/montage.mp4"), []),
+    (("CLIP", f"{EP}/plates/montage{'-4k' if TAG == '4k' else ''}.mp4"), []),
     ("YTonight",   [("open07", 0.8)]),
     ("YRules",     [("rules01", 0.8)]),
     ("YHonest",    [("rules02", 0.8)]),
@@ -70,6 +71,7 @@ ORDER = [
     ("YWhy",       [("why01", 0.7)]),
     ("YFive",      [("why02", 0.8)]),
     ("YSeason2",   [("why03", 0.5), ("why04", 12.2)]),
+    ("YNext",      []),
 ]
 
 def dur(path):
@@ -146,10 +148,19 @@ for i, (s, _) in enumerate(ORDER):
         sfx_events.append((starts[i] + 0.05, f"{SFX}/impact-deep-soft.mp3", 0.5))
     elif s in CHIME:
         sfx_events.append((starts[i] + 0.05, f"{SFX}/chime-reward.mp3", 0.4))
+    elif s in ("YHook", "YTonight", "YAttrib", "YAuditOpen", "YVsOpen", "YWhy"):
+        sfx_events.append((starts[i], f"{SFX}/whoosh-wind.mp3", 0.42))
     else:
         sfx_events.append((starts[i], f"{SFX}/whoosh-soft.mp3", 0.3))
 slam159_at = starts[[s for s, _ in ORDER].index("YSlam159")]
 sfx_events.append((max(0, slam159_at - 3.0), f"{SFX}/riser-soft.mp3", 0.45))
+# intro sound design: ticking under the payroll record, riser into the title stamp
+sfx_events.append((0.6, f"{SFX}/clock-tick-soft.mp3", 0.35))
+sfx_events.append((5.0, f"{SFX}/riser-soft.mp3", 0.4))
+sfx_events.append((7.85, f"{SFX}/impact-deep-soft.mp3", 0.5))
+# end tease: impact on the NEXT card
+next_at = starts[[s for s, _ in ORDER].index("YNext")]
+sfx_events.append((next_at + 0.05, f"{SFX}/impact-deep-soft.mp3", 0.45))
 sfx_events = [(t, f, v) for (t, f, v) in sfx_events if os.path.exists(f)]
 if sfx_events:
     ins, parts = [], []
@@ -187,9 +198,29 @@ else:
                     "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000",
                     f"{WORK}/mix/master.wav"], check=True)
 
-# MUX
+# MUX — composite the persistent HUD bar (YHud.mov, alpha) into the reserved
+# bottom 70px, with quick fade-through-black at chapter boundaries.
 out = f"{EP}/danslab-episode-10-payroll-{TAG.upper()}-v2.mp4"
-subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", f"{WORK}/video_full_{TAG}.mp4",
-                "-i", f"{WORK}/mix/master.wav", "-map", "0:v", "-map", "1:a",
-                "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-shortest", out], check=True)
+hud = f"{OUT}/YHud.mov"
+W, H = (3840, 2160) if TAG == "4k" else (1920, 1080)
+chapters = ["YRules", "YIron", "YDoor", "YPlumb", "YAttrib", "YReckon", "YAuditOpen", "YVsOpen", "YWhy", "YNext"]
+idx = {s: i for i, (s, _) in enumerate(ORDER) if not isinstance(s, tuple)}
+fades = ""
+for c in chapters:
+    T = starts[idx[c]]
+    fades += f",fade=t=out:st={T - 0.4:.3f}:d=0.4,fade=t=in:st={T:.3f}:d=0.4"
+if os.path.exists(hud):
+    fc = (f"[0:v]null{fades}[base];"
+          f"[1:v]scale={W}:{int(70 * H / 1080)}[hud];"
+          f"[base][hud]overlay=0:{H - int(70 * H / 1080)}:shortest=0[v]")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", f"{WORK}/video_full_{TAG}.mp4", "-i", hud,
+                    "-i", f"{WORK}/mix/master.wav", "-filter_complex", fc,
+                    "-map", "[v]", "-map", "2:a", "-c:v", "libx264", "-preset", "medium",
+                    "-crf", "17" if TAG == "4k" else "18", "-pix_fmt", "yuv420p",
+                    "-c:a", "aac", "-b:a", "256k", "-shortest", out], check=True)
+else:
+    print("NOTE: YHud.mov missing — muxing without the ledger bar")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", f"{WORK}/video_full_{TAG}.mp4",
+                    "-i", f"{WORK}/mix/master.wav", "-map", "0:v", "-map", "1:a",
+                    "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-shortest", out], check=True)
 print(f"wrote {out}")

@@ -31,7 +31,9 @@ const YHook: React.FC = () => {
       <AbsoluteFill style={{ justifyContent: 'center', paddingLeft: 150, paddingRight: 150 }}>
         <Line at={8}>Eight employees work for this company.</Line>
         <div style={{ height: 30 }} />
-        <Line at={70} size={92} color={DL.red}>None of them are human.</Line>
+        <Line at={70} size={104} color={DL.red}>
+          <span style={{ textShadow: '0 0 60px rgba(231,76,60,0.45)' }}>None of them are human.</span>
+        </Line>
         <div style={{ height: 42 }} />
         {/* no <br>: forced breaks don't know the rendered width and orphan the dash */}
         <div style={{
