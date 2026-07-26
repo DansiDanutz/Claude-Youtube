@@ -7,7 +7,7 @@ import { DL, DL_MONO, DL_SANS, DL_SERIF, DL_EASE, DCLAMP } from '../../lib/dansl
 // an arrow SIGN points at it while Brian introduces it (anything we show, we
 // point at). Canvas 1080×140: panel is the right 660×130, callout lives left.
 export const compositionConfig = {
-  id: 'YHudTop', durationInSeconds: 1353, fps: 30, width: 1080, height: 140, transparent: true,
+  id: 'YHudTop', durationInSeconds: 1406, fps: 30, width: 1080, height: 140, transparent: true,
 };
 
 const FPS = 30;
@@ -19,7 +19,7 @@ const hot = (hex: string, t: number) => {
 };
 const IN_AT = 46.6;    // "Top right corner."
 const SIGN_UNTIL = 60.0; // arrow holds while the panel is explained
-const OUT_AT = 1289.1;
+const OUT_AT = 1328.1;
 
 const DAN: [number, number][] = [
   [138.7, 153], [153.0, 175], [185.6, 415], [284.0, 815], [293.0, 1015],

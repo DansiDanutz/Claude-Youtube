@@ -1,6 +1,0 @@
-file '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/_mux_4k_0.mp4'
-file '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/_mux_4k_1.mp4'
-file '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/_mux_4k_2.mp4'
-file '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/_mux_4k_3.mp4'
-file '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/_mux_4k_4.mp4'
-file '/Users/davidai/Projects/Claude-Youtube/videos/danslab-ep10-payroll/work/_mux_4k_5.mp4'

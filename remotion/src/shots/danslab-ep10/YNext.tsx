@@ -2,9 +2,10 @@ import React from 'react';
 import { useCurrentFrame, interpolate, AbsoluteFill } from 'remotion';
 import { DL, DL_SERIF, DL_MONO, DL_SANS, DL_EASE, DCLAMP, SiteBg } from '../../lib/danslab';
 
-// Ep10 end tease — after "Revenue." holds, the season-two hook. No VO.
+// Ep10 end tease + outro. VO why05 17.8 at +0.6: "This was DansLab, number ten…
+// subscribe, and hit like… Build. Ship. Repeat." Reveals land on his words.
 // The one question that keeps a viewer for next episode: can they actually earn?
-export const compositionConfig = { id: 'YNext', durationInSeconds: 11, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'YNext', durationInSeconds: 19, fps: 30, width: 1920, height: 1080 };
 
 const YNext: React.FC = () => {
   const f = useCurrentFrame();
@@ -12,7 +13,7 @@ const YNext: React.FC = () => {
     opacity: interpolate(f, [at, at + d], [0, 1], { ...DCLAMP, easing: DL_EASE.out }),
     transform: `translateY(${interpolate(f, [at, at + d], [18, 0], { ...DCLAMP, easing: DL_EASE.out })}px)`,
   });
-  const fadeOut = interpolate(f, [300, 328], [1, 0], { ...DCLAMP, easing: DL_EASE.in });
+  const fadeOut = interpolate(f, [548, 566], [1, 0], { ...DCLAMP, easing: DL_EASE.in });
   return (
     <AbsoluteFill style={{ fontFamily: DL_SANS, opacity: fadeOut }}>
       <SiteBg glow="#120d07" />
@@ -27,12 +28,18 @@ const YNext: React.FC = () => {
         <div style={{ ...rise(130), fontFamily: DL_SANS, fontSize: 32, color: DL.warm, marginTop: 30 }}>
           One product. One payment. No humans in the loop.
         </div>
-        <div style={{ ...rise(200), marginTop: 60, display: 'flex', gap: 40, alignItems: 'center' }}>
+        <div style={{ ...rise(285), marginTop: 54, display: 'flex', gap: 40, alignItems: 'center' }}>
           <span style={{
             fontFamily: DL_SANS, fontWeight: 600, fontSize: 30, color: DL.bg,
             background: DL.gold, borderRadius: 999, padding: '14px 38px',
           }}>Subscribe for season two</span>
           <span style={{ fontFamily: DL_MONO, fontSize: 26, letterSpacing: 3, color: DL.gold }}>danslab.vercel.app</span>
+        </div>
+        {/* the series motto — every episode signs off with it, word by word */}
+        <div style={{ display: 'flex', gap: 42, marginTop: 64, fontFamily: DL_MONO, fontSize: 38, letterSpacing: 3 }}>
+          <span style={{ opacity: interpolate(f, [458, 470], [0, 1], DCLAMP), color: DL.text }}>BUILD.</span>
+          <span style={{ opacity: interpolate(f, [490, 502], [0, 1], DCLAMP), color: DL.gold }}>SHIP.</span>
+          <span style={{ opacity: interpolate(f, [522, 534], [0, 1], DCLAMP), color: DL.red }}>REPEAT.</span>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

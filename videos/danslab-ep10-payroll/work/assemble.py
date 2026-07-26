@@ -17,8 +17,7 @@ ORDER = [
     ("YIntro",     []),
     ("YHook",      [("open01", 0.5), ("open02", 3.1), ("open03", 4.6)]),
     ("YAsk",       [("open04", 0.6), ("open05", 3.2), ("open06", 7.4)]),
-    (("CLIP", f"{EP}/plates/montage{'-4k' if TAG == '4k' else ''}.mp4"), []),
-    ("YTonight",   [("open07", 0.8)]),
+    ("YTonight",   [("open07", 3.2)]),
     ("YRules",     [("rules01", 0.8)]),
     ("YHonest",    [("rules02", 0.8)]),
     ("YIron",      [("iron01", 0.8)]),
@@ -60,6 +59,7 @@ ORDER = [
     ("YThread",    [("audit06", 0.6), ("audit07", 5.6)]),
     ("YGreenDead", [("audit08", 0.8)]),
     ("YLesson",    [("audit09", 0.8)]),
+    ("YHuman",     [("audit12", 0.8)]),
     ("YOneLine",   [("audit10", 0.5)]),
     ("YVerdict",   [("audit11", 0.7)]),
     ("YVsOpen",    [("vs01", 0.6)]),
@@ -71,7 +71,7 @@ ORDER = [
     ("YWhy",       [("why01", 0.7)]),
     ("YFive",      [("why02", 0.8)]),
     ("YSeason2",   [("why03", 0.5), ("why04", 12.2)]),
-    ("YNext",      []),
+    ("YNext",      [("why05", 0.6)]),
 ]
 
 def dur(path):
@@ -161,8 +161,118 @@ sfx_events.append((7.85, f"{SFX}/impact-deep-soft.mp3", 0.5))
 # end tease: impact on the NEXT card
 next_at = starts[[s for s, _ in ORDER].index("YNext")]
 sfx_events.append((next_at + 0.05, f"{SFX}/impact-deep-soft.mp3", 0.45))
+
+# INTERACTION LAYER — every card, chip, ledger line and counter gets a physical
+# sound on its landing frame (design system: clicks for list staggering).
+# (shotId, localSeconds, sfxName, volume)
+CLICKS = [
+    ("YIntro", 1.0, "warm-shimmer", .30), ("YIntro", 4.67, "stamp-hit", .50), ("YIntro", 5.2, "sparkle-soft", .30),
+    ("YHook", 2.13, "whoosh-reverse", .22), ("YHook", 2.33, "trap-snap", .40),
+    ("YAsk", 3.2, "pop-reveal", .35), ("YAsk", 4.2, "pencil-scribble", .35),
+    ("YTonight", 3.3, "ui-click-soft", .25), ("YTonight", 5.6, "trap-snap", .35),
+    ("YRules", 18.67, "pop-reveal", .30), ("YRules", 20.33, "pop-reveal", .30),
+    ("YIron", 2.33, "ui-click-soft", .30), ("YIron", 3.67, "ui-click-soft", .30),
+    ("YSpec", 2.33, "ui-click-soft", .22), ("YSpec", 3.67, "ui-click-soft", .22),
+    ("YSpec", 5.0, "ui-click-soft", .22), ("YSpec", 6.33, "ui-click-soft", .22),
+    ("YSpec", 19.0, "pencil-scribble", .40), ("YSpec", 30.0, "pop-reveal", .40),
+    ("YMini", 6.33, "ui-click-soft", .30), ("YMini", 9.33, "ui-click-soft", .30),
+    ("YFrankfurt", 5.0, "ui-click-soft", .30), ("YFrankfurt", 7.0, "ui-click-soft", .30),
+    ("YFrankfurt", 8.73, "ui-click-soft", .30), ("YFrankfurt", 10.2, "ui-click-soft", .30),
+    ("YDoor", 20.67, "pop-reveal", .35),
+    ("YLaw", 1.7, "ui-click-soft", .20), ("YLaw", 2.6, "ui-click-soft", .20),
+    ("YLaw", 3.5, "ui-click-soft", .20), ("YLaw", 4.4, "ui-click-soft", .20),
+    ("YLaw", 6.67, "pop-reveal", .30), ("YLaw", 7.07, "pop-reveal", .30),
+    ("YLaw", 7.47, "pop-reveal", .30), ("YLaw", 7.87, "pop-reveal", .30),
+    ("YSubs", 2.0, "ui-click-soft", .30), ("YSubs", 7.0, "ui-click-soft", .30),
+    ("YSubs", 12.67, "ui-click-soft", .30), ("YSubs", 15.67, "ui-click-soft", .30),
+    ("YInvert", 2.0, "keys-typing-soft", .30), ("YInvert", 3.93, "ui-click-soft", .25),
+    ("YInvert", 5.0, "ui-click-soft", .25), ("YInvert", 6.07, "ui-click-soft", .25),
+    ("YCaps", 10.0, "pop-reveal", .30), ("YCaps", 11.33, "pop-reveal", .30), ("YCaps", 12.67, "pop-reveal", .30),
+    ("YPlumb", 3.0, "ui-click-soft", .30), ("YPlumb", 9.33, "ui-click-soft", .30),
+    ("YTools", 1.33, "ui-click-soft", .30), ("YTools", 9.33, "ui-click-soft", .30),
+    ("YTools", 16.33, "ui-click-soft", .30), ("YTools", 19.67, "ui-click-soft", .30),
+    ("YTools", 23.33, "ui-click-soft", .30), ("YTools", 33.67, "ui-click-soft", .30),
+    ("YLock", 1.0, "ui-click-soft", .25), ("YLock", 1.8, "ui-click-soft", .25),
+    ("YLock", 2.6, "ui-click-soft", .25), ("YLock", 3.4, "ui-click-soft", .25),
+    ("YLock", 5.0, "stamp-hit", .45),
+    ("YAttrib", 21.0, "ui-click-soft", .30), ("YAttrib", 23.33, "ui-click-soft", .30), ("YAttrib", 26.67, "ui-click-soft", .30),
+    ("YDexter", 15.0, "stamp-hit", .38), ("YSienna", 10.0, "stamp-hit", .38),
+    ("YNano", 9.33, "stamp-hit", .38), ("YFinance", 13.67, "stamp-hit", .38),
+    ("YMemo", 7.67, "stamp-hit", .38), ("YDoctor", 32.0, "stamp-hit", .38),
+    ("YDavid", 28.0, "stamp-hit", .38), ("YHermes", 30.0, "stamp-hit", .38),
+    ("YDoctor", 9.0, "ui-click-soft", .28), ("YDoctor", 14.33, "ui-click-soft", .28), ("YDoctor", 24.0, "ui-click-soft", .28),
+    ("YLadder", 3.0, "ui-click-soft", .18), ("YLadder", 3.5, "ui-click-soft", .18),
+    ("YLadder", 4.0, "ui-click-soft", .18), ("YLadder", 4.5, "ui-click-soft", .18),
+    ("YLadder", 5.0, "ui-click-soft", .18), ("YLadder", 5.5, "ui-click-soft", .18),
+    ("YLadder", 6.0, "ui-click-soft", .18), ("YLadder", 6.5, "ui-click-soft", .22),
+    ("YReckon", 4.67, "keys-typing-soft", .25), ("YReckon", 11.67, "pop-reveal", .40),
+    ("YCoverage", 5.0, "whoosh-soft", .22), ("YCoverage", 8.33, "whoosh-soft", .25),
+    ("YDiscount", 3.67, "trap-snap", .28), ("YDiscount", 7.0, "trap-snap", .28),
+    ("YDiscount", 11.0, "trap-snap", .28), ("YDiscount", 16.0, "trap-snap", .28),
+    ("YDiscount", 21.33, "impact-soft", .40),
+    ("YSlam159", 1.2, "warm-shimmer", .35),
+    ("YAuditOpen", 0.3, "piano-a-min", .32),
+    ("YGood", 3.33, "ui-toggle-on", .30), ("YGood", 14.33, "ui-toggle-on", .30), ("YGood", 28.33, "ui-toggle-on", .30),
+    ("YPaused", 0.67, "ui-click-soft", .28), ("YPaused", 2.0, "ui-click-soft", .28), ("YPaused", 3.33, "ui-click-soft", .28),
+    ("YBroken", 2.33, "ui-click-soft", .30), ("YBroken", 16.4, "glitch-zap", .42),
+    ("YZero", 24.0, "ui-click-soft", .28), ("YZero", 30.67, "ui-click-soft", .28),
+    ("YThread", 6.33, "ui-click-soft", .30), ("YThread", 8.67, "ui-click-soft", .30), ("YThread", 16.0, "ui-click-soft", .30),
+    ("YGreenDead", 4.33, "ui-toggle-on", .22), ("YGreenDead", 6.33, "ui-toggle-on", .22),
+    ("YGreenDead", 8.33, "ui-toggle-on", .22), ("YGreenDead", 10.33, "ui-toggle-on", .22),
+    ("YGreenDead", 14.33, "trap-snap", .40),
+    ("YLesson", 14.33, "stamp-hit", .35),
+    ("YHuman", 14.67, "stream-soft", .25), ("YHuman", 22.0, "trap-snap", .45),
+    ("YOneLine", 0.5, "piano-a-min", .30),
+    ("YVerdict", 1.33, "stamp-hit", .45), ("YVerdict", 4.0, "ui-click-soft", .30),
+    ("YVerdict", 6.0, "ui-click-soft", .30), ("YVerdict", 8.33, "ui-click-soft", .30),
+    ("YVsOpen", 5.33, "pop-reveal", .32), ("YVsOpen", 7.33, "pop-reveal", .32),
+    ("YHumanBill", 13.3, "ui-click-soft", .20), ("YHumanBill", 15.3, "ui-click-soft", .20),
+    ("YHumanBill", 17.0, "ui-click-soft", .20), ("YHumanBill", 18.7, "ui-click-soft", .20),
+    ("YHumanBill", 20.3, "ui-click-soft", .20), ("YHumanBill", 22.0, "ui-click-soft", .20),
+    ("YOverhead", 1.0, "ui-click-soft", .30), ("YOverhead", 3.67, "ui-click-soft", .30),
+    ("YOverhead", 6.0, "ui-click-soft", .30), ("YOverhead", 8.33, "ui-click-soft", .30),
+    ("YOverhead", 10.67, "ui-click-soft", .30), ("YOverhead", 13.33, "ui-click-soft", .30),
+    ("YAllIn", 2.0, "pop-reveal", .32), ("YAllIn", 5.33, "pop-reveal", .32),
+    ("YHours", 13.33, "pop-reveal", .30), ("YHours", 18.67, "pop-reveal", .30), ("YHours", 24.0, "impact-soft", .40),
+    ("YPerHour", 10.67, "ui-click-soft", .30), ("YPerHour", 17.33, "ui-click-soft", .30),
+    ("YFive", 1.33, "ui-click-soft", .28), ("YFive", 3.67, "ui-click-soft", .28),
+    ("YFive", 5.67, "ui-click-soft", .28), ("YFive", 7.67, "ui-click-soft", .28),
+    ("YFive", 9.67, "ui-click-soft", .28), ("YFive", 25.33, "pop-reveal", .32),
+    ("YSeason2", 0.67, "ui-click-soft", .25), ("YSeason2", 2.33, "ui-click-soft", .25),
+    ("YSeason2", 4.0, "ui-click-soft", .25), ("YSeason2", 5.83, "ui-click-soft", .25),
+    ("YNext", 0.4, "warm-shimmer", .30), ("YNext", 9.5, "ui-toggle-on", .40),
+    ("YNext", 15.27, "chess-piece-thock", .45), ("YNext", 16.33, "chess-piece-thock", .45),
+    ("YNext", 17.4, "chess-piece-thock", .45),
+]
+sidx = {sh: i for i, (sh, _) in enumerate(ORDER) if not isinstance(sh, tuple)}
+for sh, loc, name, vol in CLICKS:
+    if sh in sidx:
+        sfx_events.append((starts[sidx[sh]] + loc, f"{SFX}/{name}.mp3", vol))
+
 sfx_events = [(t, f, v) for (t, f, v) in sfx_events if os.path.exists(f)]
 if sfx_events:
+    sfx_events.sort()
+    group_wavs = []
+    G = 40
+    for g in range(0, len(sfx_events), G):
+        grp = sfx_events[g:g + G]
+        ins, parts = [], []
+        for k, (t, f, v) in enumerate(grp):
+            ins += ["-i", f]
+            ms = int(t * 1000)
+            parts.append(f"[{k}:a]volume={v},adelay={ms}|{ms}[s{k}]")
+        fc = ";".join(parts) + ";" + "".join(f"[s{k}]" for k in range(len(grp))) + \
+             f"amix=inputs={len(grp)}:normalize=0,apad=whole_dur={TOTAL:.3f}[out]"
+        gw = f"{WORK}/mix/_sfxg{g//G}.wav"
+        subprocess.run(["ffmpeg", "-y", "-v", "error"] + ins + ["-filter_complex", fc, "-map", "[out]",
+                        "-ar", "48000", "-ac", "1", "-t", f"{TOTAL:.3f}", gw], check=True)
+        group_wavs.append(gw)
+    gins = sum((["-i", w] for w in group_wavs), [])
+    gfc = "".join(f"[{k}:a]" for k in range(len(group_wavs))) + \
+          f"amix=inputs={len(group_wavs)}:normalize=0[out]"
+    subprocess.run(["ffmpeg", "-y", "-v", "error"] + gins + ["-filter_complex", gfc, "-map", "[out]",
+                    "-ar", "48000", "-ac", "1", f"{WORK}/mix/sfx.wav"], check=True)
+if False:
     ins, parts = [], []
     for k, (t, f, v) in enumerate(sfx_events):
         ins += ["-i", f]
@@ -197,6 +307,10 @@ else:
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", f"{WORK}/mix/voice.wav",
                     "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000",
                     f"{WORK}/mix/master.wav"], check=True)
+
+if "--no-mux" in sys.argv:
+    print("audio + concat rebuilt; skipping legacy mux (use work/mux_chunked.py)")
+    sys.exit(0)
 
 # MUX — composite the persistent HUD bar (YHud.mov, alpha) into the reserved
 # bottom 70px, with quick fade-through-black at chapter boundaries.

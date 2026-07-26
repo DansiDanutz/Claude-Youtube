@@ -23,7 +23,8 @@ const YLock: React.FC = () => {
     <AbsoluteFill style={{ fontFamily: DL_SANS }}>
       <SiteBg glow={DL.gold} />
       <Kicker n="10" label="THE PAYROLL // THE BILL" />
-      <div style={{ position: 'absolute', top: 150, left: 0, right: 0, textAlign: 'center' }}>
+      {/* left-aligned, width-capped: the top-right ledger panel owns x>1170 */}
+      <div style={{ position: 'absolute', top: 150, left: 120, width: 1000 }}>
         <Headline at={6} size={46}>The entire operating cost of this company.</Headline>
       </div>
       <div style={{ position: 'absolute', top: 300, left: 0, right: 0, display: 'flex', justifyContent: 'center', gap: 18 }}>

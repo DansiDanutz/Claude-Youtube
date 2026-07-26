@@ -7,7 +7,7 @@ import { DL, DL_SERIF, DL_MONO, DL_SANS, DL_EASE, DCLAMP } from '../../lib/dansl
 // counter SAYING what just landed (+$153 Mac Studio …) — we point at what we show.
 // Canvas 1920×170: bar is the bottom 70px, chips pop in the 100px above it.
 export const compositionConfig = {
-  id: 'YHud', durationInSeconds: 1353, fps: 30, width: 1920, height: 170, transparent: true,
+  id: 'YHud', durationInSeconds: 1406, fps: 30, width: 1920, height: 170, transparent: true,
 };
 
 const FPS = 30;
@@ -19,7 +19,7 @@ const hot = (hex: string, t: number) => {
   return `rgb(${ch(n >> 16)},${ch((n >> 8) & 255)},${ch(n & 255)})`;
 };
 const BAR_IN = 46.6;
-const BAR_OUT = 1289.1;
+const BAR_OUT = 1328.1;
 
 // (secondsFinal, newTotal, what just landed)
 const BILL: [number, number, string][] = [
