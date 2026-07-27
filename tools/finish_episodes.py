@@ -15,9 +15,7 @@ DELIV = os.path.expanduser("~/Desktop/claudeYouTube")
 GENV = os.path.join(REPO, "tools", "gen_voice.py")
 
 EPISODES = [
-    "danslab-ep02-survivors", "danslab-ep03-trader", "danslab-ep04-overseer",
-    "danslab-ep05-brain", "danslab-ep06-marketplace", "danslab-ep07-factory",
-    "danslab-ep09-player",
+    "danslab-ep06-marketplace",
 ]
 
 
@@ -34,7 +32,7 @@ def order_entries(vd):
     return out
 
 
-def render_missing(ids, rounds=12, batch=4):
+def render_missing(ids, rounds=18, batch=4):
     for r in range(rounds):
         miss = [s for s in ids if not os.path.exists(f"{OUT}/{s}.mp4")]
         if not miss:
@@ -42,6 +40,9 @@ def render_missing(ids, rounds=12, batch=4):
         log(f"    render round {r}: {len(miss)} left -> {miss[:batch]}")
         subprocess.run(["node", "scripts/render-all.mjs", *miss[:batch], "--scale=2"],
                        cwd=REM, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        # reclaim orphaned remotion temp bundles so the disk can't fill up
+        subprocess.run("rm -rf /var/folders/*/*/T/remotion-* /var/folders/*/*/T/react-motion-render* 2>/dev/null",
+                       shell=True)
     return not [s for s in ids if not os.path.exists(f"{OUT}/{s}.mp4")]
 
 

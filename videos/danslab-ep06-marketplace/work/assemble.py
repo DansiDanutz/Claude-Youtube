@@ -110,7 +110,12 @@ subprocess.run(["ffmpeg","-y","-v","error","-i",f"{WORK}/mix/music.wav","-i",f"{
 subprocess.run(["ffmpeg","-y","-v","error","-i",f"{WORK}/mix/voice.wav","-i",f"{WORK}/mix/music_ducked.wav","-i",f"{WORK}/mix/sfx.wav",
                 "-filter_complex","[1:a]volume=0.62[m];[0:a][m][2:a]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[out]","-map","[out]","-ar","48000","-ac","2",f"{WORK}/mix/master_audio.wav"], check=True)
 
+# MUX — composite the series link bar into the reserved bottom 70px: fades in
+# after the cold-open card, out before the outro. Chunked encode (long single-pass
+# 4K encodes get killed on this machine — see tools/mux_linkbar.py).
 final = os.path.expanduser(f"~/Projects/Claude-Youtube/videos/danslab-ep06-marketplace/danslab-episode-06-marketplace-{TAG.upper()}.mp4")
-subprocess.run(["ffmpeg","-y","-v","error","-i",f"{WORK}/video_full_{TAG}.mp4","-i",f"{WORK}/mix/master_audio.wav",
-                "-map","0:v","-map","1:a","-c:v","copy","-c:a","aac","-b:a","224k","-ac","2","-shortest",final], check=True)
+BAR_IN, BAR_OUT = starts[1] + 1.0, starts[len(ORDER) - 1] - 0.5
+TOOL = os.path.expanduser("~/Projects/Claude-Youtube/tools/mux_linkbar.py")
+subprocess.run(["python3.13", TOOL, f"{WORK}/video_full_{TAG}.mp4", f"{WORK}/mix/master_audio.wav", final,
+                "--bar-in", f"{BAR_IN:.3f}", "--bar-out", f"{BAR_OUT:.3f}"], check=True)
 print("FINAL:", final, f"{dur(final):.1f}s")
