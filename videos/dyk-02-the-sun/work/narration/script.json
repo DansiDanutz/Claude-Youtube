@@ -1,0 +1,323 @@
+{
+  "voice": "Brian (nPczCjzI2devNBz1zQrb), eleven_flash_v2_5 \u00b7 stability .32 / similarity .85 / style .45",
+  "scenes": [
+    {
+      "id": "su01-hook",
+      "shot": "SuHook",
+      "text": "It is eight o'clock. The Sun is warm on your face. But that light left the Sun eight minutes and twenty seconds ago. If the Sun vanished right now, you would not know.",
+      "chunks": [
+        {
+          "text": "It is eight o'clock. The Sun is warm on your face. But that light left the Sun eight minutes and twenty seconds ago. If the Sun vanished right now, you would not know.",
+          "pace": 3.3,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95
+    },
+    {
+      "id": "su02-question",
+      "shot": "SuHook",
+      "text": "We have celebrated the Sun. Hidden from it. Split it. Chased it. And even touched it. And yet... did you know that you have never once seen the Sun as it is... right now?",
+      "chunks": [
+        {
+          "text": "We have celebrated the Sun. Hidden from it. Split it. Chased it. And even touched it.",
+          "pace": 3.2,
+          "speed": 1.2
+        },
+        {
+          "text": "And yet... did you know that you have never once seen the Sun as it is... right now?",
+          "pace": 3.3,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95
+    },
+    {
+      "id": "su00-welcome",
+      "shot": "SuWelcome",
+      "text": "Welcome back to Did You Know That. Episode two. You know the rule. The light on your face is eight minutes old. But the energy inside it? How old is that? Guess now, in the comments. Then stay to the end, and find out if you were correct.",
+      "chunks": [
+        {
+          "text": "Welcome back to Did You Know That. Episode two. You know the rule. The light on your face is eight minutes old. But the energy inside it? How old is that? Guess now, in the comments. Then stay to the end, and find out if you were correct.",
+          "pace": 3.15,
+          "speed": 0.95
+        }
+      ],
+      "floor": 0.95
+    },
+    {
+      "id": "su03-promise",
+      "shot": "SuPromise",
+      "text": "Here is the experiment. Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up as someone else, under the same Sun. The Sun will not change. You will. And by the end, you will know how old that light really is.",
+      "chunks": [
+        {
+          "text": "Here is the experiment. Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up as someone else, under the same Sun. The Sun will not change. You will. And by the end, you will know how old that light really is.",
+          "pace": 3.0,
+          "speed": 1.0
+        }
+      ]
+    },
+    {
+      "id": "su04-1500",
+      "shot": "Su1500",
+      "text": "You wake up in fifteen hundred, in London. It is Midsummer Eve, the shortest night of the year, and the streets are glowing with firelight. Did you know that almost everyone you will ever meet believes the Sun goes around the Earth? It is what Ptolemy taught, about fourteen hundred years ago. Your day begins when the Sun rises, and ends when it sets. But tonight, nobody sleeps. Every door is hung with green birch and yellow flowers. Glass lamps burn all night. Neighbours share bread and drink beside the bonfires. A London writer, John Stow, later explained why: a great fire, he wrote, could purge the infection of the air. Far away, a young Polish astronomer named Copernicus is studying the sky. In fifteen forty three, the year he dies, his book puts the Sun at the centre. And within seventy years, a new instrument will show that the Sun is not perfect.",
+      "chunks": [
+        {
+          "text": "You wake up in fifteen hundred, in London. It is Midsummer Eve, the shortest night of the year, and the streets are glowing with firelight.",
+          "pace": 3.0,
+          "speed": 0.946
+        },
+        {
+          "text": "Did you know that almost everyone you will ever meet believes the Sun goes around the Earth? It is what Ptolemy taught, about fourteen hundred years ago.",
+          "pace": 3.0,
+          "speed": 0.877,
+          "floor": 0.85
+        },
+        {
+          "text": "Your day begins when the Sun rises, and ends when it sets. But tonight, nobody sleeps. Every door is hung with green birch and yellow flowers. Glass lamps burn all night. Neighbours share bread and drink beside the bonfires. A London writer, John Stow, later explained why: a great fire, he wrote, could purge the infection of the air. Far away, a young Polish astronomer named Copernicus is studying the sky. In fifteen forty three, the year he dies, his book puts the Sun at the centre.",
+          "pace": 3.0,
+          "speed": 1.167
+        },
+        {
+          "text": "And within seventy years, a new instrument will show that the Sun is not perfect.",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su05-1610",
+      "shot": "Su1610",
+      "text": "You wake up in sixteen ten, beside the River Thames. It is a misty December morning, and the Sun hangs low and dim. Thomas Harriot points a telescope at it, and draws what he sees. Do not try this. Looking at the Sun can blind you. Did you know that the first telescope drawing of sunspots was made not by Galileo, but by this Englishman, and he never published it? Two years later, in Florence, Galileo watched the spots drift across the Sun, day after day. A rival said they were tiny planets passing in front. Galileo disagreed. The spots were on the Sun itself, and the Sun was turning. In sixteen thirteen, he published his letters. The perfect heavenly body had blemishes. For most people, the day still runs on daylight alone. But for a few, the Sun has become something you can measure. And soon, one simple glass prism will break that light apart.",
+      "chunks": [
+        {
+          "text": "You wake up in sixteen ten, beside the River Thames. It is a misty December morning, and the Sun hangs low and dim. Thomas Harriot points a telescope at it, and draws what he sees. Do not try this. Looking at the Sun can blind you.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that the first telescope drawing of sunspots was made not by Galileo, but by this Englishman, and he never published it?",
+          "pace": 2.8,
+          "speed": 1.0
+        },
+        {
+          "text": "Two years later, in Florence, Galileo watched the spots drift across the Sun, day after day. A rival said they were tiny planets passing in front. Galileo disagreed. The spots were on the Sun itself, and the Sun was turning. In sixteen thirteen, he published his letters. The perfect heavenly body had blemishes. For most people, the day still runs on daylight alone. But for a few, the Sun has become something you can measure.",
+          "pace": 3.0,
+          "speed": 1.121
+        },
+        {
+          "text": "And soon, one simple glass prism will break that light apart.",
+          "pace": 3.0,
+          "speed": 0.864,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su06-1700",
+      "shot": "Su1700",
+      "text": "You wake up in seventeen fifty two, in London. Two Irish sisters, the Gunnings, are the most talked about faces in town. Did you know that a pale face was so prized that fashionable women painted theirs with white lead? Maria Gunning married the Earl of Coventry that spring. She died at twenty seven, and her death was blamed, at least in part, on the lead in her face powder. If you are rich, you stay out of the Sun. You walk under a parasol, the latest fashion. If you are poor, you work outside from dawn to dusk, and your tan tells everyone. Half a century earlier, Isaac Newton had shown that sunlight is not white at all. Pass it through a prism, and it opens into every colour of the rainbow. Red at one end. Violet at the other. And beyond the red, there is a light our eyes cannot detect.",
+      "chunks": [
+        {
+          "text": "You wake up in seventeen fifty two, in London. Two Irish sisters, the Gunnings, are the most talked about faces in town.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that a pale face was so prized that fashionable women painted theirs with white lead?",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        },
+        {
+          "text": "Maria Gunning married the Earl of Coventry that spring. She died at twenty seven, and her death was blamed, at least in part, on the lead in her face powder. If you are rich, you stay out of the Sun. You walk under a parasol, the latest fashion. If you are poor, you work outside from dawn to dusk, and your tan tells everyone. Half a century earlier, Isaac Newton had shown that sunlight is not white at all. Pass it through a prism, and it opens into every colour of the rainbow. Red at one end. Violet at the other.",
+          "pace": 3.0,
+          "speed": 0.933
+        },
+        {
+          "text": "And beyond the red, there is a light our eyes cannot detect.",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su07-1800",
+      "shot": "Su1800",
+      "text": "You wake up in eighteen hundred, near Windsor, in England. An astronomer, William Herschel, has set a prism in a sunbeam, with thermometers whose bulbs are blackened. Did you know that the hottest spot was not in the rainbow at all, but just past the red, where nothing was visible? He had found infrared. The Sun was sending more than our eyes could catch. Within a few years, gas lamps will push back the night. You no longer have to stop when the Sun goes down. In eighteen thirty nine, in Paris, a nineteen year old named Edmond Becquerel shines light on a cell, and it makes electricity. And in eighteen fifty nine, Richard Carrington sees a white flash on the Sun. Within a day, telegraph wires spark, and operators get shocks. The Sun can reach down and touch our machines. It would take another century to turn that tiny spark into power.",
+      "chunks": [
+        {
+          "text": "You wake up in eighteen hundred, near Windsor, in England. An astronomer, William Herschel, has set a prism in a sunbeam, with thermometers whose bulbs are blackened.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that the hottest spot was not in the rainbow at all, but just past the red, where nothing was visible?",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        },
+        {
+          "text": "He had found infrared. The Sun was sending more than our eyes could catch. Within a few years, gas lamps will push back the night. You no longer have to stop when the Sun goes down. In eighteen thirty nine, in Paris, a nineteen year old named Edmond Becquerel shines light on a cell, and it makes electricity. And in eighteen fifty nine, Richard Carrington sees a white flash on the Sun. Within a day, telegraph wires spark, and operators get shocks. The Sun can reach down and touch our machines.",
+          "pace": 3.0,
+          "speed": 1.093
+        },
+        {
+          "text": "It would take another century to turn that tiny spark into power.",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su08-1900",
+      "shot": "Su1900",
+      "text": "You wake up in nineteen twenty eight, on a crowded American beach. Everyone is lying in the Sun, on purpose. Once, a tan meant you laboured in the fields. Now it means you can afford a day off. Did you know that the famous story, that Coco Chanel started the suntan craze, is probably a myth? A historian traced it to an unsigned magazine article from nineteen seventy one. The real reason was work. As jobs moved into factories and offices, a tan became the badge of leisure. Then, in nineteen fifty four, at Bell Laboratories, three scientists build a silicon cell that turns about six percent of sunlight into electricity. Four years later, a tiny satellite called Vanguard One runs a radio on sunlight. It is still circling the Earth today. We had learned to live on sunlight. Now, we would fly straight into it.",
+      "chunks": [
+        {
+          "text": "You wake up in nineteen twenty eight, on a crowded American beach. Everyone is lying in the Sun, on purpose. Once, a tan meant you laboured in the fields. Now it means you can afford a day off.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that the famous story, that Coco Chanel started the suntan craze, is probably a myth?",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        },
+        {
+          "text": "A historian traced it to an unsigned magazine article from nineteen seventy one. The real reason was work. As jobs moved into factories and offices, a tan became the badge of leisure. Then, in nineteen fifty four, at Bell Laboratories, three scientists build a silicon cell that turns about six percent of sunlight into electricity. Four years later, a tiny satellite called Vanguard One runs a radio on sunlight. It is still circling the Earth today.",
+          "pace": 3.0,
+          "speed": 1.131
+        },
+        {
+          "text": "We had learned to live on sunlight. Now, we would fly straight into it.",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su09-2000",
+      "shot": "Su2000",
+      "text": "You wake up today. Did you know that on Christmas Eve, twenty twenty four, a spacecraft passed six point one million kilometres from the Sun, at almost seven hundred thousand kilometres an hour? NASA's Parker Solar Probe, the fastest object humans have ever built, flew through the Sun's outer atmosphere. Back on Earth, you spend most of your day inside, under a roof, staring at screens. You put on sunscreen just to go outside. The International Energy Agency said in twenty twenty that the best solar projects offer some of the cheapest electricity ever seen. By twenty twenty four, solar made almost seven percent of the world's electricity. And every plant, every meal you ate today, is stored sunlight, caught by photosynthesis in green leaves. We have touched the Sun, and we live on it. So why have you still never seen it as it is today?",
+      "chunks": [
+        {
+          "text": "You wake up today. Did you know that on Christmas Eve, twenty twenty four, a spacecraft passed six point one million kilometres from the Sun, at almost seven hundred thousand kilometres an hour?",
+          "pace": 2.8,
+          "speed": 0.991
+        },
+        {
+          "text": "NASA's Parker Solar Probe, the fastest object humans have ever built, flew through the Sun's outer atmosphere. Back on Earth, you spend most of your day inside, under a roof, staring at screens. You put on sunscreen just to go outside. The International Energy Agency said in twenty twenty that the best solar projects offer some of the cheapest electricity ever seen. By twenty twenty four, solar made almost seven percent of the world's electricity. And every plant, every meal you ate today, is stored sunlight, caught by photosynthesis in green leaves.",
+          "pace": 3.0,
+          "speed": 1.18
+        },
+        {
+          "text": "We have touched the Sun, and we live on it. So why have you still never seen it as it is today?",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su10-reveal",
+      "shot": "SuReveal",
+      "text": "Here is the answer. Light is fast, but it is not instant. It takes about eight minutes and twenty seconds to cross a hundred and fifty million kilometres. So every sunrise you have ever watched was already old. But that light carries a secret. Its energy was made deep in the Sun's core, and it spent a very long time struggling to get out. NASA estimates about a hundred and seventy thousand years. When that energy began its journey, there were no farms, no cities, and no writing. For five centuries, we changed how we behave toward the Sun. We celebrated it, hid from it, split it, chased it, and touched it. The Sun did not change for us at all. You have never seen the Sun as it is. Only as it was, eight minutes ago.",
+      "chunks": [
+        {
+          "text": "Here is the answer. Light is fast, but it is not instant. It takes about eight minutes and twenty seconds to cross a hundred and fifty million kilometres. So every sunrise you have ever watched was already old. But that light carries a secret. Its energy was made deep in the Sun's core, and it spent a very long time struggling to get out. NASA estimates about a hundred and seventy thousand years. When that energy began its journey, there were no farms, no cities, and no writing.",
+          "pace": 2.9,
+          "speed": 1.0
+        },
+        {
+          "text": "For five centuries, we changed how we behave toward the Sun. We celebrated it, hid from it, split it, chased it, and touched it. The Sun did not change for us at all.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "You have never seen the Sun as it is. Only as it was, eight minutes ago.",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su11-2100",
+      "shot": "Su2100",
+      "text": "Now, the year twenty one hundred. That morning has not happened yet. But we can follow the evidence. In twenty twenty three, a small Caltech satellite called Maple beamed power wirelessly in space, and aimed a signal at a rooftop in Pasadena. It was tiny. But it worked. In twenty fourteen, the International Energy Agency sketched a world where solar could make twenty seven percent of all electricity by twenty fifty, and stressed that this was not a forecast. Put those together, and here is one scenario. Power collected in orbit, where the Sun never sets. Cities designed around sunlight. The Sun itself will not notice. NASA estimates it has another five billion years or so. The question is not whether the Sun will be there in twenty one hundred. It is what we will have learned to do with it.",
+      "chunks": [
+        {
+          "text": "Now, the year twenty one hundred. That morning has not happened yet. But we can follow the evidence. In twenty twenty three, a small Caltech satellite called Maple beamed power wirelessly in space, and aimed a signal at a rooftop in Pasadena. It was tiny. But it worked. In twenty fourteen, the International Energy Agency sketched a world where solar could make twenty seven percent of all electricity by twenty fifty, and stressed that this was not a forecast. Put those together, and here is one scenario. Power collected in orbit, where the Sun never sets. Cities designed around sunlight. The Sun itself will not notice. NASA estimates it has another five billion years or so.",
+          "pace": 3.0,
+          "speed": 1.061
+        },
+        {
+          "text": "The question is not whether the Sun will be there in twenty one hundred. It is what we will have learned to do with it.",
+          "pace": 3.0,
+          "speed": 0.85,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su12-close",
+      "shot": "SuClose",
+      "text": "The Sun has risen on every single morning of your life. So tell me. When was the last time you watched it rise, on purpose?",
+      "chunks": [
+        {
+          "text": "The Sun has risen on every single morning of your life. So tell me. When was the last time you watched it rise, on purpose?",
+          "pace": 3.0,
+          "speed": 0.853,
+          "floor": 0.85
+        }
+      ]
+    },
+    {
+      "id": "su13-outro",
+      "shot": "SuOutro",
+      "text": "This was Did You Know That, episode two. The Sun. Now it is your turn. In which century would you rather watch the Sun rise? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the facts, and play the guessing game. If this changed how you see a sunrise, like it. Share it with the friend who never misses one. And subscribe, so the next mystery finds you. Next time: school. How did a day in class change from fifteen hundred to today, and will the classrooms of twenty one hundred even exist? Ask... Wonder... Repeat.",
+      "chunks": [
+        {
+          "text": "This was Did You Know That, episode two. The Sun. Now it is your turn. In which century would you rather watch the Sun rise? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the facts, and play the guessing game.",
+          "pace": 3.15,
+          "speed": 1.047
+        },
+        {
+          "text": "If this changed how you see a sunrise, like it. Share it with the friend who never misses one. And subscribe, so the next mystery finds you.",
+          "pace": 3.2,
+          "speed": 1.0
+        },
+        {
+          "text": "Next time: school. How did a day in class change from fifteen hundred to today, and will the classrooms of twenty one hundred even exist?",
+          "pace": 3.1,
+          "speed": 1.065
+        },
+        {
+          "text": "Ask... Wonder... Repeat.",
+          "pace": 0,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95
+    },
+    {
+      "id": "su14-endscreen",
+      "shot": "SuOutro",
+      "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+      "chunks": [
+        {
+          "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+          "pace": 3.1,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95
+    }
+  ]
+}

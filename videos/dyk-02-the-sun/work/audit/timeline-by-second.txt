@@ -1,0 +1,532 @@
+sec | shot | narration in this second | SFX starting in this second
+0:00 | SuHook | It is eight o'clock. | wind-soft, clock-tick-soft
+0:01 | SuHook | The Sun is | 
+0:02 | SuHook | warm on your face. | warm-shimmer
+0:03 | SuHook | But that light | 
+0:04 | SuHook | left the Sun | pop-reveal
+0:05 | SuHook | eight minutes and twenty | ui-send
+0:06 | SuHook | seconds ago. | stamp-hit
+0:07 | SuHook | If the Sun vanished | whoosh-reverse
+0:08 | SuHook | right now, you would not | 
+0:09 | SuHook | know. | clock-tick-soft
+0:10 | SuHook | We have celebrated | whoosh-soft, pop-reveal
+0:11 | SuHook | the Sun. Hidden | pop-reveal
+0:12 | SuHook | from it. Split | pop-reveal
+0:13 | SuHook | it. Chased | pop-reveal
+0:14 | SuHook | it. And even touched | pop-reveal
+0:15 | SuHook | it. And yet... | 
+0:16 | SuHook | did you | ui-toggle-on
+0:17 | SuHook | know that you have never | 
+0:18 | SuHook | once seen the Sun as | riser-soft
+0:19 | SuHook | it is... | 
+0:20 | SuHook | right now? | impact-deep-soft
+0:21 | SuHook |  | scan-hum
+0:22 | SuIntro |  | ui-toggle-on, sparkle-soft, whoosh-soft
+0:23 | SuIntro |  | knock-solid, knock-solid, knock-solid, impact-deep-soft
+0:24 | SuIntro |  | chime-magic
+0:25 | SuIntro |  | 
+0:26 | SuIntro |  | whoosh-soft
+0:27 | SuIntro |  | 
+0:28 | SuIntro |  | 
+0:29 | SuIntro | Welcome | ui-toggle-on
+0:30 | SuWelcome | back to Did You Know | pop-reveal
+0:31 | SuWelcome | That. Episode | sparkle-soft, pop-reveal
+0:32 | SuWelcome | two. You | 
+0:33 | SuWelcome | know the rule. | whoosh-soft
+0:34 | SuWelcome | The light on your face | pop-reveal
+0:35 | SuWelcome | is eight minutes old. | ui-click-soft
+0:36 | SuWelcome | But the energy | pop-reveal
+0:37 | SuWelcome | inside it? | sparkle-soft
+0:38 | SuWelcome | How old is that? | pop-reveal
+0:39 | SuWelcome | Guess now, | stamp-hit
+0:40 | SuWelcome | in the comments. | 
+0:41 | SuWelcome | Then stay to the end, | stamp-hit
+0:42 | SuWelcome | and find out if you | 
+0:43 | SuWelcome | were correct. | stamp-hit
+0:44 | SuWelcome |  | whoosh-wind
+0:45 | SuPromise | Here is the experiment. | impact-soft
+0:46 | SuPromise | Seven | whoosh-soft
+0:47 | SuPromise | mornings, from fifteen | ui-click-soft
+0:48 | SuPromise | hundred to twenty | ui-click-soft, ui-click-soft, ui-click-soft
+0:49 | SuPromise | one hundred. | ui-click-soft, ui-click-soft
+0:50 | SuPromise | In each one, you | ui-click-soft
+0:51 | SuPromise | wake up as someone | ui-click-soft, ui-click-soft, ui-click-soft
+0:52 | SuPromise | else, under the same | ui-click-soft, ui-click-soft, warm-shimmer
+0:53 | SuPromise | Sun. The | ui-click-soft, ui-click-soft
+0:54 | SuPromise | Sun will not change. | knock-solid
+0:55 | SuPromise | You will. | sparkle-soft
+0:56 | SuPromise | And by | 
+0:57 | SuPromise | the end, you will know how | 
+0:58 | SuPromise | old that light really | piano-a-min
+0:59 | SuPromise | is. | 
+1:00 | SuPromise |  | whoosh-wind, impact-soft
+1:01 | Su1500 | You wake up in fifteen | whoosh-soft
+1:02 | Su1500 | hundred, in London. | ui-click-soft
+1:03 | Su1500 |  | 
+1:04 | Su1500 | It is Midsummer Eve, | 
+1:05 | Su1500 | the shortest night | pop-reveal, ui-click-soft
+1:06 | Su1500 | of the year, and | 
+1:07 | Su1500 | the streets are glowing | ui-click-soft
+1:08 | Su1500 | with firelight. | warm-shimmer
+1:09 | Su1500 | Did you know | ui-toggle-on
+1:10 | Su1500 | that almost everyone | chime-magic
+1:11 | Su1500 | you will ever meet | 
+1:12 | Su1500 | believes the Sun goes | ui-click-soft
+1:13 | Su1500 | around the Earth? | pop-reveal
+1:14 | Su1500 | It is what | 
+1:15 | Su1500 | Ptolemy taught, | page-flip
+1:16 | Su1500 | about fourteen hundred | ui-click-soft
+1:17 | Su1500 | years ago. | 
+1:18 | Su1500 | Your day begins when | whoosh-soft, ui-click-soft
+1:19 | Su1500 | the Sun rises, | ui-click-soft, ui-click-soft, ui-click-soft
+1:20 | Su1500 | and ends when it | ui-click-soft, ui-click-soft
+1:21 | Su1500 | sets. But | pop-reveal
+1:22 | Su1500 | tonight, nobody sleeps. | stamp-hit
+1:23 | Su1500 | Every door | 
+1:24 | Su1500 | is hung with green birch | whoosh-soft, ui-click-soft
+1:25 | Su1500 | and yellow flowers. | ui-click-soft
+1:26 | Su1500 |  | 
+1:27 | Su1500 | Glass lamps burn all | sparkle-soft
+1:28 | Su1500 | night. Neighbours share | 
+1:29 | Su1500 | bread and drink beside | pop-reveal
+1:30 | Su1500 | the bonfires. | launch-thump
+1:31 | Su1500 | A London writer, | 
+1:32 | Su1500 | John Stow, later explained | page-flip
+1:33 | Su1500 | why: a great | ui-click-soft
+1:34 | Su1500 | fire, he wrote, | 
+1:35 | Su1500 | could purge the infection | warm-shimmer
+1:36 | Su1500 | of the air. | 
+1:37 | Su1500 | Far away, a | whoosh-soft
+1:38 | Su1500 | young Polish astronomer named | 
+1:39 | Su1500 | Copernicus is studying | pop-reveal
+1:40 | Su1500 | the sky. In | sparkle-soft
+1:41 | Su1500 | fifteen forty three, | page-flip
+1:42 | Su1500 | the year he dies, | ui-click-soft
+1:43 | Su1500 | his book puts the | whoosh-soft
+1:44 | Su1500 | Sun at the centre. | impact-soft
+1:45 | Su1500 | And within seventy | piano-a-min
+1:46 | Su1500 | years, a new instrument | pop-reveal
+1:47 | Su1500 | will show | 
+1:48 | Su1500 | that the Sun | 
+1:49 | Su1500 | is not perfect. | ui-click-soft
+1:50 | Su1500 |  | whoosh-reverse
+1:51 | Su1500 |  | whoosh-wind, impact-soft
+1:52 | Su1610 | You wake up in sixteen | whoosh-soft
+1:53 | Su1610 | ten, beside | ui-click-soft
+1:54 | Su1610 | the River Thames. | 
+1:55 | Su1610 | It is a misty | wind-soft
+1:56 | Su1610 | December morning, and | whoosh-soft, ui-click-soft
+1:57 | Su1610 | the Sun hangs low | 
+1:58 | Su1610 | and dim. | scan-hum
+1:59 | Su1610 | Thomas Harriot points | pop-reveal
+2:00 | Su1610 | a telescope at | ui-click-soft
+2:01 | Su1610 | it, and draws | pencil-scribble
+2:02 | Su1610 | what he sees. | 
+2:03 | Su1610 | Do not try this. | knock-solid
+2:04 | Su1610 | Looking at the Sun | 
+2:05 | Su1610 | can blind you. | trap-snap
+2:06 | Su1610 | Did you know | ui-toggle-on
+2:07 | Su1610 | that the first telescope | chime-magic
+2:08 | Su1610 | drawing of sunspots | ui-click-soft
+2:09 | Su1610 | was made not | 
+2:10 | Su1610 | by Galileo, | ui-click-soft
+2:11 | Su1610 | but by this Englishman, | pop-reveal
+2:12 | Su1610 | and | 
+2:13 | Su1610 | he never published it? | stamp-hit
+2:14 | Su1610 | Two years | 
+2:15 | Su1610 | later, in Florence, | whoosh-soft, ui-click-soft
+2:16 | Su1610 | Galileo watched | ui-click-soft
+2:17 | Su1610 | the spots drift across | 
+2:18 | Su1610 | the Sun, day | ui-click-soft
+2:19 | Su1610 | after day. | ui-click-soft, ui-click-soft
+2:20 | Su1610 | A rival said they were | ui-click-soft
+2:21 | Su1610 | tiny planets passing | pop-reveal
+2:22 | Su1610 | in front. Galileo | 
+2:23 | Su1610 | disagreed. | stamp-hit
+2:24 | Su1610 | The spots were on the Sun | 
+2:25 | Su1610 | itself, and the Sun | pop-reveal
+2:26 | Su1610 | was turning. In | whoosh-soft
+2:27 | Su1610 | sixteen thirteen, | page-flip
+2:28 | Su1610 | he published his letters. | ui-click-soft
+2:29 | Su1610 | The perfect | ui-click-soft
+2:30 | Su1610 | heavenly body had | 
+2:31 | Su1610 | blemishes. | stamp-hit
+2:32 | Su1610 | For most people, the day | whoosh-soft, ui-click-soft, ui-click-soft, ui-click-soft
+2:33 | Su1610 | still runs on daylight | ui-click-soft, ui-click-soft, pop-reveal
+2:34 | Su1610 | alone. But | 
+2:35 | Su1610 | for a few, the Sun | ui-click-soft
+2:36 | Su1610 | has become something you | 
+2:37 | Su1610 | can measure. And | chime-reward
+2:38 | Su1610 | soon, one simple | piano-a-min
+2:39 | Su1610 | glass prism | pop-reveal
+2:40 | Su1610 | will break that | 
+2:41 | Su1610 | light apart. | sparkle-soft, whoosh-reverse
+2:42 | Su1610 |  | whoosh-wind
+2:43 | Su1700 | You wake | impact-soft
+2:44 | Su1700 | up in seventeen | whoosh-soft
+2:45 | Su1700 | fifty two, in London. | ui-click-soft
+2:46 | Su1700 | Two | 
+2:47 | Su1700 | Irish sisters, | pop-reveal
+2:48 | Su1700 | the Gunnings, are the most | ui-click-soft
+2:49 | Su1700 | talked about faces in | pop-reveal
+2:50 | Su1700 | town. Did | ui-toggle-on
+2:51 | Su1700 | you know that a pale face | chime-magic
+2:52 | Su1700 | was so prized | 
+2:53 | Su1700 | that fashionable | ui-click-soft
+2:54 | Su1700 | women painted | 
+2:55 | Su1700 | theirs with white | trap-snap
+2:56 | Su1700 | lead? Maria | 
+2:57 | Su1700 | Gunning married the Earl | whoosh-soft, ui-click-soft
+2:58 | Su1700 | of Coventry that spring. | ui-click-soft
+2:59 | Su1700 | She | 
+3:00 | Su1700 | died at twenty seven, | stamp-hit
+3:01 | Su1700 | and her death was blamed, | ui-click-soft
+3:02 | Su1700 | at least in | ui-click-soft
+3:03 | Su1700 | part, on | 
+3:04 | Su1700 | the lead in her face powder. | knock-solid
+3:05 | Su1700 | If | 
+3:06 | Su1700 | you are rich, | whoosh-soft
+3:07 | Su1700 | you stay out of the Sun. | ui-click-soft
+3:08 | Su1700 | You walk | 
+3:09 | Su1700 | under a parasol, | warm-shimmer
+3:10 | Su1700 | the latest fashion. | 
+3:11 | Su1700 | If you | 
+3:12 | Su1700 | are poor, you work | pop-reveal, ui-click-soft, ui-click-soft
+3:13 | Su1700 | outside from dawn | ui-click-soft, ui-click-soft
+3:14 | Su1700 | to dusk, | ui-click-soft, ui-click-soft, ui-click-soft
+3:15 | Su1700 | and your tan tells | sparkle-soft
+3:16 | Su1700 | everyone. | 
+3:17 | Su1700 | Half a century earlier, | whoosh-soft
+3:18 | Su1700 | Isaac | 
+3:19 | Su1700 | Newton had shown that | pop-reveal
+3:20 | Su1700 | sunlight is not white at | ui-click-soft
+3:21 | Su1700 | all. Pass | 
+3:22 | Su1700 | it through a prism, | sparkle-soft
+3:23 | Su1700 | and it opens | warm-shimmer
+3:24 | Su1700 | into every colour | 
+3:25 | Su1700 | of the rainbow. | 
+3:26 | Su1700 | Red at one end. | ui-click-soft
+3:27 | Su1700 | Violet at | ui-click-soft
+3:28 | Su1700 | the other. And | 
+3:29 | Su1700 | beyond the red, | piano-a-min
+3:30 | Su1700 | there is a light | ui-click-soft
+3:31 | Su1700 | our eyes cannot | 
+3:32 | Su1700 | detect. | ui-click-soft, whoosh-reverse
+3:33 | Su1700 |  | whoosh-wind, impact-soft
+3:34 | Su1800 | You wake up | 
+3:35 | Su1800 | in eighteen hundred, near | whoosh-soft
+3:36 | Su1800 | Windsor, in England. | ui-click-soft
+3:37 | Su1800 | An astronomer, | whoosh-soft
+3:38 | Su1800 | William Herschel, | pop-reveal
+3:39 | Su1800 | has set a prism in | ui-click-soft
+3:40 | Su1800 | a sunbeam, | warm-shimmer
+3:41 | Su1800 | with thermometers whose | ui-click-soft
+3:42 | Su1800 | bulbs are blackened. | pop-reveal
+3:43 | Su1800 | Did you know | ui-toggle-on
+3:44 | Su1800 | that the hottest spot | chime-magic
+3:45 | Su1800 | was not | 
+3:46 | Su1800 | in the rainbow at all, | ui-click-soft
+3:47 | Su1800 | but just | 
+3:48 | Su1800 | past the red, | pop-reveal
+3:49 | Su1800 | where nothing | ui-click-soft
+3:50 | Su1800 | was visible? | 
+3:51 | Su1800 | He had found | whoosh-soft
+3:52 | Su1800 | infrared. | impact-soft
+3:53 | Su1800 | The Sun was sending | 
+3:54 | Su1800 | more than our eyes | pop-reveal
+3:55 | Su1800 | could catch. | 
+3:56 | Su1800 | Within a few years, | whoosh-soft, ui-click-soft, ui-click-soft
+3:57 | Su1800 | gas lamps will | ui-click-soft, pop-reveal, ui-click-soft
+3:58 | Su1800 | push back the night. | ui-click-soft, pop-reveal
+3:59 | Su1800 | You no longer have | 
+4:00 | Su1800 | to stop when the Sun | ui-click-soft
+4:01 | Su1800 | goes down. | ui-click-soft
+4:02 | Su1800 | In eighteen thirty nine, | whoosh-soft
+4:03 | Su1800 | in Paris, | 
+4:04 | Su1800 | a nineteen year | pop-reveal
+4:05 | Su1800 | old named Edmond | 
+4:06 | Su1800 | Becquerel shines light | warm-shimmer
+4:07 | Su1800 | on a cell, | 
+4:08 | Su1800 | and it makes electricity. | glitch-zap
+4:09 | Su1800 | And in | 
+4:10 | Su1800 | eighteen fifty nine, | whoosh-soft, ui-click-soft
+4:11 | Su1800 | Richard Carrington | ui-click-soft
+4:12 | Su1800 | sees a white flash on | impact-deep-soft
+4:13 | Su1800 | the Sun. | 
+4:14 | Su1800 | Within a day, telegraph | pop-reveal
+4:15 | Su1800 | wires spark, | glitch-zap
+4:16 | Su1800 | and operators get | 
+4:17 | Su1800 | shocks. The | stamp-hit
+4:18 | Su1800 | Sun can reach down | 
+4:19 | Su1800 | and touch our machines. | warm-shimmer
+4:20 | Su1800 | It would take | piano-a-min
+4:21 | Su1800 | another century | ui-click-soft
+4:22 | Su1800 | to turn that tiny spark | ui-click-soft
+4:23 | Su1800 | into power. | ui-click-soft
+4:24 | Su1800 |  | whoosh-reverse
+4:25 | Su1800 |  | whoosh-wind, impact-soft
+4:26 | Su1900 | You wake up in nineteen twenty | whoosh-soft
+4:27 | Su1900 | eight, on | 
+4:28 | Su1900 | a crowded American beach. | ui-click-soft
+4:29 | Su1900 | Everyone | 
+4:30 | Su1900 | is lying in the Sun, | pop-reveal, wind-soft
+4:31 | Su1900 | on purpose. | stamp-hit
+4:32 | Su1900 | Once, | ui-click-soft
+4:33 | Su1900 | a tan meant you | 
+4:34 | Su1900 | laboured in the fields. | ui-click-soft
+4:35 | Su1900 | Now it | pop-reveal
+4:36 | Su1900 | means you can afford a day | ui-click-soft
+4:37 | Su1900 | off. Did | ui-toggle-on
+4:38 | Su1900 | you know that the famous | chime-magic
+4:39 | Su1900 | story, | 
+4:40 | Su1900 | that Coco Chanel | ui-click-soft
+4:41 | Su1900 | started the suntan | 
+4:42 | Su1900 | craze, is | ui-click-soft
+4:43 | Su1900 | probably a myth? | ui-click-soft, stamp-hit
+4:44 | Su1900 | A historian | 
+4:45 | Su1900 | traced it to an unsigned | whoosh-soft
+4:46 | Su1900 | magazine article | page-flip
+4:47 | Su1900 | from nineteen seventy one. | stamp-hit
+4:48 | Su1900 | The real | 
+4:49 | Su1900 | reason was work. | impact-soft
+4:50 | Su1900 | As jobs moved | whoosh-soft, ui-click-soft
+4:51 | Su1900 | into factories and offices, | ui-click-soft, ui-click-soft, ui-click-soft
+4:52 | Su1900 | a tan became | ui-click-soft, ui-click-soft
+4:53 | Su1900 | the badge of leisure. | ui-click-soft, sparkle-soft
+4:54 | Su1900 | Then, in nineteen | whoosh-soft, ui-click-soft
+4:55 | Su1900 | fifty four, at Bell | pop-reveal
+4:56 | Su1900 | Laboratories, three | ui-click-soft
+4:57 | Su1900 | scientists build a silicon | pop-reveal
+4:58 | Su1900 | cell that | 
+4:59 | Su1900 | turns about six percent | chime-reward
+5:00 | Su1900 | of sunlight into electricity. | warm-shimmer
+5:01 | Su1900 |  | 
+5:02 | Su1900 | Four years later, a | whoosh-soft
+5:03 | Su1900 | tiny satellite called | pop-reveal
+5:04 | Su1900 | Vanguard One runs a radio | ui-click-soft, scan-hum
+5:05 | Su1900 | on sunlight. | 
+5:06 | Su1900 | It is still circling | chime-magic
+5:07 | Su1900 | the Earth today. | 
+5:08 | Su1900 | We had learned to live | piano-a-min
+5:09 | Su1900 | on sunlight. | 
+5:10 | Su1900 | Now, we would fly | ui-click-soft, launch-thump
+5:11 | Su1900 | straight into | ui-click-soft
+5:12 | Su1900 | it. | whoosh-reverse
+5:13 | Su1900 |  | whoosh-wind, impact-soft
+5:14 | Su2000 | You wake up today. | whoosh-soft
+5:15 | Su2000 | Did you | ui-toggle-on
+5:16 | Su2000 | know that on Christmas | chime-magic, ui-click-soft
+5:17 | Su2000 | Eve, twenty twenty | 
+5:18 | Su2000 | four, a | 
+5:19 | Su2000 | spacecraft passed | ui-click-soft
+5:20 | Su2000 | six point one | pop-reveal
+5:21 | Su2000 | million kilometres from | 
+5:22 | Su2000 | the Sun, at | ui-click-soft
+5:23 | Su2000 | almost seven hundred | pop-reveal
+5:24 | Su2000 | thousand kilometres an hour? | 
+5:25 | Su2000 | NASA's | whoosh-wind
+5:26 | Su2000 | Parker Solar Probe, | ui-click-soft
+5:27 | Su2000 | the fastest object | stamp-hit
+5:28 | Su2000 | humans have ever | 
+5:29 | Su2000 | built, flew | whoosh-soft
+5:30 | Su2000 | through the Sun's outer atmosphere. | warm-shimmer
+5:31 | Su2000 |  | 
+5:32 | Su2000 | Back on Earth, you spend | whoosh-soft, ui-click-soft, ui-click-soft, ui-click-soft
+5:33 | Su2000 | most of your day inside, | ui-click-soft, ui-click-soft, pop-reveal
+5:34 | Su2000 | under a roof, | 
+5:35 | Su2000 | staring at screens. | pop-reveal
+5:36 | Su2000 | You put on sunscreen | pop-reveal
+5:37 | Su2000 | just to go outside. | 
+5:38 | Su2000 | The International Energy | whoosh-soft, ui-click-soft, ui-click-soft
+5:39 | Su2000 | Agency said in twenty | ui-click-soft, pop-reveal
+5:40 | Su2000 | twenty that the best | 
+5:41 | Su2000 | solar projects offer some | 
+5:42 | Su2000 | of the cheapest electricity | warm-shimmer
+5:43 | Su2000 | ever seen. | 
+5:44 | Su2000 | By twenty twenty four, | ui-click-soft
+5:45 | Su2000 | solar made almost | 
+5:46 | Su2000 | seven percent | chime-reward
+5:47 | Su2000 | of the world's electricity. | 
+5:48 | Su2000 | And every | whoosh-soft
+5:49 | Su2000 | plant, every | pop-reveal
+5:50 | Su2000 | meal you ate today, | pop-reveal
+5:51 | Su2000 | is stored sunlight, | sparkle-soft
+5:52 | Su2000 | caught by photosynthesis | ui-click-soft
+5:53 | Su2000 | in green leaves. | 
+5:54 | Su2000 | We have | 
+5:55 | Su2000 | touched the Sun, | piano-a-min
+5:56 | Su2000 | and we live | ui-click-soft
+5:57 | Su2000 | on it. | 
+5:58 | Su2000 | So why have you still | ui-click-soft, riser-soft
+5:59 | Su2000 | never seen it | ui-click-soft
+6:00 | Su2000 | as it is today? | pop-reveal
+6:01 | Su2000 |  | 
+6:02 | Su2000 |  | whoosh-reverse
+6:03 | SuReveal | Here is the answer. Light | impact-deep-soft
+6:04 | SuReveal | is fast, but it | pop-reveal
+6:05 | SuReveal | is not instant. | pop-reveal
+6:06 | SuReveal | It takes about | ui-send
+6:07 | SuReveal | eight minutes and twenty | clock-tick-soft
+6:08 | SuReveal | seconds to cross a hundred | 
+6:09 | SuReveal | and fifty million kilometres. | ui-click-soft
+6:10 | SuReveal |  | 
+6:11 | SuReveal | So every sunrise | pop-reveal
+6:12 | SuReveal | you have ever watched | 
+6:13 | SuReveal | was already old. | chime-magic
+6:14 | SuReveal | But that light | 
+6:15 | SuReveal | carries a secret. | whoosh-soft
+6:16 | SuReveal | Its energy | 
+6:17 | SuReveal | was made deep in the | whoosh-soft
+6:18 | SuReveal | Sun's core, | warm-shimmer
+6:19 | SuReveal | and it spent a very | 
+6:20 | SuReveal | long time struggling | pencil-scribble
+6:21 | SuReveal | to get out. | 
+6:22 | SuReveal | NASA estimates | ui-click-soft
+6:23 | SuReveal | about a hundred | 
+6:24 | SuReveal | and seventy thousand years. | pop-reveal, impact-soft
+6:25 | SuReveal | When | 
+6:26 | SuReveal | that energy began | ui-click-soft
+6:27 | SuReveal | its journey, there were no | 
+6:28 | SuReveal | farms, no | trap-snap
+6:29 | SuReveal | cities, and no | trap-snap
+6:30 | SuReveal | writing. For | trap-snap, whoosh-soft
+6:31 | SuReveal | five centuries, | 
+6:32 | SuReveal | we changed how we behave | ui-click-soft
+6:33 | SuReveal | toward the Sun. | 
+6:34 | SuReveal | We celebrated | pop-reveal
+6:35 | SuReveal | it, hid | pop-reveal
+6:36 | SuReveal | from it, split | pop-reveal
+6:37 | SuReveal | it, chased | pop-reveal
+6:38 | SuReveal | it, and | 
+6:39 | SuReveal | touched it. The | pop-reveal, warm-shimmer
+6:40 | SuReveal | Sun did not change | knock-solid
+6:41 | SuReveal | for us at all. | 
+6:42 | SuReveal | You have never seen | whoosh-soft
+6:43 | SuReveal | the Sun as it | 
+6:44 | SuReveal | is. Only | riser-soft
+6:45 | SuReveal | as it was, | impact-deep-soft, chime-reward
+6:46 | SuReveal | eight minutes ago. | ui-click-soft
+6:47 | SuReveal |  | 
+6:48 | SuReveal | Now, | whoosh-wind, impact-soft, scan-hum
+6:49 | Su2100 | the year twenty one | whoosh-soft
+6:50 | Su2100 | hundred. That | warm-shimmer
+6:51 | Su2100 | morning has not happened | ui-click-soft, ui-click-soft
+6:52 | Su2100 | yet. But | 
+6:53 | Su2100 | we can follow the evidence. | pop-reveal
+6:54 | Su2100 | In | 
+6:55 | Su2100 | twenty twenty three, | ui-click-soft
+6:56 | Su2100 | a small Caltech | pop-reveal
+6:57 | Su2100 | satellite called Maple | ui-click-soft
+6:58 | Su2100 | beamed power wirelessly | ui-send
+6:59 | Su2100 | in space, | 
+7:00 | Su2100 | and aimed a signal | stream-soft
+7:01 | Su2100 | at a rooftop in | 
+7:02 | Su2100 | Pasadena. | pop-reveal
+7:03 | Su2100 | It was tiny. | ui-click-soft
+7:04 | Su2100 | But it worked. | chime-reward
+7:05 | Su2100 | In twenty | 
+7:06 | Su2100 | fourteen, the International | page-flip
+7:07 | Su2100 | Energy Agency | 
+7:08 | Su2100 | sketched a world where | ui-click-soft
+7:09 | Su2100 | solar could make twenty | 
+7:10 | Su2100 | seven percent of | pop-reveal
+7:11 | Su2100 | all electricity | 
+7:12 | Su2100 | by twenty fifty, | ui-click-soft
+7:13 | Su2100 | and stressed | 
+7:14 | Su2100 | that this was not a forecast. | stamp-hit
+7:15 | Su2100 |  | 
+7:16 | Su2100 | Put those together, | whoosh-soft
+7:17 | Su2100 | and here is one scenario. | pop-reveal
+7:18 | Su2100 |  | 
+7:19 | Su2100 | Power collected | warm-shimmer
+7:20 | Su2100 | in orbit, where the Sun | ui-click-soft
+7:21 | Su2100 | never sets. | ui-click-soft
+7:22 | Su2100 | Cities | pop-reveal
+7:23 | Su2100 | designed around sunlight. | 
+7:24 | Su2100 | The | whoosh-soft
+7:25 | Su2100 | Sun itself will not | 
+7:26 | Su2100 | notice. NASA | ui-click-soft
+7:27 | Su2100 | estimates it | 
+7:28 | Su2100 | has another five billion | chime-magic
+7:29 | Su2100 | years or so. | 
+7:30 | Su2100 | The question | ui-click-soft
+7:31 | Su2100 | is not | 
+7:32 | Su2100 | whether the Sun will | ui-click-soft
+7:33 | Su2100 | be there in twenty | ui-click-soft
+7:34 | Su2100 | one hundred. | 
+7:35 | Su2100 | It is what | ui-click-soft
+7:36 | Su2100 | we will have learned | warm-shimmer
+7:37 | Su2100 | to do with it. | 
+7:38 | Su2100 |  | whoosh-soft
+7:39 | SuClose | The Sun | 
+7:40 | SuClose | has risen on | ui-click-soft
+7:41 | SuClose | every single | sparkle-soft
+7:42 | SuClose | morning of your life. | 
+7:43 | SuClose | So tell me. | whoosh-reverse
+7:44 | SuClose | When | whoosh-soft
+7:45 | SuClose | was the last time | 
+7:46 | SuClose | you watched it rise, | ui-click-soft
+7:47 | SuClose | on purpose? | chime-magic
+7:48 | SuClose |  | 
+7:49 | SuClose |  | whoosh-wind
+7:50 | SuOutro | This was Did You Know | pop-reveal, ui-toggle-on
+7:51 | SuOutro | That, episode | 
+7:52 | SuOutro | two. The | pop-reveal
+7:53 | SuOutro | Sun. Now it is | 
+7:54 | SuOutro | your turn. In | whoosh-soft
+7:55 | SuOutro | which century would | ui-click-soft
+7:56 | SuOutro | you rather watch the Sun | ui-click-soft, ui-click-soft, ui-click-soft
+7:57 | SuOutro | rise? | ui-click-soft, ui-click-soft
+7:58 | SuOutro | Tell me in the comments. | ui-click-soft, pop-reveal
+7:59 | SuOutro |  | 
+8:00 | SuOutro | At the end of every episode, | impact-soft
+8:01 | SuOutro | I will read the | 
+8:02 | SuOutro | best comment, | ui-click-soft
+8:03 | SuOutro | right here, on this screen. | ui-click-soft
+8:04 | SuOutro | And | 
+8:05 | SuOutro | the subject you | sparkle-soft
+8:06 | SuOutro | ask for most becomes | 
+8:07 | SuOutro | a future episode. | pop-reveal
+8:08 | SuOutro | On our | 
+8:09 | SuOutro | website, Dex-tee | sparkle-soft
+8:10 | SuOutro | dot live, | 
+8:11 | SuOutro | you can watch every | ui-click-soft
+8:12 | SuOutro | episode, collect | ui-click-soft
+8:13 | SuOutro | the facts, and | 
+8:14 | SuOutro | play the guessing game. | ui-click-soft
+8:15 | SuOutro | If | 
+8:16 | SuOutro | this changed how you | ui-click-soft
+8:17 | SuOutro | see a sunrise, like | ui-click-soft, ui-click-soft
+8:18 | SuOutro | it. Share | ui-send
+8:19 | SuOutro | it with the friend who | ui-click-soft
+8:20 | SuOutro | never misses one. | 
+8:21 | SuOutro | And subscribe, | chime-reward
+8:22 | SuOutro | so the next mystery | sparkle-soft
+8:23 | SuOutro | finds you. | 
+8:24 | SuOutro | Next time: | whoosh-wind
+8:25 | SuOutro | school. | impact-soft
+8:26 | SuOutro | How did a day | 
+8:27 | SuOutro | in class change from | pop-reveal
+8:28 | SuOutro | fifteen hundred to | ui-click-soft
+8:29 | SuOutro | today, and will | 
+8:30 | SuOutro | the classrooms of twenty | ui-click-soft
+8:31 | SuOutro | one hundred even | 
+8:32 | SuOutro | exist? Ask... | piano-a-min, chess-piece-thock
+8:33 | SuOutro | Wonder... Repeat. | chess-piece-thock, chess-piece-thock
+8:34 | SuOutro |  | 
+8:35 | SuOutro | Next time... | pencil-scribble, ui-toggle-on, sparkle-soft
+8:36 | SuOutro | this could | 
+8:37 | SuOutro | be your comment. | ui-click-soft
+8:38 | SuOutro | Pick a mystery. | 
+8:39 | SuOutro | And I will see you there. | 
+8:40 | SuOutro |  | 
+8:41 | SuOutro |  | 
+8:42 | SuOutro |  | 
+8:43 | SuOutro |  | 
+8:44 | SuOutro |  | 
+8:45 | SuOutro |  | 
+8:46 | SuOutro |  | 
+8:47 | SuOutro |  | 
+8:48 | SuOutro |  | 
+8:49 | SuOutro |  | 
+8:50 | SuOutro |  | 
