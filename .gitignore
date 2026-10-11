@@ -75,3 +75,6 @@ tools/matte/person-matte
 # Did You Know That? per-episode QA sweeps and regenerable narration audio
 videos/*/work/audit/sweep*/
 videos/dyk-*/work/narration/*.mp3
+# DYK voice chunks (paid takes, regenerable) and review contact sheets stay out of Git
+videos/dyk-*/work/narration/chunks/*.mp3
+videos/dyk-*/work/audit/stills/
