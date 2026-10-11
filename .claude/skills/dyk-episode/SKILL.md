@@ -16,9 +16,20 @@ Brand kit `remotion/src/lib/dytbrand.tsx` · episode kit `remotion/src/lib/dykki
 - **Outro ritual**: subject-specific comment prompt · "At the end of every episode, I will read the best comment…" (Comment of the Week) · "Dex-tee dot live" (spell it like that for TTS; show **Dexty.live**) · like / share / subscribe on his words · ONE teaser for the next episode · "Ask... Wonder... Repeat." End screen 15 s: Comment of the Week card (left; real comment from the previous episode with @handle — or a clearly labelled EXAMPLE), WATCH NEXT slot (right), subscribe ring.
 - **Truth**: every on-screen number traces to `RESEARCH.md`; hedge where historians disagree; never fabricate a viewer comment, quote or name. Paid research seats (Story Council) only with David's budget — otherwise research directly with web sources.
 
+- **The human relationship arc (the spine — David, 2026-10-11)**: every era states, in one plain sentence, how humans
+  SAW and USED the subject then, and the arc must climb — experience → explanation → measurement → harnessing →
+  dependence → what 2100 makes of it. Ep02 example: 1500 the Sun is the difference between day and night (work vs
+  sleep) · 1600s something to measure (spots) · 1800s invisible light and electricity · by 1900 the source of all food
+  (photosynthesis) · 2000s power we harvest (solar) · 2100 the energy behind everything we run — internet, AI, cities
+  (published projections only). On screen: a `HOW WE SAW IT` chip per era that stacks into an arc ladder; the answer
+  walks the ladder back (then → now → next) and 2100 grows from it. `STORY.md` carries the arc table before any script.
+- **Human narration**: Brian talks to ONE person. Run the humanizer pass in `references/narration-humanizer.md` on the
+  script after research and before any voice — contractions, direct questions with a beat to answer, sentence-length
+  variety, sensory openings, no AI-tell words/frames, facts untouched — then the read-aloud test.
+
 ## Pipeline (per episode, from repo root)
-1. `videos/dyk-NN-<slug>/STORY.md` (beat sheet in the five-beat grid) → David approves.
-2. `RESEARCH.md` (F-numbered facts + sources) → `work/narration/script.json` (scene ids `xxNN-…`, second person, open loops, one "Did you know that…" per era).
+1. `videos/dyk-NN-<slug>/STORY.md` (beat sheet in the five-beat grid + the relationship-arc table: per era "how humans saw/used it", rising to 2100) → David approves.
+2. `RESEARCH.md` (F-numbered facts + sources) → `work/narration/script.json` → humanizer pass + read-aloud (scene ids `xxNN-…`, second person, open loops, one "Did you know that…" per era).
 3. Copy and adapt `work/{gen_voice.py,make_vo_json.py,build_final.py,qa_final.py,qa_sweep.py}` from episode 01. `python3 work/gen_voice.py` (timestamps) → `python3 work/make_vo_json.py`.
 4. Shots in `remotion/src/shots/dyk-NN/` with a NEW unique shot-ID prefix; durations = VO offset + VO + ~1 s. Use `makeCue(vo, id, offset)`; `at('word', nth)`.
 5. Stills at cue frames: `node remotion/scripts/stills-at.mjs <dir> Shot:frame,frame` — LOOK at them.

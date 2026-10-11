@@ -9,6 +9,27 @@ Episode kit: `remotion/src/lib/dykkit.tsx`. Gate: `docs/VIDEO-DESIGN-SYSTEM.md` 
 century — then how we live with it now, then what 2100 holds, built only on real facts.**
 That throughline is underlined in every era: *what people believed · what they did every day · what changed it.*
 
+## The relationship arc (David, 2026-10-11 — underline it in every episode)
+Each episode is the story of **how humans saw the subject, how we live with it now, and what the evidence says
+comes next**. Every era opens its "what changed" thinking with one plain sentence: *in [year], people saw
+[subject] as …*. The sentences must climb — lived experience → explanation → measurement → harnessing →
+dependence → 2100 — so the viewer feels the relationship change, not just the dates.
+
+| Era | The Sun (No. 02) — how people saw it |
+|---|---|
+| 1500 | the difference between day and night: when you work, when you sleep, when you pray |
+| 1600s | something you can measure — and it has spots |
+| 1700s–1800s | light you can split, light you can't see, light that makes electricity |
+| by 1900 | the source of all food: every meal is stored sunlight (photosynthesis) |
+| 2000s | power we harvest — the cheapest electricity ever seen |
+| 2100 | the energy behind everything we run: internet, AI, cities (published projections only, labelled PREDICTION) |
+
+- On screen: a `HOW WE SAW IT` chip per era that stacks into a ladder; **the answer** walks it back in one breath
+  per step (then → now → next); **2100** builds on the top rung and ties in the forces that will shape it
+  (internet, AI, energy) only where a named source supports it.
+- Narration: Brian talks to one person, like a friend telling you something amazing — see
+  `.claude/skills/dyk-episode/references/narration-humanizer.md` (run before any voice is generated).
+
 ## Episode spine (~8–10 min — clears YouTube's 8-min mid-roll line)
 | # | Beat | Length | Rules |
 |---|---|---|---|
