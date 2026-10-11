@@ -75,3 +75,4 @@ tools/matte/person-matte
 # Did You Know That? per-episode QA sweeps and regenerable narration audio
 videos/*/work/audit/sweep*/
 videos/dyk-*/work/narration/*.mp3
+videos/dyk-*/work/narration/*.rejected.*
