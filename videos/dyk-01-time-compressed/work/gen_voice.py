@@ -29,11 +29,15 @@ def api_key():
     return os.environ.get("ELEVENLABS_API_KEY", "")
 
 
+# Livelier Brian (David, after ep01: hook/welcome/outro sounded sleepy). Used for every line
+# generated from now on; lines already paid for keep the take they were made with.
+VOICE_SETTINGS = {"stability": 0.32, "similarity_boost": 0.85, "style": 0.45, "use_speaker_boost": True}
+
+
 def tts_with_timestamps(text, key, speed=1.0):
     body = json.dumps({
         "text": text, "model_id": MODEL,
-        "voice_settings": {"stability": 0.42, "similarity_boost": 0.85, "style": 0.30, "use_speaker_boost": True,
-                           "speed": round(speed, 3)},
+        "voice_settings": {**VOICE_SETTINGS, "speed": round(speed, 3)},
     }).encode()
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE}/with-timestamps?output_format=mp3_44100_128"
     req = urllib.request.Request(url, data=body, method="POST",
@@ -58,28 +62,49 @@ def words_from_alignment(al):
     return words
 
 
-PACE_TARGET = 2.9            # words/s — Brian's story pace (episode 01 body lines)
-PACE_TOL = 0.10              # every line within ±10 % of the target
+PACE_TARGET = 2.9            # words/s — default story pace when a scene sets no `pace`
+PACE_TOL = 0.10              # every line within ±10 % of ITS scene's target
 MAX_TRIES = 4
+SPEED_MIN, SPEED_MAX = 0.7, 1.2   # ElevenLabs range; a scene's `speed_min` raises the floor
+MID_MAX_S_PER_SYL = 0.42     # mid-sentence word drag ("railroaaads")
+END_MAX_S_PER_SYL = 0.55     # sentence-final word drag ("yeeet.")
+WORD_MAX_S = 1.0
 
 
 def syllables(w):
     w = re.sub(r"[^a-z]", "", w.lower())
-    return max(1, len(re.findall(r"[aeiouy]+", w)) - (1 if w.endswith("e") and len(w) > 3 else 0))
+    silent_e = w.endswith("e") and not w.endswith(("ee", "ye")) and not re.search(r"[^aeiouy]le$", w) and len(w) > 3
+    split_vowels = 1 if re.search(r"ience$", w) else 0    # sci-ence, experi-ence
+    return max(1, len(re.findall(r"[aeiouy]+", w)) - (1 if silent_e else 0) + split_vowels)
 
 
-def quality(words):
-    """Return (pace, problems). Problems = stretched words mid-sentence (the 'railroaaads' glitch)."""
-    pace = len(words) / max(0.1, words[-1]["e"] - words[0]["s"])
+def stretched(words):
+    """Words the voice drags: any word > 1.0 s; mid-sentence > 0.42 s/syllable; sentence-final
+    (. ? ! … or the last word) > 0.55 s/syllable. Words ending a clause (, : ;) only get the 1.0 s rule."""
     probs = []
     for i, w in enumerate(words):
         d = w["e"] - w["s"]
-        sentence_end = i + 1 == len(words) or re.search(r"[.?!,:;…]$", w["w"])
-        if d > 1.0 or (not sentence_end and d / syllables(w["w"]) > 0.42):
+        per_syl = d / syllables(w["w"])
+        sentence_end = i + 1 == len(words) or re.search(r"[.?!…]$", w["w"])
+        clause_end = re.search(r"[,:;]$", w["w"])
+        if d > WORD_MAX_S or (sentence_end and per_syl > END_MAX_S_PER_SYL) or \
+                (not sentence_end and not clause_end and per_syl > MID_MAX_S_PER_SYL):
             probs.append(f"stretched '{w['w']}' {d:.2f}s")
-    if abs(pace - PACE_TARGET) / PACE_TARGET > PACE_TOL:
-        probs.append(f"pace {pace:.2f} w/s (target {PACE_TARGET}±{int(PACE_TOL * 100)}%)")
+    return probs
+
+
+def quality(words, target=PACE_TARGET):
+    """Return (pace, problems): stretched words plus a pace outside ±10 % of `target` words/s."""
+    pace = len(words) / max(0.1, words[-1]["e"] - words[0]["s"])
+    probs = stretched(words)
+    if abs(pace - target) / target > PACE_TOL:
+        probs.append(f"pace {pace:.2f} w/s (target {target}±{int(PACE_TOL * 100)}%)")
     return pace, probs
+
+
+def next_speed(speed, pace, target, floor=SPEED_MIN):
+    """Nudge the ElevenLabs speed toward the target pace, never below the scene's floor."""
+    return min(SPEED_MAX, max(floor, SPEED_MIN, speed * target / pace))
 
 
 def probe_duration(path):
@@ -114,18 +139,19 @@ def main():
             continue                      # already paid for; never re-bill
         if only and sid not in only:
             continue
-        speed, best = float(sc.get("speed", 1.0)), None
+        target = float(sc.get("pace", PACE_TARGET))
+        floor = float(sc.get("speed_min", SPEED_MIN))
+        speed, best = max(floor, float(sc.get("speed", 1.0))), None
         for attempt in range(1, MAX_TRIES + 1):
             resp = tts_with_timestamps(text, key, speed)
             words = words_from_alignment(resp["alignment"])
-            pace, probs = quality(words)
+            pace, probs = quality(words, target)
             print(f"    try {attempt} speed {speed:.2f}: pace {pace:.2f} w/s {'OK' if not probs else probs}")
             if best is None or len(probs) < len(best[2]):
                 best = (resp, words, probs, speed)
             if not probs:
                 break
-            # nudge speed toward the target pace (ElevenLabs accepts 0.7–1.2)
-            speed = min(1.2, max(0.7, speed * PACE_TARGET / pace))
+            speed = next_speed(speed, pace, target, floor)
         resp, words, probs, speed = best
         if probs and os.environ.get("ALLOW_GATE_FAIL") != "1":
             # hard gate: keep the best attempt for listening, but never as the canonical take

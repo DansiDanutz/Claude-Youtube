@@ -126,7 +126,7 @@ CUES = [
     (w('tc00-welcome', 'rule'), 'impact-deep-soft', 0.46),
     (w('tc00-welcome', 'guess'), 'stamp-hit', 0.36),
     (w('tc00-welcome', 'stay'), 'stamp-hit', 0.36),
-    (w('tc00-welcome', 'right'), 'stamp-hit', 0.36),
+    (w('tc00-welcome', 'find'), 'stamp-hit', 0.36),     # CHECK card ("find out if you were right")
     (w('tc00-welcome', 'begin', shift=-1.36), 'riser-soft', 0.30),
     (w('tc00-welcome', 'begin'), 'whoosh-wind', 0.38),
     # promise
@@ -194,7 +194,8 @@ CUES += repeat('scan-hum', s('Tc2100', 1.0), s('Tc2100', 40.0), 2.5, 0.07)
 CUES += [(w('tc00-welcome', 'comments'), 'pop-reveal', 0.30)]
 # outro: the comment-of-the-week ritual
 CUES += [(w('tc13-outro', 'Dex-tee', shift=-0.1), 'sparkle-soft', 0.34), (w('tc13-outro', 'Dex-tee', shift=0.05), 'pop-reveal', 0.30)]
-CUES += [(w('tc13-outro', 'deal'), 'impact-soft', 0.36), (w('tc13-outro', 'comment', 1), 'pop-reveal', 0.32),
+CUES += [(w('tc13-outro', 'best'), 'impact-soft', 0.36),   # COMMENT OF THE WEEK pill (was on 'deal')
+         (w('tc13-outro', 'comment', 1), 'pop-reveal', 0.32),
          (w('tc13-outro', 'subject'), 'sparkle-soft', 0.28)]
 CUES += [(s('TcOutro', (ES_F + 12) / 30), 'pencil-scribble', 0.30)]   # (end-screen whoosh dropped: 3-cue stack)
 CUES += [
@@ -314,15 +315,17 @@ CUES += [
     (w('tc10-reveal', 'holiday'), 'warm-shimmer', 0.24),                   # THE HOLIDAY PARADOX
     (w('tc10-reveal', 'Every'), 'whoosh-soft', 0.24),                      # every century...
     (w('tc11-2100', 'together'), 'whoosh-soft', 0.24),                     # evidence converges
-    (w('tc13-outro', 'This'), 'pop-reveal', 0.22),                         # EPISODE 01
-    (w('tc13-outro', 'Did', shift=-0.2), 'ui-toggle-on', 0.26),            # logo switches on
+    (w('tc13-outro', 'deal'), 'ui-click-soft', 0.20),                      # THE DEAL:
+    (w('tc13-outro', 'facts'), 'pop-reveal', 0.18),                        # FACT CARDS chip
+    (w('tc13-outro', 'guessing'), 'pop-reveal', 0.18),                     # GUESSING GAME chip
+    (w('tc03-promise', 'yet'), 'ui-click-soft', 0.18),                     # the 2100 figure pulses
     (w('tc13-outro', 'right'), 'ui-click-soft', 0.22),                     # "right here": card flash
     (w('tc13-outro', 'episode', 3), 'pop-reveal', 0.20),                   # -> a future episode
     (w('tc13-outro', 'watch'), 'ui-click-soft', 0.20),
     (w('tc13-outro', 'collect'), 'ui-click-soft', 0.20),
     (w('tc13-outro', 'play'), 'ui-click-soft', 0.20),
 ]
-CUES += ticks('tc03-promise', 'lived', 7, 12)                               # seven lives light up
+CUES += ticks('tc03-promise', 'people', 7, 12)                               # seven lives light up
 CUES += ticks('tc07-1800', 'railroads', 4, 6, shift=-0.2)                  # the four time zones
 CUES += ticks('tc10-reveal', 'week', 7, 12)                                 # the seven new days
 
