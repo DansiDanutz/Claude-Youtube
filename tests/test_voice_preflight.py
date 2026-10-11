@@ -47,6 +47,18 @@ class PreflightTests(unittest.TestCase):
         self.assertTrue(any("outside" in m for k, m in kinds))
         self.assertTrue(any("speed jump 1.0 → 1.2" in m for k, m in kinds))
 
+    def test_long_word_allowance_and_one_word_beats(self):
+        vo = {"s": {"words": [{"w": "Then", "s": 0.0, "e": 0.2}, {"w": "came", "s": 0.3, "e": 0.5},
+                              {"w": "Photosynthesis.", "s": 0.6, "e": 1.8}]}}
+        self.assertEqual([m for k, _, m in vp.check_words_and_gaps(vo) if k == "drag"], [])
+        vo["s"]["words"][2]["e"] = 2.0          # 1.4 s > 5 × 0.25
+        self.assertTrue(any("Photosynthesis" in m for _, _, m in vp.check_words_and_gaps(vo)))
+        # a one-word sign-off chunk never counts as a pace jump against its neighbours
+        a, b = "One two three four five six.", "Ask..."
+        vo2 = {"s": {"words": words(a, gap_after={5: 0.6}) + [{"w": "Ask...", "s": 4.0, "e": 4.5}]}}
+        script = {"scenes": [{"id": "s", "chunks": [{"text": a, "speed": 1.0}, {"text": b, "speed": 0.95}]}]}
+        self.assertEqual([m for k, _, m in vp.check_speed_and_pace(script, vo2) if "pace jump" in m], [])
+
     def test_pace_off_target_fails(self):
         script, vo, _ = clean_episode()
         script["scenes"][0]["chunks"][0]["pace"] = 3.4

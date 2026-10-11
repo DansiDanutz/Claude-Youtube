@@ -3,9 +3,10 @@
 
 Every narration problem David heard on No. 02 v2 is detectable from data we already have, so this gate
 catches them in seconds instead of in audit rounds after a render:
-  speed      chunk speed outside 0.90–1.08 (floors respected), or a jump > 0.08 / > 10 % w/s vs its neighbour
+  speed      chunk speed outside 0.90–1.08 (floors respected), or a jump > 0.08 speed / > 20 % articulation rate
+             vs its neighbour (1–2-word beats such as the sign-off are timed by pauses and skipped)
   pace       measured words/s more than 10 % off the chunk's own target
-  drag       a word > 1.0 s, > 0.42 s/syllable mid-sentence, or > 0.55 s/syllable at a sentence end
+  drag       a word > max(1.0 s, 0.25 s × syllables), > 0.42 s/syllable mid-sentence, or > 0.55 s/syllable at a sentence end
   gaps       a pause > 0.6 s inside a sentence, or < 0.25 s between sentences
   lead-in    first word < 0.6 s after its shot starts (voice entering on a cut), last word < 0.5 s before it ends
   sfx        an impact / whoosh / pop / chime / riser / thock / sparkle starting ON a spoken word
@@ -28,8 +29,11 @@ import sys
 SPEED_MIN, SPEED_MAX = 0.90, 1.08
 SPEED_JUMP_MAX = 0.08
 WPS_JUMP_MAX = 0.10
+SPS_JUMP_MAX = 0.20               # articulation-rate continuity; designed mood shifts (lean-in, payoff) stay under it, lurches do not
+MIN_WORDS_FOR_PACE = 3            # one- and two-word beats (sign-off) are timed by pauses, not pace
 PACE_TOL = 0.10
 WORD_MAX_S = 1.0
+LONG_WORD_PER_SYL = 0.25          # 'photosynthesis.' (5 syl) may take up to 1.25 s
 MID_PER_SYL_MAX = 0.42
 END_PER_SYL_MAX = 0.55
 GAP_IN_SENTENCE_MAX = 0.6
@@ -73,6 +77,14 @@ def wps(words):
     return len(words) / span if span > 0 else None
 
 
+def sps(words):
+    """Articulation rate: syllables per second of actual speech (pauses and breaths excluded)."""
+    if len(words) < MIN_WORDS_FOR_PACE:
+        return None
+    speaking = sum(max(0.0, w['e'] - w['s']) for w in words)
+    return sum(syllables(w['w']) for w in words) / speaking if speaking > 0 else None
+
+
 def check_speed_and_pace(script, vo):
     issues = []
     for scene in script['scenes']:
@@ -82,7 +94,8 @@ def check_speed_and_pace(script, vo):
             tag = f"{scene['id']} c{idx}"
             speed = chunk.get('speed')
             floor = chunk.get('floor') or SPEED_MIN
-            measured = wps(cw)
+            measured = wps(cw) if len(cw) >= MIN_WORDS_FOR_PACE else None
+            syl_rate = sps(cw)
             if speed is not None and not (max(floor, SPEED_MIN) - 1e-9 <= speed <= SPEED_MAX + 1e-9):
                 issues.append(('speed', tag, f'speed {speed} outside {max(floor, SPEED_MIN):.2f}–{SPEED_MAX}'))
             target = chunk.get('pace')
@@ -90,13 +103,14 @@ def check_speed_and_pace(script, vo):
                 issues.append(('pace', tag, f'{measured:.2f} w/s vs target {target} (±{int(PACE_TOL * 100)} %)'))
             if chunk.get('payoff') and ((speed or 0) > PAYOFF_SPEED_MAX or (measured or 0) > PAYOFF_WPS_MAX):
                 issues.append(('payoff', tag, f'payoff chunk at speed {speed}, {measured and round(measured, 2)} w/s'))
-            if prev:
-                p_speed, p_wps = prev
+            if prev and len(cw) >= MIN_WORDS_FOR_PACE:
+                p_speed, p_sps = prev
                 if speed is not None and p_speed is not None and abs(speed - p_speed) > SPEED_JUMP_MAX + 1e-9:
                     issues.append(('speed', tag, f'speed jump {p_speed} → {speed} vs previous chunk'))
-                if measured and p_wps and abs(measured - p_wps) / p_wps > WPS_JUMP_MAX:
-                    issues.append(('speed', tag, f'pace jump {p_wps:.2f} → {measured:.2f} w/s vs previous chunk'))
-            prev = (speed, measured)
+                if syl_rate and p_sps and abs(syl_rate - p_sps) / p_sps > SPS_JUMP_MAX:
+                    issues.append(('speed', tag, f'pace jump {p_sps:.2f} → {syl_rate:.2f} syllables/s vs previous chunk'))
+            if len(cw) >= MIN_WORDS_FOR_PACE:
+                prev = (speed, syl_rate)
     return issues
 
 
@@ -109,7 +123,8 @@ def check_words_and_gaps(vo):
             end = bool(SENTENCE_END.search(w['w'])) or i == len(words) - 1
             clause_end = end or w['w'].endswith((',', ';', ':', '—'))   # words before a comma lengthen naturally
             per_syl = d / syllables(w['w'])
-            if d > WORD_MAX_S or (clause_end and per_syl > END_PER_SYL_MAX) or (not clause_end and per_syl > MID_PER_SYL_MAX):
+            word_cap = max(WORD_MAX_S, LONG_WORD_PER_SYL * syllables(w['w']))
+            if d > word_cap or (clause_end and per_syl > END_PER_SYL_MAX) or (not clause_end and per_syl > MID_PER_SYL_MAX):
                 issues.append(('drag', sid, f"'{w['w']}' {d:.2f} s at {w['s']:.2f}"))
             if i + 1 < len(words):
                 gap = words[i + 1]['s'] - w['e']
