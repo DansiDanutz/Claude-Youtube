@@ -23,6 +23,9 @@ const DRIFT = C.at('drifted');
 const SECS = C.at('seconds');
 const MINS = C.at('minutes');
 const SMELLS = C.at('smells');
+const SMOKE = C.at('smoke');
+const SOMETHING = C.at('something');
+const NEW = C.at('new');
 const COFFEE = C.at('Coffee');
 const DID = C.at('Did');
 const NOBODY = C.at('Nobody');
@@ -58,17 +61,58 @@ const Sheet: React.FC<{ rot: number; dx: number; op: number; main?: boolean }> =
   </div>
 );
 
-const Cup: React.FC<{ at: number; out: number }> = ({ at, out }) => {
+// "smoke, and something new": steam wisps on "smoke", the line on "something", the cup itself
+// only ON "Coffee." (never before the word). When the fact card arrives the cup shrinks to the
+// space above it, so it stays on screen until the Day Clock.
+// "The air smells of smoke, and of something new": London rooftops with chimney smoke on
+// "smoke"; on "new" one doorway down the street glows, a blank signboard and a "?" above it.
+// Nothing names coffee until the cup appears ON "Coffee.".
+const ROOFS = [[0, 150], [150, 190], [300, 140], [430, 210], [600, 165], [760, 200], [930, 150], [1080, 185], [1240, 160], [1400, 205], [1560, 150]];
+const Rooftops: React.FC<{ at: number; glowAt: number; out: number }> = ({ at, glowAt, out }) => {
   const f = useCurrentFrame();
+  const glow = ease(f, glowAt - 2, glowAt + 10);
+  const flicker = 0.85 + 0.15 * Math.sin(f / 4);
   return (
-    <div style={{ position: 'absolute', left: 0, right: 0, top: 300, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22, opacity: ease(f, at - 6, at + 8) * (1 - ease(f, out - 10, out)) }}>
+    <div style={{ position: 'absolute', left: 120, top: 700, opacity: ease(f, at - 4, at + 10) * (1 - ease(f, out - 6, out + 6)) }}>
+      <svg width={1680} height={260} viewBox="0 0 1680 260" style={{ overflow: 'visible' }}>
+        {ROOFS.map(([x, h], i) => {
+          const cx = x + 40 + (i % 3) * 30;
+          return (
+            <g key={i}>
+              <rect x={x} y={260 - h} width={150} height={h} fill="#2a1d13" stroke="#7a5532" strokeWidth={2} />
+              <path d={`M${x - 6} ${262 - h} L${x + 75} ${222 - h} L${x + 156} ${262 - h} Z`} fill="#24180f" stroke="#7a5532" strokeWidth={2} />
+              <rect x={cx} y={214 - h} width={18} height={36} fill="#24180f" stroke="#7a5532" strokeWidth={2} />
+              {[0, 1, 2].map((k) => { const p = ((f + i * 17 + k * 30) % 90) / 90; return <circle key={k} cx={cx + 9 + Math.sin(p * 4 + i) * 10 + p * 30} cy={210 - h - p * 150} r={12 + p * 28} fill="#e6dccb" opacity={0.4 * (1 - p)} />; })}
+              {i % 2 === 0 && <rect x={x + 30} y={290 - h} width={22} height={26} fill={DL.gold} opacity={0.35} />}
+            </g>
+          );
+        })}
+        {/* the something new: a glowing doorway with a blank sign */}
+        <g opacity={glow}>
+          <rect x={1286} y={150} width={56} height={110} rx={4} fill={DL.gold} opacity={0.75 * flicker} style={{ filter: `drop-shadow(0 0 22px ${DL.gold})` }} />
+          <rect x={1260} y={112} width={108} height={30} rx={4} fill="#2a1d14" stroke={DL.gold} strokeWidth={3} />
+          <text x={1314} y={96} textAnchor="middle" fill={DL.gold} fontFamily={DL_SERIF} fontSize={46} fontStyle="italic" style={{ filter: `drop-shadow(0 0 12px ${DL.gold})` }}>?</text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+const Cup: React.FC<{ steamAt: number; labelAt: number; at: number; dockAt: number; out: number }> = ({ steamAt, labelAt, at, dockAt, out }) => {
+  const f = useCurrentFrame();
+  const dock = ease(f, dockAt - 8, dockAt + 6, 0, 1, DL_EASE.inOut);
+  const cupS = interpolate(f, [at, at + 8], [0.8, 1], { ...DCLAMP, easing: DL_EASE.out });
+  return (
+    <div style={{ position: 'absolute', left: 0, right: 0, top: 300, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22, opacity: ease(f, steamAt - 4, steamAt + 10) * (1 - ease(f, out - 10, out)), transform: `translate(${dock * 790}px, ${dock * -70}px) scale(${1 - dock * 0.55})` }}>
       <svg width={360} height={380} viewBox="0 0 360 380">
         {[0, 1, 2].map((i) => { const p = ((f + i * 20) % 60) / 60; return <path key={i} d={`M${130 + i * 50} ${170 - p * 90} q 14 -20 0 -40 q -14 -20 0 -40`} fill="none" stroke="#ffffff" strokeWidth={6} strokeLinecap="round" opacity={0.35 * (1 - p)} />; })}
-        <path d="M70 190 H270 V300 Q270 350 220 350 H120 Q70 350 70 300 Z" fill={DL.panel} stroke={DL.gold} strokeWidth={6} />
-        <path d="M270 215 Q330 215 330 260 Q330 305 270 300" fill="none" stroke={DL.gold} strokeWidth={6} />
-        <ellipse cx={170} cy={198} rx={92} ry={12} fill="#3a2414" />
+        <g opacity={ease(f, at, at + 6)} transform={`translate(170 270) scale(${cupS}) translate(-170 -270)`}>
+          <path d="M70 190 H270 V300 Q270 350 220 350 H120 Q70 350 70 300 Z" fill={DL.panel} stroke={DL.gold} strokeWidth={6} />
+          <path d="M270 215 Q330 215 330 260 Q330 305 270 300" fill="none" stroke={DL.gold} strokeWidth={6} />
+          <ellipse cx={170} cy={198} rx={92} ry={12} fill="#3a2414" />
+        </g>
       </svg>
-      <span style={{ fontFamily: DL_MONO, fontSize: 26, letterSpacing: 4, color: DL.dim }}>LONDON · 1652 · SOMETHING NEW IN THE AIR</span>
+      <span style={{ opacity: ease(f, labelAt - 2, labelAt + 8) * (1 - dock), fontFamily: DL_MONO, fontSize: 26, letterSpacing: 4, color: DL.dim }}>LONDON · 1652 · SOMETHING NEW IN THE AIR</span>
     </div>
   );
 };
@@ -104,7 +148,7 @@ const Tc1600: React.FC = () => {
       <SiteBg glow="#22160a" />
       <Vignette />
       <EraExit dur={DUR}>
-      <EraHeader year="1652" idx={2} label="COFFEE, NEWS & THE PENDULUM" place="London · the smell of coffee" dockAt={SMELLS + 6} />
+      <EraHeader year="1652" idx={2} label="NEWS & THE PENDULUM" place="London · something new in the air" dockAt={SMELLS + 6} />
       <div style={{ position: 'absolute', left: 0, right: 0, top: 230, display: 'flex', justifyContent: 'center', opacity: day }}>
         <DayClock year="1652" segs={DAY1652} at={FOR} hot={2} hotAt={FOR + 24} />
       </div>
@@ -171,10 +215,11 @@ const Tc1600: React.FC = () => {
       </div>
 
       </AbsoluteFill>
-      <Cup at={SMELLS + 10} out={DID} />
+      <Rooftops at={SMOKE} glowAt={NEW} out={DID} />
       <DidYouKnowThat at={DID} out={FOR} source="English coffeehouses, Oxford 1650 · London 1652 — a penny bought coffee, papers and talk">
         the first coffeehouses were called <span style={{ color: '#ff9a1f', fontStyle: 'italic' }}>penny universities</span> — one penny bought you the news and an argument with strangers.
       </DidYouKnowThat>
+      <Cup steamAt={SMOKE} labelAt={SOMETHING} at={COFFEE} dockAt={DID} out={FOR} />
       <Cliffhanger next="1760" parts={[{ text: 'Soon the minute stops being a curiosity —', at: CURIOSITY }, { text: 'and becomes your boss.', at: BOSS }]} />
       </EraExit>
       <EraHud year={1652} />

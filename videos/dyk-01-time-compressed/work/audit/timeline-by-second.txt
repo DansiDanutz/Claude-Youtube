@@ -142,10 +142,10 @@ sec | shot | narration in this second | SFX starting in this second
 2:20 | Tc1600 | sixteen fifty two, | 
 2:21 | Tc1600 | in London. | 
 2:22 | Tc1600 | The air smells | 
-2:23 | Tc1600 | of smoke, | 
+2:23 | Tc1600 | of smoke, | wind-soft(0.14)
 2:24 | Tc1600 | and of something | 
-2:25 | Tc1600 | new. | 
-2:26 | Tc1600 | Coffee. | 
+2:25 | Tc1600 | new. | warm-shimmer(0.16)
+2:26 | Tc1600 | Coffee. | pop-reveal(0.26), stream-soft(0.16)
 2:27 | Tc1600 | Did you know that the | ui-toggle-on(0.28), chime-magic(0.3)
 2:28 | Tc1600 | first coffeehouses | 
 2:29 | Tc1600 | were called penny | 

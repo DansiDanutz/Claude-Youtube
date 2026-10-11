@@ -274,6 +274,10 @@ CUES += [
     (w('tc04-1500', 'second'), 'ui-click-soft', 0.20),                     # ...second sleep lights
     (w('tc04-1500', 'Your'), 'whoosh-soft', 0.24),                         # the village by day
     (w('tc04-1500', 'drink'), 'pop-reveal', 0.24),                         # steaming cup + band
+    (w('tc05-1600', 'smoke'), 'wind-soft', 0.14),                          # rooftop chimney smoke rises
+    (w('tc05-1600', 'new'), 'warm-shimmer', 0.16),                         # a doorway glows: something new
+    (w('tc05-1600', 'Coffee'), 'pop-reveal', 0.26),                        # the cup appears ON "Coffee."
+    (w('tc05-1600', 'Coffee', shift=0.05), 'stream-soft', 0.16),           # ...steaming
     (w('tc05-1600', 'today'), 'pop-reveal', 0.22),                         # TODAY chip
     (w('tc05-1600', 'last'), 'pop-reveal', 0.18),                          # LAST MONTH chip
     (w('tc05-1600', 'month'), 'trap-snap', 0.22),                          # struck through

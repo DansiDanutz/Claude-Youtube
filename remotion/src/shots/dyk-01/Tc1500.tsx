@@ -151,7 +151,7 @@ const Tc1500: React.FC = () => {
       <Vignette />
       <EraExit dur={DUR}>
       <div style={{ position: 'absolute', left: 510, top: 740, opacity: nightVillage }}><NightVillage f={f} /></div>
-      <EraHeader year="1500" idx={1} label="THE VILLAGE" place="England · a village · midnight" dockAt={AWAKE - 10} />
+      <EraHeader year="1500" idx={1} label="THE VILLAGE" place={<>England · a village<span style={{ opacity: ease(f, MIDNIGHT - 2, MIDNIGHT + 8) }}> · midnight</span></>} dockAt={AWAKE - 10} />
       <div style={{ position: 'absolute', left: 0, right: 0, top: 230, display: 'flex', justifyContent: 'center', opacity: night }}>
         <DayClock year="1500" segs={DAY1500} at={HIST} step={DAY_STEP} hotSeq={[[0, FIRST], [2, SECOND], [1, PRAYED]]} />
       </div>

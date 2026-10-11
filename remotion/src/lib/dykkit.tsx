@@ -53,7 +53,7 @@ export const useShotFade = (durationInFrames: number, inF = 2, outF = 3) => {
 // ── Era header: the year slams in big at centre — with "YOU WAKE UP IN" above it and the
 // place below (the series opener for every era) — then docks top-left beside its kicker.
 // Docked state owns y 60–150 so content starts at y ≥ 190.
-export const EraHeader: React.FC<{ year: string; idx: number; label: string; dockAt?: number; place?: string }> = ({ year, idx, label, dockAt = 26, place }) => {
+export const EraHeader: React.FC<{ year: string; idx: number; label: string; dockAt?: number; place?: React.ReactNode }> = ({ year, idx, label, dockAt = 26, place }) => {
   const f = useCurrentFrame();
   const slam = ease(f, 0, 10, 1.25, 1);
   const dock = ease(f, dockAt, dockAt + 18, 0, 1, DL_EASE.inOut);
