@@ -1,0 +1,56 @@
+{
+  "audit": "Did You Know That? No. 01 - Time, Compressed - independent read-only audit v4",
+  "date": "2026-10-11",
+  "master": "dyk-01-time-compressed-1080P.mp4 (ffprobe: 1920x1080, 30/1 fps, video 574.400 s, audio 574.433 s)",
+  "method": "Viewed all 48 sweep sheets (sweep-v3, 1 frame/s, 0:00-9:33) against timeline-by-second.txt; absolute word times computed from narration/*.words.json + timeline.json shot offsets (shot order from build_final.py); facts checked against RESEARCH.md F1-F26; suspect tiles re-checked in full 480x270 sweep frames (sweep-v3/frames).",
+  "summary": {"critical": 0, "high": 0, "medium": 1, "low": 6},
+  "verifiedFixes": [
+    {"id": "V2-M1", "status": "VERIFIED", "evidence": "TcPromise chip builds in three steps: 1:10 'IN EACH ONE' only, 1:11 '+ you wake up as', 1:12 '+ someone else' (gold), matching 'In each one' 1:10 / 'you will wake up as someone' 1:11 / 'else' 1:12; ui-click at 1:10."},
+    {"id": "V2-M2", "status": "VERIFIED", "evidence": "1500 Day Clock legend builds 1:33 (1 row) -> 1:34 (3 rows) -> 1:35 (all 7 rows) with ui-clicks 1:33-1:35. Highlight moves: 'First sleep' bold at 1:36 (word 1:36.06), 'Second sleep' bold 1:37-1:38 (word 1:37.02), 'Awake in the dark - pray, talk, visit' bold and ring segment lifted 1:39-1:41 (word 'prayed' 1:39.25)."},
+    {"id": "V2-M3", "status": "VERIFIED", "evidence": "5:45-5:50 'One lifetime now holds more change than whole centuries / once did.' wraps to two centred lines spanning roughly x=190-1730 px of 1920 (inside the 90% title-safe box, clear of the HUD)."},
+    {"id": "V2-M4", "status": "VERIFIED", "evidence": "Frame f0366 (6:05): phone shows 4 coloured notification rows and a red '12' badge; 6:04 phone empty and glowing; pop-reveals at 6:04/6:05 ('already' 6:04.81, 'checked' 6:05.19). Caveat: replaced by the DYK card at about 6:06.0, so the notifications are on screen for only about 1.2 s (see LOW L3)."}
+  ],
+  "findings": [
+    {"id": "V4-M1", "severity": "MEDIUM", "time": "2:19-2:27", "shot": "Tc1600",
+     "issue": "The coffee reveal is shown before it is spoken. The narration builds to a reveal ('The air smells of smoke, and of something new. Coffee.'), but the era title subtitle says 'London - the smell of coffee' from 2:19, and a steaming coffee cup ('LONDON - 1652 - SOMETHING NEW IN THE AIR') appears at 2:23. Both come before the word 'Coffee.' (2:26.46-2:27.10). The cup also appears with no SFX, and the word 'Coffee.' gets no visual or sound beat of its own.",
+     "evidence": "Sheets 11-12: 2:19-2:22 title card with subtitle 'London - the smell of coffee'; 2:23-2:26 cup on screen; timeline-by-second shows no SFX at 2:23 or 2:26; words.json puts 'Coffee.' at 2:26.46 absolute.",
+     "suggestedFix": "Change the subtitle to something like 'London - something new in the air'. Bring in the cup on 'Coffee.' (2:26.5) with a pop or warm-shimmer, or show a silhouette or '?' cup until then."},
+    {"id": "V4-L1", "severity": "LOW", "time": "1:23-1:25", "shot": "Tc1500",
+     "issue": "The era subtitle 'England - a village - midnight' shows about 2 s before the narration's 'It is midnight.' (1:25). It is the same scene-setting pre-empt as V4-M1, but milder because nothing here is staged as a reveal.",
+     "evidence": "Sheet 06 tile 1:23 and sheet 07 tiles 1:24-1:28; timeline 1:25 'It is midnight.'",
+     "suggestedFix": "Optional: subtitle 'England - a village - night', or leave as is."},
+    {"id": "V4-L2", "severity": "LOW", "time": "7:40.5-7:42.0", "shot": "Tc2100",
+     "issue": "The 'LIVING LONGER THAN EVER' chip lasts only about 1.5 s. It appears on 'living' (7:40.47), then at about 7:42.0 the whole UN card is swapped for the Goldman Sachs card, which leaves very little time to read it.",
+     "evidence": "Sheet 38: chip visible only in the 7:41 tile; 7:42 tile already shows the Goldman card fading in ('Goldman' spoken 7:42.36).",
+     "suggestedFix": "Keep the UN card plus chip until 'Goldman' (7:42.3), or stack the Goldman card below the UN card instead of replacing it."},
+    {"id": "V4-L3", "severity": "LOW", "time": "6:04.8-6:06.0", "shot": "Tc2000",
+     "issue": "The phone notifications and red 12 badge (the V2-M4 fix) are on screen for only about 1.2 s before the DYK card covers them. They are visible, but close to a flash.",
+     "evidence": "Sheet 30: 6:04 empty phone, 6:05 notifications + '12', 6:06 DYK card only. 'Did' spoken at 6:06.37. Sub-second duration not measured (ffmpeg stills held, see notVerified).",
+     "suggestedFix": "Land the notifications on 'already' (6:04.8) and delay the DYK card to 'Did' (6:06.37), or slide the phone aside instead of covering it."},
+    {"id": "V4-L4", "severity": "LOW", "time": "0:12-0:15, 2:37-2:41, 5:19-5:26, 8:37-8:42", "shot": "TcHook, Tc1600, Tc1900, TcOutro",
+     "issue": "Long static holds while narration continues: the TIME SAVED arrow alone (about 4 s), the newspaper alone (about 5 s), the Ford DYK card (about 8 s) and the outro century card (about 5 s). Each is backed by narration, so none is empty, but the picture goes still.",
+     "evidence": "Sheets 01, 13, 26-27, 43: identical consecutive tiles across these ranges.",
+     "suggestedFix": "Add a slow push-in or drift, or a secondary build (for example highlight '$5' on 'five dollars' and 'eight hours' on 'eight')."},
+    {"id": "V4-L5", "severity": "LOW", "time": "4:16", "shot": "Tc1800",
+     "issue": "The knock-solid SFX (0.34) on 'heard noon twice' has no visible new event at 1 fps: the 4:15 and 4:17 tiles are identical. It may be a sub-second pulse the sweep cannot see.",
+     "evidence": "timeline-by-second 4:16 knock-solid(0.34); sheet 21 tiles 4:15-4:17 unchanged.",
+     "suggestedFix": "Pulse both clocks (or flash a '2x' tag) on the knock, or drop the cue."},
+    {"id": "V4-L6", "severity": "LOW", "time": "4:44-4:46", "shot": "Tc1800",
+     "issue": "On-screen 'Fifteen times faster.' is a derived claim that is never narrated. 10 days / 16 h = 15x, which matches F7 as narrated. With PBS's 16.5 h it would be about 14.5x, so '15x' is a rounding.",
+     "evidence": "Sheet 23 tiles 4:44-4:46; RESEARCH.md F7 (about 16 h; PBS 16.5 h; about 10 days by steamer).",
+     "suggestedFix": "Optional: change to 'About fifteen times faster.' or note the derivation in RESEARCH.md."}
+  ],
+  "checkedClean": [
+    "No CRITICAL fact errors: every on-screen number/year matches RESEARCH.md (0.1 s F14, weeks F26, about 35 F2, 1605 Strasbourg F3, 1656 and about 15 min to about 15 s F4, HMS Deptford Nov 1761-Jan 1762 and about 5 s F6, 1858 16 h vs 10 days F7, 18 Nov 1883 F8, 1881 Beard F9, 12 h 30 min to 93 min F10, 1903/1969 F11, 1930 15 h F12, 3,000+ / 1,354 Germany 2017 F13, 10.2 bn / peak 10.3 bn mid-2080s F16, Factory Act 1850 2 pm F21, $5 / 8 h / 1926 F22, 6 h 38 min F23, 300 million exposed F24, 56 of 61 F25).",
+    "Brand is consistent: 'Did You Know That?' logo and HUD, Dexty.live (HUD, outro pill, end screen footer); the end screen handle is @Did-You-Know-that-2026. No foreign brands.",
+    "Reveal timing: rechecked against absolute word times, all other reveals land on or within about 0.5 s of their word (e.g. Science 0:41.80 -> card 0:42; time discipline 3:35.95 -> 3:36; telegraph 4:54.20; reveal chips 7:14.66-7:19.74 each in the following tile).",
+    "No dips to black or empty frames seen at 1 fps. The dark tiles at 0:25, 0:29, 1:02, 3:08, 6:44, 7:27, 8:29 and 9:19 are intentional transition builds with whoosh/impact cues.",
+    "Text sits inside title-safe with no overlaps. The HUD stays on the bottom band. Note: the sweep SHEETS crop about 8 px off the top of each tile, so the top-left era tag looks clipped there; the full sweep frames (f0101, f0366, f0381) show it is complete. This is an artifact of the sheet montage, not a video bug.",
+    "End screen: begins about 9:19.4 (ES_F computed from build_final.py + durations.json = 559.37 s) and runs to 574.43 s = about 15.07 s. Layout: COMMENT OF THE WEEK (marked EXAMPLE), No. 02 THE SUN, SUBSCRIBE, Dexty.live footer."
+  ],
+  "notVerified": [
+    "Sub-second checks (exact reveal frames, flash durations, sub-second black dips): danslab-workflow check HELD both a still-extraction command and a write-nothing blackdetect pass (14.15 GiB free vs 46.04 GiB reserve). Per instructions, no ffmpeg was run.",
+    "Audio by ear (loudness, ducking, SFX level and timbre, voice identity). SFX were checked only against the timeline cue list.",
+    "Fine 1080p text (tiny source lines) was read at 480x270, so typos in micro-text cannot be ruled out."
+  ]
+}

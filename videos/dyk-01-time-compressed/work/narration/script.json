@@ -1,0 +1,88 @@
+{
+  "voice": "Brian (nPczCjzI2devNBz1zQrb), eleven_flash_v2_5",
+  "scenes": [
+    {
+      "id": "tc01-hook",
+      "shot": "TcHook",
+      "text": "In the year fifteen hundred, the fastest any message could travel was the speed of a horse. Today, a message crosses the Atlantic in less than a tenth of a second.",
+      "speed": 0.82
+    },
+    {
+      "id": "tc02-question",
+      "shot": "TcHook",
+      "text": "We have saved more time than any generation in history. So why does every one of us feel like we are running out of it? Did you know that time itself has been compressing for five hundred years?",
+      "speed": 0.809
+    },
+    {
+      "id": "tc03-promise",
+      "shot": "TcPromise",
+      "text": "Here is the experiment. Seven centuries. Six mornings, and one that has not happened yet. In each one, you will wake up as someone else, and see how people really lived with time. By the end, you will know exactly where the time went, and what the year twenty one hundred could take next.",
+      "speed": 0.88
+    },
+    {
+      "id": "tc04-1500",
+      "shot": "Tc1500",
+      "text": "You wake up in fifteen hundred. It is midnight. Pitch black. And the whole village is awake. Did you know that, for centuries, people slept twice a night? Historians have found hundreds of references to a first sleep and a second sleep. In between, people prayed, talked, even visited neighbours. Your day begins when the sun rises, and ends when it sets. The church bell is the only clock you will ever hear. Life expectancy at birth is around thirty five years, lowered by the many children who never grow up. If you reach old age, you will die in almost exactly the world you were born into. The same tools. The same roads. The same news, arriving weeks late, at the pace of a horse. Time is not something you spend. It simply happens to you. But a hundred and fifty years from now, a strange new drink will arrive, and it will change how people talk about the day."
+    },
+    {
+      "id": "tc05-1600",
+      "shot": "Tc1600",
+      "text": "You wake up in sixteen fifty two, in London. The air smells of smoke, and of something new. Coffee. Did you know that the first coffeehouses were called penny universities? For one penny, you could walk in, read the news, and argue with strangers for hours. The first newspaper had appeared in sixteen oh five, in Strasbourg. Now news was a habit, and people wanted to know what happened today, not last month. Then, in sixteen fifty six, Christiaan Huygens hangs a pendulum inside a clock. The best clocks had drifted by a quarter of an hour a day. His drifts by seconds. For the first time, an ordinary day can be cut into minutes. Nobody noticed what that meant. Within a hundred years, the minute would stop being a curiosity, and start being your boss."
+    },
+    {
+      "id": "tc06-1700",
+      "shot": "Tc1700",
+      "text": "You wake up in seventeen sixty. It is Monday morning, and half the workshop is empty. Did you know that, for generations, workers simply took Mondays off? They called it Saint Monday. Back then, you worked hard when there was work to do, and you rested when there was not. But work is leaving the field and entering the factory. The sun is replaced by the bell. Then the bell is replaced by the clock. Historians call it time discipline. You no longer stop when the work is done. You stop when the clock says so. Saint Monday begins to disappear. And in seventeen sixty one, John Harrison's sea watch sails all the way to Jamaica, and arrives only about five seconds slow. Time is now something you can carry. And something you can sell. Workers had lost their Monday. In the next century, the steam engine, racing on iron rails, would take something even bigger. Noon itself."
+    },
+    {
+      "id": "tc07-1800",
+      "shot": "Tc1800",
+      "text": "You wake up in eighteen eighty three, in a small American town. At midday, the church clock strikes twelve. Then the railroad tells you it is noon again. Some towns heard noon twice that day. The railroads had reset the clocks of an entire continent. Did you know that the weekend began with half a Saturday? In eighteen fifty, a British law stopped women and children working in the mills after two o'clock on Saturday. Soon, the men got the same. Even free time had to be written into law. In eighteen fifty eight, a cable was laid across the floor of the Atlantic. The first message took sixteen hours to send, instead of ten days by ship. And in eighteen eighty one, a New York doctor, George Beard, warned of a new epidemic of nervous exhaustion. His suspects? Steam power. The telegraph. The daily press. Sound familiar? People were complaining that life moved too fast, more than a century before your phone. And in the next century, one man would turn half a day of work into ninety three minutes.",
+      "speed": 1.0
+    },
+    {
+      "id": "tc08-1900",
+      "shot": "Tc1900",
+      "text": "You wake up in nineteen fourteen, near Detroit. Outside Ford's factory, the line of people looking for work stretches down the street. Did you know that Henry Ford more than doubled his workers' pay, to five dollars a day, and cut the day to eight hours? That same year, his moving assembly line turned twelve and a half hours of work into ninety three minutes. By nineteen twenty six, his workers had Saturdays off. The modern weekend had arrived. A child born in nineteen hundred is three when the Wright brothers fly, and sixty nine when men walk on the Moon. One lifetime now holds more change than whole centuries once did. And in nineteen thirty, the economist John Maynard Keynes makes a prediction: by his grandchildren's time, we will work just fifteen hours a week. Remember that prediction. It is coming back."
+    },
+    {
+      "id": "tc09-2000",
+      "shot": "Tc2000",
+      "text": "You wake up today. Before your feet touch the floor, you have already checked your phone. Did you know that the average internet user now spends six hours and thirty eight minutes online, every single day? In eighteen seventy, workers in most industrial countries put in more than three thousand hours a year. In Germany recently, it was around thirteen hundred and fifty. Today, we work less than almost any generation before us. Messages are instant. Machines do the lifting. On paper, we are the richest people in history, rich in time. And yet, ask anyone how they are, and you will hear the same word. Busy. So where did all that time go?"
+    },
+    {
+      "id": "tc10-reveal",
+      "shot": "TcReveal",
+      "text": "Here is the answer. Time did not speed up. A second in fifteen hundred lasted exactly as long as a second today. What changed is how much we pack into it, and how little of it we remember. Your brain does not measure time with a clock. It measures it with memories. Psychologists call it the holiday paradox. A week full of new experiences feels long when you look back. Months of the same routine collapse into almost nothing. Every century, we found a way to fit more into an hour. The clock. The factory. The telegraph. The assembly line. And the phone. Each invention saved us time. And each one made our hours look more and more the same. That is the compression. Not of the clock. Of experience."
+    },
+    {
+      "id": "tc11-2100",
+      "shot": "Tc2100",
+      "text": "Now, the year twenty one hundred. That morning has not happened yet. But we can follow the evidence. The United Nations projects around ten billion people, living longer than ever. Goldman Sachs estimates that today's AI could expose the work of three hundred million full-time jobs to automation. And when sixty one British companies tried a four day week, fifty six of them kept it. Put those facts together, and the fifteen hour week that Keynes predicted no longer sounds crazy. It could finally arrive, a century late. But if history repeats, we will fill every freed hour with something faster. In twenty one hundred, the rarest thing on Earth may not be energy, or money. It may be a day you actually remember."
+    },
+    {
+      "id": "tc12-close",
+      "shot": "TcClose",
+      "text": "Time cannot be slowed down. But it can be stretched, one new memory at a time. So tell me. When was the last time you did something for the very first time?",
+      "speed": 0.9
+    },
+    {
+      "id": "tc13-outro",
+      "shot": "TcOutro",
+      "text": "This was episode one of Did You Know That. Time, Compressed. Now it is your turn. If you could wake up in any century, from fifteen hundred to twenty one hundred, which would you choose, and why? Tell me in the comments. Here is the deal. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. And on our website, Dex-tee dot live, you can watch every episode, collect the facts, and play the guessing game. If this changed how you see a single hour, like it, share it with the friend who is always out of time, and subscribe, so the next mystery finds you. Next time: the Sun you see in the sky is not the Sun as it is right now. Ask... Wonder... Repeat.",
+      "speed": 0.93
+    },
+    {
+      "id": "tc00-welcome",
+      "shot": "TcWelcome",
+      "text": "Welcome to Did You Know That. Every video here starts with a question you have never asked, and ends with an answer you will never forget. Science. History. Space. The human mind. The things nobody taught you, and the things that make your day a little better. And here is the rule. Before the answer, make your guess in the comments. Then stay to the end, and find out if you were right. Ready? Let's begin.",
+      "speed": 0.92
+    },
+    {
+      "id": "tc14-endscreen",
+      "shot": "TcOutro",
+      "text": "Next time, this could be your comment. Pick a mystery, and I will see you there.",
+      "speed": 0.83
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+[
+  {
+    "id": "A01",
+    "severity": "HIGH",
+    "area": "frames",
+    "time_s": null,
+    "shot": "ALL",
+    "title": "Full-master frame sweep (every 2 s + cue-word frames) and master loudness/true-peak could NOT be run",
+    "evidence": "danslab-workflow check returned decision=hold (classification high-growth, free 13.86 GiB < reserve 46.04 GiB) for every ffmpeg command, including single-frame grabs and ebur128 to -f null; a PreToolUse hook also refused ffmpeg. Visual review was limited to the existing 27-frame sweep of THIS master (/private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/sweep8, made 01:24 after the 01:24 build) + end23/dexty outro stills + full source review of all 14 TSX shots. The RUBRIC loudness (-14.1 LUFS / -1.8 dBTP) was measured on the old 558.3 s master, not this 568.0 s one.",
+    "suggested_fix": "Free disk (or have David run it) and execute: qa_final.py on the master (loudness, true peak, pts gaps), a 2 s frame sweep, and ebur128 framelog (momentary/short-term) to check spikes >4 LU and ducking. Re-audit frames afterwards."
+  },
+  {
+    "id": "N01",
+    "severity": "MEDIUM",
+    "area": "narration",
+    "time_s": 503.6,
+    "shot": "TcOutro",
+    "title": "Channel name possibly swallowed in outro: \"This was Did You Know That\" heard as \"This was, you know, that\"",
+    "evidence": "Whisper tc13-outro [0.00-1.84] \"This was, you know, that number one.\" - word \"Did\" missing (you p=0.44). ElevenLabs alignment places Did at 0.51-0.72 s. File: /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/audit-full/whisper/tc13-outro.json",
+    "suggested_fix": "Listen at 503.9-505.0 s. If \"Did\" is weak, regenerate only the first sentence of tc13 (e.g. \"This was: Did You Know That? Number one.\") and splice, or re-voice tc13."
+  },
+  {
+    "id": "N02",
+    "severity": "MEDIUM",
+    "area": "narration",
+    "time_s": 549.97,
+    "shot": "TcOutro",
+    "title": "Sign-off \"Ask. Wonder. Repeat.\" garbled/uneven: \"Ask\" unintelligible, \"Wonder. Repeat.\" run together",
+    "evidence": "Whisper: [46.46-48.12] \"I don't know, I'll wonder repeat.\" (probs 0.44-0.71). Alignment: Ask 46.37-46.82, gap 0.70 s, Wonder 47.52-47.88, Repeat 47.90-48.58 (0.02 s gap). Three chess-piece-thock cues at 0.40 land exactly on each word (549.97, 551.12, 551.50).",
+    "suggested_fix": "Re-voice the sign-off as a separate short line with even spacing (e.g. \"Ask... Wonder... Repeat.\"), or splice with ~0.5 s gaps; drop thock gain to <=0.25 or offset +0.15 s after each word start."
+  },
+  {
+    "id": "N03",
+    "severity": "MEDIUM",
+    "area": "narration",
+    "time_s": 461.8,
+    "shot": "Tc2100",
+    "title": "Drawn-out \"jobs\" + ~1 s dead silence mid-sentence before \"to automation\"",
+    "evidence": "Alignment: \"jobs\" 16.30-17.98 s (1.68 s for one syllable); mix/tc11-2100.wav RMS shows speech ends ~16.8 s then digital silence (-87 dBFS) for ~1.0 s, then \"to automation\". Whisper: \"job\" end 16.54, \"to\" 17.72 (p=0.21).",
+    "suggested_fix": "Tighten the gap in tc11-2100.wav (cut ~0.7 s of silence after \"jobs\") and shift later tc11 cue times / Tc2100 makeCue accordingly (re-run make_vo_json from edited timings), or re-voice that sentence."
+  },
+  {
+    "id": "N04",
+    "severity": "LOW",
+    "area": "narration",
+    "time_s": 471.1,
+    "shot": "Tc2100",
+    "title": "\"Keynes's fifteen hour week\" heard as \"canes is 15-hour week\"",
+    "evidence": "Whisper tc11 [24.28-26.94] \"Put those facts together and canes is 15-hour week\" (canes p=0.68, is p=0.61). Possessive \"Keynes's\" sounds like \"Keynes is\".",
+    "suggested_fix": "Rephrase to avoid the double sibilant, e.g. \"the fifteen-hour week Keynes predicted no longer sounds crazy\", and re-voice that sentence only."
+  },
+  {
+    "id": "N05",
+    "severity": "LOW",
+    "area": "narration",
+    "time_s": 432.0,
+    "shot": "TcReveal",
+    "title": "Possible extra syllable after \"The phone.\" (whisper hears \"the phone, show,\")",
+    "evidence": "Whisper tc10 [34.02-37.74] \"the phone, show, each invention saved us time.\" (\"show\" p=0.51). Alignment stretches \"phone.\" over 34.60-35.69 s (1.09 s). Speech energy continues to ~35.5 s.",
+    "suggested_fix": "Listen at 432.0-433.2 s; if a tail/doubled syllable is audible, trim it in mix/tc10-reveal.wav."
+  },
+  {
+    "id": "N06",
+    "severity": "LOW",
+    "area": "narration",
+    "time_s": null,
+    "shot": "ALL",
+    "title": "Whisper diff otherwise clean (all 15 lines)",
+    "evidence": "Apart from N01-N05, every line matches script.json (only numeral/spelling variants: neighbours/neighbors, St./Saint, Christian/Christiaan, coffee houses). No low-probability words besides \"Monday\" (0.14, tc06 33.0 s - sounds fine contextually), \"On\" (tc09), \"Even\" (tc07), \"collect\" (tc13). No clipped starts/ends: all lines start at 0.00 and end within the alignment duration. Whisper JSON: /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/audit-full/whisper/",
+    "suggested_fix": "None."
+  },
+  {
+    "id": "C01",
+    "severity": "MEDIUM",
+    "area": "content",
+    "time_s": 106.0,
+    "shot": "Tc1500",
+    "title": "On-screen \"She dies in the world she was born into\" contradicts second-person VO and an unexplained \"girl\"",
+    "evidence": "Tc1500.tsx phase B text \"She dies in the world she was born into.\" while VO says \"you will die in almost exactly the world you were born into\". A gold girl figure appears on \"Your\" (92.5 s) but narration never introduces her. RESEARCH.md honesty rule still cites a removed line (\"Imagine a girl...\").",
+    "suggested_fix": "Change the text to \"You die in the world you were born into.\" (or \"almost exactly the world\"), and update RESEARCH.md honesty note; optionally label the figure \"YOU\"."
+  },
+  {
+    "id": "C02",
+    "severity": "MEDIUM",
+    "area": "content",
+    "time_s": 375.0,
+    "shot": "Tc2000",
+    "title": "HUD year says 2025 while the era is \"Today\" (episode publishes in 2026)",
+    "evidence": "Tc2000.tsx <EraHud year={2025} fromYear={1914} />; sweep frame /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/sweep8/sweep-375.jpg shows header \"Today\" and HUD \"YEAR 2025\". Tc2100 HUD then rolls from 2000 (fromYear={2000}), so the counter jumps 2025 -> 2000 -> 2100.",
+    "suggested_fix": "Show \"TODAY\" (or 2026) in the HUD for Tc2000 and set Tc2100 fromYear to the same value."
+  },
+  {
+    "id": "C03",
+    "severity": "MEDIUM",
+    "area": "content",
+    "time_s": 56.8,
+    "shot": "TcPromise",
+    "title": "\"Seven mornings... you will wake up as someone else\" but the viewer only wakes up six times",
+    "evidence": "Eras 1500/1652/1760/1883/1914/Today each open \"You wake up in...\"; 2100 says \"That morning has not happened yet\". Promise text and Timeline7 count seven.",
+    "suggested_fix": "Either rephrase the promise (\"Six mornings, and one that has not happened yet\") or add a speculative \"You wake up in 2100...\" line framed as scenario."
+  },
+  {
+    "id": "C04",
+    "severity": "LOW",
+    "area": "content",
+    "time_s": 322.5,
+    "shot": "Tc1900",
+    "title": "\"A year earlier\" for the 93-minute assembly time is slightly inaccurate",
+    "evidence": "VO (1914 scene): \"A year earlier, his moving assembly line had turned twelve and a half hours of work into ninety three minutes.\" RESEARCH F10: line from Oct 1913, 93 minutes reached by early/mid 1914 (same year as the five-dollar day). On-screen label correctly says \"1913-14\".",
+    "suggested_fix": "Say \"Months earlier, his moving assembly line had begun turning...\" or \"That same year...\"."
+  },
+  {
+    "id": "C05",
+    "severity": "LOW",
+    "area": "content",
+    "time_s": 19.0,
+    "shot": "TcHook",
+    "title": "Hook claims \"time itself has been compressing\" - literally contradicted by the answer (\"Time did not speed up\")",
+    "evidence": "tc02: \"Did you know that time itself has been compressing for five hundred years?\"; tc10: \"Time did not speed up... Not of the clock. Of experience.\" Viewers who leave before 6:37 keep a false claim.",
+    "suggested_fix": "Acceptable as a twist; safer: \"Did you know that our time has been compressing for five hundred years?\" or \"...that time has been getting compressed\"."
+  },
+  {
+    "id": "C06",
+    "severity": "LOW",
+    "area": "content",
+    "time_s": 69.2,
+    "shot": "TcPromise",
+    "title": "Prediction framed as certainty: \"what the year twenty one hundred is about to take next\"",
+    "evidence": "tc03 script text. Format rule: say expected/could for anything not yet true.",
+    "suggested_fix": "\"...and what the year 2100 could take next.\""
+  },
+  {
+    "id": "C07",
+    "severity": "LOW",
+    "area": "content",
+    "time_s": 148.0,
+    "shot": "Tc1600",
+    "title": "Tense switches mid-paragraph (past -> present \"hangs\" -> past \"Nobody noticed\")",
+    "evidence": "tc05: \"The first newspaper had appeared... Then, in 1656, Christiaan Huygens hangs a pendulum... The best clocks had drifted... His drifts by seconds... Nobody noticed what that meant.\" Same pattern in tc06 (\"sails\", \"arrives\") and tc08 (\"makes a prediction\").",
+    "suggested_fix": "Optional: keep narrative present consistently within each era or accept as stylistic historical present."
+  },
+  {
+    "id": "C08",
+    "severity": "LOW",
+    "area": "content",
+    "time_s": 5.0,
+    "shot": "TcHook",
+    "title": "Unsourced on-screen \"ROME -> LONDON ... ≈ WEEKS\"",
+    "evidence": "TcHook.tsx route ROME->LONDON + \"≈ WEEKS\"; RESEARCH.md F1 covers \"no faster than a horse\" but no Rome-London duration.",
+    "suggested_fix": "Add a source line to RESEARCH.md (e.g. medieval courier Rome-London ~4-7 weeks) or drop the city names."
+  },
+  {
+    "id": "C09",
+    "severity": "LOW",
+    "area": "content",
+    "time_s": 376.0,
+    "shot": "Tc2000",
+    "title": "\"In Germany today ... around 1,350 hours\" uses 2017 data",
+    "evidence": "VO \"today\"; on-screen source \"Penn World Table (2017)\"; RESEARCH F13 1,354 (2017).",
+    "suggested_fix": "Say \"In Germany recently...\" or update to a newer OWID figure."
+  },
+  {
+    "id": "C10",
+    "severity": "LOW",
+    "area": "content",
+    "time_s": 275.8,
+    "shot": "Tc1800",
+    "title": "\"A message that took ten days by ship now took sixteen hours\" / on-screen \"Fifteen times faster.\" overstates the 1858 cable",
+    "evidence": "RESEARCH F7: Queen Victoria's 98-word message took ~16 h to transmit; the 1858 cable failed within weeks. Narration implies routine 16-hour messaging.",
+    "suggested_fix": "\"The first message took sixteen hours to send, instead of ten days by ship.\""
+  },
+  {
+    "id": "C11",
+    "severity": "LOW",
+    "area": "content",
+    "time_s": null,
+    "shot": "docs",
+    "title": "HANDOFF.md / RUBRIC.md stale vs current master",
+    "evidence": "RUBRIC/HANDOFF state 9:18.3 (558.30 s), 107 or 247 cues, -14.1 LUFS; current master is 568.0 s with 249 cues and has no recorded QA numbers. RUBRIC evidence cites F1-F17 though F18-F25 are now used.",
+    "suggested_fix": "Re-run qa_final.py and update RUBRIC.md/HANDOFF.md with the real numbers."
+  },
+  {
+    "id": "F01",
+    "severity": "MEDIUM",
+    "area": "frames",
+    "time_s": 147.2,
+    "shot": "Tc1600",
+    "title": "Newspaper reveal ~2.5 s late; page-flip SFX lands 2.3 s before its visual",
+    "evidence": "VO \"newspaper\" at 147.16 s (page-flip 0.44 fires there) but Tc1600 main layer (newspaper + \"THE FIRST NEWSPAPER\") only fades in at STRAS-8f = ~149.4 s (\"Strasbourg\" 149.68); the coffeehouse DayClock stays on screen during \"The first newspaper had appeared in 1605\". Sweep /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/sweep8/sweep-150.jpg.",
+    "suggested_fix": "In Tc1600.tsx start the main layer fade (and the DayClock fade-out) at PAPER-8 instead of STRAS-8; keep the \"THE FIRST NEWSPAPER\" label on PAPER."
+  },
+  {
+    "id": "F02",
+    "severity": "MEDIUM",
+    "area": "frames",
+    "time_s": 105.0,
+    "shot": "Tc1500..Tc2100",
+    "title": "Bottom HUD text sits outside title-safe (~35 px from bottom) and under YouTube player controls",
+    "evidence": "EraHud: 70 px bar at bottom:0 with text vertically centred (~35 px from the 1080 edge) - below the 54 px title-safe line; visible in every era frame, e.g. /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/sweep8/sweep-105.jpg (text at y≈349/360 @640w). YouTube progress bar/controls cover this strip on hover.",
+    "suggested_fix": "Raise the HUD to bottom: 54-60 px (content reserve to ~130 px) or accept as decorative and keep no essential info (Dexty.live, YEAR) only there."
+  },
+  {
+    "id": "F03",
+    "severity": "MEDIUM",
+    "area": "frames",
+    "time_s": 353.0,
+    "shot": "Tc1900,Tc2000",
+    "title": "Era beat 5 (Cliffhanger band + \"NEXT ▸ year\") missing in 1914 and Today",
+    "evidence": "Tc1900.tsx and Tc2000.tsx do not import/render <Cliffhanger>; 1500-1883 do. Narration still has loops (\"Remember that prediction. It is coming back.\" / \"So where did all that time go?\"). Also no minor-piano cliffhanger sound in 1914 (piano-a-min cues only for 1500-1800 and \"yet\" in Today).",
+    "suggested_fix": "Add <Cliffhanger at={REMEMBER or BACK} next=\"TODAY\">...</Cliffhanger> to Tc1900 and next=\"THE ANSWER\" (or 2100) to Tc2000, plus a piano-a-min cue in tc08."
+  },
+  {
+    "id": "F04",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 56.8,
+    "shot": "TcPromise",
+    "title": "\"Seven centuries. Seven mornings.\" headline appears 1.4-2.7 s before it is spoken",
+    "evidence": "Headline rises at EXP (\"experiment\", 56.82 s); \"centuries\" 58.18 s, \"mornings\" 59.50 s.",
+    "suggested_fix": "Rise \"Seven centuries.\" at CENT and \"Seven mornings.\" at LIVES."
+  },
+  {
+    "id": "F05",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 255.3,
+    "shot": "Tc1800",
+    "title": "DYK card shows \"Free time had to be written into law.\" 8-12 s before narration says it",
+    "evidence": "Card visible 255.3-259.2 s (out=FIFTY); \"Even free time had to be written into law\" spoken at ~267.2 s.",
+    "suggested_fix": "Drop that sentence from the card or add a small caption at \"law\" later."
+  },
+  {
+    "id": "F06",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 10.3,
+    "shot": "TcHook",
+    "title": "Near-empty frame ~6 s during the paradox (only the TIME SAVED arrow in the left third)",
+    "evidence": "Sweeps /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/sweep8/sweep-012.jpg and sweep-016.jpg: arrow only from 10.3 s until \"yet\"/hourglass at ~16 s; frames 1.3 s apart show no other change.",
+    "suggested_fix": "Bring the \"yet\" + hourglass in earlier (e.g. on \"So why\", ~13 s) or add a \"MORE THAN ANY GENERATION\" caption on \"generation\"."
+  },
+  {
+    "id": "F07",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 330.0,
+    "shot": "Tc1900",
+    "title": "Crossfade overlap: \"One life. Born 1900.\" drawn over the fading Day Clock ring",
+    "evidence": "Sweep /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/sweep8/sweep-330.jpg: heading text collides with the half-faded ring/legend; pd fades out CHILD-12..CHILD with ease-in while p2 fades in at CHILD-2.",
+    "suggested_fix": "Finish pd fade before CHILD-4 (linear/ease-out) or delay p2 to CHILD+2."
+  },
+  {
+    "id": "F08",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 17.3,
+    "shot": "TcHook",
+    "title": "Hook kicker reads \"DID YOU KNOW?\" instead of channel name \"DID YOU KNOW THAT?\"",
+    "evidence": "TcHook.tsx beat 3 kicker; sweep /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/sweep8/sweep-020.jpg. Every era card uses \"DID YOU KNOW THAT…\".",
+    "suggested_fix": "Change the kicker text to \"DID YOU KNOW THAT…\"."
+  },
+  {
+    "id": "F09",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 150.0,
+    "shot": "Tc1600,Tc1800",
+    "title": "Long holds with ~2/3 of the frame empty",
+    "evidence": "Sweep-150 (newspaper only, right 2/3 empty until Huygens at 159.3 s) and sweep-285 (Beard card only, right side empty until the SUSPECT stamps). RUBRIC already notes similar holds.",
+    "suggested_fix": "Optional: centre the lone element or bring the next element in earlier."
+  },
+  {
+    "id": "F10",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 105.0,
+    "shot": "Tc1500,Tc2000,eras",
+    "title": "Low-contrast captions (source lines, \"ENGLAND · A VILLAGE\", illustration labels)",
+    "evidence": "Sweep-105: \"ENGLAND · A VILLAGE\" under the village is nearly invisible (DL.muted 22 px under a mask gradient); sources at 19 px DL.faint in every era (sweep-375).",
+    "suggested_fix": "Raise to DL.dim and ≥22 px for anything meant to be read; keep faint only for decorative text."
+  },
+  {
+    "id": "F11",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 483.7,
+    "shot": "Tc2100",
+    "title": "Unhedged label \"THE RAREST THING ON EARTH IN 2100\" (VO says \"may be\")",
+    "evidence": "Tc2100.tsx p3 kicker; persistent PREDICTION banner + HUD mitigate.",
+    "suggested_fix": "\"MAYBE THE RAREST THING ON EARTH IN 2100\"."
+  },
+  {
+    "id": "F12",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 555.0,
+    "shot": "TcOutro",
+    "title": "End screen: \"NEXT: THE PHONE?\" chip on the example comment competes with the ONE teaser (No. 02 = The Sun); EXAMPLE label is small",
+    "evidence": "Sweep /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/sweep8/sweep-555.jpg: COMMENT OF THE WEEK card with \"EXAMPLE · COULD BE YOURS\" at 20 px and a green \"NEXT: THE PHONE?\" chip next to \"NO. 02 · COMING NEXT · THE SUN\". Footer text at y≈1029 (≈51 px from bottom, just outside title-safe).",
+    "suggested_fix": "Relabel the chip \"REQUESTED: THE PHONE\" (or remove it), enlarge EXAMPLE to ≥26 px, lift the footer ~10 px."
+  },
+  {
+    "id": "F13",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 56.0,
+    "shot": "All cuts",
+    "title": "Dip-to-black at every shot join (~0.7 s: 14-frame out + 8-frame in)",
+    "evidence": "Sweep-056 is a fully black frame (TcPromise starts 55.9 s). useShotFade comment says \"black-free dips\". Not an error, but 13 dips in 9.5 min; can read as stalls.",
+    "suggested_fix": "Optional: shorten to 6+6 frames or crossfade between era shots."
+  },
+  {
+    "id": "F14",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": 545.0,
+    "shot": "TcOutro",
+    "title": "Unverified in master: earlier outro stills showed \"ASK.\" on screen ~5 s before it is spoken",
+    "evidence": "end23/TcOutro-1260.png (545.0 s) and -1420.png (550.3 s), rendered 01:21, show \"ASK.\" already visible; current TcOutro.tsx keys it to C.at(\"Ask\",2)=549.97 s and TcOutro.mp4 was re-rendered 01:23, so probably fixed - could not grab master frames to confirm.",
+    "suggested_fix": "Check master at 545-550 s once frame extraction is allowed."
+  },
+  {
+    "id": "F15",
+    "severity": "LOW",
+    "area": "frames",
+    "time_s": null,
+    "shot": "ALL",
+    "title": "Branding check passed in reviewed frames/sources",
+    "evidence": "No DansLab logo/URL in any rendered component (DlLogo/DansLab wordmark unused in dyk-01 shots; only DL colour/font tokens + SiteBg). Every era HUD shows \"DID YOU KNOW THAT? · NO. 01 · Dexty.live\"; sting, welcome and end screen use the DYT logo; 2100 shows \"PREDICTION · A SCENARIO, NOT A FACT\" persistently; Comment of the Week labelled EXAMPLE; Dexty.live shown (outro pill, end screen footer) and spoken (\"dextee.live\" in whisper).",
+    "suggested_fix": "None."
+  },
+  {
+    "id": "S01",
+    "severity": "MEDIUM",
+    "area": "sfx",
+    "time_s": 552.97,
+    "shot": "TcOutro",
+    "title": "6-cue pile-up (incl. duplicate whoosh) right on the end-screen VO \"Next time, this could be your comment\"",
+    "evidence": "552.97 whoosh-soft 0.36, 553.03 whoosh-soft 0.30 (two whooshes 2 frames apart = flanging, from two separate cue lists), 553.37 pencil-scribble 0.30, 553.57 stamp-hit 0.28 + ui-toggle-on 0.42 (simultaneous), 553.80 sparkle-soft 0.38; tc14-endscreen VO starts 553.43.",
+    "suggested_fix": "Delete one whoosh, move stamp/toggle/sparkle before 553.3 or after 556.0, or start tc14 ~1 s later (ES_F+44)."
+  },
+  {
+    "id": "S02",
+    "severity": "MEDIUM",
+    "area": "sfx",
+    "time_s": 438.2,
+    "shot": "TcReveal",
+    "title": "The film's single riser->payoff does not connect: riser ends 2.7 s before the \"experience\" impact",
+    "evidence": "riser-soft (1.36 s clip) at compression-1.4 = 438.23 s -> ends 439.59; impact-deep-soft 0.56 at \"experience\" 442.25 s. Same disconnect in the hook (riser ends 17.47, \"compressing\" impact 19.05) and Welcome riser runs over the \"right\" stamp (52.82-54.18 vs 53.24).",
+    "suggested_fix": "Place the riser at payoff-1.36 s (e.g. w(tc10,\"experience\",shift=-1.36)) so it peaks into the hit; same for the hook (w(tc02,\"compressing\",shift=-1.36))."
+  },
+  {
+    "id": "S03",
+    "severity": "MEDIUM",
+    "area": "sfx",
+    "time_s": null,
+    "shot": "ALL",
+    "title": "Masking risk: 114 cues with gain >=0.30 start on a spoken word; loudest ones sit on key words/numbers",
+    "evidence": "Examples: 16.18 clock-tick 0.42 on \"running\"; 19.05 impact-deep 0.52 on \"compressing\"; 147.16 page-flip 0.44 on \"newspaper\"; 160.37 clock-tick 0.44 on \"pendulum\"; 221.57 pop 0.34 on \"five\" (seconds); 226.48 chess-thock 0.40 on \"sell\"; 275.80 ui-send 0.36 on \"sixteen\"; 322.54 impact 0.38 on \"ninety\"; 350.33 stamp 0.40 on \"Remember\"; 397.86 impact-deep 0.48 on \"answer\"; 442.25/442.50 impact 0.56 + chime 0.40 on \"experience\"; 464.97 pop 0.32 on \"sixty\"; 488.67 warm-shimmer 0.42 on \"remember\"; 529.0 sparkle 0.34 + pop 0.30 on \"Dex-tee\" (the spoken URL); 541.82 chime 0.46 on \"subscribe\". Full list: /private/tmp/claude-501/-Users-davidai-Video-Editor/53c902e1-9942-4dae-9fc4-a8bfe60201b0/scratchpad/audit-full/cues.json. Not verified by listening (no master decode).",
+    "suggested_fix": "Listen to these spots; for transients on numbers/URL, shift +0.15-0.25 s (after the consonant onset) or cap at 0.28; consider a sidechain duck of the SFX bus under the voice (like the music)."
+  },
+  {
+    "id": "S04",
+    "severity": "LOW",
+    "area": "sfx",
+    "time_s": 247.69,
+    "shot": "Tc1800",
+    "title": "Duplicate cue: knock-solid 0.30 and clock-tick-soft 0.36 both on the same \"noon\" (#1)",
+    "evidence": "build_final.py: (w(tc07,\"noon\",1),knock-solid) and (w(tc07,\"noon\"),clock-tick-soft) -> both 247.69 s. Also launch-thump 0.34 + clock-tick bed start together at 199.45 s.",
+    "suggested_fix": "Keep one; if a second noon accent was intended, cue noon #2 (\"heard noon twice\") instead."
+  },
+  {
+    "id": "S05",
+    "severity": "LOW",
+    "area": "sfx",
+    "time_s": 359.87,
+    "shot": "Tc2000",
+    "title": "Five cues in 1.2 s over \"...checked your phone. Did you know that\"",
+    "evidence": "359.87/360.27/360.67 pop-reveal 0.24 (phone notifications) + 359.97 ui-toggle-on 0.36 + 361.06 chime-magic 0.30 while \"Did you know that\" is spoken (360.42-361.0).",
+    "suggested_fix": "Move the three pops 0.6 s earlier (on \"already checked\") or drop the toggle here."
+  },
+  {
+    "id": "S06",
+    "severity": "LOW",
+    "area": "sfx",
+    "time_s": 137.36,
+    "shot": "Tc1600",
+    "title": "DYK bulb click lands on the one-word beat \"Coffee.\"",
+    "evidence": "ui-toggle-on 0.36 at Did-0.45 = 137.36 s, inside \"Coffee.\" (alignment after a 0.95 s dramatic pause).",
+    "suggested_fix": "Shift this era's toggle to Did-0.2 or lower to 0.25."
+  },
+  {
+    "id": "S07",
+    "severity": "LOW",
+    "area": "sfx",
+    "time_s": null,
+    "shot": "ALL",
+    "title": "Clusters >3 cues/1 s elsewhere are intentional and quiet",
+    "evidence": "Sting 23.45-24.33 (whoosh + 3 knocks + impact = designed sonic logo); DayClock/WeekStrip ticks (ui-click-soft 0.15) at 83.2, 141.7, 193.2, 259.2, 364.3 - low gain, match draw-on. No cue precedes its shot; every era starts with whoosh-wind + impact-soft at the cut and ends with whoosh-reverse 0.95 s before the cut.",
+    "suggested_fix": "None."
+  },
+  {
+    "id": "S08",
+    "severity": "MEDIUM",
+    "area": "sfx",
+    "time_s": null,
+    "shot": "ALL",
+    "title": "63 s music clip looped ~9x across 568 s with no crossfade",
+    "evidence": "build_final.py: -stream_loop -1 on cinematic-min.mp3 (ffprobe 63.03 s), atrim only; loop seams every 63 s are unsmoothed and the repetition is audible in pauses/sting/end screen.",
+    "suggested_fix": "Use a longer bed or acrossfade loops (or vary sections per act); verify seams by ear."
+  },
+  {
+    "id": "S09",
+    "severity": "LOW",
+    "area": "sfx",
+    "time_s": null,
+    "shot": "ALL",
+    "title": "Ambience beds level/overlap look safe on paper",
+    "evidence": "wind-soft (2.2 s) every 2.0 s @0.10 (72.7-92.5 s), clock-tick-soft (2.2 s) every 2.2 s @0.12 (199.4-217.1 s), scan-hum (2.56 s) every 2.5 s @0.07 (445.5-483 s) - minimal overlap, low gains. Music ducking: sidechaincompress thr 0.03 ratio 12 attack 20 ms release 450 ms keyed by the voice bus (config only; ducking depth/pumping in short pauses NOT measured).",
+    "suggested_fix": "Confirm by ear / ebur128 when disk allows."
+  },
+  {
+    "id": "Y01",
+    "severity": "LOW",
+    "area": "sync",
+    "time_s": null,
+    "shot": "ALL",
+    "title": "VO placement OK: no overlaps, no VO across shot boundaries",
+    "evidence": "VO segments (abs s): hook 0.6-9.33, question 9.9-20.86 (shot ends 22.2), welcome 30.3-54.91 (55.9), promise 56.4-71.49 (72.5), 1500 73.5-127.88 (128.9), 1652 129.9-178.15 (179.2), 1760 180.2-235.83 (236.9), 1883 237.9-300.41 (301.6), 1914 302.6-353.03 (354.1), today 355.1-394.99 (396.6), reveal 397.4-443.28 (444.5), 2100 445.5-489.39 (490.5), close 491.1-500.99 (503.0), outro 503.6-552.18, endscreen 553.43-557.98 (568.0). End screen 552.97-568.0 = 15.0 s.",
+    "suggested_fix": "None."
+  },
+  {
+    "id": "Y02",
+    "severity": "LOW",
+    "area": "sync",
+    "time_s": 237.9,
+    "shot": "Tc1500,Tc1800,Tc1900",
+    "title": "Five-beat order deviates in some eras",
+    "evidence": "1500 has no \"what changed\" beat (by design: an unchanging world); 1883 shows \"what changed\" (railroad noon) BEFORE the Did-you-know card; 1914 shows the assembly line (changed) before the Day Clock (how people lived). 1500, 1760 and Today wake-up lines name no place in VO (place only on screen: \"England · a village\", \"Monday morning · half the workshop is empty\", \"Your bedroom\").",
+    "suggested_fix": "Acceptable; if the format is strict, add a place to the VO wake-up lines (e.g. \"You wake up in 1500, in an English village\") in future episodes."
+  }
+]

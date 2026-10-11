@@ -1,0 +1,576 @@
+sec | shot | narration in this second | SFX starting in this second
+0:00 | TcHook | In the year | wind-soft(0.3)
+0:01 | TcHook | fifteen hundred, | 
+0:02 | TcHook | the fastest | 
+0:03 | TcHook | any message could | 
+0:04 | TcHook | travel was the speed | 
+0:05 | TcHook | of a horse. | knock-solid(0.3)
+0:06 | TcHook | Today, | 
+0:07 | TcHook | a message crosses | 
+0:08 | TcHook | the Atlantic in | ui-send(0.38)
+0:09 | TcHook | less than a tenth | pop-reveal(0.34)
+0:10 | TcHook | of a second. | 
+0:11 | TcHook | We have saved | warm-shimmer(0.3)
+0:12 | TcHook | more time than | 
+0:13 | TcHook | any generation | 
+0:14 | TcHook | in history. | 
+0:15 | TcHook | So why | pop-reveal(0.2)
+0:16 | TcHook | does every one | 
+0:17 | TcHook | of us feel like | 
+0:18 | TcHook | we are running out | clock-tick-soft(0.42)
+0:19 | TcHook | of it? Did | 
+0:20 | TcHook | you know that time itself | riser-soft(0.34)
+0:21 | TcHook | has been compressing | impact-deep-soft(0.52)
+0:22 | TcHook | for five hundred | 
+0:23 | TcHook | years? | 
+0:24 | TcHook |  | scan-hum(0.24)
+0:25 | TcIntro |  | ui-toggle-on(0.5), sparkle-soft(0.46)
+0:26 | TcIntro |  | whoosh-soft(0.4), knock-solid(0.3), knock-solid(0.3), knock-solid(0.3), impact-deep-soft(0.55)
+0:27 | TcIntro |  | chime-magic(0.42)
+0:28 | TcIntro |  | 
+0:29 | TcIntro |  | whoosh-soft(0.3)
+0:30 | TcIntro |  | 
+0:31 | TcIntro |  | 
+0:32 | TcIntro | Welcome | warm-shimmer(0.32)
+0:33 | TcWelcome | to Did You Know | 
+0:34 | TcWelcome | That. Every | 
+0:35 | TcWelcome | video here starts | 
+0:36 | TcWelcome | with a question you | pop-reveal(0.36)
+0:37 | TcWelcome | have never asked, | 
+0:38 | TcWelcome | and ends with | 
+0:39 | TcWelcome | an answer you | chime-reward(0.34)
+0:40 | TcWelcome | will never forget. | 
+0:41 | TcWelcome | Science. | pop-reveal(0.3)
+0:42 | TcWelcome | History. | pop-reveal(0.3)
+0:43 | TcWelcome |  | 
+0:44 | TcWelcome | Space. | pop-reveal(0.3)
+0:45 | TcWelcome | The human mind. | pop-reveal(0.3)
+0:46 | TcWelcome | The | 
+0:47 | TcWelcome | things nobody taught | 
+0:48 | TcWelcome | you, and the things | 
+0:49 | TcWelcome | that make your day | 
+0:50 | TcWelcome | a little better. | sparkle-soft(0.34)
+0:51 | TcWelcome | And here is the rule. | impact-deep-soft(0.46)
+0:52 | TcWelcome | Before | 
+0:53 | TcWelcome | the answer, | 
+0:54 | TcWelcome | make your guess in | stamp-hit(0.36)
+0:55 | TcWelcome | the comments. | pop-reveal(0.3)
+0:56 | TcWelcome | Then stay to the end, | stamp-hit(0.36)
+0:57 | TcWelcome | and find out | 
+0:58 | TcWelcome | if you were right. | stamp-hit(0.36)
+0:59 | TcWelcome | Ready? | riser-soft(0.3)
+1:00 | TcWelcome | Let's begin. | whoosh-wind(0.38)
+1:01 | TcWelcome |  | 
+1:02 | TcWelcome | Here | whoosh-wind(0.36)
+1:03 | TcPromise | is the experiment. | impact-soft(0.3)
+1:04 | TcPromise | Seven | 
+1:05 | TcPromise | centuries. | pop-reveal(0.32)
+1:06 | TcPromise | Six mornings, | sparkle-soft(0.32)
+1:07 | TcPromise | and one that has | 
+1:08 | TcPromise | not happened yet. | 
+1:09 | TcPromise |  | 
+1:10 | TcPromise | In each one, | ui-click-soft(0.34)
+1:11 | TcPromise | you will wake up as someone | 
+1:12 | TcPromise | else, | 
+1:13 | TcPromise | and see how people | 
+1:14 | TcPromise | really lived with | ui-click-soft(0.15)
+1:15 | TcPromise | time. | ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15)
+1:16 | TcPromise | By the end, you | ui-click-soft(0.15), ui-click-soft(0.15)
+1:17 | TcPromise | will know exactly | ui-click-soft(0.15)
+1:18 | TcPromise | where the time went, | 
+1:19 | TcPromise | and what the year | 
+1:20 | TcPromise | twenty one hundred could | piano-a-min(0.3)
+1:21 | TcPromise | take next. | 
+1:22 | TcPromise |  | whoosh-wind(0.36), impact-soft(0.4), wind-soft(0.1)
+1:23 | Tc1500 | You wake up | 
+1:24 | Tc1500 | in fifteen hundred. | wind-soft(0.1)
+1:25 | Tc1500 | It is midnight. | 
+1:26 | Tc1500 | Pitch | owl-hoot(0.22), wind-soft(0.1)
+1:27 | Tc1500 | black. | 
+1:28 | Tc1500 | And the whole village is | wind-soft(0.1)
+1:29 | Tc1500 | awake. | warm-shimmer(0.18), ui-toggle-on(0.28)
+1:30 | Tc1500 | Did you know that, for | chime-magic(0.3), wind-soft(0.1)
+1:31 | Tc1500 | centuries, people slept | 
+1:32 | Tc1500 | twice a night? | wind-soft(0.1)
+1:33 | Tc1500 | Historians have | ui-click-soft(0.15), ui-click-soft(0.15)
+1:34 | Tc1500 | found hundreds of | ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15), wind-soft(0.1)
+1:35 | Tc1500 | references to a | ui-click-soft(0.15), ui-click-soft(0.15)
+1:36 | Tc1500 | first sleep and a | ui-click-soft(0.2), wind-soft(0.1)
+1:37 | Tc1500 | second sleep. | ui-click-soft(0.2)
+1:38 | Tc1500 | In between, people | wind-soft(0.1)
+1:39 | Tc1500 | prayed, talked, | owl-hoot(0.12)
+1:40 | Tc1500 | even | wind-soft(0.1)
+1:41 | Tc1500 | visited neighbours. | 
+1:42 | Tc1500 | Your day | whoosh-soft(0.24)
+1:43 | Tc1500 | begins when the sun | 
+1:44 | Tc1500 | rises, and ends | 
+1:45 | Tc1500 | when it sets. | 
+1:46 | Tc1500 | The church bell | chime-magic(0.3)
+1:47 | Tc1500 | is the only clock you will | 
+1:48 | Tc1500 | ever hear. | 
+1:49 | Tc1500 | Life expectancy | ui-click-soft(0.32)
+1:50 | Tc1500 | at birth is around | 
+1:51 | Tc1500 | thirty five years, | 
+1:52 | Tc1500 | lowered by the | 
+1:53 | Tc1500 | many children who never | 
+1:54 | Tc1500 | grow up. | 
+1:55 | Tc1500 | If you reach old | 
+1:56 | Tc1500 | age, you will die | 
+1:57 | Tc1500 | in almost exactly | 
+1:58 | Tc1500 | the world you were | 
+1:59 | Tc1500 | born into. | 
+2:00 | Tc1500 | The same tools. | stamp-hit(0.34)
+2:01 | Tc1500 | The same roads. | stamp-hit(0.34)
+2:02 | Tc1500 | The | 
+2:03 | Tc1500 | same news, | stamp-hit(0.34)
+2:04 | Tc1500 | arriving weeks | clock-tick-soft(0.34)
+2:05 | Tc1500 | late, at the pace | 
+2:06 | Tc1500 | of a horse. | 
+2:07 | Tc1500 | Time is not | 
+2:08 | Tc1500 | something you spend. | 
+2:09 | Tc1500 | It simply happens | warm-shimmer(0.3)
+2:10 | Tc1500 | to you. | 
+2:11 | Tc1500 | But a hundred and fifty | piano-a-min(0.32)
+2:12 | Tc1500 | years from now, | 
+2:13 | Tc1500 | a strange new | 
+2:14 | Tc1500 | drink will arrive, | pop-reveal(0.24)
+2:15 | Tc1500 | and it will change | 
+2:16 | Tc1500 | how people talk about | 
+2:17 | Tc1500 | the day. | whoosh-reverse(0.3)
+2:18 | Tc1500 |  | whoosh-wind(0.36), impact-soft(0.4)
+2:19 | Tc1600 | You wake up in | 
+2:20 | Tc1600 | sixteen fifty two, | 
+2:21 | Tc1600 | in London. | 
+2:22 | Tc1600 | The air smells | 
+2:23 | Tc1600 | of smoke, | wind-soft(0.14)
+2:24 | Tc1600 | and of something | 
+2:25 | Tc1600 | new. | warm-shimmer(0.16)
+2:26 | Tc1600 | Coffee. | pop-reveal(0.26), stream-soft(0.16)
+2:27 | Tc1600 | Did you know that the | ui-toggle-on(0.28), chime-magic(0.3)
+2:28 | Tc1600 | first coffeehouses | 
+2:29 | Tc1600 | were called penny | 
+2:30 | Tc1600 | universities? | 
+2:31 | Tc1600 | For one penny, | ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15)
+2:32 | Tc1600 | you could walk | ui-click-soft(0.15)
+2:33 | Tc1600 | in, read the news, | page-flip(0.26)
+2:34 | Tc1600 | and argue with strangers | knock-solid(0.16)
+2:35 | Tc1600 | for hours. | 
+2:36 | Tc1600 | The first newspaper | page-flip(0.44)
+2:37 | Tc1600 | had appeared in sixteen | 
+2:38 | Tc1600 | oh five, | 
+2:39 | Tc1600 | in Strasbourg. | 
+2:40 | Tc1600 | Now | 
+2:41 | Tc1600 | news was a habit, | page-flip(0.3)
+2:42 | Tc1600 | and people wanted to | 
+2:43 | Tc1600 | know what happened today, | pop-reveal(0.22)
+2:44 | Tc1600 | not last | pop-reveal(0.18)
+2:45 | Tc1600 | month. | trap-snap(0.22)
+2:46 | Tc1600 | Then, in | 
+2:47 | Tc1600 | sixteen fifty six, | 
+2:48 | Tc1600 | Christiaan Huygens | 
+2:49 | Tc1600 | hangs a pendulum | clock-tick-soft(0.44)
+2:50 | Tc1600 | inside a clock. | 
+2:51 | Tc1600 | The | 
+2:52 | Tc1600 | best clocks had drifted | 
+2:53 | Tc1600 | by a quarter | 
+2:54 | Tc1600 | of an hour a day. | 
+2:55 | Tc1600 | His drifts by | 
+2:56 | Tc1600 | seconds. | pop-reveal(0.34)
+2:57 | Tc1600 | For the first time, | 
+2:58 | Tc1600 | an ordinary day | 
+2:59 | Tc1600 | can be cut into minutes. | chime-reward(0.34)
+3:00 | Tc1600 | Nobody | piano-a-min(0.32)
+3:01 | Tc1600 | noticed what that meant. | 
+3:02 | Tc1600 | Within | 
+3:03 | Tc1600 | a hundred years, the | 
+3:04 | Tc1600 | minute would stop being | clock-tick-soft(0.3)
+3:05 | Tc1600 | a curiosity, | 
+3:06 | Tc1600 | and start being your | 
+3:07 | Tc1600 | boss. | stamp-hit(0.34), whoosh-reverse(0.3)
+3:08 | Tc1600 |  | whoosh-wind(0.36), impact-soft(0.4)
+3:09 | Tc1700 | You wake up in | 
+3:10 | Tc1700 | seventeen sixty. | 
+3:11 | Tc1700 | It is Monday | 
+3:12 | Tc1700 | morning, and half | 
+3:13 | Tc1700 | the workshop is empty. | wind-soft(0.2)
+3:14 | Tc1700 | Did you | ui-toggle-on(0.28)
+3:15 | Tc1700 | know that, for | chime-magic(0.3)
+3:16 | Tc1700 | generations, | 
+3:17 | Tc1700 | workers simply took | 
+3:18 | Tc1700 | Mondays off? | 
+3:19 | Tc1700 | They called it | 
+3:20 | Tc1700 | Saint Monday. | 
+3:21 | Tc1700 | Back then, | 
+3:22 | Tc1700 | you worked hard when there | ui-click-soft(0.15), ui-click-soft(0.15)
+3:23 | Tc1700 | was work to do, | ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15)
+3:24 | Tc1700 | and you rested when there | ui-click-soft(0.15), ui-click-soft(0.15)
+3:25 | Tc1700 | was not. | 
+3:26 | Tc1700 | But work is leaving | 
+3:27 | Tc1700 | the field and entering | 
+3:28 | Tc1700 | the factory. | clock-tick-soft(0.12), launch-thump(0.34)
+3:29 | Tc1700 | The sun | 
+3:30 | Tc1700 | is replaced by the bell. | clock-tick-soft(0.12), ui-toggle-on(0.3)
+3:31 | Tc1700 | Then | 
+3:32 | Tc1700 | the bell is replaced | clock-tick-soft(0.12)
+3:33 | Tc1700 | by the clock. | clock-tick-soft(0.36)
+3:34 | Tc1700 | Historians | 
+3:35 | Tc1700 | call it time discipline. | clock-tick-soft(0.12), impact-soft(0.36)
+3:36 | Tc1700 |  | 
+3:37 | Tc1700 | You no longer stop | clock-tick-soft(0.12)
+3:38 | Tc1700 | when the work is done. | 
+3:39 | Tc1700 | You stop | clock-tick-soft(0.12)
+3:40 | Tc1700 | when the clock says | trap-snap(0.32)
+3:41 | Tc1700 | so. Saint | clock-tick-soft(0.12), pop-reveal(0.22)
+3:42 | Tc1700 | Monday begins | 
+3:43 | Tc1700 | to disappear. | trap-snap(0.24), clock-tick-soft(0.12)
+3:44 | Tc1700 | And in seventeen | 
+3:45 | Tc1700 | sixty one, John | 
+3:46 | Tc1700 | Harrison's sea watch | clock-tick-soft(0.12), whoosh-soft(0.24)
+3:47 | Tc1700 | sails all the | 
+3:48 | Tc1700 | way to Jamaica, | whoosh-wind(0.32)
+3:49 | Tc1700 | and arrives | 
+3:50 | Tc1700 | only about five seconds | pop-reveal(0.34)
+3:51 | Tc1700 | slow. | 
+3:52 | Tc1700 | Time is now | 
+3:53 | Tc1700 | something you can carry. | 
+3:54 | Tc1700 | And something | 
+3:55 | Tc1700 | you can sell. | chess-piece-thock(0.4)
+3:56 | Tc1700 | Workers had | 
+3:57 | Tc1700 | lost their Monday. | piano-a-min(0.32)
+3:58 | Tc1700 | In the next century, | 
+3:59 | Tc1700 | the steam engine, racing | whoosh-wind(0.2)
+4:00 | Tc1700 | on iron rails, | 
+4:01 | Tc1700 | would take | 
+4:02 | Tc1700 | something even bigger. | 
+4:03 | Tc1700 | Noon | 
+4:04 | Tc1700 | itself. | whoosh-reverse(0.3)
+4:05 | Tc1700 |  | whoosh-wind(0.36), impact-soft(0.4)
+4:06 | Tc1800 | You wake up in eighteen | 
+4:07 | Tc1800 | eighty three, | 
+4:08 | Tc1800 | in a small American | 
+4:09 | Tc1800 | town. | 
+4:10 | Tc1800 | At midday, | 
+4:11 | Tc1800 | the church clock strikes | 
+4:12 | Tc1800 | twelve. | chime-reward(0.3)
+4:13 | Tc1800 | Then the railroad tells | 
+4:14 | Tc1800 | you it is noon again. | knock-solid(0.3)
+4:15 | Tc1800 | Some towns | 
+4:16 | Tc1800 | heard noon twice that | knock-solid(0.34)
+4:17 | Tc1800 | day. The | ui-click-soft(0.15)
+4:18 | Tc1800 | railroads had reset | ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15)
+4:19 | Tc1800 | the clocks of an | 
+4:20 | Tc1800 | entire continent. | 
+4:21 | Tc1800 | Did you know | ui-toggle-on(0.28)
+4:22 | Tc1800 | that the weekend began | chime-magic(0.3)
+4:23 | Tc1800 | with half a Saturday? | 
+4:24 | Tc1800 | In eighteen | 
+4:25 | Tc1800 | fifty, a British | ui-click-soft(0.15), ui-click-soft(0.15)
+4:26 | Tc1800 | law stopped | ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15)
+4:27 | Tc1800 | women and children working | ui-click-soft(0.15), ui-click-soft(0.15)
+4:28 | Tc1800 | in the mills after two | 
+4:29 | Tc1800 | o'clock on Saturday. | clock-tick-soft(0.22)
+4:30 | Tc1800 | Soon, | 
+4:31 | Tc1800 | the men got the same. | pop-reveal(0.22)
+4:32 | Tc1800 | Even | 
+4:33 | Tc1800 | free time had to | 
+4:34 | Tc1800 | be written into law. | stamp-hit(0.3)
+4:35 | Tc1800 | In eighteen | 
+4:36 | Tc1800 | fifty eight, a cable | stream-soft(0.24)
+4:37 | Tc1800 | was laid across the | 
+4:38 | Tc1800 | floor of the Atlantic. | 
+4:39 | Tc1800 | The first message | 
+4:40 | Tc1800 | took sixteen | ui-send(0.36)
+4:41 | Tc1800 | hours to send, | 
+4:42 | Tc1800 | instead of ten | 
+4:43 | Tc1800 | days by ship. | 
+4:44 | Tc1800 | And in eighteen | 
+4:45 | Tc1800 | eighty one, a | 
+4:46 | Tc1800 | New York doctor, | 
+4:47 | Tc1800 | George Beard, | page-flip(0.3)
+4:48 | Tc1800 | warned of a new epidemic | 
+4:49 | Tc1800 | of nervous | 
+4:50 | Tc1800 | exhaustion. | 
+4:51 | Tc1800 | His suspects? | 
+4:52 | Tc1800 | Steam | stamp-hit(0.38)
+4:53 | Tc1800 | power. | 
+4:54 | Tc1800 | The telegraph. | stamp-hit(0.38)
+4:55 | Tc1800 | The daily press. | stamp-hit(0.38)
+4:56 | Tc1800 | Sound | 
+4:57 | Tc1800 | familiar? | glitch-zap(0.26)
+4:58 | Tc1800 | People | 
+4:59 | Tc1800 | were complaining that | 
+5:00 | Tc1800 | life moved too fast, | 
+5:01 | Tc1800 | more than a | 
+5:02 | Tc1800 | century before your | 
+5:03 | Tc1800 | phone. And | 
+5:04 | Tc1800 | in the next century, | 
+5:05 | Tc1800 | one man would turn half | piano-a-min(0.32)
+5:06 | Tc1800 | a day of work into | 
+5:07 | Tc1800 | ninety three minutes. | 
+5:08 | Tc1800 |  | whoosh-reverse(0.3)
+5:09 | Tc1900 | You | whoosh-wind(0.36), impact-soft(0.4)
+5:10 | Tc1900 | wake up in nineteen | 
+5:11 | Tc1900 | fourteen, | 
+5:12 | Tc1900 | near Detroit. | 
+5:13 | Tc1900 | Outside | launch-thump(0.24)
+5:14 | Tc1900 | Ford's factory, | 
+5:15 | Tc1900 | the line of people looking | wind-soft(0.14)
+5:16 | Tc1900 | for work stretches | 
+5:17 | Tc1900 | down the street. | 
+5:18 | Tc1900 | Did you know that | ui-toggle-on(0.28)
+5:19 | Tc1900 | Henry Ford more than | chime-magic(0.3)
+5:20 | Tc1900 | doubled his workers' | 
+5:21 | Tc1900 | pay, to | 
+5:22 | Tc1900 | five dollars a | 
+5:23 | Tc1900 | day, and | 
+5:24 | Tc1900 | cut the day to eight | 
+5:25 | Tc1900 | hours? | 
+5:26 | Tc1900 | That same year, | 
+5:27 | Tc1900 | his moving assembly | stamp-hit(0.13)
+5:28 | Tc1900 | line turned twelve and | stamp-hit(0.13), stamp-hit(0.13)
+5:29 | Tc1900 | a half hours of work | stamp-hit(0.13), stamp-hit(0.13)
+5:30 | Tc1900 | into ninety three | stamp-hit(0.13), impact-soft(0.38)
+5:31 | Tc1900 | minutes. | 
+5:32 | Tc1900 | By nineteen twenty | ui-click-soft(0.15), ui-click-soft(0.15)
+5:33 | Tc1900 | six, his workers had | ui-click-soft(0.15)
+5:34 | Tc1900 | Saturdays off. | warm-shimmer(0.3)
+5:35 | Tc1900 | The modern weekend | 
+5:36 | Tc1900 | had arrived. | 
+5:37 | Tc1900 | A child | whoosh-soft(0.26)
+5:38 | Tc1900 | born in nineteen | 
+5:39 | Tc1900 | hundred is three when | pop-reveal(0.26)
+5:40 | Tc1900 | the Wright brothers fly, | 
+5:41 | Tc1900 | and sixty | 
+5:42 | Tc1900 | nine when men walk | 
+5:43 | Tc1900 | on the Moon. | sparkle-soft(0.36)
+5:44 | Tc1900 | One lifetime | 
+5:45 | Tc1900 | now holds more change | 
+5:46 | Tc1900 | than whole centuries | 
+5:47 | Tc1900 | once did. | 
+5:48 | Tc1900 | And in nineteen | 
+5:49 | Tc1900 | thirty, the | 
+5:50 | Tc1900 | economist John | 
+5:51 | Tc1900 | Maynard Keynes makes | page-flip(0.3)
+5:52 | Tc1900 | a prediction: | 
+5:53 | Tc1900 | by his grandchildren's | 
+5:54 | Tc1900 | time, we | 
+5:55 | Tc1900 | will work just fifteen | 
+5:56 | Tc1900 | hours a week. | 
+5:57 | Tc1900 | Remember that prediction. | stamp-hit(0.4)
+5:58 | Tc1900 | It is coming | 
+5:59 | Tc1900 | back. | whoosh-reverse(0.3)
+6:00 | Tc1900 |  | whoosh-wind(0.36), impact-soft(0.4)
+6:01 | Tc2000 | You wake up today. | 
+6:02 | Tc2000 | Before | 
+6:03 | Tc2000 | your feet touch the floor, | 
+6:04 | Tc2000 | you have already | pop-reveal(0.22)
+6:05 | Tc2000 | checked your phone. | pop-reveal(0.22), pop-reveal(0.22)
+6:06 | Tc2000 | Did you know that | ui-toggle-on(0.28)
+6:07 | Tc2000 | the average internet | chime-magic(0.3)
+6:08 | Tc2000 | user now spends | 
+6:09 | Tc2000 | six hours and | 
+6:10 | Tc2000 | thirty eight minutes online, | ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15), scan-hum(0.14)
+6:11 | Tc2000 | every single | ui-click-soft(0.15)
+6:12 | Tc2000 | day? | 
+6:13 | Tc2000 | In eighteen | 
+6:14 | Tc2000 | seventy, workers | ui-click-soft(0.3)
+6:15 | Tc2000 | in most industrial | 
+6:16 | Tc2000 | countries put | 
+6:17 | Tc2000 | in more than three thousand | 
+6:18 | Tc2000 | hours a year. | 
+6:19 | Tc2000 | In Germany | ui-click-soft(0.26)
+6:20 | Tc2000 | recently, it was | 
+6:21 | Tc2000 | around thirteen hundred | 
+6:22 | Tc2000 | and fifty. | ui-click-soft(0.3)
+6:23 | Tc2000 | Today, we | 
+6:24 | Tc2000 | work less than almost | 
+6:25 | Tc2000 | any generation | 
+6:26 | Tc2000 | before us. | 
+6:27 | Tc2000 | Messages are instant. | pop-reveal(0.3)
+6:28 | Tc2000 | Machines | 
+6:29 | Tc2000 | do the lifting. | pop-reveal(0.3)
+6:30 | Tc2000 | On paper, | 
+6:31 | Tc2000 | we | 
+6:32 | Tc2000 | are the richest people | 
+6:33 | Tc2000 | in history, | 
+6:34 | Tc2000 | rich in time. | pop-reveal(0.3)
+6:35 | Tc2000 | And yet, | piano-a-min(0.3)
+6:36 | Tc2000 | ask anyone how | 
+6:37 | Tc2000 | they are, and | 
+6:38 | Tc2000 | you will hear the same | keys-typing-soft(0.16)
+6:39 | Tc2000 | word. | 
+6:40 | Tc2000 | Busy. | impact-deep-soft(0.5), riser-soft(0.3)
+6:41 | Tc2000 | So where did all that time | 
+6:42 | Tc2000 | go? | 
+6:43 | Tc2000 |  | 
+6:44 | Tc2000 | Here | whoosh-reverse(0.36)
+6:45 | TcReveal | is the answer. Time | impact-deep-soft(0.48)
+6:46 | TcReveal | did not speed up. | 
+6:47 | TcReveal | A second in fifteen | clock-tick-soft(0.34)
+6:48 | TcReveal | hundred lasted | 
+6:49 | TcReveal | exactly as long | 
+6:50 | TcReveal | as a second today. | clock-tick-soft(0.34)
+6:51 | TcReveal | What changed | 
+6:52 | TcReveal | is how much we | 
+6:53 | TcReveal | pack into it, | 
+6:54 | TcReveal | and how little of | 
+6:55 | TcReveal | it we remember. | 
+6:56 | TcReveal | Your brain | whoosh-soft(0.24)
+6:57 | TcReveal | does not measure time | 
+6:58 | TcReveal | with a clock. | trap-snap(0.22)
+6:59 | TcReveal | It measures it with | 
+7:00 | TcReveal | memories. | warm-shimmer(0.32)
+7:01 | TcReveal | Psychologists call it | 
+7:02 | TcReveal | the holiday paradox. | warm-shimmer(0.24)
+7:03 | TcReveal | A week | ui-click-soft(0.15)
+7:04 | TcReveal | full of new experiences | ui-click-soft(0.15), ui-click-soft(0.15), ui-click-soft(0.15)
+7:05 | TcReveal | feels long | ui-click-soft(0.15), ui-click-soft(0.15)
+7:06 | TcReveal | when you look back. | ui-click-soft(0.15)
+7:07 | TcReveal | Months of the | 
+7:08 | TcReveal | same routine collapse | whoosh-reverse(0.3)
+7:09 | TcReveal | into almost nothing. | 
+7:10 | TcReveal | Every | whoosh-soft(0.24)
+7:11 | TcReveal | century, we | 
+7:12 | TcReveal | found a way to fit | 
+7:13 | TcReveal | more into an hour. | 
+7:14 | TcReveal | The clock. | stamp-hit(0.3)
+7:15 | TcReveal | The factory. | stamp-hit(0.3)
+7:16 | TcReveal | The telegraph. | stamp-hit(0.3)
+7:17 | TcReveal | The | 
+7:18 | TcReveal | assembly line. | stamp-hit(0.3)
+7:19 | TcReveal | And the phone. | stamp-hit(0.3)
+7:20 | TcReveal | Each | 
+7:21 | TcReveal | invention saved us | 
+7:22 | TcReveal | time. And | 
+7:23 | TcReveal | each one made our | 
+7:24 | TcReveal | hours look more and | 
+7:25 | TcReveal | more the same. | 
+7:26 | TcReveal | That is the | 
+7:27 | TcReveal | compression. | 
+7:28 | TcReveal | Not of the clock. | riser-soft(0.36)
+7:29 | TcReveal | Of experience. | impact-deep-soft(0.56), chime-reward(0.4)
+7:30 | TcReveal |  | 
+7:31 | TcReveal |  | whoosh-wind(0.36), impact-soft(0.4), scan-hum(0.2)
+7:32 | Tc2100 | Now, the year twenty | scan-hum(0.07)
+7:33 | Tc2100 | one hundred. That morning | 
+7:34 | Tc2100 | has not happened yet. | scan-hum(0.07)
+7:35 | Tc2100 | But we can | 
+7:36 | Tc2100 | follow the evidence. | 
+7:37 | Tc2100 | The United Nations | scan-hum(0.07), ui-click-soft(0.32)
+7:38 | Tc2100 | projects around | 
+7:39 | Tc2100 | ten billion people, | scan-hum(0.07)
+7:40 | Tc2100 | living longer | 
+7:41 | Tc2100 | than ever. | 
+7:42 | Tc2100 | Goldman Sachs | glitch-zap(0.24), scan-hum(0.07)
+7:43 | Tc2100 | estimates that today's | 
+7:44 | Tc2100 | AI could expose | scan-hum(0.07)
+7:45 | Tc2100 | the work of three hundred | 
+7:46 | Tc2100 | million full-time | 
+7:47 | Tc2100 | jobs to automation. | scan-hum(0.07)
+7:48 | Tc2100 |  | 
+7:49 | Tc2100 | And when sixty one British | pop-reveal(0.32), scan-hum(0.07)
+7:50 | Tc2100 | companies tried a | 
+7:51 | Tc2100 | four day week, | 
+7:52 | Tc2100 | fifty six of them kept | scan-hum(0.07)
+7:53 | Tc2100 | it. Put those | 
+7:54 | Tc2100 | facts together, | whoosh-soft(0.24), scan-hum(0.07)
+7:55 | Tc2100 | and the fifteen | page-flip(0.36)
+7:56 | Tc2100 | hour week that Keynes | 
+7:57 | Tc2100 | predicted no | scan-hum(0.07)
+7:58 | Tc2100 | longer sounds crazy. | 
+7:59 | Tc2100 | It could | scan-hum(0.07)
+8:00 | Tc2100 | finally arrive, | 
+8:01 | Tc2100 | a century late. | 
+8:02 | Tc2100 | But if history | scan-hum(0.07)
+8:03 | Tc2100 | repeats, | keys-typing-soft(0.24)
+8:04 | Tc2100 | we will fill every | scan-hum(0.07)
+8:05 | Tc2100 | freed hour with | 
+8:06 | Tc2100 | something faster. | 
+8:07 | Tc2100 | In twenty one | scan-hum(0.07)
+8:08 | Tc2100 | hundred, the rarest | 
+8:09 | Tc2100 | thing on Earth may | scan-hum(0.07)
+8:10 | Tc2100 | not be energy, | trap-snap(0.3)
+8:11 | Tc2100 | or money. | trap-snap(0.3)
+8:12 | Tc2100 | It may be a day you | 
+8:13 | Tc2100 | actually remember. | warm-shimmer(0.42)
+8:14 | Tc2100 |  | 
+8:15 | Tc2100 | Time | whoosh-soft(0.34)
+8:16 | TcClose | cannot be slowed down. | 
+8:17 | TcClose | But | 
+8:18 | TcClose | it can be stretched, | whoosh-soft(0.3)
+8:19 | TcClose | one | 
+8:20 | TcClose | new memory at a time. | 
+8:21 | TcClose | So tell | 
+8:22 | TcClose | me. | 
+8:23 | TcClose | When was | 
+8:24 | TcClose | the last time you did | 
+8:25 | TcClose | something for the very | 
+8:26 | TcClose | first time? | chime-magic(0.34)
+8:27 | TcClose |  | 
+8:28 | TcClose |  | whoosh-wind(0.34)
+8:29 | TcOutro | This was episode | pop-reveal(0.22)
+8:30 | TcOutro | one of Did You Know | ui-toggle-on(0.26)
+8:31 | TcOutro | That. Time, | 
+8:32 | TcOutro | Compressed. | 
+8:33 | TcOutro | Now it is your turn. | 
+8:34 | TcOutro | If you | 
+8:35 | TcOutro | could wake up in any | 
+8:36 | TcOutro | century, from | 
+8:37 | TcOutro | fifteen hundred to | 
+8:38 | TcOutro | twenty one hundred, | 
+8:39 | TcOutro | which | 
+8:40 | TcOutro | would you choose, | 
+8:41 | TcOutro | and why? | 
+8:42 | TcOutro | Tell me in the comments. | pop-reveal(0.34)
+8:43 | TcOutro | Here | 
+8:44 | TcOutro | is the deal. | impact-soft(0.36)
+8:45 | TcOutro | At the end of every | 
+8:46 | TcOutro | episode, I will read | 
+8:47 | TcOutro | the best comment, | pop-reveal(0.32)
+8:48 | TcOutro | right here, | ui-click-soft(0.22)
+8:49 | TcOutro | on this screen. | 
+8:50 | TcOutro | And the subject | sparkle-soft(0.28)
+8:51 | TcOutro | you ask for most | 
+8:52 | TcOutro | becomes a future | 
+8:53 | TcOutro | episode. | pop-reveal(0.2)
+8:54 | TcOutro | And on our website, | 
+8:55 | TcOutro | Dex-tee dot | sparkle-soft(0.34), pop-reveal(0.3)
+8:56 | TcOutro | live, | 
+8:57 | TcOutro | you can watch every | ui-click-soft(0.2)
+8:58 | TcOutro | episode, | 
+8:59 | TcOutro | collect the facts, | ui-click-soft(0.2)
+9:00 | TcOutro | and play the guessing | ui-click-soft(0.2)
+9:01 | TcOutro | game. | 
+9:02 | TcOutro | If this changed how | 
+9:03 | TcOutro | you see a single hour, | 
+9:04 | TcOutro | like it, | ui-click-soft(0.38)
+9:05 | TcOutro | share it with the friend | ui-send(0.36)
+9:06 | TcOutro | who is always out | 
+9:07 | TcOutro | of time, | 
+9:08 | TcOutro | and subscribe, so | chime-reward(0.46)
+9:09 | TcOutro | the next mystery finds | 
+9:10 | TcOutro | you. | 
+9:11 | TcOutro | Next time: | whoosh-wind(0.34)
+9:12 | TcOutro | the Sun you see | 
+9:13 | TcOutro | in the sky is not | 
+9:14 | TcOutro | the Sun as it is | 
+9:15 | TcOutro | right now. | 
+9:16 | TcOutro | Ask... | chess-piece-thock(0.4)
+9:17 | TcOutro | Wonder... Repeat. | chess-piece-thock(0.4), chess-piece-thock(0.4)
+9:18 | TcOutro |  | 
+9:19 | TcOutro | Next | pencil-scribble(0.3), ui-toggle-on(0.24)
+9:20 | TcOutro | time, this | sparkle-soft(0.22)
+9:21 | TcOutro | could be your comment. | 
+9:22 | TcOutro | Pick a | 
+9:23 | TcOutro | mystery, and | 
+9:24 | TcOutro | I will see you there. | 
+9:25 | TcOutro |  | 
+9:26 | TcOutro |  | 
+9:27 | TcOutro |  | 
+9:28 | TcOutro |  | 
+9:29 | TcOutro |  | 
+9:30 | TcOutro |  | 
+9:31 | TcOutro |  | 
+9:32 | TcOutro |  | 
+9:33 | TcOutro |  | 
+9:34 | TcOutro |  | 
