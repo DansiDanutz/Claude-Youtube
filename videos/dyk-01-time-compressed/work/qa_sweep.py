@@ -13,6 +13,11 @@ master, out = sys.argv[1], sys.argv[2]
 every = float(sys.argv[3]) if len(sys.argv) > 3 else 2.0
 frames_dir = os.path.join(out, 'frames')
 os.makedirs(frames_dir, exist_ok=True)
+# a rerun into the same dir must not mix frames/sheets from an older master into the new sheets
+for d, pat in ((frames_dir, r'f\d{4}\.jpg'), (out, r'sheet-\d+\.jpg')):
+    for name in os.listdir(d):
+        if re.fullmatch(pat, name):
+            os.remove(os.path.join(d, name))
 
 dur = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', master],
                            capture_output=True, text=True, check=True).stdout)

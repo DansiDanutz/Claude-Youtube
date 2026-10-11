@@ -5,6 +5,7 @@
 import { bundle } from '@remotion/bundler';
 import { selectComposition, renderStill } from '@remotion/renderer';
 import { mkdirSync } from 'fs';
+import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
@@ -15,6 +16,8 @@ if (!outDir || specs.length === 0) {
   process.exit(1);
 }
 mkdirSync(outDir, { recursive: true });
+// Root.tsx imports the git-ignored registry.gen.tsx: regenerate it so a fresh checkout works
+execFileSync(process.execPath, [path.join(root, 'scripts', 'gen-registry.mjs')], { stdio: 'inherit' });
 const serveUrl = await bundle({ entryPoint: path.join(root, 'src', 'index.ts'), publicDir: path.join(root, '..', 'media') });
 for (const spec of specs) {
   const [id, frames] = spec.split(':');

@@ -88,6 +88,12 @@ def probe_duration(path):
     return float(out)
 
 
+def mp3_to_wav(mp3, wav):
+    """48 kHz mono PCM for the mix; returns its duration in seconds."""
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp3, "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
+    return probe_duration(wav)
+
+
 def main():
     key = api_key()
     if not key:
@@ -101,6 +107,10 @@ def main():
         sid, text = sc["id"], sc["text"]
         mp3 = os.path.join(NARR, f"{sid}.mp3")
         if os.path.exists(mp3) and sid not in only:
+            wav = os.path.join(MIX, f"{sid}.wav")
+            if not os.path.exists(wav):   # fresh checkout / interrupted run: rebuild from the paid mp3, no API call
+                durations[sid] = round(mp3_to_wav(mp3, wav), 3)
+                print(f"  {sid}: rebuilt {os.path.basename(wav)} from the saved mp3")
             continue                      # already paid for; never re-bill
         if only and sid not in only:
             continue
@@ -132,8 +142,7 @@ def main():
             f.write(base64.b64decode(resp["audio_base64"]))
         json.dump(words, open(os.path.join(NARR, f"{sid}.words.json"), "w"), indent=0)
         wav = os.path.join(MIX, f"{sid}.wav")
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp3, "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
-        dur = probe_duration(wav)
+        dur = mp3_to_wav(mp3, wav)
         durations[sid] = round(dur, 3)
         tail = dur - words[-1]["e"]
         flag = "  <-- CHECK TAIL" if tail > TAIL_LIMIT_S else ""

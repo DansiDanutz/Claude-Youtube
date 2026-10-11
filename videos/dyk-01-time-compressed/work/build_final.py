@@ -58,6 +58,20 @@ for sid, dur, _ in SHOTS:
     t += dur
 TOTAL = t
 VO_AT = {scene: START[sid] + off for sid, _, vos in SHOTS for scene, off in vos}
+MIN_TAIL_S = 0.5           # a voice line must end at least this long before its shot cuts
+
+
+def narration_fit_problems(shots, vo, min_tail=MIN_TAIL_S):
+    """Lines that no longer fit their shot (a regenerated take grew) or overlap the next line."""
+    probs = []
+    for sid, dur, vos in shots:
+        spans = sorted((off, off + vo[sc]['dur'], sc) for sc, off in vos)
+        for (a0, a1, sc), nxt in zip(spans, spans[1:] + [None]):
+            if a1 > dur - min_tail:
+                probs.append(f'{sc} ends {a1:.2f}s but {sid} cuts at {dur:.2f}s (needs {min_tail}s tail)')
+            if nxt and a1 > nxt[0]:
+                probs.append(f'{sc} overlaps {nxt[2]} in {sid} ({a1:.2f}s > {nxt[0]:.2f}s)')
+    return probs
 
 
 def norm(w):
@@ -344,6 +358,9 @@ def delayed_mix(items, out, channels=2):
 
 
 def main():
+    fit = narration_fit_problems(SHOTS, VO)
+    if fit:
+        sys.exit('narration no longer fits the shots — regenerate timeline.json and re-render the shots:\n  ' + '\n  '.join(fit))
     # 1) every shot rendered at its planned length (frame count), then video-only copies so the
     #    concat offsets come from the video stream, not the padded silent AAC track Remotion adds
     listfile = os.path.join(BUS, 'concat.txt')
