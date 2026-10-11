@@ -32,6 +32,7 @@ Brand kit `remotion/src/lib/dytbrand.tsx` · episode kit `remotion/src/lib/dykki
 2. `RESEARCH.md` (F-numbered facts + sources) → `work/narration/script.json` → humanizer pass + read-aloud (scene ids `xxNN-…`, second person, open loops, one "Did you know that…" per era).
 3. Copy and adapt `work/{gen_voice.py,make_vo_json.py,build_final.py,qa_final.py,qa_sweep.py}` from episode 01. `python3 work/gen_voice.py` (timestamps) → `python3 work/make_vo_json.py`.
 4. Shots in `remotion/src/shots/dyk-NN/` with a NEW unique shot-ID prefix; durations = VO offset + VO + ~1 s. Use `makeCue(vo, id, offset)`; `at('word', nth)`.
+4b. **Voice pre-flight — must PASS before the first render** (`references/voice-preflight.md`): export `work/cuesheet.json`, run `python3 tools/dyk/voice_preflight.py …`; it fails on speed jumps, rushed/dragged words, run-on sentences, voice entering on a cut, SFX on words and a rushed sign-off. Fix and re-run until PASS — never render on a FAIL.
 5. Stills at cue frames: `node remotion/scripts/stills-at.mjs <dir> Shot:frame,frame` — LOOK at them.
 6. `node remotion/scripts/render-all.mjs <ids…> --scale=1` → `python3 work/build_final.py` → `python3 work/qa_final.py` + `python3 work/qa_sweep.py <master> <dir> 2`.
 7. **Audit loop** (below) until no CRITICAL/HIGH and MEDIUMs fixed → `work/RUBRIC.md` (ship A/S) → HTML audit report → David's watch.
