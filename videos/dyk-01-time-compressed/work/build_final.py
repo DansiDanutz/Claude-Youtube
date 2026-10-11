@@ -12,7 +12,7 @@ Run from anywhere:  python3 videos/dyk-01-time-compressed/work/build_final.py
 """
 import json, os, re, subprocess, sys
 
-ROOT = os.path.expanduser('~/Projects/Claude-Youtube')
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))  # repo root, from this file
 OUT = os.path.join(ROOT, 'remotion', 'out')
 PROJ = os.path.join(ROOT, 'videos', 'dyk-01-time-compressed')
 WORK = os.path.join(PROJ, 'work')

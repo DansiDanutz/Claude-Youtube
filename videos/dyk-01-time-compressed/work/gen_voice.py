@@ -96,6 +96,7 @@ def main():
     only = set(filter(None, os.environ.get("ONLY", "").split(",")))
     durations_path = os.path.join(NARR, "durations.json")
     durations = json.load(open(durations_path)) if os.path.exists(durations_path) else {}
+    rejected = []
     for sc in script["scenes"]:
         sid, text = sc["id"], sc["text"]
         mp3 = os.path.join(NARR, f"{sid}.mp3")
@@ -116,9 +117,17 @@ def main():
             # nudge speed toward the target pace (ElevenLabs accepts 0.7–1.2)
             speed = min(1.2, max(0.7, speed * PACE_TARGET / pace))
         resp, words, probs, speed = best
-        sc["speed"] = round(speed, 3)
+        if probs and os.environ.get("ALLOW_GATE_FAIL") != "1":
+            # hard gate: keep the best attempt for listening, but never as the canonical take
+            with open(os.path.join(NARR, f"{sid}.rejected.mp3"), "wb") as f:
+                f.write(base64.b64decode(resp["audio_base64"]))
+            json.dump(words, open(os.path.join(NARR, f"{sid}.rejected.words.json"), "w"), indent=0)
+            print(f"  !! {sid} REJECTED after {MAX_TRIES} tries: {probs} (rephrase the line, or ALLOW_GATE_FAIL=1 to accept)")
+            rejected.append(sid)
+            continue
         if probs:
-            print(f"  !! {sid} still has issues after {MAX_TRIES} tries: {probs}")
+            print(f"  !! {sid} accepted despite {probs} (ALLOW_GATE_FAIL=1)")
+        sc["speed"] = round(speed, 3)
         with open(mp3, "wb") as f:
             f.write(base64.b64decode(resp["audio_base64"]))
         json.dump(words, open(os.path.join(NARR, f"{sid}.words.json"), "w"), indent=0)
@@ -132,6 +141,8 @@ def main():
     json.dump(durations, open(durations_path, "w"), indent=2)
     json.dump(script, open(os.path.join(NARR, "script.json"), "w"), indent=2)   # remembers the speed that passed
     print("voice done:", round(sum(durations.values()), 1), "s total")
+    if rejected:
+        raise SystemExit(f"hard gate failed for: {', '.join(rejected)}")
 
 
 if __name__ == "__main__":
