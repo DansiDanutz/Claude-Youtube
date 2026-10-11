@@ -11,7 +11,7 @@ Brand kit `remotion/src/lib/dytbrand.tsx` · episode kit `remotion/src/lib/dykki
 ## Non-negotiables
 - **One subject per episode**: how people's behaviour toward it changed per century (1500 → today), how we live with it now, and **2100 from real published data only**, labelled `PREDICTION · a scenario, not a fact`.
 - **Five beats per era**: "You wake up in [exact year], [place]" → "Did you know that…" brand card (one sourced, surprising fact) → how people lived (`DayClock` / `WeekStrip`, labelled illustration) → what changed it → `Cliffhanger` + "NEXT ▸". Every era, including the last before the answer.
-- **Narrator = Brian only** (`gen_voice.py`: voice `nPczCjzI2devNBz1zQrb`, `eleven_flash_v2_5`, stability .42 / similarity .85 / style .30). Never another voice. Only regenerate lines that change (`ONLY=id1,id2`). Uses the ElevenLabs Creator subscription (no overage) — check `/v1/user/subscription` before big batches.
+- **Narrator = Brian only** (`gen_voice.py`: voice `nPczCjzI2devNBz1zQrb`, `eleven_flash_v2_5`, stability .32 / similarity .85 / style .45 — lower stability + more style = livelier, more varied intonation than ep01's .42/.30). Never another voice. Only regenerate lines that change (`ONLY=id1,id2`). Uses the ElevenLabs Creator subscription (no overage) — check `/v1/user/subscription` before big batches.
 - **Brand** = Did You Know That? (real logo/banner in `media/library/logos/dyk-*`), never DansLab logos/URLs. Episode art may reuse DansLab tokens. Signature sting `DytSting` + its fixed sound cues, identical every episode, AFTER the cold-open hook.
 - **Outro ritual**: subject-specific comment prompt · "At the end of every episode, I will read the best comment…" (Comment of the Week) · "Dex-tee dot live" (spell it like that for TTS; show **Dexty.live**) · like / share / subscribe on his words · ONE teaser for the next episode · "Ask... Wonder... Repeat." End screen 15 s: Comment of the Week card (left; real comment from the previous episode with @handle — or a clearly labelled EXAMPLE), WATCH NEXT slot (right), subscribe ring.
 - **Truth**: every on-screen number traces to `RESEARCH.md`; hedge where historians disagree; never fabricate a viewer comment, quote or name. Paid research seats (Story Council) only with David's budget — otherwise research directly with web sources.
@@ -29,7 +29,7 @@ Brand kit `remotion/src/lib/dytbrand.tsx` · episode kit `remotion/src/lib/dykki
    gradient on the key words, white headline, logo top-left, bottom-right clear for the duration badge; ≤ 4 words);
    `YOUTUBE.md` with 3 titles ≤ 60 chars — every title names the episode's core idea (e.g. "Time Compression") AND "2100" (the future is the hook), description (hook, chapters from `timeline.json` starting 0:00, Comment of
    the Week prompt, Dexty.live, next episode, sources, AI-voice note), tags ≤ 500 chars, upload settings.
-   Copy master + thumbnail + YOUTUBE.md to `~/Downloads/` for David's upload.
+   Copy master + thumbnail + YOUTUBE.md to `~/Downloads/` for David's upload. Write the site as plain `Dexty.live` (no `https://`): YouTube marks a description with an external URL invalid until the channel completes its one-time link verification.
 9. After upload: in `~/Projects/Did-You-Know-That/website`: `node tools/add-video.mjs <slug> <youtubeId>` → tests → PR → merge → **manual** `vercel --prod --yes` (merging does not deploy) → verify https://dexty.live.
 
 ## Audit loop (what episode 01 taught us)
@@ -53,12 +53,29 @@ the word(s) spoken, the visual event that answers them, the SFX that marks it. R
 - **Text fits**: long lines wrap inside a 160 px side margin; nothing touches the HUD (bottom 54–110 px) or the
   cliffhanger band (bottom 132).
 - **Payoff words appear on the spoken word** (not at sentence start); cliffhanger bands build part by part.
+- **Re-voicing a line re-opens its shot.** A faster take shortens the shot, so every visual keyed to a fixed frame or a
+  fixed duration (cards, chips, holds, fades) must be re-keyed to words, and the shot re-audited second by second —
+  ep01's livelier re-voice left a 0.9 s card, a near-empty outro opening and text ahead of its words. Keep natural
+  breaths between sentences (≥ 0.3 s; ≥ 0.6 s before a cut/sting) with a data-driven `pauses` step in the mix, never
+  by slowing the voice.
 - After the first full render, run ONE full 1 s audit; after fixes, re-check only the changed seconds with a
   fresh reviewer (tile by tile) — do not re-render untouched shots.
 
 ## Hard gates (automatic — a line or master that fails is rejected, never shipped)
-- **Narration pace**: every line within ±10 % of Brian's story pace (2.9 words/s); `gen_voice.py` retries up to 4× and nudges ElevenLabs `voice_settings.speed` (0.7–1.2) until it passes, and stores the passing speed in `script.json`. Opening and outro lines need ~0.82–0.93 or they rush.
-- **Stretched words**: any word > 1.0 s, or > 0.42 s per syllable mid-sentence, fails (the "railroaaads" drag at 4:12 in ep 01). ElevenLabs alignment HIDES these as long words, not silences — check word durations, not just gaps.
+- **Narration pace — natural, never sleepy** (David, after ep01: the opening sounded slow, "like he is sleepy"):
+  each scene in `script.json` carries its own `pace` target (words/s) and `gen_voice.py` holds the line within ±10 % of
+  THAT target (not one global 2.9). Defaults by beat: cold-open hook / sting lead-in **3.2–3.4** (urgent, curious);
+  welcome / channel intro **3.1–3.2** (warm, upbeat — never slowed to fit); era narration **2.9–3.1**; "Did you know
+  that…" fact and cliffhangers **2.7–2.9** (lean in); the answer/reveal **2.8–3.0** with punch; outro / call to action
+  **3.1–3.2**. Lean-in chunks (facts, cliffhangers) target ~3.0 if 2.7–2.9 would need ElevenLabs speed < 0.85 —
+  speed floor **0.85** for every chunk (ep02 first takes hit 0.70 and sounded drawn out). Speed floor is **0.95** for hook, welcome and outro lines (ep01 used 0.82–0.93 there —
+  that is what made Brian sound sleepy); if a line is too long for its slot, shorten the text, never slow the voice.
+- **Tonality and speed changes inside a line**: write for the ear — short sentences, questions, a one-word beat
+  ("Coffee."), contrasts ("Not of the clock. Of experience."), ellipses only for a real pause. Split a long scene
+  into 2–3 TTS chunks when its mood shifts (e.g. calm set-up → fast list → slow payoff) so each chunk gets its own
+  `pace`/`speed`; stitch them with 0.15–0.35 s gaps in the mix. Listen to the first 30 s of every new episode
+  before rendering; if it sounds flat or slow, fix the voice first.
+- **Stretched words**: any word > 1.0 s, > 0.42 s per syllable mid-sentence, or > 0.55 s per syllable at the end of a sentence fails (the "railroaaads" drag at 4:12 and the "yeeet." at 1:08 in ep 01 — sentence-final words drag too). ElevenLabs alignment HIDES these as long words, not silences — check word durations, not just gaps.
 - **No dips to black**: shots cut hard (2–3 frame fades) and the whoosh carries the cut; voice lead-in 0.5–0.8 s, tail 0.6–0.9 s (longer only for an intentional question beat). `timeline.json` is computed from the narration and drives both shots and `build_final.py`.
 - **QA scripts fail hard**: `qa_final.py` exits 1 on any spec violation (format, A/V ≤ 50 ms, 0 pts gaps, −14 ± 1 LUFS,
   TP ≤ −1 dBTP) and `gen_voice.py` rejects a line still failing its gates after all retries (`<id>.rejected.mp3`,
