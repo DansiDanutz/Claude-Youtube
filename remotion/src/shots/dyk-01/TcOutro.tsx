@@ -12,13 +12,24 @@ import vo from './vo.json';
 // (echo of BUILD. SHIP. REPEAT.), then a ≥5s logo end card for YouTube's end
 // screen. VO tc13 @0.6s.
 // =============================================================================
-export const compositionConfig = { id: 'TcOutro', durationInSeconds: 65.8667, fps: 30, width: 1920, height: 1080 };
-const DUR = 1976;
+export const compositionConfig = { id: 'TcOutro', durationInSeconds: 62.8000, fps: 30, width: 1920, height: 1080 };
+const DUR = 1884;
 
 const C = makeCue(vo, 'tc13-outro', 0.6);
-const THIS = C.at('This');
 const DID = C.at('Did');
+const BEST = C.at('best');
+const IF = C.at('If');
 const DEAL = C.at('deal');
+const FACTS = C.at('facts');
+const GUESSING = C.at('guessing');
+const CHANGED = C.at('changed');
+const WHICH = C.at('which');
+const WHY = C.at('why');
+const AS = C.at('as');
+const FRIEND = C.at('friend');
+const MYSTERY = C.at('mystery');
+const CHIP_STEP = 6;
+const LOGO_SHIFT = 300; // half the wordmark width + gap: the logo's offset from the lockup's centre   // the highlight walks across the seven centuries while he asks
 const COMMENT1 = C.at('comment', 1);
 const RIGHT = C.at('right');
 const SUBJECT = C.at('subject');
@@ -59,13 +70,13 @@ const Action: React.FC<{ label: string; at: number; primary?: boolean; icon: Rea
 
 const TcOutro: React.FC = () => {
   const f = useCurrentFrame();
-  const fadeIn = ease(f, -1, 2);
-  const fadeOut = ease(f, DUR - 18, DUR - 1, 1, 0, DL_EASE.in);
+  const fadeIn = 1;   // hard cut in: picture on frame 0, the whoosh carries the cut
+  const fadeOut = ease(f, DUR - 12, DUR - 1, 1, 0, DL_EASE.in);
   const p1 = 1 - ease(f, NEXT - 14, NEXT, 0, 1, DL_EASE.in);
   const p2 = ease(f, NEXT - 2, NEXT + 12) * (1 - ease(f, END + 10, END + 26, 0, 1, DL_EASE.in));
-  const p3 = ease(f, ES - 4, ES + 14);
+  const p3 = ease(f, ES - 4, ES + 8);   // end screen at full opacity ES+8 → DUR−12 (≥ 15 s)
   const commentPulse = f > COMMENTS ? 0.5 + 0.5 * Math.sin((f - COMMENTS) / 5) : 0;
-  // opening lockup: EPISODE 01 on "This was episode one", logo + wordmark on "Did You Know That",
+  // opening lockup: EPISODE 01 + logo from frame 0, the wordmark on "Did You Know That",
   // the title on "Time, Compressed" — then it shrinks away as the small header takes over on "turn"
   const lockOut = ease(f, TURN - 16, TURN - 2, 0, 1, DL_EASE.inOut);
   const hereFlash = ease(f, RIGHT, RIGHT + 4) * (1 - ease(f, RIGHT + 8, RIGHT + 28));
@@ -77,9 +88,11 @@ const TcOutro: React.FC = () => {
       <Vignette />
 
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: 1 - lockOut, transform: `translateY(${-lockOut * 220}px) scale(${1 - lockOut * 0.5})` }}>
-        <div style={{ ...rise(f, THIS - 2), fontFamily: DL_MONO, fontSize: 34, letterSpacing: 12, color: DL.red }}>EPISODE 01</div>
+        {/* picture on frame 0 (hard cut with the whoosh): EPISODE 01 and the logo are there from the first frame */}
+        <div style={{ fontFamily: DL_MONO, fontSize: 34, letterSpacing: 12, color: DL.red }}>EPISODE 01</div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 50, marginTop: 30, height: 260 }}>
-          <div style={{ opacity: ease(f, DID - 6, DID) }}><DytLogoAnimated size={220} start={DID - 6} /></div>
+          {/* the logo sits centred alone from "episode" and slides left as the wordmark lands on "Did" */}
+          <div style={{ transform: `translateX(${LOGO_SHIFT * (1 - ease(f, DID - 8, DID + 2, 0, 1, DL_EASE.inOut))}px)` }}><DytLogoAnimated size={220} start={-20} /></div>
           <DytWordmark at={DID} size={96} />
         </div>
         <div style={{ ...rise(f, TITLE - 2), marginTop: 40, fontFamily: DL_SERIF, fontSize: 110, color: DL.text }}>
@@ -96,7 +109,11 @@ const TcOutro: React.FC = () => {
 
         <div style={{ ...rise(f, TURN - 2), marginTop: 50, width: 1400, padding: '34px 44px', background: DL.panel, border: `1px solid ${hereFlash > 0.01 ? DYT.magenta : DL.border}`, boxShadow: `0 0 ${50 * hereFlash}px ${DYT.magenta}`, borderRadius: 18, boxSizing: 'border-box' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span style={{ fontFamily: DL_SERIF, fontSize: 56, color: DL.text }}>Which century would <span style={{ color: DL.gold, fontStyle: 'italic' }}>you</span> choose?</span>
+            {/* "If you could wake up in any century…" sets it up; the question itself lands on "which" */}
+            <div style={{ position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, top: 18, whiteSpace: 'nowrap', opacity: ease(f, IF - 2, IF + 8) * (1 - ease(f, WHICH - 6, WHICH)), fontFamily: DL_MONO, fontSize: 28, letterSpacing: 4, color: DL.dim }}>IF YOU COULD WAKE UP IN ANY CENTURY…</span>
+              <span style={{ opacity: ease(f, WHICH - 2, WHICH + 8), fontFamily: DL_SERIF, fontSize: 48, color: DL.text }}>Which century would <span style={{ color: DL.gold, fontStyle: 'italic' }}>you</span> choose?<span style={{ opacity: ease(f, WHY - 2, WHY + 8), color: DL.gold, fontStyle: 'italic' }}> And why?</span></span>
+            </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, opacity: ease(f, COMMENTS - 4, COMMENTS + 6), transform: `scale(${1 + commentPulse * 0.05})` }}>
               <svg width={44} height={44} viewBox="0 0 44 44"><path d="M6 8 H38 V30 H18 L10 38 V30 H6 Z" fill="none" stroke={DL.red} strokeWidth={4} strokeLinejoin="round" /></svg>
               <span style={{ fontFamily: DL_MONO, fontSize: 28, letterSpacing: 4, color: DL.red }}>COMMENTS ↓</span>
@@ -106,15 +123,18 @@ const TcOutro: React.FC = () => {
             {YEARS.map((y, i) => {
               const at = CENTURY + 6 + i * 6;
               const s = interpolate(f, [at, at + 8], [0.7, 1], { ...DCLAMP, easing: DL_EASE.out });
+              const sweeping = f >= WHICH && f < BEST - 2;   // walks on through "Here is the deal"
+              const hl = sweeping && Math.floor((f - WHICH) / CHIP_STEP) % YEARS.length === i ? 1 : 0;
               return (
-                <div key={y} style={{ opacity: ease(f, at, at + 6), transform: `scale(${s})`, padding: '14px 24px', borderRadius: 12, border: `2px ${i === 6 ? 'dashed' : 'solid'} ${i === 6 ? DL.red : DL.gold}`, fontFamily: DL_SERIF, fontSize: 44, color: i === 6 ? DL.red : DL.gold }}>{y}</div>
+                <div key={y} style={{ opacity: ease(f, at, at + 6), transform: `scale(${s * (1 + hl * 0.1)})`, background: hl ? (i === 6 ? `${DL.red}33` : `${DL.gold}33`) : 'transparent', padding: '14px 24px', borderRadius: 12, border: `2px ${i === 6 ? 'dashed' : 'solid'} ${i === 6 ? DL.red : DL.gold}`, fontFamily: DL_SERIF, fontSize: 44, color: i === 6 ? DL.red : DL.gold }}>{y}</div>
               );
             })}
           </div>
           {/* the deal, piece by piece on his words: the chip on "deal", the promise on "comment",
               the subject → a future episode on "subject" / "episode" */}
           <div style={{ marginTop: 22, display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' }}>
-            <span style={{ ...rise(f, DEAL - 2), padding: '10px 20px', borderRadius: 999, background: DYT.magenta, fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 24, letterSpacing: 2, color: DYT.white }}>COMMENT OF THE WEEK</span>
+            <span style={{ opacity: ease(f, DEAL - 2, DEAL + 6), fontFamily: DL_MONO, fontSize: 24, letterSpacing: 3, color: DYT.magenta }}>THE DEAL:</span>
+            <span style={{ ...rise(f, BEST - 2), padding: '10px 20px', borderRadius: 999, background: DYT.magenta, fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 24, letterSpacing: 2, color: DYT.white }}>COMMENT OF THE WEEK</span>
             <span style={{ opacity: ease(f, COMMENT1 - 2, COMMENT1 + 6), fontFamily: DL_MONO, fontSize: 24, letterSpacing: 2, color: DL.dim }}>best comment read on screen</span>
             <span style={{ opacity: ease(f, SUBJECT - 2, SUBJECT + 6), fontFamily: DL_MONO, fontSize: 24, letterSpacing: 2, color: DL.dim }}>· the subject you ask for most</span>
             <span style={{ opacity: ease(f, EPISODE3 - 2, EPISODE3 + 6), fontFamily: DL_MONO, fontSize: 24, letterSpacing: 2, color: DYT.green }}>→ a future episode</span>
@@ -129,11 +149,20 @@ const TcOutro: React.FC = () => {
             ))}
           </span>
           <span style={{ fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 46, color: DYT.white, textShadow: `0 0 20px ${DYT.magenta}aa` }}>Dexty.live</span>
+          {[['FACT CARDS', FACTS], ['GUESSING GAME', GUESSING]].map(([t, at]) => (
+            <span key={String(t)} style={{ opacity: ease(f, Number(at) - 2, Number(at) + 6), transform: `scale(${interpolate(f, [Number(at), Number(at) + 8], [1.3, 1], { ...DCLAMP, easing: DL_EASE.out })})`, padding: '6px 14px', borderRadius: 999, border: `2px solid ${DYT.cyan}`, fontFamily: DYT_DISPLAY, fontWeight: 800, fontSize: 20, letterSpacing: 2, color: DYT.cyan }}>{t}</span>
+          ))}
         </div>
         <div style={{ display: 'flex', gap: 34, marginTop: 40 }}>
           <Action label="Like" at={LIKE} icon={<svg width={34} height={34} viewBox="0 0 34 34"><path d="M4 15 H10 V30 H4 Z M12 30 V15 L18 4 C21 4 22 6 21 10 L20 13 H29 C31 13 32 15 31 17 L28 28 C27.5 29.5 26.5 30 25 30 Z" fill={DL.text} /></svg>} />
           <Action label="Share" at={SHARE} icon={<svg width={34} height={34} viewBox="0 0 34 34"><path d="M20 6 L31 16 L20 26 V20 C12 20 7 23 3 29 C4 20 9 13 20 12 Z" fill={DL.text} /></svg>} />
           <Action label="Subscribe" at={SUB} primary icon={<svg width={34} height={34} viewBox="0 0 34 34"><rect x={2} y={7} width={30} height={20} rx={6} fill={DL.bg} /><path d="M14 12 L22 17 L14 22 Z" fill={DL.gold} /></svg>} />
+        </div>
+        {/* a beat on each phrase while the buttons hold */}
+        <div style={{ display: 'flex', gap: 30, marginTop: 22, fontFamily: DL_SANS, fontSize: 26, color: DL.warm }}>
+          <span style={{ opacity: ease(f, CHANGED - 2, CHANGED + 8), color: DL.dim }}>changed how you see an hour?</span>
+          <span style={{ opacity: ease(f, FRIEND - 2, FRIEND + 8) }}>→ the friend who is always out of time</span>
+          <span style={{ opacity: ease(f, MYSTERY - 2, MYSTERY + 8), color: DL.gold }}>so the next mystery finds you</span>
         </div>
       </AbsoluteFill>
 
@@ -143,7 +172,7 @@ const TcOutro: React.FC = () => {
         <div style={{ display: 'flex', alignItems: 'center', gap: 50, marginTop: 34 }}>
           <div style={{ ...rise(f, SUN - 4), width: 170, height: 170, borderRadius: '50%', background: `radial-gradient(circle at 40% 40%, #ffe08a, ${DL.gold} 55%, #b85c00)`, boxShadow: `0 0 ${60 + 20 * Math.sin(f / 10)}px ${DL.gold}88` }} />
           <div style={{ ...rise(f, SUN), width: 1100, fontFamily: DL_SERIF, fontSize: 76, lineHeight: 1.15, color: DL.text }}>
-            The Sun you see in the sky is <span style={{ color: DL.gold, fontStyle: 'italic', opacity: ease(f, NOT - 2, NOT + 8) }}>not the Sun as it is right now.</span>
+            The Sun you see in the sky is <span style={{ color: DL.gold, fontStyle: 'italic', opacity: ease(f, NOT - 2, NOT + 8) }}>not the Sun</span><span style={{ color: DL.gold, fontStyle: 'italic', opacity: ease(f, AS - 2, AS + 8) }}> as it is right now.</span>
           </div>
         </div>
         <div style={{ display: 'flex', gap: 46, marginTop: 90, fontFamily: DL_MONO, fontSize: 46, letterSpacing: 4 }}>

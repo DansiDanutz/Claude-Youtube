@@ -5,19 +5,25 @@
       "id": "tc01-hook",
       "shot": "TcHook",
       "text": "In the year fifteen hundred, the fastest any message could travel was the speed of a horse. Today, a message crosses the Atlantic in less than a tenth of a second.",
-      "speed": 0.82
+      "speed": 0.95,
+      "pace": 3.3,
+      "speed_min": 0.95
     },
     {
       "id": "tc02-question",
       "shot": "TcHook",
       "text": "We have saved more time than any generation in history. So why does every one of us feel like we are running out of it? Did you know that time itself has been compressing for five hundred years?",
-      "speed": 0.809
+      "speed": 0.95,
+      "pace": 3.2,
+      "speed_min": 0.95
     },
     {
       "id": "tc03-promise",
       "shot": "TcPromise",
-      "text": "Here is the experiment. Seven centuries. Six mornings, and one that has not happened yet. In each one, you will wake up as someone else, and see how people really lived with time. By the end, you will know exactly where the time went, and what the year twenty one hundred could take next.",
-      "speed": 0.88
+      "text": "Here is the experiment. Seven centuries. Six mornings, and one that has not happened yet. In each one, you will wake up as someone else, and see how people really lived with time. By the end, you will know exactly where the time went, and what could be taken next, in the year twenty one hundred.",
+      "speed": 0.95,
+      "pace": 3.0,
+      "speed_min": 0.95
     },
     {
       "id": "tc04-1500",
@@ -63,26 +69,47 @@
     {
       "id": "tc12-close",
       "shot": "TcClose",
-      "text": "Time cannot be slowed down. But it can be stretched, one new memory at a time. So tell me. When was the last time you did something for the very first time?",
-      "speed": 0.9
+      "text": "Time cannot be slowed down. But it can be stretched, one new memory at a time. So, tell me: when was the last time you did something for the very first time?",
+      "speed": 0.95,
+      "pace": 2.9,
+      "speed_min": 0.95
     },
     {
       "id": "tc13-outro",
       "shot": "TcOutro",
       "text": "This was episode one of Did You Know That. Time, Compressed. Now it is your turn. If you could wake up in any century, from fifteen hundred to twenty one hundred, which would you choose, and why? Tell me in the comments. Here is the deal. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. And on our website, Dex-tee dot live, you can watch every episode, collect the facts, and play the guessing game. If this changed how you see a single hour, like it, share it with the friend who is always out of time, and subscribe, so the next mystery finds you. Next time: the Sun you see in the sky is not the Sun as it is right now. Ask... Wonder... Repeat.",
-      "speed": 0.93
+      "speed": 1.117,
+      "pace": 3.15,
+      "speed_min": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.35
+      }
     },
     {
       "id": "tc00-welcome",
       "shot": "TcWelcome",
-      "text": "Welcome to Did You Know That. Every video here starts with a question you have never asked, and ends with an answer you will never forget. Science. History. Space. The human mind. The things nobody taught you, and the things that make your day a little better. And here is the rule. Before the answer, make your guess in the comments. Then stay to the end, and find out if you were right. Ready? Let's begin.",
-      "speed": 0.92
+      "text": "Welcome to Did You Know That. Every video here starts with a question you have never asked, and ends with an answer you will never forget. Science, history, space, the human mind. The things nobody taught you, and the things that make your day a little better. And here is the rule: before the answer, make your guess in the comments. Then stay to the end, and find out if you were right. Ready? Let's begin.",
+      "speed": 1.0,
+      "pace": 3.15,
+      "speed_min": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.35,
+        "after": [
+          {
+            "word": "rule:",
+            "nth": 1,
+            "add": 0.25
+          }
+        ]
+      }
     },
     {
       "id": "tc14-endscreen",
       "shot": "TcOutro",
       "text": "Next time, this could be your comment. Pick a mystery, and I will see you there.",
-      "speed": 0.83
+      "speed": 0.95,
+      "pace": 3.1,
+      "speed_min": 0.95
     }
   ]
 }

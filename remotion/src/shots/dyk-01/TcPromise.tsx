@@ -9,7 +9,7 @@ import vo from './vo.json';
 // Seven nodes on "Seven centuries", a life above each on "Seven lives", the
 // measurement on "measurement", 2100 pulses on "twenty one hundred". VO tc03 @0.5s.
 // =============================================================================
-export const compositionConfig = { id: 'TcPromise', durationInSeconds: 20.4333, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'TcPromise', durationInSeconds: 18.7333, fps: 30, width: 1920, height: 1080 };
 
 const C = makeCue(vo, 'tc03-promise', 0.5);
 const EXP = C.at('experiment');
@@ -18,7 +18,8 @@ const LIVES = C.at('mornings');
 const MEAS = C.at('someone');
 const IN_EACH = C.at('In');
 const WAKE = C.at('wake');
-const LIVED = C.at('lived');
+const LIVED = C.at('people');   // the lives light up from "see how people really lived"
+const YET = C.at('yet');   // "one that has not happened yet": the 2100 figure pulses
 const WHERE = C.at('where');
 const LIGHT_STEP = 12; // frames between the seven lives lighting up (matches the ui-click ticks)
 const Y2100 = C.at('twenty');
@@ -34,7 +35,7 @@ const Person: React.FC<{ color: string }> = ({ color }) => (
 
 const TcPromise: React.FC = () => {
   const f = useCurrentFrame();
-  const fade = useShotFade(613);
+  const fade = useShotFade(562);
   const reveal = YEARS.map((_, i) => CENT - 6 + i * 5);
   const q = ease(f, Y2100, Y2100 + 14);
   const pulse = f > Y2100 ? 0.5 + 0.5 * Math.sin((f - Y2100) / 6) : 0;
@@ -63,8 +64,9 @@ const TcPromise: React.FC = () => {
           const at = LIVES + i * 4;
           const isLast = i === 6;
           const lit = ease(f, LIVED + i * LIGHT_STEP, LIVED + i * LIGHT_STEP + 6);
+          const yetPulse = isLast ? ease(f, YET - 2, YET + 4) * (1 - ease(f, YET + 8, YET + 26)) : 0;
           return (
-            <div key={y} style={{ position: 'absolute', left: i * GAP, transform: `translateX(-50%) translateY(${ease(f, at, at + 12, 20, 0)}px)`, opacity: ease(f, at, at + 12) * (isLast ? 0.85 : 1), filter: lit > 0 ? `drop-shadow(0 0 ${14 * lit}px ${isLast ? DL.red : DL.gold})` : undefined }}>
+            <div key={y} style={{ position: 'absolute', left: i * GAP, transform: `translateX(-50%) translateY(${ease(f, at, at + 12, 20, 0)}px) scale(${1 + 0.35 * yetPulse})`, opacity: ease(f, at, at + 12) * (isLast ? 0.85 + 0.15 * yetPulse : 1), filter: yetPulse > 0.01 ? `drop-shadow(0 0 ${24 * yetPulse}px ${DL.red})` : lit > 0 ? `drop-shadow(0 0 ${14 * lit}px ${isLast ? DL.red : DL.gold})` : undefined }}>
               <Person color={isLast ? DL.red : lit > 0.5 ? DL.gold : DL.warm} />
             </div>
           );

@@ -11,10 +11,11 @@ import vo from './vo.json';
 // running out) and the question, with "compressing" squeezing on its word.
 // VO tc01 @0.6s, tc02 @9.9s. Facts: RESEARCH F1, F14.
 // =============================================================================
-export const compositionConfig = { id: 'TcHook', durationInSeconds: 24.8333, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'TcHook', durationInSeconds: 21.3, fps: 30, width: 1920, height: 1080 };
 
 const A = makeCue(vo, 'tc01-hook', 0.5);
-const B = makeCue(vo, 'tc02-question', 11.44);
+const B = makeCue(vo, 'tc02-question', 9.49);
+const DUR = 639;
 
 const HORSE = A.at('horse');
 const TODAY = A.at('Today');
@@ -24,6 +25,7 @@ const SPLIT_OUT = B.start - 10;
 const SAVED = B.at('saved');
 const RUNNING = B.at('running');
 const SOWHY = B.at('So');
+const GENERATION = B.at('generation');
 const DYK = B.at('Did');
 const COMPRESS = B.at('compressing');
 const FIVE = B.at('five');
@@ -61,7 +63,7 @@ const Hourglass: React.FC<{ level: number; size?: number }> = ({ level, size = 2
 
 const TcHook: React.FC = () => {
   const f = useCurrentFrame();
-  const fade = ease(f, 745 - 3, 745, 1, 0); // no fade-in: the paradox is on screen at frame 0 (Law 1)
+  const fade = ease(f, DUR - 3, DUR, 1, 0); // no fade-in: the paradox is on screen at frame 0 (Law 1)
 
   // left: the message crawls at horse pace for the whole first beat
   const horseX = interpolate(f, [0, SPLIT_OUT], [110, 330], DCLAMP);
@@ -108,7 +110,7 @@ const TcHook: React.FC = () => {
       <AbsoluteFill style={{ opacity: paradoxOut, alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 120 }}>
           {/* the arrow sits centred alone until "So", then slides left to make room */}
-          <div style={{ opacity: rise(f, SAVED).opacity, transform: `translate(${ARROW_SHIFT * (1 - ease(f, SOWHY - 4, SOWHY + 8, 0, 1, DL_EASE.inOut))}px, ${ease(f, SAVED, SAVED + 15, 26, 0)}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18 }}>
+          <div style={{ opacity: rise(f, SAVED).opacity, transform: `translate(${ARROW_SHIFT * (1 - ease(f, SOWHY - 4, SOWHY + 8, 0, 1, DL_EASE.inOut))}px, ${ease(f, SAVED, SAVED + 15, 26, 0)}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18, position: 'relative' }}>
             <svg width={200} height={240} viewBox="0 0 200 240">
               {(() => {
                 const tip = 230 - ease(f, SAVED, SAVED + 30, 20, 200);
@@ -121,6 +123,7 @@ const TcHook: React.FC = () => {
               })()}
             </svg>
             <span style={{ fontFamily: DL_MONO, fontSize: 30, letterSpacing: 6, color: DL.green }}>TIME SAVED</span>
+            <span style={{ position: 'absolute', top: '100%', left: '50%', marginTop: 14, opacity: ease(f, GENERATION - 2, GENERATION + 10), transform: `translate(-50%, ${ease(f, GENERATION - 2, GENERATION + 10, 12, 0)}px)`, fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 34, color: DL.dim, whiteSpace: 'nowrap' }}>more than any generation</span>
           </div>
           <span style={{ ...rise(f, SOWHY - 4), fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 90, color: DL.dim }}>yet</span>
           <div style={{ ...rise(f, SOWHY + 4), display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18 }}>

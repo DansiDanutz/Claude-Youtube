@@ -12,8 +12,8 @@ import vo from './vo.json';
 // viewers into players — guess in the comments, stay to the end, see if you
 // were right. Every reveal lands on its word.
 // =============================================================================
-export const compositionConfig = { id: 'TcWelcome', durationInSeconds: 30, fps: 30, width: 1920, height: 1080 };
-const DUR = 900;
+export const compositionConfig = { id: 'TcWelcome', durationInSeconds: 27.0667, fps: 30, width: 1920, height: 1080 };
+const DUR = 812;
 
 const C = makeCue(vo, 'tc00-welcome', 0.5);
 const WELCOME = C.at('Welcome');
@@ -33,7 +33,9 @@ const BETTER = C.at('better');
 const RULE = C.at('rule');
 const GUESS = C.at('guess');
 const STAY = C.at('stay');
-const RIGHT = C.at('right');
+// CHECK lands on "find out if you were right" so it holds ≥ 1.5 s before "Ready?"
+const FIND = C.at('find');
+const BEFORE = C.at('before');
 const COMMENTS = C.at('comments');
 const READY = C.at('Ready');
 const BEGIN = C.at('begin');
@@ -54,11 +56,12 @@ const TcWelcome: React.FC = () => {
   const f = useCurrentFrame();
   const fade = Math.min(ease(f, -1, 2), ease(f, DUR - 3, DUR, 1, 0));
   // panels cross-fade (incoming starts before outgoing ends) so a join never dips to empty
-  const p1a = 1 - ease(f, QUESTION - 8, QUESTION);
+  const p1a = 1 - ease(f, QUESTION - 6, QUESTION);
   const p1b = ease(f, QUESTION - 6, QUESTION + 2) * (1 - ease(f, CATS[0][2] - 8, CATS[0][2]));
   const p2 = ease(f, CATS[0][2] - 6, CATS[0][2] + 2) * (1 - ease(f, RULE - 8, RULE));
-  const p3 = ease(f, RULE - 6, RULE + 2) * (1 - ease(f, READY - 8, READY));
-  const p4 = ease(f, READY - 6, READY + 2);
+  // CHECK holds until "Ready?" (≥ 1.6 s after it lands); "Ready?" comes in ON its word
+  const p3 = ease(f, RULE - 6, RULE + 2) * (1 - ease(f, READY, READY + 6));
+  const p4 = ease(f, READY, READY + 6);
   const comments = ease(f, COMMENTS - 2, COMMENTS + 6);
   const nudge = f > COMMENTS ? Math.abs(Math.sin((f - COMMENTS) / 4)) * 8 * Math.max(0, 1 - (f - COMMENTS) / 40) : 0;
   const morph = ease(f, ANSWER - 4, ANSWER + 12);
@@ -80,7 +83,7 @@ const TcWelcome: React.FC = () => {
       <AbsoluteFill style={{ opacity: p1b, alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 90 }}>
           {[['?', 'A QUESTION YOU NEVER ASKED', DYT.magenta, QUESTION], ['!', 'AN ANSWER YOU WON’T FORGET', DYT.orange, ANSWER]].map(([g, label, color, at], i) => (
-            <div key={String(g)} style={{ opacity: rise(f, Number(at) - 2).opacity, transform: `translate(${i === 0 ? Q_SHIFT * (1 - ease(f, ANSWER - 8, ANSWER + 4, 0, 1, DL_EASE.inOut)) : 0}px, ${ease(f, Number(at) - 2, Number(at) + 13, 26, 0)}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 26 }}>
+            <div key={String(g)} style={{ opacity: rise(f, Number(at) - (i === 0 ? 4 : 2)).opacity, transform: `translate(${i === 0 ? Q_SHIFT * (1 - ease(f, ANSWER - 8, ANSWER + 4, 0, 1, DL_EASE.inOut)) : 0}px, ${ease(f, Number(at) - (i === 0 ? 4 : 2), Number(at) + 13, 26, 0)}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 26 }}>
               <div style={{ width: 340, height: 340, borderRadius: 40, border: `5px solid ${color}`, boxShadow: `0 0 ${30 + (i === 1 ? morph * 40 : 0)}px ${color}88, inset 0 0 40px ${color}33`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 250, color: DYT.white, textShadow: `0 0 30px ${color}` }}>{g}</div>
               <span style={{ fontFamily: DYT_DISPLAY, fontWeight: 800, fontSize: 30, letterSpacing: 3, color: String(color) }}>{label}</span>
             </div>
@@ -114,8 +117,9 @@ const TcWelcome: React.FC = () => {
       {/* THE RULE — the viewer's game */}
       <AbsoluteFill style={{ opacity: p3, alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ ...rise(f, RULE - 4), fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 96, letterSpacing: 4, color: DYT.white, textShadow: `0 0 30px ${DYT.magenta}aa` }}>THE RULE</div>
+        <div style={{ ...rise(f, BEFORE - 2), marginTop: 10, fontFamily: DYT_BODY, fontWeight: 600, fontSize: 34, color: DYT.dim }}>before the answer…</div>
         <div style={{ display: 'flex', gap: 46, marginTop: 60 }}>
-          {[['1', 'GUESS', 'in the comments ↓', DYT.cyan, GUESS], ['2', 'STAY', 'to the very end', DYT.purple, STAY], ['3', 'CHECK', 'were you right?', DYT.orange, RIGHT]].map(([n, big, small, color, at]) => {
+          {[['1', 'GUESS', 'in the comments ↓', DYT.cyan, GUESS], ['2', 'STAY', 'to the very end', DYT.purple, STAY], ['3', 'CHECK', 'were you right?', DYT.orange, FIND]].map(([n, big, small, color, at]) => {
             const s = interpolate(f, [Number(at), Number(at) + 8], [1.25, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
             return (
               <div key={String(n)} style={{ opacity: ease(f, Number(at) - 2, Number(at) + 5), transform: `scale(${s})`, width: 440, padding: '40px 0', borderRadius: 28, border: `4px solid ${color}`, boxShadow: `0 0 34px ${color}66`, background: '#0b103099', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
@@ -131,7 +135,7 @@ const TcWelcome: React.FC = () => {
 
       {/* ready → begin */}
       <AbsoluteFill style={{ opacity: p4, alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ ...rise(f, READY - 2), fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 170, color: DYT.white, textShadow: `0 0 40px ${DYT.orange}aa` }}>Ready?</div>
+        <div style={{ ...rise(f, READY), fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 170, color: DYT.white, textShadow: `0 0 40px ${DYT.orange}aa` }}>Ready?</div>
         <div style={{ ...rise(f, BEGIN - 4), marginTop: 20, padding: '18px 44px', borderRadius: 999, background: DYT_GRADIENT, fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 44, letterSpacing: 4, color: DYT.white }}>LET’S BEGIN</div>
       </AbsoluteFill>
     </AbsoluteFill>
