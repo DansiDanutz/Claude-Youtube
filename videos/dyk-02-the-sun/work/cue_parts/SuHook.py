@@ -1,0 +1,33 @@
+# SuHook — v2 cues (one line per visual event; see cues.py header for the format)
+a, b = 'su01-hook', 'su02-question'
+# beat 1: 08:00 — but this light is 8 min 20 s old
+c(S('SuHook', 0.0), 'wind-soft', 0.30, 'sunrise + clock 08:00:00 on screen')
+c(W(a, 'eight', 1), 'clock-tick-soft', 0.30, 'clock 08:00:00 pulses')
+c(W(a, 'warm'), 'warm-shimmer', 0.26, 'silhouette on the horizon catches the light')
+c(W(a, 'light'), 'sparkle-soft', 0.22, 'a ray of sunlight reaches your face')
+c(W(a, 'left'), 'pop-reveal', 0.30, '"THIS LIGHT LEFT THE SUN AT" card')
+c(W(a, 'eight', 2), 'ui-send', 0.32, 'photon leaves the Sun; digits roll back')
+c(W(a, 'ago'), 'stamp-hit', 0.34, 'digits land on 07:51:40; label 8 MIN 20 S')
+c(W(a, 'vanished'), 'whoosh-reverse', 0.32, 'the Sun goes out (dashed outline)')
+c(W(a, 'know'), 'whoosh-soft', 0.20, 'beam clears; YOU WOULDN\'T KNOW FOR 08:20 under the dashed Sun')
+for k in (0, 1, 2):
+    c(W(a, "You'd", 1, shift=float(k)), 'clock-tick-soft', 0.24, f'countdown ticks (08:{20 - k:02d} pulse)')
+c(W(a, 'see'), 'warm-shimmer', 0.24, 'the horizon glow brightens under the dashed Sun')
+c(W(a, 'feel'), 'sparkle-soft', 0.20, 'your face glows again')
+c(W(a, 'eight', 3), 'knock-solid', 0.28, 'countdown turns gold: 8 MORE MINUTES')
+c(W(a, "You'd", 1, shift=4.0), 'clock-tick-soft', 0.22, 'countdown ticks (08:16)')
+# beat 2: then and now
+c(W(b, 'Five'), 'whoosh-soft', 0.28, 'beat 1 clears; split: 1500 panel | right panel with a faint ?')
+c(W(b, 'Sun', 1), 'warm-shimmer', 0.22, '1500: the Sun rises')
+c(W(b, 'up'), 'pop-reveal', 0.24, '1500: a figure stands; GET UP')
+c(W(b, 'sleep'), 'whoosh-soft', 0.22, '1500: the Sun sets, the figure lies down; SLEEP')
+c(W(b, 'Today'), 'ui-click-soft', 0.24, 'right panel: ? gives way to Today + solar panel')
+c(W(b, 'electricity'), 'ui-toggle-on', 0.30, 'the panel lights the bulb; ELECTRICITY')
+c(W(b, 'still'), 'whoosh-soft', 0.20, 'panels clear; the Sun drops in')
+# beat 3: the question
+c(W(b, 'did'), 'ui-toggle-on', 0.24, 'DID YOU KNOW THAT… line')
+c(W(b, 'never'), 'ui-click-soft', 0.22, '"you have never once"')
+c(W(b, 'seen'), 'ui-click-soft', 0.22, '"seen the Sun"')
+c(W(b, 'right', shift=-1.36), 'riser-soft', 0.32, '(riser into the payoff; the Sun swells)')
+c(W(b, 'right'), 'impact-deep-soft', 0.50, '"as it is right now?" lands')
+c(W('su02-question', 'as'), 'ui-click-soft', 0.14, '"as it is…" fades in (payoff "right now?" waits for "right")')

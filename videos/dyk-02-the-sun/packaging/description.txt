@@ -1,24 +1,23 @@
-It is eight o'clock in the morning and the Sun is warm on your face. But that light left the Sun 8 minutes and 20 seconds ago. If the Sun vanished right now, you would not know.
+It's eight o'clock and the Sun is warm on your face. But that light left the Sun 8 minutes and 20 seconds ago. If the Sun vanished right now, you'd still see it and still feel it, for eight more minutes.
 
-And in 2100? We follow the published evidence (a Caltech satellite that beamed power in space, the IEA's solar roadmaps) to one scenario for how we could live with the Sun, clearly labelled as a prediction, not a fact.
+And in 2100? Every video you watch and every question you ask an AI runs in a data centre. The IEA expects data-centre electricity to more than double by 2030. So what will the Sun be to us next? We follow the published evidence to one scenario, clearly labelled as a prediction, not a fact.
 
-Wake up seven times (1500, 1610, 1752, 1800, 1928, today and 2100) and see how people really behaved toward the Sun: Midsummer bonfires in Tudor London, the first telescope drawing of sunspots, white-lead face paint and parasols, Herschel's invisible light, the suntan myth, the Parker Solar Probe. Then the answer: how old the energy in that light really is.
+Wake up seven times (1500, 1610, 1779, 1800, 1928, today and 2100) and watch how people's relationship with the Sun climbed, rung by rung: day and night, something to watch, something to explain, something to measure, the source of every meal, power we harvest. Midsummer bonfires in Tudor London, the first telescope drawing of sunspots, white-lead face paint and parasols, leaves that bubble in sunlight, Herschel's invisible light, the suntan myth, photosynthesis, solar power almost 11 times bigger in ten years. Then the answer: how old the energy in that light really is.
 
 CHAPTERS
 0:00 The question
-0:21 Did You Know That?
-0:29 Welcome back
-0:44 The experiment
-1:00 1500 · Midsummer in London
-1:51 1610 · The first sunspot drawing
-2:42 1752 · Pale faces and parasols
-3:33 1800 · The light beyond red
-4:25 1928 · The suntan myth
-5:13 Today · We touched the Sun
-6:02 The answer
-6:48 2100 · Prediction
-7:38 One question for you
-8:35 Comment of the Week
+0:36 Welcome back
+0:53 Seven mornings
+1:13 1500 · Day and night
+2:12 1610 · Something to watch
+3:10 1779 · Something to explain
+4:08 1800 · Something to measure
+5:08 1928 · Every meal is sunlight
+6:12 Today · Power we harvest
+7:07 The answer
+7:59 2100 · Prediction
+9:04 One question for you
+9:14 Comment of the Week
 
 COMMENT OF THE WEEK
 In which century would you rather watch the Sun rise? Tell me in the comments. I read the best comment at the end of the next episode, and the subject you ask for most becomes a future episode.
@@ -28,8 +27,8 @@ Watch every episode, collect the facts and play the guessing game: Dexty.live
 Next episode: School. How did a day in class change from 1500 to today, and will the classrooms of 2100 even exist?
 
 SOURCES
-NASA, Sun facts (distance, energy from the core, about 5 billion years left) · Ptolemy, Almagest · Copernicus, De revolutionibus (1543) · John Stow, A Survey of London (1598/1603) · Thomas Harriot's notebooks (8 Dec 1610) and HAO/UCAR · Galileo, Letters on Sunspots (Rome, 1613) · V&A collections, Maria Gunning · Fashion, Costume, and Culture: Parasols · Newton, Opticks (1704) · NASA Space Place and Caltech IPAC, Herschel's 1800 experiment · Becquerel Prize, Edmond Becquerel (1839) · NOAA, the 1859 Carrington event · Kerry Segrave, Suntanning in 20th Century America (2005) · APS News, Bell Labs solar cell (1954) · Vanguard 1 · Guinness World Records and NASA, Parker Solar Probe (24 Dec 2024) · IEA World Energy Outlook 2020 · Ember Global Electricity Review 2025 · Caltech SSPD-1 and MAPLE (2023) · IEA Technology Roadmaps (2014)
+NASA, Sun facts (distance, energy from the core, about 5 billion years left) · Ptolemy, Almagest · Copernicus, De revolutionibus (1543) · John Stow, A Survey of London (1598/1603) · Mark Hailwood, Daylight hours and work hours in early modern England (Past & Present) · Thomas Harriot's notebooks (8 Dec 1610) and HAO/UCAR · Galileo, Letters on Sunspots (Rome, 1613) · V&A collections, Maria Gunning · Fashion, Costume, and Culture: Parasols · Jan Ingenhousz, Experiments upon Vegetables (1779) · NASA Space Place and Caltech IPAC, Herschel's 1800 experiment · Becquerel Prize, Edmond Becquerel (1839) · NOAA, the 1859 Carrington event · Kerry Segrave, Suntanning in 20th Century America (2005) · Charles Reid Barnes and the word photosynthesis (1893) · APS News, Bell Labs solar cell (1954) · Ember, Global Electricity Review 2026 · IEA World Energy Outlook 2020 · Guinness World Records and NASA, Parker Solar Probe (24 Dec 2024) · IEA, Energy and AI (2025) · Caltech SSPD-1 and MAPLE (2023)
 
-The 2100 section is a scenario built from published projections, not a fact. Day clocks and week strips are illustrations based on historical accounts. Never look directly at the Sun. Narration: Brian (AI voice, ElevenLabs).
+The 2100 section is a scenario built from published data and projections, not a fact. Day clocks and week strips are illustrations based on historical accounts. Never look directly at the Sun. Narration: Brian (AI voice, ElevenLabs).
 
 #DidYouKnowThat #History #TheSun

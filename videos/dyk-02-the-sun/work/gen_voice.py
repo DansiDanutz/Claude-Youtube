@@ -24,7 +24,15 @@ MODEL = "eleven_flash_v2_5"
 TAIL_LIMIT_S = 0.9
 VOICE_SETTINGS = {"stability": 0.32, "similarity_boost": 0.85, "style": 0.45, "use_speaker_boost": True}
 CHUNK_GAP_S = 0.25          # silence between stitched chunks (skill: 0.15–0.35 s)
-SPEED_MIN, SPEED_MAX = 0.7, 1.2
+SPEED_MIN = 0.85          # the skill's absolute floor for EVERY chunk (0.95 on hook/welcome/outro via `floor`)
+# continuity gate (voice audit 2026-10-12: David heard 1.0 -> 1.2 -> 0.85 lurches between stitched chunks):
+SPEED_LO, SPEED_MAX = 0.90, 1.08   # every chunk is generated inside this band (above 1.10 sounds rushed)
+SPEED_STEP_MAX = 0.08     # neighbouring chunks of one scene differ by at most this much ElevenLabs speed
+PACE_STEP_MAX = 0.25      # ... and by at most 25 % speech rate (a pace-0 sign-off is exempt). Same-speed takes of this voice
+PACE_STEP_WARN = 0.10     # differ by up to ~20 % on their own (measured 2026-10-12), so 10-25 % is listed to listen to,
+                          # not failed; the 1.2 -> 0.85 lurches David heard measured 30-40 %.
+PAYOFF_SPEED_MAX = 1.0    # "payoff": true chunks (the answer's ladder walk-back and payoff line)
+ART_GAP_S = 0.2           # speech rate = syllables per second of SPEECH: silences >= this are pauses, not tempo
 
 
 def api_key():
@@ -69,6 +77,7 @@ PACE_TOL = 0.10              # every line within ±10 % of the target
 MAX_TRIES = 4
 FINAL_SYL_S = 0.55        # sentence-final word limit per syllable (ep01's dragged "yeeet.")
 MAX_GAP_S = 1.1           # mid-sentence silence limit (skill audit loop)
+LONG_WORD_SYL_S = 0.25    # a word may pass 1.0 s only with enough syllables at <= 0.25 s each
 
 
 def syllables(w):
@@ -92,8 +101,9 @@ def quality(words, target=PACE_TARGET):
         d = w["e"] - w["s"]
         sentence_end = i + 1 == len(words) or re.search(r"[.?!,:;…]$", w["w"])
         per_syl = d / syllables(w["w"])
-        final = i + 1 == len(words) or re.search(r"[.?!…]$", w["w"])   # sentence-final (not a comma)
-        if d > 1.0 or (not sentence_end and per_syl > 0.42) or (final and per_syl > FINAL_SYL_S):
+        final = i + 1 == len(words) or re.search(r"[.?!…]$", w["w"])   # sentence-final (a comma word may lengthen)
+        long_ok = LONG_WORD_SYL_S * syllables(w["w"])                    # "Photosynthesis." 1.1 s is 0.22 s/syllable
+        if d > max(1.0, long_ok) or (not sentence_end and per_syl > 0.42) or (final and per_syl > FINAL_SYL_S):
             probs.append(f"stretched '{w['w']}' {d:.2f}s")
     for a, b in zip(words, words[1:]):     # audit rule: no silence > 1.1 s inside a sentence
         if b["s"] - a["e"] > MAX_GAP_S and not re.search(r"[.?!…]$", a["w"]):
@@ -128,11 +138,45 @@ def chunks_of(sc):
     return [{"text": sc["text"], "pace": sc.get("pace", PACE_TARGET), "speed": sc.get("speed", 1.0)}]
 
 
-def generate(text, target, speed, floor, key):
-    """Up to MAX_TRIES takes, nudging speed toward the target pace within [floor, SPEED_MAX].
+def speed_band(floor, prev_speed=None):
+    """[lo, hi] a chunk may be generated at: the global band, its floor, and within SPEED_STEP_MAX of the chunk before."""
+    lo, hi = max(SPEED_MIN, SPEED_LO, floor), SPEED_MAX
+    if prev_speed is not None:
+        lo, hi = max(lo, prev_speed - SPEED_STEP_MAX), min(hi, prev_speed + SPEED_STEP_MAX)
+    return lo, max(lo, hi)
+
+
+def articulation_rate(words):
+    """Syllables per second of speech, pauses (gaps >= ART_GAP_S) excluded — the tempo a listener hears as speed.
+    Syllables, not words: "Did you know that a pale face…" has short words and reads ~20 % more words/s than
+    "Florence… astronomer… heavenly" at the same tempo. Pause lengths are governed separately (insert_pauses.py)."""
+    span = words[-1]["e"] - words[0]["s"]
+    pauses = sum(b["s"] - a["e"] for a, b in zip(words, words[1:]) if b["s"] - a["e"] >= ART_GAP_S)
+    return sum(syllables(w["w"]) for w in words) / max(0.1, span - pauses)
+
+
+def continuity_problems(chunks):
+    """chunks: [(speed, speech rate w/s, pace target)] of one scene in order → speed band + neighbour-step problems."""
+    probs = []
+    for k, (speed, pace, target) in enumerate(chunks):
+        if speed > SPEED_MAX + 1e-9:
+            probs.append(f"chunk {k + 1} speed {speed:.2f} above {SPEED_MAX}")
+        if speed < SPEED_LO - 1e-9:
+            probs.append(f"chunk {k + 1} speed {speed:.2f} below {SPEED_LO}")
+    for k, ((s0, p0, t0), (s1, p1, t1)) in enumerate(zip(chunks, chunks[1:])):
+        if abs(s1 - s0) > SPEED_STEP_MAX + 1e-6:
+            probs.append(f"chunks {k + 1}->{k + 2} speed {s0:.2f} -> {s1:.2f}")
+        if t0 and t1 and abs(p1 - p0) / p0 > PACE_STEP_MAX + 1e-9:
+            probs.append(f"chunks {k + 1}->{k + 2} speech rate {p0:.2f} -> {p1:.2f} syl/s")
+    return probs
+
+
+def generate(text, target, speed, floor, key, lo=None, hi=None):
+    """Up to MAX_TRIES takes, nudging speed toward the target pace within [lo, hi] (default: speed_band(floor)).
     Returns the best (resp, words, probs, speed)."""
-    lo = max(SPEED_MIN, floor)
-    speed, best = min(SPEED_MAX, max(lo, speed)), None
+    band = speed_band(floor)
+    lo, hi = (band[0] if lo is None else max(lo, SPEED_MIN, floor)), (band[1] if hi is None else hi)
+    speed, best = min(hi, max(lo, speed)), None
     for attempt in range(1, MAX_TRIES + 1):
         resp = tts_with_timestamps(text, key, speed)
         words = words_from_alignment(resp["alignment"])
@@ -143,7 +187,7 @@ def generate(text, target, speed, floor, key):
         if not probs:
             break
         if target:
-            speed = min(SPEED_MAX, max(lo, speed * target / pace))
+            speed = min(hi, max(lo, speed * target / pace))
     return best
 
 
@@ -156,14 +200,19 @@ def chunk_key(sid, k, ch):
     return os.path.join(chunk_dir(), f"{sid}.c{k + 1}.{h}")
 
 
-def cached_take(sid, k, ch):
-    """A previously generated chunk take that PASSED its gates (same text, pace, voice, settings) — never re-billed."""
+def cached_take(sid, k, ch, lo=None, hi=None):
+    """A previously generated chunk take that PASSED its gates (same text, pace, voice, settings) — never re-billed.
+    A take outside the speed band [lo, hi] (default SPEED_LO..SPEED_MAX) is not reused."""
     base = chunk_key(sid, k, ch)
     audio_path = next((base + ext for ext in (".mp3", ".wav") if os.path.exists(base + ext)), None)
     if os.path.exists(base + ".json") and audio_path:
         meta = json.load(open(base + ".json"))
         if quality(meta["words"], ch.get("pace", PACE_TARGET))[1]:
             return None               # passed an older gate only — regenerate under the current one
+        lo = SPEED_LO if lo is None else lo
+        hi = SPEED_MAX if hi is None else hi
+        if not lo - 1e-6 <= meta["speed"] <= hi + 1e-6:
+            return None               # outside the continuity band — regenerate
         audio = base64.b64encode(open(audio_path, "rb").read()).decode()   # ffmpeg reads wav or mp3 by content
         return ({"audio_base64": audio}, meta["words"], [], meta["speed"])
     return None
@@ -180,23 +229,72 @@ def cache_take(sid, k, ch, take):
     json.dump({"words": words, "speed": speed}, open(base + ".json", "w"))
 
 
+EDGE_FADE_S = 0.006       # raised-cosine fade at every chunk edge: no step into / out of the 0.25 s gap (clicks)
+LEVEL_TOL_LU = 1.5        # a chunk further than this from its scene's median speech level is gained back to the median
+LEVEL_FRAME_S = 0.05      # speech level = 95th percentile of 50 ms frame powers
+
+
+def speech_level_db(x, rate=48000):
+    """Peak speech level (dBFS): the 95th percentile of 50 ms frame powers. Pauses don't drag it down, so a one-word
+    chunk and a 25 s chunk of the same voice compare fairly (a gated mean read one-word chunks ~2 dB hot)."""
+    import numpy as np
+    n = int(LEVEL_FRAME_S * rate)
+    if x.size < n:
+        return float(10 * np.log10(np.mean(x ** 2) + 1e-12))
+    m = x.size // n
+    return float(np.percentile(10 * np.log10(np.mean(x[:m * n].reshape(m, n) ** 2, axis=1) + 1e-12), 95))
+
+
+LEVEL_REF_MIN_S = 1.0     # only chunks at least this long set the scene's reference level (one-word sign-off chunks don't)
+
+
+def level_gains(levels, tol=LEVEL_TOL_LU, durations=None):
+    """dB gain per chunk: 0 inside ±tol of the scene median, else the step back to the median (data-driven).
+    The median comes from chunks >= LEVEL_REF_MIN_S long when durations are given; every chunk is levelled to it."""
+    import statistics
+    ref = [L for L, d in zip(levels, durations or [LEVEL_REF_MIN_S] * len(levels)) if d >= LEVEL_REF_MIN_S] or levels
+    med = statistics.median(ref)
+    return [round(med - L, 1) if abs(L - med) > tol else 0.0 for L in levels]
+
+
+def edge_faded(x, rate=48000, fade_s=EDGE_FADE_S):
+    """Copy of x with raised-cosine fade-in/out of fade_s at both ends."""
+    import numpy as np
+    n = min(int(fade_s * rate), x.size // 2)
+    if n < 1:
+        return x.copy()
+    ramp = 0.5 - 0.5 * np.cos(np.linspace(0, np.pi, n))
+    return np.concatenate([x[:n] * ramp, x[n:x.size - n], x[x.size - n:] * ramp[::-1]])
+
+
 def stitch(parts, out_wav, gap_s=CHUNK_GAP_S):
-    """parts: [(wav_path, words)] → one 48 kHz mono wav with gap_s silence between parts; returns merged words."""
+    """parts: [(wav_path, words)] → one 48 kHz mono wav with gap_s silence between parts; returns merged words.
+    Every part gets short edge fades; a part whose speech level is > LEVEL_TOL_LU off the scene median is gained to it."""
     import wave
-    merged, t, frames = [], 0.0, []
-    for i, (path, words) in enumerate(parts):
+    import numpy as np
+    pcm = []
+    for path, _ in parts:
         with wave.open(path) as w:
-            rate, data = w.getframerate(), w.readframes(w.getnframes())
+            pcm.append(np.frombuffer(w.readframes(w.getnframes()), dtype="<i2").astype(np.float64) / 32768)
+    gains = level_gains([speech_level_db(x) for x in pcm], durations=[x.size / 48000 for x in pcm]) if len(parts) > 1 else [0.0]
+    for k, g in enumerate(gains):
+        if g:
+            print(f"    chunk {k + 1}: level {g:+.1f} dB to the scene median")
+    merged, t, frames = [], 0.0, []
+    rate = 48000
+    for i, ((path, words), x, g) in enumerate(zip(parts, pcm, gains)):
+        y = np.clip(edge_faded(x * 10 ** (g / 20), rate) * 32768, -32768, 32767)
+        data = np.round(y).astype("<i2").tobytes()
         if i:
             frames.append(b"\x00\x00" * int(round(gap_s * rate)))
             t += gap_s
-        merged += [{"w": x["w"], "s": round(x["s"] + t, 3), "e": round(x["e"] + t, 3)} for x in words]
+        merged += [{"w": wd["w"], "s": round(wd["s"] + t, 3), "e": round(wd["e"] + t, 3)} for wd in words]
         frames.append(data)
         t += len(data) / 2 / rate
     with wave.open(out_wav, "wb") as w:
         w.setnchannels(1)
         w.setsampwidth(2)
-        w.setframerate(48000)
+        w.setframerate(rate)
         w.writeframes(b"".join(frames))
     return merged
 
@@ -235,15 +333,27 @@ def main():
         for k, ch in enumerate(chunks_of(sc)):
             if len(chunks_of(sc)) > 1:
                 print(f"  {sid} chunk {k + 1}: pace target {ch.get('pace', PACE_TARGET) or '-'}")
-            take = cached_take(sid, k, ch)
+            lo, hi = speed_band(float(ch.get("floor", floor)), takes[-1][1][3] if takes else None)
+            if ch.get("payoff"):            # voice preflight: the payoff is never read faster than speed 1.0
+                hi = max(lo, min(hi, PAYOFF_SPEED_MAX))
+            take = cached_take(sid, k, ch, lo, hi)
             if take:
                 print(f"    chunk {k + 1}: cached passing take (no API call)")
             else:
                 take = generate(ch["text"], ch.get("pace", PACE_TARGET), float(ch.get("speed", sc.get("speed", 1.0))),
-                                float(ch.get("floor", floor)), key)
+                                float(ch.get("floor", floor)), key, lo, hi)
                 if len(chunks_of(sc)) > 1:
                     cache_take(sid, k, ch, take)
             takes.append((ch, take))
+        rates = [(t[3], articulation_rate(t[1]), ch.get("pace", PACE_TARGET)) for ch, t in takes]
+        for k, ((s0, r0, t0), (s1, r1, t1)) in enumerate(zip(rates, rates[1:])):
+            if t0 and t1 and PACE_STEP_WARN < abs(r1 - r0) / r0 <= PACE_STEP_MAX:
+                print(f"  ~ {sid} chunks {k + 1}->{k + 2}: speech rate {r0:.2f} -> {r1:.2f} syl/s (listen)")
+        cont = continuity_problems(rates)
+        if cont and os.environ.get("ALLOW_GATE_FAIL") != "1":
+            print(f"  !! {sid} REJECTED by the continuity gate: {cont} (passing chunk takes stay cached; retune pace/text)")
+            rejected.append(sid)
+            continue
         failed = [(k, t) for k, (ch, t) in enumerate(takes) if t[2]]
         if failed and os.environ.get("ALLOW_GATE_FAIL") != "1":
             # hard gate: keep the best attempts for listening, but never as the canonical take

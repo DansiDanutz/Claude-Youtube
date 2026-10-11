@@ -8,7 +8,7 @@ WORK = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, WORK)
 import build_final as B  # noqa: E402  (pure timing; main() is not run)
 
-GAP_S = 2.6   # >= 2.6 s listed (all >= 2.9 s gaps were given a beat in pass 2)
+GAP_S = 2.0   # v2 skill gate: no static ≥ 2 s while Brian talks — every narrated 2 s gets a visual event
 # continuous motion that carries the picture between discrete events (checked on stills)
 MOTION = {
     'SuHook': 'Sun rising (0-4 s), silhouette glow, photon travelling, countdown ticking',
