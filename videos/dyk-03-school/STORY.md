@@ -325,3 +325,15 @@ sources (the F-list), AI-voice note.
 10. Next step on approval: `work/narration/script.json` (chunks, pace, `pauses`, `payoff` flags), re-checking the three
     403 sources in a browser, then the voice budget estimate (Creator plan, Brian only; ~1,730 words ≈ 9,500
     characters on the first pass), all before any voice.
+
+## 13. David's decisions (2026-10-13: "I approve Episode 3 story, go with your defaults")
+1. Hook + guess approved as written ("seems to" kept).
+2. Ladder approved: FOR THE FEW → TO READ GOD'S WORD → THE KING'S ORDER → BY THE HUNDRED → A RIGHT · A LADDER → ALWAYS ON → A TUTOR FOR ALL?
+3. Eras stay as written (1647 Massachusetts, 1948 America); no re-research.
+4. Prussian myth beat kept.
+5. Comment of the Week = pinned-question card; pinned question A: "Which century's classroom would you survive — and why?"
+6. Money teaser keeps the sourced 9 % line.
+7. Title 1 "School from 1500 to 2100: It Once Meant Free Time" + "SCHOOL / IN 2100?" thumbnail (logo palette).
+8. No optional extras (keeps the master near 10:10).
+9. Shot prefix `Sc`.
+10. Next: script.json → re-check the three blocked sources in a browser → voice (Creator plan quota gate) → pre-flight PASS → shots → render.
