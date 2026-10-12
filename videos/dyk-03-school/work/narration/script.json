@@ -32,7 +32,7 @@
         {
           "text": "And still, did you know that the word school first meant... the one thing school seems to take away from you?",
           "pace": 3.3,
-          "speed": 1.0
+          "speed": 1.035
         }
       ],
       "floor": 0.95,
@@ -71,7 +71,7 @@
         {
           "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up as a different kid, on a school day. Or a day with no school at all. You start out learning a trade with your hands. You end up somewhere your tutor might not even be human. And at the end, you'll find out what the word school really means.",
           "pace": 3.15,
-          "speed": 1.0
+          "speed": 0.969
         }
       ],
       "pauses": {
@@ -91,7 +91,7 @@
         {
           "text": "Did you know that historians estimate only about one woman in a hundred in England could even write her own name?",
           "pace": 2.9,
-          "speed": 1.0,
+          "speed": 0.92,
           "floor": 0.85
         },
         {
@@ -102,32 +102,27 @@
         {
           "text": "If you're lucky enough for grammar school, lessons often start at six in the morning. In Latin. And if you're a prince? Nine year old Prince Henry, the future Henry the Eighth, has a teacher all to himself, the poet John Skelton. One teacher. One child. Remember that.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 1.053625
         },
         {
           "text": "In fifteen twenty four, a rebel preacher, Martin Luther, writes to the leaders of German cities. Build schools, he says. For boys, and for girls. Partly so everyone can read the Bible.",
           "pace": 2.9,
-          "speed": 1.0
+          "speed": 1.08
         },
         {
           "text": "Why would a whole town care if a farmer's daughter can read? Soon, a colony across the ocean will write it into law.",
-          "pace": 2.9,
+          "pace": 3.3,
           "speed": 1.0,
           "floor": 0.85
         }
       ],
       "pauses": {
-        "min_sentence_gap": 0.3,
+        "min_sentence_gap": 0.25,
         "after": [
           {
             "word": "smoke.",
             "nth": 1,
             "add": 0.2
-          },
-          {
-            "word": "you?",
-            "nth": 1,
-            "add": 0.35
           },
           {
             "word": "prince?",
@@ -151,23 +146,23 @@
         {
           "text": "Did you know that one of America's first school laws begins by blaming the devil? It says it's a chief project of that old deluder, Satan, to keep men from the knowledge of the Scriptures.",
           "pace": 2.9,
-          "speed": 1.0,
+          "speed": 0.92,
           "floor": 0.85
         },
         {
           "text": "So what's school to you now? A way to read God's word, with your own eyes. Five years earlier, a law told parents and masters to teach their children to read. Lots of them didn't bother.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 0.9
         },
         {
           "text": "So now, any town with fifty households has to hire someone to teach reading and writing. A hundred households? A grammar school too, or the town pays a fine. You learn your letters between the chores, and on Sunday, you hear why they matter.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 0.98
         },
         {
           "text": "All over Protestant Europe, churches want people reading. But a church can only ask. In the next century, a king will order it. And he'll ban one thing every kid on Earth looks forward to.",
           "pace": 2.9,
-          "speed": 1.0,
+          "speed": 0.9,
           "floor": 0.85
         }
       ],
@@ -201,7 +196,7 @@
         {
           "text": "You wake up in seventeen sixty three, in a village in Prussia. It's autumn. The war's just over, the harvest's in, and the pastor has news from the king.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 0.9415862068965518
         },
         {
           "text": "Did you know that Frederick the Great's new school law banned school holidays? Not even at harvest time.",
@@ -217,7 +212,7 @@
         {
           "text": "In winter, you're in class from eight to eleven, and one to four. In summer, just a few hours, because there are cows to herd. The law even says, hire a shepherd, so the children can go to school. Your teacher might be an old soldier. Many early village teachers were.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 1.014818823529412
         },
         {
           "text": "You might have heard school was invented to make obedient factory workers. Historians say it's not that simple. Prussia was still a land of farms. The king and his church wanted loyal, God fearing, disciplined subjects. And plenty of families just ignored the rules.",
@@ -227,7 +222,7 @@
         {
           "text": "But one teacher per village is slow, and expensive. In London, a young man thinks he can teach the poor for almost nothing. His trick? Make the children the teachers.",
           "pace": 2.9,
-          "speed": 1.0,
+          "speed": 1.08,
           "floor": 0.85
         }
       ],
@@ -266,7 +261,7 @@
         {
           "text": "You wake up in eighteen ten, in London, on Borough Road. You walk into one enormous hall. Hundreds of children, in long rows. And just one master.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 1.08
         },
         {
           "text": "Did you know that this school's founder, Joseph Lancaster, claimed one master could run a school of more than a thousand children?",
@@ -326,18 +321,18 @@
         {
           "text": "You wake up in nineteen forty eight, in a small American town. It's June. Graduation day. Your mum's ironing your gown, and the radio's on.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 1.08
         },
         {
           "text": "Did you know that in nineteen ten, fewer than one in five American teenagers went to high school? By nineteen forty, it was about seven in ten.",
-          "pace": 2.9,
+          "pace": 3.3,
           "speed": 1.0,
           "floor": 0.85
         },
         {
           "text": "Your grandad probably left school young, to work. You're staying to the end, because a diploma opens doors. So what is school to you now? A ladder. Every year you climb gets you closer to a better job.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 1.0541564796650387
         },
         {
           "text": "And that December, in Paris, the United Nations writes it down for the whole world. Everyone has the right to education. Free, at least in the early years.",
@@ -347,7 +342,7 @@
         {
           "text": "So now school is a right. And a ladder. And a building you walk to every morning. But about seventy years later, most of the world's schools would close. Almost at once.",
           "pace": 2.9,
-          "speed": 1.0,
+          "speed": 0.92,
           "floor": 0.85
         }
       ],
@@ -371,7 +366,7 @@
     {
       "id": "sc09-today",
       "shot": "ScToday",
-      "text": "You wake up today. Your phone buzzes. Homework's due at midnight. And any question you've got, you can ask a screen. Did you know that in April twenty twenty, schools closed for about one point six billion learners? That's more than nine in ten students on Earth. Lessons moved into kitchens and bedrooms, onto laptops and phones. But at least four hundred and sixty three million kids couldn't get remote lessons at all. So what's school to you now? Always on. A classroom, plus a screen that never closes. And when the buildings shut, a lot of us found out how much we'd miss them. So here's the question you came for. What did the word school mean, before any of this?",
+      "text": "You wake up today. Your phone buzzes. Homework's due at midnight. And any question you've got, you can ask a screen. Did you know that in April twenty twenty, about one point six billion learners were sent home from school? That's more than nine in ten students on Earth. Lessons moved into kitchens and bedrooms, onto laptops and phones. But at least four hundred and sixty three million kids couldn't get remote lessons at all. So what's school to you now? Always on. A classroom, plus a screen that never closes. And when the buildings shut, a lot of us found out how much we'd miss them. So here's the question you came for. What did the word school mean, before any of this?",
       "chunks": [
         {
           "text": "You wake up today. Your phone buzzes. Homework's due at midnight. And any question you've got, you can ask a screen.",
@@ -379,7 +374,7 @@
           "speed": 1.0
         },
         {
-          "text": "Did you know that in April twenty twenty, schools closed for about one point six billion learners? That's more than nine in ten students on Earth.",
+          "text": "Did you know that in April twenty twenty, about one point six billion learners were sent home from school? That's more than nine in ten students on Earth.",
           "pace": 2.9,
           "speed": 1.0,
           "floor": 0.85
@@ -391,8 +386,8 @@
         },
         {
           "text": "And when the buildings shut, a lot of us found out how much we'd miss them. So here's the question you came for. What did the word school mean, before any of this?",
-          "pace": 3.0,
-          "speed": 1.0,
+          "pace": 3.3,
+          "speed": 0.9859999999999999,
           "floor": 0.85
         }
       ],
@@ -420,34 +415,34 @@
       "chunks": [
         {
           "text": "Here's the answer. School comes from an ancient Greek word, skoh-LAY. And it meant... free time. Leisure.",
-          "pace": 2.8,
+          "pace": 2.45,
           "speed": 1.0
         },
         {
           "text": "In Athens, people with free time often spent it talking, arguing, learning. So the word for free time became the word for the place you learn.",
-          "pace": 2.85,
+          "pace": 3.1,
           "speed": 1.0
         },
         {
           "text": "And your guess? Two hundred years ago, only about one in ten people on Earth could read. Today, it's almost nine in ten.",
           "pace": 2.8,
-          "speed": 1.0
+          "speed": 0.92
         },
         {
           "text": "How close were you? Now climb that ladder again, with me.",
-          "pace": 2.7,
+          "pace": 2.95,
           "speed": 1.0,
           "payoff": true
         },
         {
           "text": "In fifteen hundred, school was for the few. Then, a way to read the Bible. Then, the king's order. Then, a machine for hundreds. Then, your right, and your ladder. Today, it never switches off.",
-          "pace": 2.6,
-          "speed": 1.0,
+          "pace": 2.75,
+          "speed": 0.92,
           "payoff": true
         },
         {
           "text": "School started as free time, for a lucky few. Now it's where most children on Earth spend their weekdays.",
-          "pace": 2.75,
+          "pace": 3.05,
           "speed": 1.0,
           "payoff": true
         }
@@ -458,7 +453,7 @@
           {
             "word": "meant...",
             "nth": 1,
-            "add": 0.3
+            "add": 0.2
           },
           {
             "word": "guess?",
@@ -468,7 +463,7 @@
           {
             "word": "you?",
             "nth": 1,
-            "add": 0.4
+            "add": 0.3
           }
         ],
         "even_pace": true
@@ -477,22 +472,22 @@
     {
       "id": "sc11-2100",
       "shot": "Sc2100",
-      "text": "So what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence. Remember Prince Henry's tutor? One teacher, one child. In nineteen eighty four, an American researcher, Benjamin Bloom, reported that tutored students did better than ninety eight percent of students taught in a normal class. Later studies found the effect is smaller. But it's real. The problem was always cost. Nobody can pay a tutor for every child. Then, in twenty twenty four, a World Bank pilot in Nigeria gave students an AI tutor, twice a week, with their teachers guiding them. After six weeks, the World Bank estimated nearly two years of typical learning. One small study. Short. But it's a start. So here's one scenario. Not a fact. By twenty one hundred, every child could have a tutor. Not a prince's poet. A patient machine, awake at any hour. And the classroom? The OECD has imagined futures where school becomes a learning hub, and even one where it fades away. But UNESCO says schools should be protected. If they didn't exist, we'd have to invent them. In fifteen hundred, a private teacher was for a prince. In twenty one hundred, it might be for everyone. And school might get a little closer to what its name first meant.",
+      "text": "So, what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence. Remember Prince Henry's tutor? One teacher, one child. In nineteen eighty four, an American researcher, Benjamin Bloom, reported that tutored students did better than ninety eight percent of students taught in a normal class. Later studies found the effect is smaller. But it's real. The problem was always cost. Nobody can pay a tutor for every child. Then, in twenty twenty four, a World Bank pilot in Nigeria gave students an AI tutor, twice a week, with their teachers guiding them. After six weeks, the World Bank estimated nearly two years of typical learning. One small study. Short. But it's a start. So here's one scenario. Not a fact. By twenty one hundred, every child could have a tutor. Not a prince's poet. A patient machine, awake at any hour. And the classroom? The O E C D has imagined futures where school becomes a learning hub, and even one where it fades away. But UNESCO says schools should be protected. If they didn't exist, we'd have to invent them. In fifteen hundred, a private teacher was for a prince. In twenty one hundred, it might be for everyone. And school might get a little closer to what its name first meant.",
       "chunks": [
         {
-          "text": "So what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence.",
+          "text": "So, what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 0.9
         },
         {
           "text": "Remember Prince Henry's tutor? One teacher, one child. In nineteen eighty four, an American researcher, Benjamin Bloom, reported that tutored students did better than ninety eight percent of students taught in a normal class.",
           "pace": 2.9,
-          "speed": 1.0
+          "speed": 0.98
         },
         {
           "text": "Later studies found the effect is smaller. But it's real. The problem was always cost. Nobody can pay a tutor for every child.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 0.9204
         },
         {
           "text": "Then, in twenty twenty four, a World Bank pilot in Nigeria gave students an AI tutor, twice a week, with their teachers guiding them. After six weeks, the World Bank estimated nearly two years of typical learning. One small study. Short. But it's a start.",
@@ -505,14 +500,14 @@
           "speed": 1.0
         },
         {
-          "text": "And the classroom? The OECD has imagined futures where school becomes a learning hub, and even one where it fades away. But UNESCO says schools should be protected. If they didn't exist, we'd have to invent them.",
+          "text": "And the classroom? The O E C D has imagined futures where school becomes a learning hub, and even one where it fades away. But UNESCO says schools should be protected. If they didn't exist, we'd have to invent them.",
           "pace": 2.9,
           "speed": 1.0
         },
         {
           "text": "In fifteen hundred, a private teacher was for a prince. In twenty one hundred, it might be for everyone. And school might get a little closer to what its name first meant.",
-          "pace": 2.9,
-          "speed": 1.0,
+          "pace": 3.4,
+          "speed": 0.92,
           "floor": 0.85
         }
       ],
@@ -550,7 +545,7 @@
       "chunks": [
         {
           "text": "You've spent years of your life in school. So tell me. What's the one thing it taught you that no screen ever could?",
-          "pace": 3.0,
+          "pace": 3.3,
           "speed": 1.0,
           "floor": 0.85
         }
@@ -567,7 +562,7 @@
         {
           "text": "This was Did You Know That, episode three. School. Now it's your turn. Which century's classroom would you survive? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the facts, and play the guessing game.",
           "pace": 3.15,
-          "speed": 1.0
+          "speed": 1.08
         },
         {
           "text": "If this changed how you see a school day, like it. Share it with the friend who always did the homework. And subscribe, so the next mystery finds you.",
@@ -577,7 +572,7 @@
         {
           "text": "Next time: money. Around the world, each extra year of school adds, on average, about nine percent to what people earn. But did school ever teach you what money actually is?",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 1.08
         },
         {
           "text": "Ask...",
@@ -602,17 +597,22 @@
           {
             "word": "Ask...",
             "nth": 1,
-            "add": 0.6
+            "add": 0.33
           },
           {
             "word": "Wonder...",
             "nth": 1,
-            "add": 0.6
+            "add": 0.21
           },
           {
             "word": "survive?",
             "nth": 1,
             "add": 0.25
+          },
+          {
+            "word": "is?",
+            "nth": 1,
+            "add": 0.3
           }
         ],
         "even_pace": true
@@ -631,7 +631,7 @@
       ],
       "floor": 0.95,
       "pauses": {
-        "min_sentence_gap": 0.3
+        "min_sentence_gap": 0.42
       }
     }
   ]

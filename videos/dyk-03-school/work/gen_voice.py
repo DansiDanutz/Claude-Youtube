@@ -56,6 +56,33 @@ def tts_with_timestamps(text, key, speed=1.0):
         return json.load(r)
 
 
+ENERGY_FLOOR_DB = 35.0    # No. 03: a word "ends" at its last 10 ms frame within this many dB of the take's speech peak
+ENERGY_FRAME_S = 0.01
+
+
+def refine_ends(words, audio_b64):
+    """No. 03 (2026-10-13): ElevenLabs alignment stretches every sentence-final word to the start of the next word
+    (and a chunk's last word to the end of the file), so a 0.35 s "cane." reads as a 0.63 s drag. Measure the real
+    end from the audio: the last frame within ENERGY_FLOOR_DB of the take's 95th-percentile frame level, never later
+    than the aligned end. Real drags (speech that really lasts) are still caught; only trailing silence is removed."""
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", "pipe:0", "-f", "s16le", "-ac", "1", "-ar", "16000", "-"],
+                         input=base64.b64decode(audio_b64), capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, dtype="<i2").astype(np.float64) / 32768
+    n = int(16000 * ENERGY_FRAME_S)
+    if x.size < n * 4:
+        return words
+    db = 10 * np.log10((x[:x.size // n * n].reshape(-1, n) ** 2).mean(1) + 1e-12)
+    floor = np.percentile(db, 95) - ENERGY_FLOOR_DB
+    out = []
+    for w in words:
+        a, b = int(w["s"] / ENERGY_FRAME_S), min(len(db), int(w["e"] / ENERGY_FRAME_S) + 1)
+        act = np.flatnonzero(db[a:b] > floor)
+        e = w["e"] if not act.size else min(w["e"], round((a + act[-1] + 1) * ENERGY_FRAME_S, 3))
+        out.append({**w, "e": max(round(w["s"] + 0.05, 3), e)})
+    return out
+
+
 def words_from_alignment(al):
     words, cur, start, end = [], "", None, None
     for ch, s, e in zip(al["characters"], al["character_start_times_seconds"], al["character_end_times_seconds"]):
@@ -179,7 +206,7 @@ def generate(text, target, speed, floor, key, lo=None, hi=None):
     speed, best = min(hi, max(lo, speed)), None
     for attempt in range(1, MAX_TRIES + 1):
         resp = tts_with_timestamps(text, key, speed)
-        words = words_from_alignment(resp["alignment"])
+        words = refine_ends(words_from_alignment(resp["alignment"]), resp["audio_base64"])
         pace, probs = quality(words, target)
         print(f"    try {attempt} speed {speed:.2f}: pace {pace:.2f} w/s (target {target or '-'}) {'OK' if not probs else probs}")
         if best is None or len(probs) < len(best[2]):
