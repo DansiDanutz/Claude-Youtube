@@ -20,7 +20,8 @@ resolver (the same table the mix uses) BEFORE rendering — no cue sheet, no PAS
 ## What it enforces (each one is a bug David heard on No. 02 v2)
 | check | rule | heard at |
 |---|---|---|
-| speed | every chunk 0.90–1.08 (floors respected); neighbours ≤ 0.08 apart in speed setting and ≤ 20 % in articulation rate (syllables per second of speech — designed lean-in/payoff shifts stay under it, lurches don't); 1–2-word beats are timed by pauses | 7:15–7:39, 8:15–8:21 (1.0 → 1.2 → 0.85) |
+| data | every spoken scene has word timings in vo.json, the same word count as its script (no stale take) and a slot in timeline.json — missing input fails, never passes silently | — |
+| speed | every chunk 0.90–1.08 (floors respected); every pair of neighbours ≤ 0.08 apart in speed setting (one-word beats included) and ≤ 20 % in articulation rate (syllables per second of speech — designed lean-in/payoff shifts stay under it, lurches don't); 1–2-word beats skip only the rate check | 7:15–7:39, 8:15–8:21 (1.0 → 1.2 → 0.85) |
 | pace | measured w/s within ±10 % of the chunk's own target | — |
 | drag | word > max(1.0 s, 0.25 s × syllables) ("photosynthesis" may take 1.25 s); > 0.42 s/syllable mid-clause; > 0.55 s/syllable before a comma or sentence end | "yeeet." (No. 01) |
 | gaps | ≥ 0.25 s between sentences; ≤ 0.6 s inside a sentence (except at commas) | welcome/outro run-ons |

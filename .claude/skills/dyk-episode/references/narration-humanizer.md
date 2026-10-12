@@ -7,7 +7,10 @@ out loud (or `say -v Daniel`): if you wouldn't say it to a friend across a table
 ## Talk to one person
 - "You", not "we" or "people" — the viewer is inside the story ("You wake up in 1500…", "Look at your phone").
 - Contractions everywhere they're natural: you're, it's, didn't, they'd, here's, won't.
-- Ask the viewer things and leave a beat to answer: "Would you have believed him?" "Guess." (0.3–0.5 s pause via `pauses`).
+- Ask the viewer things and leave a beat to answer: "Would you have believed him?" "Guess." (a 0.3–0.5 s pause, added
+  after voicing by `insert_pauses.py`: the scene's `pauses` block, e.g. `"after": [{"word": "Guess.", "nth": 1, "add": 0.4}]`.
+  Only the No. 02 pipeline reads that block — an episode copied from No. 01 must copy `work/insert_pauses.py` and run
+  it before `make_vo_json.py`, or the beat is silently missing. The voice pre-flight's gap check confirms it landed.)
 - Admit things a person would admit: "Honestly, this one surprised me." "Nobody really knows why." (only where true).
 - React to the facts like a human: "Wait. Sixteen hours. For ninety-eight words." — short, then the meaning.
 
@@ -37,7 +40,10 @@ walks the whole ladder back in one breath each: then → then → now → next.
 1. Every line passes the read-aloud test.
 2. No AI-tell word or frame left (grep the list above).
 3. Each era has its "how people saw it" sentence; the reveal recaps the arc; 2100 is evidence → scenario, hedged.
-4. Facts unchanged: diff the numbers/dates/names against the previous script — they must be identical.
+4. Facts unchanged: diff the numbers/dates/names against the previous script — they must be identical. Then compare
+   meaning line by line against the pre-humanized script and `RESEARCH.md`: modality and hedges ("could" never becomes
+   "will", "about" never disappears, "nearly all" never becomes "all"), who did what, cause and effect, and every
+   qualification a source attaches ("the best projects, with low-cost finance"). Any drift → restore the source wording.
 5. Pace targets still fit (shorter, punchier lines usually help; never slow the voice to fit).
 
 If the `humanizer` plugin is installed, run it on the narration text as an extra pass, then re-apply rule 4.

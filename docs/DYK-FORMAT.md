@@ -18,10 +18,11 @@ dependence → 2100 — so the viewer feels the relationship change, not just th
 | Era | The Sun (No. 02) — how people saw it |
 |---|---|
 | 1500 | the difference between day and night: when you work, when you sleep, when you pray |
-| 1600s | something you can measure — and it has spots |
-| 1700s–1800s | light you can split, light you can't see, light that makes electricity |
+| 1600s | something to watch — through a telescope, and it has spots |
+| 1700s | something to explain — what sunlight does to plants (Ingenhousz, 1779) |
+| 1800s | something to measure — even light you can't see (Herschel's infrared, 1800), and light that makes electricity |
 | by 1900 | the source of all food: every meal is stored sunlight (photosynthesis) |
-| 2000s | power we harvest — the cheapest electricity ever seen |
+| 2000s | power we harvest — the best solar projects, with low-cost finance, offer some of the cheapest electricity ever seen |
 | 2100 | the energy behind everything we run: internet, AI, cities (published projections only, labelled PREDICTION) |
 
 - On screen: a `HOW WE SAW IT` chip per era that stacks into a ladder; **the answer** walks it back in one breath

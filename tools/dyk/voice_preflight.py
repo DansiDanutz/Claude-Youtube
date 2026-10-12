@@ -3,8 +3,9 @@
 
 Every narration problem David heard on No. 02 v2 is detectable from data we already have, so this gate
 catches them in seconds instead of in audit rounds after a render:
-  speed      chunk speed outside 0.90–1.08 (floors respected), or a jump > 0.08 speed / > 20 % articulation rate
-             vs its neighbour (1–2-word beats such as the sign-off are timed by pauses and skipped)
+  data       a spoken scene with no word timings, a word count that differs from the script, or no timeline slot
+  speed      chunk speed outside 0.90–1.08 (floors respected), or a speed-setting jump > 0.08 between any neighbours,
+             or > 20 % articulation rate (1–2-word beats such as the sign-off are timed by pauses: rate check skipped)
   pace       measured words/s more than 10 % off the chunk's own target
   drag       a word > max(1.0 s, 0.25 s × syllables), > 0.42 s/syllable mid-sentence, or > 0.55 s/syllable at a sentence end
   gaps       a pause > 0.6 s inside a sentence, or < 0.25 s between sentences
@@ -63,7 +64,7 @@ def syllables(word):
 def chunk_words(scene, words):
     """Split a scene's stitched word list back into its chunks by word count (pauses add no words)."""
     out, i = [], 0
-    for chunk in scene.get('chunks') or [{'text': scene.get('text', '')}]:
+    for chunk in scene.get('chunks') or [scene]:          # a top-level-text scene is its own single chunk, settings included
         n = len(chunk.get('text', '').split())
         out.append((chunk, words[i:i + n]))
         i += n
@@ -89,7 +90,7 @@ def check_speed_and_pace(script, vo):
     issues = []
     for scene in script['scenes']:
         words = (vo.get(scene['id']) or {}).get('words') or []
-        prev = None
+        prev_speed, prev_sps = None, None
         for idx, (chunk, cw) in enumerate(chunk_words(scene, words), 1):
             tag = f"{scene['id']} c{idx}"
             speed = chunk.get('speed')
@@ -103,14 +104,16 @@ def check_speed_and_pace(script, vo):
                 issues.append(('pace', tag, f'{measured:.2f} w/s vs target {target} (±{int(PACE_TOL * 100)} %)'))
             if chunk.get('payoff') and ((speed or 0) > PAYOFF_SPEED_MAX or (measured or 0) > PAYOFF_WPS_MAX):
                 issues.append(('payoff', tag, f'payoff chunk at speed {speed}, {measured and round(measured, 2)} w/s'))
-            if prev and len(cw) >= MIN_WORDS_FOR_PACE:
-                p_speed, p_sps = prev
-                if speed is not None and p_speed is not None and abs(speed - p_speed) > SPEED_JUMP_MAX + 1e-9:
-                    issues.append(('speed', tag, f'speed jump {p_speed} → {speed} vs previous chunk'))
-                if syl_rate and p_sps and abs(syl_rate - p_sps) / p_sps > SPS_JUMP_MAX:
-                    issues.append(('speed', tag, f'pace jump {p_sps:.2f} → {syl_rate:.2f} syllables/s vs previous chunk'))
-            if len(cw) >= MIN_WORDS_FOR_PACE:
-                prev = (speed, syl_rate)
+            # the speed SETTING is compared between every pair of neighbours; the measured rate only between
+            # chunks long enough to measure (a one-word beat is timed by its pauses)
+            if speed is not None and prev_speed is not None and abs(speed - prev_speed) > SPEED_JUMP_MAX + 1e-9:
+                issues.append(('speed', tag, f'speed jump {prev_speed} → {speed} vs previous chunk'))
+            if syl_rate and prev_sps and abs(syl_rate - prev_sps) / prev_sps > SPS_JUMP_MAX:
+                issues.append(('speed', tag, f'pace jump {prev_sps:.2f} → {syl_rate:.2f} syllables/s vs previous chunk'))
+            if speed is not None:
+                prev_speed = speed
+            if syl_rate:
+                prev_sps = syl_rate
     return issues
 
 
@@ -190,8 +193,27 @@ def check_signoff(vo, timeline):
     return issues
 
 
+def check_inputs(script, vo, timeline):
+    """Fail closed: every spoken scene needs word timings that match its script and a place in the timeline."""
+    issues = []
+    placed = {sid for _, scenes in timeline.values() for sid in scenes}
+    for scene in script['scenes']:
+        expected = sum(len(c.get('text', '').split()) for c in scene.get('chunks') or [scene])
+        if not expected:
+            continue
+        sid = scene['id']
+        got = len((vo.get(sid) or {}).get('words') or [])
+        if not got:
+            issues.append(('data', sid, 'no word timings in vo.json — regenerate it before the pre-flight'))
+        elif got != expected:
+            issues.append(('data', sid, f'vo.json has {got} words, the script has {expected} — stale take'))
+        if sid not in placed:
+            issues.append(('data', sid, 'spoken scene is not placed in timeline.json'))
+    return issues
+
+
 def run(script, vo, timeline, cuesheet):
-    issues = (check_speed_and_pace(script, vo) + check_words_and_gaps(vo) + check_lead_in(vo, timeline)
+    issues = (check_inputs(script, vo, timeline) + check_speed_and_pace(script, vo) + check_words_and_gaps(vo) + check_lead_in(vo, timeline)
               + check_signoff(vo, timeline))
     if cuesheet is None:
         issues.append(('sfx', '-', 'no cuesheet.json — export the resolved cue sheet before rendering'))

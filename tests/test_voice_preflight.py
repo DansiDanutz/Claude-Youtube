@@ -121,6 +121,46 @@ class PreflightTests(unittest.TestCase):
             self.assertIn("PASS", (p / "r.md").read_text())
             self.assertEqual(vp.main(args), 1)
 
+    def test_missing_voice_or_timeline_placement_fails_closed(self):
+        script, vo, tl = clean_episode()
+        del vo["s2"]
+        self.assertTrue(any(k == "data" and w == "s2" for k, w, _ in vp.run(script, vo, tl, [])))
+        script, vo, tl = clean_episode()
+        del tl["B"]
+        self.assertTrue(any(k == "data" and w == "s2" for k, w, _ in vp.run(script, vo, tl, [])))
+        script, vo, tl = clean_episode()
+        vo["s1"]["words"] = vo["s1"]["words"][:-2]          # stale take: fewer words than the script
+        self.assertTrue(any(k == "data" and w == "s1" for k, w, _ in vp.run(script, vo, tl, [])))
+
+    def test_scene_level_text_keeps_its_voice_settings(self):
+        a = "One two three four five six."
+        vo = {"s": {"words": words(a)}}
+        script = {"scenes": [{"id": "s", "text": a, "speed": 1.2, "pace": 2.0}]}
+        kinds = [k for k, _, _ in vp.check_speed_and_pace(script, vo)]
+        self.assertIn("speed", kinds)
+        self.assertIn("pace", kinds)
+
+    def test_speed_settings_compared_across_every_adjacent_chunk(self):
+        a, c = "One two three four five six.", "Seven eight nine ten eleven twelve."
+        def run(speeds, middle="Ask..."):
+            texts = [a, middle, c]
+            ws = words(a, gap_after={5: 0.6}) + [{"w": middle, "s": 3.0, "e": 3.4}] + words(c, start=4.2)
+            chunks = [{"text": t, "speed": sp} for t, sp in zip(texts, speeds)]
+            return [m for k, _, m in vp.check_speed_and_pace({"scenes": [{"id": "s", "chunks": chunks}]}, {"s": {"words": ws}})
+                    if "speed jump" in m]
+        self.assertTrue(run([0.90, 1.08, 1.00]))            # a one-word beat may not lurch 0.18
+        self.assertEqual(run([0.90, 0.98, 1.06]), [])       # each neighbour within 0.08
+
+    def test_articulation_rate_jump_boundary(self):
+        a = b = "One two three four five six."                # same syllables, so only the timing differs
+        def jumps(dur_b):
+            ws = words(a, dur=0.30) + words(b, start=3.0, dur=dur_b)
+            chunks = [{"text": a, "speed": 1.0}, {"text": b, "speed": 1.0}]
+            return [m for k, _, m in vp.check_speed_and_pace({"scenes": [{"id": "s", "chunks": chunks}]}, {"s": {"words": ws}})
+                    if "pace jump" in m]
+        self.assertEqual(jumps(0.30 / 1.15), [])            # 15 % faster: designed shift, passes
+        self.assertTrue(jumps(0.30 / 1.30))                 # 30 % faster: lurch, fails
+
 
 if __name__ == "__main__":
     unittest.main()
