@@ -201,5 +201,9 @@
 "s": 11.003,
 "e": 11.49
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"even_pace": true
+}
 }

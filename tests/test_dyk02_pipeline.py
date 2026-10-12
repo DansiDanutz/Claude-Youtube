@@ -9,6 +9,7 @@ import json
 import os
 import sys
 import tempfile
+import wave
 import unittest
 from contextlib import redirect_stdout
 from io import StringIO
@@ -587,20 +588,50 @@ class V2PipelineTests(unittest.TestCase):
         out = ip.insert_silence(pcm, [(0.5, 0.2)], rate=10, width=2)
         self.assertEqual(out, b"\x01\x00" * 5 + b"\x00\x00" * 2 + b"\x01\x00" * 5)
 
-    def test_vo_json_uses_the_paused_take_and_refuses_a_stale_one(self):
+    def _paused_fixture(self, wav_s=1.3, recorded=None):
         mv = load("make_vo_json")
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
-        mv.NARR = tmp.name
+        mv.NARR = mv.MIX = tmp.name
+        cfg = {"min_sentence_gap": 0.3}
         raw, paused = Path(tmp.name) / "p01.words.json", Path(tmp.name) / "p01.paused.json"
         raw.write_text("[]")
-        sc = {"id": "p01", "pauses": {"min_sentence_gap": 0.3}}
-        with self.assertRaises(SystemExit):
-            mv.scene_vo(sc, {"p01": 1.0})
-        paused.write_text(json.dumps({"dur": 1.3, "words": []}))
+        paused.write_text(json.dumps({"dur": 1.3, "words": [], "pauses": cfg if recorded is None else recorded}))
         os.utime(paused, (os.path.getmtime(raw) + 5, os.path.getmtime(raw) + 5))
+        with wave.open(str(Path(tmp.name) / "p01.wav"), "wb") as w:
+            w.setnchannels(1), w.setsampwidth(2), w.setframerate(1000)
+            w.writeframes(b"\x00\x00" * int(wav_s * 1000))
+        return mv, {"id": "p01", "pauses": cfg}, paused
+
+    def test_vo_json_uses_the_paused_take_and_refuses_a_stale_one(self):
+        mv, sc, paused = self._paused_fixture()
         self.assertEqual(mv.scene_vo(sc, {"p01": 1.0})["dur"], 1.3)
         self.assertEqual(mv.scene_vo({"id": "p01"}, {"p01": 1.0})["dur"], 1.0)
+        os.utime(paused, (0, 0))                                   # older than the words
+        with self.assertRaises(SystemExit):
+            mv.scene_vo(sc, {"p01": 1.0})
+
+    def test_vo_json_refuses_a_mix_restored_without_its_pauses(self):
+        # gen_voice rebuilds mix/<id>.wav from the unpaused mp3: 0.74 s shorter than the paused timings
+        mv, sc, _ = self._paused_fixture(wav_s=0.56)
+        with self.assertRaises(SystemExit) as e:
+            mv.scene_vo(sc, {"p01": 1.0})
+        self.assertIn("insert_pauses", str(e.exception))
+
+    def test_vo_json_refuses_a_paused_take_made_with_other_pause_settings(self):
+        mv, sc, _ = self._paused_fixture(recorded={"min_sentence_gap": 0.5})
+        with self.assertRaises(SystemExit):
+            mv.scene_vo(sc, {"p01": 1.0})
+        mv, sc, paused = self._paused_fixture()
+        paused.write_text(json.dumps({"dur": 1.3, "words": []}))   # written before settings were recorded
+        os.utime(paused, (os.path.getmtime(paused) + 5,) * 2)
+        with self.assertRaises(SystemExit):
+            mv.scene_vo(sc, {"p01": 1.0})
+
+    def test_paused_record_keeps_the_settings_it_was_made_with(self):
+        ip = load("insert_pauses")
+        cfg = {"min_sentence_gap": 0.35, "after": [{"word": "Guess.", "nth": 1, "add": 0.4}]}
+        self.assertEqual(ip.paused_record(2.5, [], cfg), {"dur": 2.5, "words": [], "pauses": cfg})
 
     def test_committed_vo_json_matches_the_paused_takes(self):
         vo = json.loads((WORK.parents[2] / "remotion" / "src" / "shots" / "dyk-02" / "vo.json").read_text())

@@ -324,7 +324,8 @@ def main():
             wav = os.path.join(MIX, f"{sid}.wav")
             if not os.path.exists(wav):   # fresh checkout / interrupted run: rebuild from the paid mp3, no API call
                 durations[sid] = round(mp3_to_wav(mp3, wav), 3)
-                print(f"  {sid}: rebuilt {os.path.basename(wav)} from the saved mp3")
+                print(f"  {sid}: rebuilt {os.path.basename(wav)} from the saved mp3"
+                      + (" — UNPAUSED: run insert_pauses.py before make_vo_json.py" if sc.get("pauses") else ""))
             continue                      # already paid for; never re-bill
         if only and sid not in only:
             continue

@@ -796,5 +796,21 @@
 "s": 55.606,
 "e": 56.337
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "explain.",
+"nth": 1,
+"add": 0.3
+},
+{
+"word": "parasols.",
+"nth": 1,
+"add": 0.2
+}
+],
+"even_pace": true
+}
 }

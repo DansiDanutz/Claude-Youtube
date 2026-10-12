@@ -921,5 +921,21 @@
 "s": 63.03,
 "e": 63.366
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "ladder?",
+"nth": 1,
+"add": 0.3
+},
+{
+"word": "fact.",
+"nth": 1,
+"add": 0.25
+}
+],
+"even_pace": true
+}
 }

@@ -231,5 +231,16 @@
 "s": 14.493,
 "e": 15.167
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "now,",
+"nth": 1,
+"add": 0.2
+}
+],
+"even_pace": true
+}
 }

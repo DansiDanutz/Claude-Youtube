@@ -861,5 +861,21 @@
 "s": 61.451,
 "e": 61.823
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "Photosynthesis.",
+"nth": 1,
+"add": 0.25
+},
+{
+"word": "purpose.",
+"nth": 1,
+"add": 0.2
+}
+],
+"even_pace": true
+}
 }

@@ -231,5 +231,15 @@
 "s": 14.695,
 "e": 15.369
 }
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "that?",
+"nth": 1,
+"add": 0.35
+}
 ]
+}
 }

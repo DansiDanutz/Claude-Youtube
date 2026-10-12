@@ -696,5 +696,31 @@
 "s": 50.477,
 "e": 51.0
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.35,
+"after": [
+{
+"word": "it?",
+"nth": 1,
+"add": 0.25
+},
+{
+"word": "answer?",
+"nth": 1,
+"add": 0.3
+},
+{
+"word": "change.",
+"nth": 1,
+"add": 0.15
+},
+{
+"word": "did.",
+"nth": 1,
+"add": 0.25
+}
+],
+"even_pace": true
+}
 }

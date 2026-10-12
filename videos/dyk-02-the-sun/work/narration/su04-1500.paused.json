@@ -831,5 +831,26 @@
 "s": 57.375,
 "e": 58.13
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "you?",
+"nth": 1,
+"add": 0.35
+},
+{
+"word": "Why?",
+"nth": 1,
+"add": 0.3
+},
+{
+"word": "firelight.",
+"nth": 1,
+"add": 0.2
+}
+],
+"even_pace": true
+}
 }

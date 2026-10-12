@@ -746,5 +746,16 @@
 "s": 55.728,
 "e": 56.215
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.26,
+"after": [
+{
+"word": "you.",
+"nth": 1,
+"add": 0.2
+}
+],
+"even_pace": true
+}
 }

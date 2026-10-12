@@ -296,5 +296,15 @@
 "s": 17.806,
 "e": 18.572
 }
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "will.",
+"nth": 1,
+"add": 0.3
+}
 ]
+}
 }

@@ -7,7 +7,7 @@ narration/<id>.words.json, and silence is inserted:
   "pauses": {"min_sentence_gap": 0.35,              # after . ? ! … : top the gap up to this
              "after": [{"word": "rule:", "nth": 1, "add": 0.25}]}   # add exactly this
 Writes mix/<id>.wav (the paused take used by build_final) and narration/<id>.paused.json
-({dur, words} with every later word shifted), which make_vo_json.py prefers over the raw
+({dur, words, pauses} with every later word shifted and the settings used), which make_vo_json.py prefers over the raw
 words, so vo.json, the shot cues and the SFX cues all follow the new timing.
 Idempotent: it always starts again from the paid mp3, never from its own output.
 `"even_pace": true` additionally evens the pace of neighbouring chunks (even_pace_cuts) for the voice preflight.
@@ -197,9 +197,14 @@ def process(sid, cfg, chunks=None):
         w.setparams(params)
         w.writeframes(pcm)
     dur = round(len(pcm) / (params.framerate * params.sampwidth), 3)
-    json.dump({"dur": dur, "words": shift_words(words, cuts)}, open(os.path.join(NARR, f"{sid}.paused.json"), "w"),
+    json.dump(paused_record(dur, shift_words(words, cuts), cfg), open(os.path.join(NARR, f"{sid}.paused.json"), "w"),
               indent=0)
     return cuts, dur
+
+
+def paused_record(dur, words, cfg):
+    """The paused take's timings plus the settings that made them, so make_vo_json.py can refuse a stale one."""
+    return {"dur": dur, "words": words, "pauses": cfg}
 
 
 def main():

@@ -661,5 +661,21 @@
 "s": 42.947,
 "e": 43.528
 }
-]
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "Ask...",
+"nth": 1,
+"add": 0.7
+},
+{
+"word": "Wonder...",
+"nth": 1,
+"add": 0.35
+}
+],
+"even_pace": true
+}
 }
