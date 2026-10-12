@@ -549,96 +549,96 @@ sec | shot | narration in this second | SFX starting in this second
 9:07 | Sc2100 | machine, awake | clock-tick-soft
 9:08 | Sc2100 | at any hour. | ui-click-soft
 9:09 | Sc2100 | And the classroom? | whoosh-soft
-9:10 | Sc2100 |  | 
-9:11 | Sc2100 | The O E C | ui-click-soft
-9:12 | Sc2100 | D has imagined | ui-click-soft
-9:13 | Sc2100 | futures where | 
-9:14 | Sc2100 | school becomes a learning | ui-click-soft
-9:15 | Sc2100 | hub, and even | chime-reward
-9:16 | Sc2100 | one where it fades | whoosh-reverse
-9:17 | Sc2100 | away. | 
-9:18 | Sc2100 | But UNESCO says | page-flip
-9:19 | Sc2100 | schools should be protected. | warm-shimmer
-9:20 | Sc2100 | If they | 
-9:21 | Sc2100 | didn't exist, | ui-click-soft
-9:22 | Sc2100 | we'd have to invent them. | pop-reveal
-9:23 | Sc2100 | In fifteen | whoosh-soft
-9:24 | Sc2100 | hundred, a private | ui-click-soft
-9:25 | Sc2100 | teacher was for a prince. | ui-click-soft
-9:26 | Sc2100 |  | 
-9:27 | Sc2100 | In twenty one hundred, | ui-send
+9:10 | Sc2100 | The | 
+9:11 | Sc2100 | O E C D | ui-click-soft
+9:12 | Sc2100 | has imagined | ui-click-soft
+9:13 | Sc2100 | futures where school | ui-click-soft
+9:14 | Sc2100 | becomes a learning hub, | chime-reward
+9:15 | Sc2100 | and even | 
+9:16 | Sc2100 | one where it fades away. | whoosh-reverse
+9:17 | Sc2100 | But | 
+9:18 | Sc2100 | UNESCO says schools | page-flip
+9:19 | Sc2100 | should be protected. | warm-shimmer
+9:20 | Sc2100 | If they didn't | 
+9:21 | Sc2100 | exist, we'd | ui-click-soft
+9:22 | Sc2100 | have to invent them. | pop-reveal
+9:23 | Sc2100 | In fifteen hundred, | whoosh-soft
+9:24 | Sc2100 | a private teacher | ui-click-soft
+9:25 | Sc2100 | was for a prince. | ui-click-soft
+9:26 | Sc2100 | In | 
+9:27 | Sc2100 | twenty one hundred, | ui-send
 9:28 | Sc2100 | it might be for everyone. | chime-reward
-9:29 | Sc2100 |  | 
-9:30 | Sc2100 | And school might get | whoosh-soft
-9:31 | Sc2100 | a little closer to what | ui-click-soft
-9:32 | Sc2100 | its name first | ui-click-soft
-9:33 | Sc2100 | meant. | sparkle-soft
+9:29 | Sc2100 | And | 
+9:30 | Sc2100 | school might get a little | whoosh-soft
+9:31 | Sc2100 | closer to what its | ui-click-soft
+9:32 | Sc2100 | name first meant. | ui-click-soft
+9:33 | Sc2100 |  | sparkle-soft
 9:34 | Sc2100 |  | whoosh-soft
-9:35 | ScClose | You've spent | ui-send
-9:36 | ScClose | years of your life in | ui-click-soft, ui-click-soft
-9:37 | ScClose | school. | ui-click-soft
-9:38 | ScClose | So tell me. | whoosh-soft
-9:39 | ScClose | What's the one | pop-reveal
-9:40 | ScClose | thing it taught you that | ui-click-soft
-9:41 | ScClose | no screen ever could? | ui-click-soft
-9:42 | ScClose |  | piano-a-min
+9:35 | ScClose | You've spent years | ui-send, ui-click-soft
+9:36 | ScClose | of your life in school. | ui-click-soft, ui-click-soft
+9:37 | ScClose | So | whoosh-soft
+9:38 | ScClose | tell me. What's | pop-reveal
+9:39 | ScClose | the one thing | 
+9:40 | ScClose | it taught you that no screen | ui-click-soft, ui-click-soft
+9:41 | ScClose | ever could? | piano-a-min
+9:42 | ScClose |  | 
 9:43 | ScClose |  | whoosh-wind
-9:44 | ScOutro | This was Did You Know | pop-reveal, ui-toggle-on
-9:45 | ScOutro | That, episode three. | ui-click-soft
+9:44 | ScOutro | This was Did You Know That, | pop-reveal, ui-toggle-on
+9:45 | ScOutro | episode three. | ui-click-soft
 9:46 | ScOutro | School. | pop-reveal
-9:47 | ScOutro | Now it's your | 
-9:48 | ScOutro | turn. Which century's | whoosh-soft
-9:49 | ScOutro | classroom | ui-click-soft, ui-click-soft, ui-click-soft
-9:50 | ScOutro | would you survive? | ui-click-soft, ui-click-soft, ui-click-soft
-9:51 | ScOutro | Tell me in the | ui-click-soft, ui-click-soft
-9:52 | ScOutro | comments. | pop-reveal
-9:53 | ScOutro | At the end of every episode, | ui-click-soft
-9:54 | ScOutro | I will read the | 
-9:55 | ScOutro | best comment, | impact-soft, ui-click-soft
-9:56 | ScOutro | right here, on this screen. | ui-click-soft, ui-click-soft
-9:57 | ScOutro | And the | sparkle-soft
-9:58 | ScOutro | subject you ask for most | ui-click-soft
-9:59 | ScOutro | becomes a future episode. | pop-reveal
-10:00 | ScOutro | On | 
-10:01 | ScOutro | our website, Dex-tee | whoosh-soft, sparkle-soft
+9:47 | ScOutro | Now it's your turn. | whoosh-soft
+9:48 | ScOutro | Which century's | ui-click-soft
+9:49 | ScOutro | classroom would you | ui-click-soft, ui-click-soft
+9:50 | ScOutro | survive? | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+9:51 | ScOutro | Tell me in the comments. | ui-click-soft, pop-reveal
+9:52 | ScOutro | At the | 
+9:53 | ScOutro | end of every episode, | ui-click-soft
+9:54 | ScOutro | I will read the best | impact-soft
+9:55 | ScOutro | comment, right | ui-click-soft, ui-click-soft
+9:56 | ScOutro | here, on this screen. | ui-click-soft
+9:57 | ScOutro | And the subject | sparkle-soft
+9:58 | ScOutro | you ask for most becomes | ui-click-soft
+9:59 | ScOutro | a future episode. | pop-reveal
+10:00 | ScOutro | On our | whoosh-soft
+10:01 | ScOutro | website, Dex-tee | sparkle-soft
 10:02 | ScOutro | dot live, | 
-10:03 | ScOutro | you can watch | ui-click-soft
-10:04 | ScOutro | every episode, | 
+10:03 | ScOutro | you can watch every | ui-click-soft
+10:04 | ScOutro | episode, | 
 10:05 | ScOutro | collect the facts, | ui-click-soft
-10:06 | ScOutro | and play the guessing | ui-click-soft
-10:07 | ScOutro | game. | pop-reveal
-10:08 | ScOutro | If this changed how | ui-click-soft
-10:09 | ScOutro | you see a school day, | ui-click-soft
-10:10 | ScOutro | like | ui-click-soft
-10:11 | ScOutro | it. | 
-10:12 | ScOutro | Share it with the | ui-send
-10:13 | ScOutro | friend who always | ui-click-soft
-10:14 | ScOutro | did the homework. | pop-reveal
+10:06 | ScOutro | and play the guessing | ui-click-soft, pop-reveal
+10:07 | ScOutro | game. If | 
+10:08 | ScOutro | this changed how you | ui-click-soft
+10:09 | ScOutro | see a school day, | ui-click-soft
+10:10 | ScOutro | like it. | ui-click-soft
+10:11 | ScOutro |  | 
+10:12 | ScOutro | Share it with the friend | ui-send, ui-click-soft
+10:13 | ScOutro | who always did | 
+10:14 | ScOutro | the homework. | pop-reveal
 10:15 | ScOutro | And subscribe, | chime-reward
 10:16 | ScOutro | so the next mystery | sparkle-soft
-10:17 | ScOutro | finds you. | 
-10:18 | ScOutro | Next time: | whoosh-wind
-10:19 | ScOutro | money. | impact-soft
-10:20 | ScOutro | Around the world, | 
-10:21 | ScOutro | each extra year | ui-click-soft
-10:22 | ScOutro | of school adds, | 
-10:23 | ScOutro | on average, | ui-click-soft
-10:24 | ScOutro | about nine percent | pop-reveal
+10:17 | ScOutro | finds you. | whoosh-wind
+10:18 | ScOutro | Next time: | 
+10:19 | ScOutro | money. Around | impact-soft
+10:20 | ScOutro | the world, each | 
+10:21 | ScOutro | extra year of school | ui-click-soft
+10:22 | ScOutro | adds, on | 
+10:23 | ScOutro | average, about | ui-click-soft
+10:24 | ScOutro | nine percent | pop-reveal
 10:25 | ScOutro | to what people earn. | ui-click-soft
-10:26 | ScOutro |  | 
-10:27 | ScOutro | But did school ever | ui-click-soft
-10:28 | ScOutro | teach you what money | ui-click-soft
-10:29 | ScOutro | actually is? | piano-a-min
+10:26 | ScOutro | But did | ui-click-soft
+10:27 | ScOutro | school ever teach | 
+10:28 | ScOutro | you what money actually | ui-click-soft
+10:29 | ScOutro | is? | piano-a-min
 10:30 | ScOutro | Ask... | chess-piece-thock
-10:31 | ScOutro | Wonder... | 
-10:32 | ScOutro | Repeat. | chess-piece-thock
+10:31 | ScOutro | Wonder... | chess-piece-thock
+10:32 | ScOutro | Repeat. | 
 10:33 | ScOutro |  | chess-piece-thock
-10:34 | ScOutro |  | pencil-scribble
-10:35 | ScOutro | Next time... | ui-toggle-on, sparkle-soft
-10:36 | ScOutro | this could be your comment. | pop-reveal
+10:34 | ScOutro | Next | pencil-scribble, ui-toggle-on
+10:35 | ScOutro | time... this | sparkle-soft
+10:36 | ScOutro | could be your comment. | pop-reveal
 10:37 | ScOutro | Pick a mystery. | ui-click-soft
-10:38 | ScOutro | And | 
-10:39 | ScOutro | I will see you there. | sparkle-soft
+10:38 | ScOutro | And I will | 
+10:39 | ScOutro | see you there. | sparkle-soft
 10:40 | ScOutro |  | 
 10:41 | ScOutro |  | 
 10:42 | ScOutro |  | 
@@ -650,4 +650,3 @@ sec | shot | narration in this second | SFX starting in this second
 10:48 | ScOutro |  | 
 10:49 | ScOutro |  | 
 10:50 | ScOutro |  | 
-10:51 | ScOutro |  | 

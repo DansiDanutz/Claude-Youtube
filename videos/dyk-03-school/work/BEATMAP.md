@@ -2,7 +2,7 @@
 
 One row per second of the master: words → visual event → SFX. Source of truth: `cues.py` (the same table `build_final.py` mixes), `timeline.json`, `remotion/src/shots/dyk-03/vo.json`.
 
-Total 651.1 s · 622 cues · gaps ≥ 2.0 s between visual events while narrating: 9
+Total 650.9 s · 622 cues · gaps ≥ 2.0 s between visual events while narrating: 9
 
 ## Gaps to check (continuous motion must cover them)
 - 0:10.5 → 0:12.6 (2.0 s) in ScHook — motion: globe lights blinking, counter rolling, hammer swinging, riser swell on the ? clock
@@ -567,96 +567,96 @@ Total 651.1 s · 622 cues · gaps ≥ 2.0 s between visual events while narratin
 | 9:07 | Sc2100 | machine, awake | 03:00 (clock-tick-soft) |
 | 9:08 | Sc2100 | at any hour. | · AWAKE AT ANY HOUR (ui-click-soft) |
 | 9:09 | Sc2100 | And the classroom? | a school; AND THE CLASSROOM? (whoosh-soft) |
-| 9:10 | Sc2100 |  |  |
-| 9:11 | Sc2100 | The O E C | OECD scenario 1 (ui-click-soft) |
-| 9:12 | Sc2100 | D has imagined | OECD · FOUR SCENARIOS · NOT FORECASTS (ui-click-soft) |
-| 9:13 | Sc2100 | futures where |  |
-| 9:14 | Sc2100 | school becomes a learning | LEARNING HUBS starts to glow (ui-click-soft) |
-| 9:15 | Sc2100 | hub, and even | SCHOOLS AS LEARNING HUBS lights (chime-reward) |
-| 9:16 | Sc2100 | one where it fades | LEARN-AS-YOU-GO fades (whoosh-reverse) |
-| 9:17 | Sc2100 | away. |  |
-| 9:18 | Sc2100 | But UNESCO says | UNESCO card (page-flip) |
-| 9:19 | Sc2100 | schools should be protected. | a shield round the school (warm-shimmer) |
-| 9:20 | Sc2100 | If they |  |
-| 9:21 | Sc2100 | didn't exist, | “If schools did not exist…” (ui-click-soft) |
-| 9:22 | Sc2100 | we'd have to invent them. | …invent them.” (pop-reveal) |
-| 9:23 | Sc2100 | In fifteen | callback: 1 : 1 + the 1500 panel; ladder returns (whoosh-soft) |
-| 9:24 | Sc2100 | hundred, a private | A PRIVATE TEACHER (ui-click-soft) |
-| 9:25 | Sc2100 | teacher was for a prince. | · FOR A PRINCE (ui-click-soft) |
-| 9:26 | Sc2100 |  |  |
-| 9:27 | Sc2100 | In twenty one hundred, | the 2100 panel: children with tutors (ui-send) |
+| 9:10 | Sc2100 | The |  |
+| 9:11 | Sc2100 | O E C D | OECD scenario 1 (ui-click-soft) |
+| 9:12 | Sc2100 | has imagined | OECD · FOUR SCENARIOS · NOT FORECASTS (ui-click-soft) |
+| 9:13 | Sc2100 | futures where school | LEARNING HUBS starts to glow (ui-click-soft) |
+| 9:14 | Sc2100 | becomes a learning hub, | SCHOOLS AS LEARNING HUBS lights (chime-reward) |
+| 9:15 | Sc2100 | and even |  |
+| 9:16 | Sc2100 | one where it fades away. | LEARN-AS-YOU-GO fades (whoosh-reverse) |
+| 9:17 | Sc2100 | But |  |
+| 9:18 | Sc2100 | UNESCO says schools | UNESCO card (page-flip) |
+| 9:19 | Sc2100 | should be protected. | a shield round the school (warm-shimmer) |
+| 9:20 | Sc2100 | If they didn't |  |
+| 9:21 | Sc2100 | exist, we'd | “If schools did not exist…” (ui-click-soft) |
+| 9:22 | Sc2100 | have to invent them. | …invent them.” (pop-reveal) |
+| 9:23 | Sc2100 | In fifteen hundred, | callback: 1 : 1 + the 1500 panel; ladder returns (whoosh-soft) |
+| 9:24 | Sc2100 | a private teacher | A PRIVATE TEACHER (ui-click-soft) |
+| 9:25 | Sc2100 | was for a prince. | · FOR A PRINCE (ui-click-soft) |
+| 9:26 | Sc2100 | In |  |
+| 9:27 | Sc2100 | twenty one hundred, | the 2100 panel: children with tutors (ui-send) |
 | 9:28 | Sc2100 | it might be for everyone. | 2100 rung fills: A TUTOR FOR ALL?; FOR EVERYONE? (chime-reward) |
-| 9:29 | Sc2100 |  |  |
-| 9:30 | Sc2100 | And school might get | SCHOOL, A LITTLE CLOSER TO ITS NAME? (whoosh-soft) |
-| 9:31 | Sc2100 | a little closer to what | CLOSER TO ITS NAME? (ui-click-soft) |
-| 9:32 | Sc2100 | its name first | σχολή (ui-click-soft) |
-| 9:33 | Sc2100 | meant. | = FREE TIME? (sparkle-soft) |
+| 9:29 | Sc2100 | And |  |
+| 9:30 | Sc2100 | school might get a little | SCHOOL, A LITTLE CLOSER TO ITS NAME? (whoosh-soft) |
+| 9:31 | Sc2100 | closer to what its | CLOSER TO ITS NAME? (ui-click-soft) |
+| 9:32 | Sc2100 | name first meant. | σχολή (ui-click-soft) |
+| 9:33 | Sc2100 |  | = FREE TIME? (sparkle-soft) |
 | 9:34 | Sc2100 |  | cut to a wall of desks (whoosh-soft) |
-| 9:35 | ScClose | You've spent | the desks fill (ui-send) |
-| 9:36 | ScClose | years of your life in | Years (ui-click-soft); of your life (ui-click-soft) |
-| 9:37 | ScClose | school. | in school. (ui-click-soft) |
-| 9:38 | ScClose | So tell me. | the wall dims (whoosh-soft) |
-| 9:39 | ScClose | What's the one | the question (pop-reveal) |
-| 9:40 | ScClose | thing it taught you that | it taught you (ui-click-soft) |
-| 9:41 | ScClose | no screen ever could? | a screen (ui-click-soft) |
-| 9:42 | ScClose |  | "could?" glows; the screen dims (piano-a-min) |
+| 9:35 | ScClose | You've spent years | the desks fill (ui-send); Years (ui-click-soft) |
+| 9:36 | ScClose | of your life in school. | of your life (ui-click-soft); in school. (ui-click-soft) |
+| 9:37 | ScClose | So | the wall dims (whoosh-soft) |
+| 9:38 | ScClose | tell me. What's | the question (pop-reveal) |
+| 9:39 | ScClose | the one thing |  |
+| 9:40 | ScClose | it taught you that no screen | it taught you (ui-click-soft); a screen (ui-click-soft) |
+| 9:41 | ScClose | ever could? | "could?" glows; the screen dims (piano-a-min) |
+| 9:42 | ScClose |  |  |
 | 9:43 | ScClose |  | cut to the outro (whoosh-wind) |
-| 9:44 | ScOutro | This was Did You Know | EPISODE 03 (pop-reveal); logo switches on; wordmark (ui-toggle-on) |
-| 9:45 | ScOutro | That, episode three. | "03" pulses (ui-click-soft) |
+| 9:44 | ScOutro | This was Did You Know That, | EPISODE 03 (pop-reveal); logo switches on; wordmark (ui-toggle-on) |
+| 9:45 | ScOutro | episode three. | "03" pulses (ui-click-soft) |
 | 9:46 | ScOutro | School. | "School" title (pop-reveal) |
-| 9:47 | ScOutro | Now it's your |  |
-| 9:48 | ScOutro | turn. Which century's | lockup shrinks; prompt card (whoosh-soft) |
-| 9:49 | ScOutro | classroom | heading + seven year chips (1/7) (ui-click-soft); heading + seven year chips (2/7) (ui-click-soft); heading + seven year chips (3/7) (ui-click-soft) |
-| 9:50 | ScOutro | would you survive? | "survive" (gold) (ui-click-soft); heading + seven year chips (4/7) (ui-click-soft); heading + seven year chips (5/7) (ui-click-soft) |
-| 9:51 | ScOutro | Tell me in the | heading + seven year chips (6/7) (ui-click-soft); heading + seven year chips (7/7) (ui-click-soft) |
-| 9:52 | ScOutro | comments. | COMMENTS ↓ (pop-reveal) |
-| 9:53 | ScOutro | At the end of every episode, | "end of every episode:" (ui-click-soft) |
-| 9:54 | ScOutro | I will read the |  |
-| 9:55 | ScOutro | best comment, | COMMENT OF THE WEEK pill (impact-soft); "best comment" (ui-click-soft) |
-| 9:56 | ScOutro | right here, on this screen. | card flash ("right here") (ui-click-soft); "read on screen" (ui-click-soft) |
-| 9:57 | ScOutro | And the | "the subject" (sparkle-soft) |
-| 9:58 | ScOutro | subject you ask for most | "you ask for most" (ui-click-soft) |
-| 9:59 | ScOutro | becomes a future episode. | → a future episode (pop-reveal) |
-| 10:00 | ScOutro | On |  |
-| 10:01 | ScOutro | our website, Dex-tee | website pill slides in (whoosh-soft); Dexty.live lights in the pill (sparkle-soft) |
+| 9:47 | ScOutro | Now it's your turn. | lockup shrinks; prompt card (whoosh-soft) |
+| 9:48 | ScOutro | Which century's | heading + seven year chips (1/7) (ui-click-soft) |
+| 9:49 | ScOutro | classroom would you | heading + seven year chips (2/7) (ui-click-soft); heading + seven year chips (3/7) (ui-click-soft) |
+| 9:50 | ScOutro | survive? | "survive" (gold) (ui-click-soft); heading + seven year chips (4/7) (ui-click-soft); heading + seven year chips (5/7) (ui-click-soft); heading + seven year chips (6/7) (ui-click-soft) |
+| 9:51 | ScOutro | Tell me in the comments. | heading + seven year chips (7/7) (ui-click-soft); COMMENTS ↓ (pop-reveal) |
+| 9:52 | ScOutro | At the |  |
+| 9:53 | ScOutro | end of every episode, | "end of every episode:" (ui-click-soft) |
+| 9:54 | ScOutro | I will read the best | COMMENT OF THE WEEK pill (impact-soft) |
+| 9:55 | ScOutro | comment, right | "best comment" (ui-click-soft); card flash ("right here") (ui-click-soft) |
+| 9:56 | ScOutro | here, on this screen. | "read on screen" (ui-click-soft) |
+| 9:57 | ScOutro | And the subject | "the subject" (sparkle-soft) |
+| 9:58 | ScOutro | you ask for most becomes | "you ask for most" (ui-click-soft) |
+| 9:59 | ScOutro | a future episode. | → a future episode (pop-reveal) |
+| 10:00 | ScOutro | On our | website pill slides in (whoosh-soft) |
+| 10:01 | ScOutro | website, Dex-tee | Dexty.live lights in the pill (sparkle-soft) |
 | 10:02 | ScOutro | dot live, |  |
-| 10:03 | ScOutro | you can watch | WATCH (ui-click-soft) |
-| 10:04 | ScOutro | every episode, |  |
+| 10:03 | ScOutro | you can watch every | WATCH (ui-click-soft) |
+| 10:04 | ScOutro | episode, |  |
 | 10:05 | ScOutro | collect the facts, | COLLECT (ui-click-soft) |
-| 10:06 | ScOutro | and play the guessing | PLAY (ui-click-soft) |
-| 10:07 | ScOutro | game. | Dexty.live pulses (pop-reveal) |
-| 10:08 | ScOutro | If this changed how | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
-| 10:09 | ScOutro | you see a school day, | A SCHOOL DAY (ui-click-soft) |
-| 10:10 | ScOutro | like | Like (ui-click-soft) |
-| 10:11 | ScOutro | it. |  |
-| 10:12 | ScOutro | Share it with the | Share (ui-send) |
-| 10:13 | ScOutro | friend who always | THE FRIEND WHO ALWAYS DID THE HOMEWORK (ui-click-soft) |
-| 10:14 | ScOutro | did the homework. | friend chip pulses cyan (pop-reveal) |
+| 10:06 | ScOutro | and play the guessing | PLAY (ui-click-soft); Dexty.live pulses (pop-reveal) |
+| 10:07 | ScOutro | game. If |  |
+| 10:08 | ScOutro | this changed how you | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
+| 10:09 | ScOutro | see a school day, | A SCHOOL DAY (ui-click-soft) |
+| 10:10 | ScOutro | like it. | Like (ui-click-soft) |
+| 10:11 | ScOutro |  |  |
+| 10:12 | ScOutro | Share it with the friend | Share (ui-send); THE FRIEND WHO ALWAYS DID THE HOMEWORK (ui-click-soft) |
+| 10:13 | ScOutro | who always did |  |
+| 10:14 | ScOutro | the homework. | friend chip pulses cyan (pop-reveal) |
 | 10:15 | ScOutro | And subscribe, | Subscribe (chime-reward) |
 | 10:16 | ScOutro | so the next mystery | ? THE NEXT MYSTERY (sparkle-soft) |
-| 10:17 | ScOutro | finds you. |  |
-| 10:18 | ScOutro | Next time: | NEXT · NO. 04 (whoosh-wind) |
-| 10:19 | ScOutro | money. | MONEY + coin → note → phone (impact-soft) |
-| 10:20 | ScOutro | Around the world, |  |
-| 10:21 | ScOutro | each extra year | Each extra year of school adds, (ui-click-soft) |
-| 10:22 | ScOutro | of school adds, |  |
-| 10:23 | ScOutro | on average, | on average, (ui-click-soft) |
-| 10:24 | ScOutro | about nine percent | about 9 % + source (pop-reveal) |
+| 10:17 | ScOutro | finds you. | NEXT · NO. 04 (whoosh-wind) |
+| 10:18 | ScOutro | Next time: |  |
+| 10:19 | ScOutro | money. Around | MONEY + coin → note → phone (impact-soft) |
+| 10:20 | ScOutro | the world, each |  |
+| 10:21 | ScOutro | extra year of school | Each extra year of school adds, (ui-click-soft) |
+| 10:22 | ScOutro | adds, on |  |
+| 10:23 | ScOutro | average, about | on average, (ui-click-soft) |
+| 10:24 | ScOutro | nine percent | about 9 % + source (pop-reveal) |
 | 10:25 | ScOutro | to what people earn. | to what people earn. (ui-click-soft) |
-| 10:26 | ScOutro |  |  |
-| 10:27 | ScOutro | But did school ever | But did school ever teach you (ui-click-soft) |
-| 10:28 | ScOutro | teach you what money | what money actually is? (ui-click-soft) |
-| 10:29 | ScOutro | actually is? | the question settles (piano-a-min) |
+| 10:26 | ScOutro | But did | But did school ever teach you (ui-click-soft) |
+| 10:27 | ScOutro | school ever teach |  |
+| 10:28 | ScOutro | you what money actually | what money actually is? (ui-click-soft) |
+| 10:29 | ScOutro | is? | the question settles (piano-a-min) |
 | 10:30 | ScOutro | Ask... | ASK. (thock in the beat after the word) (chess-piece-thock) |
-| 10:31 | ScOutro | Wonder... |  |
-| 10:32 | ScOutro | Repeat. | WONDER. (thock in the beat after the word) (chess-piece-thock) |
+| 10:31 | ScOutro | Wonder... | WONDER. (thock in the beat after the word) (chess-piece-thock) |
+| 10:32 | ScOutro | Repeat. |  |
 | 10:33 | ScOutro |  | REPEAT. (thock in the beat after the word) (chess-piece-thock) |
-| 10:34 | ScOutro |  | end screen: BEST COMMENT · READ HERE writes on (pencil-scribble) |
-| 10:35 | ScOutro | Next time... | end screen: logo switches on (subscribe slot) (ui-toggle-on); end screen: logo glow (sparkle-soft) |
-| 10:36 | ScOutro | this could be your comment. | end screen: THIS WEEK'S QUESTION card flares (pop-reveal) |
+| 10:34 | ScOutro | Next | end screen: BEST COMMENT · READ HERE writes on (pencil-scribble); end screen: logo switches on (subscribe slot) (ui-toggle-on) |
+| 10:35 | ScOutro | time... this | end screen: logo glow (sparkle-soft) |
+| 10:36 | ScOutro | could be your comment. | end screen: THIS WEEK'S QUESTION card flares (pop-reveal) |
 | 10:37 | ScOutro | Pick a mystery. | end screen: Comment below / best one is read next episode (ui-click-soft) |
-| 10:38 | ScOutro | And |  |
-| 10:39 | ScOutro | I will see you there. | end screen: subscribe ring pulses (sparkle-soft) |
+| 10:38 | ScOutro | And I will |  |
+| 10:39 | ScOutro | see you there. | end screen: subscribe ring pulses (sparkle-soft) |
 | 10:40 | ScOutro |  |  |
 | 10:41 | ScOutro |  |  |
 | 10:42 | ScOutro |  |  |
@@ -668,4 +668,3 @@ Total 651.1 s · 622 cues · gaps ≥ 2.0 s between visual events while narratin
 | 10:48 | ScOutro |  |  |
 | 10:49 | ScOutro |  |  |
 | 10:50 | ScOutro |  |  |
-| 10:51 | ScOutro |  |  |

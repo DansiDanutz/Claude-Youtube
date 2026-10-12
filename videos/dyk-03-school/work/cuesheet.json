@@ -2690,422 +2690,422 @@
 "gain": 0.14
 },
 {
-"t": 549.8,
+"t": 549.544,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 551.384,
+"t": 551.128,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 552.824,
+"t": 552.568,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 554.101,
+"t": 553.845,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 555.081,
+"t": 554.825,
 "clip": "chime-reward",
 "gain": 0.2
 },
 {
-"t": 556.776,
+"t": 556.52,
 "clip": "whoosh-reverse",
 "gain": 0.18
 },
 {
-"t": 558.315,
+"t": 558.059,
 "clip": "page-flip",
 "gain": 0.2
 },
 {
-"t": 559.813,
+"t": 559.557,
 "clip": "warm-shimmer",
 "gain": 0.22
 },
 {
-"t": 561.345,
+"t": 561.089,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 562.562,
+"t": 562.306,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 563.787,
+"t": 563.531,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 564.718,
+"t": 564.462,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 565.856,
+"t": 565.6,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 567.343,
+"t": 567.087,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 568.927,
+"t": 568.671,
 "clip": "chime-reward",
 "gain": 0.26
 },
 {
-"t": 570.414,
+"t": 570.158,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 571.442,
+"t": 571.186,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 572.568,
+"t": 572.312,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 573.637,
+"t": 573.381,
 "clip": "sparkle-soft",
 "gain": 0.24
 },
 {
-"t": 574.767,
+"t": 574.5,
 "clip": "whoosh-soft",
 "gain": 0.22
 },
 {
-"t": 575.611,
+"t": 575.344,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 576.006,
+"t": 575.739,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 576.679,
+"t": 576.412,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 577.074,
+"t": 576.807,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 578.152,
+"t": 577.885,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 579.162,
+"t": 578.895,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 580.383,
+"t": 580.116,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 581.196,
+"t": 580.929,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 582.177,
+"t": 581.91,
 "clip": "piano-a-min",
 "gain": 0.24
 },
 {
-"t": 583.733,
+"t": 583.467,
 "clip": "whoosh-wind",
 "gain": 0.32
 },
 {
-"t": 584.273,
+"t": 584.007,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 584.539,
+"t": 584.273,
 "clip": "ui-toggle-on",
 "gain": 0.26
 },
 {
-"t": 585.83,
+"t": 585.564,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 586.664,
+"t": 586.398,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 588.017,
+"t": 587.751,
 "clip": "whoosh-soft",
 "gain": 0.24
 },
 {
-"t": 589.166,
+"t": 588.9,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 589.566,
+"t": 589.3,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 589.966,
+"t": 589.7,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 590.36,
+"t": 590.094,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 590.366,
+"t": 590.1,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 590.766,
+"t": 590.5,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 591.166,
+"t": 590.9,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 591.566,
+"t": 591.3,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 592.055,
+"t": 591.789,
 "clip": "pop-reveal",
 "gain": 0.3
 },
 {
-"t": 593.385,
+"t": 593.119,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 595.043,
+"t": 594.777,
 "clip": "impact-soft",
 "gain": 0.32
 },
 {
-"t": 595.382,
+"t": 595.116,
 "clip": "ui-click-soft",
 "gain": 0.22
 },
 {
-"t": 596.02,
+"t": 595.754,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 596.844,
+"t": 596.578,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 597.952,
+"t": 597.686,
 "clip": "sparkle-soft",
 "gain": 0.26
 },
 {
-"t": 598.876,
+"t": 598.61,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 599.547,
+"t": 599.281,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 601.261,
+"t": 600.995,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 601.779,
+"t": 601.513,
 "clip": "sparkle-soft",
 "gain": 0.3
 },
 {
-"t": 603.764,
+"t": 603.498,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 605.424,
+"t": 605.158,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 606.62,
+"t": 606.354,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 607.263,
+"t": 606.997,
 "clip": "pop-reveal",
 "gain": 0.16
 },
 {
-"t": 608.507,
+"t": 608.241,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 609.994,
+"t": 609.728,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 610.748,
+"t": 610.482,
 "clip": "ui-click-soft",
 "gain": 0.34
 },
 {
-"t": 612.405,
+"t": 612.139,
 "clip": "ui-send",
 "gain": 0.32
 },
 {
-"t": 613.067,
+"t": 612.801,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 614.36,
+"t": 614.094,
 "clip": "pop-reveal",
 "gain": 0.16
 },
 {
-"t": 615.912,
+"t": 615.646,
 "clip": "chime-reward",
 "gain": 0.42
 },
 {
-"t": 616.946,
+"t": 616.68,
 "clip": "sparkle-soft",
 "gain": 0.22
 },
 {
-"t": 618.221,
+"t": 617.955,
 "clip": "whoosh-wind",
 "gain": 0.3
 },
 {
-"t": 619.463,
+"t": 619.197,
 "clip": "impact-soft",
 "gain": 0.34
 },
 {
-"t": 621.433,
+"t": 621.167,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 623.36,
+"t": 623.094,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 624.496,
+"t": 624.23,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 625.96,
+"t": 625.694,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 627.017,
+"t": 626.751,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 628.805,
+"t": 628.539,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 629.764,
+"t": 629.498,
 "clip": "piano-a-min",
 "gain": 0.26
 },
 {
-"t": 630.945,
+"t": 630.679,
 "clip": "chess-piece-thock",
 "gain": 0.38
 },
 {
-"t": 632.249,
+"t": 631.983,
 "clip": "chess-piece-thock",
 "gain": 0.38
 },
 {
-"t": 633.465,
+"t": 633.199,
 "clip": "chess-piece-thock",
 "gain": 0.38
 },
 {
-"t": 634.933,
+"t": 634.667,
 "clip": "pencil-scribble",
 "gain": 0.3
 },
 {
-"t": 635.133,
+"t": 634.867,
 "clip": "ui-toggle-on",
 "gain": 0.24
 },
 {
-"t": 635.272,
+"t": 635.006,
 "clip": "sparkle-soft",
 "gain": 0.22
 },
 {
-"t": 636.744,
+"t": 636.478,
 "clip": "pop-reveal",
 "gain": 0.18
 },
 {
-"t": 637.352,
+"t": 637.086,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 639.277,
+"t": 639.011,
 "clip": "sparkle-soft",
 "gain": 0.2
 }

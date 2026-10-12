@@ -236,7 +236,7 @@ const Sc1647: React.FC = () => {
 
         <SchoolLadder rungs={rungs} show={ladder} />
         <DidYouKnowThat at={DID} out={SO1}>
-          <span style={{ opacity: ease(f, FIRST - 4, FIRST + 6) }}>one of America’s first</span>
+          <span style={{ opacity: ease(f, C.at('one', 1) - 4, C.at('one', 1) + 6) }}>one of America’s</span><span style={{ opacity: ease(f, FIRST - 4, FIRST + 6) }}> first</span>
           <span style={{ opacity: ease(f, LAWS - 4, LAWS + 6) }}> school laws</span>
           <span style={{ opacity: ease(f, BLAMING - 4, BLAMING + 6) }}> begins by blaming</span>
           <span style={{ opacity: ease(f, DEVIL - 4, DEVIL + 6), color: '#ff9a1f', fontStyle: 'italic' }}> the devil.</span>

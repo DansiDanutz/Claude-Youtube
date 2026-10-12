@@ -19,8 +19,8 @@ import vo from './vo.json';
 // quoted on "invent". Callback: a private teacher for a prince | for everyone? — the 2100 rung fills A TUTOR FOR ALL?
 // on "everyone"; σχολή = FREE TIME? on "meant". VO sc11 @0.8 s.
 // =============================================================================
-export const compositionConfig = { id: 'Sc2100', durationInSeconds: 79.9667, fps: 30, width: 1920, height: 1080 };
-const DUR = 2399;
+export const compositionConfig = { id: 'Sc2100', durationInSeconds: 79.7, fps: 30, width: 1920, height: 1080 };
+const DUR = 2391;
 
 const C = makeCue(vo, 'sc11-2100', 0.8);
 const RUNG = C.at('rung');
@@ -165,7 +165,7 @@ const Sc2100: React.FC = () => {
           <PrinceTutor />
           <div style={{ marginTop: 10, fontFamily: DL_MONO, fontSize: 26, color: DL.gold }}>1500 · <span style={{ opacity: ease(f, ONE_T - 2, ONE_T + 6) }}>ONE TEACHER,</span><span style={{ opacity: ease(f, ONE_C - 2, ONE_C + 6) }}> ONE CHILD</span></div>
         </div>
-        <div style={{ position: 'absolute', left: 620, top: 250, opacity: ease(f, EIGHTY - 4, EIGHTY + 8) }}>
+        <div style={{ position: 'absolute', left: 720, top: 250, opacity: ease(f, EIGHTY - 4, EIGHTY + 8) }}>
           <div style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.text }}>1984 · <span style={{ opacity: ease(f, C.at('researcher') - 2, C.at('researcher') + 6) }}>AN AMERICAN RESEARCHER · </span><span style={{ opacity: ease(f, BLOOM - 2, BLOOM + 6), color: DL.gold }}>BENJAMIN BLOOM</span></div>
           <BellCurve f={f} />
         </div>
@@ -179,7 +179,7 @@ const Sc2100: React.FC = () => {
           <div style={{ display: 'flex', alignItems: 'flex-end', gap: 8, opacity: ease(f, NOBODY - 2, NOBODY + 8) }}>
             <Kid size={70} adult color="#8a7ab0" />{Array.from({ length: 6 }, (_, i) => <Kid key={i} size={46} girl={i % 2 === 0} />)}
           </div>
-          <div style={{ maxWidth: 430 }}><Label at={NOBODY} color={DL.dim} size={24}>NO ONE CAN PAY A TUTOR <span style={{ opacity: ease(f, CHILD2 - 2, CHILD2 + 6) }}>FOR EVERY CHILD</span></Label></div>
+          <div style={{ maxWidth: 430 }}><Label at={NOBODY} color={DL.dim} size={24}>NOBODY CAN PAY A TUTOR <span style={{ opacity: ease(f, CHILD2 - 2, CHILD2 + 6) }}>FOR EVERY CHILD</span></Label></div>
         </div>
         <div style={{ position: 'absolute', left: 620, top: 860 }}><Source at={LATER}>Bloom, “The 2 Sigma Problem” (1984) · meta-analyses: Nickow et al. 2020 (~0.37 SD), VanLehn 2011</Source></div>
       </AbsoluteFill>

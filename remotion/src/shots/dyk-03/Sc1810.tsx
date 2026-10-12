@@ -220,7 +220,7 @@ const Sc1810: React.FC = () => {
           <div style={{ position: 'absolute', left: 200, top: 500, display: 'flex', gap: 20, alignItems: 'center' }}>
             <Label at={TWELVE} color={DL.text} size={34}>SCHOOLS</Label>
             <StampText text="SAID TO" at={SAID} color={DL.sky} size={34} tilt={-3} />
-            <Label at={SAID} color={DL.text} size={34}>USE HIS SYSTEM</Label>
+            <Label at={SAID} color={DL.text} size={34}>HAVE USED HIS SYSTEM</Label>
           </div>
           <div style={{ position: 'absolute', left: 200, top: 640, display: 'flex', gap: 16, flexWrap: 'wrap', width: 1000 }}>
             {Array.from({ length: 12 }, (_, i) => <div key={i} style={{ opacity: ease(f, TWELVE + i * 2, TWELVE + i * 2 + 6) }}><SchoolHouse size={70} bell={false} /></div>)}
