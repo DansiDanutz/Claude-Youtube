@@ -15,13 +15,13 @@ import vo from './vo.json';
 // the chores, SERMON on "Sunday". Churches want people reading · A CHURCH CAN ONLY ASK. Cliffhanger: a crown on
 // "king", BANNED on "ban" over a blank card (the thing is never named). VO sc05 @0.8 s.
 // =============================================================================
-export const compositionConfig = { id: 'Sc1647', durationInSeconds: 61.3333, fps: 30, width: 1920, height: 1080 };
-const DUR = 1840;
+export const compositionConfig = { id: 'Sc1647', durationInSeconds: 60.4333, fps: 30, width: 1920, height: 1080 };
+const DUR = 1813;
 
 const C = makeCue(vo, 'sc05-1647', 0.8);
 const FARMING = C.at('farming');
 const MASS = C.at('Massachusetts');
-const DOCK = MASS + 46;
+const DOCK = MASS + 36; // the farm morning opens on "There's"
 const FROST = C.at('frost');
 const COWS = C.at('cows');
 const MILKING = C.at('milking');
@@ -170,7 +170,7 @@ const Sc1647: React.FC = () => {
               <div style={{ ...rise(f, FIVE - 2), fontFamily: DL_SERIF, fontSize: 96, color: DL.gold, lineHeight: 1 }}>1642</div>
               <Label at={PARENTS} color={DL.text} size={32}>PARENTS</Label>
               <Label at={MASTERS} color={DL.text} size={32}>& MASTERS</Label>
-              <Label at={TEACH1} color={DL.warm} size={30}>MUST TEACH THEIR CHILDREN TO READ</Label>
+              <Label at={TEACH1} color={DL.warm} size={30}>MUST TEACH <span style={{ opacity: ease(f, C.at('children') - 2, C.at('children') + 6) }}>THEIR CHILDREN TO READ</span></Label>
             </div>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 620, display: 'flex', gap: 22, alignItems: 'flex-end', opacity: ease(f, LOTS - 2, LOTS + 8) }}>
@@ -212,7 +212,7 @@ const Sc1647: React.FC = () => {
         {/* churches want people reading — but a church can only ask */}
         <AbsoluteFill style={{ opacity: churches }}>
           <div style={{ position: 'absolute', left: 160, top: 300, display: 'flex', gap: 40, alignItems: 'flex-end' }}>
-            {[0, 1, 2, 3, 4].map((i) => <div key={i} style={{ opacity: ease(f, PROTESTANT + i * 5, PROTESTANT + i * 5 + 8) }}><Church size={150} /></div>)}
+            {[0, 1, 2, 3, 4].map((i) => <div key={i} style={{ opacity: ease(f, PROTESTANT + i * 5, PROTESTANT + i * 5 + 8) * (i === 2 ? 1 : 1 - 0.5 * ease(f, C.at('church') - 2, C.at('church') + 8)), transform: `scale(${i === 2 ? 1 + 0.12 * ease(f, C.at('church') - 2, C.at('church') + 8) : 1})` }}><Church size={150} /></div>)}
           </div>
           <div style={{ position: 'absolute', left: 160, top: 220 }}><Label at={ALL} color={DL.dim} size={30}>ALL OVER PROTESTANT EUROPE</Label></div>
           <div style={{ position: 'absolute', left: 160, top: 520, display: 'flex', gap: 30, alignItems: 'center' }}>
@@ -229,7 +229,7 @@ const Sc1647: React.FC = () => {
           </svg>
           <div style={{ position: 'absolute', left: 340, top: 520, opacity: ease(f, ORDER - 2, ORDER + 8) }}><Scroll size={300} /></div>
           <div style={{ position: 'absolute', left: 1000, top: 300, width: 420, height: 300, borderRadius: 20, border: `3px dashed ${DL.muted}`, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: ease(f, AND_HE - 2, AND_HE + 8) }}>
-            <span style={{ fontFamily: DL_SERIF, fontSize: 200, color: DL.muted, opacity: 0.6 + 0.3 * ease(f, EVERY, FORWARD) }}>?</span>
+            <span style={{ fontFamily: DL_SERIF, fontSize: 200, color: DL.muted, opacity: 0.6 + 0.3 * ease(f, EVERY, FORWARD), display: 'inline-block', transform: `scale(${1 + 0.15 * ease(f, FORWARD, FORWARD + 5) * (1 - ease(f, FORWARD + 8, FORWARD + 24))})` }}>?</span>
             <div style={{ position: 'absolute' }}><StampText text="BANNED" at={BAN} size={60} tilt={-12} /></div>
           </div>
         </AbsoluteFill>

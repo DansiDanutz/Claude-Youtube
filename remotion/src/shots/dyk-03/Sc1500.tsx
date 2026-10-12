@@ -204,7 +204,7 @@ const Sc1500: React.FC = () => {
             <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 8 }}>
               <Label at={SEVEN} color={DL.gold} size={28}>USUALLY ~7 YEARS</Label>
               <Label at={MASTERS} color={DL.text} size={26}>LIVING IN YOUR MASTER'S HOUSE</Label>
-              <Label at={LEARNING} color={DL.dim} size={26}>LEARN BY DOING</Label>
+              <Label at={LEARNING} color={DL.dim} size={26}>LEARN BY <span style={{ opacity: ease(f, C.at('doing') - 2, C.at('doing') + 6) }}>DOING</span></Label>
             </div>
           </DayPanel>
           <DayPanel x={700} at={LUCKY} title="GRAMMAR SCHOOL" accent={DL.sky}>
@@ -280,7 +280,7 @@ const Sc1500: React.FC = () => {
         <SchoolLadder rungs={[{ year: '1500', label: 'FOR THE FEW', at: CHIP_DOCK + 10 }]} show={ladder} />
         <DidYouKnowThat at={DID} out={SO}>
           <span style={{ opacity: ease(f, HISTORIANS - 4, HISTORIANS + 6) }}>historians estimate</span>{' '}
-          <span style={{ opacity: ease(f, ONE_WOMAN - 4, ONE_WOMAN + 6), color: '#ff9a1f', fontStyle: 'italic' }}>only about one woman</span>
+          <span style={{ color: '#ff9a1f', fontStyle: 'italic' }}><span style={{ opacity: ease(f, C.at('only') - 4, C.at('only') + 6) }}>only about</span><span style={{ opacity: ease(f, ONE_WOMAN - 4, ONE_WOMAN + 6) }}> one woman</span></span>
           <span style={{ opacity: ease(f, HUNDRED1 - 4, HUNDRED1 + 6), color: '#ff9a1f', fontStyle: 'italic' }}> in a hundred</span>
           <span style={{ opacity: ease(f, ENGLAND - 4, ENGLAND + 6) }}> in England</span>
           <span style={{ opacity: ease(f, WRITE - 4, WRITE + 6) }}> could even write</span>

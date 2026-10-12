@@ -116,7 +116,7 @@ const Sc1948: React.FC = () => {
           <div style={{ position: 'absolute', left: 200, top: 300, opacity: ease(f, GRADUATION - 4, GRADUATION + 6) }}><Mortarboard f={f} /></div>
           <div style={{ position: 'absolute', left: 200, top: 240, display: 'flex', gap: 16 }}>
             <Label at={JUNE} color={DL.text} size={32}>JUNE</Label>
-            <Label at={GRADUATION} color={DL.gold} size={32}>· GRADUATION DAY</Label>
+            <Label at={GRADUATION} color={DL.gold} size={32}>· GRADUATION <span style={{ opacity: ease(f, C.at('day') - 2, C.at('day') + 6) }}>DAY</span></Label>
           </div>
           <svg width={240} height={200} viewBox="0 0 240 200" style={{ position: 'absolute', left: 700, top: 380, opacity: ease(f, IRONING - 2, IRONING + 8) }}>
             <path d="M20 150 Q30 80 120 70 L200 70 Q220 70 220 100 L220 150 Z" fill="#9aa0b0" /><path d="M80 70 Q90 30 150 30 L170 30 L170 70" fill="none" stroke="#5a5f6a" strokeWidth={10} />
@@ -202,7 +202,7 @@ const Sc1948: React.FC = () => {
           <span style={{ opacity: ease(f, TEN1 - 4, TEN1 + 6) }}>in 1910,</span>
           <span style={{ opacity: ease(f, FEWER - 4, FEWER + 6), color: '#ff9a1f', fontStyle: 'italic' }}> fewer than one in five</span>
           <span style={{ opacity: ease(f, TEENAGERS - 4, TEENAGERS + 6) }}> American teenagers</span>
-          <span style={{ opacity: ease(f, HIGH - 4, HIGH + 6) }}> went to high school.</span>
+          <span style={{ opacity: ease(f, HIGH - 4, HIGH + 6) }}> went to high</span><span style={{ opacity: ease(f, C.at('school', 1) - 4, C.at('school', 1) + 6) }}> school.</span>
           <span style={{ opacity: ease(f, FORTY2 - 4, FORTY2 + 6) }}> By 1940:</span>
           <span style={{ opacity: ease(f, SEVEN - 4, SEVEN + 6), color: '#ff9a1f', fontStyle: 'italic' }}> about seven in ten.</span>
           <div style={{ marginTop: 22, display: 'flex', flexDirection: 'column', gap: 12, fontFamily: DL_MONO, fontSize: 26, color: '#e8e4ff' }}>

@@ -87,7 +87,8 @@ const WordCard: React.FC<{ f: number }> = ({ f }) => {
 };
 
 const Pointer: React.FC<{ f: number }> = ({ f }) => {
-  const pos = LIT.slice(1).reduce((p, at) => p + ease(f, at - 8, at, 0, 1, DL_EASE.inOut), 0);
+  const steps = [C.at('Then', 1), C.at('Then', 2), C.at('Then', 3), C.at('Then', 4), C.at('Today', 2)]; // the pointer steps up on each 'Then'
+  const pos = steps.reduce((p, at, i) => p + ease(f, Math.min(at, LIT[i + 1] - 8), Math.min(at + 10, LIT[i + 1]), 0, 1, DL_EASE.inOut), 0);
   const op = ease(f, FIFTEEN - 2, FIFTEEN + 6) * (1 - ease(f, SCHOOL3 - 4, SCHOOL3 + 6));
   return (
     <svg width={30} height={36} viewBox="0 0 30 36" style={{ position: 'absolute', left: SCHOOL_FULL.left + SCHOOL_FULL.width + 8, top: RUNG_CENTRE_Y(pos) - 18, opacity: op }}>
@@ -122,13 +123,13 @@ const ScReveal: React.FC = () => {
       <AbsoluteFill style={{ opacity: athens }}>
         <div style={{ position: 'absolute', left: 200, top: 730, display: 'flex', gap: 60, alignItems: 'flex-end' }}>
           {([['TALKING', TALKING], ['ARGUING', ARGUING], ['LEARNING', LEARNING]] as const).map(([t, at], i) => (
-            <div key={t} style={{ textAlign: 'center' }}>
+            <div key={t} style={{ textAlign: 'center', opacity: 1 - 0.5 * ease(f, C.at('So') - 2, C.at('So') + 10) }}>
               <div style={{ opacity: ease(f, ATHENS + i * 6, ATHENS + i * 6 + 8) }}><Kid size={90} adult color="#d8cfb8" /></div>
               <div style={{ marginTop: 6, fontFamily: DL_MONO, fontSize: 26, color: DL.gold, opacity: ease(f, at - 2, at + 6) }}>{t}</div>
             </div>
           ))}
         </div>
-        <div style={{ position: 'absolute', left: 200, top: 680 }}><Label at={ATHENS} color={DL.dim} size={28}>IN ATHENS, PEOPLE WITH FREE TIME…</Label></div>
+        <div style={{ position: 'absolute', left: 200, top: 680 }}><Label at={ATHENS} color={DL.dim} size={28}>IN ATHENS, PEOPLE <span style={{ opacity: ease(f, C.at('free', 2) - 2, C.at('free', 2) + 6) }}>WITH FREE TIME…</span></Label></div>
         <div style={{ position: 'absolute', left: 900, top: 780, display: 'flex', alignItems: 'baseline', gap: 22, fontFamily: DL_SERIF, fontSize: 64 }}>
           <span style={{ opacity: ease(f, WORD2 - 4, WORD2 + 6), color: DL.text }}>σχολή</span>
           <span style={{ opacity: ease(f, BECAME + 4, BECAME + 12), color: DL.dim }}>→ schola</span>
@@ -140,7 +141,7 @@ const ScReveal: React.FC = () => {
 
       {/* the guess */}
       <AbsoluteFill style={{ opacity: guess }}>
-        <div style={{ position: 'absolute', left: 200, top: 260 }}><Label at={GUESS} color={DYT.magenta} size={32}>YOUR GUESS · <span style={{ opacity: ease(f, TWO - 2, TWO + 6) }}>200 YEARS AGO · OUT OF 10</span></Label></div>
+        <div style={{ position: 'absolute', left: 200, top: 260 }}><Label at={GUESS} color={DYT.magenta} size={32}>YOUR GUESS · <span style={{ opacity: ease(f, TWO - 2, TWO + 6) }}>200 YEARS AGO</span><span style={{ opacity: ease(f, C.at('only') - 2, C.at('only') + 6) }}> · OUT OF 10</span></Label></div>
         <div style={{ position: 'absolute', left: 200, top: 340 }}><PeopleRow n={10} size={72} gap={14} lit={(i) => (i === 0 ? ease(f, ONE - 2, ONE + 6) : f >= NINE ? ease(f, NINE + (i - 1) * 2, NINE + (i - 1) * 2 + 6) * (i < 9 ? 1 : 0) : 0)} /></div>
         <div style={{ position: 'absolute', left: 200, top: 490, display: 'flex', gap: 60 }}>
           <div style={{ opacity: ease(f, READ1 - 2, READ1 + 8) }}>
@@ -173,7 +174,7 @@ const ScReveal: React.FC = () => {
           <span style={{ opacity: ease(f, NOW2 - 2, NOW2 + 6) }}>Now it’s where </span><span style={{ opacity: ease(f, MOST - 2, MOST + 6) }}>most children on Earth</span><span style={{ opacity: ease(f, WEEKDAYS - 2, WEEKDAYS + 6) }}> spend their weekdays.</span>
         </div>
       </div>
-      <div style={{ position: 'absolute', left: RIGHT_COL.left, top: 860, opacity: ease(f, FEW2, FEW2 + 10) }}><Source at={FEW2}>1.4 billion children enrolled, 2024 · UNESCO 2026 GEM Report</Source></div>
+      <div style={{ position: 'absolute', left: RIGHT_COL.left, top: 860, opacity: ease(f, FEW2, FEW2 + 10) }}><Source at={FEW2}>1.4 bn enrolled (2024) · UNESCO GEM 2026</Source></div>
     </AbsoluteFill>
   );
 };

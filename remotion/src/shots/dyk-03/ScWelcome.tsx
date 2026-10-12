@@ -65,7 +65,7 @@ const ScWelcome: React.FC = () => {
       </div>
 
       {/* the guess: 200 years ago, out of every ten people, how many could read? */}
-      <div style={{ position: 'absolute', left: 260, right: 260, top: 330, padding: '28px 40px', borderRadius: 20, background: '#0b1030e6', border: `2px solid ${DYT.magenta}`, boxShadow: `0 0 ${40 * ask}px ${DYT.magenta}88`, opacity: ease(f, YOUR_GUESS - 4, YOUR_GUESS + 6), display: 'flex', alignItems: 'center', gap: 40 }}>
+      <div style={{ position: 'absolute', left: 260, right: 260, top: 330, padding: '28px 40px', borderRadius: 20, background: '#0b1030e6', border: `2px solid ${DYT.magenta}`, boxShadow: `0 0 ${40 * ask}px ${DYT.magenta}88`, opacity: ease(f, RULE + 8, RULE + 16), display: 'flex', alignItems: 'center', gap: 40 }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           <div style={{ fontFamily: DL_MONO, fontSize: 26, letterSpacing: 4, color: DYT.dim }}>YOUR GUESS<span style={{ opacity: ease(f, TWO - 2, TWO + 6) }}> · 200 YEARS AGO</span><span style={{ opacity: ease(f, TEN - 2, TEN + 6) }}> · OUT OF EVERY 10 PEOPLE</span></div>
           <div style={{ opacity: ease(f, TEN - 2, TEN + 4) }}><PeopleRow n={10} lit={() => 0} size={62} gap={14} /></div>

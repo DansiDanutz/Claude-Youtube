@@ -19,8 +19,8 @@ import vo from './vo.json';
 // quoted on "invent". Callback: a private teacher for a prince | for everyone? — the 2100 rung fills A TUTOR FOR ALL?
 // on "everyone"; σχολή = FREE TIME? on "meant". VO sc11 @0.8 s.
 // =============================================================================
-export const compositionConfig = { id: 'Sc2100', durationInSeconds: 80.6333, fps: 30, width: 1920, height: 1080 };
-const DUR = 2419;
+export const compositionConfig = { id: 'Sc2100', durationInSeconds: 79.9667, fps: 30, width: 1920, height: 1080 };
+const DUR = 2399;
 
 const C = makeCue(vo, 'sc11-2100', 0.8);
 const RUNG = C.at('rung');
@@ -122,7 +122,7 @@ const Sc2100: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
   const fullLadder = 0.6 * (1 - ease(f, TWENTY1 - 4, HUNDRED1 - 2));
-  const dockLadder = ease(f, HUNDRED1 - 6, HUNDRED1 + 4) * (1 - ease(f, REMEMBER - 6, REMEMBER + 2)) + ease(f, FIFTEEN - 4, FIFTEEN + 8);
+  const dockLadder = ease(f, BUT1 + 4, BUT1 + 14) * (1 - ease(f, REMEMBER - 6, REMEMBER + 2)) + ease(f, FIFTEEN - 4, FIFTEEN + 8);
   const opening = win(f, MORNING - 4, REMEMBER - 2, 8, 8);
   const ev1 = win(f, REMEMBER - 2, THEN, 6, 10);
   const ev2 = win(f, THEN - 2, SO2, 4, 10);
@@ -161,12 +161,12 @@ const Sc2100: React.FC = () => {
 
       {/* evidence 1: tutoring works — Bloom 1984, smaller later */}
       <AbsoluteFill style={{ opacity: ev1 }}>
-        <div style={{ position: 'absolute', left: 160, top: 260, padding: '20px 26px', borderRadius: 16, background: '#0e0b0af0', border: `2px solid ${DL.gold}`, opacity: ease(f, REMEMBER - 2, REMEMBER + 8) }}>
+        <div style={{ position: 'absolute', left: 160, top: 260, padding: '20px 26px', borderRadius: 16, background: '#0e0b0af0', border: `2px solid ${DL.gold}`, opacity: ease(f, REMEMBER - 2, REMEMBER + 8), boxShadow: `0 0 ${36 * ease(f, C.at('tutor', 1), C.at('tutor', 1) + 5) * (1 - ease(f, C.at('tutor', 1) + 8, C.at('tutor', 1) + 30))}px ${DL.gold}` }}>
           <PrinceTutor />
           <div style={{ marginTop: 10, fontFamily: DL_MONO, fontSize: 26, color: DL.gold }}>1500 · <span style={{ opacity: ease(f, ONE_T - 2, ONE_T + 6) }}>ONE TEACHER,</span><span style={{ opacity: ease(f, ONE_C - 2, ONE_C + 6) }}> ONE CHILD</span></div>
         </div>
         <div style={{ position: 'absolute', left: 620, top: 250, opacity: ease(f, EIGHTY - 4, EIGHTY + 8) }}>
-          <div style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.text }}>1984 · <span style={{ opacity: ease(f, BLOOM - 2, BLOOM + 6), color: DL.gold }}>BENJAMIN BLOOM</span></div>
+          <div style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.text }}>1984 · <span style={{ opacity: ease(f, C.at('researcher') - 2, C.at('researcher') + 6) }}>AN AMERICAN RESEARCHER · </span><span style={{ opacity: ease(f, BLOOM - 2, BLOOM + 6), color: DL.gold }}>BENJAMIN BLOOM</span></div>
           <BellCurve f={f} />
         </div>
         <div style={{ position: 'absolute', left: 620, top: 640, display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -179,7 +179,7 @@ const Sc2100: React.FC = () => {
           <div style={{ display: 'flex', alignItems: 'flex-end', gap: 8, opacity: ease(f, NOBODY - 2, NOBODY + 8) }}>
             <Kid size={70} adult color="#8a7ab0" />{Array.from({ length: 6 }, (_, i) => <Kid key={i} size={46} girl={i % 2 === 0} />)}
           </div>
-          <Label at={CHILD2} color={DL.dim} size={26}>NO ONE CAN PAY A TUTOR FOR EVERY CHILD</Label>
+          <div style={{ maxWidth: 430 }}><Label at={NOBODY} color={DL.dim} size={24}>NO ONE CAN PAY A TUTOR <span style={{ opacity: ease(f, CHILD2 - 2, CHILD2 + 6) }}>FOR EVERY CHILD</span></Label></div>
         </div>
         <div style={{ position: 'absolute', left: 620, top: 860 }}><Source at={LATER}>Bloom, “The 2 Sigma Problem” (1984) · meta-analyses: Nickow et al. 2020 (~0.37 SD), VanLehn 2011</Source></div>
       </AbsoluteFill>
@@ -205,7 +205,7 @@ const Sc2100: React.FC = () => {
           <div style={{ marginTop: 8, fontFamily: DL_MONO, fontSize: 28, color: DL.dim, opacity: ease(f, LEARNING1 - 4, LEARNING1 + 6) }}>OF TYPICAL LEARNING</div>
           <div style={{ marginTop: 12, fontFamily: DL_MONO, fontSize: 26, color: DL.gold, opacity: ease(f, ESTIMATED - 2, ESTIMATED + 6) }}>THE WORLD BANK'S ESTIMATE · ~0.3 SD</div>
         </div>
-        <div style={{ position: 'absolute', left: 900, top: 640, display: 'flex', gap: 18, alignItems: 'center' }}>
+        <div style={{ position: 'absolute', left: 1000, top: 620, display: 'flex', gap: 18, alignItems: 'center' }}>
           <StampText text="ONE SMALL STUDY" at={SMALL} size={30} tilt={-3} />
           <StampText text="SHORT" at={SHORT} size={30} tilt={2} />
           <StampText text="A START" at={START} color={DL.green} size={30} tilt={-2} />
@@ -224,7 +224,7 @@ const Sc2100: React.FC = () => {
             </div>
           ))}
         </div>
-        <div style={{ position: 'absolute', left: 160, top: 580 }}><Label at={TUTOR4} color={ORB} size={32}>BY 2100, EVERY CHILD COULD HAVE A TUTOR</Label></div>
+        <div style={{ position: 'absolute', left: 160, top: 580 }}><Label at={C.at('hundred', 2)} color={ORB} size={32}>BY 2100, <span style={{ opacity: ease(f, TUTOR4 - 2, TUTOR4 + 6) }}>EVERY CHILD COULD HAVE A TUTOR</span></Label></div>
         <div style={{ position: 'absolute', left: 160, top: 660, display: 'flex', alignItems: 'center', gap: 24, opacity: ease(f, NOT2 - 2, NOT2 + 8) }}>
           <div style={{ position: 'relative', opacity: 0.6 }}><PrinceTutor size={0.6} /><svg width={170} height={110} viewBox="0 0 170 110" style={{ position: 'absolute', left: 0, top: 0 }}><line x1={10} y1={10} x2={160} y2={100} stroke={DL.red} strokeWidth={6} opacity={ease(f, POET - 2, POET + 6)} /></svg></div>
           <Label at={NOT2} color={DL.dim} size={30}>NOT A PRINCE'S POET</Label>
@@ -247,14 +247,14 @@ const Sc2100: React.FC = () => {
           </div>
           <Label at={CLASSROOM} color={DL.text} size={34}>AND THE CLASSROOM?</Label>
         </div>
-        <div style={{ position: 'absolute', left: 160, top: 560, display: 'flex', gap: 20 }}>
+        <div style={{ position: 'absolute', left: 160, top: 590, display: 'flex', gap: 20 }}>
           {(['SCHOOLING EXTENDED', 'EDUCATION OUTSOURCED', 'SCHOOLS AS LEARNING HUBS', 'LEARN-AS-YOU-GO']).map((t, i) => {
-            const hot = (i === 2 && f >= HUB) || (i === 3 && f >= FADES - 4);
+            const hot = (i === 2 && f >= C.at('school', 1)) || (i === 3 && f >= FADES - 4);
             const gone = i === 3 ? ease(f, FADES, FADES + 20) : 0;
             return <div key={t} style={{ width: 340, height: 150, boxSizing: 'border-box', padding: 16, borderRadius: 12, border: `3px solid ${hot ? (i === 2 ? DL.gold : DL.muted) : DL.border}`, background: '#0e0b0ae6', opacity: ease(f, OECD + i * 6, OECD + i * 6 + 8) * (1 - 0.75 * gone), display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', fontFamily: DL_MONO, fontSize: 26, color: hot && i === 2 ? DL.gold : DL.text, boxShadow: hot && i === 2 ? `0 0 26px ${DL.gold}66` : undefined }}>{t}</div>;
           })}
         </div>
-        <div style={{ position: 'absolute', left: 160, top: 500 }}><Label at={IMAGINED} color={DL.dim} size={26}>OECD · FOUR SCENARIOS FOR SCHOOLING (2020) · TO 2040 · NOT FORECASTS</Label></div>
+        <div style={{ position: 'absolute', left: 160, top: 530 }}><Label at={IMAGINED} color={DL.dim} size={26}>OECD · FOUR SCENARIOS FOR SCHOOLING (2020) · TO 2040 · NOT FORECASTS</Label></div>
         <div style={{ position: 'absolute', left: 880, top: 270, width: 880, padding: '24px 30px', borderRadius: 16, background: '#0e0b0af0', border: `1px solid ${DL.border}`, borderLeft: `5px solid ${DL.green}`, opacity: ease(f, UNESCO - 2, UNESCO + 8) }}>
           <div style={{ fontFamily: DL_MONO, fontSize: 24, letterSpacing: 3, color: DL.dim }}>UNESCO · REIMAGINING OUR FUTURES TOGETHER (2021)</div>
           <div style={{ marginTop: 10, fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 44, lineHeight: 1.2, color: DL.text }}>
@@ -287,7 +287,7 @@ const Sc2100: React.FC = () => {
           <span style={{ fontFamily: DL_SERIF, fontSize: 110, color: DL.text, opacity: ease(f, NAME - 4, NAME + 6) }}>σχολή</span>
           <span style={{ fontFamily: DL_SERIF, fontSize: 96, background: QGRAD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', filter: `drop-shadow(0 0 20px ${DYT.magenta}88)`, opacity: ease(f, MEANT - 2, MEANT + 6) }}>= FREE TIME?</span>
         </div>
-        <div style={{ position: 'absolute', left: 160, top: 450 }}><Label at={SCHOOL2} color={DL.dim} size={26}>SCHOOL, A LITTLE CLOSER TO ITS NAME?</Label></div>
+        <div style={{ position: 'absolute', left: 160, top: 450 }}><Label at={SCHOOL2} color={DL.dim} size={26}>SCHOOL, A LITTLE <span style={{ opacity: ease(f, C.at('closer') - 2, C.at('closer') + 6) }}>CLOSER TO ITS NAME?</span></Label></div>
       </AbsoluteFill>
 
       <EpisodeHud year={f >= HUNDRED1 ? 2100 : '—'} episode="03" prediction={f >= HUNDRED1} />

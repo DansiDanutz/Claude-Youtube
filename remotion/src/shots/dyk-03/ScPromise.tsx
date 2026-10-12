@@ -19,6 +19,8 @@ const C = makeCue(vo, 'sc03-promise', 0.6);
 const SEVEN = C.at('Seven');
 const FIFTEEN = C.at('fifteen');
 const TWENTY = C.at('twenty');
+const EACH = C.at('each');
+const OR = C.at('Or');
 const WAKE = C.at('wake');
 const DIFFERENT = C.at('different');
 const START = C.at('start');
@@ -56,7 +58,7 @@ const ScPromise: React.FC = () => {
           const at = SEVEN + i * 12;
           const kidAt = DIFFERENT + i * 6;
           const lit = (i === 0 && f >= FIFTEEN) || (i === 6 && f >= TWENTY);
-          const pulse = (i === 0 ? ease(f, START, START + 5) * (1 - ease(f, START + 8, START + 24)) : 0) + (i === 6 ? ease(f, END1, END1 + 5) * (1 - ease(f, END1 + 8, END1 + 24)) : 0);
+          const pulse = ease(f, EACH + i, EACH + i + 5) * (1 - ease(f, EACH + i + 8, EACH + i + 22)) + (i === 0 ? ease(f, OR, OR + 5) * (1 - ease(f, OR + 8, OR + 24)) : 0) + (i === 0 ? ease(f, START, START + 5) * (1 - ease(f, START + 8, START + 24)) : 0) + (i === 6 ? ease(f, END1, END1 + 5) * (1 - ease(f, END1 + 8, END1 + 24)) : 0);
           const x = X0 + i * STEP;
           const future = i === 6;
           const s = interpolate(f, [at, at + 8], [0.7, 1], { ...DCLAMP, easing: DL_EASE.out });

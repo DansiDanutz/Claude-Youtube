@@ -125,12 +125,12 @@ const ScToday: React.FC = () => {
         </div>
       </AbsoluteFill>
       <AskMark at={SO1} out={ALWAYS + 4} left={300} top={230} pulseAt={C.at('now', 1)} />
-      <SchoolChip text="ALWAYS ON" at={ON2} dockAt={CHIP_DOCK} slot={5} left={1000} top={700} />
+      <SchoolChip text="ALWAYS ON" at={ON2} dockAt={CHIP_DOCK} slot={5} left={1000} top={760} />
 
       {/* cliffhanger: the hook question returns */}
       <AbsoluteFill style={{ opacity: cliff, alignItems: 'center' }}>
         <div style={{ position: 'absolute', top: 260, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <Label at={QUESTION2} color={DL.red} size={34}>THE QUESTION YOU CAME FOR</Label>
+          <Label at={QUESTION2} color={DL.red} size={34}>THE QUESTION <span style={{ opacity: ease(f, C.at('came') - 2, C.at('came') + 6) }}>YOU CAME FOR</span></Label>
           <div style={{ marginTop: 30, display: 'flex', alignItems: 'baseline', gap: 36 }}>
             <span style={{ fontFamily: DL_SERIF, fontWeight: 600, fontSize: 180, color: DL.text, opacity: ease(f, QUESTION2 - 2, QUESTION2 + 8), display: 'inline-block', transform: `scale(${1 + 0.06 * ease(f, SCHOOL3, SCHOOL3 + 5) * (1 - ease(f, SCHOOL3 + 8, SCHOOL3 + 24))})` }}>SCHOOL</span>
             <span style={{ fontFamily: DL_SERIF, fontSize: 180, color: DL.gold, opacity: ease(f, QUESTION2 + 4, QUESTION2 + 14), transform: `scale(${1 + 0.15 * ease(f, BEFORE - 2, BEFORE + 4) * (1 - ease(f, BEFORE + 8, BEFORE + 24))})`, display: 'inline-block' }}>= ?</span>
@@ -146,7 +146,7 @@ const ScToday: React.FC = () => {
         <span style={{ opacity: ease(f, SENT - 4, SENT + 6) }}> were sent home</span><span style={{ opacity: ease(f, SCHOOL1 - 4, SCHOOL1 + 6) }}> from school.</span>
         <div style={{ marginTop: 22, display: 'flex', alignItems: 'baseline', gap: 26 }}>
           <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 90, color: '#ff9a1f', opacity: ease(f, BILLION - 2, BILLION + 6) }}>≈ 1.6 BN</span>
-          <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 60, color: '#34d058', opacity: ease(f, NINE - 2, NINE + 6) }}>&gt; 9 IN 10</span>
+          <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 60, color: '#34d058' }}><span style={{ opacity: ease(f, C.at('more') - 2, C.at('more') + 6) }}>&gt; </span><span style={{ opacity: ease(f, NINE - 2, NINE + 6) }}>9 IN 10</span></span>
           <span style={{ fontFamily: DL_MONO, fontSize: 30, color: '#e8e4ff', opacity: ease(f, STUDENTS - 2, STUDENTS + 6) }}>STUDENTS ON EARTH</span>
         </div>
         <div style={{ marginTop: 16, fontFamily: DL_MONO, fontSize: 24, color: '#c8cdf0', opacity: ease(f, APRIL, APRIL + 10) }}>UNESCO school-closure monitoring · peak, April 2020 · 91 % of enrolled learners</div>

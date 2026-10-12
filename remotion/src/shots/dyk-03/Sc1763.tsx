@@ -112,7 +112,7 @@ const Sc1763: React.FC = () => {
   const fade = useShotFade(DUR);
   const village = win(f, DOCK - 4, DID - 2, 8, 8);
   const order = win(f, SO - 2, WINTER, 4, 10);
-  const hours = win(f, WINTER - 2, LAW2, 4, 10);
+  const hours = win(f, WINTER - 2, LAW2, 4, 4);
   const shepherd = win(f, LAW2 - 2, TEACHER1, 4, 10);
   const soldier = win(f, TEACHER1 - 2, MIGHT2, 4, 10);
   const myth = win(f, MIGHT2 - 2, BUT, 4, 10);
@@ -189,11 +189,11 @@ const Sc1763: React.FC = () => {
             <DayBar title="WINTER" w={1100} at={WINTER} segs={[{ from: 8, to: 11, label: '8–11', color: DL.sky, at: EIGHT }, { from: 13, to: 16, label: '1–4', color: DL.sky, at: ONE1 }]} />
           </div>
           <div style={{ position: 'absolute', left: 160, top: 470 }}>
-            <DayBar title="SUMMER" w={1100} at={SUMMER} segs={[{ from: 7, to: 10, label: 'A FEW HOURS', color: '#e0a83a', at: FEW }]} />
+            <DayBar title="SUMMER · A FEW HOURS" w={1100} at={SUMMER} segs={[{ from: 7, to: 10, label: '~3 H', color: '#e0a83a', at: FEW }]} />
           </div>
           <div style={{ position: 'absolute', left: 1320, top: 520, opacity: ease(f, COWS - 2, COWS + 8) }}><Cow size={300} /></div>
           <div style={{ position: 'absolute', left: 1320, top: 720 }}><Label at={COWS} color={DL.warm} size={28}>COWS TO HERD</Label></div>
-          <div style={{ position: 'absolute', left: 160, top: 740 }}><Source at={WINTER}>1763 school regulation · winter Michaelmas–Easter · summer about 3 hours · bars = illustration</Source></div>
+          <div style={{ position: 'absolute', left: 160, top: 840 }}><Source at={WINTER}>1763 school regulation · winter Michaelmas–Easter · summer about 3 hours · bars = illustration</Source></div>
         </AbsoluteFill>
 
         {/* §4: hire a shepherd, so the children can go to school */}
@@ -218,7 +218,7 @@ const Sc1763: React.FC = () => {
           <div style={{ position: 'absolute', left: 600, top: 380, display: 'flex', flexDirection: 'column', gap: 18 }}>
             <Label at={TEACHER1} color={DL.text} size={38}>YOUR TEACHER MIGHT BE</Label>
             <Label at={SOLDIER} color="#7aa0e0" size={44}>AN OLD SOLDIER</Label>
-            <Label at={MANY} color={DL.dim} size={32}>MANY EARLY VILLAGE TEACHERS WERE<span style={{ opacity: ease(f, WERE, WERE + 6) }}>.</span></Label>
+            <Label at={MANY} color={DL.dim} size={32}>MANY EARLY <span style={{ opacity: ease(f, C.at('village', 2) - 2, C.at('village', 2) + 6) }}>VILLAGE TEACHERS WERE</span><span style={{ opacity: ease(f, WERE, WERE + 6) }}>.</span></Label>
           </div>
         </AbsoluteFill>
 
@@ -252,7 +252,7 @@ const Sc1763: React.FC = () => {
             <div style={{ opacity: ease(f, ONE2 - 2, ONE2 + 8) }}><Kid size={130} adult color="#3b5a8a" /></div>
             {[0, 1, 2, 3].map((i) => <div key={i} style={{ opacity: ease(f, VILLAGE3 + i * 4, VILLAGE3 + i * 4 + 8) }}><SchoolHouse size={130} bell={false} /></div>)}
           </div>
-          <div style={{ position: 'absolute', left: 1080, top: 330, display: 'flex', flexDirection: 'column', gap: 18 }}>
+          <div style={{ position: 'absolute', left: 260, top: 520, display: 'flex', gap: 30 }}>
             <StampText text="SLOW" at={SLOW} size={44} tilt={-4} />
             <StampText text="EXPENSIVE" at={EXPENSIVE} size={44} tilt={3} />
           </div>
@@ -266,7 +266,7 @@ const Sc1763: React.FC = () => {
           <span style={{ opacity: ease(f, FREDERICK - 4, FREDERICK + 6) }}>Frederick the Great’s new school law</span>
           <span style={{ opacity: ease(f, BANNED - 4, BANNED + 6) }}> banned</span>
           <span style={{ opacity: ease(f, HOLIDAYS - 6, HOLIDAYS + 6), color: '#ff9a1f', fontStyle: 'italic' }}> school holidays.</span>
-          <div style={{ marginTop: 14, opacity: ease(f, NOT1 - 2, NOT1 + 6) }}>Not even at <span style={{ opacity: ease(f, HARVEST - 2, HARVEST + 6), color: '#ff9a1f' }}>harvest time.</span></div>
+          <div style={{ marginTop: 14, opacity: ease(f, NOT1 - 2, NOT1 + 6) }}>Not <span style={{ opacity: ease(f, C.at('even', 1) - 2, C.at('even', 1) + 6) }}>even at</span> <span style={{ opacity: ease(f, HARVEST - 2, HARVEST + 6), color: '#ff9a1f' }}>harvest time.</span></div>
           <div style={{ marginTop: 20, fontFamily: DL_MONO, fontSize: 24, lineHeight: 1.3, color: '#c8cdf0', opacity: ease(f, NOT1, NOT1 + 10) }}>“No vacations are to be given, not even during harvest time.” · Prussian school regulation, 12 Aug 1763 (GHDI)</div>
         </DidYouKnowThat>
       </EraExit>

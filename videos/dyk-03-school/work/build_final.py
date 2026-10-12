@@ -122,15 +122,22 @@ def word_spans():
     return sorted((VO_AT[sc] + wd['s'], VO_AT[sc] + wd['e']) for sc in VO_AT for wd in VO[sc]['words'])
 
 
+PRE_ONSET_S = 0.06        # No. 03 audit: a loud hit lands just BEFORE its word's onset, never on it
+
+
 def off_word(t, clip, spans):
-    """t, or the nearest word boundary when a loud clip would start inside a word."""
+    """t, or a time clear of the words when a loud clip would start inside a word or on its onset (±WORD_MARGIN_S).
+    Near an onset it moves PRE_ONSET_S ahead of the word (but not into the previous word); later in a word, to its end."""
     if not LOUD_SFX.search(clip):
         return t
-    for s0, e0 in spans:
-        if s0 + WORD_MARGIN_S < t < e0 - WORD_MARGIN_S:
+    for k, (s0, e0) in enumerate(spans):
+        if s0 - WORD_MARGIN_S <= t < e0 - WORD_MARGIN_S:
             if 'riser' in clip:           # a riser is timed by its END: start it earlier so it still ends before its payoff
-                return s0
-            return s0 if t - s0 <= ONSET_SNAP_S else e0
+                return min(t, s0)
+            if t - s0 <= ONSET_SNAP_S:
+                prev_e = spans[k - 1][1] if k else -1.0
+                return max(s0 - PRE_ONSET_S, prev_e + 0.005)
+            return e0
     return t
 
 

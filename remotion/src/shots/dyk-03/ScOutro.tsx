@@ -125,7 +125,7 @@ const ScOutro: React.FC = () => {
 
         <div style={{ ...rise(f, TURN - 2), marginTop: 50, width: 1400, padding: '34px 44px', background: DL.panel, border: `1px solid ${hereFlash > 0.01 ? DYT.magenta : DL.border}`, boxShadow: `0 0 ${50 * hereFlash}px ${DYT.magenta}`, borderRadius: 18, boxSizing: 'border-box' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span style={{ fontFamily: DL_SERIF, fontSize: 40, color: DL.text, whiteSpace: 'nowrap', opacity: ease(f, CENTURY - 2, CENTURY + 8) }}>Which century’s classroom would you <span style={{ color: DL.gold, fontStyle: 'italic', opacity: ease(f, SURVIVE - 2, SURVIVE + 6) }}>survive</span>?</span>
+            <span style={{ fontFamily: DL_SERIF, fontSize: 40, color: DL.text, whiteSpace: 'nowrap', opacity: ease(f, CENTURY - 2, CENTURY + 8) }}>Which century’s classroom would you <span style={{ color: DL.gold, fontStyle: 'italic', opacity: ease(f, SURVIVE - 2, SURVIVE + 6) }}>survive</span><span style={{ opacity: ease(f, SURVIVE - 2, SURVIVE + 6) }}>?</span></span>
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, opacity: ease(f, COMMENTS - 4, COMMENTS + 6), transform: `scale(${1 + commentPulse * 0.05})` }}>
               <svg width={44} height={44} viewBox="0 0 44 44"><path d="M6 8 H38 V30 H18 L10 38 V30 H6 Z" fill="none" stroke={DL.red} strokeWidth={4} strokeLinejoin="round" /></svg>
               <span style={{ fontFamily: DL_MONO, fontSize: 28, letterSpacing: 4, color: DL.red }}>COMMENTS ↓</span>

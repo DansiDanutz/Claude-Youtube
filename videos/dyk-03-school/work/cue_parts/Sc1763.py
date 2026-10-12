@@ -62,3 +62,5 @@ c(W(s, 'Make', 2), 'ui-click-soft', 0.16, 'band: Make the children the teachers.
 c(W(s, 'Prussia', 2), 'ui-click-soft', 0.16, '1763 PRUSSIA: STILL A LAND OF FARMS')
 c(W(s, 'now', 1), 'ui-click-soft', 0.14, 'the ? pulses')
 c(W(s, 'might', 2), 'whoosh-soft', 0.16, 'YOU MIGHT HAVE HEARD…')
+c(W(s, 'even', 1), 'ui-click-soft', 0.14, 'card: even at')
+c(W(s, 'village', 2), 'ui-click-soft', 0.14, 'VILLAGE TEACHERS WERE')

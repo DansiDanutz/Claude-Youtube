@@ -33,7 +33,7 @@ S = [
  sc("sc05-1647", "Sc1647", [
   ("You wake up in sixteen forty seven, in a farming town in Massachusetts. There's frost on the window, and the cows need milking before breakfast.", 3.0, None),
   ("Did you know that one of America's first school laws begins by blaming the devil? It says it's a chief project of that old deluder, Satan, to keep men from the knowledge of the Scriptures.", 2.9, DYK),
-  ("So what's school to you now? A way to read God's word, with your own eyes. Five years earlier, a law told parents and masters to teach their children to read. Lots of them didn't bother.", 3.0, None),
+  ("So, what is school to you now? A way to read God's word, with your own eyes. Five years earlier, a law told parents and masters to teach their children to read. Lots of them didn't bother.", 3.35, None),
   ("So now, any town with fifty households has to hire someone to teach reading and writing. A hundred households? A grammar school too, or the town pays a fine. You learn your letters between the chores, and on Sunday, you hear why they matter.", 3.0, None),
   ("All over Protestant Europe, churches want people reading. But a church can only ask. In the next century, a king will order it. And he'll ban one thing every kid on Earth looks forward to.", 2.9, DYK)],
   pauses=[("breakfast.", 0.2), ("now?", 0.35), ("households?", 0.25)]),
@@ -49,7 +49,7 @@ S = [
   ("You wake up in eighteen ten, in London, on Borough Road. You walk into one enormous hall. Hundreds of children, in long rows. And just one master.", 3.0, None),
   ("Did you know that this school's founder, Joseph Lancaster, claimed one master could run a school of more than a thousand children?", 2.9, DYK),
   ("Older kids teach the younger ones, in small groups. You write your letters in sand, with your finger, because paper costs money. Misbehave, and you might be hoisted above the classroom, in a cage. Really. Lancaster thought it beat the cane.", 3.0, None),
-  ("So what's school to you? A machine. For teaching the poor, by the hundred, as cheaply as possible. By the time Lancaster dies, more than twelve hundred schools are said to use his system.", 2.9, None),
+  ("So, what is school to you? A machine. For teaching the poor, by the hundred, as cheaply as possible. By the time Lancaster dies, more than twelve hundred schools are said to have used his system.", 2.9, None),
   ("Then the law steps in. In eighteen eighty, school becomes compulsory in England, from five to ten. In eighteen ninety one, for most families, it becomes free.", 2.9, None),
   ("Now every child has to go. But in the next century, school stops being something you're forced into. It turns into something people fight for.", 2.9, DYK)],
   pauses=[("master.", 0.2), ("cage.", 0.35), ("you?", 0.35)]),

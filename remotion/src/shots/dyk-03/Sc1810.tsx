@@ -14,8 +14,8 @@ import vo from './vo.json';
 // (slot 3) on "hundred," + gears on "machine". 1,200+ SCHOOLS "SAID TO" on "twelve". Law (F14, UK Parliament):
 // 1880 compulsory 5–10 · 1891 free for most families. Cliffhanger band into 1948. VO sc07 @0.8 s.
 // =============================================================================
-export const compositionConfig = { id: 'Sc1810', durationInSeconds: 65.2333, fps: 30, width: 1920, height: 1080 };
-const DUR = 1957;
+export const compositionConfig = { id: 'Sc1810', durationInSeconds: 66.4, fps: 30, width: 1920, height: 1080 };
+const DUR = 1992;
 
 const C = makeCue(vo, 'sc07-1810', 0.8);
 const LONDON = C.at('London');
@@ -165,6 +165,7 @@ const Sc1810: React.FC = () => {
       <EraExit dur={DUR}>
         <EraHeader year="1810" idx={4} label="LONDON" dockAt={DOCK} />
         <WakePlace place="London · Borough Road" at={LONDON} dockAt={DOCK} yearAt={C.at('eighteen', 1)} />
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 720, textAlign: 'center', fontFamily: DL_MONO, fontSize: 30, letterSpacing: 8, color: DL.gold, opacity: ease(f, C.at('Borough') - 2, C.at('Borough') + 8) * (1 - ease(f, DOCK - 6, DOCK + 6)) }}>BOROUGH ROAD · A FREE SCHOOL</div>
         <div style={{ position: 'absolute', left: 210, top: 230, opacity: hall }}><Hall f={f} /></div>
         <div style={{ position: 'absolute', left: 210, top: 800, display: 'flex', gap: 20, opacity: hall }}>
           <Label at={HALL} color={DL.dim} size={28}>ONE ENORMOUS HALL</Label>
@@ -197,7 +198,7 @@ const Sc1810: React.FC = () => {
               <span style={{ fontFamily: DL_MONO, fontSize: 28, color: DL.warm }}>LANCASTER: BETTER THAN THE CANE</span>
             </div>
           </div>
-          <div style={{ position: 'absolute', left: 760, top: 820 }}><Source at={CAGE}>Lancaster's own system; the poet Southey attacked “the cages of Mr. Lancaster”</Source></div>
+          <div style={{ position: 'absolute', left: 760, top: 820 }}><Source at={CAGE}>the poet Southey attacked “the cages of Mr. Lancaster”</Source></div>
         </AbsoluteFill>
 
         {/* a machine, for teaching the poor by the hundred */}
@@ -206,7 +207,7 @@ const Sc1810: React.FC = () => {
           <div style={{ position: 'absolute', left: 200, top: 520, display: 'flex', flexDirection: 'column', gap: 16 }}>
             <Label at={MACHINE} color={DL.text} size={40}>A MACHINE</Label>
             <Label at={POOR} color={DL.warm} size={32}>FOR TEACHING THE POOR</Label>
-            <Label at={CHEAPLY} color={DL.gold} size={32}>AS CHEAPLY AS POSSIBLE</Label>
+            <Label at={CHEAPLY} color={DL.gold} size={32}>AS CHEAPLY <span style={{ opacity: ease(f, C.at('possible') - 2, C.at('possible') + 6) }}>AS POSSIBLE</span></Label>
           </div>
         </AbsoluteFill>
         <AskMark at={SO} out={MACHINE + 4} left={160} top={240} size={380} pulseAt={C.at('you', 6)} />
@@ -262,7 +263,7 @@ const Sc1810: React.FC = () => {
 
         <SchoolLadder rungs={rungs} show={ladder} />
         <DidYouKnowThat at={DID} out={OLDER}>
-          <span style={{ opacity: ease(f, LANCASTER1 - 4, LANCASTER1 + 6) }}>this school’s founder, Joseph Lancaster,</span>
+          <span style={{ opacity: ease(f, C.at('this') - 4, C.at('this') + 6) }}>this school’s founder,</span><span style={{ opacity: ease(f, C.at('Joseph') - 4, C.at('Joseph') + 6) }}> Joseph Lancaster,</span>
           <span style={{ opacity: ease(f, CLAIMED - 4, CLAIMED + 6), color: '#ff9a1f', fontStyle: 'italic' }}> claimed</span>
           <span style={{ opacity: ease(f, MASTER2 - 4, MASTER2 + 6) }}> one master could run a school of</span>
           <span style={{ opacity: ease(f, THOUSAND - 4, THOUSAND + 6), color: '#ff9a1f', fontStyle: 'italic' }}> more than a thousand children.</span>
