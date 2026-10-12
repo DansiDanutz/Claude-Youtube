@@ -1,0 +1,16 @@
+# ScWelcome — cues
+s = 'sc00-welcome'
+c(S('ScWelcome', 0.0), 'whoosh-soft', 0.26, 'cut to the welcome; logo lit')
+c(W(s, 'Did', shift=-0.2), 'ui-toggle-on', 0.26, 'wordmark slams in')
+c(W(s, 'Episode'), 'pop-reveal', 0.24, 'NO. 03 · SCHOOL')
+c(W(s, 'rule'), 'whoosh-soft', 0.22, 'lockup docks; THE RULE')
+c(W(s, 'guess', 1), 'pop-reveal', 0.24, 'YOUR GUESS card')
+c(W(s, 'Two'), 'ui-click-soft', 0.18, '· 200 YEARS AGO')
+c(W(s, 'ten'), 'ui-click-soft', 0.18, '· OUT OF EVERY 10 PEOPLE + ten figures')
+c(W(s, 'people'), 'page-flip', 0.20, 'book appears')
+c(W(s, 'read'), 'chime-magic', 0.26, 'how many could read? pulses')
+c(W(s, 'Guess', 2), 'pop-reveal', 0.24, 'step 1 GUESS IN THE COMMENTS')
+c(W(s, 'comments'), 'ui-click-soft', 0.20, 'comment bubble pops')
+c(W(s, 'stay'), 'pop-reveal', 0.22, 'step 2 STAY TO THE END')
+c(W(s, 'check'), 'pop-reveal', 0.22, 'step 3 CHECK YOUR GUESS')
+c(W(s, 'guess', 3), 'chime-reward', 0.24, 'tick on step 3')
