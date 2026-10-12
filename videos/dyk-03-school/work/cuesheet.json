@@ -1110,1847 +1110,1847 @@
 "gain": 0.22
 },
 {
-"t": 223.453,
+"t": 223.418,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 224.79,
+"t": 224.697,
 "clip": "page-flip",
 "gain": 0.22
 },
 {
-"t": 225.974,
+"t": 226.137,
 "clip": "chime-reward",
 "gain": 0.26
 },
 {
-"t": 226.949,
+"t": 226.868,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 227.228,
+"t": 227.159,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 227.564,
+"t": 227.472,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 228.145,
+"t": 228.47,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 228.911,
-"clip": "ui-click-soft",
-"gain": 0.16
-},
-{
-"t": 229.46,
+"t": 229.303,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 230.142,
+"t": 229.33,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 231.802,
+"t": 230.561,
+"clip": "ui-click-soft",
+"gain": 0.16
+},
+{
+"t": 232.29,
 "clip": "stamp-hit",
 "gain": 0.24
 },
 {
-"t": 232.947,
+"t": 233.318,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 234.166,
+"t": 234.537,
 "clip": "clock-tick-soft",
 "gain": 0.2
 },
 {
-"t": 235.432,
+"t": 235.803,
 "clip": "clock-tick-soft",
 "gain": 0.2
 },
 {
-"t": 236.82,
+"t": 237.115,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 237.563,
+"t": 237.858,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 238.932,
+"t": 239.227,
 "clip": "pop-reveal",
 "gain": 0.18
 },
 {
-"t": 240.413,
+"t": 240.632,
 "clip": "page-flip",
 "gain": 0.2
 },
 {
-"t": 241.504,
+"t": 241.723,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 241.934,
+"t": 242.153,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 243.06,
+"t": 243.279,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 243.838,
+"t": 244.057,
 "clip": "chime-reward",
 "gain": 0.18
 },
 {
-"t": 245.017,
+"t": 245.16,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 246.015,
+"t": 246.158,
 "clip": "knock-solid",
 "gain": 0.22
 },
 {
-"t": 247.543,
+"t": 247.61,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 249.848,
+"t": 249.915,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 250.138,
+"t": 250.205,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 251.624,
+"t": 251.691,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 252.147,
+"t": 252.214,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 253.401,
+"t": 253.468,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 254.945,
+"t": 255.012,
 "clip": "stamp-hit",
 "gain": 0.26
 },
 {
-"t": 255.839,
+"t": 255.906,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 257.023,
+"t": 257.09,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 258.01,
+"t": 258.077,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 259.159,
+"t": 259.226,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 259.902,
+"t": 259.969,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 260.773,
+"t": 260.84,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 262.573,
+"t": 262.64,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 263.571,
+"t": 263.638,
 "clip": "stamp-hit",
 "gain": 0.24
 },
 {
-"t": 265.202,
+"t": 265.27,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 266.177,
+"t": 266.245,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 266.828,
+"t": 266.896,
 "clip": "stamp-hit",
 "gain": 0.22
 },
 {
-"t": 267.605,
+"t": 267.673,
 "clip": "stamp-hit",
 "gain": 0.22
 },
 {
-"t": 268.72,
+"t": 268.788,
 "clip": "piano-a-min",
 "gain": 0.3
 },
 {
-"t": 270.624,
+"t": 270.692,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 271.715,
+"t": 271.783,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 273.074,
+"t": 273.142,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 274.248,
+"t": 274.316,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 275.95,
+"t": 276.017,
 "clip": "whoosh-reverse",
 "gain": 0.3
 },
 {
-"t": 276.9,
+"t": 276.967,
 "clip": "whoosh-wind",
 "gain": 0.34
 },
 {
-"t": 277.02,
+"t": 277.087,
 "clip": "impact-soft",
 "gain": 0.38
 },
 {
-"t": 278.339,
+"t": 278.406,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 279.72,
+"t": 279.787,
 "clip": "pop-reveal",
 "gain": 0.24
 },
 {
-"t": 281.949,
+"t": 282.016,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 282.339,
+"t": 282.406,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 283.076,
+"t": 283.143,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 283.795,
+"t": 283.862,
 "clip": "ui-send",
 "gain": 0.2
 },
 {
-"t": 285.374,
+"t": 285.441,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 286.872,
+"t": 286.939,
 "clip": "knock-solid",
 "gain": 0.22
 },
 {
-"t": 287.745,
+"t": 287.812,
 "clip": "ui-toggle-on",
 "gain": 0.28
 },
 {
-"t": 288.823,
+"t": 288.89,
 "clip": "chime-magic",
 "gain": 0.3
 },
 {
-"t": 290.591,
+"t": 290.658,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 291.969,
+"t": 292.036,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 292.642,
+"t": 292.709,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 294.476,
+"t": 294.543,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 295.807,
+"t": 295.874,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 296.875,
+"t": 296.942,
 "clip": "whoosh-soft",
 "gain": 0.14
 },
 {
-"t": 298.385,
+"t": 298.452,
 "clip": "chime-reward",
 "gain": 0.22
 },
 {
-"t": 299.464,
+"t": 299.531,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 299.848,
+"t": 299.915,
 "clip": "pencil-scribble",
 "gain": 0.2
 },
 {
-"t": 300.3,
+"t": 300.367,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 300.986,
+"t": 301.053,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 302.065,
+"t": 302.132,
 "clip": "stamp-hit",
 "gain": 0.22
 },
 {
-"t": 304.051,
+"t": 304.118,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 305.514,
+"t": 305.581,
 "clip": "ui-send",
 "gain": 0.2
 },
 {
-"t": 307.151,
+"t": 307.218,
 "clip": "knock-solid",
 "gain": 0.2
 },
 {
-"t": 308.569,
+"t": 308.636,
 "clip": "stamp-hit",
 "gain": 0.24
 },
 {
-"t": 309.428,
+"t": 309.495,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 310.554,
+"t": 310.621,
 "clip": "trap-snap",
 "gain": 0.2
 },
 {
-"t": 311.453,
+"t": 311.52,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 312.451,
+"t": 312.518,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 313.828,
+"t": 313.895,
 "clip": "knock-solid",
 "gain": 0.22
 },
 {
-"t": 315.61,
+"t": 315.677,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 316.492,
+"t": 316.559,
 "clip": "chime-reward",
 "gain": 0.26
 },
 {
-"t": 317.014,
+"t": 317.081,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 319.167,
+"t": 319.234,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 319.91,
+"t": 319.977,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 319.968,
+"t": 320.035,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 320.653,
+"t": 320.72,
 "clip": "ui-send",
 "gain": 0.22
 },
 {
-"t": 321.64,
+"t": 321.707,
 "clip": "stamp-hit",
 "gain": 0.22
 },
 {
-"t": 323.607,
+"t": 323.674,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 325.325,
+"t": 325.392,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 326.8,
+"t": 326.867,
 "clip": "stamp-hit",
 "gain": 0.22
 },
 {
-"t": 328.204,
+"t": 328.271,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 328.553,
+"t": 328.62,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 329.911,
+"t": 329.978,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 330.886,
+"t": 330.953,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 332.047,
+"t": 332.114,
 "clip": "chime-reward",
 "gain": 0.22
 },
 {
-"t": 332.912,
+"t": 332.979,
 "clip": "piano-a-min",
 "gain": 0.3
 },
 {
-"t": 334.398,
+"t": 334.465,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 335.13,
+"t": 335.197,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 336.291,
+"t": 336.358,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 337.905,
+"t": 337.972,
 "clip": "stamp-hit",
 "gain": 0.2
 },
 {
-"t": 339.228,
+"t": 339.295,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 340.447,
+"t": 340.514,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 341.183,
+"t": 341.25,
 "clip": "whoosh-reverse",
 "gain": 0.3
 },
 {
-"t": 342.133,
+"t": 342.2,
 "clip": "whoosh-wind",
 "gain": 0.34
 },
 {
-"t": 342.253,
+"t": 342.32,
 "clip": "impact-soft",
 "gain": 0.38
 },
 {
-"t": 343.513,
+"t": 343.58,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 344.837,
+"t": 344.904,
 "clip": "pop-reveal",
 "gain": 0.24
 },
 {
-"t": 346.683,
+"t": 346.75,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 347.191,
+"t": 347.258,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 347.355,
+"t": 347.422,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 349.376,
+"t": 349.443,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 349.921,
+"t": 349.988,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 350.699,
+"t": 350.766,
 "clip": "chime-reward",
 "gain": 0.16
 },
 {
-"t": 351.758,
+"t": 351.825,
 "clip": "ui-toggle-on",
 "gain": 0.28
 },
 {
-"t": 352.65,
+"t": 352.717,
 "clip": "chime-magic",
 "gain": 0.3
 },
 {
-"t": 353.238,
+"t": 353.305,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 353.54,
+"t": 353.607,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 354.55,
+"t": 354.617,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 356.141,
+"t": 356.208,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 358.322,
+"t": 358.389,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 359.413,
+"t": 359.48,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 359.971,
+"t": 360.038,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 360.976,
+"t": 361.043,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 361.754,
+"t": 361.821,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 362.892,
+"t": 362.959,
 "clip": "knock-solid",
 "gain": 0.18
 },
 {
-"t": 363.867,
+"t": 363.934,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 365.295,
+"t": 365.362,
 "clip": "page-flip",
 "gain": 0.18
 },
 {
-"t": 366.119,
+"t": 366.186,
 "clip": "sparkle-soft",
 "gain": 0.22
 },
 {
-"t": 366.967,
+"t": 367.034,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 368.105,
+"t": 368.172,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 369.546,
+"t": 369.613,
 "clip": "chime-reward",
 "gain": 0.26
 },
 {
-"t": 370.997,
+"t": 371.064,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 371.636,
+"t": 371.703,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 372.472,
+"t": 372.539,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 372.829,
+"t": 372.896,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 373.708,
+"t": 373.775,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 374.405,
+"t": 374.472,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 375.357,
+"t": 375.424,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 377.319,
+"t": 377.386,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 378.735,
+"t": 378.802,
 "clip": "page-flip",
 "gain": 0.2
 },
 {
-"t": 379.664,
+"t": 379.731,
 "clip": "chime-reward",
 "gain": 0.22
 },
 {
-"t": 381.243,
+"t": 381.31,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 382.601,
+"t": 382.668,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 383.363,
+"t": 383.43,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 384.524,
+"t": 384.591,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 385.57,
+"t": 385.637,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 386.592,
+"t": 386.659,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 387.776,
+"t": 387.843,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 388.647,
+"t": 388.714,
 "clip": "piano-a-min",
 "gain": 0.3
 },
 {
-"t": 390.272,
+"t": 390.339,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 391.561,
+"t": 391.628,
 "clip": "whoosh-reverse",
 "gain": 0.22
 },
 {
-"t": 392.896,
+"t": 392.963,
 "clip": "stamp-hit",
 "gain": 0.24
 },
 {
-"t": 394.25,
+"t": 394.317,
 "clip": "whoosh-reverse",
 "gain": 0.3
 },
 {
-"t": 395.2,
+"t": 395.267,
 "clip": "whoosh-wind",
 "gain": 0.34
 },
 {
-"t": 395.32,
+"t": 395.387,
 "clip": "impact-soft",
 "gain": 0.38
 },
 {
-"t": 396.557,
+"t": 396.624,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 397.544,
+"t": 397.611,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 397.799,
+"t": 397.866,
 "clip": "ui-toggle-on",
 "gain": 0.24
 },
 {
-"t": 398.54,
+"t": 398.607,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 399.365,
+"t": 399.432,
 "clip": "clock-tick-soft",
 "gain": 0.22
 },
 {
-"t": 400.642,
+"t": 400.709,
 "clip": "pop-reveal",
 "gain": 0.18
 },
 {
-"t": 401.988,
+"t": 402.055,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 402.279,
+"t": 402.346,
 "clip": "ui-send",
 "gain": 0.2
 },
 {
-"t": 403.176,
+"t": 403.243,
 "clip": "ui-toggle-on",
 "gain": 0.28
 },
 {
-"t": 404.161,
+"t": 404.228,
 "clip": "chime-magic",
 "gain": 0.3
 },
 {
-"t": 404.308,
+"t": 404.375,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 406.015,
+"t": 406.082,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 407.187,
+"t": 407.254,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 408.232,
+"t": 408.299,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 408.847,
+"t": 408.914,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 410.901,
+"t": 410.968,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 411.726,
+"t": 411.793,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 413.079,
+"t": 413.146,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 413.95,
+"t": 414.017,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 414.612,
+"t": 414.679,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 415.935,
+"t": 416.002,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 416.69,
+"t": 416.757,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 418.106,
+"t": 418.173,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 419.604,
+"t": 419.671,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 419.976,
+"t": 420.043,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 420.777,
+"t": 420.844,
 "clip": "stamp-hit",
 "gain": 0.24
 },
 {
-"t": 422.681,
+"t": 422.748,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 423.784,
+"t": 423.851,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 425.144,
+"t": 425.211,
 "clip": "chime-reward",
 "gain": 0.26
 },
 {
-"t": 425.922,
+"t": 425.989,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 426.56,
+"t": 426.627,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 426.92,
+"t": 426.987,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 427.628,
+"t": 427.695,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 428.311,
+"t": 428.377,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 429.109,
+"t": 429.176,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 429.492,
+"t": 429.559,
 "clip": "whoosh-reverse",
 "gain": 0.2
 },
 {
-"t": 430.409,
+"t": 430.476,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 431.744,
+"t": 431.811,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 433.645,
+"t": 433.712,
 "clip": "piano-a-min",
 "gain": 0.3
 },
 {
-"t": 434.179,
+"t": 434.246,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 436.742,
+"t": 436.809,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 437.694,
+"t": 437.761,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 438.576,
+"t": 438.643,
 "clip": "impact-soft",
 "gain": 0.26
 },
 {
-"t": 440.733,
+"t": 440.8,
 "clip": "whoosh-reverse",
 "gain": 0.34
 },
 {
-"t": 441.905,
+"t": 441.972,
 "clip": "impact-deep-soft",
 "gain": 0.44
 },
 {
-"t": 442.58,
+"t": 442.647,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 443.996,
+"t": 444.063,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 445.018,
+"t": 445.085,
 "clip": "page-flip",
 "gain": 0.24
 },
 {
-"t": 446.308,
+"t": 446.375,
 "clip": "riser-soft",
 "gain": 0.28
 },
 {
-"t": 446.725,
+"t": 446.792,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 447.668,
+"t": 447.735,
 "clip": "chime-magic",
 "gain": 0.3
 },
 {
-"t": 448.726,
+"t": 448.793,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 449.823,
+"t": 449.89,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 451.983,
+"t": 452.05,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 452.842,
+"t": 452.909,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 453.863,
+"t": 453.93,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 455.954,
+"t": 456.021,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 457.011,
+"t": 457.078,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 458.125,
+"t": 458.192,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 459.34,
+"t": 459.407,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 460.75,
+"t": 460.817,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 462.852,
+"t": 462.919,
 "clip": "chime-reward",
 "gain": 0.22
 },
 {
-"t": 464.64,
+"t": 464.707,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 465.464,
+"t": 465.531,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 466.613,
+"t": 466.68,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 466.747,
+"t": 466.813,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 466.88,
+"t": 466.947,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 467.101,
+"t": 467.168,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 467.943,
+"t": 468.01,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 469.905,
+"t": 469.972,
 "clip": "whoosh-soft",
 "gain": 0.24
 },
 {
-"t": 471.856,
+"t": 471.923,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 472.79,
+"t": 472.857,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 474.497,
+"t": 474.564,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 477.248,
+"t": 477.315,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 479.013,
+"t": 479.08,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 481.092,
+"t": 481.159,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 483.576,
+"t": 483.643,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 485.619,
+"t": 485.686,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 486.438,
+"t": 486.505,
 "clip": "warm-shimmer",
 "gain": 0.26
 },
 {
-"t": 487.367,
+"t": 487.434,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 488.389,
+"t": 488.456,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 489.459,
+"t": 489.526,
 "clip": "riser-soft",
 "gain": 0.28
 },
 {
-"t": 493.372,
+"t": 493.439,
 "clip": "impact-deep-soft",
 "gain": 0.34
 },
 {
-"t": 494.467,
+"t": 494.533,
 "clip": "whoosh-soft",
 "gain": 0.26
 },
 {
-"t": 496.045,
+"t": 496.111,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 497.738,
+"t": 497.804,
 "clip": "impact-soft",
 "gain": 0.34
 },
 {
-"t": 498.549,
+"t": 498.615,
 "clip": "wind-soft",
 "gain": 0.2
 },
 {
-"t": 500.232,
+"t": 500.298,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 501.289,
+"t": 501.355,
 "clip": "ui-send",
 "gain": 0.2
 },
 {
-"t": 502.317,
+"t": 502.383,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 504.529,
+"t": 504.595,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 505.191,
+"t": 505.257,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 506.968,
+"t": 507.034,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 509.185,
+"t": 509.251,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 510.067,
+"t": 510.133,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 511.472,
+"t": 511.538,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 513.457,
+"t": 513.523,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 514.613,
+"t": 514.679,
 "clip": "whoosh-reverse",
 "gain": 0.18
 },
 {
-"t": 516.204,
+"t": 516.188,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 517.76,
+"t": 517.454,
 "clip": "stamp-hit",
 "gain": 0.22
 },
 {
-"t": 518.746,
+"t": 518.394,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 519.826,
+"t": 519.381,
 "clip": "knock-solid",
 "gain": 0.2
 },
 {
-"t": 520.941,
+"t": 520.228,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 522.38,
+"t": 521.889,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 523.268,
+"t": 522.777,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 524.034,
+"t": 523.543,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 525.915,
+"t": 525.424,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 526.38,
+"t": 525.889,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 527.738,
+"t": 527.247,
 "clip": "ui-toggle-on",
 "gain": 0.22
 },
 {
-"t": 528.957,
+"t": 528.466,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 530.014,
+"t": 529.523,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 530.397,
+"t": 529.906,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 531.755,
+"t": 531.264,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 533.311,
+"t": 532.82,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 533.856,
+"t": 533.365,
 "clip": "chime-reward",
 "gain": 0.2
 },
 {
-"t": 535.18,
+"t": 534.689,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 536.434,
+"t": 535.943,
 "clip": "stamp-hit",
 "gain": 0.2
 },
 {
-"t": 537.456,
+"t": 536.965,
 "clip": "stamp-hit",
 "gain": 0.2
 },
 {
-"t": 538.767,
+"t": 538.276,
 "clip": "stamp-hit",
 "gain": 0.2
 },
 {
-"t": 539.587,
+"t": 539.095,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 540.272,
+"t": 539.78,
 "clip": "stamp-hit",
 "gain": 0.24
 },
 {
-"t": 541.555,
+"t": 541.063,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 543.626,
+"t": 543.134,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 544.764,
+"t": 544.272,
 "clip": "sparkle-soft",
 "gain": 0.22
 },
 {
-"t": 545.47,
+"t": 544.978,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 546.166,
+"t": 545.674,
 "clip": "trap-snap",
 "gain": 0.18
 },
 {
-"t": 547.118,
+"t": 546.626,
 "clip": "sparkle-soft",
 "gain": 0.18
 },
 {
-"t": 548.221,
+"t": 547.729,
 "clip": "clock-tick-soft",
 "gain": 0.2
 },
 {
-"t": 548.871,
+"t": 548.379,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 550.712,
+"t": 550.221,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 552.278,
+"t": 551.787,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 553.718,
+"t": 553.227,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 556.005,
+"t": 555.514,
 "clip": "chime-reward",
 "gain": 0.2
 },
 {
-"t": 557.711,
+"t": 557.22,
 "clip": "whoosh-reverse",
 "gain": 0.18
 },
 {
-"t": 559.209,
+"t": 558.718,
 "clip": "page-flip",
 "gain": 0.2
 },
 {
-"t": 560.707,
+"t": 560.216,
 "clip": "warm-shimmer",
 "gain": 0.22
 },
 {
-"t": 562.239,
+"t": 561.748,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 563.516,
+"t": 563.025,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 564.741,
+"t": 564.25,
 "clip": "whoosh-soft",
 "gain": 0.2
 },
 {
-"t": 565.612,
+"t": 565.121,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 566.75,
+"t": 566.259,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 568.237,
+"t": 567.746,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 569.874,
+"t": 569.383,
 "clip": "chime-reward",
 "gain": 0.26
 },
 {
-"t": 571.361,
+"t": 570.87,
 "clip": "whoosh-soft",
 "gain": 0.16
 },
 {
-"t": 573.462,
+"t": 572.971,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 574.531,
+"t": 574.04,
 "clip": "sparkle-soft",
 "gain": 0.24
 },
 {
-"t": 575.667,
+"t": 575.167,
 "clip": "whoosh-soft",
 "gain": 0.22
 },
 {
-"t": 576.511,
+"t": 576.011,
 "clip": "ui-send",
 "gain": 0.18
 },
 {
-"t": 576.906,
+"t": 576.406,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 577.579,
+"t": 577.079,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 577.974,
+"t": 577.474,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 579.112,
+"t": 578.612,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 580.122,
+"t": 579.622,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 581.283,
+"t": 580.783,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 582.096,
+"t": 581.596,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 583.077,
+"t": 582.577,
 "clip": "piano-a-min",
 "gain": 0.24
 },
 {
-"t": 584.633,
+"t": 584.133,
 "clip": "whoosh-wind",
 "gain": 0.32
 },
 {
-"t": 585.233,
+"t": 584.733,
 "clip": "pop-reveal",
 "gain": 0.22
 },
 {
-"t": 585.439,
+"t": 584.939,
 "clip": "ui-toggle-on",
 "gain": 0.26
 },
 {
-"t": 586.73,
+"t": 586.23,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 587.624,
+"t": 587.124,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 588.97,
+"t": 588.47,
 "clip": "whoosh-soft",
 "gain": 0.24
 },
 {
-"t": 590.066,
+"t": 589.566,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 590.466,
+"t": 589.966,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 590.866,
+"t": 590.366,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 591.26,
+"t": 590.76,
 "clip": "ui-click-soft",
 "gain": 0.14
 },
 {
-"t": 591.266,
+"t": 590.766,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 591.666,
+"t": 591.166,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 592.066,
+"t": 591.566,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 592.466,
+"t": 591.966,
 "clip": "ui-click-soft",
 "gain": 0.15
 },
 {
-"t": 592.984,
+"t": 592.484,
 "clip": "pop-reveal",
 "gain": 0.3
 },
 {
-"t": 594.285,
+"t": 593.785,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 596.003,
+"t": 595.503,
 "clip": "impact-soft",
 "gain": 0.32
 },
 {
-"t": 596.282,
+"t": 595.782,
 "clip": "ui-click-soft",
 "gain": 0.22
 },
 {
-"t": 596.92,
+"t": 596.42,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 597.744,
+"t": 597.244,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 598.905,
+"t": 598.405,
 "clip": "sparkle-soft",
 "gain": 0.26
 },
 {
-"t": 599.776,
+"t": 599.276,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 600.484,
+"t": 599.984,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 602.214,
+"t": 601.714,
 "clip": "whoosh-soft",
 "gain": 0.18
 },
 {
-"t": 602.679,
+"t": 602.179,
 "clip": "sparkle-soft",
 "gain": 0.3
 },
 {
-"t": 604.664,
+"t": 604.164,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 606.324,
+"t": 605.824,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 607.52,
+"t": 607.02,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 608.205,
+"t": 607.705,
 "clip": "pop-reveal",
 "gain": 0.16
 },
 {
-"t": 609.407,
+"t": 608.907,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 610.894,
+"t": 610.394,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 611.648,
+"t": 611.148,
 "clip": "ui-click-soft",
 "gain": 0.34
 },
 {
-"t": 613.305,
+"t": 612.805,
 "clip": "ui-send",
 "gain": 0.32
 },
 {
-"t": 613.967,
+"t": 613.467,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 615.302,
+"t": 614.802,
 "clip": "pop-reveal",
 "gain": 0.16
 },
 {
-"t": 616.854,
+"t": 616.354,
 "clip": "chime-reward",
 "gain": 0.42
 },
 {
-"t": 617.887,
+"t": 617.387,
 "clip": "sparkle-soft",
 "gain": 0.22
 },
 {
-"t": 619.181,
+"t": 618.681,
 "clip": "whoosh-wind",
 "gain": 0.3
 },
 {
-"t": 620.423,
+"t": 619.923,
 "clip": "impact-soft",
 "gain": 0.34
 },
 {
-"t": 622.333,
+"t": 621.833,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 624.26,
+"t": 623.76,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 625.456,
+"t": 624.956,
 "clip": "pop-reveal",
 "gain": 0.2
 },
 {
-"t": 626.86,
+"t": 626.36,
 "clip": "ui-click-soft",
 "gain": 0.16
 },
 {
-"t": 627.917,
+"t": 627.417,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 629.705,
+"t": 629.205,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 630.664,
+"t": 630.164,
 "clip": "piano-a-min",
 "gain": 0.26
 },
 {
-"t": 631.845,
+"t": 631.345,
 "clip": "chess-piece-thock",
 "gain": 0.38
 },
 {
-"t": 633.149,
+"t": 632.649,
 "clip": "chess-piece-thock",
 "gain": 0.38
 },
 {
-"t": 634.365,
+"t": 633.865,
 "clip": "chess-piece-thock",
 "gain": 0.38
 },
 {
-"t": 635.833,
+"t": 635.333,
 "clip": "pencil-scribble",
 "gain": 0.3
 },
 {
-"t": 636.033,
+"t": 635.533,
 "clip": "ui-toggle-on",
 "gain": 0.24
 },
 {
-"t": 636.213,
+"t": 635.713,
 "clip": "sparkle-soft",
 "gain": 0.22
 },
 {
-"t": 637.685,
+"t": 637.185,
 "clip": "pop-reveal",
 "gain": 0.18
 },
 {
-"t": 638.252,
+"t": 637.752,
 "clip": "ui-click-soft",
 "gain": 0.18
 },
 {
-"t": 640.23,
+"t": 639.73,
 "clip": "sparkle-soft",
 "gain": 0.2
 }

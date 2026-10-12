@@ -40,7 +40,7 @@ S = [
  sc("sc06-1763", "Sc1763", [
   ("You wake up in seventeen sixty three, in a village in Prussia. It's autumn. The war's just over, the harvest's in, and the pastor has news from the king.", 3.0, None),
   ("Did you know that Frederick the Great's new school law banned school holidays? Not even at harvest time.", 2.9, DYK),
-  ("So what is school now? An order. From the king. Every boy and girl, from five until about thirteen. Skip it, and your parents can be fined.", 2.9, None),
+  ("So what is school now? An order. From the king. Every boy and girl, from the age of five until about thirteen. Skip it, and your parents can be fined.", 2.9, None),
   ("In winter, you're in class from eight to eleven, and one to four. In summer, just a few hours, because there are cows to herd. The law even says, hire a shepherd, so the children can go to school. Your teacher might be an old soldier. Many early village teachers were.", 3.0, None),
   ("You might have heard school was invented to make obedient factory workers. Historians say it's not that simple. Prussia was still a land of farms. The king and his church wanted loyal, God fearing, disciplined subjects. And plenty of families just ignored the rules.", 2.9, None),
   ("But one teacher per village is slow, and expensive. In London, a young man thinks he can teach the poor for almost nothing. His trick? Make the children the teachers.", 2.9, DYK)],
@@ -77,7 +77,7 @@ S = [
  sc("sc11-2100", "Sc2100", [
   ("So, what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence.", 3.0, None),
   ("Remember Prince Henry's tutor? One teacher, one child. In nineteen eighty four, an American researcher, Benjamin Bloom, reported that tutored students did better than ninety eight percent of students taught in a normal class.", 2.9, None),
-  ("Later studies found the effect is smaller. But it's real. The problem was always cost. Nobody can pay a tutor for every child.", 3.0, None),
+  ("Later studies found the effect is smaller. But it's real. The problem was always the cost. Nobody can pay a tutor for every child.", 3.0, None),
   ("Then, in twenty twenty four, a World Bank pilot in Nigeria gave students an AI tutor, twice a week, with their teachers guiding them. After six weeks, the World Bank estimated nearly two years of typical learning. One small study. Short. But it's a start.", 2.85, None),
   ("So here's one scenario. Not a fact. By twenty one hundred, every child could have a tutor. Not a prince's poet. A patient machine, awake at any hour.", 2.9, None),
   ("And the classroom? The O E C D has imagined futures where school becomes a learning hub, and even one where it fades away. But UNESCO says schools should be protected. If they didn't exist, we'd have to invent them.", 2.9, None),

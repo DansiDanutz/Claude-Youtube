@@ -16,8 +16,8 @@ import vo from './vo.json';
 // LOYAL · GOD-FEARING · DISCIPLINED → plenty IGNORED THE RULES (Melton 1988). Cliffhanger: one teacher per village,
 // SLOW · EXPENSIVE; band into 1810. VO sc06 @0.8 s.
 // =============================================================================
-export const compositionConfig = { id: 'Sc1763', durationInSeconds: 72.4333, fps: 30, width: 1920, height: 1080 };
-const DUR = 2173;
+export const compositionConfig = { id: 'Sc1763', durationInSeconds: 72.5, fps: 30, width: 1920, height: 1080 };
+const DUR = 2175;
 
 const C = makeCue(vo, 'sc06-1763', 0.8);
 const VILLAGE1 = C.at('village', 1);

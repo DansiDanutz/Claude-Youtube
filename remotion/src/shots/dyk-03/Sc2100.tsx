@@ -19,8 +19,8 @@ import vo from './vo.json';
 // quoted on "invent". Callback: a private teacher for a prince | for everyone? — the 2100 rung fills A TUTOR FOR ALL?
 // on "everyone"; σχολή = FREE TIME? on "meant". VO sc11 @0.8 s.
 // =============================================================================
-export const compositionConfig = { id: 'Sc2100', durationInSeconds: 81.2, fps: 30, width: 1920, height: 1080 };
-const DUR = 2436;
+export const compositionConfig = { id: 'Sc2100', durationInSeconds: 80.6333, fps: 30, width: 1920, height: 1080 };
+const DUR = 2419;
 
 const C = makeCue(vo, 'sc11-2100', 0.8);
 const RUNG = C.at('rung');

@@ -2,7 +2,7 @@
 
 One row per second of the master: words → visual event → SFX. Source of truth: `cues.py` (the same table `build_final.py` mixes), `timeline.json`, `remotion/src/shots/dyk-03/vo.json`.
 
-Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narrating: 32
+Total 651.5 s · 591 cues · gaps ≥ 2.0 s between visual events while narrating: 32
 
 ## Gaps to check (continuous motion must cover them)
 - 0:53.8 → 0:56.1 (2.3 s) in ScPromise — motion: kids popping in 6-frame steps, bells swinging, tutor orb bobbing
@@ -16,27 +16,27 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 - 3:14.4 → 3:16.8 (2.4 s) in Sc1647 — motion: frost growing, houses filling, week bars drawing
 - 3:21.4 → 3:23.5 (2.1 s) in Sc1647 — motion: frost growing, houses filling, week bars drawing
 - 3:38.8 → 3:41.0 (2.2 s) in Sc1763 — motion: leaves falling, age band growing, children walking
-- 4:07.5 → 4:09.8 (2.3 s) in Sc1763 — motion: leaves falling, age band growing, children walking
-- 4:39.7 → 4:41.9 (2.2 s) in Sc1810 — motion: rows regrouping, finger tracing, cage rising, gears turning, counter
-- 5:17.0 → 5:19.2 (2.2 s) in Sc1810 — motion: rows regrouping, finger tracing, cage rising, gears turning, counter
+- 4:07.6 → 4:09.9 (2.3 s) in Sc1763 — motion: leaves falling, age band growing, children walking
+- 4:39.8 → 4:42.0 (2.2 s) in Sc1810 — motion: rows regrouping, finger tracing, cage rising, gears turning, counter
+- 5:17.1 → 5:19.2 (2.2 s) in Sc1810 — motion: rows regrouping, finger tracing, cage rising, gears turning, counter
 - 5:47.4 → 5:49.4 (2.0 s) in Sc1948 — motion: mortarboard bouncing, steam, radio waves, climbing figure
-- 5:56.1 → 5:58.3 (2.2 s) in Sc1948 — motion: mortarboard bouncing, steam, radio waves, climbing figure
-- 6:48.8 → 6:50.9 (2.1 s) in ScToday — motion: phone buzzing, 463 counter, windows dimming
-- 7:14.2 → 7:16.7 (2.6 s) in ScToday — motion: phone buzzing, 463 counter, windows dimming
-- 7:18.6 → 7:20.7 (2.2 s) in ScToday — motion: phone buzzing, 463 counter, windows dimming
-- 7:29.8 → 7:32.0 (2.2 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
+- 5:56.2 → 5:58.4 (2.2 s) in Sc1948 — motion: mortarboard bouncing, steam, radio waves, climbing figure
+- 6:48.9 → 6:51.0 (2.1 s) in ScToday — motion: phone buzzing, 463 counter, windows dimming
+- 7:14.2 → 7:16.8 (2.6 s) in ScToday — motion: phone buzzing, 463 counter, windows dimming
+- 7:18.6 → 7:20.8 (2.2 s) in ScToday — motion: phone buzzing, 463 counter, windows dimming
+- 7:29.9 → 7:32.1 (2.2 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
 - 7:33.9 → 7:36.0 (2.1 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
 - 7:40.8 → 7:42.9 (2.1 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
-- 7:54.5 → 7:57.2 (2.8 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
-- 7:59.0 → 8:01.1 (2.1 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
-- 8:01.1 → 8:03.6 (2.5 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
-- 8:03.6 → 8:05.6 (2.0 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
+- 7:54.6 → 7:57.3 (2.8 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
+- 7:59.1 → 8:01.2 (2.1 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
+- 8:01.2 → 8:03.6 (2.5 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
+- 8:03.6 → 8:05.7 (2.0 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
 - 8:09.5 → 8:13.4 (3.9 s) in ScReveal — motion: word card moving, figures lighting, pointer climbing
-- 8:22.3 → 8:24.5 (2.2 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
-- 8:27.0 → 8:29.2 (2.2 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
-- 9:01.6 → 9:03.6 (2.1 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
-- 9:13.7 → 9:16.0 (2.3 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
-- 9:31.4 → 9:33.5 (2.1 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
+- 8:22.4 → 8:24.6 (2.2 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
+- 8:27.0 → 8:29.3 (2.2 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
+- 9:01.1 → 9:03.1 (2.1 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
+- 9:13.2 → 9:15.5 (2.3 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
+- 9:30.9 → 9:33.0 (2.1 s) in Sc2100 — motion: bell-curve marker, tutor orbs bobbing, doors fading
 
 | t | shot | words | visual event (SFX) |
 |---|---|---|---|
@@ -265,26 +265,26 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 3:42 | Sc1763 | So what | card out; a big ? (whoosh-soft) |
 | 3:43 | Sc1763 | is school now? | the ? pulses (ui-click-soft) |
 | 3:44 | Sc1763 | An order. | scroll · AN ORDER. (page-flip) |
-| 3:45 | Sc1763 | From the king. | crown · FROM THE KING. + HOW WE SAW IT · THE KING'S ORDER (chime-reward) |
-| 3:46 | Sc1763 | Every | age ruler (ui-click-soft) |
+| 3:45 | Sc1763 | From |  |
+| 3:46 | Sc1763 | the king. Every | crown · FROM THE KING. + HOW WE SAW IT · THE KING'S ORDER (chime-reward); age ruler (ui-click-soft) |
 | 3:47 | Sc1763 | boy and girl, from | a boy (ui-click-soft); a girl (ui-click-soft) |
-| 3:48 | Sc1763 | five until about thirteen. | band grows from 5 (ui-send); AGES 5 → ABOUT 13 (ui-click-soft) |
-| 3:49 | Sc1763 |  | chip docks into the ladder (whoosh-soft) |
-| 3:50 | Sc1763 | Skip it, and | a coin (ui-click-soft) |
-| 3:51 | Sc1763 | your parents can be fined. | CAN BE FINED stamp (stamp-hit) |
-| 3:52 | Sc1763 | In winter, | WINTER day bar (whoosh-soft) |
-| 3:53 | Sc1763 | you're in class from |  |
-| 3:54 | Sc1763 | eight to eleven, | segment 8–11 (clock-tick-soft) |
-| 3:55 | Sc1763 | and one to four. | segment 1–4 (clock-tick-soft) |
-| 3:56 | Sc1763 | In summer, | SUMMER day bar (ui-click-soft) |
-| 3:57 | Sc1763 | just a few hours, | A FEW HOURS (ui-click-soft) |
-| 3:58 | Sc1763 | because there are cows | a cow; COWS TO HERD (pop-reveal) |
-| 3:59 | Sc1763 | to herd. |  |
-| 4:00 | Sc1763 | The law even says, | THE LAW EVEN SAYS · §4 (page-flip) |
-| 4:01 | Sc1763 | hire a shepherd, | quote: hire a shepherd, (ui-click-soft); the shepherd + cows (ui-click-soft) |
-| 4:02 | Sc1763 | so the |  |
-| 4:03 | Sc1763 | children can go to school. | children walk to school (ui-send); the school house (chime-reward) |
-| 4:04 | Sc1763 | Your |  |
+| 3:48 | Sc1763 | the age of five until | band grows from 5 (ui-send) |
+| 3:49 | Sc1763 | about thirteen. | chip docks into the ladder (whoosh-soft); AGES 5 → ABOUT 13 (ui-click-soft) |
+| 3:50 | Sc1763 | Skip it, | a coin (ui-click-soft) |
+| 3:51 | Sc1763 | and your parents |  |
+| 3:52 | Sc1763 | can be fined. | CAN BE FINED stamp (stamp-hit) |
+| 3:53 | Sc1763 | In winter, you're in class | WINTER day bar (whoosh-soft) |
+| 3:54 | Sc1763 | from eight to eleven, | segment 8–11 (clock-tick-soft) |
+| 3:55 | Sc1763 | and one to | segment 1–4 (clock-tick-soft) |
+| 3:56 | Sc1763 | four. In |  |
+| 3:57 | Sc1763 | summer, just a few | SUMMER day bar (ui-click-soft); A FEW HOURS (ui-click-soft) |
+| 3:58 | Sc1763 | hours, because there |  |
+| 3:59 | Sc1763 | are cows to herd. | a cow; COWS TO HERD (pop-reveal) |
+| 4:00 | Sc1763 | The law even | THE LAW EVEN SAYS · §4 (page-flip) |
+| 4:01 | Sc1763 | says, hire | quote: hire a shepherd, (ui-click-soft) |
+| 4:02 | Sc1763 | a shepherd, so | the shepherd + cows (ui-click-soft) |
+| 4:03 | Sc1763 | the children can go to | children walk to school (ui-send) |
+| 4:04 | Sc1763 | school. Your | the school house (chime-reward) |
 | 4:05 | Sc1763 | teacher might be an old | YOUR TEACHER MIGHT BE (whoosh-soft) |
 | 4:06 | Sc1763 | soldier. | an old soldier (knock-solid) |
 | 4:07 | Sc1763 | Many early | MANY EARLY VILLAGE TEACHERS WERE (ui-click-soft) |
@@ -294,18 +294,18 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 4:11 | Sc1763 | to make obedient | obedient (ui-click-soft) |
 | 4:12 | Sc1763 | factory workers. | factory workers + factory icon (pop-reveal) |
 | 4:13 | Sc1763 | Historians | HISTORIANS SAY: (ui-click-soft) |
-| 4:14 | Sc1763 | say it's not that simple. | NOT THAT SIMPLE stamp (stamp-hit) |
-| 4:15 | Sc1763 | Prussia | 1763 PRUSSIA: STILL A LAND OF FARMS (ui-click-soft) |
+| 4:14 | Sc1763 | say it's not that |  |
+| 4:15 | Sc1763 | simple. Prussia | NOT THAT SIMPLE stamp (stamp-hit); 1763 PRUSSIA: STILL A LAND OF FARMS (ui-click-soft) |
 | 4:16 | Sc1763 | was still a land of |  |
 | 4:17 | Sc1763 | farms. The | factory becomes a farm; STILL A LAND OF FARMS (whoosh-soft) |
 | 4:18 | Sc1763 | king and his church wanted | THE KING AND HIS CHURCH WANTED: (ui-click-soft) |
 | 4:19 | Sc1763 | loyal, God | LOYAL (ui-click-soft); GOD-FEARING (ui-click-soft) |
 | 4:20 | Sc1763 | fearing, disciplined | DISCIPLINED SUBJECTS (ui-click-soft) |
 | 4:21 | Sc1763 | subjects. |  |
-| 4:22 | Sc1763 | And plenty of families | PLENTY OF FAMILIES (ui-click-soft) |
-| 4:23 | Sc1763 | just ignored the | IGNORED THE RULES stamp (stamp-hit) |
-| 4:24 | Sc1763 | rules. But |  |
-| 4:25 | Sc1763 | one teacher per | one teacher (whoosh-soft) |
+| 4:22 | Sc1763 | And plenty of | PLENTY OF FAMILIES (ui-click-soft) |
+| 4:23 | Sc1763 | families just ignored | IGNORED THE RULES stamp (stamp-hit) |
+| 4:24 | Sc1763 | the rules. |  |
+| 4:25 | Sc1763 | But one teacher per | one teacher (whoosh-soft) |
 | 4:26 | Sc1763 | village is slow, | villages (ui-click-soft); SLOW (stamp-hit) |
 | 4:27 | Sc1763 | and expensive. | EXPENSIVE (stamp-hit) |
 | 4:28 | Sc1763 | In London, | cliffhanger band; ladder fades (piano-a-min) |
@@ -315,24 +315,24 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 4:32 | Sc1763 | nothing. His |  |
 | 4:33 | Sc1763 | trick? | band: His trick? + a child teaching (pop-reveal) |
 | 4:34 | Sc1763 | Make the children | band: Make the children the teachers. (ui-click-soft) |
-| 4:35 | Sc1763 | the teachers. | era exit pull-in (whoosh-reverse) |
-| 4:36 | Sc1763 |  | era cut: YOU WAKE UP IN · year (whoosh-wind) |
+| 4:35 | Sc1763 | the teachers. |  |
+| 4:36 | Sc1763 |  | era exit pull-in (whoosh-reverse); era cut: YOU WAKE UP IN · year (whoosh-wind) |
 | 4:37 | Sc1810 | You wake | year slams in (impact-soft) |
 | 4:38 | Sc1810 | up in eighteen ten, | gold underline under 1810 (whoosh-soft) |
 | 4:39 | Sc1810 | in London, | place line: London · Borough Road (pop-reveal) |
 | 4:40 | Sc1810 | on Borough |  |
-| 4:41 | Sc1810 | Road. You walk | the hall outline draws (whoosh-soft) |
-| 4:42 | Sc1810 | into one enormous | header docks (whoosh-soft) |
+| 4:41 | Sc1810 | Road. You |  |
+| 4:42 | Sc1810 | walk into one enormous | the hall outline draws (whoosh-soft); header docks (whoosh-soft) |
 | 4:43 | Sc1810 | hall. Hundreds | ONE ENORMOUS HALL (ui-click-soft); rows of children fill (ui-send) |
 | 4:44 | Sc1810 | of children, in |  |
 | 4:45 | Sc1810 | long rows. | HUNDREDS OF CHILDREN, IN LONG ROWS (ui-click-soft) |
 | 4:46 | Sc1810 | And just one master. | ONE MASTER on the raised desk (knock-solid) |
-| 4:47 | Sc1810 | Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 4:48 | Sc1810 | you know that this | (chime after "that") (chime-magic) |
+| 4:47 | Sc1810 |  | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 4:48 | Sc1810 | Did you know that this | (chime after "that") (chime-magic) |
 | 4:49 | Sc1810 | school's founder, |  |
 | 4:50 | Sc1810 | Joseph Lancaster, | card: this school's founder, Joseph Lancaster, (ui-click-soft) |
-| 4:51 | Sc1810 | claimed | card: claimed + his own words (pop-reveal) |
-| 4:52 | Sc1810 | one master | card: one master could run a school of (ui-click-soft) |
+| 4:51 | Sc1810 |  |  |
+| 4:52 | Sc1810 | claimed one master | card: claimed + his own words (pop-reveal); card: one master could run a school of (ui-click-soft) |
 | 4:53 | Sc1810 | could run a school of |  |
 | 4:54 | Sc1810 | more than a thousand children? | card: more than a thousand children. (pop-reveal) |
 | 4:55 | Sc1810 | Older | card out; MONITORS label (whoosh-soft) |
@@ -340,10 +340,10 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 4:57 | Sc1810 | ones, in |  |
 | 4:58 | Sc1810 | small groups. | rows regroup round gold monitors (chime-reward) |
 | 4:59 | Sc1810 | You write your letters | sand tray (whoosh-soft); A B C traced; YOUR LETTERS (pencil-scribble) |
-| 5:00 | Sc1810 | in sand, with your finger, | IN SAND (ui-click-soft); WITH YOUR FINGER (ui-click-soft) |
-| 5:01 | Sc1810 | because |  |
-| 5:02 | Sc1810 | paper costs money. | PAPER COSTS MONEY (stamp-hit) |
-| 5:03 | Sc1810 |  |  |
+| 5:00 | Sc1810 | in sand, with your | IN SAND (ui-click-soft) |
+| 5:01 | Sc1810 | finger, because | WITH YOUR FINGER (ui-click-soft) |
+| 5:02 | Sc1810 | paper costs | PAPER COSTS MONEY (stamp-hit) |
+| 5:03 | Sc1810 | money. |  |
 | 5:04 | Sc1810 | Misbehave, and | MISBEHAVE… (whoosh-soft) |
 | 5:05 | Sc1810 | you might be hoisted above | the cage is hoisted up (ui-send) |
 | 5:06 | Sc1810 | the classroom, in |  |
@@ -351,39 +351,39 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 5:08 | Sc1810 | Really. | REALLY. stamp (stamp-hit) |
 | 5:09 | Sc1810 | Lancaster thought | the cane (ui-click-soft) |
 | 5:10 | Sc1810 | it beat the cane. | the cane crossed out (trap-snap) |
-| 5:11 | Sc1810 | So what's school | a big ? (whoosh-soft) |
-| 5:12 | Sc1810 | to you? | the ? pulses (ui-click-soft) |
+| 5:11 | Sc1810 | So what's | a big ? (whoosh-soft) |
+| 5:12 | Sc1810 | school to you? | the ? pulses (ui-click-soft) |
 | 5:13 | Sc1810 | A machine. | gears turn; A MACHINE (knock-solid) |
-| 5:14 | Sc1810 | For |  |
-| 5:15 | Sc1810 | teaching the poor, | FOR TEACHING THE POOR (ui-click-soft) |
+| 5:14 | Sc1810 |  |  |
+| 5:15 | Sc1810 | For teaching the poor, | FOR TEACHING THE POOR (ui-click-soft) |
 | 5:16 | Sc1810 | by the hundred, as | HOW WE SAW IT · BY THE HUNDRED (chime-reward) |
 | 5:17 | Sc1810 | cheaply as possible. | AS CHEAPLY AS POSSIBLE (ui-click-soft) |
 | 5:18 | Sc1810 | By |  |
-| 5:19 | Sc1810 | the time Lancaster dies, | BY THE TIME LANCASTER (ui-click-soft); chip docks into the ladder (whoosh-soft); BY THE TIME LANCASTER DIES (1838) (ui-click-soft) |
-| 5:20 | Sc1810 | more than twelve hundred | counter 1,200+ and schools (ui-send) |
-| 5:21 | Sc1810 | schools are said to use | SAID TO stamp (stamp-hit) |
-| 5:22 | Sc1810 | his system. |  |
+| 5:19 | Sc1810 | the time Lancaster | BY THE TIME LANCASTER (ui-click-soft); chip docks into the ladder (whoosh-soft) |
+| 5:20 | Sc1810 | dies, more than twelve hundred | BY THE TIME LANCASTER DIES (1838) (ui-click-soft); counter 1,200+ and schools (ui-send) |
+| 5:21 | Sc1810 | schools are said to | SAID TO stamp (stamp-hit) |
+| 5:22 | Sc1810 | use his system. |  |
 | 5:23 | Sc1810 | Then the law steps | THEN THE LAW STEPS IN (whoosh-soft) |
-| 5:24 | Sc1810 | in. In eighteen |  |
-| 5:25 | Sc1810 | eighty, | 1880 card (pop-reveal) |
+| 5:24 | Sc1810 | in. In |  |
+| 5:25 | Sc1810 | eighteen eighty, | 1880 card (pop-reveal) |
 | 5:26 | Sc1810 | school becomes compulsory | COMPULSORY (stamp-hit) |
-| 5:27 | Sc1810 | in England, from |  |
-| 5:28 | Sc1810 | five to ten. | AGES 5 → (ui-click-soft); 10 (ui-click-soft) |
+| 5:27 | Sc1810 | in England, |  |
+| 5:28 | Sc1810 | from five to ten. | AGES 5 → (ui-click-soft); 10 (ui-click-soft) |
 | 5:29 | Sc1810 | In eighteen ninety | 1891 card (pop-reveal) |
 | 5:30 | Sc1810 | one, for most | FOR MOST FAMILIES (ui-click-soft) |
 | 5:31 | Sc1810 | families, it becomes |  |
 | 5:32 | Sc1810 | free. Now | FREE (chime-reward); cliffhanger band; children walk to school (piano-a-min) |
-| 5:33 | Sc1810 | every child has |  |
-| 5:34 | Sc1810 | to go. | they reach the school (ui-click-soft) |
+| 5:33 | Sc1810 | every child |  |
+| 5:34 | Sc1810 | has to go. | they reach the school (ui-click-soft) |
 | 5:35 | Sc1810 | But in the next century, | band: But in the next century, (ui-click-soft) |
-| 5:36 | Sc1810 | school stops being | band: school stops being something you're forced into. (ui-click-soft) |
-| 5:37 | Sc1810 | something you're forced | FORCED INTO stamp (stamp-hit) |
+| 5:36 | Sc1810 | school stops | band: school stops being something you're forced into. (ui-click-soft) |
+| 5:37 | Sc1810 | being something you're forced | FORCED INTO stamp (stamp-hit) |
 | 5:38 | Sc1810 | into. |  |
 | 5:39 | Sc1810 | It turns into something | band: It turns into… (ui-click-soft) |
 | 5:40 | Sc1810 | people fight for. | a placard with ? (pop-reveal) |
 | 5:41 | Sc1810 |  | era exit pull-in (whoosh-reverse) |
-| 5:42 | Sc1810 | You | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 5:43 | Sc1948 | wake up in nineteen forty | gold underline under 1948 (whoosh-soft) |
+| 5:42 | Sc1810 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 5:43 | Sc1948 | You wake up in nineteen forty | gold underline under 1948 (whoosh-soft) |
 | 5:44 | Sc1948 | eight, in a small | place line (pop-reveal) |
 | 5:45 | Sc1948 | American town. |  |
 | 5:46 | Sc1948 | It's June. | JUNE (ui-click-soft) |
@@ -399,25 +399,25 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 5:56 | Sc1948 | to high school? | card: went to high school. (ui-click-soft) |
 | 5:57 | Sc1948 | By nineteen |  |
 | 5:58 | Sc1948 | forty, it was | card: By 1940: (ui-click-soft) |
-| 5:59 | Sc1948 | about seven in ten. | card: about seven in ten. (pop-reveal); bar 1940 · 71 % (ui-send) |
-| 6:00 | Sc1948 | Your grandad | card out; YOUR GRANDAD (whoosh-soft) |
-| 6:01 | Sc1948 | probably left school | PROBABLY LEFT SCHOOL YOUNG (ui-click-soft) |
-| 6:02 | Sc1948 | young, to work. | TO WORK (knock-solid) |
+| 5:59 | Sc1948 | about seven in | card: about seven in ten. (pop-reveal) |
+| 6:00 | Sc1948 | ten. Your | bar 1940 · 71 % (ui-send) |
+| 6:01 | Sc1948 | grandad probably left | card out; YOUR GRANDAD (whoosh-soft); PROBABLY LEFT SCHOOL YOUNG (ui-click-soft) |
+| 6:02 | Sc1948 | school young, to work. | TO WORK (knock-solid) |
 | 6:03 | Sc1948 | You're staying | you, in a cap (ui-click-soft) |
 | 6:04 | Sc1948 | to the end, because |  |
 | 6:05 | Sc1948 | a diploma opens | a diploma (page-flip) |
-| 6:06 | Sc1948 | doors. So | a door opens: A DIPLOMA OPENS DOORS (sparkle-soft); a big ? (whoosh-soft) |
-| 6:07 | Sc1948 | what is school to you |  |
+| 6:06 | Sc1948 | doors. | a door opens: A DIPLOMA OPENS DOORS (sparkle-soft) |
+| 6:07 | Sc1948 | So what is school to you | a big ? (whoosh-soft) |
 | 6:08 | Sc1948 | now? | the ? pulses (ui-click-soft) |
 | 6:09 | Sc1948 | A ladder. | the ladder + HOW WE SAW IT · A LADDER (chime-reward) |
-| 6:10 | Sc1948 | Every year you climb | you climb (ui-send) |
-| 6:11 | Sc1948 | gets you closer to | EVERY YEAR YOU CLIMB → CLOSER (ui-click-soft) |
-| 6:12 | Sc1948 | a better job. | ↑ A BETTER JOB (pop-reveal); chip docks into the ladder (whoosh-soft) |
+| 6:10 | Sc1948 | Every year you |  |
+| 6:11 | Sc1948 | climb gets you closer | you climb (ui-send); EVERY YEAR YOU CLIMB → CLOSER (ui-click-soft) |
+| 6:12 | Sc1948 | to a better job. | ↑ A BETTER JOB (pop-reveal); chip docks into the ladder (whoosh-soft) |
 | 6:13 | Sc1948 | And that December, | a globe; 10 DECEMBER 1948 (whoosh-soft) |
 | 6:14 | Sc1948 | in Paris, | · PARIS (ui-click-soft) |
 | 6:15 | Sc1948 | the United Nations | THE UNITED NATIONS (ui-click-soft) |
-| 6:16 | Sc1948 | writes it down for the |  |
-| 6:17 | Sc1948 | whole world. | FOR THE WHOLE WORLD (ui-click-soft) |
+| 6:16 | Sc1948 | writes it down for |  |
+| 6:17 | Sc1948 | the whole world. | FOR THE WHOLE WORLD (ui-click-soft) |
 | 6:18 | Sc1948 | Everyone | Article 26 card (page-flip) |
 | 6:19 | Sc1948 | has the right to | the right to education. (chime-reward) |
 | 6:20 | Sc1948 | education. |  |
@@ -426,8 +426,8 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 6:23 | Sc1948 | So now school | three icons, dim (whoosh-soft) |
 | 6:24 | Sc1948 | is a right. | A RIGHT lights; rung becomes RIGHT · LADDER (ui-click-soft) |
 | 6:25 | Sc1948 | And a ladder. | A LADDER lights (ui-click-soft) |
-| 6:26 | Sc1948 | And a building you | A BUILDING lights (ui-click-soft) |
-| 6:27 | Sc1948 | walk to every morning. | EVERY MORNING (ui-click-soft) |
+| 6:26 | Sc1948 | And a building | A BUILDING lights (ui-click-soft) |
+| 6:27 | Sc1948 | you walk to every morning. | EVERY MORNING (ui-click-soft) |
 | 6:28 | Sc1948 | But about | cliffhanger band; ladder fades (piano-a-min) |
 | 6:29 | Sc1948 | seventy years later, |  |
 | 6:30 | Sc1948 | most of the world's | a grid of schools (ui-click-soft) |
@@ -440,12 +440,12 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 6:37 | ScToday | Your phone buzzes. | header docks; a phone (whoosh-soft); the phone buzzes (ui-toggle-on) |
 | 6:38 | ScToday | Homework's | HOMEWORK DUE notification (pop-reveal) |
 | 6:39 | ScToday | due at midnight. | 23:59 (clock-tick-soft) |
-| 6:40 | ScToday | And any question you've | a kid with a ? bubble (pop-reveal) |
-| 6:41 | ScToday | got, you can ask | a laptop (ui-click-soft) |
-| 6:42 | ScToday | a screen. | the screen answers; ANY QUESTION → ASK A SCREEN (ui-send) |
-| 6:43 | ScToday | Did you know that | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 6:44 | ScToday | in April twenty twenty, | (chime after "that") (chime-magic); card: in April 2020, (ui-click-soft) |
-| 6:45 | ScToday | about |  |
+| 6:40 | ScToday | And any question | a kid with a ? bubble (pop-reveal) |
+| 6:41 | ScToday | you've got, you can |  |
+| 6:42 | ScToday | ask a screen. | a laptop (ui-click-soft); the screen answers; ANY QUESTION → ASK A SCREEN (ui-send) |
+| 6:43 | ScToday | Did you know | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 6:44 | ScToday | that in April twenty | (chime after "that") (chime-magic); card: in April 2020, (ui-click-soft) |
+| 6:45 | ScToday | twenty, about |  |
 | 6:46 | ScToday | one point six | card: about 1.6 billion (ui-click-soft) |
 | 6:47 | ScToday | billion learners | ≈ 1.6 BN (pop-reveal) |
 | 6:48 | ScToday | were sent home from school? | card: were sent home from school. (ui-click-soft); card: from school. (ui-click-soft) |
@@ -453,14 +453,14 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 6:50 | ScToday | That's more than nine | > 9 IN 10 (pop-reveal) |
 | 6:51 | ScToday | in ten students | STUDENTS ON EARTH (ui-click-soft) |
 | 6:52 | ScToday | on Earth. |  |
-| 6:53 | ScToday | Lessons moved into kitchens | card out; LESSONS MOVED… (whoosh-soft); KITCHENS (ui-click-soft) |
-| 6:54 | ScToday | and bedrooms, | BEDROOMS (ui-click-soft) |
-| 6:55 | ScToday | onto laptops | LAPTOPS + devices (ui-click-soft) |
-| 6:56 | ScToday | and phones. | PHONES (ui-click-soft) |
+| 6:53 | ScToday | Lessons moved into | card out; LESSONS MOVED… (whoosh-soft) |
+| 6:54 | ScToday | kitchens and bedrooms, | KITCHENS (ui-click-soft); BEDROOMS (ui-click-soft) |
+| 6:55 | ScToday | onto |  |
+| 6:56 | ScToday | laptops and phones. | LAPTOPS + devices (ui-click-soft); PHONES (ui-click-soft) |
 | 6:57 | ScToday | But |  |
-| 6:58 | ScToday | at least four hundred and sixty | BUT AT LEAST (ui-click-soft) |
-| 6:59 | ScToday | three million kids | 463 MILLION (pop-reveal); KIDS (ui-click-soft) |
-| 7:00 | ScToday | couldn't get remote | NO REMOTE LESSONS AT ALL (stamp-hit) |
+| 6:58 | ScToday | at least four hundred and | BUT AT LEAST (ui-click-soft) |
+| 6:59 | ScToday | sixty three million | 463 MILLION (pop-reveal) |
+| 7:00 | ScToday | kids couldn't get remote | KIDS (ui-click-soft); NO REMOTE LESSONS AT ALL (stamp-hit) |
 | 7:01 | ScToday | lessons at all. |  |
 | 7:02 | ScToday | So what's | a big ? (whoosh-soft) |
 | 7:03 | ScToday | school to you now? | the ? pulses (ui-click-soft) |
@@ -471,61 +471,61 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 7:08 | ScToday | And when | chip docks into the ladder (whoosh-soft) |
 | 7:09 | ScToday | the buildings shut, | WHEN THE BUILDINGS SHUT… (ui-click-soft); the school windows go dark (whoosh-reverse) |
 | 7:10 | ScToday | a lot of us found | …A LOT OF US (ui-click-soft) |
-| 7:11 | ScToday | out how much we'd miss them. | …A LOT OF US MISSED THEM (ui-click-soft) |
-| 7:12 | ScToday |  |  |
+| 7:11 | ScToday | out how much we'd miss | …A LOT OF US MISSED THEM (ui-click-soft) |
+| 7:12 | ScToday | them. |  |
 | 7:13 | ScToday | So here's | cliffhanger band; ladder fades (piano-a-min) |
-| 7:14 | ScToday | the question you came for. | THE QUESTION YOU CAME FOR · SCHOOL = ? (pop-reveal) |
-| 7:15 | ScToday |  |  |
-| 7:16 | ScToday | What did | band: What did the word school mean, (ui-click-soft) |
-| 7:17 | ScToday | the word school | SCHOOL pulses (ui-click-soft) |
-| 7:18 | ScToday | mean, before any | = ? pulses (impact-soft) |
-| 7:19 | ScToday | of this? |  |
+| 7:14 | ScToday | the question you came | THE QUESTION YOU CAME FOR · SCHOOL = ? (pop-reveal) |
+| 7:15 | ScToday | for. |  |
+| 7:16 | ScToday | What | band: What did the word school mean, (ui-click-soft) |
+| 7:17 | ScToday | did the word school | SCHOOL pulses (ui-click-soft) |
+| 7:18 | ScToday | mean, before | = ? pulses (impact-soft) |
+| 7:19 | ScToday | any of this? |  |
 | 7:20 | ScToday |  | cut to THE ANSWER (whoosh-reverse) |
 | 7:21 | ScReveal | Here's the answer. | THE ANSWER pulses (impact-deep-soft) |
 | 7:22 | ScReveal | School | SCHOOL ← (pop-reveal) |
-| 7:23 | ScReveal | comes from an ancient Greek | a Greek column; AN ANCIENT GREEK WORD (ui-click-soft) |
-| 7:24 | ScReveal | word, |  |
+| 7:23 | ScReveal | comes from an ancient |  |
+| 7:24 | ScReveal | Greek word, | a Greek column; AN ANCIENT GREEK WORD (ui-click-soft) |
 | 7:25 | ScReveal | skoh-LAY. | σχολή · scholé (page-flip) |
 | 7:26 | ScReveal | And it meant... | (riser into "free time") (riser-soft); AND IT MEANT… (ui-click-soft) |
-| 7:27 | ScReveal | free time. | = FREE TIME lands (chime-magic) |
-| 7:28 | ScReveal | Leisure. | LEISURE chip + LSJ (ui-click-soft) |
+| 7:27 | ScReveal | free | = FREE TIME lands (chime-magic) |
+| 7:28 | ScReveal | time. Leisure. | LEISURE chip + LSJ (ui-click-soft) |
 | 7:29 | ScReveal | In Athens, | IN ATHENS…; three speakers (whoosh-soft) |
-| 7:30 | ScReveal | people with free time |  |
-| 7:31 | ScReveal | often spent it talking, | TALKING (ui-click-soft) |
-| 7:32 | ScReveal | arguing, | ARGUING (ui-click-soft) |
+| 7:30 | ScReveal | people with free |  |
+| 7:31 | ScReveal | time often spent it |  |
+| 7:32 | ScReveal | talking, arguing, | TALKING (ui-click-soft); ARGUING (ui-click-soft) |
 | 7:33 | ScReveal | learning. | LEARNING (ui-click-soft) |
 | 7:34 | ScReveal |  |  |
-| 7:35 | ScReveal | So the word | σχολή (ui-click-soft) |
-| 7:36 | ScReveal | for free time |  |
+| 7:35 | ScReveal | So the |  |
+| 7:36 | ScReveal | word for free time | σχολή (ui-click-soft) |
 | 7:37 | ScReveal | became the word for | → schola (ui-click-soft) |
 | 7:38 | ScReveal | the place you learn. | → SCHOOL (pop-reveal) |
 | 7:39 | ScReveal | And your guess? | the word card moves right; YOUR GUESS (whoosh-soft) |
-| 7:40 | ScReveal | Two hundred | 200 YEARS AGO · OUT OF 10 (ui-click-soft) |
-| 7:41 | ScReveal | years ago, |  |
+| 7:40 | ScReveal | Two | 200 YEARS AGO · OUT OF 10 (ui-click-soft) |
+| 7:41 | ScReveal | hundred years ago, |  |
 | 7:42 | ScReveal | only about one | one figure lights (chime-reward) |
 | 7:43 | ScReveal | in ten people |  |
 | 7:44 | ScReveal | on Earth could read. | 1820 ≈ 12 % (pop-reveal) |
-| 7:45 | ScReveal | Today, it's | ADULTS WHO CAN READ (ui-click-soft) |
-| 7:46 | ScReveal | almost nine in | nine figures light (eight more) (1/3) (ui-click-soft); nine figures light (eight more) (2/3) (ui-click-soft); nine figures light (eight more) (3/3) (ui-click-soft) |
-| 7:47 | ScReveal | ten. How | 2022: 87 % (pop-reveal); How close were you? (ui-click-soft) |
-| 7:48 | ScReveal | close were you? |  |
+| 7:45 | ScReveal | Today, | ADULTS WHO CAN READ (ui-click-soft) |
+| 7:46 | ScReveal | it's almost nine | nine figures light (eight more) (1/3) (ui-click-soft); nine figures light (eight more) (2/3) (ui-click-soft); nine figures light (eight more) (3/3) (ui-click-soft) |
+| 7:47 | ScReveal | in ten. | 2022: 87 % (pop-reveal) |
+| 7:48 | ScReveal | How close were you? | How close were you? (ui-click-soft) |
 | 7:49 | ScReveal | Now climb | six rungs appear dim; NOW CLIMB IT AGAIN (whoosh-soft) |
 | 7:50 | ScReveal | that ladder again, |  |
 | 7:51 | ScReveal | with me. | ↑ (ui-click-soft) |
 | 7:52 | ScReveal | In fifteen | pointer at the 1500 rung (ui-click-soft) |
-| 7:53 | ScReveal | hundred, school was |  |
-| 7:54 | ScReveal | for the few. | rung lights gold on "few" (ui-click-soft) |
+| 7:53 | ScReveal | hundred, school |  |
+| 7:54 | ScReveal | was for the few. | rung lights gold on "few" (ui-click-soft) |
 | 7:55 | ScReveal | Then, |  |
 | 7:56 | ScReveal | a way to read |  |
 | 7:57 | ScReveal | the Bible. | rung lights gold on "Bible" (ui-click-soft) |
 | 7:58 | ScReveal | Then, the king's |  |
 | 7:59 | ScReveal | order. Then, | rung lights gold on "order" (ui-click-soft) |
-| 8:00 | ScReveal | a machine for |  |
-| 8:01 | ScReveal | hundreds. | rung lights gold on "hundreds" (ui-click-soft) |
+| 8:00 | ScReveal | a machine |  |
+| 8:01 | ScReveal | for hundreds. | rung lights gold on "hundreds" (ui-click-soft) |
 | 8:02 | ScReveal | Then, your right, |  |
 | 8:03 | ScReveal | and your ladder. | rung lights gold on "ladder" (ui-click-soft) |
-| 8:04 | ScReveal | Today, it never |  |
-| 8:05 | ScReveal | switches off. | rung lights gold on "off" (ui-click-soft) |
+| 8:04 | ScReveal | Today, it |  |
+| 8:05 | ScReveal | never switches off. | rung lights gold on "off" (ui-click-soft) |
 | 8:06 | ScReveal | School started | the whole ladder glows once; payoff line 1 (warm-shimmer) |
 | 8:07 | ScReveal | as free time, | free time, (gradient) (ui-click-soft) |
 | 8:08 | ScReveal | for a lucky few. | for a lucky few. (ui-click-soft) |
@@ -546,141 +546,141 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 8:23 | Sc2100 | Henry's tutor? |  |
 | 8:24 | Sc2100 | One teacher, | ONE TEACHER, (ui-click-soft) |
 | 8:25 | Sc2100 | one child. | ONE CHILD (ui-click-soft) |
-| 8:26 | Sc2100 | In nineteen eighty | 1984 + a bell curve (pop-reveal) |
-| 8:27 | Sc2100 | four, an American |  |
+| 8:26 | Sc2100 | In nineteen |  |
+| 8:27 | Sc2100 | eighty four, an American | 1984 + a bell curve (pop-reveal) |
 | 8:28 | Sc2100 | researcher, Benjamin |  |
 | 8:29 | Sc2100 | Bloom, reported that | BENJAMIN BLOOM (ui-click-soft) |
-| 8:30 | Sc2100 | tutored students did better | TUTORED marker moves right (ui-send) |
-| 8:31 | Sc2100 | than ninety eight | TUTORED STUDENTS BEAT 98 % (pop-reveal) |
+| 8:30 | Sc2100 | tutored students did | TUTORED marker moves right (ui-send) |
+| 8:31 | Sc2100 | better than ninety eight | TUTORED STUDENTS BEAT 98 % (pop-reveal) |
 | 8:32 | Sc2100 | percent of students |  |
 | 8:33 | Sc2100 | taught in a normal class. | NORMAL CLASS (ui-click-soft) |
 | 8:34 | Sc2100 | Later | the marker slides back; LATER STUDIES (whoosh-reverse) |
 | 8:35 | Sc2100 | studies found the effect |  |
 | 8:36 | Sc2100 | is smaller. | A SMALLER EFFECT (~0.3–0.8 SD) (ui-click-soft) |
 | 8:37 | Sc2100 | But it's real. | BUT IT'S REAL (stamp-hit) |
-| 8:38 | Sc2100 | The problem | a coin (ui-click-soft) |
-| 8:39 | Sc2100 | was always cost. | THE PROBLEM: COST (knock-solid) |
-| 8:40 | Sc2100 | Nobody | one tutor, many children (ui-click-soft) |
-| 8:41 | Sc2100 | can pay a tutor for |  |
-| 8:42 | Sc2100 | every child. | NO ONE CAN PAY A TUTOR FOR EVERY CHILD (ui-click-soft) |
-| 8:43 | Sc2100 | Then, in | evidence 1 clears (whoosh-soft) |
-| 8:44 | Sc2100 | twenty twenty four, | 2024 (pop-reveal) |
-| 8:45 | Sc2100 | a World Bank pilot | A WORLD BANK PILOT (ui-click-soft) |
-| 8:46 | Sc2100 | in Nigeria gave | pin · Nigeria · EDO STATE (pop-reveal) |
-| 8:47 | Sc2100 | students an AI | a laptop + a student; AN AI TUTOR (ui-toggle-on) |
-| 8:48 | Sc2100 | tutor, twice | · TWICE A WEEK (ui-click-soft) |
-| 8:49 | Sc2100 | a week, with their |  |
-| 8:50 | Sc2100 | teachers guiding them. | a teacher (ui-click-soft); · TEACHERS GUIDING (ui-click-soft) |
-| 8:51 | Sc2100 | After six | 6 WEEKS card (pop-reveal) |
-| 8:52 | Sc2100 | weeks, the World |  |
-| 8:53 | Sc2100 | Bank estimated nearly | THE WORLD BANK'S ESTIMATE · ~0.3 SD (ui-click-soft); ≈ NEARLY 2 YEARS (chime-reward) |
-| 8:54 | Sc2100 | two years of typical |  |
-| 8:55 | Sc2100 | learning. | OF TYPICAL LEARNING (ui-click-soft) |
-| 8:56 | Sc2100 | One small study. | ONE SMALL STUDY (stamp-hit) |
-| 8:57 | Sc2100 | Short. | SHORT (stamp-hit) |
-| 8:58 | Sc2100 | But it's a start. | A START (stamp-hit) |
-| 8:59 | Sc2100 | So here's | evidence 2 clears; children, dim (whoosh-soft) |
-| 9:00 | Sc2100 | one scenario. | SCENARIO · NOT A FACT (stamp-hit) |
-| 9:01 | Sc2100 | Not a fact. | PREDICTION tag pulses (ui-click-soft) |
-| 9:02 | Sc2100 | By twenty |  |
-| 9:03 | Sc2100 | one hundred, every child | children light (ui-click-soft) |
-| 9:04 | Sc2100 | could have a tutor. | a tutor orb for every child (sparkle-soft) |
-| 9:05 | Sc2100 | Not a prince's | NOT A PRINCE'S POET (ui-click-soft) |
-| 9:06 | Sc2100 | poet. A | the prince card crossed out (trap-snap) |
-| 9:07 | Sc2100 | patient machine, | A PATIENT MACHINE (sparkle-soft) |
-| 9:08 | Sc2100 | awake at any hour. | 03:00 (clock-tick-soft); · AWAKE AT ANY HOUR (ui-click-soft) |
-| 9:09 | Sc2100 |  |  |
-| 9:10 | Sc2100 | And the classroom? | a school; AND THE CLASSROOM? (whoosh-soft) |
-| 9:11 | Sc2100 |  |  |
-| 9:12 | Sc2100 | The O E C | OECD scenario 1 (ui-click-soft) |
-| 9:13 | Sc2100 | D has imagined | OECD · FOUR SCENARIOS · NOT FORECASTS (ui-click-soft) |
-| 9:14 | Sc2100 | futures where school |  |
-| 9:15 | Sc2100 | becomes a learning |  |
-| 9:16 | Sc2100 | hub, and even | SCHOOLS AS LEARNING HUBS lights (chime-reward) |
-| 9:17 | Sc2100 | one where it fades | LEARN-AS-YOU-GO fades (whoosh-reverse) |
-| 9:18 | Sc2100 | away. But |  |
-| 9:19 | Sc2100 | UNESCO says | UNESCO card (page-flip) |
-| 9:20 | Sc2100 | schools should be protected. | a shield round the school (warm-shimmer) |
-| 9:21 | Sc2100 | If they didn't |  |
-| 9:22 | Sc2100 | exist, we'd | “If schools did not exist…” (ui-click-soft) |
-| 9:23 | Sc2100 | have to invent them. | …invent them.” (pop-reveal) |
-| 9:24 | Sc2100 | In fifteen | callback: 1 : 1 + the 1500 panel; ladder returns (whoosh-soft) |
-| 9:25 | Sc2100 | hundred, a private teacher | A PRIVATE TEACHER (ui-click-soft) |
-| 9:26 | Sc2100 | was for a prince. | · FOR A PRINCE (ui-click-soft) |
-| 9:27 | Sc2100 |  |  |
-| 9:28 | Sc2100 | In twenty one hundred, | the 2100 panel: children with tutors (ui-send) |
-| 9:29 | Sc2100 | it might be for everyone. | 2100 rung fills: A TUTOR FOR ALL?; FOR EVERYONE? (chime-reward) |
-| 9:30 | Sc2100 |  |  |
-| 9:31 | Sc2100 | And school might get | SCHOOL, A LITTLE CLOSER TO ITS NAME? (whoosh-soft) |
-| 9:32 | Sc2100 | a little closer to what |  |
-| 9:33 | Sc2100 | its name first | σχολή (ui-click-soft) |
-| 9:34 | Sc2100 | meant. | = FREE TIME? (sparkle-soft) |
-| 9:35 | Sc2100 |  | cut to a wall of desks (whoosh-soft) |
-| 9:36 | ScClose | You've spent years | the desks fill (ui-send); Years (ui-click-soft) |
-| 9:37 | ScClose | of your life in school. | of your life (ui-click-soft); in school. (ui-click-soft) |
-| 9:38 | ScClose |  |  |
-| 9:39 | ScClose | So tell me. | the wall dims (whoosh-soft) |
-| 9:40 | ScClose | What's the one thing | the question (pop-reveal) |
-| 9:41 | ScClose | it taught you that no | it taught you (ui-click-soft) |
-| 9:42 | ScClose | screen ever could? | a screen (ui-click-soft) |
-| 9:43 | ScClose |  | "could?" glows; the screen dims (piano-a-min) |
-| 9:44 | ScClose |  | cut to the outro (whoosh-wind) |
-| 9:45 | ScOutro | This was Did You Know | EPISODE 03 (pop-reveal); logo switches on; wordmark (ui-toggle-on) |
-| 9:46 | ScOutro | That, episode three. | "03" pulses (ui-click-soft) |
-| 9:47 | ScOutro | School. | "School" title (pop-reveal) |
-| 9:48 | ScOutro | Now it's your turn. | lockup shrinks; prompt card (whoosh-soft) |
-| 9:49 | ScOutro | Which century's |  |
-| 9:50 | ScOutro | classroom would | heading + seven year chips (1/7) (ui-click-soft); heading + seven year chips (2/7) (ui-click-soft); heading + seven year chips (3/7) (ui-click-soft) |
-| 9:51 | ScOutro | you survive? | "survive" (gold) (ui-click-soft); heading + seven year chips (4/7) (ui-click-soft); heading + seven year chips (5/7) (ui-click-soft) |
-| 9:52 | ScOutro | Tell me in the comments. | heading + seven year chips (6/7) (ui-click-soft); heading + seven year chips (7/7) (ui-click-soft); COMMENTS ↓ (pop-reveal) |
-| 9:53 | ScOutro |  |  |
-| 9:54 | ScOutro | At the end of every episode, | "end of every episode:" (ui-click-soft) |
-| 9:55 | ScOutro | I will read the |  |
-| 9:56 | ScOutro | best comment, right | COMMENT OF THE WEEK pill (impact-soft); "best comment" (ui-click-soft); card flash ("right here") (ui-click-soft) |
-| 9:57 | ScOutro | here, on this screen. | "read on screen" (ui-click-soft) |
-| 9:58 | ScOutro | And the subject | "the subject" (sparkle-soft) |
-| 9:59 | ScOutro | you ask for most | "you ask for most" (ui-click-soft) |
-| 10:00 | ScOutro | becomes a future episode. | → a future episode (pop-reveal) |
-| 10:01 | ScOutro | On |  |
-| 10:02 | ScOutro | our website, Dex-tee | website pill slides in (whoosh-soft); Dexty.live lights in the pill (sparkle-soft) |
-| 10:03 | ScOutro | dot live, |  |
-| 10:04 | ScOutro | you can watch | WATCH (ui-click-soft) |
-| 10:05 | ScOutro | every episode, |  |
-| 10:06 | ScOutro | collect the facts, | COLLECT (ui-click-soft) |
-| 10:07 | ScOutro | and play the guessing | PLAY (ui-click-soft) |
-| 10:08 | ScOutro | game. | Dexty.live pulses (pop-reveal) |
-| 10:09 | ScOutro | If this changed how you | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
-| 10:10 | ScOutro | see a school day, | A SCHOOL DAY (ui-click-soft) |
+| 8:38 | Sc2100 | The problem was always | a coin (ui-click-soft) |
+| 8:39 | Sc2100 | the cost. | THE PROBLEM: COST (knock-solid) |
+| 8:40 | Sc2100 | Nobody can pay a tutor | one tutor, many children (ui-click-soft) |
+| 8:41 | Sc2100 | for every child. | NO ONE CAN PAY A TUTOR FOR EVERY CHILD (ui-click-soft) |
+| 8:42 | Sc2100 | Then, | evidence 1 clears (whoosh-soft) |
+| 8:43 | Sc2100 | in twenty twenty | 2024 (pop-reveal) |
+| 8:44 | Sc2100 | four, a World |  |
+| 8:45 | Sc2100 | Bank pilot in Nigeria | A WORLD BANK PILOT (ui-click-soft); pin · Nigeria · EDO STATE (pop-reveal) |
+| 8:46 | Sc2100 | gave students |  |
+| 8:47 | Sc2100 | an AI tutor, | a laptop + a student; AN AI TUTOR (ui-toggle-on) |
+| 8:48 | Sc2100 | twice a week, | · TWICE A WEEK (ui-click-soft) |
+| 8:49 | Sc2100 | with their teachers guiding | a teacher (ui-click-soft); · TEACHERS GUIDING (ui-click-soft) |
+| 8:50 | Sc2100 | them. After |  |
+| 8:51 | Sc2100 | six weeks, | 6 WEEKS card (pop-reveal) |
+| 8:52 | Sc2100 | the World Bank estimated | THE WORLD BANK'S ESTIMATE · ~0.3 SD (ui-click-soft) |
+| 8:53 | Sc2100 | nearly two years | ≈ NEARLY 2 YEARS (chime-reward) |
+| 8:54 | Sc2100 | of typical learning. | OF TYPICAL LEARNING (ui-click-soft) |
+| 8:55 | Sc2100 | One small | ONE SMALL STUDY (stamp-hit) |
+| 8:56 | Sc2100 | study. Short. | SHORT (stamp-hit) |
+| 8:57 | Sc2100 | But |  |
+| 8:58 | Sc2100 | it's a start. | A START (stamp-hit) |
+| 8:59 | Sc2100 | So here's one scenario. | evidence 2 clears; children, dim (whoosh-soft); SCENARIO · NOT A FACT (stamp-hit) |
+| 9:00 | Sc2100 | Not a |  |
+| 9:01 | Sc2100 | fact. | PREDICTION tag pulses (ui-click-soft) |
+| 9:02 | Sc2100 | By twenty one hundred, |  |
+| 9:03 | Sc2100 | every child could | children light (ui-click-soft) |
+| 9:04 | Sc2100 | have a tutor. Not | a tutor orb for every child (sparkle-soft); NOT A PRINCE'S POET (ui-click-soft) |
+| 9:05 | Sc2100 | a prince's poet. | the prince card crossed out (trap-snap) |
+| 9:06 | Sc2100 | A patient | A PATIENT MACHINE (sparkle-soft) |
+| 9:07 | Sc2100 | machine, awake | 03:00 (clock-tick-soft) |
+| 9:08 | Sc2100 | at any hour. | · AWAKE AT ANY HOUR (ui-click-soft) |
+| 9:09 | Sc2100 | And |  |
+| 9:10 | Sc2100 | the classroom? | a school; AND THE CLASSROOM? (whoosh-soft) |
+| 9:11 | Sc2100 | The O | OECD scenario 1 (ui-click-soft) |
+| 9:12 | Sc2100 | E C D |  |
+| 9:13 | Sc2100 | has imagined futures | OECD · FOUR SCENARIOS · NOT FORECASTS (ui-click-soft) |
+| 9:14 | Sc2100 | where school becomes |  |
+| 9:15 | Sc2100 | a learning hub, | SCHOOLS AS LEARNING HUBS lights (chime-reward) |
+| 9:16 | Sc2100 | and even one where |  |
+| 9:17 | Sc2100 | it fades away. | LEARN-AS-YOU-GO fades (whoosh-reverse) |
+| 9:18 | Sc2100 | But UNESCO | UNESCO card (page-flip) |
+| 9:19 | Sc2100 | says schools should |  |
+| 9:20 | Sc2100 | be protected. | a shield round the school (warm-shimmer) |
+| 9:21 | Sc2100 | If they didn't exist, | “If schools did not exist…” (ui-click-soft) |
+| 9:22 | Sc2100 | we'd have to |  |
+| 9:23 | Sc2100 | invent them. | …invent them.” (pop-reveal) |
+| 9:24 | Sc2100 | In fifteen hundred, a | callback: 1 : 1 + the 1500 panel; ladder returns (whoosh-soft) |
+| 9:25 | Sc2100 | private teacher was | A PRIVATE TEACHER (ui-click-soft) |
+| 9:26 | Sc2100 | for a prince. | · FOR A PRINCE (ui-click-soft) |
+| 9:27 | Sc2100 | In twenty | the 2100 panel: children with tutors (ui-send) |
+| 9:28 | Sc2100 | one hundred, it might |  |
+| 9:29 | Sc2100 | be for everyone. | 2100 rung fills: A TUTOR FOR ALL?; FOR EVERYONE? (chime-reward) |
+| 9:30 | Sc2100 | And school | SCHOOL, A LITTLE CLOSER TO ITS NAME? (whoosh-soft) |
+| 9:31 | Sc2100 | might get a little closer |  |
+| 9:32 | Sc2100 | to what its name | σχολή (ui-click-soft) |
+| 9:33 | Sc2100 | first meant. |  |
+| 9:34 | Sc2100 |  | = FREE TIME? (sparkle-soft) |
+| 9:35 | Sc2100 | You've | cut to a wall of desks (whoosh-soft) |
+| 9:36 | ScClose | spent years of your | the desks fill (ui-send); Years (ui-click-soft) |
+| 9:37 | ScClose | life in school. | of your life (ui-click-soft); in school. (ui-click-soft) |
+| 9:38 | ScClose | So tell | the wall dims (whoosh-soft) |
+| 9:39 | ScClose | me. What's the | the question (pop-reveal) |
+| 9:40 | ScClose | one thing it taught | it taught you (ui-click-soft) |
+| 9:41 | ScClose | you that no screen ever | a screen (ui-click-soft) |
+| 9:42 | ScClose | could? | "could?" glows; the screen dims (piano-a-min) |
+| 9:43 | ScClose |  |  |
+| 9:44 | ScClose | This was | cut to the outro (whoosh-wind); EPISODE 03 (pop-reveal); logo switches on; wordmark (ui-toggle-on) |
+| 9:45 | ScOutro | Did You Know That, episode |  |
+| 9:46 | ScOutro | three. | "03" pulses (ui-click-soft) |
+| 9:47 | ScOutro | School. Now | "School" title (pop-reveal) |
+| 9:48 | ScOutro | it's your turn. | lockup shrinks; prompt card (whoosh-soft) |
+| 9:49 | ScOutro | Which century's classroom | heading + seven year chips (1/7) (ui-click-soft); heading + seven year chips (2/7) (ui-click-soft) |
+| 9:50 | ScOutro | would you survive? | heading + seven year chips (3/7) (ui-click-soft); "survive" (gold) (ui-click-soft); heading + seven year chips (4/7) (ui-click-soft) |
+| 9:51 | ScOutro | Tell | heading + seven year chips (5/7) (ui-click-soft); heading + seven year chips (6/7) (ui-click-soft); heading + seven year chips (7/7) (ui-click-soft) |
+| 9:52 | ScOutro | me in the comments. | COMMENTS ↓ (pop-reveal) |
+| 9:53 | ScOutro | At the end of | "end of every episode:" (ui-click-soft) |
+| 9:54 | ScOutro | every episode, I |  |
+| 9:55 | ScOutro | will read the best comment, | COMMENT OF THE WEEK pill (impact-soft); "best comment" (ui-click-soft) |
+| 9:56 | ScOutro | right here, on | card flash ("right here") (ui-click-soft) |
+| 9:57 | ScOutro | this screen. | "read on screen" (ui-click-soft) |
+| 9:58 | ScOutro | And the subject you ask | "the subject" (sparkle-soft) |
+| 9:59 | ScOutro | for most becomes a future | "you ask for most" (ui-click-soft); → a future episode (pop-reveal) |
+| 10:00 | ScOutro | episode. |  |
+| 10:01 | ScOutro | On our website, | website pill slides in (whoosh-soft) |
+| 10:02 | ScOutro | Dex-tee dot | Dexty.live lights in the pill (sparkle-soft) |
+| 10:03 | ScOutro | live, you |  |
+| 10:04 | ScOutro | can watch every episode, | WATCH (ui-click-soft) |
+| 10:05 | ScOutro | collect | COLLECT (ui-click-soft) |
+| 10:06 | ScOutro | the facts, and |  |
+| 10:07 | ScOutro | play the guessing game. | PLAY (ui-click-soft); Dexty.live pulses (pop-reveal) |
+| 10:08 | ScOutro | If this changed | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
+| 10:09 | ScOutro | how you see |  |
+| 10:10 | ScOutro | a school day, | A SCHOOL DAY (ui-click-soft) |
 | 10:11 | ScOutro | like it. | Like (ui-click-soft) |
-| 10:12 | ScOutro |  |  |
-| 10:13 | ScOutro | Share it with the friend | Share (ui-send); THE FRIEND WHO ALWAYS DID THE HOMEWORK (ui-click-soft) |
-| 10:14 | ScOutro | who always |  |
-| 10:15 | ScOutro | did the homework. | friend chip pulses cyan (pop-reveal) |
-| 10:16 | ScOutro | And subscribe, | Subscribe (chime-reward) |
-| 10:17 | ScOutro | so the next mystery | ? THE NEXT MYSTERY (sparkle-soft) |
-| 10:18 | ScOutro | finds you. |  |
-| 10:19 | ScOutro | Next time: | NEXT · NO. 04 (whoosh-wind) |
-| 10:20 | ScOutro | money. | MONEY + coin → note → phone (impact-soft) |
-| 10:21 | ScOutro | Around the world, |  |
-| 10:22 | ScOutro | each extra year of | Each extra year of school adds, (ui-click-soft) |
-| 10:23 | ScOutro | school adds, on |  |
-| 10:24 | ScOutro | average, | on average, (ui-click-soft) |
-| 10:25 | ScOutro | about nine percent | about 9 % + source (pop-reveal) |
-| 10:26 | ScOutro | to what people earn. | to what people earn. (ui-click-soft) |
-| 10:27 | ScOutro | But | But did school ever teach you (ui-click-soft) |
-| 10:28 | ScOutro | did school ever teach |  |
-| 10:29 | ScOutro | you what money actually | what money actually is? (ui-click-soft) |
-| 10:30 | ScOutro | is? | the question settles (piano-a-min) |
-| 10:31 | ScOutro | Ask... | ASK. (thock in the beat after the word) (chess-piece-thock) |
-| 10:32 | ScOutro | Wonder... |  |
-| 10:33 | ScOutro | Repeat. | WONDER. (thock in the beat after the word) (chess-piece-thock) |
-| 10:34 | ScOutro |  | REPEAT. (thock in the beat after the word) (chess-piece-thock) |
-| 10:35 | ScOutro | Next | end screen: BEST COMMENT · READ HERE writes on (pencil-scribble) |
-| 10:36 | ScOutro | time... | end screen: logo switches on (subscribe slot) (ui-toggle-on); end screen: logo glow (sparkle-soft) |
-| 10:37 | ScOutro | this could be your comment. | end screen: THIS WEEK'S QUESTION card flares (pop-reveal) |
-| 10:38 | ScOutro | Pick a mystery. | end screen: Comment below / best one is read next episode (ui-click-soft) |
-| 10:39 | ScOutro | And I |  |
-| 10:40 | ScOutro | will see you there. | end screen: subscribe ring pulses (sparkle-soft) |
+| 10:12 | ScOutro | Share | Share (ui-send) |
+| 10:13 | ScOutro | it with the friend who | THE FRIEND WHO ALWAYS DID THE HOMEWORK (ui-click-soft) |
+| 10:14 | ScOutro | always did the homework. | friend chip pulses cyan (pop-reveal) |
+| 10:15 | ScOutro |  |  |
+| 10:16 | ScOutro | And subscribe, so | Subscribe (chime-reward) |
+| 10:17 | ScOutro | the next mystery finds | ? THE NEXT MYSTERY (sparkle-soft) |
+| 10:18 | ScOutro | you. Next time: | NEXT · NO. 04 (whoosh-wind) |
+| 10:19 | ScOutro | money. | MONEY + coin → note → phone (impact-soft) |
+| 10:20 | ScOutro | Around |  |
+| 10:21 | ScOutro | the world, each extra | Each extra year of school adds, (ui-click-soft) |
+| 10:22 | ScOutro | year of school |  |
+| 10:23 | ScOutro | adds, on average, | on average, (ui-click-soft) |
+| 10:24 | ScOutro | about nine | about 9 % + source (pop-reveal) |
+| 10:25 | ScOutro | percent to what |  |
+| 10:26 | ScOutro | people earn. | to what people earn. (ui-click-soft) |
+| 10:27 | ScOutro | But did school | But did school ever teach you (ui-click-soft) |
+| 10:28 | ScOutro | ever teach you what |  |
+| 10:29 | ScOutro | money actually is? | what money actually is? (ui-click-soft) |
+| 10:30 | ScOutro | Ask... | the question settles (piano-a-min) |
+| 10:31 | ScOutro |  | ASK. (thock in the beat after the word) (chess-piece-thock) |
+| 10:32 | ScOutro | Wonder... | WONDER. (thock in the beat after the word) (chess-piece-thock) |
+| 10:33 | ScOutro | Repeat. | REPEAT. (thock in the beat after the word) (chess-piece-thock) |
+| 10:34 | ScOutro |  |  |
+| 10:35 | ScOutro | Next time... | end screen: BEST COMMENT · READ HERE writes on (pencil-scribble); end screen: logo switches on (subscribe slot) (ui-toggle-on); end screen: logo glow (sparkle-soft) |
+| 10:36 | ScOutro | this could be |  |
+| 10:37 | ScOutro | your comment. Pick | end screen: THIS WEEK'S QUESTION card flares (pop-reveal); end screen: Comment below / best one is read next episode (ui-click-soft) |
+| 10:38 | ScOutro | a mystery. |  |
+| 10:39 | ScOutro | And I will see you | end screen: subscribe ring pulses (sparkle-soft) |
+| 10:40 | ScOutro | there. |  |
 | 10:41 | ScOutro |  |  |
 | 10:42 | ScOutro |  |  |
 | 10:43 | ScOutro |  |  |
@@ -692,4 +692,3 @@ Total 652.0 s · 591 cues · gaps ≥ 2.0 s between visual events while narratin
 | 10:49 | ScOutro |  |  |
 | 10:50 | ScOutro |  |  |
 | 10:51 | ScOutro |  |  |
-| 10:52 | ScOutro |  |  |
