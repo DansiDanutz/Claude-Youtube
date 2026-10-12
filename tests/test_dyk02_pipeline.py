@@ -9,6 +9,7 @@ import json
 import os
 import sys
 import tempfile
+import wave
 import unittest
 from contextlib import redirect_stdout
 from io import StringIO
@@ -297,6 +298,15 @@ class PaceTargetAndFloorTests(unittest.TestCase):
         words[9]["e"] = words[9]["s"] + 0.6
         self.assertFalse(any("red," in p for p in self.gv.quality(words)[1]))
 
+    def test_long_word_may_pass_one_second_only_with_enough_syllables(self):
+        words = words_at(3.0, n=20)
+        words[10] = {"w": "Photosynthesis.", "s": words[10]["s"], "e": words[10]["s"] + 1.15}
+        for w in words[11:]:
+            w["s"], w["e"] = w["s"] + 1.2, w["e"] + 1.2
+        self.assertFalse(any("Photosynthesis" in p for p in self.gv.quality(words, 0)[1]))
+        words[10]["e"] = words[10]["s"] + 1.4
+        self.assertTrue(any("Photosynthesis" in p for p in self.gv.quality(words, 0)[1]))
+
     def test_chunks_are_gated_on_their_own_pace_and_stitched_with_a_gap(self):
         import wave
 
@@ -316,6 +326,127 @@ class PaceTargetAndFloorTests(unittest.TestCase):
         words = json.loads((self.narr / "e01.words.json").read_text())
         first_b = words[12]["s"]
         self.assertAlmostEqual(first_b, 4.0 + self.gv.CHUNK_GAP_S, places=2)
+
+    def test_stitch_fades_chunk_edges_and_levels_an_outlier_chunk(self):
+        # voice audit 2026-10-12: the outro sign-off chunk sat +3.1 LU over its scene and started on a full-scale step
+        import numpy as np
+        import wave
+        rate = 48000
+
+        def tone(path, amp, sec=1.0):
+            t = np.arange(int(sec * rate)) / rate
+            pcm = (amp * 32767 * np.sin(2 * np.pi * 220 * t + 1.0)).astype("<i2")
+            with wave.open(path, "wb") as w:
+                w.setnchannels(1)
+                w.setsampwidth(2)
+                w.setframerate(rate)
+                w.writeframes(pcm.tobytes())
+        paths = [str(self.mix / f"p{k}.wav") for k in range(4)]
+        for p, amp in zip(paths, (0.1, 0.1, 0.11, 0.3)):   # the last part is ~9.5 dB hot
+            tone(p, amp)
+        out = str(self.mix / "out.wav")
+        word = [{"w": "x.", "s": 0.1, "e": 0.9}]
+        with redirect_stdout(StringIO()):
+            self.gv.stitch([(p, word) for p in paths], out)
+        with wave.open(out) as w:
+            y = np.frombuffer(w.readframes(w.getnframes()), dtype="<i2").astype(float) / 32768
+        step = int(round((1.0 + self.gv.CHUNK_GAP_S) * rate))
+        parts = [y[k * step:k * step + rate] for k in range(4)]
+        levels = [self.gv.speech_level_db(p) for p in parts]
+        self.assertAlmostEqual(levels[3], levels[0], delta=1.0)           # outlier pulled to the scene median
+        self.assertAlmostEqual(levels[2] - levels[0], 20 * np.log10(1.1), delta=0.2)   # inside tolerance: untouched
+        for p in parts:
+            self.assertLess(abs(p[0]), 0.01)                               # no step into the first sample
+            self.assertLess(abs(p[-1]), 0.01)                              # or out of the last
+
+    def test_continuity_flags_speed_steps_pace_steps_and_rushed_chunks(self):
+        # voice audit 2026-10-12: David heard 1.0 -> 1.2 -> 0.85 lurches (7:15-7:41, 8:15-8:21)
+        gv = self.gv
+        self.assertEqual(gv.continuity_problems([(1.0, 3.0, 3.0), (1.05, 3.1, 3.0), (0.98, 2.9, 2.9)]), [])
+        probs = gv.continuity_problems([(1.0, 3.0, 3.0), (1.2, 3.1, 3.0), (0.85, 2.7, 2.9)])
+        self.assertTrue(any("speed 1.00 -> 1.20" in p for p in probs))
+        self.assertTrue(any("speed 1.20 -> 0.85" in p for p in probs))
+        self.assertTrue(any("above" in p for p in probs))                      # 1.2 > SPEED_MAX
+        self.assertTrue(any("below" in p for p in probs))                      # 0.85 < SPEED_LO
+        self.assertTrue(any("speech rate" in p for p in gv.continuity_problems([(1.0, 4.0, 3.0), (1.0, 5.2, 3.0)])))
+        self.assertEqual(gv.continuity_problems([(1.0, 4.0, 3.0), (1.0, 4.8, 3.0)]), [])          # 20 %: listed, not failed
+        # a deliberate sign-off (pace target 0) is exempt from the w/s step, not from the speed step
+        self.assertEqual(gv.continuity_problems([(1.0, 3.0, 3.0), (1.0, 2.2, 0)]), [])
+
+    def test_speech_rate_ignores_pauses(self):
+        words = [{"w": "a", "s": 0.0, "e": 0.3}, {"w": "b.", "s": 0.35, "e": 0.65}, {"w": "c", "s": 1.65, "e": 1.95}]
+        self.assertAlmostEqual(self.gv.articulation_rate(words), 3 / 0.95, places=3)   # the 1.0 s pause is not tempo
+        long = [{"w": "Florence", "s": 0.0, "e": 0.5}]
+        self.assertAlmostEqual(self.gv.articulation_rate(long), 2 / 0.5)                 # syllables, not words
+
+    def test_chunk_speed_is_held_within_a_step_of_its_neighbour(self):
+        speeds = []
+        self.gv.tts_with_timestamps = lambda text, key, speed=1.0: speeds.append(speed) or tts_reply(words_at(2.0))
+        with redirect_stdout(StringIO()):
+            self.gv.generate("slow line", 3.0, 1.0, 0.85, "k", lo=0.92, hi=1.08)
+        self.assertLessEqual(max(speeds), 1.08)
+        self.assertGreaterEqual(min(speeds), 0.92)
+
+    def test_cached_take_outside_the_neighbour_band_is_regenerated(self):
+        ch = {"text": "y", "pace": 2.9}
+        base = self.gv.chunk_key("e03", 0, ch)
+        os.makedirs(os.path.dirname(base), exist_ok=True)
+        Path(base + ".mp3").write_bytes(b"old")
+        Path(base + ".json").write_text(json.dumps({"words": words_at(2.9, n=20), "speed": 1.2}))
+        self.assertIsNone(self.gv.cached_take("e03", 0, ch))                   # above SPEED_MAX
+        Path(base + ".json").write_text(json.dumps({"words": words_at(2.9, n=20), "speed": 1.0}))
+        self.assertIsNone(self.gv.cached_take("e03", 0, ch, lo=1.05, hi=1.08))
+        self.assertIsNotNone(self.gv.cached_take("e03", 0, ch, lo=0.92, hi=1.08))
+
+    def test_payoff_chunk_is_never_generated_above_speed_one(self):
+        self.gv.mp3_to_wav = lambda mp3, wav: 4.0
+        self.gv.subprocess = mock.MagicMock()
+        self.gv.probe_duration = lambda path: 8.25
+        self.gv.stitch = lambda parts, out: []
+        self.script({"id": "e05", "text": "a b", "chunks": [{"text": "a", "pace": 3.0}, {"text": "b", "pace": 3.0, "payoff": True}]})
+        speeds = []
+
+        def fake_tts(text, key, speed=1.0):
+            speeds.append((text, speed))
+            return tts_reply(words_at(3.0 if text == "a" else 2.0))   # the payoff take reads slow: the gate wants faster
+        self.gv.tts_with_timestamps = fake_tts
+        with redirect_stdout(StringIO()), self.assertRaises(SystemExit):
+            self.gv.main()
+        self.assertTrue(any(t == "b" for t, _ in speeds))
+        self.assertLessEqual(max(sp for t, sp in speeds if t == "b"), 1.0)
+
+    def test_scene_with_a_speed_lurch_between_chunks_is_rejected(self):
+        self.gv.mp3_to_wav = lambda mp3, wav: 4.0
+        self.gv.subprocess = mock.MagicMock()
+        self.gv.probe_duration = lambda path: 8.25
+        self.gv.stitch = lambda parts, out: []
+        self.script({"id": "e04", "text": "a b", "chunks": [{"text": "a", "pace": 3.0}, {"text": "b", "pace": 3.0}]})
+        replies = [tts_reply(words_at(3.0)), tts_reply(words_at(3.6))]          # chunk 2 lands 20 % faster
+        with self.assertRaises(SystemExit):
+            self.run_main(replies + [tts_reply(words_at(3.6))] * 3)
+        self.assertFalse((self.narr / "e04.mp3").exists())
+
+    def test_committed_script_passes_the_continuity_gate(self):
+        script = json.loads((WORK / "narration" / "script.json").read_text())
+        gv = load("gen_voice")
+        for sc in script["scenes"]:
+            chunks = gv.chunks_of(sc)
+            metas = []
+            for k, ch in enumerate(chunks):
+                base = gv.chunk_key(sc["id"], k, ch) + ".json"
+                if len(chunks) > 1:
+                    meta = json.loads(Path(base).read_text())
+                    metas.append((meta["speed"], gv.articulation_rate(meta["words"]), ch.get("pace", gv.PACE_TARGET)))
+                else:
+                    metas.append((ch.get("speed", 1.0), ch.get("pace", 3.0), ch.get("pace", 3.0)))
+            self.assertEqual(gv.continuity_problems(metas), [], sc["id"])
+
+    def test_level_gains_only_touch_chunks_outside_the_tolerance(self):
+        self.assertEqual(self.gv.level_gains([-23.0, -22.0, -24.0, -19.4]), [0.0, 0.0, 0.0, -3.1])
+        self.assertEqual(self.gv.level_gains([-23.0]), [0.0])
+        # one-word sign-off chunks never move the reference: the long chunks stay put, the hot short one comes down
+        self.assertEqual(self.gv.level_gains([-23.0, -22.5, -23.2, -19.0, -18.5], durations=[20, 8, 7, 0.4, 0.5]),
+                         [0.0, 0.0, 0.0, -4.0, -4.5])
 
     def test_cached_chunk_from_an_older_gate_is_regenerated(self):
         ch = {"text": "x", "pace": 2.9}
@@ -357,6 +488,201 @@ class LeanInFloorAndShotSyncTests(unittest.TestCase):
         import subprocess
         r = subprocess.run([sys.executable, str(WORK / "sync_shots.py"), "--check"], capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, r.stdout)
+
+
+class V2PipelineTests(unittest.TestCase):
+    """v2 additions: the 0.85 floor for every chunk, the breaths (pauses) step, paused vo.json, per-shot cue parts."""
+
+    def test_every_chunk_has_the_085_floor_even_without_a_floor_key(self):
+        gv = load("gen_voice")
+        self.assertEqual(gv.SPEED_MIN, 0.85)
+        speeds = []
+        gv.tts_with_timestamps = lambda text, key, speed=1.0: speeds.append(speed) or tts_reply(words_at(4.5))
+        with redirect_stdout(StringIO()):
+            gv.generate("era line", 3.0, 1.0, gv.SPEED_MIN, "k")
+        self.assertGreaterEqual(min(speeds), 0.85)
+
+    def test_pauses_top_up_sentence_gaps_and_add_named_beats(self):
+        ip = load("insert_pauses")
+        words = [{"w": "One.", "s": 0.0, "e": 0.4}, {"w": "Two?", "s": 0.5, "e": 0.9}, {"w": "three", "s": 1.4, "e": 1.8},
+                 {"w": "four.", "s": 1.9, "e": 2.3}]
+        cuts = ip.plan_pauses(words, {"min_sentence_gap": 0.3, "after": [{"word": "two?", "nth": 1, "add": 0.35}]})
+        self.assertEqual(cuts, [(0, 0.2), (1, 0.35)])          # 0.1 s gap topped up to 0.3; 0.5 s gap left alone + 0.35 beat
+        shifted = ip.shift_words(words, cuts)
+        self.assertAlmostEqual(shifted[1]["s"], 0.7)
+        self.assertAlmostEqual(shifted[2]["s"], 1.4 + 0.55)
+
+    def test_pause_rule_matches_the_exact_token_not_an_earlier_word_without_its_punctuation(self):
+        # voice audit 2026-10-12: "that?" fired on the channel name "That." (0:37) and "you?" on "You wake up" (1:14)
+        ip = load("insert_pauses")
+        words = [{"w": "Know", "s": 0.0, "e": 0.2}, {"w": "That.", "s": 0.25, "e": 0.5}, {"w": "Episode", "s": 0.82, "e": 1.2},
+                 {"w": "old", "s": 1.3, "e": 1.5}, {"w": "is", "s": 1.55, "e": 1.6}, {"w": "that?", "s": 1.65, "e": 1.9},
+                 {"w": "Guess", "s": 2.3, "e": 2.6}]
+        self.assertEqual(ip.plan_pauses(words, {"after": [{"word": "that?", "nth": 1, "add": 0.35}]}), [(5, 0.35)])
+        with self.assertRaises(ValueError):
+            ip.plan_pauses(words, {"after": [{"word": "that?", "nth": 2, "add": 0.35}]})
+
+    def test_cut_goes_to_the_quietest_point_of_the_gap(self):
+        import numpy as np
+        ip = load("insert_pauses")
+        rate = 1000
+        x = np.full(1000, 0.3)
+        x[540:560] = 0.0                                   # the real silence sits late in the aligned gap
+        words = [{"w": "a", "s": 0.0, "e": 0.5}, {"w": "b", "s": 0.58, "e": 1.0}]
+        self.assertAlmostEqual(ip.cut_time(words, 0), 0.54)                      # no audio: the gap's middle
+        self.assertAlmostEqual(ip.cut_time(words, 0, x, rate), 0.55, delta=0.006)
+
+    def test_inserted_silence_is_entered_and_left_through_short_fades(self):
+        import numpy as np
+        ip = load("insert_pauses")
+        rate = 1000
+        pcm = (np.full(100, 16000, dtype="<i2")).tobytes()
+        out = np.frombuffer(ip.insert_silence(pcm, [(0.05, 0.02)], rate=rate, width=2, fade_s=0.01), dtype="<i2")
+        self.assertEqual(out.size, 120)
+        self.assertEqual(out[0], 16000)
+        self.assertLess(abs(int(out[49])), 2000)           # faded out right before the silence
+        self.assertTrue((out[50:70] == 0).all())
+        self.assertLess(abs(int(out[70])), 2000)           # faded back in right after it
+        self.assertEqual(out[-1], 16000)
+
+    def test_even_pace_slows_a_fast_chunk_with_sentence_breaths_only(self):
+        # voice preflight: neighbouring chunks within 10 % w/s — the faster chunk gets longer sentence breaths
+        ip = load("insert_pauses")
+
+        def run(start, n, pace, sentence_every=3):
+            out, t = [], start
+            for k in range(n):
+                end = (k + 1) % sentence_every == 0 or k == n - 1
+                out.append({"w": "w." if end else "w", "s": round(t, 3), "e": round(t + 0.8 / pace, 3)})
+                t += 1 / pace
+            return out
+        slow = run(0.0, 12, 2.5)
+        fast = run(slow[-1]["e"] + 0.3, 12, 3.3)
+        words = slow + fast
+        chunks = [{"text": " ".join(["w"] * 12), "pace": 2.6}, {"text": " ".join(["w"] * 12), "pace": 3.0}]
+        cuts = ip.even_pace_cuts(words, chunks)
+        self.assertTrue(cuts and all(i >= 12 for i, _ in cuts))                  # only the fast chunk changes
+        self.assertTrue(all(ip.SENTENCE_END.search(words[i]["w"]) for i, _ in cuts))
+        shifted = ip.shift_words(words, sorted(cuts))
+        rate = lambda ws: len(ws) / (ws[-1]["e"] - ws[0]["s"])
+        self.assertLessEqual(rate(shifted[12:]) / rate(shifted[:12]), 1.10)
+        self.assertGreaterEqual(rate(shifted[12:]), 0.9 * 3.0 - 1e-6)            # never below its own pace floor
+
+    def test_even_pace_caps_a_payoff_chunk_and_skips_a_sign_off(self):
+        ip = load("insert_pauses")
+        words = [{"w": "a.", "s": 0.0, "e": 0.2}, {"w": "b", "s": 0.3, "e": 0.5}, {"w": "c.", "s": 0.55, "e": 0.75},
+                 {"w": "d", "s": 0.8, "e": 1.0}, {"w": "Ask...", "s": 1.5, "e": 1.8}]
+        chunks = [{"text": "a. b c. d", "pace": 3.0, "payoff": True}, {"text": "Ask...", "pace": 0}]
+        cuts = ip.even_pace_cuts(words, chunks)
+        shifted = ip.shift_words(words, sorted(cuts))
+        self.assertLessEqual(4 / (shifted[3]["e"] - shifted[0]["s"]), ip.PAYOFF_WPS_MAX)
+
+    def test_pause_on_a_missing_word_fails_loudly(self):
+        ip = load("insert_pauses")
+        with self.assertRaises(ValueError):
+            ip.plan_pauses([{"w": "a.", "s": 0, "e": 0.3}, {"w": "b", "s": 0.4, "e": 0.6}], {"after": [{"word": "zzz", "add": 0.2}]})
+
+    def test_insert_silence_places_the_gap_at_the_cut(self):
+        ip = load("insert_pauses")
+        pcm = b"\x01\x00" * 10
+        out = ip.insert_silence(pcm, [(0.5, 0.2)], rate=10, width=2)
+        self.assertEqual(out, b"\x01\x00" * 5 + b"\x00\x00" * 2 + b"\x01\x00" * 5)
+
+    def _paused_fixture(self, wav_s=1.3, recorded=None):
+        mv = load("make_vo_json")
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        mv.NARR = mv.MIX = tmp.name
+        cfg = {"min_sentence_gap": 0.3}
+        raw, paused = Path(tmp.name) / "p01.words.json", Path(tmp.name) / "p01.paused.json"
+        raw.write_text("[]")
+        paused.write_text(json.dumps({"dur": 1.3, "words": [], "pauses": cfg if recorded is None else recorded}))
+        os.utime(paused, (os.path.getmtime(raw) + 5, os.path.getmtime(raw) + 5))
+        with wave.open(str(Path(tmp.name) / "p01.wav"), "wb") as w:
+            w.setnchannels(1), w.setsampwidth(2), w.setframerate(1000)
+            w.writeframes(b"\x00\x00" * int(wav_s * 1000))
+        return mv, {"id": "p01", "pauses": cfg}, paused
+
+    def test_vo_json_uses_the_paused_take_and_refuses_a_stale_one(self):
+        mv, sc, paused = self._paused_fixture()
+        self.assertEqual(mv.scene_vo(sc, {"p01": 1.0})["dur"], 1.3)
+        self.assertEqual(mv.scene_vo({"id": "p01"}, {"p01": 1.0})["dur"], 1.0)
+        os.utime(paused, (0, 0))                                   # older than the words
+        with self.assertRaises(SystemExit):
+            mv.scene_vo(sc, {"p01": 1.0})
+
+    def test_vo_json_refuses_a_mix_restored_without_its_pauses(self):
+        # gen_voice rebuilds mix/<id>.wav from the unpaused mp3: 0.74 s shorter than the paused timings
+        mv, sc, _ = self._paused_fixture(wav_s=0.56)
+        with self.assertRaises(SystemExit) as e:
+            mv.scene_vo(sc, {"p01": 1.0})
+        self.assertIn("insert_pauses", str(e.exception))
+
+    def test_vo_json_refuses_a_paused_take_made_with_other_pause_settings(self):
+        mv, sc, _ = self._paused_fixture(recorded={"min_sentence_gap": 0.5})
+        with self.assertRaises(SystemExit):
+            mv.scene_vo(sc, {"p01": 1.0})
+        mv, sc, paused = self._paused_fixture()
+        paused.write_text(json.dumps({"dur": 1.3, "words": []}))   # written before settings were recorded
+        os.utime(paused, (os.path.getmtime(paused) + 5,) * 2)
+        with self.assertRaises(SystemExit):
+            mv.scene_vo(sc, {"p01": 1.0})
+
+    def test_paused_record_keeps_the_settings_it_was_made_with(self):
+        ip = load("insert_pauses")
+        cfg = {"min_sentence_gap": 0.35, "after": [{"word": "Guess.", "nth": 1, "add": 0.4}]}
+        self.assertEqual(ip.paused_record(2.5, [], cfg), {"dur": 2.5, "words": [], "pauses": cfg})
+
+    def test_committed_vo_json_matches_the_paused_takes(self):
+        vo = json.loads((WORK.parents[2] / "remotion" / "src" / "shots" / "dyk-02" / "vo.json").read_text())
+        script = json.loads((WORK / "narration" / "script.json").read_text())
+        for sc in script["scenes"]:
+            if sc.get("pauses"):
+                paused = json.loads((WORK / "narration" / f"{sc['id']}.paused.json").read_text())
+                self.assertEqual(vo[sc["id"]]["dur"], paused["dur"], sc["id"])
+
+    def test_loud_cue_inside_a_word_moves_to_the_nearest_gap(self):
+        bf = load("build_final")
+        spans = [(10.0, 10.5), (10.6, 11.4)]
+        self.assertEqual(bf.off_word(10.42, "whoosh-soft", spans), 10.5)          # near the end: into the gap after
+        self.assertEqual(bf.off_word(10.65, "whoosh-soft", spans), 10.6)          # just after the onset: to the onset
+        self.assertEqual(bf.off_word(10.9, "pop-reveal", spans), 11.4)            # middle of a long word: its end
+        self.assertEqual(bf.off_word(10.9, "ui-click-soft", spans), 10.9)         # soft clicks may sit on words
+        self.assertEqual(bf.off_word(10.55, "impact-soft", spans), 10.55)         # already in a gap
+        self.assertEqual(bf.off_word(10.9, "riser-soft", spans), 10.6)            # a riser starts earlier, never later
+
+    def test_payoff_line_carries_only_the_riser_and_one_hit_after_ago(self):
+        bf = load("build_final")
+        words = bf.VO["su10-reveal"]["words"]
+        k = next(i for i, wd in enumerate(words) if wd["w"] == "You" and words[i + 1]["w"] == "have")
+        t0, ago = bf.VO_AT["su10-reveal"] + words[k]["s"], bf.VO_AT["su10-reveal"] + words[-1]["e"]
+        inside = [(t, clip) for t, clip, _ in bf.CUES if t0 - 0.05 <= t <= ago + 0.5 and clip != "riser-soft"]
+        self.assertEqual([clip for _, clip in inside], ["impact-deep-soft"])
+        self.assertGreater(inside[0][0], ago)
+        only = bf.VO_AT["su10-reveal"] + next(wd["s"] for wd in words if wd["w"] == "Only")
+        riser = [t for t, clip, _ in bf.CUES if clip == "riser-soft" and 0 <= only - (t + 1.36) < 0.5]
+        self.assertEqual(len(riser), 1)
+
+    def test_exported_cuesheet_has_no_loud_cue_inside_a_word(self):
+        bf = load("build_final")
+        spans = bf.word_spans()
+        for t, clip, _ in bf.CUES:
+            if bf.LOUD_SFX.search(clip):
+                self.assertFalse(any(s + 0.03 < t < e - 0.03 for s, e in spans), (t, clip))
+
+    def test_every_shot_has_a_cue_part_in_mix_order(self):
+        bf = load("build_final")
+        self.assertEqual(bf.CUE_TABLE.PART_ORDER, bf.SHOT_ORDER)
+        for shot in bf.SHOT_ORDER:
+            self.assertTrue((WORK / "cue_parts" / f"{shot}.py").exists(), shot)
+
+    def test_v2_script_keeps_one_did_you_know_per_era_and_the_arc_keywords(self):
+        script = {s["id"]: " ".join(c["text"] for c in s.get("chunks", [])) for s in json.loads((WORK / "narration" / "script.json").read_text())["scenes"]}
+        for sid in ("su04-1500", "su05-1610", "su06-1700", "su07-1800", "su08-1900", "su09-2000"):
+            self.assertEqual(script[sid].count("Did you know that"), 1, sid)
+        for sid, word in (("su04-1500", "day and night."), ("su05-1610", "to watch."), ("su06-1700", "to explain."),
+                          ("su07-1800", "you measure,"), ("su08-1900", "every meal"), ("su09-2000", "Power.")):
+            self.assertIn(word, script[sid])
 
 
 if __name__ == "__main__":

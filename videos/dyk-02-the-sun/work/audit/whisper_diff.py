@@ -10,7 +10,8 @@ for s in sc:
     d = json.load(open(path))
     ww = [w for seg in d['segments'] for w in seg.get('words', [])]
     hyp = [norm(w['word']) for w in ww if norm(w['word'])]
-    ref = [norm(x) for x in s['text'].split() if norm(x)]
+    text = ' '.join(c['text'] for c in s['chunks']) if s.get('chunks') else s['text']
+    ref = [norm(x) for x in text.split() if norm(x)]
     sm = difflib.SequenceMatcher(None, ref, hyp, autojunk=False)
     diffs = [(op, ' '.join(ref[a:b]), ' '.join(hyp[c:e])) for op, a, b, c, e in sm.get_opcodes() if op != 'equal']
     low = [(w['word'].strip(), round(w['probability'], 2)) for w in ww if w['probability'] < 0.35]

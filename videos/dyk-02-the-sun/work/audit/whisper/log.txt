@@ -1,178 +1,398 @@
-[00:00.000 --> 00:03.920]  Welcome back to Did You Know That Episode 2, You Know the Rule.
-[00:04.560 --> 00:08.160]  The light on your face is 8 minutes old, but the energy inside it?
-[00:08.540 --> 00:09.220]  How old is that?
-[00:09.760 --> 00:10.920]  Make your guess in the comments.
-[00:11.620 --> 00:13.840]  Then stay to the end and find out if you were right.
-[00:00.000 --> 00:02.440]  It is eight o'clock, the sun is warm on your face.
-[00:03.020 --> 00:06.200]  But that light left the sun eight minutes and 20 seconds ago.
-[00:06.660 --> 00:08.860]  If the sun vanished right now, you would not know.
-[00:00.000 --> 00:01.960]  We have celebrated the sun, hidden from it,
-[00:02.480 --> 00:04.800]  split it, chased it, and even touched it.
-[00:05.280 --> 00:07.580]  And yet, did you know that you have never
-[00:07.580 --> 00:10.120]  once seen the sun as it is right now?
-[00:00.000 --> 00:04.160]  Here's the experiment, seven mornings from 1500 to 2100.
-[00:04.580 --> 00:08.140]  In each one you wake up as someone else under the same sun,
-[00:08.680 --> 00:10.780]  the sun will not change, you will.
-[00:11.280 --> 00:13.960]  And by the end, you will know how old that light really is.
-[00:00.000 --> 00:02.080]  You wake up in 1500 in London.
-[00:02.400 --> 00:05.140]  It is mid-Summer Eve, the shortest night of the year,
-[00:05.800 --> 00:07.380]  and the streets are full of fire.
-[00:08.060 --> 00:10.760]  Did you know that almost everyone you will ever meet
-[00:10.760 --> 00:12.520]  believes the sun goes around the earth?
-[00:13.240 --> 00:16.660]  It is what Ptolemy taught about 1400 years ago.
-[00:17.320 --> 00:20.040]  Your day begins when the sun rises and ends when it sets,
-[00:20.720 --> 00:22.080]  but tonight nobody sleeps.
-[00:23.020 --> 00:25.760]  Every door is hung with green birch in St. John's wort.
-[00:26.420 --> 00:28.060]  Glass lamps burn all night.
-[00:28.800 --> 00:31.320]  Neighbors share bread and drink beside the bonfires.
-[00:32.080 --> 00:34.720]  A London writer, John Stowe, later explained why
-[00:34.720 --> 00:38.660]  a great fire, he wrote, could purge the infection of the air.
-[00:39.520 --> 00:42.380]  Far away a young Polish astronomer named Copernicus
-[00:42.380 --> 00:43.340]  is studying the sky.
-[00:43.920 --> 00:48.260]  In 1543, the year he dies, his book puts the sun at the center.
-[00:48.760 --> 00:51.980]  And within 70 years, a new instrument will show
-[00:51.980 --> 00:53.660]  that the sun is not perfect.
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+[00:00.000 --> 00:02.560]  Welcome back to Did You Know That, episode two.
+[00:03.100 --> 00:06.220]  You know the rule, that light on your face is eight minutes old,
+[00:06.580 --> 00:09.360]  but the energy inside it, how old is that?
+[00:10.240 --> 00:11.720]  Guess in the comments right now,
+[00:12.000 --> 00:14.180]  then stay to the end and check your answer.
+[00:00.000 --> 00:02.660]  Welcome back to Did You Know That, episode two.
+[00:03.240 --> 00:06.360]  You know the rule that light on your face is eight minutes old,
+[00:06.720 --> 00:08.020]  but the energy inside it?
+[00:08.360 --> 00:09.180]  How old is that?
+[00:09.720 --> 00:11.680]  Guess in the comments right now,
+[00:11.780 --> 00:13.380]  then stay to the end and check your guess.
+[00:00.000 --> 00:02.400]  It's eight o'clock, the sun's warm on your face,
+[00:02.720 --> 00:03.920]  but that light is old.
+[00:04.380 --> 00:06.800]  It left the sun eight minutes and 20 seconds ago.
+[00:07.400 --> 00:09.460]  So if the sun vanished right now, you wouldn't know.
+[00:09.980 --> 00:12.100]  You'd still see it, you'd still feel it
+[00:12.100 --> 00:13.280]  for eight more minutes.
+[00:00.000 --> 00:03.560]  500 years ago, the sun told you when to get up and when to sleep.
+[00:04.600 --> 00:06.060]  Today, we turn it into electricity.
+[00:00.000 --> 00:02.580]  500 years ago, the sun told you when to get up
+[00:02.580 --> 00:03.480]  and when to sleep.
+[00:04.420 --> 00:06.080]  Today we make electricity from it.
+[00:06.620 --> 00:09.540]  And still, did you know that you have never once seen
+[00:09.540 --> 00:11.480]  the sun as it is right now?
+[00:00.000 --> 00:02.080]  You start out going to bed when it sets.
+[00:02.800 --> 00:05.260]  You end up in a world that might run on it.
+[00:05.800 --> 00:07.700]  And at the end, you'll find out
+[00:07.700 --> 00:09.600]  how old that light really is.
+[00:00.000 --> 00:03.020]  seven mornings from 1,500 to 2,100.
+[00:03.560 --> 00:05.880]  In each one, you wake up as someone else
+[00:05.880 --> 00:07.020]  under the same sun.
+[00:07.220 --> 00:08.120]  The sun won't change.
+[00:08.700 --> 00:09.200]  You will.
+[00:09.660 --> 00:11.800]  You start out going to bed at sunset.
+[00:12.440 --> 00:14.880]  You end up in a world that might run on it.
+[00:15.460 --> 00:18.660]  And at the end, you'll find out the true age of sunlight.
+[00:00.000 --> 00:04.240]  Far away, a young Polish astronomer, Copernicus, is studying the sky.
+[00:05.040 --> 00:09.400]  In 1543, the year he dies, his book puts the sun at the center.
+[00:00.000 --> 00:01.860]  You wake up in 1500 in London.
+[00:02.400 --> 00:03.340]  It's mid-Summer Eve.
+[00:03.880 --> 00:05.600]  You can smell wood smoke and the streets
+[00:05.600 --> 00:06.760]  are glowing with fire light.
+[00:07.440 --> 00:09.640]  Did you know that almost everyone you'll ever meet
+[00:09.640 --> 00:11.440]  believes the sun goes around the earth?
+[00:11.940 --> 00:15.300]  That's what Ptolemy taught about 1400 years ago.
+[00:15.820 --> 00:16.960]  So what is the sun to you?
+[00:17.600 --> 00:17.960]  Simple.
+[00:18.440 --> 00:20.080]  It's the difference between day and night.
+[00:20.640 --> 00:21.600]  Daylight is for work.
+[00:21.960 --> 00:23.900]  Darkness is for sleep and prayer.
+[00:24.560 --> 00:26.040]  But tonight, nobody sleeps.
+[00:26.560 --> 00:28.380]  Doors are hung with green birch and flowers.
+[00:29.020 --> 00:30.320]  Glass lamps burn all night.
+[00:30.940 --> 00:33.000]  Neighbors share bread and drink by the bonfires.
+[00:33.540 --> 00:33.840]  Why?
+[00:34.540 --> 00:36.500]  A London writer John Stowe later wrote
+[00:36.500 --> 00:39.040]  that a great fire could purge the infection of the air.
+[00:39.640 --> 00:42.320]  Far away, a young Polish astronomer, Copernicus,
+[00:42.620 --> 00:43.900]  is studying the sky.
+[00:44.520 --> 00:48.680]  In 1543, the year he dies, his book puts the sun
+[00:48.680 --> 00:50.460]  at the center and sets the earth in motion.
+[00:51.120 --> 00:52.960]  And within 70 years, a new instrument
+[00:52.960 --> 00:54.380]  will show you something shocking.
+[00:55.060 --> 00:56.240]  The sun isn't perfect.
 [00:00.000 --> 00:02.680]  You wake up in 1610 beside the River Thames.
-[00:03.080 --> 00:04.720]  It is a misty December morning
-[00:04.720 --> 00:06.380]  and the sun hangs low and dim.
-[00:07.140 --> 00:09.040]  Thomas Harriet points a telescope at it
-[00:09.040 --> 00:10.580]  and draws what he sees.
-[00:11.020 --> 00:13.840]  Do not try this, looking at the sun can blind you.
-[00:14.460 --> 00:16.560]  Did you know that the first telescope drawing
-[00:16.560 --> 00:18.780]  of sunspots was made not by Galileo,
-[00:19.080 --> 00:21.940]  but by this Englishman and he never published it?
-[00:22.460 --> 00:23.760]  Two years later in Florence,
-[00:24.200 --> 00:27.420]  Galileo watched the spots drift across the sun day after day.
-[00:28.020 --> 00:30.220]  Arrival said they were tiny planets passing in front.
-[00:30.800 --> 00:31.680]  Galileo disagreed.
-[00:32.120 --> 00:34.340]  The spots were on the sun itself and the sun was turning.
-[00:34.840 --> 00:36.860]  In 1613, he published his letters.
-[00:37.520 --> 00:39.320]  The perfect heavenly body had blemishes.
-[00:39.960 --> 00:42.440]  For most people, the day still runs on daylight alone.
-[00:42.860 --> 00:45.360]  But for a few, the sun has become something you can measure.
-[00:45.960 --> 00:49.220]  And soon one simple glass prism will break that light apart.
-[00:00.000 --> 00:02.160]  You wake up in 1752 in London.
-[00:02.780 --> 00:04.280]  Two Irish sisters, the gunnings,
-[00:04.520 --> 00:06.320]  are the most talked about faces in town.
-[00:06.980 --> 00:09.840]  Did you know that a pale face was so prize
-[00:09.840 --> 00:12.980]  that fashionable women painted theirs with white lead?
-[00:13.680 --> 00:15.520]  Maria Gunning married a neural that spring.
-[00:16.040 --> 00:19.000]  She died at 27 and her death was blamed
-[00:19.000 --> 00:21.740]  at least in part on the lead in her face powder.
-[00:22.300 --> 00:24.400]  If you are rich, you stay out of the sun.
-[00:24.860 --> 00:27.220]  You walk under a parasol, the latest fashion.
-[00:27.740 --> 00:31.200]  If you are poor, you work outside from dawn to dusk.
-[00:31.640 --> 00:33.180]  And your tan tells everyone.
-[00:33.720 --> 00:35.980]  Half a century earlier, Isaac Newton had shown
-[00:35.980 --> 00:37.400]  that sunlight is not white at all.
-[00:37.940 --> 00:39.980]  Pass it through a prism and it opens
-[00:39.980 --> 00:42.700]  into every color of the rainbow, red at one end,
-[00:43.080 --> 00:43.940]  violet at the other.
-[00:44.580 --> 00:48.180]  And beyond the red, there is a light that nobody can see.
-[00:00.000 --> 00:02.700]  You wake up in 1800 in slow near Windsor.
-[00:03.320 --> 00:04.720]  An astronomer, William Herschel,
-[00:05.060 --> 00:06.600]  has set a prism in a sunbeam
-[00:06.600 --> 00:08.660]  with thermometers whose bulbs are painted black.
-[00:09.320 --> 00:11.120]  Did you know that the hottest spot
-[00:11.120 --> 00:13.000]  was not in the rainbow at all,
-[00:13.480 --> 00:17.280]  but just past the red where there was nothing to see?
-[00:17.880 --> 00:18.920]  He had found infrared.
-[00:19.580 --> 00:21.860]  The sun was sending more than our eyes could catch.
-[00:22.460 --> 00:25.000]  Within a few years, gas lamps will push back the night.
-[00:25.400 --> 00:27.660]  You no longer have to stop when the sun goes down.
-[00:28.340 --> 00:32.600]  In 1839 in Paris, a 19-year-old named Edmund Beckerl
-[00:32.600 --> 00:35.820]  shines light on a cell and it makes electricity.
-[00:36.480 --> 00:40.700]  And in 1859, Richard Carrington sees a white flash on the sun.
-[00:41.240 --> 00:44.760]  Within a day, telegraph wires spark and operators get shocks.
-[00:45.480 --> 00:47.560]  The sun can reach down and touch our machines.
-[00:48.360 --> 00:51.900]  It would take another century to turn that tiny spark into power.
-[00:00.000 --> 00:03.660]  You wake up in 1928 on a crowded American beach.
-[00:04.260 --> 00:06.340]  Everyone is lying in the sun on purpose.
-[00:07.000 --> 00:09.460]  Once, a tan meant you labored in the fields.
-[00:09.980 --> 00:11.640]  Now it means you can afford a day off.
-[00:12.260 --> 00:14.060]  Did you know that the famous story
-[00:14.060 --> 00:16.860]  that Coco Chanel started the Sun tan craze
-[00:17.400 --> 00:18.600]  is probably a myth?
-[00:19.180 --> 00:22.140]  A historian traced it to an unsigned magazine article
-[00:22.140 --> 00:23.220]  from 1971.
-[00:24.080 --> 00:25.300]  The real reason was work.
-[00:25.720 --> 00:27.880]  As jobs moved into factories and offices,
-[00:27.880 --> 00:30.220]  a tan became the badge of leisure.
-[00:30.940 --> 00:33.060]  Then in 1954, at Bell's station,
-[00:33.460 --> 00:35.740]  three scientists built a silicon cell
-[00:35.740 --> 00:38.820]  that turns about 6% of sunlight into electricity.
-[00:39.680 --> 00:41.460]  Four years later, a tiny satellite
-[00:41.460 --> 00:43.940]  called Vanguard One runs a radio on sunlight.
-[00:44.360 --> 00:46.340]  It is still circling the Earth today.
-[00:46.980 --> 00:48.880]  We had learned to live on sunlight.
-[00:49.440 --> 00:51.320]  Now we would fly straight into it.
-[00:00.000 --> 00:00.920]  You wake up today.
-[00:01.580 --> 00:04.000]  Did you know that on Christmas Eve, 2024,
-[00:04.740 --> 00:08.500]  a spacecraft passed 6.1 million kilometers from the sun
-[00:09.100 --> 00:11.720]  at almost 700,000 kilometers an hour?
-[00:12.380 --> 00:13.900]  NASA's Parker Solar Probe,
-[00:13.920 --> 00:16.060]  the fastest object humans have ever built,
-[00:16.660 --> 00:18.340]  flew through the sun's outer atmosphere.
-[00:18.940 --> 00:21.220]  Back on Earth, you spend most of your day inside
-[00:21.220 --> 00:23.020]  under a roof staring at screens.
-[00:23.720 --> 00:25.820]  You put on sunscreen just to go outside.
-[00:26.440 --> 00:28.900]  The international energy agency said in 2020
-[00:29.460 --> 00:31.040]  that the best solar projects offer
-[00:31.040 --> 00:33.020]  some of the cheapest electricity ever seen.
-[00:33.560 --> 00:37.700]  By 2024, solar made almost 7% of the world's electricity,
-[00:38.260 --> 00:41.840]  and every plant, every meal you ate today is stored sunlight,
-[00:42.440 --> 00:44.520]  caught by photosynthesis in green leaves.
-[00:45.120 --> 00:48.020]  We have touched the sun and we live on it.
-[00:48.560 --> 00:52.200]  So why have you still never seen it as it is?
-[00:00.000 --> 00:03.480]  Here's the answer, light is fast, but it is not instant.
-[00:03.940 --> 00:05.840]  It takes about eight minutes and 20 seconds
-[00:05.840 --> 00:07.940]  to cross 150 million kilometers.
-[00:08.620 --> 00:12.020]  So every sunrise you have ever watched was already old,
-[00:12.480 --> 00:13.920]  but that light carries a secret.
-[00:14.580 --> 00:16.680]  Its energy was made deep in the sun's core
-[00:17.200 --> 00:20.000]  and it spent a very long time fusting its way out.
-[00:20.600 --> 00:23.340]  NASA estimates about 170,000 years.
-[00:24.040 --> 00:25.740]  When that energy began its journey,
-[00:25.840 --> 00:28.280]  there were no farms, no cities, and no writing.
-[00:28.920 --> 00:31.940]  For five centuries, we changed how we behaved toward the sun.
-[00:32.560 --> 00:35.380]  We celebrated it, hid from it, split it,
-[00:35.760 --> 00:37.160]  chased it, and touched it.
-[00:37.700 --> 00:39.500]  The sun did not change for us at all.
-[00:40.080 --> 00:44.640]  You have never seen the sun as it is, only as it was.
-[00:00.000 --> 00:03.400]  Now the year 2100, that morning has not happened yet,
-[00:03.760 --> 00:05.320]  but we can follow the evidence.
-[00:05.960 --> 00:08.560]  In 2023, a small Caltech satellite
-[00:08.560 --> 00:11.220]  called Maple Beam Power wirelessly in space
-[00:11.800 --> 00:13.980]  and aimed a signal at a rooftop in Pasadena.
-[00:14.400 --> 00:16.520]  It was tiny, but it worked.
-[00:17.000 --> 00:20.140]  In 2014, the International Energy Agency
-[00:20.140 --> 00:22.900]  sketched a world where solar could make 27%
-[00:22.900 --> 00:25.800]  of all electricity by 2050 and stressed
-[00:25.800 --> 00:27.320]  that this was not a forecast.
-[00:28.000 --> 00:30.920]  Put those together, and here is one scenario.
-[00:31.620 --> 00:34.100]  Power collected in orbit where the sun never sets.
-[00:35.020 --> 00:36.420]  Cities designed around sunlight.
-[00:37.000 --> 00:38.420]  The sun itself will not notice.
-[00:39.220 --> 00:41.960]  NASA estimates it has another 5 billion years or so.
-[00:42.680 --> 00:46.980]  The question is not whether the sun will be there in 2100.
-[00:47.540 --> 00:50.540]  It is what we will have learned to do with it.
-[00:00.000 --> 00:03.780]  The sun has risen on every single morning of your life.
-[00:04.400 --> 00:08.580]  So tell me, when was the last time you watched it rise on purpose?
-[00:00.000 --> 00:02.240]  This was episode two of a, did you know that?
-[00:02.740 --> 00:04.140]  The sun, now it is your turn.
-[00:04.720 --> 00:06.920]  In which century would you rather watch the sunrise?
-[00:07.780 --> 00:08.580]  Tell me in the comments.
-[00:09.280 --> 00:10.480]  At the end of every episode,
-[00:10.640 --> 00:13.340]  I will read the best comment right here on this screen.
-[00:14.020 --> 00:16.960]  And the subject you ask for most becomes a future episode.
-[00:17.620 --> 00:19.520]  On our website, dextee.live,
-[00:20.020 --> 00:21.340]  you can watch every episode,
-[00:21.820 --> 00:23.980]  collect the facts and play the guessing game.
-[00:24.520 --> 00:27.140]  If this changed how you see a sunrise like it,
-[00:27.560 --> 00:29.440]  share it with a friend who never misses one,
-[00:29.440 --> 00:32.500]  and subscribe so the next mystery finds you.
-[00:32.980 --> 00:34.440]  Next time, school.
-[00:35.160 --> 00:37.800]  How did a day in class change from 1,500 to today
-[00:37.800 --> 00:40.980]  and will the classroom of 2,100 even have walls?
-[00:41.620 --> 00:43.080]  Ask, wonder, repeat.
-[00:00.000 --> 00:04.480]  Next time, this could be your comment, pick a mystery, and I will see you there.
+[00:02.980 --> 00:05.220]  It's a cold, misty December morning
+[00:05.800 --> 00:07.120]  and the sun hangs low in dim.
+[00:07.740 --> 00:10.640]  A man named Thomas Harriet points a telescope straight at it.
+[00:11.120 --> 00:13.020]  Don't try this, it can blind you.
+[00:13.620 --> 00:16.080]  Did you know that the first telescope drawing
+[00:16.080 --> 00:18.280]  of sun spots wasn't made by Galileo?
+[00:18.780 --> 00:21.660]  It was this Englishman and he never published it.
+[00:22.140 --> 00:23.240]  Two years later in Florence,
+[00:23.840 --> 00:27.240]  Galileo watches the spots drift across the sun day after day.
+[00:27.880 --> 00:30.140]  Arrival says there are tiny planets passing in front.
+[00:30.740 --> 00:31.600]  Galileo says no.
+[00:32.080 --> 00:33.980]  They're on the sun itself and the sun is turning.
+[00:34.560 --> 00:36.620]  In the 1613, he publishes his letters.
+[00:37.360 --> 00:39.180]  The perfect heavenly body has blemishes.
+[00:39.840 --> 00:41.800]  Out in the fields, daylight still runs your day.
+[00:42.320 --> 00:44.280]  But for a few people with telescopes,
+[00:44.580 --> 00:47.220]  the sun has become something to watch closely
+[00:47.840 --> 00:50.880]  and soon someone will ask what's actually inside that light.
+[00:00.000 --> 00:03.520]  But there's more in that light than leaves can use, or eyes can see.
+[00:00.000 --> 00:02.480]  You wake up in 1779 in England.
+[00:03.140 --> 00:04.380]  It's a bright summer morning
+[00:04.380 --> 00:06.200]  and the fashionable ladies outside
+[00:06.200 --> 00:08.100]  are hiding from it under parasols.
+[00:08.740 --> 00:10.980]  Did you know that a pale face was so prize
+[00:10.980 --> 00:14.020]  that fashionable women painted theirs with white lead?
+[00:14.600 --> 00:16.540]  One famous beauty, Maria Gunning,
+[00:16.760 --> 00:18.600]  Countess of Coventry died at 27.
+[00:19.280 --> 00:21.220]  Her death was blamed at least in part
+[00:21.220 --> 00:23.020]  on the lead in her face powder.
+[00:23.400 --> 00:25.480]  If you're rich, you stay out of the sun.
+[00:25.920 --> 00:27.420]  If you're poor, you work in it
+[00:27.420 --> 00:28.960]  and your tan tells everyone.
+[00:29.680 --> 00:32.020]  But this summer, the sun is turning into something new,
+[00:32.680 --> 00:33.780]  something to explain.
+[00:34.480 --> 00:36.060]  A Dutch doctor, Jan Innington House,
+[00:36.380 --> 00:38.420]  runs more than 500 experiments on plants.
+[00:39.140 --> 00:40.420]  He sinks leaves underwater.
+[00:41.000 --> 00:42.760]  In sunlight, they bubble out fresh air.
+[00:43.220 --> 00:44.220]  In the shade, they stop.
+[00:44.720 --> 00:45.900]  Only the green parts do it.
+[00:46.400 --> 00:47.200]  Plants need the sun.
+[00:47.680 --> 00:50.180]  But there's more in that light than leaves can use.
+[00:50.760 --> 00:52.320]  Or your eyes can detect.
+[00:00.000 --> 00:02.740]  You wake up in 1800 near Windsor, it's February,
+[00:03.280 --> 00:05.880]  an astronomer William Herschel splits a sunbeam
+[00:05.880 --> 00:08.240]  with a prism and lace thermometers in the colors,
+[00:08.440 --> 00:09.280]  their bulbs blackened.
+[00:09.880 --> 00:11.440]  Did you know that the hottest spot
+[00:11.440 --> 00:13.040]  wasn't in the rainbow at all?
+[00:13.680 --> 00:16.900]  It was just past the red where nothing was visible.
+[00:17.500 --> 00:19.940]  He'd found infrared light you can't see.
+[00:20.420 --> 00:21.720]  Now the sun is something you measure,
+[00:22.280 --> 00:23.520]  even where your eyes give up.
+[00:24.260 --> 00:26.420]  Soon, gas lamps push back the night in London.
+[00:26.980 --> 00:30.780]  In 1839 in Paris, a 19-year-old named Edmund Beckerl
+[00:30.780 --> 00:33.100]  shines light on a cell and it makes electricity.
+[00:33.820 --> 00:35.020]  Tiny, but real.
+[00:35.620 --> 00:39.760]  And in 1859, Richard Carrington sees a white flash on the sun
+[00:40.260 --> 00:43.700]  within a day telegraph wires spark and operators get shocks.
+[00:44.260 --> 00:46.320]  The sun can reach down and touch our machine.
+[00:46.960 --> 00:49.660]  Turning that spark into power would take another century.
+[00:50.160 --> 00:53.680]  But first, we'd find out what we'd been eating all along.
+[00:00.000 --> 00:03.020]  You wake up in 1928 on a crowded American beach,
+[00:03.700 --> 00:05.240]  hot sand, salt air,
+[00:05.700 --> 00:07.540]  and everyone's lying in the sun on purpose.
+[00:08.340 --> 00:10.220]  Did you know that the famous story
+[00:10.220 --> 00:13.360]  that Coco Chanel started the suntan craze
+[00:13.360 --> 00:14.320]  is probably a myth?
+[00:14.840 --> 00:17.640]  A historian traced it to an unsigned magazine article
+[00:17.640 --> 00:18.640]  from 1971.
+[00:19.420 --> 00:20.680]  The real reason was work.
+[00:21.720 --> 00:22.660]  Jobs moved indoors,
+[00:22.880 --> 00:24.640]  so a tan stopped meaning the fields.
+[00:25.000 --> 00:25.860]  It meant a day off.
+[00:26.360 --> 00:27.760]  Now look in your picnic basket.
+[00:28.520 --> 00:29.620]  Bread and apple.
+[00:30.140 --> 00:32.900]  The process that made them got its name in 1893.
+[00:33.920 --> 00:35.780]  Photosynthesis leaves catch sunlight
+[00:35.780 --> 00:36.740]  and turn it into sugar,
+[00:37.120 --> 00:38.880]  and nearly all life runs on that.
+[00:39.720 --> 00:40.980]  Your lunch is stored sunlight,
+[00:41.320 --> 00:42.560]  so in a way are you.
+[00:43.100 --> 00:44.680]  The sun used to be something to measure.
+[00:45.280 --> 00:47.040]  Now it's the source of every meal.
+[00:47.680 --> 00:50.220]  Then in 1954 at Bell Laboratories,
+[00:50.760 --> 00:54.100]  a silicon cell turns about 6% of sunlight into electricity.
+[00:54.680 --> 00:56.760]  We'd learn that we live on sunlight
+[00:56.760 --> 00:59.080]  next we'd learn to harvest it.
+[00:00.000 --> 00:03.720]  And yet you spend most of your day indoors behind a screen.
+[00:04.480 --> 00:07.080]  We've touched the sun, we plug into it.
+[00:07.420 --> 00:10.260]  So why have you still never seen it as it is today?
+[00:00.000 --> 00:02.220]  You wake up today, your phones charged,
+[00:02.680 --> 00:03.420]  the lights come on,
+[00:03.720 --> 00:05.780]  and somewhere a field of solar panels
+[00:05.780 --> 00:07.060]  has been awake since sunrise.
+[00:07.740 --> 00:09.400]  Did you know that in 2025,
+[00:10.220 --> 00:13.140]  solar power made almost 11 times more electricity
+[00:13.920 --> 00:15.380]  than it did 10 years earlier?
+[00:16.000 --> 00:18.800]  That's almost 9% of all the world's electricity.
+[00:19.420 --> 00:21.000]  The international energy agency has said
+[00:21.000 --> 00:22.240]  the best solar projects offer
+[00:22.240 --> 00:24.040]  some of the cheapest electricity ever seen.
+[00:24.600 --> 00:26.000]  So what's the sun to you now?
+[00:26.700 --> 00:28.900]  Power, something you harvest like a crop.
+[00:29.500 --> 00:30.760]  And in December 2024,
+[00:31.280 --> 00:33.080]  NASA's Parker Solar Probe flew through
+[00:33.080 --> 00:34.080]  the sun's outer atmosphere
+[00:34.660 --> 00:36.400]  faster than anything humans have ever built.
+[00:36.860 --> 00:39.200]  And yet you spend most of your day indoors
+[00:39.200 --> 00:40.660]  behind screens and windows.
+[00:41.180 --> 00:43.740]  We've touched the sun, we plug into it.
+[00:44.060 --> 00:46.640]  So why have you still never seen it as it is today?
+[00:00.000 --> 00:03.180]  Here's the answer, light is fast, but it is an instant.
+[00:03.720 --> 00:05.620]  It takes about eight minutes and 20 seconds
+[00:05.620 --> 00:07.720]  to cross 150 million kilometers.
+[00:08.580 --> 00:11.420]  Every sunrise you've ever watched was already old.
+[00:12.080 --> 00:14.640]  And the energy inside it, it was made deep
+[00:14.640 --> 00:17.580]  in the sun's core, and it spent a very long time
+[00:17.580 --> 00:18.640]  struggling to get out.
+[00:19.340 --> 00:22.440]  NASA estimates about 170,000 years.
+[00:23.140 --> 00:25.160]  When it's set out, nobody on Earth had farms,
+[00:25.720 --> 00:27.420]  or cities, or writing.
+[00:27.420 --> 00:29.320]  How close was your answer?
+[00:30.040 --> 00:31.720]  Now climb that ladder again, with me.
+[00:32.300 --> 00:34.160]  In 1500, the sun was day and night,
+[00:34.360 --> 00:37.260]  then something to watch, to explain, to measure,
+[00:37.760 --> 00:38.380]  then it was your lunch.
+[00:39.100 --> 00:40.940]  Today, its power, the sun didn't change.
+[00:41.520 --> 00:41.840]  We did.
+[00:42.440 --> 00:44.620]  You have never seen the sun as it is.
+[00:45.600 --> 00:47.840]  Only as it was eight minutes ago.
+[00:00.000 --> 00:00.840]  So what's the next wrong?
+[00:01.700 --> 00:03.620]  2100, that morning hasn't happened yet,
+[00:04.020 --> 00:05.340]  but we can follow the evidence.
+[00:06.040 --> 00:09.280]  Every video you watch, every question you ask an AI
+[00:09.880 --> 00:11.020]  runs in a data center.
+[00:11.780 --> 00:15.060]  In 2024, data centers used about one and a half percent
+[00:15.060 --> 00:16.300]  of the world's electricity.
+[00:17.040 --> 00:19.060]  The international energy agency expects that
+[00:19.060 --> 00:20.800]  to more than double by 2030.
+[00:21.420 --> 00:23.740]  That's slightly more than all of Japan uses today.
+[00:24.440 --> 00:27.900]  Meanwhile, in 2023, a small Caltech satellite called Maple
+[00:27.900 --> 00:29.440]  will be empowered wirelessly in space
+[00:29.980 --> 00:31.760]  and aimed a signal at a rooftop in Pasadena.
+[00:32.240 --> 00:33.160]  Tiny, but it worked.
+[00:33.600 --> 00:36.100]  So here's one scenario, not a fact.
+[00:36.580 --> 00:39.300]  The internet, AI, and whole cities running more
+[00:39.300 --> 00:40.140]  and more on sunlight.
+[00:40.720 --> 00:42.540]  Some of it may be collected in orbit
+[00:42.540 --> 00:43.760]  where the sun never sets.
+[00:44.700 --> 00:47.220]  In 1500, the sun decided when you went to sleep.
+[00:47.820 --> 00:50.900]  In 2100, it might decide whether your AI wakes up.
+[00:51.480 --> 00:52.660]  The sun won't notice.
+[00:53.360 --> 00:56.300]  NASA estimates it has another 5 billion years or so.
+[00:57.040 --> 00:59.580]  The question is, what will have learned to do with it?
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+[00:00.000 --> 00:02.680]  You wake up in 1610 beside the River Thames.
+[00:02.980 --> 00:05.220]  It's a cold, misty December morning
+[00:05.800 --> 00:07.120]  and the sun hangs low in dim.
+[00:07.740 --> 00:10.640]  A man named Thomas Harriet points a telescope straight at it.
+[00:11.120 --> 00:13.020]  Don't try this, it can blind you.
+[00:13.620 --> 00:16.080]  Did you know that the first telescope drawing
+[00:16.080 --> 00:18.280]  of sun spots wasn't made by Galileo?
+[00:18.780 --> 00:21.680]  It was this Englishman and he never published it.
+[00:22.200 --> 00:23.280]  Two years later in Florence,
+[00:23.540 --> 00:25.860]  Galileo watches the spots drift across the sun.
+[00:26.660 --> 00:28.900]  Day after day, another astronomer says
+[00:28.900 --> 00:30.540]  they're tiny planets passing in front.
+[00:31.320 --> 00:33.620]  Galileo says, no, they're on the sun itself
+[00:33.620 --> 00:34.540]  and the sun is turning.
+[00:35.360 --> 00:37.360]  In 1613, he publishes his letters.
+[00:37.820 --> 00:39.640]  The perfect heavenly body has blemishes.
+[00:40.360 --> 00:42.320]  Out in the fields, daylight still runs your day.
+[00:42.800 --> 00:44.780]  But for a few people with telescopes,
+[00:45.120 --> 00:47.740]  the sun has become something to watch closely.
+[00:48.360 --> 00:51.400]  And soon someone will ask what's actually inside that light.
+[00:00.000 --> 00:02.480]  You wake up in 1779 in England.
+[00:03.140 --> 00:04.380]  It's a bright summer morning
+[00:04.380 --> 00:06.200]  and the fashionable ladies outside
+[00:06.200 --> 00:08.100]  are hiding from it under parasols.
+[00:08.740 --> 00:10.980]  Did you know that a pale face was so prize
+[00:10.980 --> 00:14.020]  that fashionable women painted theirs with white lead?
+[00:14.600 --> 00:16.540]  One famous beauty, Maria Gunning,
+[00:16.760 --> 00:18.600]  Countess of Coventry died at 27.
+[00:19.280 --> 00:21.220]  Her death was blamed at least in part
+[00:21.220 --> 00:23.020]  on the lead in her face powder.
+[00:23.400 --> 00:25.480]  If you're rich, you stay out of the sun.
+[00:25.920 --> 00:27.420]  If you're poor, you work in it
+[00:27.420 --> 00:28.960]  and your tan tells everyone.
+[00:29.680 --> 00:32.020]  But this summer, the sun is turning into something new,
+[00:32.680 --> 00:33.780]  something to explain.
+[00:34.480 --> 00:36.340]  A Dutch doctor, John Ingenhaus,
+[00:36.940 --> 00:38.900]  runs more than 500 experiments on plants.
+[00:39.340 --> 00:40.620]  He sinks leaves underwater.
+[00:40.860 --> 00:42.500]  In sunlight, they bubble out fresh air.
+[00:42.980 --> 00:43.940]  In the shade, they stop.
+[00:44.360 --> 00:45.640]  Only the green parts do it.
+[00:45.980 --> 00:46.840]  Plants need the sun.
+[00:47.380 --> 00:49.900]  But there's more in that light than leaves can use.
+[00:50.480 --> 00:52.040]  Or your eyes can detect.
+[00:00.000 --> 00:02.660]  You wake up in 1800 near Windsor, it's February.
+[00:03.300 --> 00:05.600]  An astronomer William Herschel splits a sun beam
+[00:05.600 --> 00:08.220]  with a prism and puts thermometers in the colors.
+[00:08.880 --> 00:10.060]  Their bulbs blackened.
+[00:10.660 --> 00:12.220]  Did you know that the hottest spot
+[00:12.220 --> 00:13.840]  wasn't in the rainbow at all?
+[00:14.480 --> 00:17.700]  It was just past the red where nothing was visible.
+[00:18.320 --> 00:20.740]  He'd found infrared, light you can't see.
+[00:21.220 --> 00:22.520]  Now the sun is something you measure,
+[00:23.060 --> 00:24.320]  even where your eyes give up.
+[00:25.040 --> 00:27.220]  Soon, gas lamps push back the night in London.
+[00:27.780 --> 00:31.580]  In 1839 in Paris, a 19-year-old named Edmund Beckerl
+[00:31.580 --> 00:33.880]  shines light on a cell and it makes electricity.
+[00:34.620 --> 00:35.800]  Tiny, but real.
+[00:36.460 --> 00:40.580]  And in 1859, Richard Carrington sees a white flash on the sun.
+[00:41.080 --> 00:44.460]  Within a day, telegraph wires spark and operators get shocks.
+[00:45.040 --> 00:47.060]  The sun can reach down and touch our machine.
+[00:47.760 --> 00:50.440]  Turning that spark into power would take another century.
+[00:51.040 --> 00:54.480]  But first, we'd find out what we'd been eating all along.
+[00:00.000 --> 00:01.780]  Here's the answer, light is fast.
+[00:02.400 --> 00:03.340]  But it's not instant.
+[00:03.940 --> 00:05.940]  It takes about eight minutes and 20 seconds
+[00:05.940 --> 00:08.240]  to cross 150 million kilometers.
+[00:09.140 --> 00:11.480]  Every sunrise you've ever watched was already old.
+[00:12.120 --> 00:13.280]  And the energy inside it,
+[00:13.560 --> 00:15.520]  it was made deep in the sun's core
+[00:16.080 --> 00:18.680]  and it spent a very long time struggling to get out.
+[00:19.380 --> 00:22.500]  NASA estimates about 170,000 years.
+[00:23.180 --> 00:25.240]  When it's set out, nobody on Earth had farms
+[00:25.880 --> 00:27.460]  or cities or writing.
+[00:27.460 --> 00:29.360]  How close was your answer?
+[00:30.080 --> 00:31.760]  Now climb that ladder again with me.
+[00:32.340 --> 00:34.200]  In 1500, the sun was day and night
+[00:34.200 --> 00:37.300]  then something to watch to explain, to measure,
+[00:37.800 --> 00:38.420]  then it was your lunch.
+[00:39.140 --> 00:41.020]  Today it's power, the sun didn't change.
+[00:41.540 --> 00:41.880]  We did.
+[00:42.460 --> 00:44.680]  You have never seen the sun as it is.
+[00:45.640 --> 00:47.880]  Only as it was eight minutes ago.
+[00:00.000 --> 00:01.620]  So what's the next step on the latter?
+[00:02.480 --> 00:05.040]  2100, that morning hasn't happened yet,
+[00:05.340 --> 00:07.040]  but we can follow the evidence.
+[00:07.780 --> 00:11.020]  Every video you watch, every question you ask an AI
+[00:11.600 --> 00:12.720]  runs in a data center.
+[00:13.420 --> 00:16.780]  In 2024, data centers used about one and a half percent
+[00:16.780 --> 00:18.000]  of the world's electricity.
+[00:18.720 --> 00:20.780]  The international energy agency expects that
+[00:20.780 --> 00:22.520]  to more than double by 2030.
+[00:23.140 --> 00:25.460]  That's slightly more than all of Japan uses today.
+[00:26.200 --> 00:28.840]  Meanwhile in 2023, a small Caltech satellite
+[00:28.840 --> 00:31.020]  called Maple, Simp Power wirelessly in space,
+[00:31.520 --> 00:33.400]  and aimed to signal at a rooftop in Pasadena.
+[00:33.880 --> 00:34.920]  Tiny, but it worked.
+[00:35.480 --> 00:37.940]  So here's one scenario, not a fact.
+[00:38.420 --> 00:40.580]  The internet, AI, and whole cities
+[00:40.580 --> 00:42.000]  running more and more on sunlight.
+[00:42.560 --> 00:45.580]  Some of it may be collected in orbit, where the sun never sets.
+[00:46.560 --> 00:49.060]  In 1500, the sun decided when you went to sleep.
+[00:49.660 --> 00:52.760]  In 2100, it might decide whether your AI wakes up.
+[00:53.300 --> 00:54.520]  The sun won't notice.
+[00:55.200 --> 00:58.200]  NASA estimates it has another 5 billion years or so.
+[00:58.900 --> 01:01.420]  The question is, what will have learned to do with it?
+/opt/homebrew/Cellar/openai-whisper/20250625_7/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+[00:00.000 --> 00:01.620]  So what's the next step on the latter?
+[00:02.480 --> 00:05.040]  2100, that morning hasn't happened yet,
+[00:05.360 --> 00:07.040]  but we can follow the evidence.
+[00:07.760 --> 00:11.020]  Every video you watch, every question you ask an AI
+[00:11.600 --> 00:12.720]  runs in a data center.
+[00:13.420 --> 00:16.780]  In 2024, data centers used about one and a half percent
+[00:16.780 --> 00:18.000]  of the world's electricity.
+[00:18.720 --> 00:20.780]  The international energy agency expects that
+[00:20.780 --> 00:22.520]  to more than double by 2030.
+[00:23.140 --> 00:25.460]  That's slightly more than all of Japan uses today.
+[00:26.200 --> 00:29.460]  Meanwhile, in 2023, a small Caltech satellite called Maple
+[00:29.460 --> 00:31.480]  transmitted power wirelessly in space
+[00:31.480 --> 00:33.560]  and aimed to signal at a rooftop in Pasadena.
+[00:34.080 --> 00:34.780]  Tiny, but it worked.
+[00:35.300 --> 00:37.780]  So here's one scenario, not a fact.
+[00:38.260 --> 00:40.980]  The internet, AI, and whole cities running more
+[00:40.980 --> 00:41.820]  and more on sunlight.
+[00:42.380 --> 00:44.220]  Some of it may be collected in orbit
+[00:44.220 --> 00:45.480]  where the sun never sets.
+[00:46.380 --> 00:48.880]  In 1500, the sun decided when you went to sleep.
+[00:49.480 --> 00:52.580]  In 2100, it might decide whether your AI wakes up.
+[00:53.160 --> 00:54.340]  The sun won't notice.
+[00:55.020 --> 00:57.980]  NASA estimates it has another 5 billion years or so.
+[00:58.700 --> 01:01.260]  The question is, what will have learned to do with it?

@@ -12,6 +12,7 @@
 requests==2.34.2                  # transcribe.py
 Pillow==12.3.0                    # gen_thumbnail.py (image handling)
 google-genai==2.14.0              # gen_thumbnail.py (Gemini / Nano Banana Pro)
+numpy==2.2.6                      # insert_pauses.py, cut_characters.py (audio gaps, quiet-point cuts)
 
 # YouTube stats + upload (tools/yt_stats.py, tools/yt_upload.py) — OAuth via .youtube/ token files:
 google-api-python-client==2.198.0

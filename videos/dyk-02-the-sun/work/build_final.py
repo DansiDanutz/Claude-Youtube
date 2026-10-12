@@ -74,6 +74,17 @@ def w(scene, token, nth=1, shift=0.0):
     sys.exit(f'cue "{token}"#{nth} missing in {scene}')
 
 
+def w_end(scene, token, nth=1, shift=0.0):
+    """Absolute time (s) of the END of the nth occurrence of token in a VO scene (a hit after the word, not on it)."""
+    seen = 0
+    for word in VO[scene]['words']:
+        if norm(word['w']) == norm(token):
+            seen += 1
+            if seen == nth:
+                return VO_AT[scene] + word['e'] + shift
+    sys.exit(f'cue end "{token}"#{nth} missing in {scene}')
+
+
 def s(shot, sec):
     return START[shot] + sec
 
@@ -91,13 +102,40 @@ def resolve(when):
         return w(*when[1:])
     if kind == 's':
         return s(*when[1:])
+    if kind == 'we':
+        return w_end(*when[1:])
     if kind == 'after_did':
         return after_did(when[1])
     raise ValueError(when)
 
 
+# voice preflight (2026-10-12): a loud SFX never starts INSIDE a spoken word — same clip families and 30 ms margin as
+# tools/dyk/voice_preflight.py. A cue in the first ONSET_SNAP_S of a word moves to its onset, otherwise to its end
+# (the gap after it), so the sound still marks its visual within a word's length.
+LOUD_SFX = re.compile(r'impact|whoosh|pop|chime|riser|thock|sparkle|stamp|snap|hit|boom')
+WORD_MARGIN_S = 0.03
+ONSET_SNAP_S = 0.1
+
+
+def word_spans():
+    """Absolute (start, end) of every spoken word in the master."""
+    return sorted((VO_AT[sc] + wd['s'], VO_AT[sc] + wd['e']) for sc in VO_AT for wd in VO[sc]['words'])
+
+
+def off_word(t, clip, spans):
+    """t, or the nearest word boundary when a loud clip would start inside a word."""
+    if not LOUD_SFX.search(clip):
+        return t
+    for s0, e0 in spans:
+        if s0 + WORD_MARGIN_S < t < e0 - WORD_MARGIN_S:
+            if 'riser' in clip:           # a riser is timed by its END: start it earlier so it still ends before its payoff
+                return s0
+            return s0 if t - s0 <= ONSET_SNAP_S else e0
+    return t
+
+
 def cue_sheet():
-    """[(time, clip, gain, visual)] from cues.py + ticks + era exits + end screen, time-sorted."""
+    """[(time, clip, gain, visual)] from cues.py + ticks + era exits + end screen, time-sorted; loud clips kept off words."""
     out = [(resolve(when), clip, gain, vis) for when, clip, gain, vis in CUE_TABLE.C]
     for scene, token, n, step_f, nth, shift, vis in CUE_TABLE.T:
         t0 = w(scene, token, nth, shift)
@@ -108,11 +146,21 @@ def cue_sheet():
     out += [(es + 12 / FPS, 'pencil-scribble', 0.30, 'end screen: BEST COMMENT · READ HERE writes on'),
             (es + 18 / FPS, 'ui-toggle-on', 0.24, 'end screen: logo switches on (subscribe slot)'),
             (es + 25 / FPS, 'sparkle-soft', 0.22, 'end screen: logo glow')]
-    return sorted(out)
+    spans = word_spans()
+    return sorted((round(off_word(t, clip, spans), 3), clip, gain, vis) for t, clip, gain, vis in out)
 
 
 SHEET = cue_sheet()
 CUES = [(t, clip, gain) for t, clip, gain, _ in SHEET]
+
+
+CUESHEET = os.path.join(WORK, 'cuesheet.json')
+
+
+def write_cuesheet(path=CUESHEET):
+    """The resolved cue list the mix uses, [{t, clip, gain}] in master seconds — read by tools/dyk/voice_preflight.py."""
+    json.dump([{'t': round(t, 3), 'clip': clip, 'gain': gain} for t, clip, gain in CUES], open(path, 'w'), indent=0)
+    return path
 
 
 def run(args):
@@ -153,6 +201,10 @@ def rm(*paths):
 
 
 def main():
+    write_cuesheet()
+    if '--cuesheet-only' in sys.argv:
+        print('cuesheet ->', CUESHEET, f'({len(CUES)} cues)')
+        return
     os.makedirs(BUS, exist_ok=True)
     fit = narration_fit_problems(SHOTS, VO)
     if fit:
@@ -190,7 +242,7 @@ def main():
     rm(*[g[0] for g in groups])
     sfx = os.path.join(BUS, 'sfx.wav')
     run(['-i', sfx_raw, '-i', voice, '-filter_complex',
-         '[0:a][1:a]sidechaincompress=threshold=0.04:ratio=3:attack=5:release=220:makeup=1[out]',
+         '[0:a][1:a]sidechaincompress=threshold=0.03:ratio=5:attack=5:release=220:makeup=1[out]',
          '-map', '[out]', '-ar', '48000', '-ac', '2', sfx])
     rm(sfx_raw)
     print(f'{len(CUES)} sfx cues in {len(groups)} groups')

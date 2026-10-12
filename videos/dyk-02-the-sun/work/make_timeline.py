@@ -9,7 +9,7 @@ WORK = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(WORK, 'narration', 'durations.json')))
 FPS = 30
 INTRO_S = 7.5          # DytSting (4.5 s) + episode title card — fixed, no VO
-END_SCREEN_S = 15.0    # end screen after the outro line (YouTube end-screen elements)
+END_SCREEN_S = 16.6    # 15 s of FULL end screen + its 1.0 s build-in + the 0.6 s final fade (reviewer 2026-10-12)
 
 
 def frames(sec):
@@ -26,17 +26,17 @@ def shot(lines, lead, gap=0.7, tail=0.8):
 
 
 TL = {
-    'SuHook': shot(['su01-hook', 'su02-question'], lead=0.4, gap=0.75, tail=0.9),
+    'SuHook': shot(['su01-hook', 'su02-question'], lead=0.6, gap=0.75, tail=0.9),
     'SuIntro': [INTRO_S, {}],
-    'SuWelcome': shot(['su00-welcome'], lead=0.5, tail=0.8),
-    'SuPromise': shot(['su03-promise'], lead=0.5, tail=0.8),
+    'SuWelcome': shot(['su00-welcome'], lead=0.6, tail=0.8),
+    'SuPromise': shot(['su03-promise'], lead=0.6, tail=0.8),
 }
 for sid, vo in [('Su1500', 'su04-1500'), ('Su1610', 'su05-1610'), ('Su1700', 'su06-1700'), ('Su1800', 'su07-1800'),
                 ('Su1900', 'su08-1900'), ('Su2000', 'su09-2000')]:
     TL[sid] = shot([vo], lead=0.8, tail=0.9)
 TL['SuReveal'] = shot(['su10-reveal'], lead=0.8, tail=0.9)
 TL['Su2100'] = shot(['su11-2100'], lead=0.8, tail=0.9)
-TL['SuClose'] = shot(['su12-close'], lead=0.5, tail=1.4)       # intentional question beat
+TL['SuClose'] = shot(['su12-close'], lead=0.6, tail=1.4)       # intentional question beat
 # outro: line, 24-frame hand-off, then the 15 s end screen; the end-screen line starts 14 frames in
 out_end_f = frames(0.6 + D['su13-outro'])
 es_f = out_end_f + 24

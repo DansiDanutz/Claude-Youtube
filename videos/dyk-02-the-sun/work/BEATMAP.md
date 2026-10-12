@@ -2,545 +2,636 @@
 
 One row per second of the master: words → visual event → SFX. Source of truth: `cues.py` (the same table `build_final.py` mixes), `timeline.json`, `remotion/src/shots/dyk-02/vo.json`.
 
-Total 530.1 s · 445 cues · gaps ≥ 2.6 s between visual events while narrating: 5
+Total 616.7 s · 619 cues · gaps ≥ 2.0 s between visual events while narrating: 10
 
 ## Gaps to check (continuous motion must cover them)
-- 2:16.2 → 2:18.9 (2.7 s) in Su1610 — motion: mist drift, spots drifting across the turning Sun, Day Clock drawing
-- 3:09.5 → 3:12.2 (2.8 s) in Su1700 — motion: parasol opening, Week Strip drawing, rainbow fan opening
-- 3:52.3 → 3:54.9 (2.6 s) in Su1800 — motion: mercury rising, spectrum, sparks
-- 5:46.3 → 5:49.0 (2.6 s) in Su2000 — motion: probe orbit, corona, share bar counting
-- 6:11.1 → 6:13.7 (2.7 s) in SuReveal — motion: photon travelling, random walk drawing, 170,000 counter
+- 0:45.9 → 0:48.0 (2.0 s) in SuWelcome — motion: (check)
+- 2:44.5 → 2:46.6 (2.1 s) in Su1610 — motion: mist drift, spots drifting across the turning Sun, Day Clock drawing
+- 2:53.1 → 2:55.5 (2.4 s) in Su1610 — motion: mist drift, spots drifting across the turning Sun, Day Clock drawing
+- 3:53.6 → 3:55.7 (2.1 s) in Su1700 — motion: parasol opening, Week Strip drawing, rainbow fan opening
+- 4:37.4 → 4:39.5 (2.0 s) in Su1800 — motion: mercury rising, spectrum, sparks
+- 4:48.2 → 4:50.7 (2.5 s) in Su1800 — motion: mercury rising, spectrum, sparks
+- 7:20.4 → 7:22.5 (2.0 s) in SuReveal — motion: photon travelling, random walk drawing, 170,000 counter
+- 7:51.1 → 7:53.4 (2.3 s) in SuReveal — motion: photon travelling, random walk drawing, 170,000 counter
+- 7:53.4 → 7:55.5 (2.1 s) in SuReveal — motion: photon travelling, random walk drawing, 170,000 counter
+- 7:55.5 → 7:59.0 (3.5 s) in SuReveal — motion: photon travelling, random walk drawing, 170,000 counter
 
 | t | shot | words | visual event (SFX) |
 |---|---|---|---|
-| 0:00 | SuHook | It is eight o'clock. | sunrise + clock 08:00:00 on screen (wind-soft); clock 08:00:00 pulses (clock-tick-soft) |
-| 0:01 | SuHook | The Sun is |  |
-| 0:02 | SuHook | warm on your face. | silhouette on the horizon catches the light (warm-shimmer) |
-| 0:03 | SuHook | But that light |  |
-| 0:04 | SuHook | left the Sun | "THIS LIGHT LEFT THE SUN AT" card (pop-reveal) |
-| 0:05 | SuHook | eight minutes and twenty | photon leaves the Sun; digits roll back (ui-send) |
-| 0:06 | SuHook | seconds ago. | digits land on 07:51:40; label 8 MIN 20 S (stamp-hit) |
-| 0:07 | SuHook | If the Sun vanished | the Sun goes out (dashed outline) (whoosh-reverse) |
-| 0:08 | SuHook | right now, you would not |  |
-| 0:09 | SuHook | know. | YOU WOULD NOT KNOW FOR + countdown (clock-tick-soft) |
-| 0:10 | SuHook | We have celebrated | verb cards scene (whoosh-soft); verb card: celebrated (pop-reveal) |
-| 0:11 | SuHook | the Sun. Hidden | verb card: hidden (pop-reveal) |
-| 0:12 | SuHook | from it. Split | verb card: split (pop-reveal) |
-| 0:13 | SuHook | it. Chased | verb card: chased (pop-reveal) |
-| 0:14 | SuHook | it. And even touched | verb card: touched (pop-reveal) |
-| 0:15 | SuHook | it. And yet... |  |
-| 0:16 | SuHook | did you | DID YOU KNOW THAT… line (ui-toggle-on) |
-| 0:17 | SuHook | know that you have never |  |
-| 0:18 | SuHook | once seen the Sun as | (riser into the payoff) (riser-soft) |
-| 0:19 | SuHook | it is... |  |
-| 0:20 | SuHook | right now? | "as it is right now?" lands (impact-deep-soft) |
-| 0:21 | SuHook |  | sting: hum (scan-hum) |
-| 0:22 | SuIntro |  | bulb switches on (ui-toggle-on); glow + sparks (sparkle-soft); logo slides, wordmark (whoosh-soft) |
-| 0:23 | SuIntro |  | DID (knock-solid); YOU (knock-solid); KNOW (knock-solid); THAT? (impact-deep-soft) |
-| 0:24 | SuIntro |  | tagline (chime-magic) |
-| 0:25 | SuIntro |  |  |
-| 0:26 | SuIntro |  | episode card: EPISODE 02 · The Sun (whoosh-soft) |
-| 0:27 | SuIntro |  |  |
-| 0:28 | SuIntro |  |  |
-| 0:29 | SuIntro | Welcome | logo switches on (first frames) (ui-toggle-on) |
-| 0:30 | SuWelcome | back to Did You Know | wordmark builds (pop-reveal) |
-| 0:31 | SuWelcome | That. Episode | wordmark complete (sparkle-soft); NO. 02 · THE SUN pill (pop-reveal) |
-| 0:32 | SuWelcome | two. You |  |
-| 0:33 | SuWelcome | know the rule. | lockup docks; THE RULE label (whoosh-soft) |
-| 0:34 | SuWelcome | The light on your face | card: THE LIGHT ON YOUR FACE (pop-reveal) |
-| 0:35 | SuWelcome | is eight minutes old. | "8 min old" (ui-click-soft) |
-| 0:36 | SuWelcome | But the energy | card: THE ENERGY INSIDE IT (pop-reveal) |
-| 0:37 | SuWelcome | inside it? | "? years old" (sparkle-soft) |
-| 0:38 | SuWelcome | How old is that? | "? years old" pulses (pop-reveal) |
-| 0:39 | SuWelcome | Guess now, | rule step: guess (stamp-hit) |
-| 0:40 | SuWelcome | in the comments. |  |
-| 0:41 | SuWelcome | Then stay to the end, | rule step: stay (stamp-hit) |
-| 0:42 | SuWelcome | and find out if you |  |
-| 0:43 | SuWelcome | were correct. | rule step: correct (stamp-hit) |
-| 0:44 | SuWelcome |  | cut to the experiment (whoosh-wind) |
-| 0:45 | SuPromise | Here is the experiment. | THE EXPERIMENT title (impact-soft) |
-| 0:46 | SuPromise | Seven | title docks; "Seven mornings." (whoosh-soft) |
-| 0:47 | SuPromise | mornings, from fifteen | the seven years build (1/7) (ui-click-soft) |
-| 0:48 | SuPromise | hundred to twenty | the seven years build (2/7) (ui-click-soft); the seven years build (3/7) (ui-click-soft); the seven years build (4/7) (ui-click-soft) |
-| 0:49 | SuPromise | one hundred. | the seven years build (5/7) (ui-click-soft); the seven years build (6/7) (ui-click-soft) |
-| 0:50 | SuPromise | In each one, you | the seven years build (7/7) (ui-click-soft) |
-| 0:51 | SuPromise | wake up as someone | seven people light up (1/7) (ui-click-soft); seven people light up (2/7) (ui-click-soft); seven people light up (3/7) (ui-click-soft) |
-| 0:52 | SuPromise | else, under the same | seven people light up (4/7) (ui-click-soft); seven people light up (5/7) (ui-click-soft); one Sun rises over everyone (warm-shimmer) |
-| 0:53 | SuPromise | Sun. The | seven people light up (6/7) (ui-click-soft); seven people light up (7/7) (ui-click-soft) |
-| 0:54 | SuPromise | Sun will not change. | THE SUN · UNCHANGED (lock) (knock-solid) |
-| 0:55 | SuPromise | You will. | the people change colour (sparkle-soft) |
-| 0:56 | SuPromise | And by |  |
-| 0:57 | SuPromise | the end, you will know how |  |
-| 0:58 | SuPromise | old that light really | "How old is that light, really?" (piano-a-min) |
-| 0:59 | SuPromise | is. |  |
-| 1:00 | SuPromise |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 1:01 | Su1500 | You wake up in fifteen | gold underline sweeps under the year (whoosh-soft) |
-| 1:02 | Su1500 | hundred, in London. | place line: London (ui-click-soft) |
-| 1:03 | Su1500 |  |  |
-| 1:04 | Su1500 | It is Midsummer Eve, |  |
-| 1:05 | Su1500 | the shortest night | header docks; night street + MIDSUMMER EVE chip (pop-reveal); THE SHORTEST NIGHT chip (ui-click-soft) |
-| 1:06 | Su1500 | of the year, and |  |
-| 1:07 | Su1500 | the streets are glowing | house windows light up (ui-click-soft) |
-| 1:08 | Su1500 | with firelight. | bonfires ignite (warm-shimmer) |
-| 1:09 | Su1500 | Did you know | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 1:10 | Su1500 | that almost everyone | (chime after "that") (chime-magic) |
-| 1:11 | Su1500 | you will ever meet |  |
-| 1:12 | Su1500 | believes the Sun goes | card: "believes" (ui-click-soft) |
-| 1:13 | Su1500 | around the Earth? | card: "the Sun goes around the Earth." (pop-reveal) |
-| 1:14 | Su1500 | It is what |  |
-| 1:15 | Su1500 | Ptolemy taught, | card: TAUGHT BY PTOLEMY line (page-flip) |
-| 1:16 | Su1500 | about fourteen hundred | card: · ~1,400 YEARS EARLIER (ui-click-soft) |
-| 1:17 | Su1500 | years ago. |  |
-| 1:18 | Su1500 | Your day begins when | Day Clock 1500 in (whoosh-soft); Day Clock segments draw (1/6) (ui-click-soft) |
-| 1:19 | Su1500 | the Sun rises, | Day Clock segments draw (2/6) (ui-click-soft); Day Clock segments draw (3/6) (ui-click-soft); Day Clock segments draw (4/6) (ui-click-soft) |
-| 1:20 | Su1500 | and ends when it | Day Clock segments draw (5/6) (ui-click-soft); Day Clock segments draw (6/6) (ui-click-soft) |
-| 1:21 | Su1500 | sets. But | highlight moves to supper/sunset (pop-reveal) |
-| 1:22 | Su1500 | tonight, nobody sleeps. | TONIGHT · NOBODY SLEEPS (stamp-hit) |
-| 1:23 | Su1500 | Every door |  |
-| 1:24 | Su1500 | is hung with green birch | back to the street (whoosh-soft); green birch over the doors + chip (ui-click-soft) |
-| 1:25 | Su1500 | and yellow flowers. | yellow flowers + ST JOHN'S WORT chip (ui-click-soft) |
-| 1:26 | Su1500 |  |  |
-| 1:27 | Su1500 | Glass lamps burn all | glass lamps light + chip (sparkle-soft) |
-| 1:28 | Su1500 | night. Neighbours share |  |
-| 1:29 | Su1500 | bread and drink beside | tables with bread and drink + chip (pop-reveal) |
-| 1:30 | Su1500 | the bonfires. | the bonfires flare (launch-thump) |
-| 1:31 | Su1500 | A London writer, |  |
-| 1:32 | Su1500 | John Stow, later explained | Stow quote card (page-flip) |
-| 1:33 | Su1500 | why: a great | quote part 1 (ui-click-soft) |
-| 1:34 | Su1500 | fire, he wrote, |  |
-| 1:35 | Su1500 | could purge the infection | quote part 2 (gold) (warm-shimmer) |
-| 1:36 | Su1500 | of the air. |  |
-| 1:37 | Su1500 | Far away, a | orbit diagram: Earth at the centre (whoosh-soft) |
-| 1:38 | Su1500 | young Polish astronomer named |  |
-| 1:39 | Su1500 | Copernicus is studying | Copernicus card (pop-reveal) |
-| 1:40 | Su1500 | the sky. In | stars twinkle around the diagram (sparkle-soft) |
-| 1:41 | Su1500 | fifteen forty three, | 1543 · De revolutionibus card (page-flip) |
-| 1:42 | Su1500 | the year he dies, | "· THE YEAR HE DIES" (ui-click-soft) |
-| 1:43 | Su1500 | his book puts the | the Sun moves toward the centre (whoosh-soft) |
-| 1:44 | Su1500 | Sun at the centre. | Sun at the centre; label flips to COPERNICUS (impact-soft) |
-| 1:45 | Su1500 | And within seventy | cliffhanger band part 1 (piano-a-min) |
-| 1:46 | Su1500 | years, a new instrument | telescope + band part 2 (pop-reveal) |
-| 1:47 | Su1500 | will show |  |
-| 1:48 | Su1500 | that the Sun |  |
-| 1:49 | Su1500 | is not perfect. | band part 3 (ui-click-soft) |
-| 1:50 | Su1500 |  | era exit pull-in (whoosh-reverse) |
-| 1:51 | Su1500 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 1:52 | Su1610 | You wake up in sixteen | gold underline sweeps under the year (whoosh-soft) |
-| 1:53 | Su1610 | ten, beside | place line: Beside the River Thames (ui-click-soft) |
-| 1:54 | Su1610 | the River Thames. |  |
-| 1:55 | Su1610 | It is a misty | mist drifts over the header (wind-soft) |
-| 1:56 | Su1610 | December morning, and | header docks; Thames scene (whoosh-soft); DECEMBER · MORNING MIST chip (ui-click-soft) |
-| 1:57 | Su1610 | the Sun hangs low |  |
-| 1:58 | Su1610 | and dim. | the low Sun dims (scan-hum) |
-| 1:59 | Su1610 | Thomas Harriot points | Harriot on the bank (pop-reveal) |
-| 2:00 | Su1610 | a telescope at | he raises the telescope (ui-click-soft) |
-| 2:01 | Su1610 | it, and draws | notebook; spots drawn one by one (pencil-scribble) |
-| 2:02 | Su1610 | what he sees. |  |
-| 2:03 | Su1610 | Do not try this. | NEVER LOOK AT THE SUN warning (knock-solid) |
-| 2:04 | Su1610 | Looking at the Sun |  |
-| 2:05 | Su1610 | can blind you. | warning pulses (trap-snap) |
-| 2:06 | Su1610 | Did you know | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 2:07 | Su1610 | that the first telescope | (chime after "that") (chime-magic) |
-| 2:08 | Su1610 | drawing of sunspots | card: "sunspots" turns gold (ui-click-soft) |
-| 2:09 | Su1610 | was made not |  |
-| 2:10 | Su1610 | by Galileo, | card: "was made not by Galileo," (ui-click-soft) |
-| 2:11 | Su1610 | but by this Englishman, | card: "an Englishman, Thomas Harriot" (pop-reveal) |
-| 2:12 | Su1610 | and |  |
-| 2:13 | Su1610 | he never published it? | card: "and he never published it" (stamp-hit) |
-| 2:14 | Su1610 | Two years |  |
-| 2:15 | Su1610 | later, in Florence, | Florence: the spotted Sun; 1612 label (whoosh-soft); · FLORENCE (ui-click-soft) |
-| 2:16 | Su1610 | Galileo watched | · GALILEO (ui-click-soft) |
-| 2:17 | Su1610 | the spots drift across |  |
-| 2:18 | Su1610 | the Sun, day | DAY 1 · DAY 2 · DAY 3 (1/3) (ui-click-soft) |
-| 2:19 | Su1610 | after day. | DAY 1 · DAY 2 · DAY 3 (2/3) (ui-click-soft); DAY 1 · DAY 2 · DAY 3 (3/3) (ui-click-soft) |
-| 2:20 | Su1610 | A rival said they were | A RIVAL: (ui-click-soft) |
-| 2:21 | Su1610 | tiny planets passing | little planets pass in front + text (pop-reveal) |
-| 2:22 | Su1610 | in front. Galileo |  |
-| 2:23 | Su1610 | disagreed. | struck through; GALILEO: NO. (stamp-hit) |
-| 2:24 | Su1610 | The spots were on the Sun |  |
-| 2:25 | Su1610 | itself, and the Sun | ON THE SUN ITSELF (pop-reveal) |
-| 2:26 | Su1610 | was turning. In | THE SUN IS TURNING arrow (whoosh-soft) |
-| 2:27 | Su1610 | sixteen thirteen, | Rome 1613 book card (page-flip) |
-| 2:28 | Su1610 | he published his letters. | book card: · HIS LETTERS ON SUNSPOTS (ui-click-soft) |
-| 2:29 | Su1610 | The perfect | THE PERFECT HEAVENS (ui-click-soft) |
-| 2:30 | Su1610 | heavenly body had |  |
-| 2:31 | Su1610 | blemishes. | BLEMISHED (stamp-hit) |
-| 2:32 | Su1610 | For most people, the day | Day Clock 1610 in (whoosh-soft); Day Clock segments draw (1/5) (ui-click-soft); Day Clock segments draw (2/5) (ui-click-soft); Day Clock segments draw (3/5) (ui-click-soft) |
-| 2:33 | Su1610 | still runs on daylight | Day Clock segments draw (4/5) (ui-click-soft); Day Clock segments draw (5/5) (ui-click-soft); highlight moves to work by daylight (pop-reveal) |
-| 2:34 | Su1610 | alone. But |  |
-| 2:35 | Su1610 | for a few, the Sun | FOR A FEW (ui-click-soft) |
-| 2:36 | Su1610 | has become something you |  |
-| 2:37 | Su1610 | can measure. And | THE SUN BECOMES SOMETHING TO MEASURE (chime-reward) |
-| 2:38 | Su1610 | soon, one simple | cliffhanger band part 1 (piano-a-min) |
-| 2:39 | Su1610 | glass prism | prism + white beam; band part 2 (pop-reveal) |
-| 2:40 | Su1610 | will break that |  |
-| 2:41 | Su1610 | light apart. | the beam breaks into colours; band part 3 (sparkle-soft); era exit pull-in (whoosh-reverse) |
-| 2:42 | Su1610 |  | era cut: YOU WAKE UP IN · year (whoosh-wind) |
-| 2:43 | Su1700 | You wake | year slams in (impact-soft) |
-| 2:44 | Su1700 | up in seventeen | gold underline sweeps under the year (whoosh-soft) |
-| 2:45 | Su1700 | fifty two, in London. | place line: London (ui-click-soft) |
-| 2:46 | Su1700 | Two |  |
-| 2:47 | Su1700 | Irish sisters, | header docks; two oval portraits (pop-reveal) |
-| 2:48 | Su1700 | the Gunnings, are the most | "The Gunning sisters" (ui-click-soft) |
-| 2:49 | Su1700 | talked about faces in | MOST TALKED-ABOUT FACES chip (pop-reveal) |
-| 2:50 | Su1700 | town. Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 2:51 | Su1700 | you know that a pale face | (chime after "that") (chime-magic) |
-| 2:52 | Su1700 | was so prized |  |
-| 2:53 | Su1700 | that fashionable | card: "that fashionable women painted theirs with" (ui-click-soft) |
-| 2:54 | Su1700 | women painted |  |
-| 2:55 | Su1700 | theirs with white | card: "white lead." (trap-snap) |
-| 2:56 | Su1700 | lead? Maria |  |
-| 2:57 | Su1700 | Gunning married the Earl | Maria Gunning's card (whoosh-soft); 1752 · MARRIES chip (ui-click-soft) |
-| 2:58 | Su1700 | of Coventry that spring. | THE EARL OF COVENTRY chip (ui-click-soft) |
-| 2:59 | Su1700 | She |  |
-| 3:00 | Su1700 | died at twenty seven, | DIES AT 27 (stamp-hit) |
-| 3:01 | Su1700 | and her death was blamed, | "Her death was blamed…" line (ui-click-soft) |
-| 3:02 | Su1700 | at least in | "at least in part, on the" (ui-click-soft) |
-| 3:03 | Su1700 | part, on |  |
-| 3:04 | Su1700 | the lead in her face powder. | "lead in her face powder" (gold) (knock-solid) |
-| 3:05 | Su1700 | If |  |
-| 3:06 | Su1700 | you are rich, | IF YOU ARE RICH + the lady (whoosh-soft) |
-| 3:07 | Su1700 | you stay out of the Sun. | sun + rays over the lady (ui-click-soft) |
-| 3:08 | Su1700 | You walk |  |
-| 3:09 | Su1700 | under a parasol, | the parasol opens; SHADE caption (warm-shimmer) |
-| 3:10 | Su1700 | the latest fashion. |  |
-| 3:11 | Su1700 | If you |  |
-| 3:12 | Su1700 | are poor, you work | IF YOU ARE POOR + Week Strip (pop-reveal); Week Strip bars draw (1/7) (ui-click-soft); Week Strip bars draw (2/7) (ui-click-soft) |
-| 3:13 | Su1700 | outside from dawn | Week Strip bars draw (3/7) (ui-click-soft); Week Strip bars draw (4/7) (ui-click-soft) |
-| 3:14 | Su1700 | to dusk, | Week Strip bars draw (5/7) (ui-click-soft); Week Strip bars draw (6/7) (ui-click-soft); Week Strip bars draw (7/7) (ui-click-soft) |
-| 3:15 | Su1700 | and your tan tells | Saturday glows: IN THE SUN (sparkle-soft) |
-| 3:16 | Su1700 | everyone. |  |
-| 3:17 | Su1700 | Half a century earlier, | Newton scene: HALF A CENTURY EARLIER + prism and white beam (whoosh-soft) |
-| 3:18 | Su1700 | Isaac |  |
-| 3:19 | Su1700 | Newton had shown that | Isaac Newton · OPTICKS 1704 (pop-reveal) |
-| 3:20 | Su1700 | sunlight is not white at | "sunlight is not white" (ui-click-soft) |
-| 3:21 | Su1700 | all. Pass |  |
-| 3:22 | Su1700 | it through a prism, | the prism glints (sparkle-soft) |
-| 3:23 | Su1700 | and it opens | the rainbow fan opens (warm-shimmer) |
-| 3:24 | Su1700 | into every colour |  |
-| 3:25 | Su1700 | of the rainbow. |  |
-| 3:26 | Su1700 | Red at one end. | RED label (ui-click-soft) |
-| 3:27 | Su1700 | Violet at | VIOLET label (ui-click-soft) |
-| 3:28 | Su1700 | the other. And |  |
-| 3:29 | Su1700 | beyond the red, | dashed band past red + cliffhanger part 1 (piano-a-min) |
-| 3:30 | Su1700 | there is a light | band part 2: "there is a light" (ui-click-soft) |
-| 3:31 | Su1700 | our eyes cannot |  |
-| 3:32 | Su1700 | detect. | band part 3: "our eyes cannot detect." (ui-click-soft); era exit pull-in (whoosh-reverse) |
-| 3:33 | Su1700 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 3:34 | Su1800 | You wake up |  |
-| 3:35 | Su1800 | in eighteen hundred, near | gold underline sweeps under the year (whoosh-soft) |
-| 3:36 | Su1800 | Windsor, in England. | place line: Slough, near Windsor (ui-click-soft) |
-| 3:37 | Su1800 | An astronomer, | header docks (whoosh-soft) |
-| 3:38 | Su1800 | William Herschel, | William Herschel title (pop-reveal) |
-| 3:39 | Su1800 | has set a prism in | prism + white beam (ui-click-soft) |
-| 3:40 | Su1800 | a sunbeam, | the spectrum opens (warm-shimmer) |
-| 3:41 | Su1800 | with thermometers whose | three thermometers appear (ui-click-soft) |
-| 3:42 | Su1800 | bulbs are blackened. | thermometer bulbs turn black; mercury rises (pop-reveal) |
-| 3:43 | Su1800 | Did you know | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 3:44 | Su1800 | that the hottest spot | (chime after "that") (chime-magic) |
-| 3:45 | Su1800 | was not |  |
-| 3:46 | Su1800 | in the rainbow at all, | card: "was not in the rainbow at all, but" (ui-click-soft) |
-| 3:47 | Su1800 | but just |  |
-| 3:48 | Su1800 | past the red, | card: "just past the red" (pop-reveal) |
-| 3:49 | Su1800 | where nothing | card: "— where there was nothing to see." (ui-click-soft) |
-| 3:50 | Su1800 | was visible? |  |
-| 3:51 | Su1800 | He had found | back to the bench; beyond-red thermometer climbs (whoosh-soft) |
-| 3:52 | Su1800 | infrared. | "infrared" lands; dashed band lights (impact-soft) |
-| 3:53 | Su1800 | The Sun was sending |  |
-| 3:54 | Su1800 | more than our eyes | MORE THAN OUR EYES CAN CATCH (pop-reveal) |
-| 3:55 | Su1800 | could catch. |  |
-| 3:56 | Su1800 | Within a few years, | Day Clock 1800s in (whoosh-soft); Day Clock segments draw (1/5) (ui-click-soft); Day Clock segments draw (2/5) (ui-click-soft) |
-| 3:57 | Su1800 | gas lamps will | Day Clock segments draw (3/5) (ui-click-soft); 1807 · PALL MALL · GAS STREET LAMPS chip (pop-reveal); Day Clock segments draw (4/5) (ui-click-soft) |
-| 3:58 | Su1800 | push back the night. | Day Clock segments draw (5/5) (ui-click-soft); highlight: evening under gas light (pop-reveal) |
-| 3:59 | Su1800 | You no longer have |  |
-| 4:00 | Su1800 | to stop when the Sun | NO NEED TO STOP (ui-click-soft) |
-| 4:01 | Su1800 | goes down. | NO NEED TO STOP AT SUNSET (ui-click-soft) |
-| 4:02 | Su1800 | In eighteen thirty nine, | Becquerel's cell; 1839 · PARIS (whoosh-soft) |
-| 4:03 | Su1800 | in Paris, |  |
-| 4:04 | Su1800 | a nineteen year | Edmond Becquerel + AGE 19 (pop-reveal) |
-| 4:05 | Su1800 | old named Edmond |  |
-| 4:06 | Su1800 | Becquerel shines light | light beam onto the cell (warm-shimmer) |
-| 4:07 | Su1800 | on a cell, |  |
-| 4:08 | Su1800 | and it makes electricity. | the meter swings; "light → electricity" (glitch-zap) |
-| 4:09 | Su1800 | And in |  |
-| 4:10 | Su1800 | eighteen fifty nine, | Carrington scene (whoosh-soft); 1 SEPT 1859 chip (ui-click-soft) |
-| 4:11 | Su1800 | Richard Carrington | Richard Carrington (ui-click-soft) |
-| 4:12 | Su1800 | sees a white flash on | white flash on the Sun + A WHITE FLASH chip (impact-deep-soft) |
-| 4:13 | Su1800 | the Sun. |  |
-| 4:14 | Su1800 | Within a day, telegraph | telegraph poles (pop-reveal) |
-| 4:15 | Su1800 | wires spark, | sparks on the wires (glitch-zap) |
-| 4:16 | Su1800 | and operators get |  |
-| 4:17 | Su1800 | shocks. The | TELEGRAPH OPERATORS GET SHOCKS (stamp-hit) |
-| 4:18 | Su1800 | Sun can reach down |  |
-| 4:19 | Su1800 | and touch our machines. | THE SUN CAN TOUCH OUR MACHINES (warm-shimmer) |
-| 4:20 | Su1800 | It would take | cliffhanger band part 1 (piano-a-min) |
-| 4:21 | Su1800 | another century | band part 2: "century" (ui-click-soft) |
-| 4:22 | Su1800 | to turn that tiny spark | band part 2: "to turn that tiny spark" (ui-click-soft) |
-| 4:23 | Su1800 | into power. | band part 3: "into power." (ui-click-soft) |
-| 4:24 | Su1800 |  | era exit pull-in (whoosh-reverse) |
-| 4:25 | Su1800 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 4:26 | Su1900 | You wake up in nineteen twenty | gold underline sweeps under the year (whoosh-soft) |
-| 4:27 | Su1900 | eight, on |  |
-| 4:28 | Su1900 | a crowded American beach. | place line: A crowded American beach (ui-click-soft) |
-| 4:29 | Su1900 | Everyone |  |
-| 4:30 | Su1900 | is lying in the Sun, | header docks; sunbathers + umbrellas appear (pop-reveal); the sea moves (wind-soft) |
-| 4:31 | Su1900 | on purpose. | ON PURPOSE (stamp-hit) |
-| 4:32 | Su1900 | Once, | ONCE: A TAN = (ui-click-soft) |
-| 4:33 | Su1900 | a tan meant you |  |
-| 4:34 | Su1900 | laboured in the fields. | FIELD WORK (ui-click-soft) |
-| 4:35 | Su1900 | Now it | NOW: A TAN = (pop-reveal) |
-| 4:36 | Su1900 | means you can afford a day | A DAY OFF (ui-click-soft) |
-| 4:37 | Su1900 | off. Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 4:38 | Su1900 | you know that the famous | (chime after "that") (chime-magic) |
-| 4:39 | Su1900 | story, |  |
-| 4:40 | Su1900 | that Coco Chanel | card: "— that Coco Chanel started the suntan craze —" (ui-click-soft) |
-| 4:41 | Su1900 | started the suntan |  |
-| 4:42 | Su1900 | craze, is | card: "started the suntan craze —" (ui-click-soft) |
-| 4:43 | Su1900 | probably a myth? | card: " is " (ui-click-soft); card: "probably a myth." (stamp-hit) |
-| 4:44 | Su1900 | A historian |  |
-| 4:45 | Su1900 | traced it to an unsigned | the magazine scene (whoosh-soft) |
-| 4:46 | Su1900 | magazine article | magazine straightens; UNSIGNED ARTICLE chip (page-flip) |
-| 4:47 | Su1900 | from nineteen seventy one. | 1971 stamp on the magazine (stamp-hit) |
-| 4:48 | Su1900 | The real |  |
-| 4:49 | Su1900 | reason was work. | The real reason: work. (impact-soft) |
-| 4:50 | Su1900 | As jobs moved | Week Strip 1928 office week (whoosh-soft); Week Strip bars draw (+ INDOORS chip) (1/7) (ui-click-soft) |
-| 4:51 | Su1900 | into factories and offices, | Week Strip bars draw (+ INDOORS chip) (2/7) (ui-click-soft); Week Strip bars draw (+ INDOORS chip) (3/7) (ui-click-soft); Week Strip bars draw (+ INDOORS chip) (4/7) (ui-click-soft) |
-| 4:52 | Su1900 | a tan became | Week Strip bars draw (+ INDOORS chip) (5/7) (ui-click-soft); Week Strip bars draw (+ INDOORS chip) (6/7) (ui-click-soft) |
-| 4:53 | Su1900 | the badge of leisure. | Week Strip bars draw (+ INDOORS chip) (7/7) (ui-click-soft); Sunday glows: THE BEACH; badge of leisure (sparkle-soft) |
-| 4:54 | Su1900 | Then, in nineteen | Bell Labs scene: the cell outline (whoosh-soft); 25 APRIL 1954 chip (ui-click-soft) |
-| 4:55 | Su1900 | fifty four, at Bell | BELL LABS chip (pop-reveal) |
-| 4:56 | Su1900 | Laboratories, three | three scientists (ui-click-soft) |
-| 4:57 | Su1900 | scientists build a silicon | the silicon cell (pop-reveal) |
-| 4:58 | Su1900 | cell that |  |
-| 4:59 | Su1900 | turns about six percent | ≈ 6 % counts up (chime-reward) |
-| 5:00 | Su1900 | of sunlight into electricity. | the cell glows; → into electricity (warm-shimmer) |
-| 5:01 | Su1900 |  |  |
-| 5:02 | Su1900 | Four years later, a | Vanguard scene: Earth (whoosh-soft) |
-| 5:03 | Su1900 | tiny satellite called | Vanguard 1 appears in orbit (pop-reveal) |
-| 5:04 | Su1900 | Vanguard One runs a radio | 1958 · VANGUARD 1 chip (ui-click-soft); radio waves + chip (scan-hum) |
-| 5:05 | Su1900 | on sunlight. |  |
-| 5:06 | Su1900 | It is still circling | STILL IN ORBIT TODAY (chime-magic) |
-| 5:07 | Su1900 | the Earth today. |  |
-| 5:08 | Su1900 | We had learned to live | cliffhanger band part 1 (piano-a-min) |
-| 5:09 | Su1900 | on sunlight. |  |
-| 5:10 | Su1900 | Now, we would fly | band part 2: "Now," (ui-click-soft); probe sets off toward the Sun (launch-thump) |
-| 5:11 | Su1900 | straight into | band part 3 (ui-click-soft) |
-| 5:12 | Su1900 | it. | era exit pull-in (whoosh-reverse) |
-| 5:13 | Su1900 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 5:14 | Su2000 | You wake up today. | gold underline sweeps under the year (whoosh-soft) |
-| 5:15 | Su2000 | Did you | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 5:16 | Su2000 | know that on Christmas | (chime after "that") (chime-magic); card: "on Christmas Eve 2024," (ui-click-soft) |
-| 5:17 | Su2000 | Eve, twenty twenty |  |
-| 5:18 | Su2000 | four, a |  |
-| 5:19 | Su2000 | spacecraft passed | card: "a spacecraft passed" (ui-click-soft) |
-| 5:20 | Su2000 | six point one | card: 6.1 million km (pop-reveal) |
-| 5:21 | Su2000 | million kilometres from |  |
-| 5:22 | Su2000 | the Sun, at | card: "from the Sun —" (ui-click-soft) |
-| 5:23 | Su2000 | almost seven hundred | card: 700,000 km/h (pop-reveal) |
-| 5:24 | Su2000 | thousand kilometres an hour? |  |
-| 5:25 | Su2000 | NASA's | the probe dives through the corona (whoosh-wind) |
-| 5:26 | Su2000 | Parker Solar Probe, | Parker Solar Probe title (ui-click-soft) |
-| 5:27 | Su2000 | the fastest object | FASTEST OBJECT EVER BUILT (stamp-hit) |
-| 5:28 | Su2000 | humans have ever |  |
-| 5:29 | Su2000 | built, flew | the corona flares around the probe (whoosh-soft) |
-| 5:30 | Su2000 | through the Sun's outer atmosphere. | THROUGH THE OUTER ATMOSPHERE (warm-shimmer) |
-| 5:31 | Su2000 |  |  |
-| 5:32 | Su2000 | Back on Earth, you spend | Day Clock today in (whoosh-soft); Day Clock segments draw (1/5) (ui-click-soft); Day Clock segments draw (2/5) (ui-click-soft); Day Clock segments draw (3/5) (ui-click-soft) |
-| 5:33 | Su2000 | most of your day inside, | Day Clock segments draw (4/5) (ui-click-soft); Day Clock segments draw (5/5) (ui-click-soft); highlight: inside, under a roof (pop-reveal) |
-| 5:34 | Su2000 | under a roof, |  |
-| 5:35 | Su2000 | staring at screens. | highlight: screens (pop-reveal) |
-| 5:36 | Su2000 | You put on sunscreen | highlight moves to OUTSIDE — WITH SUNSCREEN (pop-reveal) |
-| 5:37 | Su2000 | just to go outside. |  |
-| 5:38 | Su2000 | The International Energy | IEA quote card (whoosh-soft); solar farm builds row by row (1/3) (ui-click-soft); solar farm builds row by row (2/3) (ui-click-soft) |
-| 5:39 | Su2000 | Agency said in twenty | solar farm builds row by row (3/3) (ui-click-soft); 2020 chip (pop-reveal) |
-| 5:40 | Su2000 | twenty that the best |  |
-| 5:41 | Su2000 | solar projects offer some |  |
-| 5:42 | Su2000 | of the cheapest electricity | panels light; quote part 2 (warm-shimmer) |
-| 5:43 | Su2000 | ever seen. |  |
-| 5:44 | Su2000 | By twenty twenty four, | solar share bar appears (ui-click-soft) |
-| 5:45 | Su2000 | solar made almost |  |
-| 5:46 | Su2000 | seven percent | bar counts to 6.9 % (chime-reward) |
-| 5:47 | Su2000 | of the world's electricity. |  |
-| 5:48 | Su2000 | And every | stored-sunlight scene (slow push-in) (whoosh-soft) |
-| 5:49 | Su2000 | plant, every | the plant (pop-reveal) |
-| 5:50 | Su2000 | meal you ate today, | the plate (pop-reveal) |
-| 5:51 | Su2000 | is stored sunlight, | sun → plant/plate; "stored sunlight" (sparkle-soft) |
-| 5:52 | Su2000 | caught by photosynthesis | PHOTOSYNTHESIS + equation (ui-click-soft) |
-| 5:53 | Su2000 | in green leaves. |  |
-| 5:54 | Su2000 | We have |  |
-| 5:55 | Su2000 | touched the Sun, | cliffhanger band part 1 (piano-a-min) |
-| 5:56 | Su2000 | and we live | band part 2: "We live on it." (ui-click-soft) |
-| 5:57 | Su2000 | on it. |  |
-| 5:58 | Su2000 | So why have you still | band part: "So why" (ui-click-soft); (riser into "as it is?") (riser-soft) |
-| 5:59 | Su2000 | never seen it | band part 2 (ui-click-soft) |
-| 6:00 | Su2000 | as it is today? | band part 3: "as it is?" (pop-reveal) |
-| 6:01 | Su2000 |  |  |
-| 6:02 | Su2000 |  | cut to the answer (whoosh-reverse) |
-| 6:03 | SuReveal | Here is the answer. Light | THE ANSWER (impact-deep-soft) |
-| 6:04 | SuReveal | is fast, but it | LIGHT IS FAST (pop-reveal) |
-| 6:05 | SuReveal | is not instant. | BUT NOT INSTANT (pop-reveal) |
-| 6:06 | SuReveal | It takes about | the photon crosses (ui-send) |
-| 6:07 | SuReveal | eight minutes and twenty | 8 MIN 20 S (clock-tick-soft) |
-| 6:08 | SuReveal | seconds to cross a hundred |  |
-| 6:09 | SuReveal | and fifty million kilometres. | 150 MILLION KM label (ui-click-soft) |
-| 6:10 | SuReveal |  |  |
-| 6:11 | SuReveal | So every sunrise | "every sunrise you have seen:" (pop-reveal) |
-| 6:12 | SuReveal | you have ever watched |  |
-| 6:13 | SuReveal | was already old. | "already old" (chime-magic) |
-| 6:14 | SuReveal | But that light |  |
-| 6:15 | SuReveal | carries a secret. | cut-away Sun; THE SECRET (whoosh-soft) |
-| 6:16 | SuReveal | Its energy |  |
-| 6:17 | SuReveal | was made deep in the | outer layers fade: into the core (whoosh-soft) |
-| 6:18 | SuReveal | Sun's core, | the core glows; MADE IN THE CORE (warm-shimmer) |
-| 6:19 | SuReveal | and it spent a very |  |
-| 6:20 | SuReveal | long time struggling | random-walk path scribbles out; A LONG FIGHT OUT (pencil-scribble) |
-| 6:21 | SuReveal | to get out. |  |
-| 6:22 | SuReveal | NASA estimates | NASA ESTIMATE note (ui-click-soft) |
-| 6:23 | SuReveal | about a hundred |  |
-| 6:24 | SuReveal | and seventy thousand years. | ≈ 170,000 counts (pop-reveal); YEARS · CORE → SURFACE (impact-soft) |
-| 6:25 | SuReveal | When |  |
-| 6:26 | SuReveal | that energy began | WHEN IT SET OUT: (ui-click-soft) |
-| 6:27 | SuReveal | its journey, there were no |  |
-| 6:28 | SuReveal | farms, no | NO FARMS (trap-snap) |
-| 6:29 | SuReveal | cities, and no | NO CITIES (trap-snap) |
-| 6:30 | SuReveal | writing. For | NO WRITING (trap-snap); FIVE CENTURIES + axis draws + five year shells (whoosh-soft) |
-| 6:31 | SuReveal | five centuries, |  |
-| 6:32 | SuReveal | we changed how we behave | … OF CHANGING BEHAVIOUR (ui-click-soft) |
-| 6:33 | SuReveal | toward the Sun. |  |
-| 6:34 | SuReveal | We celebrated | verb card: celebrated (pop-reveal) |
-| 6:35 | SuReveal | it, hid | verb card: hid (pop-reveal) |
-| 6:36 | SuReveal | from it, split | verb card: split (pop-reveal) |
-| 6:37 | SuReveal | it, chased | verb card: chased (pop-reveal) |
-| 6:38 | SuReveal | it, and |  |
-| 6:39 | SuReveal | touched it. The | verb card: touched (pop-reveal); the Sun appears (warm-shimmer) |
-| 6:40 | SuReveal | Sun did not change | THE SUN · UNCHANGED (knock-solid) |
-| 6:41 | SuReveal | for us at all. |  |
-| 6:42 | SuReveal | You have never seen | "You have never seen the Sun as it is." (whoosh-soft) |
-| 6:43 | SuReveal | the Sun as it |  |
-| 6:44 | SuReveal | is. Only | (riser into the payoff) (riser-soft) |
-| 6:45 | SuReveal | as it was, | "Only as it was." glows (impact-deep-soft); (payoff sparkle) (chime-reward) |
-| 6:46 | SuReveal | eight minutes ago. | EIGHT MINUTES AGO (ui-click-soft) |
-| 6:47 | SuReveal |  |  |
-| 6:48 | SuReveal | Now, | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft); PREDICTION header (scan-hum) |
-| 6:49 | Su2100 | the year twenty one | gold underline sweeps under 2100 (whoosh-soft) |
-| 6:50 | Su2100 | hundred. That | an unrisen dawn: horizon + dashed Sun (warm-shimmer) |
-| 6:51 | Su2100 | morning has not happened | header docks; PREDICTION · A SCENARIO, NOT A FACT tag (ui-click-soft); THAT MORNING HAS NOT HAPPENED YET (ui-click-soft) |
-| 6:52 | Su2100 | yet. But |  |
-| 6:53 | Su2100 | we can follow the evidence. | STEP 1 · THE EVIDENCE (pop-reveal) |
-| 6:54 | Su2100 | In |  |
-| 6:55 | Su2100 | twenty twenty three, | 2023 chip; MAPLE scene (ui-click-soft) |
-| 6:56 | Su2100 | a small Caltech | CALTECH chip (pop-reveal) |
-| 6:57 | Su2100 | satellite called Maple | MAPLE title (ui-click-soft) |
-| 6:58 | Su2100 | beamed power wirelessly | power across the gap; chip (ui-send) |
-| 6:59 | Su2100 | in space, |  |
-| 7:00 | Su2100 | and aimed a signal | signal beam heads down (stream-soft) |
-| 7:01 | Su2100 | at a rooftop in |  |
-| 7:02 | Su2100 | Pasadena. | rooftop receiver + chip (pop-reveal) |
-| 7:03 | Su2100 | It was tiny. | TINY (ui-click-soft) |
-| 7:04 | Su2100 | But it worked. | IT WORKED (chime-reward) |
-| 7:05 | Su2100 | In twenty |  |
-| 7:06 | Su2100 | fourteen, the International | IEA 2014 roadmaps (page-flip) |
-| 7:07 | Su2100 | Energy Agency |  |
-| 7:08 | Su2100 | sketched a world where | "A world where solar could make…" (ui-click-soft) |
-| 7:09 | Su2100 | solar could make twenty |  |
-| 7:10 | Su2100 | seven percent of | 27 % counts; bar fills (pop-reveal) |
-| 7:11 | Su2100 | all electricity |  |
-| 7:12 | Su2100 | by twenty fifty, | · BY 2050 (ui-click-soft) |
-| 7:13 | Su2100 | and stressed |  |
-| 7:14 | Su2100 | that this was not a forecast. | NOT A FORECAST (stamp-hit) |
-| 7:15 | Su2100 |  |  |
-| 7:16 | Su2100 | Put those together, | scenario scene: MAPLE · 2023 and IEA · 2014 slide into the Earth (whoosh-soft) |
-| 7:17 | Su2100 | and here is one scenario. | STEP 2 · ONE SCENARIO (pop-reveal) |
-| 7:18 | Su2100 |  |  |
-| 7:19 | Su2100 | Power collected | collector ring forms (warm-shimmer) |
-| 7:20 | Su2100 | in orbit, where the Sun | collectors fill the ring + chip (ui-click-soft) |
-| 7:21 | Su2100 | never sets. | WHERE THE SUN NEVER SETS (ui-click-soft) |
-| 7:22 | Su2100 | Cities | sunlit city (pop-reveal) |
-| 7:23 | Su2100 | designed around sunlight. |  |
-| 7:24 | Su2100 | The | the Sun alone + "The Sun itself will not notice." (whoosh-soft) |
-| 7:25 | Su2100 | Sun itself will not |  |
-| 7:26 | Su2100 | notice. NASA | NASA ESTIMATE label (ui-click-soft) |
-| 7:27 | Su2100 | estimates it |  |
-| 7:28 | Su2100 | has another five billion | ≈ 5 billion years (chime-magic) |
-| 7:29 | Su2100 | years or so. |  |
-| 7:30 | Su2100 | The question | the question line (ui-click-soft) |
-| 7:31 | Su2100 | is not |  |
-| 7:32 | Su2100 | whether the Sun will | "whether the Sun will be there" (ui-click-soft) |
-| 7:33 | Su2100 | be there in twenty | "in 2100." (ui-click-soft) |
-| 7:34 | Su2100 | one hundred. |  |
-| 7:35 | Su2100 | It is what | "It is what we will have" (ui-click-soft) |
-| 7:36 | Su2100 | we will have learned | "learned to do with it." (warm-shimmer) |
-| 7:37 | Su2100 | to do with it. |  |
-| 7:38 | Su2100 |  | cut to the close (whoosh-soft) |
-| 7:39 | SuClose | The Sun |  |
-| 7:40 | SuClose | has risen on | the first sunrise lights (ui-click-soft) |
-| 7:41 | SuClose | every single | the wall of sunrises fills; caption (sparkle-soft) |
-| 7:42 | SuClose | morning of your life. |  |
-| 7:43 | SuClose | So tell me. | the wall dims (whoosh-reverse) |
-| 7:44 | SuClose | When | the question (whoosh-soft) |
-| 7:45 | SuClose | was the last time |  |
-| 7:46 | SuClose | you watched it rise, | "watched it rise," (ui-click-soft) |
-| 7:47 | SuClose | on purpose? | "on purpose?" glows (chime-magic) |
-| 7:48 | SuClose |  |  |
-| 7:49 | SuClose |  | cut to the outro (whoosh-wind) |
-| 7:50 | SuOutro | This was Did You Know | EPISODE 02 (pop-reveal); logo switches on; wordmark (ui-toggle-on) |
-| 7:51 | SuOutro | That, episode |  |
-| 7:52 | SuOutro | two. The | "The Sun" title (pop-reveal) |
-| 7:53 | SuOutro | Sun. Now it is |  |
-| 7:54 | SuOutro | your turn. In | lockup shrinks; prompt card (whoosh-soft) |
-| 7:55 | SuOutro | which century would | heading + seven year chips (1/7) (ui-click-soft) |
-| 7:56 | SuOutro | you rather watch the Sun | heading + seven year chips (2/7) (ui-click-soft); heading + seven year chips (3/7) (ui-click-soft); heading + seven year chips (4/7) (ui-click-soft) |
-| 7:57 | SuOutro | rise? | heading + seven year chips (5/7) (ui-click-soft); heading + seven year chips (6/7) (ui-click-soft) |
-| 7:58 | SuOutro | Tell me in the comments. | heading + seven year chips (7/7) (ui-click-soft); COMMENTS ↓ (pop-reveal) |
-| 7:59 | SuOutro |  |  |
-| 8:00 | SuOutro | At the end of every episode, | COMMENT OF THE WEEK pill (impact-soft) |
-| 8:01 | SuOutro | I will read the |  |
-| 8:02 | SuOutro | best comment, | "best comment read on screen" (ui-click-soft) |
-| 8:03 | SuOutro | right here, on this screen. | card flash ("right here") (ui-click-soft) |
-| 8:04 | SuOutro | And |  |
-| 8:05 | SuOutro | the subject you | "the subject you ask for most" (sparkle-soft) |
-| 8:06 | SuOutro | ask for most becomes |  |
-| 8:07 | SuOutro | a future episode. | → a future episode (pop-reveal) |
-| 8:08 | SuOutro | On our |  |
-| 8:09 | SuOutro | website, Dex-tee | Dexty.live pill (sparkle-soft) |
-| 8:10 | SuOutro | dot live, |  |
-| 8:11 | SuOutro | you can watch every | WATCH (ui-click-soft) |
-| 8:12 | SuOutro | episode, collect | COLLECT (ui-click-soft) |
-| 8:13 | SuOutro | the facts, and |  |
-| 8:14 | SuOutro | play the guessing game. | PLAY (ui-click-soft) |
-| 8:15 | SuOutro | If |  |
-| 8:16 | SuOutro | this changed how you | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
-| 8:17 | SuOutro | see a sunrise, like | A SUNRISE (ui-click-soft); Like (ui-click-soft) |
-| 8:18 | SuOutro | it. Share | Share (ui-send) |
-| 8:19 | SuOutro | it with the friend who | THE FRIEND WHO NEVER MISSES ONE (ui-click-soft) |
-| 8:20 | SuOutro | never misses one. |  |
-| 8:21 | SuOutro | And subscribe, | Subscribe (chime-reward) |
-| 8:22 | SuOutro | so the next mystery | ? THE NEXT MYSTERY (sparkle-soft) |
-| 8:23 | SuOutro | finds you. |  |
-| 8:24 | SuOutro | Next time: | NEXT · NO. 03 (whoosh-wind) |
-| 8:25 | SuOutro | school. | SCHOOL (impact-soft) |
-| 8:26 | SuOutro | How did a day |  |
-| 8:27 | SuOutro | in class change from | bell + question part 1 (pop-reveal) |
-| 8:28 | SuOutro | fifteen hundred to | "from 1500 to today —" (ui-click-soft) |
-| 8:29 | SuOutro | today, and will |  |
-| 8:30 | SuOutro | the classrooms of twenty | question part 2 (ui-click-soft) |
-| 8:31 | SuOutro | one hundred even |  |
-| 8:32 | SuOutro | exist? Ask... | "exist?" (piano-a-min); ASK. (chess-piece-thock) |
-| 8:33 | SuOutro | Wonder... Repeat. | WONDER. (chess-piece-thock); REPEAT. (chess-piece-thock) |
-| 8:34 | SuOutro |  |  |
-| 8:35 | SuOutro | Next time... | end screen: BEST COMMENT · READ HERE writes on (pencil-scribble); end screen: logo switches on (subscribe slot) (ui-toggle-on); end screen: logo glow (sparkle-soft) |
-| 8:36 | SuOutro | this could |  |
-| 8:37 | SuOutro | be your comment. | end screen: Comment below / best one is read next episode (ui-click-soft) |
-| 8:38 | SuOutro | Pick a mystery. |  |
-| 8:39 | SuOutro | And I will see you there. |  |
-| 8:40 | SuOutro |  |  |
-| 8:41 | SuOutro |  |  |
-| 8:42 | SuOutro |  |  |
-| 8:43 | SuOutro |  |  |
-| 8:44 | SuOutro |  |  |
-| 8:45 | SuOutro |  |  |
-| 8:46 | SuOutro |  |  |
-| 8:47 | SuOutro |  |  |
-| 8:48 | SuOutro |  |  |
-| 8:49 | SuOutro |  |  |
-| 8:50 | SuOutro |  |  |
+| 0:00 | SuHook | It's eight o'clock. | sunrise + clock 08:00:00 on screen (wind-soft); clock 08:00:00 pulses (clock-tick-soft) |
+| 0:01 | SuHook | The |  |
+| 0:02 | SuHook | Sun's warm on your face. | silhouette on the horizon catches the light (warm-shimmer) |
+| 0:03 | SuHook | But that |  |
+| 0:04 | SuHook | light is old. | a ray of sunlight reaches your face (sparkle-soft) |
+| 0:05 | SuHook | It left the Sun | "THIS LIGHT LEFT THE SUN AT" card (pop-reveal) |
+| 0:06 | SuHook | eight minutes and twenty | photon leaves the Sun; digits roll back (ui-send) |
+| 0:07 | SuHook | seconds ago. | digits land on 07:51:40; label 8 MIN 20 S (stamp-hit) |
+| 0:08 | SuHook | So if the Sun |  |
+| 0:09 | SuHook | vanished right now, | the Sun goes out (dashed outline) (whoosh-reverse) |
+| 0:10 | SuHook | you wouldn't know. | beam clears; YOU WOULDN'T KNOW FOR 08:20 under the dashed Sun (whoosh-soft) |
+| 0:11 | SuHook | You'd still | countdown ticks (08:20 pulse) (clock-tick-soft) |
+| 0:12 | SuHook | see it. You'd | the horizon glow brightens under the dashed Sun (warm-shimmer); countdown ticks (08:19 pulse) (clock-tick-soft) |
+| 0:13 | SuHook | still feel it. | your face glows again (sparkle-soft); countdown ticks (08:18 pulse) (clock-tick-soft) |
+| 0:14 | SuHook | For eight more | countdown turns gold: 8 MORE MINUTES (knock-solid) |
+| 0:15 | SuHook | minutes. | countdown ticks (08:16) (clock-tick-soft) |
+| 0:16 | SuHook | Five hundred | beat 1 clears; split: 1500 panel | right panel with a faint ? (whoosh-soft) |
+| 0:17 | SuHook | years ago, the Sun | 1500: the Sun rises (warm-shimmer) |
+| 0:18 | SuHook | told you when to get |  |
+| 0:19 | SuHook | up and when to sleep. | 1500: a figure stands; GET UP (pop-reveal); 1500: the Sun sets, the figure lies down; SLEEP (whoosh-soft) |
+| 0:20 | SuHook | Today, | right panel: ? gives way to Today + solar panel (ui-click-soft) |
+| 0:21 | SuHook | we make electricity | the panel lights the bulb; ELECTRICITY (ui-toggle-on) |
+| 0:22 | SuHook | from it. |  |
+| 0:23 | SuHook | And still, did | panels clear; the Sun drops in (whoosh-soft); DID YOU KNOW THAT… line (ui-toggle-on) |
+| 0:24 | SuHook | you know that you have |  |
+| 0:25 | SuHook | never once seen the | "you have never once" (ui-click-soft); (riser into the payoff; the Sun swells) (riser-soft); "seen the Sun" (ui-click-soft) |
+| 0:26 | SuHook | Sun as it is... | "as it is…" fades in (payoff "right now?" waits for "right") (ui-click-soft) |
+| 0:27 | SuHook | right now? | "as it is right now?" lands (impact-deep-soft) |
+| 0:28 | SuHook |  |  |
+| 0:29 | SuIntro |  | sting: hum (scan-hum); bulb switches on (ui-toggle-on); glow + sparks (sparkle-soft) |
+| 0:30 | SuIntro |  | logo slides, wordmark (whoosh-soft); DID (knock-solid); YOU (knock-solid); KNOW (knock-solid) |
+| 0:31 | SuIntro |  | THAT? (impact-deep-soft); tagline (chime-magic) |
+| 0:32 | SuIntro |  |  |
+| 0:33 | SuIntro |  | episode card: EPISODE 02 · The Sun (whoosh-soft) |
+| 0:34 | SuIntro |  |  |
+| 0:35 | SuIntro |  |  |
+| 0:36 | SuIntro |  | logo switches on (first frames) (ui-toggle-on) |
+| 0:37 | SuWelcome | Welcome back to Did | wordmark builds (pop-reveal) |
+| 0:38 | SuWelcome | You Know That. | wordmark complete (sparkle-soft) |
+| 0:39 | SuWelcome | Episode two. | NO. 02 · THE SUN pill (pop-reveal) |
+| 0:40 | SuWelcome | You know the rule. | lockup docks; THE RULE label (whoosh-soft) |
+| 0:41 | SuWelcome | That light | card: THE LIGHT ON YOUR FACE (pop-reveal) |
+| 0:42 | SuWelcome | on your face is eight |  |
+| 0:43 | SuWelcome | minutes old. | "8 min old" (ui-click-soft) |
+| 0:44 | SuWelcome | But the energy inside | card: THE ENERGY INSIDE IT (pop-reveal); "? old" (sparkle-soft) |
+| 0:45 | SuWelcome | it? How | "? old" pulses big with glow (pop-reveal) |
+| 0:46 | SuWelcome | old is that? |  |
+| 0:47 | SuWelcome | Guess | rule step 1: GUESS IN THE COMMENTS (stamp-hit) |
+| 0:48 | SuWelcome | in the comments, right | comment bubble pops: My guess: … (pop-reveal) |
+| 0:49 | SuWelcome | now. Then |  |
+| 0:50 | SuWelcome | stay to the end, | rule step 2: STAY TO THE END (stamp-hit) |
+| 0:51 | SuWelcome | and check your answer. | rule step 3: CHECK YOUR ANSWER (ui-click-soft); step 3 ticks (green check) (stamp-hit) |
+| 0:52 | SuWelcome |  |  |
+| 0:53 | SuWelcome | Seven | faint dashed axis with seven empty nodes (frame 0) (wind-soft); "Seven mornings." rises (whoosh-soft) |
+| 0:54 | SuPromise | mornings, from fifteen | 1500 lands; the gold axis draws (ui-click-soft) |
+| 0:55 | SuPromise | hundred to twenty | the middle five years sweep in (1610 … TODAY) (whoosh-soft); 2100 · PREDICTION lands (ui-click-soft) |
+| 0:56 | SuPromise | one hundred. |  |
+| 0:57 | SuPromise | In each one, you | a glow ripples along the seven nodes (sparkle-soft) |
+| 0:58 | SuPromise | wake up as someone | seven people light up (1/7) (ui-click-soft); seven people light up (2/7) (ui-click-soft); seven people light up (3/7) (ui-click-soft) |
+| 0:59 | SuPromise | else, under the same | seven people light up (4/7) (ui-click-soft); seven people light up (5/7) (ui-click-soft); one Sun rises over everyone (warm-shimmer) |
+| 1:00 | SuPromise | Sun. | seven people light up (6/7) (ui-click-soft); seven people light up (7/7) (ui-click-soft) |
+| 1:01 | SuPromise | The Sun won't change. | THE SUN · UNCHANGED (lock) (knock-solid) |
+| 1:02 | SuPromise | You |  |
+| 1:03 | SuPromise | will. | the people change colour (sparkle-soft) |
+| 1:04 | SuPromise | You start out going | 1500 node rings (ui-click-soft) |
+| 1:05 | SuPromise | to bed at sunset. | a bed at 1500 (the figure lies down) (pop-reveal); a small Sun sets behind the 1500 horizon (wind-soft) |
+| 1:06 | SuPromise | You end |  |
+| 1:07 | SuPromise | up in a world that might | 2100 node rings (ui-click-soft); faint dashed power line Sun → 2100, marked "might" (ui-send) |
+| 1:08 | SuPromise | run on it. |  |
+| 1:09 | SuPromise | And at the end, | a bright comet runs the axis (whoosh-soft); the 2100 node lights up (sparkle-soft) |
+| 1:10 | SuPromise | you'll find out the |  |
+| 1:11 | SuPromise | true age of sunlight. | "? old" chip pulses (piano-a-min) |
+| 1:12 | SuPromise |  |  |
+| 1:13 | SuPromise | You | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 1:14 | Su1500 | wake up in fifteen | gold underline sweeps under 1500 (whoosh-soft) |
+| 1:15 | Su1500 | hundred, in London. | place line: London (pop-reveal) |
+| 1:16 | Su1500 | It's Midsummer | dusk gradient + MIDSUMMER EVE chip (ui-click-soft) |
+| 1:17 | Su1500 | Eve. You | header docks; night street fades in (whoosh-soft) |
+| 1:18 | Su1500 | can smell wood smoke, | wood smoke drifts across the street (wind-soft) |
+| 1:19 | Su1500 | and the streets are glowing | house windows light up (ui-click-soft); bonfires ignite one by one (12 f apart) (warm-shimmer) |
+| 1:20 | Su1500 | with firelight. |  |
+| 1:21 | Su1500 | Did you | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 1:22 | Su1500 | know that almost everyone | (chime after "that") (chime-magic) |
+| 1:23 | Su1500 | you'll ever meet | card: "you'll ever meet" (ui-click-soft) |
+| 1:24 | Su1500 | believes the Sun goes | card: "believes" (ui-click-soft); card: "the Sun goes" (ui-click-soft) |
+| 1:25 | Su1500 | around the Earth? | card: "the Sun goes around the Earth." (pop-reveal); card: "the Earth." (ui-click-soft) |
+| 1:26 | Su1500 | That's what Ptolemy | card: TAUGHT BY PTOLEMY (page-flip) |
+| 1:27 | Su1500 | taught, |  |
+| 1:28 | Su1500 | about fourteen hundred | card: · ~1,400 YEARS EARLIER + Almagest citation (ui-click-soft) |
+| 1:29 | Su1500 | years ago. |  |
+| 1:30 | Su1500 | So what is the Sun | card out; the Sun lifts over the horizon (whoosh-soft); big ? fades in beside the rising Sun (pop-reveal) |
+| 1:31 | Su1500 | to you? |  |
+| 1:32 | Su1500 | Simple. | cut to the Day Clock ring (full brightness); a marker starts circling the ring (knock-solid) |
+| 1:33 | Su1500 | It's the difference between | split line draws across the clock (ui-click-soft) |
+| 1:34 | Su1500 | day and night. | gold daylight half fills (ui-click-soft); navy night half fills; HOW WE SAW IT · DAY & NIGHT chip (chime-reward) |
+| 1:35 | Su1500 | Daylight is for | label: Daylight (ui-click-soft) |
+| 1:36 | Su1500 | work. Darkness | label: is for work. (day half pulses) (ui-click-soft); label: Darkness (ui-click-soft) |
+| 1:37 | Su1500 | is for sleep, | label: is for sleep, (night half pulses) (ui-click-soft) |
+| 1:38 | Su1500 | and prayer. | DAY & NIGHT chip docks into the ladder (whoosh-soft); label: and prayer. (ui-click-soft) |
+| 1:39 | Su1500 | But tonight, | night half floods with firelight (warm-shimmer) |
+| 1:40 | Su1500 | nobody sleeps. | TONIGHT · NOBODY SLEEPS (stamp-hit) |
+| 1:41 | Su1500 | Doors are hung | back to the street (whoosh-soft) |
+| 1:42 | Su1500 | with green birch and | green birch over the doors + chip (ui-click-soft) |
+| 1:43 | Su1500 | flowers. | yellow flowers + FLOWERS · ST JOHN'S WORT chip (ui-click-soft) |
+| 1:44 | Su1500 | Glass lamps burn all | glass lamps light + chip (sparkle-soft); lamps flare; chip · ALL NIGHT (ui-click-soft) |
+| 1:45 | Su1500 | night. Neighbours |  |
+| 1:46 | Su1500 | share bread and drink | bread on the tables + BREAD chip (pop-reveal); cups on the tables; chip & DRINK (ui-click-soft) |
+| 1:47 | Su1500 | by the bonfires. | the bonfires flare (launch-thump) |
+| 1:48 | Su1500 | Why? | big ? over the bonfire (pop-reveal) |
+| 1:49 | Su1500 | A London |  |
+| 1:50 | Su1500 | writer, John Stow, | quote card: A LONDON WRITER (page-flip); quote card: · JOHN STOW (ui-click-soft) |
+| 1:51 | Su1500 | later wrote that | quote card: · A SURVEY OF LONDON (1598) + "…the virtue that" (ui-click-soft) |
+| 1:52 | Su1500 | a great fire could purge | quote: "a great fire hath" (ui-click-soft); quote: "to purge" (gold) (warm-shimmer) |
+| 1:53 | Su1500 | the infection of | quote: "the infection of the air." (ui-click-soft) |
+| 1:54 | Su1500 | the air. Far | smoke rises off the bonfires (wind-soft); night sky: Earth-centred orbit diagram; header label FAR AWAY (whoosh-soft) |
+| 1:55 | Su1500 | away, a young Polish |  |
+| 1:56 | Su1500 | astronomer, | card: A YOUNG POLISH ASTRONOMER (ui-click-soft) |
+| 1:57 | Su1500 | Copernicus, | card: Nicolaus Copernicus (pop-reveal) |
+| 1:58 | Su1500 | is studying the sky. | stars twinkle around the diagram (sparkle-soft) |
+| 1:59 | Su1500 | In |  |
+| 2:00 | Su1500 | fifteen forty three, | 1543 · NUREMBERG card (stamp-hit) |
+| 2:01 | Su1500 | the year he |  |
+| 2:02 | Su1500 | dies, his | · THE YEAR HE DIES (ui-click-soft) |
+| 2:03 | Su1500 | book puts the Sun | title: De revolutionibus (page-flip); the Sun moves toward the centre (whoosh-soft) |
+| 2:04 | Su1500 | at the centre, and sets | Sun at the centre; label flips to COPERNICUS (impact-soft) |
+| 2:05 | Su1500 | the Earth in motion. | the Earth starts to orbit (whoosh-soft) |
+| 2:06 | Su1500 | And within seventy | cliffhanger band part 1; ladder fades (piano-a-min) |
+| 2:07 | Su1500 | years, a new instrument | telescope + band part 2 (pop-reveal) |
+| 2:08 | Su1500 | will show you | band: "will show you" (ui-click-soft) |
+| 2:09 | Su1500 | something shocking. | band: "something shocking." (ui-click-soft) |
+| 2:10 | Su1500 | The Sun isn't | band: "The Sun isn't" (ui-click-soft) |
+| 2:11 | Su1500 | perfect. | band: "perfect." (stamp-hit) |
+| 2:12 | Su1500 |  | era exit pull-in (whoosh-reverse); era cut: YOU WAKE UP IN · year (whoosh-wind) |
+| 2:13 | Su1610 | You wake | year slams in (impact-soft) |
+| 2:14 | Su1610 | up in sixteen | gold underline sweeps under 1610 (whoosh-soft) |
+| 2:15 | Su1610 | ten, beside the River |  |
+| 2:16 | Su1610 | Thames. | river line draws; place line: Beside the River Thames (pop-reveal) |
+| 2:17 | Su1610 | It's a cold, misty | frost crystals creep in from the edges (year card slowly zooms) (sparkle-soft); mist rolls in (wind-soft) |
+| 2:18 | Su1610 | December morning, | header docks; ladder (1500 rung) slides in; Thames scene (whoosh-soft); DECEMBER · MORNING MIST chip (ui-click-soft) |
+| 2:19 | Su1610 | and the Sun |  |
+| 2:20 | Su1610 | hangs low and dim. | the low Sun rises just above the horizon (warm-shimmer); the low Sun dims (scan-hum) |
+| 2:21 | Su1610 | A man |  |
+| 2:22 | Su1610 | named Thomas Harriot points | Harriot on the bank (pop-reveal) |
+| 2:23 | Su1610 | a telescope straight | he raises the telescope (ui-click-soft); faint spots appear on the Thames Sun (sparkle-soft) |
+| 2:24 | Su1610 | at it. |  |
+| 2:25 | Su1610 | Don't try this. | NEVER LOOK AT THE SUN warning (impact-soft) |
+| 2:26 | Su1610 | It can blind | warning pulses (trap-snap) |
+| 2:27 | Su1610 | you. Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 2:28 | Su1610 | you know that the first | (chime after "that") (chime-magic) |
+| 2:29 | Su1610 | telescope drawing | card: "drawing" + notebook sketch thumbnail (ui-click-soft) |
+| 2:30 | Su1610 | of sunspots wasn't | card: "of sunspots" (gold); spots drawn in the sketch (ui-click-soft) |
+| 2:31 | Su1610 | made by Galileo? | card: "wasn't made by Galileo?" (ui-click-soft) |
+| 2:32 | Su1610 |  |  |
+| 2:33 | Su1610 | It was this Englishman. | Harriot silhouette slides into the card (whoosh-soft); card: "this Englishman, Thomas Harriot." + source footnote (pop-reveal) |
+| 2:34 | Su1610 | And |  |
+| 2:35 | Su1610 | he never published it. | card: "And he never published it." (stamp-hit) |
+| 2:36 | Su1610 | Two years |  |
+| 2:37 | Su1610 | later, in Florence, | Florence: the Sun; 1612 label (whoosh-soft); · FLORENCE; header label FLORENCE (ui-click-soft) |
+| 2:38 | Su1610 | Galileo watches the | · GALILEO (ui-click-soft) |
+| 2:39 | Su1610 | spots drift across | spots appear on the Sun (pop-reveal); spots start drifting across the disc (whoosh-soft) |
+| 2:40 | Su1610 | the Sun, |  |
+| 2:41 | Su1610 | day after day. | DAY 1 · DAY 2 · DAY 3 (1/3) (ui-click-soft); DAY 1 · DAY 2 · DAY 3 (2/3) (ui-click-soft); DAY 1 · DAY 2 · DAY 3 (3/3) (ui-click-soft) |
+| 2:42 | Su1610 | Another |  |
+| 2:43 | Su1610 | astronomer says they're | ANOTHER ASTRONOMER: (ui-click-soft) |
+| 2:44 | Su1610 | tiny planets passing | little planets pass in front + "tiny planets in front?" (pop-reveal) |
+| 2:45 | Su1610 | in front. |  |
+| 2:46 | Su1610 | Galileo | a lens ring draws around the Sun (ui-click-soft) |
+| 2:47 | Su1610 | says no. | planets struck through; GALILEO: NO. (stamp-hit) |
+| 2:48 | Su1610 | They're on the Sun |  |
+| 2:49 | Su1610 | itself, and the Sun is | ON THE SUN ITSELF (pop-reveal) |
+| 2:50 | Su1610 | turning. In | THE SUN IS TURNING arrow (whoosh-soft) |
+| 2:51 | Su1610 | sixteen thirteen, | Rome 1613 book card (page-flip) |
+| 2:52 | Su1610 | he publishes his |  |
+| 2:53 | Su1610 | letters. | · HIS LETTERS ON SUNSPOTS (ui-click-soft) |
+| 2:54 | Su1610 | The perfect |  |
+| 2:55 | Su1610 | heavenly body | THE PERFECT HEAVENLY BODY (ui-click-soft) |
+| 2:56 | Su1610 | has blemishes. | HAS BLEMISHES (stamp-hit) |
+| 2:57 | Su1610 | Out in the fields, | cut to the fields: labourer under a plain Sun, furrows draw; header label THE FIELDS (whoosh-soft) |
+| 2:58 | Su1610 | daylight still | the Sun brightens over the field (warm-shimmer) |
+| 2:59 | Su1610 | runs your day. | mini Day Clock segments draw; NIGHT · SLEEP / DAY · WORK labels (1/5) (ui-click-soft); mini Day Clock segments draw; NIGHT · SLEEP / DAY · WORK labels (2/5) (ui-click-soft) |
+| 3:00 | Su1610 | But for a | mini Day Clock segments draw; NIGHT · SLEEP / DAY · WORK labels (3/5) (ui-click-soft); mini Day Clock segments draw; NIGHT · SLEEP / DAY · WORK labels (4/5) (ui-click-soft); mini Day Clock segments draw; NIGHT · SLEEP / DAY · WORK labels (5/5) (ui-click-soft) |
+| 3:01 | Su1610 | few people with telescopes, | a few telescopes on the hill (pop-reveal) |
+| 3:02 | Su1610 | the Sun |  |
+| 3:03 | Su1610 | has become something | telescope eyepiece irises in on the Sun (scan-hum) |
+| 3:04 | Su1610 | to watch. | HOW WE SAW IT · TO WATCH chip (chime-reward) |
+| 3:05 | Su1610 | Closely. | zoom on a sunspot (whoosh-soft) |
+| 3:06 | Su1610 | And soon, | cliffhanger band part 1 (piano-a-min) |
+| 3:07 | Su1610 | someone will ask | TO WATCH chip docks into the ladder (whoosh-soft); a light beam travels; band part 2 (stream-soft) |
+| 3:08 | Su1610 | what's actually inside | beam stops at a closed glass box; ? inside; band part 3 (knock-solid) |
+| 3:09 | Su1610 | that light. | band part 4; the beam glows (ui-click-soft); era exit pull-in (whoosh-reverse) |
+| 3:10 | Su1610 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 3:11 | Su1700 | You wake |  |
+| 3:12 | Su1700 | up in seventeen seventy | gold underline sweeps under 1779 (whoosh-soft) |
+| 3:13 | Su1700 | nine, in England. | place line: England (pop-reveal) |
+| 3:14 | Su1700 | It's a |  |
+| 3:15 | Su1700 | bright summer morning, | sky floods bright; summer Sun (warm-shimmer); header docks; past rungs (2) slide in top-right (whoosh-soft) |
+| 3:16 | Su1700 | and the fashionable |  |
+| 3:17 | Su1700 | ladies outside | two ladies walk in (ui-click-soft) |
+| 3:18 | Su1700 | are hiding from it, | the ladies turn away from the Sun (whoosh-soft) |
+| 3:19 | Su1700 | under parasols. | parasols snap open (knock-solid) |
+| 3:20 | Su1700 | Did you | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 3:21 | Su1700 | know that a pale face | (chime after "that") (chime-magic) |
+| 3:22 | Su1700 | was so prized | card: "was so prized" (ui-click-soft) |
+| 3:23 | Su1700 | that fashionable | card: "that fashionable women" (ui-click-soft) |
+| 3:24 | Su1700 | women painted theirs | card: "painted theirs with" (ui-click-soft) |
+| 3:25 | Su1700 | with white lead? | card: "white lead?" + source line (ui-click-soft); card: "lead?" lands (gold) (trap-snap) |
+| 3:26 | Su1700 | One famous |  |
+| 3:27 | Su1700 | beauty, Maria | card out; Maria Gunning portrait (whoosh-soft); "Maria Gunning" title (pop-reveal) |
+| 3:28 | Su1700 | Gunning, Countess of Coventry, | 1733–1760 under the portrait (ui-click-soft); COUNTESS OF COVENTRY chip (ui-click-soft) |
+| 3:29 | Su1700 | died at twenty |  |
+| 3:30 | Su1700 | seven. | DIED AT 27 (stamp-hit) |
+| 3:31 | Su1700 | Her death was blamed, | "Her death was blamed," + V&A footnote (ui-click-soft) |
+| 3:32 | Su1700 | at least in | "at least in part," (ui-click-soft) |
+| 3:33 | Su1700 | part, on the lead | "on the lead" (ui-click-soft) |
+| 3:34 | Su1700 | in her face powder. | "in her face powder." + ceruse pot (knock-solid) |
+| 3:35 | Su1700 | If you're |  |
+| 3:36 | Su1700 | rich, you stay | IF YOU'RE RICH + lady under her parasol (whoosh-soft); sun rays stopped by the parasol; STAY IN THE SHADE caption (ui-click-soft) |
+| 3:37 | Su1700 | out of the Sun. |  |
+| 3:38 | Su1700 | If you're poor, | IF YOU'RE POOR + Week Strip (pop-reveal) |
+| 3:39 | Su1700 | you work in it, | Week Strip bars draw (1/7) (ui-click-soft); Week Strip bars draw (2/7) (ui-click-soft); Week Strip bars draw (3/7) (ui-click-soft) |
+| 3:40 | Su1700 | and your tan tells | Week Strip bars draw (4/7) (ui-click-soft); bracket under the whole week + ALL WEEK OUTDOORS = A TAN chip (sparkle-soft); Week Strip bars draw (5/7) (ui-click-soft) |
+| 3:41 | Su1700 | everyone. | Week Strip bars draw (6/7) (ui-click-soft); Week Strip bars draw (7/7) (ui-click-soft) |
+| 3:42 | Su1700 | But this summer, | rich/poor out; the Sun rises centre (whoosh-soft) |
+| 3:43 | Su1700 | the Sun is turning | rays spin around the Sun (warm-shimmer) |
+| 3:44 | Su1700 | into something new. | the Sun flares (sparkle-soft) |
+| 3:45 | Su1700 | Something | "?" beside the Sun (ui-click-soft) |
+| 3:46 | Su1700 | to explain. | HOW WE SAW IT chip: 1779 · TO EXPLAIN (chime-reward) |
+| 3:47 | Su1700 | A Dutch | A DUTCH DOCTOR; the Sun moves up as the beam source (ui-click-soft) |
+| 3:48 | Su1700 | doctor, Jan |  |
+| 3:49 | Su1700 | Ingen-house, | name card JAN INGENHOUSZ · 1779 (pop-reveal) |
+| 3:50 | Su1700 | runs more than | jar grid rows fill (jars with leaves) (1/3) (ui-click-soft); jar grid rows fill (jars with leaves) (2/3) (ui-click-soft) |
+| 3:51 | Su1700 | five hundred experiments | 500+ EXPERIMENTS (pop-reveal); jar grid rows fill (jars with leaves) (3/3) (ui-click-soft) |
+| 3:52 | Su1700 | on plants. | chip docks into the ladder (1779 rung gold) (whoosh-soft) |
+| 3:53 | Su1700 | He sinks leaves | big jar; the leaf sinks under water (impact-soft) |
+| 3:54 | Su1700 | under water. |  |
+| 3:55 | Su1700 | In sunlight, | sunbeam enters the jar (warm-shimmer) |
+| 3:56 | Su1700 | they bubble out fresh | bubbles stream up from the leaf (stream-soft); FRESH AIR (OXYGEN) label (ui-click-soft) |
+| 3:57 | Su1700 | air. In |  |
+| 3:58 | Su1700 | the shade, they stop. | a shadow slides over the jar (whoosh-soft); bubbles stop; IN SHADE: NO BUBBLES (impact-soft) |
+| 3:59 | Su1700 | Only the green | split: green-leaf jar bubbles, stem jar does not (pop-reveal) |
+| 4:00 | Su1700 | parts do it. | GREEN / STEM labels (ui-click-soft) |
+| 4:01 | Su1700 | Plants need the |  |
+| 4:02 | Su1700 | Sun. But | shadow slides off; jar back in the beam, bubbles resume (warm-shimmer); cliffhanger band: "But there's more"; ladder fades (piano-a-min) |
+| 4:03 | Su1700 | there's more in that light | band: "in that light"; the beam pulses (ui-click-soft) |
+| 4:04 | Su1700 | than leaves can use. | band: "than leaves can use." (ui-click-soft) |
+| 4:05 | Su1700 |  |  |
+| 4:06 | Su1700 | Or your eyes | band: "Or your eyes" (ui-click-soft) |
+| 4:07 | Su1700 | can detect. | band: "can detect." (ui-click-soft) |
+| 4:08 | Su1700 |  | era exit pull-in (whoosh-reverse); era cut: YOU WAKE UP IN · year (whoosh-wind) |
+| 4:09 | Su1800 | You wake | year slams in (impact-soft) |
+| 4:10 | Su1800 | up in eighteen hundred, | gold underline sweeps under 1800 (whoosh-soft) |
+| 4:11 | Su1800 | near Windsor. | place line: Slough, near Windsor (pop-reveal) |
+| 4:12 | Su1800 | It's February. | frost on the edges + FEB 1800 chip (ui-click-soft) |
+| 4:13 | Su1800 | An astronomer, William | header docks; past rungs (3) slide in top-right (whoosh-soft) |
+| 4:14 | Su1800 | Herschel, splits | William Herschel · ASTRONOMER (pop-reveal); white beam enters the prism and fans into colours (warm-shimmer) |
+| 4:15 | Su1800 | a sunbeam with a prism, | a light pulse runs along the white beam (whoosh-soft); the prism glints (sparkle-soft) |
+| 4:16 | Su1800 | and puts | thermometers slide into the colours, one per step (1/3) (ui-click-soft) |
+| 4:17 | Su1800 | thermometers in the colours, | thermometers slide into the colours, one per step (2/3) (ui-click-soft); thermometers slide into the colours, one per step (3/3) (ui-click-soft); RED / VIOLET labels (ui-click-soft) |
+| 4:18 | Su1800 | their | thermometer bulbs turn black; mercury starts to rise (stamp-hit) |
+| 4:19 | Su1800 | bulbs blackened. |  |
+| 4:20 | Su1800 | Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 4:21 | Su1800 | you know that the hottest | (chime after "that") (chime-magic) |
+| 4:22 | Su1800 | spot wasn't |  |
+| 4:23 | Su1800 | in the rainbow at all? | card: "wasn't in the rainbow at all?" (ui-click-soft) |
+| 4:24 | Su1800 |  |  |
+| 4:25 | Su1800 | It was just | card: "It was" (ui-click-soft) |
+| 4:26 | Su1800 | past the red, | card: "It was just past the red," + source line (pop-reveal) |
+| 4:27 | Su1800 | where nothing was visible. | card: "where nothing was visible." (ui-click-soft) |
+| 4:28 | Su1800 | He'd |  |
+| 4:29 | Su1800 | found infrared. | card gone; bench back, red thermometer moves just past the red (whoosh-soft); "infrared" lands; that thermometer climbs highest (impact-soft) |
+| 4:30 | Su1800 | Light you can't | beyond-red zone glows on a thermal palette; rainbow dims (warm-shimmer) |
+| 4:31 | Su1800 | see. Now | LIGHT YOU CAN'T SEE (ui-click-soft); HOTTEST label beside the climbing thermometer (ui-click-soft) |
+| 4:32 | Su1800 | the Sun is something you |  |
+| 4:33 | Su1800 | measure, even where | HOW WE SAW IT chip: 1800 · TO MEASURE (thermometer icon) (chime-reward) |
+| 4:34 | Su1800 | your eyes give up. | an eye icon beside the infrared zone (ui-click-soft); a red line strikes through the eye (pencil-scribble) |
+| 4:35 | Su1800 | Soon, | bench gone; night falls over a street (wind-soft) |
+| 4:36 | Su1800 | gas lamps push | chip docks into the ladder (1800 rung gold) (whoosh-soft); the first gas lamp lights + 1807 · PALL MALL chip; header label LONDON (ui-toggle-on); lamplight pushes the dark back (warm-shimmer) |
+| 4:37 | Su1800 | back the night in London. | two more lamps light down the street (ui-click-soft) |
+| 4:38 | Su1800 | In |  |
+| 4:39 | Su1800 | eighteen thirty nine, | gas street out; Becquerel's cell and voltmeter (whoosh-soft); 1839 chip (pop-reveal) |
+| 4:40 | Su1800 | in Paris, | header label switches to PARIS (ui-click-soft) |
+| 4:41 | Su1800 | a nineteen year old | AGE 19 chip (ui-click-soft) |
+| 4:42 | Su1800 | named Edmond Becquerel | "Edmond Becquerel" title (pop-reveal) |
+| 4:43 | Su1800 | shines | light beam onto the cell (warm-shimmer) |
+| 4:44 | Su1800 | light on a cell, | cell outline turns gold; CELL label (ui-click-soft) |
+| 4:45 | Su1800 | and it makes electricity. | "light → electricity"; the wires light, needle lifts (pop-reveal) |
+| 4:46 | Su1800 |  |  |
+| 4:47 | Su1800 | Tiny. But | the voltmeter needle twitches; TINY. (glitch-zap) |
+| 4:48 | Su1800 | real electricity. | the cell glows; BUT REAL. (sparkle-soft) |
+| 4:49 | Su1800 | And in |  |
+| 4:50 | Su1800 | eighteen fifty nine, | Carrington scene: the Sun with spots (whoosh-soft); 1 SEPT 1859 chip; header label 1859 (ui-click-soft) |
+| 4:51 | Su1800 | Richard Carrington sees | "Richard Carrington" title (pop-reveal) |
+| 4:52 | Su1800 | a white flash | white flash on the Sun + A WHITE FLASH chip (impact-deep-soft) |
+| 4:53 | Su1800 | on the Sun. |  |
+| 4:54 | Su1800 | Within a day, | telegraph poles and wires; WITHIN A DAY (pop-reveal) |
+| 4:55 | Su1800 | telegraph wires |  |
+| 4:56 | Su1800 | spark, and operators | sparks on the wires (glitch-zap); the operator at his key (ui-click-soft) |
+| 4:57 | Su1800 | get shocks. | the telegraph jolts; OPERATORS GET SHOCKS (stamp-hit) |
+| 4:58 | Su1800 | The Sun |  |
+| 4:59 | Su1800 | can reach down and touch | a dashed line runs from the Sun to the wires (ui-send); THE SUN CAN TOUCH OUR MACHINES (warm-shimmer) |
+| 5:00 | Su1800 | our machines. |  |
+| 5:01 | Su1800 | Turning that spark | cliffhanger band: "Turning"; ladder fades; slow push-in starts (piano-a-min); band: "that spark"; a spark flashes on the wire (ui-click-soft) |
+| 5:02 | Su1800 | into power would | band: "into power"; the spark becomes a glowing bulb (ui-click-soft); the bulb lights up (sparkle-soft) |
+| 5:03 | Su1800 | take another century. | band: "would take another century."; the bulb dims (ui-click-soft) |
+| 5:04 | Su1800 | But first, | band: "But first,"; the stage darkens, push-in resumes (ui-click-soft) |
+| 5:05 | Su1800 | we'd find out | band: "we'd find out" (ui-click-soft) |
+| 5:06 | Su1800 | what we'd been eating all | band: "what we'd been" (ui-click-soft); band: "eating" + loaf silhouette; the stage darkens further (pop-reveal) |
+| 5:07 | Su1800 | along. | band: "all along." (ui-click-soft); era exit pull-in (whoosh-reverse) |
+| 5:08 | Su1800 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 5:09 | Su1900 | You wake up in nineteen | gold underline sweeps under 1928 (whoosh-soft) |
+| 5:10 | Su1900 | twenty eight, |  |
+| 5:11 | Su1900 | on a crowded American | beach umbrellas pop along the sand strip (1, 2) (1/2) (ui-click-soft); beach umbrellas pop along the sand strip (1, 2) (2/2) (ui-click-soft) |
+| 5:12 | Su1900 | beach. | place line: American beach + third umbrella (pop-reveal) |
+| 5:13 | Su1900 | Hot sand. | heat shimmer rises over the sand (warm-shimmer) |
+| 5:14 | Su1900 | Salt air. | header docks; beach opens to the sea, a wave rolls in; past-rung ladder fades in (whoosh-wind) |
+| 5:15 | Su1900 | And everyone's lying | sunbathers lie down one by one (1/3) (ui-click-soft); sunbathers lie down one by one (2/3) (ui-click-soft) |
+| 5:16 | Su1900 | in the Sun, on purpose. | sunbathers lie down one by one (3/3) (ui-click-soft); ON PURPOSE chip (held above the card until DID+16) (pop-reveal) |
+| 5:17 | Su1900 | Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 5:18 | Su1900 | you know that the famous | (chime after "that") (chime-magic); card: "the famous story," (ui-click-soft) |
+| 5:19 | Su1900 | story, that Coco | card: "that Coco Chanel" (ui-click-soft) |
+| 5:20 | Su1900 | Chanel started the |  |
+| 5:21 | Su1900 | suntan craze, | card: "started the suntan craze," (ui-click-soft) |
+| 5:22 | Su1900 | is probably | card: "is probably" (ui-click-soft) |
+| 5:23 | Su1900 | a myth? A | card: "a myth?" + Segrave source (stamp-hit) |
+| 5:24 | Su1900 | historian traced | card out; the magazine slides in; A HISTORIAN TRACED THE STORY TO (whoosh-soft) |
+| 5:25 | Su1900 | it to an unsigned | NO BYLINE appears on the magazine (page-flip) |
+| 5:26 | Su1900 | magazine article from | UNSIGNED MAGAZINE ARTICLE chip; page straightens (ui-click-soft) |
+| 5:27 | Su1900 | nineteen seventy one. | 1971 stamp on the magazine (stamp-hit) |
+| 5:28 | Su1900 | The real | "The real reason:" (ui-click-soft) |
+| 5:29 | Su1900 | reason was work. | "work." (impact-soft) |
+| 5:30 | Su1900 | Jobs | office building, windows light floor by floor; header label THE OFFICE (whoosh-soft) |
+| 5:31 | Su1900 | moved indoors, | JOBS MOVE INDOORS chip (ui-click-soft) |
+| 5:32 | Su1900 | so a tan stopped | BEFORE: A TAN = (ui-click-soft) |
+| 5:33 | Su1900 | meaning the fields. | THE FIELDS, struck through (pencil-scribble) |
+| 5:34 | Su1900 | It meant a day off. | NOW: A TAN = / a day off (stamp-hit) |
+| 5:35 | Su1900 | Now look |  |
+| 5:36 | Su1900 | in your picnic basket. | picnic basket; header label YOUR LUNCH (whoosh-soft); basket lid opens (page-flip) |
+| 5:37 | Su1900 | Bread. | bread rises out of the basket (pop-reveal) |
+| 5:38 | Su1900 | An apple. | apple rises out of the basket (pop-reveal) |
+| 5:39 | Su1900 | The process | dashed ring around the food (ui-click-soft) |
+| 5:40 | Su1900 | that made them got |  |
+| 5:41 | Su1900 | its name in eighteen | blank tag: ITS NAME: ? (ui-click-soft) |
+| 5:42 | Su1900 | ninety three. | 1893 · THE WORD IS COINED chip (pop-reveal) |
+| 5:43 | Su1900 | Photosynthesis. | Photosynthesis. slams centre (breath held) (stamp-hit) |
+| 5:44 | Su1900 | Leaves | the word lifts to a title; the leaf appears (whoosh-soft) |
+| 5:45 | Su1900 | catch sunlight and turn | sun arrows into the leaf: SUNLIGHT (ui-click-soft) |
+| 5:46 | Su1900 | it into sugar, | sugar hexagon out of the leaf (pop-reveal) |
+| 5:47 | Su1900 | and nearly all | arrows fan leaf → grass → cow → person (1/3) (ui-click-soft); arrows fan leaf → grass → cow → person (2/3) (ui-click-soft) |
+| 5:48 | Su1900 | life runs on that. | arrows fan leaf → grass → cow → person (3/3) (ui-click-soft); a pulse of sunlight runs leaf → grass → cow → person (ui-send) |
+| 5:49 | Su1900 | Your lunch |  |
+| 5:50 | Su1900 | is stored | bread + apple glow gold; STORED SUNLIGHT (sparkle-soft) |
+| 5:51 | Su1900 | sunlight. |  |
+| 5:52 | Su1900 | So, in a way, | the person steps forward (ui-click-soft) |
+| 5:53 | Su1900 | are you. | the person fills gold (warm-shimmer) |
+| 5:54 | Su1900 | The Sun used to be | ladder of past rungs fades in; sunlight flows along the food chain (whoosh-soft) |
+| 5:55 | Su1900 | something to measure. | TO MEASURE rung pulses; a ruler measures the Sun (sparkle-soft) |
+| 5:56 | Su1900 | Now, it's the | rays fan from the Sun to the food and the person; empty slot above pulses (ui-click-soft) |
+| 5:57 | Su1900 | source of every |  |
+| 5:58 | Su1900 | meal you eat. | HOW WE SAW IT: EVERY MEAL chip (chime-reward) |
+| 5:59 | Su1900 | Then, in nineteen | Bell Labs: the cell outline (whoosh-soft) |
+| 6:00 | Su1900 | fifty four, at | 25 APRIL 1954 chip (ui-click-soft) |
+| 6:01 | Su1900 | Bell Laboratories, | BELL LABS chip; header label BELL LABS (pop-reveal) |
+| 6:02 | Su1900 | a silicon | EVERY MEAL chip docks into ladder slot 4 (whoosh-soft); the silicon cell lights; SILICON SOLAR CELL (pop-reveal) |
+| 6:03 | Su1900 | cell turns about |  |
+| 6:04 | Su1900 | six percent of sunlight | ≈ 6 % stamps in (chime-reward); OF SUNLIGHT (ui-click-soft) |
+| 6:05 | Su1900 | into electricity. | the cell glows warm gold; → into electricity (warm-shimmer) |
+| 6:06 | Su1900 | We'd learned | band part 1: We'd learned (ladder fades) (piano-a-min) |
+| 6:07 | Su1900 | that we live on | band part 2: that we live on sunlight. (ui-click-soft) |
+| 6:08 | Su1900 | sunlight. |  |
+| 6:09 | Su1900 | Next, we'd | band part 3: Next, + furrows draw (ui-click-soft) |
+| 6:10 | Su1900 | learn to harvest it. | band part 4 + a single solar cell sprouts in the furrow (pop-reveal) |
+| 6:11 | Su1900 |  | era exit pull-in (whoosh-reverse) |
+| 6:12 | Su1900 | You | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 6:13 | Su2000 | wake up today. | gold underline sweeps under Today (whoosh-soft) |
+| 6:14 | Su2000 | Your phone's charged. | header docks; room with the phone on a nightstand fades in; past-rung ladder follows (whoosh-soft); phone battery fills to 100% (ui-toggle-on) |
+| 6:15 | Su2000 | The lights | lamp + room light up (lamp sways, slow drift toward the window) (ui-click-soft) |
+| 6:16 | Su2000 | come on. |  |
+| 6:17 | Su2000 | And somewhere, a field | pull out through the window: a hillside before sunrise (whoosh-soft); solar panel rows draw across the hill (1/4) (ui-click-soft) |
+| 6:18 | Su2000 | of solar panels has been | solar panel rows draw across the hill (2/4) (ui-click-soft); solar panel rows draw across the hill (3/4) (ui-click-soft); solar panel rows draw across the hill (4/4) (ui-click-soft) |
+| 6:19 | Su2000 | awake since sunrise. | the Sun clears the hill, warm glints on the panels (warm-shimmer) |
+| 6:20 | Su2000 | Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 6:21 | Su2000 | you know that in twenty | (chime after "that") (chime-magic) |
+| 6:22 | Su2000 | twenty five, | card: "in 2025," (ui-click-soft) |
+| 6:23 | Su2000 |  |  |
+| 6:24 | Su2000 | solar power made | card: "solar power made" (ui-click-soft); card footnote: Ember · Global Electricity Review 2026 (with "solar power") (sparkle-soft) |
+| 6:25 | Su2000 | almost eleven times | card: "almost" (ui-click-soft); card: "11 times" (pop-reveal) |
+| 6:26 | Su2000 | more electricity | card: "more electricity" (ui-click-soft) |
+| 6:27 | Su2000 | than it did ten years | card: "than it did" (ui-click-soft); card: "ten years earlier?" (ui-click-soft) |
+| 6:28 | Su2000 | earlier? | (riser into "nine": the share ring) (riser-soft) |
+| 6:29 | Su2000 | That's almost | chart: 2015 bar ≈ 250 TWh (card out) (ui-click-soft); 2025 bar lands: ≈ 2,770 TWh, ≈ ×11 (pop-reveal) |
+| 6:30 | Su2000 | nine percent | ring fills; 8.7 % lands on "nine" and holds to "International" (sparkle-soft) |
+| 6:31 | Su2000 | of all the world's | OF ALL THE WORLD'S ELECTRICITY · 2025 (ui-click-soft) |
+| 6:32 | Su2000 | electricity. |  |
+| 6:33 | Su2000 | The International | IEA quote card (QUOTE tag); solar farm starts (whoosh-soft); solar farm builds row by row (1/3) (ui-click-soft) |
+| 6:34 | Su2000 | Energy Agency | solar farm builds row by row (2/3) (ui-click-soft); solar farm builds row by row (3/3) (ui-click-soft) |
+| 6:35 | Su2000 | has said the best solar |  |
+| 6:36 | Su2000 | projects offer some | quote part 1 (ui-click-soft) |
+| 6:37 | Su2000 | of the cheapest electricity | quote part 2; warm glints on the blue panels (warm-shimmer) |
+| 6:38 | Su2000 | ever seen. | quote part 3: ever seen” (ui-click-soft) |
+| 6:39 | Su2000 | So what's | quote clears; the Sun rises over the farm (whoosh-soft) |
+| 6:40 | Su2000 | the Sun to you now? | a big ? pops beside the Sun (ui-click-soft) |
+| 6:41 | Su2000 |  |  |
+| 6:42 | Su2000 | Power. | HOW WE SAW IT: POWER chip (chime-reward) |
+| 6:43 | Su2000 | Something you harvest, | a light sweep passes over the panel rows (ui-click-soft) |
+| 6:44 | Su2000 | like a crop. | panel rows morph into furrows with sprouts (warm-shimmer) |
+| 6:45 | Su2000 | And in December |  |
+| 6:46 | Su2000 | twenty twenty | Parker scene: the Sun, its corona, the orbit (whoosh-wind) |
+| 6:47 | Su2000 | four, NASA's | DEC 2024 chip (ui-click-soft); POWER chip docks into ladder slot 5 (whoosh-soft) |
+| 6:48 | Su2000 | Parker Solar | Parker Solar Probe title + the probe (pop-reveal) |
+| 6:49 | Su2000 | Probe flew through the | the probe dives toward the Sun; corona flares (whoosh-soft) |
+| 6:50 | Su2000 | Sun's outer atmosphere, | THROUGH THE SUN'S OUTER ATMOSPHERE chip (sparkle-soft) |
+| 6:51 | Su2000 | faster | FASTEST chip (stamp-hit) |
+| 6:52 | Su2000 | than anything humans | HUMAN-MADE OBJECT EVER (ui-click-soft) |
+| 6:53 | Su2000 | have ever built. |  |
+| 6:54 | Su2000 | And yet, you spend | a dark room, a seated figure at a desk; slow push-in begins (whoosh-soft) |
+| 6:55 | Su2000 | most of your |  |
+| 6:56 | Su2000 | day indoors, | the door slides shut over the bright doorway (knock-solid) |
+| 6:57 | Su2000 | behind screens and windows. | the screen glow comes on (ui-toggle-on); a window with the Sun outside (pop-reveal) |
+| 6:58 | Su2000 |  |  |
+| 6:59 | Su2000 | We've touched the | band part 1: We've touched the Sun.; the window Sun pulses (ladder fades) (piano-a-min) |
+| 7:00 | Su2000 | Sun. |  |
+| 7:01 | Su2000 | We plug | band part 2: We plug into it.; the cable to the wall socket glows (ui-click-soft) |
+| 7:02 | Su2000 | into it. |  |
+| 7:03 | Su2000 | So why have you | band part 3: So why have you still (slow push-in toward the window from "why") (ui-click-soft) |
+| 7:04 | Su2000 | still never seen | (riser into "today?") (riser-soft); band part 4: never seen it (ui-click-soft) |
+| 7:05 | Su2000 | it as it is today? | band part 5: as it is today? (pop-reveal) |
+| 7:06 | Su2000 |  |  |
+| 7:07 | Su2000 | Here's | cut to THE ANSWER (whoosh-reverse) |
+| 7:08 | SuReveal | the answer. | THE ANSWER pulses (impact-deep-soft) |
+| 7:09 | SuReveal | Light is fast. | a glint runs along the empty beam (sparkle-soft); LIGHT IS FAST (pop-reveal) |
+| 7:10 | SuReveal | But it's not instant. | BUT NOT INSTANT (pop-reveal) |
+| 7:11 | SuReveal | It takes | the photon sets off across the beam (ui-send) |
+| 7:12 | SuReveal | about eight minutes and |  |
+| 7:13 | SuReveal | twenty seconds to cross | 8 MIN 20 S (clock-tick-soft) |
+| 7:14 | SuReveal | a hundred and fifty | 150 MILLION KM label (ui-click-soft) |
+| 7:15 | SuReveal | million kilometres. | the photon reaches YOU: a ring flashes round the Earth (sparkle-soft) |
+| 7:16 | SuReveal | Every | caption: "every sunrise" (pop-reveal) |
+| 7:17 | SuReveal | sunrise you've ever | caption: "you've ever watched:" (ui-click-soft) |
+| 7:18 | SuReveal | watched was already |  |
+| 7:19 | SuReveal | old. | "already old" (chime-magic) |
+| 7:20 | SuReveal | And the energy inside | AND THE ENERGY INSIDE IT? (lower third) (ui-click-soft); the beam's Sun pulses magenta (whoosh-soft) |
+| 7:21 | SuReveal | it? |  |
+| 7:22 | SuReveal | It was made deep in | cut-away Sun; outer layers peel into the core (whoosh-soft) |
+| 7:23 | SuReveal | the Sun's core, | the core glows; MADE IN THE CORE (warm-shimmer) |
+| 7:24 | SuReveal | and it spent a | random-walk path scribbles out of the core (pencil-scribble) |
+| 7:25 | SuReveal | very long time struggling | STRUGGLING TO GET OUT (pop-reveal) |
+| 7:26 | SuReveal | to get out. |  |
+| 7:27 | SuReveal | NASA | NASA ESTIMATE · OTHERS VARY note (ui-click-soft) |
+| 7:28 | SuReveal | estimates about a hundred | counter placeholder ≈ —— appears (ui-click-soft) |
+| 7:29 | SuReveal | and seventy thousand | ≈ 170,000 lands (pop-reveal) |
+| 7:30 | SuReveal | years. | YEARS · CORE → SURFACE (impact-soft) |
+| 7:31 | SuReveal | When it set out, | WHEN IT SET OUT: (ui-click-soft); the random walk breaks the surface: flash (sparkle-soft) |
+| 7:32 | SuReveal | nobody on Earth had farms, | NO FARMS (trap-snap) |
+| 7:33 | SuReveal | or cities, | NO CITIES (trap-snap) |
+| 7:34 | SuReveal | or writing. | NO WRITING (trap-snap) |
+| 7:35 | SuReveal | How | the welcome's "? old" card returns; cut-away Sun fades (whoosh-soft); "? old" card pulses (ui-click-soft) |
+| 7:36 | SuReveal | close was your answer? |  |
+| 7:37 | SuReveal | Now | card flips (end of "answer"): ≈ 170,000 YEARS · NASA estimate (sparkle-soft) |
+| 7:38 | SuReveal | climb that ladder again, | six rungs appear dim (full ladder); card moves under the Sun spot (whoosh-soft) |
+| 7:39 | SuReveal | with me. | the Sun disc appears on the right (warm-shimmer) |
+| 7:40 | SuReveal | In fifteen | pointer appears at the 1500 rung (ui-click-soft) |
+| 7:41 | SuReveal | hundred, the Sun was |  |
+| 7:42 | SuReveal | day and night. | rung lights gold on "night" (ui-click-soft) |
+| 7:43 | SuReveal | Then something to watch. | rung lights gold on "watch" (ui-click-soft) |
+| 7:44 | SuReveal | To |  |
+| 7:45 | SuReveal | explain. | rung lights gold on "explain" (ui-click-soft) |
+| 7:46 | SuReveal | To measure. | rung lights gold on "measure" (ui-click-soft) |
+| 7:47 | SuReveal | Then it was your |  |
+| 7:48 | SuReveal | lunch. | rung lights gold on "lunch" (ui-click-soft) |
+| 7:49 | SuReveal | Today, it's power. | rung lights gold on "power" (ui-click-soft) |
+| 7:50 | SuReveal | The |  |
+| 7:51 | SuReveal | Sun didn't change. | light sweep passes over the unchanged Sun (whoosh-soft) |
+| 7:52 | SuReveal |  |  |
+| 7:53 | SuReveal | We did. | the whole ladder glows once (warm-shimmer) |
+| 7:54 | SuReveal | You have never |  |
+| 7:55 | SuReveal | seen the Sun as it | the Sun slowly brightens under the riser (ends on "Only") (riser-soft) |
+| 7:56 | SuReveal | is. Only |  |
+| 7:57 | SuReveal | as it was, eight |  |
+| 7:58 | SuReveal | minutes ago. |  |
+| 7:59 | SuReveal |  | after "ago.": the payoff line settles (impact-deep-soft); the ladder slides to centre (whoosh-soft) |
+| 8:00 | Su2100 | So what's |  |
+| 8:01 | Su2100 | the next step on the ladder? | TODAY · POWER rung pulses (the current top step) (ui-click-soft); empty dashed "? · ?" rung draws above TODAY · POWER (pencil-scribble) |
+| 8:02 | Su2100 |  |  |
+| 8:03 | Su2100 | Twenty one hundred. | the ladder docks top-right (whoosh-soft); YOU WAKE UP IN · 2100 sweeps in (whoosh-wind); 2100 slams; 2100 written into the docked dashed rung; PREDICTION · A SCENARIO, NOT A FACT tag rises (stamp-hit) |
+| 8:04 | Su2100 | That morning hasn't | unrisen dawn: horizon + dashed Sun (wind-soft) |
+| 8:05 | Su2100 | happened yet. | THAT MORNING HASN'T HAPPENED YET (ui-click-soft) |
+| 8:06 | Su2100 | But we can follow | header docks (whoosh-soft) |
+| 8:07 | Su2100 | the evidence. | dotted path draws to the "?" rung (pencil-scribble) |
+| 8:08 | Su2100 | Every video | phone with a play icon (pop-reveal) |
+| 8:09 | Su2100 | you watch, every | video plays: progress bar runs (ui-click-soft) |
+| 8:10 | Su2100 | question you ask | "?" bubble (ui-click-soft) |
+| 8:11 | Su2100 | an AI, | AI reply bubble (pop-reveal) |
+| 8:12 | Su2100 | runs in a data centre. | light lines start running towards the rack (ui-send); server rack + DATA CENTRE (pop-reveal) |
+| 8:13 | Su2100 | In twenty | WORLD ELECTRICITY bar draws (ui-click-soft) |
+| 8:14 | Su2100 | twenty four, | · 2024 (ui-click-soft) |
+| 8:15 | Su2100 | data centres used |  |
+| 8:16 | Su2100 | about one and a half percent | 1.5 % slice lights; 1.5 % · DATA CENTRES (pop-reveal) |
+| 8:17 | Su2100 | of the world's electricity. | slice opens into its row: 2024 · ≈ 415 TWh (ui-click-soft) |
+| 8:18 | Su2100 |  |  |
+| 8:19 | Su2100 | The International Energy | footnote IEA · Energy and AI (2025) (ui-click-soft) |
+| 8:20 | Su2100 | Agency expects | dashed ghost bar appears (ui-click-soft) |
+| 8:21 | Su2100 | that to more than double | (riser: the dashed bar grows from "double") (riser-soft) |
+| 8:22 | Su2100 | by twenty thirty. | 2030 · ≈ 945 TWh · IEA projection (impact-soft) |
+| 8:23 | Su2100 | That's |  |
+| 8:24 | Su2100 | slightly more than all | dashed guide drops from the 2030 bar end (ui-click-soft) |
+| 8:25 | Su2100 | of Japan uses | Japan bar fills to the same length (pop-reveal) |
+| 8:26 | Su2100 | today. Meanwhile, | MAPLE scene: Earth curve; ladder fades (whoosh-soft) |
+| 8:27 | Su2100 | in twenty twenty | 2023 chip (ui-click-soft) |
+| 8:28 | Su2100 | three, a small Caltech | CALTECH chip (pop-reveal) |
+| 8:29 | Su2100 | satellite called | the satellite flies in (whoosh-soft) |
+| 8:30 | Su2100 | Maple transmitted | MAPLE title (ui-click-soft) |
+| 8:31 | Su2100 | power wirelessly | power across the gap; POWER BEAMED · IN SPACE (ui-send) |
+| 8:32 | Su2100 | in space, |  |
+| 8:33 | Su2100 | and aimed a signal | signal beam heads down (stream-soft) |
+| 8:34 | Su2100 | at a rooftop in Pasadena. | rooftop receiver + SIGNAL · PASADENA ROOFTOP (pop-reveal) |
+| 8:35 | Su2100 | Tiny. | magnifier inset on the small array; TINY (whoosh-soft) |
+| 8:36 | Su2100 | But it |  |
+| 8:37 | Su2100 | worked. So | receiver lights; IT WORKED (chime-reward) |
+| 8:38 | Su2100 | here's one scenario. | PREDICTION tag pulses; ONE SCENARIO (ui-click-soft); scenario scene: the Sun (fades in from "scenario") (whoosh-soft) |
+| 8:39 | Su2100 | Not a | scenario tint + dashed frame; · NOT A FACT (scan-hum) |
+| 8:40 | Su2100 | fact. |  |
+| 8:41 | Su2100 | The internet, AI, | globe icon + INTERNET + its sun line appear (ui-click-soft); AI chip icon + AI + its sun line appear (ui-click-soft) |
+| 8:42 | Su2100 | and whole |  |
+| 8:43 | Su2100 | cities running more and | skyline icon + CITIES + its sun line appear (ui-click-soft); sun lines thicken (warm-shimmer) |
+| 8:44 | Su2100 | more on sunlight. | the Sun flares (sparkle-soft) |
+| 8:45 | Su2100 | Some of it, maybe, | "maybe" label (ui-click-soft) |
+| 8:46 | Su2100 | collected in orbit, | orbit ring + collector (pop-reveal) |
+| 8:47 | Su2100 | where the Sun never | WHERE THE SUN NEVER SETS (ui-click-soft) |
+| 8:48 | Su2100 | sets. |  |
+| 8:49 | Su2100 | In fifteen | the ladder returns, 1500 rung glows; 1500 panel (whoosh-soft) |
+| 8:50 | Su2100 | hundred, the Sun decided | the 1500 Sun starts to set (ui-click-soft) |
+| 8:51 | Su2100 | when you went to sleep. | the sleeper lies down; SLEEP (wind-soft) |
+| 8:52 | Su2100 | In twenty | 2100 panel; the dashed rung pulses (whoosh-soft) |
+| 8:53 | Su2100 | one hundred, it might decide | a ? in the empty 2100 slot (ui-click-soft) |
+| 8:54 | Su2100 | whether your AI | a dark AI chip appears (pop-reveal) |
+| 8:55 | Su2100 | wakes up. | the AI chip powers on; YOUR AI · WAKES UP (ui-toggle-on); rung fills: 2100 · THE ENERGY BEHIND WHAT WE RUN? + PREDICTION (stamp-hit) |
+| 8:56 | Su2100 | The Sun won't notice. | the Sun + "The Sun won't notice." (whoosh-soft) |
+| 8:57 | Su2100 | NASA | NASA ESTIMATE (ui-click-soft) |
+| 8:58 | Su2100 | estimates it |  |
+| 8:59 | Su2100 | has another five billion | ≈ 5 billion years (chime-magic) |
+| 9:00 | Su2100 | years or so. | · YEARS LEFT, OR SO (ui-click-soft) |
+| 9:01 | Su2100 | The question | "The question is" (ui-click-soft) |
+| 9:02 | Su2100 | is what we'll have learned | "what we'll have" (ui-click-soft) |
+| 9:03 | Su2100 | to do with it. | "learned to do with it." (warm-shimmer) |
+| 9:04 | Su2100 |  | cut to the close (whoosh-soft) |
+| 9:05 | SuClose | The Sun |  |
+| 9:06 | SuClose | has risen on | the first sunrise lights (ui-click-soft) |
+| 9:07 | SuClose | every single morning | the wall of sunrises fills; caption: Every single (sparkle-soft); caption: morning (gold) (ui-click-soft) |
+| 9:08 | SuClose | of your life. | caption: of your life. (wall complete) (pop-reveal) |
+| 9:09 | SuClose | So tell me. | the wall dims (whoosh-reverse) |
+| 9:10 | SuClose | When was the | the question (whoosh-soft) |
+| 9:11 | SuClose | last time you watched | "watched it rise," (ui-click-soft) |
+| 9:12 | SuClose | it rise, on purpose? | "on purpose?" glows (chime-magic) |
+| 9:13 | SuClose |  |  |
+| 9:14 | SuClose |  | question beat: one sunrise lifts under the line (warm-shimmer); cut to the outro (whoosh-wind) |
+| 9:15 | SuOutro | This was | EPISODE 02 (pop-reveal); logo switches on; wordmark (ui-toggle-on) |
+| 9:16 | SuOutro | Did You Know That, episode |  |
+| 9:17 | SuOutro | two. The | "02" pulses (ui-click-soft); "The Sun" title (pop-reveal) |
+| 9:18 | SuOutro | Sun. Now |  |
+| 9:19 | SuOutro | it is your turn. | lockup shrinks; prompt card (whoosh-soft) |
+| 9:20 | SuOutro | In which century | heading + seven year chips (1/7) (ui-click-soft) |
+| 9:21 | SuOutro | would you rather watch | heading + seven year chips (2/7) (ui-click-soft); heading + seven year chips (3/7) (ui-click-soft) |
+| 9:22 | SuOutro | the Sun rise? | heading + seven year chips (4/7) (ui-click-soft); heading + seven year chips (5/7) (ui-click-soft); heading + seven year chips (6/7) (ui-click-soft) |
+| 9:23 | SuOutro | Tell me in the comments. | heading + seven year chips (7/7) (ui-click-soft); COMMENTS ↓ (pop-reveal) |
+| 9:24 | SuOutro | At the |  |
+| 9:25 | SuOutro | end of every episode, I | "end of every episode:" (ui-click-soft) |
+| 9:26 | SuOutro | will read the best comment, | COMMENT OF THE WEEK pill (impact-soft); "best comment read on screen" (ui-click-soft) |
+| 9:27 | SuOutro | right here, on this | card flash ("right here") (ui-click-soft) |
+| 9:28 | SuOutro | screen. And | "read on screen" (ui-click-soft) |
+| 9:29 | SuOutro | the subject you ask | "the subject you ask for most" (sparkle-soft) |
+| 9:30 | SuOutro | for most becomes a future | "you ask for most" (ui-click-soft); → a future episode (pop-reveal) |
+| 9:31 | SuOutro | episode. On |  |
+| 9:32 | SuOutro | our website, Dex-tee | website pill slides in (name follows on Dex-tee) (whoosh-soft); Dexty.live name lights in the pill (sparkle-soft) |
+| 9:33 | SuOutro | dot live, |  |
+| 9:34 | SuOutro | you can watch | WATCH (ui-click-soft) |
+| 9:35 | SuOutro | every episode, |  |
+| 9:36 | SuOutro | collect the facts and | COLLECT (ui-click-soft) |
+| 9:37 | SuOutro | play the guessing game. | PLAY (ui-click-soft); Dexty.live pulses with glow (pop-reveal) |
+| 9:38 | SuOutro | If this changed | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
+| 9:39 | SuOutro | how you see a sunrise, | A SUNRISE (ui-click-soft) |
+| 9:40 | SuOutro | like it. | Like (ui-click-soft) |
+| 9:41 | SuOutro | Share it | Share (ui-send) |
+| 9:42 | SuOutro | with the friend who never | THE FRIEND WHO NEVER MISSES ONE (ui-click-soft) |
+| 9:43 | SuOutro | misses one. | friend chip pulses cyan (pop-reveal) |
+| 9:44 | SuOutro | And subscribe, | Subscribe (chime-reward) |
+| 9:45 | SuOutro | so the next mystery | ? THE NEXT MYSTERY (sparkle-soft) |
+| 9:46 | SuOutro | finds you. |  |
+| 9:47 | SuOutro | Next time: | NEXT · NO. 03 (whoosh-wind) |
+| 9:48 | SuOutro | school. | SCHOOL (impact-soft) |
+| 9:49 | SuOutro | How did a day in | question part 1: How did a day in class change (ui-click-soft) |
+| 9:50 | SuOutro | class change from fifteen | school bell + "in class change" (pop-reveal); "from 1500 to today —" (ui-click-soft) |
+| 9:51 | SuOutro | hundred to today, |  |
+| 9:52 | SuOutro | and will the | question part 2: and will the classrooms… (ui-click-soft) |
+| 9:53 | SuOutro | classrooms of twenty | "2100 even" (question part 3) (ui-click-soft) |
+| 9:54 | SuOutro | one hundred even exist? | "exist?" (piano-a-min) |
+| 9:55 | SuOutro | Ask... |  |
+| 9:56 | SuOutro |  | ASK. (thock in the beat after the word) (chess-piece-thock) |
+| 9:57 | SuOutro | Wonder... | WONDER. (thock in the beat after the word) (chess-piece-thock) |
+| 9:58 | SuOutro | Repeat. |  |
+| 9:59 | SuOutro |  | REPEAT. (thock in the beat after the word) (chess-piece-thock) |
+| 10:00 | SuOutro | Next time... | end screen: BEST COMMENT · READ HERE writes on (pencil-scribble); end screen: logo switches on (subscribe slot) (ui-toggle-on); end screen: logo glow (sparkle-soft) |
+| 10:01 | SuOutro | this could |  |
+| 10:02 | SuOutro | be your comment. | end screen: COMMENT OF THE WEEK card flares (pop-reveal) |
+| 10:03 | SuOutro | Pick a mystery. | end screen: Comment below / best one is read next episode (ui-click-soft) |
+| 10:04 | SuOutro | And I will see | end screen: subscribe ring pulses (sparkle-soft) |
+| 10:05 | SuOutro | you there. |  |
+| 10:06 | SuOutro |  |  |
+| 10:07 | SuOutro |  |  |
+| 10:08 | SuOutro |  |  |
+| 10:09 | SuOutro |  |  |
+| 10:10 | SuOutro |  |  |
+| 10:11 | SuOutro |  |  |
+| 10:12 | SuOutro |  |  |
+| 10:13 | SuOutro |  |  |
+| 10:14 | SuOutro |  |  |
+| 10:15 | SuOutro |  |  |
+| 10:16 | SuOutro |  |  |
