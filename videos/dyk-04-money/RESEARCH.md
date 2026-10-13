@@ -114,7 +114,17 @@ that hedge · **RE-CHECK** = re-open before voicing · **not used** = checked an
 - [Banque de France: Eurosystem moving to next phase of digital euro (30 Oct 2025)](https://www.banque-france.fr/en/press-release/eurosystem-moving-next-phase-digital-euro-project) · [A&O Shearman FinReg](https://finreg.aoshearman.com/ecb-moves-to-next-phase-of-digital-euro-project)
 - Suri, T. & Jack, W. (2016) *Science* 354:1288 (not narrated) · [MIT News summary](https://news.mit.edu/index%2ephp/2016/mobile-money-kenyans-out-poverty-1208)
 
-## RE-CHECK before voicing (in a browser if fetching fails)
+## Re-checks before voicing (production, 2026-10-13)
+| Fact | Result | Script handling |
+|---|---|---|
+| F3 | BoE M4 was £3,212,665 m in Dec 2025 (Trading Economics citing BoE Bankstats); BoE notes in circulation ~£86 bn (banknote statistics). Notes ≈ 2.7 % of M4, ~3 % with coin. My arithmetic, not a published ratio. | **corroborated.** The script keeps the dated framing "When the Bank of England checked" (2014); no current number is said or shown. |
+| F19 | Bordo, "Gold Standard", *Concise Encyclopedia of Economics* (Econlib, read): England de facto gold 1717, formally 1819; "Other major countries joined the gold standard in the 1870s"; 1880–1914 "the majority of countries adhered (in varying degrees) to gold"; US de jure 1900. | **verified.** "Over the next century, much of the world follows Britain onto gold" stays. |
+| F26 | Digital euro: the Council fixed its negotiating position on 19 Dec 2025; Parliament's ECON backed its position 23 Jun 2026 (43–14–1) and the plenary confirmed the mandate on 9 Jul 2026 (416–169–22). Trilogue started summer 2026, target: finish the legislative process by end-2026. As of late Sep 2026 no trilogue agreement was reported. **Not yet law.** The ECB's plan still reads: if legislation is adopted in 2026, ready for a potential first issuance in 2029. | **verified (status: pending).** Line kept with its hedges: "getting ready for a possible digital euro… could come as early as twenty twenty nine, if lawmakers agree." On screen: `2029?` with the question mark and `if EU lawmakers agree · ECB, Oct 2025`. |
+| F29 (new) | No. 05 teaser (Food): Munro, "Wage-stickiness, monetary changes, and real incomes in late-medieval England and the Low Countries", *Research in Economic History* 21 (2003), read in PDF: foodstuffs "account for 80% of the component weights" in the Phelps Brown & Hopkins (1956) English index, justified by a 1450s Dorset household whose food was 80 % of total spending; Blockmans & Prevenier endorse 70–80 % for Flanders. | **verified (secondary, cites primary).** Teaser says "food took up most of a working family's budget" — no number narrated; on screen `food ≈ 70–80 % of spending · historians' price baskets`. |
+
+Sources added: [Banca d'Italia, 9 Jul 2026](https://www.bancaditalia.it/media/notizia/the-european-parliament-approves-the-digital-euro-regulation/) · [CoinDesk, 23 Jun 2026](https://www.coindesk.com/policy/2026/06/23/european-parliament-clears-last-step-for-a-digital-euro-to-break-u-s-payment-grip) · [Econlib: Bordo, Gold Standard](https://www.econlib.org/library/Enc/GoldStandard.html) · [Munro 2003 (PDF)](https://www.economics.utoronto.ca/munro5/REH21MunroWageStickiness.pdf) · [Trading Economics: UK M4](https://tradingeconomics.com/united-kingdom/money-supply-m4)
+
+## RE-CHECK before voicing (original list — resolved above)
 | Fact | What to confirm |
 |---|---|
 | F3 | Current BoE notes-and-coin share of M4 (Bankstats). If it has moved well away from ~3 %, keep the 2014 framing ("When the Bank of England checked") and don't add a current number. |
