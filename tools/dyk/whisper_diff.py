@@ -115,7 +115,7 @@ def number_value(run):
         j = i + 1
         while j < len(words) and (words[j] in UNIT_VALUES or words[j] in TENS_VALUES):
             j += 1                             # decimal part, read digit by digit or as a group: 'point four', 'point twelve'
-        decimals = "".join(str(UNIT_VALUES.get(w, TENS_VALUES.get(w))) for w in words[i + 1:j]) or "0"
+        decimals = "".join(str(g) for g in _small_groups(words[i + 1:j])) or "0"   # 'twenty five' -> 25, 'two five' -> 25
         value = float(f"{head:g}.{decimals}")
         if j < len(words) and words[j] in SCALE_VALUES:
             value, j = value * SCALE_VALUES[words[j]], j + 1
@@ -135,8 +135,10 @@ def _remainder_follows(toks, i):
     while 'four hundred and sixty three million' is one (the larger scale multiplies the whole)."""
     scale = SCALE_ORDER.get(toks[i - 1])
     j = i + 1
-    if scale is None or j >= len(toks) or not (_is_number(toks[j]) or toks[j] == "a"):
-        return False
+    nxt, after = (toks + ["", ""])[j], (toks + ["", ""])[j + 1]
+    if scale is None or not (_is_number(nxt) or (nxt == "a" and after in SCALES)):
+        return False                           # 'a million and a half': no number follows the 'and'
+
     while j < len(toks) and (_is_number(toks[j]) or toks[j] == "a"):
         if SCALE_ORDER.get(toks[j]) == scale or (DIGITS.match(toks[j]) and float(toks[j]) >= scale):
             return False
