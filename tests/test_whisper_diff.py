@@ -45,6 +45,23 @@ class TokenTests(unittest.TestCase):
                             ("between two thousand and ten thousand", "between 2000 and 10000")):
             self.assertEqual(wd.tokens(said), wd.tokens(heard), (said, heard))
 
+    def test_punctuation_ends_a_number_and_a_year_never_absorbs_the_next_number(self):
+        # No. 04 mo07-1821: "nineteen seventy one, one television speech" was #197101, whisper's "1971, one" #1972
+        said = "But in nineteen seventy one, one television speech cuts the rope."
+        self.assertEqual(wd.tokens(said), ["but", "in", "#1971", "#1", "television", "speech", "cuts", "the", "rope"])
+        self.assertEqual(wd.tokens(said), wd.tokens("But in 1971, one television speech cuts the rope."))
+        self.assertEqual(wd.tokens("in 1971 one speech"), ["in", "#1971", "#1", "speech"])
+        self.assertEqual(wd.tokens("in nineteen seventy one one speech"), ["in", "#1971", "#1", "speech"])
+        self.assertEqual(wd.tokens("five, six"), ["#5", "#6"])
+        # review PRRT_kwDOTfGVps6rx43m / rxriB: no comma, digits after digits, and a scale-form year
+        self.assertEqual(wd.tokens("in 1971 1 speech"), ["in", "#1971", "#1", "speech"])
+        # review PRRT (greptile): a scale compound stays whole without punctuation; "nineteen hundred one" is 1901
+        self.assertEqual(wd.tokens("in nineteen hundred one"), wd.tokens("in 1901"))
+        self.assertEqual(wd.tokens("in twenty one hundred, one speech"), ["in", "#2100", "#1", "speech"])
+        self.assertEqual(wd.tokens("four hundred one"), ["#401"])
+        self.assertEqual(wd.tokens("one hundred one dalmatians"), wd.tokens("101 dalmatians"))
+        self.assertNotEqual(wd.tokens("in nineteen seventy one, one speech"), wd.tokens("in 1972 speech"))
+
     def test_and_without_a_following_number_stays_a_word(self):
         self.assertEqual(wd.tokens("a million and a half"), ["#1000000", "and", "a", "half"])
         self.assertEqual(wd.tokens("two thousand and a hundred"), ["#2100"])
@@ -82,6 +99,15 @@ class FlagTests(unittest.TestCase):
         ws = [{"word": w, "start": i * 0.3, "end": i * 0.3 + 0.2, "probability": 0.9}
               for i, w in enumerate([" about", " 1", ".4", " billion", " and", " 1", ",000", " more"])]
         self.assertEqual(wd.diff_scene("about one point four billion and a thousand more", ws, ())["flags"], [])
+
+    def test_year_then_small_number_round_trip_passes(self):
+        # No. 04 mo07-1821 had to be waived with --accept on a correct take
+        self.assertEqual(flags("But in nineteen seventy one, one television speech cuts the rope.",
+                               "But in 1971, one television speech cuts the rope."), [])
+        self.assertIn("number", flags("in nineteen seventy one, one speech", "in 1972, one speech"))
+        self.assertEqual(flags("in nineteen seventy one, one speech", "in 1971 1 speech"), [])
+        self.assertEqual(flags("in twenty one hundred, one speech", "in 2100, one speech"), [])
+        self.assertEqual(flags("born in nineteen hundred one", "born in 1901"), [])
 
     def test_number_heard_as_another_value_fails(self):
         self.assertIn("number", flags("in fifteen hundred, in London", "in 1600, in London"))
