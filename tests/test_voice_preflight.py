@@ -161,6 +161,75 @@ class PreflightTests(unittest.TestCase):
         self.assertEqual(jumps(0.30 / 1.15), [])            # 15 % faster: designed shift, passes
         self.assertTrue(jumps(0.30 / 1.30))                 # 30 % faster: lurch, fails
 
+class SfxOnsetTests(unittest.TestCase):
+    """No. 03 audit: the pre-flight PASSED while an auditor found 207 loud SFX starting exactly on a word onset.
+    The old check only flagged starts strictly inside (onset + 30 ms, end - 30 ms), and No. 02's cue resolver
+    snapped in-word cues to the onset itself — so every snapped cue sat in the blind spot."""
+
+    def setUp(self):
+        _, self.vo, self.tl = clean_episode()
+        self.w1 = 5.0 + 0.8 + self.vo["s2"]["words"][1]["s"]          # onset of 'you' in shot B
+        self.w1_end = 5.0 + 0.8 + self.vo["s2"]["words"][1]["e"]
+
+    def hits(self, t, clip="pop-reveal"):
+        return vp.check_sfx_on_words(self.vo, self.tl, [{"t": round(t, 3), "clip": clip, "gain": 0.3}])
+
+    def test_cue_exactly_on_a_word_onset_fails(self):
+        self.assertEqual(len(self.hits(self.w1)), 1)
+
+    def test_cue_just_before_an_onset_fails(self):
+        self.assertEqual(len(self.hits(self.w1 - 0.02)), 1)           # the hit masks the consonant
+
+    def test_cue_in_the_gap_clear_of_the_onset_passes(self):
+        self.assertEqual(self.hits(self.w1 - 0.06), [])
+
+    def test_cue_late_inside_a_word_fails(self):
+        self.assertEqual(len(self.hits(self.w1_end - 0.01)), 1)       # the old 30 ms tail margin let this through
+
+    def test_cue_on_the_word_end_passes(self):
+        self.assertEqual(self.hits(self.w1_end), [])
+
+    def test_soft_clips_are_not_loud(self):
+        self.assertEqual(self.hits(self.w1, clip="ui-click-soft"), [])
+
+
+class OffWordTests(unittest.TestCase):
+    """The shared resolver every episode's build_final.py uses, so the mix and the gate agree."""
+
+    spans = [(1.00, 1.30), (1.35, 1.60), (1.60, 1.90), (2.50, 2.80)]   # gap 0.05 before word 2; words 2-3 abut
+
+    def clear(self, t):
+        return vp.sfx_on_word(t, self.spans) is None
+
+    def test_quiet_or_clear_cues_never_move(self):
+        self.assertEqual(vp.off_word(1.10, "ui-click-soft", self.spans), 1.10)
+        self.assertEqual(vp.off_word(2.20, "pop-reveal", self.spans), 2.20)
+
+    def test_onset_cue_moves_ahead_of_its_word_when_the_gap_allows(self):
+        self.assertAlmostEqual(vp.off_word(2.50, "pop-reveal", self.spans), 2.50 - vp.PRE_ONSET_S)
+
+    def test_onset_cue_in_a_tight_gap_lands_clear_never_on_the_onset(self):
+        # No. 03's resolver put these at prev_end + 5 ms: 0-30 ms before the onset, or ON it when words abut
+        for t0 in (1.35, 1.60):                                       # tight 50 ms gap; abutting words
+            t = vp.off_word(t0, "pop-reveal", self.spans)
+            self.assertTrue(self.clear(t), (t0, t))
+            self.assertLessEqual(abs(t - t0), vp.MAX_SHIFT_S)
+
+    def test_a_move_beyond_max_shift_is_left_for_the_gate(self):
+        long_word = [(0.0, 0.1), (0.12, 2.0), (2.02, 3.0)]            # a 1.9 s word with no near gap
+        self.assertEqual(vp.off_word(1.0, "pop-reveal", long_word), 1.0)
+
+    def test_late_cue_moves_to_the_word_end(self):
+        self.assertAlmostEqual(vp.off_word(1.25, "whoosh-soft", self.spans), 1.30)
+
+    def test_riser_moves_earlier_so_it_still_ends_before_its_payoff(self):
+        t = vp.off_word(2.55, "riser-soft", self.spans)
+        self.assertTrue(self.clear(t) and t < 2.50, t)
+
+    def test_no_clear_spot_leaves_the_cue_for_the_gate_to_flag(self):
+        packed = [(i * 0.2, i * 0.2 + 0.2) for i in range(20)]       # continuous speech, no gaps at all
+        self.assertEqual(vp.off_word(1.05, "pop-reveal", packed), 1.05)
+
 
 if __name__ == "__main__":
     unittest.main()
