@@ -1,0 +1,99 @@
+== sc01-hook  ratio 0.913
+   diff ('delete', 'seven forty five', '')
+   diff ('delete', 'one point four', '')
+   diff ('delete', 'five hundred', '')
+== sc02-question  ratio 1.000
+== sc00-welcome  ratio 0.966
+   diff ('delete', 'two hundred', '')
+   diff ('delete', 'ten', '')
+   gaps [('read?', 1.16)]
+== sc03-promise  ratio 0.959
+   diff ('delete', 'fifteen hundred', '')
+   diff ('delete', 'twenty one hundred', '')
+== sc04-1500  ratio 0.960
+   diff ('delete', 'fifteen hundred', '')
+   diff ('replace', 'hammers', 'hammer is')
+   diff ('delete', 'a hundred', '')
+   diff ('replace', 'apprenticed', 'a apprentice')
+   diff ('replace', 'skelton', 'skeleton')
+   diff ('delete', 'fifteen twenty four', '')
+   low-p [('apprentice.', 0.17), ('Usually', 0.13), ('Build', 0.15)]
+   gaps [('read?', 1.18)]
+== sc05-1647  ratio 0.983
+   diff ('delete', 'sixteen forty seven', '')
+   diff ('delete', 'fifty', '')
+   diff ('delete', 'a hundred', '')
+   low-p [('100', 0.22)]
+   gaps [('now?', 1.2)]
+== sc06-1763  ratio 0.960
+   diff ('delete', 'seventeen sixty three', '')
+   diff ('replace', 'an', 'in')
+   diff ('delete', 'thirteen', '')
+   diff ('replace', 'fined', 'fine')
+   diff ('delete', 'eight', '')
+   diff ('replace', 'eleven and one', 'in')
+   diff ('delete', 'four', '')
+   diff ('replace', 'disciplined', 'discipline')
+   low-p [('In', 0.33), ('in', 0.34), ('hire', 0.33), ('And', 0.2)]
+   gaps [('holidays?', 1.56), ('soldier.', 1.14)]
+== sc07-1810  ratio 0.942
+   diff ('delete', 'eighteen ten', '')
+   diff ('replace', 'borough', 'burrow')
+   diff ('delete', 'a thousand', '')
+   diff ('replace', 'misbehave', 'misbehaved')
+   diff ('delete', 'twelve hundred', '')
+   diff ('delete', 'eighteen eighty', '')
+   diff ('delete', 'five', '')
+   diff ('delete', 'ten', '')
+   diff ('delete', 'eighteen ninety one', '')
+   diff ('replace', 'youre', 'you are')
+== sc08-1948  ratio 0.955
+   diff ('delete', 'nineteen forty eight', '')
+   diff ('delete', 'nineteen ten', '')
+   diff ('delete', 'nineteen forty', '')
+   diff ('delete', 'ten', '')
+   diff ('replace', 'grandad', 'granddad')
+   diff ('replace', 'a', 'of')
+   diff ('delete', 'seventy', '')
+   low-p [('Every', 0.35), ('gets', 0.22)]
+   gaps [('now?', 1.14)]
+== sc09-today  ratio 0.920
+   diff ('replace', 'due at', 'do it')
+   diff ('delete', 'twenty twenty', '')
+   diff ('delete', 'one point six', '')
+   diff ('replace', 'in ten', 'and')
+   diff ('delete', 'four hundred and sixty three', '')
+   diff ('replace', 'buildings', 'building')
+   low-p [('Always', 0.02)]
+   gaps [('them.', 1.18), ('for.', 1.32)]
+== sc10-reveal  ratio 0.945
+   diff ('replace', 'skohlay', 'scolai')
+   diff ('replace', 'it', 'at')
+   diff ('delete', 'two hundred', '')
+   diff ('delete', 'ten', '')
+   diff ('delete', 'ten', '')
+   diff ('delete', 'fifteen hundred', '')
+   diff ('replace', 'your', 'youre')
+   diff ('replace', 'your', 'youre')
+   gaps [('few.', 1.76)]
+== sc11-2100  ratio 0.926
+   diff ('replace', 'rung twenty one hundred', 'wrong')
+   diff ('delete', 'nineteen eighty four', '')
+   diff ('delete', 'ninety eight percent', '')
+   diff ('delete', 'twenty twenty four', '')
+   diff ('delete', 'twenty one hundred', '')
+   diff ('replace', 'princes', 'princess')
+   diff ('replace', 'and', 'in')
+   diff ('replace', 'o e c d', 'oecd')
+   diff ('delete', 'fifteen hundred', '')
+   diff ('delete', 'twenty one hundred', '')
+   low-p [('Then', 0.27), ('In', 0.12)]
+   gaps [('wrong?', 1.2)]
+== sc12-close  ratio 1.000
+== sc13-outro  ratio 0.955
+   diff ('replace', 'centurys classroom', 'centuries class room')
+   diff ('replace', 'dextee dot', 'dext')
+   diff ('replace', 'the', 'a')
+   diff ('delete', 'nine percent', '')
+   low-p [('Share', 0.18)]
+== sc14-endscreen  ratio 1.000

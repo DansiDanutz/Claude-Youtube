@@ -1,0 +1,652 @@
+sec | shot | narration in this second | SFX starting in this second
+0:00 | ScHook | It's seven | wind-soft, clock-tick-soft
+0:01 | ScHook | forty five. | 
+0:02 | ScHook | Somewhere near | sparkle-soft
+0:03 | ScHook | you, a school bell's | ui-click-soft
+0:04 | ScHook | about to ring. | chime-reward
+0:05 | ScHook | Right now, about | whoosh-soft
+0:06 | ScHook | one point four | ui-click-soft
+0:07 | ScHook | billion children | pop-reveal
+0:08 | ScHook | are in school. | ui-send
+0:09 | ScHook | More than ever before. | pop-reveal
+0:10 | ScHook | Five hundred | whoosh-soft
+0:11 | ScHook | years ago, most | 
+0:12 | ScHook | children never saw a | ui-click-soft
+0:13 | ScHook | classroom. They | ui-click-soft
+0:14 | ScHook | worked. | knock-solid, pop-reveal
+0:15 | ScHook | Today, most of them | 
+0:16 | ScHook | spend every weekday | ui-click-soft, ui-click-soft, ui-click-soft
+0:17 | ScHook | at a desk. | ui-click-soft, ui-click-soft, stamp-hit
+0:18 | ScHook | And | 
+0:19 | ScHook | still, did you know | whoosh-soft, ui-toggle-on
+0:20 | ScHook | that the word school | ui-click-soft, pop-reveal
+0:21 | ScHook | first meant... | chime-magic
+0:22 | ScHook | the one thing | ui-click-soft
+0:23 | ScHook | school seems to | riser-soft
+0:24 | ScHook | take away from you? | ui-click-soft
+0:25 | ScHook |  | impact-deep-soft
+0:26 | ScHook |  | scan-hum, ui-toggle-on, sparkle-soft
+0:27 | ScIntro |  | whoosh-soft, knock-solid, knock-solid
+0:28 | ScIntro |  | knock-solid, impact-deep-soft, chime-magic
+0:29 | ScIntro |  | 
+0:30 | ScIntro |  | whoosh-soft
+0:31 | ScIntro |  | 
+0:32 | ScIntro |  | 
+0:33 | ScIntro |  | whoosh-soft
+0:34 | ScWelcome | Welcome back | 
+0:35 | ScWelcome | to Did You Know That. | ui-toggle-on
+0:36 | ScWelcome | Episode | pop-reveal
+0:37 | ScWelcome | three. You | 
+0:38 | ScWelcome | know the rule. | whoosh-soft
+0:39 | ScWelcome | Here's your guess. | pop-reveal
+0:40 | ScWelcome | Two hundred years | ui-click-soft
+0:41 | ScWelcome | ago, out of every | 
+0:42 | ScWelcome | ten people on Earth, | ui-click-soft, page-flip
+0:43 | ScWelcome | how many | 
+0:44 | ScWelcome | could read? | chime-magic
+0:45 | ScWelcome | Guess in | pop-reveal
+0:46 | ScWelcome | the comments, right | ui-click-soft
+0:47 | ScWelcome | now. Then stay | pop-reveal
+0:48 | ScWelcome | to the end, and check | pop-reveal
+0:49 | ScWelcome | your guess. | chime-reward
+0:50 | ScWelcome |  | whoosh-soft
+0:51 | ScPromise | Seven mornings, | ui-click-soft, ui-click-soft
+0:52 | ScPromise | from fifteen | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+0:53 | ScPromise | hundred to twenty | ui-click-soft, ui-click-soft, ui-click-soft
+0:54 | ScPromise | one hundred. | 
+0:55 | ScPromise | In each one, you | sparkle-soft
+0:56 | ScPromise | wake up as a different | warm-shimmer, ui-click-soft
+0:57 | ScPromise | kid, on a | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+0:58 | ScPromise | school day. | chime-reward, ui-click-soft
+0:59 | ScPromise | Or a day with | ui-click-soft
+1:00 | ScPromise | no school at all. | stamp-hit
+1:01 | ScPromise | You start out | ui-click-soft
+1:02 | ScPromise | learning a trade with your | ui-click-soft
+1:03 | ScPromise | hands. | ui-click-soft
+1:04 | ScPromise | You end up somewhere | ui-click-soft
+1:05 | ScPromise | your tutor might | sparkle-soft
+1:06 | ScPromise | not even be human. | ui-click-soft
+1:07 | ScPromise |  | 
+1:08 | ScPromise | And at the end, | whoosh-soft
+1:09 | ScPromise | you'll find out what | 
+1:10 | ScPromise | the word school really | whoosh-soft, pop-reveal
+1:11 | ScPromise | means. | impact-soft
+1:12 | ScPromise |  | whoosh-wind, impact-soft
+1:13 | Sc1500 | You wake up | 
+1:14 | Sc1500 | in fifteen hundred, in | whoosh-soft
+1:15 | Sc1500 | London. | pop-reveal
+1:16 | Sc1500 | It's still dark. | sparkle-soft, whoosh-soft
+1:17 | Sc1500 | Next door, a | ui-click-soft
+1:18 | Sc1500 | hammer's already going, | knock-solid
+1:19 | Sc1500 | and the street | ui-click-soft
+1:20 | Sc1500 | smells of wet straw | ui-click-soft
+1:21 | Sc1500 | and wood smoke. | wind-soft
+1:22 | Sc1500 | Did | ui-toggle-on
+1:23 | Sc1500 | you know that historians | chime-magic, ui-click-soft
+1:24 | Sc1500 | estimate | 
+1:25 | Sc1500 | only about | ui-click-soft
+1:26 | Sc1500 | one woman in | ui-click-soft
+1:27 | Sc1500 | a hundred in England | pop-reveal, ui-click-soft
+1:28 | Sc1500 | could even write | ui-click-soft
+1:29 | Sc1500 | her own name? | pencil-scribble
+1:30 | Sc1500 | So what is school | whoosh-soft
+1:31 | Sc1500 | to you? | ui-click-soft
+1:32 | Sc1500 | Something for other | whoosh-reverse
+1:33 | Sc1500 | people. | chime-reward
+1:34 | Sc1500 | For priests, | ui-click-soft
+1:35 | Sc1500 | and rich boys. | ui-click-soft
+1:36 | Sc1500 | Most children | whoosh-soft, ui-click-soft
+1:37 | Sc1500 | learn by working. | knock-solid
+1:38 | Sc1500 | If you're a craftsman's | pop-reveal
+1:39 | Sc1500 | son, | 
+1:40 | Sc1500 | you're apprenticed. | ui-click-soft
+1:41 | Sc1500 | Usually seven | ui-click-soft
+1:42 | Sc1500 | years, living in your master's | ui-click-soft
+1:43 | Sc1500 | house, | 
+1:44 | Sc1500 | learning his trade by | ui-click-soft
+1:45 | Sc1500 | doing it. | ui-click-soft
+1:46 | Sc1500 | If you're lucky enough | whoosh-soft
+1:47 | Sc1500 | for grammar school, lessons | ui-click-soft
+1:48 | Sc1500 | often start at | 
+1:49 | Sc1500 | six in the morning. | clock-tick-soft
+1:50 | Sc1500 | In Latin. | stamp-hit
+1:51 | Sc1500 | And if you're a prince? | pop-reveal
+1:52 | Sc1500 | Nine | pop-reveal
+1:53 | Sc1500 | year old Prince Henry, | ui-click-soft
+1:54 | Sc1500 | the future | 
+1:55 | Sc1500 | Henry the Eighth, | ui-click-soft
+1:56 | Sc1500 | has a teacher | ui-click-soft
+1:57 | Sc1500 | all to himself, | 
+1:58 | Sc1500 | the poet | ui-click-soft
+1:59 | Sc1500 | John Skelton. | page-flip
+2:00 | Sc1500 | One teacher. | whoosh-soft
+2:01 | Sc1500 | One | pop-reveal
+2:02 | Sc1500 | child. Remember | stamp-hit
+2:03 | Sc1500 | that. In | 
+2:04 | Sc1500 | fifteen twenty four, | whoosh-soft
+2:05 | Sc1500 | a rebel preacher, | ui-click-soft
+2:06 | Sc1500 | Martin Luther, writes | pop-reveal, page-flip
+2:07 | Sc1500 | to the leaders of German | 
+2:08 | Sc1500 | cities. | ui-click-soft
+2:09 | Sc1500 | Build schools, | launch-thump
+2:10 | Sc1500 | he says. | 
+2:11 | Sc1500 | For boys, and for girls. | ui-click-soft, ui-click-soft
+2:12 | Sc1500 | Partly | page-flip
+2:13 | Sc1500 | so everyone can read | 
+2:14 | Sc1500 | the Bible. Why | chime-reward, piano-a-min
+2:15 | Sc1500 | would a whole town | 
+2:16 | Sc1500 | care if a farmer's | ui-click-soft
+2:17 | Sc1500 | daughter can read? | pop-reveal
+2:18 | Sc1500 |  | 
+2:19 | Sc1500 | Soon, a colony across | wind-soft, whoosh-soft
+2:20 | Sc1500 | the ocean will | ui-click-soft
+2:21 | Sc1500 | write it into law. | stamp-hit
+2:22 | Sc1500 |  | whoosh-reverse
+2:23 | Sc1500 | You | whoosh-wind, impact-soft
+2:24 | Sc1647 | wake up in sixteen | whoosh-soft
+2:25 | Sc1647 | forty seven, in a | 
+2:26 | Sc1647 | farming town in Massachusetts. | pop-reveal
+2:27 | Sc1647 |  | whoosh-soft
+2:28 | Sc1647 | There's frost on the window, | sparkle-soft, whoosh-soft
+2:29 | Sc1647 | and the cows | whoosh-soft
+2:30 | Sc1647 | need milking before | ui-click-soft
+2:31 | Sc1647 | breakfast. | ui-click-soft
+2:32 | Sc1647 | Did you know that one | ui-toggle-on, chime-magic
+2:33 | Sc1647 | of America's first | ui-click-soft
+2:34 | Sc1647 | school laws | ui-click-soft
+2:35 | Sc1647 | begins by blaming the | pop-reveal
+2:36 | Sc1647 | devil? | 
+2:37 | Sc1647 | It says it's a | page-flip
+2:38 | Sc1647 | chief project | ui-click-soft
+2:39 | Sc1647 | of that old deluder, | ui-click-soft
+2:40 | Sc1647 | Satan, | ui-click-soft
+2:41 | Sc1647 | to keep | 
+2:42 | Sc1647 | men from the knowledge | ui-click-soft
+2:43 | Sc1647 | of the Scriptures. | ui-click-soft
+2:44 | Sc1647 | So, what is school | whoosh-soft
+2:45 | Sc1647 | to you now? | ui-click-soft
+2:46 | Sc1647 | A way to | 
+2:47 | Sc1647 | read God's word, with | page-flip, chime-reward
+2:48 | Sc1647 | your own eyes. | sparkle-soft
+2:49 | Sc1647 | Five years | whoosh-soft
+2:50 | Sc1647 | earlier, a law told | whoosh-soft
+2:51 | Sc1647 | parents and masters | ui-click-soft, ui-click-soft
+2:52 | Sc1647 | to teach their children to | ui-click-soft, ui-click-soft
+2:53 | Sc1647 | read. | 
+2:54 | Sc1647 | Lots of them didn't | ui-click-soft
+2:55 | Sc1647 | bother. So | stamp-hit, whoosh-soft
+2:56 | Sc1647 | now, any | 
+2:57 | Sc1647 | town with fifty households | ui-send
+2:58 | Sc1647 | has to hire someone | pop-reveal
+2:59 | Sc1647 | to teach reading | ui-click-soft
+3:00 | Sc1647 | and writing. | 
+3:01 | Sc1647 | A hundred households? | ui-send
+3:02 | Sc1647 |  | 
+3:03 | Sc1647 | A grammar school too, | pop-reveal
+3:04 | Sc1647 | or the town pays | ui-click-soft
+3:05 | Sc1647 | a fine. | stamp-hit
+3:06 | Sc1647 | You learn your letters | whoosh-soft, ui-click-soft
+3:07 | Sc1647 | between the chores, | ui-click-soft
+3:08 | Sc1647 | and on Sunday, you hear | chime-reward
+3:09 | Sc1647 | why they matter. | page-flip
+3:10 | Sc1647 | All over | whoosh-soft
+3:11 | Sc1647 | Protestant Europe, | ui-click-soft
+3:12 | Sc1647 | churches want | ui-click-soft
+3:13 | Sc1647 | people reading. | page-flip
+3:14 | Sc1647 | But a church | ui-click-soft
+3:15 | Sc1647 | can only ask. | stamp-hit
+3:16 | Sc1647 | In | 
+3:17 | Sc1647 | the next century, | piano-a-min
+3:18 | Sc1647 | a king will order it. | impact-soft, page-flip
+3:19 | Sc1647 | And he'll ban one | ui-click-soft, stamp-hit
+3:20 | Sc1647 | thing every kid | ui-click-soft
+3:21 | Sc1647 | on Earth looks forward | ui-click-soft
+3:22 | Sc1647 | to. | whoosh-reverse
+3:23 | Sc1647 |  | whoosh-wind, impact-soft
+3:24 | Sc1763 | You wake up | 
+3:25 | Sc1763 | in seventeen sixty | whoosh-soft
+3:26 | Sc1763 | three, in a village | pop-reveal
+3:27 | Sc1763 | in Prussia. | 
+3:28 | Sc1763 | It's autumn. | wind-soft, whoosh-soft
+3:29 | Sc1763 | The war's just | 
+3:30 | Sc1763 | over, the | ui-click-soft
+3:31 | Sc1763 | harvest's in, | ui-click-soft
+3:32 | Sc1763 | and the pastor | ui-click-soft
+3:33 | Sc1763 | has news from the king. | page-flip
+3:34 | Sc1763 | Did | ui-toggle-on
+3:35 | Sc1763 | you know that Frederick | chime-magic, ui-click-soft
+3:36 | Sc1763 | the Great's new school law | 
+3:37 | Sc1763 | banned school holidays? | ui-click-soft, pop-reveal
+3:38 | Sc1763 |  | 
+3:39 | Sc1763 |  | 
+3:40 | Sc1763 | Not even at harvest | ui-click-soft, ui-click-soft, stamp-hit
+3:41 | Sc1763 | time. So what | whoosh-soft
+3:42 | Sc1763 | is school now? | ui-click-soft
+3:43 | Sc1763 | An order. | page-flip
+3:44 | Sc1763 | From | 
+3:45 | Sc1763 | the king. Every | chime-reward, ui-click-soft
+3:46 | Sc1763 | boy and girl, from | ui-click-soft, ui-click-soft
+3:47 | Sc1763 | the age of five until | ui-send
+3:48 | Sc1763 | about thirteen. | whoosh-soft, ui-click-soft
+3:49 | Sc1763 | Skip | ui-click-soft
+3:50 | Sc1763 | it, and your parents | 
+3:51 | Sc1763 | can be fined. | stamp-hit
+3:52 | Sc1763 | In winter, you're in | whoosh-soft
+3:53 | Sc1763 | class from eight to eleven, | clock-tick-soft
+3:54 | Sc1763 | and one | clock-tick-soft
+3:55 | Sc1763 | to four. In | 
+3:56 | Sc1763 | summer, just a few | ui-click-soft, ui-click-soft
+3:57 | Sc1763 | hours, because there | 
+3:58 | Sc1763 | are cows to herd. | pop-reveal
+3:59 | Sc1763 | The law even | page-flip
+4:00 | Sc1763 | says, hire | ui-click-soft
+4:01 | Sc1763 | a shepherd, | ui-click-soft
+4:02 | Sc1763 | so the children can go | ui-send
+4:03 | Sc1763 | to school. | chime-reward
+4:04 | Sc1763 | Your teacher might be an | whoosh-soft
+4:05 | Sc1763 | old soldier. | knock-solid
+4:06 | Sc1763 | Many | ui-click-soft
+4:07 | Sc1763 | early village teachers | ui-click-soft
+4:08 | Sc1763 | were. You | whoosh-soft
+4:09 | Sc1763 | might have heard school was | ui-click-soft
+4:10 | Sc1763 | invented to make obedient | ui-click-soft
+4:11 | Sc1763 | factory workers. | pop-reveal
+4:12 | Sc1763 | Historians | ui-click-soft
+4:13 | Sc1763 | say it's not that | 
+4:14 | Sc1763 | simple. | stamp-hit
+4:15 | Sc1763 | Prussia was still a land | ui-click-soft
+4:16 | Sc1763 | of farms. The | whoosh-soft
+4:17 | Sc1763 | king and his church | ui-click-soft
+4:18 | Sc1763 | wanted loyal, | ui-click-soft
+4:19 | Sc1763 | God fearing, disciplined | ui-click-soft, ui-click-soft
+4:20 | Sc1763 | subjects. | 
+4:21 | Sc1763 | And plenty | ui-click-soft
+4:22 | Sc1763 | of families just ignored | stamp-hit
+4:23 | Sc1763 | the rules. | 
+4:24 | Sc1763 | But one teacher | whoosh-soft
+4:25 | Sc1763 | per village is slow, | ui-click-soft, stamp-hit
+4:26 | Sc1763 | and expensive. | stamp-hit
+4:27 | Sc1763 | In London, | piano-a-min
+4:28 | Sc1763 | a young man | 
+4:29 | Sc1763 | thinks he can teach | ui-click-soft
+4:30 | Sc1763 | the poor for almost | ui-click-soft
+4:31 | Sc1763 | nothing. | 
+4:32 | Sc1763 | His trick? | pop-reveal
+4:33 | Sc1763 | Make the children | ui-click-soft
+4:34 | Sc1763 | the teachers. | 
+4:35 | Sc1763 |  | whoosh-reverse
+4:36 | Sc1763 | You | whoosh-wind, impact-soft
+4:37 | Sc1810 | wake up in eighteen ten, | whoosh-soft
+4:38 | Sc1810 | in London, | pop-reveal
+4:39 | Sc1810 | on Borough | ui-click-soft
+4:40 | Sc1810 | Road. You | 
+4:41 | Sc1810 | walk into one enormous | whoosh-soft, whoosh-soft
+4:42 | Sc1810 | hall. Hundreds | ui-click-soft, ui-send
+4:43 | Sc1810 | of children, | 
+4:44 | Sc1810 | in long rows. | ui-click-soft
+4:45 | Sc1810 | And just one | 
+4:46 | Sc1810 | master. | knock-solid, ui-toggle-on
+4:47 | Sc1810 | Did you know that this | chime-magic
+4:48 | Sc1810 | school's founder, | 
+4:49 | Sc1810 | Joseph Lancaster, | ui-click-soft
+4:50 | Sc1810 |  | 
+4:51 | Sc1810 | claimed one master | pop-reveal, ui-click-soft
+4:52 | Sc1810 | could run a school | 
+4:53 | Sc1810 | of more than a thousand | pop-reveal
+4:54 | Sc1810 | children? Older | whoosh-soft
+4:55 | Sc1810 | kids teach the | 
+4:56 | Sc1810 | younger ones, | whoosh-soft
+4:57 | Sc1810 | in small groups. | chime-reward
+4:58 | Sc1810 | You write your | whoosh-soft
+4:59 | Sc1810 | letters in sand, with | pencil-scribble, ui-click-soft
+5:00 | Sc1810 | your finger, because | ui-click-soft
+5:01 | Sc1810 | paper costs | stamp-hit
+5:02 | Sc1810 | money. | 
+5:03 | Sc1810 | Misbehave, | whoosh-soft
+5:04 | Sc1810 | and you might be hoisted | ui-send
+5:05 | Sc1810 | above the classroom, | 
+5:06 | Sc1810 | in a cage. | knock-solid
+5:07 | Sc1810 | Really. | stamp-hit
+5:08 | Sc1810 | Lancaster | ui-click-soft
+5:09 | Sc1810 | thought it beat the cane. | trap-snap
+5:10 | Sc1810 | So, what | whoosh-soft
+5:11 | Sc1810 | is school to you? | ui-click-soft
+5:12 | Sc1810 | A | 
+5:13 | Sc1810 | machine. | knock-solid
+5:14 | Sc1810 | For teaching the poor, | ui-click-soft
+5:15 | Sc1810 | by the hundred, | chime-reward
+5:16 | Sc1810 | as cheaply as | ui-click-soft
+5:17 | Sc1810 | possible. | ui-click-soft
+5:18 | Sc1810 | By the time Lancaster | ui-click-soft
+5:19 | Sc1810 | dies, | whoosh-soft, ui-click-soft
+5:20 | Sc1810 | more than twelve | ui-send
+5:21 | Sc1810 | hundred schools are said | stamp-hit
+5:22 | Sc1810 | to have used his system. | 
+5:23 | Sc1810 | Then the law | whoosh-soft
+5:24 | Sc1810 | steps in. | 
+5:25 | Sc1810 | In eighteen eighty, | pop-reveal
+5:26 | Sc1810 | school becomes | 
+5:27 | Sc1810 | compulsory in England, | stamp-hit
+5:28 | Sc1810 | from five to ten. | ui-click-soft, ui-click-soft
+5:29 | Sc1810 | In eighteen | 
+5:30 | Sc1810 | ninety one, | pop-reveal
+5:31 | Sc1810 | for most families, it | ui-click-soft
+5:32 | Sc1810 | becomes free. | chime-reward
+5:33 | Sc1810 | Now every child | piano-a-min
+5:34 | Sc1810 | has to go. | ui-click-soft
+5:35 | Sc1810 | But in the next | ui-click-soft
+5:36 | Sc1810 | century, school stops | ui-click-soft
+5:37 | Sc1810 | being something you're | 
+5:38 | Sc1810 | forced into. | stamp-hit
+5:39 | Sc1810 | It turns into | ui-click-soft
+5:40 | Sc1810 | something people fight | pop-reveal
+5:41 | Sc1810 | for. | whoosh-reverse
+5:42 | Sc1810 |  | whoosh-wind, impact-soft
+5:43 | Sc1948 | You wake up in nineteen | whoosh-soft
+5:44 | Sc1948 | forty eight, in | 
+5:45 | Sc1948 | a small American town. | pop-reveal
+5:46 | Sc1948 | It's | 
+5:47 | Sc1948 | June. Graduation | ui-click-soft, whoosh-soft, pop-reveal
+5:48 | Sc1948 | day. | ui-click-soft
+5:49 | Sc1948 | Your mum's ironing | ui-click-soft
+5:50 | Sc1948 | your gown, and the | ui-click-soft, chime-reward
+5:51 | Sc1948 | radio's on. | 
+5:52 | Sc1948 | Did you know that in | ui-toggle-on, chime-magic
+5:53 | Sc1948 | nineteen ten, fewer | ui-click-soft, ui-click-soft
+5:54 | Sc1948 | than one in five | ui-send
+5:55 | Sc1948 | American teenagers | 
+5:56 | Sc1948 | went to high school? | ui-click-soft, ui-click-soft
+5:57 | Sc1948 | By | 
+5:58 | Sc1948 | nineteen forty, | ui-click-soft
+5:59 | Sc1948 | it was about seven | pop-reveal
+6:00 | Sc1948 | in ten. | ui-send
+6:01 | Sc1948 | Your grandad probably | whoosh-soft
+6:02 | Sc1948 | left school young, | ui-click-soft
+6:03 | Sc1948 | to work. You're | knock-solid
+6:04 | Sc1948 | staying to the end, | ui-click-soft
+6:05 | Sc1948 | because a diploma | page-flip
+6:06 | Sc1948 | opens doors. | sparkle-soft
+6:07 | Sc1948 | So what is school | whoosh-soft
+6:08 | Sc1948 | to you now? | ui-click-soft
+6:09 | Sc1948 | A ladder. | chime-reward
+6:10 | Sc1948 | Every | 
+6:11 | Sc1948 | year you climb gets you closer | ui-send, ui-click-soft
+6:12 | Sc1948 | to a better job. | pop-reveal
+6:13 | Sc1948 | And that | whoosh-soft
+6:14 | Sc1948 | December, in Paris, | whoosh-soft, ui-click-soft
+6:15 | Sc1948 | the United | ui-click-soft
+6:16 | Sc1948 | Nations writes it down | 
+6:17 | Sc1948 | for the whole world. | ui-click-soft
+6:18 | Sc1948 |  | 
+6:19 | Sc1948 | Everyone has the right | page-flip, chime-reward
+6:20 | Sc1948 | to education. | 
+6:21 | Sc1948 | Free, | ui-click-soft
+6:22 | Sc1948 | at least in the early years. | ui-click-soft
+6:23 | Sc1948 | So now | whoosh-soft
+6:24 | Sc1948 | school is a right. | ui-click-soft
+6:25 | Sc1948 | And a ladder. | ui-click-soft
+6:26 | Sc1948 | And a building | ui-click-soft
+6:27 | Sc1948 | you walk to every | 
+6:28 | Sc1948 | morning. But | ui-click-soft, piano-a-min
+6:29 | Sc1948 | about seventy years | 
+6:30 | Sc1948 | later, most of the | ui-click-soft
+6:31 | Sc1948 | world's schools would close. | whoosh-reverse
+6:32 | Sc1948 |  | 
+6:33 | Sc1948 | Almost at once. | stamp-hit
+6:34 | Sc1948 |  | whoosh-reverse
+6:35 | Sc1948 |  | whoosh-wind, impact-soft
+6:36 | ScToday | You wake up today. | whoosh-soft
+6:37 | ScToday | Your phone | whoosh-soft
+6:38 | ScToday | buzzes. Homework's | ui-toggle-on, pop-reveal
+6:39 | ScToday | due at midnight. | clock-tick-soft
+6:40 | ScToday | And any question | pop-reveal
+6:41 | ScToday | you've got, | 
+6:42 | ScToday | you can ask a screen. | ui-click-soft, ui-send
+6:43 | ScToday | Did | ui-toggle-on
+6:44 | ScToday | you know that in April twenty | chime-magic, ui-click-soft
+6:45 | ScToday | twenty, about | 
+6:46 | ScToday | one point | ui-click-soft
+6:47 | ScToday | six billion learners | pop-reveal
+6:48 | ScToday | were sent home from | ui-click-soft
+6:49 | ScToday | school? | ui-click-soft
+6:50 | ScToday | That's more than | ui-click-soft
+6:51 | ScToday | nine in ten | pop-reveal
+6:52 | ScToday | students on Earth. | ui-click-soft
+6:53 | ScToday | Lessons moved | whoosh-soft
+6:54 | ScToday | into kitchens and bedrooms, | ui-click-soft, ui-click-soft
+6:55 | ScToday | onto | 
+6:56 | ScToday | laptops and | ui-click-soft
+6:57 | ScToday | phones. | ui-click-soft
+6:58 | ScToday | But at least four hundred | ui-click-soft
+6:59 | ScToday | and sixty three million | pop-reveal
+7:00 | ScToday | kids couldn't get | ui-click-soft
+7:01 | ScToday | remote lessons at all. | stamp-hit
+7:02 | ScToday |  | whoosh-soft
+7:03 | ScToday | So what's school to you | 
+7:04 | ScToday | now? | ui-click-soft
+7:05 | ScToday | Always on. | chime-reward
+7:06 | ScToday | A classroom, plus | ui-click-soft, ui-click-soft
+7:07 | ScToday | a screen that never closes. | ui-send, ui-click-soft
+7:08 | ScToday |  | whoosh-soft
+7:09 | ScToday | And when the buildings shut, | ui-click-soft, whoosh-reverse
+7:10 | ScToday | a lot of | ui-click-soft
+7:11 | ScToday | us found out how much we'd | 
+7:12 | ScToday | miss them. | ui-click-soft
+7:13 | ScToday | So | piano-a-min
+7:14 | ScToday | here's the question you | pop-reveal
+7:15 | ScToday | came for. | ui-click-soft
+7:16 | ScToday |  | 
+7:17 | ScToday | What did the word | ui-click-soft
+7:18 | ScToday | school mean, before | ui-click-soft, impact-soft
+7:19 | ScToday | any of this? | 
+7:20 | ScToday |  | 
+7:21 | ScToday | Here's | whoosh-reverse
+7:22 | ScReveal | the answer. School | impact-deep-soft, pop-reveal
+7:23 | ScReveal | comes from an ancient | 
+7:24 | ScReveal | Greek word, | ui-click-soft
+7:25 | ScReveal | skoh-LAY. | page-flip
+7:26 | ScReveal | And it | riser-soft
+7:27 | ScReveal | meant... | ui-click-soft, chime-magic
+7:28 | ScReveal | free time. | 
+7:29 | ScReveal | Leisure. In | ui-click-soft
+7:30 | ScReveal | Athens, people with | whoosh-soft
+7:31 | ScReveal | free time often spent | ui-click-soft
+7:32 | ScReveal | it talking, | ui-click-soft
+7:33 | ScReveal | arguing, | ui-click-soft
+7:34 | ScReveal | learning. | ui-click-soft
+7:35 | ScReveal | So | whoosh-soft
+7:36 | ScReveal | the word for free time | ui-click-soft
+7:37 | ScReveal | became the word | ui-click-soft
+7:38 | ScReveal | for the place you learn. | pop-reveal
+7:39 | ScReveal | And your | whoosh-soft
+7:40 | ScReveal | guess? | 
+7:41 | ScReveal | Two hundred years ago, | ui-click-soft
+7:42 | ScReveal | only about | ui-click-soft
+7:43 | ScReveal | one in ten | chime-reward
+7:44 | ScReveal | people on Earth could read. | pop-reveal
+7:45 | ScReveal | Today, | ui-click-soft
+7:46 | ScReveal | it's almost nine | ui-click-soft
+7:47 | ScReveal | in ten. | ui-click-soft, ui-click-soft, pop-reveal
+7:48 | ScReveal | How close were | ui-click-soft
+7:49 | ScReveal | you? | 
+7:50 | ScReveal | Now climb that ladder | whoosh-soft
+7:51 | ScReveal | again, with | 
+7:52 | ScReveal | me. In | ui-click-soft
+7:53 | ScReveal | fifteen hundred, school | ui-click-soft
+7:54 | ScReveal | was for the few. | ui-click-soft
+7:55 | ScReveal |  | 
+7:56 | ScReveal | Then, a way | ui-click-soft
+7:57 | ScReveal | to read the Bible. | ui-click-soft
+7:58 | ScReveal | Then, the king's | ui-click-soft
+7:59 | ScReveal | order. | ui-click-soft
+8:00 | ScReveal | Then, a machine | ui-click-soft
+8:01 | ScReveal | for hundreds. | ui-click-soft
+8:02 | ScReveal | Then, your right, | ui-click-soft
+8:03 | ScReveal | and your ladder. | ui-click-soft
+8:04 | ScReveal | Today, | ui-click-soft
+8:05 | ScReveal | it never switches off. | ui-click-soft
+8:06 | ScReveal | School | warm-shimmer
+8:07 | ScReveal | started as free time, | ui-click-soft
+8:08 | ScReveal | for a lucky | ui-click-soft
+8:09 | ScReveal | few. | riser-soft
+8:10 | ScReveal |  | 
+8:11 | ScReveal | Now it's where most | 
+8:12 | ScReveal | children on Earth spend their | 
+8:13 | ScReveal | weekdays. | impact-deep-soft
+8:14 | ScReveal |  | whoosh-soft
+8:15 | Sc2100 | So, what's | 
+8:16 | Sc2100 | the next rung? | pop-reveal
+8:17 | Sc2100 | Twenty one | 
+8:18 | Sc2100 | hundred. That morning | impact-soft, wind-soft
+8:19 | Sc2100 | hasn't happened yet. | 
+8:20 | Sc2100 | But we can | whoosh-soft
+8:21 | Sc2100 | follow the evidence. | ui-send
+8:22 | Sc2100 | Remember | whoosh-soft
+8:23 | Sc2100 | Prince Henry's tutor? | ui-click-soft
+8:24 | Sc2100 | One | ui-click-soft
+8:25 | Sc2100 | teacher, one child. | ui-click-soft
+8:26 | Sc2100 | In nineteen | 
+8:27 | Sc2100 | eighty four, an American | pop-reveal
+8:28 | Sc2100 | researcher, | ui-click-soft
+8:29 | Sc2100 | Benjamin Bloom, reported | ui-click-soft
+8:30 | Sc2100 | that tutored students | ui-send
+8:31 | Sc2100 | did better than ninety | pop-reveal
+8:32 | Sc2100 | eight percent of students | 
+8:33 | Sc2100 | taught in a normal | ui-click-soft
+8:34 | Sc2100 | class. Later | whoosh-reverse
+8:35 | Sc2100 | studies found the | 
+8:36 | Sc2100 | effect is smaller. | ui-click-soft
+8:37 | Sc2100 | But it's real. | stamp-hit
+8:38 | Sc2100 | The problem | ui-click-soft
+8:39 | Sc2100 | was always the cost. | knock-solid
+8:40 | Sc2100 | Nobody can pay | ui-click-soft
+8:41 | Sc2100 | a tutor for every | 
+8:42 | Sc2100 | child. | ui-click-soft, whoosh-soft
+8:43 | Sc2100 | Then, in twenty | pop-reveal
+8:44 | Sc2100 | twenty four, | 
+8:45 | Sc2100 | a World Bank pilot | ui-click-soft
+8:46 | Sc2100 | in Nigeria gave students | pop-reveal
+8:47 | Sc2100 | an AI tutor, | ui-toggle-on
+8:48 | Sc2100 | twice | ui-click-soft
+8:49 | Sc2100 | a week, with their teachers | ui-click-soft
+8:50 | Sc2100 | guiding them. | ui-click-soft
+8:51 | Sc2100 | After six weeks, | pop-reveal
+8:52 | Sc2100 | the World Bank | 
+8:53 | Sc2100 | estimated nearly two | ui-click-soft, chime-reward
+8:54 | Sc2100 | years of typical learning. | ui-click-soft
+8:55 | Sc2100 | One | 
+8:56 | Sc2100 | small study. | stamp-hit
+8:57 | Sc2100 | Short. | stamp-hit
+8:58 | Sc2100 | But it's a start. | stamp-hit
+8:59 | Sc2100 | So here's one | whoosh-soft
+9:00 | Sc2100 | scenario. Not | stamp-hit
+9:01 | Sc2100 | a fact. | ui-click-soft
+9:02 | Sc2100 | By twenty one | 
+9:03 | Sc2100 | hundred, every child | ui-click-soft, ui-click-soft
+9:04 | Sc2100 | could have a tutor. | sparkle-soft
+9:05 | Sc2100 | Not a prince's poet. | ui-click-soft, trap-snap
+9:06 | Sc2100 | A patient | sparkle-soft
+9:07 | Sc2100 | machine, awake | clock-tick-soft
+9:08 | Sc2100 | at any hour. | ui-click-soft
+9:09 | Sc2100 | And the classroom? | whoosh-soft
+9:10 | Sc2100 | The | 
+9:11 | Sc2100 | O E C D | ui-click-soft
+9:12 | Sc2100 | has imagined | ui-click-soft
+9:13 | Sc2100 | futures where school | ui-click-soft
+9:14 | Sc2100 | becomes a learning hub, | chime-reward
+9:15 | Sc2100 | and even | 
+9:16 | Sc2100 | one where it fades away. | whoosh-reverse
+9:17 | Sc2100 | But | 
+9:18 | Sc2100 | UNESCO says schools | page-flip
+9:19 | Sc2100 | should be protected. | warm-shimmer
+9:20 | Sc2100 | If they didn't | 
+9:21 | Sc2100 | exist, we'd | ui-click-soft
+9:22 | Sc2100 | have to invent them. | pop-reveal
+9:23 | Sc2100 | In fifteen hundred, | whoosh-soft
+9:24 | Sc2100 | a private teacher | ui-click-soft
+9:25 | Sc2100 | was for a prince. | ui-click-soft
+9:26 | Sc2100 | In | 
+9:27 | Sc2100 | twenty one hundred, | ui-send
+9:28 | Sc2100 | it might be for everyone. | chime-reward
+9:29 | Sc2100 | And | 
+9:30 | Sc2100 | school might get a little | whoosh-soft
+9:31 | Sc2100 | closer to what its | ui-click-soft
+9:32 | Sc2100 | name first meant. | ui-click-soft
+9:33 | Sc2100 |  | sparkle-soft
+9:34 | Sc2100 |  | whoosh-soft
+9:35 | ScClose | You've spent years | ui-send, ui-click-soft
+9:36 | ScClose | of your life in school. | ui-click-soft, ui-click-soft
+9:37 | ScClose | So | whoosh-soft
+9:38 | ScClose | tell me. What's | pop-reveal
+9:39 | ScClose | the one thing | 
+9:40 | ScClose | it taught you that no screen | ui-click-soft, ui-click-soft
+9:41 | ScClose | ever could? | piano-a-min
+9:42 | ScClose |  | 
+9:43 | ScClose |  | whoosh-wind
+9:44 | ScOutro | This was Did You Know That, | pop-reveal, ui-toggle-on
+9:45 | ScOutro | episode three. | ui-click-soft
+9:46 | ScOutro | School. | pop-reveal
+9:47 | ScOutro | Now it's your turn. | whoosh-soft
+9:48 | ScOutro | Which century's | ui-click-soft
+9:49 | ScOutro | classroom would you | ui-click-soft, ui-click-soft
+9:50 | ScOutro | survive? | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+9:51 | ScOutro | Tell me in the comments. | ui-click-soft, pop-reveal
+9:52 | ScOutro | At the | 
+9:53 | ScOutro | end of every episode, | ui-click-soft
+9:54 | ScOutro | I will read the best | impact-soft
+9:55 | ScOutro | comment, right | ui-click-soft, ui-click-soft
+9:56 | ScOutro | here, on this screen. | ui-click-soft
+9:57 | ScOutro | And the subject | sparkle-soft
+9:58 | ScOutro | you ask for most becomes | ui-click-soft
+9:59 | ScOutro | a future episode. | pop-reveal
+10:00 | ScOutro | On our | whoosh-soft
+10:01 | ScOutro | website, Dex-tee | sparkle-soft
+10:02 | ScOutro | dot live, | 
+10:03 | ScOutro | you can watch every | ui-click-soft
+10:04 | ScOutro | episode, | 
+10:05 | ScOutro | collect the facts, | ui-click-soft
+10:06 | ScOutro | and play the guessing | ui-click-soft, pop-reveal
+10:07 | ScOutro | game. If | 
+10:08 | ScOutro | this changed how you | ui-click-soft
+10:09 | ScOutro | see a school day, | ui-click-soft
+10:10 | ScOutro | like it. | ui-click-soft
+10:11 | ScOutro |  | 
+10:12 | ScOutro | Share it with the friend | ui-send, ui-click-soft
+10:13 | ScOutro | who always did | 
+10:14 | ScOutro | the homework. | pop-reveal
+10:15 | ScOutro | And subscribe, | chime-reward
+10:16 | ScOutro | so the next mystery | sparkle-soft
+10:17 | ScOutro | finds you. | whoosh-wind
+10:18 | ScOutro | Next time: | 
+10:19 | ScOutro | money. Around | impact-soft
+10:20 | ScOutro | the world, each | 
+10:21 | ScOutro | extra year of school | ui-click-soft
+10:22 | ScOutro | adds, on | 
+10:23 | ScOutro | average, about | ui-click-soft
+10:24 | ScOutro | nine percent | pop-reveal
+10:25 | ScOutro | to what people earn. | ui-click-soft
+10:26 | ScOutro | But did | ui-click-soft
+10:27 | ScOutro | school ever teach | 
+10:28 | ScOutro | you what money actually | ui-click-soft
+10:29 | ScOutro | is? | piano-a-min
+10:30 | ScOutro | Ask... | chess-piece-thock
+10:31 | ScOutro | Wonder... | chess-piece-thock
+10:32 | ScOutro | Repeat. | 
+10:33 | ScOutro |  | chess-piece-thock
+10:34 | ScOutro | Next | pencil-scribble, ui-toggle-on
+10:35 | ScOutro | time... this | sparkle-soft
+10:36 | ScOutro | could be your comment. | pop-reveal
+10:37 | ScOutro | Pick a mystery. | ui-click-soft
+10:38 | ScOutro | And I will | 
+10:39 | ScOutro | see you there. | sparkle-soft
+10:40 | ScOutro |  | 
+10:41 | ScOutro |  | 
+10:42 | ScOutro |  | 
+10:43 | ScOutro |  | 
+10:44 | ScOutro |  | 
+10:45 | ScOutro |  | 
+10:46 | ScOutro |  | 
+10:47 | ScOutro |  | 
+10:48 | ScOutro |  | 
+10:49 | ScOutro |  | 
+10:50 | ScOutro |  | 

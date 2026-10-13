@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DYK 03 Audit</title><style>
+:root{--bg:#0b0d12;--fg:#e8e6e1;--mut:#9aa0ad;--line:#2a2e38;--crit:#ff5a5a;--high:#ff9a1f;--med:#ffd23f;--low:#7fd1ff;--ok:#34d058}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#fafaf7;--fg:#1b1d22;--mut:#5b6170;--line:#d9dbe0;--crit:#c62828;--high:#b45309;--med:#8a6d00;--low:#0b6aa2;--ok:#15803d}}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,Segoe UI,Inter,sans-serif;max-width:1100px;margin:0 auto;padding:24px 16px}
+h1{font-size:26px} h2{margin-top:32px;border-bottom:1px solid var(--line);padding-bottom:6px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14px} td,th{border:1px solid var(--line);padding:6px 8px;vertical-align:top} th{text-align:left;color:var(--mut)}
+td.s-critical{color:var(--crit);font-weight:700} td.s-high{color:var(--high);font-weight:700} td.s-medium{color:var(--med)} td.s-low{color:var(--low)}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--ok);color:var(--ok);font-weight:700;margin:0 8px 8px 0}
+@media (max-width:700px){table{display:block;overflow-x:auto}}
+</style></head><body>
+<p><span class="badge">QA PASS</span><span class="badge">Voice pre-flight PASS</span><span class="badge">CRITICAL 0 · HIGH 0 · MEDIUM 0 open</span><span class="badge">Rubric A− 26/30</span></p>
+<h1>DYK No. 03 — School · audit report</h1>
+<p>Master <code>dyk-03-school-1080P.mp4</code> · 10:50.9 · audited 2026-10-13 by three independent read-only auditors (visual 1 s sweep; voice, mix and A/V sync; fresh re-audit of every fix).</p>
+<h2>Verification</h2>
+<table><tr><th>Check</th><th>Result</th></tr>
+<tr><td>Streams (ffprobe)</td><td>H.264 High 1920×1080 CFR 30/1 · AAC LC 48 kHz stereo 257 kb/s</td></tr>
+<tr><td>Durations</td><td>video 650.867 s · audio 650.859 s · diff 8 ms (≤ 50)</td></tr>
+<tr><td>Loudness</td><td>−14.1 LUFS integrated · true peak −2.4 dBTP · LRA ≈ 3 LU · sweep flags: none</td></tr>
+<tr><td>pts gaps &gt; 50 ms</td><td>0 (19,526 packets)</td></tr>
+<tr><td>A/V sync</td><td>waveform cross-correlation +4.5…5.5 ms at 20 points, no drift; whisper word sample max 0.04 s (bias-corrected)</td></tr>
+<tr><td>Voice pre-flight</td><td>PASS — 0 issues (speed band 0.90–1.08, neighbour steps, pace, drag, gaps, lead-in ≥ 0.6 s, SFX off words, sign-off 0.80 s beats, payoff ≤ 2.8 w/s)</td></tr>
+<tr><td>Voice identity</td><td>ElevenLabs Brian only; median F0 93.6–116 Hz per take, low end 76–91 Hz</td></tr>
+<tr><td>Facts</td><td>every on-screen number traces to RESEARCH.md; UNESCO (×2) and UK Parliament re-checked in a browser before voicing</td></tr>
+<tr><td>Spoilers</td><td>free time / σχολή first at 7:28 (after the word), holidays 3:39, ladder 6:10 — all after they are spoken</td></tr>
+<tr><td>2100</td><td>PREDICTION · A SCENARIO, NOT A FACT on screen 8:18–9:34 + HUD tag</td></tr>
+<tr><td>End screen</td><td>pinned-question card (no fabricated comment) · WATCH NEXT No. 04 · MONEY (no date) · subscribe ring · Dexty.live</td></tr>
+</table>
+<h2>Findings</h2>
+<table><tr><th>Severity</th><th>Time</th><th>Finding</th><th>Fix</th><th>Status · evidence</th></tr>
+<tr><td class="s-high">HIGH</td><td>4:48–4:50</td><td>1810 DYK card empty while “this school’s founder, Joseph Lancaster” was spoken</td><td>Clauses split onto their words (this / Joseph / claimed / thousand)</td><td>FIXED · re-audit frame 4:48.6</td></tr>
+<tr><td class="s-high">HIGH</td><td>8:40–8:42</td><td>“No one can pay a tutor…” flashed &lt; 1 s over the BUT IT’S REAL stamp</td><td>Own column, on “Nobody”, held to the 2024 cut; wording matches voice</td><td>FIXED · frame 8:41</td></tr>
+<tr><td class="s-high">HIGH</td><td>9:08</td><td>Unscripted voice fragment (hallucinated ElevenLabs tail in chunk sc11 c5)</td><td>Chunk trimmed at 8.92 s (word end 8.86 s); all takes scanned, only one affected</td><td>FIXED · stem −88…−120 dB after “hour.”</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>5:21</td><td>“said to use” heard as “set to use” (hedge lost)</td><td>Re-voiced: “are said to have used his system”; screen matches</td><td>FIXED · whisper</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>2:44, 5:11</td><td>“So what’s school to you (now)?” swallowed</td><td>Re-voiced as “So, what is school to you (now)?”</td><td>FIXED · 2:44 clean; 5:11 LOW (“cool”)</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>whole film</td><td>207 loud SFX starting on word onsets</td><td>build_final: onset hits land 60 ms before the word; 6 hottest cues −3 to −8 dB</td><td>FIXED · 23 within ±30 ms, none inside words</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>3:58</td><td>Summer label truncated; cow label over source line</td><td>“SUMMER · A FEW HOURS” title, ~3 H bar, source moved</td><td>FIXED</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>4:27</td><td>SLOW / EXPENSIVE under the ladder stack</td><td>Stamps moved left</td><td>FIXED</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>8:18</td><td>Big 2100 over the ladder stack</td><td>Docked ladder enters after the header docks</td><td>FIXED</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>8:56</td><td>ONE SMALL STUDY over TEACHERS GUIDING</td><td>Stamp row moved right</td><td>FIXED</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>5:08, 8:09</td><td>Source lines past the right margin</td><td>Shortened</td><td>FIXED</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>0:38</td><td>Welcome near-empty 2 s</td><td>Guess card enters after the lockup docks</td><td>FIXED</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>0:54, 1:00</td><td>Promise row static ~3 s</td><td>Chips shimmer on “each”, 1500 pulses on “Or”</td><td>FIXED</td></tr>
+<tr><td class="s-medium">MEDIUM</td><td>8:27–8:42</td><td>(re-audit) 1984 line over the 1500 card</td><td>Bloom block moved right</td><td>FIXED · frame 8:30</td></tr>
+<tr><td class="s-low">LOW</td><td>1:59 · 8:16 · 5:11</td><td>Skelton ≈ Skeleton, rung ≈ wrong, school ≈ cool (whisper base)</td><td>Human listen</td><td>OPEN</td></tr>
+<tr><td class="s-low">LOW</td><td>various</td><td>~1 s reveal lags, lone “?” beats 2–3 s, 23 near-onset SFX</td><td>Accepted</td><td>OPEN</td></tr>
+<tr><td class="s-low">LOW</td><td>BEATMAP</td><td>9 narrated gaps ≥ 2 s (8 × 2.0–2.2 s with motion; 3.9 s payoff by design)</td><td>Accepted</td><td>OPEN</td></tr>
+</table>
+<h2>Deployment checks</h2>
+<table><tr><th>Item</th><th>State</th></tr>
+<tr><td>Title ≤ 60 chars, names the idea + 2100</td><td>49 chars — “School from 1500 to 2100: It Once Meant Free Time”</td></tr>
+<tr><td>Description ≤ 5,000, plain Dexty.live, chapters from 0:00</td><td>3,593 chars; chapters match timeline.json</td></tr>
+<tr><td>Tags ≤ 500</td><td>433 chars</td></tr>
+<tr><td>Thumbnail</td><td>1280×720 “SCHOOL / IN 2100?”, logo palette, bottom-right clear</td></tr>
+<tr><td>Preview ≤ 30 MB</td><td>26.8 MB 720p</td></tr>
+<tr><td>Upload / pinned comment / Dexty.live entry</td><td>not done (after David’s approval)</td></tr>
+</table>
+</body></html>
