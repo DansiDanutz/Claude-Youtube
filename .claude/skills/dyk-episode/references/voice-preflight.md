@@ -47,7 +47,7 @@ resolver (the same table the mix uses) BEFORE rendering — no cue sheet, no PAS
   left in place so the pre-flight fails: move its visual or pick another word.
 
 ## Tightened 2026-10-13 — shipped data under the new window
-No. 02: 225 loud cues on words (216 onset-exact) · No. 03: 17 (1 onset-exact, 14 at 14–29 ms before the onset, 2 late
+No. 02: 225 loud cues on words (216 onset-exact) · No. 03: 17 (1 onset-exact riser, 15 at 14–29 ms before the onset, 1 late
 inside a word). Both passed the old gate. Re-resolving their cue sheets with `off_word` clears all of them (max move
 0.35 s). Shipped episodes are not re-mixed; the numbers are the baseline the gate now prevents.
 - Voice the sign-off as three tiny chunks or with `pauses` of ~0.8 s.
