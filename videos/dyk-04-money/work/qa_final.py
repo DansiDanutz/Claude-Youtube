@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QA gate for the DYK No. 03 master (episode-skill checklist):
+"""QA gate for the DYK No. 04 master (episode-skill checklist):
   loudness + true peak on the FINAL file, stream spec, pts-gap scan (gaps > 50 ms must be 0),
   video == audio duration, and a frame sweep (every 4 s for the first minute, every 45 s after)
   written as small JPGs to a scratch dir for visual review.
