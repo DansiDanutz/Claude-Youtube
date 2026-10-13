@@ -53,6 +53,14 @@ class ChapterTests(unittest.TestCase):
         issues = pc.check_chapters("0:00 Intro\n1:00 A\n4:55 B\n", 300)
         self.assertTrue(any("before the end" in m for _, m in issues))
 
+    def test_invalid_timestamps_and_durations_fail(self):
+        # review PRRT_kwDOTfGVps6rrXXR: '0:75', NaN and inf passed
+        self.assertTrue(any("invalid timestamp 0:75" in m for _, m in pc.check_chapters(CHAPTERS + "0:75 X\n", 650.9)))
+        with self.assertRaises(ValueError):
+            pc.parse_clock("1:75:00")
+        for bad in (float("nan"), float("inf"), 0, -5):
+            self.assertEqual([k for k, _ in pc.check_chapters(CHAPTERS, bad)], ["input"], bad)
+
     def test_hour_long_timestamps_parse(self):
         self.assertEqual(pc.parse_clock("1:02:03"), 3723)
         self.assertEqual(pc.parse_clock("10:51"), 651)
@@ -133,6 +141,12 @@ class CliTests(unittest.TestCase):
             self.assertIn("PASS", (p / "r.md").read_text())
             (p / "description.txt").write_text("It's 7:45.\n" + GOOD_DESC)
             self.assertEqual(quiet_main(args), 1)
+
+    def test_cli_rejects_nan_duration(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = self.write(d)
+            self.assertEqual(quiet_main(["--packaging", str(p), "--duration", "nan", "--core", "School"]), 1)
+            self.assertEqual(quiet_main(["--packaging", str(p), "--duration", "inf", "--core", "School"]), 1)
 
     def test_missing_file_fails_closed(self):
         with tempfile.TemporaryDirectory() as d:

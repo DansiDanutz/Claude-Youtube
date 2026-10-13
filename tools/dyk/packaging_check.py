@@ -20,6 +20,7 @@ Exit 0 = PASS, 1 = FAIL (report printed; --out writes it as Markdown). Missing i
 """
 import argparse
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -37,10 +38,13 @@ SITE = "dexty.live"
 
 
 def parse_clock(text):
-    """'9:34' -> 574, '1:02:03' -> 3723."""
+    """'9:34' -> 574, '1:02:03' -> 3723; ValueError when a seconds or minutes field is >= 60 ('0:75')."""
+    parts = [int(p) for p in text.split(":")]
+    if any(p >= 60 for p in parts[1:]):
+        raise ValueError(f"invalid timestamp {text}")
     seconds = 0
-    for part in text.split(":"):
-        seconds = seconds * 60 + int(part)
+    for part in parts:
+        seconds = seconds * 60 + part
     return seconds
 
 
@@ -50,12 +54,20 @@ def chapter_lines(description):
     for no, line in enumerate(description.splitlines(), 1):
         m = CHAPTER_LINE.match(line)
         if m:
-            out.append((no, parse_clock(m.group(1)), m.group(1)))
+            try:
+                out.append((no, parse_clock(m.group(1)), m.group(1)))
+            except ValueError:
+                out.append((no, None, m.group(1)))
     return out
 
 
 def check_chapters(description, duration_s):
+    if not (isinstance(duration_s, (int, float)) and math.isfinite(duration_s) and duration_s > 0):
+        return [("input", f"master duration {duration_s!r} is not a finite positive number of seconds")]
     chapters = chapter_lines(description)
+    invalid = [c for c in chapters if c[1] is None]
+    if invalid:
+        return [("chapters", f"line {no}: invalid timestamp {label}") for no, _, label in invalid]
     if len(chapters) < CHAPTERS_MIN:
         return [("chapters", f"{len(chapters)} chapter line(s); YouTube needs >= {CHAPTERS_MIN}")]
     issues = []
