@@ -2,7 +2,7 @@
 
 One row per second of the master: words → visual event → SFX. Source of truth: `cues.py` (the same table `build_final.py` mixes), `timeline.json`, `remotion/src/shots/dyk-04/vo.json`.
 
-Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narrating: 36
+Total 620.8 s · 564 cues · gaps ≥ 2.0 s between visual events while narrating: 36
 
 ## Gaps to check (continuous motion must cover them)
 - 0:14.5 → 0:16.5 (2.1 s) in MoHook — motion: note turning, layers peeling, clock sweeping, digits falling
@@ -14,7 +14,6 @@ Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narratin
 - 3:08.8 → 3:10.9 (2.1 s) in Mo1661 — motion: sledge sliding, snow, notes stacking, note rising
 - 3:49.0 → 3:51.3 (2.2 s) in Mo1720 — motion: horses trotting, dice rolling, price line climbing/crashing, Law running
 - 3:56.9 → 3:59.4 (2.5 s) in Mo1720 — motion: horses trotting, dice rolling, price line climbing/crashing, Law running
-- 4:16.4 → 4:18.8 (2.4 s) in Mo1720 — motion: horses trotting, dice rolling, price line climbing/crashing, Law running
 - 4:48.8 → 4:51.0 (2.2 s) in Mo1821 — motion: smoke drift, queue, bar filling, anchor swaying
 - 5:39.1 → 5:41.2 (2.1 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
 - 5:48.5 → 5:50.6 (2.1 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
@@ -27,20 +26,21 @@ Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narratin
 - 6:59.5 → 7:02.0 (2.5 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
 - 7:31.3 → 7:33.4 (2.1 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
 - 7:34.4 → 7:37.0 (2.6 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
-- 7:52.5 → 7:54.9 (2.5 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
+- 7:45.3 → 7:47.8 (2.5 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
 - 8:05.4 → 8:08.1 (2.7 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:09.5 → 8:11.6 (2.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:12.9 → 8:15.8 (3.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:15.8 → 8:18.1 (2.3 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:18.1 → 8:20.8 (2.7 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:29.1 → 8:31.5 (2.4 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:30.4 → 8:33.4 (3.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:35.2 → 8:37.5 (2.4 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:39.7 → 8:42.8 (3.1 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:46.8 → 8:49.9 (3.1 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:50.8 → 8:52.9 (2.2 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:57.5 → 8:59.6 (2.1 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:56.1 → 8:59.6 (3.5 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 9:32.7 → 9:34.9 (2.2 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
 - 9:51.9 → 9:54.3 (2.3 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
+- 10:03.2 → 10:05.4 (2.2 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
 
 | t | shot | words | visual event (SFX) |
 |---|---|---|---|
@@ -302,7 +302,7 @@ Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narratin
 | 4:15 | Mo1720 | money they don't just |  |
 | 4:16 | Mo1720 | have to believe in. | band: they don't just have to believe in. (ui-click-soft) |
 | 4:17 | Mo1720 |  |  |
-| 4:18 | Mo1720 | Something they can bite. | a gold coin with a bite mark (trap-snap) |
+| 4:18 | Mo1720 | Something they can bite. | a gold coin appears (pop-reveal); a gold coin with a bite mark (trap-snap) |
 | 4:19 | Mo1720 |  |  |
 | 4:20 | Mo1720 | And in London, they | London skyline (whoosh-soft) |
 | 4:21 | Mo1720 | get it. | LONDON label · band: they get it. (ui-click-soft); era exit pull-in (whoosh-reverse) |
@@ -494,8 +494,8 @@ Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narratin
 | 7:27 | MoReveal | Within |  |
 | 7:28 | MoReveal | limits, | WITHIN LIMITS (ui-click-soft) |
 | 7:29 | MoReveal | a loan creates new | + new money (chime-reward) |
-| 7:30 | MoReveal | money. And | YOUR GUESS · 100 coins (whoosh-soft) |
-| 7:31 | MoReveal | your guess? | YOUR GUESS label (ui-click-soft) |
+| 7:30 | MoReveal | money. And | YOUR GUESS (whoosh-soft) |
+| 7:31 | MoReveal | your guess? | 100 coins (ui-click-soft) |
 | 7:32 | MoReveal | When the Bank of |  |
 | 7:33 | MoReveal | England checked, | WHEN THE BANK OF ENGLAND CHECKED (2014) (ui-click-soft) |
 | 7:34 | MoReveal | about ninety seven | 97 coins dissolve into digits · ~97 £ (sparkle-soft) |
@@ -509,16 +509,16 @@ Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narratin
 | 7:42 | MoReveal | Now climb the ladder | six rungs appear dim; NOW CLIMB IT AGAIN (whoosh-soft) |
 | 7:43 | MoReveal | again, with |  |
 | 7:44 | MoReveal | me. | ↑ (ui-click-soft) |
-| 7:45 | MoReveal | In fifteen hundred, | the climb label clears (ui-click-soft) |
-| 7:46 | MoReveal | money was something useful. | rung lights gold on "useful" (ui-click-soft) |
-| 7:47 | MoReveal | Then, |  |
-| 7:48 | MoReveal | a promise on paper. | rung lights gold on "paper" (ui-click-soft) |
-| 7:49 | MoReveal | Then, a |  |
-| 7:50 | MoReveal | belief. Then, | rung lights gold on "belief" (ui-click-soft) |
-| 7:51 | MoReveal | as good as gold. | rung lights gold on "gold" (ui-click-soft) |
-| 7:52 | MoReveal | Then, trust, and nothing | rung lights gold on "trust" (ui-click-soft) |
+| 7:45 | MoReveal | In fifteen hundred, | rung lights gold as its line starts ("fifteen" 1) (ui-click-soft) |
+| 7:46 | MoReveal | money was something useful. |  |
+| 7:47 | MoReveal | Then, | rung lights gold as its line starts ("Then" 1) (ui-click-soft) |
+| 7:48 | MoReveal | a promise on paper. |  |
+| 7:49 | MoReveal | Then, a | rung lights gold as its line starts ("Then" 2) (ui-click-soft) |
+| 7:50 | MoReveal | belief. Then, | rung lights gold as its line starts ("Then" 3) (ui-click-soft) |
+| 7:51 | MoReveal | as good as gold. |  |
+| 7:52 | MoReveal | Then, trust, and nothing | rung lights gold as its line starts ("Then" 4) (ui-click-soft) |
 | 7:53 | MoReveal | else. |  |
-| 7:54 | MoReveal | Today, numbers on a screen. | rung lights gold on "screen" (ui-click-soft) |
+| 7:54 | MoReveal | Today, numbers on a screen. | rung lights gold as its line starts ("Today" 2) (ui-click-soft) |
 | 7:55 | MoReveal | Remember | Remember that word (ui-click-soft) |
 | 7:56 | MoReveal | that word from Stockholm? | (riser; the ladder glows) (riser-soft); from Stockholm? (ui-click-soft) |
 | 7:57 | MoReveal |  |  |
@@ -554,8 +554,8 @@ Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narratin
 | 8:27 | Mo2100 | as twenty twenty nine, | 2029? (ui-click-soft) |
 | 8:28 | Mo2100 | if lawmakers |  |
 | 8:29 | Mo2100 | agree. | IF LAWMAKERS AGREE (stamp-hit) |
-| 8:30 | Mo2100 | And the Bank for International |  |
-| 8:31 | Mo2100 | Settlements, | THE BANK FOR INTERNATIONAL SETTLEMENTS (whoosh-soft) |
+| 8:30 | Mo2100 | And the Bank for International | THE BANK FOR INTERNATIONAL SETTLEMENTS (whoosh-soft) |
+| 8:31 | Mo2100 | Settlements, |  |
 | 8:32 | Mo2100 | the central |  |
 | 8:33 | Mo2100 | banks' own bank, | THE CENTRAL BANKS' OWN BANK (ui-click-soft) |
 | 8:34 | Mo2100 | has warned |  |
@@ -580,11 +580,11 @@ Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narratin
 | 8:53 | Mo2100 | But | but still a (ui-click-soft) |
 | 8:54 | Mo2100 | it would still be a promise. | promise (gradient) (chime-reward) |
 | 8:55 | Mo2100 | In |  |
-| 8:56 | Mo2100 | fifteen hundred, money | callback (whoosh-soft) |
-| 8:57 | Mo2100 | grew on trees. | a cacao pod · 1500 · GREW ON TREES (pop-reveal) |
+| 8:56 | Mo2100 | fifteen hundred, money | a cacao pod · 1500 · GREW ON TREES (pop-reveal); callback (whoosh-soft) |
+| 8:57 | Mo2100 | grew on trees. |  |
 | 8:58 | Mo2100 | In |  |
 | 8:59 | Mo2100 | twenty one hundred, | (riser into the code block) (riser-soft) |
-| 9:00 | Mo2100 | it might be written in code. | → (ui-click-soft); a code block; the 2100 rung fills A PROMISE IN CODE? (impact-deep-soft) |
+| 9:00 | Mo2100 | it might be written in code. | → and the code block (ui-click-soft); a code block; the 2100 rung fills A PROMISE IN CODE? (impact-deep-soft) |
 | 9:01 | Mo2100 |  |  |
 | 9:02 | Mo2100 |  | cut to a clock (whoosh-soft) |
 | 9:03 | MoClose | You spend so much | notes stack up; So much (clock-tick-soft) |
@@ -648,12 +648,12 @@ Total 620.7 s · 566 cues · gaps ≥ 2.0 s between visual events while narratin
 | 10:01 | MoOutro | Wonder... | WONDER. (thock in the beat after the word) (chess-piece-thock) |
 | 10:02 | MoOutro | Repeat. |  |
 | 10:03 | MoOutro |  | REPEAT. (thock in the beat after the word) (chess-piece-thock) |
-| 10:04 | MoOutro | Next time... | end screen: BEST COMMENT · READ HERE writes on (pencil-scribble); end screen: logo switches on (subscribe slot) (ui-toggle-on); end screen: logo glow (sparkle-soft) |
-| 10:05 | MoOutro | this could |  |
-| 10:06 | MoOutro | be your comment. | end screen: THIS WEEK'S QUESTION card flares (pop-reveal); end screen: Comment below / best one is read next episode (ui-click-soft) |
-| 10:07 | MoOutro | Pick a mystery. |  |
-| 10:08 | MoOutro | And I will see | end screen: subscribe ring pulses (sparkle-soft) |
-| 10:09 | MoOutro | you there. |  |
+| 10:04 | MoOutro | Next |  |
+| 10:05 | MoOutro | time... this | end screen: READ ON THIS SCREEN writes on (pencil-scribble) |
+| 10:06 | MoOutro | could be your comment. | end screen: THIS WEEK'S QUESTION card flares (pop-reveal) |
+| 10:07 | MoOutro | Pick a mystery. | end screen: Comment below / best one is read next episode (ui-click-soft) |
+| 10:08 | MoOutro | And I will | end screen: subscribe ring pulses (sparkle-soft) |
+| 10:09 | MoOutro | see you there. |  |
 | 10:10 | MoOutro |  |  |
 | 10:11 | MoOutro |  |  |
 | 10:12 | MoOutro |  |  |

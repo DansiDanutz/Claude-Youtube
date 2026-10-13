@@ -44,6 +44,7 @@ const FIRST = C.at('first');
 const NINE2 = C.at('nine', 2);
 const AGREE = C.at('agree');
 const SETTLEMENTS = C.at('Settlements');
+const BANK2 = C.at('Bank', 2); // 'the Bank for International Settlements' (1 = 'the central bank is getting ready')
 const OWN_BANK = C.at('own', 2); // "the central banks' own bank" (1 = 'a digital currency of their own')
 const STABLECOINS = C.at('stablecoins');
 const PEGGED = C.at('pegged');
@@ -71,8 +72,8 @@ const Mo2100: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
   const ev1 = win(f, CASH - 4, EUROPE - 2, 6, 8);
-  const ev2 = win(f, EUROPE - 4, SETTLEMENTS - 20, 6, 8);
-  const ev3 = win(f, SETTLEMENTS - 22, SO2, 6, 8);
+  const ev2 = win(f, EUROPE - 4, BANK2 - 8, 6, 8);
+  const ev3 = win(f, BANK2 - 6, SO2, 6, 8);
   const scen = win(f, SO2 - 2, FIFTEEN - 2, 6, 8);
   const callback = ease(f, FIFTEEN - 4, FIFTEEN + 8);
   const cashBar = 1 - 0.5 * ease(f, SHRINKING - 2, SHRINKING + 20, 0, 1, DL_EASE.inOut);
@@ -133,7 +134,7 @@ const Mo2100: React.FC = () => {
 
       {/* evidence 3: the BIS warns stablecoins fail key tests; the central bank's promise stays the anchor */}
       <AbsoluteFill style={{ opacity: ev3 }}>
-        <div style={{ position: 'absolute', left: 160, top: 290 }}><Label at={SETTLEMENTS} color={DL.text} size={30}>THE BANK FOR INTERNATIONAL SETTLEMENTS</Label></div>
+        <div style={{ position: 'absolute', left: 160, top: 290 }}><Label at={BANK2} color={DL.text} size={30}>THE BANK FOR INTERNATIONAL SETTLEMENTS</Label></div>
         <div style={{ position: 'absolute', left: 160, top: 335 }}><Label at={OWN_BANK} color={DL.dim} size={26}>THE CENTRAL BANKS' OWN BANK</Label></div>
         <div style={{ position: 'absolute', left: 160, top: 390, display: 'flex', alignItems: 'center', gap: 40 }}>
           <div style={{ width: 180, height: 180, borderRadius: '50%', background: '#2a1a40', border: `6px solid ${DYT.purple}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DL_MONO, fontWeight: 700, fontSize: 36, color: DYT.purple, opacity: ease(f, STABLECOINS - 4, STABLECOINS + 6) }}>STABLE<br />COIN</div>
@@ -189,12 +190,12 @@ const Mo2100: React.FC = () => {
       {/* callback: 1500 money grew on trees · 2100 it might be written in code */}
       <AbsoluteFill style={{ opacity: callback }}>
         <div style={{ position: 'absolute', left: 160, top: 320, display: 'flex', alignItems: 'center', gap: 80 }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, opacity: ease(f, TREES - 4, TREES + 6) }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, opacity: ease(f, FIFTEEN, FIFTEEN + 8) }}>
             <CacaoPod size={160} glow={0.6} />
             <span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.gold }}>1500 · GREW ON TREES</span>
           </div>
           <div style={{ fontFamily: DL_SERIF, fontSize: 110, color: DL.dim, opacity: ease(f, WRITTEN - 4, WRITTEN + 6) }}>→</div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, opacity: ease(f, WRITTEN - 2, WRITTEN + 8) }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, opacity: ease(f, WRITTEN - 12, WRITTEN - 2) }}>
             <div style={{ position: 'relative', width: 260, height: 240, borderRadius: 16, border: `3px dashed ${DYT.cyan}`, overflow: 'hidden', boxShadow: `0 0 40px ${DYT.cyan}66` }}><Digits w={260} h={240} op={1} speed={3} cols={6} /></div>
             <span style={{ fontFamily: DL_MONO, fontSize: 30, color: DYT.cyan }}>2100 · WRITTEN IN CODE?</span>
           </div>

@@ -257,7 +257,7 @@ sec | shot | narration in this second | SFX starting in this second
 4:15 | Mo1720 | money they don't just | 
 4:16 | Mo1720 | have to believe in. | ui-click-soft
 4:17 | Mo1720 |  | 
-4:18 | Mo1720 | Something they can bite. | trap-snap
+4:18 | Mo1720 | Something they can bite. | pop-reveal, trap-snap
 4:19 | Mo1720 |  | 
 4:20 | Mo1720 | And in London, they | whoosh-soft
 4:21 | Mo1720 | get it. | ui-click-soft, whoosh-reverse
@@ -465,12 +465,12 @@ sec | shot | narration in this second | SFX starting in this second
 7:43 | MoReveal | again, with | 
 7:44 | MoReveal | me. | ui-click-soft
 7:45 | MoReveal | In fifteen hundred, | ui-click-soft
-7:46 | MoReveal | money was something useful. | ui-click-soft
-7:47 | MoReveal | Then, | 
-7:48 | MoReveal | a promise on paper. | ui-click-soft
-7:49 | MoReveal | Then, a | 
+7:46 | MoReveal | money was something useful. | 
+7:47 | MoReveal | Then, | ui-click-soft
+7:48 | MoReveal | a promise on paper. | 
+7:49 | MoReveal | Then, a | ui-click-soft
 7:50 | MoReveal | belief. Then, | ui-click-soft
-7:51 | MoReveal | as good as gold. | ui-click-soft
+7:51 | MoReveal | as good as gold. | 
 7:52 | MoReveal | Then, trust, and nothing | ui-click-soft
 7:53 | MoReveal | else. | 
 7:54 | MoReveal | Today, numbers on a screen. | ui-click-soft
@@ -509,8 +509,8 @@ sec | shot | narration in this second | SFX starting in this second
 8:27 | Mo2100 | as twenty twenty nine, | ui-click-soft
 8:28 | Mo2100 | if lawmakers | 
 8:29 | Mo2100 | agree. | stamp-hit
-8:30 | Mo2100 | And the Bank for International | 
-8:31 | Mo2100 | Settlements, | whoosh-soft
+8:30 | Mo2100 | And the Bank for International | whoosh-soft
+8:31 | Mo2100 | Settlements, | 
 8:32 | Mo2100 | the central | 
 8:33 | Mo2100 | banks' own bank, | ui-click-soft
 8:34 | Mo2100 | has warned | 
@@ -535,8 +535,8 @@ sec | shot | narration in this second | SFX starting in this second
 8:53 | Mo2100 | But | ui-click-soft
 8:54 | Mo2100 | it would still be a promise. | chime-reward
 8:55 | Mo2100 | In | 
-8:56 | Mo2100 | fifteen hundred, money | whoosh-soft
-8:57 | Mo2100 | grew on trees. | pop-reveal
+8:56 | Mo2100 | fifteen hundred, money | pop-reveal, whoosh-soft
+8:57 | Mo2100 | grew on trees. | 
 8:58 | Mo2100 | In | 
 8:59 | Mo2100 | twenty one hundred, | riser-soft
 9:00 | Mo2100 | it might be written in code. | ui-click-soft, impact-deep-soft
@@ -603,12 +603,12 @@ sec | shot | narration in this second | SFX starting in this second
 10:01 | MoOutro | Wonder... | chess-piece-thock
 10:02 | MoOutro | Repeat. | 
 10:03 | MoOutro |  | chess-piece-thock
-10:04 | MoOutro | Next time... | pencil-scribble, ui-toggle-on, sparkle-soft
-10:05 | MoOutro | this could | 
-10:06 | MoOutro | be your comment. | pop-reveal, ui-click-soft
-10:07 | MoOutro | Pick a mystery. | 
-10:08 | MoOutro | And I will see | sparkle-soft
-10:09 | MoOutro | you there. | 
+10:04 | MoOutro | Next | 
+10:05 | MoOutro | time... this | pencil-scribble
+10:06 | MoOutro | could be your comment. | pop-reveal
+10:07 | MoOutro | Pick a mystery. | ui-click-soft
+10:08 | MoOutro | And I will | sparkle-soft
+10:09 | MoOutro | see you there. | 
 10:10 | MoOutro |  | 
 10:11 | MoOutro |  | 
 10:12 | MoOutro |  | 

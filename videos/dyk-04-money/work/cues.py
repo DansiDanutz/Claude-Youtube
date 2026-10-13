@@ -50,7 +50,7 @@ for shot in ERA_SHOTS:
     c(S(shot, 0.12), 'impact-soft', 0.38, 'year slams in')
 for scene in ERA_VO:
     c(W(scene, 'Did', shift=-0.25), 'ui-toggle-on', 0.28, 'DID YOU KNOW THAT… card switches on')
-    c(('after_did', scene), 'chime-magic', 0.30, '(chime after "that")')
+    c(('after_did', scene), 'chime-magic', 0.24, '(chime after "that")')
 
 
 # ── per-shot parts (v2)

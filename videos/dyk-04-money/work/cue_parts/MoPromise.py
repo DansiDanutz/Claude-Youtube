@@ -11,5 +11,5 @@ c(W(s, 'drink'), 'pop-reveal', 0.20, 'a cup steams over 1500: YOU COULD DRINK IT
 c(W(s, 'code'), 'glitch-zap', 0.16, 'digits over 2100: NOTHING BUT CODE?')
 c(W(s, 'end', 2), 'whoosh-soft', 0.20, 'the row clears; AT THE END')
 c(W(s, 'money', 4), 'ui-click-soft', 0.16, 'MONEY')
-c(W(s, 'is'), 'impact-soft', 0.28, '= ? lands')
+c(W(s, 'is'), 'impact-soft', 0.16, '= ? lands')
 c(W(s, 'end', 1), 'ui-click-soft', 0.14, 'the 2100 chip pulses')

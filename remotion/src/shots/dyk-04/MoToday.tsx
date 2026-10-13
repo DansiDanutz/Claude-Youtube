@@ -61,7 +61,7 @@ const HALF = C.at('half');
 const SO1 = C.at('So', 1);
 const NUMBERS2 = C.at('Numbers', 2);
 const SCREEN = C.at('screen');
-const CHIP_DOCK = SCREEN + 80;
+const CHIP_DOCK = SCREEN + 36; // docks quickly: the cliffhanger follows 3.4 s later
 const TOUCH = C.at('touch');
 const SO2 = C.at('So', 2);
 const QUESTION = C.at('question');
@@ -82,8 +82,8 @@ const MoToday: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
   const city = win(f, DOCK, DID - 2, 10, 8);
-  const mpesa = win(f, MPESA - 4, JUST - 2, 6, 8);
-  const euro = win(f, JUST - 4, SO1 + 2, 6, 8);
+  const mpesa = win(f, MPESA - 4, JUST - 6, 6, 8);
+  const euro = win(f, JUST + 2, SO1 + 2, 6, 8);
   const screen = win(f, SCREEN - 4, SO2, 4, 10);
   const cliff = ease(f, SO2 - 2, SO2 + 10);
   const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, SO2 - 2, SO2 + 8));
@@ -151,7 +151,7 @@ const MoToday: React.FC = () => {
           ]} />
         </div>
         <div style={{ position: 'absolute', left: 1100, top: 700 }}><Label at={TEXT} color={DYT.green} size={30}>PAID WITH A TEXT</Label></div>
-        <div style={{ position: 'absolute', left: 1100, top: 760 }}><Source at={SEVEN}>Safaricom / Vodafone launch, March 2007 · FAO · day = illustration</Source></div>
+        <div style={{ position: 'absolute', left: 1100, top: 760 }}><Source at={SEVEN}>Safaricom launch, March 2007 · FAO · illustration</Source></div>
       </AbsoluteFill>
 
       {/* it isn't just Kenya: the euro-area cash share */}

@@ -30,8 +30,8 @@ S = [
   pauses=[("smoke.", 0.2), ("trees?", 0.35), ("you?", 0.35)]),
  sc("mo05-1661", "Mo1661", [
   ("You wake up in sixteen sixty one, in Stockholm. The harbour's frozen, and a sledge scrapes past your window, loaded with copper.", 3.0, None),
-  ("Did you know that Sweden's biggest coin weighed almost twenty kilos? It's a copper plate. You don't put it in your pocket. You put it on a cart.", 3.3, DYK),
-  ("So a banker called Johan Palmstruch has an idea. Leave your copper at his bank, and take a sheet of paper instead. It says your copper is waiting for you. These are the first real banknotes in Europe.", 3.0, None),
+  ("Did you know that Sweden's biggest coin weighed almost twenty kilos? It's a copper plate. You don't put it in your pocket.", 3.3, DYK),
+  ("You put it on a cart. So a banker called Johan Palmstruch has an idea. Leave your copper at his bank, and take a sheet of paper instead. It says your copper is waiting for you. These are the first real banknotes in Europe.", 3.0, None),
   ("So what is money now? A promise. Written on paper. Remember that word, promise. It comes back at the end.", 2.9, None),
   ("People love the notes. So the bank prints more, and lends more, than it has copper to pay back. When people come for their copper, it isn't there. The bank fails. Palmstruch is sentenced to death. He's spared, and dies a few years later.", 3.0, None),
   ("Paper only works while people believe in it. And in the next century, one man will push that belief further than anyone ever had.", 3.1, DYK)],
@@ -89,7 +89,7 @@ S = [
   ("Next time: food. Historians estimate that in fifteen hundred, food took up most of a working family's budget. So what will you be eating in twenty one hundred?", 3.0, None)], floor=0.95),
  sc("mo13c-signoff", "MoOutro", [
   ("Ask...", 0, None), ("Wonder...", 0, None), ("Repeat.", 0, None)],
-  pauses=[("Ask...", 0.33), ("Wonder...", 0.21)], floor=0.95, even=False),
+  pauses=[("Ask...", 0.33), ("Wonder...", 0.36)], floor=0.95, even=False),
  sc("mo14-endscreen", "MoOutro", [
   ("Next time... this could be your comment. Pick a mystery. And I will see you there.", 3.1, None)], floor=0.95),
 ]

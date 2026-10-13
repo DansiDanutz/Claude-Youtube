@@ -113,7 +113,7 @@ const Mo1720: React.FC = () => {
   const street = win(f, DOCK, DID - 2, 10, 8);
   const law = win(f, MAN1 - 4, NARROW, 6, 8);
   const market = win(f, NARROW - 2, SO + 2, 6, 8);
-  const belief = win(f, BELIEF - 2, FOR_NEXT + 8, 4, 10);
+  const belief = win(f, BELIEF - 2, FOR_NEXT + 14, 4, 10);
   const cliff = ease(f, FOR_NEXT - 2, FOR_NEXT + 10);
   const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, FOR_NEXT - 2, FOR_NEXT + 8));
   const crack = ease(f, DONT1 - 2, DONT1 + 8);

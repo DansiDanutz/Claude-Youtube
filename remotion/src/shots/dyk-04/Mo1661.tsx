@@ -20,8 +20,8 @@ import vo from './vo.json';
 // FAILED on "fails", SENTENCED TO DEATH · 1668 on "sentenced", SPARED · DIED 1671 on "spared"/"dies". Cliffhanger:
 // a note on a pedestal labelled BELIEF on "believe", a figure pushes it higher on "push". VO mo05 @0.8 s.
 // =============================================================================
-export const compositionConfig = { id: 'Mo1661', durationInSeconds: 65.4667, fps: 30, width: 1920, height: 1080 };
-const DUR = 1964;
+export const compositionConfig = { id: 'Mo1661', durationInSeconds: 65.3667, fps: 30, width: 1920, height: 1080 };
+const DUR = 1961;
 
 const C = makeCue(vo, 'mo05-1661', 0.8);
 const SIXTEEN = C.at('sixteen');

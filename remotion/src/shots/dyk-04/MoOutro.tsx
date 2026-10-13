@@ -13,8 +13,8 @@ import vo from './vo.json';
 // never a fabricated one), RIGHT = WATCH NEXT · No. 05 · FOOD (no date), subscribe ring.
 // VO mo13 @0.6 s, mo13b @37.4 s, mo13c @47.8 s, mo14 on the end screen.
 // =============================================================================
-export const compositionConfig = { id: 'MoOutro', durationInSeconds: 68.5, fps: 30, width: 1920, height: 1080 };
-const DUR = 2055;
+export const compositionConfig = { id: 'MoOutro', durationInSeconds: 68.6667, fps: 30, width: 1920, height: 1080 };
+const DUR = 2060;
 
 // ── swappable next-episode slot (change here + re-voice mo13b-next + the description line)
 const NEXT_EP = { no: '05', subject: 'FOOD', title: 'Food' } as const;
@@ -107,7 +107,7 @@ const MoOutro: React.FC = () => {
   const commentPulse = f > COMMENTS ? 0.5 + 0.5 * Math.sin((f - COMMENTS) / 5) : 0;
   const lockOut = ease(f, TURN - 16, TURN - 2, 0, 1, DL_EASE.inOut);
   const hereFlash = ease(f, RIGHT, RIGHT + 4) * (1 - ease(f, RIGHT + 8, RIGHT + 28));
-  const scribble = ease(f, ES + 12, ES + 30);
+  const scribble = ease(f, E.at('time...', 1, 'e') + 2, E.at('time...', 1, 'e') + 20); // write-on in the gap after "time..." (one cue, no stack)
   const pulse = (at: number) => ease(f, at - 1, at + 5) * (1 - ease(f, at + 10, at + 28));
   const fourPulse = pulse(FOUR);
   const gamePulse = pulse(GAME);

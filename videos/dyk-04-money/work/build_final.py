@@ -31,6 +31,9 @@ TARGET_LUFS = -14.0
 LIMIT_DBTP = -2.6          # limiter ceiling (sample) — skill: keeps true peak <= -1 dBTP after AAC
 MUSIC_LEVEL = 0.32
 SFX_GROUP = 35
+# No. 04 audit: the one-word sign-off chunks and the reused end-screen line read 2.4–3.6 dB hotter than the body lines
+# and drove the limiter; level them back to the body.
+VOICE_GAIN_DB = {'mo13c-signoff': -3.0, 'mo14-endscreen': -2.5}
 FPS = 30
 MIN_TAIL_S = 0.5           # a voice line must end at least this long before its shot cuts
 SHOT_ORDER = ['MoHook', 'MoIntro', 'MoWelcome', 'MoPromise', 'Mo1500', 'Mo1661', 'Mo1720', 'Mo1821',
@@ -126,9 +129,8 @@ def cue_sheet():
     for shot in CUE_TABLE.EXIT_SHOTS:     # the EraExit pull-in carries a reverse whoosh into the next era
         out.append((START[shot] + DUR[shot] - 0.95, 'whoosh-reverse', 0.30, 'era exit pull-in'))
     es = START['MoOutro'] + ES_S
-    out += [(es + 12 / FPS, 'pencil-scribble', 0.30, 'end screen: BEST COMMENT · READ HERE writes on'),
-            (es + 18 / FPS, 'ui-toggle-on', 0.24, 'end screen: logo switches on (subscribe slot)'),
-            (es + 25 / FPS, 'sparkle-soft', 0.22, 'end screen: logo glow')]
+    # No. 04 audit: no stack of effects on the end-screen line — one write-on cue, in the gap after "time..."
+    out += [(w_end('mo14-endscreen', 'time...', 1, 0.05), 'pencil-scribble', 0.26, 'end screen: READ ON THIS SCREEN writes on')]
     spans = word_spans()
     return sorted((round(off_word(t, clip, spans), 3), clip, gain, vis) for t, clip, gain, vis in out)
 
@@ -212,7 +214,7 @@ def main():
 
     # 2) voice bus
     voice = os.path.join(BUS, 'voice.wav')
-    delayed_mix([(os.path.join(WORK, 'mix', f'{scene}.wav'), at, 1.0) for scene, at in VO_AT.items()], voice)
+    delayed_mix([(os.path.join(WORK, 'mix', f'{scene}.wav'), at, 10 ** (VOICE_GAIN_DB.get(scene, 0.0) / 20)) for scene, at in VO_AT.items()], voice)
 
     # 3) sfx bus in groups
     groups = []
@@ -268,7 +270,9 @@ def main():
     # 6) final encode: CFR 30, stereo AAC, faststart
     final = os.path.join(PROJ, 'dyk-04-money-1080P.mp4')
     run(['-i', silent, '-i', master, '-map', '0:v', '-map', '1:a',
-         '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-r', '30', '-fps_mode', 'cfr',
+         '-vf', 'scale=in_range=pc:out_range=tv:in_color_matrix=bt601:out_color_matrix=bt709,format=yuv420p',
+         '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
+         '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-r', '30', '-fps_mode', 'cfr',
          '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-ac', '2', '-movflags', '+faststart', '-shortest', final])
     print('final ->', final, f'{duration(final):.2f}s')
     rm(pre, master, voice, silent, listfile, *[os.path.join(BUS, f'v_{sid}.mp4') for sid, _, _ in SHOTS])

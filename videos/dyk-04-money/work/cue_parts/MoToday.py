@@ -37,7 +37,7 @@ c(W(s, 'touch'), 'ui-click-soft', 0.14, 'a hand ✗ · YOU ALMOST NEVER TOUCH IT
 c(W(s, 'So', 2), 'piano-a-min', 0.30, 'cliffhanger: THE QUESTION YOU CAME FOR + ?; ladder fades')
 c(W(s, 'paper'), 'stamp-hit', 0.20, 'note ✗')
 c(W(s, 'gold'), 'stamp-hit', 0.20, 'coin ✗')
-c(W(s, 'actually', shift=-1.36), 'riser-soft', 0.24, '(riser into MONEY = ?)')
+c(W(s, 'actually', shift=-1.22), 'riser-soft', 0.24, '(riser into MONEY = ?)')
 c(W(s, 'actually'), 'impact-soft', 0.28, 'MONEY = ?')
 c(W(s, 'two', 1), 'ui-click-soft', 0.12, 'card: the figures dim for 2009')
 c(W(s, 'you', 5), 'ui-click-soft', 0.14, 'the ? pulses')

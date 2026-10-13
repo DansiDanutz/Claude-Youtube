@@ -55,6 +55,7 @@ PACE_STEP_MAX = 0.10      # voice preflight: neighbouring chunks within 10 % wor
 PACE_TOL = 0.10           # ... and never slowed below 90 % of the chunk's own pace target
 PAYOFF_WPS_MAX = 2.8      # a "payoff": true chunk is delivered at <= 2.8 words/s
 MARGIN = 0.99             # land just inside every limit
+MIN_CUT_GAP_S = 0.06      # even-pace breaths go only into gaps with at least this much real silence
 
 
 def chunk_slices(chunks):
@@ -67,7 +68,7 @@ def chunk_slices(chunks):
     return out
 
 
-def even_pace_cuts(words, chunks):
+def even_pace_cuts(words, chunks, raw=None):
     """Extra [(word_index, seconds)] that slow the faster of two neighbouring chunks with longer breaths at its own
     sentence ends (commas if it has none) until every pair is within PACE_STEP_MAX, payoff chunks <= PAYOFF_WPS_MAX,
     and no chunk below (1 - PACE_TOL) of its target. Silence is only ever added; a pace-0 or one-word chunk (the
@@ -98,8 +99,13 @@ def even_pace_cuts(words, chunks):
         if not w[k] or w[k] >= rate[k] - 1e-9:
             continue
         need = (b - a) / w[k] - (words[b - 1]["e"] - words[a]["s"])
-        inner = [i for i in range(a, b - 1) if SENTENCE_END.search(words[i]["w"])] or \
-                [i for i in range(a, b - 1) if words[i]["w"].endswith((",", ";", ":"))] or list(range(a, b - 1))
+        # No. 04 audit: never cut into a gap where the take runs words together (< MIN_CUT_GAP_S of real silence) —
+        # the cut lands on the previous word's tail ("pocket. | You", 24 ms gap) and clips both words.
+        ref = raw or words      # judge the take's own silence, before any top-up pause
+        clear = lambda i: ref[i + 1]["s"] - ref[i]["e"] >= MIN_CUT_GAP_S
+        inner = [i for i in range(a, b - 1) if SENTENCE_END.search(words[i]["w"]) and clear(i)] or \
+                [i for i in range(a, b - 1) if words[i]["w"].endswith((",", ";", ":")) and clear(i)] or \
+                [i for i in range(a, b - 1) if SENTENCE_END.search(words[i]["w"])] or list(range(a, b - 1))
         cuts += [(i, round(need / len(inner), 3)) for i in inner]
     return cuts
 
@@ -182,7 +188,7 @@ def process(sid, cfg, chunks=None):
     words = json.load(open(os.path.join(NARR, f"{sid}.words.json")))
     cuts = plan_pauses(words, cfg)
     if cfg.get("even_pace") and chunks and len(chunks) > 1:
-        cuts = merge_cuts(cuts, even_pace_cuts(shift_words(words, cuts), chunks))
+        cuts = merge_cuts(cuts, even_pace_cuts(shift_words(words, cuts), chunks, words))
     tmp = os.path.join(MIX, f"{sid}.decode.wav")
     decode(os.path.join(NARR, f"{sid}.mp3"), tmp)
     try:

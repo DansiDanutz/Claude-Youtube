@@ -32,6 +32,7 @@ const ACCEPT = C.at('accept');
 const MOST = C.at('most');
 const BANKS = C.at('banks');
 const LOAN1 = C.at('loan', 1);
+const GIVES = C.at('gives');
 const HAND = C.at('hand');
 const SAVINGS = C.at('savings');
 const TYPES = C.at('types');
@@ -116,7 +117,7 @@ const MoReveal: React.FC = () => {
           <Label at={BANKS} color={DL.dim} size={24}>AN ORDINARY BANK</Label>
         </div>
         <div style={{ position: 'absolute', left: 200, top: 280, display: 'flex', alignItems: 'flex-start', gap: 50 }}>
-          <div style={{ width: 240, padding: 20, borderRadius: 12, background: '#f4efe0', opacity: ease(f, LOAN1 - 2, LOAN1 + 8), transform: `rotate(-3deg)` }}>
+          <div style={{ width: 240, padding: 20, borderRadius: 12, background: '#f4efe0', opacity: ease(f, GIVES - 2, GIVES + 8), transform: `rotate(-3deg)` }}>
             <div style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 30, color: '#1a1a1a' }}>LOAN</div>
             {[0, 1, 2, 3].map((k) => <div key={k} style={{ height: 6, marginTop: 14, width: 180 - k * 30, background: '#8a8070' }} />)}
             <div style={{ marginTop: 16, fontFamily: DL_MONO, fontSize: 22, color: DL.green }}>✓ APPROVED</div>
@@ -141,7 +142,7 @@ const MoReveal: React.FC = () => {
       {/* the guess */}
       <AbsoluteFill style={{ opacity: guess }}>
         <div style={{ position: 'absolute', left: 160, top: 190 }}><Label at={GUESS} color={DYT.magenta} size={32}>YOUR GUESS<span style={{ opacity: ease(f, CHECKED - 2, CHECKED + 6) }}> · WHEN THE BANK OF ENGLAND CHECKED (2014)</span></Label></div>
-        <div style={{ position: 'absolute', left: 160, top: 270, opacity: ease(f, CHECKED - 4, CHECKED + 8) }}>
+        <div style={{ position: 'absolute', left: 160, top: 270, opacity: ease(f, GUESS - 2, GUESS + 8) }}>
           <CoinGrid solid={(i) => solid(i)} size={40} cols={20} />
           {/* the 3 survivors glow */}
           <div style={{ position: 'absolute', left: (17 * 48), top: 4 * 48 - 6, width: 3 * 48 + 4, height: 52, borderRadius: 26, boxShadow: `0 0 ${30 * glow3}px ${GOLD.light}`, border: `3px solid ${glow3 > 0.1 ? GOLD.light : 'transparent'}` }} />

@@ -63,6 +63,7 @@ const DRINK = C.at('drink');
 const MIGHT = C.at('might');
 const INVENTED = C.at('invented');
 const GOATS = C.at('goats');
+const SWAPPING = C.at('swapping');
 const GRAIN = C.at('grain');
 const AWKWARD = C.at('awkward');
 const ANTHRO = C.at('Anthropologists');
@@ -160,7 +161,7 @@ const Mo1500: React.FC = () => {
             <Label at={PRICE} color={DL.dim} size={30}>HOW PEOPLE PAID · A PRICE LIST<span style={{ opacity: ease(f, DECADES - 2, DECADES + 6) }}>, A FEW DECADES LATER</span></Label>
           </div>
           {/* the price list itself, until its first item is read */}
-          <div style={{ position: 'absolute', left: 660, top: 300, opacity: ease(f, PRICE - 2, PRICE + 8) * (1 - ease(f, AVOCADO - 8, AVOCADO)), transform: `rotate(${-2 + Math.sin(f / 30)}deg)` }}>
+          <div style={{ position: 'absolute', left: 660, top: 250, opacity: ease(f, PRICE - 2, PRICE + 8) * (1 - ease(f, AVOCADO - 8, AVOCADO)), transform: `rotate(${-2 + Math.sin(f / 30)}deg)` }}>
             <svg width={600} height={400} viewBox="0 0 600 400">
               <rect x={40} y={30} width={520} height={340} fill={INK.paper} />
               <rect x={20} y={14} width={560} height={30} rx={15} fill="#c9b48a" /><rect x={20} y={356} width={560} height={30} rx={15} fill="#c9b48a" />
@@ -236,7 +237,7 @@ const Mo1500: React.FC = () => {
         <AbsoluteFill style={{ opacity: myth }}>
           <div style={{ position: 'absolute', left: 160, top: 210 }}><Label at={MIGHT} color={DL.red} size={30}>THE MYTH<span style={{ opacity: ease(f, INVENTED - 2, INVENTED + 6) }}> · MONEY WAS INVENTED BECAUSE…</span></Label></div>
           <div style={{ position: 'absolute', left: 160, top: 290, display: 'flex', alignItems: 'center', gap: 40 }}>
-            <div style={{ opacity: ease(f, GOATS - 2, GOATS + 8), textAlign: 'center' }}>
+            <div style={{ opacity: ease(f, SWAPPING - 2, SWAPPING + 8), textAlign: 'center' }}>
               <svg width={180} height={140} viewBox="0 0 180 140"><ellipse cx={86} cy={70} rx={56} ry={30} fill="#d8d0c0" /><circle cx={150} cy={50} r={20} fill="#d8d0c0" /><path d="M146 30 l-8 -18 M158 30 l8 -18" stroke="#a89880" strokeWidth={4} />{[50, 70, 104, 124].map((x) => <rect key={x} x={x} y={92} width={8} height={40} fill="#c8c0b0" />)}<path d="M150 70 l4 16" stroke="#a89880" strokeWidth={4} /></svg>
               <Label at={GOATS} color={DL.text} size={26}>GOATS</Label>
             </div>
@@ -246,7 +247,7 @@ const Mo1500: React.FC = () => {
               <Label at={GRAIN} color={DL.text} size={26}>GRAIN</Label>
             </div>
             <div style={{ opacity: ease(f, AWKWARD - 2, AWKWARD + 8), fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 56, color: DL.dim }}>…got awkward?</div>
-            <div style={{ marginLeft: 40, fontFamily: DL_SERIF, fontSize: 120, color: DL.red, opacity: ease(f, INVENTED - 2, INVENTED + 8) * (1 - ease(f, GOATS - 4, GOATS + 4)), position: 'absolute', left: 0, top: -10 }}>?</div>
+            <div style={{ marginLeft: 40, fontFamily: DL_SERIF, fontSize: 120, color: DL.red, opacity: ease(f, INVENTED - 2, INVENTED + 8) * (1 - ease(f, SWAPPING - 4, SWAPPING + 4)), position: 'absolute', left: 0, top: -10 }}>?</div>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 560, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 18 }}>
             <Label at={ANTHRO} color={DL.warm} size={30}>ANTHROPOLOGISTS SAY:</Label>

@@ -12,13 +12,14 @@ WHISPER DIFF: PASS
    diff ('replace', 'price list', 'priceless')
    LISTEN   low-p   [('And', 0.3)]
 == mo05-1661  ratio 0.957
-   LISTEN   listen  'johan palmstruch' heard as 'johann palmstroke'
-   LISTEN   listen  'palmstruch is' heard as 'palmstroke has'
+   LISTEN   listen  'johan palmstruch' heard as 'johann palmstruck'
+   LISTEN   listen  'palmstruch is' heard as 'palmstruck has'
    diff ('replace', 'harbours', 'harbors')
-   diff ('replace', 'johan palmstruch', 'johann palmstroke')
+   diff ('replace', 'johan palmstruch', 'johann palmstruck')
    diff ('replace', 'banknotes', 'bank notes')
-   diff ('replace', 'palmstruch is', 'palmstroke has')
+   diff ('replace', 'palmstruch is', 'palmstruck has')
    diff ('replace', 'hes', 'he')
+   LISTEN   low-p   [('These', 0.19)]
 == mo06-1720  ratio 0.989
    LISTEN   listen  'livres' heard as 'leaves'
    LISTEN   listen  'palmstruch' heard as 'palmstruck'

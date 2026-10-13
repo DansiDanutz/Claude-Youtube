@@ -161,13 +161,13 @@
           "speed": 1.0
         },
         {
-          "text": "Did you know that Sweden's biggest coin weighed almost twenty kilos? It's a copper plate. You don't put it in your pocket. You put it on a cart.",
+          "text": "Did you know that Sweden's biggest coin weighed almost twenty kilos? It's a copper plate. You don't put it in your pocket.",
           "pace": 3.3,
           "speed": 1.0,
           "floor": 0.85
         },
         {
-          "text": "So a banker called Johan Palmstruch has an idea. Leave your copper at his bank, and take a sheet of paper instead. It says your copper is waiting for you. These are the first real banknotes in Europe.",
+          "text": "You put it on a cart. So a banker called Johan Palmstruch has an idea. Leave your copper at his bank, and take a sheet of paper instead. It says your copper is waiting for you. These are the first real banknotes in Europe.",
           "pace": 3.0,
           "speed": 0.92
         },
@@ -613,7 +613,7 @@
           {
             "word": "Wonder...",
             "nth": 1,
-            "add": 0.21
+            "add": 0.36
           }
         ]
       }
