@@ -44,6 +44,12 @@ class RefineEndsTests(unittest.TestCase):
         self.assertAlmostEqual(out[0]["e"], 0.25, places=3)          # held to the 0.05 s minimum
         self.assertEqual(out[1]["e"], 1.20)                          # never later than aligned
 
+    def test_word_ending_on_a_frame_boundary_excludes_the_next_words_frame(self):
+        # review PRRT_kwDOTfGVps6rrP_a: "cane." aligned to 0.80 (a frame boundary), next word voiced from 0.80
+        words = [{"w": "cane.", "s": 0.3, "e": 0.80}, {"w": "Then", "s": 0.80, "e": 1.1}]
+        out = va.refine_ends_pcm(words, tone([(0.3, 0.55), (0.80, 1.1)], 1.2))
+        self.assertAlmostEqual(out[0]["e"], 0.55, delta=0.02)
+
     def test_wrapper_decodes_the_take_once(self):
         words = [{"w": "hi.", "s": 0.0, "e": 0.9}]
         with mock.patch.object(va, "decode", return_value=tone([(0.0, 0.4)], 1.0)) as dec:
@@ -93,6 +99,22 @@ class CliTests(unittest.TestCase):
             self.assertEqual(code, 1)
             self.assertIn("bad.c1.bbb", out.getvalue())
             self.assertNotIn("good.c1.aaa", out.getvalue())
+
+    def test_unchecked_takes_fail_closed(self):
+        # review PRRT_kwDOTfGVps6rrXXL: metadata without audio was skipped and .wav takes were never scanned
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d)
+            meta = json.dumps({"words": TailArtefactTests.words, "speed": 1.0})
+            (p / "noaudio.c1.aaa.json").write_text(meta)
+            (p / "wavtake.c1.bbb.json").write_text(meta)
+            (p / "wavtake.c1.bbb.wav").write_bytes(b"wav")
+            bad = tone([(0.0, 0.3), (0.4, 0.9), (1.1, 1.3)], 1.4)
+            with mock.patch.object(va, "decode", return_value=bad), contextlib.redirect_stdout(io.StringIO()) as out:
+                self.assertEqual(va.main(["--tails", str(p)]), 1)
+            self.assertIn("noaudio.c1.aaa: no .mp3/.wav", out.getvalue())
+            self.assertIn("wavtake.c1.bbb: voiced fragment", out.getvalue())
+        with tempfile.TemporaryDirectory() as d, contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(va.main(["--tails", d]), 1)              # an empty cache checks nothing
 
     def test_missing_dir_fails_closed(self):
         with contextlib.redirect_stdout(io.StringIO()):

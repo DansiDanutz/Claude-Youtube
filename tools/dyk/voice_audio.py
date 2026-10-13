@@ -12,11 +12,13 @@ tail_artefact(words, pcm)
     fails its gate (regenerate, or trim it in the chunk cache and record that in HANDOFF.md).
 
 CLI: python3 tools/dyk/voice_audio.py --tails videos/<ep>/work/narration/chunks
-     scans every cached chunk (<base>.mp3 + <base>.json words) and exits 1 on any tail artefact.
+     scans every cached chunk (<base>.json words + <base>.mp3 or .wav) and exits 1 on any tail artefact, and on any
+     take it could not check (missing audio, unreadable metadata, empty cache) — it never passes unchecked takes.
 """
 import argparse
 import base64
 import json
+import math
 import subprocess
 import sys
 from pathlib import Path
@@ -48,6 +50,12 @@ def voiced(db):
     return db > np.percentile(db, 95) - ENERGY_FLOOR_DB
 
 
+def last_frame(end_s):
+    """Exclusive frame index for a word ending at end_s: frames that overlap [s, e), never the frame that STARTS at e
+    (that one belongs to the next word — review PRRT_kwDOTfGVps6rrP_a)."""
+    return math.ceil(round(end_s / ENERGY_FRAME_S, 6))
+
+
 def refine_ends_pcm(words, x, rate=RATE):
     import numpy as np
     if x.size < int(rate * ENERGY_FRAME_S) * 4:
@@ -55,7 +63,7 @@ def refine_ends_pcm(words, x, rate=RATE):
     active = voiced(frame_db(x, rate))
     out = []
     for w in words:
-        a, b = int(w["s"] / ENERGY_FRAME_S), min(len(active), int(w["e"] / ENERGY_FRAME_S) + 1)
+        a, b = int(w["s"] / ENERGY_FRAME_S), min(len(active), last_frame(w["e"]))
         act = np.flatnonzero(active[a:b])
         e = w["e"] if not act.size else min(w["e"], round((a + act[-1] + 1) * ENERGY_FRAME_S, 3))
         out.append({**w, "e": min(w["e"], max(round(w["s"] + MIN_WORD_S, 3), e))})   # never outside [s, e]
@@ -94,18 +102,30 @@ def tail_artefact(words, x, rate=RATE):
     return None
 
 
+AUDIO_EXTS = (".mp3", ".wav")     # the formats gen_voice.cached_take reuses
+
+
 def scan_chunks(chunk_dir):
-    """[(chunk, start_s, duration_s)] for every cached chunk take with a tail artefact."""
-    found = []
-    for meta in sorted(Path(chunk_dir).glob("*.json")):
-        audio = meta.with_suffix(".mp3")
-        if not audio.is_file():
+    """(artefacts, problems): [(chunk, start_s, duration_s)] for takes with a tail artefact, and [(chunk, why)] for
+    takes that could not be checked (no audio next to the word timings, unreadable metadata). Fail closed."""
+    found, problems = [], []
+    metas = sorted(Path(chunk_dir).glob("*.json"))
+    if not metas:
+        return found, [(str(chunk_dir), "no cached chunk takes (<base>.json + audio) to check")]
+    for meta in metas:
+        audio = next((meta.with_suffix(ext) for ext in AUDIO_EXTS if meta.with_suffix(ext).is_file()), None)
+        if audio is None:
+            problems.append((meta.stem, "no .mp3/.wav next to the word timings — take not checked"))
             continue
-        words = json.loads(meta.read_text(encoding="utf-8"))["words"]
+        try:
+            words = json.loads(meta.read_text(encoding="utf-8"))["words"]
+        except (ValueError, KeyError, TypeError) as err:
+            problems.append((meta.stem, f"unreadable metadata: {err!r}"))
+            continue
         hit = tail_artefact(words, decode(audio.read_bytes()))
         if hit:
             found.append((meta.stem, *hit))
-    return found
+    return found, problems
 
 
 def main(argv=None):
@@ -115,11 +135,14 @@ def main(argv=None):
     if not Path(a.tails).is_dir():
         print(f"TAIL CHECK: FAIL — {a.tails} is not a directory")
         return 1
-    found = scan_chunks(a.tails)
-    print(f"TAIL CHECK: {'PASS' if not found else f'FAIL — {len(found)} take(s)'}")
+    found, problems = scan_chunks(a.tails)
+    bad = len(found) + len(problems)
+    print(f"TAIL CHECK: {'PASS' if not bad else f'FAIL — {bad} take(s)'}")
     for stem, start, dur in found:
         print(f"  {stem}: voiced fragment at {start:.2f} s ({dur:.2f} s) after the last word")
-    return 1 if found else 0
+    for stem, why in problems:
+        print(f"  {stem}: {why}")
+    return 1 if bad else 0
 
 
 if __name__ == "__main__":
