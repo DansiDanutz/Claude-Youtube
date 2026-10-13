@@ -149,17 +149,14 @@ def _remainder_follows(toks, i):
 
 def _starts_new_number(run, t):
     """A small number after a year is a separate number: '1971 one' and '1971 1' are 1971 then 1 (not 1972),
-    'nineteen seventy one one' is 1971 then 1 (not 197101), and 'twenty one hundred one' is 2100 then 1 (not 2101).
-    Year/clock style reads at most two groups ('sixteen forty seven'); 'four hundred one' stays 401."""
+    and 'nineteen seventy one one' is 1971 then 1 (not 197101). Year/clock style reads at most two groups ('sixteen
+    forty seven'). Scale compounds stay whole ('nineteen hundred one' is the year 1901): only punctuation splits them."""
     if not run:
         return False
     if DIGITS.match(run[-1]):
         return bool(DIGITS.match(t)) or t in UNIT_VALUES or t in TENS_VALUES
     if t not in UNIT_VALUES and t not in TENS_VALUES:
         return False
-    head = run[:-1]
-    if run[-1] == "hundred" and head and all(w in UNIT_VALUES or w in TENS_VALUES for w in head):
-        return _integer(head) >= 10             # 'fifteen hundred', 'twenty one hundred': a completed year
     if any(w not in UNIT_VALUES and w not in TENS_VALUES for w in run):
         return False                           # scales, 'point', 'a', 'and': not year/clock style
     groups = _small_groups(run + [t])

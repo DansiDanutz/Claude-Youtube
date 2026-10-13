@@ -55,8 +55,9 @@ class TokenTests(unittest.TestCase):
         self.assertEqual(wd.tokens("five, six"), ["#5", "#6"])
         # review PRRT_kwDOTfGVps6rx43m / rxriB: no comma, digits after digits, and a scale-form year
         self.assertEqual(wd.tokens("in 1971 1 speech"), ["in", "#1971", "#1", "speech"])
-        self.assertEqual(wd.tokens("in twenty one hundred one speech"), ["in", "#2100", "#1", "speech"])
-        self.assertEqual(wd.tokens("in fifteen hundred one speech"), wd.tokens("in 1500 1 speech"))
+        # review PRRT (greptile): a scale compound stays whole without punctuation; "nineteen hundred one" is 1901
+        self.assertEqual(wd.tokens("in nineteen hundred one"), wd.tokens("in 1901"))
+        self.assertEqual(wd.tokens("in twenty one hundred, one speech"), ["in", "#2100", "#1", "speech"])
         self.assertEqual(wd.tokens("four hundred one"), ["#401"])
         self.assertEqual(wd.tokens("one hundred one dalmatians"), wd.tokens("101 dalmatians"))
         self.assertNotEqual(wd.tokens("in nineteen seventy one, one speech"), wd.tokens("in 1972 speech"))
@@ -105,7 +106,8 @@ class FlagTests(unittest.TestCase):
                                "But in 1971, one television speech cuts the rope."), [])
         self.assertIn("number", flags("in nineteen seventy one, one speech", "in 1972, one speech"))
         self.assertEqual(flags("in nineteen seventy one, one speech", "in 1971 1 speech"), [])
-        self.assertEqual(flags("in twenty one hundred, one speech", "in twenty one hundred one speech"), [])
+        self.assertEqual(flags("in twenty one hundred, one speech", "in 2100, one speech"), [])
+        self.assertEqual(flags("born in nineteen hundred one", "born in 1901"), [])
 
     def test_number_heard_as_another_value_fails(self):
         self.assertIn("number", flags("in fifteen hundred, in London", "in 1600, in London"))
