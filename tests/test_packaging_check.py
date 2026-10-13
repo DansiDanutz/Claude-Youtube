@@ -141,10 +141,12 @@ class CliTests(unittest.TestCase):
             args = ["--packaging", str(p), "--duration", "650.9", "--core", "School"]
             self.assertEqual(quiet_main(args), 1)
 
-    def test_shipped_episode_02_passes(self):
-        ep = ROOT / "videos" / "dyk-02-the-sun"
-        args = ["--packaging", str(ep / "packaging"), "--timeline", str(ep / "work" / "timeline.json"), "--core", "Sun"]
-        self.assertEqual(quiet_main(args), 0)
+    def test_shipped_episodes_pass(self):
+        # No. 03 is the regression case: its live description was fixed (chapters merged, "7:45" -> words)
+        for slug, core in (("dyk-02-the-sun", "Sun"), ("dyk-03-school", "School")):
+            ep = ROOT / "videos" / slug
+            args = ["--packaging", str(ep / "packaging"), "--timeline", str(ep / "work" / "timeline.json"), "--core", core]
+            self.assertEqual(quiet_main(args), 0, slug)
 
 
 if __name__ == "__main__":
