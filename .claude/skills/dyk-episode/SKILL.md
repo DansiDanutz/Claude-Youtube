@@ -5,13 +5,14 @@ description: Produce, fix, audit or publish an episode of the "Did You Know That
 
 # Did You Know That? — episode production
 
-Reference build: `videos/dyk-01-time-compressed` (9:26, audited). The format is law: `docs/DYK-FORMAT.md`.
+Reference build: `videos/dyk-03-school` (10:51, audited; template for scripts and gates) — No. 01 was the first. The format is law: `docs/DYK-FORMAT.md`.
 Brand kit `remotion/src/lib/dytbrand.tsx` · episode kit `remotion/src/lib/dykkit.tsx` · rubric `docs/VIDEO-DESIGN-SYSTEM.md`.
+References: `voice-template.md` (script → verified takes) · `voice-preflight.md` · `narration-humanizer.md` · `upload-playbook.md`. Gates: `tools/dyk/{length_estimate,whisper_diff,voice_audio,voice_preflight,packaging_check}.py`.
 
 ## Non-negotiables
 - **One subject per episode**: how people's behaviour toward it changed per century (1500 → today), how we live with it now, and **2100 from real published data only**, labelled `PREDICTION · a scenario, not a fact`.
 - **Five beats per era**: "You wake up in [exact year], [place]" → "Did you know that…" brand card (one sourced, surprising fact) → how people lived (`DayClock` / `WeekStrip`, labelled illustration) → what changed it → `Cliffhanger` + "NEXT ▸". Every era, including the last before the answer.
-- **Narrator = Brian only** (`gen_voice.py`: voice `nPczCjzI2devNBz1zQrb`, `eleven_flash_v2_5`, stability .42 / similarity .85 / style .30). Never another voice. Only regenerate lines that change (`ONLY=id1,id2`). Uses the ElevenLabs Creator subscription (no overage) — check `/v1/user/subscription` before big batches.
+- **Narrator = Brian only** (`gen_voice.py`: voice `nPczCjzI2devNBz1zQrb`, `eleven_flash_v2_5`, stability .32 / similarity .85 / style .45 — Nos. 02–03). Never another voice. Only regenerate lines that change (`ONLY=id1,id2`). Uses the ElevenLabs Creator subscription (no overage) — check `/v1/user/subscription` before big batches.
 - **Brand** = Did You Know That? (real logo/banner in `media/library/logos/dyk-*`), never DansLab logos/URLs. Episode art may reuse DansLab tokens. Signature sting `DytSting` + its fixed sound cues, identical every episode, AFTER the cold-open hook.
 - **Outro ritual**: subject-specific comment prompt · "At the end of every episode, I will read the best comment…" (Comment of the Week) · "Dex-tee dot live" (spell it like that for TTS; show **Dexty.live**) · like / share / subscribe on his words · ONE teaser for the next episode · "Ask... Wonder... Repeat." End screen 15 s: Comment of the Week card (left; real comment from the previous episode with @handle — or a clearly labelled EXAMPLE), WATCH NEXT slot (right), subscribe ring.
 - **Truth**: every on-screen number traces to `RESEARCH.md`; hedge where historians disagree; never fabricate a viewer comment, quote or name. Paid research seats (Story Council) only with David's budget — otherwise research directly with web sources.
@@ -29,23 +30,25 @@ Brand kit `remotion/src/lib/dytbrand.tsx` · episode kit `remotion/src/lib/dykki
 
 ## Pipeline (per episode, from repo root)
 1. `videos/dyk-NN-<slug>/STORY.md` (beat sheet in the five-beat grid + the relationship-arc table: per era "how humans saw/used it", rising to 2100) → David approves.
+   Runtime in STORY = `python3 tools/dyk/length_estimate.py --text <draft> --max <budget>` (0.377 s per word, measured), never a hand sum (No. 03 promised 10:10, ran 10:51).
 2. `RESEARCH.md` (F-numbered facts + sources) → `work/narration/script.json` → humanizer pass + read-aloud (scene ids `xxNN-…`, second person, open loops, one "Did you know that…" per era).
-3. Copy and adapt `work/{gen_voice.py,make_vo_json.py,build_final.py,qa_final.py,qa_sweep.py}` from episode 01. `python3 work/gen_voice.py` (timestamps) → `python3 work/make_vo_json.py`.
+3. Copy and adapt `work/{make_script.py,gen_voice.py,insert_pauses.py,make_vo_json.py,build_final.py,qa_final.py,qa_sweep.py}` from **episode 03** and follow `references/voice-template.md`: shared `voice_audio.refine_ends` + `tail_artefact` in `gen_voice.py`, shared `voice_preflight.off_word` in `build_final.py`. `python3 work/gen_voice.py` (timestamps) → pauses → `python3 work/make_vo_json.py`.
+3b. **Whisper round-trip — must PASS**: whisper base on every take → `python3 tools/dyk/whisper_diff.py …` (lost hedge, misread number, negation flip fail; names/homophones listed for a human listen). Re-voice by rephrasing.
 4. Shots in `remotion/src/shots/dyk-NN/` with a NEW unique shot-ID prefix; durations = VO offset + VO + ~1 s. Use `makeCue(vo, id, offset)`; `at('word', nth)`.
 4b. **Voice pre-flight — must PASS before the first render** (`references/voice-preflight.md`): export `work/cuesheet.json`, run `python3 tools/dyk/voice_preflight.py …`; it fails on speed jumps, rushed/dragged words, run-on sentences, voice entering on a cut, SFX on words and a rushed sign-off. Fix and re-run until PASS — never render on a FAIL.
 5. Stills at cue frames: `node remotion/scripts/stills-at.mjs <dir> Shot:frame,frame` — LOOK at them.
 6. `node remotion/scripts/render-all.mjs <ids…> --scale=1` → `python3 work/build_final.py` → `python3 work/qa_final.py` + `python3 work/qa_sweep.py <master> <dir> 2`.
 7. **Audit loop** (below) until no CRITICAL/HIGH and MEDIUMs fixed → `work/RUBRIC.md` (ship A/S) → HTML audit report → David's watch.
-8. Packaging in `packaging/`: `thumbnail.png` rendered from `<Prefix>Thumb.tsx` (2560×1440 → stills-at writes
+8. Packaging in `packaging/` — must pass `python3 tools/dyk/packaging_check.py` (`references/upload-playbook.md`): `thumbnail.png` rendered from `<Prefix>Thumb.tsx` (2560×1440 → stills-at writes
    1280×720) in the **logo palette** (deep navy, neon blue/purple left, green/orange right, the "?" orange→magenta
    gradient on the key words, white headline, logo top-left, bottom-right clear for the duration badge; ≤ 4 words);
-   `YOUTUBE.md` with 3 titles ≤ 60 chars — every title names the episode's core idea (e.g. "Time Compression") AND "2100" (the future is the hook), description (hook, chapters from `timeline.json` starting 0:00, Comment of
+   `YOUTUBE.md` with 3 titles ≤ 60 chars — every title names the episode's core idea (e.g. "Time Compression") AND "2100" (the future is the hook), description (hook — **no m:ss outside the chapter lines**, YouTube links them; chapters from `timeline.json` starting 0:00, every one ≥ 10 s; Comment of
    the Week prompt, Dexty.live, next episode, sources, AI-voice note), tags ≤ 500 chars, upload settings.
    Copy master + thumbnail + YOUTUBE.md to `~/Downloads/` for David's upload.
-9. After upload: in `~/Projects/Did-You-Know-That/website`: `node tools/add-video.mjs <slug> <youtubeId>` → tests → PR → merge → **manual** `vercel --prod --yes` (merging does not deploy) → verify https://dexty.live.
+9. Upload + Studio + Dexty.live: follow `references/upload-playbook.md` (end screen imported from the previous episode and pointed at it, card at ~0:40, "No, AI wasn't used", no auto-captions, pinned Comment of the Week question, previous episode's end screen re-pointed, then `add-video.mjs` → PR → merge → **manual** `vercel --prod --yes` → verify https://dexty.live). Each public step needs David's go-ahead.
 
 ## Audit loop (what episode 01 taught us)
-- **Narration**: `whisper <mp3s> --model base --word_timestamps True` (base is cached; never download bigger models on this disk); diff vs script ignoring numerals; flag words with probability < 0.35, gaps > 1.1 s, meaning flips ("can" → "can't"). Fix by **rephrasing** (shorter clauses, split sentences, avoid double sibilants like "Keynes's", phonetic brand spelling) and regenerating only that line; re-check.
+- **Narration**: `tools/dyk/whisper_diff.py` on whisper base output (base is cached; never download bigger models on this disk) — numbers compare equal; fails on lost hedges, misread numbers and meaning flips ("can" → "can't"); lists names, homophones, probability < 0.35 and gaps > 1.1 s for a human listen. Fix by **rephrasing** (shorter clauses, split sentences, avoid double sibilants like "Keynes's", phonetic brand spelling) and regenerating only that line; re-check.
 - **Voice identity**: if anyone doubts the voice, compare median F0 per line (numpy autocorrelation on `work/mix/*.wav`); Brian sits ~89–101 Hz.
 - **Cues**: after ANY script edit, rescan every `C.at(...)` / `w(...)` token for duplicates — a new earlier copy of a cue word ("next", "ask", "three", "not", "same") silently fires the reveal/sound early. Always pass `nth` when a word repeats.
 - **Frames**: dense sweep sheets (`qa_sweep.py`, every 2 s) reviewed end to end by an independent read-only auditor agent; check reveals vs words, title-safe (HUD sits at bottom 54 px), empty holds > 4 s, contradictions between screen text and narration, wrong years.
@@ -59,7 +62,12 @@ the word(s) spoken, the visual event that answers them, the SFX that marks it. R
   Era headers use a neutral place line ("London · something new in the air"); the reveal lands ON its word.
 - **No empty or static stretch ≥ 2 s** while he talks: every sentence gets its own visual beat. Watch the
   quiet sentences (atmosphere lines like "The air smells of smoke…") and the seconds right after a card fades.
-- **No flashes**: anything shown must stay ≥ 1.5 s before it is covered (ep01 phone badge 1.2 s).
+- **No flashes**: anything shown must stay ≥ 1.5 s before it is covered (ep01 phone badge 1.2 s; No. 03 "No one can
+  pay a tutor…" < 1 s over a stamp). A caption that answers a word enters ON that word in its own space and holds to
+  the next cut or ≥ 1.5 s. In BEATMAP, give every caption its enter AND exit second and check the gap.
+- **Never a blank card while he speaks**: the "Did you know that…" card fills clause by clause on the spoken words
+  (No. 03 1810 card was empty for 2 s during "this school's founder, Joseph Lancaster"). Long facts get one clause per
+  key word (this / Joseph / claimed / thousand), never one reveal at the sentence end.
 - **Builds pace with the voice**: lists/legends/figures build one item per ~12 frames, each with ONE soft
   click on the same step — never > 3 clicks per second. A highlight moves to each item on the word that names it.
 - **Text fits**: long lines wrap inside a 160 px side margin; nothing touches the HUD (bottom 54–110 px) or the
@@ -76,6 +84,11 @@ the word(s) spoken, the visual event that answers them, the SFX that marks it. R
   TP ≤ −1 dBTP) and `gen_voice.py` rejects a line still failing its gates after all retries (`<id>.rejected.mp3`,
   override only with `ALLOW_GATE_FAIL=1`). Never ship on a FAIL. Scripts derive the repo root from `__file__`.
 - **True peak**: limit at 4× oversampling (`aresample=192000,alimiter,aresample=48000`); measure the FINAL AAC file: ≤ −1.0 dBTP.
+- **Voice gates** (before the first render): whisper round-trip PASS (`whisper_diff.py`), no tail artefact
+  (`voice_audio.py --tails <chunks>`; No. 03's unscripted fragment at 9:08), voice pre-flight PASS — its SFX check
+  now fails loud cues from 30 ms before a word onset to the word end (No. 03 had 207 onset hits under a PASS).
+- **Packaging gate** (before ~/Downloads): `packaging_check.py` PASS — chapters ≥ 10 s apart from 0:00, no clock
+  times outside chapters, limits, title names 2100 + core idea.
 - **Frame audit**: one frame per SECOND (`qa_sweep.py <master> <dir> 1`) + `audit/timeline-by-second.txt` (words + SFX per second) reviewed sheet by sheet by an independent read-only auditor: picture follows narration, every visual event has a sound and every sound a visual, no flashes (< 1 s then covered), no empty ≥ 2 s, no rushed seconds. Only then call it audited.
 
 ## Gotchas (each cost real time)
@@ -83,5 +96,10 @@ the word(s) spoken, the visual event that answers them, the SFX that marks it. R
 - Remotion MP4s carry a padded silent AAC (+~0.05 s): `build_final.py` concatenates video-only copies and checks frame counts.
 - Disk floor: the `danslab-workflow` guard holds bare `ffmpeg` commands — run media steps through the preflighted python scripts (`danslab-workflow check --command "…"` first); never bypass a hold.
 - Deliver previews ≤ 30 MB (720p ~300 kb/s) so David can watch on his phone; the 1080p master only shows in the desktop app.
+- **Paid audio lives in the main checkout**: takes, chunk cache and mix stems are Git-ignored, so they exist only
+  where they were made (No. 03's lived in a `/tmp` worktree). Generate in the main checkout's episode folder, or copy
+  `work/narration/` + `work/mix/` there before a worktree is removed, and record it in HANDOFF.md.
+- **Remotion temp bundles**: clean up only the bundle directories your own run created (record their paths when the
+  render starts). Never delete `$TMPDIR` entries by name pattern — another session's render may be using them.
 - Test data never touches real episode data (a placeholder YouTube id once reached the site preview).
 - The site's game layer must never reward watching YouTube (fake-engagement policy) — points come from knowledge (quizzes, guesses, cards).

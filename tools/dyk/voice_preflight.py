@@ -10,7 +10,8 @@ catches them in seconds instead of in audit rounds after a render:
   drag       a word > max(1.0 s, 0.25 s × syllables), > 0.42 s/syllable mid-sentence, or > 0.55 s/syllable at a sentence end
   gaps       a pause > 0.6 s inside a sentence, or < 0.25 s between sentences
   lead-in    first word < 0.6 s after its shot starts (voice entering on a cut), last word < 0.5 s before it ends
-  sfx        an impact / whoosh / pop / chime / riser / thock / sparkle starting ON a spoken word
+  sfx        an impact / whoosh / pop / chime / riser / thock / sparkle starting on a spoken word: from 30 ms before
+             its onset to its end (onset-exact included); build_final.py resolves cues with off_word() from here
   sign-off   "Ask... Wonder... Repeat." with < 0.6 s between the words or < 1.0 s before the next speech
   payoff     chunks marked "payoff": true faster than speed 1.0 or 2.8 w/s
 
@@ -44,6 +45,10 @@ TAIL_MIN = 0.5
 SIGNOFF_GAP_MIN = 0.6
 SIGNOFF_AFTER_MIN = 1.0
 PAYOFF_SPEED_MAX, PAYOFF_WPS_MAX = 1.0, 2.8
+ONSET_GUARD_S = 0.03              # a loud cue starting < 30 ms before an onset lands ON the word (No. 03 audit measure)
+PRE_ONSET_S = 0.06                # the resolver puts an onset hit this far ahead of its word
+MAX_SHIFT_S = 0.5                 # the resolver never moves a cue further than this from its visual
+EPS = 0.0005                      # cue sheets and word timings are rounded to the millisecond
 LOUD_SFX = re.compile(r'impact|whoosh|pop|chime|riser|thock|sparkle|stamp|snap|hit|boom')
 SENTENCE_END = re.compile(r'[.?!…]["”\')]*$')
 
@@ -165,16 +170,45 @@ def check_lead_in(vo, timeline):
     return issues
 
 
+def sfx_on_word(t, spans):
+    """The first span (start, end, ...) a loud cue starting at t collides with, else None. A cue collides from
+    ONSET_GUARD_S BEFORE the onset (its attack masks the consonant) up to the word's end — onset-exact and late-in-word
+    starts included (No. 03: 207 onset-exact cues passed the old (onset + 30 ms, end - 30 ms) window)."""
+    for span in spans:
+        if span[0] - ONSET_GUARD_S + EPS < t < span[1] - EPS:
+            return span
+    return None
+
+
+def off_word(t, clip, spans, max_hops=3):
+    """Shared cue resolver for build_final.py: t, or the NEAREST time a loud clip is clear of every word.
+    spans = sorted [(start, end, ...)] of spoken words in master seconds. Candidates are the gaps around the hit word
+    and its max_hops neighbours: PRE_ONSET_S ahead of an onset, or a word's end. A riser is timed by its END, so it
+    only ever moves earlier. A move larger than MAX_SHIFT_S would unhook the sound from its visual, so then (or when
+    nothing is clear) the cue is returned unchanged and the pre-flight flags it: move the visual or the cue by hand."""
+    if not LOUD_SFX.search(clip):
+        return t
+    hit = sfx_on_word(t, spans)
+    if hit is None:
+        return t
+    k = spans.index(hit)
+    near = spans[max(0, k - max_hops):k + max_hops + 1]
+    candidates = [round(c, 3) for sp in near for c in (sp[0] - PRE_ONSET_S, sp[1])]
+    candidates = [c for c in candidates if c >= 0 and abs(c - t) <= MAX_SHIFT_S and ('riser' not in clip or c <= t)
+                  and sfx_on_word(c, spans) is None]
+    return min(candidates, key=lambda c: (abs(c - t), c)) if candidates else t
+
+
 def check_sfx_on_words(vo, timeline, cuesheet):
     issues = []
     _, spoken = master_spans(vo, timeline)
     for cue in cuesheet:
         if not LOUD_SFX.search(cue.get('clip', '')):
             continue
-        t = cue['t']
-        hit = next((w for w in spoken if w[0] + 0.03 < t < w[1] - 0.03), None)
+        hit = sfx_on_word(cue['t'], spoken)
         if hit:
-            issues.append(('sfx', hit[3], f"{cue['clip']} at {t:.2f} lands on '{hit[2]}'"))
+            issues.append(('sfx', hit[3], f"{cue['clip']} at {cue['t']:.3f} lands on '{hit[2]}' "
+                                          f"(onset {hit[0]:.3f}, end {hit[1]:.3f})"))
     return issues
 
 

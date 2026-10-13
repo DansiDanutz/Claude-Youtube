@@ -11,7 +11,7 @@ Alternatives from STORY §8:
 2. Will School Still Exist in 2100? 600 Years of Class (51)
 3. School from 1500 to 2100: From the Few to Everyone (50)
 
-## Description (3,593 characters — YouTube max 5,000)
+## Description (3,603 characters — YouTube max 5,000)
 Paste the whole of **`description.txt`**. Plain text, no `<` or `>`, the site written as plain `Dexty.live`.
 Chapters come from `timeline.json` shot starts; the 7.5 s sting is folded into "The question". Every chapter is ≥ 10 s.
 Chapter times match the final timeline (re-checked after the audit re-voice).
