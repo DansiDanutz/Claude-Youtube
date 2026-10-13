@@ -157,7 +157,7 @@ const Mo1821: React.FC = () => {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 10, marginBottom: 40 }}>
               <StampText text="MANY WERE HANGED" at={HANGED} color={DL.red} size={36} />
-              <Source at={HANGED}>British Museum: Cruikshank's "Bank Restriction Note" (1819) · no count narrated</Source>
+              <Source at={HANGED} style={{ marginTop: 18 }}>British Museum: Cruikshank's "Bank Restriction Note" (1819) · no count narrated</Source>
             </div>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 790, display: 'flex', alignItems: 'center', gap: 34, opacity: ease(f, NOW1 - 2, NOW1 + 8) }}>
