@@ -112,7 +112,7 @@ const Mo1971: React.FC = () => {
         <AbsoluteFill style={{ opacity: system }}>
           <div style={{ position: 'absolute', left: 160, top: 210, display: 'flex', alignItems: 'center', gap: 24 }}>
             <GoldBar w={140} glow={0.4} />
-            <Label at={GOVTS1} color={GOLD.light} size={32}>GOLD WAS FOR GOVERNMENTS</Label>
+            <Label at={GOLD2} color={GOLD.light} size={32}>GOLD WAS FOR<span style={{ opacity: ease(f, GOVTS1 - 2, GOVTS1 + 6) }}> GOVERNMENTS</span></Label>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 310, display: 'flex', alignItems: 'center', gap: 20, opacity: ease(f, SINCE2 - 2, SINCE2 + 8) }}>
             <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 34, color: DL.text }}>SINCE <span style={{ opacity: ease(f, FORTY - 2, FORTY + 6) }}>1944</span></span>
@@ -151,8 +151,8 @@ const Mo1971: React.FC = () => {
         <AskMark at={SO} out={PROMISE} left={760} top={250} pulseAt={C.at('now', 2)} />
         <AbsoluteFill style={{ opacity: trust }}>
           <div style={{ position: 'absolute', left: 200, top: 250, display: 'flex', alignItems: 'baseline', gap: 26 }}>
-            <span style={{ fontFamily: DL_SERIF, fontSize: 96, color: DL.text, opacity: ease(f, PROMISE - 4, PROMISE + 6) }}>A promise backed by</span>
-            <BigWord at={TRUST1} size={110} gradient>trust.</BigWord>
+            <span style={{ fontFamily: DL_SERIF, fontSize: 76, color: DL.text, opacity: ease(f, PROMISE - 4, PROMISE + 6) }}>A promise backed by</span>
+            <BigWord at={TRUST1} size={92} gradient>trust.</BigWord>
           </div>
           <div style={{ position: 'absolute', left: 200, top: 440, display: 'flex', alignItems: 'center', gap: 40, opacity: ease(f, TRUST2 - 4, TRUST2 + 6) }}>
             <Banknote w={300} big="$" color="#dfe8d8" ink="#2a4a3a" />
@@ -167,7 +167,7 @@ const Mo1971: React.FC = () => {
         <AbsoluteFill style={{ opacity: cliff }}>
           <div style={{ position: 'absolute', left: 300, top: 260, display: 'flex', alignItems: 'center', gap: 60 }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
-              <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 90, color: DL.gold, fontVariantNumeric: 'tabular-nums', opacity: ease(f, GENERATION - 2, GENERATION + 6) }}>{Math.round(1971 + 36 * ease(f, GENERATION, SHAPE + 6, 0, 1, DL_EASE.inOut))}</span>
+              <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 44, letterSpacing: 4, color: DL.gold, opacity: ease(f, GENERATION - 2, GENERATION + 6) }}>1971 → …</span>
               <div style={{ opacity: ease(f, GENERATION + 4, GENERATION + 14), position: 'relative', transform: `scale(${1 - 0.25 * ease(f, SHAPE - 2, SHAPE + 14)}) rotate(${-90 * ease(f, SHAPE - 2, SHAPE + 14)}deg)` }}>
                 <Banknote w={260} big="$" color="#dfe8d8" ink="#2a4a3a" />
                 <div style={{ position: 'absolute', right: -16, top: -20, fontFamily: DL_MONO, fontWeight: 700, fontSize: 64, color: DL.red, opacity: ease(f, ALL - 2, ALL + 6) }}>✗</div>
@@ -200,7 +200,7 @@ const Mo1971: React.FC = () => {
           <div style={{ marginTop: 18, fontFamily: DL_MONO, fontSize: 24, color: '#c8cdf0', opacity: ease(f, THIRTY1, THIRTY1 + 10) }}>Executive Order 6102 (1933), with exceptions · ended 31 Dec 1974</div>
         </DidYouKnowThat>
       </EraExit>
-      <SunCliffhanger next="TODAY" parts={[{ text: 'A generation later,', at: GENERATION }, { text: "money doesn't need paper at all.", at: ALL }, { text: 'In Kenya, it moves into a text message.', at: MESSAGE }]} />
+      <SunCliffhanger next="TODAY" parts={[{ text: 'A generation later,', at: GENERATION }, { text: 'trust takes a new shape.', at: SHAPE }, { text: "No paper at all.", at: ALL }, { text: 'In Kenya, it moves into a text message.', at: MESSAGE }]} />
       <EpisodeHud year={1971} episode="04" />
     </AbsoluteFill>
   );

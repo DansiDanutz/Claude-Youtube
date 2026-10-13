@@ -157,7 +157,7 @@ const Mo1821: React.FC = () => {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 10, marginBottom: 40 }}>
               <StampText text="MANY WERE HANGED" at={HANGED} color={DL.red} size={36} />
-              <Source at={HANGED} style={{ marginTop: 18 }}>British Museum: Cruikshank's "Bank Restriction Note" (1819) · no count narrated</Source>
+              <Source at={HANGED} style={{ marginTop: 18 }}>British Museum: Cruikshank's "Bank Restriction Note" (1819)</Source>
             </div>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 790, display: 'flex', alignItems: 'center', gap: 34, opacity: ease(f, NOW1 - 2, NOW1 + 8) }}>
@@ -206,7 +206,7 @@ const Mo1821: React.FC = () => {
           <div style={{ position: 'absolute', left: 300, top: 240, opacity: ease(f, BUT - 2, BUT + 8) }}>
             <svg width={300} height={560} viewBox="0 0 300 560" style={{ overflow: 'visible' }}>
               <line x1={150} y1={0} x2={150} y2={320 - 20 * snap} stroke="#c8b088" strokeWidth={8} strokeDasharray={snap > 0.05 ? '0' : '0'} />
-              <g transform={`translate(${70} ${320 + 260 * snap}) rotate(${sway + 30 * snap} 80 80)`} opacity={1 - 0.6 * snap}><Anchor size={160} color={GOLD.mid} /></g>
+              <g transform={`translate(${70} ${320 + 140 * snap}) rotate(${sway + 30 * snap} 80 80)`} opacity={1 - 0.6 * snap}><Anchor size={160} color={GOLD.mid} /></g>
               {snap > 0.02 && <text x={170} y={300} fontFamily={DL_MONO} fontWeight={700} fontSize={40} fill={DL.red}>✂</text>}
             </svg>
           </div>

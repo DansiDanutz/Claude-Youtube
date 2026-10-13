@@ -42,6 +42,7 @@ const CACAO1 = C.at('Cacao', 1);
 const SAME = C.at('same');
 const CHOC1 = C.at('chocolate', 1);
 const PRICE = C.at('price');
+const PLAINLY = C.at('plainly');
 const DECADES = C.at('decades');
 const AVOCADO = C.at('avocado');
 const BEAN = C.at('bean'); // 'one bean.'
@@ -158,6 +159,15 @@ const Mo1500: React.FC = () => {
           <div style={{ position: 'absolute', left: 160, top: 200, width: 1600 }}>
             <Label at={PRICE} color={DL.dim} size={30}>HOW PEOPLE PAID · A PRICE LIST<span style={{ opacity: ease(f, DECADES - 2, DECADES + 6) }}>, A FEW DECADES LATER</span></Label>
           </div>
+          {/* the price list itself, until its first item is read */}
+          <div style={{ position: 'absolute', left: 660, top: 300, opacity: ease(f, PRICE - 2, PRICE + 8) * (1 - ease(f, AVOCADO - 8, AVOCADO)), transform: `rotate(${-2 + Math.sin(f / 30)}deg)` }}>
+            <svg width={600} height={400} viewBox="0 0 600 400">
+              <rect x={40} y={30} width={520} height={340} fill={INK.paper} />
+              <rect x={20} y={14} width={560} height={30} rx={15} fill="#c9b48a" /><rect x={20} y={356} width={560} height={30} rx={15} fill="#c9b48a" />
+              <text x={300} y={92} textAnchor="middle" fontFamily={DL_MONO} fontWeight={700} fontSize={30} fill={INK.woodDark}>TLAXCALA · 1545</text>
+              {[0, 1, 2, 3, 4, 5].map((k) => <g key={k} opacity={ease(f, PLAINLY + k * 3, PLAINLY + k * 3 + 6)}><line x1={90} y1={140 + k * 36} x2={360 - (k % 3) * 40} y2={140 + k * 36} stroke="#8a7a5a" strokeWidth={5} /><circle cx={470} cy={140 + k * 36} r={9} fill={CACAO.bean} /></g>)}
+            </svg>
+          </div>
           <div style={{ position: 'absolute', left: 160, top: 290, display: 'flex', gap: 40 }}>
             {/* avocado = 1 bean */}
             <div style={{ width: 460, height: 360, boxSizing: 'border-box', padding: 26, borderRadius: 18, background: '#0e0b0af0', border: `2px solid ${DL.green}`, opacity: ease(f, AVOCADO - 4, AVOCADO + 6) }}>
@@ -187,7 +197,7 @@ const Mo1500: React.FC = () => {
               <div style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.warm }}>BIGGER DEALS<span style={{ opacity: ease(f, CLOAKS - 2, CLOAKS + 6) }}> = COTTON CLOAKS</span></div>
             </div>
           </div>
-          <div style={{ position: 'absolute', left: 160, top: 670 }}><Source at={C.at('plainly')}>Tlaxcala price list, 1545 · in Anderson, Berdan & Lockhart, Beyond the Codices (1976) · illustration</Source></div>
+          <div style={{ position: 'absolute', left: 160, top: 670 }}><Source at={PLAINLY}>Tlaxcala price list, 1545 · in Anderson, Berdan & Lockhart, Beyond the Codices (1976) · illustration</Source></div>
           {/* the faker's bean */}
           <div style={{ position: 'absolute', left: 160, top: 730, display: 'flex', alignItems: 'center', gap: 40, opacity: ease(f, SPANISH - 4, SPANISH + 6) }}>
             <div style={{ opacity: ease(f, FRIAR - 2, FRIAR + 8) }}><Kid size={110} adult color="#7a6a5a" tool="book" /></div>
@@ -236,6 +246,7 @@ const Mo1500: React.FC = () => {
               <Label at={GRAIN} color={DL.text} size={26}>GRAIN</Label>
             </div>
             <div style={{ opacity: ease(f, AWKWARD - 2, AWKWARD + 8), fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 56, color: DL.dim }}>…got awkward?</div>
+            <div style={{ marginLeft: 40, fontFamily: DL_SERIF, fontSize: 120, color: DL.red, opacity: ease(f, INVENTED - 2, INVENTED + 8) * (1 - ease(f, GOATS - 4, GOATS + 4)), position: 'absolute', left: 0, top: -10 }}>?</div>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 560, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 18 }}>
             <Label at={ANTHRO} color={DL.warm} size={30}>ANTHROPOLOGISTS SAY:</Label>

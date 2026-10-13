@@ -1260,6 +1260,11 @@
 "gain": 0.14
 },
 {
+"t": 258.042,
+"clip": "pop-reveal",
+"gain": 0.18
+},
+{
 "t": 258.787,
 "clip": "trap-snap",
 "gain": 0.22
@@ -2252,35 +2257,30 @@
 {
 "t": 465.316,
 "clip": "ui-click-soft",
-"gain": 0.12
+"gain": 0.2
 },
 {
-"t": 466.883,
+"t": 467.791,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 468.755,
+"t": 469.767,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 470.081,
+"t": 470.851,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 471.455,
+"t": 472.235,
 "clip": "ui-click-soft",
 "gain": 0.2
 },
 {
-"t": 472.479,
-"clip": "ui-click-soft",
-"gain": 0.2
-},
-{
-"t": 474.942,
+"t": 474.002,
 "clip": "ui-click-soft",
 "gain": 0.2
 },

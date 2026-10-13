@@ -122,8 +122,8 @@ const Mo1661: React.FC = () => {
   const harbour = win(f, DOCK, DID - 2, 10, 8);
   const bank = win(f, SO1 - 2, SO2 + 2, 6, 8);
   const askQ = SO2;
-  const promise = win(f, PROMISE1 - 2, LOVE, 4, 10);
-  const fail = win(f, LOVE - 4, PAPER3, 6, 10);
+  const promise = win(f, PROMISE1 - 2, LOVE + 14, 4, 10);
+  const fail = win(f, LOVE + 10, PAPER3, 6, 10);
   const cliff = ease(f, PAPER3 - 2, PAPER3 + 10);
   const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, PAPER3 - 2, PAPER3 + 8));
   const notes = Math.round(2 + 14 * ease(f, PRINTS, LENDS + 20));
@@ -190,7 +190,7 @@ const Mo1661: React.FC = () => {
             <StampText text="REMEMBER THIS WORD" at={REMEMBER} color={DL.red} size={42} />
             <span style={{ display: 'inline-block', fontFamily: DL_SERIF, fontWeight: 600, fontSize: 96, background: QGRAD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', opacity: ease(f, PROMISE2 - 2, PROMISE2 + 6), transform: `scale(${1 + 0.12 * glow2})`, filter: `drop-shadow(0 0 ${24 * glow2}px #ff3db4)` }}>PROMISE</span>
           </div>
-          <div style={{ position: 'absolute', left: 220, top: 720 }}><Label at={END} color={DL.dim} size={30}>↺ IT COMES BACK AT THE END</Label></div>
+          <div style={{ position: 'absolute', left: 220, top: 720 }}><Label at={C.at('comes')} color={DL.dim} size={30}>↺ IT COMES BACK AT THE END</Label></div>
         </AbsoluteFill>
         <MoneyChip text="A PROMISE ON PAPER" at={PAPER2} dockAt={CHIP_DOCK} slot={1} left={760} top={800} />
 
@@ -208,8 +208,8 @@ const Mo1661: React.FC = () => {
               <div style={{ height: 340, display: 'flex', alignItems: 'flex-end', transform: `scale(${copperLeft})`, transformOrigin: 'bottom center' }}><CopperPlate w={240} /></div>
               <Label at={COPPER5} color={COPPER.light} size={28}>COPPER TO PAY BACK</Label>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: ease(f, COME - 2, COME + 8) }}>
-              <div style={{ display: 'flex', gap: 6, alignItems: 'flex-end', height: 200 }}>{[0, 1, 2, 3, 4].map((k) => <div key={k} style={{ opacity: ease(f, COME + k * 3, COME + k * 3 + 6) }}><Kid size={60} adult color={DL.warm} /></div>)}</div>
+            <div style={{ position: 'absolute', left: 840, top: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: ease(f, COME - 2, COME + 8) }}>
+              <div style={{ display: 'flex', gap: 6, alignItems: 'flex-end', height: 200 }}>{[0, 1, 2, 3, 4].map((k) => <div key={k} style={{ opacity: ease(f, COME + k * 3, COME + k * 3 + 6) }}><Kid size={46} adult color={DL.warm} /></div>)}</div>
               <div style={{ width: 260, height: 120, border: `4px solid ${DL.border}`, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DL_MONO, fontSize: 28, color: DL.red, opacity: ease(f, ISNT - 2, ISNT + 6) }}>THE VAULT: EMPTY</div>
             </div>
           </div>

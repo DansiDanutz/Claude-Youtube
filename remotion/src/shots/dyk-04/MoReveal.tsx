@@ -51,7 +51,7 @@ const HOW = C.at('How');
 const CLIMB = C.at('climb');
 const ME = C.at('me');
 const FIFTEEN = C.at('fifteen');
-const LIT = [C.at('useful'), C.at('paper'), C.at('belief'), C.at('gold'), C.at('trust'), C.at('screen')];
+const LIT = [C.at('fifteen'), C.at('Then', 1), C.at('Then', 2), C.at('Then', 3), C.at('Then', 4), C.at('Today', 2)]; // each rung lights as its line starts
 const REMEMBER = C.at('Remember');
 const STOCKHOLM = C.at('Stockholm');
 const PROMISE2 = C.at('Promise', 2);
@@ -111,6 +111,10 @@ const MoReveal: React.FC = () => {
       {/* where it comes from: a loan creates a deposit */}
       <AbsoluteFill style={{ opacity: banks }}>
         <div style={{ position: 'absolute', left: 200, top: 190 }}><Label at={MOST} color={DL.text} size={32}>MOST OF IT<span style={{ opacity: ease(f, BANKS - 2, BANKS + 6) }}> · MADE BY ORDINARY BANKS</span></Label></div>
+        <div style={{ position: 'absolute', left: 1460, top: 270, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: ease(f, BANKS - 2, BANKS + 8) }}>
+          <svg width={220} height={190} viewBox="0 0 220 190"><path d="M10 60 L110 10 L210 60 Z" fill="#4a5a7a" />{[30, 70, 110, 150, 190].map((x) => <rect key={x} x={x - 8} y={66} width={16} height={100} fill="#8a9aba" />)}<rect x={10} y={166} width={200} height={20} fill="#4a5a7a" /><text x={110} y={52} textAnchor="middle" fontFamily={DL_MONO} fontSize={16} fill="#e8e8f0">BANK</text></svg>
+          <Label at={BANKS} color={DL.dim} size={24}>AN ORDINARY BANK</Label>
+        </div>
         <div style={{ position: 'absolute', left: 200, top: 280, display: 'flex', alignItems: 'flex-start', gap: 50 }}>
           <div style={{ width: 240, padding: 20, borderRadius: 12, background: '#f4efe0', opacity: ease(f, LOAN1 - 2, LOAN1 + 8), transform: `rotate(-3deg)` }}>
             <div style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 30, color: '#1a1a1a' }}>LOAN</div>

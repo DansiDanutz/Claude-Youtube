@@ -88,7 +88,7 @@ const MoToday: React.FC = () => {
   const cliff = ease(f, SO2 - 2, SO2 + 10);
   const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, SO2 - 2, SO2 + 8));
   const buzz = f >= BUZZES ? Math.sin(f * 2.2) * 6 * (1 - ease(f, BUZZES, BUZZES + 24)) : 0;
-  const busX = ((f - MATATUS) * 3) % 2200 - 400;
+  const busX = ((f - MATATUS) * 3 + 300) % 2200 - 400;
   const route = ease(f, VILLAGE - 2, UPCOUNTRY + 10, 0, 1, DL_EASE.inOut);
   const conv = ease(f, NUMBERS1 - 4, NUMBERS1 + 12, 0, 1, DL_EASE.inOut);
 
@@ -129,6 +129,9 @@ const MoToday: React.FC = () => {
           <div style={{ ...rise(f, MPESA - 2), padding: '10px 22px', borderRadius: 10, background: DYT.green, fontFamily: DL_MONO, fontWeight: 700, fontSize: 34, color: '#06120a' }}>M-PESA</div>
           <Label at={MPESA} color={DL.text} size={30}>LAUNCHED IN KENYA<span style={{ opacity: ease(f, SEVEN - 2, SEVEN + 6) }}> · 2007</span></Label>
         </div>
+        <div style={{ position: 'absolute', left: 1320, top: 300, opacity: ease(f, MPESA - 2, MPESA + 8) * (1 - ease(f, CASH1 - 6, CASH1 + 4)) }}>
+          <Phone size={420} glow={0.7}><div style={{ padding: '18px 0', borderRadius: 10, background: DYT.green, textAlign: 'center', fontFamily: DL_MONO, fontWeight: 700, fontSize: 30, color: '#06120a' }}>M-PESA</div><div style={{ textAlign: 'center', fontFamily: DL_MONO, fontSize: 22, color: DYT.dim, opacity: ease(f, SEVEN - 2, SEVEN + 6) }}>SINCE 2007</div></Phone>
+        </div>
         <div style={{ position: 'absolute', left: 160, top: 310, display: 'flex', alignItems: 'center', gap: 30 }}>
           <div style={{ opacity: ease(f, CASH1 - 2, CASH1 + 8) * (1 - conv), transform: `translateX(${conv * 200}px)` }}><Banknote w={220} big="KSh" color="#e8dcc0" ink="#5a4a2a" /></div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: ease(f, SHOPKEEPER - 2, SHOPKEEPER + 8) }}>
@@ -142,13 +145,13 @@ const MoToday: React.FC = () => {
           <Label at={NUMBERS1} color={DYT.cyan} size={28}>NUMBERS ON YOUR PHONE</Label>
         </div>
         <div style={{ position: 'absolute', left: 160, top: 620, transform: 'scale(0.62)', transformOrigin: 'top left', opacity: ease(f, SCHOOL - 6, SCHOOL + 4) }}>
-          <DayClock year="TODAY" at={SCHOOL - 6} step={10} hotSeq={[[0, SCHOOL], [1, TAXI]]} segs={[
+          <DayClock year="NAIROBI" at={SCHOOL - 6} step={10} hotSeq={[[0, SCHOOL], [1, TAXI]]} segs={[
             { from: 6, to: 8, label: 'SCHOOL FEES · BY TEXT', color: DYT.green },
             { from: 8, to: 9, label: 'TAXI RIDE · BY TEXT', color: DYT.cyan },
           ]} />
         </div>
         <div style={{ position: 'absolute', left: 1100, top: 700 }}><Label at={TEXT} color={DYT.green} size={30}>PAID WITH A TEXT</Label></div>
-        <div style={{ position: 'absolute', left: 1100, top: 760 }}><Source at={MPESA}>Safaricom / Vodafone launch, March 2007 · FAO · day = illustration</Source></div>
+        <div style={{ position: 'absolute', left: 1100, top: 760 }}><Source at={SEVEN}>Safaricom / Vodafone launch, March 2007 · FAO · day = illustration</Source></div>
       </AbsoluteFill>
 
       {/* it isn't just Kenya: the euro-area cash share */}
@@ -177,16 +180,16 @@ const MoToday: React.FC = () => {
         <div style={{ position: 'absolute', left: 220, top: 260, width: 520, height: 520 }}>
           <Phone size={500} glow={0.8}><div style={{ position: 'relative', width: '100%', height: '100%' }}><Digits w={220} h={420} op={1} speed={4} cols={6} /></div></Phone>
         </div>
-        <div style={{ position: 'absolute', left: 820, top: 300, display: 'flex', flexDirection: 'column', gap: 30 }}>
-          <span style={{ fontFamily: DL_SERIF, fontSize: 96, color: DL.text, opacity: ease(f, NUMBERS2 - 2, NUMBERS2 + 6) }}>Numbers on a</span>
-          <BigWord at={SCREEN} size={110} gradient>screen.</BigWord>
+        <div style={{ position: 'absolute', left: 600, top: 300, display: 'flex', flexDirection: 'column', gap: 30 }}>
+          <span style={{ fontFamily: DL_SERIF, fontSize: 84, color: DL.text, opacity: ease(f, NUMBERS2 - 2, NUMBERS2 + 6) }}>Numbers on a</span>
+          <BigWord at={SCREEN} size={100} gradient>screen.</BigWord>
           <div style={{ display: 'flex', alignItems: 'center', gap: 20, opacity: ease(f, TOUCH - 4, TOUCH + 6) }}>
             <svg width={90} height={90} viewBox="0 0 200 200"><path d="M40 120 C40 100 46 92 56 92 L62 92 L62 40 C62 30 76 30 76 40 L76 86 L82 86 L82 28 C82 18 96 18 96 28 L96 86 L102 86 L102 32 C102 22 116 22 116 32 L116 90 L122 90 L122 50 C122 40 136 40 136 50 L136 128 C136 160 116 184 88 184 C60 184 40 160 40 130 Z" fill="none" stroke={DL.warm} strokeWidth={8} /><line x1={20} y1={20} x2={180} y2={180} stroke={DL.red} strokeWidth={14} /></svg>
             <Label at={TOUCH} color={DL.text} size={30}>YOU ALMOST NEVER TOUCH IT</Label>
           </div>
         </div>
       </AbsoluteFill>
-      <MoneyChip text="NUMBERS ON A SCREEN" at={SCREEN} dockAt={CHIP_DOCK} slot={5} left={820} top={760} />
+      <MoneyChip text="NUMBERS ON A SCREEN" at={SCREEN} dockAt={CHIP_DOCK} slot={5} left={820} top={800} />
 
       {/* cliffhanger: not paper, not gold — so what is it? */}
       <AbsoluteFill style={{ opacity: cliff }}>

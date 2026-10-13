@@ -158,7 +158,7 @@ const Mo2100: React.FC = () => {
             <Label at={ANCHOR} color={GOLD.light} size={30}>= STAYS THE ANCHOR</Label>
           </div>
         </div>
-        <div style={{ position: 'absolute', left: 1000, top: 880 }}><Source at={FAIL}>BIS Annual Economic Report 2025, ch. III · tests: singleness, elasticity, integrity</Source></div>
+        <div style={{ position: 'absolute', left: 1000, top: 860, width: 700 }}><Source at={FAIL}>BIS Annual Economic Report 2025, ch. III<br />tests: singleness, elasticity, integrity</Source></div>
       </AbsoluteFill>
 
       {/* the scenario */}
@@ -171,7 +171,7 @@ const Mo2100: React.FC = () => {
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, opacity: ease(f, WALLET - 4, WALLET + 6) }}>
             <div style={{ position: 'relative', padding: '40px 30px 20px', border: `4px solid ${ease(f, MUSEUM - 2, MUSEUM + 6) > 0.5 ? '#c8d8e8' : 'transparent'}`, borderRadius: 8, background: ease(f, MUSEUM - 2, MUSEUM + 6) > 0.5 ? '#c8d8e814' : 'transparent' }}>
               <Banknote w={300} big="£20" />
-              <div style={{ position: 'absolute', left: 0, right: 0, bottom: -44, textAlign: 'center', fontFamily: DL_MONO, fontSize: 22, color: '#c8d8e8', opacity: ease(f, MUSEUM - 2, MUSEUM + 6) }}>MUSEUM · "CASH", 20TH–21ST C.</div>
+              <div style={{ position: 'absolute', left: 0, right: 0, bottom: -44, textAlign: 'center', fontFamily: DL_MONO, fontSize: 22, color: '#c8d8e8', opacity: ease(f, MUSEUM - 2, MUSEUM + 6) }}>IN A MUSEUM</div>
             </div>
             <Label at={MUSEUM} color={DL.text} size={26} style={{ marginTop: 40 }}>COULD BE A MUSEUM PIECE</Label>
           </div>
@@ -194,7 +194,7 @@ const Mo2100: React.FC = () => {
             <span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.gold }}>1500 · GREW ON TREES</span>
           </div>
           <div style={{ fontFamily: DL_SERIF, fontSize: 110, color: DL.dim, opacity: ease(f, WRITTEN - 4, WRITTEN + 6) }}>→</div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, opacity: ease(f, CODE2 - 4, CODE2 + 4) }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, opacity: ease(f, WRITTEN - 2, WRITTEN + 8) }}>
             <div style={{ position: 'relative', width: 260, height: 240, borderRadius: 16, border: `3px dashed ${DYT.cyan}`, overflow: 'hidden', boxShadow: `0 0 40px ${DYT.cyan}66` }}><Digits w={260} h={240} op={1} speed={3} cols={6} /></div>
             <span style={{ fontFamily: DL_MONO, fontSize: 30, color: DYT.cyan }}>2100 · WRITTEN IN CODE?</span>
           </div>
@@ -202,8 +202,8 @@ const Mo2100: React.FC = () => {
         <div style={{ position: 'absolute', left: 160, top: 760, fontFamily: DL_MONO, fontSize: 26, color: DL.dim, opacity: ease(f, CODE2, CODE2 + 10) }}>A REFLECTION, NOT A FORECAST · NO PUBLISHED SOURCE PUTS A NUMBER ON 2100</div>
       </AbsoluteFill>
 
-      <MoneyLadder rungs={moneyRungs(6)} show={1 - 0.55 * ease(f, EVIDENCE, EVIDENCE + 12) * (1 - ease(f, SO2 - 6, SO2 + 8))} next={{ at: RUNG, fillAt: CODE2, fill: NEXT_RUNG }} />
-      <EpisodeHud year={f >= HUNDRED1 ? 2100 : 'TODAY'} episode="04" prediction={f >= TWENTY1} />
+      <MoneyLadder rungs={moneyRungs(6)} show={(1 - ease(f, TWENTY1 - 6, TWENTY1) * (1 - ease(f, MORNING + 4, MORNING + 20))) * (1 - 0.55 * ease(f, EVIDENCE, EVIDENCE + 12) * (1 - ease(f, SO2 - 6, SO2 + 8)))} next={{ at: RUNG, fillAt: CODE2, fill: NEXT_RUNG }} />
+      <EpisodeHud year={f >= HUNDRED1 ? 2100 : 'TODAY'} episode="04" prediction={f >= HUNDRED1} />
     </AbsoluteFill>
   );
 };

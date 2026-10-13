@@ -28,8 +28,8 @@ c(W(s, 'coins'), 'ui-click-soft', 0.14, 'NOTES & COINS')
 c(W(s, 'How'), 'ui-click-soft', 0.18, 'How close were you?')
 c(W(s, 'climb'), 'whoosh-soft', 0.24, 'six rungs appear dim; NOW CLIMB IT AGAIN')
 c(W(s, 'me'), 'ui-click-soft', 0.14, '↑')
-for tok in ('useful', 'paper', 'belief', 'gold', 'trust', 'screen'):
-    c(W(s, tok), 'ui-click-soft', 0.20, f'rung lights gold on "{tok}"')
+for tok, n in (('fifteen', 1), ('Then', 1), ('Then', 2), ('Then', 3), ('Then', 4), ('Today', 2)):
+    c(W(s, tok, n), 'ui-click-soft', 0.20, f'rung lights gold as its line starts ("{tok}" {n})')
 c(W(s, 'Remember'), 'ui-click-soft', 0.14, 'Remember that word')
 c(W(s, 'Stockholm'), 'ui-click-soft', 0.14, 'from Stockholm?')
 c(W(s, 'Promise', 2, shift=-1.36), 'riser-soft', 0.28, '(riser; the ladder glows)')
@@ -37,4 +37,3 @@ c(W(s, 'Promise', 2), 'impact-deep-soft', 0.36, 'Promise. lands over the whole l
 c(W(s, 'along'), 'warm-shimmer', 0.22, 'It was there all along.')
 c(W(s, 'account'), 'ui-click-soft', 0.12, 'YOUR ACCOUNT')
 c(W(s, 'guess'), 'ui-click-soft', 0.14, 'YOUR GUESS label')
-c(W(s, 'fifteen'), 'ui-click-soft', 0.12, 'the climb label clears')

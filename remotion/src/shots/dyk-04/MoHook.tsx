@@ -70,7 +70,7 @@ const MoHook: React.FC = () => {
   const peel = ease(f, PAPER - 4, PAPER + 12, 0, 1, DL_EASE.inOut);
   const peel2 = ease(f, PLASTIC - 4, PLASTIC + 12, 0, 1, DL_EASE.inOut);
   const regroup = ease(f, STILL - 4, STILL + 10, 0, 1, DL_EASE.inOut);
-  const noteScale = interpolate(f, [0, TAKE - 6, TAKE + 6], [1.9, 1.6, 1.05], { ...DCLAMP, easing: DL_EASE.inOut });
+  const noteScale = interpolate(f, [0, TAKE - 6, TAKE + 6], [1.5, 1.4, 1.05], { ...DCLAMP, easing: DL_EASE.inOut });
   const out = ease(f, NOTE1 - 2, NOTE1 + 14, 0, 1, DL_EASE.out);
   const wallet = ease(f, TAKE - 4, TAKE + 8) * (1 - ease(f, PAPER - 8, PAPER + 4));
   const sweep = interpolate(f, [HOURS - 2, STRANGE], [0, 720], DCLAMP);
@@ -91,7 +91,7 @@ const MoHook: React.FC = () => {
       {/* ── beat 1: a note in your hand */}
       <AbsoluteFill style={{ opacity: p1 }}>
         {/* LAST TIME · No. 03's closing question */}
-        <div style={{ position: 'absolute', left: 160, top: 120, width: 760, padding: '22px 30px', borderRadius: 16, background: '#0b1030e6', border: `2px solid ${DYT.magenta}`, opacity: ease(f, LAST - 2, LAST + 8) * (1 - ease(f, TAKE - 8, TAKE + 2)), transform: `translateY(${ease(f, LAST - 2, LAST + 12, 20, 0)}px)` }}>
+        <div style={{ position: 'absolute', left: 120, top: 50, width: 640, padding: '22px 30px', borderRadius: 16, background: '#0b1030e6', border: `2px solid ${DYT.magenta}`, opacity: ease(f, LAST - 2, LAST + 8) * (1 - ease(f, TAKE - 8, TAKE + 2)), transform: `translateY(${ease(f, LAST - 2, LAST + 12, 20, 0)}px)` }}>
           <div style={{ fontFamily: DL_MONO, fontSize: 26, letterSpacing: 5, color: DYT.dim }}>LAST TIME · NO. 03<span style={{ opacity: ease(f, QUESTION - 2, QUESTION + 6) }}> · A QUESTION</span></div>
           <div style={{ marginTop: 14, fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 46, lineHeight: 1.2, color: DYT.white }}>
             <span style={{ opacity: ease(f, DID_A - 2, DID_A + 6) }}>Did school ever teach you</span>
@@ -106,7 +106,7 @@ const MoHook: React.FC = () => {
         </svg>
         <Label at={WALLET} color={DL.warm} size={28} style={{ position: 'absolute', left: 680, top: 910, opacity: wallet }}>YOUR WALLET</Label>
         {/* the note: three layers that split apart on paper / plastic / ink */}
-        <div style={{ position: 'absolute', left: 960 - 270, top: 300 - out * 40 + (1 - out) * (f >= TAKE - 6 ? 190 : 0), transform: `scale(${noteScale}) rotate(${turn * (1 - regroup * 0.5)}deg)`, transformOrigin: 'center center', width: 540 }}>
+        <div style={{ position: 'absolute', left: 960 - 270, top: 340 - out * 80 + (1 - out) * (f >= TAKE - 6 ? 150 : 0), transform: `scale(${noteScale}) rotate(${turn * (1 - regroup * 0.5)}deg)`, transformOrigin: 'center center', width: 540 }}>
           {[0, 1, 2].map((k) => {
             const dy = (k - 1) * 120 * (k === 0 ? peel : k === 2 ? peel2 : 0) * (1 - regroup);
             const op = k === 1 ? 1 : ease(f, k === 0 ? PAPER - 4 : PLASTIC - 4, k === 0 ? PAPER + 6 : PLASTIC + 6) * (1 - regroup);

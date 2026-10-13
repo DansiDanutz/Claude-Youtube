@@ -79,6 +79,8 @@ const FOR_NEXT = C.at('For', 2); // 'For the next hundred years' (1 = 'for killi
 const WANT = C.at('want');
 const BELIEVE_IN = C.at('believe');
 const BITE = C.at('bite');
+const SOMETHING2 = C.at('Something');
+const LAW3 = C.at('Law', 3); // 'And Law escapes France.'
 const LONDON = C.at('London');
 const GET = C.at('get');
 
@@ -99,7 +101,7 @@ const ChartLine: React.FC<{ f: number }> = ({ f }) => {
       <polyline points={line.map(xy).join(' ')} fill="none" stroke={dn > 0.3 ? DL.red : DL.gold} strokeWidth={8} strokeLinejoin="round" />
       {last && <circle cx={last[0] * W} cy={H - (last[1] / 10000) * (H - 20)} r={10} fill={DL.gold} />}
       <text x={0} y={H + 40} fontFamily={DL_MONO} fontSize={24} fill={DL.muted}>1718 · ~250</text>
-      <text x={0.82 * W - 90} y={14} fontFamily={DL_MONO} fontSize={24} fill={DL.gold} opacity={ease(f, FORTY - 2, FORTY + 6)}>JAN 1720 · 10,000</text>
+      <text x={0.82 * W - 24} y={30} textAnchor="end" fontFamily={DL_MONO} fontSize={24} fill={DL.gold} opacity={ease(f, FORTY - 2, FORTY + 6)}>JAN 1720 · 10,000</text>
       <text x={W - 80} y={H + 40} fontFamily={DL_MONO} fontSize={24} fill={DL.red} opacity={ease(f, DECEMBER - 2, DECEMBER + 6)}>DEC 1720</text>
     </svg>
   );
@@ -111,12 +113,12 @@ const Mo1720: React.FC = () => {
   const street = win(f, DOCK, DID - 2, 10, 8);
   const law = win(f, MAN1 - 4, NARROW, 6, 8);
   const market = win(f, NARROW - 2, SO + 2, 6, 8);
-  const belief = win(f, BELIEF - 2, FOR_NEXT, 4, 10);
+  const belief = win(f, BELIEF - 2, FOR_NEXT + 8, 4, 10);
   const cliff = ease(f, FOR_NEXT - 2, FOR_NEXT + 10);
   const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, FOR_NEXT - 2, FOR_NEXT + 8));
   const crack = ease(f, DONT1 - 2, DONT1 + 8);
   const fadeNote = 1 - 0.75 * ease(f, VALUE - 2, VALUE + 16);
-  const run = ease(f, ESCAPES, ESCAPES + 40, 0, 1, DL_EASE.in);
+  const run = ease(f, ESCAPES, ESCAPES + 60, 0, 1, DL_EASE.in);
   const dice = f >= GAMBLER ? Math.floor((f - GAMBLER) / 5) % 6 : 0;
 
   return (
@@ -183,9 +185,9 @@ const Mo1720: React.FC = () => {
           </div>
           <div style={{ position: 'absolute', left: 160, top: 300, transform: 'scale(0.82)', transformOrigin: 'top left', opacity: 1 - ease(f, BUYING - 6, BUYING + 6) }}>
             <DayClock year="1720" at={DAY - 6} step={8} hotSeq={[[1, DAY], [3, NIGHT]]} segs={[
-              { from: 6, to: 12, label: 'BUYING SHARES', color: DL.gold },
-              { from: 12, to: 18, label: 'BUYING SHARES', color: '#e0b030' },
-              { from: 18, to: 24, label: 'BUYING SHARES', color: '#a07a20' },
+              { from: 6, to: 12, label: 'TRADING', color: DL.gold },
+              { from: 12, to: 18, label: 'TRADING', color: '#e0b030' },
+              { from: 18, to: 24, label: 'TRADING', color: '#a07a20' },
               { from: 0, to: 6, label: 'STILL TRADING', color: '#6a5a30' },
             ]} />
           </div>
@@ -196,8 +198,8 @@ const Mo1720: React.FC = () => {
             </div>
             <div style={{ opacity: ease(f, YEAR2 - 6, YEAR2 + 4) }}><ChartLine f={f} /></div>
           </div>
-          <div style={{ position: 'absolute', left: 1360, top: 420, fontFamily: DL_SERIF, fontWeight: 600, fontSize: 130, color: DL.gold, opacity: ease(f, FORTY - 2, FORTY + 6), transform: `scale(${ease(f, FORTY - 2, FORTY + 10, 1.3, 1)})`, textShadow: `0 0 30px ${DL.gold}88` }}>×40</div>
-          <div style={{ position: 'absolute', left: 1360, top: 580 }}><Label at={TIMES} color={DL.gold} size={26}>ABOUT 40 TIMES · IN ~1.5 YEARS</Label></div>
+          <div style={{ position: 'absolute', left: 1250, top: 400, fontFamily: DL_SERIF, fontWeight: 600, fontSize: 130, color: DL.gold, opacity: ease(f, FORTY - 2, FORTY + 6), transform: `scale(${ease(f, FORTY - 2, FORTY + 10, 1.3, 1)})`, textShadow: `0 0 30px ${DL.gold}88` }}>×40</div>
+          <div style={{ position: 'absolute', left: 1250, top: 570, width: 460 }}><Label at={TIMES} color={DL.gold} size={26}>ABOUT 40 TIMES<br />IN ~1.5 YEARS</Label></div>
           <div style={{ position: 'absolute', left: 160, top: 760 }}><Source at={PRICE}>Velde, Chicago Fed WP 2003-31 · other accounts give different start and peak prices</Source></div>
           {/* the story goes: a hunchback rents out his back as a desk */}
           <div style={{ position: 'absolute', left: 160, top: 810, display: 'flex', alignItems: 'flex-end', gap: 26, opacity: ease(f, STORY - 2, STORY + 8) }}>
@@ -230,11 +232,11 @@ const Mo1720: React.FC = () => {
             <Label at={CRASHED} color={DL.text} size={32}>SHARES CRASH</Label>
             <Label at={NOTES} color={DL.text} size={32}>· NOTES LOSE<span style={{ opacity: ease(f, VALUE - 2, VALUE + 6) }}> VALUE</span></Label>
           </div>
-          <div style={{ position: 'absolute', left: 200 + 900 * run, top: 680, display: 'flex', alignItems: 'flex-end', gap: 20, opacity: ease(f, ESCAPES - 4, ESCAPES + 4) * (1 - ease(f, ESCAPES + 30, ESCAPES + 44)) }}>
+          <div style={{ position: 'absolute', left: 200 + 900 * run, top: 640, display: 'flex', alignItems: 'flex-end', gap: 20, opacity: ease(f, LAW3 - 4, LAW3 + 4) }}>
             <Kid size={110} adult color="#b9a8e8" />
             <Label at={ESCAPES} color="#b9a8e8" size={30}>LAW ESCAPES FRANCE →</Label>
           </div>
-          <div style={{ position: 'absolute', left: 200, top: 860 }}><Source at={DECEMBER}>Velde 2003 · NY Fed Crisis Chronicles (2014)</Source></div>
+          <div style={{ position: 'absolute', left: 200, top: 920 }}><Source at={DECEMBER}>Velde 2003 · NY Fed Crisis Chronicles (2014)</Source></div>
         </AbsoluteFill>
         <MoneyChip text="A BELIEF" at={BELIEF} dockAt={CHIP_DOCK} slot={2} left={1000} top={760} />
 
@@ -244,7 +246,7 @@ const Mo1720: React.FC = () => {
           <div style={{ position: 'absolute', left: 300, top: 300, display: 'flex', alignItems: 'center', gap: 50, opacity: ease(f, FOR_NEXT, FOR_NEXT + 10) }}>
             <Banknote w={260} title="Paper" color="#e0e0e0" ink="#6a6a6a" />
             <span style={{ fontFamily: DL_SERIF, fontSize: 90, color: DL.dim, opacity: ease(f, BELIEVE_IN - 2, BELIEVE_IN + 6) }}>→</span>
-            <div style={{ position: 'relative', opacity: ease(f, BITE - 6, BITE + 2) }}>
+            <div style={{ position: 'relative', opacity: ease(f, SOMETHING2 - 2, SOMETHING2 + 6) }}>
               <Sovereign size={220} glow={0.8} label="£" />
               <div style={{ position: 'absolute', right: -14, top: 30, width: 70, height: 70, borderRadius: '50%', background: DL.bg, opacity: ease(f, BITE, BITE + 4) }} />
             </div>

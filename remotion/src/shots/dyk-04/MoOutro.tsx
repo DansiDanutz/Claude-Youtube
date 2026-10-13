@@ -123,7 +123,7 @@ const MoOutro: React.FC = () => {
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: 1 - lockOut, transform: `translateY(${-lockOut * 220}px) scale(${1 - lockOut * 0.5})` }}>
         <div style={{ ...rise(f, THIS - 2), fontFamily: DL_MONO, fontSize: 34, letterSpacing: 12, color: DL.red }}>EPISODE <span style={{ display: 'inline-block', opacity: ease(f, FOUR - 4, FOUR + 2), transform: `scale(${1 + 0.35 * fourPulse})`, textShadow: `0 0 ${20 * fourPulse}px ${DL.red}` }}>04</span></div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 50, marginTop: 30, height: 260 }}>
-          <div style={{ opacity: ease(f, DID - 6, DID) }}><DytLogoAnimated size={220} start={DID - 6} /></div>
+          <div style={{ opacity: ease(f, 0, 8) }}><DytLogoAnimated size={220} start={0} /></div>
           <DytWordmark at={DID} size={96} />
         </div>
         <div style={{ ...rise(f, TITLE - 2), marginTop: 40, fontFamily: DL_SERIF, fontSize: 110, color: DL.text }}><span style={{ fontStyle: 'italic', color: DL.gold }}>Money</span></div>
