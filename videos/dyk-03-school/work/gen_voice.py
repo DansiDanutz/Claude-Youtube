@@ -64,7 +64,7 @@ def refine_ends(words, audio_b64):
     """No. 03 (2026-10-13): ElevenLabs alignment stretches every sentence-final word to the start of the next word
     (and a chunk's last word to the end of the file), so a 0.35 s "cane." reads as a 0.63 s drag. Measure the real
     end from the audio: the last frame within ENERGY_FLOOR_DB of the take's 95th-percentile frame level, never later
-    than the aligned end. Real drags (speech that really lasts) are still caught; only trailing silence is removed."""
+    than the aligned end and never shorter than 0.05 s (unless the aligned word is). Real drags (speech that really lasts) are still caught; only trailing silence is removed."""
     import numpy as np
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", "pipe:0", "-f", "s16le", "-ac", "1", "-ar", "16000", "-"],
                          input=base64.b64decode(audio_b64), capture_output=True, check=True).stdout
@@ -79,7 +79,7 @@ def refine_ends(words, audio_b64):
         a, b = int(w["s"] / ENERGY_FRAME_S), min(len(db), int(w["e"] / ENERGY_FRAME_S) + 1)
         act = np.flatnonzero(db[a:b] > floor)
         e = w["e"] if not act.size else min(w["e"], round((a + act[-1] + 1) * ENERGY_FRAME_S, 3))
-        out.append({**w, "e": max(round(w["s"] + 0.05, 3), e)})
+        out.append({**w, "e": min(w["e"], max(round(w["s"] + 0.05, 3), e))})   # never outside [s, e]
     return out
 
 
