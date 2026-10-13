@@ -31,6 +31,7 @@ from pathlib import Path
 LOW_PROBABILITY = 0.35
 GAP_S = 1.1
 NUMBER = "#"
+BREAK = "|"                                   # punctuation after a number: the number ends there
 UNITS = ("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen "
          "seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety").split()
 NUMBER_WORDS = set(UNITS) | {"hundred", "thousand", "million", "billion", "point", "percent"}
@@ -146,28 +147,55 @@ def _remainder_follows(toks, i):
     return True
 
 
+def _starts_new_number(run, t):
+    """A small number after a year is a separate number: '1971 one' is 1971 then 1 (not 1972), and 'nineteen seventy
+    one one' is 1971 then 1 (not 197101). Year/clock style reads at most two groups ('sixteen forty seven')."""
+    if not run or t not in UNIT_VALUES and t not in TENS_VALUES:
+        return False
+    if DIGITS.match(run[-1]):
+        return True
+    if any(w not in UNIT_VALUES and w not in TENS_VALUES for w in run):
+        return False                           # scales, 'point', 'a', 'and': not year/clock style
+    groups = _small_groups(run + [t])
+    return len(groups) > 2 and groups[0] >= 10
+
+
 def _collapse_numbers(toks):
     """Every run of number words / digits becomes ONE token carrying its value: 'a hundred' == '100' == '#100',
-    'seven forty five' == '7:45' == '#745', but 'fifteen hundred' (#1500) != 'sixteen hundred' (#1600)."""
+    'seven forty five' == '7:45' == '#745', but 'fifteen hundred' (#1500) != 'sixteen hundred' (#1600).
+    A BREAK (punctuation after a number) ends the run and is dropped: 'seventy one, one' is #71 then #1."""
     out, run = [], []
     for i, t in enumerate(toks + [""]):
         nxt = toks[i + 1] if i + 1 < len(toks) else ""
         in_run = t and (_is_number(t) or (t == "a" and nxt in SCALES)
                         or (t == "and" and i and _remainder_follows(toks, i)))     # "two thousand and twenty four"
-        if in_run:
+        if in_run and not _starts_new_number(run, t):
             run.append(t)
             continue
         if run:
             out.append(number_value(run))
             run = []
-        if t:
+        if in_run:
+            run.append(t)
+        elif t and t != BREAK:
             out.append(t)
     return out
 
 
+def _words(text):
+    """Normalised words, with a BREAK after any number word or digits followed by punctuation ('one,' '1971,')."""
+    out = []
+    for w in re.sub(r"(?<=[A-Za-z])-(?=[A-Za-z])", " ", text).split():     # "nine-year-old" == "nine year old"
+        t = _norm(w)
+        if t:
+            out.append(t)
+        if re.search(r"[^\w%]$", w) and out and _is_number(out[-1]):
+            out.append(BREAK)
+    return out
+
+
 def tokens(text):
-    words = re.sub(r"(?<=[A-Za-z])-(?=[A-Za-z])", " ", text).split()     # "nine-year-old" == "nine year old"
-    return _collapse_numbers(_join_letters([t for t in (_norm(w) for w in words) if t]))
+    return _collapse_numbers(_join_letters(_words(text)))
 
 
 def _span_flags(ref_span, hyp_span, risky):
