@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble DYK No. 03 "School": concat the Sc* shots, lay Brian's VO, the word-synced SFX pass
+"""Assemble DYK No. 04 "Money": concat the Sc* shots, lay Brian's VO, the word-synced SFX pass
 from cues.py and a sidechain-ducked music bed, master to the delivery spec (stereo 48 kHz,
 -14 LUFS, <= -1 dBTP true peak, CFR 30, +faststart).
 
@@ -8,21 +8,24 @@ Adapted from episode 01 (hardened commits 1edb248 + ec795c8):
   * narration_fit_problems() gate: a line ending < 0.5 s before its cut, or overlapping, stops the build
   * SFX times come from the Brian alignment (vo.json) via cues.py — the same table as BEATMAP.md
   * SFX mixed in groups of <= 35 inputs; limiter at 4x oversampling; final CFR 30 encode
-Run from anywhere:  python3 videos/dyk-03-school/work/build_final.py
+Run from anywhere:  python3 videos/dyk-04-money/work/build_final.py
+Cues are resolved with the SHARED voice_preflight.off_word (same window as the gate, so the mix and the gate agree).
 """
 import json, os, re, subprocess, sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))  # repo root, from this file
 OUT = os.path.join(ROOT, 'remotion', 'out')
-PROJ = os.path.join(ROOT, 'videos', 'dyk-03-school')
+PROJ = os.path.join(ROOT, 'videos', 'dyk-04-money')
 WORK = os.path.join(PROJ, 'work')
 NARR = os.path.join(WORK, 'narration')
 BUS = os.path.join(WORK, 'bus')
 SFX = os.path.join(ROOT, 'media', 'library', 'sfx', 'clips')
 MUSIC = os.path.join(ROOT, 'media', 'library', 'music', 'clips', 'cinematic-min.mp3')
-VO = json.load(open(os.path.join(ROOT, 'remotion', 'src', 'shots', 'dyk-03', 'vo.json')))
+VO = json.load(open(os.path.join(ROOT, 'remotion', 'src', 'shots', 'dyk-04', 'vo.json')))
 sys.path.insert(0, WORK)
 import cues as CUE_TABLE  # noqa: E402  (the shared cue table)
+sys.path.insert(0, os.path.join(ROOT, 'tools', 'dyk'))
+from voice_preflight import off_word  # noqa: E402  (shared resolver: same window as the gate)
 
 TARGET_LUFS = -14.0
 LIMIT_DBTP = -2.6          # limiter ceiling (sample) — skill: keeps true peak <= -1 dBTP after AAC
@@ -30,8 +33,8 @@ MUSIC_LEVEL = 0.32
 SFX_GROUP = 35
 FPS = 30
 MIN_TAIL_S = 0.5           # a voice line must end at least this long before its shot cuts
-SHOT_ORDER = ['ScHook', 'ScIntro', 'ScWelcome', 'ScPromise', 'Sc1500', 'Sc1647', 'Sc1763', 'Sc1810',
-              'Sc1948', 'ScToday', 'ScReveal', 'Sc2100', 'ScClose', 'ScOutro']
+SHOT_ORDER = ['MoHook', 'MoIntro', 'MoWelcome', 'MoPromise', 'Mo1500', 'Mo1661', 'Mo1720', 'Mo1821',
+              'Mo1971', 'MoToday', 'MoReveal', 'Mo2100', 'MoClose', 'MoOutro']
 
 _TL = json.load(open(os.path.join(WORK, 'timeline.json')))
 SHOTS = [(sid, _TL[sid][0], sorted(_TL[sid][1].items(), key=lambda kv: kv[1])) for sid in SHOT_ORDER]
@@ -42,8 +45,8 @@ for sid, dur, _ in SHOTS:
 TOTAL = t
 VO_AT = {scene: START[sid] + off for sid, _, vos in SHOTS for scene, off in vos}
 DUR = {sid: dur for sid, dur, _ in SHOTS}
-# end screen (ScOutro): starts 24 frames after the outro line ends — same rule as the shot
-ES_S = (round((0.6 + VO['sc13-outro']['dur']) * FPS) + 24) / FPS
+# end screen (MoOutro): starts 24 frames after the sign-off ends — same rule as make_timeline.py and the shot
+ES_S = (round((_TL['MoOutro'][1]['mo13c-signoff'] + VO['mo13c-signoff']['dur']) * FPS) + 24) / FPS
 
 
 def narration_fit_problems(shots, vo, min_tail=MIN_TAIL_S):
@@ -109,36 +112,9 @@ def resolve(when):
     raise ValueError(when)
 
 
-# voice preflight (2026-10-12): a loud SFX never starts INSIDE a spoken word — same clip families and 30 ms margin as
-# tools/dyk/voice_preflight.py. A cue in the first ONSET_SNAP_S of a word moves to its onset, otherwise to its end
-# (the gap after it), so the sound still marks its visual within a word's length.
-LOUD_SFX = re.compile(r'impact|whoosh|pop|chime|riser|thock|sparkle|stamp|snap|hit|boom')
-WORD_MARGIN_S = 0.03
-ONSET_SNAP_S = 0.1
-
-
 def word_spans():
     """Absolute (start, end) of every spoken word in the master."""
     return sorted((VO_AT[sc] + wd['s'], VO_AT[sc] + wd['e']) for sc in VO_AT for wd in VO[sc]['words'])
-
-
-PRE_ONSET_S = 0.06        # No. 03 audit: a loud hit lands just BEFORE its word's onset, never on it
-
-
-def off_word(t, clip, spans):
-    """t, or a time clear of the words when a loud clip would start inside a word or on its onset (±WORD_MARGIN_S).
-    Near an onset it moves PRE_ONSET_S ahead of the word (but not into the previous word); later in a word, to its end."""
-    if not LOUD_SFX.search(clip):
-        return t
-    for k, (s0, e0) in enumerate(spans):
-        if s0 - WORD_MARGIN_S <= t < e0 - WORD_MARGIN_S:
-            if 'riser' in clip:           # a riser is timed by its END: start it earlier so it still ends before its payoff
-                return min(t, s0)
-            if t - s0 <= ONSET_SNAP_S:
-                prev_e = spans[k - 1][1] if k else -1.0
-                return max(s0 - PRE_ONSET_S, prev_e + 0.005)
-            return e0
-    return t
 
 
 def cue_sheet():
@@ -149,7 +125,7 @@ def cue_sheet():
         out += [(t0 + i * step_f / FPS, 'ui-click-soft', 0.15, f'{vis} ({i + 1}/{n})') for i in range(n)]
     for shot in CUE_TABLE.EXIT_SHOTS:     # the EraExit pull-in carries a reverse whoosh into the next era
         out.append((START[shot] + DUR[shot] - 0.95, 'whoosh-reverse', 0.30, 'era exit pull-in'))
-    es = START['ScOutro'] + ES_S
+    es = START['MoOutro'] + ES_S
     out += [(es + 12 / FPS, 'pencil-scribble', 0.30, 'end screen: BEST COMMENT · READ HERE writes on'),
             (es + 18 / FPS, 'ui-toggle-on', 0.24, 'end screen: logo switches on (subscribe slot)'),
             (es + 25 / FPS, 'sparkle-soft', 0.22, 'end screen: logo glow')]
@@ -290,7 +266,7 @@ def main():
     print(f'master {lufs_m:.1f} LUFS, peak {peak_m:.1f} dBFS')
 
     # 6) final encode: CFR 30, stereo AAC, faststart
-    final = os.path.join(PROJ, 'dyk-03-school-1080P.mp4')
+    final = os.path.join(PROJ, 'dyk-04-money-1080P.mp4')
     run(['-i', silent, '-i', master, '-map', '0:v', '-map', '1:a',
          '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-r', '30', '-fps_mode', 'cfr',
          '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-ac', '2', '-movflags', '+faststart', '-shortest', final])

@@ -1,4 +1,4 @@
-"""DYK No. 03 cue table (v2) — ONE source for the SFX mix (build_final.py) and the beat map (make_beatmap.py).
+"""DYK No. 04 cue table (from No. 03 v2) — ONE source for the SFX mix (build_final.py) and the beat map (make_beatmap.py).
 
 Each entry: (when, clip, gain, visual) where `when` is
   ('w', scene, token, nth, shift)  → the word's start in the master (+shift s), or
@@ -14,9 +14,9 @@ Rules (skill): every visual event has a sound, every sound a visual; ≤ 3 click
 """
 import os
 
-ERA_SHOTS = ['Sc1500', 'Sc1647', 'Sc1763', 'Sc1810', 'Sc1948', 'ScToday']   # v2: Sc2100 opens on the ladder, its header slams on "hundred" (in its part)
-ERA_VO = ['sc04-1500', 'sc05-1647', 'sc06-1763', 'sc07-1810', 'sc08-1948', 'sc09-today']
-EXIT_SHOTS = ['Sc1500', 'Sc1647', 'Sc1763', 'Sc1810', 'Sc1948']   # shots wrapped in EraExit (0.9 s pull-in)
+ERA_SHOTS = ['Mo1500', 'Mo1661', 'Mo1720', 'Mo1821', 'Mo1971', 'MoToday']   # Mo2100 opens on the ladder; its header slams on "Twenty" (in its part)
+ERA_VO = ['mo04-1500', 'mo05-1661', 'mo06-1720', 'mo07-1821', 'mo08-1971', 'mo09-today']
+EXIT_SHOTS = ['Mo1500', 'Mo1661', 'Mo1720', 'Mo1821', 'Mo1971']   # shots wrapped in EraExit (0.9 s pull-in)
 
 
 def W(scene, token, nth=1, shift=0.0):
@@ -54,8 +54,8 @@ for scene in ERA_VO:
 
 
 # ── per-shot parts (v2)
-PART_ORDER = ['ScHook', 'ScIntro', 'ScWelcome', 'ScPromise', 'Sc1500', 'Sc1647', 'Sc1763', 'Sc1810',
-              'Sc1948', 'ScToday', 'ScReveal', 'Sc2100', 'ScClose', 'ScOutro']
+PART_ORDER = ['MoHook', 'MoIntro', 'MoWelcome', 'MoPromise', 'Mo1500', 'Mo1661', 'Mo1720', 'Mo1821',
+              'Mo1971', 'MoToday', 'MoReveal', 'Mo2100', 'MoClose', 'MoOutro']
 _PARTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cue_parts')
 for _shot in PART_ORDER:
     _path = os.path.join(_PARTS, f'{_shot}.py')
