@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""DYK No. 03 (ported from No. 01): breathing room in the mix, without slowing the voice or calling ElevenLabs.
+"""DYK No. 04 (ported from No. 03): breathing room in the mix, without slowing the voice or calling ElevenLabs.
 
 For every scene in narration/script.json that has a `pauses` block, the saved take
 (narration/<id>.mp3) is decoded once to 48 kHz mono, split at word boundaries taken from
