@@ -4,19 +4,22 @@
 The ElevenLabs take can say something other than the script: No. 03 lost a hedge ("said to use" was heard as
 "set to use"), misread "five" and "cost", and whisper base heard "Skelton" as "Skeleton" and "rung" as "wrong".
 This diffs whisper's transcript of each take against script.json, with spoken numbers and digits treated as equal
-("seven forty five" == "7:45", "one point four" == "1.4"), and flags:
+("seven forty five" == "7:45", "one point four billion" == "1.4 billion") while their VALUES are kept
+("fifteen hundred" != "1600"), and flags:
   hedge    a hedge word (said, claimed, might, about, estimate…) changed or lost        -> FAIL
-  number   a spoken number heard as a non-number word, or not heard at all              -> FAIL
+  number   a spoken number heard as a different value or as a non-number word            -> FAIL
   flip     a negation gained or lost ("can" -> "can't")                                 -> FAIL
   listen   a risky word changed (homophones: built-in list + script.json "risky_words" + --risky; every capitalised
            mid-sentence word counts as a name) or a number whisper did not transcribe at all
            plus words with probability < 0.35 and gaps > 1.1 s                           -> human listen, not a fail
 A FAIL is fixed by re-voicing the line (rephrase it), or — when a human listen confirms whisper misheard a correct
-take — accepted with --accept <scene_id>:<word> and noted in HANDOFF.md.
+take — accepted with --accept <scene_id>:<word> (each flag is waived only by naming its own word: the hedge, the
+number as written in the script, the negation) and noted in HANDOFF.md.
 
 Whisper JSON per scene (`whisper <mp3> --model base --word_timestamps True --output_format json`; base is cached,
 never download bigger models on this disk): <whisper-dir>/<scene_id>.json with segments[].words[{word,start,end,probability}].
-Exit 0 = PASS, 1 = FAIL (report printed; --out writes it). A missing whisper file fails, never passes silently.
+Exit 0 = PASS, 1 = FAIL (report printed; --out writes it). A missing whisper file, or one without word timestamps,
+fails — never passes silently.
 """
 import argparse
 import difflib
@@ -30,7 +33,7 @@ GAP_S = 1.1
 NUMBER = "#"
 UNITS = ("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen "
          "seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety").split()
-NUMBER_WORDS = set(UNITS) | {"hundred", "thousand", "million", "billion", "point", "percent", NUMBER}
+NUMBER_WORDS = set(UNITS) | {"hundred", "thousand", "million", "billion", "point", "percent"}
 SCALES = {"hundred", "thousand", "million", "billion"}
 HEDGES = {"said", "claimed", "claim", "claims", "might", "may", "about", "around", "roughly", "nearly", "almost",
           "perhaps", "probably", "likely", "estimate", "estimated", "estimates", "could", "reportedly", "supposedly"}
@@ -40,15 +43,29 @@ DEFAULT_RISKY = {"rung", "school", "said", "cost", "five"}     # No. 03 misreads
 FAILING = ("hedge", "number", "flip")
 
 
+UNIT_VALUES = {w: i for i, w in enumerate(UNITS[:20])}
+TENS_VALUES = {w: 20 + 10 * i for i, w in enumerate(UNITS[20:])}
+SCALE_VALUES = {"thousand": 10 ** 3, "million": 10 ** 6, "billion": 10 ** 9}
+DIGITS = re.compile(r"^\d+(?:\.\d+)?$")
+
+
 def _norm(word):
-    return NUMBER if re.search(r"\d", word) else re.sub(r"[^a-z]", "", word.lower())
+    """Lower-case letters only; a token with digits keeps its number ('7:45' -> '745', '1,500' -> '1500', '98%' -> '98')."""
+    if re.search(r"\d", word):
+        digits = re.sub(r"[^\d.]", "", word.replace(":", "")).strip(".")
+        return digits if DIGITS.match(digits) else re.sub(r"[^\d]", "", word)
+    return re.sub(r"[^a-z]", "", word.lower())
+
+
+def _is_number(tok):
+    return tok in NUMBER_WORDS or bool(DIGITS.match(tok))
 
 
 def _join_letters(toks):
     """'o e c d' -> 'oecd' (acronyms spelled out for TTS)."""
     out, run = [], []
     for t in toks + [None]:
-        if t is not None and len(t) == 1 and t != NUMBER:
+        if t is not None and len(t) == 1 and t.isalpha():
             run.append(t)
             continue
         out += ["".join(run)] if len(run) > 1 else run
@@ -58,57 +75,120 @@ def _join_letters(toks):
     return out
 
 
-def _collapse_numbers(toks):
-    """Every run of number words / digits ('a hundred', 'one point four billion', '98 percent') -> one '#'."""
-    out = []
-    for i, t in enumerate(toks):
-        nxt = toks[i + 1] if i + 1 < len(toks) else ""
-        is_num = (t in NUMBER_WORDS or (t == "a" and nxt in SCALES)
-                  or (t == "and" and i and toks[i - 1] in SCALES and nxt in NUMBER_WORDS))   # "four hundred and six"
-        if is_num:
-            if not out or out[-1] != NUMBER:
-                out.append(NUMBER)
+def _small_groups(words):
+    """'seven forty five' -> [7, 45]; a group is a tens word + optional unit, or a unit/teen alone."""
+    groups = []
+    for w in words:
+        if w in UNIT_VALUES and groups and groups[-1][1] and UNIT_VALUES[w] < 10:
+            groups[-1] = (groups[-1][0] + UNIT_VALUES[w], False)
+        elif w in TENS_VALUES:
+            groups.append((TENS_VALUES[w], True))
         else:
+            groups.append((UNIT_VALUES[w], False))
+    return [g for g, _ in groups]
+
+
+def _integer(words):
+    """Spoken integer: 'four hundred and sixty three million' = 463000000; year/clock style 'sixteen forty seven' = 1647."""
+    if not any(w in SCALES or DIGITS.match(w) for w in words):
+        groups = _small_groups(words)
+        return groups[0] if len(groups) == 1 else int("".join(f"{g:02d}" if i else str(g) for i, g in enumerate(groups)))
+    total, current = 0, 0.0
+    for w in words:
+        if DIGITS.match(w):
+            current += float(w)
+        elif w == "hundred":
+            current = (current or 1) * 100
+        elif w in SCALE_VALUES:
+            total, current = total + (current or 1) * SCALE_VALUES[w], 0.0
+        elif w in TENS_VALUES or w in UNIT_VALUES:
+            current += TENS_VALUES.get(w, UNIT_VALUES.get(w, 0))
+    return total + current
+
+
+def number_value(run):
+    """A run of number words and/or digits -> its value as a canonical token '#463000000', '#1.4e+09', '#745'."""
+    words = [w for w in run if w not in ("a", "and", "percent")]
+    if "point" in words:                       # 'one point four billion'
+        i = words.index("point")
+        head = _integer(words[:i]) if words[:i] else 0
+        tail = [w for w in words[i + 1:] if w in UNIT_VALUES]
+        rest = [w for w in words[i + 1:] if w in SCALE_VALUES]
+        value = float(f"{head}.{''.join(str(UNIT_VALUES[w]) for w in tail) or 0}")
+        for w in rest:
+            value *= SCALE_VALUES[w]
+    else:
+        value = _integer(words) if words else 0
+    return NUMBER + format(float(value), ".10g")
+
+
+def _collapse_numbers(toks):
+    """Every run of number words / digits becomes ONE token carrying its value: 'a hundred' == '100' == '#100',
+    'seven forty five' == '7:45' == '#745', but 'fifteen hundred' (#1500) != 'sixteen hundred' (#1600)."""
+    out, run = [], []
+    for i, t in enumerate(toks + [""]):
+        nxt = toks[i + 1] if i + 1 < len(toks) else ""
+        in_run = t and (_is_number(t) or (t == "a" and nxt in SCALES)
+                        or (t == "and" and i and toks[i - 1] == "hundred" and _is_number(nxt)))   # "four hundred and six"
+        if in_run:
+            run.append(t)
+            continue
+        if run:
+            out.append(number_value(run))
+            run = []
+        if t:
             out.append(t)
     return out
 
 
 def tokens(text):
-    return _collapse_numbers(_join_letters([t for t in (_norm(w) for w in text.split()) if t]))
+    words = re.sub(r"(?<=[A-Za-z])-(?=[A-Za-z])", " ", text).split()     # "nine-year-old" == "nine year old"
+    return _collapse_numbers(_join_letters([t for t in (_norm(w) for w in words) if t]))
 
 
 def _span_flags(ref_span, hyp_span, risky):
+    """[(kind, message, cause_tokens)] — cause_tokens are what --accept must name to waive that one flag."""
     out = []
     said, heard = " ".join(ref_span), " ".join(hyp_span) or "(nothing)"
-    lost_hedges = (set(ref_span) & HEDGES) - set(hyp_span)
+    lost_hedges = sorted((set(ref_span) & HEDGES) - set(hyp_span))
     if lost_hedges:
-        out.append(("hedge", f"'{said}' heard as '{heard}' — hedge {sorted(lost_hedges)} lost"))
-    if NUMBER in ref_span and NUMBER not in hyp_span:     # a dropped number is usually alignment: listen
-        out.append(("number" if hyp_span else "listen", f"'{said}' heard as '{heard}'"))
+        out.append(("hedge", f"'{said}' heard as '{heard}' — hedge {lost_hedges} lost", lost_hedges))
+    ref_nums = [t for t in ref_span if t.startswith(NUMBER)]
+    changed = sorted(set(ref_nums) - set(hyp_span))
+    if changed:                                # a number not heard at all is usually alignment: listen
+        out.append(("number" if hyp_span else "listen", f"'{said}' heard as '{heard}'", changed))
+    negations = [t for t in ref_span + hyp_span if t in NEGATIONS]
     if sum(t in NEGATIONS for t in ref_span) != sum(t in NEGATIONS for t in hyp_span):
-        out.append(("flip", f"'{said}' heard as '{heard}' — negation changed"))
+        out.append(("flip", f"'{said}' heard as '{heard}' — negation changed", negations))
     if set(ref_span) & risky:
-        out.append(("listen", f"'{said}' heard as '{heard}'"))
-    return out, ref_span
+        out.append(("listen", f"'{said}' heard as '{heard}'", sorted(set(ref_span) & risky)))
+    return out
 
 
 def diff_scene(ref_text, whisper_words, risky):
     risky = {_norm(r) for r in risky}
     ref = tokens(ref_text)
-    hyp = tokens(" ".join(w["word"] for w in whisper_words))
+    hyp = tokens("".join(w["word"] for w in whisper_words))   # whisper words carry their own leading space;
+                                                              # numbers arrive split (" 1", ".4", ",000")
     sm = difflib.SequenceMatcher(None, ref, hyp, autojunk=False)
     flags, diffs = [], []
     for op, a, b, c, d in sm.get_opcodes():
         if op == "equal":
             continue
         diffs.append((op, " ".join(ref[a:b]), " ".join(hyp[c:d])))
-        found, span = _span_flags(ref[a:b], hyp[c:d], risky)
-        flags += [(kind, msg, span) for kind, msg in found]
+        flags += _span_flags(ref[a:b], hyp[c:d], risky)
     low = [(w["word"].strip(), round(w["probability"], 2)) for w in whisper_words if w["probability"] < LOW_PROBABILITY]
     gaps = [(a["word"].strip(), round(b["start"] - a["end"], 2))
             for a, b in zip(whisper_words, whisper_words[1:]) if b["start"] - a["end"] > GAP_S]
     return {"ratio": sm.ratio(), "diffs": diffs, "flags": [(k, m) for k, m, _ in flags],
-            "spans": [s for _, _, s in flags], "low": low, "gaps": gaps}
+            "causes": [c for _, _, c in flags], "low": low, "gaps": gaps}
+
+
+def accept_key(entry):
+    """'s1:five' -> 's1:#5', 's1:said' -> 's1:said' — the same normalisation as the flag's cause tokens."""
+    sid, _, word = entry.partition(":")
+    toks = tokens(word)
+    return f"{sid}:{toks[0] if toks else ''}"
 
 
 def scene_text(scene):
@@ -116,8 +196,12 @@ def scene_text(scene):
 
 
 def whisper_words(path):
+    """Word timings from a whisper JSON; ValueError when there are none (run whisper with --word_timestamps True)."""
     data = json.loads(Path(path).read_text(encoding="utf-8"))
-    return [w for seg in data.get("segments", []) for w in seg.get("words", [])]
+    words = [w for seg in data.get("segments", []) for w in seg.get("words", [])]
+    if not words or any(not {"word", "start", "end", "probability"} <= set(w) for w in words):
+        raise ValueError("no usable word timestamps — run whisper with --word_timestamps True")
+    return words
 
 
 def proper_nouns(text):
@@ -140,10 +224,16 @@ def run(script, whisper_dir, risky, accepted):
             lines.append(f"== {sid}  MISSING {path} — run whisper on this take")
             failing += 1
             continue
-        out = diff_scene(text, whisper_words(path), risky)
+        try:
+            heard = whisper_words(path)
+        except (ValueError, json.JSONDecodeError) as err:
+            lines.append(f"== {sid}  UNUSABLE {path}: {err}")
+            failing += 1
+            continue
+        out = diff_scene(text, heard, risky)
         lines.append(f"== {sid}  ratio {out['ratio']:.3f}")
-        for (kind, msg), span in zip(out["flags"], out["spans"]):
-            ok = kind in FAILING and any(f"{sid}:{t}" in accepted for t in span)
+        for (kind, msg), causes in zip(out["flags"], out["causes"]):
+            ok = kind in FAILING and all(f"{sid}:{t}" in accepted for t in causes)
             state = "accepted" if ok else ("FAIL" if kind in FAILING else "LISTEN")
             failing += state == "FAIL"
             lines.append(f"   {state:8s} {kind:7s} {msg}")
@@ -165,7 +255,7 @@ def main(argv=None):
     ap.add_argument("--out")
     a = ap.parse_args(argv)
     script = json.loads(Path(a.script).read_text(encoding="utf-8"))
-    accepted = {f"{x.split(':', 1)[0]}:{_norm(x.split(':', 1)[-1])}" for x in a.accept}
+    accepted = {accept_key(x) for x in a.accept}
     lines, failing = run(script, a.whisper_dir, a.risky, accepted)
     text = "\n".join(lines)
     print(text)

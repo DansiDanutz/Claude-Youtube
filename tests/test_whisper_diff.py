@@ -30,6 +30,16 @@ class TokenTests(unittest.TestCase):
         self.assertEqual(wd.tokens("a hundred pupils"), wd.tokens("100 pupils"))
         self.assertEqual(wd.tokens("ninety eight percent"), wd.tokens("98%"))
 
+    def test_different_values_never_compare_equal(self):
+        # review PRRT_kwDOTfGVps6rrP_R / rrXXH: every number used to collapse to the same '#'
+        for said, heard in (("in fifteen hundred", "in 1600"), ("five people", "nine people"),
+                            ("a hundred pupils", "200 pupils"), ("ninety eight percent", "97%"),
+                            ("sixteen forty seven", "1847")):
+            self.assertNotEqual(wd.tokens(said), wd.tokens(heard), (said, heard))
+        for said, heard in (("twenty twenty four", "2024"), ("sixteen forty seven", "1647"),
+                            ("twenty one hundred", "2100"), ("four hundred and sixty three million", "463 million")):
+            self.assertEqual(wd.tokens(said), wd.tokens(heard), (said, heard))
+
     def test_in_and_and_between_numbers_stay_words(self):
         # No. 03: "nine in ten" heard as "nine and 10" must still show up as a difference
         self.assertNotEqual(wd.tokens("nine in ten"), wd.tokens("nine and 10"))
@@ -37,6 +47,9 @@ class TokenTests(unittest.TestCase):
 
     def test_capitalised_mid_sentence_words_are_names(self):
         self.assertEqual(wd.proper_nouns("Taught by John Skelton. Then he left."), {"john", "skelton"})
+
+    def test_hyphenated_words_split(self):
+        self.assertEqual(wd.tokens("Nine year old Prince Henry"), wd.tokens("nine-year-old Prince Henry"))
 
     def test_spelled_letters_join(self):
         self.assertEqual(wd.tokens("the O E C D says"), wd.tokens("the OECD says"))
@@ -54,6 +67,15 @@ class FlagTests(unittest.TestCase):
     def test_number_word_misread_is_flagged(self):
         # No. 03: "from the age of five" misread
         self.assertIn("number", flags("from the age of five they worked", "from the age of fight they worked"))
+
+    def test_numbers_split_across_whisper_words_rejoin(self):
+        # whisper base emits " 1", ".4", " billion" and " 1", ",000" as separate words
+        ws = [{"word": w, "start": i * 0.3, "end": i * 0.3 + 0.2, "probability": 0.9}
+              for i, w in enumerate([" about", " 1", ".4", " billion", " and", " 1", ",000", " more"])]
+        self.assertEqual(wd.diff_scene("about one point four billion and a thousand more", ws, ())["flags"], [])
+
+    def test_number_heard_as_another_value_fails(self):
+        self.assertIn("number", flags("in fifteen hundred, in London", "in 1600, in London"))
 
     def test_number_not_transcribed_is_listed_not_failed(self):
         self.assertEqual(flags("about nine in ten students", "about students"), ["listen"])
@@ -102,6 +124,22 @@ class CliTests(unittest.TestCase):
         self.assertIn("hedge", report)
         self.assertIn("'skelton' heard as 'skeleton'", report)   # a capitalised name is risky automatically
         self.assertEqual(self.main(["--accept", "s1:said"]), 0)
+
+    def test_accept_waives_only_the_flag_it_names(self):
+        # review PRRT_kwDOTfGVps6rrP_V: one diff span with a hedge AND a number; accepting the hedge left the number
+        p = self.p
+        script = {"scenes": [{"id": "s1", "text": "They said five schools closed."}]}
+        (p / "script.json").write_text(json.dumps(script))
+        (p / "w" / "s1.json").write_text(json.dumps({"segments": [{"words": heard("They set fight schools closed.")}]}))
+        self.assertEqual(self.main(["--accept", "s1:said"]), 1)
+        self.assertEqual(self.main(["--accept", "s1:said", "--accept", "s1:five"]), 0)
+
+    def test_whisper_file_without_word_timestamps_fails_closed(self):
+        # review PRRT_kwDOTfGVps6rrXXL: a transcript with no word data passed as if every word matched
+        (self.p / "w" / "s2.json").write_text(json.dumps({"text": "", "segments": [{"text": "x"}]}))
+        self.assertEqual(self.main(["--accept", "s1:said"]), 1)
+        (self.p / "w" / "s2.json").write_text("not json")
+        self.assertEqual(self.main(["--accept", "s1:said"]), 1)
 
     def test_missing_whisper_file_fails_closed(self):
         (self.p / "w" / "s2.json").unlink()
