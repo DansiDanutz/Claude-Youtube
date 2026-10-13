@@ -37,7 +37,8 @@ class TokenTests(unittest.TestCase):
                             ("sixteen forty seven", "1847")):
             self.assertNotEqual(wd.tokens(said), wd.tokens(heard), (said, heard))
         for said, heard in (("twenty twenty four", "2024"), ("sixteen forty seven", "1647"),
-                            ("twenty one hundred", "2100"), ("four hundred and sixty three million", "463 million")):
+                            ("twenty one hundred", "2100"), ("four hundred and sixty three million", "463 million"),
+                            ("two thousand and twenty four", "2024"), ("a million and a half", "a million and a half")):
             self.assertEqual(wd.tokens(said), wd.tokens(heard), (said, heard))
 
     def test_in_and_and_between_numbers_stay_words(self):

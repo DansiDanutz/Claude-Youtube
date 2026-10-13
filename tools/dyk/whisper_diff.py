@@ -112,11 +112,14 @@ def number_value(run):
     if "point" in words:                       # 'one point four billion'
         i = words.index("point")
         head = _integer(words[:i]) if words[:i] else 0
-        tail = [w for w in words[i + 1:] if w in UNIT_VALUES]
-        rest = [w for w in words[i + 1:] if w in SCALE_VALUES]
-        value = float(f"{head}.{''.join(str(UNIT_VALUES[w]) for w in tail) or 0}")
-        for w in rest:
-            value *= SCALE_VALUES[w]
+        j = i + 1
+        while j < len(words) and words[j] in UNIT_VALUES and UNIT_VALUES[words[j]] < 10:
+            j += 1                             # decimal digits: 'point four'
+        value = float(f"{head:g}.{''.join(str(UNIT_VALUES[w]) for w in words[i + 1:j]) or 0}")
+        if j < len(words) and words[j] in SCALE_VALUES:
+            value, j = value * SCALE_VALUES[words[j]], j + 1
+        if words[j:]:                          # '... billion and a thousand'
+            value += _integer(words[j:])
     else:
         value = _integer(words) if words else 0
     return NUMBER + format(float(value), ".10g")
@@ -128,8 +131,10 @@ def _collapse_numbers(toks):
     out, run = [], []
     for i, t in enumerate(toks + [""]):
         nxt = toks[i + 1] if i + 1 < len(toks) else ""
+        after = toks[i + 2] if i + 2 < len(toks) else ""
+        number_ahead = _is_number(nxt) or (nxt == "a" and after in SCALES)
         in_run = t and (_is_number(t) or (t == "a" and nxt in SCALES)
-                        or (t == "and" and i and toks[i - 1] == "hundred" and _is_number(nxt)))   # "four hundred and six"
+                        or (t == "and" and i and toks[i - 1] in SCALES and number_ahead))   # "two thousand and twenty four"
         if in_run:
             run.append(t)
             continue
