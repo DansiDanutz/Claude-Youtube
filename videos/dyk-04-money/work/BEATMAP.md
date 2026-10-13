@@ -2,45 +2,45 @@
 
 One row per second of the master: words → visual event → SFX. Source of truth: `cues.py` (the same table `build_final.py` mixes), `timeline.json`, `remotion/src/shots/dyk-04/vo.json`.
 
-Total 620.8 s · 564 cues · gaps ≥ 2.0 s between visual events while narrating: 36
+Total 620.7 s · 564 cues · gaps ≥ 2.0 s between visual events while narrating: 36
 
 ## Gaps to check (continuous motion must cover them)
-- 0:14.5 → 0:16.5 (2.1 s) in MoHook — motion: note turning, layers peeling, clock sweeping, digits falling
+- 0:14.3 → 0:16.5 (2.2 s) in MoHook — motion: note turning, layers peeling, clock sweeping, digits falling
 - 0:56.3 → 0:58.4 (2.2 s) in MoPromise — motion: icons popping, dawn glow, cup steam, digits
 - 1:55.1 → 1:57.6 (2.5 s) in Mo1500 — motion: canoes gliding, smoke drift, beans filling, cloaks
 - 2:04.2 → 2:06.4 (2.2 s) in Mo1500 — motion: canoes gliding, smoke drift, beans filling, cloaks
-- 2:22.7 → 2:25.2 (2.5 s) in Mo1661 — motion: sledge sliding, snow, notes stacking, note rising
-- 2:55.9 → 2:58.4 (2.5 s) in Mo1661 — motion: sledge sliding, snow, notes stacking, note rising
-- 3:08.8 → 3:10.9 (2.1 s) in Mo1661 — motion: sledge sliding, snow, notes stacking, note rising
-- 3:49.0 → 3:51.3 (2.2 s) in Mo1720 — motion: horses trotting, dice rolling, price line climbing/crashing, Law running
-- 3:56.9 → 3:59.4 (2.5 s) in Mo1720 — motion: horses trotting, dice rolling, price line climbing/crashing, Law running
-- 4:48.8 → 4:51.0 (2.2 s) in Mo1821 — motion: smoke drift, queue, bar filling, anchor swaying
-- 5:39.1 → 5:41.2 (2.1 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
-- 5:48.5 → 5:50.6 (2.1 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
-- 6:02.1 → 6:04.2 (2.0 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
-- 6:04.2 → 6:06.5 (2.3 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
-- 6:37.1 → 6:39.1 (2.1 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
-- 6:46.5 → 6:48.8 (2.2 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
-- 6:48.8 → 6:51.0 (2.2 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
-- 6:55.5 → 6:57.6 (2.1 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
-- 6:59.5 → 7:02.0 (2.5 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
-- 7:31.3 → 7:33.4 (2.1 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
-- 7:34.4 → 7:37.0 (2.6 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
-- 7:45.3 → 7:47.8 (2.5 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
-- 8:05.4 → 8:08.1 (2.7 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:09.5 → 8:11.6 (2.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:12.9 → 8:15.8 (3.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:15.8 → 8:18.1 (2.3 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:18.1 → 8:20.8 (2.7 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:30.4 → 8:33.4 (3.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:35.2 → 8:37.5 (2.4 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:39.7 → 8:42.8 (3.1 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:46.8 → 8:49.9 (3.1 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:50.8 → 8:52.9 (2.2 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:56.1 → 8:59.6 (3.5 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 9:32.7 → 9:34.9 (2.2 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
-- 9:51.9 → 9:54.3 (2.3 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
-- 10:03.2 → 10:05.4 (2.2 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
+- 2:22.6 → 2:24.7 (2.1 s) in Mo1661 — motion: sledge sliding, snow, notes stacking, note rising
+- 2:55.8 → 2:58.3 (2.5 s) in Mo1661 — motion: sledge sliding, snow, notes stacking, note rising
+- 3:08.7 → 3:10.8 (2.1 s) in Mo1661 — motion: sledge sliding, snow, notes stacking, note rising
+- 3:48.9 → 3:51.2 (2.2 s) in Mo1720 — motion: horses trotting, dice rolling, price line climbing/crashing, Law running
+- 3:56.8 → 3:59.3 (2.5 s) in Mo1720 — motion: horses trotting, dice rolling, price line climbing/crashing, Law running
+- 4:48.7 → 4:50.9 (2.2 s) in Mo1821 — motion: smoke drift, queue, bar filling, anchor swaying
+- 5:39.0 → 5:41.1 (2.1 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
+- 5:48.4 → 5:50.5 (2.1 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
+- 6:02.0 → 6:04.1 (2.0 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
+- 6:04.1 → 6:06.4 (2.3 s) in Mo1971 — motion: TV glow, chain links, currencies drifting, year counter
+- 6:37.0 → 6:39.0 (2.1 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
+- 6:46.4 → 6:48.7 (2.2 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
+- 6:48.7 → 6:50.9 (2.2 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
+- 6:55.4 → 6:57.5 (2.1 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
+- 6:59.4 → 7:01.9 (2.5 s) in MoToday — motion: matatus rolling, phone buzz, route line, bars growing, digits
+- 7:31.2 → 7:33.3 (2.1 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
+- 7:34.3 → 7:36.9 (2.6 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
+- 7:45.2 → 7:47.7 (2.5 s) in MoReveal — motion: note passing round, typing cursor, coins dissolving, ladder lighting
+- 8:05.3 → 8:08.0 (2.7 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:09.4 → 8:11.5 (2.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:12.8 → 8:15.7 (3.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:15.7 → 8:18.0 (2.3 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:18.0 → 8:20.7 (2.7 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:30.2 → 8:33.3 (3.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:35.1 → 8:37.4 (2.4 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:39.6 → 8:42.7 (3.1 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:46.7 → 8:49.4 (2.6 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:50.6 → 8:52.8 (2.2 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 8:56.0 → 8:59.5 (3.5 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
+- 9:32.6 → 9:34.8 (2.2 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
+- 9:51.8 → 9:54.2 (2.3 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
+- 10:03.1 → 10:05.3 (2.2 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
 
 | t | shot | words | visual event (SFX) |
 |---|---|---|---|
@@ -185,52 +185,52 @@ Total 620.8 s · 564 cues · gaps ≥ 2.0 s between visual events while narratin
 | 2:18 | Mo1661 | loaded with copper. | LOADED WITH COPPER (ui-click-soft) |
 | 2:19 | Mo1661 | Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
 | 2:20 | Mo1661 | you know that Sweden's | (chime after "that") (chime-magic); card: Sweden's (ui-click-soft) |
-| 2:21 | Mo1661 | biggest coin weighed | card: biggest coin (ui-click-soft) |
-| 2:22 | Mo1661 | almost twenty kilos? | card: almost 20 kilos. (pop-reveal); card: 19.7 KG (ui-click-soft) |
-| 2:23 | Mo1661 |  |  |
-| 2:24 | Mo1661 | It's a copper |  |
-| 2:25 | Mo1661 | plate. | card: the copper plate (knock-solid) |
-| 2:26 | Mo1661 | You don't put it in your |  |
-| 2:27 | Mo1661 | pocket. | card: ✗ NOT IN YOUR POCKET (ui-click-soft) |
-| 2:28 | Mo1661 | You put it on a cart. | card: ✓ ON A CART (ui-click-soft) |
-| 2:29 | Mo1661 | So a banker | card out; the banker (whoosh-soft) |
-| 2:30 | Mo1661 | called Johan | Johan Palmstruch (pop-reveal) |
-| 2:31 | Mo1661 | Palmstruch has an |  |
-| 2:32 | Mo1661 | idea. | STOCKHOLMS BANCO · HIS IDEA; step 1 CART THE COPPER (ui-click-soft) |
-| 2:33 | Mo1661 | Leave your copper at | step 2 LEAVE IT AT THE BANK (pop-reveal) |
-| 2:34 | Mo1661 | his bank, | BANCO (ui-click-soft) |
-| 2:35 | Mo1661 | and take a sheet of |  |
-| 2:36 | Mo1661 | paper instead. | step 3 TAKE A SHEET OF PAPER (page-flip) |
+| 2:21 | Mo1661 | biggest coin weighed almost | card: biggest coin (ui-click-soft) |
+| 2:22 | Mo1661 | twenty kilos? | card: almost 20 kilos. (pop-reveal); card: 19.7 KG (ui-click-soft) |
+| 2:23 | Mo1661 | It's |  |
+| 2:24 | Mo1661 | a copper plate. | card: the copper plate (knock-solid) |
+| 2:25 | Mo1661 | You don't |  |
+| 2:26 | Mo1661 | put it in your pocket. | card: ✗ NOT IN YOUR POCKET (ui-click-soft) |
+| 2:27 | Mo1661 | You put it |  |
+| 2:28 | Mo1661 | on a cart. | card: ✓ ON A CART (ui-click-soft) |
+| 2:29 | Mo1661 | So a banker called | card out; the banker (whoosh-soft) |
+| 2:30 | Mo1661 | Johan Palmstruch | Johan Palmstruch (pop-reveal) |
+| 2:31 | Mo1661 | has |  |
+| 2:32 | Mo1661 | an idea. | STOCKHOLMS BANCO · HIS IDEA; step 1 CART THE COPPER (ui-click-soft) |
+| 2:33 | Mo1661 | Leave your | step 2 LEAVE IT AT THE BANK (pop-reveal) |
+| 2:34 | Mo1661 | copper at his bank, | BANCO (ui-click-soft) |
+| 2:35 | Mo1661 | and take a sheet |  |
+| 2:36 | Mo1661 | of paper instead. | step 3 TAKE A SHEET OF PAPER (page-flip) |
 | 2:37 | Mo1661 | It says | YOUR COPPER… (ui-click-soft) |
 | 2:38 | Mo1661 | your copper is waiting | …IS WAITING FOR YOU (the note glows) (sparkle-soft) |
 | 2:39 | Mo1661 | for you. |  |
 | 2:40 | Mo1661 | These are the first | THE FIRST REAL BANKNOTES (stamp-hit) |
 | 2:41 | Mo1661 | real banknotes |  |
 | 2:42 | Mo1661 | in Europe. | IN EUROPE · 1661 (ui-click-soft) |
-| 2:43 | Mo1661 | So what is money | steps out; the big ? (whoosh-soft) |
-| 2:44 | Mo1661 | now? | the ? pulses (ui-click-soft) |
+| 2:43 | Mo1661 | So what is money now? | steps out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
+| 2:44 | Mo1661 |  |  |
 | 2:45 | Mo1661 | A promise. | A promise. (gradient) + the note (pop-reveal) |
 | 2:46 | Mo1661 | Written on paper. | Written on paper. + HOW WE SAW IT · A PROMISE ON PAPER chip (chime-reward) |
 | 2:47 | Mo1661 | Remember | REMEMBER THIS WORD stamp (stamp-hit) |
 | 2:48 | Mo1661 | that word, promise. | PROMISE glows (warm-shimmer) |
-| 2:49 | Mo1661 | It comes | the chip docks into the ladder (whoosh-soft) |
-| 2:50 | Mo1661 | back at the end. | ↺ IT COMES BACK AT THE END (ui-click-soft) |
-| 2:51 | Mo1661 | People love the | PEOPLE LOVE THE NOTES (whoosh-soft) |
-| 2:52 | Mo1661 | notes. So |  |
+| 2:49 | Mo1661 | It comes back | the chip docks into the ladder (whoosh-soft) |
+| 2:50 | Mo1661 | at the end. | ↺ IT COMES BACK AT THE END (ui-click-soft) |
+| 2:51 | Mo1661 | People love the notes. | PEOPLE LOVE THE NOTES (whoosh-soft) |
+| 2:52 | Mo1661 | So |  |
 | 2:53 | Mo1661 | the bank prints more, | notes stack up (1/3) (ui-click-soft); notes stack up (2/3) (ui-click-soft); notes stack up (3/3) (ui-click-soft) |
 | 2:54 | Mo1661 | and lends | · AND LENT (ui-click-soft) |
 | 2:55 | Mo1661 | more, than it has copper | the copper shrinks · COPPER TO PAY BACK (whoosh-reverse) |
 | 2:56 | Mo1661 | to pay back. |  |
 | 2:57 | Mo1661 | When |  |
-| 2:58 | Mo1661 | people come for their | a queue of people (ui-click-soft) |
-| 2:59 | Mo1661 | copper, it isn't | THE VAULT: EMPTY (trap-snap) |
+| 2:58 | Mo1661 | people come for their copper, | a queue of people (ui-click-soft) |
+| 2:59 | Mo1661 | it isn't | THE VAULT: EMPTY (trap-snap) |
 | 3:00 | Mo1661 | there. |  |
 | 3:01 | Mo1661 | The bank fails. | THE BANK FAILS (stamp-hit) |
 | 3:02 | Mo1661 | Palmstruch |  |
 | 3:03 | Mo1661 | is sentenced to death. | PALMSTRUCH: SENTENCED TO (impact-soft); DEATH · 1668 (ui-click-soft) |
 | 3:04 | Mo1661 | He's spared, | SPARED (ui-click-soft) |
-| 3:05 | Mo1661 | and dies a few | · DIED 1671 (ui-click-soft) |
-| 3:06 | Mo1661 | years later. |  |
+| 3:05 | Mo1661 | and dies a few years | · DIED 1671 (ui-click-soft) |
+| 3:06 | Mo1661 | later. |  |
 | 3:07 | Mo1661 | Paper only works | cliffhanger: a note held up by belief; ladder fades (piano-a-min) |
 | 3:08 | Mo1661 | while people believe | HELD UP BY BELIEF (ui-click-soft) |
 | 3:09 | Mo1661 | in it. |  |
@@ -238,92 +238,92 @@ Total 620.8 s · 564 cues · gaps ≥ 2.0 s between visual events while narratin
 | 3:11 | Mo1661 | century, one man |  |
 | 3:12 | Mo1661 | will push that belief | he pushes; the note rises (whoosh-soft) |
 | 3:13 | Mo1661 | further than anyone | the note glows higher (sparkle-soft) |
-| 3:14 | Mo1661 | ever had. |  |
-| 3:15 | Mo1661 |  | era exit pull-in (whoosh-reverse) |
-| 3:16 | Mo1720 | You wake | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 3:14 | Mo1661 | ever had. | era exit pull-in (whoosh-reverse) |
+| 3:15 | Mo1661 |  | era cut: YOU WAKE UP IN · year (whoosh-wind) |
+| 3:16 | Mo1720 | You wake | year slams in (impact-soft) |
 | 3:17 | Mo1720 | up in seventeen twenty, | gold underline under 1720 (whoosh-soft) |
 | 3:18 | Mo1720 | in Paris. | place line: Paris (pop-reveal) |
-| 3:19 | Mo1720 | The street |  |
-| 3:20 | Mo1720 | smells of horses, | header docks; horses trot past (whoosh-soft) |
-| 3:21 | Mo1720 | and everyone's |  |
-| 3:22 | Mo1720 | talking about paper. | four people appear talking (1/4) (ui-click-soft); four people appear talking (2/4) (ui-click-soft); four people appear talking (3/4) (ui-click-soft); four people appear talking (4/4) (ui-click-soft); speech bubbles full of notes (page-flip) |
+| 3:19 | Mo1720 | The street smells |  |
+| 3:20 | Mo1720 | of horses, | header docks; horses trot past (whoosh-soft) |
+| 3:21 | Mo1720 | and everyone's talking | four people appear talking (1/4) (ui-click-soft) |
+| 3:22 | Mo1720 | about paper. | four people appear talking (2/4) (ui-click-soft); four people appear talking (3/4) (ui-click-soft); four people appear talking (4/4) (ui-click-soft); speech bubbles full of notes (page-flip) |
 | 3:23 | Mo1720 | Did you know | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
 | 3:24 | Mo1720 | that this year, | (chime after "that") (chime-magic); card: this year, (ui-click-soft) |
-| 3:25 | Mo1720 | France made it |  |
-| 3:26 | Mo1720 | illegal to own more | card: illegal (pop-reveal) |
-| 3:27 | Mo1720 | than five hundred livres | card: 500 livres (ui-click-soft) |
+| 3:25 | Mo1720 | France made it illegal | card: illegal (pop-reveal) |
+| 3:26 | Mo1720 | to own more than |  |
+| 3:27 | Mo1720 | five hundred livres | card: 500 livres (ui-click-soft) |
 | 3:28 | Mo1720 | in gold or silver? | card: or silver. (ui-click-soft) |
 | 3:29 | Mo1720 |  |  |
 | 3:30 | Mo1720 | The government wanted | card: The government wanted you to (ui-click-soft) |
 | 3:31 | Mo1720 | you to trust paper. | card: trust paper. (ui-click-soft) |
 | 3:32 | Mo1720 | By law. | card: BY LAW stamp (stamp-hit) |
-| 3:33 | Mo1720 | The man | card out; THE MAN BEHIND IT (whoosh-soft) |
-| 3:34 | Mo1720 | behind it is John | John Law (pop-reveal) |
-| 3:35 | Mo1720 | Law. A |  |
-| 3:36 | Mo1720 | Scottish gambler. | A SCOTTISH GAMBLER + rolling die (chess-piece-thock) |
+| 3:33 | Mo1720 | The man behind | card out; THE MAN BEHIND IT (whoosh-soft) |
+| 3:34 | Mo1720 | it is John Law. | John Law (pop-reveal) |
+| 3:35 | Mo1720 | A Scottish |  |
+| 3:36 | Mo1720 | gambler. | A SCOTTISH GAMBLER + rolling die (chess-piece-thock) |
 | 3:37 | Mo1720 | Like Palmstruch, | LIKE PALMSTRUCH… (ui-click-soft) |
-| 3:38 | Mo1720 | he |  |
-| 3:39 | Mo1720 | was once sentenced to | SENTENCED TO DEATH (stamp-hit) |
-| 3:40 | Mo1720 | death, for killing a man |  |
+| 3:38 | Mo1720 | he was |  |
+| 3:39 | Mo1720 | once sentenced to death, | SENTENCED TO DEATH (stamp-hit) |
+| 3:40 | Mo1720 | for killing a man |  |
 | 3:41 | Mo1720 | in a duel. | A DUEL · LONDON, 1694 (ui-click-soft) |
 | 3:42 | Mo1720 | Now he runs France's | Now he runs France's money (chime-reward) |
 | 3:43 | Mo1720 | money. |  |
 | 3:44 | Mo1720 | One narrow street | RUE QUINCAMPOIX sign (whoosh-soft) |
-| 3:45 | Mo1720 | is packed, day and | PACKED (ui-click-soft); Day Clock: DAY highlight (ui-click-soft) |
-| 3:46 | Mo1720 | night. | Day Clock: NIGHT highlight (ui-click-soft) |
+| 3:45 | Mo1720 | is packed, day and night. | PACKED (ui-click-soft); Day Clock: DAY highlight (ui-click-soft); Day Clock: NIGHT highlight (ui-click-soft) |
+| 3:46 | Mo1720 |  |  |
 | 3:47 | Mo1720 | People are buying | a Mississippi share (page-flip) |
-| 3:48 | Mo1720 | shares in Law's |  |
-| 3:49 | Mo1720 | Mississippi Company. | MISSISSIPPI COMPANY · ONE SHARE (ui-click-soft) |
+| 3:48 | Mo1720 | shares in Law's Mississippi | MISSISSIPPI COMPANY · ONE SHARE (ui-click-soft) |
+| 3:49 | Mo1720 | Company. |  |
 | 3:50 | Mo1720 |  |  |
-| 3:51 | Mo1720 | In about a year and a | (riser as the line climbs) (riser-soft) |
-| 3:52 | Mo1720 | half, the price | chart source line (ui-click-soft) |
-| 3:53 | Mo1720 | has gone up about |  |
-| 3:54 | Mo1720 | forty times. | ×40 lands; JAN 1720 · 10,000 (impact-soft); ABOUT 40 TIMES (ui-click-soft) |
-| 3:55 | Mo1720 | The |  |
-| 3:56 | Mo1720 | story goes that a hunchback | THE STORY GOES… (ui-click-soft); a man bent over (ui-click-soft) |
-| 3:57 | Mo1720 | rents out his |  |
-| 3:58 | Mo1720 | back, as |  |
-| 3:59 | Mo1720 | a writing desk. | someone writes on his back (pencil-scribble) |
-| 4:00 | Mo1720 | So what is money | market out; the big ? (whoosh-soft) |
-| 4:01 | Mo1720 | now? A | the ? pulses (ui-click-soft) |
-| 4:02 | Mo1720 | belief. It's | A belief. + HOW WE SAW IT · A BELIEF chip (chime-reward) |
+| 3:51 | Mo1720 | In about a year and a half, | (riser as the line climbs) (riser-soft) |
+| 3:52 | Mo1720 | the price has | chart source line (ui-click-soft) |
+| 3:53 | Mo1720 | gone up about | ×40 lands; JAN 1720 · 10,000 (impact-soft) |
+| 3:54 | Mo1720 | forty times. | ABOUT 40 TIMES (ui-click-soft) |
+| 3:55 | Mo1720 | The story | THE STORY GOES… (ui-click-soft) |
+| 3:56 | Mo1720 | goes that a hunchback | a man bent over (ui-click-soft) |
+| 3:57 | Mo1720 | rents out his back, |  |
+| 3:58 | Mo1720 | as a writing |  |
+| 3:59 | Mo1720 | desk. | someone writes on his back (pencil-scribble) |
+| 4:00 | Mo1720 | So what is money now? | market out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
+| 4:01 | Mo1720 | A belief. | A belief. + HOW WE SAW IT · A BELIEF chip (chime-reward) |
+| 4:02 | Mo1720 | It's |  |
 | 4:03 | Mo1720 | worth whatever everyone | WORTH WHAT (ui-click-soft) |
-| 4:04 | Mo1720 | believes it's | EVERYONE BELIEVES (ui-click-soft); the chip docks into the ladder (whoosh-soft) |
-| 4:05 | Mo1720 | worth. Until |  |
+| 4:04 | Mo1720 | believes it's worth. | EVERYONE BELIEVES (ui-click-soft); the chip docks into the ladder (whoosh-soft) |
+| 4:05 | Mo1720 | Until |  |
 | 4:06 | Mo1720 | they don't. | UNTIL THEY DON'T. — the note cracks (trap-snap) |
-| 4:07 | Mo1720 | By December, the | DECEMBER 1720: (ui-click-soft) |
-| 4:08 | Mo1720 | shares have crashed. | SHARES CRASH (the line falls) (impact-deep-soft) |
-| 4:09 | Mo1720 | The notes are |  |
-| 4:10 | Mo1720 | losing value. | the note greys out · NOTES LOSE VALUE (whoosh-reverse) |
-| 4:11 | Mo1720 | And Law escapes | Law runs off: LAW ESCAPES FRANCE → (whoosh-soft) |
-| 4:12 | Mo1720 | France. For | cliffhanger: FOR THE NEXT HUNDRED YEARS…; ladder fades (piano-a-min) |
+| 4:07 | Mo1720 | By December, the shares | DECEMBER 1720: (ui-click-soft) |
+| 4:08 | Mo1720 | have crashed. | SHARES CRASH (the line falls) (impact-deep-soft) |
+| 4:09 | Mo1720 | The notes are losing |  |
+| 4:10 | Mo1720 | value. | the note greys out · NOTES LOSE VALUE (whoosh-reverse) |
+| 4:11 | Mo1720 | And Law escapes France. | Law runs off: LAW ESCAPES FRANCE → (whoosh-soft) |
+| 4:12 | Mo1720 | For | cliffhanger: FOR THE NEXT HUNDRED YEARS…; ladder fades (piano-a-min) |
 | 4:13 | Mo1720 | the next hundred years, |  |
 | 4:14 | Mo1720 | people want | band: People want money (ui-click-soft) |
-| 4:15 | Mo1720 | money they don't just |  |
-| 4:16 | Mo1720 | have to believe in. | band: they don't just have to believe in. (ui-click-soft) |
-| 4:17 | Mo1720 |  |  |
-| 4:18 | Mo1720 | Something they can bite. | a gold coin appears (pop-reveal); a gold coin with a bite mark (trap-snap) |
+| 4:15 | Mo1720 | money they don't just have |  |
+| 4:16 | Mo1720 | to believe in. | band: they don't just have to believe in. (ui-click-soft) |
+| 4:17 | Mo1720 |  | a gold coin appears (pop-reveal) |
+| 4:18 | Mo1720 | Something they can bite. | a gold coin with a bite mark (trap-snap) |
 | 4:19 | Mo1720 |  |  |
-| 4:20 | Mo1720 | And in London, they | London skyline (whoosh-soft) |
-| 4:21 | Mo1720 | get it. | LONDON label · band: they get it. (ui-click-soft); era exit pull-in (whoosh-reverse) |
+| 4:20 | Mo1720 | And in London, they get | London skyline (whoosh-soft); LONDON label · band: they get it. (ui-click-soft) |
+| 4:21 | Mo1720 | it. | era exit pull-in (whoosh-reverse) |
 | 4:22 | Mo1720 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
 | 4:23 | Mo1821 | You wake up in eighteen | gold underline under 1821 (whoosh-soft) |
 | 4:24 | Mo1821 | twenty one, |  |
 | 4:25 | Mo1821 | in London. | place line: London (pop-reveal) |
 | 4:26 | Mo1821 | Coal smoke, | header docks; coal smoke drifts (wind-soft) |
 | 4:27 | Mo1821 | wet cobbles, | wet cobbles (ui-click-soft) |
-| 4:28 | Mo1821 | and a |  |
-| 4:29 | Mo1821 | queue outside the Bank | the queue forms (1/4) (ui-click-soft); the queue forms (2/4) (ui-click-soft); the queue forms (3/4) (ui-click-soft); the queue forms (4/4) (ui-click-soft); THE BANK OF ENGLAND (ui-click-soft) |
-| 4:30 | Mo1821 | of England. | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 4:31 | Mo1821 | Did you know that Bank | (chime after "that") (chime-magic) |
-| 4:32 | Mo1821 | of England notes still | card: notes (ui-click-soft) |
+| 4:28 | Mo1821 | and a queue | the queue forms (1/4) (ui-click-soft) |
+| 4:29 | Mo1821 | outside the Bank of | the queue forms (2/4) (ui-click-soft); the queue forms (3/4) (ui-click-soft); the queue forms (4/4) (ui-click-soft); THE BANK OF ENGLAND (ui-click-soft) |
+| 4:30 | Mo1821 | England. Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 4:31 | Mo1821 | you know that Bank of | (chime after "that") (chime-magic) |
+| 4:32 | Mo1821 | England notes still | card: notes (ui-click-soft) |
 | 4:33 | Mo1821 | say, I promise | card: the printed promise (page-flip) |
 | 4:34 | Mo1821 | to pay the bearer | card: the bearer (ui-click-soft) |
 | 4:35 | Mo1821 | on demand? | card: on demand (ui-click-soft) |
 | 4:36 | Mo1821 | Back | card: Back then: (ui-click-soft) |
 | 4:37 | Mo1821 | then, that promise meant |  |
-| 4:38 | Mo1821 | gold. | card: gold. (chime-magic) |
-| 4:39 | Mo1821 | A five pound note | card: £5 note (ui-click-soft) |
+| 4:38 | Mo1821 | gold. A | card: gold. (chime-magic) |
+| 4:39 | Mo1821 | five pound note | card: £5 note (ui-click-soft) |
 | 4:40 | Mo1821 | could be swapped for |  |
 | 4:41 | Mo1821 | five gold coins. | card: five sovereigns (1/5) (ui-click-soft); card: five sovereigns (2/5) (ui-click-soft); card: five sovereigns (3/5) (ui-click-soft); card: five sovereigns (4/5) (ui-click-soft); card: five sovereigns (5/5) (ui-click-soft) |
 | 4:42 | Mo1821 | Sovereigns. | card: SOVEREIGNS (ui-click-soft) |
@@ -334,191 +334,191 @@ Total 620.8 s · 564 cues · gaps ≥ 2.0 s between visual events while narratin
 | 4:47 | Mo1821 | paying out gold. |  |
 | 4:48 | Mo1821 | Paper | PAPER TOOK OVER (page-flip) |
 | 4:49 | Mo1821 | took over. |  |
-| 4:50 | Mo1821 | So did | a fake note ✗ · COUNTERFEITERS (trap-snap) |
-| 4:51 | Mo1821 | counterfeiters, and |  |
-| 4:52 | Mo1821 | many of them were hanged. | MANY WERE HANGED (stamp-hit) |
-| 4:53 | Mo1821 | Now the Bank | 1821 (ui-click-soft) |
-| 4:54 | Mo1821 | is paying gold again. | · GOLD AGAIN (chime-reward) |
+| 4:50 | Mo1821 | So did counterfeiters, | a fake note ✗ · COUNTERFEITERS (trap-snap) |
+| 4:51 | Mo1821 | and many |  |
+| 4:52 | Mo1821 | of them were hanged. | MANY WERE HANGED (stamp-hit) |
+| 4:53 | Mo1821 | Now the Bank is | 1821 (ui-click-soft) |
+| 4:54 | Mo1821 | paying gold again. | · GOLD AGAIN (chime-reward) |
 | 4:55 | Mo1821 | Paper |  |
-| 4:56 | Mo1821 | you can turn into | the note turns into a coin (sparkle-soft) |
-| 4:57 | Mo1821 | metal, any day you | METAL (ui-click-soft) |
-| 4:58 | Mo1821 | like. So | restriction out; the big ? (whoosh-soft) |
+| 4:56 | Mo1821 | you can turn into metal, | the note turns into a coin (sparkle-soft); METAL (ui-click-soft) |
+| 4:57 | Mo1821 | any day you like. |  |
+| 4:58 | Mo1821 | So | restriction out; the big ? (whoosh-soft) |
 | 4:59 | Mo1821 | what is money now? | the ? pulses (ui-click-soft) |
-| 5:00 | Mo1821 | As | As good as (ui-click-soft) |
-| 5:01 | Mo1821 | good as gold. | gold. (gradient) + HOW WE SAW IT · AS GOOD AS GOLD chip (chime-reward) |
-| 5:02 | Mo1821 | A promise you can swap | note ⇄ coin (ui-click-soft) |
-| 5:03 | Mo1821 | for metal. |  |
-| 5:04 | Mo1821 | Over the next century, | the chip docks into the ladder (whoosh-soft); OVER THE NEXT CENTURY (ui-click-soft) |
+| 5:00 | Mo1821 | As good | As good as (ui-click-soft) |
+| 5:01 | Mo1821 | as gold. A | gold. (gradient) + HOW WE SAW IT · AS GOOD AS GOLD chip (chime-reward) |
+| 5:02 | Mo1821 | promise you can swap | note ⇄ coin (ui-click-soft) |
+| 5:03 | Mo1821 | for metal. | the chip docks into the ladder (whoosh-soft) |
+| 5:04 | Mo1821 | Over the next century, | OVER THE NEXT CENTURY (ui-click-soft) |
 | 5:05 | Mo1821 | much of the world | BRITAIN goes gold (pop-reveal) |
 | 5:06 | Mo1821 | follows Britain onto |  |
 | 5:07 | Mo1821 | gold. | the other countries go gold (1/5) (ui-click-soft); the other countries go gold (2/5) (ui-click-soft); the other countries go gold (3/5) (ui-click-soft); the other countries go gold (4/5) (ui-click-soft); the other countries go gold (5/5) (ui-click-soft) |
 | 5:08 | Mo1821 | Gold becomes the anchor. | an anchor · GOLD = THE ANCHOR (knock-solid) |
-| 5:09 | Mo1821 | And |  |
-| 5:10 | Mo1821 | anchors feel safe. | · FEELS SAFE (ui-click-soft) |
-| 5:11 | Mo1821 |  |  |
-| 5:12 | Mo1821 | But in nineteen seventy | cliffhanger: the anchor on its rope; ladder fades (piano-a-min); band: But in 1971, (ui-click-soft) |
-| 5:13 | Mo1821 | one, one |  |
-| 5:14 | Mo1821 | television speech cuts | a TV switches on (ui-toggle-on) |
+| 5:09 | Mo1821 | And anchors |  |
+| 5:10 | Mo1821 | feel safe. | · FEELS SAFE (ui-click-soft) |
+| 5:11 | Mo1821 | But | cliffhanger: the anchor on its rope; ladder fades (piano-a-min) |
+| 5:12 | Mo1821 | in nineteen seventy | band: But in 1971, (ui-click-soft) |
+| 5:13 | Mo1821 | one, one television | a TV switches on (ui-toggle-on) |
+| 5:14 | Mo1821 | speech cuts |  |
 | 5:15 | Mo1821 | the rope. | the rope snaps; the anchor falls (trap-snap); era exit pull-in (whoosh-reverse) |
 | 5:16 | Mo1821 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 5:17 | Mo1971 | You wake |  |
-| 5:18 | Mo1971 | up in nineteen seventy | gold underline under 1971 (whoosh-soft) |
+| 5:17 | Mo1971 | You wake up |  |
+| 5:18 | Mo1971 | in nineteen seventy | gold underline under 1971 (whoosh-soft) |
 | 5:19 | Mo1971 | one, in a suburb | place line: a suburb of Pittsburgh (pop-reveal) |
 | 5:20 | Mo1971 | of Pittsburgh. |  |
 | 5:21 | Mo1971 |  | the header docks (whoosh-soft) |
-| 5:22 | Mo1971 | It's a Sunday | header docks; calendar SUNDAY 15 (page-flip) |
-| 5:23 | Mo1971 | evening in August, and the | AUG 1971 (ui-click-soft) |
-| 5:24 | Mo1971 | whole family's in front of | the family sits down (1/4) (ui-click-soft); the family sits down (2/4) (ui-click-soft); the family sits down (3/4) (ui-click-soft); the family sits down (4/4) (ui-click-soft) |
-| 5:25 | Mo1971 | the TV. | the TV glows (ui-toggle-on) |
-| 5:26 | Mo1971 | Did you know that | DID YOU KNOW THAT… card switches on (ui-toggle-on); (chime after "that") (chime-magic) |
-| 5:27 | Mo1971 | in nineteen seventy one, | card: in 1971, (ui-click-soft) |
+| 5:22 | Mo1971 | It's a Sunday evening | header docks; calendar SUNDAY 15 (page-flip) |
+| 5:23 | Mo1971 | in August, and the whole | AUG 1971 (ui-click-soft) |
+| 5:24 | Mo1971 | family's in front of the | the family sits down (1/4) (ui-click-soft); the family sits down (2/4) (ui-click-soft); the family sits down (3/4) (ui-click-soft); the family sits down (4/4) (ui-click-soft) |
+| 5:25 | Mo1971 | TV. | the TV glows (ui-toggle-on); DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 5:26 | Mo1971 | Did you know that in | (chime after "that") (chime-magic) |
+| 5:27 | Mo1971 | nineteen seventy one, | card: in 1971, (ui-click-soft) |
 | 5:28 | Mo1971 | it was illegal | card: it was illegal (pop-reveal) |
 | 5:29 | Mo1971 | for most Americans |  |
-| 5:30 | Mo1971 | to own gold | card: gold coins (ui-click-soft) |
-| 5:31 | Mo1971 | coins or bars? | card: or bars + a bar (ui-click-soft) |
+| 5:30 | Mo1971 | to own gold coins | card: gold coins (ui-click-soft) |
+| 5:31 | Mo1971 | or bars? | card: or bars + a bar (ui-click-soft) |
 | 5:32 | Mo1971 |  |  |
-| 5:33 | Mo1971 | It had been since | card: SINCE (ui-click-soft) |
-| 5:34 | Mo1971 | nineteen thirty three. | card: SINCE 1933 (stamp-hit) |
+| 5:33 | Mo1971 | It had been since nineteen | card: SINCE (ui-click-soft) |
+| 5:34 | Mo1971 | thirty three. | card: SINCE 1933 (stamp-hit) |
 | 5:35 | Mo1971 | Gold was | card out; a gold bar (whoosh-soft) |
 | 5:36 | Mo1971 | for governments. | GOLD WAS FOR GOVERNMENTS (ui-click-soft) |
 | 5:37 | Mo1971 | Since nineteen |  |
 | 5:38 | Mo1971 | forty four, they could | SINCE 1944 (ui-click-soft) |
-| 5:39 | Mo1971 | swap dollars for | · SWAP DOLLARS FOR GOLD · (ui-click-soft) |
-| 5:40 | Mo1971 | American gold, |  |
+| 5:39 | Mo1971 | swap dollars for American | · SWAP DOLLARS FOR GOLD · (ui-click-soft) |
+| 5:40 | Mo1971 | gold, |  |
 | 5:41 | Mo1971 | at thirty five dollars | $35 (pop-reveal) |
 | 5:42 | Mo1971 | an ounce. | = 1 OZ (ui-click-soft) |
-| 5:43 | Mo1971 | The dollar was |  |
-| 5:44 | Mo1971 | tied to gold, and | GOLD — THE DOLLAR (ui-click-soft) |
-| 5:45 | Mo1971 | most other money was |  |
-| 5:46 | Mo1971 | tied to the dollar. | other currencies link to the dollar (1/5) (ui-click-soft); other currencies link to the dollar (2/5) (ui-click-soft); other currencies link to the dollar (3/5) (ui-click-soft); other currencies link to the dollar (4/5) (ui-click-soft); other currencies link to the dollar (5/5) (ui-click-soft) |
-| 5:47 | Mo1971 | That evening, | a TV switches on (ui-toggle-on) |
-| 5:48 | Mo1971 | President Nixon comes | PRESIDENT NIXON · 15 AUG 1971 (ui-click-soft) |
-| 5:49 | Mo1971 | on. From |  |
-| 5:50 | Mo1971 | now on, foreign governments | FOREIGN GOVERNMENTS (ui-click-soft) |
-| 5:51 | Mo1971 | can't swap their | the dollar–gold link breaks ✗ (trap-snap) |
-| 5:52 | Mo1971 | dollars for gold. |  |
+| 5:43 | Mo1971 | The dollar was tied | GOLD — THE DOLLAR (ui-click-soft) |
+| 5:44 | Mo1971 | to gold, and |  |
+| 5:45 | Mo1971 | most other money was tied | other currencies link to the dollar (1/5) (ui-click-soft) |
+| 5:46 | Mo1971 | to the dollar. | other currencies link to the dollar (2/5) (ui-click-soft); other currencies link to the dollar (3/5) (ui-click-soft); other currencies link to the dollar (4/5) (ui-click-soft); other currencies link to the dollar (5/5) (ui-click-soft) |
+| 5:47 | Mo1971 | That evening, President | a TV switches on (ui-toggle-on) |
+| 5:48 | Mo1971 | Nixon comes | PRESIDENT NIXON · 15 AUG 1971 (ui-click-soft) |
+| 5:49 | Mo1971 | on. From now |  |
+| 5:50 | Mo1971 | on, foreign governments | FOREIGN GOVERNMENTS (ui-click-soft) |
+| 5:51 | Mo1971 | can't swap their dollars | the dollar–gold link breaks ✗ (trap-snap) |
+| 5:52 | Mo1971 | for gold. |  |
 | 5:53 | Mo1971 | Within a few years, | WITHIN A FEW YEARS (ui-click-soft) |
 | 5:54 | Mo1971 | the whole system's gone. | the currencies drift loose (whoosh-reverse) |
-| 5:55 | Mo1971 | So what | system out; the big ? (whoosh-soft) |
-| 5:56 | Mo1971 | is money now? | the ? pulses (ui-click-soft) |
+| 5:55 | Mo1971 | So what is | system out; the big ? (whoosh-soft) |
+| 5:56 | Mo1971 | money now? | the ? pulses (ui-click-soft) |
 | 5:57 | Mo1971 | A promise | A promise backed by (ui-click-soft) |
 | 5:58 | Mo1971 | backed by trust. | trust. (gradient) + HOW WE SAW IT · JUST TRUST chip (chime-reward) |
 | 5:59 | Mo1971 | Trust | TRUST IN (ui-click-soft) |
 | 6:00 | Mo1971 | in the people who run | people light up (1/3) (ui-click-soft); people light up (2/3) (ui-click-soft); people light up (3/3) (ui-click-soft) |
-| 6:01 | Mo1971 | it. And | the chip docks into the ladder (whoosh-soft) |
-| 6:02 | Mo1971 | a generation later, | cliffhanger: 1971 → 2007 counter; ladder fades (piano-a-min) |
-| 6:03 | Mo1971 | that trust takes a |  |
-| 6:04 | Mo1971 | new shape. | the note turns into a phone shape (whoosh-soft) |
+| 6:01 | Mo1971 | it. And a | the chip docks into the ladder (whoosh-soft) |
+| 6:02 | Mo1971 | generation later, | cliffhanger: 1971 → 2007 counter; ladder fades (piano-a-min) |
+| 6:03 | Mo1971 | that trust takes a new |  |
+| 6:04 | Mo1971 | shape. | the note turns into a phone shape (whoosh-soft) |
 | 6:05 | Mo1971 | Money doesn't need paper |  |
 | 6:06 | Mo1971 | at all. | the note ✗ (ui-click-soft) |
 | 6:07 | Mo1971 | In Kenya, | a phone · KENYA (pop-reveal) |
 | 6:08 | Mo1971 | it moves into a text | a text: You've received money ✓ (ui-send) |
-| 6:09 | Mo1971 | message. | reply: Thanks! (ui-click-soft) |
-| 6:10 | Mo1971 |  | era exit pull-in (whoosh-reverse) |
-| 6:11 | Mo1971 | You | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 6:12 | MoToday | wake up today, | gold underline under Today (whoosh-soft) |
+| 6:09 | Mo1971 | message. | reply: Thanks! (ui-click-soft); era exit pull-in (whoosh-reverse) |
+| 6:10 | Mo1971 |  | era cut: YOU WAKE UP IN · year (whoosh-wind) |
+| 6:11 | MoToday | You wake | year slams in (impact-soft) |
+| 6:12 | MoToday | up today, | gold underline under Today (whoosh-soft) |
 | 6:13 | MoToday | in Nairobi. | place line: Nairobi (pop-reveal) |
 | 6:14 | MoToday | Matatus | header docks; matatus roll past (whoosh-wind) |
 | 6:15 | MoToday | honk on the road outside, | HONK (ui-click-soft) |
 | 6:16 | MoToday | and your phone buzzes. | the phone buzzes (ui-toggle-on) |
 | 6:17 | MoToday | Your sister | text: Sister: sent you money (ui-send) |
-| 6:18 | MoToday | just sent you |  |
-| 6:19 | MoToday | money, from a village | a line from a far village (whoosh-soft) |
+| 6:18 | MoToday | just sent you money, |  |
+| 6:19 | MoToday | from a village | a line from a far village (whoosh-soft) |
 | 6:20 | MoToday | far upcountry. | FAR UPCOUNTRY (ui-click-soft) |
 | 6:21 | MoToday | It took seconds. | ⏱ SECONDS · Got it ✓ (chime-reward) |
-| 6:22 | MoToday |  | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 6:23 | MoToday | Did you know that about | (chime after "that") (chime-magic) |
-| 6:24 | MoToday | eight in ten adults in | card: about 8 in 10 (ui-click-soft); card: figures light (1/3) (ui-click-soft); card: figures light (2/3) (ui-click-soft); card: figures light (3/3) (ui-click-soft) |
-| 6:25 | MoToday | Kenya now use mobile | card: now use mobile money. (ui-click-soft) |
+| 6:22 | MoToday | Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 6:23 | MoToday | you know that about eight | (chime after "that") (chime-magic); card: about 8 in 10 (ui-click-soft) |
+| 6:24 | MoToday | in ten adults in Kenya | card: figures light (1/3) (ui-click-soft); card: figures light (2/3) (ui-click-soft); card: figures light (3/3) (ui-click-soft) |
+| 6:25 | MoToday | now use mobile | card: now use mobile money. (ui-click-soft) |
 | 6:26 | MoToday | money? |  |
 | 6:27 | MoToday | In two thousand | card: the figures dim for 2009 (ui-click-soft) |
-| 6:28 | MoToday | and nine, it was | card: 2009 (ui-click-soft) |
-| 6:29 | MoToday | under three in ten. | card: 27.9 % · UNDER 3 IN 10 (pop-reveal) |
-| 6:30 | MoToday |  | card out; M-PESA (whoosh-soft) |
-| 6:31 | MoToday | M-Pesa launched here |  |
+| 6:28 | MoToday | and nine, it was under | card: 2009 (ui-click-soft) |
+| 6:29 | MoToday | three in ten. | card: 27.9 % · UNDER 3 IN 10 (pop-reveal) |
+| 6:30 | MoToday | M-Pesa | card out; M-PESA (whoosh-soft) |
+| 6:31 | MoToday | launched here |  |
 | 6:32 | MoToday | in two thousand and seven. | · 2007 (ui-click-soft) |
-| 6:33 | MoToday |  |  |
-| 6:34 | MoToday | You hand cash | a banknote (ui-click-soft) |
-| 6:35 | MoToday | to a shopkeeper, | a shop agent (ui-click-soft) |
-| 6:36 | MoToday | and it turns into |  |
-| 6:37 | MoToday | numbers on your phone. | the cash becomes numbers on the phone (sparkle-soft) |
+| 6:33 | MoToday | You |  |
+| 6:34 | MoToday | hand cash to | a banknote (ui-click-soft) |
+| 6:35 | MoToday | a shopkeeper, | a shop agent (ui-click-soft) |
+| 6:36 | MoToday | and it turns into | the cash becomes numbers on the phone (sparkle-soft) |
+| 6:37 | MoToday | numbers on your phone. |  |
 | 6:38 | MoToday |  |  |
 | 6:39 | MoToday | School fees and taxi | Day Clock: SCHOOL FEES · BY TEXT (ui-click-soft); Day Clock: TAXI RIDE · BY TEXT (ui-click-soft) |
-| 6:40 | MoToday | rides get paid |  |
-| 6:41 | MoToday | with a text. | PAID WITH A TEXT (ui-send) |
-| 6:42 | MoToday | And it isn't just | IT ISN'T JUST KENYA (whoosh-soft) |
-| 6:43 | MoToday | Kenya. Across | THE EURO AREA (ui-click-soft) |
+| 6:40 | MoToday | rides get paid with |  |
+| 6:41 | MoToday | a text. | PAID WITH A TEXT (ui-send) |
+| 6:42 | MoToday | And it isn't just Kenya. | IT ISN'T JUST KENYA (whoosh-soft) |
+| 6:43 | MoToday | Across | THE EURO AREA (ui-click-soft) |
 | 6:44 | MoToday | the euro |  |
 | 6:45 | MoToday | area, cash paid | cash icons (ui-click-soft) |
 | 6:46 | MoToday | for about eight in | the 2016 bar grows · ABOUT 8 IN 10 (pop-reveal) |
 | 6:47 | MoToday | ten shop purchases |  |
 | 6:48 | MoToday | in twenty sixteen. | 79 % (ui-click-soft) |
 | 6:49 | MoToday |  |  |
-| 6:50 | MoToday | By twenty twenty | the 2024 bar · 52 % (pop-reveal) |
-| 6:51 | MoToday | four, it was about |  |
-| 6:52 | MoToday | half. So | ABOUT HALF (ui-click-soft); chart out; the big ? (whoosh-soft) |
-| 6:53 | MoToday | what is money to you? | the ? pulses (ui-click-soft) |
+| 6:50 | MoToday | By twenty twenty four, | the 2024 bar · 52 % (pop-reveal) |
+| 6:51 | MoToday | it was about half. | ABOUT HALF (ui-click-soft) |
+| 6:52 | MoToday | So what | chart out; the big ? (whoosh-soft) |
+| 6:53 | MoToday | is money to you? | the ? pulses (ui-click-soft) |
 | 6:54 | MoToday | Numbers | Numbers on a + digits on a phone (ui-click-soft) |
 | 6:55 | MoToday | on a screen. | screen. (gradient) + HOW WE SAW IT · NUMBERS ON A SCREEN chip (chime-reward) |
 | 6:56 | MoToday | You almost |  |
 | 6:57 | MoToday | never touch it. | a hand ✗ · YOU ALMOST NEVER TOUCH IT (ui-click-soft) |
 | 6:58 | MoToday | So | the chip docks into the ladder (whoosh-soft); cliffhanger: THE QUESTION YOU CAME FOR + ?; ladder fades (piano-a-min) |
-| 6:59 | MoToday | here's the question you | THE QUESTION YOU CAME FOR + a big ? (ui-click-soft) |
-| 7:00 | MoToday | came for. |  |
-| 7:01 | MoToday | If it isn't | note ✗ (stamp-hit) |
-| 7:02 | MoToday | paper, and |  |
-| 7:03 | MoToday | it isn't gold, | (riser into MONEY = ?) (riser-soft); coin ✗ (stamp-hit) |
+| 6:59 | MoToday | here's the question you came | THE QUESTION YOU CAME FOR + a big ? (ui-click-soft) |
+| 7:00 | MoToday | for. |  |
+| 7:01 | MoToday | If it isn't paper, | note ✗ (stamp-hit) |
+| 7:02 | MoToday | and it |  |
+| 7:03 | MoToday | isn't gold, | (riser into MONEY = ?) (riser-soft); coin ✗ (stamp-hit) |
 | 7:04 | MoToday | what is money, | MONEY = ? (impact-soft) |
 | 7:05 | MoToday | actually? |  |
 | 7:06 | MoToday |  | cut to THE ANSWER (whoosh-reverse) |
 | 7:07 | MoReveal | Here's the answer. | THE ANSWER pulses (impact-deep-soft) |
 | 7:08 | MoReveal | The Bank | THE BANK OF ENGLAND (ui-click-soft) |
-| 7:09 | MoReveal | of England puts |  |
-| 7:10 | MoReveal | it plainly. | PUTS IT PLAINLY (ui-click-soft) |
-| 7:11 | MoReveal | Money today is | (riser into I·O·U) (riser-soft); MONEY TODAY IS A TYPE OF… (ui-click-soft) |
-| 7:12 | MoReveal | a type of I-O-U. | I·O·U lands (impact-soft) |
+| 7:09 | MoReveal | of England puts it |  |
+| 7:10 | MoReveal | plainly. | PUTS IT PLAINLY (ui-click-soft) |
+| 7:11 | MoReveal | Money today is a | (riser into I·O·U) (riser-soft); MONEY TODAY IS A TYPE OF… (ui-click-soft) |
+| 7:12 | MoReveal | type of I-O-U. | I·O·U lands (impact-soft) |
 | 7:13 | MoReveal | A | = a promise to pay (gradient) (chime-magic) |
 | 7:14 | MoReveal | special one, because | A SPECIAL ONE (ui-click-soft) |
-| 7:15 | MoReveal | everyone | six people appear in a ring (1/6) (ui-click-soft); six people appear in a ring (2/6) (ui-click-soft); six people appear in a ring (3/6) (ui-click-soft); six people appear in a ring (4/6) (ui-click-soft); six people appear in a ring (5/6) (ui-click-soft) |
-| 7:16 | MoReveal | trusts that other people | six people appear in a ring (6/6) (ui-click-soft) |
-| 7:17 | MoReveal | will accept it. | the note passes round · WILL ACCEPT IT (ui-send) |
-| 7:18 | MoReveal | And most of it is | card out; MOST OF IT (whoosh-soft) |
-| 7:19 | MoReveal | made by ordinary banks. | · MADE BY ORDINARY BANKS (ui-click-soft) |
-| 7:20 | MoReveal | When |  |
-| 7:21 | MoReveal | a bank gives you a loan, | a loan form ✓ APPROVED (page-flip) |
-| 7:22 | MoReveal | it doesn't hand you | a savings jar (ui-click-soft) |
-| 7:23 | MoReveal | someone else's savings. | the jar is crossed out (trap-snap) |
+| 7:15 | MoReveal | everyone trusts | six people appear in a ring (1/6) (ui-click-soft); six people appear in a ring (2/6) (ui-click-soft); six people appear in a ring (3/6) (ui-click-soft); six people appear in a ring (4/6) (ui-click-soft); six people appear in a ring (5/6) (ui-click-soft); six people appear in a ring (6/6) (ui-click-soft) |
+| 7:16 | MoReveal | that other people will |  |
+| 7:17 | MoReveal | accept it. | the note passes round · WILL ACCEPT IT (ui-send) |
+| 7:18 | MoReveal | And most of it is made | card out; MOST OF IT (whoosh-soft) |
+| 7:19 | MoReveal | by ordinary banks. | · MADE BY ORDINARY BANKS (ui-click-soft) |
+| 7:20 | MoReveal | When a |  |
+| 7:21 | MoReveal | bank gives you a loan, | a loan form ✓ APPROVED (page-flip) |
+| 7:22 | MoReveal | it doesn't hand you someone | a savings jar (ui-click-soft) |
+| 7:23 | MoReveal | else's savings. | the jar is crossed out (trap-snap) |
 | 7:24 | MoReveal |  |  |
-| 7:25 | MoReveal | It types a new | YOUR ACCOUNT: + NEW DEPOSIT types itself (keys-typing-soft) |
-| 7:26 | MoReveal | deposit into your account. | YOUR ACCOUNT (ui-click-soft) |
+| 7:25 | MoReveal | It types a new deposit | YOUR ACCOUNT: + NEW DEPOSIT types itself (keys-typing-soft) |
+| 7:26 | MoReveal | into your account. | YOUR ACCOUNT (ui-click-soft) |
 | 7:27 | MoReveal | Within |  |
-| 7:28 | MoReveal | limits, | WITHIN LIMITS (ui-click-soft) |
-| 7:29 | MoReveal | a loan creates new | + new money (chime-reward) |
-| 7:30 | MoReveal | money. And | YOUR GUESS (whoosh-soft) |
+| 7:28 | MoReveal | limits, a | WITHIN LIMITS (ui-click-soft) |
+| 7:29 | MoReveal | loan creates new money. | + new money (chime-reward) |
+| 7:30 | MoReveal | And | YOUR GUESS (whoosh-soft) |
 | 7:31 | MoReveal | your guess? | 100 coins (ui-click-soft) |
-| 7:32 | MoReveal | When the Bank of |  |
-| 7:33 | MoReveal | England checked, | WHEN THE BANK OF ENGLAND CHECKED (2014) (ui-click-soft) |
-| 7:34 | MoReveal | about ninety seven | 97 coins dissolve into digits · ~97 £ (sparkle-soft) |
+| 7:32 | MoReveal | When the Bank of England |  |
+| 7:33 | MoReveal | checked, about | WHEN THE BANK OF ENGLAND CHECKED (2014) (ui-click-soft) |
+| 7:34 | MoReveal | ninety seven | 97 coins dissolve into digits · ~97 £ (sparkle-soft) |
 | 7:35 | MoReveal | out of every hundred |  |
-| 7:36 | MoReveal | pounds were bank |  |
-| 7:37 | MoReveal | deposits. | BANK DEPOSITS (ui-click-soft) |
-| 7:38 | MoReveal | Only about three were | the last 3 coins glow · ~3 £ (chime-reward) |
+| 7:36 | MoReveal | pounds were bank deposits. | BANK DEPOSITS (ui-click-soft) |
+| 7:37 | MoReveal | Only |  |
+| 7:38 | MoReveal | about three were | the last 3 coins glow · ~3 £ (chime-reward) |
 | 7:39 | MoReveal | notes and coins. | NOTES & COINS (ui-click-soft) |
-| 7:40 | MoReveal | How close were | How close were you? (ui-click-soft) |
-| 7:41 | MoReveal | you? |  |
-| 7:42 | MoReveal | Now climb the ladder | six rungs appear dim; NOW CLIMB IT AGAIN (whoosh-soft) |
-| 7:43 | MoReveal | again, with |  |
-| 7:44 | MoReveal | me. | ↑ (ui-click-soft) |
-| 7:45 | MoReveal | In fifteen hundred, | rung lights gold as its line starts ("fifteen" 1) (ui-click-soft) |
+| 7:40 | MoReveal | How close were you? | How close were you? (ui-click-soft) |
+| 7:41 | MoReveal | Now |  |
+| 7:42 | MoReveal | climb the ladder again, | six rungs appear dim; NOW CLIMB IT AGAIN (whoosh-soft) |
+| 7:43 | MoReveal | with me. | ↑ (ui-click-soft) |
+| 7:44 | MoReveal | In |  |
+| 7:45 | MoReveal | fifteen hundred, | rung lights gold as its line starts ("fifteen" 1) (ui-click-soft) |
 | 7:46 | MoReveal | money was something useful. |  |
-| 7:47 | MoReveal | Then, | rung lights gold as its line starts ("Then" 1) (ui-click-soft) |
-| 7:48 | MoReveal | a promise on paper. |  |
-| 7:49 | MoReveal | Then, a | rung lights gold as its line starts ("Then" 2) (ui-click-soft) |
-| 7:50 | MoReveal | belief. Then, | rung lights gold as its line starts ("Then" 3) (ui-click-soft) |
-| 7:51 | MoReveal | as good as gold. |  |
+| 7:47 | MoReveal | Then, a promise | rung lights gold as its line starts ("Then" 1) (ui-click-soft) |
+| 7:48 | MoReveal | on paper. |  |
+| 7:49 | MoReveal | Then, a belief. | rung lights gold as its line starts ("Then" 2) (ui-click-soft) |
+| 7:50 | MoReveal | Then, as | rung lights gold as its line starts ("Then" 3) (ui-click-soft) |
+| 7:51 | MoReveal | good as gold. |  |
 | 7:52 | MoReveal | Then, trust, and nothing | rung lights gold as its line starts ("Then" 4) (ui-click-soft) |
-| 7:53 | MoReveal | else. |  |
-| 7:54 | MoReveal | Today, numbers on a screen. | rung lights gold as its line starts ("Today" 2) (ui-click-soft) |
+| 7:53 | MoReveal | else. Today, | rung lights gold as its line starts ("Today" 2) (ui-click-soft) |
+| 7:54 | MoReveal | numbers on a screen. |  |
 | 7:55 | MoReveal | Remember | Remember that word (ui-click-soft) |
 | 7:56 | MoReveal | that word from Stockholm? | (riser; the ladder glows) (riser-soft); from Stockholm? (ui-click-soft) |
 | 7:57 | MoReveal |  |  |
@@ -526,19 +526,19 @@ Total 620.8 s · 564 cues · gaps ≥ 2.0 s between visual events while narratin
 | 7:59 | MoReveal | It was there all along. | It was there all along. (warm-shimmer) |
 | 8:00 | MoReveal |  |  |
 | 8:01 | MoReveal |  | cut: the docked ladder (whoosh-soft) |
-| 8:02 | Mo2100 | So, what's the next |  |
-| 8:03 | Mo2100 | rung? | the dashed 2100 rung "?" (pop-reveal) |
-| 8:04 | Mo2100 | Twenty one hundred. | 2100 slams in (impact-soft) |
+| 8:02 | Mo2100 | So, what's the next | the dashed 2100 rung "?" (pop-reveal) |
+| 8:03 | Mo2100 | rung? | 2100 slams in (impact-soft) |
+| 8:04 | Mo2100 | Twenty one hundred. |  |
 | 8:05 | Mo2100 | That morning hasn't happened | header docks; PREDICTION · A SCENARIO, NOT A FACT (whoosh-soft) |
-| 8:06 | Mo2100 | yet. |  |
-| 8:07 | Mo2100 | But we can follow the |  |
-| 8:08 | Mo2100 | evidence. | THE EVIDENCE →; the ladder dims (ui-click-soft) |
-| 8:09 | Mo2100 | Cash is shrinking, | CASH bar (ui-click-soft); the cash bar shrinks (whoosh-reverse) |
+| 8:06 | Mo2100 | yet. But |  |
+| 8:07 | Mo2100 | we can follow the |  |
+| 8:08 | Mo2100 | evidence. Cash | THE EVIDENCE →; the ladder dims (ui-click-soft); CASH bar (ui-click-soft) |
+| 8:09 | Mo2100 | is shrinking, | the cash bar shrinks (whoosh-reverse) |
 | 8:10 | Mo2100 | and central |  |
 | 8:11 | Mo2100 | banks have noticed. | CENTRAL BANKS HAVE NOTICED (ui-click-soft) |
 | 8:12 | Mo2100 | In a survey | 93 dots (ui-click-soft) |
-| 8:13 | Mo2100 | published in |  |
-| 8:14 | Mo2100 | twenty twenty five, |  |
+| 8:13 | Mo2100 | published in twenty |  |
+| 8:14 | Mo2100 | twenty five, |  |
 | 8:15 | Mo2100 | more than nine | 85 of 93 light (sparkle-soft) |
 | 8:16 | Mo2100 | in ten of the central |  |
 | 8:17 | Mo2100 | banks asked were |  |
@@ -546,114 +546,114 @@ Total 620.8 s · 564 cues · gaps ≥ 2.0 s between visual events while narratin
 | 8:19 | Mo2100 | currency of their own. |  |
 | 8:20 | Mo2100 | In Europe, | EUROPE'S CENTRAL BANK (whoosh-soft) |
 | 8:21 | Mo2100 | the central |  |
-| 8:22 | Mo2100 | bank is getting ready | · GETTING READY (ui-click-soft) |
-| 8:23 | Mo2100 | for a possible digital |  |
+| 8:22 | Mo2100 | bank is getting ready for | · GETTING READY (ui-click-soft) |
+| 8:23 | Mo2100 | a possible digital |  |
 | 8:24 | Mo2100 | euro. | a digital € coin · A POSSIBLE DIGITAL EURO (pop-reveal) |
-| 8:25 | Mo2100 | The |  |
-| 8:26 | Mo2100 | first could come as early | calendar: AS EARLY AS (page-flip) |
+| 8:25 | Mo2100 | The first | calendar: AS EARLY AS (page-flip) |
+| 8:26 | Mo2100 | could come as early |  |
 | 8:27 | Mo2100 | as twenty twenty nine, | 2029? (ui-click-soft) |
 | 8:28 | Mo2100 | if lawmakers |  |
-| 8:29 | Mo2100 | agree. | IF LAWMAKERS AGREE (stamp-hit) |
-| 8:30 | Mo2100 | And the Bank for International | THE BANK FOR INTERNATIONAL SETTLEMENTS (whoosh-soft) |
+| 8:29 | Mo2100 | agree. And | IF LAWMAKERS AGREE (stamp-hit) |
+| 8:30 | Mo2100 | the Bank for International | THE BANK FOR INTERNATIONAL SETTLEMENTS (whoosh-soft) |
 | 8:31 | Mo2100 | Settlements, |  |
-| 8:32 | Mo2100 | the central |  |
-| 8:33 | Mo2100 | banks' own bank, | THE CENTRAL BANKS' OWN BANK (ui-click-soft) |
-| 8:34 | Mo2100 | has warned |  |
-| 8:35 | Mo2100 | that stablecoins, | a stablecoin token (pop-reveal) |
-| 8:36 | Mo2100 | crypto |  |
-| 8:37 | Mo2100 | tokens pegged to a currency, | CRYPTO TOKENS PEGGED TO A CURRENCY (ui-click-soft) |
-| 8:38 | Mo2100 |  |  |
-| 8:39 | Mo2100 | fail key tests | three tests go red ✗ (1/3) (ui-click-soft); three tests go red ✗ (2/3) (ui-click-soft); three tests go red ✗ (3/3) (ui-click-soft); FAIL KEY TESTS OF GOOD MONEY (ui-click-soft) |
-| 8:40 | Mo2100 | of good money. |  |
-| 8:41 | Mo2100 | It wants the |  |
-| 8:42 | Mo2100 | central bank's promise | the central bank's promise (ui-click-soft) |
+| 8:32 | Mo2100 | the central banks' |  |
+| 8:33 | Mo2100 | own bank, | THE CENTRAL BANKS' OWN BANK (ui-click-soft) |
+| 8:34 | Mo2100 | has warned that |  |
+| 8:35 | Mo2100 | stablecoins, | a stablecoin token (pop-reveal) |
+| 8:36 | Mo2100 | crypto tokens |  |
+| 8:37 | Mo2100 | pegged to a currency, | CRYPTO TOKENS PEGGED TO A CURRENCY (ui-click-soft) |
+| 8:38 | Mo2100 | fail | three tests go red ✗ (1/3) (ui-click-soft) |
+| 8:39 | Mo2100 | key tests of | three tests go red ✗ (2/3) (ui-click-soft); three tests go red ✗ (3/3) (ui-click-soft); FAIL KEY TESTS OF GOOD MONEY (ui-click-soft) |
+| 8:40 | Mo2100 | good money. |  |
+| 8:41 | Mo2100 | It wants the central |  |
+| 8:42 | Mo2100 | bank's promise | the central bank's promise (ui-click-soft) |
 | 8:43 | Mo2100 | to stay the anchor. | an anchor · = STAYS THE ANCHOR (knock-solid) |
 | 8:44 | Mo2100 | So here's | evidence out; the ladder brightens (whoosh-soft) |
 | 8:45 | Mo2100 | one scenario. | ONE SCENARIO (stamp-hit) |
 | 8:46 | Mo2100 | Not a fact. | NOT A FACT (stamp-hit) |
-| 8:47 | Mo2100 |  |  |
-| 8:48 | Mo2100 | By twenty one hundred, |  |
+| 8:47 | Mo2100 | By |  |
+| 8:48 | Mo2100 | twenty one hundred, |  |
 | 8:49 | Mo2100 | the note in your wallet | a note (ui-click-soft) |
 | 8:50 | Mo2100 | could be a museum | a museum case closes round it (warm-shimmer) |
 | 8:51 | Mo2100 | piece. |  |
 | 8:52 | Mo2100 | Money could be code. | MONEY COULD BE CODE (glitch-zap) |
-| 8:53 | Mo2100 | But | but still a (ui-click-soft) |
-| 8:54 | Mo2100 | it would still be a promise. | promise (gradient) (chime-reward) |
+| 8:53 | Mo2100 | But it | but still a (ui-click-soft) |
+| 8:54 | Mo2100 | would still be a promise. | promise (gradient) (chime-reward) |
 | 8:55 | Mo2100 | In |  |
 | 8:56 | Mo2100 | fifteen hundred, money | a cacao pod · 1500 · GREW ON TREES (pop-reveal); callback (whoosh-soft) |
 | 8:57 | Mo2100 | grew on trees. |  |
 | 8:58 | Mo2100 | In |  |
-| 8:59 | Mo2100 | twenty one hundred, | (riser into the code block) (riser-soft) |
-| 9:00 | Mo2100 | it might be written in code. | → and the code block (ui-click-soft); a code block; the 2100 rung fills A PROMISE IN CODE? (impact-deep-soft) |
+| 8:59 | Mo2100 | twenty one hundred, it | (riser into the code block) (riser-soft) |
+| 9:00 | Mo2100 | might be written in code. | → and the code block (ui-click-soft); a code block; the 2100 rung fills A PROMISE IN CODE? (impact-deep-soft) |
 | 9:01 | Mo2100 |  |  |
 | 9:02 | Mo2100 |  | cut to a clock (whoosh-soft) |
 | 9:03 | MoClose | You spend so much | notes stack up; So much (clock-tick-soft) |
 | 9:04 | MoClose | of your life earning | of your life (ui-click-soft); earning it. (ui-click-soft) |
 | 9:05 | MoClose | it. So | the stack dims (whoosh-soft) |
-| 9:06 | MoClose | tell me. | the question (pop-reveal) |
-| 9:07 | MoClose | Who would you trust | trust (ui-click-soft) |
-| 9:08 | MoClose | to keep that promise, | promise, (gradient) (ui-click-soft) |
-| 9:09 | MoClose | in twenty |  |
-| 9:10 | MoClose | one hundred? | "2100?" glows (piano-a-min) |
+| 9:06 | MoClose | tell me. Who | the question (pop-reveal) |
+| 9:07 | MoClose | would you trust to | trust (ui-click-soft) |
+| 9:08 | MoClose | keep that promise, | promise, (gradient) (ui-click-soft) |
+| 9:09 | MoClose | in twenty one |  |
+| 9:10 | MoClose | hundred? | "2100?" glows (piano-a-min) |
 | 9:11 | MoClose |  |  |
-| 9:12 | MoClose | This | cut to the outro (whoosh-wind); EPISODE (pop-reveal) |
-| 9:13 | MoOutro | was Did You Know | logo switches on; wordmark (ui-toggle-on) |
-| 9:14 | MoOutro | That, episode |  |
+| 9:12 | MoClose | This was | cut to the outro (whoosh-wind); EPISODE (pop-reveal) |
+| 9:13 | MoOutro | Did You Know That, | logo switches on; wordmark (ui-toggle-on) |
+| 9:14 | MoOutro | episode |  |
 | 9:15 | MoOutro | four. | "04" pulses (ui-click-soft) |
 | 9:16 | MoOutro | Money. | "Money" title (pop-reveal) |
 | 9:17 | MoOutro | Now it's your turn. | lockup shrinks; prompt card (whoosh-soft) |
 | 9:18 | MoOutro | Which century's | heading + seven year chips (1/7) (ui-click-soft) |
-| 9:19 | MoOutro | money would you have trusted | heading + seven year chips (2/7) (ui-click-soft); heading + seven year chips (3/7) (ui-click-soft); "trusted most?" (gold) (ui-click-soft) |
-| 9:20 | MoOutro | most? | heading + seven year chips (4/7) (ui-click-soft); heading + seven year chips (5/7) (ui-click-soft); heading + seven year chips (6/7) (ui-click-soft) |
+| 9:19 | MoOutro | money would you have trusted | heading + seven year chips (2/7) (ui-click-soft); heading + seven year chips (3/7) (ui-click-soft); "trusted most?" (gold) (ui-click-soft); heading + seven year chips (4/7) (ui-click-soft) |
+| 9:20 | MoOutro | most? | heading + seven year chips (5/7) (ui-click-soft); heading + seven year chips (6/7) (ui-click-soft) |
 | 9:21 | MoOutro | Tell me in the comments. | heading + seven year chips (7/7) (ui-click-soft); COMMENTS ↓ (pop-reveal) |
-| 9:22 | MoOutro | At |  |
-| 9:23 | MoOutro | the end of every episode, | "end of every episode:" (ui-click-soft) |
-| 9:24 | MoOutro | I will read the |  |
-| 9:25 | MoOutro | best comment, | COMMENT OF THE WEEK pill (impact-soft); "best comment" (ui-click-soft) |
-| 9:26 | MoOutro | right here, | card flash ("right here") (ui-click-soft) |
-| 9:27 | MoOutro | on this screen. | "read on screen" (ui-click-soft) |
-| 9:28 | MoOutro | And the subject | "the subject" (sparkle-soft) |
-| 9:29 | MoOutro | you ask for most | "you ask for most" (ui-click-soft) |
-| 9:30 | MoOutro | becomes a future episode. | → a future episode (pop-reveal) |
-| 9:31 | MoOutro | On |  |
-| 9:32 | MoOutro | our website, Dex-tee | website pill slides in (whoosh-soft); Dexty.live lights in the pill (sparkle-soft) |
+| 9:22 | MoOutro | At the |  |
+| 9:23 | MoOutro | end of every episode, | "end of every episode:" (ui-click-soft) |
+| 9:24 | MoOutro | I will read the best | COMMENT OF THE WEEK pill (impact-soft) |
+| 9:25 | MoOutro | comment, right | "best comment" (ui-click-soft); card flash ("right here") (ui-click-soft) |
+| 9:26 | MoOutro | here, on |  |
+| 9:27 | MoOutro | this screen. | "read on screen" (ui-click-soft) |
+| 9:28 | MoOutro | And the subject you | "the subject" (sparkle-soft) |
+| 9:29 | MoOutro | ask for most becomes | "you ask for most" (ui-click-soft) |
+| 9:30 | MoOutro | a future episode. | → a future episode (pop-reveal) |
+| 9:31 | MoOutro | On our |  |
+| 9:32 | MoOutro | website, Dex-tee | website pill slides in (whoosh-soft); Dexty.live lights in the pill (sparkle-soft) |
 | 9:33 | MoOutro | dot live, |  |
 | 9:34 | MoOutro | you can watch | WATCH (ui-click-soft) |
 | 9:35 | MoOutro | every episode, |  |
 | 9:36 | MoOutro | collect the fact cards, | COLLECT (ui-click-soft) |
-| 9:37 | MoOutro | and play the guessing | PLAY (ui-click-soft); Dexty.live pulses (pop-reveal) |
-| 9:38 | MoOutro | game. If |  |
-| 9:39 | MoOutro | this changed how | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
-| 9:40 | MoOutro | you see the money in your pocket, | THE MONEY IN YOUR POCKET (ui-click-soft) |
+| 9:37 | MoOutro | and play the guessing game. | PLAY (ui-click-soft); Dexty.live pulses (pop-reveal) |
+| 9:38 | MoOutro | If |  |
+| 9:39 | MoOutro | this changed how you | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
+| 9:40 | MoOutro | see the money in your pocket, | THE MONEY IN YOUR POCKET (ui-click-soft) |
 | 9:41 | MoOutro |  |  |
 | 9:42 | MoOutro | like it. | Like (ui-click-soft) |
-| 9:43 | MoOutro | Share it with | Share (ui-send) |
-| 9:44 | MoOutro | the friend who always | THE FRIEND WHO ALWAYS PAYS YOU BACK (ui-click-soft) |
-| 9:45 | MoOutro | pays you back. | friend chip pulses cyan (pop-reveal) |
+| 9:43 | MoOutro | Share it with the | Share (ui-send) |
+| 9:44 | MoOutro | friend who always pays | THE FRIEND WHO ALWAYS PAYS YOU BACK (ui-click-soft) |
+| 9:45 | MoOutro | you back. | friend chip pulses cyan (pop-reveal) |
 | 9:46 | MoOutro | And subscribe, | Subscribe (chime-reward) |
 | 9:47 | MoOutro | so the next mystery | ? THE NEXT MYSTERY (sparkle-soft) |
 | 9:48 | MoOutro | finds you. |  |
 | 9:49 | MoOutro | Next time: | NEXT · NO. 05 (whoosh-wind) |
 | 9:50 | MoOutro | food. | FOOD + a plate (impact-soft) |
 | 9:51 | MoOutro | Historians | Historians estimate that in 1500, (ui-click-soft) |
-| 9:52 | MoOutro | estimate |  |
-| 9:53 | MoOutro | that in fifteen hundred, |  |
+| 9:52 | MoOutro | estimate that |  |
+| 9:53 | MoOutro | in fifteen hundred, |  |
 | 9:54 | MoOutro | food took up most | food took up (ui-click-soft); most (gold) (pop-reveal) |
 | 9:55 | MoOutro | of a working family's |  |
-| 9:56 | MoOutro | budget. | of a working family's budget. + source (ui-click-soft) |
-| 9:57 | MoOutro | So what will you be eating | So what will you be (ui-click-soft); eating (ui-click-soft) |
+| 9:56 | MoOutro | budget. So | of a working family's budget. + source (ui-click-soft); So what will you be (ui-click-soft) |
+| 9:57 | MoOutro | what will you be eating | eating (ui-click-soft) |
 | 9:58 | MoOutro | in twenty one hundred? |  |
-| 9:59 | MoOutro |  | "in 2100?" settles (piano-a-min) |
-| 10:00 | MoOutro | Ask... | ASK. (thock in the beat after the word) (chess-piece-thock) |
+| 9:59 | MoOutro | Ask... | "in 2100?" settles (piano-a-min) |
+| 10:00 | MoOutro |  | ASK. (thock in the beat after the word) (chess-piece-thock) |
 | 10:01 | MoOutro | Wonder... | WONDER. (thock in the beat after the word) (chess-piece-thock) |
 | 10:02 | MoOutro | Repeat. |  |
 | 10:03 | MoOutro |  | REPEAT. (thock in the beat after the word) (chess-piece-thock) |
-| 10:04 | MoOutro | Next |  |
-| 10:05 | MoOutro | time... this | end screen: READ ON THIS SCREEN writes on (pencil-scribble) |
-| 10:06 | MoOutro | could be your comment. | end screen: THIS WEEK'S QUESTION card flares (pop-reveal) |
-| 10:07 | MoOutro | Pick a mystery. | end screen: Comment below / best one is read next episode (ui-click-soft) |
-| 10:08 | MoOutro | And I will | end screen: subscribe ring pulses (sparkle-soft) |
-| 10:09 | MoOutro | see you there. |  |
+| 10:04 | MoOutro | Next time... |  |
+| 10:05 | MoOutro | this could | end screen: READ ON THIS SCREEN writes on (pencil-scribble) |
+| 10:06 | MoOutro | be your comment. | end screen: THIS WEEK'S QUESTION card flares (pop-reveal); end screen: Comment below / best one is read next episode (ui-click-soft) |
+| 10:07 | MoOutro | Pick a mystery. |  |
+| 10:08 | MoOutro | And I will see | end screen: subscribe ring pulses (sparkle-soft) |
+| 10:09 | MoOutro | you there. |  |
 | 10:10 | MoOutro |  |  |
 | 10:11 | MoOutro |  |  |
 | 10:12 | MoOutro |  |  |

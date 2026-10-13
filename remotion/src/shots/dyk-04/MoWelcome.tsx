@@ -77,7 +77,7 @@ const MoWelcome: React.FC = () => {
           </div>
           <span style={{ fontFamily: DL_MONO, fontSize: 28, color: DYT.dim, opacity: ease(f, POUNDS - 2, POUNDS + 6) }}>= 100 POUNDS</span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 30 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 44 }}>
           <span style={{ fontFamily: DL_SERIF, fontSize: 60, color: DYT.magenta, opacity: ease(f, HOW - 2, HOW + 6), transform: `scale(${1 + 0.1 * ask})`, transformOrigin: 'left center', textShadow: `0 0 ${30 * ask}px ${DYT.magenta}` }}>how many are real</span>
           <div style={{ opacity: ease(f, NOTES - 2, NOTES + 6) }}><Banknote w={170} big="£" /></div>
           <span style={{ fontFamily: DL_SERIF, fontSize: 60, color: DYT.white, opacity: ease(f, NOTES - 2, NOTES + 6) }}>&amp;</span>

@@ -134,7 +134,7 @@ const MoOutro: React.FC = () => {
         <div style={{ ...rise(f, TURN - 8), marginTop: 84, fontFamily: DYT_DISPLAY, fontWeight: 800, fontSize: 28, letterSpacing: 8, color: DL.dim }}>DID YOU KNOW THAT? · NO. 04</div>
         <div style={{ ...rise(f, TURN - 8), fontFamily: DL_SERIF, fontSize: 70, color: DL.text, marginTop: 16 }}><span style={{ fontStyle: 'italic', color: DL.gold }}>Money</span></div>
 
-        <div style={{ ...rise(f, TURN - 2), marginTop: 50, width: 1400, padding: '34px 44px', background: DL.panel, border: `1px solid ${hereFlash > 0.01 ? DYT.magenta : DL.border}`, boxShadow: `0 0 ${50 * hereFlash}px ${DYT.magenta}`, borderRadius: 18, boxSizing: 'border-box' }}>
+        <div style={{ ...rise(f, TURN - 2), marginTop: 34, width: 1400, padding: '30px 44px', background: DL.panel, border: `1px solid ${hereFlash > 0.01 ? DYT.magenta : DL.border}`, boxShadow: `0 0 ${50 * hereFlash}px ${DYT.magenta}`, borderRadius: 18, boxSizing: 'border-box' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <span style={{ fontFamily: DL_SERIF, fontSize: 40, color: DL.text, whiteSpace: 'nowrap', opacity: ease(f, CENTURY - 2, CENTURY + 8) }}>Which century’s money would you have <span style={{ color: DL.gold, fontStyle: 'italic', opacity: ease(f, TRUSTED - 2, TRUSTED + 6) }}>trusted most?</span></span>
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, opacity: ease(f, COMMENTS - 4, COMMENTS + 6), transform: `scale(${1 + commentPulse * 0.05})` }}>
@@ -158,7 +158,7 @@ const MoOutro: React.FC = () => {
           </div>
         </div>
 
-        <div style={{ ...rise(f, WEBSITE - 1), marginTop: 40, display: 'flex', alignItems: 'center', gap: 22, padding: '16px 34px', borderRadius: 999, border: '3px solid transparent', backgroundImage: `linear-gradient(#0b1030, #0b1030), ${DYT_GRADIENT}`, backgroundOrigin: 'border-box', backgroundClip: 'padding-box, border-box', boxShadow: `0 0 40px ${DYT.magenta}55` }}>
+        <div style={{ ...rise(f, WEBSITE - 1), marginTop: 28, display: 'flex', alignItems: 'center', gap: 22, padding: '16px 34px', borderRadius: 999, border: '3px solid transparent', backgroundImage: `linear-gradient(#0b1030, #0b1030), ${DYT_GRADIENT}`, backgroundOrigin: 'border-box', backgroundClip: 'padding-box, border-box', boxShadow: `0 0 40px ${DYT.magenta}55` }}>
           <span style={{ fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 28, letterSpacing: 3, color: DYT.dim, display: 'flex', gap: 14 }}>
             {([['WATCH', WATCH], ['· COLLECT', COLLECT], ['· PLAY', PLAY]] as const).map(([w, at]) => (
               <span key={w} style={{ opacity: ease(f, at - 2, at + 6), color: f >= at && f < at + 20 ? DYT.white : DYT.dim }}>{w}</span>
@@ -166,7 +166,7 @@ const MoOutro: React.FC = () => {
           </span>
           <span style={{ fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 46, color: DYT.white, display: 'inline-block', opacity: ease(f, DEXTY - 4, DEXTY + 4), transform: `scale(${1 + 0.12 * gamePulse})`, textShadow: `0 0 ${20 + 30 * gamePulse}px ${DYT.magenta}aa` }}>Dexty.live</span>
         </div>
-        <div style={{ display: 'flex', gap: 34, marginTop: 40 }}>
+        <div style={{ display: 'flex', gap: 34, marginTop: 28 }}>
           <Action label="Like" at={LIKE} icon={<svg width={34} height={34} viewBox="0 0 34 34"><path d="M4 15 H10 V30 H4 Z M12 30 V15 L18 4 C21 4 22 6 21 10 L20 13 H29 C31 13 32 15 31 17 L28 28 C27.5 29.5 26.5 30 25 30 Z" fill={DL.text} /></svg>} />
           <Action label="Share" at={SHARE} icon={<svg width={34} height={34} viewBox="0 0 34 34"><path d="M20 6 L31 16 L20 26 V20 C12 20 7 23 3 29 C4 20 9 13 20 12 Z" fill={DL.text} /></svg>} />
           <Action label="Subscribe" at={SUB} primary icon={<svg width={34} height={34} viewBox="0 0 34 34"><rect x={2} y={7} width={30} height={20} rx={6} fill={DL.bg} /><path d="M14 12 L22 17 L14 22 Z" fill={DL.gold} /></svg>} />

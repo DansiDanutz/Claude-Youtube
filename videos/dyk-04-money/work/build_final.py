@@ -33,7 +33,7 @@ MUSIC_LEVEL = 0.32
 SFX_GROUP = 35
 # No. 04 audit: the one-word sign-off chunks and the reused end-screen line read 2.4–3.6 dB hotter than the body lines
 # and drove the limiter; level them back to the body.
-VOICE_GAIN_DB = {'mo13c-signoff': -3.0, 'mo14-endscreen': -2.5}
+VOICE_GAIN_DB = {'mo13c-signoff': -4.0, 'mo14-endscreen': -2.5}
 FPS = 30
 MIN_TAIL_S = 0.5           # a voice line must end at least this long before its shot cuts
 SHOT_ORDER = ['MoHook', 'MoIntro', 'MoWelcome', 'MoPromise', 'Mo1500', 'Mo1661', 'Mo1720', 'Mo1821',
@@ -270,7 +270,8 @@ def main():
     # 6) final encode: CFR 30, stereo AAC, faststart
     final = os.path.join(PROJ, 'dyk-04-money-1080P.mp4')
     run(['-i', silent, '-i', master, '-map', '0:v', '-map', '1:a',
-         '-vf', 'scale=in_range=pc:out_range=tv:in_color_matrix=bt601:out_color_matrix=bt709,format=yuv420p',
+         '-vf', 'scale=in_range=pc:out_range=tv:in_color_matrix=bt601:out_color_matrix=bt709,format=yuv420p,'
+               'setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709:range=tv',
          '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
          '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-r', '30', '-fps_mode', 'cfr',
          '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-ac', '2', '-movflags', '+faststart', '-shortest', final])

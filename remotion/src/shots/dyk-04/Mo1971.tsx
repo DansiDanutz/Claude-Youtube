@@ -56,6 +56,7 @@ const FOREIGN = C.at('foreign');
 const CANT = C.at("can't");
 const WITHIN = C.at('Within');
 const GONE = C.at('gone');
+const WHOLE = C.at('whole', 2); // 'the whole system's gone' (1 = 'the whole family's')
 const SO = C.at('So');
 const PROMISE = C.at('promise');
 const TRUST1 = C.at('trust', 1);
@@ -75,7 +76,7 @@ const Mo1971: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
   const room = win(f, DOCK, DID - 2, 10, 8);
-  const system = win(f, GOLD2 - 4, SO + 2, 6, 8);
+  const system = win(f, GOLD2 - 4, SO + 14, 6, 8);
   const trust = win(f, PROMISE - 6, GENERATION, 4, 10);
   const cliff = ease(f, GENERATION - 2, GENERATION + 10);
   const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, GENERATION - 2, GENERATION + 8));
@@ -141,7 +142,7 @@ const Mo1971: React.FC = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               <Label at={PRESIDENT} color={DL.text} size={32}>PRESIDENT<span style={{ opacity: ease(f, NIXON - 2, NIXON + 6) }}> NIXON · 15 AUG 1971</span></Label>
               <Label at={FOREIGN} color={DL.red} size={30}>FOREIGN GOVERNMENTS<span style={{ opacity: ease(f, CANT - 2, CANT + 6) }}> CAN'T SWAP DOLLARS FOR GOLD</span></Label>
-              <Label at={WITHIN} color={DL.dim} size={28}>WITHIN A FEW YEARS<span style={{ opacity: ease(f, GONE - 2, GONE + 6) }}> · THE SYSTEM'S GONE (CURRENCIES FLOAT BY 1973)</span></Label>
+              <Label at={WITHIN} color={DL.dim} size={28}>WITHIN A FEW YEARS<span style={{ opacity: ease(f, WHOLE - 2, WHOLE + 6) }}> · THE SYSTEM'S GONE (CURRENCIES FLOAT BY 1973)</span></Label>
               <Source at={NIXON}>Federal Reserve History, "Nixon Ends Convertibility" · Bretton Woods, 1944</Source>
             </div>
           </div>

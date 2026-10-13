@@ -57,6 +57,7 @@ const SCENARIO = C.at('scenario');
 const FACT = C.at('fact');
 const BY = C.at('By');
 const WALLET = C.at('wallet');
+const NOTE_W = C.at('note');
 const MUSEUM = C.at('museum');
 const CODE1 = C.at('code', 1);
 const BUT2 = C.at('But', 2);
@@ -169,7 +170,7 @@ const Mo2100: React.FC = () => {
           <StampText text="NOT A FACT" at={FACT} color={DL.red} size={40} tilt={3} />
         </div>
         <div style={{ position: 'absolute', left: 160, top: 420, display: 'flex', alignItems: 'flex-end', gap: 60 }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, opacity: ease(f, WALLET - 4, WALLET + 6) }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, opacity: ease(f, NOTE_W - 2, NOTE_W + 8) }}>
             <div style={{ position: 'relative', padding: '40px 30px 20px', border: `4px solid ${ease(f, MUSEUM - 2, MUSEUM + 6) > 0.5 ? '#c8d8e8' : 'transparent'}`, borderRadius: 8, background: ease(f, MUSEUM - 2, MUSEUM + 6) > 0.5 ? '#c8d8e814' : 'transparent' }}>
               <Banknote w={300} big="£20" />
               <div style={{ position: 'absolute', left: 0, right: 0, bottom: -44, textAlign: 'center', fontFamily: DL_MONO, fontSize: 22, color: '#c8d8e8', opacity: ease(f, MUSEUM - 2, MUSEUM + 6) }}>IN A MUSEUM</div>
