@@ -1,10 +1,50 @@
-# HANDOFF — Did You Know That? No. 05 · "Food" (2026-10-13)
+# HANDOFF — Did You Know That? No. 05 · "Food" (2026-10-14)
 
-State: **script + Brian voice takes done** (whisper round-trip PASS, tail check PASS). No shots, no cues, no renders yet.
+State: **beatmap, kit, 15 shots and cue table done; voice pre-flight PASS; stills checked.** No renders, no build_final, no master.
 Branch `video/dyk-05-food`, main checkout `~/Projects/Claude-Youtube` (no worktree). Paid takes live only here, in the
 Git-ignored `work/narration/*.mp3`, `work/narration/chunks/*.mp3` and `work/mix/*.wav` — never delete them.
+Measured runtime (timeline.json): **647.3 s = 10:47.3** (David: tighten pauses, ≤ 10:50, no story cuts).
 
-## What was done
+## Stage 2 (2026-10-14): pauses, shots, cues, pre-flight
+1. **Pauses tightened** (`make_script.py`): `even_pace` off for every scene — it padded faster chunks with ~7.4 s of breaths
+   to even words/s, but the pre-flight measures articulation rate (pauses excluded) and each chunk against its own target.
+   Question beats kept (0.25–0.45 s `after` rules, `min_sentence_gap` 0.3–0.42 s); one beat added before the payoff
+   ("danger." +0.75 s in fd10) so the payoff chunk sits ≤ 2.8 w/s. 10:54.6 → **10:47.3**.
+2. **Pre-flight speed/word fixes:** pace targets retuned to the delivered pace where pauses made them read slow — fd00 2.9,
+   fd06 c3 2.7, fd10 c4 2.6, fd10 c5 2.6 (no re-voice). Re-voiced (ONLY=, wording-only):
+   - fd10 c3 at target 2.8 (articulation jump 6.43 → 5.11 syl/s fixed; same words);
+   - fd11 c2: "The I-P-C-C says" → **"Its climate panel says"** (spelled letters gave a 0.6–0.97 s hesitation before
+     "says" and a gate drag; the screen names the IPCC; it is the UN's panel, sentence before names the UN);
+   - fd11 c3: "mostly plants, with red meat" → "mostly plants with red meat" (comma drag 0.60 s; punctuation only).
+   Characters this stage ≈ **1,212** (requested text); account now 255,928 / 363,000 used, 107,072 left (the counter also
+   moves with other users of the shared key). Whisper re-run on fd11 → **PASS** (same two accepted decade false positives).
+3. **BEATMAP** `work/BEATMAP.md` + `audit/timeline-by-second.txt` from `make_beatmap.py` (cues.py + timeline + vo.json):
+   648 one-second rows; 55 narrated stretches ≥ 2 s between SFX-marked events, each listed with the motion that covers it
+   (No. 04 shipped with 35 such, covered by motion). Many contain silent visual events (clause-by-clause captions).
+4. **Kit** `remotion/src/lib/dykkit-food.tsx` (new; older kits untouched): FOOD_ARC ladder (FUEL → MEDICINE → TO MEASURE →
+   WE FIX IT → ENOUGH, AT LAST → TOO MUCH? → A LONGER LIFE?), `YearsStrip` (≈35 ENG · ≈36 ENG · ≈43 JPN · ≈55 USA ·
+   ≈46 IND · ≈76 BRA, each pill on its spoken number; hidden under cliffhanger bands), 26 food illustrations, PlateWeek,
+   Ship/Waves/Wheat/Motorbike. **Shots** `remotion/src/shots/dyk-05/Fd*.tsx` (14 + FdThumb): every era has wake-up →
+   DYK card → THE PLATE (week strip or day clock, labelled illustration) → THE BODY → what changed → chip on its word →
+   THE YEARS → cliffhanger + NEXT; FdReveal walks the ladder (each rung on its line) and pays the 1500 budget; Fd2100 is
+   labelled PREDICTION throughout, UN ≈ 82 is the only 2100 number, the 2100 rung fills A LONGER LIFE? on "life" (2nd);
+   FdOutro: Medicine teaser + WATCH NEXT · NO. 06 · MEDICINE (`NEXT_EP`, swappable) and the pinned-question fallback
+   card (No. 05's question A; No. 04 has no comments). `check_cues.py`: all cues resolve; every repeated word has an nth.
+   Typecheck: `npx tsc --noEmit` clean (after `npm ci` in `remotion/`, disk guard: allow).
+5. **Cues** `work/cues.py` + `cue_parts/Fd*.py` (541 cues), `build_final.py`/`qa_final.py`/`qa_sweep.py`/`sync_shots.py`/
+   `frames.py` adapted from No. 04 with the shared `voice_preflight.off_word`; `cuesheet.json` exported
+   (`build_final.py --cuesheet-only`); click density ≤ 3/s outside the fixed sting. **Voice pre-flight: PASS — 0 issues**
+   (`audit/VOICE-PREFLIGHT.md`). `sync_shots.py --check`: no drift.
+6. **Stills** (guard: allow, 46–48 GiB free): 84 at key cue frames + 14 re-checks after fixes (`audit/stills*/`, ignored).
+   Fixed from the look: YEARS strip overflowing at 6 pills (compacted), 1500 food legend past the margin, era scenes
+   overlapping the docking year (now start after the dock), 1915 "HARDLY ANY" colliding with the plate footnote, 1966
+   clouds over the caption, 1884/Today source lines past the margin, reveal BEATEN* stamps over the disease names, a JSX
+   typo in 1915 (",000"), and a wrong `nth` ('And' #4 → #5 in 1500) that had hidden the debt card and ladder.
+7. **Not done / blocked:** no render, no `build_final`. Two Remotion bundle dirs from my stills runs are still in `$TMPDIR`
+   (`remotion-webpack-bundle-l6r4M3`, `-aHxWyI`, ~279 MB) — the delete was held by the permission guard; remove them
+   when allowed. `remotion/node_modules` (306 MB) + Chrome headless shell (193 MB) now exist in the main checkout.
+
+## Stage 1 (2026-10-13): script + voice
 1. `work/make_script.py` → `work/narration/script.json`: 17 scenes (`fd01-hook`, `fd02-question`, `fd00-welcome`,
    `fd03-promise`, `fd04-1500` … `fd11-2100`, `fd12-close`, `fd13-outro`, `fd13b-next` (No. 06 Medicine teaser, own
    chunk), `fd13c-signoff`, `fd14-endscreen`), shot prefix `Fd`. Text = STORY §2/§4/§4b/§5–§7 (approved, trim applied).
@@ -36,7 +76,8 @@ Git-ignored `work/narration/*.mp3`, `work/narration/chunks/*.mp3` and `work/mix/
 |---|---|---|---|
 | fd05 | "splits twelve sick sailors into pairs" | "splits twelve sailors with scurvy into pairs" | whisper heard "twelve **six** sailors" (a number risk); F10's 12 were scurvy patients |
 | fd06 | "They hadn't eaten the new food." | "They had not eaten the new food." | whisper heard "they had eaten" (negation flip FAIL) |
-| fd11 | "The IPCC says" | "The I-P-C-C says" | spelled for TTS (like No. 04's I-O-U); screen still shows IPCC |
+| fd11 | "The IPCC says" | "Its climate panel says" | stage 2: letters ("I-P-C-C") hesitated before "says"; screen names the IPCC |
+| fd11 | "mostly plants, with red meat" | "mostly plants with red meat" | stage 2: comma drag on "plants," |
 | fd13 | "collect the facts" | "collect the fact cards" | No. 04's ritual wording (its drag fix) |
 The hook is split into two takes at "And yet, here's the strange part." (No. 04 layout); no words changed.
 
@@ -49,19 +90,9 @@ The hook is split into two takes at "And yet, here's the strange part." (No. 04 
 - Intonation: fd13 "episode five. Food." heard as "episode five, food?" — check it isn't a question.
 - Gaps > 1.1 s (intended beats): after "beer." (fd05), "now?" (fd07), "you?" (fd09), "danger." (fd10).
 
-## Known for the voice pre-flight (dry run of `voice_preflight` speed/pace + words/gaps checks on vo.json)
-- Pace after inserted pauses below target: fd00 c1 2.75 (3.15) · fd06 c3 2.68 (3.0) · fd10 c4 2.58 (2.9) · fd10 c5 2.47 (3.0);
-  fd10 c3→c4 articulation jump 6.43 → 5.11 syl/s (> 20 %). Fix by trimming `pauses`/`min_sentence_gap` or retuning targets.
-- Drag: fd11 "I-P-C-C" 0.71 s (pre-flight counts it as 1 syllable) · fd11 "plants," 0.60 s → re-voice fd11 c4 if it sounds slow.
-
-## Runtime decision for David
-Estimate 10:28 is inside the budget, but the measured timeline is **10:54.6, ~10 s over 10:45** (≈ 21 s of inserted
-pauses, slow list chunks). Options: accept, trim pauses at pre-flight (≈ 3–5 s), or apply STORY §10's listed cuts
-(each removes a sourced sentence, so David's call): "The volunteers were promised a pardon." · "Decades later, it gets a
-name. A vitamin." · "Today, there's more food than ever." · "Short, sturdy plants, bred by Norman Borlaug's team." ·
-"Rice was free. Everything else cost money." (~35 words ≈ 13 s → ≈ 10:41). Re-voice only the touched chunks (`ONLY=`).
-
 ## Next steps
-BEATMAP (`work/BEATMAP.md` from vo.json word timings) → shots `remotion/src/shots/dyk-05/Fd*.tsx` → cues (`work/cues.py`,
-shared `voice_preflight.off_word`) + `cuesheet.json` → voice pre-flight PASS → render (disk guard first) → audit loop.
-Comment of the Week: re-check No. 04's comments before voicing a real one; otherwise keep the fallback.
+Render (`remotion_run.mjs`-style, one bundle per run, record and remove its bundle; disk guard before each) →
+`build_final.py` → `qa_final.py` + `qa_sweep.py` → one full 1 s audit by an independent auditor (55 BEATMAP gaps to
+check against motion) → fixes → RUBRIC → David's watch → packaging (`FdThumb`, YOUTUBE.md, `packaging_check.py`).
+Re-check No. 04's comments before the end-screen line; a real Comment of the Week needs a new `fd14-endscreen` take.
+LISTEN list above still stands (plus "Its climate panel" in fd11).

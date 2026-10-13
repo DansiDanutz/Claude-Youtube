@@ -36,7 +36,6 @@
     "McKeown",
     "EAT",
     "Lancet",
-    "I-P-C-C",
     "Dex-tee",
     "ate",
     "flour",
@@ -89,7 +88,7 @@
       "chunks": [
         {
           "text": "Welcome back to Did You Know That. Episode five. You know the rule. Here's your guess. In eighteen hundred, life expectancy at birth, worldwide, was about twenty nine years. What about a baby born today? Guess in the comments, right now. Then stay to the end, and check your guess.",
-          "pace": 3.15,
+          "pace": 2.9,
           "speed": 1.0
         }
       ],
@@ -171,8 +170,7 @@
             "nth": 1,
             "add": 0.35
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {
@@ -226,8 +224,7 @@
             "nth": 1,
             "add": 0.35
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {
@@ -248,7 +245,7 @@
         },
         {
           "text": "Here's a sailor's plate. White rice. Rice was free. Everything else cost money. A navy doctor, Takaki Kanehiro, measures what the men eat, and changes the menu. More barley, meat, milk, bread and vegetables.",
-          "pace": 3.0,
+          "pace": 2.7,
           "speed": 1.08
         },
         {
@@ -286,8 +283,7 @@
             "nth": 1,
             "add": 0.35
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {
@@ -341,8 +337,7 @@
             "nth": 1,
             "add": 0.35
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {
@@ -391,8 +386,7 @@
             "nth": 1,
             "add": 0.35
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {
@@ -446,8 +440,7 @@
             "nth": 1,
             "add": 0.35
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {
@@ -467,17 +460,17 @@
         },
         {
           "text": "In big American cities, one study found clean water alone was behind nearly half the drop in deaths, in the early nineteen hundreds. Sewers, vaccines and medicine did much of the rest.",
-          "pace": 3.0,
+          "pace": 2.8,
           "speed": 1.0
         },
         {
           "text": "And today? About one in five deaths worldwide is linked to diet. The biggest risks? Too much salt. Too few whole grains. Too little fruit.",
-          "pace": 2.9,
+          "pace": 2.6,
           "speed": 1.0
         },
         {
           "text": "And your guess? In eighteen hundred, about twenty nine years. Today, worldwide, about seventy three. How close were you?",
-          "pace": 3.0,
+          "pace": 2.6,
           "speed": 1.0
         },
         {
@@ -515,15 +508,19 @@
             "word": "you?",
             "nth": 1,
             "add": 0.45
+          },
+          {
+            "word": "danger.",
+            "nth": 1,
+            "add": 0.75
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {
       "id": "fd11-2100",
       "shot": "Fd2100",
-      "text": "So what will you be eating in twenty one hundred? That morning hasn't happened yet. But we can follow the evidence. The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. The I-P-C-C says warming has already slowed the growth of farm productivity, over the past fifty years. And the EAT Lancet Commission says a diet that's mostly plants, with red meat about once a week, could prevent around fifteen million early deaths a year. So here's one scenario. Not a fact. By twenty one hundred, your plate could be mostly plants. Meat could be a once a week treat. And if the harvests hold, the average life could stretch past eighty. In fifteen hundred, the Church decided which days you couldn't eat meat. In twenty one hundred, the reason might be your heart. And the planet.",
+      "text": "So what will you be eating in twenty one hundred? That morning hasn't happened yet. But we can follow the evidence. The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. Its climate panel says warming has already slowed the growth of farm productivity, over the past fifty years. And the EAT Lancet Commission says a diet that's mostly plants with red meat about once a week, could prevent around fifteen million early deaths a year. So here's one scenario. Not a fact. By twenty one hundred, your plate could be mostly plants. Meat could be a once a week treat. And if the harvests hold, the average life could stretch past eighty. In fifteen hundred, the Church decided which days you couldn't eat meat. In twenty one hundred, the reason might be your heart. And the planet.",
       "chunks": [
         {
           "text": "So what will you be eating in twenty one hundred? That morning hasn't happened yet. But we can follow the evidence.",
@@ -531,12 +528,12 @@
           "speed": 0.9
         },
         {
-          "text": "The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. The I-P-C-C says warming has already slowed the growth of farm productivity, over the past fifty years.",
+          "text": "The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. Its climate panel says warming has already slowed the growth of farm productivity, over the past fifty years.",
           "pace": 2.9,
           "speed": 0.98
         },
         {
-          "text": "And the EAT Lancet Commission says a diet that's mostly plants, with red meat about once a week, could prevent around fifteen million early deaths a year.",
+          "text": "And the EAT Lancet Commission says a diet that's mostly plants with red meat about once a week, could prevent around fifteen million early deaths a year.",
           "pace": 2.9,
           "speed": 0.9
         },
@@ -565,8 +562,7 @@
             "nth": 1,
             "add": 0.25
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {
@@ -610,8 +606,7 @@
             "nth": 1,
             "add": 0.25
           }
-        ],
-        "even_pace": true
+        ]
       }
     },
     {

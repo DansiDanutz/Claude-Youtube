@@ -1,0 +1,100 @@
+import React from 'react';
+import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
+import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg } from '../../lib/danslab';
+import { makeCue, ease, rise, useShotFade, Vignette } from '../../lib/dykkit';
+import { Food, Label, QGRAD, type FoodKind } from '../../lib/dykkit-food';
+import vo from './vo.json';
+
+// =============================================================================
+// DYK 05 · 4/14 — the promise. Seven year chips build one per 12 f from "Seven" (1500 · 1747 · 1884 · 1915 · 1966 ·
+// TODAY · 2100); 1500 lights on "fifteen", the dashed 2100 chip on "twenty"; a dawn glow on "wake". The three spine beats
+// land on their words: THE PLATE (one plate per era, one per 6 f) on "plate", THE BODY on "body", THE YEARS (an
+// hourglass) on "live". "And at the end": the row clears; WHAT REALLY GAVE US OUR EXTRA YEARS? lands on "years." with
+// no answer. VO fd03 @0.6 s.
+// =============================================================================
+export const compositionConfig = { id: 'FdPromise', durationInSeconds: 17.1, fps: 30, width: 1920, height: 1080 };
+const DUR = 513;
+
+const C = makeCue(vo, 'fd03-promise', 0.6);
+const SEVEN = C.at('Seven');
+const FIFTEEN = C.at('fifteen');
+const TWENTY = C.at('twenty');
+const EACH = C.at('each');
+const WAKE = C.at('wake');
+const PLATE = C.at('plate,');
+const BODY = C.at('body,');
+const LIVE = C.at('live.');
+const END = C.at('end,');
+const REALLY = C.at('really');
+const EXTRA = C.at('extra');
+const YEARS_W = C.at('years.');
+
+const YEARS = ['1500', '1747', '1884', '1915', '1966', 'TODAY', '2100'];
+const PLATES: (FoodKind | null)[] = ['bread', 'biscuit', 'rice', 'cornbread', 'flatbread', 'ricebeans', null];
+const X0 = 255, STEP = 235;
+
+const Pillar: React.FC<{ at: number; title: string; children: React.ReactNode }> = ({ at, title, children }) => {
+  const f = useCurrentFrame();
+  return (
+    <div style={{ width: 360, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, opacity: ease(f, at - 2, at + 8), transform: `scale(${ease(f, at - 2, at + 10, 1.2, 1)})` }}>
+      <div style={{ height: 150, display: 'flex', alignItems: 'center' }}>{children}</div>
+      <Label at={at} color={DL.gold} size={34}>{title}</Label>
+    </div>
+  );
+};
+
+const FdPromise: React.FC = () => {
+  const f = useCurrentFrame();
+  const fade = useShotFade(DUR);
+  const rowOut = 1 - ease(f, END - 8, END + 4);
+  const dawn = ease(f, WAKE - 2, WAKE + 20);
+  const sand = ease(f, LIVE, LIVE + 40);
+  return (
+    <AbsoluteFill style={{ fontFamily: DL_SANS, opacity: fade }}>
+      <SiteBg glow="#1a1206" />
+      <Vignette />
+      <AbsoluteFill style={{ opacity: rowOut }}>
+        <div style={{ position: 'absolute', left: 160, right: 160, top: 640, height: 260, borderRadius: '50%', background: `radial-gradient(ellipse at 50% 100%, ${DL.gold}33, transparent 70%)`, opacity: dawn }} />
+        <div style={{ ...rise(f, SEVEN), position: 'absolute', left: 0, right: 0, top: 170, textAlign: 'center', fontFamily: DL_MONO, fontSize: 34, letterSpacing: 10, color: DL.dim }}>SEVEN MORNINGS · SEVEN PLATES</div>
+        {/* the three spine beats */}
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 250, display: 'flex', justifyContent: 'center', gap: 80 }}>
+          <Pillar at={PLATE} title="THE PLATE"><Food kind="ricebeans" size={150} /></Pillar>
+          <Pillar at={BODY} title="THE BODY">
+            <svg width={110} height={150} viewBox="0 0 100 140"><circle cx={50} cy={22} r={17} fill={DL.warm} /><path d="M22 138 C22 70 32 44 50 44 C68 44 78 70 78 138 Z" fill={DL.warm} /><path d="M50 70 q-12 -12 -20 0 q-6 12 20 30 q26 -18 20 -30 q-8 -12 -20 0 Z" fill={DL.red} /></svg>
+          </Pillar>
+          <Pillar at={LIVE} title="THE YEARS">
+            <svg width={100} height={150} viewBox="0 0 100 150"><path d="M14 8 L86 8 M14 142 L86 142" stroke={DL.gold} strokeWidth={8} strokeLinecap="round" /><path d="M22 12 Q22 62 50 75 Q78 62 78 12 Z M22 138 Q22 88 50 75 Q78 88 78 138 Z" fill="none" stroke={DL.warm} strokeWidth={5} /><path d={`M${30 + 14 * sand} ${20 + 40 * sand} Q50 ${60 + 8 * sand} ${70 - 14 * sand} ${20 + 40 * sand} L70 20 L30 20 Z`} fill={DL.gold} opacity={1 - sand * 0.8} /><path d={`M28 136 Q50 ${136 - 40 * sand} 72 136 Z`} fill={DL.gold} /></svg>
+          </Pillar>
+        </div>
+        {YEARS.map((y, i) => {
+          const at = SEVEN + i * 12;
+          const plateAt = PLATE + i * 6;
+          const future = i === 6;
+          const lit = (i === 0 && f >= FIFTEEN) || (future && f >= TWENTY);
+          const pulse = ease(f, EACH + i, EACH + i + 5) * (1 - ease(f, EACH + i + 8, EACH + i + 22));
+          const x = X0 + i * STEP;
+          const s = interpolate(f, [at, at + 8], [0.7, 1], { ...DCLAMP, easing: DL_EASE.out });
+          const kind = PLATES[i];
+          return (
+            <React.Fragment key={y}>
+              <div style={{ position: 'absolute', left: x - 90, top: 800, width: 180, textAlign: 'center', opacity: ease(f, at, at + 6), transform: `scale(${s * (1 + 0.12 * pulse)})`, padding: '14px 0', borderRadius: 12, border: `3px ${future ? 'dashed' : 'solid'} ${future ? DL.red : lit ? DL.gold : DL.border}`, background: lit ? '#1a1406' : DL.panel, fontFamily: DL_SERIF, fontSize: 46, color: future ? DL.red : lit ? DL.gold : DL.text, boxShadow: lit ? `0 0 26px ${future ? DL.red : DL.gold}66` : undefined }}>{y}</div>
+              <div style={{ position: 'absolute', left: x - 90, top: 620, width: 180, height: 160, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', opacity: ease(f, plateAt, plateAt + 6), transform: `translateY(${ease(f, plateAt, plateAt + 10, 20, 0)}px)` }}>
+                {kind ? <Food kind={kind} size={120} /> : <div style={{ width: 110, height: 110, borderRadius: 16, border: `3px dashed ${DL.red}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DL_SERIF, fontSize: 80, color: DL.red }}>?</div>}
+              </div>
+            </React.Fragment>
+          );
+        })}
+      </AbsoluteFill>
+      {/* the promise: what really gave us our extra years — answered only in FdReveal */}
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: ease(f, END - 4, END + 6) }}>
+        <div style={{ ...rise(f, END - 2), fontFamily: DL_MONO, fontSize: 32, letterSpacing: 10, color: DL.dim }}>AT THE END</div>
+        <div style={{ marginTop: 26, width: 1500, textAlign: 'center', fontFamily: DL_SERIF, fontWeight: 500, fontSize: 96, lineHeight: 1.15, color: DL.text }}>
+          What <span style={{ opacity: ease(f, REALLY - 2, REALLY + 6), fontStyle: 'italic' }}>really</span> gave us our
+          <span style={{ opacity: ease(f, EXTRA - 2, EXTRA + 6), color: DL.gold }}> extra </span>
+          <span style={{ display: 'inline-block', opacity: ease(f, YEARS_W - 2, YEARS_W + 6), background: QGRAD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', transform: `scale(${ease(f, YEARS_W - 2, YEARS_W + 10, 1.3, 1)})` }}>years?</span>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+export default FdPromise;

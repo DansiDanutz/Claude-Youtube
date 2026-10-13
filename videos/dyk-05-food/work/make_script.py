@@ -1,6 +1,8 @@
 import copy, importlib.util, json, os, sys
 G = 0.3
-def sc(id, shot, chunks, pauses=None, floor=None, even=True):
+def sc(id, shot, chunks, pauses=None, floor=None, even=False):
+    # even_pace off (2026-10-14, David: tighten pauses): it pads faster chunks with ~7.4 s of breaths to even words/s,
+    # but the voice pre-flight compares articulation rate (pauses excluded) and each chunk's pace against its own target.
     ch = [{"text": t, "pace": p, "speed": 1.0, **(x or {})} for t, p, x in chunks]
     d = {"id": id, "shot": shot, "text": " ".join(c["text"] for c in ch), "chunks": ch}
     if floor: d["floor"] = floor
@@ -19,7 +21,7 @@ S = [
   ("And yet, here's the strange part. Did you know that today, about one in five deaths around the world is linked to diet? So did food give us our longer lives? Or is it taking some of those years back?", 3.5, None)],
   pauses=[("diet?", 0.4)], floor=0.95),
  sc("fd00-welcome", "FdWelcome", [
-  ("Welcome back to Did You Know That. Episode five. You know the rule. Here's your guess. In eighteen hundred, life expectancy at birth, worldwide, was about twenty nine years. What about a baby born today? Guess in the comments, right now. Then stay to the end, and check your guess.", 3.15, None)],
+  ("Welcome back to Did You Know That. Episode five. You know the rule. Here's your guess. In eighteen hundred, life expectancy at birth, worldwide, was about twenty nine years. What about a baby born today? Guess in the comments, right now. Then stay to the end, and check your guess.", 2.9, None)],
   pauses=[("today?", 0.4)], floor=0.95),
  sc("fd03-promise", "FdPromise", [
   ("Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up somewhere new. You'll see what's on your plate, what it does to your body, and how long you get to live. And at the end, you'll find out what really gave us our extra years.", 3.1, None)]),
@@ -41,7 +43,7 @@ S = [
  sc("fd06-1884", "Fd1884", [
   ("You wake up in eighteen eighty four, at Shinagawa, on Tokyo Bay. A training ship called the Tsukuba is getting ready to sail.", 3.0, None),
   ("Did you know that on a voyage like this one, the year before, almost half the crew got sick from what they ate? On the ship Ryujo, a hundred and sixty nine men got beriberi. Twenty five died.", 3.3, DYK),
-  ("Here's a sailor's plate. White rice. Rice was free. Everything else cost money. A navy doctor, Takaki Kanehiro, measures what the men eat, and changes the menu. More barley, meat, milk, bread and vegetables.", 3.0, None),
+  ("Here's a sailor's plate. White rice. Rice was free. Everything else cost money. A navy doctor, Takaki Kanehiro, measures what the men eat, and changes the menu. More barley, meat, milk, bread and vegetables.", 2.7, None),
   ("On the Tsukuba, fourteen men get sick. None die. And the fourteen? They had not eaten the new food.", 3.0, None),
   ("So what is food now? Something to measure. What's inside it matters. Japan's first life tables give a newborn about forty three years. And Japanese men born back then? About fifteen centimetres shorter than men born a century later.", 2.9, None),
   ("Decades later, it gets a name. A vitamin. But knowing what's missing doesn't put it on a poor family's plate.", 2.9, DYK)],
@@ -71,16 +73,16 @@ S = [
  sc("fd10-reveal", "FdReveal", [
   ("Here's the answer. Food gave us years. But it didn't do it alone. And now, the danger has flipped.", 3.1, None),
   ("Enough calories and the right nutrients beat scurvy, beriberi and pellagra, and helped us grow taller. A doctor, Thomas McKeown, argued that better food was the main reason we started living longer. Many historians disagree.", 3.0, None),
-  ("In big American cities, one study found clean water alone was behind nearly half the drop in deaths, in the early nineteen hundreds. Sewers, vaccines and medicine did much of the rest.", 3.0, None),
-  ("And today? About one in five deaths worldwide is linked to diet. The biggest risks? Too much salt. Too few whole grains. Too little fruit.", 2.9, None),
-  ("And your guess? In eighteen hundred, about twenty nine years. Today, worldwide, about seventy three. How close were you?", 3.0, None),
+  ("In big American cities, one study found clean water alone was behind nearly half the drop in deaths, in the early nineteen hundreds. Sewers, vaccines and medicine did much of the rest.", 2.8, None),
+  ("And today? About one in five deaths worldwide is linked to diet. The biggest risks? Too much salt. Too few whole grains. Too little fruit.", 2.6, None),
+  ("And your guess? In eighteen hundred, about twenty nine years. Today, worldwide, about seventy three. How close were you?", 2.6, None),
   ("Now walk down the ladder with me. In fifteen hundred, food was fuel. Then, medicine. Then, something to measure. Then, something we fix. Then, enough, at last. Today, too much.", 2.75, PAY),
   ("In fifteen hundred, food took most of your money, and hunger was the danger. Today, the danger is what we choose to eat.", 2.8, PAY)],
-  pauses=[("today?", 0.3), ("risks?", 0.25), ("guess?", 0.3), ("you?", 0.45)]),
+  pauses=[("today?", 0.3), ("risks?", 0.25), ("guess?", 0.3), ("you?", 0.45), ("danger.", 0.75)]),
  sc("fd11-2100", "Fd2100", [
   ("So what will you be eating in twenty one hundred? That morning hasn't happened yet. But we can follow the evidence.", 3.0, None),
-  ("The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. The I-P-C-C says warming has already slowed the growth of farm productivity, over the past fifty years.", 2.9, None),
-  ("And the EAT Lancet Commission says a diet that's mostly plants, with red meat about once a week, could prevent around fifteen million early deaths a year.", 2.9, None),
+  ("The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. Its climate panel says warming has already slowed the growth of farm productivity, over the past fifty years.", 2.9, None),
+  ("And the EAT Lancet Commission says a diet that's mostly plants with red meat about once a week, could prevent around fifteen million early deaths a year.", 2.9, None),
   ("So here's one scenario. Not a fact. By twenty one hundred, your plate could be mostly plants. Meat could be a once a week treat. And if the harvests hold, the average life could stretch past eighty.", 3.2, None),
   ("In fifteen hundred, the Church decided which days you couldn't eat meat. In twenty one hundred, the reason might be your heart. And the planet.", 3.0, DYK)],
   pauses=[("hundred?", 0.3), ("fact.", 0.25)]),
@@ -106,7 +108,7 @@ S[10]["pauses"]["min_sentence_gap"] = 0.35
 RISKY = ["Flanders", "rye", "porridge", "Lent", "Advent", "HMS", "Salisbury", "scurvy", "Lind", "Cider", "Shinagawa",
          "Tsukuba", "Ryujo", "beriberi", "Takaki", "Kanehiro", "barley", "pellagra", "grits", "Molasses", "Goldberger",
          "Niacin", "Punjab", "Lal", "Bahadur", "Shastri", "Borlaug", "tonnes", "tonne", "São", "Paulo", "McKeown",
-         "EAT", "Lancet", "I-P-C-C", "Dex-tee", "ate", "flour", "fewer"]
+         "EAT", "Lancet", "Dex-tee", "ate", "flour", "fewer"]
 VOICE = "Brian (nPczCjzI2devNBz1zQrb), eleven_flash_v2_5 · stability .32 / similarity .85 / style .45"
 VERSION = "v1 2026-10-13 (No. 05 Food)"
 # fd14-endscreen reuses No. 04's mo14-endscreen take (itself No. 03's sc14-endscreen) unchanged: same text, same voice,
@@ -139,6 +141,10 @@ def with_speeds(doc, prev, g):
                 c["speed"] = json.load(open(meta))["speed"]
             elif (sc["id"], c["text"], c["pace"]) in prev:
                 c["speed"] = prev[(sc["id"], c["text"], c["pace"])]
+            else:   # same text, retuned pace target only: the take (and its speed) is unchanged
+                same = [v for (i, t, _), v in prev.items() if i == sc["id"] and t == c["text"]]
+                if same:
+                    c["speed"] = same[0]
     return out
 
 
