@@ -258,7 +258,7 @@
     {
       "id": "mo07-1821",
       "shot": "Mo1821",
-      "text": "You wake up in eighteen twenty one, in London. Coal smoke, wet cobbles, and a queue outside the Bank of England. Did you know that Bank of England notes still say, I promise to pay the bearer on demand? Back then, that promise meant gold. A five pound note could be swapped for five gold coins. Sovereigns. For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did forgers, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like. So what is money now? As good as gold. A promise you can swap for metal. Over the next century, much of the world follows Britain onto gold. Gold becomes the anchor. And anchors feel safe. But in nineteen seventy one, one television speech cuts the rope.",
+      "text": "You wake up in eighteen twenty one, in London. Coal smoke, wet cobbles, and a queue outside the Bank of England. Did you know that Bank of England notes still say, I promise to pay the bearer on demand? Back then, that promise meant gold. A five pound note could be swapped for five gold coins. Sovereigns. For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did counterfeiters, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like. So what is money now? As good as gold. A promise you can swap for metal. Over the next century, much of the world follows Britain onto gold. Gold becomes the anchor. And anchors feel safe. But in nineteen seventy one, one television speech cuts the rope.",
       "chunks": [
         {
           "text": "You wake up in eighteen twenty one, in London. Coal smoke, wet cobbles, and a queue outside the Bank of England.",
@@ -272,9 +272,9 @@
           "floor": 0.85
         },
         {
-          "text": "For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did forgers, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like.",
+          "text": "For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did counterfeiters, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like.",
           "pace": 3.0,
-          "speed": 1.0
+          "speed": 1.056
         },
         {
           "text": "So what is money now? As good as gold. A promise you can swap for metal. Over the next century, much of the world follows Britain onto gold. Gold becomes the anchor. And anchors feel safe. But in nineteen seventy one, one television speech cuts the rope.",

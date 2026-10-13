@@ -47,7 +47,7 @@ S = [
  sc("mo07-1821", "Mo1821", [
   ("You wake up in eighteen twenty one, in London. Coal smoke, wet cobbles, and a queue outside the Bank of England.", 3.0, None),
   ("Did you know that Bank of England notes still say, I promise to pay the bearer on demand? Back then, that promise meant gold. A five pound note could be swapped for five gold coins. Sovereigns.", 2.9, DYK),
-  ("For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did forgers, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like.", 3.0, None),
+  ("For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did counterfeiters, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like.", 3.0, None),
   ("So what is money now? As good as gold. A promise you can swap for metal. Over the next century, much of the world follows Britain onto gold. Gold becomes the anchor. And anchors feel safe. But in nineteen seventy one, one television speech cuts the rope.", 2.9, DYK)],
   pauses=[("demand?", 0.3), ("now?", 0.35), ("safe.", 0.35)]),
  sc("mo08-1971", "Mo1971", [

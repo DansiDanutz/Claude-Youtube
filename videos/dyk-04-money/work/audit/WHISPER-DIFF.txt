@@ -1,0 +1,67 @@
+WHISPER DIFF: PASS
+
+== mo01-hook  ratio 0.979
+   diff ('replace', 'and', 'in')
+== mo02-question  ratio 0.963
+   diff ('replace', 'the', 'a')
+== mo00-welcome  ratio 1.000
+== mo03-promise  ratio 1.000
+   LISTEN   low-p   [('Seven', 0.22)]
+== mo04-1500  ratio 0.985
+   diff ('replace', 'chilli', 'chili')
+   diff ('replace', 'price list', 'priceless')
+   LISTEN   low-p   [('And', 0.3)]
+== mo05-1661  ratio 0.957
+   LISTEN   listen  'johan palmstruch' heard as 'johann palmstroke'
+   LISTEN   listen  'palmstruch is' heard as 'palmstroke has'
+   diff ('replace', 'harbours', 'harbors')
+   diff ('replace', 'johan palmstruch', 'johann palmstroke')
+   diff ('replace', 'banknotes', 'bank notes')
+   diff ('replace', 'palmstruch is', 'palmstroke has')
+   diff ('replace', 'hes', 'he')
+== mo06-1720  ratio 0.989
+   LISTEN   listen  'livres' heard as 'leaves'
+   LISTEN   listen  'palmstruch' heard as 'palmstruck'
+   diff ('replace', 'livres', 'leaves')
+   diff ('replace', 'palmstruch', 'palmstruck')
+   LISTEN   low-p   [('People', 0.27), ('Something', 0.2)]
+== mo07-1821  ratio 0.958
+   accepted number  '#197101' heard as '#1972'
+   diff ('replace', 'coal smoke', 'colesmoke')
+   diff ('replace', 'promise', 'promised')
+   diff ('replace', 'promise', 'promised')
+   diff ('replace', 'onto', 'on to')
+   diff ('replace', '#197101', '#1972')
+   LISTEN   low-p   [('I', 0.32)]
+== mo08-1971  ratio 0.997
+   diff ('delete', 'dollars', '')
+   LISTEN   low-p   [('within', 0.29)]
+== mo09-today  ratio 0.951
+   LISTEN   listen  'matatus' heard as 'matatous'
+   LISTEN   listen  'upcountry' heard as 'up country'
+   diff ('replace', 'matatus', 'matatous')
+   diff ('replace', 'upcountry', 'up country')
+   diff ('replace', 'in', 'and')
+   diff ('replace', 'in', 'and')
+   diff ('replace', 'm pesa', 'mps')
+   diff ('replace', 'in', 'and')
+   LISTEN   low-p   [('Across', 0.17), ('and', 0.33)]
+== mo10-reveal  ratio 0.983
+   diff ('replace', 'ioua', 'iou a')
+   diff ('replace', 'and', 'in')
+   LISTEN   low-p   [('with', 0.33)]
+   LISTEN   gaps    [('savings.', 1.12)]
+== mo11-2100  ratio 0.987
+   LISTEN   listen  'rung' heard as 'wrong'
+   diff ('replace', 'rung', 'wrong')
+   diff ('replace', 'in', 'and')
+   LISTEN   low-p   [('the', 0.29)]
+== mo12-close  ratio 1.000
+== mo13-outro  ratio 0.967
+   diff ('replace', 'dex tee dot live', 'dextlive')
+   diff ('replace', 'the', 'a')
+   LISTEN   low-p   [('like', 0.2)]
+== mo13b-next  ratio 1.000
+== mo13c-signoff  ratio 1.000
+   LISTEN   low-p   [('Wonder,', 0.27)]
+== mo14-endscreen  ratio 1.000
