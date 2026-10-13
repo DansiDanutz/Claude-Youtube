@@ -1,0 +1,198 @@
+quota: creator 248884/363000 used, 114116 left; this run needs <= 37108
+    try 1 speed 1.00: pace 2.91 w/s (target 3.2) OK
+  fd01-hook: 12.96s, 37 words, tail 0.23s
+    try 1 speed 1.00: pace 4.01 w/s (target 3.1) ['pace 4.01 w/s (target 3.1±10%)']
+    try 2 speed 0.95: pace 3.63 w/s (target 3.1) ['pace 3.63 w/s (target 3.1±10%)']
+    try 3 speed 0.95: pace 3.76 w/s (target 3.1) ['pace 3.76 w/s (target 3.1±10%)']
+    try 4 speed 0.95: pace 3.53 w/s (target 3.1) ['pace 3.53 w/s (target 3.1±10%)']
+  !! fd02-question chunk 1 REJECTED after 4 tries: ['pace 4.01 w/s (target 3.1±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+    try 1 speed 1.00: pace 2.90 w/s (target 3.15) OK
+  fd00-welcome: 17.55s, 50 words, tail 0.31s
+    try 1 speed 1.00: pace 3.23 w/s (target 3.1) OK
+  fd03-promise: 15.70s, 50 words, tail 0.24s
+  fd04-1500 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.47 w/s (target 3.0) ["stretched 'smells' 0.43s", 'pace 3.47 w/s (target 3.0±10%)']
+    try 2 speed 0.90: pace 3.38 w/s (target 3.0) ['pace 3.38 w/s (target 3.0±10%)']
+    try 3 speed 0.90: pace 3.16 w/s (target 3.0) OK
+  fd04-1500 chunk 2: pace target 2.9
+    try 1 speed 0.98: pace 2.76 w/s (target 2.9) OK
+  fd04-1500 chunk 3: pace target 3.0
+    try 1 speed 1.00: pace 2.76 w/s (target 3.0) ["stretched 'Dried' 0.46s"]
+    try 2 speed 1.06: pace 2.85 w/s (target 3.0) OK
+  fd04-1500 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 3.58 w/s (target 3.0) ['pace 3.58 w/s (target 3.0±10%)']
+    try 2 speed 0.98: pace 3.12 w/s (target 3.0) OK
+  fd04-1500 chunk 5: pace target 2.9
+    try 1 speed 1.00: pace 3.03 w/s (target 2.9) OK
+  ~ fd04-1500 chunks 2->3: speech rate 3.98 -> 4.79 syl/s (listen)
+  fd04-1500: 58.35s, 166 words, tail 0.27s
+  fd05-1747 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 2.93 w/s (target 3.0) OK
+  fd05-1747 chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 3.69 w/s (target 2.9) ['pace 3.69 w/s (target 2.9±10%)']
+    try 2 speed 0.92: pace 3.69 w/s (target 2.9) ['pace 3.69 w/s (target 2.9±10%)']
+    try 3 speed 0.92: pace 3.61 w/s (target 2.9) ['pace 3.61 w/s (target 2.9±10%)']
+    try 4 speed 0.92: pace 3.76 w/s (target 2.9) ['pace 3.76 w/s (target 2.9±10%)']
+  fd05-1747 chunk 3: pace target 3.0
+    try 1 speed 1.00: pace 2.37 w/s (target 3.0) ["stretched 'cheese.' 0.59s", 'pace 2.37 w/s (target 3.0±10%)']
+    try 2 speed 1.08: pace 2.50 w/s (target 3.0) ['pace 2.50 w/s (target 3.0±10%)']
+    try 3 speed 1.08: pace 2.56 w/s (target 3.0) ['pace 2.56 w/s (target 3.0±10%)']
+    try 4 speed 1.08: pace 2.64 w/s (target 3.0) ['pace 2.64 w/s (target 3.0±10%)']
+  fd05-1747 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 2.70 w/s (target 3.0) OK
+  fd05-1747 chunk 5: pace target 2.9
+    try 1 speed 1.00: pace 3.27 w/s (target 2.9) ['pace 3.27 w/s (target 2.9±10%)']
+    try 2 speed 0.92: pace 3.29 w/s (target 2.9) ['pace 3.29 w/s (target 2.9±10%)']
+    try 3 speed 0.92: pace 3.22 w/s (target 2.9) ['pace 3.22 w/s (target 2.9±10%)']
+    try 4 speed 0.92: pace 2.97 w/s (target 2.9) OK
+  fd05-1747 chunk 6: pace target 2.9
+    try 1 speed 1.00: pace 2.97 w/s (target 2.9) OK
+  ~ fd05-1747 chunks 2->3: speech rate 5.13 -> 4.38 syl/s (listen)
+  ~ fd05-1747 chunks 3->4: speech rate 4.38 -> 5.05 syl/s (listen)
+  ~ fd05-1747 chunks 4->5: speech rate 5.05 -> 4.53 syl/s (listen)
+  !! fd05-1747 REJECTED by the continuity gate: ['chunks 5->6 speech rate 4.53 -> 5.70 syl/s'] (passing chunk takes stay cached; retune pace/text)
+  fd06-1884 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.03 w/s (target 3.0) OK
+  fd06-1884 chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 3.58 w/s (target 2.9) ['pace 3.58 w/s (target 2.9±10%)']
+    try 2 speed 0.92: pace 3.37 w/s (target 2.9) ['pace 3.37 w/s (target 2.9±10%)']
+    try 3 speed 0.92: pace 3.25 w/s (target 2.9) ['pace 3.25 w/s (target 2.9±10%)']
+    try 4 speed 0.92: pace 3.30 w/s (target 2.9) ['pace 3.30 w/s (target 2.9±10%)']
+  fd06-1884 chunk 3: pace target 3.0
+    try 1 speed 1.00: pace 2.45 w/s (target 3.0) ['pace 2.45 w/s (target 3.0±10%)']
+    try 2 speed 1.08: pace 2.60 w/s (target 3.0) ['pace 2.60 w/s (target 3.0±10%)']
+    try 3 speed 1.08: pace 2.68 w/s (target 3.0) ['pace 2.68 w/s (target 3.0±10%)']
+    try 4 speed 1.08: pace 2.81 w/s (target 3.0) OK
+  fd06-1884 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 2.84 w/s (target 3.0) OK
+  fd06-1884 chunk 5: pace target 2.9
+    try 1 speed 1.00: pace 2.80 w/s (target 2.9) OK
+  fd06-1884 chunk 6: pace target 2.9
+    try 1 speed 1.00: pace 3.05 w/s (target 2.9) OK
+  ~ fd06-1884 chunks 4->5: speech rate 4.62 -> 5.28 syl/s (listen)
+  !! fd06-1884 chunk 2 REJECTED after 4 tries: ['pace 3.58 w/s (target 2.9±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  fd07-1915 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.04 w/s (target 3.0) OK
+  fd07-1915 chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 3.13 w/s (target 2.9) OK
+  fd07-1915 chunk 3: pace target 3.0
+    try 1 speed 1.00: pace 2.28 w/s (target 3.0) ['pace 2.28 w/s (target 3.0±10%)']
+    try 2 speed 1.08: pace 2.44 w/s (target 3.0) ['pace 2.44 w/s (target 3.0±10%)']
+    try 3 speed 1.08: pace 2.64 w/s (target 3.0) ['pace 2.64 w/s (target 3.0±10%)']
+    try 4 speed 1.08: pace 2.43 w/s (target 3.0) ['pace 2.43 w/s (target 3.0±10%)']
+  fd07-1915 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 2.77 w/s (target 3.0) OK
+  fd07-1915 chunk 5: pace target 3.0
+    try 1 speed 1.00: pace 2.73 w/s (target 3.0) OK
+  fd07-1915 chunk 6: pace target 2.9
+    try 1 speed 1.00: pace 2.82 w/s (target 2.9) OK
+  ~ fd07-1915 chunks 2->3: speech rate 5.28 -> 4.36 syl/s (listen)
+  ~ fd07-1915 chunks 3->4: speech rate 4.36 -> 5.18 syl/s (listen)
+  !! fd07-1915 chunk 3 REJECTED after 4 tries: ['pace 2.28 w/s (target 3.0±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  fd08-1966 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.33 w/s (target 3.0) ['pace 3.33 w/s (target 3.0±10%)']
+    try 2 speed 0.90: pace 3.09 w/s (target 3.0) OK
+  fd08-1966 chunk 2: pace target 2.9
+    try 1 speed 0.98: pace 3.37 w/s (target 2.9) ['pace 3.37 w/s (target 2.9±10%)']
+    try 2 speed 0.90: pace 2.94 w/s (target 2.9) OK
+  fd08-1966 chunk 3: pace target 3.0
+    try 1 speed 0.98: pace 2.48 w/s (target 3.0) ['pace 2.48 w/s (target 3.0±10%)']
+    try 2 speed 0.98: pace 2.47 w/s (target 3.0) ['pace 2.47 w/s (target 3.0±10%)']
+    try 3 speed 0.98: pace 2.47 w/s (target 3.0) ['pace 2.47 w/s (target 3.0±10%)']
+    try 4 speed 0.98: pace 2.57 w/s (target 3.0) ['pace 2.57 w/s (target 3.0±10%)']
+  fd08-1966 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 2.63 w/s (target 3.0) ['pace 2.63 w/s (target 3.0±10%)']
+    try 2 speed 1.06: pace 2.74 w/s (target 3.0) OK
+  fd08-1966 chunk 5: pace target 2.9
+    try 1 speed 1.00: pace 3.07 w/s (target 2.9) OK
+  ~ fd08-1966 chunks 1->2: speech rate 5.11 -> 4.41 syl/s (listen)
+  !! fd08-1966 chunk 3 REJECTED after 4 tries: ['pace 2.48 w/s (target 3.0±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  fd09-today chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 2.51 w/s (target 3.0) ['pace 2.51 w/s (target 3.0±10%)']
+    try 2 speed 1.08: pace 3.02 w/s (target 3.0) OK
+  fd09-today chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 3.31 w/s (target 2.9) ['pace 3.31 w/s (target 2.9±10%)']
+    try 2 speed 1.00: pace 2.94 w/s (target 2.9) OK
+  fd09-today chunk 3: pace target 3.0
+    try 1 speed 1.00: pace 2.63 w/s (target 3.0) ["stretched 'snacks.' 0.59s", 'pace 2.63 w/s (target 3.0±10%)']
+    try 2 speed 1.08: pace 2.84 w/s (target 3.0) OK
+  fd09-today chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 2.81 w/s (target 3.0) OK
+  fd09-today chunk 5: pace target 2.9
+    try 1 speed 1.00: pace 3.22 w/s (target 2.9) ['pace 3.22 w/s (target 2.9±10%)']
+    try 2 speed 0.92: pace 3.24 w/s (target 2.9) ['pace 3.24 w/s (target 2.9±10%)']
+    try 3 speed 0.92: pace 2.69 w/s (target 2.9) OK
+  ~ fd09-today chunks 1->2: speech rate 5.51 -> 4.60 syl/s (listen)
+  ~ fd09-today chunks 4->5: speech rate 5.06 -> 4.41 syl/s (listen)
+  fd09-today: 54.27s, 147 words, tail 0.27s
+  fd10-reveal chunk 1: pace target 2.7
+    try 1 speed 1.00: pace 3.21 w/s (target 2.7) ['pace 3.21 w/s (target 2.7±10%)']
+    try 2 speed 0.90: pace 3.08 w/s (target 2.7) ['pace 3.08 w/s (target 2.7±10%)']
+    try 3 speed 0.90: pace 3.23 w/s (target 2.7) ['pace 3.23 w/s (target 2.7±10%)']
+    try 4 speed 0.90: pace 3.28 w/s (target 2.7) ['pace 3.28 w/s (target 2.7±10%)']
+  fd10-reveal chunk 2: pace target 3.0
+    try 1 speed 1.00: pace 2.51 w/s (target 3.0) ['pace 2.51 w/s (target 3.0±10%)']
+    try 2 speed 1.08: pace 2.34 w/s (target 3.0) ["stretched 'argued' 1.32s", 'pace 2.34 w/s (target 3.0±10%)']
+    try 3 speed 1.08: pace 2.73 w/s (target 3.0) OK
+  fd10-reveal chunk 3: pace target 3.0
+    try 1 speed 1.00: pace 3.10 w/s (target 3.0) OK
+  fd10-reveal chunk 4: pace target 2.9
+    try 1 speed 1.00: pace 2.89 w/s (target 2.9) OK
+  fd10-reveal chunk 5: pace target 3.0
+    try 1 speed 1.00: pace 2.75 w/s (target 3.0) OK
+  fd10-reveal chunk 6: pace target 2.75
+    try 1 speed 1.00: pace 2.85 w/s (target 2.75) OK
+  fd10-reveal chunk 7: pace target 2.8
+    try 1 speed 1.00: pace 3.33 w/s (target 2.8) ['pace 3.33 w/s (target 2.8±10%)']
+    try 2 speed 0.92: pace 3.48 w/s (target 2.8) ['pace 3.48 w/s (target 2.8±10%)']
+    try 3 speed 0.92: pace 3.07 w/s (target 2.8) OK
+  ~ fd10-reveal chunks 1->2: speech rate 4.82 -> 5.41 syl/s (listen)
+  ~ fd10-reveal chunks 3->4: speech rate 5.43 -> 4.22 syl/s (listen)
+  ~ fd10-reveal chunks 5->6: speech rate 4.31 -> 4.81 syl/s (listen)
+  !! fd10-reveal chunk 1 REJECTED after 4 tries: ['pace 3.21 w/s (target 2.7±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  fd11-2100 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.61 w/s (target 3.0) ['pace 3.61 w/s (target 3.0±10%)']
+    try 2 speed 0.90: pace 3.18 w/s (target 3.0) OK
+  fd11-2100 chunk 2: pace target 2.9
+    try 1 speed 0.98: pace 2.73 w/s (target 2.9) ["stretched 'IPCC' 0.79s"]
+    try 2 speed 0.98: pace 2.90 w/s (target 2.9) ["stretched 'IPCC' 0.72s"]
+    try 3 speed 0.98: pace 2.93 w/s (target 2.9) ["stretched 'IPCC' 0.66s"]
+    try 4 speed 0.97: pace 2.83 w/s (target 2.9) ["stretched 'IPCC' 0.62s"]
+  fd11-2100 chunk 3: pace target 2.9
+    try 1 speed 1.00: pace 3.31 w/s (target 2.9) ['pace 3.31 w/s (target 2.9±10%)']
+    try 2 speed 0.90: pace 3.28 w/s (target 2.9) ['pace 3.28 w/s (target 2.9±10%)']
+    try 3 speed 0.90: pace 2.94 w/s (target 2.9) OK
+  fd11-2100 chunk 4: pace target 2.9
+    try 1 speed 0.98: pace 3.27 w/s (target 2.9) ['pace 3.27 w/s (target 2.9±10%)']
+    try 2 speed 0.90: pace 3.08 w/s (target 2.9) ["stretched 'plants.' 0.63s"]
+    try 3 speed 0.90: pace 2.98 w/s (target 2.9) ["stretched 'stretch' 0.43s"]
+    try 4 speed 0.90: pace 2.93 w/s (target 2.9) ["stretched 'plants.' 0.58s"]
+  fd11-2100 chunk 5: pace target 3.0
+    try 1 speed 1.00: pace 3.35 w/s (target 3.0) ['pace 3.35 w/s (target 3.0±10%)']
+    try 2 speed 0.90: pace 3.15 w/s (target 3.0) OK
+  ~ fd11-2100 chunks 2->3: speech rate 5.08 -> 4.48 syl/s (listen)
+  ~ fd11-2100 chunks 3->4: speech rate 4.48 -> 5.39 syl/s (listen)
+  !! fd11-2100 chunk 2 REJECTED after 4 tries: ["stretched 'IPCC' 0.79s"] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  !! fd11-2100 chunk 4 REJECTED after 4 tries: ['pace 3.27 w/s (target 2.9±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+    try 1 speed 1.00: pace 3.29 w/s (target 3.3) OK
+  fd12-close: 4.41s, 14 words, tail 0.16s
+  fd13-outro chunk 1: pace target 3.15
+    try 1 speed 1.00: pace 3.07 w/s (target 3.15) OK
+  fd13-outro chunk 2: pace target 3.15
+    try 1 speed 1.00: pace 3.93 w/s (target 3.15) ['pace 3.93 w/s (target 3.15±10%)']
+    try 2 speed 0.95: pace 3.30 w/s (target 3.15) OK
+  fd13-outro: 33.69s, 103 words, tail 0.25s
+    try 1 speed 1.00: pace 2.59 w/s (target 3.0) ['pace 2.59 w/s (target 3.0±10%)']
+    try 2 speed 1.08: pace 2.78 w/s (target 3.0) OK
+  fd13b-next: 11.05s, 30 words, tail 0.27s
+  fd13c-signoff chunk 1: pace target -
+    try 1 speed 1.00: pace 2.70 w/s (target -) OK
+  fd13c-signoff chunk 2: pace target -
+    try 1 speed 1.00: pace 1.89 w/s (target -) OK
+  fd13c-signoff chunk 3: pace target -
+    try 1 speed 1.00: pace 1.85 w/s (target -) OK
+    chunk 1: level -3.8 dB to the scene median
+  fd13c-signoff: 2.54s, 3 words, tail 0.20s
+  fd14-endscreen: rebuilt fd14-endscreen.wav from the saved mp3 — UNPAUSED: run insert_pauses.py before make_vo_json.py
+voice done: 215.4 s total
+hard gate failed for: fd02-question, fd05-1747, fd06-1884, fd07-1915, fd08-1966, fd10-reveal, fd11-2100

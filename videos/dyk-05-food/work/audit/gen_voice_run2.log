@@ -1,0 +1,101 @@
+quota: creator 252354/363000 used, 110646 left; this run needs <= 7156
+    try 1 speed 1.00: pace 3.65 w/s (target 3.5) OK
+  fd02-question: 11.19s, 40 words, tail 0.23s
+  fd05-1747 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  fd05-1747 chunk 2: pace target 3.4
+    try 1 speed 1.00: pace 3.83 w/s (target 3.4) ['pace 3.83 w/s (target 3.4±10%)']
+    try 2 speed 0.92: pace 3.75 w/s (target 3.4) ['pace 3.75 w/s (target 3.4±10%)']
+    try 3 speed 0.92: pace 3.52 w/s (target 3.4) OK
+  fd05-1747 chunk 3: pace target 2.6
+    try 1 speed 1.00: pace 2.40 w/s (target 2.6) OK
+  fd05-1747 chunk 4: pace target 3.0
+    chunk 4: cached passing take (no API call)
+  fd05-1747 chunk 5: pace target 3.2
+    try 1 speed 1.00: pace 3.42 w/s (target 3.2) OK
+  fd05-1747 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ fd05-1747 chunks 2->3: speech rate 4.82 -> 4.15 syl/s (listen)
+  ~ fd05-1747 chunks 3->4: speech rate 4.15 -> 5.05 syl/s (listen)
+  ~ fd05-1747 chunks 5->6: speech rate 4.97 -> 5.70 syl/s (listen)
+  fd05-1747: 57.95s, 158 words, tail 0.28s
+  fd06-1884 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  fd06-1884 chunk 2: pace target 3.3
+    try 1 speed 1.00: pace 3.53 w/s (target 3.3) OK
+  fd06-1884 chunk 3: pace target 3.0
+    chunk 3: cached passing take (no API call)
+  fd06-1884 chunk 4: pace target 3.0
+    chunk 4: cached passing take (no API call)
+  fd06-1884 chunk 5: pace target 2.9
+    chunk 5: cached passing take (no API call)
+  fd06-1884 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ fd06-1884 chunks 4->5: speech rate 4.62 -> 5.28 syl/s (listen)
+  fd06-1884: 59.95s, 172 words, tail 0.23s
+  fd07-1915 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  fd07-1915 chunk 2: pace target 2.9
+    chunk 2: cached passing take (no API call)
+  fd07-1915 chunk 3: pace target 2.5
+    try 1 speed 1.00: pace 2.20 w/s (target 2.5) ['pace 2.20 w/s (target 2.5±10%)']
+    try 2 speed 1.08: pace 2.45 w/s (target 2.5) OK
+  fd07-1915 chunk 4: pace target 3.0
+    chunk 4: cached passing take (no API call)
+  fd07-1915 chunk 5: pace target 3.0
+    chunk 5: cached passing take (no API call)
+  fd07-1915 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  fd07-1915: 70.17s, 187 words, tail 0.29s
+  fd08-1966 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  fd08-1966 chunk 2: pace target 2.9
+    chunk 2: cached passing take (no API call)
+  fd08-1966 chunk 3: pace target 2.6
+    try 1 speed 0.98: pace 2.74 w/s (target 2.6) OK
+  fd08-1966 chunk 4: pace target 3.0
+    chunk 4: cached passing take (no API call)
+  fd08-1966 chunk 5: pace target 2.9
+    chunk 5: cached passing take (no API call)
+  ~ fd08-1966 chunks 1->2: speech rate 5.11 -> 4.41 syl/s (listen)
+  ~ fd08-1966 chunks 2->3: speech rate 4.41 -> 5.49 syl/s (listen)
+  ~ fd08-1966 chunks 3->4: speech rate 5.49 -> 4.75 syl/s (listen)
+    chunk 1: level -2.0 dB to the scene median
+  fd08-1966: 60.07s, 166 words, tail 0.28s
+  fd10-reveal chunk 1: pace target 3.1
+    try 1 speed 1.00: pace 3.61 w/s (target 3.1) ['pace 3.61 w/s (target 3.1±10%)']
+    try 2 speed 0.90: pace 3.29 w/s (target 3.1) OK
+  fd10-reveal chunk 2: pace target 3.0
+    try 1 speed 0.98: pace 2.64 w/s (target 3.0) ['pace 2.64 w/s (target 3.0±10%)']
+    try 2 speed 0.98: pace 2.53 w/s (target 3.0) ['pace 2.53 w/s (target 3.0±10%)']
+    try 3 speed 0.98: pace 2.43 w/s (target 3.0) ['pace 2.43 w/s (target 3.0±10%)']
+    try 4 speed 0.98: pace 2.70 w/s (target 3.0) OK
+  fd10-reveal chunk 3: pace target 3.0
+    chunk 3: cached passing take (no API call)
+  fd10-reveal chunk 4: pace target 2.9
+    chunk 4: cached passing take (no API call)
+  fd10-reveal chunk 5: pace target 3.0
+    chunk 5: cached passing take (no API call)
+  fd10-reveal chunk 6: pace target 2.75
+    chunk 6: cached passing take (no API call)
+  fd10-reveal chunk 7: pace target 2.8
+    chunk 7: cached passing take (no API call)
+  ~ fd10-reveal chunks 1->2: speech rate 4.68 -> 5.43 syl/s (listen)
+  ~ fd10-reveal chunks 3->4: speech rate 5.43 -> 4.22 syl/s (listen)
+  ~ fd10-reveal chunks 5->6: speech rate 4.31 -> 4.81 syl/s (listen)
+  fd10-reveal: 65.96s, 183 words, tail 0.27s
+  fd11-2100 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  fd11-2100 chunk 2: pace target 2.9
+    try 1 speed 0.98: pace 2.72 w/s (target 2.9) OK
+  fd11-2100 chunk 3: pace target 2.9
+    chunk 3: cached passing take (no API call)
+  fd11-2100 chunk 4: pace target 3.2
+    try 1 speed 0.98: pace 3.36 w/s (target 3.2) OK
+  fd11-2100 chunk 5: pace target 3.0
+    chunk 5: cached passing take (no API call)
+  ~ fd11-2100 chunks 2->3: speech rate 5.52 -> 4.48 syl/s (listen)
+  ~ fd11-2100 chunks 3->4: speech rate 4.48 -> 5.05 syl/s (listen)
+    chunk 1: level -1.7 dB to the scene median
+  fd11-2100: 49.20s, 143 words, tail 0.28s
+voice done: 589.9 s total
