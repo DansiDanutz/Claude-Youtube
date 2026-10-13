@@ -113,9 +113,10 @@ def number_value(run):
         i = words.index("point")
         head = _integer(words[:i]) if words[:i] else 0
         j = i + 1
-        while j < len(words) and words[j] in UNIT_VALUES and UNIT_VALUES[words[j]] < 10:
-            j += 1                             # decimal digits: 'point four'
-        value = float(f"{head:g}.{''.join(str(UNIT_VALUES[w]) for w in words[i + 1:j]) or 0}")
+        while j < len(words) and (words[j] in UNIT_VALUES or words[j] in TENS_VALUES):
+            j += 1                             # decimal part, read digit by digit or as a group: 'point four', 'point twelve'
+        decimals = "".join(str(UNIT_VALUES.get(w, TENS_VALUES.get(w))) for w in words[i + 1:j]) or "0"
+        value = float(f"{head:g}.{decimals}")
         if j < len(words) and words[j] in SCALE_VALUES:
             value, j = value * SCALE_VALUES[words[j]], j + 1
         if words[j:]:                          # '... billion and a thousand'
@@ -125,16 +126,32 @@ def number_value(run):
     return NUMBER + format(float(value), ".10g")
 
 
+SCALE_ORDER = {"hundred": 10 ** 2, **SCALE_VALUES}
+
+
+def _remainder_follows(toks, i):
+    """'and' at toks[i] joins a compound number ('two thousand and twenty four', 'four hundred and six') only when the
+    number after it does not repeat the scale before it: 'two thousand and ten thousand' is a range (two numbers),
+    while 'four hundred and sixty three million' is one (the larger scale multiplies the whole)."""
+    scale = SCALE_ORDER.get(toks[i - 1])
+    j = i + 1
+    if scale is None or j >= len(toks) or not (_is_number(toks[j]) or toks[j] == "a"):
+        return False
+    while j < len(toks) and (_is_number(toks[j]) or toks[j] == "a"):
+        if SCALE_ORDER.get(toks[j]) == scale or (DIGITS.match(toks[j]) and float(toks[j]) >= scale):
+            return False
+        j += 1
+    return True
+
+
 def _collapse_numbers(toks):
     """Every run of number words / digits becomes ONE token carrying its value: 'a hundred' == '100' == '#100',
     'seven forty five' == '7:45' == '#745', but 'fifteen hundred' (#1500) != 'sixteen hundred' (#1600)."""
     out, run = [], []
     for i, t in enumerate(toks + [""]):
         nxt = toks[i + 1] if i + 1 < len(toks) else ""
-        after = toks[i + 2] if i + 2 < len(toks) else ""
-        number_ahead = _is_number(nxt) or (nxt == "a" and after in SCALES)
         in_run = t and (_is_number(t) or (t == "a" and nxt in SCALES)
-                        or (t == "and" and i and toks[i - 1] in SCALES and number_ahead))   # "two thousand and twenty four"
+                        or (t == "and" and i and _remainder_follows(toks, i)))     # "two thousand and twenty four"
         if in_run:
             run.append(t)
             continue

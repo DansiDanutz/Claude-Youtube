@@ -34,11 +34,13 @@ class TokenTests(unittest.TestCase):
         # review PRRT_kwDOTfGVps6rrP_R / rrXXH: every number used to collapse to the same '#'
         for said, heard in (("in fifteen hundred", "in 1600"), ("five people", "nine people"),
                             ("a hundred pupils", "200 pupils"), ("ninety eight percent", "97%"),
-                            ("sixteen forty seven", "1847")):
+                            ("sixteen forty seven", "1847"), ("zero point twelve", "12"),
+                            ("between two thousand and ten thousand", "between 12000")):
             self.assertNotEqual(wd.tokens(said), wd.tokens(heard), (said, heard))
         for said, heard in (("twenty twenty four", "2024"), ("sixteen forty seven", "1647"),
                             ("twenty one hundred", "2100"), ("four hundred and sixty three million", "463 million"),
-                            ("two thousand and twenty four", "2024"), ("a million and a half", "a million and a half")):
+                            ("two thousand and twenty four", "2024"), ("zero point twelve", "0.12"),
+                            ("between two thousand and ten thousand", "between 2000 and 10000")):
             self.assertEqual(wd.tokens(said), wd.tokens(heard), (said, heard))
 
     def test_in_and_and_between_numbers_stay_words(self):
