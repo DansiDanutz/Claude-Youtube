@@ -77,6 +77,8 @@ dependence → 2100 — so the viewer feels the relationship change, not just th
 - Mid-video re-hooks on the clock: no block > 90 s without a new question.
 
 ## Production checklist
-`RESEARCH.md` (every on-screen number → a source) → `narration/script.json` → `gen_voice.py` (timestamps) →
-`make_vo_json.py` → shots with `makeCue` (word-synced; throws on a missing word — cue the nth duplicate) →
-`render-all.mjs --scale=1` → `build_final.py` → `qa_final.py` → `RUBRIC.md` → Dan's watch → 4K + packaging + upload.
+`RESEARCH.md` (every on-screen number → a source) → `narration/script.json` (runtime from `tools/dyk/length_estimate.py`) →
+`gen_voice.py` (timestamps, tail-artefact gate) → `make_vo_json.py` → whisper round-trip (`tools/dyk/whisper_diff.py`) →
+voice pre-flight (`tools/dyk/voice_preflight.py`) → shots with `makeCue` (word-synced; throws on a missing word — cue the nth duplicate) →
+`render-all.mjs --scale=1` → `build_final.py` → `qa_final.py` → `RUBRIC.md` → Dan's watch → 4K + packaging (`tools/dyk/packaging_check.py`) + upload
+(`.claude/skills/dyk-episode/references/upload-playbook.md`).
