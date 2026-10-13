@@ -2,7 +2,7 @@
 
 One row per second of the master: words → visual event → SFX. Source of truth: `cues.py` (the same table `build_final.py` mixes), `timeline.json`, `remotion/src/shots/dyk-04/vo.json`.
 
-Total 620.7 s · 564 cues · gaps ≥ 2.0 s between visual events while narrating: 36
+Total 620.7 s · 565 cues · gaps ≥ 2.0 s between visual events while narrating: 35
 
 ## Gaps to check (continuous motion must cover them)
 - 0:14.3 → 0:16.5 (2.2 s) in MoHook — motion: note turning, layers peeling, clock sweeping, digits falling
@@ -35,7 +35,6 @@ Total 620.7 s · 564 cues · gaps ≥ 2.0 s between visual events while narratin
 - 8:30.2 → 8:33.3 (3.0 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:35.1 → 8:37.4 (2.4 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:39.6 → 8:42.7 (3.1 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
-- 8:46.7 → 8:49.4 (2.6 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:50.6 → 8:52.8 (2.2 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 8:56.0 → 8:59.5 (3.5 s) in Mo2100 — motion: dots lighting, digits in the euro coin, tests ticking, code rain
 - 9:32.6 → 9:34.8 (2.2 s) in MoOutro — motion: logo glow, Dexty.live pill, chips, end-screen shimmer
@@ -571,7 +570,7 @@ Total 620.7 s · 564 cues · gaps ≥ 2.0 s between visual events while narratin
 | 8:44 | Mo2100 | So here's | evidence out; the ladder brightens (whoosh-soft) |
 | 8:45 | Mo2100 | one scenario. | ONE SCENARIO (stamp-hit) |
 | 8:46 | Mo2100 | Not a fact. | NOT A FACT (stamp-hit) |
-| 8:47 | Mo2100 | By |  |
+| 8:47 | Mo2100 | By | BY 2100 … (ui-click-soft) |
 | 8:48 | Mo2100 | twenty one hundred, |  |
 | 8:49 | Mo2100 | the note in your wallet | a note (ui-click-soft) |
 | 8:50 | Mo2100 | could be a museum | a museum case closes round it (warm-shimmer) |

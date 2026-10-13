@@ -1,6 +1,6 @@
 # YouTube upload — Did You Know That? No. 04 · Money
 
-Channel: @Did-You-Know-that-2026 · Length 10:21 (620.67 s, from `work/timeline.json`) · 1080p30 · −14.2 LUFS · true peak −2.4 dBTP
+Channel: @Did-You-Know-that-2026 · Length 10:21 (620.67 s, from `work/timeline.json`) · 1080p30 · −14.1 LUFS · true peak −2.4 dBTP
 Thumbnail: `packaging/thumbnail.png` (1280×720, rendered from `remotion/src/shots/dyk-04/MoThumb.tsx`) — headline "MONEY / IN 2100?" in the logo palette.
 
 ## Title — David's default (STORY §13.9), also in `title.txt`

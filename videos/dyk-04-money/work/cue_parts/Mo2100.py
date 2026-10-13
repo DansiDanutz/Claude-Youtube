@@ -38,3 +38,4 @@ c(W(s, 'fifteen', shift=0.1), 'pop-reveal', 0.18, 'a cacao pod · 1500 · GREW O
 c(W(s, 'written'), 'ui-click-soft', 0.14, '→ and the code block')
 c(W(s, 'code', 2, shift=-1.22), 'riser-soft', 0.26, '(riser into the code block)')
 c(W(s, 'code', 2), 'impact-deep-soft', 0.22, 'a code block; the 2100 rung fills A PROMISE IN CODE?')
+c(W(s, 'By'), 'ui-click-soft', 0.14, 'BY 2100 …')

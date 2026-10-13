@@ -2460,6 +2460,11 @@
 "gain": 0.22
 },
 {
+"t": 527.98,
+"clip": "ui-click-soft",
+"gain": 0.14
+},
+{
 "t": 529.35,
 "clip": "ui-click-soft",
 "gain": 0.14

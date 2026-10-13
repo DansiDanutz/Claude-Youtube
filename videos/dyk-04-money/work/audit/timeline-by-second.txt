@@ -526,7 +526,7 @@ sec | shot | narration in this second | SFX starting in this second
 8:44 | Mo2100 | So here's | whoosh-soft
 8:45 | Mo2100 | one scenario. | stamp-hit
 8:46 | Mo2100 | Not a fact. | stamp-hit
-8:47 | Mo2100 | By | 
+8:47 | Mo2100 | By | ui-click-soft
 8:48 | Mo2100 | twenty one hundred, | 
 8:49 | Mo2100 | the note in your wallet | ui-click-soft
 8:50 | Mo2100 | could be a museum | warm-shimmer

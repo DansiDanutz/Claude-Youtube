@@ -168,6 +168,7 @@ const Mo2100: React.FC = () => {
         <div style={{ position: 'absolute', left: 160, top: 300, display: 'flex', alignItems: 'center', gap: 30 }}>
           <StampText text="ONE SCENARIO" at={SCENARIO} color={DYT.magenta} size={40} tilt={-3} />
           <StampText text="NOT A FACT" at={FACT} color={DL.red} size={40} tilt={3} />
+          <span style={{ marginLeft: 30, fontFamily: DL_MONO, fontWeight: 700, fontSize: 40, letterSpacing: 4, color: DL.gold, opacity: ease(f, BY - 2, BY + 6), transform: `scale(${ease(f, BY - 2, BY + 10, 1.3, 1)})`, display: 'inline-block' }}>BY 2100 …</span>
         </div>
         <div style={{ position: 'absolute', left: 160, top: 420, display: 'flex', alignItems: 'flex-end', gap: 60 }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, opacity: ease(f, NOTE_W - 2, NOTE_W + 8) }}>
