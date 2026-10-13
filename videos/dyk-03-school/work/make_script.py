@@ -1,4 +1,4 @@
-import json, sys
+import copy, importlib.util, json, os, sys
 G = 0.3
 def sc(id, shot, chunks, pauses=None, floor=None, even=True):
     ch = [{"text": t, "pace": p, "speed": 1.0, **(x or {})} for t, p, x in chunks]
@@ -99,21 +99,47 @@ S[4]["pauses"]["min_sentence_gap"] = 0.25
 S[14]["pauses"]["min_sentence_gap"] = 0.42
 S[9]["pauses"]["min_sentence_gap"] = 0.3
 S[10]["pauses"]["min_sentence_gap"] = 0.35
-json.dump({"voice": "Brian (nPczCjzI2devNBz1zQrb), eleven_flash_v2_5 · stability .32 / similarity .85 / style .45",
-           "version": "v1 2026-10-13 (No. 03 School)", "scenes": S}, open(sys.argv[1], "w"), indent=2)
-print(sum(len(c["text"]) for s in S for c in s["chunks"]), "chars;", sum(len(c["text"].split()) for s in S for c in s["chunks"]), "words")
-# keep the speeds that passed: from the existing script (same chunk text) or the chunk cache
-import os
-sys.path.insert(0, os.path.dirname(os.path.abspath(sys.argv[1])) + '/..')
-import gen_voice as g
-doc = json.load(open(sys.argv[1]))
-old = json.load(open(sys.argv[1] + '.bak')) if os.path.exists(sys.argv[1] + '.bak') else {"scenes": []}
-prev = {(sc["id"], c["text"], c["pace"]): c["speed"] for sc in old["scenes"] for c in sc["chunks"]}
-for sc in doc["scenes"]:
-    for k, c in enumerate(sc["chunks"]):
-        meta = g.chunk_key(sc["id"], k, c) + ".json"
-        if os.path.exists(meta):
-            c["speed"] = json.load(open(meta))["speed"]
-        elif (sc["id"], c["text"], c["pace"]) in prev:
-            c["speed"] = prev[(sc["id"], c["text"], c["pace"])]
-json.dump(doc, open(sys.argv[1], "w"), indent=2)
+VOICE = "Brian (nPczCjzI2devNBz1zQrb), eleven_flash_v2_5 · stability .32 / similarity .85 / style .45"
+VERSION = "v1 2026-10-13 (No. 03 School)"
+
+
+def load_gen_voice():
+    """gen_voice.py beside this file, loaded by path (never a same-named module from another episode)."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gen_voice.py")
+    spec = importlib.util.spec_from_file_location("dyk03_gen_voice", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def accepted_speeds(old, g):
+    """{(scene id, chunk text, pace): speed} from an existing script.json, scene-level `speed` included
+    (gen_voice.chunks_of turns a chunk-less scene into its one chunk)."""
+    return {(sc["id"], c["text"], c.get("pace", g.PACE_TARGET)): c["speed"]
+            for sc in old.get("scenes", []) for c in g.chunks_of(sc) if "speed" in c}
+
+
+def with_speeds(doc, prev, g):
+    """Copy of doc keeping the speeds that passed: the chunk cache first, else the existing script (same text)."""
+    out = copy.deepcopy(doc)
+    for sc in out["scenes"]:
+        for k, c in enumerate(sc["chunks"]):
+            meta = g.chunk_key(sc["id"], k, c) + ".json"
+            if os.path.exists(meta):
+                c["speed"] = json.load(open(meta))["speed"]
+            elif (sc["id"], c["text"], c["pace"]) in prev:
+                c["speed"] = prev[(sc["id"], c["text"], c["pace"])]
+    return out
+
+
+def main(path):
+    g = load_gen_voice()
+    old = json.load(open(path)) if os.path.exists(path) else {"scenes": []}   # read BEFORE overwriting
+    doc = with_speeds({"voice": VOICE, "version": VERSION, "scenes": S}, accepted_speeds(old, g), g)
+    with open(path, "w") as f:
+        json.dump(doc, f, indent=2)
+    print(sum(len(c["text"]) for s in S for c in s["chunks"]), "chars;", sum(len(c["text"].split()) for s in S for c in s["chunks"]), "words")
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])
