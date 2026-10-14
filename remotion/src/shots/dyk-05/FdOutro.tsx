@@ -70,7 +70,7 @@ const WONDER = S.at('Wonder');
 const REPEAT = S.at('Repeat');
 const END = S.end;
 // End screen: 15 s from ES (YouTube end-screen elements are placed over these slots in Studio).
-const ES = END + 24;
+const ES = END + 54; // round 5: REPEAT. needs 1.5 s before the end screen (was 24 f)
 const E = makeCue(vo, 'fd14-endscreen', (ES + 14) / 30);
 const PICK = E.at('Pick');
 const SEE = E.at('see');
@@ -101,7 +101,7 @@ const FdOutro: React.FC = () => {
   const fadeIn = ease(f, -1, 2);
   const fadeOut = ease(f, DUR - 18, DUR - 1, 1, 0, DL_EASE.in);
   const p1 = 1 - ease(f, NEXT - 14, NEXT, 0, 1, DL_EASE.in);
-  const p2 = ease(f, NEXT - 2, NEXT + 12) * (1 - ease(f, END + 10, END + 26, 0, 1, DL_EASE.in));
+  const p2 = ease(f, NEXT - 2, NEXT + 12) * (1 - ease(f, END + 40, END + 50, 0, 1, DL_EASE.in));
   const p3 = ease(f, ES - 4, ES + 14);
   const commentPulse = f > COMMENTS ? 0.5 + 0.5 * Math.sin((f - COMMENTS) / 5) : 0;
   const lockOut = ease(f, TURN - 16, TURN - 2, 0, 1, DL_EASE.inOut);
@@ -173,7 +173,7 @@ const FdOutro: React.FC = () => {
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px 36px', width: 1600, marginTop: 22, fontFamily: DL_MONO, fontSize: 28, letterSpacing: 3, color: DL.dim }}>
           <span style={{ opacity: ease(f, CHANGED - 2, CHANGED + 8) }}>IF THIS CHANGED HOW YOU SEE<span style={{ opacity: ease(f, PLATE_W - 2, PLATE_W + 6), color: DL.gold }}> WHAT'S ON YOUR PLATE</span></span>
           <span style={{ opacity: ease(f, FRIEND - 2, FRIEND + 8), display: 'flex', alignItems: 'center', gap: 12, transform: `scale(${1 + 0.12 * friendPulse})`, color: friendPulse > 0.3 ? DYT.cyan : undefined }}><svg width={30} height={30} viewBox="0 0 30 30"><circle cx={15} cy={9} r={7} fill={DYT.cyan} /><path d="M2 30 C2 19 8 16 15 16 C22 16 28 19 28 30 Z" fill={DYT.cyan} /></svg>THE FRIEND WHO ALWAYS COOKS FOR YOU</span>
-          <span style={{ opacity: ease(f, MYSTERY - 2, MYSTERY + 8), display: 'flex', alignItems: 'center', gap: 12, color: DYT.magenta }}>? THE NEXT MYSTERY</span>
+          <span style={{ opacity: ease(f, C.at('next') - 2, C.at('next') + 4), display: 'flex', alignItems: 'center', gap: 12, color: DYT.magenta }}>? THE NEXT MYSTERY</span>
         </div>
       </AbsoluteFill>
 
@@ -201,7 +201,10 @@ const FdOutro: React.FC = () => {
         </div>
       </AbsoluteFill>
 
-      {/* ── part 3: END SCREEN (15 s). Two 16:9 video slots + a subscribe ring sized for YouTube's end-screen elements. */}
+      {/* ── part 3: END SCREEN (15 s). Two 16:9 video slots + a subscribe ring sized for YouTube's end-screen elements.
+           Ring centre (960, 767): YouTube clamps its 296 px Subscribe circle to box top 619, so this is the only place it can
+           cover the ring completely (No. 01–04 drew it at 850 and a crescent stayed visible). SUBSCRIBE / Comment-below text
+           sit level with the ring. See dyk-episode/references/upload-playbook.md §2.4. */}
       <AbsoluteFill style={{ opacity: p3 }}>
         <DytBg />
         <div style={{ position: 'absolute', top: 70, left: 0, right: 0, display: 'flex', justifyContent: 'center' }}>
@@ -244,14 +247,14 @@ const FdOutro: React.FC = () => {
             </div>
           );
         })()}
-        <div style={{ position: 'absolute', left: 960 - 130, top: 720, width: 260, height: 260, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${1 + 0.14 * ringPulse})`, borderRadius: '50%', boxShadow: `0 0 ${50 * ringPulse}px ${DYT.magenta}aa` }}>
+        <div style={{ position: 'absolute', left: 960 - 130, top: 637, width: 260, height: 260, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${1 + 0.14 * ringPulse})`, borderRadius: '50%', boxShadow: `0 0 ${50 * ringPulse}px ${DYT.magenta}aa` }}>
           <DytLogoAnimated size={190} start={ES + 6} />
         </div>
-        <div style={{ position: 'absolute', left: 1130, top: 790, opacity: ease(f, ES + 18, ES + 30) }}>
+        <div style={{ position: 'absolute', left: 1130, top: 727, opacity: ease(f, ES + 18, ES + 30) }}>
           <div style={{ fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 40, color: DYT.white }}>SUBSCRIBE</div>
           <div style={{ fontFamily: DYT_DISPLAY, fontWeight: 700, fontSize: 28, letterSpacing: 2, color: DYT.dim, marginTop: 6 }}>{DYT_HANDLE}</div>
         </div>
-        <div style={{ position: 'absolute', left: 160, top: 800, width: 620, opacity: ease(f, PICK - 6, PICK + 8) }}>
+        <div style={{ position: 'absolute', left: 160, top: 727, width: 620, opacity: ease(f, YOUR_COMMENT - 2, YOUR_COMMENT + 8) }}>
           <div style={{ fontFamily: DYT_DISPLAY, fontWeight: 900, fontSize: 40, color: DYT.white }}>Comment below ↓</div>
           <div style={{ fontFamily: DYT_DISPLAY, fontWeight: 700, fontSize: 28, letterSpacing: 2, color: DYT.dim, marginTop: 6 }}>Best one is read next episode.</div>
         </div>
