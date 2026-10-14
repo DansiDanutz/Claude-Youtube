@@ -28,6 +28,14 @@ Chapter times come from `timeline.json` shot starts; re-run the gate after every
    to a disclosed AI narrator over illustrated graphics. The AI voice is disclosed in the description.
 4. **End screen**: *Import from video* → the previous episode, then point its **video element at the previous
    episode** (WATCH NEXT slot, right); subscribe element over the ring. Last 15 s.
+   **Geometry (learned on No. 04, 2026-10-14):** YouTube keeps end-screen elements out of a bottom safe zone — the
+   Subscribe circle (296 × 296 video px) cannot go lower than box top **619** (centre y **767**); dragging it lower is
+   silently clamped. So the ring the outro draws must sit at centre **(960, 767)** — in the outro component that is
+   `left: 960 - 130, top: 637, width: 260, height: 260` (No. 01–04 shipped with `top: 720`, centre y 850, which leaves a
+   crescent of the drawn disc visible under YouTube's circle; those four are centred horizontally and left as they are).
+   After importing, verify on the public watch page (seek to the last 6 s, DevTools/JS):
+   `const v=document.querySelector('video'),vr=v.getBoundingClientRect(),sx=1920/vr.width,r=document.querySelector('.ytp-ce-channel').getBoundingClientRect();[Math.round((r.left-vr.left+r.width/2)*sx),Math.round((r.top-vr.top+r.height/2)*sx)]`
+   must print `[960, 767]`; the video element's box should read `(1140, 302, 623 × 351)` inside the WATCH NEXT frame.
 5. **Card** at ~0:40 → the previous episode.
 6. **No subtitles**: after processing, open *Languages* and delete any automatic captions (David wants none).
    Check again later — auto-captions can appear hours after upload.
