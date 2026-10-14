@@ -71,7 +71,8 @@ Chapter times come from `timeline.json` shot starts; re-run the gate after every
 git clone --filter=blob:none --no-checkout https://github.com/DansiDanutz/Did-You-Know-That.git ~/Projects/Did-You-Know-That
 cd ~/Projects/Did-You-Know-That && git sparse-checkout set --cone brand docs episodes intro neon-card outro tools website && git checkout main
 cd website && vercel link --yes --project did-you-know-that-2026
-``` Work in a worktree (`danslab-workflow check` first).
+```
+Work in a worktree (`danslab-workflow check` first).
 Add the episode exactly like the previous entry in `website/data/episodes.json` (8 era questions → 8 `<slug>-*` cards,
 F-refs, 2100 never quizzed), `episodes/00N-<slug>/RESEARCH.md` + its source test, thumbnail + webp sizes, previous
 episode's "What's next" → this one, this one's → the next subject placeholder; then
