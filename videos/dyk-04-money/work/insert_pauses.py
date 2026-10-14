@@ -68,11 +68,25 @@ def chunk_slices(chunks):
     return out
 
 
+def safe_gap(ref, i):
+    """True when the take has at least MIN_CUT_GAP_S of real silence between word i and word i + 1 of `ref`."""
+    return ref[i + 1]["s"] - ref[i]["e"] >= MIN_CUT_GAP_S
+
+
+def breath_points(words, ref, a, b):
+    """Where a chunk words[a:b] may take even-pace breaths: its sentence ends, else its , ; : words, else any word
+    boundary — always only where the raw take `ref` has real silence (safe_gap). [] when there is none."""
+    safe = [i for i in range(a, b - 1) if safe_gap(ref, i)]
+    return [i for i in safe if SENTENCE_END.search(words[i]["w"])] or \
+           [i for i in safe if words[i]["w"].endswith((",", ";", ":"))] or safe
+
+
 def even_pace_cuts(words, chunks, raw=None):
     """Extra [(word_index, seconds)] that slow the faster of two neighbouring chunks with longer breaths at its own
     sentence ends (commas if it has none) until every pair is within PACE_STEP_MAX, payoff chunks <= PAYOFF_WPS_MAX,
     and no chunk below (1 - PACE_TOL) of its target. Silence is only ever added; a pace-0 or one-word chunk (the
-    sign-off) is left alone and breaks the chain."""
+    sign-off) is left alone and breaks the chain. `raw` is the take's own word timing (before any top-up pause);
+    raises ValueError when a chunk that must be slowed has no boundary with real silence (a new take is needed)."""
     sl = chunk_slices(chunks)
     rate = [None] * len(sl)
     for k, ((a, b), ch) in enumerate(zip(sl, chunks)):
@@ -100,12 +114,13 @@ def even_pace_cuts(words, chunks, raw=None):
             continue
         need = (b - a) / w[k] - (words[b - 1]["e"] - words[a]["s"])
         # No. 04 audit: never cut into a gap where the take runs words together (< MIN_CUT_GAP_S of real silence) —
-        # the cut lands on the previous word's tail ("pocket. | You", 24 ms gap) and clips both words.
-        ref = raw or words      # judge the take's own silence, before any top-up pause
-        clear = lambda i: ref[i + 1]["s"] - ref[i]["e"] >= MIN_CUT_GAP_S
-        inner = [i for i in range(a, b - 1) if SENTENCE_END.search(words[i]["w"]) and clear(i)] or \
-                [i for i in range(a, b - 1) if words[i]["w"].endswith((",", ";", ":")) and clear(i)] or \
-                [i for i in range(a, b - 1) if SENTENCE_END.search(words[i]["w"])] or list(range(a, b - 1))
+        # the cut lands on the previous word's tail ("pocket. | You", 24 ms gap) and clips both words. Judged on the
+        # take's own silence (raw), before any top-up pause; no safe boundary means a new take, never an unsafe cut.
+        inner = breath_points(words, raw or words, a, b)
+        if not inner:
+            raise ValueError(f"even_pace: chunk {k + 1} ({chunks[k]['text'][:40]!r}...) needs +{need:.2f}s of breath but "
+                             f"has no boundary with >= {MIN_CUT_GAP_S * 1000:.0f} ms of real silence; "
+                             "generate a new take of this chunk")
         cuts += [(i, round(need / len(inner), 3)) for i in inner]
     return cuts
 
@@ -188,7 +203,15 @@ def process(sid, cfg, chunks=None):
     words = json.load(open(os.path.join(NARR, f"{sid}.words.json")))
     cuts = plan_pauses(words, cfg)
     if cfg.get("even_pace") and chunks and len(chunks) > 1:
-        cuts = merge_cuts(cuts, even_pace_cuts(shift_words(words, cuts), chunks, words))
+        try:
+            pace = even_pace_cuts(shift_words(words, cuts), chunks, words)
+        except ValueError as err:
+            raise ValueError(f"{sid}: {err}") from err
+        unsafe = [i for i, _ in pace if not safe_gap(words, i)]
+        if unsafe:              # last gate before any audio is written: never fade/cut into a word run-together
+            raise ValueError(f"{sid}: even-pace cut after word(s) {unsafe} has < {MIN_CUT_GAP_S * 1000:.0f} ms of "
+                             "real silence; generate a new take")
+        cuts = merge_cuts(cuts, pace)
     tmp = os.path.join(MIX, f"{sid}.decode.wav")
     decode(os.path.join(NARR, f"{sid}.mp3"), tmp)
     try:

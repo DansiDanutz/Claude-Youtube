@@ -149,6 +149,34 @@ def speed_band(floor, prev_speed=None):
     return lo, max(lo, hi)
 
 
+def chunk_band(sc, ch, prev_speed=None):
+    """[lo, hi] the generation loop allows for chunk ch of scene sc after a chunk taken at prev_speed: the chunk's
+    floor, the continuity step from its neighbour, and the payoff cap. The quota gate uses the same band."""
+    lo, hi = speed_band(float(ch.get("floor", sc.get("floor", SPEED_MIN))), prev_speed)
+    if ch.get("payoff"):            # voice preflight: the payoff is never read faster than speed 1.0
+        hi = max(lo, min(hi, PAYOFF_SPEED_MAX))
+    return lo, hi
+
+
+def chunks_to_generate(sc):
+    """[(k, chunk)] of scene sc the loop may send to the API: every chunk without a cached take valid under its
+    continuity-narrowed band. A chunk after one that must be generated is counted too — the new take's speed is
+    unknown until it exists, so its neighbour's cached take may fall outside the narrowed band."""
+    out, prev = [], None
+    for k, ch in enumerate(chunks_of(sc)):
+        take = cached_take(sc["id"], k, ch, *chunk_band(sc, ch, prev)) if not out else None
+        if take:
+            prev = take[3]
+        else:
+            out.append((k, ch))
+    return out
+
+
+def worst_case_chars(scenes):
+    """Characters a run over these scenes may bill: every chunk it may generate, retried MAX_TRIES times."""
+    return sum(len(ch["text"]) for sc in scenes for _, ch in chunks_to_generate(sc)) * MAX_TRIES
+
+
 def articulation_rate(words):
     """Syllables per second of speech, pauses (gaps >= ART_GAP_S) excluded — the tempo a listener hears as speed.
     Syllables, not words: "Did you know that a pale face…" has short words and reads ~20 % more words/s than
@@ -313,7 +341,7 @@ def main():
     only = set(filter(None, os.environ.get("ONLY", "").split(",")))
     # quota gate: Creator plan, no overage — worst case is every pending line retried MAX_TRIES times
     todo = [sc for sc in script["scenes"] if (sc["id"] in only) or (not only and not os.path.exists(os.path.join(NARR, f"{sc['id']}.mp3")))]
-    worst = sum(len(ch["text"]) for sc in todo for k, ch in enumerate(chunks_of(sc)) if not cached_take(sc["id"], k, ch)) * MAX_TRIES
+    worst = worst_case_chars(todo)
     if todo:                      # only ask the API when something will actually be generated
         sub = subscription(key)
         left = sub["character_limit"] - sub["character_count"]
@@ -340,9 +368,7 @@ def main():
         for k, ch in enumerate(chunks_of(sc)):
             if len(chunks_of(sc)) > 1:
                 print(f"  {sid} chunk {k + 1}: pace target {ch.get('pace', PACE_TARGET) or '-'}")
-            lo, hi = speed_band(float(ch.get("floor", floor)), takes[-1][1][3] if takes else None)
-            if ch.get("payoff"):            # voice preflight: the payoff is never read faster than speed 1.0
-                hi = max(lo, min(hi, PAYOFF_SPEED_MAX))
+            lo, hi = chunk_band(sc, ch, takes[-1][1][3] if takes else None)
             take = cached_take(sid, k, ch, lo, hi)
             if take:
                 print(f"    chunk {k + 1}: cached passing take (no API call)")
