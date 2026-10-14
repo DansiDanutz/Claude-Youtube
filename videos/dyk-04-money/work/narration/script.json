@@ -1,0 +1,638 @@
+{
+  "voice": "Brian (nPczCjzI2devNBz1zQrb), eleven_flash_v2_5 \u00b7 stability .32 / similarity .85 / style .45",
+  "version": "v1 2026-10-13 (No. 04 Money)",
+  "risky_words": [
+    "Tenochtitlan",
+    "Aztecs",
+    "cacao",
+    "Palmstruch",
+    "livres",
+    "Mississippi",
+    "hunchback",
+    "Sovereigns",
+    "bearer",
+    "Pittsburgh",
+    "Nixon",
+    "Nairobi",
+    "Matatus",
+    "M-Pesa",
+    "upcountry",
+    "I-O-U",
+    "stablecoins",
+    "euro",
+    "food",
+    "rung",
+    "Law"
+  ],
+  "scenes": [
+    {
+      "id": "mo01-hook",
+      "shot": "MoHook",
+      "text": "Last time, I left you with a question. Did school ever teach you what money actually is? Take a note out of your wallet. Any note. It's paper, or plastic, and a bit of ink. And still, you'd trade hours of your life for a few of them.",
+      "chunks": [
+        {
+          "text": "Last time, I left you with a question. Did school ever teach you what money actually is? Take a note out of your wallet. Any note. It's paper, or plastic, and a bit of ink. And still, you'd trade hours of your life for a few of them.",
+          "pace": 3.2,
+          "speed": 0.95
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "mo02-question",
+      "shot": "MoHook",
+      "text": "And here's the strange part. Did you know that most money today isn't paper, or metal, or anything you could ever hold? So what is it, actually?",
+      "chunks": [
+        {
+          "text": "And here's the strange part. Did you know that most money today isn't paper, or metal, or anything you could ever hold? So what is it, actually?",
+          "pace": 3.3,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "mo00-welcome",
+      "shot": "MoWelcome",
+      "text": "Welcome back to Did You Know That. Episode four. You know the rule. Here's your guess. In Britain, out of every hundred pounds people have, how many exist as real notes and coins? Guess in the comments, right now. Then stay to the end, and check your guess.",
+      "chunks": [
+        {
+          "text": "Welcome back to Did You Know That. Episode four. You know the rule. Here's your guess. In Britain, out of every hundred pounds people have, how many exist as real notes and coins? Guess in the comments, right now. Then stay to the end, and check your guess.",
+          "pace": 3.15,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "coins?",
+            "nth": 1,
+            "add": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "id": "mo03-promise",
+      "shot": "MoPromise",
+      "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up somewhere new, with money in your hand. Or on your phone. You start with money you could drink. You end with money that might be nothing but code. And at the end, you'll find out what money really is.",
+      "chunks": [
+        {
+          "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up somewhere new, with money in your hand. Or on your phone. You start with money you could drink. You end with money that might be nothing but code. And at the end, you'll find out what money really is.",
+          "pace": 3.15,
+          "speed": 1.008
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "mo04-1500",
+      "shot": "Mo1500",
+      "text": "You wake up in fifteen hundred, in Tenochtitlan, the island city of the Aztecs. Canoes bump along the canals. The market's already loud, and it smells of chilli and wood smoke. Did you know that here, money grows on trees? Cacao beans. The same beans that make chocolate. A price list from a few decades later says it plainly. One ripe avocado, one bean. A good turkey hen, a hundred. Bigger deals get paid in cotton cloaks. And a Spanish friar wrote about sellers who faked cacao beans. Forgery. With chocolate. So what is money to you? Something useful. Something you could even drink. You might have heard that money was invented because swapping goats for grain got awkward. Anthropologists say they've never found a whole society that ran on barter alone. People have always found something to count with. But beans are bulky, and they rot. Across the ocean, one country's money has the opposite problem. It's so heavy, you need a cart.",
+      "chunks": [
+        {
+          "text": "You wake up in fifteen hundred, in Tenochtitlan, the island city of the Aztecs. Canoes bump along the canals. The market's already loud, and it smells of chilli and wood smoke.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that here, money grows on trees? Cacao beans. The same beans that make chocolate.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        },
+        {
+          "text": "A price list from a few decades later says it plainly. One ripe avocado, one bean. A good turkey hen, a hundred. Bigger deals get paid in cotton cloaks. And a Spanish friar wrote about sellers who faked cacao beans. Forgery. With chocolate.",
+          "pace": 3.0,
+          "speed": 1.08
+        },
+        {
+          "text": "So what is money to you? Something useful. Something you could even drink. You might have heard that money was invented because swapping goats for grain got awkward. Anthropologists say they've never found a whole society that ran on barter alone. People have always found something to count with.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "But beans are bulky, and they rot. Across the ocean, one country's money has the opposite problem. It's so heavy, you need a cart.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "smoke.",
+            "nth": 1,
+            "add": 0.2
+          },
+          {
+            "word": "trees?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "you?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo05-1661",
+      "shot": "Mo1661",
+      "text": "You wake up in sixteen sixty one, in Stockholm. The harbour's frozen, and a sledge scrapes past your window, loaded with copper. Did you know that Sweden's biggest coin weighed almost twenty kilos? It's a copper plate. You don't put it in your pocket. You put it on a cart. So a banker called Johan Palmstruch has an idea. Leave your copper at his bank, and take a sheet of paper instead. It says your copper is waiting for you. These are the first real banknotes in Europe. So what is money now? A promise. Written on paper. Remember that word, promise. It comes back at the end. People love the notes. So the bank prints more, and lends more, than it has copper to pay back. When people come for their copper, it isn't there. The bank fails. Palmstruch is sentenced to death. He's spared, and dies a few years later. Paper only works while people believe in it. And in the next century, one man will push that belief further than anyone ever had.",
+      "chunks": [
+        {
+          "text": "You wake up in sixteen sixty one, in Stockholm. The harbour's frozen, and a sledge scrapes past your window, loaded with copper.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that Sweden's biggest coin weighed almost twenty kilos? It's a copper plate. You don't put it in your pocket.",
+          "pace": 3.3,
+          "speed": 1.0,
+          "floor": 0.85
+        },
+        {
+          "text": "You put it on a cart. So a banker called Johan Palmstruch has an idea. Leave your copper at his bank, and take a sheet of paper instead. It says your copper is waiting for you. These are the first real banknotes in Europe.",
+          "pace": 3.0,
+          "speed": 0.92
+        },
+        {
+          "text": "So what is money now? A promise. Written on paper. Remember that word, promise. It comes back at the end.",
+          "pace": 2.9,
+          "speed": 1.0
+        },
+        {
+          "text": "People love the notes. So the bank prints more, and lends more, than it has copper to pay back. When people come for their copper, it isn't there. The bank fails. Palmstruch is sentenced to death. He's spared, and dies a few years later.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Paper only works while people believe in it. And in the next century, one man will push that belief further than anyone ever had.",
+          "pace": 3.1,
+          "speed": 0.92,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "now?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo06-1720",
+      "shot": "Mo1720",
+      "text": "You wake up in seventeen twenty, in Paris. The street smells of horses, and everyone's talking about paper. Did you know that this year, France made it illegal to own more than five hundred livres in gold or silver? The government wanted you to trust paper. By law. The man behind it is John Law. A Scottish gambler. Like Palmstruch, he was once sentenced to death, for killing a man in a duel. Now he runs France's money. One narrow street is packed, day and night. People are buying shares in Law's Mississippi Company. In about a year and a half, the price has gone up about forty times. The story goes that a hunchback rents out his back, as a writing desk. So what is money now? A belief. It's worth whatever everyone believes it's worth. Until they don't. By December, the shares have crashed. The notes are losing value. And Law escapes France. For the next hundred years, people want money they don't just have to believe in. Something they can bite. And in London, they get it.",
+      "chunks": [
+        {
+          "text": "You wake up in seventeen twenty, in Paris. The street smells of horses, and everyone's talking about paper.",
+          "pace": 3.0,
+          "speed": 1.08
+        },
+        {
+          "text": "Did you know that this year, France made it illegal to own more than five hundred livres in gold or silver? The government wanted you to trust paper. By law.",
+          "pace": 3.3,
+          "speed": 1.0,
+          "floor": 0.85
+        },
+        {
+          "text": "The man behind it is John Law. A Scottish gambler. Like Palmstruch, he was once sentenced to death, for killing a man in a duel. Now he runs France's money.",
+          "pace": 3.0,
+          "speed": 0.92
+        },
+        {
+          "text": "One narrow street is packed, day and night. People are buying shares in Law's Mississippi Company. In about a year and a half, the price has gone up about forty times. The story goes that a hunchback rents out his back, as a writing desk.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "So what is money now? A belief. It's worth whatever everyone believes it's worth. Until they don't. By December, the shares have crashed. The notes are losing value. And Law escapes France.",
+          "pace": 2.9,
+          "speed": 1.0
+        },
+        {
+          "text": "For the next hundred years, people want money they don't just have to believe in. Something they can bite. And in London, they get it.",
+          "pace": 3.3,
+          "speed": 0.92,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "silver?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "now?",
+            "nth": 1,
+            "add": 0.25
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo07-1821",
+      "shot": "Mo1821",
+      "text": "You wake up in eighteen twenty one, in London. Coal smoke, wet cobbles, and a queue outside the Bank of England. Did you know that Bank of England notes still say, I promise to pay the bearer on demand? Back then, that promise meant gold. A five pound note could be swapped for five gold coins. Sovereigns. For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did counterfeiters, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like. So what is money now? As good as gold. A promise you can swap for metal. Over the next century, much of the world follows Britain onto gold. Gold becomes the anchor. And anchors feel safe. But in nineteen seventy one, one television speech cuts the rope.",
+      "chunks": [
+        {
+          "text": "You wake up in eighteen twenty one, in London. Coal smoke, wet cobbles, and a queue outside the Bank of England.",
+          "pace": 3.0,
+          "speed": 0.9
+        },
+        {
+          "text": "Did you know that Bank of England notes still say, I promise to pay the bearer on demand? Back then, that promise meant gold. A five pound note could be swapped for five gold coins. Sovereigns.",
+          "pace": 2.9,
+          "speed": 0.98,
+          "floor": 0.85
+        },
+        {
+          "text": "For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did counterfeiters, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like.",
+          "pace": 3.0,
+          "speed": 1.056
+        },
+        {
+          "text": "So what is money now? As good as gold. A promise you can swap for metal. Over the next century, much of the world follows Britain onto gold. Gold becomes the anchor. And anchors feel safe. But in nineteen seventy one, one television speech cuts the rope.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "demand?",
+            "nth": 1,
+            "add": 0.3
+          },
+          {
+            "word": "now?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "safe.",
+            "nth": 1,
+            "add": 0.35
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo08-1971",
+      "shot": "Mo1971",
+      "text": "You wake up in nineteen seventy one, in a suburb of Pittsburgh. It's a Sunday evening in August, and the whole family's in front of the TV. Did you know that in nineteen seventy one, it was illegal for most Americans to own gold coins or bars? It had been since nineteen thirty three. Gold was for governments. Since nineteen forty four, they could swap dollars for American gold, at thirty five dollars an ounce. The dollar was tied to gold, and most other money was tied to the dollar. That evening, President Nixon comes on. From now on, foreign governments can't swap their dollars for gold. Within a few years, the whole system's gone. So what is money now? A promise backed by trust. Trust in the people who run it. And a generation later, that trust takes a new shape. Money doesn't need paper at all. In Kenya, it moves into a text message.",
+      "chunks": [
+        {
+          "text": "You wake up in nineteen seventy one, in a suburb of Pittsburgh. It's a Sunday evening in August, and the whole family's in front of the TV.",
+          "pace": 3.6,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that in nineteen seventy one, it was illegal for most Americans to own gold coins or bars? It had been since nineteen thirty three.",
+          "pace": 2.9,
+          "speed": 0.92,
+          "floor": 0.85
+        },
+        {
+          "text": "Gold was for governments. Since nineteen forty four, they could swap dollars for American gold, at thirty five dollars an ounce. The dollar was tied to gold, and most other money was tied to the dollar.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "That evening, President Nixon comes on. From now on, foreign governments can't swap their dollars for gold. Within a few years, the whole system's gone.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "So what is money now? A promise backed by trust. Trust in the people who run it.",
+          "pace": 3.1,
+          "speed": 0.92
+        },
+        {
+          "text": "And a generation later, that trust takes a new shape. Money doesn't need paper at all. In Kenya, it moves into a text message.",
+          "pace": 2.9,
+          "speed": 0.9002083333333334,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "TV.",
+            "nth": 1,
+            "add": 0.2
+          },
+          {
+            "word": "now?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo09-today",
+      "shot": "MoToday",
+      "text": "You wake up today, in Nairobi. Matatus honk on the road outside, and your phone buzzes. Your sister just sent you money, from a village far upcountry. It took seconds. Did you know that about eight in ten adults in Kenya now use mobile money? In two thousand and nine, it was under three in ten. M-Pesa launched here in two thousand and seven. You hand cash to a shopkeeper, and it turns into numbers on your phone. School fees and taxi rides get paid with a text. And it isn't just Kenya. Across the euro area, cash paid for about eight in ten shop purchases in twenty sixteen. By twenty twenty four, it was about half. So what is money to you? Numbers on a screen. You almost never touch it. So here's the question you came for. If it isn't paper, and it isn't gold, what is money, actually?",
+      "chunks": [
+        {
+          "text": "You wake up today, in Nairobi. Matatus honk on the road outside, and your phone buzzes. Your sister just sent you money, from a village far upcountry. It took seconds.",
+          "pace": 3.0,
+          "speed": 1.08
+        },
+        {
+          "text": "Did you know that about eight in ten adults in Kenya now use mobile money? In two thousand and nine, it was under three in ten. M-Pesa launched here in two thousand and seven. You hand cash to a shopkeeper, and it turns into numbers on your phone. School fees and taxi rides get paid with a text.",
+          "pace": 3.4,
+          "speed": 1.0,
+          "floor": 0.85
+        },
+        {
+          "text": "And it isn't just Kenya. Across the euro area, cash paid for about eight in ten shop purchases in twenty sixteen. By twenty twenty four, it was about half.",
+          "pace": 2.9,
+          "speed": 0.92
+        },
+        {
+          "text": "So what is money to you? Numbers on a screen. You almost never touch it. So here's the question you came for. If it isn't paper, and it isn't gold, what is money, actually?",
+          "pace": 2.9,
+          "speed": 0.9077682352941177,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "seconds.",
+            "nth": 1,
+            "add": 0.2
+          },
+          {
+            "word": "you?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "it.",
+            "nth": 1,
+            "add": 0.3
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo10-reveal",
+      "shot": "MoReveal",
+      "text": "Here's the answer. The Bank of England puts it plainly. Money today is a type of I-O-U. A special one, because everyone trusts that other people will accept it. And most of it is made by ordinary banks. When a bank gives you a loan, it doesn't hand you someone else's savings. It types a new deposit into your account. Within limits, a loan creates new money. And your guess? When the Bank of England checked, about ninety seven out of every hundred pounds were bank deposits. Only about three were notes and coins. How close were you? Now climb the ladder again, with me. In fifteen hundred, money was something useful. Then, a promise on paper. Then, a belief. Then, as good as gold. Then, trust, and nothing else. Today, numbers on a screen. Remember that word from Stockholm? Promise. It was there all along.",
+      "chunks": [
+        {
+          "text": "Here's the answer. The Bank of England puts it plainly. Money today is a type of I-O-U. A special one, because everyone trusts that other people will accept it.",
+          "pace": 2.7,
+          "speed": 0.9
+        },
+        {
+          "text": "And most of it is made by ordinary banks. When a bank gives you a loan, it doesn't hand you someone else's savings. It types a new deposit into your account. Within limits, a loan creates new money.",
+          "pace": 3.0,
+          "speed": 0.9
+        },
+        {
+          "text": "And your guess? When the Bank of England checked, about ninety seven out of every hundred pounds were bank deposits. Only about three were notes and coins. How close were you?",
+          "pace": 3.1,
+          "speed": 0.98
+        },
+        {
+          "text": "Now climb the ladder again, with me. In fifteen hundred, money was something useful. Then, a promise on paper. Then, a belief. Then, as good as gold. Then, trust, and nothing else. Today, numbers on a screen.",
+          "pace": 2.75,
+          "speed": 1.0,
+          "payoff": true
+        },
+        {
+          "text": "Remember that word from Stockholm? Promise. It was there all along.",
+          "pace": 2.8,
+          "speed": 0.92,
+          "payoff": true
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.35,
+        "after": [
+          {
+            "word": "guess?",
+            "nth": 1,
+            "add": 0.3
+          },
+          {
+            "word": "you?",
+            "nth": 1,
+            "add": 0.3
+          },
+          {
+            "word": "Stockholm?",
+            "nth": 1,
+            "add": 0.3
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo11-2100",
+      "shot": "Mo2100",
+      "text": "So, what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence. Cash is shrinking, and central banks have noticed. In a survey published in twenty twenty five, more than nine in ten of the central banks asked were exploring a digital currency of their own. In Europe, the central bank is getting ready for a possible digital euro. The first could come as early as twenty twenty nine, if lawmakers agree. And the Bank for International Settlements, the central banks' own bank, has warned that stablecoins, crypto tokens pegged to a currency, fail key tests of good money. It wants the central bank's promise to stay the anchor. So here's one scenario. Not a fact. By twenty one hundred, the note in your wallet could be a museum piece. Money could be code. But it would still be a promise. In fifteen hundred, money grew on trees. In twenty one hundred, it might be written in code.",
+      "chunks": [
+        {
+          "text": "So, what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Cash is shrinking, and central banks have noticed. In a survey published in twenty twenty five, more than nine in ten of the central banks asked were exploring a digital currency of their own.",
+          "pace": 2.9,
+          "speed": 0.92
+        },
+        {
+          "text": "In Europe, the central bank is getting ready for a possible digital euro. The first could come as early as twenty twenty nine, if lawmakers agree.",
+          "pace": 2.9,
+          "speed": 1.0
+        },
+        {
+          "text": "And the Bank for International Settlements, the central banks' own bank, has warned that stablecoins, crypto tokens pegged to a currency, fail key tests of good money. It wants the central bank's promise to stay the anchor.",
+          "pace": 2.9,
+          "speed": 1.0
+        },
+        {
+          "text": "So here's one scenario. Not a fact. By twenty one hundred, the note in your wallet could be a museum piece. Money could be code. But it would still be a promise.",
+          "pace": 2.9,
+          "speed": 0.92
+        },
+        {
+          "text": "In fifteen hundred, money grew on trees. In twenty one hundred, it might be written in code.",
+          "pace": 3.1,
+          "speed": 0.9,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "rung?",
+            "nth": 1,
+            "add": 0.3
+          },
+          {
+            "word": "fact.",
+            "nth": 1,
+            "add": 0.25
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo12-close",
+      "shot": "MoClose",
+      "text": "You spend so much of your life earning it. So tell me. Who would you trust to keep that promise, in twenty one hundred?",
+      "chunks": [
+        {
+          "text": "You spend so much of your life earning it. So tell me. Who would you trust to keep that promise, in twenty one hundred?",
+          "pace": 3.3,
+          "speed": 0.9,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "mo13-outro",
+      "shot": "MoOutro",
+      "text": "This was Did You Know That, episode four. Money. Now it's your turn. Which century's money would you have trusted most? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the fact cards, and play the guessing game. If this changed how you see the money in your pocket, like it. Share it with the friend who always pays you back. And subscribe, so the next mystery finds you.",
+      "chunks": [
+        {
+          "text": "This was Did You Know That, episode four. Money. Now it's your turn. Which century's money would you have trusted most? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the fact cards, and play the guessing game.",
+          "pace": 3.15,
+          "speed": 1.0
+        },
+        {
+          "text": "If this changed how you see the money in your pocket, like it. Share it with the friend who always pays you back. And subscribe, so the next mystery finds you.",
+          "pace": 3.15,
+          "speed": 0.95
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "most?",
+            "nth": 1,
+            "add": 0.25
+          }
+        ],
+        "even_pace": true
+      }
+    },
+    {
+      "id": "mo13b-next",
+      "shot": "MoOutro",
+      "text": "Next time: food. Historians estimate that in fifteen hundred, food took up most of a working family's budget. So what will you be eating in twenty one hundred?",
+      "chunks": [
+        {
+          "text": "Next time: food. Historians estimate that in fifteen hundred, food took up most of a working family's budget. So what will you be eating in twenty one hundred?",
+          "pace": 3.0,
+          "speed": 0.95
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "mo13c-signoff",
+      "shot": "MoOutro",
+      "text": "Ask... Wonder... Repeat.",
+      "chunks": [
+        {
+          "text": "Ask...",
+          "pace": 0,
+          "speed": 1.0
+        },
+        {
+          "text": "Wonder...",
+          "pace": 0,
+          "speed": 1.0
+        },
+        {
+          "text": "Repeat.",
+          "pace": 0,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "Ask...",
+            "nth": 1,
+            "add": 0.33
+          },
+          {
+            "word": "Wonder...",
+            "nth": 1,
+            "add": 0.36
+          }
+        ]
+      }
+    },
+    {
+      "id": "mo14-endscreen",
+      "shot": "MoOutro",
+      "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+      "chunks": [
+        {
+          "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+          "pace": 3.1,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.42
+      }
+    }
+  ]
+}

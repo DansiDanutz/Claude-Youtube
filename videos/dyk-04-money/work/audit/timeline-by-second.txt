@@ -1,0 +1,622 @@
+sec | shot | narration in this second | SFX starting in this second
+0:00 | MoHook | Last time, | pop-reveal
+0:01 | MoHook | I left you | 
+0:02 | MoHook | with a question. | ui-click-soft
+0:03 | MoHook | Did school ever | ui-click-soft
+0:04 | MoHook | teach you what | chime-magic
+0:05 | MoHook | money actually is? | 
+0:06 | MoHook | Take a note | whoosh-soft, whoosh-soft
+0:07 | MoHook | out of your wallet. | ui-click-soft
+0:08 | MoHook | Any note. | ui-click-soft, ui-click-soft, ui-click-soft
+0:09 | MoHook | It's paper, | page-flip
+0:10 | MoHook | or plastic, and | page-flip
+0:11 | MoHook | a bit of ink. | ui-click-soft
+0:12 | MoHook | And still, you'd | whoosh-reverse
+0:13 | MoHook | trade hours of your life | clock-tick-soft, ui-click-soft
+0:14 | MoHook | for a few of them. | ui-send
+0:15 | MoHook |  | 
+0:16 | MoHook | And here's the strange part. | whoosh-soft
+0:17 | MoHook | Did you know | impact-soft
+0:18 | MoHook | that most money today | ui-click-soft, ui-click-soft
+0:19 | MoHook | isn't paper, | stamp-hit
+0:20 | MoHook | or metal, | stamp-hit
+0:21 | MoHook | or anything | riser-soft, sparkle-soft
+0:22 | MoHook | you could ever hold? | ui-click-soft
+0:23 | MoHook | So what | ui-click-soft
+0:24 | MoHook | is it, actually? | pop-reveal
+0:25 | MoHook |  | scan-hum
+0:26 | MoIntro |  | ui-toggle-on, sparkle-soft
+0:27 | MoIntro |  | whoosh-soft, knock-solid, knock-solid, knock-solid, impact-deep-soft
+0:28 | MoIntro |  | chime-magic
+0:29 | MoIntro |  | 
+0:30 | MoIntro |  | whoosh-soft
+0:31 | MoIntro |  | 
+0:32 | MoIntro |  | 
+0:33 | MoIntro | Welcome | whoosh-soft
+0:34 | MoWelcome | back to Did You | ui-toggle-on
+0:35 | MoWelcome | Know That. Episode | pop-reveal
+0:36 | MoWelcome | four. | 
+0:37 | MoWelcome | You know the rule. | whoosh-soft
+0:38 | MoWelcome | Here's your guess. | pop-reveal
+0:39 | MoWelcome | In | 
+0:40 | MoWelcome | Britain, out of every hundred | ui-click-soft, whoosh-soft
+0:41 | MoWelcome | pounds people have, | ui-click-soft, ui-click-soft
+0:42 | MoWelcome | how | ui-click-soft
+0:43 | MoWelcome | many exist as real | 
+0:44 | MoWelcome | notes and coins? | page-flip, chime-magic
+0:45 | MoWelcome |  | 
+0:46 | MoWelcome | Guess in the comments, | pop-reveal, ui-click-soft
+0:47 | MoWelcome | right now. | 
+0:48 | MoWelcome | Then stay to the end, | pop-reveal
+0:49 | MoWelcome | and check your guess. | pop-reveal, chime-reward
+0:50 | MoWelcome |  | 
+0:51 | MoWelcome |  | whoosh-soft
+0:52 | MoPromise | Seven mornings, from | ui-click-soft, ui-click-soft, ui-click-soft
+0:53 | MoPromise | fifteen hundred to | ui-click-soft, ui-click-soft, ui-click-soft
+0:54 | MoPromise | twenty one hundred. | ui-click-soft, ui-click-soft, ui-click-soft
+0:55 | MoPromise | In each one, | 
+0:56 | MoPromise | you wake up somewhere | warm-shimmer
+0:57 | MoPromise | new, with money | 
+0:58 | MoPromise | in your hand. | ui-click-soft, ui-click-soft, ui-click-soft
+0:59 | MoPromise | Or on your phone. | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft, sparkle-soft
+1:00 | MoPromise | You start | 
+1:01 | MoPromise | with money you could drink. | pop-reveal
+1:02 | MoPromise | You end | ui-click-soft
+1:03 | MoPromise | with money that might | 
+1:04 | MoPromise | be nothing but code. | glitch-zap
+1:05 | MoPromise | And at the | whoosh-soft
+1:06 | MoPromise | end, you'll find | 
+1:07 | MoPromise | out what money really | ui-click-soft, impact-soft
+1:08 | MoPromise | is. | 
+1:09 | MoPromise |  | whoosh-wind, impact-soft
+1:10 | Mo1500 | You wake up in fifteen | whoosh-soft
+1:11 | Mo1500 | hundred, in Tenochtitlan, | pop-reveal
+1:12 | Mo1500 |  | 
+1:13 | Mo1500 | the island city of the | whoosh-soft
+1:14 | Mo1500 | Aztecs. | ui-click-soft
+1:15 | Mo1500 | Canoes bump along | stream-soft
+1:16 | Mo1500 | the canals. | ui-click-soft
+1:17 | Mo1500 | The market's already | ui-click-soft
+1:18 | Mo1500 | loud, and it smells of | ui-click-soft
+1:19 | Mo1500 | chilli and wood | ui-click-soft
+1:20 | Mo1500 | smoke. | wind-soft, ui-toggle-on
+1:21 | Mo1500 | Did you know that here, | chime-magic, ui-click-soft
+1:22 | Mo1500 | money grows on trees? | ui-click-soft, pop-reveal
+1:23 | Mo1500 |  | 
+1:24 | Mo1500 | Cacao beans. | sparkle-soft
+1:25 | Mo1500 | The same | ui-click-soft
+1:26 | Mo1500 | beans that make chocolate. | ui-click-soft
+1:27 | Mo1500 | A price | whoosh-soft
+1:28 | Mo1500 | list from a few decades | ui-click-soft
+1:29 | Mo1500 | later says it | 
+1:30 | Mo1500 | plainly. | ui-click-soft
+1:31 | Mo1500 | One ripe avocado, | pop-reveal
+1:32 | Mo1500 | one bean. | ui-click-soft
+1:33 | Mo1500 | A good turkey | 
+1:34 | Mo1500 | hen, a | pop-reveal, sparkle-soft
+1:35 | Mo1500 | hundred. Bigger | pop-reveal
+1:36 | Mo1500 | deals get paid in cotton | 
+1:37 | Mo1500 | cloaks. | ui-click-soft, ui-click-soft, ui-click-soft
+1:38 | Mo1500 | And a Spanish friar | ui-click-soft, page-flip
+1:39 | Mo1500 | wrote about sellers who | 
+1:40 | Mo1500 | faked cacao beans. | trap-snap
+1:41 | Mo1500 | Forgery. | stamp-hit
+1:42 | Mo1500 | With chocolate. | ui-click-soft
+1:43 | Mo1500 | So what | whoosh-soft
+1:44 | Mo1500 | is money to you? | ui-click-soft
+1:45 | Mo1500 | Something | chime-reward
+1:46 | Mo1500 | useful. Something | 
+1:47 | Mo1500 | you could even drink. | pop-reveal
+1:48 | Mo1500 | You might | whoosh-soft, whoosh-soft
+1:49 | Mo1500 | have heard that money | 
+1:50 | Mo1500 | was invented because | ui-click-soft
+1:51 | Mo1500 | swapping goats for | ui-click-soft
+1:52 | Mo1500 | grain got awkward. | ui-click-soft, ui-click-soft
+1:53 | Mo1500 | Anthropologists | ui-click-soft
+1:54 | Mo1500 | say they've | 
+1:55 | Mo1500 | never found a whole | stamp-hit
+1:56 | Mo1500 | society that | 
+1:57 | Mo1500 | ran on barter alone. | ui-click-soft
+1:58 | Mo1500 | People | ui-click-soft
+1:59 | Mo1500 | have always found | 
+2:00 | Mo1500 | something to count with. | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+2:01 | Mo1500 | But beans are | ui-click-soft, piano-a-min
+2:02 | Mo1500 | bulky, and they | ui-click-soft
+2:03 | Mo1500 | rot. | whoosh-reverse
+2:04 | Mo1500 | Across the ocean, | wind-soft
+2:05 | Mo1500 | one country's money | 
+2:06 | Mo1500 | has the opposite problem. | ui-click-soft
+2:07 | Mo1500 | It's so | 
+2:08 | Mo1500 | heavy, you need a | knock-solid, impact-soft
+2:09 | Mo1500 | cart. | whoosh-reverse
+2:10 | Mo1500 |  | whoosh-wind, impact-soft
+2:11 | Mo1661 | You wake up in | whoosh-soft
+2:12 | Mo1661 | sixteen sixty one, | 
+2:13 | Mo1661 | in Stockholm. | pop-reveal
+2:14 | Mo1661 | The | 
+2:15 | Mo1661 | harbour's frozen, and | whoosh-soft, sparkle-soft
+2:16 | Mo1661 | a sledge scrapes | whoosh-wind
+2:17 | Mo1661 | past your window, | ui-click-soft
+2:18 | Mo1661 | loaded with copper. | ui-click-soft
+2:19 | Mo1661 | Did | ui-toggle-on
+2:20 | Mo1661 | you know that Sweden's | chime-magic, ui-click-soft
+2:21 | Mo1661 | biggest coin weighed almost | ui-click-soft
+2:22 | Mo1661 | twenty kilos? | pop-reveal, ui-click-soft
+2:23 | Mo1661 | It's | 
+2:24 | Mo1661 | a copper plate. | knock-solid
+2:25 | Mo1661 | You don't | 
+2:26 | Mo1661 | put it in your pocket. | ui-click-soft
+2:27 | Mo1661 | You put it | 
+2:28 | Mo1661 | on a cart. | ui-click-soft
+2:29 | Mo1661 | So a banker called | whoosh-soft
+2:30 | Mo1661 | Johan Palmstruch | pop-reveal
+2:31 | Mo1661 | has | 
+2:32 | Mo1661 | an idea. | ui-click-soft
+2:33 | Mo1661 | Leave your | pop-reveal
+2:34 | Mo1661 | copper at his bank, | ui-click-soft
+2:35 | Mo1661 | and take a sheet | 
+2:36 | Mo1661 | of paper instead. | page-flip
+2:37 | Mo1661 | It says | ui-click-soft
+2:38 | Mo1661 | your copper is waiting | sparkle-soft
+2:39 | Mo1661 | for you. | 
+2:40 | Mo1661 | These are the first | stamp-hit
+2:41 | Mo1661 | real banknotes | 
+2:42 | Mo1661 | in Europe. | ui-click-soft
+2:43 | Mo1661 | So what is money now? | whoosh-soft, ui-click-soft
+2:44 | Mo1661 |  | 
+2:45 | Mo1661 | A promise. | pop-reveal
+2:46 | Mo1661 | Written on paper. | chime-reward
+2:47 | Mo1661 | Remember | stamp-hit
+2:48 | Mo1661 | that word, promise. | warm-shimmer
+2:49 | Mo1661 | It comes back | whoosh-soft
+2:50 | Mo1661 | at the end. | ui-click-soft
+2:51 | Mo1661 | People love the notes. | whoosh-soft
+2:52 | Mo1661 | So | 
+2:53 | Mo1661 | the bank prints more, | ui-click-soft, ui-click-soft, ui-click-soft
+2:54 | Mo1661 | and lends | ui-click-soft
+2:55 | Mo1661 | more, than it has copper | whoosh-reverse
+2:56 | Mo1661 | to pay back. | 
+2:57 | Mo1661 | When | 
+2:58 | Mo1661 | people come for their copper, | ui-click-soft
+2:59 | Mo1661 | it isn't | trap-snap
+3:00 | Mo1661 | there. | 
+3:01 | Mo1661 | The bank fails. | stamp-hit
+3:02 | Mo1661 | Palmstruch | 
+3:03 | Mo1661 | is sentenced to death. | impact-soft, ui-click-soft
+3:04 | Mo1661 | He's spared, | ui-click-soft
+3:05 | Mo1661 | and dies a few years | ui-click-soft
+3:06 | Mo1661 | later. | 
+3:07 | Mo1661 | Paper only works | piano-a-min
+3:08 | Mo1661 | while people believe | ui-click-soft
+3:09 | Mo1661 | in it. | 
+3:10 | Mo1661 | And in the next | ui-click-soft
+3:11 | Mo1661 | century, one man | 
+3:12 | Mo1661 | will push that belief | whoosh-soft
+3:13 | Mo1661 | further than anyone | sparkle-soft
+3:14 | Mo1661 | ever had. | whoosh-reverse
+3:15 | Mo1661 |  | whoosh-wind
+3:16 | Mo1720 | You wake | impact-soft
+3:17 | Mo1720 | up in seventeen twenty, | whoosh-soft
+3:18 | Mo1720 | in Paris. | pop-reveal
+3:19 | Mo1720 | The street smells | 
+3:20 | Mo1720 | of horses, | whoosh-soft
+3:21 | Mo1720 | and everyone's talking | ui-click-soft
+3:22 | Mo1720 | about paper. | ui-click-soft, ui-click-soft, ui-click-soft, page-flip
+3:23 | Mo1720 | Did you know | ui-toggle-on
+3:24 | Mo1720 | that this year, | chime-magic, ui-click-soft
+3:25 | Mo1720 | France made it illegal | pop-reveal
+3:26 | Mo1720 | to own more than | 
+3:27 | Mo1720 | five hundred livres | ui-click-soft
+3:28 | Mo1720 | in gold or silver? | ui-click-soft
+3:29 | Mo1720 |  | 
+3:30 | Mo1720 | The government wanted | ui-click-soft
+3:31 | Mo1720 | you to trust paper. | ui-click-soft
+3:32 | Mo1720 | By law. | stamp-hit
+3:33 | Mo1720 | The man behind | whoosh-soft
+3:34 | Mo1720 | it is John Law. | pop-reveal
+3:35 | Mo1720 | A Scottish | 
+3:36 | Mo1720 | gambler. | chess-piece-thock
+3:37 | Mo1720 | Like Palmstruch, | ui-click-soft
+3:38 | Mo1720 | he was | 
+3:39 | Mo1720 | once sentenced to death, | stamp-hit
+3:40 | Mo1720 | for killing a man | 
+3:41 | Mo1720 | in a duel. | ui-click-soft
+3:42 | Mo1720 | Now he runs France's | chime-reward
+3:43 | Mo1720 | money. | 
+3:44 | Mo1720 | One narrow street | whoosh-soft
+3:45 | Mo1720 | is packed, day and night. | ui-click-soft, ui-click-soft, ui-click-soft
+3:46 | Mo1720 |  | 
+3:47 | Mo1720 | People are buying | page-flip
+3:48 | Mo1720 | shares in Law's Mississippi | ui-click-soft
+3:49 | Mo1720 | Company. | 
+3:50 | Mo1720 |  | 
+3:51 | Mo1720 | In about a year and a half, | riser-soft
+3:52 | Mo1720 | the price has | ui-click-soft
+3:53 | Mo1720 | gone up about | impact-soft
+3:54 | Mo1720 | forty times. | ui-click-soft
+3:55 | Mo1720 | The story | ui-click-soft
+3:56 | Mo1720 | goes that a hunchback | ui-click-soft
+3:57 | Mo1720 | rents out his back, | 
+3:58 | Mo1720 | as a writing | 
+3:59 | Mo1720 | desk. | pencil-scribble
+4:00 | Mo1720 | So what is money now? | whoosh-soft, ui-click-soft
+4:01 | Mo1720 | A belief. | chime-reward
+4:02 | Mo1720 | It's | 
+4:03 | Mo1720 | worth whatever everyone | ui-click-soft
+4:04 | Mo1720 | believes it's worth. | ui-click-soft, whoosh-soft
+4:05 | Mo1720 | Until | 
+4:06 | Mo1720 | they don't. | trap-snap
+4:07 | Mo1720 | By December, the shares | ui-click-soft
+4:08 | Mo1720 | have crashed. | impact-deep-soft
+4:09 | Mo1720 | The notes are losing | 
+4:10 | Mo1720 | value. | whoosh-reverse
+4:11 | Mo1720 | And Law escapes France. | whoosh-soft
+4:12 | Mo1720 | For | piano-a-min
+4:13 | Mo1720 | the next hundred years, | 
+4:14 | Mo1720 | people want | ui-click-soft
+4:15 | Mo1720 | money they don't just have | 
+4:16 | Mo1720 | to believe in. | ui-click-soft
+4:17 | Mo1720 |  | pop-reveal
+4:18 | Mo1720 | Something they can bite. | trap-snap
+4:19 | Mo1720 |  | 
+4:20 | Mo1720 | And in London, they get | whoosh-soft, ui-click-soft
+4:21 | Mo1720 | it. | whoosh-reverse
+4:22 | Mo1720 |  | whoosh-wind, impact-soft
+4:23 | Mo1821 | You wake up in eighteen | whoosh-soft
+4:24 | Mo1821 | twenty one, | 
+4:25 | Mo1821 | in London. | pop-reveal
+4:26 | Mo1821 | Coal smoke, | wind-soft
+4:27 | Mo1821 | wet cobbles, | ui-click-soft
+4:28 | Mo1821 | and a queue | ui-click-soft
+4:29 | Mo1821 | outside the Bank of | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+4:30 | Mo1821 | England. Did | ui-toggle-on
+4:31 | Mo1821 | you know that Bank of | chime-magic
+4:32 | Mo1821 | England notes still | ui-click-soft
+4:33 | Mo1821 | say, I promise | page-flip
+4:34 | Mo1821 | to pay the bearer | ui-click-soft
+4:35 | Mo1821 | on demand? | ui-click-soft
+4:36 | Mo1821 | Back | ui-click-soft
+4:37 | Mo1821 | then, that promise meant | 
+4:38 | Mo1821 | gold. A | chime-magic
+4:39 | Mo1821 | five pound note | ui-click-soft
+4:40 | Mo1821 | could be swapped for | 
+4:41 | Mo1821 | five gold coins. | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+4:42 | Mo1821 | Sovereigns. | ui-click-soft
+4:43 | Mo1821 | For twenty | whoosh-soft, ui-click-soft
+4:44 | Mo1821 | four years, | 
+4:45 | Mo1821 | through the wars with France, | ui-click-soft
+4:46 | Mo1821 | the Bank had stopped | ui-click-soft
+4:47 | Mo1821 | paying out gold. | 
+4:48 | Mo1821 | Paper | page-flip
+4:49 | Mo1821 | took over. | 
+4:50 | Mo1821 | So did counterfeiters, | trap-snap
+4:51 | Mo1821 | and many | 
+4:52 | Mo1821 | of them were hanged. | stamp-hit
+4:53 | Mo1821 | Now the Bank is | ui-click-soft
+4:54 | Mo1821 | paying gold again. | chime-reward
+4:55 | Mo1821 | Paper | 
+4:56 | Mo1821 | you can turn into metal, | sparkle-soft, ui-click-soft
+4:57 | Mo1821 | any day you like. | 
+4:58 | Mo1821 | So | whoosh-soft
+4:59 | Mo1821 | what is money now? | ui-click-soft
+5:00 | Mo1821 | As good | ui-click-soft
+5:01 | Mo1821 | as gold. A | chime-reward
+5:02 | Mo1821 | promise you can swap | ui-click-soft
+5:03 | Mo1821 | for metal. | whoosh-soft
+5:04 | Mo1821 | Over the next century, | ui-click-soft
+5:05 | Mo1821 | much of the world | pop-reveal
+5:06 | Mo1821 | follows Britain onto | 
+5:07 | Mo1821 | gold. | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+5:08 | Mo1821 | Gold becomes the anchor. | knock-solid
+5:09 | Mo1821 | And anchors | 
+5:10 | Mo1821 | feel safe. | ui-click-soft
+5:11 | Mo1821 | But | piano-a-min
+5:12 | Mo1821 | in nineteen seventy | ui-click-soft
+5:13 | Mo1821 | one, one television | ui-toggle-on
+5:14 | Mo1821 | speech cuts | 
+5:15 | Mo1821 | the rope. | trap-snap, whoosh-reverse
+5:16 | Mo1821 |  | whoosh-wind, impact-soft
+5:17 | Mo1971 | You wake up | 
+5:18 | Mo1971 | in nineteen seventy | whoosh-soft
+5:19 | Mo1971 | one, in a suburb | pop-reveal
+5:20 | Mo1971 | of Pittsburgh. | 
+5:21 | Mo1971 |  | whoosh-soft
+5:22 | Mo1971 | It's a Sunday evening | page-flip
+5:23 | Mo1971 | in August, and the whole | ui-click-soft
+5:24 | Mo1971 | family's in front of the | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+5:25 | Mo1971 | TV. | ui-toggle-on, ui-toggle-on
+5:26 | Mo1971 | Did you know that in | chime-magic
+5:27 | Mo1971 | nineteen seventy one, | ui-click-soft
+5:28 | Mo1971 | it was illegal | pop-reveal
+5:29 | Mo1971 | for most Americans | 
+5:30 | Mo1971 | to own gold coins | ui-click-soft
+5:31 | Mo1971 | or bars? | ui-click-soft
+5:32 | Mo1971 |  | 
+5:33 | Mo1971 | It had been since nineteen | ui-click-soft
+5:34 | Mo1971 | thirty three. | stamp-hit
+5:35 | Mo1971 | Gold was | whoosh-soft
+5:36 | Mo1971 | for governments. | ui-click-soft
+5:37 | Mo1971 | Since nineteen | 
+5:38 | Mo1971 | forty four, they could | ui-click-soft
+5:39 | Mo1971 | swap dollars for American | ui-click-soft
+5:40 | Mo1971 | gold, | 
+5:41 | Mo1971 | at thirty five dollars | pop-reveal
+5:42 | Mo1971 | an ounce. | ui-click-soft
+5:43 | Mo1971 | The dollar was tied | ui-click-soft
+5:44 | Mo1971 | to gold, and | 
+5:45 | Mo1971 | most other money was tied | ui-click-soft
+5:46 | Mo1971 | to the dollar. | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+5:47 | Mo1971 | That evening, President | ui-toggle-on
+5:48 | Mo1971 | Nixon comes | ui-click-soft
+5:49 | Mo1971 | on. From now | 
+5:50 | Mo1971 | on, foreign governments | ui-click-soft
+5:51 | Mo1971 | can't swap their dollars | trap-snap
+5:52 | Mo1971 | for gold. | 
+5:53 | Mo1971 | Within a few years, | ui-click-soft
+5:54 | Mo1971 | the whole system's gone. | whoosh-reverse
+5:55 | Mo1971 | So what is | whoosh-soft
+5:56 | Mo1971 | money now? | ui-click-soft
+5:57 | Mo1971 | A promise | ui-click-soft
+5:58 | Mo1971 | backed by trust. | chime-reward
+5:59 | Mo1971 | Trust | ui-click-soft
+6:00 | Mo1971 | in the people who run | ui-click-soft, ui-click-soft, ui-click-soft
+6:01 | Mo1971 | it. And a | whoosh-soft
+6:02 | Mo1971 | generation later, | piano-a-min
+6:03 | Mo1971 | that trust takes a new | 
+6:04 | Mo1971 | shape. | whoosh-soft
+6:05 | Mo1971 | Money doesn't need paper | 
+6:06 | Mo1971 | at all. | ui-click-soft
+6:07 | Mo1971 | In Kenya, | pop-reveal
+6:08 | Mo1971 | it moves into a text | ui-send
+6:09 | Mo1971 | message. | ui-click-soft, whoosh-reverse
+6:10 | Mo1971 |  | whoosh-wind
+6:11 | MoToday | You wake | impact-soft
+6:12 | MoToday | up today, | whoosh-soft
+6:13 | MoToday | in Nairobi. | pop-reveal
+6:14 | MoToday | Matatus | whoosh-wind
+6:15 | MoToday | honk on the road outside, | ui-click-soft
+6:16 | MoToday | and your phone buzzes. | ui-toggle-on
+6:17 | MoToday | Your sister | ui-send
+6:18 | MoToday | just sent you money, | 
+6:19 | MoToday | from a village | whoosh-soft
+6:20 | MoToday | far upcountry. | ui-click-soft
+6:21 | MoToday | It took seconds. | chime-reward
+6:22 | MoToday | Did | ui-toggle-on
+6:23 | MoToday | you know that about eight | chime-magic, ui-click-soft
+6:24 | MoToday | in ten adults in Kenya | ui-click-soft, ui-click-soft, ui-click-soft
+6:25 | MoToday | now use mobile | ui-click-soft
+6:26 | MoToday | money? | 
+6:27 | MoToday | In two thousand | ui-click-soft
+6:28 | MoToday | and nine, it was under | ui-click-soft
+6:29 | MoToday | three in ten. | pop-reveal
+6:30 | MoToday | M-Pesa | whoosh-soft
+6:31 | MoToday | launched here | 
+6:32 | MoToday | in two thousand and seven. | ui-click-soft
+6:33 | MoToday | You | 
+6:34 | MoToday | hand cash to | ui-click-soft
+6:35 | MoToday | a shopkeeper, | ui-click-soft
+6:36 | MoToday | and it turns into | sparkle-soft
+6:37 | MoToday | numbers on your phone. | 
+6:38 | MoToday |  | 
+6:39 | MoToday | School fees and taxi | ui-click-soft, ui-click-soft
+6:40 | MoToday | rides get paid with | 
+6:41 | MoToday | a text. | ui-send
+6:42 | MoToday | And it isn't just Kenya. | whoosh-soft
+6:43 | MoToday | Across | ui-click-soft
+6:44 | MoToday | the euro | 
+6:45 | MoToday | area, cash paid | ui-click-soft
+6:46 | MoToday | for about eight in | pop-reveal
+6:47 | MoToday | ten shop purchases | 
+6:48 | MoToday | in twenty sixteen. | ui-click-soft
+6:49 | MoToday |  | 
+6:50 | MoToday | By twenty twenty four, | pop-reveal
+6:51 | MoToday | it was about half. | ui-click-soft
+6:52 | MoToday | So what | whoosh-soft
+6:53 | MoToday | is money to you? | ui-click-soft
+6:54 | MoToday | Numbers | ui-click-soft
+6:55 | MoToday | on a screen. | chime-reward
+6:56 | MoToday | You almost | 
+6:57 | MoToday | never touch it. | ui-click-soft
+6:58 | MoToday | So | whoosh-soft, piano-a-min
+6:59 | MoToday | here's the question you came | ui-click-soft
+7:00 | MoToday | for. | 
+7:01 | MoToday | If it isn't paper, | stamp-hit
+7:02 | MoToday | and it | 
+7:03 | MoToday | isn't gold, | riser-soft, stamp-hit
+7:04 | MoToday | what is money, | impact-soft
+7:05 | MoToday | actually? | 
+7:06 | MoToday |  | whoosh-reverse
+7:07 | MoReveal | Here's the answer. | impact-deep-soft
+7:08 | MoReveal | The Bank | ui-click-soft
+7:09 | MoReveal | of England puts it | 
+7:10 | MoReveal | plainly. | ui-click-soft
+7:11 | MoReveal | Money today is a | riser-soft, ui-click-soft
+7:12 | MoReveal | type of I-O-U. | impact-soft
+7:13 | MoReveal | A | chime-magic
+7:14 | MoReveal | special one, because | ui-click-soft
+7:15 | MoReveal | everyone trusts | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+7:16 | MoReveal | that other people will | 
+7:17 | MoReveal | accept it. | ui-send
+7:18 | MoReveal | And most of it is made | whoosh-soft
+7:19 | MoReveal | by ordinary banks. | ui-click-soft
+7:20 | MoReveal | When a | 
+7:21 | MoReveal | bank gives you a loan, | page-flip
+7:22 | MoReveal | it doesn't hand you someone | ui-click-soft
+7:23 | MoReveal | else's savings. | trap-snap
+7:24 | MoReveal |  | 
+7:25 | MoReveal | It types a new deposit | keys-typing-soft
+7:26 | MoReveal | into your account. | ui-click-soft
+7:27 | MoReveal | Within | 
+7:28 | MoReveal | limits, a | ui-click-soft
+7:29 | MoReveal | loan creates new money. | chime-reward
+7:30 | MoReveal | And | whoosh-soft
+7:31 | MoReveal | your guess? | ui-click-soft
+7:32 | MoReveal | When the Bank of England | 
+7:33 | MoReveal | checked, about | ui-click-soft
+7:34 | MoReveal | ninety seven | sparkle-soft
+7:35 | MoReveal | out of every hundred | 
+7:36 | MoReveal | pounds were bank deposits. | ui-click-soft
+7:37 | MoReveal | Only | 
+7:38 | MoReveal | about three were | chime-reward
+7:39 | MoReveal | notes and coins. | ui-click-soft
+7:40 | MoReveal | How close were you? | ui-click-soft
+7:41 | MoReveal | Now | 
+7:42 | MoReveal | climb the ladder again, | whoosh-soft
+7:43 | MoReveal | with me. | ui-click-soft
+7:44 | MoReveal | In | 
+7:45 | MoReveal | fifteen hundred, | ui-click-soft
+7:46 | MoReveal | money was something useful. | 
+7:47 | MoReveal | Then, a promise | ui-click-soft
+7:48 | MoReveal | on paper. | 
+7:49 | MoReveal | Then, a belief. | ui-click-soft
+7:50 | MoReveal | Then, as | ui-click-soft
+7:51 | MoReveal | good as gold. | 
+7:52 | MoReveal | Then, trust, and nothing | ui-click-soft
+7:53 | MoReveal | else. Today, | ui-click-soft
+7:54 | MoReveal | numbers on a screen. | 
+7:55 | MoReveal | Remember | ui-click-soft
+7:56 | MoReveal | that word from Stockholm? | riser-soft, ui-click-soft
+7:57 | MoReveal |  | 
+7:58 | MoReveal | Promise. | impact-deep-soft
+7:59 | MoReveal | It was there all along. | warm-shimmer
+8:00 | MoReveal |  | 
+8:01 | MoReveal |  | whoosh-soft
+8:02 | Mo2100 | So, what's the next | pop-reveal
+8:03 | Mo2100 | rung? | impact-soft
+8:04 | Mo2100 | Twenty one hundred. | 
+8:05 | Mo2100 | That morning hasn't happened | whoosh-soft
+8:06 | Mo2100 | yet. But | 
+8:07 | Mo2100 | we can follow the | 
+8:08 | Mo2100 | evidence. Cash | ui-click-soft, ui-click-soft
+8:09 | Mo2100 | is shrinking, | whoosh-reverse
+8:10 | Mo2100 | and central | 
+8:11 | Mo2100 | banks have noticed. | ui-click-soft
+8:12 | Mo2100 | In a survey | ui-click-soft
+8:13 | Mo2100 | published in twenty | 
+8:14 | Mo2100 | twenty five, | 
+8:15 | Mo2100 | more than nine | sparkle-soft
+8:16 | Mo2100 | in ten of the central | 
+8:17 | Mo2100 | banks asked were | 
+8:18 | Mo2100 | exploring a digital | ui-click-soft
+8:19 | Mo2100 | currency of their own. | 
+8:20 | Mo2100 | In Europe, | whoosh-soft
+8:21 | Mo2100 | the central | 
+8:22 | Mo2100 | bank is getting ready for | ui-click-soft
+8:23 | Mo2100 | a possible digital | 
+8:24 | Mo2100 | euro. | pop-reveal
+8:25 | Mo2100 | The first | page-flip
+8:26 | Mo2100 | could come as early | 
+8:27 | Mo2100 | as twenty twenty nine, | ui-click-soft
+8:28 | Mo2100 | if lawmakers | 
+8:29 | Mo2100 | agree. And | stamp-hit
+8:30 | Mo2100 | the Bank for International | whoosh-soft
+8:31 | Mo2100 | Settlements, | 
+8:32 | Mo2100 | the central banks' | 
+8:33 | Mo2100 | own bank, | ui-click-soft
+8:34 | Mo2100 | has warned that | 
+8:35 | Mo2100 | stablecoins, | pop-reveal
+8:36 | Mo2100 | crypto tokens | 
+8:37 | Mo2100 | pegged to a currency, | ui-click-soft
+8:38 | Mo2100 | fail | ui-click-soft
+8:39 | Mo2100 | key tests of | ui-click-soft, ui-click-soft, ui-click-soft
+8:40 | Mo2100 | good money. | 
+8:41 | Mo2100 | It wants the central | 
+8:42 | Mo2100 | bank's promise | ui-click-soft
+8:43 | Mo2100 | to stay the anchor. | knock-solid
+8:44 | Mo2100 | So here's | whoosh-soft
+8:45 | Mo2100 | one scenario. | stamp-hit
+8:46 | Mo2100 | Not a fact. | stamp-hit
+8:47 | Mo2100 | By | ui-click-soft
+8:48 | Mo2100 | twenty one hundred, | 
+8:49 | Mo2100 | the note in your wallet | ui-click-soft
+8:50 | Mo2100 | could be a museum | warm-shimmer
+8:51 | Mo2100 | piece. | 
+8:52 | Mo2100 | Money could be code. | glitch-zap
+8:53 | Mo2100 | But it | ui-click-soft
+8:54 | Mo2100 | would still be a promise. | chime-reward
+8:55 | Mo2100 | In | 
+8:56 | Mo2100 | fifteen hundred, money | pop-reveal, whoosh-soft
+8:57 | Mo2100 | grew on trees. | 
+8:58 | Mo2100 | In | 
+8:59 | Mo2100 | twenty one hundred, it | riser-soft
+9:00 | Mo2100 | might be written in code. | ui-click-soft, impact-deep-soft
+9:01 | Mo2100 |  | 
+9:02 | Mo2100 |  | whoosh-soft
+9:03 | MoClose | You spend so much | clock-tick-soft
+9:04 | MoClose | of your life earning | ui-click-soft, ui-click-soft
+9:05 | MoClose | it. So | whoosh-soft
+9:06 | MoClose | tell me. Who | pop-reveal
+9:07 | MoClose | would you trust to | ui-click-soft
+9:08 | MoClose | keep that promise, | ui-click-soft
+9:09 | MoClose | in twenty one | 
+9:10 | MoClose | hundred? | piano-a-min
+9:11 | MoClose |  | 
+9:12 | MoClose | This was | whoosh-wind, pop-reveal
+9:13 | MoOutro | Did You Know That, | ui-toggle-on
+9:14 | MoOutro | episode | 
+9:15 | MoOutro | four. | ui-click-soft
+9:16 | MoOutro | Money. | pop-reveal
+9:17 | MoOutro | Now it's your turn. | whoosh-soft
+9:18 | MoOutro | Which century's | ui-click-soft
+9:19 | MoOutro | money would you have trusted | ui-click-soft, ui-click-soft, ui-click-soft, ui-click-soft
+9:20 | MoOutro | most? | ui-click-soft, ui-click-soft
+9:21 | MoOutro | Tell me in the comments. | ui-click-soft, pop-reveal
+9:22 | MoOutro | At the | 
+9:23 | MoOutro | end of every episode, | ui-click-soft
+9:24 | MoOutro | I will read the best | impact-soft
+9:25 | MoOutro | comment, right | ui-click-soft, ui-click-soft
+9:26 | MoOutro | here, on | 
+9:27 | MoOutro | this screen. | ui-click-soft
+9:28 | MoOutro | And the subject you | sparkle-soft
+9:29 | MoOutro | ask for most becomes | ui-click-soft
+9:30 | MoOutro | a future episode. | pop-reveal
+9:31 | MoOutro | On our | 
+9:32 | MoOutro | website, Dex-tee | whoosh-soft, sparkle-soft
+9:33 | MoOutro | dot live, | 
+9:34 | MoOutro | you can watch | ui-click-soft
+9:35 | MoOutro | every episode, | 
+9:36 | MoOutro | collect the fact cards, | ui-click-soft
+9:37 | MoOutro | and play the guessing game. | ui-click-soft, pop-reveal
+9:38 | MoOutro | If | 
+9:39 | MoOutro | this changed how you | ui-click-soft
+9:40 | MoOutro | see the money in your pocket, | ui-click-soft
+9:41 | MoOutro |  | 
+9:42 | MoOutro | like it. | ui-click-soft
+9:43 | MoOutro | Share it with the | ui-send
+9:44 | MoOutro | friend who always pays | ui-click-soft
+9:45 | MoOutro | you back. | pop-reveal
+9:46 | MoOutro | And subscribe, | chime-reward
+9:47 | MoOutro | so the next mystery | sparkle-soft
+9:48 | MoOutro | finds you. | 
+9:49 | MoOutro | Next time: | whoosh-wind
+9:50 | MoOutro | food. | impact-soft
+9:51 | MoOutro | Historians | ui-click-soft
+9:52 | MoOutro | estimate that | 
+9:53 | MoOutro | in fifteen hundred, | 
+9:54 | MoOutro | food took up most | ui-click-soft, pop-reveal
+9:55 | MoOutro | of a working family's | 
+9:56 | MoOutro | budget. So | ui-click-soft, ui-click-soft
+9:57 | MoOutro | what will you be eating | ui-click-soft
+9:58 | MoOutro | in twenty one hundred? | 
+9:59 | MoOutro | Ask... | piano-a-min
+10:00 | MoOutro |  | chess-piece-thock
+10:01 | MoOutro | Wonder... | chess-piece-thock
+10:02 | MoOutro | Repeat. | 
+10:03 | MoOutro |  | chess-piece-thock
+10:04 | MoOutro | Next time... | 
+10:05 | MoOutro | this could | pencil-scribble
+10:06 | MoOutro | be your comment. | pop-reveal, ui-click-soft
+10:07 | MoOutro | Pick a mystery. | 
+10:08 | MoOutro | And I will see | sparkle-soft
+10:09 | MoOutro | you there. | 
+10:10 | MoOutro |  | 
+10:11 | MoOutro |  | 
+10:12 | MoOutro |  | 
+10:13 | MoOutro |  | 
+10:14 | MoOutro |  | 
+10:15 | MoOutro |  | 
+10:16 | MoOutro |  | 
+10:17 | MoOutro |  | 
+10:18 | MoOutro |  | 
+10:19 | MoOutro |  | 
+10:20 | MoOutro |  | 

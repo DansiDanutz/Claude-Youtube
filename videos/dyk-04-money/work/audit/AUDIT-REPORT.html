@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DYK No. 04 Audit</title>
+<style>
+:root{--bg:#f7f7f9;--fg:#16171d;--muted:#5b5e6b;--card:#fff;--line:#e2e3ea;--crit:#b00020;--high:#d9480f;--med:#e8a400;--low:#6b7280;--ok:#15803d;--open:#b45309}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0f14;--fg:#ececf1;--muted:#a1a3b3;--card:#171923;--line:#2a2d3a}}
+:root[data-theme="dark"]{--bg:#0e0f14;--fg:#ececf1;--muted:#a1a3b3;--card:#171923;--line:#2a2d3a}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,Segoe UI,Inter,sans-serif;margin:0;padding:24px 16px}
+main{max-width:1100px;margin:auto} h1{margin:0 0 4px} .muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:18px 0}
+.k{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px} .k b{display:block;font-size:20px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:block;overflow-x:auto}
+td,th{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left} th{font-size:13px;color:var(--muted)}
+.sev{color:#fff;border-radius:6px;padding:2px 7px;font-size:12px;font-weight:700} .fixed{color:var(--ok);font-weight:700} .open{color:var(--open);font-weight:700}
+</style></head><body><main>
+<h1>Did You Know That? No. 04 · Money — audit report</h1>
+<div class="muted">2026-10-13 · master dyk-04-money-1080P.mp4 · branch video/dyk-04-money · verdict: 0 CRITICAL / 0 HIGH / 0 MEDIUM open · ready for David’s watch</div>
+<div class="grid">
+<div class="k"><span class="muted">Duration</span><b>10:20.7</b>620.73 s · video/audio diff 33 ms</div>
+<div class="k"><span class="muted">Loudness</span><b>−14.1 LUFS</b>true peak −2.4 dBTP</div>
+<div class="k"><span class="muted">Video</span><b>1080p30 H.264</b>TV range, BT.709 · 0 pts gaps</div>
+<div class="k"><span class="muted">Gates</span><b>All PASS</b>qa_final · voice pre-flight · whisper · tails · packaging</div>
+<div class="k"><span class="muted">Findings</span><b>20 fixed</b>4 LOW open</div>
+<div class="k"><span class="muted">A/V sync</span><b>+5 ms</b>17 voice stems, no drift</div>
+</div>
+<h2>Findings</h2>
+<table><thead><tr><th>Severity</th><th>Time</th><th>Shot</th><th>Finding (evidence)</th><th>Fix</th><th>Status</th></tr></thead><tbody>
+<tr><td><span class="sev" style="background:var(--high)">HIGH</span></td><td>3:55–3:59</td><td>Mo1720</td><td>×40 caption clipped at the right edge; peak label crossed by the curve</td><td>Moved ×40 + caption left (x 1250), wrapped; peak label left of the dot</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--high)">HIGH</span></td><td>6:58</td><td>MoToday</td><td>Docked ladder over “Numbers on a screen.”</td><td>Headline moved left / smaller; chip docks 1.2 s after the word</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--high)">HIGH</span></td><td>8:04–8:05</td><td>Mo2100</td><td>Big 2100 title over the docked ladder</td><td>Ladder fades out while the title slams, back after it docks</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--high)">HIGH</span></td><td>6:01</td><td>Mo1971</td><td>Ladder over “A promise backed by trust.”</td><td>Headline smaller; chip docks faster (1.0 s)</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--high)">HIGH</span></td><td>2:58–3:06</td><td>Mo1661</td><td>Queue + vault on the ladder’s 1500 row</td><td>Column moved to x 1000–1260</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--high)">HIGH</span></td><td>1:28–1:31 · 6:31–6:34 · 7:18–7:21</td><td>Mo1500 / MoToday / MoReveal</td><td>Empty stage 3–4 s while speaking</td><td>Price-list scroll; M-PESA phone; bank icon + loan on “gives”</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>2:51</td><td>Mo1661</td><td>“IT COMES BACK AT THE END” flash / overlap</td><td>Lands on “comes”, scene held 0.5 s longer</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>4:12</td><td>Mo1720</td><td>“LAW ESCAPES FRANCE” ~1 s, on the source line</td><td>Starts on “Law”, held through the cut, source moved</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>0:01–0:04</td><td>MoHook</td><td>Note covering the LAST TIME card</td><td>Card moved/narrowed, note smaller</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>6:02–6:07</td><td>Mo1971</td><td>Caption not building; year counter showed 2007 (spoiler) and fake years</td><td>Caption builds on words; counter removed</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>7:45–7:47</td><td>MoReveal</td><td>Ladder recap lit late</td><td>Each rung lights as its line starts</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>4:53 · 8:39</td><td>Mo1821 / Mo2100</td><td>Production note in a source line; source near the edge</td><td>Removed; wrapped</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>various</td><td>several</td><td>Visual beats 1–2 s late (1:49, 4:16, 5:35, 8:57, 9:12 …)</td><td>Re-keyed to earlier words</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>2:27</td><td>Mo1661 (audio)</td><td>Pause cut into a 24 ms gap: clipped “t”, hard-gated “You”</td><td>Chunk re-voiced split at “pocket.”; pace breaths only in real gaps ≥ 60 ms</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>10:00 · 10:04</td><td>MoOutro (audio)</td><td>Sign-off / end-screen line 2.4–3.6 dB hot</td><td>−4 / −2.5 dB in the voice bus</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>10:04</td><td>MoOutro (audio)</td><td>Three effects stacked on “Next time…”</td><td>One write-on cue in the gap after “time…”</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>7:05 · 7:58 · 7:12 · 9:01</td><td>audio</td><td>Risers ending early on payoffs</td><td>Shift −1.22 s (clip peak); ends land on payoffs</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>0:14 · 1:08 · 1:20 · 9:01 · 9:25</td><td>audio</td><td>SFX as loud as the voice on words</td><td>Lowered 3–6 dB</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>6:42 · 1:30</td><td>MoToday / Mo1500 (round 2)</td><td>Crossfade overlap; source line through the scroll roller</td><td>Windows separated; scroll raised</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--med)">MEDIUM</span></td><td>5:54–5:55</td><td>Mo1971 (round 3)</td><td>“THE SYSTEM’S GONE” caption < 1.5 s</td><td>Lands on “whole”, scene held longer</td><td class="fixed">FIXED</td></tr>
+<tr><td><span class="sev" style="background:var(--low)">LOW</span></td><td>1:13 · 2:15</td><td>eras</td><td>Big year crosses scene art while docking (< 1 s)</td><td>—</td><td class="open">OPEN</td></tr>
+<tr><td><span class="sev" style="background:var(--low)">LOW</span></td><td>6:33</td><td>MoToday</td><td>Source line margin 116 px (aligned with HUD)</td><td>—</td><td class="open">OPEN</td></tr>
+<tr><td><span class="sev" style="background:var(--low)">LOW</span></td><td>7:05</td><td>audio</td><td>“actually?” riser ends 0.23 s early (on “money,”)</td><td>—</td><td class="open">OPEN</td></tr>
+<tr><td><span class="sev" style="background:var(--low)">LOW</span></td><td>whole</td><td>voice</td><td>Words to check by ear (whisper flags): Tenochtitlan, price list, Palmstruch, livres, “I promise”, Matatus, M-Pesa, rung, Dex-tee</td><td>David’s listen</td><td class="open">OPEN</td></tr>
+</tbody></table>
+<h2>Verification</h2>
+<ul>
+<li><b>qa_final.py</b>: PASS — h264 1920×1080 30/1, AAC 48 kHz stereo, video 620.700 s / audio 620.733 s, pts gaps &gt; 50 ms: 0, −14.1 LUFS, TP −2.4 dBTP.</li>
+<li><b>qa_sweep.py</b> (1 s frames, 52 sheets): reviewed by independent auditors; loudness sweep: no flags.</li>
+<li><b>Voice pre-flight</b>: PASS — 0 issues (564 cues, shared off_word resolver). <b>Whisper round-trip</b>: PASS (1 tool false positive accepted: “1971, one”). <b>Tail check</b>: PASS.</li>
+<li><b>Packaging check</b>: PASS — chapters from 0:00, all ≥ 10 s, no clock times outside chapters, title names Money + Promise + 2100.</li>
+<li><b>Facts</b>: every on-screen number traced to RESEARCH.md; F3/F19/F26 re-checked; F26 digital-euro law still in trilogue (hedged); F29 food teaser sourced.</li>
+<li><b>Audit passes</b>: visual ×4 (full 1 s sweep, two re-audits, targeted re-check), audio ×2 (independent measurement in PyAV/scipy; ffmpeg held by the disk guard).</li>
+</ul>
+<h2>Deployment checks</h2>
+<ul><li>Not uploaded. Upload, Studio settings, pinned comment and Dexty.live deploy follow references/upload-playbook.md and need David’s go-ahead for each public step.</li>
+<li>Comment of the Week: No. 03 had no viewer comments on 2026-10-13 → pinned-question card (no fabricated comment).</li></ul>
+</main></body></html>

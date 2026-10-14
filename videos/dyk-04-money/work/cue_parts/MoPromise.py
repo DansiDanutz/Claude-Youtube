@@ -1,0 +1,15 @@
+# MoPromise — cues
+s = 'mo03-promise'
+c(S('MoPromise', 0.0), 'whoosh-soft', 0.22, 'cut to the seven mornings')
+ticks(s, 'Seven', 7, 12, 'seven year chips build')
+c(W(s, 'fifteen'), 'ui-click-soft', 0.14, '1500 lights')
+c(W(s, 'twenty'), 'ui-click-soft', 0.14, 'the dashed 2100 chip lights')
+c(W(s, 'wake'), 'warm-shimmer', 0.18, 'a dawn glow rises')
+ticks(s, 'hand', 7, 6, 'the money of each era pops up')
+c(W(s, 'phone'), 'sparkle-soft', 0.18, 'the TODAY phone glows')
+c(W(s, 'drink'), 'pop-reveal', 0.20, 'a cup steams over 1500: YOU COULD DRINK IT')
+c(W(s, 'code'), 'glitch-zap', 0.16, 'digits over 2100: NOTHING BUT CODE?')
+c(W(s, 'end', 2), 'whoosh-soft', 0.20, 'the row clears; AT THE END')
+c(W(s, 'money', 4), 'ui-click-soft', 0.16, 'MONEY')
+c(W(s, 'is'), 'impact-soft', 0.16, '= ? lands')
+c(W(s, 'end', 1), 'ui-click-soft', 0.14, 'the 2100 chip pulses')
