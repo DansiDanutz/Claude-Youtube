@@ -35,36 +35,43 @@ Chapter times come from `timeline.json` shot starts; re-run the gate after every
    crescent of the drawn disc visible under YouTube's circle; those four are centred horizontally and left as they are).
    After importing, verify on the public watch page (seek to the last 6 s, DevTools/JS):
    `const v=document.querySelector('video'),vr=v.getBoundingClientRect(),sx=1920/vr.width,r=document.querySelector('.ytp-ce-channel').getBoundingClientRect();[Math.round((r.left-vr.left+r.width/2)*sx),Math.round((r.top-vr.top+r.height/2)*sx)]`
-   must print `[960, 767]`. The **video element** should fill the WATCH NEXT frame the outro draws — No. 02–04:
-   `left: 1040, top: 230, width: 720, height: 405` (No. 01: left 1050) — not the default YouTube imports (623 × 351 at
-   1140, 302), which leaves the frame's border and headline peeking around it. Two constraints YouTube enforces: elements
-   may not overlap (the frame's bottom, 635, crosses the Subscribe circle's top, 619, where x 1040–1108 overlaps) and the
-   editor shows red handles and silently discards the save when they do. So place the element at about
-   `(1043, 212, 720 × 405)` — bottom 617, just above the circle — by dragging its body up first, then its top-left handle.
-   Check: `const r=document.querySelector('.ytp-ce-video').getBoundingClientRect();[r.left-vr.left,r.top-vr.top,r.width,r.height].map(n=>Math.round(n*sx))`
-   → about `[1043, 212, 720, 405]` (±15 px is invisible; YouTube keeps the 16:9 ratio). Better still for new episodes:
-   draw the WATCH NEXT frame at `top: 212` so the element can fill it exactly without touching the circle.
+   must print `[960, 767]`. The **video element** cannot fill the WATCH NEXT frame the outro draws (720 × 405 at
+   1040, 230): YouTube keeps a minimum spacing between elements, and anything whose bottom comes within ~40 px of the
+   Subscribe circle (top 619) shows red handles and is silently dropped on save — a 720 × 405 element would have to float
+   58 px above the frame. The accepted placement, used on No. 01–05 (verified 2026-10-14), is the default 623 × 351
+   element flush with the frame's top edge and centred: drag its body so the readout gives
+   `const r=document.querySelector('.ytp-ce-video').getBoundingClientRect();[r.left-vr.left,r.top-vr.top,r.width,r.height].map(n=>Math.round(n*sx))`
+   → `[1093, 230, 623, 351]` (±15 px is invisible). "Import from latest video" carries these positions over, so once an
+   episode is right the next one only needs its target changed. If a future outro frame is redrawn to 623 × 351 at
+   (1093, 230) the thumbnail will cover it exactly.
 5. **Card** at ~0:40 → the previous episode.
-6. **No subtitles**: never upload or publish a subtitle track. YouTube's own auto-generated English track exists on
-   every video and the new *Languages* page has no way to delete it (checked 2026-10-14 on all five episodes: the only
-   track is `a.en` "auto-generated", off unless a viewer enables CC) — do not chase it. *Edit subtitles* only opens a
-   manual draft seeded from the auto text: never *Save draft* or *Publish* there; close with *Discard changes*.
+6. **No subtitles** (David's standing requirement): never upload or publish a subtitle track, and remove any caption
+   track that appears. YouTube's help describes deleting a track via *Subtitles* → the language row → ⋮ → *Delete*; on
+   this channel's current *Languages* page (2026-10-14, all five episodes) the auto-generated `a.en` track is not listed
+   as a row, so there is nothing to delete there — check the page again after processing and delete any row that shows
+   up. *Edit subtitles* opens a manual draft seeded from the auto text: never *Save draft* or *Publish* it; close with
+   *Discard changes*. Public check: the watch page's `captionTracks` must contain only `kind: "asr"` tracks.
 7. Visibility as David says → confirm the public link (oEmbed answers with the title once it is public).
 8. **Pin the Comment of the Week question** (the exact text in `YOUTUBE.md`). YouTube refuses pinning while the
    video is "being reviewed" (up to 24 h) — pin it then. Verify: on the watch page
    `document.querySelector('ytd-comment-thread-renderer #pinned-comment-badge').innerText` → "Pinned by @…", and Studio
    → Comments → *Published* lists it (remove the "Unresponded" filter). Other viewers may see it only minutes later.
 9. Update the **previous** episode's end screen video element **and** its card to this new episode, then verify both on
-   its watch page: `.ytp-ce-video a` href = the new video id, boxes still `[1093, 230, 623, 351]` / `[812, 619, 296, 296]`.
+   its watch page: end screen — `.ytp-ce-video a` href = the new video id, boxes still `[1093, 230, 623, 351]` /
+   `[812, 619, 296, 296]`; card — in Studio → Cards the 0:40 card panel reads "Video: <new title>", and on the watch page
+   at ~0:41 the cards button opens a panel whose link href contains the new video id.
 10. **Studio quirks (cost time on No. 05):** pressing Escape in the upload dialog with no popup open *closes the dialog*
    (the draft autosaves — reopen with *Edit draft*); element refs go stale after any dialog change — re-find before clicking;
    "Import from latest video" carries the previous episode's element **positions** (good) and its **target** (wrong —
    re-point it); Category comes from the channel default (Education) — still read it back under *Show more*.
 
 ## 3. Dexty.live
-`~/Projects/Did-You-Know-That` is a partial sparse clone (restored 2026-10-14; if it is missing again, re-clone with
-`git clone --filter=blob:none --no-checkout` + `git sparse-checkout set --cone brand docs episodes intro neon-card outro tools website`,
-then `vercel link --yes --project did-you-know-that-2026` in `website/`). Work in a worktree (`danslab-workflow check` first).
+`~/Projects/Did-You-Know-That` is a partial sparse clone (restored 2026-10-14). If it is missing again:
+```bash
+git clone --filter=blob:none --no-checkout https://github.com/DansiDanutz/Did-You-Know-That.git ~/Projects/Did-You-Know-That
+cd ~/Projects/Did-You-Know-That && git sparse-checkout set --cone brand docs episodes intro neon-card outro tools website && git checkout main
+cd website && vercel link --yes --project did-you-know-that-2026
+``` Work in a worktree (`danslab-workflow check` first).
 Add the episode exactly like the previous entry in `website/data/episodes.json` (8 era questions → 8 `<slug>-*` cards,
 F-refs, 2100 never quizzed), `episodes/00N-<slug>/RESEARCH.md` + its source test, thumbnail + webp sizes, previous
 episode's "What's next" → this one, this one's → the next subject placeholder; then
