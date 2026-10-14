@@ -1,41 +1,42 @@
-# EP12 — receipts & decisions needed from Dan
+# EP12 — receipts & decisions needed from Dan (v2 — NervixPay spine)
 
 Rule (series): every on-screen number traces to a file or to Dan. Every screenshot is a real capture.
-Nothing below is optional — a ❓ left open at render time becomes a Truth deduction on the rubric.
+A ❓ left open at render time is a Truth deduction on the rubric.
 
 ## Blocking decisions (needed before the script is voiced)
 
-| # | Decision | Why it blocks | Default if Dan says "you pick" |
+| # | Decision | Lines | Suggested default |
 |---|---|---|---|
-| 1 | **Stripe account status** — exists? live mode enabled? payouts enabled? legal entity + country? | dol11, dol19a, human beat | none — cannot be assumed |
-| 2 | **Which product takes the first dollar, and the price** | dol16, product card, counter value | purchase-webhook's own product: paid access to a private DansLab repo, **$1** (keeps the counter literal) |
-| 3 | **Who pays** — a real stranger, a friend, or Dan's own card (stated on screen) | dol16 rule, dol19a honesty | Dan's own card, declared on screen; "stranger's dollar" becomes ep13 |
-| 4 | **Stateful host for purchase-webhook** — which machine (droplet / Mac Studio / other)? | dol10 ❓HOST NAME | the DansLab droplet that already runs OpenClaw services (do not disturb peer bots) |
-| 5 | **Outcome** — the real attempt happens BEFORE voicing dol19; only the true branch is generated | dol19a vs dol19b | — |
+| 1 | **What is the first thing sold, and at what price in USDC?** | dol22, dol23a | A NervixPay **Starter plan ($10 USDC)** bought by an invited outside merchant — the payment product earns its first money through itself. Alternative: a DansLab product (e.g. paid repo access) sold through a NervixPay link. |
+| 2 | **Who are the first payers, and how do viewers join?** | dol22 | Invited-merchant beta (matches the audit verdict). Viewers join a waitlist/beta link, not open signup, unless F-1 is closed. |
+| 3 | **Status of the two audit P0 blockers on render day** — F-1 legal surface (privacy, terms, company identity) · F-2 second RPC witness | dol20, publish gate | Close F-1 before publishing regardless. If F-2 is still open, the VO says so. |
+| 4 | **The real outcome** — run the real attempt BEFORE voicing dol23; only the true branch is generated | dol23a/b | — |
+| 5 | **CH0 fleet facts (dol05–dol07)** — confirm the tool list (Claude Code, Codex, Kimi, Zcode, Hermes, GrokBot), "OpenClaw replaced by Hermes", and how to describe each droplet's priority (Dexter = ?, Nano = ?) | dol05–dol07 | Tool list + OpenClaw→Hermes from Dan 2026-10-14; two droplets per SYSTEM.md (Memo + Sienna closed 2026-10-11) |
+| 6 | **Is the Stripe change of heart worded the way you'd say it?** (dol08 — ep11 promised Stripe on camera) | dol08 | As drafted: "Not because Stripe is bad. Because of what it means to put somebody else's gate…" |
 
-## Captures (real, from the real session — collected on wire day)
+## Captures (real — collected on the day)
 
-- [ ] `github.com/DansiDanutz/purchase-webhook` README in browser (private repo; nothing sensitive visible)
-- [ ] July audit report (`~/Projects/repoaudit/reports/purchase-webhook.html`) — the findings table and the
-      "production deliberately not claimed" line (already on disk ✅)
-- [ ] Deploy terminal: container up, readiness `200 ready` (values redacted by the terminal, not by blur)
-- [ ] Env set terminal: variable NAMES only, every value `***`
-- [ ] Stripe dashboard → Developers → Webhooks: endpoint registered, test ping 200
-- [ ] Replay test: same event twice → ledger row count stays 1 (terminal)
-- [ ] nervixpay.live landing (live 2026-10-14 ✅ — re-capture on wire day)
-- [ ] Stripe Checkout page for the product (card fields blurred in the capture itself)
-- [ ] Stripe webhook log for the real event + the service log for the same event id
-- [ ] Bottom-bar counter POP frame — QA still at the exact frame
-- [ ] (ep13) bank statement line for the payout — "two business days" in dol19a must match reality
+- [ ] nervixpay.live landing hero + "No custody. No card fees." line (live ✅ 2026-10-14)
+- [ ] Merchant setup: sign in → Connect wallet → signature → "Ownership verified" (real account; no secrets on screen)
+- [ ] Product → share panel: link, QR, embed snippet
+- [ ] Customer phone: checkout → USDC on Polygon → exact amount + QR → wallet confirm → confirmations → "Payment confirmed"
+- [ ] Dashboard Payments row + "Paid directly to your wallet"
+- [ ] Evidence log rows from `NervixPay/docs/operations/network-certification.md` (24 Sep TON, 26 Sep 3 USDC, 26 Sep 10.30 USDC Starter) + the Polygonscan pages for `0x048ee6fa…` (block 94482064) and `0xb8bb1943…` (block 94471825)
+- [ ] The 12 October readiness audit: verdict line + grade table
+- [ ] **dol23a only:** the real outside payment — dashboard row, explorer page, wallet balance; payer identity only with their consent (wallet address shortened)
 
 ## Already verified (2026-10-14)
 
-- danslab.vercel.app · nervix.ai · nervix.ai/api/health · zmarty.me · worldcup26.world · nervixpay.live → all 200
-- purchase-webhook: private, last push 2026-10-06; audit 2026-07-27 (0 critical open, 5/5 high fixed, 7/7 medium+low fixed)
-- No `STRIPE_*` variables present in the fleet env by name → account/keys status genuinely unknown (decision 1)
+- nervixpay.live → 200. Networks live: Polygon, Ethereum, BNB Chain; assets POL/ETH/BNB + USDC + USDT (landing page).
+- Non-custodial, server-side on-chain verification, exact randomized amounts, expiring QR (landing page).
+- Fees: 3 free payments; plans $10 / $20 / $100 per 30 days; $0.50 flat per payment on trial/Starter from prepaid credit; no percentage of the sale (`docs/payments-and-fees.md`, `docs/fees.md`).
+- Certification: only the Polygon USDC **plan invoice** path is certified (2026-09-26); all merchant-checkout paths "not certified" (`docs/operations/network-certification.md`).
+- Readiness audit 2026-10-12: "Not ready for a public launch yet. Ready for a controlled, invited-merchant beta once the two P0 items below are closed." 912 tests pass; 0 production runtime errors over 7 days.
 
 ## Not allowed
 
+- Calling any payment from a Dan-controlled wallet "revenue".
+- Saying "no commissions" or "no fees" as an absolute — say "flat fee, never a percentage of your sale".
+- Naming TON/TRON as live in VO while they're switched off.
 - Regenerating any existing paid narration (ep01–ep11). New lines only, via `gen_voice.py`, whisper-verified.
-- Rendering a secret, even blurred. Redact at the source.
-- Calling a test-mode payment "revenue". Test mode = dol13 only; dol17–19 are live mode or the episode is dol19b.
+- Rendering a secret, private key, seed phrase, or full payer identity.

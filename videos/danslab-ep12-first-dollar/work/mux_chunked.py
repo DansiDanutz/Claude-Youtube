@@ -28,8 +28,8 @@ def dur(p):
 TOTAL = dur(VID)
 # fades at chapter starts, computed from the concat's actual segment durations
 import json as _json
-CHAPTERS = ["WStakes", "WFourBoxes", "WRepo", "WDeploy", "WNervixPay", "WPrice", "WHuman", "WOneDollar", "WOutro"]
-SEGS = ["WDollar","WIntro","WStakes","WFourBoxes","WPipeIntro","WRepo","WAudit","WNotClaimed","WDeploy","WKeys","WEndpoint","WLedger","WNervixPay","WTwoPipes","WPrice","WCheckout","WWebhookLog","WLands","WHuman","WOneDollar","WNext","WOutro"]  # swap WLands→WFails to match assemble.ORDER
+CHAPTERS = ["WStakes", "WNewCrew", "WTurn", "WOwnRail", "WStable", "WSetup", "WReceipts", "WMoment", "WHuman", "WOutro"]
+SEGS = ["WDollar", "WIntro", "WStakes", "WNewCrew", "WRebuilt", "WWhy", "WTurn", "WLandlord", "WOwnRail", "WInstant", "WForYou", "WStable", "WNoBank", "WAgentMoney", "WHonestDeps", "WSetup", "WScan", "WReceipts", "WAudit", "WMoment", "WOffer", "WLands", "WHuman", "WNext", "WOutro"]  # swap WLands→WFails to match assemble.ORDER
 _starts, _t = {}, 0.0
 for _s in SEGS:
     _starts[_s] = _t

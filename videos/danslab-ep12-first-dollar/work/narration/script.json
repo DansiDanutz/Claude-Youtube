@@ -1,127 +1,142 @@
 {
  "episode": "danslab-ep12-first-dollar",
  "narrator": "Brian",
- "status": "BLOCKED — placeholders in dol10,dol16,dol19a,dol19b",
+ "status": "BLOCKED — placeholders in dol20,dol22,dol23a,dol23b",
  "scenes": [
   {
    "id": "dol01",
-   "visual": "WDollar — the ep11 particle $1, frozen mid-form, one particle drifting",
-   "text": "Eighty days ago I made you a promise. Wire the money end to end, in the open, and let you watch the first real dollar land — or fail to. No staging. No tricks. Counter at zero, on camera."
+   "visual": "WDollar — the ep11 particle $1, frozen mid-form; bottom-bar counter fades in: REVENUE $0.00",
+   "text": "Eleven episodes. Nine products live on the internet. A fleet of AI workers running day and night. And in all that time, this company has not been paid one single dollar by anyone. That counter at the bottom has never moved."
   },
   {
    "id": "dol02",
-   "visual": "particles hold; the bottom-bar counter fades in reading $0.00",
-   "text": "That counter is live. It reads zero. By the end of this episode it either reads one dollar — or it still reads zero, and you'll know exactly why."
+   "visual": "particles drift; the counter holds; a faint wallet outline appears under the $",
+   "text": "Tonight it can. Not because we found a customer. Because we finally finished the one thing a company needs before any customer can pay it — a way to get paid that nobody else controls."
   },
   {
    "id": "dol03",
-   "visual": "beat — red accent, single particle drops into a slot",
-   "text": "Let's build the coin slot."
+   "visual": "one particle breaks loose and drops into the wallet — soft chime, cut to black",
+   "text": "This is the episode where the first money has to appear."
   },
   {
    "id": "dol04",
    "visual": "WStakes — stakes card over dark room; no title repeat",
-   "text": "Nine products. Eight workers. Fifteen thousand dollars a year going out. And in eleven episodes, not one dollar coming in. Tonight that changes — or it doesn't, and you see the failure, frame by frame."
+   "text": "And if it doesn't, you'll watch exactly why. Same rule as always. Real numbers. Real failures. No staging."
   },
   {
    "id": "dol05",
-   "visual": "WFourBoxes — four empty boxes draw in: CHECKOUT · WEBHOOK · LEDGER · PAYOUT",
-   "text": "First, a definition. Most 'we take payments' demos stop at box one: a checkout page. That's a doorbell, not a door. Wired end to end means four things, in order. A checkout a stranger can pay. A webhook that proves the payment really happened. A ledger that writes it down once — and only once. And a payout that puts the money in a bank account with a human name on it."
+   "visual": "WNewCrew — tool cards land one by one: Claude Code · Codex · Kimi · Zcode · Hermes · GrokBot; chapter whoosh",
+   "text": "Before the money — what changed. In the last few months, AI moved faster than this channel could film it. Dan's workbench today is Claude Code, Codex, Kimi, Zcode, Hermes and GrokBot. Each one does a job that used to take a week of wiring. Together, they're the reason this company moves at all."
   },
   {
    "id": "dol06",
-   "visual": "the four boxes dim; the top-right PIPE panel appears with a pointer sign",
-   "text": "That panel in the corner is the pipe. Four segments. Dark means unproven. Each one lights only when you have seen it work. Watch it."
+   "visual": "WRebuilt — OpenClaw card dims and slides out, Hermes card takes its place; then the droplet map redraws: four droplets → two, Dexter and Nano, each with its own priority label",
+   "text": "And some things had to go. OpenClaw — the system this fleet was born on — was costing more time than it saved. Hermes replaced it. The droplet agents were redesigned from scratch: fewer machines, and every one of them now works on exactly one thing — our priorities. No busywork. No agents running just because they exist."
   },
   {
    "id": "dol07",
-   "visual": "WRepo — SiteFrame: github.com/DansiDanutz/purchase-webhook (private; blur nothing sensitive, show the README)",
-   "text": "Here's the part nobody expected. The pipe was already written. Back in July the fleet built this — purchase-webhook. Stripe sends a signed event, the service checks it, and on a real paid order it grants the buyer access to a private repository. Code as the product. Payment as the key."
+   "visual": "WWhy — the new crew converges on one word: SHIP",
+   "text": "That rebuild is how the next thing got finished so fast. Because the most important thing this company built since last episode isn't another product. It's the way every product gets paid."
   },
   {
    "id": "dol08",
-   "visual": "WAudit — SiteFrame: the July audit report; rows land one by one; stamp-hit on each",
-   "text": "And it was audited. Twenty-seventh of July. Five high-severity findings — all fixed. Seven medium and low — all fixed. Zero critical open. A signed event alone no longer proves a purchase; it has to match the mode, the product, the amount, and the currency the server owns."
+   "visual": "WTurn — the ep11 line on screen, struck through in red: \"Stripe is not wired yet\"",
+   "text": "First, a correction. Last episode I told you we'd wire up Stripe on camera. I changed my mind. Not because Stripe is bad. Because of what it means to put somebody else's gate between your customer and your money."
   },
   {
    "id": "dol09",
-   "visual": "WNotClaimed — the audit's own line in red: \"Production is deliberately not claimed\"",
-   "text": "And then the honest line, written by the auditor: production is deliberately not claimed. Because the ledger lives in a small database with a file lock — it needs a machine that remembers. Not a serverless function that forgets between requests. So for eighty days the pipe sat on the shelf. Finished. Unplugged."
+   "visual": "WLandlord — a toll gate between two wallets; five gates slam one by one with labels",
+   "text": "A payment processor has to approve you. It can hold your payouts for days. It takes a percentage of every sale — around three percent, plus a fee on top. A customer can reverse a payment weeks later. And on a bad day, it can close the account. Five gates. Every one of them belongs to someone else."
   },
   {
    "id": "dol10",
-   "visual": "WDeploy — terminal plate, real: the deploy to the stateful host, health check returns ready",
-   "text": "So tonight we plug it in. Step one: a home. One container, one worker, one lock — exactly what the audit demanded. ❓HOST NAME. Readiness comes back green only when the database and the configuration are both present. It does."
+   "visual": "WOwnRail — SiteFrame: nervixpay.live live; chapter whoosh",
+   "text": "So the fleet built its own. This is NervixPay — live at nervix pay dot live. A checkout that takes payment straight from the customer's wallet into the merchant's wallet. It never holds the money. It can't freeze it. It can't move it. It only does one job: prove, on the blockchain itself, that the payment really happened."
   },
   {
    "id": "dol11",
-   "visual": "WKeys — terminal plate: environment variables set; every value redacted on screen",
-   "text": "Step two: the keys. Live mode, not test mode. The secret key, the webhook signing secret, the product mapping the server owns. You will not see a single value on this screen. Not blurred. Never rendered."
+   "visual": "WInstant — three cards: \"No approval queue\" · \"Sell the same day\" · \"Nobody can switch it off\"",
+   "text": "And here's why that matters for a company like this one. When we build a product, we don't wait for anyone to say yes. We make a link, and we can sell it that afternoon. No application. No underwriting. No landlord."
   },
   {
    "id": "dol12",
-   "visual": "WEndpoint — SiteFrame: Stripe dashboard, webhook endpoint registered; glitch-zap if the first attempt fails",
-   "text": "Step three: Stripe has to know where to knock. One endpoint. One event type. Stripe sends a signed test ping — the service checks the signature and answers two hundred. The first segment lights. CHECKOUT. The second lights. WEBHOOK."
+   "visual": "WForYou — the share panel: checkout link, QR code, embed snippet",
+   "text": "And it's not only for us. Any business can use it. A website, a consultant, a shop, a service. You connect a wallet, you name a price, you get a link, a QR code, or a snippet for your site. That's the whole setup."
   },
   {
    "id": "dol13",
-   "visual": "WLedger — terminal plate: a test-mode event lands; ledger row written; replay the same event; row count stays 1",
-   "text": "Step four, the one that matters. Send the same event twice. A bad ledger writes it twice and gives the product away twice. This one writes it once. Replay — one row. Replay — one row. LEDGER lights."
+   "visual": "WStable — a flat line labelled \"1 USDC = $1\" vs a jagged line labelled \"volatile crypto\" (schematic)",
+   "text": "Now — why crypto? Because people hear 'crypto' and think of a coin that doubles on Monday and halves on Friday. That's not what we take. We take stablecoins. USDC and USDT. One coin is one dollar. Today, tomorrow, next year. It's not a bet. It's a dollar that moves like an email."
   },
   {
    "id": "dol14",
-   "visual": "WNervixPay — SiteFrame: nervixpay.live live; chapter open, whoosh",
-   "text": "Now a confession. While Stripe sat on the shelf, the company grew a second coin slot — and it's been live for weeks. NervixPay. Crypto payments for any website and any service. No processor. No approval. The money goes wallet to wallet, straight to the merchant."
+   "visual": "WNoBank — the old path collapses: customer → card network → processor → bank → merchant, \"two to three days\" → one arrow: customer wallet → merchant wallet, \"minutes\"",
+   "text": "Look at what disappears. No bank in the middle. No card network taking its cut. No chargebacks. No waiting until Tuesday for Friday's money. It settles in minutes, on a Sunday night, across any border. That's why I think this is the future of money — not because it's new. Because it's simpler."
   },
   {
    "id": "dol15",
-   "visual": "WTwoPipes — two pipes side by side: FIAT · CRYPTO; the flywheel mini-map from ep11 in the corner",
-   "text": "Two pipes, two kinds of customer. Fiat for people with a card and a company name. Crypto for the builders already living on-chain. The flywheel from last episode doesn't care which coin turns it. It only cares that one does."
+   "visual": "WAgentMoney — Hermes, Dexter, Nano cards: \"open a bank account\" ✗ ✗ ✗ → \"receive USDC\" ✓ ✓ ✓",
+   "text": "And for this company there's one more reason — the biggest one. Our workers are AI agents. An agent cannot open a bank account. It has no passport, no signature, no branch to walk into. But it can hold a wallet. For an AI company, stablecoins aren't the fancy option. They're the only money our workers can actually touch."
   },
   {
    "id": "dol16",
-   "visual": "WPrice — the product card: ❓PRODUCT NAME, ❓PRICE; a real Checkout link",
-   "text": "So here is the product. ❓PRODUCT, ❓PRICE. One real checkout link, live on the internet right now. And here is the rule: I don't pay myself and call it revenue. ❓WHO PAYS — stated plainly, on screen."
+   "visual": "WHonestDeps — checklist: what we still depend on",
+   "text": "Full honesty. 'No third party' isn't perfectly true. We still depend on the blockchain to run, and on the companies that issue those coins. Customers pay a small network fee. And NervixPay charges merchants a flat monthly plan — ten dollars to start. A flat fee. Never a percentage of your sale. Nobody stands between the customer and the money."
   },
   {
    "id": "dol17",
-   "visual": "WCheckout — SiteFrame: the Stripe Checkout page, card entry blurred in-plate, Pay button",
-   "text": "Card in. Pay."
+   "visual": "WSetup — real UI captures in SiteFrame: sign in → connect wallet → sign once → \"Ownership verified\"; top-right THE RAIL appears with a pointer sign",
+   "text": "Here's the rail, end to end. That panel in the corner lights one segment at a time, only when you've seen it work. A merchant signs in and connects the wallet they already use. They sign once to prove it's theirs. No money moves. They create a product, and they get a link. LINK lights."
   },
   {
    "id": "dol18",
-   "visual": "WWebhookLog — Stripe dashboard webhook log → terminal: event received, signature ok, ledger row 1",
-   "text": "Stripe fires the event. The service checks the signature. Checks the mode. Checks the product, the amount, the currency. Writes one row. Grants the access. Four seconds, end to end."
+   "visual": "WScan — phone: checkout, pick USDC on Polygon, exact amount + QR, confirm in wallet → SCAN lights → confirmations 1-2-3 → VERIFIED ON-CHAIN lights → dashboard row, \"Paid directly to your wallet\" → IN THE WALLET lights",
+   "text": "The customer opens the link, picks a coin and a network, scans, and confirms in their own wallet. NervixPay doesn't take their word for it. It reads the chain itself, finds the exact amount, and only then marks it paid. And the money is already where it belongs — in the merchant's wallet. Four segments. Lit."
   },
   {
-   "id": "dol19a",
-   "visual": "WLands — the bottom-bar counter POPS $0.00 → $1.00 (or ❓PRICE); PAYOUT lights; chime",
-   "text": "And there it is. The counter moves. Not a mockup. Not a staging key. Eleven episodes of zero — and one real dollar, from a real card, through a pipe you just watched get built. PAYOUT lights when the bank confirms — ❓ two business days. We'll show the statement next episode."
-  },
-  {
-   "id": "dol19b",
-   "visual": "WFails — the counter stays $0.00; the failing step flashes red; trap-snap",
-   "text": "And — nothing. The counter doesn't move. ❓WHAT FAILED. That's the episode. I promised you'd watch it land or fail, and this is what failing looks like. Here's exactly where it broke, and here's what gets fixed before the next one."
+   "id": "dol19",
+   "visual": "WReceipts — three ledger rows stamp in with block numbers; each gets a red stamp: TEST — NOT REVENUE",
+   "text": "Has it ever actually worked? Yes — three times, and here are the receipts. The twenty-fourth of September: one cent's worth of TON. The twenty-sixth: three dollars in USDC on Polygon. And the same day, a ten dollar Starter plan, paid in USDC, certified end to end. And here's why the counter didn't move: every one of those came from a wallet we control. That's plumbing. Not revenue."
   },
   {
    "id": "dol20",
-   "visual": "WHuman — 90/10 echo from ep10 and ep11",
-   "text": "The fleet wrote the pipe. The fleet hardened it, audited it, and tonight deployed it. But look at what it could not do. It cannot open a Stripe account. It cannot sign the terms. It cannot put a legal name on the payout and carry the liability if something goes wrong. That ten percent is a human. That ten percent is why the ninety can be trusted with money at all."
+   "visual": "WAudit — SiteFrame: the 12 October audit, verdict line highlighted; nine-row grade table",
+   "text": "On the twelfth of October the fleet audited the whole thing. Nine hundred and twelve tests passing. Zero errors in production for a week. And the verdict, in its own words: not ready for a public launch yet — ready for a controlled beta with invited merchants, once two blockers are closed. A legal page. And a second source to double-check the blockchain. ❓STATUS OF THE TWO BLOCKERS ON RENDER DAY."
   },
   {
    "id": "dol21",
-   "visual": "WOneDollar — checklist: pipe wired ✓, first dollar (✓ or ✗), second dollar from a stranger ☐",
-   "text": "Full honesty, like always. One dollar is not a business. One dollar from a known card is a plumbing test. The real milestone is the second dollar — from a stranger, who found this company through the wheel, and paid because the product was worth it. That's the one that proves the flywheel."
+   "visual": "WMoment — the season so far in one line: products ✓ · rail ✓ · audit ✓ · customer ☐ — the empty box pulses",
+   "text": "So this is the moment. Eleven episodes building. A rail we own. A product that works. An audit that says we're ready to invite the first merchants. There's exactly one box left on this list — and nobody inside this company can tick it. The first money has to come from outside. And it has to come now."
   },
   {
    "id": "dol22",
-   "visual": "WNext — the promise card",
-   "text": "Next episode: the stranger's dollar. Where they came from, which product, and what the wheel did to bring them. The counter stays on screen from here on. It doesn't reset."
+   "visual": "WOffer — the offer card: ❓WHAT IS SOLD, ❓PRICE in USDC, ❓WHERE (link / invited beta)",
+   "text": "Here's the offer. ❓THE PRODUCT, for ❓THE PRICE in USDC, paid through NervixPay, straight into the company wallet. ❓HOW VIEWERS JOIN. The counter is live. Let's see if it moves."
   },
   {
-   "id": "dol23",
+   "id": "dol23a",
+   "visual": "WLands — real dashboard row from an outside wallet; the bottom-bar counter POPS $0.00 → ❓AMOUNT; chime",
+   "text": "And there it is. ❓WHO PAID — not us, not a test wallet — ❓AMOUNT in USDC, verified on the chain, sitting in the company wallet. Eleven episodes of zero. And the first dollar this company ever earned arrived in money an AI can hold, on rails we built ourselves."
+  },
+  {
+   "id": "dol23b",
+   "visual": "WFails — the counter holds at $0.00; the empty box flashes red",
+   "text": "And — not yet. ❓WHAT HAPPENED. The rail works, and you've seen it work. What's missing isn't code. It's a customer. That's the honest result, and it's the job of the next episode."
+  },
+  {
+   "id": "dol24",
+   "visual": "WHuman — 90/10 echo from ep10 and ep11",
+   "text": "The fleet wrote the rail. It tested it, audited it, and fixed what the audit found. But it couldn't decide that this company would never rent its cash register from somebody else. That was a human choice. Like a poker player refusing a table where the house can change the rules mid-hand. The ten percent. Again."
+  },
+  {
+   "id": "dol25",
+   "visual": "WNext — the promise card; the counter stays on screen",
+   "text": "One dollar isn't a business. It's a door opening. Next episode: the open launch — and the first stranger who finds this company through the flywheel and pays because the product was worth it. The counter stays on screen from now on. It never resets."
+  },
+  {
+   "id": "dol26",
    "visual": "WOutro — Subscribe pill + link + BUILD./SHIP./REPEAT. landing word-by-word on his words",
-   "text": "This was DansLab, number twelve. The First Dollar. If you want to see the second one land — subscribe, and hit like. You'll be here when it happens. Build. Ship. Repeat."
+   "text": "This was DansLab, number twelve. The First Dollar. If you want to see that counter climb — subscribe, and hit like. You'll be here when it happens. Build. Ship. Repeat."
   }
  ]
 }

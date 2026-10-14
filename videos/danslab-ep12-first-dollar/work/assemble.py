@@ -16,29 +16,32 @@ TAG = "4k" if "--tag" in sys.argv and sys.argv[sys.argv.index("--tag") + 1] == "
 
 # (shotId | ("CLIP", path), [(voId, offset_in_shot_s), ...])
 ORDER = [
-    # Fill offsets from the real wavs (ffprobe) once dol* lines are voiced. dol19: keep ONLY the true branch.
-    ("WDollar",     [("dol01", 0.7), ("dol02", 12.5), ("dol03", 20.5)]),
-    ("WIntro",      []),
-    ("WStakes",     [("dol04", 0.7)]),
-    ("WFourBoxes",  [("dol05", 0.7)]),
-    ("WPipeIntro",  [("dol06", 0.7)]),
-    ("WRepo",       [("dol07", 0.7)]),
-    ("WAudit",      [("dol08", 0.7)]),
-    ("WNotClaimed", [("dol09", 0.7)]),
-    ("WDeploy",     [("dol10", 0.7)]),
-    ("WKeys",       [("dol11", 0.7)]),
-    ("WEndpoint",   [("dol12", 0.7)]),
-    ("WLedger",     [("dol13", 0.7)]),
-    ("WNervixPay",  [("dol14", 0.7)]),
-    ("WTwoPipes",   [("dol15", 0.7)]),
-    ("WPrice",      [("dol16", 0.7)]),
-    ("WCheckout",   [("dol17", 0.7)]),
-    ("WWebhookLog", [("dol18", 0.7)]),
-    ("WLands",      [("dol19a", 0.7)]),   # or ("WFails", [("dol19b", 0.7)]) — whichever really happened
-    ("WHuman",      [("dol20", 0.7)]),
-    ("WOneDollar",  [("dol21", 0.7)]),
-    ("WNext",       [("dol22", 0.7)]),
-    ("WOutro",      [("dol23", 0.6)]),
+    # Offsets are placeholders — set from ffprobe of the real wavs once voiced. dol23: ONLY the true branch.
+    ("WDollar",      [("dol01", 0.7), ("dol02", 12.5), ("dol03", 21.0)]),
+    ("WIntro",       []),
+    ("WStakes",      [("dol04", 0.7)]),
+    ("WNewCrew",     [("dol05", 0.7)]),
+    ("WRebuilt",     [("dol06", 0.7)]),
+    ("WWhy",         [("dol07", 0.7)]),
+    ("WTurn",        [("dol08", 0.7)]),
+    ("WLandlord",    [("dol09", 0.7)]),
+    ("WOwnRail",     [("dol10", 0.7)]),
+    ("WInstant",     [("dol11", 0.7)]),
+    ("WForYou",      [("dol12", 0.7)]),
+    ("WStable",      [("dol13", 0.7)]),
+    ("WNoBank",      [("dol14", 0.7)]),
+    ("WAgentMoney",  [("dol15", 0.7)]),
+    ("WHonestDeps",  [("dol16", 0.7)]),
+    ("WSetup",       [("dol17", 0.7)]),
+    ("WScan",        [("dol18", 0.7)]),
+    ("WReceipts",    [("dol19", 0.7)]),
+    ("WAudit",       [("dol20", 0.7)]),
+    ("WMoment",      [("dol21", 0.7)]),
+    ("WOffer",       [("dol22", 0.7)]),
+    ("WLands",       [("dol23a", 0.7)]),   # or ("WFails", [("dol23b", 0.7)]) — whichever really happened
+    ("WHuman",       [("dol24", 0.7)]),
+    ("WNext",        [("dol25", 0.7)]),
+    ("WOutro",       [("dol26", 0.6)]),
 ]
 
 def dur(path):
@@ -115,7 +118,7 @@ for i, (s, _) in enumerate(ORDER):
         sfx_events.append((starts[i] + 0.05, f"{SFX}/impact-deep-soft.mp3", 0.5))
     elif s in CHIME:
         sfx_events.append((starts[i] + 0.05, f"{SFX}/chime-reward.mp3", 0.4))
-    elif s in ("WFourBoxes", "WRepo", "WDeploy", "WNervixPay", "WPrice", "WHuman", "WOneDollar"):
+    elif s in ("WNewCrew", "WTurn", "WOwnRail", "WStable", "WSetup", "WReceipts", "WMoment", "WHuman"):
         sfx_events.append((starts[i], f"{SFX}/whoosh-wind.mp3", 0.42))
     else:
         sfx_events.append((starts[i], f"{SFX}/whoosh-soft.mp3", 0.3))
@@ -133,26 +136,33 @@ sfx_events.append((next_at + 0.05, f"{SFX}/impact-deep-soft.mp3", 0.45))
 # sound on its landing frame (design system: clicks for list staggering).
 # (shotId, localSeconds, sfxName, volume)
 CLICKS = [
-    # TODO(ep12): re-time every entry against the rendered shots (stills at 60%) — these are placements, not measurements.
-    ("WDollar", 7.5, "warm-shimmer", .35), ("WIntro", 4.67, "stamp-hit", .5), ("WIntro", 5.2, "sparkle-soft", .3),
-    ("WFourBoxes", 3.0, "ui-toggle-on", .3), ("WFourBoxes", 5.5, "ui-toggle-on", .3), ("WFourBoxes", 8.0, "ui-toggle-on", .3), ("WFourBoxes", 10.5, "ui-toggle-on", .32),
-    ("WPipeIntro", 2.0, "pop-reveal", .35),
-    ("WRepo", 2.4, "pop-reveal", .35),
-    ("WAudit", 3.0, "stamp-hit", .4), ("WAudit", 5.0, "stamp-hit", .4), ("WAudit", 7.0, "stamp-hit", .42),
-    ("WNotClaimed", 2.0, "trap-snap", .38), ("WNotClaimed", 9.0, "ui-click-soft", .28),
-    ("WDeploy", 3.0, "keys-typing-soft", .3), ("WDeploy", 9.0, "ui-toggle-on", .32),
-    ("WKeys", 3.0, "keys-typing-soft", .3), ("WKeys", 8.0, "ui-click-soft", .28),
-    ("WEndpoint", 6.0, "ui-toggle-on", .32), ("WEndpoint", 9.0, "ui-toggle-on", .32),
-    ("WLedger", 4.0, "stamp-hit", .4), ("WLedger", 7.0, "stamp-hit", .4), ("WLedger", 10.0, "ui-toggle-on", .32),
-    ("WNervixPay", 2.4, "pop-reveal", .35),
-    ("WTwoPipes", 2.0, "pop-reveal", .3), ("WTwoPipes", 4.0, "pop-reveal", .3),
-    ("WPrice", 2.0, "pop-reveal", .35), ("WPrice", 9.0, "chess-piece-thock", .4),
-    ("WCheckout", 1.5, "ui-click-soft", .3),
-    ("WWebhookLog", 2.0, "ui-click-soft", .3), ("WWebhookLog", 4.0, "ui-click-soft", .3), ("WWebhookLog", 6.0, "stamp-hit", .42),
-    ("WLands", 2.0, "riser-soft", .4), ("WLands", 3.0, "warm-shimmer", .4), ("WLands", 3.2, "chime-reward", .4),
+    # TODO(ep12): re-time every entry against rendered stills (frame 60%) — placements, not measurements.
+    ("WDollar", 7.5, "warm-shimmer", .35), ("WDollar", 21.5, "chime-reward", .3),
+    ("WIntro", 4.67, "stamp-hit", .5), ("WIntro", 5.2, "sparkle-soft", .3),
+    ("WNewCrew", 3.0, "pop-reveal", .3), ("WNewCrew", 4.0, "pop-reveal", .3), ("WNewCrew", 5.0, "pop-reveal", .3),
+    ("WNewCrew", 6.0, "pop-reveal", .3), ("WNewCrew", 7.0, "pop-reveal", .3), ("WNewCrew", 8.0, "pop-reveal", .32),
+    ("WRebuilt", 5.0, "glitch-zap", .35), ("WRebuilt", 6.5, "stamp-hit", .4), ("WRebuilt", 11.0, "ui-toggle-on", .3),
+    ("WWhy", 6.0, "chess-piece-thock", .4),
+    ("WTurn", 4.0, "trap-snap", .38),
+    ("WLandlord", 4.0, "stamp-hit", .38), ("WLandlord", 6.5, "stamp-hit", .38), ("WLandlord", 9.0, "stamp-hit", .38),
+    ("WLandlord", 12.0, "stamp-hit", .4), ("WLandlord", 15.0, "trap-snap", .42),
+    ("WOwnRail", 2.4, "pop-reveal", .35),
+    ("WInstant", 3.0, "ui-toggle-on", .3), ("WInstant", 6.0, "ui-toggle-on", .3), ("WInstant", 9.0, "ui-toggle-on", .32),
+    ("WForYou", 6.0, "ui-click-soft", .3), ("WForYou", 8.0, "pop-reveal", .3),
+    ("WStable", 9.0, "warm-shimmer", .33),
+    ("WNoBank", 4.0, "glitch-zap", .32), ("WNoBank", 9.0, "stream-soft", .28),
+    ("WAgentMoney", 5.0, "trap-snap", .35), ("WAgentMoney", 6.0, "trap-snap", .35), ("WAgentMoney", 7.0, "trap-snap", .35),
+    ("WAgentMoney", 12.0, "ui-toggle-on", .32), ("WAgentMoney", 12.6, "ui-toggle-on", .32), ("WAgentMoney", 13.2, "ui-toggle-on", .34),
+    ("WHonestDeps", 4.0, "ui-click-soft", .28), ("WHonestDeps", 7.0, "ui-click-soft", .28), ("WHonestDeps", 12.0, "chess-piece-thock", .4),
+    ("WSetup", 6.0, "ui-click-soft", .3), ("WSetup", 9.0, "warm-shimmer", .3), ("WSetup", 15.0, "ui-toggle-on", .34),
+    ("WScan", 5.0, "ui-toggle-on", .32), ("WScan", 11.0, "ui-toggle-on", .32), ("WScan", 16.0, "ui-toggle-on", .34),
+    ("WReceipts", 6.0, "stamp-hit", .4), ("WReceipts", 9.0, "stamp-hit", .4), ("WReceipts", 13.0, "stamp-hit", .42), ("WReceipts", 18.0, "trap-snap", .38),
+    ("WAudit", 8.0, "ui-click-soft", .3), ("WAudit", 14.0, "piano-a-min", .3),
+    ("WMoment", 4.0, "ui-toggle-on", .3), ("WMoment", 5.5, "ui-toggle-on", .3), ("WMoment", 7.0, "ui-toggle-on", .3), ("WMoment", 12.0, "piano-a-min", .32),
+    ("WOffer", 3.0, "pop-reveal", .38),
+    ("WLands", 2.0, "riser-soft", .4), ("WLands", 3.0, "warm-shimmer", .4), ("WLands", 3.2, "chime-reward", .42),
     ("WFails", 2.0, "glitch-zap", .4), ("WFails", 3.0, "trap-snap", .4),
     ("WHuman", 6.7, "ui-click-soft", .28), ("WHuman", 14.3, "stamp-hit", .4),
-    ("WOneDollar", 3.0, "ui-toggle-on", .3), ("WOneDollar", 5.3, "ui-toggle-on", .3), ("WOneDollar", 8.3, "ui-toggle-on", .3),
     ("WNext", 8.7, "pop-reveal", .38),
     ("WOutro", 7.5, "ui-toggle-on", .4), ("WOutro", 11.5, "chess-piece-thock", .45), ("WOutro", 12.5, "chess-piece-thock", .45), ("WOutro", 13.5, "chess-piece-thock", .45),
 ]
@@ -229,7 +239,7 @@ if "--no-mux" in sys.argv:
 out = f"{EP}/danslab-episode-12-first-dollar-{TAG.upper()}-v1.mp4"
 hud = f"{OUT}/WHud.mov"
 W, H = (3840, 2160) if TAG == "4k" else (1920, 1080)
-chapters = ["WStakes", "WFourBoxes", "WRepo", "WDeploy", "WNervixPay", "WPrice", "WHuman", "WOneDollar", "WOutro"]
+chapters = ["WStakes", "WNewCrew", "WTurn", "WOwnRail", "WStable", "WSetup", "WReceipts", "WMoment", "WHuman", "WOutro"]
 idx = {s: i for i, (s, _) in enumerate(ORDER) if not isinstance(s, tuple)}
 fades = ""
 for c in chapters:

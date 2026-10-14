@@ -14,14 +14,14 @@ const FPS = 30;
 // TODO(ep12): set from the real concat (assemble.py prints segment starts). All seconds FINAL timeline.
 const BAR_IN = 12.0;           // counter fades in during dol02 ("That counter is live")
 const BAR_OUT = 999.0;         // never — "the counter stays on screen from here on" (dol22); set to TOTAL-1 at mux
-const LANDS_AT: number | null = null;  // seconds of the real counter change in WLands; null = dol19b (stays $0.00)
-const AMOUNT = '$1.00';        // ❓ Dan: the real price (RECEIPTS.md decision 2)
-// (secondsFinal, label) — pipe segment chips: CHECKOUT · WEBHOOK · LEDGER · PAYOUT
+const LANDS_AT: number | null = null;  // seconds of the real counter change in WLands; null = dol23b (stays $0.00)
+const AMOUNT = '$10.00';       // ❓ Dan: the real first payment (RECEIPTS.md decision 1) — USDC, 1:1
+// (secondsFinal, label) — THE RAIL segment chips (set times from the real concat; 0 = hidden)
 const STEPS: [number, string][] = [
-  [0, 'CHECKOUT — live link'],
-  [0, 'WEBHOOK — signature ok'],
-  [0, 'LEDGER — one row, once'],
-  [0, 'PAYOUT — bank confirmed'],
+  [0, 'LINK — checkout created'],
+  [0, 'SCAN — paid from their wallet'],
+  [0, 'VERIFIED — on-chain'],
+  [0, 'IN THE WALLET — no custody'],
 ];
 
 const WHud: React.FC = () => {

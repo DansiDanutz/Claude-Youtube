@@ -33,7 +33,7 @@ const WIntro: React.FC = () => {
           <div style={{ height: '100%', width: '100%', background: `linear-gradient(90deg, ${DL.red}, ${DL.gold})`, transform: `scaleX(${ruleW})`, transformOrigin: 'center' }} />
         </div>
         <div style={{ opacity: tagOp, fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 40, color: DL.warm, marginTop: 30 }}>
-          The money, wired end to end. On camera. Counter at zero.
+          Our own rails. Stablecoins. No bank in the middle.
         </div>
         <div style={{ opacity: tagOp, fontFamily: DL_MONO, fontSize: 24, letterSpacing: 4, color: DL.gold, marginTop: 26 }}>
           danslab.vercel.app
