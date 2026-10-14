@@ -45,17 +45,34 @@ Chapter times come from `timeline.json` shot starts; re-run the gate after every
    → about `[1043, 212, 720, 405]` (±15 px is invisible; YouTube keeps the 16:9 ratio). Better still for new episodes:
    draw the WATCH NEXT frame at `top: 212` so the element can fill it exactly without touching the circle.
 5. **Card** at ~0:40 → the previous episode.
-6. **No subtitles**: after processing, open *Languages* and delete any automatic captions (David wants none).
-   Check again later — auto-captions can appear hours after upload.
+6. **No subtitles**: never upload or publish a subtitle track. YouTube's own auto-generated English track exists on
+   every video and the new *Languages* page has no way to delete it (checked 2026-10-14 on all five episodes: the only
+   track is `a.en` "auto-generated", off unless a viewer enables CC) — do not chase it. *Edit subtitles* only opens a
+   manual draft seeded from the auto text: never *Save draft* or *Publish* there; close with *Discard changes*.
 7. Visibility as David says → confirm the public link (oEmbed answers with the title once it is public).
 8. **Pin the Comment of the Week question** (the exact text in `YOUTUBE.md`). YouTube refuses pinning while the
-   video is "being reviewed" (up to 24 h) — pin it then.
-9. Update the **previous** episode's end screen and card to point at this new episode.
+   video is "being reviewed" (up to 24 h) — pin it then. Verify: on the watch page
+   `document.querySelector('ytd-comment-thread-renderer #pinned-comment-badge').innerText` → "Pinned by @…", and Studio
+   → Comments → *Published* lists it (remove the "Unresponded" filter). Other viewers may see it only minutes later.
+9. Update the **previous** episode's end screen video element **and** its card to this new episode, then verify both on
+   its watch page: `.ytp-ce-video a` href = the new video id, boxes still `[1093, 230, 623, 351]` / `[812, 619, 296, 296]`.
+10. **Studio quirks (cost time on No. 05):** pressing Escape in the upload dialog with no popup open *closes the dialog*
+   (the draft autosaves — reopen with *Edit draft*); element refs go stale after any dialog change — re-find before clicking;
+   "Import from latest video" carries the previous episode's element **positions** (good) and its **target** (wrong —
+   re-point it); Category comes from the channel default (Education) — still read it back under *Show more*.
 
 ## 3. Dexty.live
-In `~/Projects/Did-You-Know-That/website`: `node tools/add-video.mjs <slug> <youtubeId>` → tests → PR → merge →
-**manual** `vercel --prod --yes` (merging does not deploy; a second run is sometimes needed) → verify https://dexty.live
-shows the episode.
+`~/Projects/Did-You-Know-That` is a partial sparse clone (restored 2026-10-14; if it is missing again, re-clone with
+`git clone --filter=blob:none --no-checkout` + `git sparse-checkout set --cone brand docs episodes intro neon-card outro tools website`,
+then `vercel link --yes --project did-you-know-that-2026` in `website/`). Work in a worktree (`danslab-workflow check` first).
+Add the episode exactly like the previous entry in `website/data/episodes.json` (8 era questions → 8 `<slug>-*` cards,
+F-refs, 2100 never quizzed), `episodes/00N-<slug>/RESEARCH.md` + its source test, thumbnail + webp sizes, previous
+episode's "What's next" → this one, this one's → the next subject placeholder; then
+`node tools/add-video.mjs <slug> <youtubeId> --date YYYY-MM-DD` → `node tools/build-site.mjs --check` → `npm test` → PR →
+merge → **manual** `vercel --prod --yes` from `website/` (merging does not deploy; re-run once if not applied) → verify
+https://dexty.live (`/episodes/<slug>/` embeds the id, `/data/episodes.json` counts the new episode) and walk the site as a
+viewer (home, journey, collection, daily question) for stale copy or links. Hook quirk: never put a short `-f` flag
+(e.g. `gh api -f`) in the same command as a push — the fleet-safety hook holds it; use `--raw-field`, push alone.
 
 ## 4. Record it
 Video id, end screen / card targets, pinned state, captions state and the Dexty.live deploy go into the episode's
