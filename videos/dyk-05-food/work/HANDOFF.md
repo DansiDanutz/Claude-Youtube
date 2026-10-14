@@ -1,3 +1,9 @@
+> **2026-10-14 14:30 (end-screen fix, separate session):** the outro's subscribe ring moved to centre (960, 767) —
+> `top: 637` — because YouTube clamps its 296 px Subscribe circle to box top 619 and could never cover the old ring at
+> 850 (crescent visible on No. 01–04). SUBSCRIBE / "Comment below" moved level with it (top 727). `FdOutro` re-rendered
+> with `remotion_run.mjs render FdOutro` (bundle removed), master rebuilt with `build_final.py`, `qa_final.py` and
+> `packaging_check.py` re-run; package copied to `~/Downloads/DYK-05-Food/`. Commit a6dcb68. Rule: upload-playbook §2.4.
+
 # HANDOFF — Did You Know That? No. 05 · "Food" (2026-10-14)
 
 State: **beatmap, kit, 15 shots and cue table done; voice pre-flight PASS; stills checked.** No renders, no build_final, no master.
