@@ -35,7 +35,7 @@ VO_TRUE = json.load(open(os.path.join(RO, 'vo.ro.true.json'), encoding='utf-8'))
 sys.path.insert(0, WORK)
 import cues as CUE_TABLE  # noqa: E402  (the shared cue table)
 sys.path.insert(0, os.path.join(ROOT, 'tools', 'dyk'))
-from voice_preflight import off_word  # noqa: E402  (shared resolver: same window as the gate)
+from voice_preflight import off_word, PRE_ONSET_S  # noqa: E402  (shared resolver: same window as the gate)
 
 TARGET_LUFS = -14.0
 LIMIT_DBTP = -2.6          # limiter ceiling (sample) — skill: keeps true peak <= -1 dBTP after AAC
@@ -135,6 +135,28 @@ def word_spans():
     return sorted((VO_AT[sc] + wd['s'], VO_AT[sc] + wd['e']) for sc in VO_AT for wd in VO_TRUE[sc]['words'])
 
 
+# Romanian-only nudges (David, 2026-10-16). The warped English word and the audible Romanian word do not start together
+# (the warp is linear per chunk), and the shared resolver may move a cue at most MAX_SHIFT_S (0.5 s). These two cues sat
+# mid-word on the Romanian take with no clear slot inside that window, so they are re-anchored to the Romanian word you
+# hear: visual -> (scene, Romanian token, 'before' = PRE_ONSET_S ahead of its onset | 'after' = its end). The English
+# cue table work/cues.py is untouched. off_word() still runs afterwards (it returns a clear cue unchanged).
+RO_NUDGE = {
+    'step 1 GUESS IN THE COMMENTS': ('fd00-welcome', 'Scrie-ți', 'before'),   # pop lands with "Scrie-ți", not inside it
+    '(riser into the 2100 rung)': ('fd11-2100', 'recoltele', 'before'),         # riser ends just before "recoltele"
+}
+
+
+def ro_nudge(t, vis):
+    """The Romanian re-anchor for a cue in RO_NUDGE, else t unchanged."""
+    if vis not in RO_NUDGE:
+        return t
+    scene, token, where = RO_NUDGE[vis]
+    word = next((wd for wd in VO_TRUE[scene]['words'] if wd['w'] == token), None)
+    if word is None:
+        sys.exit(f'RO_NUDGE: "{token}" not in {scene} (ro/vo.ro.true.json)')
+    return VO_AT[scene] + (word['s'] - PRE_ONSET_S if where == 'before' else word['e'])
+
+
 def cue_sheet():
     """[(time, clip, gain, visual)] from cues.py + ticks + era exits + end screen, time-sorted; loud clips kept off words."""
     out = [(resolve(when), clip, gain, vis) for when, clip, gain, vis in CUE_TABLE.C]
@@ -147,6 +169,7 @@ def cue_sheet():
     # No. 04 audit: no stack of effects on the end-screen line — one write-on cue, in the gap after "time..."
     out += [(w_end('fd14-endscreen', 'time...', 1, 0.05), 'pencil-scribble', 0.26, 'end screen: READ ON THIS SCREEN writes on')]
     spans = word_spans()
+    out = [(ro_nudge(t, vis), clip, gain, vis) for t, clip, gain, vis in out]
     return sorted((round(off_word(t, clip, spans), 3), clip, gain, vis) for t, clip, gain, vis in out)
 
 
