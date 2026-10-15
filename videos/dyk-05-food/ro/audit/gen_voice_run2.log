@@ -1,0 +1,5 @@
+quota: creator 257900/363000 used, 105100 left; this run needs <= 988
+    try 1 speed 1.00: pace 3.26 w/s (target 2.96) ['pace 3.26 w/s (target 2.96±10%)']
+    try 2 speed 0.95: pace 2.88 w/s (target 2.96) OK
+  fd01-hook: 15.88s, 45 words, tail 0.26s
+voice done: 15.9 s total

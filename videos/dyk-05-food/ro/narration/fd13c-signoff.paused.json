@@ -1,0 +1,35 @@
+{
+"dur": 4.069,
+"words": [
+{
+"w": "\u00centreab\u0103...",
+"s": 0.0,
+"e": 0.83
+},
+{
+"w": "Minuneaz\u0103-te.",
+"s": 1.602,
+"e": 2.362
+},
+{
+"w": "Repet\u0103.",
+"s": 3.187,
+"e": 3.877
+}
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "\u00centreab\u0103...",
+"nth": 1,
+"add": 0.33
+},
+{
+"word": "Minuneaz\u0103-te.",
+"nth": 1,
+"add": 0.36
+}
+]
+}
+}

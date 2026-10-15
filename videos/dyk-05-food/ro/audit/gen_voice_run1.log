@@ -1,0 +1,8 @@
+quota: creator 257464/363000 used, 105536 left; this run needs <= 988
+    try 1 speed 1.00: pace 2.97 w/s (target 2.53) ['pace 2.97 w/s (target 2.53±10%)']
+    try 2 speed 0.95: pace 3.22 w/s (target 2.53) ['pace 3.22 w/s (target 2.53±10%)']
+    try 3 speed 0.95: pace 2.90 w/s (target 2.53) ['pace 2.90 w/s (target 2.53±10%)']
+    try 4 speed 0.95: pace 2.76 w/s (target 2.53) ["stretched 'cinci' 0.50s"]
+  !! fd01-hook chunk 1 REJECTED after 4 tries: ['pace 2.97 w/s (target 2.53±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+voice done: 0 s total
+hard gate failed for: fd01-hook
