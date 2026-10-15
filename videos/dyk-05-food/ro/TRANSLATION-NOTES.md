@@ -28,7 +28,7 @@ Source: `work/narration/script.json` (English, voiced). Target: `ro/script.ro.js
   - No fact, name or qualification was added or dropped.
 - **Units stay imperial** where the source is: *o livră de pesmet tare și un galon de bere* (a pound of hard biscuit, a gallon of beer), F9. *Cincisprezece centimetri* is unchanged.
 - **Brand.** The channel name stays English: "Did You Know That". The site is written for the voice as **"Dexti punct laiv"** so the Romanian model says "Dexty dot live" the English way; on screen it is still Dexty.live. The "Did you know that…" card line is spoken as *Știai că…*.
-- **Sign-off**: *Întreabă... Minunează-te. Repetă.* This keeps the three words, three one-word chunks and the same two pause beats (0.33 s and 0.36 s). "Minunează-te..." with an ellipsis dragged to 2–2.9 s with a tail artefact in 4 takes, so the middle beat ends on a full stop. The text and the timing are otherwise the same.
+- **Sign-off**: *Întreabă... Uimește-te. Repetă.* (David's wording, 2026-10-16; the first take used *Minunează-te*.) This keeps the three words, three one-word chunks and the same two pause beats (0.33 s and 0.36 s). "Minunează-te..." with an ellipsis dragged to 2–2.9 s with a tail artefact in 4 takes, so the middle beat ends on a full stop. The text and the timing are otherwise the same.
 - **Ladder** (fd10 c6) reuses the exact era words: *combustibil → leac → ceva de măsurat → ceva ce reparăm → destulă, în sfârșit → prea multă*. "Medicine" in 1747 is *Un leac* because it echoes *leacul* in that era's DYK line.
 - **Small rewordings for speech**, same meaning:
   - "So did food give us our longer lives?" became *Deci mâncarea ne-a lungit viața?*
@@ -40,8 +40,8 @@ Source: `work/narration/script.json` (English, voiced). Target: `ro/script.ro.js
 
 ## Ambiguous, for David to decide
 
-1. **Advent → *Adventul*.** Flanders in 1500 was Catholic, so this is the accurate term. *Postul Crăciunului* is what most Romanian (Orthodox) listeners know, but that fast is longer, so it is slightly less accurate.
-2. **Wonder → *Minunează-te*.** Alternatives are *Uimește-te* or *Fii curios* (two words, which would break the three-word rule).
+1. **Advent → *Postul Crăciunului*** (David's correction, 2026-10-16; the first take used *Adventul*). Flanders in 1500 was Catholic, so this is the accurate term. *Postul Crăciunului* is what most Romanian (Orthodox) listeners know, but that fast is longer, so it is slightly less accurate.
+2. **Wonder → *Uimește-te*** (David's correction, 2026-10-16; the first take used *Minunează-te*). Alternatives are *Uimește-te* or *Fii curios* (two words, which would break the three-word rule).
 3. **"oatmeal" → *făină de ovăz*** (ground oats, as in the 1747 ration). *fulgi de ovăz* would be anachronistic.
 4. **"grits" → *terci de porumb***. *mămăligă moale* would sound homely but less exact.
 5. **"life tables" → *tabele de mortalitate*** (the demographic term). *tabele de speranță de viață* is plainer.

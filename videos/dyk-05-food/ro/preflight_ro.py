@@ -2,7 +2,7 @@
 """Voice pre-flight for the Romanian pilot — runs the SHARED tools/dyk/voice_preflight.py unchanged, with two
 Romanian adaptations patched in at run time (never edited in the shared file):
   --lang ro   syllables() = ro_text.syllables_ro (drag limits and articulation rate need Romanian syllables), and the
-              sign-off check finds the Romanian three beats "Întreabă... Minunează-te. Repetă." (the shared check only
+              sign-off check finds the Romanian three beats "Întreabă... Uimește-te. Repetă." (the shared check only
               knows "Ask Wonder Repeat"; a Romanian sign-off it cannot find FAILS, it is never skipped silently)
   --only sfx,data   report only these checks (used for the warped-English vo.ro.json, where speed/pace/drag/gap
               numbers describe nobody's real speech — only the SFX-on-word and data checks mean something there)
@@ -22,7 +22,7 @@ sys.path.insert(0, RO)
 import voice_preflight as vp  # noqa: E402
 from ro_text import fold, syllables_ro  # noqa: E402
 
-SIGNOFF_RO = {"intreaba": "Ask...", "minuneazate": "Wonder...", "repeta": "Repeat."}
+SIGNOFF_RO = {"intreaba": "Ask...", "uimestete": "Wonder...", "repeta": "Repeat."}
 _shared_signoff = vp.check_signoff
 
 
@@ -39,7 +39,7 @@ def check_signoff_ro(vo, timeline):
             words.append(w)
         renamed[sid] = {**scene, "words": words}
     if found < 3:
-        return [("sign-off", "-", f"Romanian sign-off (Întreabă... Minunează-te. Repetă.) not found ({found}/3 words)")]
+        return [("sign-off", "-", f"Romanian sign-off (Întreabă... Uimește-te. Repetă.) not found ({found}/3 words)")]
     return _shared_signoff(renamed, timeline)
 
 

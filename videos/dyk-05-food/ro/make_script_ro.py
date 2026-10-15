@@ -52,7 +52,7 @@ TEXT = {
     "fd04-1500": [
         "Te trezești în anul o mie cinci sute, într-un sat din Flandra. Cuptorul de pâine e cald, iar bucătăria miroase "
         "a secară și a fum.",
-        "Știai că aici, în până la patru zile din zece, e interzis să mănânci carne? Vinerea. Postul Mare. Adventul. "
+        "Știai că aici, în până la patru zile din zece, e interzis să mănânci carne? Vinerea. Postul Mare. Postul Crăciunului. "
         "Biserica le spune zile de post.",
         "Uite ce ai în farfurie. Pâine aproape la fiecare masă. Terci, mazăre și fasole. Bere de băut. Pește uscat în "
         "zilele de post. Cea mai mare parte din ce cheltuie familia ta se duce pe mâncare. Șaptezeci până la optzeci "
@@ -183,7 +183,7 @@ TEXT = {
         "Data viitoare: medicina. În anul o mie șapte sute nouăzeci și nouă, medicii lui George Washington i-au scos, "
         "după unele estimări, în jur de două cincimi din sânge. Deci cum am aflat ce ne vindecă, de fapt?",
     ],
-    "fd13c-signoff": ["Întreabă...", "Minunează-te.", "Repetă."],   # "Minunează-te..." dragged 2-2.9 s with a tail, 4 takes
+    "fd13c-signoff": ["Întreabă...", "Uimește-te.", "Repetă."],   # David 2026-10-16: "Uimește-te." (was "Minunează-te.")
     "fd14-endscreen": [
         "Data viitoare... ăsta ar putea fi comentariul tău. Alege un mister. Și ne vedem acolo.",
     ],
@@ -217,7 +217,7 @@ PAUSE_ANCHORS = {
     ("fd11-2100", "fact."): "fapt.",
     ("fd13-outro", "in?"): "mânca?",
     ("fd13c-signoff", "Ask..."): "Întreabă...",
-    ("fd13c-signoff", "Wonder..."): "Minunează-te.",
+    ("fd13c-signoff", "Wonder..."): "Uimește-te.",
 }
 
 TEMPO_RO_EN = 1.17          # measured on fd01-hook (see module docstring); one scene, re-measure if takes drift
@@ -238,7 +238,7 @@ PACE_OVERRIDES = {
 # continuity band to >= 1.00 where it always read > 20 % faster; both restart lower so c4 can slow down.
 SPEED_OVERRIDES = {("fd07-1915", 3): 1.0, ("fd07-1915", 4): 0.95}
 
-RISKY_WORDS = ["Did", "You", "Know", "That", "Flandra", "Adventul", "HMS", "Salisbury", "livră", "galon", "Lind",
+RISKY_WORDS = ["Did", "You", "Know", "That", "Flandra", "Crăciunului", "HMS", "Salisbury", "livră", "galon", "Lind",
                "Shinagawa", "Tsukuba", "Ryujo", "beriberi", "Takaki", "Kanehiro", "Mississippi", "pelagră", "pelagra",
                "Goldberger", "Niacina", "Punjab", "Lal", "Bahadur", "Shastri", "Borlaug", "São", "Paulo", "McKeown",
                "EAT", "Lancet", "Dexti", "laiv", "like", "Washington"]

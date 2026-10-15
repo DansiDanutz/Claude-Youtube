@@ -1,4 +1,4 @@
-WHISPER ROUND-TRIP (ro, whisper base): FAIL — 39 FAIL row(s), 132 LISTEN row(s), 0 accepted after a listen
+WHISPER ROUND-TRIP (ro, whisper base): FAIL — 38 FAIL row(s), 139 LISTEN row(s), 0 accepted after a listen
 
 ## fd01-hook
   script : Data trecută, te-am lăsat cu o întrebare. Ce o să mănânci în anul două mii o sută? În anul o mie cinci sute, istoricii estimează că mâncarea înghițea cea mai mare parte din bugetul unei familii de muncitori. Azi, avem mai multă mâncare ca oricând.
@@ -26,16 +26,22 @@ WHISPER ROUND-TRIP (ro, whisper base): FAIL — 39 FAIL row(s), 132 LISTEN row(s
   LISTEN (listen) low probability 0.26: '2000' at 2.84
   LISTEN (listen) low probability 0.34: '.000' at 5.94
 ## fd04-1500
-  script : Te trezești în anul o mie cinci sute, într-un sat din Flandra. Cuptorul de pâine e cald, iar bucătăria miroase a secară și a fum. Știai că aici, în până la patru zile din zece, e interzis să mănânci carne? Vinerea. Postul Mare. Adventul. Biserica le spune zile de post. Uite ce ai în farfurie. Pâine aproape la fiecare masă. Terci, mazăre și fasole. Bere de băut. Pește uscat în zilele de post. Cea mai mare parte din ce cheltuie familia ta se duce pe mâncare. Șaptezeci până la optzeci la sută. Când recolta nu iese, pâinea se scumpește brusc, iar oamenii flămânzesc. Cât trăiești? În Anglia, chiar peste mare, un nou-născut putea spera la vreo treizeci și cinci de ani. Mai ales pentru că mureau foarte mulți copii. Dacă apucai treizeci de ani, aveai șanse destul de bune să ajungi la șaizeci. Deci ce e mâncarea pentru tine? Combustibil. Cât să supraviețuiești ziua. Ține minte zilele de post. Revin la final. Iar pe mare, în cele mai lungi călătorii, marinarii încep să se destrame.
-  whisper: Te trezești în anul 1500 în trunța din flandra. Cuptorul de pâine Cald, iar bucăteria miroasea secară și afum. Știai ca aici înpăna la 4 zile din zice, e interzit să manășcarne? Vinerea. Postul mare, adventul, biserica le spune zile de postă. Uite ce ai în farfurie. Pâinea proape la fiecare masă. Terci mazăre și fasole, bere de băut. Pește uscat în zilele de post. Cea mai mare parte din ce, chel tu e familia ta, seduce pe mâncare. Seapte zești până la 80 la suta. Când recolta nu e se, pâinea se scompește brusc, iar oamenii flământ zești. Cât treiești? În anglia chiar pe este mare un nou născut putea spera la vră 30 și 5 de ani. Mai ales pentru că mureau foarte mulți copii. Dacă apucai 30 de ani, avea ișan se destul de bune, să ajungi la 60. Deci ce e mâncarea pentru tine? Combustibil. Cât să supraviați o iești ziua. Sine minte zilele de post. Revin la final. Iar pe mare în cele mai lungi calatorii, marinarii încep să se destrame.
-  FAIL   (number) '#10' heard as 'zice'
-  FAIL   (number) '#70' heard as 'seapte zesti'
+  script : Te trezești în anul o mie cinci sute, într-un sat din Flandra. Cuptorul de pâine e cald, iar bucătăria miroase a secară și a fum. Știai că aici, în până la patru zile din zece, e interzis să mănânci carne? Vinerea. Postul Mare. Postul Crăciunului. Biserica le spune zile de post. Uite ce ai în farfurie. Pâine aproape la fiecare masă. Terci, mazăre și fasole. Bere de băut. Pește uscat în zilele de post. Cea mai mare parte din ce cheltuie familia ta se duce pe mâncare. Șaptezeci până la optzeci la sută. Când recolta nu iese, pâinea se scumpește brusc, iar oamenii flămânzesc. Cât trăiești? În Anglia, chiar peste mare, un nou-născut putea spera la vreo treizeci și cinci de ani. Mai ales pentru că mureau foarte mulți copii. Dacă apucai treizeci de ani, aveai șanse destul de bune să ajungi la șaizeci. Deci ce e mâncarea pentru tine? Combustibil. Cât să supraviețuiești ziua. Ține minte zilele de post. Revin la final. Iar pe mare, în cele mai lungi călătorii, marinarii încep să se destrame.
+  whisper: Te trezești în anul 1500 în trunța din flandra. Cuptorul de pâine Cald, iar bucăteria miroasea secară și afum, știai că aici, în până la 4 zile din zece, e interzit să manăși carne. Vinerea, postul mare, postul crăciunului, biserica le spune zile de post. 8 cea în farfurie, pâinea proape la fiecare masă, terci mazăre și fasole, bere de băut, pește uscat în zilele de post. Cea mai mare parte din ce cheltu e familia ta se duce pe mâncare? 7 zici până la 80 la suta. Când recolta nu este, pâinea se scum pește brusc, iar oamenii flământ zezc. Cât treiești, în anglie chiar pe este mare, un nou născut putea spera la vră 30 și 5 de ani, mai ales pentru că mureau foarte mâscopii. Dacă apucai 30 de ani, aveai șanse de stul de bune să ajunge la 60. Deci ce e mâncarea pentru tine? Combustibil. Cât să supravieți o iești ziua. Sine minte zilele de post, revin la final. Iar pe mare în cele mai lungi calatorii, marinarii încep să se destrame.
+  FAIL   (number) '#70' heard as '#7 zici'
+  LISTEN (listen) 'anglia' heard as 'anglie' (risky/name)
   FAIL   (hedge) 'vreo' heard as 'vra' — hedge ['vreo'] lost
-  LISTEN (listen) low probability 0.27: 'ai' at 21.38
-  LISTEN (listen) low probability 0.30: 'chel' at 32.02
-  LISTEN (listen) low probability 0.22: 'tu' at 32.14
-  LISTEN (listen) low probability 0.30: 'spera' at 47.00
-  LISTEN (listen) low probability 0.30: 'ișan' at 54.38
+  LISTEN (listen) low probability 0.28: 'Te' at 0.00
+  LISTEN (listen) low probability 0.24: 'că' at 9.46
+  LISTEN (listen) low probability 0.11: 'în' at 22.82
+  LISTEN (listen) low probability 0.33: 'cheltu' at 33.22
+  LISTEN (listen) low probability 0.34: 'se' at 34.28
+  LISTEN (listen) low probability 0.07: 'zici' at 36.32
+  LISTEN (listen) low probability 0.19: 'este,' at 39.58
+  LISTEN (listen) low probability 0.35: 'spera' at 48.36
+  LISTEN (listen) low probability 0.28: '30' at 54.28
+  LISTEN (listen) low probability 0.28: 'șanse' at 55.76
+  LISTEN (listen) low probability 0.34: 'o' at 62.78
 ## fd05-1747
   script : Te trezești în anul o mie șapte sute patruzeci și șapte, la bordul HMS Salisbury, un vas de război britanic în patrulare. Știai că leacul pentru cea mai cumplită boală a marinarilor a fost găsit chiar anul ăsta, iar marina a așteptat aproape cincizeci de ani să-l folosească? Uite ce ai în farfurie. În fiecare zi, o livră de pesmet tare și un galon de bere. Carne sărată de vită sau de porc, mazăre uscată, făină de ovăz, puțină brânză. Aproape nimic proaspăt. După câteva săptămâni pe mare, oamenii fac scorbut. Gingii care sângerează. Răni vechi care se redeschid. Chirurgul navei, James Lind, împarte doisprezece marinari bolnavi de scorbut în perechi și dă fiecărei perechi altceva. Cidru. Oțet. Iar o pereche primește două portocale și o lămâie pe zi. Deci ce e mâncarea acum? Un leac. Mâncarea potrivită te poate vindeca. Pe uscat, în Marea Britanie, un nou-născut putea spera tot la mai puțin de patruzeci de ani. Marina a dat, în sfârșit, suc de lămâie abia în anul o mie șapte sute nouăzeci și cinci. Un secol mai târziu, în Japonia, o altă piesă lipsă îi îmbolnăvește pe marinari.
   whisper: Te trezești în anul 1747, la bordul Haleme Seltzbury, un vast de război britannic în patrulare. Știai că leacul pentru cea mai completă boalea marinarilor, a fost găsit chiar anul ăsta, iar Marina așteptat aproape 50 de ani săl folosească, uite cea în farfurie. În fiecare zi o livra de pesmetare și un galon de băre, care ne sărată de vita sau de porc, mazăre uscată, făină de o văz, puțină brânză, apropie nimic prospăd. După câteva săptămâni pe mare, oamenii fac scorbut, gingii care sunt gerează, răni vec care se redesquid. Chirurgul navei James Lind, împarte 12 marinar bolnav de scorbut împerec și dă fiecarei perec el ceva, cidru. Oțet, iar o pereche primește două portocale și o lămăie pe zi. Deci ce în care va acum au înleac, în care a potrivită de poate vinde ca? Pe uscat în mare abritanie un nou născut putea spera tot la mai puțin de 40 de ani. Marina adată însvășit sug de lămăie abiananul 1795, un secul mai trăziu în Japonia, o altă piesă lip să îi îi îmbol în vește pe marinarilor.
@@ -215,8 +221,8 @@ WHISPER ROUND-TRIP (ro, whisper base): FAIL — 39 FAIL row(s), 132 LISTEN row(s
   LISTEN (listen) low probability 0.21: 'au' at 6.16
   LISTEN (listen) low probability 0.12: 'din' at 8.80
 ## fd13c-signoff
-  script : Întreabă... Minunează-te. Repetă.
-  whisper: Treabăm minunazate. Repetăm.
+  script : Întreabă... Uimește-te. Repetă.
+  whisper: Treaba-m, uimește-te. Repet-o.
 ## fd14-endscreen
   script : Data viitoare... ăsta ar putea fi comentariul tău. Alege un mister. Și ne vedem acolo.
   whisper: data viitoare îsta ar putea fi comentariu tău a legi un mister și ne vedem acolo.
