@@ -1,6 +1,7 @@
 {
   "voice": "Brian (nPczCjzI2devNBz1zQrb), eleven_multilingual_v2, language_code ro · stability .32 / similarity .85 / style .45",
   "version": "ro-v1 2026-10-16 (No. 05 Food, Romanian pilot)",
+  "approved": "David 2026-10-16: Romanian script approved (fd04 Postul Crăciunului, fd09 \"vreo 76\" = F35 75.8, fd13c Uimește-te); no render yet",
   "language": "ro",
   "risky_words": [
     "Did",

@@ -1,6 +1,6 @@
 # HANDOFF: DYK No. 05 "Food", Romanian narration pilot (2026-10-16)
 
-**Status:** translated, voiced (Brian, eleven_multilingual_v2, `language_code: ro`), paused, and timed for the picture. Gate reports are written. **Not rendered** (David's instruction, and disk was 8–17 GiB, below the 22 GiB floor and the 25 GiB reserve). **Not uploaded.**
+**Status (2026-10-16):** Romanian script APPROVED by David (fd09 stays "vreo 76" = F35 75.8). Translated, voiced (Brian, eleven_multilingual_v2, `language_code: ro`), paused, and timed for the picture. Gate reports are written. **Not rendered** (David's instruction, and disk was 8–17 GiB, below the 22 GiB floor and the 25 GiB reserve). **Not uploaded.**
 
 David checks the Romanian himself (`TRANSLATION-NOTES.md` plus `narration-ro-preview.mp3`) before any render.
 
