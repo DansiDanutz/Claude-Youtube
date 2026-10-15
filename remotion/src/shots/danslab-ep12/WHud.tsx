@@ -15,7 +15,7 @@ const FPS = 30;
 const BAR_IN = 12.0;           // counter fades in during dol02 ("That counter is live")
 const BAR_OUT = 999.0;         // never — "the counter stays on screen from here on" (dol22); set to TOTAL-1 at mux
 const LANDS_AT: number | null = null;  // seconds of the real counter change in WLands; null = dol23b (stays $0.00)
-const AMOUNT = '$10.00';       // ❓ Dan: the real first payment (RECEIPTS.md decision 1) — USDC, 1:1
+const AMOUNT = '$10.00';       // set to the EXACT invoice amount (randomized cents, e.g. 10.30) — Starter plan, USDC 1:1
 // (secondsFinal, label) — THE RAIL segment chips (set times from the real concat; 0 = hidden)
 const STEPS: [number, string][] = [
   [0, 'LINK — checkout created'],

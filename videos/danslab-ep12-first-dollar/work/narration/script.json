@@ -1,7 +1,7 @@
 {
  "episode": "danslab-ep12-first-dollar",
  "narrator": "Brian",
- "status": "BLOCKED — placeholders in dol20,dol22,dol23a,dol23b",
+ "status": "approved — voice conditional endings only via ONLY=<id>",
  "scenes": [
   {
    "id": "dol01",
@@ -30,8 +30,8 @@
   },
   {
    "id": "dol06",
-   "visual": "WRebuilt — OpenClaw card dims and slides out, Hermes card takes its place; then the droplet map redraws: four droplets → two, Dexter and Nano, each with its own priority label",
-   "text": "And some things had to go. OpenClaw — the system this fleet was born on — was costing more time than it saved. Hermes replaced it. The droplet agents were redesigned from scratch: fewer machines, and every one of them now works on exactly one thing — our priorities. No busywork. No agents running just because they exist."
+   "visual": "WRebuilt — OpenClaw card dims and slides out, Hermes card takes its place; then the droplet map redraws: four droplets → two: \"DEXTER — the video machine\", \"NANO — NervixPay ops\"",
+   "text": "And some things had to go. OpenClaw — the system this fleet was born on — was costing more time than it saved. Hermes replaced it. The droplet agents were redesigned from scratch: two machines now, and each one works on exactly one priority. Dexter runs the video machine. Nano runs NervixPay operations. No busywork. No agents running just because they exist."
   },
   {
    "id": "dol07",
@@ -101,7 +101,7 @@
   {
    "id": "dol20",
    "visual": "WAudit — SiteFrame: the 12 October audit, verdict line highlighted; nine-row grade table",
-   "text": "On the twelfth of October the fleet audited the whole thing. Nine hundred and twelve tests passing. Zero errors in production for a week. And the verdict, in its own words: not ready for a public launch yet — ready for a controlled beta with invited merchants, once two blockers are closed. A legal page. And a second source to double-check the blockchain. ❓STATUS OF THE TWO BLOCKERS ON RENDER DAY."
+   "text": "On the twelfth of October the fleet audited the whole thing. Nine hundred and twelve tests passing. Zero errors in production for a week. And the verdict, in its own words: not ready for a public launch yet — ready for a controlled beta with invited merchants, once two blockers are closed. A legal page. And a second source to double-check the blockchain. Since then, the legal pages have gone live. The second source is still on the list — so for now, the beta stays invite only."
   },
   {
    "id": "dol21",
@@ -110,18 +110,20 @@
   },
   {
    "id": "dol22",
-   "visual": "WOffer — the offer card: ❓WHAT IS SOLD, ❓PRICE in USDC, ❓WHERE (link / invited beta)",
-   "text": "Here's the offer. ❓THE PRODUCT, for ❓THE PRICE in USDC, paid through NervixPay, straight into the company wallet. ❓HOW VIEWERS JOIN. The counter is live. Let's see if it moves."
+   "visual": "WOffer — the offer card: NERVIXPAY STARTER · 10 USDC · INVITED BETA; beta link chip pointing to the description",
+   "text": "Here's the offer. A NervixPay Starter plan. Ten dollars, in USDC, paid through NervixPay itself, straight into the company wallet. The payment product earns its first money through its own rail. The first merchants are invited — if you run a business and want a seat in the beta, the link is in the description. The counter is live. Let's see if it moves."
   },
   {
    "id": "dol23a",
-   "visual": "WLands — real dashboard row from an outside wallet; the bottom-bar counter POPS $0.00 → ❓AMOUNT; chime",
-   "text": "And there it is. ❓WHO PAID — not us, not a test wallet — ❓AMOUNT in USDC, verified on the chain, sitting in the company wallet. Eleven episodes of zero. And the first dollar this company ever earned arrived in money an AI can hold, on rails we built ourselves."
+   "visual": "WLands — real dashboard row from an outside wallet; the bottom-bar counter POPS $0.00 → the real invoice amount; chime",
+   "text": "And there it is. An invited merchant — not us, not a test wallet — a ten dollar Starter plan, paid in USDC, verified on the chain, sitting in the company wallet. Eleven episodes of zero. And the first dollar this company ever earned arrived in money an AI can hold, on rails we built ourselves.",
+   "conditional": true
   },
   {
    "id": "dol23b",
    "visual": "WFails — the counter holds at $0.00; the empty box flashes red",
-   "text": "And — not yet. ❓WHAT HAPPENED. The rail works, and you've seen it work. What's missing isn't code. It's a customer. That's the honest result, and it's the job of the next episode."
+   "text": "And — not yet. The invitations went out, and no merchant has paid. The rail works, and you've seen it work. What's missing isn't code. It's a customer. That's the honest result, and it's the job of the next episode.",
+   "conditional": true
   },
   {
    "id": "dol24",

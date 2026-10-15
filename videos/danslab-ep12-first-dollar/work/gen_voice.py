@@ -48,6 +48,8 @@ def main():
             continue                      # already generated; don't re-bill
         if only and sid not in only.split(","):
             continue
+        if sc.get("conditional") and not (only and sid in only.split(",")):
+            continue                      # alternate endings: voice only the true one, explicitly via ONLY=
         mp3 = os.path.join(NARR, f"{sid}.mp3")
         tts(text, mp3, key)
         wav = os.path.join(MIX, f"{sid}.wav")

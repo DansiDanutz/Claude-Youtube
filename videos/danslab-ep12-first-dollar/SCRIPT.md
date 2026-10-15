@@ -1,11 +1,12 @@
-# EP12 — The First Dollar · full script (draft v2 for Dan's approval)
+# EP12 — The First Dollar · full script (v2 — approved 2026-10-15)
 
 Season Two, No. 2 · target ~11–12 min · narrator: Brian · shot prefix `W` · VO ids `dol01`–`dol26`
 Spine: **NervixPay** — our own payment rail, in stablecoins, and the moment the first money has to appear.
-Evidence base: TREATMENT.md table (verified 2026-10-14). ❓ = Dan must confirm or replace before TTS.
+Evidence base: TREATMENT.md table (verified 2026-10-14; blockers re-checked 2026-10-15).
+**Status: APPROVED by Dan 2026-10-15 (v2).** dol23a/dol23b are conditional — voice only the one that really happened.
 VO lines are TTS-ready (numbers spelled out). Visual notes in [brackets].
 
-**Approval gate: Dan reads → edits → THEN `gen_voice.py` (paid). No VO before sign-off.**
+**Approved 2026-10-15.** Voice everything except dol23 now if wanted; dol23a/b only after the real attempt.
 
 ---
 
@@ -34,10 +35,11 @@ needs before any customer can pay it — a way to get paid that nobody else cont
 Dan's workbench today is Claude Code, Codex, Kimi, Zcode, Hermes and GrokBot. Each one does a job that used to
 take a week of wiring. Together, they're the reason this company moves at all."
 
-**dol06** [WRebuilt — OpenClaw card dims and slides out, Hermes card takes its place; then the droplet map redraws: four droplets → two, Dexter and Nano, each with its own priority label]
+**dol06** [WRebuilt — OpenClaw card dims and slides out, Hermes card takes its place; then the droplet map redraws: four droplets → two: "DEXTER — the video machine", "NANO — NervixPay ops"]
 "And some things had to go. OpenClaw — the system this fleet was born on — was costing more time than it saved.
-Hermes replaced it. The droplet agents were redesigned from scratch: fewer machines, and every one of them now
-works on exactly one thing — our priorities. No busywork. No agents running just because they exist."
+Hermes replaced it. The droplet agents were redesigned from scratch: two machines now, and each one works on
+exactly one priority. Dexter runs the video machine. Nano runs NervixPay operations. No busywork. No agents
+running just because they exist."
 
 **dol07** [WWhy — the new crew converges on one word: SHIP]
 "That rebuild is how the next thing got finished so fast. Because the most important thing this company built
@@ -116,7 +118,8 @@ came from a wallet we control. That's plumbing. Not revenue."
 "On the twelfth of October the fleet audited the whole thing. Nine hundred and twelve tests passing. Zero
 errors in production for a week. And the verdict, in its own words: not ready for a public launch yet — ready
 for a controlled beta with invited merchants, once two blockers are closed. A legal page. And a second source
-to double-check the blockchain. ❓STATUS OF THE TWO BLOCKERS ON RENDER DAY."
+to double-check the blockchain. Since then, the legal pages have gone live. The second source is still on the
+list — so for now, the beta stays invite only."
 
 ## CH6 — THE MOMENT
 
@@ -125,17 +128,19 @@ to double-check the blockchain. ❓STATUS OF THE TWO BLOCKERS ON RENDER DAY."
 we're ready to invite the first merchants. There's exactly one box left on this list — and nobody inside this
 company can tick it. The first money has to come from outside. And it has to come now."
 
-**dol22** [WOffer — the offer card: ❓WHAT IS SOLD, ❓PRICE in USDC, ❓WHERE (link / invited beta)]
-"Here's the offer. ❓THE PRODUCT, for ❓THE PRICE in USDC, paid through NervixPay, straight into the company
-wallet. ❓HOW VIEWERS JOIN. The counter is live. Let's see if it moves."
+**dol22** [WOffer — the offer card: NERVIXPAY STARTER · 10 USDC · INVITED BETA; beta link chip pointing to the description]
+"Here's the offer. A NervixPay Starter plan. Ten dollars, in USDC, paid through NervixPay itself, straight
+into the company wallet. The payment product earns its first money through its own rail. The first merchants
+are invited — if you run a business and want a seat in the beta, the link is in the description. The counter
+is live. Let's see if it moves."
 
-**dol23a** [WLands — real dashboard row from an outside wallet; the bottom-bar counter POPS $0.00 → ❓AMOUNT; chime]
-"And there it is. ❓WHO PAID — not us, not a test wallet — ❓AMOUNT in USDC, verified on the chain, sitting in
-the company wallet. Eleven episodes of zero. And the first dollar this company ever earned arrived in money an
+**dol23a** [WLands — real dashboard row from an outside wallet; the bottom-bar counter POPS $0.00 → the real invoice amount; chime]
+"And there it is. An invited merchant — not us, not a test wallet — a ten dollar Starter plan, paid in USDC,
+verified on the chain, sitting in the company wallet. Eleven episodes of zero. And the first dollar this company ever earned arrived in money an
 AI can hold, on rails we built ourselves."
 
 **dol23b** [WFails — the counter holds at $0.00; the empty box flashes red]
-"And — not yet. ❓WHAT HAPPENED. The rail works, and you've seen it work. What's missing isn't code. It's a
+"And — not yet. The invitations went out, and no merchant has paid. The rail works, and you've seen it work. What's missing isn't code. It's a
 customer. That's the honest result, and it's the job of the next episode."
 
 > Only ONE of dol23a / dol23b is voiced — the true one, after the real attempt. Do not generate both.
@@ -173,8 +178,10 @@ like. You'll be here when it happens. Build. Ship. Repeat."
 - The "around three percent" card figure is a general industry figure — re-check on render day and keep "around".
 - All UI plates are real captures of nervixpay.live; the promo's demo merchant "Maya Studio" is fine for the how-it-works
   chapter, but the dol23a dashboard row must be the real payment.
-- **Publish blocker:** close audit F-1 (privacy / terms / company identity) before the video goes public, or change the
-  CTA in dol22 to "join the invited beta".
+- Audit F-1 (legal surface) is closed: nervixpay.live/docs/legal/terms and /privacy return 200 (checked 2026-10-15;
+  PRs #113, #123, #124). F-2 (second RPC witness) was deferred in #113 — dol20 says so. Re-check both on render day.
+- dol23a says "a ten dollar Starter plan" (true whatever the cents); the counter shows the exact invoice amount, which
+  carries randomized cents (the September test invoice was 10.301262 USDC).
 - Fleet facts in CH0 (dol05–dol07): Memo and Sienna droplets closed 2026-10-11 → fleet is 2 droplets, Dexter + Nano
   (`~/Desktop/DavidAi/SYSTEM.md` line 3). OpenClaw → Hermes and the tool list are from Dan (2026-10-14). Do not
   show Sienna as a current worker anywhere in this episode; paper trading is retired (`~/AGENTS.md`).

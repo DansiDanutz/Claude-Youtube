@@ -1,6 +1,9 @@
 # EP12 — The First Dollar · HANDOFF
 
-Status: **SCAFFOLDED 2026-10-14 — script draft v2 (NervixPay + stablecoins spine, 26 lines + alt ending), NOT approved, NO voice, NO shots rendered.**
+Status: **SCRIPT v2 APPROVED 2026-10-15** — no ❓ left; script.json rebuilt (25 lines + 2 conditional endings). NO voice yet, NO shots rendered.
+
+Next: `python3.13 work/gen_voice.py` voices the 25 unconditional lines (paid, ElevenLabs Brian) — the endings dol23a/b are skipped
+unless named with `ONLY=`. Run the real 10 USDC Starter attempt with an invited merchant, then `ONLY=dol23a` (or `dol23b`).
 
 v2 direction (Dan, 2026-10-14): NervixPay = our own rails (no third-party gate, sell instantly, any business can use it);
 stablecoins = future of money (no bank, no card %); "this is the moment the first money appears". Plus CH0 "what changed":
@@ -14,7 +17,7 @@ Branch `video/danslab-ep12-first-dollar` in the worktree `~/Projects/Claude-Yout
 
 - `../TREATMENT.md` — premise, evidence table (verified 2026-10-14), chapters, persistent surfaces.
 - `../SCRIPT.md` — VO lines `dol01`–`dol26` (`dol23a`/`dol23b` are the two endings; voice only the true one).
-  ❓ placeholders in dol20, dol22, dol23a, dol23b must be real words before TTS (`build_script_json.py` exits 1 until then).
+  All ❓ resolved 2026-10-15. `build_script_json.py` marks dol23a/b `conditional`; `gen_voice.py` skips them unless in `ONLY`.
 - `../RECEIPTS.md` — six decisions for Dan + capture checklist + publish blocker (NervixPay audit F-1).
 - `narration/script.json` — generated from SCRIPT.md (regenerate after edits: see README resume step; the
   one-liner lives in the DansLab-Series hub README history / rerun the parse).
@@ -28,7 +31,7 @@ Branch `video/danslab-ep12-first-dollar` in the worktree `~/Projects/Claude-Yout
 
 ## Not yet built (in order)
 
-1. Dan's sign-off + the six decisions in RECEIPTS.md.
+1. ~~Dan's sign-off + decisions~~ done 2026-10-15 (see RECEIPTS.md). Still needed: the beta link URL for the description.
 2. Real NervixPay captures (setup, share panel, phone checkout, dashboard, certification log, 12 Oct audit) → `media/`.
 3. Shots (25 in ORDER): WDollar (reuse ep11 ZDollar particles), WStakes, WNewCrew, WRebuilt, WWhy, WTurn, WLandlord,
    WOwnRail, WInstant, WForYou, WStable, WNoBank, WAgentMoney, WHonestDeps, WSetup, WScan, WReceipts, WAudit, WMoment,

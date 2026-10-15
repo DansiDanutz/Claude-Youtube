@@ -3,7 +3,17 @@
 Rule (series): every on-screen number traces to a file or to Dan. Every screenshot is a real capture.
 A ❓ left open at render time is a Truth deduction on the rubric.
 
-## Blocking decisions (needed before the script is voiced)
+## Decisions — RESOLVED by Dan 2026-10-15 (script v2 approved)
+
+1. First sale: a **NervixPay Starter plan, 10 USDC**, bought by an **invited merchant** (dol22, dol23a).
+2. Viewers join the **invited beta** via the link in the description (dol22). Beta link URL still needed for the description.
+3. Audit blockers (checked 2026-10-15): **F-1 closed** — /docs/legal/terms and /docs/legal/privacy live (200), operator
+   details set (PRs #113, #123, #124). **F-2 open** (deferred in #113) — dol20 says so. Re-check on render day.
+4. Outcome: still to happen. Run the real attempt, then voice ONLY the true ending: `ONLY=dol23a` or `ONLY=dol23b`.
+5. Droplets: **Dexter = the video machine**, **Nano = NervixPay ops** (dol06).
+6. Stripe reversal (dol08): approved as drafted.
+
+### Original decision table (kept for the record)
 
 | # | Decision | Lines | Suggested default |
 |---|---|---|---|

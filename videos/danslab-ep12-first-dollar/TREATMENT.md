@@ -86,7 +86,7 @@ own that change openly in the first chapter ("I said Stripe. I changed my mind. 
 - `WReceipts`: three ledger rows stamp in with block numbers and a red "TEST — NOT REVENUE" stamp.
 - Counter POP — the single most important frame; QA still at the exact frame.
 
-## Before publishing (not just before rendering)
+## Before publishing (not just before rendering) — F-1 CLOSED 2026-10-15 (legal pages live); keep this note for the record
 
 The episode sends viewers to nervixpay.live as potential merchants. The 12 October audit lists **no privacy
 policy, no terms, no company identity** as a launch blocker (F-1). Close F-1 before this video goes public,
