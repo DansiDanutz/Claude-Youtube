@@ -4,7 +4,7 @@ import React from 'react';
 import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { DL, DL_SERIF, DL_SANS, DL_MONO, DL_EASE, DCLAMP, SiteBg } from '../../lib/danslab';
 import { makeCue, ease, rise, useShotFade, Vignette } from '../../lib/dykkit';
-import { Food, Label, QGRAD, hold, type FoodKind } from '../../lib/dykkit-food';
+import { Food, Label, QGRAD, type FoodKind } from '../../lib/dykkit-food';
 import vo from './vo.json';
 
 // =============================================================================
@@ -23,9 +23,6 @@ const FIFTEEN = C.at('fifteen');
 const TWENTY = C.at('twenty');
 const EACH = C.at('each');
 const WAKE = C.at('wake');
-const SOMEWHERE = C.at('somewhere');
-const LONG = C.at('long');
-const WHAT2 = C.at('what', 2); // 'what really gave us' (1 = 'what it does')
 const PLATE = C.at('plate,');
 const BODY = C.at('body,');
 const LIVE = C.at('live.');
@@ -41,7 +38,7 @@ const X0 = 255, STEP = 235;
 const Pillar: React.FC<{ at: number; title: string; children: React.ReactNode }> = ({ at, title, children }) => {
   const f = useCurrentFrame();
   return (
-    <div style={{ width: 360, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, opacity: ease(f, at - 2, at + 4), transform: `scale(${ease(f, at - 2, at + 10, 1.2, 1)})` }}>
+    <div style={{ width: 360, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, opacity: ease(f, at - 2, at + 8), transform: `scale(${ease(f, at - 2, at + 10, 1.2, 1)})` }}>
       <div style={{ height: 150, display: 'flex', alignItems: 'center' }}>{children}</div>
       <Label at={at} color={DL.gold} size={34}>{title}</Label>
     </div>
@@ -51,24 +48,23 @@ const Pillar: React.FC<{ at: number; title: string; children: React.ReactNode }>
 const FdPromise: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
-  const rowOut = 1 - ease(f, hold(LONG, END) - 4, hold(LONG, END)); // round 4: THE YEARS pillar flashed
+  const rowOut = 1 - ease(f, END - 8, END + 4);
   const dawn = ease(f, WAKE - 2, WAKE + 20);
-  const sand = ease(f, LONG, LONG + 40);
+  const sand = ease(f, LIVE, LIVE + 40);
   return (
     <AbsoluteFill style={{ fontFamily: DL_SANS, opacity: fade }}>
       <SiteBg glow="#1a1206" />
       <Vignette />
       <AbsoluteFill style={{ opacity: rowOut }}>
         <div style={{ position: 'absolute', left: 160, right: 160, top: 640, height: 260, borderRadius: '50%', background: `radial-gradient(ellipse at 50% 100%, ${DL.gold}33, transparent 70%)`, opacity: dawn }} />
-        <div style={{ position: 'absolute', left: 960 - 70, top: 760 - 160 * ease(f, WAKE, SOMEWHERE + 40), width: 140, height: 140, borderRadius: '50%', background: `radial-gradient(circle, #ffe9b0, ${DL.gold}88 60%, transparent 72%)`, opacity: dawn * (1 - ease(f, PLATE - 8, PLATE)) }} />
         <div style={{ ...rise(f, SEVEN), position: 'absolute', left: 0, right: 0, top: 170, textAlign: 'center', fontFamily: DL_MONO, fontSize: 34, letterSpacing: 10, color: DL.dim }}>SEVEN MORNINGS · SEVEN PLATES</div>
         {/* the three spine beats */}
         <div style={{ position: 'absolute', left: 0, right: 0, top: 250, display: 'flex', justifyContent: 'center', gap: 80 }}>
           <Pillar at={PLATE} title="THE PLATE"><Food kind="ricebeans" size={150} /></Pillar>
           <Pillar at={BODY} title="THE BODY">
-            <svg width={110} height={150} viewBox="0 0 100 140"><circle cx={50} cy={22} r={17} fill={DL.warm} /><path d="M22 138 C22 70 32 44 50 44 C68 44 78 70 78 138 Z" fill={DL.warm} /><path d="M50 70 q-12 -12 -20 0 q-6 12 20 30 q26 -18 20 -30 q-8 -12 -20 0 Z" fill={DL.red} transform={`translate(50 80) scale(${1 + (f > BODY ? 0.12 * Math.max(0, Math.sin((f - BODY) / 4)) : 0)}) translate(-50 -80)`} /></svg>
+            <svg width={110} height={150} viewBox="0 0 100 140"><circle cx={50} cy={22} r={17} fill={DL.warm} /><path d="M22 138 C22 70 32 44 50 44 C68 44 78 70 78 138 Z" fill={DL.warm} /><path d="M50 70 q-12 -12 -20 0 q-6 12 20 30 q26 -18 20 -30 q-8 -12 -20 0 Z" fill={DL.red} /></svg>
           </Pillar>
-          <Pillar at={LONG} title="THE YEARS">
+          <Pillar at={LIVE} title="THE YEARS">
             <svg width={100} height={150} viewBox="0 0 100 150"><path d="M14 8 L86 8 M14 142 L86 142" stroke={DL.gold} strokeWidth={8} strokeLinecap="round" /><path d="M22 12 Q22 62 50 75 Q78 62 78 12 Z M22 138 Q22 88 50 75 Q78 88 78 138 Z" fill="none" stroke={DL.warm} strokeWidth={5} /><path d={`M${30 + 14 * sand} ${20 + 40 * sand} Q50 ${60 + 8 * sand} ${70 - 14 * sand} ${20 + 40 * sand} L70 20 L30 20 Z`} fill={DL.gold} opacity={1 - sand * 0.8} /><path d={`M28 136 Q50 ${136 - 40 * sand} 72 136 Z`} fill={DL.gold} /></svg>
           </Pillar>
         </div>
@@ -77,7 +73,7 @@ const FdPromise: React.FC = () => {
           const plateAt = PLATE + i * 6;
           const future = i === 6;
           const lit = (i === 0 && f >= FIFTEEN) || (future && f >= TWENTY);
-          const pulse = ease(f, EACH + i * 7, EACH + i * 7 + 5) * (1 - ease(f, EACH + i * 7 + 8, EACH + i * 7 + 22)) + ease(f, SOMEWHERE + i * 6, SOMEWHERE + i * 6 + 5) * (1 - ease(f, SOMEWHERE + i * 6 + 8, SOMEWHERE + i * 6 + 22));
+          const pulse = ease(f, EACH + i, EACH + i + 5) * (1 - ease(f, EACH + i + 8, EACH + i + 22));
           const x = X0 + i * STEP;
           const s = interpolate(f, [at, at + 8], [0.7, 1], { ...DCLAMP, easing: DL_EASE.out });
           const kind = PLATES[i];
@@ -92,12 +88,12 @@ const FdPromise: React.FC = () => {
         })}
       </AbsoluteFill>
       {/* the promise: what really gave us our extra years — answered only in FdReveal */}
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: ease(f, hold(LONG, END), hold(LONG, END) + 6) }}>
-        <div style={{ ...rise(f, hold(LONG, END)), fontFamily: DL_MONO, fontSize: 32, letterSpacing: 10, color: DL.dim }}>AT THE END</div>
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: ease(f, END - 4, END + 6) }}>
+        <div style={{ ...rise(f, END - 2), fontFamily: DL_MONO, fontSize: 32, letterSpacing: 10, color: DL.dim }}>AT THE END</div>
         <div style={{ marginTop: 26, width: 1500, textAlign: 'center', fontFamily: DL_SERIF, fontWeight: 500, fontSize: 96, lineHeight: 1.15, color: DL.text }}>
-          <span style={{ opacity: ease(f, WHAT2 - 2, WHAT2 + 4) }}>What </span><span style={{ opacity: ease(f, REALLY - 2, REALLY + 4), fontStyle: 'italic' }}>really</span><span style={{ opacity: ease(f, REALLY + 8, REALLY + 14) }}> gave us our</span>
-          <span style={{ opacity: ease(f, EXTRA - 2, EXTRA + 4), color: DL.gold }}> extra </span>
-          <span style={{ display: 'inline-block', opacity: ease(f, YEARS_W - 2, YEARS_W + 4), background: QGRAD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', transform: `scale(${ease(f, YEARS_W - 2, YEARS_W + 10, 1.3, 1)})` }}>years?</span>
+          What <span style={{ opacity: ease(f, REALLY - 2, REALLY + 6), fontStyle: 'italic' }}>really</span> gave us our
+          <span style={{ opacity: ease(f, EXTRA - 2, EXTRA + 6), color: DL.gold }}> extra </span>
+          <span style={{ display: 'inline-block', opacity: ease(f, YEARS_W - 2, YEARS_W + 6), background: QGRAD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', transform: `scale(${ease(f, YEARS_W - 2, YEARS_W + 10, 1.3, 1)})` }}>years?</span>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

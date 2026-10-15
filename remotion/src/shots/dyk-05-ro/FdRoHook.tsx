@@ -5,7 +5,7 @@ import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { DL, DL_SERIF, DL_SANS, DL_MONO, SiteBg } from '../../lib/danslab';
 import { DYT } from '../../lib/dytbrand';
 import { makeCue, ease, rise, useShotFade, Vignette, DidYouKnowThat } from '../../lib/dykkit';
-import { Food, Label, Source, PeopleRow, QGRAD, OnWord, win, hold, type FoodKind , pane } from '../../lib/dykkit-food';
+import { Food, Label, Source, PeopleRow, QGRAD, OnWord, win, type FoodKind } from '../../lib/dykkit-food';
 import vo from './vo.json';
 
 // =============================================================================
@@ -48,11 +48,6 @@ const LIVES = B.at('lives?');
 const OR = B.at('Or');
 const TAKING = B.at('taking');
 const BACK = B.at('back?');
-const SOME = B.at('some');
-// panels hold ≥ 1.5 s after their last reveal (audit round 1: three flashes)
-const QUOTE_END = hold(HUNDRED1, FIFTEEN);
-const PAST_END = hold(BUDGET, TODAY);
-const CARD_END = hold(DIET, SO) + 6; // DYK card's 10 f exit
 
 const FILL: [FoodKind, number, number][] = [['bread', -330, -40], ['ricebeans', 300, -60], ['soda', -470, 60], ['snack', 460, 70], ['meat', -200, 150], ['orange', 210, 160], ['cheese', 0, 190]];
 
@@ -60,8 +55,8 @@ const FdHook: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
   const lamp = 0.85 + 0.15 * Math.sin(f / 18);
-  const quote = pane(f, LAST, QUOTE_END);
-  const past = pane(f, QUOTE_END, PAST_END);
+  const quote = win(f, LAST, FIFTEEN - 2, 6, 10);
+  const past = win(f, FIFTEEN, TODAY, 6, 10);
   const tip = ease(f, MOST - 2, MOST + 14);
   const table = 1 - 0.65 * ease(f, STRANGE - 4, STRANGE + 10) * (1 - ease(f, SO - 8, SO + 4));
   const fillStep = 12; // one food per ~12 frames, one soft click each (skill: builds pace with the voice)
@@ -87,7 +82,7 @@ const FdHook: React.FC = () => {
         {/* today: the table fills, one food per beat */}
         {FILL.map(([k, dx, dy], i) => {
           const at = MORE + i * fillStep;
-          return <div key={k} style={{ position: 'absolute', left: 960 + dx - 60, top: 600 + dy, opacity: ease(f, at - 2, at + 4), transform: `scale(${ease(f, at - 2, at + 10, 1.3, 1)})` }}><Food kind={k} size={120} /></div>;
+          return <div key={k} style={{ position: 'absolute', left: 960 + dx - 60, top: 600 + dy, opacity: ease(f, at - 2, at + 6), transform: `scale(${ease(f, at - 2, at + 10, 1.3, 1)})` }}><Food kind={k} size={120} /></div>;
         })}
       </AbsoluteFill>
 
@@ -96,8 +91,8 @@ const FdHook: React.FC = () => {
         <div style={{ position: 'absolute', left: 260, right: 260, top: 230, padding: '30px 44px', borderRadius: 18, background: '#0e0b0af0', borderLeft: `6px solid ${DL.gold}`, border: `1px solid ${DL.border}` }}>
           <Label at={LAST} color={DL.dim} size={28}>LAST TIME · NO. 04 ASKED<OnWord at={QUESTION}> A QUESTION</OnWord></Label>
           <div style={{ marginTop: 16, fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 64, color: DL.text }}>
-            <OnWord at={WHAT}>What will you be </OnWord><span style={{ opacity: ease(f, EATING - 2, EATING + 4), color: DL.gold }}>eating</span>
-            <span style={{ opacity: ease(f, HUNDRED1 - 2, HUNDRED1 + 4), color: DL.red }}> in 2100?</span>
+            <OnWord at={WHAT}>What will you be </OnWord><span style={{ opacity: ease(f, EATING - 4, EATING + 6), color: DL.gold }}>eating</span>
+            <span style={{ opacity: ease(f, HUNDRED1 - 4, HUNDRED1 + 6), color: DL.red }}> in 2100?</span>
           </div>
         </div>
       </AbsoluteFill>
@@ -106,44 +101,44 @@ const FdHook: React.FC = () => {
       <AbsoluteFill style={{ opacity: past }}>
         <div style={{ position: 'absolute', left: 260, top: 210 }}><Label at={FIFTEEN} color={DL.gold} size={34}>1500<OnWord at={HISTORIANS}> · HISTORIANS ESTIMATE</OnWord></Label></div>
         <svg width={760} height={330} viewBox="0 0 760 330" style={{ position: 'absolute', left: 260, top: 280, overflow: 'visible' }}>
-          <path d="M40 120 Q40 40 130 40 Q220 40 220 120 L240 280 L20 280 Z" fill="#7a5a3a" stroke="#4a3220" strokeWidth={6} opacity={ease(f, FIFTEEN - 2, FIFTEEN + 4)} />
-          <path d="M70 46 Q130 10 190 46" stroke="#4a3220" strokeWidth={8} fill="none" opacity={ease(f, FIFTEEN - 2, FIFTEEN + 4)} />
+          <path d="M40 120 Q40 40 130 40 Q220 40 220 120 L240 280 L20 280 Z" fill="#7a5a3a" stroke="#4a3220" strokeWidth={6} opacity={ease(f, FIFTEEN - 2, FIFTEEN + 8)} />
+          <path d="M70 46 Q130 10 190 46" stroke="#4a3220" strokeWidth={8} fill="none" opacity={ease(f, FIFTEEN - 2, FIFTEEN + 8)} />
           {[0, 1, 2, 3].map((k) => {
             const moves = k < 3;
             const t = moves ? ease(f, MOST - 2 + k * 3, MOST + 12 + k * 3) : 0;
             const x = 90 + k * 34 + t * (330 + k * 40);
             const y = 150 - 60 * Math.sin(Math.PI * t) + t * 70;
-            return <circle key={k} cx={x} cy={y} r={26} fill={DL.gold} stroke="#8a6a10" strokeWidth={4} opacity={ease(f, FOOD1 - 2, FOOD1 + 4)} />;
+            return <circle key={k} cx={x} cy={y} r={26} fill={DL.gold} stroke="#8a6a10" strokeWidth={4} opacity={ease(f, FOOD1 - 2, FOOD1 + 6)} />;
           })}
-          <g transform="translate(470 180)" opacity={ease(f, FOOD1 - 2, FOOD1 + 4)}><path d="M0 90 C0 10 220 10 220 90 Z" fill="#c8893c" stroke="#7a4e1c" strokeWidth={5} /><rect x={0} y={86} width={220} height={20} rx={6} fill="#a86a2c" /></g>
+          <g transform="translate(470 180)" opacity={ease(f, FOOD1 - 2, FOOD1 + 8)}><path d="M0 90 C0 10 220 10 220 90 Z" fill="#c8893c" stroke="#7a4e1c" strokeWidth={5} /><rect x={0} y={86} width={220} height={20} rx={6} fill="#a86a2c" /></g>
         </svg>
         <div style={{ position: 'absolute', left: 1060, top: 330, width: 640, opacity: tip }}>
-          <div style={{ fontFamily: DL_SERIF, fontSize: 64, color: DL.text, lineHeight: 1.15 }}>Most<span style={{ opacity: ease(f, BUDGET - 2, BUDGET + 4) }}> of a working family's budget</span></div>
-          <div style={{ marginTop: 14, fontFamily: DL_MONO, fontSize: 28, color: DL.gold, opacity: ease(f, BUDGET - 2, BUDGET + 4) }}>WENT ON FOOD</div>
+          <div style={{ fontFamily: DL_SERIF, fontSize: 64, color: DL.text, lineHeight: 1.15 }}>Most<span style={{ opacity: ease(f, BUDGET - 4, BUDGET + 6) }}> of a working family's budget</span></div>
+          <div style={{ marginTop: 14, fontFamily: DL_MONO, fontSize: 28, color: DL.gold, opacity: ease(f, BUDGET - 2, BUDGET + 8) }}>WENT ON FOOD</div>
           <Source at={BUDGET} style={{ marginTop: 18 }}>historians' estimate · Flanders 70–80 %, England ≈ 80 % of spending · Munro 2003</Source>
         </div>
       </AbsoluteFill>
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 210, textAlign: 'center', opacity: pane(f, PAST_END, STRANGE) }}>
-        <span style={{ ...rise(f, TODAY - 2), display: 'inline-block', fontFamily: DL_SERIF, fontSize: 72, color: DL.text }}>Today: <span style={{ color: DL.gold, opacity: ease(f, MORE - 2, MORE + 4) }}>more food than ever.</span></span>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 210, textAlign: 'center', opacity: win(f, TODAY, STRANGE, 4, 10) }}>
+        <span style={{ ...rise(f, TODAY - 2), display: 'inline-block', fontFamily: DL_SERIF, fontSize: 72, color: DL.text }}>Today: <span style={{ color: DL.gold, opacity: ease(f, MORE - 2, MORE + 6) }}>more food than ever.</span></span>
       </div>
 
       {/* the question: did food give us our longer lives — or is it taking years back? */}
-      <AbsoluteFill style={{ opacity: ease(f, CARD_END - 2, CARD_END + 4) }}>
+      <AbsoluteFill style={{ opacity: ease(f, SO - 4, SO + 8) }}>
         <div style={{ position: 'absolute', left: 0, right: 0, top: 190, textAlign: 'center', fontFamily: DL_SERIF, fontSize: 84, color: DL.text }}>
-          <OnWord at={CARD_END}>Did food give us </OnWord><span style={{ opacity: ease(f, LIVES - 6, LIVES + 4), color: DL.green }}>longer lives?</span>
+          <OnWord at={SO}>Did food give us </OnWord><span style={{ opacity: ease(f, LIVES - 6, LIVES + 4), color: DL.green }}>longer lives?</span>
         </div>
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 310, textAlign: 'center', fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 74, color: DL.red }}>
-          <OnWord at={OR}>…or is it </OnWord><span style={{ opacity: ease(f, TAKING - 2, TAKING + 4) }}>taking </span><span style={{ opacity: ease(f, SOME - 2, SOME + 4) }}>some of those years back?</span>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 310, textAlign: 'center', fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 84, color: DL.red }}>
+          <OnWord at={OR}>…or is it </OnWord><span style={{ opacity: ease(f, TAKING - 4, TAKING + 6) }}>taking </span><span style={{ opacity: ease(f, BACK - 6, BACK + 4) }}>some years back?</span>
         </div>
         <div style={{ position: 'absolute', left: 960 - 110, top: 430, width: 220, textAlign: 'center', fontFamily: DL_SERIF, fontWeight: 600, fontSize: 220, lineHeight: 1, background: QGRAD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', opacity: end, transform: `scale(${ease(f, BACK - 2, BACK + 12, 1.4, 1)})` }}>?</div>
       </AbsoluteFill>
 
-      <DidYouKnowThat at={DID} out={CARD_END}>
+      <DidYouKnowThat at={DID} out={SO}>
         <OnWord at={TODAY2}>today, </OnWord><OnWord at={ONE}>about <span style={{ color: '#ffd23f' }}>one in </span></OnWord><span style={{ opacity: ease(f, FIVE - 4, FIVE + 4), color: '#ffd23f' }}>five </span>
-        <OnWord at={DEATHS}>deaths around the world </OnWord><span style={{ opacity: ease(f, LINKED - 2, LINKED + 4), color: '#ff9a1f', fontStyle: 'italic' }}>is linked to diet?</span>
-        <div style={{ marginTop: 24, display: 'flex', alignItems: 'center', gap: 30, opacity: ease(f, ONE - 2, ONE + 4) }}>
-          <PeopleRow n={5} lit={(i) => (i === 4 ? 1 - ease(f, FIVE - 2, FIVE + 4) : 1)} size={70} color={DYT.cyan} />
-          <span style={{ fontFamily: DL_MONO, fontSize: 28, color: '#c8cdf0', opacity: ease(f, DIET - 2, DIET + 4) }}>≈ 11 million deaths (2017) · adults 25+ · GBD 2017 Diet Collaborators, Lancet 2019</span>
+        <OnWord at={DEATHS}>deaths around the world </OnWord><span style={{ opacity: ease(f, LINKED - 4, LINKED + 6), color: '#ff9a1f', fontStyle: 'italic' }}>is linked to diet?</span>
+        <div style={{ marginTop: 24, display: 'flex', alignItems: 'center', gap: 30, opacity: ease(f, ONE - 4, ONE + 6) }}>
+          <PeopleRow n={5} lit={(i) => (i === 4 ? 1 - ease(f, FIVE, FIVE + 10) : 1)} size={70} color={DYT.cyan} />
+          <span style={{ fontFamily: DL_MONO, fontSize: 28, color: '#c8cdf0', opacity: ease(f, DIET - 2, DIET + 8) }}>≈ 11 million deaths (2017) · adults 25+ · GBD 2017 Diet Collaborators, Lancet 2019</span>
         </div>
       </DidYouKnowThat>
     </AbsoluteFill>

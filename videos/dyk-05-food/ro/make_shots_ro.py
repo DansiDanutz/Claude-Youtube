@@ -6,8 +6,10 @@ work/sync_shots.py applies to the English shots from work/timeline.json), and `.
 ro/vo.ro.json (English words warped onto the Romanian takes), so every word-synced visual lands on the Romanian take.
 The English shots are never written. The copies are never hand-edited: re-run after any change to the English shots
 or to timeline.ro.json / vo.ro.json.  `--check` only reports drift (exit 1).
-Run: python3 videos/dyk-05-food/ro/make_shots_ro.py [--check]"""
-import json, os, re, shutil, sys
+`--ref <git ref>` reads the English shots from that commit (git show) instead of the working tree — use the PR's base
+branch so the copies never depend on uncommitted English edits in the main checkout (CI type-checks against the commit).
+Run: python3 videos/dyk-05-food/ro/make_shots_ro.py [--check] [--ref video/dyk-05-food]"""
+import json, os, re, shutil, subprocess, sys
 
 RO = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(RO, '..', '..', '..'))
@@ -36,17 +38,25 @@ def convert(sid, src):
     return BANNER.format(sid=sid) + new
 
 
+def english_source(sid, ref):
+    rel = f'remotion/src/shots/dyk-05/{sid}.tsx'
+    if ref is None:
+        return open(os.path.join(ROOT, rel), encoding='utf-8').read()
+    return subprocess.run(['git', '-C', ROOT, 'show', f'{ref}:{rel}'], capture_output=True, text=True, check=True).stdout
+
+
 def ro_id(sid):
     return 'FdRo' + sid[2:]
 
 
 def main():
     check = '--check' in sys.argv
+    ref = sys.argv[sys.argv.index('--ref') + 1] if '--ref' in sys.argv else None
     os.makedirs(DST, exist_ok=True)
     drift = []
     want = {ro_id(sid) + '.tsx' for sid in TL} | {'vo.json'}
     for sid in TL:
-        out = convert(sid, open(os.path.join(SRC, f'{sid}.tsx'), encoding='utf-8').read())
+        out = convert(sid, english_source(sid, ref))
         path = os.path.join(DST, ro_id(sid) + '.tsx')
         if not os.path.exists(path) or open(path, encoding='utf-8').read() != out:
             drift.append(ro_id(sid))
@@ -60,7 +70,7 @@ def main():
     stray = sorted(set(os.listdir(DST)) - want - {'README.md'})
     if stray:
         print('stray files in dyk-05-ro (not generated, not removed):', ', '.join(stray))
-    print(('drift in: ' if check else 'generated: ') + (', '.join(drift) or 'none') + f' ({len(TL)} shots)')
+    print(('drift in: ' if check else 'generated: ') + (', '.join(drift) or 'none') + f' ({len(TL)} shots, English from {ref or "working tree"})')
     sys.exit(1 if check and drift else 0)
 
 

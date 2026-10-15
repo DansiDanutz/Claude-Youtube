@@ -6,7 +6,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, SiteBg } from '../../lib/danslab';
 import { makeCue, ease, useShotFade, EraHeader, Vignette, DidYouKnowThat, EraExit } from '../../lib/dykkit';
 import {
   EpisodeHud, WakePlace, win, SunCliffhanger, FoodChip, FoodLadder, Label, Source, StampText, AskMark, OnWord, PeopleRow,
-  Food, FoodTag, PlateWeek, YearsStrip, YEARS_PAST, Ship, Waves, Wheat, Baby, CountUp, hold, pane,
+  Food, FoodTag, PlateWeek, YearsStrip, YEARS_PAST, Ship, Waves, Wheat,
 } from '../../lib/dykkit-food';
 import vo from './vo.json';
 
@@ -26,7 +26,6 @@ const DUR = 2180;
 
 const C = makeCue(vo, 'fd04-1500', 0.8);
 const FIFTEEN = C.at('fifteen');
-const VILLAGE = C.at('village');
 const FLANDERS = C.at('Flanders.');
 const DOCK = FLANDERS + 46;
 const BREAD1 = C.at('bread', 1);
@@ -86,14 +85,6 @@ const VOYAGES = C.at('voyages,');
 const SAILORS = C.at('sailors');
 const FALLING = C.at('falling');
 const APART = C.at('apart.');
-const SEA1 = C.at('sea,', 1);
-const ABOUT = C.at('about');
-const FIVE = C.at('five');
-// audit round 1: each panel holds ≥ 1.5 s after its last reveal
-const SPEND_END = hold(EIGHTY, WHEN);
-const GO = C.at('go');
-const HARV_END = hold(GO, HOW);
-const YEARS_END = hold(SIXTY, SO);
 
 const FdOven: React.FC<{ f: number; glow: number }> = ({ f, glow }) => (
   <svg width={560} height={380} viewBox="0 0 560 380" style={{ overflow: 'visible' }}>
@@ -110,18 +101,18 @@ const FdOven: React.FC<{ f: number; glow: number }> = ({ f, glow }) => (
 const Fd1500: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
-  const village = Math.max(0.35 * ease(f, 0, 12), ease(f, DOCK - 2, DOCK + 4)) * (1 - ease(f, DID - 10, DID - 2));
+  const village = win(f, DOCK + 10, DID - 2, 10, 8);
   const smoke = ease(f, SMOKE - 4, SMOKE + 16) * village;
-  const week = pane(f, hold(FAST1, PLATE) + 6, hold(FAST2, MOST));
-  const spend = pane(f, hold(FAST2, MOST) + 4, SPEND_END);
-  const harvest = pane(f, SPEND_END, HARV_END);
+  const week = win(f, PLATE - 4, MOST, 6, 8);
+  const spend = win(f, MOST - 4, WHEN, 6, 8);
+  const harvest = win(f, WHEN - 4, HOW, 6, 8);
   const wither = ease(f, FAILS - 2, FAILS + 24);
-  const years = pane(f, HARV_END, YEARS_END);
-  const useful = pane(f, FUEL - 2, hold(SURVIVE, REMEMBER));
-  const debt = pane(f, hold(SURVIVE, REMEMBER) + 4, hold(BACK, AND_SEA));
-  const cliff = ease(f, hold(BACK, AND_SEA) - 2, hold(BACK, AND_SEA) + 10);
-  const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, AND_SEA - 2, AND_SEA + 4));
-  const strip = (1 - ease(f, AND_SEA - 6, AND_SEA + 2)) * ease(f, DOCK - 2, DOCK + 4);
+  const years = win(f, HOW - 4, SO + 2, 6, 8);
+  const useful = win(f, FUEL - 2, REMEMBER, 4, 10);
+  const debt = win(f, REMEMBER - 4, AND_SEA, 6, 8);
+  const cliff = ease(f, AND_SEA - 2, AND_SEA + 10);
+  const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, AND_SEA - 2, AND_SEA + 8));
+  const strip = (1 - ease(f, AND_SEA - 6, AND_SEA + 2)) * ease(f, DOCK, DOCK + 10);
   const share = ease(f, SEVENTY - 2, SEVENTY + 14, 0, 0.7) + ease(f, EIGHTY - 2, EIGHTY + 14, 0, 0.1);
 
   return (
@@ -130,18 +121,18 @@ const Fd1500: React.FC = () => {
       <Vignette />
       <EraExit dur={DUR}>
         <EraHeader year="1500" idx={1} label="FLANDERS" dockAt={DOCK} />
-        <WakePlace place="a village in Flanders" at={VILLAGE} dockAt={DOCK} yearAt={FIFTEEN} />
+        <WakePlace place="a village in Flanders" at={FLANDERS} dockAt={DOCK} yearAt={FIFTEEN} />
 
         {/* morning: the bread oven, rye and smoke */}
         <AbsoluteFill style={{ opacity: village }}>
-          <div style={{ position: 'absolute', left: 200, top: 360, opacity: ease(f, Math.max(BREAD1, DOCK + 18) - 4, Math.max(BREAD1, DOCK + 18) + 8) }}><FdOven f={f} glow={ease(f, WARM - 2, WARM + 14)} /></div>
+          <div style={{ position: 'absolute', left: 200, top: 360, opacity: ease(f, BREAD1 - 4, BREAD1 + 8) }}><FdOven f={f} glow={ease(f, WARM - 2, WARM + 14)} /></div>
           <div style={{ position: 'absolute', left: 860, top: 250, display: 'flex', flexDirection: 'column', gap: 16 }}>
-            <Label at={Math.max(BREAD1, DOCK + 18)} color={DL.warm} size={34}>THE BREAD OVEN'S<OnWord at={WARM}> WARM</OnWord></Label>
+            <Label at={BREAD1} color={DL.warm} size={34}>THE BREAD OVEN'S<OnWord at={WARM}> WARM</OnWord></Label>
             <Label at={KITCHEN} color={DL.dim} size={30}>THE KITCHEN SMELLS OF…</Label>
             <Label at={RYE} color="#d8b850" size={30}>· RYE</Label>
             <Label at={SMOKE} color={DL.dim} size={30}>· SMOKE</Label>
           </div>
-          <div style={{ position: 'absolute', left: 900, top: 560, display: 'flex', gap: 24, opacity: Math.max(0.5, ease(f, RYE - 2, RYE + 10)) }}>
+          <div style={{ position: 'absolute', left: 900, top: 560, display: 'flex', gap: 24, opacity: ease(f, RYE - 2, RYE + 10) }}>
             {Array.from({ length: 9 }, (_, i) => <Wheat key={i} h={240} sway={Math.sin(f / 20 + i) * 4} />)}
           </div>
         </AbsoluteFill>
@@ -152,7 +143,7 @@ const Fd1500: React.FC = () => {
         {/* THE PLATE: a week in 1500 */}
         <AbsoluteFill style={{ opacity: week }}>
           <div style={{ position: 'absolute', left: 160, top: 200 }}>
-            <PlateWeek title={<>THE PLATE · A WEEK IN <span style={{ color: DL.gold }}>1500</span> · FLANDERS</>} at={PLATE} tagAt={FAST2} tagColor={DL.sky} reveal={{ porridge: PORRIDGE, beans: PEAS, beer: BEER, fish: FISH }}
+            <PlateWeek title={<>THE PLATE · A WEEK IN <span style={{ color: DL.gold }}>1500</span> · FLANDERS</>} at={PLATE} tagAt={FAST2} tagColor={DL.sky}
               foot="illustration · based on food historians (little is recorded about ordinary meals)"
               days={[
                 { d: 'MON', foods: ['bread', 'porridge', 'beer'] }, { d: 'TUE', foods: ['bread', 'beans', 'beer'] },
@@ -175,10 +166,10 @@ const Fd1500: React.FC = () => {
           <div style={{ position: 'absolute', left: 160, top: 230 }}><Label at={MOST} color={DL.dim} size={32}>WHAT YOUR FAMILY<OnWord at={SPENDS}> SPENDS</OnWord><OnWord at={FOOD1}> · ON FOOD</OnWord></Label></div>
           <div style={{ position: 'absolute', left: 160, top: 330, width: 1600, height: 140, borderRadius: 16, background: DL.panel2, border: `2px solid ${DL.border}`, overflow: 'hidden' }}>
             <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: `${100 * share}%`, background: `linear-gradient(90deg, #c8893c, ${DL.gold})` }} />
-            <div style={{ position: 'absolute', left: `${70}%`, top: 0, bottom: 0, width: '10%', background: `repeating-linear-gradient(45deg, ${DL.gold}55 0 10px, transparent 10px 20px)`, opacity: ease(f, EIGHTY - 2, EIGHTY + 4) }} />
-            <div style={{ position: 'absolute', left: 30, top: 34, display: 'flex', gap: 20, alignItems: 'center', opacity: ease(f, FOOD1 - 2, FOOD1 + 4) }}><Food kind="bread" size={70} /><span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 44, color: '#1a0e06' }}>FOOD</span></div>
+            <div style={{ position: 'absolute', left: `${70}%`, top: 0, bottom: 0, width: '10%', background: `repeating-linear-gradient(45deg, ${DL.gold}55 0 10px, transparent 10px 20px)`, opacity: ease(f, EIGHTY - 2, EIGHTY + 8) }} />
+            <div style={{ position: 'absolute', left: 30, top: 34, display: 'flex', gap: 20, alignItems: 'center', opacity: ease(f, FOOD1 - 2, FOOD1 + 8) }}><Food kind="bread" size={70} /><span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 44, color: '#1a0e06' }}>FOOD</span></div>
           </div>
-          <div style={{ position: 'absolute', left: 160, top: 500, fontFamily: DL_SERIF, fontSize: 120, color: DL.gold, opacity: ease(f, SEVENTY - 2, SEVENTY + 4) }}>70<span style={{ opacity: ease(f, EIGHTY - 2, EIGHTY + 4) }}>–80 %</span></div>
+          <div style={{ position: 'absolute', left: 160, top: 500, fontFamily: DL_SERIF, fontSize: 120, color: DL.gold, opacity: ease(f, SEVENTY - 2, SEVENTY + 8) }}>70<span style={{ opacity: ease(f, EIGHTY - 2, EIGHTY + 6) }}>–80 %</span></div>
           <div style={{ position: 'absolute', left: 160, top: 660 }}><Source at={SEVENTY}>share of food in historians' consumer baskets · Flanders 70–80 % (Blockmans & Prevenier) · Munro 2003</Source></div>
         </AbsoluteFill>
 
@@ -188,53 +179,46 @@ const Fd1500: React.FC = () => {
           <div style={{ position: 'absolute', left: 160, top: 330, display: 'flex', gap: 22, filter: `grayscale(${wither}) brightness(${1 - 0.45 * wither})` }}>
             {Array.from({ length: 10 }, (_, i) => <Wheat key={i} h={300} sway={wither * (20 + (i % 3) * 10)} />)}
           </div>
-          <div style={{ position: 'absolute', left: 1000, top: 320, display: 'flex', alignItems: 'center', gap: 30, opacity: ease(f, PRICES - 2, PRICES + 4) }}>
+          <div style={{ position: 'absolute', left: 1000, top: 320, display: 'flex', alignItems: 'center', gap: 30, opacity: ease(f, PRICES - 2, PRICES + 8) }}>
             <Food kind="bread" size={150} />
-            <svg width={160} height={220} viewBox="0 0 160 220" style={{ transform: `translateY(${-30 * ease(f, JUMP - 2, JUMP + 10)}px)` }}><path d="M80 10 L150 100 L105 100 L105 210 L55 210 L55 100 L10 100 Z" fill={DL.red} opacity={ease(f, JUMP - 2, JUMP + 4)} /></svg>
+            <svg width={160} height={220} viewBox="0 0 160 220" style={{ transform: `translateY(${-30 * ease(f, JUMP - 2, JUMP + 10)}px)` }}><path d="M80 10 L150 100 L105 100 L105 210 L55 210 L55 100 L10 100 Z" fill={DL.red} opacity={ease(f, JUMP - 2, JUMP + 6)} /></svg>
             <Label at={PRICES} color={DL.red} size={34}>BREAD PRICES<OnWord at={JUMP}> JUMP</OnWord></Label>
           </div>
-          <div style={{ position: 'absolute', left: 1000, top: 640 }}><StampText text="PEOPLE GO HUNGRY" at={GO} color={DL.red} size={42} /></div>
+          <div style={{ position: 'absolute', left: 1000, top: 640 }}><StampText text="PEOPLE GO HUNGRY" at={HUNGRY} color={DL.red} size={42} /></div>
         </AbsoluteFill>
 
         {/* THE YEARS */}
         <AbsoluteFill style={{ opacity: years }}>
           <div style={{ position: 'absolute', left: 160, top: 210 }}><Label at={HOW} color={DL.gold} size={38}>THE YEARS · HOW LONG DO YOU LIVE?</Label></div>
           <div style={{ position: 'absolute', left: 160, top: 300, display: 'flex', alignItems: 'baseline', gap: 30 }}>
-            <Label at={ENGLAND} color={DL.dim} size={30}>ENGLAND<OnWord at={SEA1}>, JUST ACROSS THE SEA</OnWord><OnWord at={NEWBORN}> · A NEWBORN</OnWord></Label>
+            <Label at={ENGLAND} color={DL.dim} size={30}>ENGLAND, JUST ACROSS THE SEA · A NEWBORN</Label>
           </div>
-          {/* audit round 1: the panel sat on two headings for 4 s — the crossing and a newborn land on their words */}
-          <svg width={520} height={90} viewBox="0 0 520 90" style={{ position: 'absolute', left: 1180, top: 230, overflow: 'visible', opacity: ease(f, ENGLAND - 2, ENGLAND + 4) }}>
-            <circle cx={30} cy={45} r={14} fill={DL.gold} /><text x={0} y={86} textAnchor="start" fontFamily={DL_MONO} fontSize={22} fill={DL.dim}>ENGLAND</text>
-            <path d={`M60 45 ${Array.from({ length: 8 }, () => 'q 25 -12 50 0').join(' ')}`} stroke="#2f6f9f" strokeWidth={5} fill="none" strokeDasharray={420} strokeDashoffset={420 * (1 - ease(f, SEA1 - 2, SEA1 + 16))} />
-            <circle cx={490} cy={45} r={14} fill={DL.warm} /><text x={520} y={86} textAnchor="end" fontFamily={DL_MONO} fontSize={22} fill={DL.dim}>FLANDERS</text>
-          </svg>
-          <div style={{ position: 'absolute', left: 1320, top: 360, opacity: ease(f, NEWBORN - 2, NEWBORN + 4), transform: `scale(${ease(f, NEWBORN - 2, NEWBORN + 10, 1.25, 1)})` }}><Baby size={150} /></div>
-          <div style={{ position: 'absolute', left: 160, top: 360, display: 'flex', alignItems: 'baseline', gap: 26, opacity: ease(f, ABOUT - 2, ABOUT + 4) }}>
-            <CountUp to={35} a={ABOUT} b={FIVE + 4} prefix="≈ " style={{ fontFamily: DL_SERIF, fontSize: 170, lineHeight: 1, color: DL.gold }} />
+          <div style={{ position: 'absolute', left: 160, top: 360, display: 'flex', alignItems: 'baseline', gap: 26, opacity: ease(f, THIRTY1 - 2, THIRTY1 + 8) }}>
+            <span style={{ fontFamily: DL_SERIF, fontSize: 170, lineHeight: 1, color: DL.gold }}>≈ 35</span>
             <span style={{ fontFamily: DL_MONO, fontSize: 32, color: DL.text }}>YEARS · AT BIRTH · AVERAGE</span>
           </div>
-          <div style={{ position: 'absolute', left: 160, top: 560, display: 'flex', alignItems: 'flex-end', gap: 40, opacity: ease(f, MOSTLY - 2, MOSTLY + 4) }}>
+          <div style={{ position: 'absolute', left: 160, top: 560, display: 'flex', alignItems: 'flex-end', gap: 40, opacity: ease(f, MOSTLY - 2, MOSTLY + 8) }}>
             <PeopleRow n={10} lit={(i) => (i < 4 ? 1 - ease(f, CHILDREN, CHILDREN + 12) : 1)} size={56} gap={12} color={DL.warm} />
             <Label at={CHILDREN} color={DL.warm} size={30}>MOSTLY BECAUSE SO MANY<br />CHILDREN DIED</Label>
           </div>
-          <div style={{ position: 'absolute', left: 160, top: 760, width: 1000, opacity: ease(f, IF - 2, IF + 4) }}>
+          <div style={{ position: 'absolute', left: 160, top: 760, width: 1000, opacity: ease(f, IF - 2, IF + 8) }}>
             <div style={{ position: 'relative', height: 60 }}>
               <div style={{ position: 'absolute', left: 0, right: 0, top: 26, height: 8, borderRadius: 4, background: DL.border }} />
               <div style={{ position: 'absolute', left: '37.5%', top: 26, height: 8, width: `${37.5 * ease(f, SIXTY - 4, SIXTY + 12)}%`, borderRadius: 4, background: DL.green }} />
-              {[['0', 0], ['30', 37.5], ['60', 75]].map(([t, x]) => <div key={t} style={{ position: 'absolute', left: `${x}%`, top: 0, transform: 'translateX(-50%)', fontFamily: DL_MONO, fontSize: 26, color: t === '30' ? (f >= THIRTY2 ? DL.gold : DL.muted) : t === '60' ? (f >= SIXTY ? DL.green : DL.muted) : DL.muted, opacity: t === '60' ? ease(f, SIXTY - 2, SIXTY + 4) : 1 }}>{t}</div>)}
+              {[['0', 0], ['30', 37.5], ['60', 75]].map(([t, x]) => <div key={t} style={{ position: 'absolute', left: `${x}%`, top: 0, transform: 'translateX(-50%)', fontFamily: DL_MONO, fontSize: 26, color: t === '30' ? (f >= THIRTY2 ? DL.gold : DL.muted) : t === '60' ? (f >= SIXTY ? DL.green : DL.muted) : DL.muted, opacity: t === '60' ? ease(f, SIXTY - 2, SIXTY + 6) : 1 }}>{t}</div>)}
             </div>
-            <Label at={IF} color={DL.green} size={28} style={{ marginTop: 8 }}>MADE IT TO 30?<OnWord at={SIXTY}> A FAIR CHANCE OF REACHING 60</OnWord></Label>
+            <Label at={SIXTY} color={DL.green} size={28} style={{ marginTop: 8 }}>MADE IT TO 30? A FAIR CHANCE OF REACHING 60</Label>
           </div>
-          <div style={{ position: 'absolute', left: 1200, top: 800, width: 560 }}><Source at={THIRTY1}>England 1541–1871 ≈ 35.5 at birth · Wrigley & Schofield (via OWID)</Source></div>
+          <div style={{ position: 'absolute', left: 1200, top: 820 }}><Source at={THIRTY1}>England 1541–1871 ≈ 35.5 at birth · Wrigley & Schofield (via OWID)</Source></div>
         </AbsoluteFill>
 
         {/* "So what is food to you?" — Fuel. Enough to survive the day. */}
-        <AskMark at={YEARS_END} out={FUEL + 2} left={760} top={250} pulseAt={YOU_Q} />
+        <AskMark at={SO} out={FUEL + 2} left={760} top={250} pulseAt={YOU_Q} />
         <AbsoluteFill style={{ opacity: useful }}>
           <div style={{ position: 'absolute', left: 260, top: 300, display: 'flex', alignItems: 'flex-end', gap: 40 }}>
-            <div style={{ opacity: ease(f, FUEL - 2, FUEL + 4) }}><Food kind="bread" size={190} glow={0.6} /></div>
+            <div style={{ opacity: ease(f, FUEL - 2, FUEL + 8) }}><Food kind="bread" size={190} glow={0.6} /></div>
             <div style={{ opacity: ease(f, FUEL + 4, FUEL + 12) }}><Food kind="porridge" size={150} /></div>
-            <div style={{ fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 64, color: DL.gold, opacity: ease(f, SURVIVE - 2, SURVIVE + 4), marginLeft: 30 }}>enough to survive the day</div>
+            <div style={{ fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 64, color: DL.gold, opacity: ease(f, SURVIVE - 2, SURVIVE + 8), marginLeft: 30 }}>enough to survive the day</div>
           </div>
         </AbsoluteFill>
         <FoodChip text="FUEL" at={FUEL} dockAt={CHIP_DOCK} slot={0} left={260} top={720} />
@@ -252,38 +236,38 @@ const Fd1500: React.FC = () => {
 
         {/* cliffhanger: at sea, sailors start falling apart */}
         <AbsoluteFill style={{ opacity: cliff }}>
-          <div style={{ position: 'absolute', left: 160, top: 640, width: 1600, height: 140, overflow: 'hidden', opacity: ease(f, SEA - 2, SEA + 4) }}><Waves f={f} w={1600} y={10} /></div>
-          <div style={{ position: 'absolute', left: 620, top: 260, opacity: ease(f, VOYAGES - 2, VOYAGES + 4), transform: `translateX(${-(f - VOYAGES) * 0.6}px)` }}><Ship w={560} f={f} /></div>
-          <div style={{ position: 'absolute', left: 260, top: 300, display: 'flex', gap: 14, opacity: ease(f, SAILORS - 2, SAILORS + 4) }}>
+          <div style={{ position: 'absolute', left: 160, top: 640, width: 1600, height: 140, overflow: 'hidden', opacity: ease(f, SEA - 4, SEA + 8) }}><Waves f={f} w={1600} y={10} /></div>
+          <div style={{ position: 'absolute', left: 620, top: 260, opacity: ease(f, VOYAGES - 4, VOYAGES + 8), transform: `translateX(${-(f - VOYAGES) * 0.6}px)` }}><Ship w={560} f={f} /></div>
+          <div style={{ position: 'absolute', left: 260, top: 300, display: 'flex', gap: 14, opacity: ease(f, SAILORS - 2, SAILORS + 8) }}>
             <PeopleRow n={4} lit={() => 1 - 0.7 * ease(f, FALLING, FALLING + 20)} size={60} color={DL.warm} />
           </div>
         </AbsoluteFill>
 
         <YearsStrip items={[{ ...YEARS_PAST[0], at: THIRTY1 }]} show={strip} />
         <FoodLadder rungs={[{ year: '1500', label: 'FUEL', at: CHIP_DOCK + 10 }]} show={ladder} />
-        <DidYouKnowThat at={DID} out={hold(FAST1, PLATE) + 6}>
+        <DidYouKnowThat at={DID} out={PLATE - 6}>
           <OnWord at={HERE}>here, </OnWord><OnWord at={FOUR}>on up to <span style={{ color: '#ffd23f' }}>four days in ten</span>, </OnWord>
-          <OnWord at={EATING}>eating </OnWord><span style={{ opacity: ease(f, MEAT - 2, MEAT + 4), color: '#ff9a1f' }}>meat </span><OnWord at={RULES}>is <span style={{ color: '#ff9a1f', fontStyle: 'italic' }}>against the rules?</span></OnWord>
-          <div style={{ marginTop: 22, display: 'flex', gap: 10, opacity: ease(f, FOUR - 2, FOUR + 4) }}>
+          <OnWord at={EATING}>eating </OnWord><span style={{ opacity: ease(f, MEAT - 4, MEAT + 6), color: '#ff9a1f' }}>meat </span><OnWord at={RULES}>is <span style={{ color: '#ff9a1f', fontStyle: 'italic' }}>against the rules?</span></OnWord>
+          <div style={{ marginTop: 22, display: 'flex', gap: 10, opacity: ease(f, FOUR - 4, FOUR + 6) }}>
             {Array.from({ length: 10 }, (_, i) => {
               const banned = [2, 4, 5, 8].includes(i);
               return <div key={i} style={{ width: 92, height: 74, borderRadius: 10, border: `2px solid ${banned && f >= TEN ? '#5ab0ff' : '#3a3f70'}`, background: banned && f >= TEN ? '#5ab0ff22' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                 <Food kind={banned && f >= TEN ? 'fish' : 'meat'} size={52} />
-                {banned && <span style={{ position: 'absolute', fontFamily: DL_SERIF, fontSize: 70, color: '#ff4d4d', opacity: ease(f, MEAT - 2, MEAT + 4) }}>✗</span>}
+                {banned && <span style={{ position: 'absolute', fontFamily: DL_SERIF, fontSize: 70, color: '#ff4d4d', opacity: ease(f, MEAT - 2, MEAT + 6) }}>✗</span>}
               </div>;
             })}
           </div>
           <div style={{ marginTop: 18, display: 'flex', gap: 22, alignItems: 'center', fontFamily: DL_MONO, fontSize: 32 }}>
-            <span style={{ opacity: ease(f, FRIDAYS - 2, FRIDAYS + 4), color: '#5ab0ff' }}>FRIDAYS ·</span>
-            <span style={{ opacity: ease(f, LENT - 2, LENT + 4), color: '#5ab0ff' }}>LENT ·</span>
-            <span style={{ opacity: ease(f, ADVENT - 2, ADVENT + 4), color: '#5ab0ff' }}>ADVENT</span>
-            <span style={{ opacity: ease(f, CHURCH - 2, CHURCH + 4), color: '#ffffff' }}>→ THE CHURCH CALLS THEM</span>
-            <span style={{ opacity: ease(f, FAST1 - 2, FAST1 + 4), color: '#ffd23f' }}>FAST DAYS</span>
+            <span style={{ opacity: ease(f, FRIDAYS - 2, FRIDAYS + 6), color: '#5ab0ff' }}>FRIDAYS ·</span>
+            <span style={{ opacity: ease(f, LENT - 2, LENT + 6), color: '#5ab0ff' }}>LENT ·</span>
+            <span style={{ opacity: ease(f, ADVENT - 2, ADVENT + 6), color: '#5ab0ff' }}>ADVENT</span>
+            <span style={{ opacity: ease(f, CHURCH - 2, CHURCH + 6), color: '#ffffff' }}>→ THE CHURCH CALLS THEM</span>
+            <span style={{ opacity: ease(f, FAST1 - 2, FAST1 + 6), color: '#ffd23f' }}>FAST DAYS</span>
           </div>
-          <div style={{ marginTop: 14, fontFamily: DL_MONO, fontSize: 24, color: '#c8cdf0', opacity: ease(f, FAST1 - 2, FAST1 + 4) }}>Fitzwilliam Museum, "Feast & Fast": fast days ≈ 40 % of the year · local practice varied</div>
+          <div style={{ marginTop: 14, fontFamily: DL_MONO, fontSize: 24, color: '#c8cdf0', opacity: ease(f, FAST1, FAST1 + 10) }}>Fitzwilliam Museum, "Feast & Fast": fast days ≈ 40 % of the year · local practice varied</div>
         </DidYouKnowThat>
       </EraExit>
-      <SunCliffhanger next="1747" parts={[{ text: 'At sea,', at: SEA }, { text: 'on the longest voyages,', at: VOYAGES }, { text: 'sailors start', at: SAILORS }, { text: 'falling apart.', at: FALLING }]} />
+      <SunCliffhanger next="1747" parts={[{ text: 'At sea,', at: SEA }, { text: 'on the longest voyages,', at: VOYAGES }, { text: 'sailors start falling apart.', at: APART }]} />
       <EpisodeHud year={1500} episode="05" />
     </AbsoluteFill>
   );

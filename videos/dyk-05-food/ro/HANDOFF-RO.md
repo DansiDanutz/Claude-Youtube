@@ -37,7 +37,7 @@ python3 ro/build_final_ro.py --cuesheet-only
 
 - `ro/make_shots_ro.py` generates `remotion/src/shots/dyk-05-ro/FdRo*.tsx` (+ `vo.json` = `ro/vo.ro.json`) from the
   English `dyk-05/Fd*.tsx`: only the composition id, `durationInSeconds`, `DUR` and the `makeCue` offsets change (from
-  `ro/timeline.ro.json`). Never hand-edit the copies; re-run after any English shot change (`--check` reports drift).
+  `ro/timeline.ro.json`). Never hand-edit the copies; re-run after any English shot change (`--check` reports drift; `--ref video/dyk-05-food` reads the English shots from the branch commit, which is what the PR copies use).
   The English shots are untouched. `node scripts/gen-registry.mjs` + `tsc --noEmit` pass with the 14 copies.
 - `ro/remotion_run_ro.mjs render FdRo…` renders to `ro/out/Fd….mp4` (English names, what `build_final_ro.py` reads).
 - The two SFX cues the shared resolver could not clear are re-anchored to the Romanian word in `build_final_ro.py`

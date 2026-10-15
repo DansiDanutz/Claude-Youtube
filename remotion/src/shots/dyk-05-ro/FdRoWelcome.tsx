@@ -22,7 +22,6 @@ const C = makeCue(vo, 'fd00-welcome', 0.6);
 const DID = C.at('Did');
 const EPISODE = C.at('Episode');
 const RULE = C.at('rule.');
-const HERES = C.at("Here's");
 const EIGHTEEN = C.at('eighteen');
 const LIFE = C.at('life');
 const BIRTH = C.at('birth,');
@@ -81,9 +80,7 @@ const FdWelcome: React.FC = () => {
       {/* the guess: in 1800, life expectancy at birth, worldwide, was about 29 years. A baby born today? */}
       <div style={{ position: 'absolute', left: 220, right: 220, top: 290, padding: '30px 40px', borderRadius: 20, background: '#0b1030e6', border: `2px solid ${DYT.magenta}`, boxShadow: `0 0 ${40 * ask}px ${DYT.magenta}88`, opacity: ease(f, RULE + 8, RULE + 16), display: 'flex', flexDirection: 'column', gap: 20 }}>
         <div style={{ fontFamily: DL_MONO, fontSize: 26, letterSpacing: 4, color: DYT.dim }}>YOUR GUESS<span style={{ opacity: ease(f, LIFE - 2, LIFE + 6) }}> · LIFE EXPECTANCY</span><span style={{ opacity: ease(f, BIRTH - 2, BIRTH + 6) }}> AT BIRTH</span><span style={{ opacity: ease(f, WORLDWIDE - 2, WORLDWIDE + 6) }}> · WORLDWIDE</span></div>
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 60 }}>
-          {/* audit round 1: the card sat on its heading alone for 2 s — a pulsing "?" holds the slot until "eighteen" */}
-          <span style={{ position: 'absolute', left: 0, top: -10, fontFamily: DL_SERIF, fontSize: 110, color: DYT.magenta, opacity: ease(f, HERES - 2, HERES + 6) * (1 - ease(f, EIGHTEEN - 4, EIGHTEEN)), transform: `scale(${1 + 0.06 * Math.sin((f - HERES) / 6)})` }}>?</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 60 }}>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 26, opacity: ease(f, EIGHTEEN - 2, EIGHTEEN + 6) }}>
             <span style={{ fontFamily: DL_SERIF, fontSize: 84, color: DL.gold }}>1800</span>
             <span style={{ fontFamily: DL_SERIF, fontSize: 84, color: DYT.white, opacity: ease(f, TWENTY - 2, TWENTY + 6) }}>≈ 29 years</span>

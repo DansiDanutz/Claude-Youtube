@@ -3,10 +3,10 @@
 import React from 'react';
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { DL, DL_SERIF, DL_SANS, DL_MONO, SiteBg } from '../../lib/danslab';
-import { makeCue, ease, useShotFade, EraHeader, Vignette, DidYouKnowThat, EraExit } from '../../lib/dykkit';
+import { makeCue, ease, useShotFade, EraHeader, Vignette, DidYouKnowThat, EraExit, DayClock } from '../../lib/dykkit';
 import {
   EpisodeHud, WakePlace, win, SunCliffhanger, FoodChip, FoodLadder, foodRungs, Label, Source, StampText, AskMark, OnWord, PeopleRow, Kid,
-  Food, FoodTag, YearsStrip, YEARS_PAST, yearsUpTo, Wheat, FoodClock, hold, type FoodKind, pane,
+  Food, FoodTag, YearsStrip, YEARS_PAST, yearsUpTo, Wheat, type FoodKind,
 } from '../../lib/dykkit-food';
 import vo from './vo.json';
 
@@ -26,7 +26,6 @@ const DUR = 2163;
 
 const C = makeCue(vo, 'fd08-1966', 0.8);
 const NINETEEN = C.at('nineteen');
-const VILLAGE = C.at('village');
 const PUNJAB = C.at('Punjab.');
 const DOCK = PUNJAB + 46;
 const WATCHING = C.at('watching');
@@ -81,38 +80,21 @@ const AND3 = C.at('And', 3); // 'And around the world' (1 = 'War and', 2 = 'wate
 const PLENTIFUL = C.at('plentiful.');
 const BRAND = C.at('brand');
 const PROBLEM = C.at('problem.');
-const SIX2 = C.at('six', 2); // 'forty six' (1 = 'sixty six')
-const TWO2 = C.at('two', 2); // 'seventy two' (1 = 'two thousand')
-const WORLD = C.at('world,');
-const BRINGS = C.at('brings');
-const FOOD3 = C.at('food', 3); // 'food has never' (1 = 'enough food for', 2 = 'is food now')
-const MORE = C.at('more');
-// audit round 1: each panel holds ≥ 1.5 s after its last reveal
-const TOO = C.at('too');
-const CARD_END = hold(TOO, PLATE) + 6; // DYK card's 10 f exit; TOO LITTLE GRAIN lands on 'too' (round 6)
-const PLATE_END = hold(SIX2, SO1);
-const IN_AIR = C.at('in', 5); // 'nitrogen in the air' (1-3 in the wake-up line, 4 = 'made in factories')
-const INPUT_END = hold(IN_AIR, WITHIN);
-const TODAY_END = hold(TWO2, AND3);
-const PILE = Math.max(TODAY_END, PLENTIFUL - 8); // audit r7: icons pile with the 'plentiful' ticks
-const HARV_END = hold(SEVENTEEN, SO2);
-const ENOUGH_END = hold(TONNE, TODAY);
 
 const Fd1966: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
-  // the field stays behind the DYK card (its 55 % scrim) so FOR RAIN is not a flash
-  const field = Math.max(0.35 * ease(f, 0, 12), ease(f, DOCK - 2, DOCK + 4)) * (1 - ease(f, CARD_END - 18, CARD_END - 10));
-  const plate = pane(f, CARD_END, PLATE_END);
-  const seeds = pane(f, PLATE_END, NEED);
-  const inputs = pane(f, NEED - 4, INPUT_END);
-  const harvest = pane(f, INPUT_END, HARV_END);
-  const enough = pane(f, ENOUGH2 - 2, ENOUGH_END);
-  const today = pane(f, ENOUGH_END, TODAY_END);
-  const cliff = ease(f, TODAY_END - 2, TODAY_END + 10);
-  const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, AND3 - 2, AND3 + 4));
-  const strip = (1 - ease(f, AND3 - 6, AND3 + 2)) * ease(f, DOCK - 2, DOCK + 4);
-  const crop = ease(f, SEVENTEEN - 2, SEVENTEEN + 14);
+  const field = win(f, DOCK + 10, DID - 2, 10, 8);
+  const plate = win(f, PLATE - 4, SO1, 6, 8);
+  const seeds = win(f, SO1 - 4, NEED, 6, 8);
+  const inputs = win(f, NEED - 4, WITHIN, 6, 8);
+  const harvest = win(f, WITHIN - 4, SO2 + 2, 6, 8);
+  const enough = win(f, ENOUGH2 - 2, TODAY, 4, 10);
+  const today = win(f, TODAY - 4, AND3, 6, 8);
+  const cliff = ease(f, AND3 - 2, AND3 + 10);
+  const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, AND3 - 2, AND3 + 8));
+  const strip = (1 - ease(f, AND3 - 6, AND3 + 2)) * ease(f, DOCK, DOCK + 10);
+  const crop = ease(f, MILLION - 4, MILLION + 16);
 
   return (
     <AbsoluteFill style={{ fontFamily: DL_SANS, opacity: fade }}>
@@ -120,56 +102,55 @@ const Fd1966: React.FC = () => {
       <Vignette />
       <EraExit dur={DUR}>
         <EraHeader year="1966" idx={5} label="PUNJAB · INDIA" dockAt={DOCK} />
-        <WakePlace place="a village in Punjab" at={VILLAGE} dockAt={DOCK} yearAt={NINETEEN} />
+        <WakePlace place="a village in Punjab" at={PUNJAB} dockAt={DOCK} yearAt={NINETEEN} />
 
         {/* everyone's watching the sky for rain */}
         <AbsoluteFill style={{ opacity: field }}>
           <div style={{ position: 'absolute', left: 160, top: 640, width: 1600, height: 220, background: 'linear-gradient(#8a6a3a, #5a4024)', borderRadius: 10 }} />
           {[0, 1, 2].map((k) => <div key={k} style={{ position: 'absolute', left: 300 + k * 480 + ((f * 0.5) % 120), top: 330 + (k % 2) * 40, width: 300, height: 90, borderRadius: 60, background: '#c8c8d0', opacity: 0.55 * ease(f, SKY - 4, SKY + 10) }} />)}
-          <div style={{ position: 'absolute', left: 1200, top: 460, display: 'flex', gap: 18, opacity: ease(f, WATCHING - 2, WATCHING + 4) }}>
+          <div style={{ position: 'absolute', left: 1200, top: 460, display: 'flex', gap: 18, opacity: ease(f, WATCHING - 4, WATCHING + 8) }}>
             {[0, 1, 2, 3].map((k) => <div key={k} style={{ transform: `rotate(${-8 * ease(f, SKY, SKY + 12)}deg)`, transformOrigin: 'bottom center' }}><Kid size={k < 2 ? 100 : 70} adult={k < 2} color={DL.warm} /></div>)}
           </div>
-          <div style={{ position: 'absolute', left: 160, top: 230 }}><Label at={Math.max(WATCHING, DOCK + 18)} color={DL.warm} size={32}>EVERYONE'S WATCHING<OnWord at={SKY}> THE SKY</OnWord><OnWord at={RAIN}> FOR RAIN</OnWord></Label></div>
+          <div style={{ position: 'absolute', left: 160, top: 230 }}><Label at={WATCHING} color={DL.warm} size={32}>EVERYONE'S WATCHING<OnWord at={SKY}> THE SKY</OnWord><OnWord at={RAIN}> FOR RAIN</OnWord></Label></div>
         </AbsoluteFill>
 
         {/* THE PLATE: a farming day */}
         <AbsoluteFill style={{ opacity: plate }}>
           <div style={{ position: 'absolute', left: 160, top: 200 }}><Label at={PLATE} color={DL.gold} size={34}>THE PLATE · A DAY IN PUNJAB</Label></div>
           <div style={{ position: 'absolute', left: 160, top: 260 }}>
-            <FoodClock year="1966" at={CARD_END} size={400}
-              segs={[{ from: 6, to: 7, label: 'FLATBREAD', color: '#e0b870', at: FLATBREAD, hot: true }, { from: 7, to: 13, label: 'FIELD WORK', color: '#6a8a3a', at: CARD_END + 6 },
-                { from: 13, to: 14, label: 'FLATBREAD + DAL', color: '#d8902a', at: LENTILS, hot: true }, { from: 14, to: 19, label: 'FIELD WORK', color: '#6a8a3a', at: CARD_END + 12 },
-                { from: 19, to: 20, label: 'FLATBREAD + DAL', color: '#d8902a', at: LENTILS + 6, hot: true }, { from: 20, to: 6, label: 'SLEEP', color: '#2a3048', at: CARD_END + 18 }]} />
+            <DayClock year="1966" at={PLATE} size={400} step={6} hotSeq={[[0, FLATBREAD], [2, LENTILS]]}
+              segs={[{ from: 6, to: 7, label: 'FLATBREAD', color: '#e0b870' }, { from: 7, to: 13, label: 'FIELD WORK', color: '#6a8a3a' },
+                { from: 13, to: 14, label: 'FLATBREAD + DAL', color: '#d8902a' }, { from: 14, to: 19, label: 'FIELD WORK', color: '#6a8a3a' },
+                { from: 19, to: 20, label: 'FLATBREAD + DAL', color: '#d8902a' }, { from: 20, to: 6, label: 'SLEEP', color: '#2a3048' }]} />
           </div>
-          <div style={{ position: 'absolute', left: 1200, top: 230, display: 'flex', gap: 22 }}>
+          <div style={{ position: 'absolute', left: 1240, top: 230, display: 'flex', gap: 22 }}>
             <FoodTag kind="flatbread" at={FLATBREAD} size={90} />
             <FoodTag kind="lentils" at={LENTILS} size={90} />
             <FoodTag kind="veg" at={VEG} size={90} name="MAYBE VEG" />
           </div>
-          <div style={{ position: 'absolute', left: 1200, top: 450, width: 560, opacity: ease(f, ACROSS - 2, ACROSS + 4) }}>
-            <Label at={ACROSS} color={DL.dim} size={28}>ACROSS INDIA · FOOD FOR</Label>
-            <div style={{ fontFamily: DL_SERIF, fontSize: 96, color: DL.gold, opacity: ease(f, TWO1 - 2, TWO1 + 4) }}>≈ 2,000<span style={{ fontSize: 40, opacity: ease(f, CALORIES - 2, CALORIES + 4) }}> kcal</span></div>
+          <div style={{ position: 'absolute', left: 1240, top: 470, opacity: ease(f, ACROSS - 2, ACROSS + 8) }}>
+            <Label at={ACROSS} color={DL.dim} size={28}>ACROSS INDIA · ENOUGH FOOD FOR</Label>
+            <div style={{ fontFamily: DL_SERIF, fontSize: 96, color: DL.gold, opacity: ease(f, TWO1 - 2, TWO1 + 8) }}>≈ 2,000<span style={{ fontSize: 40, opacity: ease(f, CALORIES - 2, CALORIES + 6) }}> kcal</span></div>
             <Label at={CALORIES} color={DL.dim} size={26}>A PERSON A DAY · SUPPLY</Label>
           </div>
-          <div style={{ position: 'absolute', left: 1200, top: 690, opacity: ease(f, NEWBORN1 - 2, NEWBORN1 + 4) }}>
+          <div style={{ position: 'absolute', left: 1240, top: 740, opacity: ease(f, FORTY - 2, FORTY + 8) }}>
             <Label at={NEWBORN1} color={DL.dim} size={28}>A NEWBORN HERE</Label>
-            <div style={{ fontFamily: DL_SERIF, fontSize: 80, color: DL.gold, opacity: ease(f, FORTY - 2, FORTY + 4) }}>≈ 46 years</div>
+            <div style={{ fontFamily: DL_SERIF, fontSize: 80, color: DL.gold }}>≈ 46 years</div>
           </div>
-          <div style={{ position: 'absolute', left: 160, top: 860, display: 'flex', gap: 14 }}><Source at={TWO1}>illustration · FAO food supply, India 1966 ≈ 1,970 kcal</Source><Source at={FORTY}>· UN WPP via OWID (1966: 45.9)</Source></div>
+          <div style={{ position: 'absolute', left: 160, top: 860 }}><Source at={TWO1}>illustration · FAO food supply, India 1966 ≈ 1,970 kcal · UN WPP via OWID (1966: 45.9)</Source></div>
         </AbsoluteFill>
 
         {/* WHAT CHANGED: the seeds */}
         <AbsoluteFill style={{ opacity: seeds }}>
-          <div style={{ position: 'absolute', left: 1180, top: 600, display: 'flex', gap: 10, alignItems: 'flex-end' }}>{Array.from({ length: 6 }, (_, i) => <svg key={i} width={70} height={84} viewBox="0 0 70 84" style={{ opacity: ease(f, EIGHTEEN + i * 3 - 2, EIGHTEEN + i * 3 + 4) }}><path d="M10 18 Q35 0 60 18 L66 82 L4 82 Z" fill="#d8c890" stroke="#8a7a50" strokeWidth={3} /><text x={35} y={60} textAnchor="middle" fontFamily={DL_MONO} fontSize={14} fill="#5a4a2a">SEED</text></svg>)}</div>
           <div style={{ position: 'absolute', left: 160, top: 210 }}><Label at={IMPORTS} color={DL.gold} size={34}>INDIA IMPORTS<OnWord at={EIGHTEEN}> 18,000</OnWord><OnWord at={TONNES1}> TONNES OF WHEAT SEED</OnWord></Label></div>
-          <svg width={1300} height={300} viewBox="0 0 1300 300" style={{ position: 'absolute', left: 160, top: 280, opacity: ease(f, MEXICO - 2, MEXICO + 4) }}>
+          <svg width={1300} height={300} viewBox="0 0 1300 300" style={{ position: 'absolute', left: 160, top: 280, opacity: ease(f, MEXICO - 4, MEXICO + 8) }}>
             <text x={20} y={140} fontFamily={DL_MONO} fontSize={40} fill={DL.text}>MEXICO</text>
             <path d={`M200 130 Q650 ${10} ${200 + 900 * ease(f, MEXICO, MEXICO + 24)} 130`} stroke={DL.gold} strokeWidth={6} fill="none" strokeDasharray="14 10" />
             <text x={1120} y={140} fontFamily={DL_MONO} fontSize={40} fill={DL.gold} opacity={ease(f, MEXICO + 20, MEXICO + 30)}>INDIA</text>
           </svg>
           <div style={{ position: 'absolute', left: 260, top: 560, display: 'flex', alignItems: 'flex-end', gap: 50 }}>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: ease(f, SHORT - 2, SHORT + 4) }}><Wheat h={260} /><span style={{ fontFamily: DL_MONO, fontSize: 24, color: DL.muted }}>OLD · TALL</span></div>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: ease(f, SHORT - 2, SHORT + 4) }}><Wheat h={260} dwarf /><span style={{ fontFamily: DL_MONO, fontSize: 24, color: DL.gold }}>NEW · SHORT</span></div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: ease(f, SHORT - 2, SHORT + 8) }}><Wheat h={260} /><span style={{ fontFamily: DL_MONO, fontSize: 24, color: DL.muted }}>OLD · TALL</span></div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: ease(f, SHORT - 2, SHORT + 8) }}><Wheat h={260} dwarf /><span style={{ fontFamily: DL_MONO, fontSize: 24, color: DL.gold }}>NEW · SHORT</span></div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginLeft: 40 }}>
               <Label at={STURDY} color={DL.gold} size={34}>SHORT, STURDY PLANTS</Label>
               <Label at={NORMAN} color={DL.text} size={30}>BRED BY NORMAN BORLAUG'S TEAM</Label>
@@ -180,17 +161,17 @@ const Fd1966: React.FC = () => {
         <AbsoluteFill style={{ opacity: inputs }}>
           <div style={{ position: 'absolute', left: 160, top: 220 }}><Label at={NEED} color={DL.dim} size={34}>THEY NEED…</Label></div>
           <div style={{ position: 'absolute', left: 160, top: 300, display: 'flex', alignItems: 'center', gap: 60 }}>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: ease(f, WATER - 2, WATER + 4) }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: ease(f, WATER - 2, WATER + 8) }}>
               <svg width={140} height={160} viewBox="0 0 140 160"><path d="M70 10 C100 60 120 90 120 110 A50 50 0 0 1 20 110 C20 90 40 60 70 10 Z" fill="#3a8ad8" /></svg>
               <span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.sky }}>+ WATER</span>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: ease(f, FERTILISER - 2, FERTILISER + 4) }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: ease(f, FERTILISER - 2, FERTILISER + 8) }}>
               <svg width={150} height={170} viewBox="0 0 150 170"><path d="M20 30 Q75 0 130 30 L140 160 L10 160 Z" fill="#d8dce8" stroke="#8a90a8" strokeWidth={5} /><text x={75} y={112} textAnchor="middle" fontFamily={DL_MONO} fontWeight={700} fontSize={40} fill="#3a4060">N</text></svg>
               <span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.text }}>+ LOTS OF FERTILISER</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 20, opacity: ease(f, FACTORIES - 2, FACTORIES + 4) }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 20, opacity: ease(f, FACTORIES - 2, FACTORIES + 8) }}>
               <svg width={220} height={170} viewBox="0 0 220 170"><path d="M10 160 L10 80 L60 110 L60 80 L110 110 L110 80 L160 110 L160 20 L190 20 L190 160 Z" fill="#5a5f78" />{[0, 1, 2].map((k) => <circle key={k} cx={175 + k * 10} cy={10 - ((f / 2 + k * 12) % 30)} r={10 + k * 3} fill="#9aa0b8" opacity={0.4} />)}</svg>
-              <Label at={FACTORIES} color={DL.dim} size={28}>MADE IN FACTORIES<br /><OnWord at={NITROGEN}>FROM NITROGEN</OnWord><OnWord at={IN_AIR}> IN THE AIR</OnWord></Label>
+              <Label at={NITROGEN} color={DL.dim} size={28}>MADE IN FACTORIES<br />FROM NITROGEN<OnWord at={AIR}> IN THE AIR</OnWord></Label>
             </div>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 640 }}><Source at={AIR}>synthetic ammonia (Haber–Bosch, industrial from 1913) · Erisman et al., Nature Geoscience 2008</Source></div>
@@ -198,15 +179,15 @@ const Fd1966: React.FC = () => {
         <AbsoluteFill style={{ opacity: harvest }}>
           <div style={{ position: 'absolute', left: 160, top: 220 }}><Label at={WITHIN} color={DL.dim} size={34}>WITHIN A FEW YEARS<OnWord at={HARVEST}> · INDIA'S WHEAT HARVEST</OnWord></Label></div>
           <div style={{ position: 'absolute', left: 160, top: 320, display: 'flex', flexDirection: 'column', gap: 30 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 26, opacity: ease(f, INPUT_END + 4, INPUT_END + 12) }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 26, opacity: ease(f, HARVEST - 2, HARVEST + 8) }}>
               <span style={{ width: 200, fontFamily: DL_MONO, fontSize: 30, color: DL.dim }}>MID-1960s</span>
               <div style={{ width: 1000 * 11 / 17, height: 70, borderRadius: 10, background: '#8a7a50' }} />
               <span style={{ fontFamily: DL_MONO, fontSize: 32, color: DL.dim }}>≈ 10–12 Mt</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 26, opacity: ease(f, SEVENTEEN - 2, SEVENTEEN + 4) }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 26, opacity: ease(f, SEVENTEEN - 2, SEVENTEEN + 8) }}>
               <span style={{ width: 200, fontFamily: DL_MONO, fontSize: 30, color: DL.gold }}>1968</span>
               <div style={{ width: 1000 * crop, height: 70, borderRadius: 10, background: `linear-gradient(90deg, #c8a040, ${DL.gold})` }} />
-              <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 40, color: DL.gold, opacity: ease(f, SEVENTEEN - 2, SEVENTEEN + 4) }}>17 Mt</span>
+              <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 40, color: DL.gold, opacity: crop }}>17 Mt</span>
             </div>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 560, display: 'flex', gap: 14, opacity: crop }}>{Array.from({ length: 22 }, (_, i) => <Wheat key={i} h={200} dwarf sway={Math.sin(f / 14 + i) * 4} />)}</div>
@@ -214,11 +195,11 @@ const Fd1966: React.FC = () => {
         </AbsoluteFill>
 
         {/* "So what is food now?" — Enough, at last. Grown by the tonne. */}
-        <AskMark at={HARV_END} out={ENOUGH2 + 2} left={760} top={250} pulseAt={NOW} />
+        <AskMark at={SO2} out={ENOUGH2 + 2} left={760} top={250} pulseAt={NOW} />
         <AbsoluteFill style={{ opacity: enough }}>
           <div style={{ position: 'absolute', left: 260, top: 300, display: 'flex', alignItems: 'flex-end', gap: 20 }}>
             {Array.from({ length: 8 }, (_, i) => <Wheat key={i} h={220} dwarf sway={Math.sin(f / 14 + i) * 4} />)}
-            <div style={{ width: 380, fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 64, color: DL.gold, opacity: ease(f, GROWN - 2, GROWN + 4), marginLeft: 30 }}>grown by the<OnWord at={TONNE}> tonne</OnWord></div>
+            <div style={{ fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 64, color: DL.gold, opacity: ease(f, GROWN - 2, GROWN + 8), marginLeft: 30 }}>grown by the<OnWord at={TONNE}> tonne</OnWord></div>
           </div>
         </AbsoluteFill>
         <FoodChip text="ENOUGH, AT LAST" at={ENOUGH2} dockAt={CHIP_DOCK} slot={4} left={260} top={720} />
@@ -226,7 +207,7 @@ const Fd1966: React.FC = () => {
           <div style={{ position: 'absolute', left: 160, top: 240 }}><Label at={TODAY} color={DL.gold} size={34}>TODAY · A NEWBORN IN INDIA</Label></div>
           <div style={{ position: 'absolute', left: 160, top: 310, display: 'flex', alignItems: 'baseline', gap: 30 }}>
             <span style={{ fontFamily: DL_SERIF, fontSize: 90, color: DL.dim }}>≈ 46 →</span>
-            <span style={{ fontFamily: DL_SERIF, fontSize: 150, color: DL.gold, opacity: ease(f, SEVENTY - 2, SEVENTY + 4) }}>≈ 72</span>
+            <span style={{ fontFamily: DL_SERIF, fontSize: 150, color: DL.gold, opacity: ease(f, SEVENTY - 2, SEVENTY + 8) }}>≈ 72</span>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 500 }}><Source at={SEVENTY}>India 2023: 72.0 years at birth · UN WPP via OWID</Source></div>
         </AbsoluteFill>
@@ -234,27 +215,27 @@ const Fd1966: React.FC = () => {
         {/* cliffhanger: food has never been more plentiful — which brings a brand new problem */}
         <AbsoluteFill style={{ opacity: cliff }}>
           <div style={{ position: 'absolute', left: 260, top: 300, display: 'flex', gap: 10, flexWrap: 'wrap', width: 1300 }}>
-            {(['bread', 'ricebeans', 'soda', 'snack', 'meat', 'cheese', 'orange', 'snack', 'soda', 'bread'] as FoodKind[]).map((k, i) => <div key={i} style={{ opacity: ease(f, PILE + i * 6, PILE + 8 + i * 6) }}><Food kind={k} size={110} /></div>)}
+            {(['bread', 'ricebeans', 'soda', 'snack', 'meat', 'cheese', 'orange', 'snack', 'soda', 'bread'] as FoodKind[]).map((k, i) => <div key={i} style={{ opacity: ease(f, PLENTIFUL - 6 + i * 6, PLENTIFUL + 4 + i * 6) }}><Food kind={k} size={110} /></div>)}
           </div>
-          <div style={{ position: 'absolute', left: 260, top: 560, fontFamily: DL_SERIF, fontSize: 160, color: DL.red, opacity: ease(f, PROBLEM - 2, PROBLEM + 4) }}>!</div>
+          <div style={{ position: 'absolute', left: 260, top: 560, fontFamily: DL_SERIF, fontSize: 160, color: DL.red, opacity: ease(f, PROBLEM - 2, PROBLEM + 8) }}>!</div>
         </AbsoluteFill>
 
         <YearsStrip items={[...yearsUpTo(4), { ...YEARS_PAST[4], at: FORTY }]} show={strip} />
         <FoodLadder rungs={[...foodRungs(4), { year: '1966', label: 'ENOUGH, AT LAST', at: CHIP_DOCK + 10 }]} show={ladder} />
-        <DidYouKnowThat at={DID} out={CARD_END}>
+        <DidYouKnowThat at={DID} out={PLATE - 6}>
           <OnWord at={BEFORE}>the year before, </OnWord><OnWord at={MINISTER}>India's prime minister </OnWord><OnWord at={COUNTRY}>asked the whole country </OnWord>
-          <span style={{ opacity: ease(f, SKIP - 2, SKIP + 4), color: '#ffd23f' }}>to skip one meal </span><span style={{ opacity: ease(f, WEEK - 2, WEEK + 4), color: '#ff9a1f', fontStyle: 'italic' }}>a week?</span>
-          <div style={{ marginTop: 24, display: 'flex', alignItems: 'center', gap: 14, opacity: ease(f, SKIP - 2, SKIP + 4) }}>
+          <span style={{ opacity: ease(f, SKIP - 4, SKIP + 6), color: '#ffd23f' }}>to skip one meal </span><span style={{ opacity: ease(f, WEEK - 4, WEEK + 6), color: '#ff9a1f', fontStyle: 'italic' }}>a week?</span>
+          <div style={{ marginTop: 24, display: 'flex', alignItems: 'center', gap: 14, opacity: ease(f, SKIP - 4, SKIP + 6) }}>
             {Array.from({ length: 7 }, (_, i) => <div key={i} style={{ width: 96, height: 70, borderRadius: '50%', border: '3px solid #c8c0b0', background: i === 3 ? 'transparent' : '#f4efe0', opacity: i === 3 ? 1 : 0.9, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{i !== 3 && <Food kind="flatbread" size={50} />}</div>)}
-            <span style={{ fontFamily: DL_MONO, fontSize: 30, color: '#ffffff', marginLeft: 20, whiteSpace: 'nowrap', opacity: ease(f, LAL - 2, LAL + 4) }}>LAL BAHADUR SHASTRI · 1965</span>
+            <span style={{ fontFamily: DL_MONO, fontSize: 30, color: '#ffffff', marginLeft: 20, opacity: ease(f, LAL - 2, LAL + 6) }}>LAL BAHADUR SHASTRI · 1965</span>
           </div>
           <div style={{ marginTop: 16, fontFamily: DL_MONO, fontSize: 30, color: '#ffffff' }}>
-            <OnWord at={WAR}>WAR</OnWord><OnWord at={DROUGHT}> + DROUGHT</OnWord><span style={{ opacity: ease(f, TOO - 2, TOO + 4), color: '#ff4d4d' }}> → TOO LITTLE GRAIN</span>
+            <OnWord at={WAR}>WAR</OnWord><OnWord at={DROUGHT}> + DROUGHT</OnWord><span style={{ opacity: ease(f, GRAIN - 4, GRAIN + 6), color: '#ff4d4d' }}> → TOO LITTLE GRAIN</span>
           </div>
-          <div style={{ marginTop: 12, fontFamily: DL_MONO, fontSize: 24, color: '#c8cdf0', opacity: ease(f, GRAIN - 2, GRAIN + 4) }}>M. S. Swaminathan, ICAR interview · Orissa Review 2010</div>
+          <div style={{ marginTop: 12, fontFamily: DL_MONO, fontSize: 24, color: '#c8cdf0', opacity: ease(f, GRAIN, GRAIN + 10) }}>M. S. Swaminathan, ICAR interview · Orissa Review 2010</div>
         </DidYouKnowThat>
       </EraExit>
-      <SunCliffhanger next="TODAY" parts={[{ text: 'Around the world,', at: C.at('around') }, { text: 'food has never been', at: FOOD3 }, { text: 'more plentiful.', at: MORE }, { text: 'Which brings', at: BRINGS }, { text: 'a brand new problem.', at: BRAND }]} />
+      <SunCliffhanger next="TODAY" parts={[{ text: 'Food has never been more plentiful.', at: PLENTIFUL }, { text: 'Which brings', at: C.at('brings') }, { text: 'a brand new problem.', at: PROBLEM }]} />
       <EpisodeHud year={1966} episode="05" />
     </AbsoluteFill>
   );
