@@ -33,6 +33,24 @@ python3 ro/make_timeline_ro.py
 python3 ro/build_final_ro.py --cuesheet-only
 ```
 
+## Render path (2026-10-16, after David's approval) — ready, NOT rendered
+
+- `ro/make_shots_ro.py` generates `remotion/src/shots/dyk-05-ro/FdRo*.tsx` (+ `vo.json` = `ro/vo.ro.json`) from the
+  English `dyk-05/Fd*.tsx`: only the composition id, `durationInSeconds`, `DUR` and the `makeCue` offsets change (from
+  `ro/timeline.ro.json`). Never hand-edit the copies; re-run after any English shot change (`--check` reports drift; `--ref video/dyk-05-food` reads the English shots from the branch commit, which is what the PR copies use).
+  The English shots are untouched. `node scripts/gen-registry.mjs` + `tsc --noEmit` pass with the 14 copies.
+- `ro/remotion_run_ro.mjs render FdRo…` renders to `ro/out/Fd….mp4` (English names, what `build_final_ro.py` reads).
+- The two SFX cues the shared resolver could not clear are re-anchored to the Romanian word in `build_final_ro.py`
+  (`RO_NUDGE`): "step 1 GUESS IN THE COMMENTS" pop lands 0.06 s before "Scrie-ți", the 2100 riser ends before
+  "recoltele". `work/cues.py` is untouched. Pre-flight on the real take: **PASS, 0 issues**.
+- On-screen text stays English in this pilot (unlisted, Dexty.live only).
+- To render once David frees disk (guard reserve 25 GiB; the 14 shots are ~3 GB of Remotion output plus the bundle):
+  ```
+  python3 videos/dyk-05-food/ro/make_shots_ro.py --check
+  node videos/dyk-05-food/ro/remotion_run_ro.mjs render FdRoHook FdRoIntro FdRoWelcome FdRoPromise FdRo1500 FdRo1747 FdRo1884 FdRo1915 FdRo1966 FdRoToday FdRoReveal FdRo2100 FdRoClose FdRoOutro
+  python3 videos/dyk-05-food/ro/build_final_ro.py        # -> ro/dyk-05-food-ro-1080P.mp4, then qa_final-style ffprobe checks
+  ```
+
 ## Spent
 
 ElevenLabs Creator: **11,081 characters** (257,462 → 268,543 of 363,000; 94,457 left; no overage possible). Six runs, including one 5-character API probe and the calibration takes. Nothing else paid.
