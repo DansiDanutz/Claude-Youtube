@@ -1,0 +1,168 @@
+{
+ "branch": "WLands",
+ "shots": {
+  "WDollar": 30.3,
+  "WIntro": 13.0,
+  "WStakes": 9.4,
+  "WNewCrew": 21.0,
+  "WRebuilt": 26.7,
+  "WWhy": 12.8,
+  "WTurn": 14.9,
+  "WLandlord": 22.4,
+  "WOwnRail": 20.5,
+  "WInstant": 15.3,
+  "WForYou": 15.7,
+  "WStable": 21.0,
+  "WNoBank": 21.3,
+  "WAgentMoney": 23.0,
+  "WHonestDeps": 24.7,
+  "WSetup": 20.3,
+  "WScan": 22.3,
+  "WReceipts": 28.6,
+  "WAudit": 32.3,
+  "WMoment": 21.6,
+  "WOffer": 22.8,
+  "WLands": 17.0,
+  "WFails": 14.0,
+  "WHuman": 23.5,
+  "WNext": 16.9,
+  "WOutro": 14.2
+ },
+ "vo": {
+  "dol01": {
+   "shot": "WDollar",
+   "off": 0.7,
+   "dur": 13.375
+  },
+  "dol02": {
+   "shot": "WDollar",
+   "off": 14.575,
+   "dur": 11.053
+  },
+  "dol03": {
+   "shot": "WDollar",
+   "off": 26.127,
+   "dur": 2.833
+  },
+  "dol04": {
+   "shot": "WStakes",
+   "off": 0.7,
+   "dur": 7.384
+  },
+  "dol05": {
+   "shot": "WNewCrew",
+   "off": 0.7,
+   "dur": 18.948
+  },
+  "dol06": {
+   "shot": "WRebuilt",
+   "off": 0.7,
+   "dur": 24.613
+  },
+  "dol07": {
+   "shot": "WWhy",
+   "off": 0.7,
+   "dur": 10.774
+  },
+  "dol08": {
+   "shot": "WTurn",
+   "off": 0.7,
+   "dur": 12.817
+  },
+  "dol09": {
+   "shot": "WLandlord",
+   "off": 0.7,
+   "dur": 20.387
+  },
+  "dol10": {
+   "shot": "WOwnRail",
+   "off": 0.7,
+   "dur": 18.483
+  },
+  "dol11": {
+   "shot": "WInstant",
+   "off": 0.7,
+   "dur": 13.235
+  },
+  "dol12": {
+   "shot": "WForYou",
+   "off": 0.7,
+   "dur": 13.653
+  },
+  "dol13": {
+   "shot": "WStable",
+   "off": 0.7,
+   "dur": 18.901
+  },
+  "dol14": {
+   "shot": "WNoBank",
+   "off": 0.7,
+   "dur": 19.226
+  },
+  "dol15": {
+   "shot": "WAgentMoney",
+   "off": 0.7,
+   "dur": 20.991
+  },
+  "dol16": {
+   "shot": "WHonestDeps",
+   "off": 0.7,
+   "dur": 22.663
+  },
+  "dol17": {
+   "shot": "WSetup",
+   "off": 0.7,
+   "dur": 18.297
+  },
+  "dol18": {
+   "shot": "WScan",
+   "off": 0.7,
+   "dur": 20.201
+  },
+  "dol19": {
+   "shot": "WReceipts",
+   "off": 0.7,
+   "dur": 26.564
+  },
+  "dol20": {
+   "shot": "WAudit",
+   "off": 0.7,
+   "dur": 30.232
+  },
+  "dol21": {
+   "shot": "WMoment",
+   "off": 0.7,
+   "dur": 19.505
+  },
+  "dol22": {
+   "shot": "WOffer",
+   "off": 0.7,
+   "dur": 20.759
+  },
+  "dol23a": {
+   "shot": "WLands",
+   "off": 0.7,
+   "dur": 15.0
+  },
+  "dol23b": {
+   "shot": "WFails",
+   "off": 0.7,
+   "dur": 12.0
+  },
+  "dol24": {
+   "shot": "WHuman",
+   "off": 0.7,
+   "dur": 21.409
+  },
+  "dol25": {
+   "shot": "WNext",
+   "off": 0.7,
+   "dur": 14.814
+  },
+  "dol26": {
+   "shot": "WOutro",
+   "off": 0.6,
+   "dur": 12.26
+  }
+ }
+}

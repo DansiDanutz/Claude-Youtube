@@ -46,3 +46,31 @@ Branch `video/danslab-ep12-first-dollar` in the worktree `~/Projects/Claude-Yout
 
 `~/.claude/skills/danslab-episode-production/SKILL.md` — esp. 4K batch silently skipping shots, 48k silence gaps,
 scoped fades, chunked encodes, ElevenLabs hallucinated tails, and "render stereo directly".
+
+## Shots built 2026-10-15 (26 W* + WHud + WHudTop) — stills QA passed
+
+- **Timing is generated, not guessed:** `work/build_timing.py` reads the real `mix/dol*.wav` durations + whisper word
+  timestamps (`work/verify/words/`) → `remotion/src/lib/ep12timing.gen.ts` (`SHOT_SEC`, `at(vo, word)`, `voAt`, `abs`,
+  `shotStart`) + `work/timing.json` (read by assemble.py for VO offsets) and patches every shot's literal
+  `durationInSeconds`. Every reveal lands on a spoken word. Re-run it after ANY re-voice (and after dol23a/b is voiced).
+- Cut (WLands branch, dol23a estimated 15 s): **511.5 s ≈ 8:32**. dol23a/b cues use fallback seconds until voiced.
+- Shared kit `remotion/src/lib/ep12kit.tsx`; frame-specific QA stills: `node scripts/qa-stills.mjs WAudit:960 …` (→ `out/qa/`).
+- mux_chunked.py now overlays **WHudTop** (THE RAIL, x 1190–1830 / y 60–186) as well as WHud.
+- **Stills QA:** all 28 rendered at the 60 % frame (1080p) + 11 end-state frames, every one read. Fixed in the pass:
+  Hermes/OpenClaw collision (WRebuilt), wrapped gate label (WLandlord), chip past the right margin + note over the frame
+  (WOwnRail), arrow through a label (WNoBank), title hidden by a panning frame (WScan), stamps covering the evidence
+  amounts (WReceipts → one stamp), orphaned word (WMoment), rail panel + pointer colliding with the kicker
+  (WHudTop / WSetup / WScan kickers shortened), placeholder stamp over the kicker (WLands), an invented ep11 quote
+  (WTurn → ep11's real words). `tsc --noEmit` clean.
+- **Real captures used** (hard links from `~/Projects/nervixpay-promo` captures): nervixpay.live hero + "four steps"
+  section, the real 26 Sep 3 USDC test checkout, the checkout QR.
+
+## Open before render
+
+1. **Fake-Real (Dan, 2026-10-15):** fake-real.live is live, built on JEV, membership checkout ENABLED via NervixPay
+   (USDC/USDT on Polygon + Ethereum; $9/$20/$33; per Fake-Real `docs/STATUS.md`, 2026-09-28). **If any real member has
+   paid, "this company has never been paid" (dol01/dol02/dol19/dol21) is false** — Dan must confirm, and the script
+   likely gains a Fake-Real beat (first business on NervixPay). Not yet reflected in VO or shots.
+2. WLands needs the real payment row/amount; WHud `LANDED`/`AMOUNT` flip only after the on-chain verification.
+3. CLICKS table in assemble.py is still placement-only — re-time from `ep12timing.gen.ts` cues.
+4. dol19 ~1.1 s low-confidence token — listen.

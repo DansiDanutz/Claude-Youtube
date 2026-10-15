@@ -18,7 +18,7 @@ HUD = f"{OUT}/WHud.mov"
 HUDTOP = f"{OUT}/WHudTop.mov"
 AUD = f"{WORK}/mix/master.wav"
 SC = H / 1080.0
-TOPW, TOPH = int(1080 * SC), int(140 * SC)  # YHudTop canvas incl. the pointer sign
+TOPW, TOPH = int(1080 * SC), int(140 * SC)  # WHudTop canvas incl. the pointer sign
 TOPX, TOPY = W - TOPW - int(90 * SC), int(60 * SC)
 
 def dur(p):
@@ -66,12 +66,17 @@ for i in range(len(CUTS) - 1):
                 continue
         except Exception:
             pass
+    # bottom bar (WHud) + top-right RAIL panel (WHudTop, when rendered) — both transparent overlays
+    has_top = os.path.exists(HUDTOP)
     fc = (f"[0:v]null{fades}[base];[1:v]scale={W}:{HUDH}[hud];"
-          f"[base][hud]overlay=0:{H - HUDH}:shortest=0[v]")
+          f"[base][hud]overlay=0:{H - HUDH}:shortest=0" + ("[b2];" if has_top else "[v]"))
+    if has_top:
+        fc += f"[2:v]scale={TOPW}:{TOPH}[top];[b2][top]overlay={TOPX}:{TOPY}:shortest=0[v]"
+    top_in = ["-ss", f"{s:.3f}", "-t", f"{d:.3f}", "-i", HUDTOP] if has_top else []
     for attempt in range(4):
         r = subprocess.run(["ffmpeg", "-y", "-v", "error",
                             "-ss", f"{s:.3f}", "-t", f"{d:.3f}", "-i", VID,
-                            "-ss", f"{s:.3f}", "-t", f"{d:.3f}", "-i", HUD,
+                            "-ss", f"{s:.3f}", "-t", f"{d:.3f}", "-i", HUD, *top_in,
                             "-filter_complex", fc, "-map", "[v]",
                             "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", "medium", "-crf", CRF,
                             "-pix_fmt", "yuv420p", "-an", ck])

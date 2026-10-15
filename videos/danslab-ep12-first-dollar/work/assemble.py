@@ -5,7 +5,7 @@ Concats rendered shot MP4s from remotion/out/ against work/mix/*.wav.
 Voice track is built as a SEQUENTIAL CONCAT (silence gaps + wavs) — a 77-input
 adelay/amix graph fails on this ffmpeg. Silence padding is derived from the
 ACTUAL rendered segment durations (concat drift rule)."""
-import subprocess, os, sys
+import subprocess, os, sys, json
 
 # remotion/out of THIS checkout (the ep12 shots only exist on this branch/worktree)
 _REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))  # work → ep → videos → repo
@@ -43,6 +43,12 @@ ORDER = [
     ("WNext",        [("dol25", 0.7)]),
     ("WOutro",       [("dol26", 0.6)]),
 ]
+
+# VO offsets come from the single timing source (work/build_timing.py → timing.json), the same one the shots use
+_TJ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "timing.json")
+if os.path.exists(_TJ):
+    _T = json.load(open(_TJ))["vo"]
+    ORDER = [(s, [(v, _T[v]["off"]) for v, _ in vos]) for s, vos in ORDER]
 
 def dur(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
