@@ -2,8 +2,12 @@
 
 Status: **SCRIPT v2 APPROVED 2026-10-15** — no ❓ left; script.json rebuilt (25 lines + 2 conditional endings). NO voice yet, NO shots rendered.
 
-Next: `python3.13 work/gen_voice.py` voices the 25 unconditional lines (paid, ElevenLabs Brian) — the endings dol23a/b are skipped
-unless named with `ONLY=`. Run the real 10 USDC Starter attempt with an invited merchant, then `ONLY=dol23a` (or `dol23b`).
+**Voice 2026-10-15: 25/25 unconditional lines generated and whisper-verified** (`work/verify_voice.py`, local whisper base;
+report `work/verify/REPORT.md`). Speech total 433.5 s (7:14). dol11 take 1 repeated "a product of a product" (confirmed by a
+beam-5 + word-timestamp decode) → regenerated once; bad take kept in `work/rejected/`. dol19 has a 0.18 s low-confidence
+token ("had", p=0.25) between "actually" and "worked" at ~1.1 s — likely a breath; LISTEN before final mix.
+Next: run the real 10 USDC Starter attempt with an invited merchant, then `ONLY=dol23a python3.13 gen_voice.py` (or dol23b)
+and `python3.13 verify_voice.py --only dol23a`.
 
 v2 direction (Dan, 2026-10-14): NervixPay = our own rails (no third-party gate, sell instantly, any business can use it);
 stablecoins = future of money (no bank, no card %); "this is the moment the first money appears". Plus CH0 "what changed":
