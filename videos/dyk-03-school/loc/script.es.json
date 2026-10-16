@@ -1,0 +1,650 @@
+{
+ "lang": "es",
+ "episode": "03",
+ "sentences": {
+  "sc01-hook.c1.s1": {
+   "say": "Son las ocho menos cuarto.",
+   "show": "Son las 7:45."
+  },
+  "sc01-hook.c1.s2": {
+   "say": "Cerca de ti, va a sonar un timbre de escuela."
+  },
+  "sc01-hook.c1.s3": {
+   "say": "Ahora hay unos mil cuatrocientos millones de niños en la escuela.",
+   "show": "Ahora hay unos 1400 millones de niños en la escuela."
+  },
+  "sc01-hook.c1.s4": {
+   "say": "Más que nunca."
+  },
+  "sc01-hook.c2.s1": {
+   "say": "Hace quinientos años, la mayoría nunca pisaba un aula."
+  },
+  "sc01-hook.c2.s2": {
+   "say": "Trabajaban."
+  },
+  "sc01-hook.c2.s3": {
+   "say": "Hoy, la mayoría pasa cada día laborable en un pupitre."
+  },
+  "sc02-question.c1.s1": {
+   "say": "Y aun así, ¿sabías que la palabra escuela significó al principio..."
+  },
+  "sc02-question.c1.s2": {
+   "say": "lo único que la escuela parece quitarte?"
+  },
+  "sc00-welcome.c1.s1": {
+   "say": "Bienvenido de nuevo a Did You Know That."
+  },
+  "sc00-welcome.c1.s2": {
+   "say": "Episodio tres."
+  },
+  "sc00-welcome.c1.s3": {
+   "say": "Ya sabes la regla."
+  },
+  "sc00-welcome.c1.s4": {
+   "say": "Tu adivinanza."
+  },
+  "sc00-welcome.c1.s5": {
+   "say": "Hace doscientos años, de cada diez personas en la Tierra, ¿cuántas sabían leer?"
+  },
+  "sc00-welcome.c1.s6": {
+   "say": "Adivina en comentarios, ya."
+  },
+  "sc00-welcome.c1.s7": {
+   "say": "Luego quédate hasta el final y comprueba tu respuesta."
+  },
+  "sc03-promise.c1.s1": {
+   "say": "Siete mañanas, de mil quinientos a dos mil cien.",
+   "show": "Siete mañanas, de 1500 a 2100."
+  },
+  "sc03-promise.c1.s2": {
+   "say": "En cada una, despiertas como un niño distinto, en un día de escuela."
+  },
+  "sc03-promise.c1.s3": {
+   "say": "O en un día sin escuela."
+  },
+  "sc03-promise.c1.s4": {
+   "say": "Empiezas aprendiendo un oficio con las manos."
+  },
+  "sc03-promise.c1.s5": {
+   "say": "Terminas donde quizá tu tutor ni siquiera sea humano."
+  },
+  "sc03-promise.c1.s6": {
+   "say": "Y al final, descubrirás qué significa de verdad la palabra escuela."
+  },
+  "sc04-1500.c1.s1": {
+   "say": "Despiertas en mil quinientos, en Londres.",
+   "show": "Despiertas en 1500, en Londres."
+  },
+  "sc04-1500.c1.s2": {
+   "say": "Todavía es de noche."
+  },
+  "sc04-1500.c1.s3": {
+   "say": "Al lado ya suena un martillo, y la calle huele a paja mojada y humo de leña."
+  },
+  "sc04-1500.c2.s1": {
+   "say": "¿Sabías que los historiadores calculan que solo una de cada cien mujeres en Inglaterra sabía escribir su propio nombre?"
+  },
+  "sc04-1500.c3.s1": {
+   "say": "Entonces, ¿qué es la escuela para ti?"
+  },
+  "sc04-1500.c3.s2": {
+   "say": "Algo para otros."
+  },
+  "sc04-1500.c3.s3": {
+   "say": "Para sacerdotes y niños ricos."
+  },
+  "sc04-1500.c3.s4": {
+   "say": "La mayoría aprende trabajando."
+  },
+  "sc04-1500.c3.s5": {
+   "say": "Si eres hijo de artesano, serás aprendiz."
+  },
+  "sc04-1500.c3.s6": {
+   "say": "Normalmente siete años, en casa del maestro, aprendiendo el oficio al hacerlo."
+  },
+  "sc04-1500.c4.s1": {
+   "say": "Si vas a la escuela de gramática, las clases suelen empezar a las seis."
+  },
+  "sc04-1500.c4.s2": {
+   "say": "En latín."
+  },
+  "sc04-1500.c4.s3": {
+   "say": "¿Y si eres príncipe?"
+  },
+  "sc04-1500.c4.s4": {
+   "say": "El príncipe Enrique, de nueve años, futuro Enrique Octavo, tiene un maestro solo para él, el poeta John Skelton."
+  },
+  "sc04-1500.c4.s5": {
+   "say": "Un maestro."
+  },
+  "sc04-1500.c4.s6": {
+   "say": "Un niño."
+  },
+  "sc04-1500.c4.s7": {
+   "say": "Recuérdalo."
+  },
+  "sc04-1500.c5.s1": {
+   "say": "En mil quinientos veinticuatro, un predicador rebelde, Martín Lutero, escribe a las ciudades alemanas."
+  },
+  "sc04-1500.c5.s2": {
+   "say": "Construyan escuelas, dice."
+  },
+  "sc04-1500.c5.s3": {
+   "say": "Para niños y para niñas."
+  },
+  "sc04-1500.c5.s4": {
+   "say": "En parte, para que todos lean la Biblia."
+  },
+  "sc04-1500.c6.s1": {
+   "say": "¿Por qué le importaría a todo un pueblo que la hija de un granjero sepa leer?"
+  },
+  "sc04-1500.c6.s2": {
+   "say": "Pronto, una colonia al otro lado del océano lo escribirá en la ley."
+  },
+  "sc05-1647.c1.s1": {
+   "say": "Despiertas en mil seiscientos cuarenta y siete, en el campo de Massachusetts.",
+   "show": "Despiertas en 1647, en el campo de Massachusetts."
+  },
+  "sc05-1647.c1.s2": {
+   "say": "Hay escarcha en la ventana, y hay que ordeñar las vacas antes del desayuno."
+  },
+  "sc05-1647.c2.s1": {
+   "say": "¿Sabías que una de las primeras leyes escolares de Estados Unidos empieza culpando al diablo?"
+  },
+  "sc05-1647.c2.s2": {
+   "say": "Dice que es un proyecto principal de ese viejo engañador, Satanás, impedir que los hombres conozcan las Escrituras."
+  },
+  "sc05-1647.c3.s1": {
+   "say": "Entonces, ¿qué es la escuela ahora?"
+  },
+  "sc05-1647.c3.s2": {
+   "say": "Leer la palabra de Dios con tus propios ojos."
+  },
+  "sc05-1647.c3.s3": {
+   "say": "Cinco años antes, una ley mandó a padres y amos enseñar a leer a sus hijos."
+  },
+  "sc05-1647.c3.s4": {
+   "say": "Muchos no se molestaron."
+  },
+  "sc05-1647.c4.s1": {
+   "say": "Ahora, todo pueblo con cincuenta hogares debe contratar a alguien que enseñe a leer y escribir."
+  },
+  "sc05-1647.c4.s2": {
+   "say": "¿Cien hogares?"
+  },
+  "sc05-1647.c4.s3": {
+   "say": "También una escuela de gramática, o multa."
+  },
+  "sc05-1647.c4.s4": {
+   "say": "Aprendes las letras entre tareas, y el domingo oyes por qué importan."
+  },
+  "sc05-1647.c5.s1": {
+   "say": "En toda la Europa protestante, las iglesias quieren gente que lea."
+  },
+  "sc05-1647.c5.s2": {
+   "say": "Pero una iglesia solo puede pedir."
+  },
+  "sc05-1647.c5.s3": {
+   "say": "En el siglo siguiente, un rey lo ordenará."
+  },
+  "sc05-1647.c5.s4": {
+   "say": "Y prohibirá lo que todo niño del mundo espera."
+  },
+  "sc06-1763.c1.s1": {
+   "say": "Despiertas en mil setecientos sesenta y tres, en una aldea de Prusia.",
+   "show": "Despiertas en 1763, en una aldea de Prusia."
+  },
+  "sc06-1763.c1.s2": {
+   "say": "Es otoño."
+  },
+  "sc06-1763.c1.s3": {
+   "say": "La guerra acaba de terminar, la cosecha está recogida, y el pastor trae noticias del rey."
+  },
+  "sc06-1763.c2.s1": {
+   "say": "¿Sabías que la nueva ley de Federico el Grande prohibió las vacaciones escolares?"
+  },
+  "sc06-1763.c2.s2": {
+   "say": "Ni siquiera en la cosecha."
+  },
+  "sc06-1763.c3.s1": {
+   "say": "¿Y qué es la escuela ahora?"
+  },
+  "sc06-1763.c3.s2": {
+   "say": "Una orden."
+  },
+  "sc06-1763.c3.s3": {
+   "say": "Del rey."
+  },
+  "sc06-1763.c3.s4": {
+   "say": "Todo niño y niña, de cinco a unos trece años."
+  },
+  "sc06-1763.c3.s5": {
+   "say": "Si faltas, tus padres pueden recibir una multa."
+  },
+  "sc06-1763.c4.s1": {
+   "say": "En invierno, tienes clase de ocho a once y de una a cuatro."
+  },
+  "sc06-1763.c4.s2": {
+   "say": "En verano, solo unas horas, porque hay vacas que cuidar."
+  },
+  "sc06-1763.c4.s3": {
+   "say": "La ley hasta dice: contraten un pastor para que los niños vayan a clase."
+  },
+  "sc06-1763.c4.s4": {
+   "say": "Tu maestro podría ser un viejo soldado."
+  },
+  "sc06-1763.c4.s5": {
+   "say": "Así eran muchos maestros de aldea."
+  },
+  "sc06-1763.c5.s1": {
+   "say": "Dicen que la escuela se inventó para crear obreros de fábrica dóciles."
+  },
+  "sc06-1763.c5.s2": {
+   "say": "Según historiadores, no es tan simple."
+  },
+  "sc06-1763.c5.s3": {
+   "say": "Prusia aún era tierra de granjas."
+  },
+  "sc06-1763.c5.s4": {
+   "say": "El rey y la Iglesia querían súbditos leales, devotos y disciplinados."
+  },
+  "sc06-1763.c5.s5": {
+   "say": "Y muchas familias ignoraban las normas."
+  },
+  "sc06-1763.c6.s1": {
+   "say": "Pero un maestro por aldea es lento y caro."
+  },
+  "sc06-1763.c6.s2": {
+   "say": "En Londres, un joven cree que puede enseñar a los pobres casi gratis."
+  },
+  "sc06-1763.c6.s3": {
+   "say": "¿Su truco?"
+  },
+  "sc06-1763.c6.s4": {
+   "say": "Que los niños sean los maestros."
+  },
+  "sc07-1810.c1.s1": {
+   "say": "Despiertas en mil ochocientos diez, en Londres, en Borough Road.",
+   "show": "Despiertas en 1810, en Londres, en Borough Road."
+  },
+  "sc07-1810.c1.s2": {
+   "say": "Entras en un salón enorme."
+  },
+  "sc07-1810.c1.s3": {
+   "say": "Cientos de niños, en largas filas."
+  },
+  "sc07-1810.c1.s4": {
+   "say": "Y un solo maestro."
+  },
+  "sc07-1810.c2.s1": {
+   "say": "¿Sabías que el fundador de esta escuela, Joseph Lancaster, aseguraba que un maestro podía dirigir una escuela de más de mil niños?"
+  },
+  "sc07-1810.c3.s1": {
+   "say": "Los mayores enseñan a los pequeños, en grupos pequeños."
+  },
+  "sc07-1810.c3.s2": {
+   "say": "Escribes las letras en arena, con el dedo, porque el papel cuesta dinero."
+  },
+  "sc07-1810.c3.s3": {
+   "say": "Si te portas mal, podrían subirte sobre el aula, en una jaula."
+  },
+  "sc07-1810.c3.s4": {
+   "say": "En serio."
+  },
+  "sc07-1810.c3.s5": {
+   "say": "Para Lancaster, mejor que la vara."
+  },
+  "sc07-1810.c4.s1": {
+   "say": "Entonces, ¿qué es la escuela para ti?"
+  },
+  "sc07-1810.c4.s2": {
+   "say": "Una máquina."
+  },
+  "sc07-1810.c4.s3": {
+   "say": "Para enseñar a los pobres, por cientos, lo más barato posible."
+  },
+  "sc07-1810.c4.s4": {
+   "say": "Cuando muere Lancaster, se dice que más de mil doscientas escuelas usaron su sistema."
+  },
+  "sc07-1810.c5.s1": {
+   "say": "Luego llega la ley."
+  },
+  "sc07-1810.c5.s2": {
+   "say": "En mil ochocientos ochenta, es obligatoria en Inglaterra, de cinco a diez años."
+  },
+  "sc07-1810.c5.s3": {
+   "say": "En mil ochocientos noventa y uno, gratis para la mayoría."
+  },
+  "sc07-1810.c6.s1": {
+   "say": "Ahora todo niño tiene que ir."
+  },
+  "sc07-1810.c6.s2": {
+   "say": "Pero en el siglo siguiente, la escuela deja de ser una imposición."
+  },
+  "sc07-1810.c6.s3": {
+   "say": "Se vuelve algo por lo que la gente lucha."
+  },
+  "sc08-1948.c1.s1": {
+   "say": "En mil novecientos cuarenta y ocho, un pueblito estadounidense.",
+   "show": "En 1948, un pueblito estadounidense."
+  },
+  "sc08-1948.c1.s2": {
+   "say": "Es junio."
+  },
+  "sc08-1948.c1.s3": {
+   "say": "Día de graduación."
+  },
+  "sc08-1948.c1.s4": {
+   "say": "Tu madre plancha tu toga y suena la radio."
+  },
+  "sc08-1948.c2.s1": {
+   "say": "¿Sabías que en mil novecientos diez, menos de uno de cada cinco jóvenes estadounidenses cursaba secundaria?"
+  },
+  "sc08-1948.c2.s2": {
+   "say": "En mil novecientos cuarenta, unos siete de diez."
+  },
+  "sc08-1948.c3.s1": {
+   "say": "Tu abuelo habrá dejado la escuela joven, a trabajar."
+  },
+  "sc08-1948.c3.s2": {
+   "say": "Tú te quedas hasta el final, porque un diploma abre puertas."
+  },
+  "sc08-1948.c3.s3": {
+   "say": "Entonces, ¿qué es la escuela ahora?"
+  },
+  "sc08-1948.c3.s4": {
+   "say": "Una escalera."
+  },
+  "sc08-1948.c3.s5": {
+   "say": "Cada año que subes te acerca a un mejor trabajo."
+  },
+  "sc08-1948.c4.s1": {
+   "say": "Y ese diciembre, en París, la ONU lo escribe para todo el mundo."
+  },
+  "sc08-1948.c4.s2": {
+   "say": "Toda persona tiene derecho a la educación."
+  },
+  "sc08-1948.c4.s3": {
+   "say": "Gratuita, al menos en los primeros años."
+  },
+  "sc08-1948.c5.s1": {
+   "say": "Ahora la escuela es un derecho."
+  },
+  "sc08-1948.c5.s2": {
+   "say": "Y una escalera."
+  },
+  "sc08-1948.c5.s3": {
+   "say": "Y un edificio al que caminas cada mañana."
+  },
+  "sc08-1948.c5.s4": {
+   "say": "Pero unos setenta años después, la mayoría de las escuelas del mundo cerrarían."
+  },
+  "sc08-1948.c5.s5": {
+   "say": "Casi de golpe."
+  },
+  "sc09-today.c1.s1": {
+   "say": "Despiertas hoy."
+  },
+  "sc09-today.c1.s2": {
+   "say": "Vibra tu teléfono."
+  },
+  "sc09-today.c1.s3": {
+   "say": "La tarea vence a medianoche."
+  },
+  "sc09-today.c1.s4": {
+   "say": "Y cualquier duda que tengas, se la preguntas a una pantalla."
+  },
+  "sc09-today.c2.s1": {
+   "say": "¿Sabías que en abril de dos mil veinte, unos mil seiscientos millones de estudiantes fueron enviados a casa?",
+   "show": "¿Sabías que en abril de 2020, unos 1600 millones de estudiantes fueron enviados a casa?"
+  },
+  "sc09-today.c2.s2": {
+   "say": "Son más de nueve de cada diez estudiantes del planeta."
+  },
+  "sc09-today.c3.s1": {
+   "say": "Las clases pasaron a cocinas y cuartos, a portátiles y teléfonos."
+  },
+  "sc09-today.c3.s2": {
+   "say": "Pero al menos cuatrocientos sesenta y tres millones de niños no tuvieron clases a distancia."
+  },
+  "sc09-today.c3.s3": {
+   "say": "Entonces, ¿qué es la escuela ahora?"
+  },
+  "sc09-today.c3.s4": {
+   "say": "Siempre activa."
+  },
+  "sc09-today.c3.s5": {
+   "say": "Un aula, más una pantalla que nunca cierra."
+  },
+  "sc09-today.c4.s1": {
+   "say": "Y cuando cerraron los edificios, muchos descubrimos cuánto los echaríamos de menos."
+  },
+  "sc09-today.c4.s2": {
+   "say": "Así que aquí está la pregunta que esperabas."
+  },
+  "sc09-today.c4.s3": {
+   "say": "¿Qué significaba la palabra escuela antes de todo esto?"
+  },
+  "sc10-reveal.c1.s1": {
+   "say": "La respuesta."
+  },
+  "sc10-reveal.c1.s2": {
+   "say": "Escuela viene de una antigua palabra griega, es-ko-LÉ."
+  },
+  "sc10-reveal.c1.s3": {
+   "say": "Y significaba..."
+  },
+  "sc10-reveal.c1.s4": {
+   "say": "tiempo libre."
+  },
+  "sc10-reveal.c1.s5": {
+   "say": "Ocio."
+  },
+  "sc10-reveal.c2.s1": {
+   "say": "En Atenas, la gente con tiempo libre solía pasarlo conversando, discutiendo, aprendiendo."
+  },
+  "sc10-reveal.c2.s2": {
+   "say": "Así, la palabra para tiempo libre pasó a nombrar el lugar donde se aprende."
+  },
+  "sc10-reveal.c3.s1": {
+   "say": "¿Y tu respuesta?"
+  },
+  "sc10-reveal.c3.s2": {
+   "say": "Hace doscientos años, solo una de cada diez personas en la Tierra sabía leer."
+  },
+  "sc10-reveal.c3.s3": {
+   "say": "Hoy, casi nueve de cada diez."
+  },
+  "sc10-reveal.c4.s1": {
+   "say": "¿Cuánto te acercaste?"
+  },
+  "sc10-reveal.c4.s2": {
+   "say": "Ahora sube esa escalera otra vez, conmigo."
+  },
+  "sc10-reveal.c5.s1": {
+   "say": "En mil quinientos, la escuela era para unos pocos.",
+   "show": "En 1500, la escuela era para unos pocos."
+  },
+  "sc10-reveal.c5.s2": {
+   "say": "Luego, una forma de leer la Biblia."
+  },
+  "sc10-reveal.c5.s3": {
+   "say": "Luego, la orden del rey."
+  },
+  "sc10-reveal.c5.s4": {
+   "say": "Luego, una máquina para cientos."
+  },
+  "sc10-reveal.c5.s5": {
+   "say": "Luego, tu derecho y tu escalera."
+  },
+  "sc10-reveal.c5.s6": {
+   "say": "Hoy, nunca se apaga."
+  },
+  "sc10-reveal.c6.s1": {
+   "say": "La escuela empezó como tiempo libre, para unos pocos afortunados."
+  },
+  "sc10-reveal.c6.s2": {
+   "say": "Ahora es donde la mayoría de los niños del planeta pasa la semana."
+  },
+  "sc11-2100.c1.s1": {
+   "say": "¿Y el siguiente peldaño?"
+  },
+  "sc11-2100.c1.s2": {
+   "say": "Dos mil cien.",
+   "show": "2100."
+  },
+  "sc11-2100.c1.s3": {
+   "say": "Esa mañana aún no ha llegado."
+  },
+  "sc11-2100.c1.s4": {
+   "say": "Pero podemos seguir las pruebas."
+  },
+  "sc11-2100.c2.s1": {
+   "say": "¿Recuerdas al tutor de Enrique?"
+  },
+  "sc11-2100.c2.s2": {
+   "say": "Un maestro, un niño."
+  },
+  "sc11-2100.c2.s3": {
+   "say": "En mil novecientos ochenta y cuatro, el investigador Benjamin Bloom informó que con tutor se superaba al noventa y ocho por ciento de una clase normal."
+  },
+  "sc11-2100.c3.s1": {
+   "say": "Estudios posteriores vieron menos efecto."
+  },
+  "sc11-2100.c3.s2": {
+   "say": "Pero es real."
+  },
+  "sc11-2100.c3.s3": {
+   "say": "El problema siempre fue el costo."
+  },
+  "sc11-2100.c3.s4": {
+   "say": "Nadie puede pagar un tutor para cada niño."
+  },
+  "sc11-2100.c4.s1": {
+   "say": "En dos mil veinticuatro, un piloto del Banco Mundial en Nigeria dio a estudiantes un tutor de IA, dos veces por semana, guiados por sus maestros.",
+   "show": "En 2024, un piloto del Banco Mundial en Nigeria dio a estudiantes un tutor de IA, dos veces por semana, guiados por sus maestros."
+  },
+  "sc11-2100.c4.s2": {
+   "say": "Tras seis semanas, el Banco Mundial estimó casi dos años de aprendizaje típico."
+  },
+  "sc11-2100.c4.s3": {
+   "say": "Un estudio pequeño."
+  },
+  "sc11-2100.c4.s4": {
+   "say": "Breve."
+  },
+  "sc11-2100.c4.s5": {
+   "say": "Pero es un comienzo."
+  },
+  "sc11-2100.c5.s1": {
+   "say": "Un posible escenario."
+  },
+  "sc11-2100.c5.s2": {
+   "say": "No un hecho."
+  },
+  "sc11-2100.c5.s3": {
+   "say": "Para dos mil cien, todo niño podría tener un tutor."
+  },
+  "sc11-2100.c5.s4": {
+   "say": "Ni poeta de príncipe."
+  },
+  "sc11-2100.c5.s5": {
+   "say": "Una máquina paciente, despierta a cualquier hora."
+  },
+  "sc11-2100.c6.s1": {
+   "say": "¿Y el aula?"
+  },
+  "sc11-2100.c6.s2": {
+   "say": "La O C D E ha imaginado futuros donde la escuela se vuelve un centro de aprendizaje, e incluso uno donde se desvanece."
+  },
+  "sc11-2100.c6.s3": {
+   "say": "Pero la UNESCO pide proteger las escuelas."
+  },
+  "sc11-2100.c6.s4": {
+   "say": "Si no existieran, tendríamos que inventarlas."
+  },
+  "sc11-2100.c7.s1": {
+   "say": "En mil quinientos, un tutor privado era para un príncipe."
+  },
+  "sc11-2100.c7.s2": {
+   "say": "En dos mil cien, podría ser para todos."
+  },
+  "sc11-2100.c7.s3": {
+   "say": "Y la escuela podría acercarse un poco a lo que su nombre significó al principio."
+  },
+  "sc12-close.c1.s1": {
+   "say": "Has pasado años de tu vida en la escuela."
+  },
+  "sc12-close.c1.s2": {
+   "say": "Así que dime."
+  },
+  "sc12-close.c1.s3": {
+   "say": "¿Qué es lo único que te enseñó que ninguna pantalla podría?"
+  },
+  "sc13-outro.c1.s1": {
+   "say": "Este fue Did You Know That, episodio tres.",
+   "show": "Este fue Did You Know That, episodio 3."
+  },
+  "sc13-outro.c1.s2": {
+   "say": "Escuela."
+  },
+  "sc13-outro.c1.s3": {
+   "say": "Ahora te toca a ti."
+  },
+  "sc13-outro.c1.s4": {
+   "say": "¿El aula de qué siglo sobrevivirías?"
+  },
+  "sc13-outro.c1.s5": {
+   "say": "Dímelo en los comentarios."
+  },
+  "sc13-outro.c1.s6": {
+   "say": "Al final de cada episodio, leeré el mejor comentario, aquí en pantalla."
+  },
+  "sc13-outro.c1.s7": {
+   "say": "Y el tema que más pidas será un futuro episodio."
+  },
+  "sc13-outro.c1.s8": {
+   "say": "En nuestra web, Dexti punto laiv, puedes ver cada episodio, coleccionar los datos y jugar a adivinar.",
+   "show": "En nuestra web, Dexty.live, puedes ver cada episodio, coleccionar los datos y jugar a adivinar."
+  },
+  "sc13-outro.c2.s1": {
+   "say": "Si esto cambió tu forma de ver un día de escuela, dale me gusta."
+  },
+  "sc13-outro.c2.s2": {
+   "say": "Compártelo con el amigo que siempre hacía la tarea."
+  },
+  "sc13-outro.c2.s3": {
+   "say": "Suscríbete y el próximo misterio te hallará."
+  },
+  "sc13-outro.c3.s1": {
+   "say": "Próxima vez: el dinero."
+  },
+  "sc13-outro.c3.s2": {
+   "say": "En todo el mundo, cada año extra de escuela suma, en promedio, un nueve por ciento a lo que ganan las personas."
+  },
+  "sc13-outro.c3.s3": {
+   "say": "Pero ¿alguna vez la escuela te enseñó qué es realmente el dinero?"
+  },
+  "sc13-outro.c4.s1": {
+   "say": "Pregunta..."
+  },
+  "sc13-outro.c5.s1": {
+   "say": "Maravíllate..."
+  },
+  "sc13-outro.c6.s1": {
+   "say": "Repite."
+  },
+  "sc14-endscreen.c1.s1": {
+   "say": "La próxima vez..."
+  },
+  "sc14-endscreen.c1.s2": {
+   "say": "podría ser el tuyo."
+  },
+  "sc14-endscreen.c1.s3": {
+   "say": "Elige un misterio."
+  },
+  "sc14-endscreen.c1.s4": {
+   "say": "Y nos vemos allí."
+  }
+ }
+}

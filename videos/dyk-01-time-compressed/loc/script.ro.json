@@ -1,0 +1,474 @@
+{
+ "lang": "ro",
+ "episode": "01",
+ "sentences": {
+  "tc01.c1.s1": {
+   "say": "În anul o mie cinci sute, cel mai rapid mesaj mergea cu viteza unui cal.",
+   "show": "În anul 1500, cel mai rapid mesaj mergea cu viteza unui cal."
+  },
+  "tc01.c1.s2": {
+   "say": "Azi, un mesaj trece Atlanticul în mai puțin de o zecime de secundă."
+  },
+  "tc01.c1.s3": {
+   "say": "Am economisit mai mult timp decât orice generație din istorie."
+  },
+  "tc01.c1.s4": {
+   "say": "De ce simțim atunci cu toții că rămânem fără timp?"
+  },
+  "tc01.c1.s5": {
+   "say": "Știai că timpul însuși se comprimă de cinci sute de ani?",
+   "show": "Știai că timpul însuși se comprimă de 500 de ani?"
+  },
+  "tc02.c1.s1": {
+   "say": "Bun venit la Did You Know That?"
+  },
+  "tc02.c1.s2": {
+   "say": "Fiecare video începe cu o întrebare nepusă și se termină cu un răspuns de neuitat."
+  },
+  "tc02.c1.s3": {
+   "say": "Știință, istorie, spațiu, mintea omului."
+  },
+  "tc02.c1.s4": {
+   "say": "Ce nu te-a învățat nimeni, și ce-ți face ziua un pic mai bună."
+  },
+  "tc02.c1.s5": {
+   "say": "Și iată regula."
+  },
+  "tc02.c1.s6": {
+   "say": "Ghicește în comentarii, înainte de răspuns."
+  },
+  "tc03.c1.s1": {
+   "say": "Apoi rămâi până la final și vezi dacă ai avut dreptate."
+  },
+  "tc03.c1.s2": {
+   "say": "Gata?"
+  },
+  "tc03.c1.s3": {
+   "say": "Să începem."
+  },
+  "tc04.c1.s1": {
+   "say": "Iată experimentul."
+  },
+  "tc04.c1.s2": {
+   "say": "Șapte secole."
+  },
+  "tc04.c1.s3": {
+   "say": "Șase dimineți într-una care nu a venit încă."
+  },
+  "tc04.c1.s4": {
+   "say": "În fiecare te trezești altcineva și vezi cum trăiau oamenii cu adevărat cu timpul."
+  },
+  "tc04.c1.s5": {
+   "say": "Până la final vei ști unde s-a dus timpul și ce i s-ar putea lua în anul două mii o sută.",
+   "show": "Până la final vei ști unde s-a dus timpul și ce i s-ar putea lua în anul 2100."
+  },
+  "tc05.c1.s1": {
+   "say": "Te trezești în anul o mie cinci sute.",
+   "show": "Te trezești în anul 1500."
+  },
+  "tc05.c1.s2": {
+   "say": "E miezul nopții."
+  },
+  "tc05.c1.s3": {
+   "say": "Beznă totală."
+  },
+  "tc05.c1.s4": {
+   "say": "Și tot satul e treaz."
+  },
+  "tc05.c1.s5": {
+   "say": "Știai că oamenii dormeau de două ori pe noapte, secole la rând?"
+  },
+  "tc05.c1.s6": {
+   "say": "Istoricii au găsit sute de referiri la un prim somn și la un al doilea somn."
+  },
+  "tc06.c1.s1": {
+   "say": "Între ele, oamenii se rugau, vorbeau, își vizitau chiar și vecinii."
+  },
+  "tc06.c1.s2": {
+   "say": "Ziua ta începe la răsărit și se termină la apus."
+  },
+  "tc06.c1.s3": {
+   "say": "Singurul tău ceas e clopotul bisericii."
+  },
+  "tc06.c1.s4": {
+   "say": "Speranța de viață la naștere e de vreo treizeci și cinci de ani, scăzută de atâția copii care nu apucă să crească.",
+   "show": "Speranța de viață la naștere e de vreo 35 de ani, scăzută de atâția copii care nu apucă să crească."
+  },
+  "tc06.c1.s5": {
+   "say": "Dacă ajungi bătrân, mori aproape în aceeași lume în care te-ai născut."
+  },
+  "tc06.c1.s6": {
+   "say": "Aceleași unelte, aceleași drumuri, aceleași vești, care sosesc cu săptămâni întârziere, în pasul calului."
+  },
+  "tc07.c1.s1": {
+   "say": "Timpul nu se cheltuiește."
+  },
+  "tc07.c1.s2": {
+   "say": "Doar ți se întâmplă."
+  },
+  "tc07.c1.s3": {
+   "say": "Dar peste o sută cincizeci de ani va sosi o băutură nouă și ciudată.",
+   "show": "Dar peste 150 de ani va sosi o băutură nouă și ciudată."
+  },
+  "tc07.c1.s4": {
+   "say": "Și ea va schimba felul în care vorbesc oamenii despre zi."
+  },
+  "tc08.c1.s1": {
+   "say": "Te trezești la Londra, în anul o mie șase sute cincizeci și doi.",
+   "show": "Te trezești în anul 1652, la Londra."
+  },
+  "tc08.c1.s2": {
+   "say": "Aerul miroase a fum și a ceva nou."
+  },
+  "tc08.c1.s3": {
+   "say": "Cafea."
+  },
+  "tc08.c1.s4": {
+   "say": "Știai că primele cafenele se numeau universități de un penny?"
+  },
+  "tc08.c1.s5": {
+   "say": "Pentru un penny, intrai, citeai știrile și te certai ore în șir cu necunoscuți."
+  },
+  "tc08.c1.s6": {
+   "say": "Primul ziar apăruse în anul o mie șase sute cinci, la Strasbourg.",
+   "show": "Primul ziar apăruse în 1605, la Strasbourg."
+  },
+  "tc09.c1.s1": {
+   "say": "Acum știrile erau un obicei: oamenii voiau să afle ce s-a întâmplat azi, nu luna trecută."
+  },
+  "tc09.c1.s2": {
+   "say": "Apoi, în anul o mie șase sute cincizeci și șase, Christiaan Huygens pune un pendul într-un ceas.",
+   "show": "Apoi, în 1656, Christiaan Huygens pune un pendul într-un ceas."
+  },
+  "tc09.c1.s3": {
+   "say": "Cele mai bune ceasuri greșeau un sfert de oră pe zi."
+  },
+  "tc09.c1.s4": {
+   "say": "Al lui greșește cu secunde."
+  },
+  "tc09.c1.s5": {
+   "say": "Prima oară, o zi obișnuită se poate tăia în minute."
+  },
+  "tc09.c1.s6": {
+   "say": "Nimeni n-a înțeles ce înseamnă."
+  },
+  "tc10.c1.s1": {
+   "say": "În mai puțin de o sută de ani, minutul nu va mai fi o curiozitate și va deveni șeful tău."
+  },
+  "tc11.c1.s1": {
+   "say": "Te trezești în anul o mie șapte sute șaizeci.",
+   "show": "Te trezești în anul 1760."
+  },
+  "tc11.c1.s2": {
+   "say": "E luni dimineață, iar atelierul e pe jumătate gol."
+  },
+  "tc11.c1.s3": {
+   "say": "Știai că, generații la rând, muncitorii pur și simplu își luau liber lunea?"
+  },
+  "tc11.c1.s4": {
+   "say": "Îi ziceau Sfântul Luni."
+  },
+  "tc11.c1.s5": {
+   "say": "Atunci munceai din greu când era de lucru și te odihneai când nu era."
+  },
+  "tc11.c1.s6": {
+   "say": "Dar munca părăsește câmpul și intră în fabrică."
+  },
+  "tc12.c1.s1": {
+   "say": "Soarele e înlocuit de clopot."
+  },
+  "tc12.c1.s2": {
+   "say": "Apoi clopotul e înlocuit de ceas."
+  },
+  "tc12.c1.s3": {
+   "say": "Istoricii îi spun disciplina timpului."
+  },
+  "tc12.c1.s4": {
+   "say": "Nu te oprești când termini munca."
+  },
+  "tc12.c1.s5": {
+   "say": "Te oprești când zice ceasul."
+  },
+  "tc12.c1.s6": {
+   "say": "Sfântul Luni începe să dispară."
+  },
+  "tc13.c1.s1": {
+   "say": "Iar în anul o mie șapte sute șaizeci și unu, ceasul marin al lui John Harrison ajunge în Jamaica cu doar cam cinci secunde întârziere.",
+   "show": "Iar în 1761, ceasul marin al lui John Harrison ajunge în Jamaica cu doar cam cinci secunde întârziere."
+  },
+  "tc13.c1.s2": {
+   "say": "Timpul e acum ceva ce poți căra și ceva ce poți vinde."
+  },
+  "tc13.c1.s3": {
+   "say": "Muncitorii pierduseră lunea."
+  },
+  "tc13.c1.s4": {
+   "say": "În secolul următor, motorul cu abur, gonind pe șine de fier, va lua ceva și mai mare."
+  },
+  "tc13.c1.s5": {
+   "say": "Chiar amiaza."
+  },
+  "tc14.c1.s1": {
+   "say": "Te trezești în anul o mie opt sute optzeci și trei, într-un orășel american.",
+   "show": "Te trezești în anul 1883, într-un orășel american."
+  },
+  "tc14.c1.s2": {
+   "say": "La prânz, ceasul bisericii bate douăsprezece."
+  },
+  "tc14.c1.s3": {
+   "say": "Apoi calea ferată zice că iar e amiază."
+  },
+  "tc14.c1.s4": {
+   "say": "Unele orașe au auzit amiaza de două ori."
+  },
+  "tc14.c1.s5": {
+   "say": "Căile ferate resetaseră ceasurile unui întreg continent."
+  },
+  "tc14.c1.s6": {
+   "say": "Știai că weekendul a început cu jumătate de sâmbătă?"
+  },
+  "tc15.c1.s1": {
+   "say": "În anul o mie opt sute cincizeci, o lege britanică a scos femeile și copiii din fabrici sâmbăta după două.",
+   "show": "În 1850, o lege britanică a scos femeile și copiii din fabrici sâmbăta după ora două."
+  },
+  "tc15.c1.s2": {
+   "say": "Curând, și bărbații."
+  },
+  "tc15.c1.s3": {
+   "say": "Până și timpul liber a trebuit scris în lege."
+  },
+  "tc15.c1.s4": {
+   "say": "În o mie opt sute cincizeci și opt, un cablu a fost întins pe fundul Atlanticului.",
+   "show": "În 1858, un cablu a fost întins pe fundul Atlanticului."
+  },
+  "tc15.c1.s5": {
+   "say": "Primul mesaj a durat șaisprezece ore, nu zece zile cu vaporul.",
+   "show": "Primul mesaj a durat 16 ore, nu zece zile cu vaporul."
+  },
+  "tc15.c1.s6": {
+   "say": "În o mie opt sute optzeci și unu, medicul new-yorkez George Beard a avertizat asupra unei noi epidemii de epuizare nervoasă.",
+   "show": "În 1881, medicul new-yorkez George Beard a avertizat asupra unei noi epidemii de epuizare nervoasă."
+  },
+  "tc16.c1.s1": {
+   "say": "Suspecții lui?"
+  },
+  "tc16.c1.s2": {
+   "say": "Puterea aburului."
+  },
+  "tc16.c1.s3": {
+   "say": "Telegraful."
+  },
+  "tc16.c1.s4": {
+   "say": "Presa zilnică."
+  },
+  "tc16.c1.s5": {
+   "say": "Ți se pare cunoscut?"
+  },
+  "tc16.c1.s6": {
+   "say": "Oamenii se plângeau că viața aleargă prea repede, cu peste un secol înainte de telefonul tău."
+  },
+  "tc17.c1.s1": {
+   "say": "Iar în secolul următor, un om avea să transforme o jumătate de zi de muncă în nouăzeci și trei de minute.",
+   "show": "Iar în secolul următor, un om avea să transforme o jumătate de zi de muncă în 93 de minute."
+  },
+  "tc18.c1.s1": {
+   "say": "Te trezești în anul o mie nouă sute paisprezece, lângă Detroit.",
+   "show": "Te trezești în anul 1914, lângă Detroit."
+  },
+  "tc18.c1.s2": {
+   "say": "În fața fabricii Ford, coada celor care caută de lucru se întinde pe toată strada."
+  },
+  "tc18.c1.s3": {
+   "say": "Știai că Henry Ford le-a dublat și mai bine salariul, la cinci dolari pe zi, și a scurtat ziua la opt ore?",
+   "show": "Știai că Henry Ford le-a dublat și mai bine salariul, la 5 dolari pe zi, și a scurtat ziua la opt ore?"
+  },
+  "tc18.c1.s4": {
+   "say": "În același an, banda lui a făcut din douăsprezece ore și jumătate de muncă nouăzeci și trei de minute.",
+   "show": "În același an, banda lui a făcut din douăsprezece ore și jumătate de muncă 93 de minute."
+  },
+  "tc18.c1.s5": {
+   "say": "Până în o mie nouă sute douăzeci și șase, sâmbăta era liberă.",
+   "show": "Până în 1926, muncitorii lui aveau sâmbăta liberă."
+  },
+  "tc18.c1.s6": {
+   "say": "Sosise weekendul modern."
+  },
+  "tc19.c1.s1": {
+   "say": "Un copil din o mie nouă sute are trei ani când zboară frații Wright, șaizeci și nouă când omul calcă pe Lună.",
+   "show": "Un copil născut în 1900 are trei ani când zboară frații Wright și 69 când omul calcă pe Lună."
+  },
+  "tc19.c1.s2": {
+   "say": "O viață cuprinde azi mai multă schimbare decât secole întregi."
+  },
+  "tc19.c1.s3": {
+   "say": "În o mie nouă sute treizeci, economistul John Maynard Keynes face o previziune.",
+   "show": "În 1930, economistul John Maynard Keynes face o previziune."
+  },
+  "tc19.c1.s4": {
+   "say": "Pe vremea nepoților lui, vom munci doar cincisprezece ore pe săptămână.",
+   "show": "Pe vremea nepoților lui, vom munci doar 15 ore pe săptămână."
+  },
+  "tc19.c1.s5": {
+   "say": "Ține minte asta."
+  },
+  "tc19.c1.s6": {
+   "say": "Se întoarce."
+  },
+  "tc20.c1.s1": {
+   "say": "Te trezești azi."
+  },
+  "tc20.c1.s2": {
+   "say": "Înainte să atingi podeaua, ți-ai verificat deja telefonul."
+  },
+  "tc20.c1.s3": {
+   "say": "Știai că utilizatorul mediu de internet petrece acum șase ore și treizeci și opt de minute online în fiecare zi?",
+   "show": "Știai că utilizatorul mediu de internet petrece acum 6 ore și 38 de minute online în fiecare zi?"
+  },
+  "tc20.c1.s4": {
+   "say": "În o mie opt sute șaptezeci, în majoritatea țărilor industriale se muncea peste trei mii de ore pe an.",
+   "show": "În 1870, în majoritatea țărilor industriale se muncea peste 3.000 de ore pe an."
+  },
+  "tc20.c1.s5": {
+   "say": "În Germania, recent, erau în jur de o mie trei sute cincizeci.",
+   "show": "În Germania, recent, erau în jur de 1.350."
+  },
+  "tc20.c1.s6": {
+   "say": "Azi muncim mai puțin decât aproape orice generație dinainte."
+  },
+  "tc21.c1.s1": {
+   "say": "Mesajele sunt instant."
+  },
+  "tc21.c1.s2": {
+   "say": "Mașinile ridică greul."
+  },
+  "tc21.c1.s3": {
+   "say": "Pe hârtie, suntem cei mai bogați oameni din istorie, bogați în timp."
+  },
+  "tc21.c1.s4": {
+   "say": "Și totuși, întreabă pe oricine ce mai face și auzi același cuvânt, ocupat."
+  },
+  "tc21.c1.s5": {
+   "say": "Atunci unde s-a dus tot timpul ăsta?"
+  },
+  "tc22.c1.s1": {
+   "say": "Iată răspunsul."
+  },
+  "tc22.c1.s2": {
+   "say": "Timpul n-a accelerat."
+  },
+  "tc22.c1.s3": {
+   "say": "O secundă din anul o mie cinci sute a durat exact cât o secundă de azi.",
+   "show": "O secundă din 1500 a durat exact cât o secundă de azi."
+  },
+  "tc22.c1.s4": {
+   "say": "S-a schimbat cât înghesuim în ea și cât de puțin ne amintim."
+  },
+  "tc22.c1.s5": {
+   "say": "Creierul nu măsoară timpul cu ceasul."
+  },
+  "tc22.c1.s6": {
+   "say": "Îl măsoară cu amintiri."
+  },
+  "tc23.c1.s1": {
+   "say": "Psihologii îi spun paradoxul vacanței."
+  },
+  "tc23.c1.s2": {
+   "say": "O săptămână plină de experiențe noi pare lungă când te uiți înapoi."
+  },
+  "tc23.c1.s3": {
+   "say": "Lunile de rutină se prăbușesc în aproape nimic."
+  },
+  "tc23.c1.s4": {
+   "say": "În fiecare secol am găsit cum să înghesuim mai mult într-o oră."
+  },
+  "tc23.c1.s5": {
+   "say": "Ceasul, fabrica, telegraful, banda de asamblare și telefonul."
+  },
+  "tc23.c1.s6": {
+   "say": "Fiecare invenție ne-a economisit timp, iar fiecare ne-a făcut orele tot mai asemănătoare."
+  },
+  "tc24.c1.s1": {
+   "say": "Asta e comprimarea, nu a ceasului, ci a experienței."
+  },
+  "tc25.c1.s1": {
+   "say": "Acum, în două mii o sută, dimineața aceea n-a venit, dar urmăm dovezile.",
+   "show": "Acum, în anul 2100, dimineața aceea n-a venit încă, dar putem urma dovezile."
+  },
+  "tc25.c1.s2": {
+   "say": "ONU estimează cam zece miliarde de oameni, care trăiesc mai mult ca oricând.",
+   "show": "ONU estimează cam 10 miliarde de oameni, care trăiesc mai mult ca oricând."
+  },
+  "tc25.c1.s3": {
+   "say": "Goldman Sachs estimează că inteligența artificială ar putea expune automatizării trei sute de milioane de joburi.",
+   "show": "Goldman Sachs estimează că inteligența artificială ar putea expune automatizării 300 de milioane de joburi."
+  },
+  "tc25.c1.s4": {
+   "say": "Șaizeci și una de firme britanice au probat patru zile; cincizeci și șase au rămas.",
+   "show": "61 de firme britanice au probat săptămâna de patru zile; 56 au păstrat-o."
+  },
+  "tc25.c1.s5": {
+   "say": "Cu faptele astea, cele cincisprezece ore ale lui Keynes nu mai sună nebunește: ar putea veni, în sfârșit, cu un secol întârziere.",
+   "show": "Cu faptele astea, săptămâna de 15 ore a lui Keynes nu mai sună nebunește: ar putea veni, în sfârșit, cu un secol întârziere."
+  },
+  "tc26.c1.s1": {
+   "say": "Dar dacă istoria se repetă, vom umple fiecare oră liberă cu ceva mai rapid."
+  },
+  "tc26.c1.s2": {
+   "say": "În două mii o sută, cel mai rar lucru de pe Pământ poate nu va fi energia sau banii.",
+   "show": "În 2100, cel mai rar lucru de pe Pământ poate nu va fi energia sau banii."
+  },
+  "tc26.c1.s3": {
+   "say": "Ar putea fi o zi pe care chiar ți-o amintești."
+  },
+  "tc27.c1.s1": {
+   "say": "Timpul nu poate fi încetinit, dar poate fi întins, o amintire nouă după alta."
+  },
+  "tc27.c1.s2": {
+   "say": "Deci spune-mi, când ai făcut ultima oară ceva pentru prima oară?"
+  },
+  "tc28.c1.s1": {
+   "say": "Acesta a fost episodul unu din Did You Know That?"
+  },
+  "tc28.c1.s2": {
+   "say": "Timp comprimat, acum e rândul tău."
+  },
+  "tc28.c1.s3": {
+   "say": "Dacă te-ai putea trezi în orice secol, din anul o mie cinci sute până în două mii o sută, pe care l-ai alege și de ce?",
+   "show": "Dacă te-ai putea trezi în orice secol, din anul 1500 până în 2100, pe care l-ai alege și de ce?"
+  },
+  "tc28.c1.s4": {
+   "say": "Spune-mi în comentarii."
+  },
+  "tc28.c1.s5": {
+   "say": "Uite pactul."
+  },
+  "tc28.c1.s6": {
+   "say": "La finalul fiecărui episod, voi citi cel mai bun comentariu chiar aici, pe ecran."
+  },
+  "tc29.c1.s1": {
+   "say": "Iar subiectul cerut cel mai des devine un episod viitor."
+  },
+  "tc29.c1.s2": {
+   "say": "Iar pe site-ul nostru, Dexti punct laiv, poți vedea fiecare episod, aduna faptele și juca jocul de ghicit.",
+   "show": "Iar pe site-ul nostru, Dexty.live, poți vedea fiecare episod, aduna faptele și juca jocul de ghicit."
+  },
+  "tc29.c1.s3": {
+   "say": "Dacă ți-a schimbat felul în care vezi o oră ca asta, trimite-l unui prieten mereu pe fugă și abonează-te, ca următorul mister să te găsească."
+  },
+  "tc29.c1.s4": {
+   "say": "Data viitoare, soarele pe care îl vezi pe cer nu e soarele de acum."
+  },
+  "tc29.c1.s5": {
+   "say": "Întreabă... Uimește-te. Repetă."
+  },
+  "tc30.c1.s1": {
+   "say": "Data viitoare, ar putea fi comentariul tău."
+  },
+  "tc30.c1.s2": {
+   "say": "Alege un mister și ne vedem acolo."
+  },
+  "tc31.c1.s1": {
+   "say": "Mulțumesc."
+  }
+ }
+}

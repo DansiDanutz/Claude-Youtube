@@ -1,0 +1,653 @@
+{
+ "lang": "fr",
+ "episode": "04",
+ "sentences": {
+  "mo01-hook.c1.s1": {
+   "say": "La dernière fois, je t'ai laissé une question."
+  },
+  "mo01-hook.c1.s2": {
+   "say": "L'école t'a déjà appris ce qu'est vraiment l'argent ?"
+  },
+  "mo01-hook.c1.s3": {
+   "say": "Sors un billet de ton portefeuille."
+  },
+  "mo01-hook.c1.s4": {
+   "say": "Au hasard."
+  },
+  "mo01-hook.c1.s5": {
+   "say": "C'est du papier, ou du plastique, et un peu d'encre."
+  },
+  "mo01-hook.c1.s6": {
+   "say": "Et pourtant, tu échangerais des heures de vie contre quelques-uns."
+  },
+  "mo02-question.c1.s1": {
+   "say": "Et voici le plus étrange."
+  },
+  "mo02-question.c1.s2": {
+   "say": "Savais-tu que la plupart de l'argent aujourd'hui n'est ni papier, ni métal, ni rien que tu puisses tenir ?"
+  },
+  "mo02-question.c1.s3": {
+   "say": "Alors, qu'est-ce que c'est, au juste ?"
+  },
+  "mo00-welcome.c1.s1": {
+   "say": "Bon retour sur Did You Know That."
+  },
+  "mo00-welcome.c1.s2": {
+   "say": "Épisode quatre.",
+   "show": "Épisode 4."
+  },
+  "mo00-welcome.c1.s3": {
+   "say": "Tu connais la règle."
+  },
+  "mo00-welcome.c1.s4": {
+   "say": "À toi de deviner."
+  },
+  "mo00-welcome.c1.s5": {
+   "say": "En Grande-Bretagne, sur cent livres sterling que les gens ont, combien existent en vrais billets et pièces ?"
+  },
+  "mo00-welcome.c1.s6": {
+   "say": "Devine en commentaire, tout de suite."
+  },
+  "mo00-welcome.c1.s7": {
+   "say": "Puis reste jusqu'à la fin, et vérifie ta réponse."
+  },
+  "mo03-promise.c1.s1": {
+   "say": "Sept matins, de quinze cents à deux mille cent.",
+   "show": "Sept matins, de 1500 à 2100."
+  },
+  "mo03-promise.c1.s2": {
+   "say": "Chaque fois, tu te réveilles ailleurs, avec de l'argent en main."
+  },
+  "mo03-promise.c1.s3": {
+   "say": "Ou sur ton portable."
+  },
+  "mo03-promise.c1.s4": {
+   "say": "Au début, un argent qui se boit."
+  },
+  "mo03-promise.c1.s5": {
+   "say": "À la fin, un argent peut-être réduit à du code."
+  },
+  "mo03-promise.c1.s6": {
+   "say": "Et à la fin, tu sauras ce qu'est vraiment l'argent."
+  },
+  "mo04-1500.c1.s1": {
+   "say": "Tu te réveilles en quinze cents, à Tenochtitlan, la ville-île des Aztèques.",
+   "show": "Tu te réveilles en 1500, à Tenochtitlan, la ville-île des Aztèques."
+  },
+  "mo04-1500.c1.s2": {
+   "say": "Des pirogues cognent dans les canaux."
+  },
+  "mo04-1500.c1.s3": {
+   "say": "Le marché est déjà bruyant, et ça sent le piment et la fumée de bois."
+  },
+  "mo04-1500.c2.s1": {
+   "say": "Savais-tu qu'ici, l'argent pousse sur les arbres ?"
+  },
+  "mo04-1500.c2.s2": {
+   "say": "Des fèves de cacao."
+  },
+  "mo04-1500.c2.s3": {
+   "say": "Les mêmes qui font le chocolat."
+  },
+  "mo04-1500.c3.s1": {
+   "say": "Une liste de prix, de quelques décennies après, le dit bien."
+  },
+  "mo04-1500.c3.s2": {
+   "say": "Un avocat mûr, une fève."
+  },
+  "mo04-1500.c3.s3": {
+   "say": "Une bonne dinde, cent."
+  },
+  "mo04-1500.c3.s4": {
+   "say": "Les gros achats, en capes de coton."
+  },
+  "mo04-1500.c3.s5": {
+   "say": "Un moine espagnol parle de vendeurs de fausses fèves de cacao."
+  },
+  "mo04-1500.c3.s6": {
+   "say": "Contrefaçon."
+  },
+  "mo04-1500.c3.s7": {
+   "say": "Avec du chocolat."
+  },
+  "mo04-1500.c4.s1": {
+   "say": "Pour toi, l'argent, c'est quoi ?"
+  },
+  "mo04-1500.c4.s2": {
+   "say": "Quelque chose d'utile."
+  },
+  "mo04-1500.c4.s3": {
+   "say": "Même quelque chose à boire."
+  },
+  "mo04-1500.c4.s4": {
+   "say": "Tu as peut-être entendu que l'argent est né du troc devenu pénible, chèvres contre grain."
+  },
+  "mo04-1500.c4.s5": {
+   "say": "Les anthropologues disent n'avoir jamais trouvé de société entière vivant du seul troc."
+  },
+  "mo04-1500.c4.s6": {
+   "say": "Les gens trouvent toujours de quoi compter."
+  },
+  "mo04-1500.c5.s1": {
+   "say": "Mais les fèves encombrent, et pourrissent."
+  },
+  "mo04-1500.c5.s2": {
+   "say": "Outre-mer, la monnaie d'un pays a le problème inverse."
+  },
+  "mo04-1500.c5.s3": {
+   "say": "Elle est si lourde qu'il te faut une charrette."
+  },
+  "mo05-1661.c1.s1": {
+   "say": "Tu te réveilles en mille six cent soixante et un, à Stockholm.",
+   "show": "Tu te réveilles en 1661, à Stockholm."
+  },
+  "mo05-1661.c1.s2": {
+   "say": "Le port est gelé, et un traîneau passe sous ta fenêtre, chargé de cuivre."
+  },
+  "mo05-1661.c2.s1": {
+   "say": "Savais-tu que la plus grosse pièce de Suède pesait presque vingt kilos ?",
+   "show": "Savais-tu que la plus grosse pièce de Suède pesait presque 20 kilos ?"
+  },
+  "mo05-1661.c2.s2": {
+   "say": "C'est une plaque de cuivre."
+  },
+  "mo05-1661.c2.s3": {
+   "say": "On ne la met pas en poche."
+  },
+  "mo05-1661.c3.s1": {
+   "say": "On la met sur une charrette."
+  },
+  "mo05-1661.c3.s2": {
+   "say": "Alors un banquier, Johan Palmstruch, a une idée."
+  },
+  "mo05-1661.c3.s3": {
+   "say": "Laisse ton cuivre à sa banque, et prends une feuille de papier à la place."
+  },
+  "mo05-1661.c3.s4": {
+   "say": "Elle dit que ton cuivre t'attend."
+  },
+  "mo05-1661.c3.s5": {
+   "say": "Ce sont les premiers vrais billets d'Europe."
+  },
+  "mo05-1661.c4.s1": {
+   "say": "L'argent, c'est quoi, maintenant ?"
+  },
+  "mo05-1661.c4.s2": {
+   "say": "Une promesse."
+  },
+  "mo05-1661.c4.s3": {
+   "say": "Écrite sur du papier."
+  },
+  "mo05-1661.c4.s4": {
+   "say": "Retiens ce mot, promesse."
+  },
+  "mo05-1661.c4.s5": {
+   "say": "Il revient à la fin."
+  },
+  "mo05-1661.c5.s1": {
+   "say": "Les gens aiment ces billets."
+  },
+  "mo05-1661.c5.s2": {
+   "say": "Alors la banque imprime et prête plus qu'elle n'a de cuivre à rembourser."
+  },
+  "mo05-1661.c5.s3": {
+   "say": "Quand on vient réclamer son cuivre, il n'est pas là."
+  },
+  "mo05-1661.c5.s4": {
+   "say": "La banque fait faillite."
+  },
+  "mo05-1661.c5.s5": {
+   "say": "Palmstruch est condamné à mort."
+  },
+  "mo05-1661.c5.s6": {
+   "say": "Gracié, il meurt quelques années plus tard."
+  },
+  "mo05-1661.c6.s1": {
+   "say": "Le papier ne marche que tant que les gens y croient."
+  },
+  "mo05-1661.c6.s2": {
+   "say": "Et au siècle suivant, un homme poussera cette croyance plus loin que personne avant lui."
+  },
+  "mo06-1720.c1.s1": {
+   "say": "Tu te réveilles en mille sept cent vingt, à Paris.",
+   "show": "Tu te réveilles en 1720, à Paris."
+  },
+  "mo06-1720.c1.s2": {
+   "say": "La rue sent le cheval, et tout le monde parle de papier."
+  },
+  "mo06-1720.c2.s1": {
+   "say": "Savais-tu que cette année-là, la France a interdit de posséder plus de cinq cents livres en or ou en argent ?",
+   "show": "Savais-tu que cette année-là, la France a interdit de posséder plus de 500 livres en or ou en argent ?"
+  },
+  "mo06-1720.c2.s2": {
+   "say": "L'État voulait ta confiance dans le papier."
+  },
+  "mo06-1720.c2.s3": {
+   "say": "Par la loi."
+  },
+  "mo06-1720.c3.s1": {
+   "say": "Derrière tout ça, John Law."
+  },
+  "mo06-1720.c3.s2": {
+   "say": "Un joueur écossais."
+  },
+  "mo06-1720.c3.s3": {
+   "say": "Comme Palmstruch, il a été condamné à mort, pour avoir tué un homme en duel."
+  },
+  "mo06-1720.c3.s4": {
+   "say": "Il gère l'argent de la France."
+  },
+  "mo06-1720.c4.s1": {
+   "say": "Une rue étroite est bondée, jour et nuit."
+  },
+  "mo06-1720.c4.s2": {
+   "say": "On y achète des actions de la Compagnie du Mississippi de Law."
+  },
+  "mo06-1720.c4.s3": {
+   "say": "En environ un an et demi, le prix a grimpé d'environ quarante fois.",
+   "show": "En environ un an et demi, le prix a grimpé d'environ 40 fois."
+  },
+  "mo06-1720.c4.s4": {
+   "say": "On raconte qu'un bossu loue son dos comme pupitre pour écrire."
+  },
+  "mo06-1720.c5.s1": {
+   "say": "L'argent, c'est quoi, maintenant ?"
+  },
+  "mo06-1720.c5.s2": {
+   "say": "Une croyance."
+  },
+  "mo06-1720.c5.s3": {
+   "say": "Elle vaut ce que tout le monde croit qu'elle vaut."
+  },
+  "mo06-1720.c5.s4": {
+   "say": "Jusqu'à ce qu'on arrête."
+  },
+  "mo06-1720.c5.s5": {
+   "say": "En décembre, les actions s'effondrent."
+  },
+  "mo06-1720.c5.s6": {
+   "say": "Les billets se déprécient."
+  },
+  "mo06-1720.c5.s7": {
+   "say": "Et Law s'enfuit de France."
+  },
+  "mo06-1720.c6.s1": {
+   "say": "Pendant cent ans, les gens veulent un argent auquel ils n'ont pas seulement à croire."
+  },
+  "mo06-1720.c6.s2": {
+   "say": "Quelque chose qu'on peut mordre."
+  },
+  "mo06-1720.c6.s3": {
+   "say": "Et à Londres, ils l'obtiennent."
+  },
+  "mo07-1821.c1.s1": {
+   "say": "Tu te réveilles en mille huit cent vingt et un, à Londres.",
+   "show": "Tu te réveilles en 1821, à Londres."
+  },
+  "mo07-1821.c1.s2": {
+   "say": "Fumée de charbon, pavés mouillés, et une file devant la Banque d'Angleterre."
+  },
+  "mo07-1821.c2.s1": {
+   "say": "Savais-tu que les billets de la Banque d'Angleterre promettent encore de payer le porteur sur demande ?"
+  },
+  "mo07-1821.c2.s2": {
+   "say": "Alors, la promesse, c'était de l'or."
+  },
+  "mo07-1821.c2.s3": {
+   "say": "Un billet de cinq livres s'échangeait contre cinq pièces d'or.",
+   "show": "Un billet de 5 livres s'échangeait contre 5 pièces d'or."
+  },
+  "mo07-1821.c2.s4": {
+   "say": "Des souverains."
+  },
+  "mo07-1821.c3.s1": {
+   "say": "Vingt-quatre ans durant, pendant les guerres contre la France, la Banque ne payait plus d'or.",
+   "show": "24 ans durant, pendant les guerres contre la France, la Banque ne payait plus d'or."
+  },
+  "mo07-1821.c3.s2": {
+   "say": "Le papier a pris le relais."
+  },
+  "mo07-1821.c3.s3": {
+   "say": "Les faussaires aussi, et beaucoup furent pendus."
+  },
+  "mo07-1821.c3.s4": {
+   "say": "Maintenant, la Banque repaie en or."
+  },
+  "mo07-1821.c3.s5": {
+   "say": "Du papier que tu peux changer en métal, quand tu veux."
+  },
+  "mo07-1821.c4.s1": {
+   "say": "L'argent, c'est quoi, maintenant ?"
+  },
+  "mo07-1821.c4.s2": {
+   "say": "Aussi bon que l'or."
+  },
+  "mo07-1821.c4.s3": {
+   "say": "Une promesse échangeable contre du métal."
+  },
+  "mo07-1821.c4.s4": {
+   "say": "En un siècle, une bonne part du monde suit la Grande-Bretagne vers l'or."
+  },
+  "mo07-1821.c4.s5": {
+   "say": "L'or devient l'ancre."
+  },
+  "mo07-1821.c4.s6": {
+   "say": "Et une ancre, ça rassure."
+  },
+  "mo07-1821.c4.s7": {
+   "say": "Mais en mille neuf cent soixante et onze, un discours télévisé coupe la corde.",
+   "show": "Mais en 1971, un discours télévisé coupe la corde."
+  },
+  "mo08-1971.c1.s1": {
+   "say": "Tu te réveilles en mille neuf cent soixante et onze, dans une banlieue de Pittsburgh.",
+   "show": "Tu te réveilles en 1971, dans une banlieue de Pittsburgh."
+  },
+  "mo08-1971.c1.s2": {
+   "say": "C'est un dimanche soir d'août, et toute la famille est devant la télé."
+  },
+  "mo08-1971.c2.s1": {
+   "say": "Savais-tu qu'en mille neuf cent soixante et onze, la plupart des Américains n'avaient pas le droit de posséder pièces ou lingots d'or ?",
+   "show": "Savais-tu qu'en 1971, la plupart des Américains n'avaient pas le droit de posséder pièces ou lingots d'or ?"
+  },
+  "mo08-1971.c2.s2": {
+   "say": "Depuis mille neuf cent trente-trois.",
+   "show": "Depuis 1933."
+  },
+  "mo08-1971.c3.s1": {
+   "say": "L'or, réservé aux gouvernements."
+  },
+  "mo08-1971.c3.s2": {
+   "say": "Dès mille neuf cent quarante-quatre, ils changeaient leurs dollars en or américain, à trente-cinq dollars l'once.",
+   "show": "Dès 1944, ils changeaient leurs dollars en or américain, à 35 dollars l'once."
+  },
+  "mo08-1971.c3.s3": {
+   "say": "Le dollar était lié à l'or, et la plupart des monnaies au dollar."
+  },
+  "mo08-1971.c4.s1": {
+   "say": "Ce soir-là, le président Nixon intervient."
+  },
+  "mo08-1971.c4.s2": {
+   "say": "Les gouvernements étrangers ne peuvent plus changer leurs dollars en or."
+  },
+  "mo08-1971.c4.s3": {
+   "say": "En quelques années, tout le système disparaît."
+  },
+  "mo08-1971.c5.s1": {
+   "say": "L'argent, c'est quoi, maintenant ?"
+  },
+  "mo08-1971.c5.s2": {
+   "say": "Une promesse fondée sur la confiance."
+  },
+  "mo08-1971.c5.s3": {
+   "say": "Confiance en ceux qui la gèrent."
+  },
+  "mo08-1971.c6.s1": {
+   "say": "Et une génération plus tard, cette confiance change de forme."
+  },
+  "mo08-1971.c6.s2": {
+   "say": "L'argent n'a plus besoin de papier."
+  },
+  "mo08-1971.c6.s3": {
+   "say": "Au Kenya, il se glisse dans un SMS."
+  },
+  "mo09-today.c1.s1": {
+   "say": "Tu te réveilles aujourd'hui, à Nairobi."
+  },
+  "mo09-today.c1.s2": {
+   "say": "Des matatus klaxonnent dehors, et ton téléphone vibre."
+  },
+  "mo09-today.c1.s3": {
+   "say": "Ta sœur vient de t'envoyer de l'argent, d'un village de l'arrière-pays."
+  },
+  "mo09-today.c1.s4": {
+   "say": "Ça a pris des secondes."
+  },
+  "mo09-today.c2.s1": {
+   "say": "Savais-tu que huit Kényans adultes sur dix environ utilisent désormais l'argent mobile ?",
+   "show": "Savais-tu qu'environ 8 adultes kényans sur 10 utilisent désormais l'argent mobile ?"
+  },
+  "mo09-today.c2.s2": {
+   "say": "En deux mille neuf, c'était moins de trois sur dix.",
+   "show": "En 2009, c'était moins de 3 sur 10."
+  },
+  "mo09-today.c2.s3": {
+   "say": "M-Pesa a été lancé ici en deux mille sept.",
+   "show": "M-Pesa a été lancé ici en 2007."
+  },
+  "mo09-today.c2.s4": {
+   "say": "Tu donnes du liquide à un commerçant, et ça devient des chiffres sur ton téléphone."
+  },
+  "mo09-today.c2.s5": {
+   "say": "Frais de scolarité et taxis se paient par SMS."
+  },
+  "mo09-today.c3.s1": {
+   "say": "Et il n'y a pas que le Kenya."
+  },
+  "mo09-today.c3.s2": {
+   "say": "Dans la zone euro, le liquide payait environ huit achats sur dix en magasin en deux mille seize.",
+   "show": "Dans la zone euro, le liquide payait environ 8 achats sur 10 en magasin en 2016."
+  },
+  "mo09-today.c3.s3": {
+   "say": "En deux mille vingt-quatre, environ la moitié.",
+   "show": "En 2024, environ la moitié."
+  },
+  "mo09-today.c4.s1": {
+   "say": "Pour toi, l'argent, c'est quoi ?"
+  },
+  "mo09-today.c4.s2": {
+   "say": "Des chiffres sur un écran."
+  },
+  "mo09-today.c4.s3": {
+   "say": "Tu ne le touches presque jamais."
+  },
+  "mo09-today.c4.s4": {
+   "say": "Voici donc la question qui t'a amené."
+  },
+  "mo09-today.c4.s5": {
+   "say": "Si ce n'est ni du papier, ni de l'or, qu'est-ce que l'argent, au juste ?"
+  },
+  "mo10-reveal.c1.s1": {
+   "say": "Voici la réponse."
+  },
+  "mo10-reveal.c1.s2": {
+   "say": "La Banque d'Angleterre le dit sans détour."
+  },
+  "mo10-reveal.c1.s3": {
+   "say": "Aujourd'hui, l'argent est une reconnaissance de dette."
+  },
+  "mo10-reveal.c1.s4": {
+   "say": "Une très spéciale, car chacun a confiance que les autres l'accepteront."
+  },
+  "mo10-reveal.c2.s1": {
+   "say": "Et la plupart est créée par de simples banques."
+  },
+  "mo10-reveal.c2.s2": {
+   "say": "Quand une banque te prête, elle ne te donne pas l'épargne de quelqu'un d'autre."
+  },
+  "mo10-reveal.c2.s3": {
+   "say": "Elle tape un nouveau dépôt sur ton compte."
+  },
+  "mo10-reveal.c2.s4": {
+   "say": "Dans certaines limites, un prêt crée de l'argent neuf."
+  },
+  "mo10-reveal.c3.s1": {
+   "say": "Et ta réponse ?"
+  },
+  "mo10-reveal.c3.s2": {
+   "say": "Quand la Banque d'Angleterre a vérifié, environ quatre-vingt-dix-sept livres sur cent étaient des dépôts bancaires.",
+   "show": "Quand la Banque d'Angleterre a vérifié, environ 97 livres sur 100 étaient des dépôts bancaires."
+  },
+  "mo10-reveal.c3.s3": {
+   "say": "Seulement trois, environ, en billets et pièces.",
+   "show": "Seulement 3, environ, en billets et pièces."
+  },
+  "mo10-reveal.c3.s4": {
+   "say": "Tu en étais proche ?"
+  },
+  "mo10-reveal.c4.s1": {
+   "say": "Maintenant, regrimpe l'échelle avec moi."
+  },
+  "mo10-reveal.c4.s2": {
+   "say": "En quinze cents, c'était quelque chose d'utile.",
+   "show": "En 1500, c'était quelque chose d'utile."
+  },
+  "mo10-reveal.c4.s3": {
+   "say": "Puis une promesse sur papier."
+  },
+  "mo10-reveal.c4.s4": {
+   "say": "Puis une croyance."
+  },
+  "mo10-reveal.c4.s5": {
+   "say": "Puis, aussi bon que l'or."
+  },
+  "mo10-reveal.c4.s6": {
+   "say": "Puis la confiance, rien d'autre."
+  },
+  "mo10-reveal.c4.s7": {
+   "say": "Aujourd'hui, des chiffres à l'écran."
+  },
+  "mo10-reveal.c5.s1": {
+   "say": "Tu te souviens du mot de Stockholm ?"
+  },
+  "mo10-reveal.c5.s2": {
+   "say": "Promesse."
+  },
+  "mo10-reveal.c5.s3": {
+   "say": "Il était là depuis le début."
+  },
+  "mo11-2100.c1.s1": {
+   "say": "Quel est le prochain barreau ?"
+  },
+  "mo11-2100.c1.s2": {
+   "say": "Deux mille cent.",
+   "show": "2100."
+  },
+  "mo11-2100.c1.s3": {
+   "say": "Ce matin n'a pas encore eu lieu."
+  },
+  "mo11-2100.c1.s4": {
+   "say": "Mais on peut suivre les indices."
+  },
+  "mo11-2100.c2.s1": {
+   "say": "Le liquide recule, et les banques centrales l'ont remarqué."
+  },
+  "mo11-2100.c2.s2": {
+   "say": "Selon une enquête publiée en deux mille vingt-cinq, plus de neuf banques centrales sur dix interrogées étudiaient leur propre monnaie numérique.",
+   "show": "Selon une enquête publiée en 2025, plus de 9 banques centrales sur 10 interrogées étudiaient leur propre monnaie numérique."
+  },
+  "mo11-2100.c3.s1": {
+   "say": "En Europe, la banque centrale se prépare à un éventuel euro numérique."
+  },
+  "mo11-2100.c3.s2": {
+   "say": "Le premier pourrait venir dès deux mille vingt-neuf, si le législateur l'accepte.",
+   "show": "Le premier pourrait venir dès 2029, si le législateur l'accepte."
+  },
+  "mo11-2100.c4.s1": {
+   "say": "Et la Banque des règlements internationaux, la banque des banques centrales, a averti que les stablecoins, des jetons crypto indexés sur une monnaie, échouent à des tests clés de la bonne monnaie."
+  },
+  "mo11-2100.c4.s2": {
+   "say": "Elle veut que la promesse de la banque centrale reste l'ancre."
+  },
+  "mo11-2100.c5.s1": {
+   "say": "Voici donc un scénario."
+  },
+  "mo11-2100.c5.s2": {
+   "say": "Pas un fait."
+  },
+  "mo11-2100.c5.s3": {
+   "say": "D'ici deux mille cent, le billet de ton portefeuille pourrait finir au musée.",
+   "show": "D'ici 2100, le billet de ton portefeuille pourrait finir au musée."
+  },
+  "mo11-2100.c5.s4": {
+   "say": "L'argent pourrait être du code."
+  },
+  "mo11-2100.c5.s5": {
+   "say": "Mais ce serait toujours une promesse."
+  },
+  "mo11-2100.c6.s1": {
+   "say": "En quinze cents, l'argent poussait sur les arbres.",
+   "show": "En 1500, l'argent poussait sur les arbres."
+  },
+  "mo11-2100.c6.s2": {
+   "say": "En deux mille cent, il serait peut-être écrit en code.",
+   "show": "En 2100, il serait peut-être écrit en code."
+  },
+  "mo12-close.c1.s1": {
+   "say": "Tu passes tant de ta vie à en gagner."
+  },
+  "mo12-close.c1.s2": {
+   "say": "Alors dis-moi."
+  },
+  "mo12-close.c1.s3": {
+   "say": "À qui ferais-tu confiance pour tenir cette promesse, en deux mille cent ?",
+   "show": "À qui ferais-tu confiance pour tenir cette promesse, en 2100 ?"
+  },
+  "mo13-outro.c1.s1": {
+   "say": "Ceci était Did You Know That, épisode quatre.",
+   "show": "Ceci était Did You Know That, épisode 4."
+  },
+  "mo13-outro.c1.s2": {
+   "say": "L'argent."
+  },
+  "mo13-outro.c1.s3": {
+   "say": "À ton tour."
+  },
+  "mo13-outro.c1.s4": {
+   "say": "Dans l'argent de quel siècle aurais-tu eu le plus confiance ?"
+  },
+  "mo13-outro.c1.s5": {
+   "say": "Dis-le-moi en commentaire."
+  },
+  "mo13-outro.c1.s6": {
+   "say": "À la fin de chaque épisode, je lirai le meilleur commentaire, ici même, sur cet écran."
+  },
+  "mo13-outro.c1.s7": {
+   "say": "Et le sujet le plus demandé devient un futur épisode."
+  },
+  "mo13-outro.c1.s8": {
+   "say": "Sur notre site, Dexti point laïve, tu peux voir chaque épisode, collectionner les fiches de faits et jouer au jeu de devinettes.",
+   "show": "Sur notre site, Dexty.live, tu peux voir chaque épisode, collectionner les fiches de faits et jouer au jeu de devinettes."
+  },
+  "mo13-outro.c2.s1": {
+   "say": "Si ça a changé ta façon de voir l'argent dans ta poche, mets un like."
+  },
+  "mo13-outro.c2.s2": {
+   "say": "Partage-la avec l'ami qui te rembourse toujours."
+  },
+  "mo13-outro.c2.s3": {
+   "say": "Et abonne-toi, pour que le prochain mystère te trouve."
+  },
+  "mo13b-next.c1.s1": {
+   "say": "La prochaine fois : la nourriture."
+  },
+  "mo13b-next.c1.s2": {
+   "say": "Les historiens estiment qu'en quinze cents, la nourriture prenait l'essentiel du budget d'une famille ouvrière.",
+   "show": "Les historiens estiment qu'en 1500, la nourriture prenait l'essentiel du budget d'une famille ouvrière."
+  },
+  "mo13b-next.c1.s3": {
+   "say": "Alors, que mangeras-tu en deux mille cent ?",
+   "show": "Alors, que mangeras-tu en 2100 ?"
+  },
+  "mo13c-signoff.c1.s1": {
+   "say": "Demande..."
+  },
+  "mo13c-signoff.c2.s1": {
+   "say": "Émerveille-toi..."
+  },
+  "mo13c-signoff.c3.s1": {
+   "say": "Recommence."
+  },
+  "mo14-endscreen.c1.s1": {
+   "say": "La prochaine fois..."
+  },
+  "mo14-endscreen.c1.s2": {
+   "say": "ce commentaire, le tien."
+  },
+  "mo14-endscreen.c1.s3": {
+   "say": "Choisis un mystère."
+  },
+  "mo14-endscreen.c1.s4": {
+   "say": "Et je te retrouve là-bas."
+  }
+ }
+}

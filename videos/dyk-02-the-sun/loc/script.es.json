@@ -1,0 +1,646 @@
+{
+ "lang": "es",
+ "episode": "02",
+ "sentences": {
+  "su01-hook.c1.s1": {
+   "say": "Son las ocho.",
+   "show": "Son las 8:00."
+  },
+  "su01-hook.c1.s2": {
+   "say": "El Sol te calienta la cara."
+  },
+  "su01-hook.c1.s3": {
+   "say": "Pero esa luz es vieja."
+  },
+  "su01-hook.c1.s4": {
+   "say": "Salió del Sol hace ocho minutos y veinte segundos.",
+   "show": "Salió del Sol hace 8 minutos y 20 segundos."
+  },
+  "su01-hook.c2.s1": {
+   "say": "Si el Sol desapareciera ahora, no lo sabrías."
+  },
+  "su01-hook.c2.s2": {
+   "say": "Aún lo verías."
+  },
+  "su01-hook.c2.s3": {
+   "say": "Aún lo sentirías."
+  },
+  "su01-hook.c2.s4": {
+   "say": "Ocho minutos más.",
+   "show": "8 minutos más."
+  },
+  "su02-question.c1.s1": {
+   "say": "Hace quinientos años, el Sol te decía cuándo levantarte y cuándo dormir.",
+   "show": "Hace 500 años, el Sol te decía cuándo levantarte y cuándo dormir."
+  },
+  "su02-question.c1.s2": {
+   "say": "Hoy sacamos electricidad de él."
+  },
+  "su02-question.c2.s1": {
+   "say": "Y aun así, ¿sabías que nunca has visto el Sol tal como es..."
+  },
+  "su02-question.c2.s2": {
+   "say": "ahora mismo?"
+  },
+  "su00-welcome.c1.s1": {
+   "say": "Bienvenido otra vez a Did You Know That."
+  },
+  "su00-welcome.c1.s2": {
+   "say": "Episodio dos.",
+   "show": "Episodio 2."
+  },
+  "su00-welcome.c1.s3": {
+   "say": "Ya sabes la regla."
+  },
+  "su00-welcome.c1.s4": {
+   "say": "Esa luz en tu cara tiene ocho minutos.",
+   "show": "Esa luz en tu cara tiene 8 minutos."
+  },
+  "su00-welcome.c1.s5": {
+   "say": "¿Pero la energía que lleva?"
+  },
+  "su00-welcome.c1.s6": {
+   "say": "¿Qué edad tiene?"
+  },
+  "su00-welcome.c1.s7": {
+   "say": "Adivina en los comentarios, ya."
+  },
+  "su00-welcome.c1.s8": {
+   "say": "Luego quédate hasta el final y comprueba tu respuesta."
+  },
+  "su03-promise.c1.s1": {
+   "say": "Siete mañanas, de mil quinientos a dos mil cien.",
+   "show": "Siete mañanas, de 1500 a 2100."
+  },
+  "su03-promise.c1.s2": {
+   "say": "En cada una despiertas como otra persona, bajo el mismo Sol."
+  },
+  "su03-promise.c1.s3": {
+   "say": "El Sol no cambia."
+  },
+  "su03-promise.c1.s4": {
+   "say": "Tú sí."
+  },
+  "su03-promise.c1.s5": {
+   "say": "Empiezas acostándote al ponerse el sol."
+  },
+  "su03-promise.c1.s6": {
+   "say": "Acabas en un mundo que quizá funcione con él."
+  },
+  "su03-promise.c1.s7": {
+   "say": "Y al final, descubrirás la verdadera edad de la luz del sol."
+  },
+  "su04-1500.c1.s1": {
+   "say": "Despiertas en mil quinientos, en Londres.",
+   "show": "Despiertas en 1500, en Londres."
+  },
+  "su04-1500.c1.s2": {
+   "say": "Es la víspera de San Juan."
+  },
+  "su04-1500.c1.s3": {
+   "say": "Huele a humo de leña y las calles brillan con hogueras."
+  },
+  "su04-1500.c2.s1": {
+   "say": "¿Sabías que casi todos creen que el Sol gira alrededor de la Tierra?"
+  },
+  "su04-1500.c2.s2": {
+   "say": "Eso enseñó Ptolomeo, hace unos mil cuatrocientos años.",
+   "show": "Eso enseñó Ptolomeo, hace unos 1400 años."
+  },
+  "su04-1500.c3.s1": {
+   "say": "¿Qué es el Sol para ti?"
+  },
+  "su04-1500.c3.s2": {
+   "say": "Simple."
+  },
+  "su04-1500.c3.s3": {
+   "say": "Es la diferencia entre día y noche."
+  },
+  "su04-1500.c3.s4": {
+   "say": "El día es para trabajar."
+  },
+  "su04-1500.c3.s5": {
+   "say": "La noche, para dormir y rezar."
+  },
+  "su04-1500.c3.s6": {
+   "say": "Pero esta noche nadie duerme."
+  },
+  "su04-1500.c3.s7": {
+   "say": "Las puertas, con abedul verde y flores."
+  },
+  "su04-1500.c3.s8": {
+   "say": "Faroles arden toda la noche."
+  },
+  "su04-1500.c3.s9": {
+   "say": "Los vecinos comparten pan y beben junto al fuego."
+  },
+  "su04-1500.c3.s10": {
+   "say": "¿Por qué?"
+  },
+  "su04-1500.c3.s11": {
+   "say": "El escritor londinense John Stow escribió luego que un gran fuego podía purgar el aire infectado."
+  },
+  "su04-1500.c4.s1": {
+   "say": "Lejos, un joven astrónomo polaco, Copérnico, estudia el cielo."
+  },
+  "su04-1500.c4.s2": {
+   "say": "En mil quinientos cuarenta y tres, el año en que muere, su libro pone al Sol en el centro y a la Tierra en movimiento.",
+   "show": "En 1543, el año en que muere, su libro pone al Sol en el centro y a la Tierra en movimiento."
+  },
+  "su04-1500.c5.s1": {
+   "say": "Y en menos de setenta años, un nuevo instrumento te mostrará algo chocante.",
+   "show": "Y en menos de 70 años, un nuevo instrumento te mostrará algo chocante."
+  },
+  "su04-1500.c5.s2": {
+   "say": "El Sol no es perfecto."
+  },
+  "su05-1610.c1.s1": {
+   "say": "Despiertas en mil seiscientos diez, junto al río Támesis.",
+   "show": "Despiertas en 1610, junto al río Támesis."
+  },
+  "su05-1610.c1.s2": {
+   "say": "Es una mañana fría y neblinosa de diciembre, y el Sol cuelga bajo y tenue."
+  },
+  "su05-1610.c1.s3": {
+   "say": "Un hombre, Thomas Harriot, apunta un telescopio hacia él."
+  },
+  "su05-1610.c1.s4": {
+   "say": "No lo intentes."
+  },
+  "su05-1610.c1.s5": {
+   "say": "Puede dejarte ciego."
+  },
+  "su05-1610.c2.s1": {
+   "say": "¿Sabías que el primer dibujo de manchas solares con telescopio no es de Galileo?"
+  },
+  "su05-1610.c2.s2": {
+   "say": "Fue de este inglés."
+  },
+  "su05-1610.c2.s3": {
+   "say": "Y nunca lo publicó."
+  },
+  "su05-1610.c3.s1": {
+   "say": "Dos años después, en Florencia, Galileo ve las manchas cruzar el Sol, día tras día."
+  },
+  "su05-1610.c3.s2": {
+   "say": "Otro astrónomo dice que son planetas diminutos que pasan delante."
+  },
+  "su05-1610.c3.s3": {
+   "say": "Galileo dice que no."
+  },
+  "su05-1610.c3.s4": {
+   "say": "Están en el propio Sol, y el Sol gira."
+  },
+  "su05-1610.c3.s5": {
+   "say": "En mil seiscientos trece publica sus cartas.",
+   "show": "En 1613 publica sus cartas."
+  },
+  "su05-1610.c3.s6": {
+   "say": "El cuerpo celeste perfecto tiene manchas."
+  },
+  "su05-1610.c4.s1": {
+   "say": "En el campo, la luz del día aún manda en tu día."
+  },
+  "su05-1610.c4.s2": {
+   "say": "Pero para unos pocos con telescopios, el Sol se ha vuelto algo que observar."
+  },
+  "su05-1610.c4.s3": {
+   "say": "De cerca."
+  },
+  "su05-1610.c5.s1": {
+   "say": "Y pronto alguien preguntará qué hay realmente dentro de esa luz."
+  },
+  "su06-1700.c1.s1": {
+   "say": "Despiertas en mil setecientos setenta y nueve, en Inglaterra.",
+   "show": "Despiertas en 1779, en Inglaterra."
+  },
+  "su06-1700.c1.s2": {
+   "say": "Es una mañana de verano luminosa, y las damas de moda se esconden de ella bajo sombrillas."
+  },
+  "su06-1700.c2.s1": {
+   "say": "¿Sabías que un rostro pálido era tan apreciado que las damas de moda se pintaban con albayalde?"
+  },
+  "su06-1700.c3.s1": {
+   "say": "Una belleza famosa, María Gunning, condesa de Coventry, murió a los veintisiete años.",
+   "show": "Una belleza famosa, María Gunning, condesa de Coventry, murió a los 27 años."
+  },
+  "su06-1700.c3.s2": {
+   "say": "Se culpó a su muerte, al menos en parte, del plomo de su polvo facial."
+  },
+  "su06-1700.c3.s3": {
+   "say": "Si eres rico, te alejas del Sol."
+  },
+  "su06-1700.c3.s4": {
+   "say": "Si eres pobre, trabajas bajo él, y tu piel morena lo cuenta."
+  },
+  "su06-1700.c3.s5": {
+   "say": "Pero este verano, el Sol se vuelve algo nuevo."
+  },
+  "su06-1700.c3.s6": {
+   "say": "Algo que explicar."
+  },
+  "su06-1700.c4.s1": {
+   "say": "Un médico holandés, Jan Ingenhousz, hace más de quinientos experimentos con plantas.",
+   "show": "Un médico holandés, Jan Ingenhousz, hace más de 500 experimentos con plantas."
+  },
+  "su06-1700.c4.s2": {
+   "say": "Sumerge hojas bajo el agua."
+  },
+  "su06-1700.c4.s3": {
+   "say": "Al sol, sueltan burbujas de aire fresco."
+  },
+  "su06-1700.c4.s4": {
+   "say": "A la sombra, paran."
+  },
+  "su06-1700.c4.s5": {
+   "say": "Solo lo hacen las partes verdes."
+  },
+  "su06-1700.c4.s6": {
+   "say": "Necesitan el Sol."
+  },
+  "su06-1700.c5.s1": {
+   "say": "Pero esa luz tiene más de lo que las hojas pueden usar."
+  },
+  "su06-1700.c5.s2": {
+   "say": "O de lo que tus ojos detectan."
+  },
+  "su07-1800.c1.s1": {
+   "say": "Cerca de Windsor, mil ochocientos.",
+   "show": "Cerca de Windsor, 1800."
+  },
+  "su07-1800.c1.s2": {
+   "say": "Es febrero."
+  },
+  "su07-1800.c1.s3": {
+   "say": "Un astrónomo, William Herschel, divide un rayo de sol con un prisma y pone termómetros en los colores, con los bulbos ennegrecidos."
+  },
+  "su07-1800.c2.s1": {
+   "say": "¿Sabías que el punto más caliente no estaba en el arcoíris?"
+  },
+  "su07-1800.c2.s2": {
+   "say": "Estaba justo después del rojo, donde no se veía nada."
+  },
+  "su07-1800.c3.s1": {
+   "say": "Era el infrarrojo."
+  },
+  "su07-1800.c3.s2": {
+   "say": "Luz que no puedes ver."
+  },
+  "su07-1800.c3.s3": {
+   "say": "Ahora el Sol se mide, incluso donde tus ojos no llegan."
+  },
+  "su07-1800.c3.s4": {
+   "say": "Pronto, las lámparas de gas empujan la noche en Londres."
+  },
+  "su07-1800.c3.s5": {
+   "say": "En mil ochocientos treinta y nueve, en París, Edmond Becquerel, de diecinueve años, ilumina una celda y produce electricidad.",
+   "show": "En 1839, en París, Edmond Becquerel, de 19 años, ilumina una celda y produce electricidad."
+  },
+  "su07-1800.c3.s6": {
+   "say": "Diminuta."
+  },
+  "su07-1800.c3.s7": {
+   "say": "Pero electricidad de verdad."
+  },
+  "su07-1800.c4.s1": {
+   "say": "En mil ochocientos cincuenta y nueve, Carrington ve un destello blanco en el Sol.",
+   "show": "En 1859, Richard Carrington ve un destello blanco en el Sol."
+  },
+  "su07-1800.c4.s2": {
+   "say": "En un día, el telégrafo echa chispas y los operadores sufren descargas."
+  },
+  "su07-1800.c4.s3": {
+   "say": "El Sol llega hasta nuestras máquinas."
+  },
+  "su07-1800.c5.s1": {
+   "say": "Convertir esa chispa en energía llevaría otro siglo."
+  },
+  "su07-1800.c5.s2": {
+   "say": "Pero antes, descubriríamos de qué nos alimentábamos siempre."
+  },
+  "su08-1900.c1.s1": {
+   "say": "Despiertas en mil novecientos veintiocho, en una playa llena.",
+   "show": "Despiertas en 1928, en una playa llena."
+  },
+  "su08-1900.c1.s2": {
+   "say": "Arena caliente."
+  },
+  "su08-1900.c1.s3": {
+   "say": "Aire salado."
+  },
+  "su08-1900.c1.s4": {
+   "say": "Y todos toman el sol, a propósito."
+  },
+  "su08-1900.c2.s1": {
+   "say": "¿Sabías que la famosa historia de que Coco Chanel inició la moda del bronceado probablemente es un mito?"
+  },
+  "su08-1900.c3.s1": {
+   "say": "Un historiador la rastreó a un artículo sin firma de mil novecientos setenta y uno.",
+   "show": "Un historiador la rastreó a un artículo sin firma de 1971."
+  },
+  "su08-1900.c3.s2": {
+   "say": "La razón real fue el trabajo."
+  },
+  "su08-1900.c3.s3": {
+   "say": "Los empleos pasaron adentro y el bronceado dejó de ser campo."
+  },
+  "su08-1900.c3.s4": {
+   "say": "Significó un día libre."
+  },
+  "su08-1900.c4.s1": {
+   "say": "Ahora mira tu cesta de picnic."
+  },
+  "su08-1900.c4.s2": {
+   "say": "Pan."
+  },
+  "su08-1900.c4.s3": {
+   "say": "Una manzana."
+  },
+  "su08-1900.c4.s4": {
+   "say": "Se bautizó en mil ochocientos noventa y tres.",
+   "show": "Se bautizó en 1893."
+  },
+  "su08-1900.c4.s5": {
+   "say": "Fotosíntesis."
+  },
+  "su08-1900.c4.s6": {
+   "say": "Las hojas atrapan luz solar y la vuelven azúcar, y casi toda la vida depende de eso."
+  },
+  "su08-1900.c4.s7": {
+   "say": "Tu almuerzo es luz solar almacenada."
+  },
+  "su08-1900.c4.s8": {
+   "say": "Y, en cierto modo, tú también."
+  },
+  "su08-1900.c4.s9": {
+   "say": "El Sol era algo que medir."
+  },
+  "su08-1900.c4.s10": {
+   "say": "Ahora es la fuente de cada comida que haces."
+  },
+  "su08-1900.c5.s1": {
+   "say": "En mil novecientos cincuenta y cuatro, en Laboratorios Bell, una celda de silicio genera electricidad con cerca del seis por ciento del sol.",
+   "show": "En 1954, en Laboratorios Bell, una celda de silicio genera electricidad con cerca del 6 % del sol."
+  },
+  "su08-1900.c6.s1": {
+   "say": "Habíamos aprendido que vivimos de luz solar."
+  },
+  "su08-1900.c6.s2": {
+   "say": "Ahora aprenderíamos a cosecharla."
+  },
+  "su09-2000.c1.s1": {
+   "say": "Despiertas hoy."
+  },
+  "su09-2000.c1.s2": {
+   "say": "Tu móvil está cargado."
+  },
+  "su09-2000.c1.s3": {
+   "say": "Las luces se encienden."
+  },
+  "su09-2000.c1.s4": {
+   "say": "Y en algún lugar, un campo de paneles solares despierta desde el amanecer."
+  },
+  "su09-2000.c2.s1": {
+   "say": "¿Sabías que en dos mil veinticinco la energía solar produjo casi once veces más electricidad que diez años antes?",
+   "show": "¿Sabías que en 2025 la energía solar produjo casi 11 veces más electricidad que diez años antes?"
+  },
+  "su09-2000.c3.s1": {
+   "say": "Es casi el nueve por ciento de toda la electricidad del mundo.",
+   "show": "Es casi el 9 % de toda la electricidad del mundo."
+  },
+  "su09-2000.c3.s2": {
+   "say": "Según la Agencia Internacional de la Energía, los mejores proyectos solares están entre los más baratos."
+  },
+  "su09-2000.c3.s3": {
+   "say": "¿Qué es el Sol para ti ahora?"
+  },
+  "su09-2000.c3.s4": {
+   "say": "Poder."
+  },
+  "su09-2000.c3.s5": {
+   "say": "Algo que cosechas, como un cultivo."
+  },
+  "su09-2000.c3.s6": {
+   "say": "Y en diciembre de dos mil veinticuatro, la Parker Solar Probe de la NASA voló por la atmósfera exterior del Sol, más rápido que nada construido por humanos.",
+   "show": "Y en diciembre de 2024, la Parker Solar Probe de la NASA voló por la atmósfera exterior del Sol, más rápido que nada construido por humanos."
+  },
+  "su09-2000.c4.s1": {
+   "say": "Y aun así, pasas casi todo el día adentro, tras pantallas y ventanas."
+  },
+  "su09-2000.c4.s2": {
+   "say": "Hemos tocado el Sol."
+  },
+  "su09-2000.c4.s3": {
+   "say": "Nos conectamos a él."
+  },
+  "su09-2000.c4.s4": {
+   "say": "Entonces, ¿por qué nunca lo has visto como es hoy?"
+  },
+  "su10-reveal.c1.s1": {
+   "say": "Respuesta."
+  },
+  "su10-reveal.c1.s2": {
+   "say": "La luz es rápida."
+  },
+  "su10-reveal.c1.s3": {
+   "say": "Pero no es instantánea."
+  },
+  "su10-reveal.c1.s4": {
+   "say": "Tarda unos ocho minutos y veinte segundos en cruzar ciento cincuenta millones de kilómetros.",
+   "show": "Tarda unos 8 minutos y 20 segundos en cruzar 150 millones de kilómetros."
+  },
+  "su10-reveal.c1.s5": {
+   "say": "Cada amanecer que has visto ya era viejo."
+  },
+  "su10-reveal.c2.s1": {
+   "say": "¿Y la energía que lleva?"
+  },
+  "su10-reveal.c2.s2": {
+   "say": "Nació en lo hondo del núcleo del Sol y tardó muchísimo en salir."
+  },
+  "su10-reveal.c2.s3": {
+   "say": "La NASA calcula unos ciento setenta mil años.",
+   "show": "La NASA calcula unos 170 000 años."
+  },
+  "su10-reveal.c2.s4": {
+   "say": "Cuando partió, nadie en la Tierra tenía granjas, ciudades ni escritura."
+  },
+  "su10-reveal.c3.s1": {
+   "say": "¿Qué tan cerca estuviste?"
+  },
+  "su10-reveal.c3.s2": {
+   "say": "Ahora sube esa escalera otra vez, conmigo."
+  },
+  "su10-reveal.c4.s1": {
+   "say": "En mil quinientos, el Sol era día y noche.",
+   "show": "En 1500, el Sol era día y noche."
+  },
+  "su10-reveal.c4.s2": {
+   "say": "Luego, algo que observar."
+  },
+  "su10-reveal.c4.s3": {
+   "say": "Explicar."
+  },
+  "su10-reveal.c4.s4": {
+   "say": "Medir."
+  },
+  "su10-reveal.c4.s5": {
+   "say": "Luego fue tu almuerzo."
+  },
+  "su10-reveal.c4.s6": {
+   "say": "Hoy, es poder."
+  },
+  "su10-reveal.c5.s1": {
+   "say": "El Sol no cambió."
+  },
+  "su10-reveal.c5.s2": {
+   "say": "Nosotros sí."
+  },
+  "su10-reveal.c5.s3": {
+   "say": "Nunca has visto el Sol como es."
+  },
+  "su10-reveal.c5.s4": {
+   "say": "Solo como era, hace ocho minutos.",
+   "show": "Solo como era, hace 8 minutos."
+  },
+  "su11-2100.c1.s1": {
+   "say": "¿Cuál es el siguiente peldaño?"
+  },
+  "su11-2100.c1.s2": {
+   "say": "Dos mil cien.",
+   "show": "2100."
+  },
+  "su11-2100.c1.s3": {
+   "say": "Esa mañana aún no ha llegado."
+  },
+  "su11-2100.c1.s4": {
+   "say": "Pero podemos seguir las pruebas."
+  },
+  "su11-2100.c2.s1": {
+   "say": "Cada vídeo que ves, cada pregunta a una IA, corre en un centro de datos."
+  },
+  "su11-2100.c2.s2": {
+   "say": "En dos mil veinticuatro, usaron cerca del uno y medio por ciento de la electricidad mundial.",
+   "show": "En 2024, usaron cerca del 1,5 % de la electricidad mundial."
+  },
+  "su11-2100.c2.s3": {
+   "say": "La misma agencia espera más del doble para dos mil treinta.",
+   "show": "La misma agencia espera más del doble para 2030."
+  },
+  "su11-2100.c2.s4": {
+   "say": "Es algo más de lo que usa hoy todo Japón."
+  },
+  "su11-2100.c3.s1": {
+   "say": "Mientras, en dos mil veintitrés, un pequeño satélite de Caltech, Maple, transmitió energía sin cables en el espacio y apuntó una señal a un tejado en Pasadena.",
+   "show": "Mientras, en 2023, un pequeño satélite de Caltech, Maple, transmitió energía sin cables en el espacio y apuntó una señal a un tejado en Pasadena."
+  },
+  "su11-2100.c3.s2": {
+   "say": "Diminuta."
+  },
+  "su11-2100.c3.s3": {
+   "say": "Pero funcionó."
+  },
+  "su11-2100.c4.s1": {
+   "say": "Aquí va un escenario."
+  },
+  "su11-2100.c4.s2": {
+   "say": "No un hecho."
+  },
+  "su11-2100.c4.s3": {
+   "say": "Internet, la IA y ciudades enteras funcionando cada vez más con sol."
+  },
+  "su11-2100.c4.s4": {
+   "say": "Parte, quizá, captada en órbita, donde el Sol nunca se pone."
+  },
+  "su11-2100.c4.s5": {
+   "say": "En mil quinientos, el Sol decidía cuándo dormías.",
+   "show": "En 1500, el Sol decidía cuándo dormías."
+  },
+  "su11-2100.c4.s6": {
+   "say": "En dos mil cien, quizá decida si tu IA despierta.",
+   "show": "En 2100, quizá decida si tu IA despierta."
+  },
+  "su11-2100.c5.s1": {
+   "say": "El Sol no lo notará."
+  },
+  "su11-2100.c5.s2": {
+   "say": "La NASA calcula que le quedan unos cinco mil millones de años.",
+   "show": "La NASA calcula que le quedan unos 5000 millones de años."
+  },
+  "su11-2100.c5.s3": {
+   "say": "La pregunta es qué habremos aprendido a hacer con él."
+  },
+  "su12-close.c1.s1": {
+   "say": "El Sol ha salido cada mañana de tu vida."
+  },
+  "su12-close.c1.s2": {
+   "say": "Entonces dime."
+  },
+  "su12-close.c1.s3": {
+   "say": "¿Cuándo fue la última vez que lo viste salir, a propósito?"
+  },
+  "su13-outro.c1.s1": {
+   "say": "Este fue Did You Know That, episodio dos.",
+   "show": "Este fue Did You Know That, episodio 2."
+  },
+  "su13-outro.c1.s2": {
+   "say": "El Sol."
+  },
+  "su13-outro.c1.s3": {
+   "say": "Ahora te toca a ti."
+  },
+  "su13-outro.c1.s4": {
+   "say": "¿En qué siglo preferirías ver salir el Sol?"
+  },
+  "su13-outro.c1.s5": {
+   "say": "Comenta abajo."
+  },
+  "su13-outro.c1.s6": {
+   "say": "Al final de cada episodio leeré el mejor comentario, aquí, en esta pantalla."
+  },
+  "su13-outro.c1.s7": {
+   "say": "Y el tema más pedido será un episodio futuro."
+  },
+  "su13-outro.c1.s8": {
+   "say": "En nuestra web, Dexti punto laiv, puedes ver cada episodio, coleccionar los datos y jugar a adivinar.",
+   "show": "En nuestra web, Dexty.live, puedes ver cada episodio, coleccionar los datos y jugar a adivinar."
+  },
+  "su13-outro.c2.s1": {
+   "say": "Si esto cambió cómo ves un amanecer, dale a me gusta."
+  },
+  "su13-outro.c2.s2": {
+   "say": "Compártelo con el amigo que nunca se pierde uno."
+  },
+  "su13-outro.c2.s3": {
+   "say": "Suscríbete: el próximo misterio te busca."
+  },
+  "su13-outro.c3.s1": {
+   "say": "Próxima vez: la escuela."
+  },
+  "su13-outro.c3.s2": {
+   "say": "¿Cómo cambió un día de clase desde mil quinientos hasta hoy, y existirán aún las aulas de dos mil cien?",
+   "show": "¿Cómo cambió un día de clase desde 1500 hasta hoy, y existirán aún las aulas de 2100?"
+  },
+  "su13-outro.c4.s1": {
+   "say": "Pregunta..."
+  },
+  "su13-outro.c5.s1": {
+   "say": "Asómbrate."
+  },
+  "su13-outro.c6.s1": {
+   "say": "Repite."
+  },
+  "su14-endscreen.c1.s1": {
+   "say": "La próxima..."
+  },
+  "su14-endscreen.c1.s2": {
+   "say": "podría ser el tuyo."
+  },
+  "su14-endscreen.c1.s3": {
+   "say": "Elige un misterio."
+  },
+  "su14-endscreen.c1.s4": {
+   "say": "Y nos vemos allí."
+  }
+ }
+}

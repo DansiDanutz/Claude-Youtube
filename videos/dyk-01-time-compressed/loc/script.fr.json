@@ -1,0 +1,475 @@
+{
+ "lang": "fr",
+ "episode": "01",
+ "sentences": {
+  "tc01.c1.s1": {
+   "say": "En quinze cents, le message le plus rapide allait à la vitesse d'un cheval.",
+   "show": "En 1500, le message le plus rapide allait à la vitesse d'un cheval."
+  },
+  "tc01.c1.s2": {
+   "say": "Aujourd'hui, un message traverse l'Atlantique en moins d'un dixième de seconde."
+  },
+  "tc01.c1.s3": {
+   "say": "On a gagné plus de temps que n'importe quelle génération avant nous."
+  },
+  "tc01.c1.s4": {
+   "say": "Alors pourquoi a-t-on tous l'impression d'en manquer ?"
+  },
+  "tc01.c1.s5": {
+   "say": "Savais-tu que le temps lui-même se comprime depuis cinq cents ans ?",
+   "show": "Savais-tu que le temps lui-même se comprime depuis 500 ans ?"
+  },
+  "tc02.c1.s1": {
+   "say": "Bienvenue dans Did You Know That !"
+  },
+  "tc02.c1.s2": {
+   "say": "Chaque vidéo commence par une question que tu ne t'es jamais posée, et finit par une réponse inoubliable."
+  },
+  "tc02.c1.s3": {
+   "say": "Science, histoire, espace, esprit humain."
+  },
+  "tc02.c1.s4": {
+   "say": "Ce que personne ne t'a appris, et ce qui rend ta journée un peu meilleure."
+  },
+  "tc02.c1.s5": {
+   "say": "Et voici la règle."
+  },
+  "tc02.c1.s6": {
+   "say": "Avant la réponse, devine en commentaire."
+  },
+  "tc03.c1.s1": {
+   "say": "Reste ensuite jusqu'à la fin pour voir si tu avais raison."
+  },
+  "tc03.c1.s2": {
+   "say": "Prêt ?"
+  },
+  "tc03.c1.s3": {
+   "say": "On y va."
+  },
+  "tc04.c1.s1": {
+   "say": "Voici l'expérience."
+  },
+  "tc04.c1.s2": {
+   "say": "Sept siècles."
+  },
+  "tc04.c1.s3": {
+   "say": "Six matins, dont un pas encore arrivé."
+  },
+  "tc04.c1.s4": {
+   "say": "À chaque fois, tu te réveilles en quelqu'un d'autre et tu vois comment on vivait vraiment le temps."
+  },
+  "tc04.c1.s5": {
+   "say": "À la fin, tu sauras où le temps est passé, et ce qu'on pourrait nous prendre ensuite, en l'an deux mille cent.",
+   "show": "À la fin, tu sauras où le temps est passé, et ce qu'on pourrait nous prendre ensuite, en l'an 2100."
+  },
+  "tc05.c1.s1": {
+   "say": "Tu te réveilles en quinze cents.",
+   "show": "Tu te réveilles en 1500."
+  },
+  "tc05.c1.s2": {
+   "say": "Il est minuit."
+  },
+  "tc05.c1.s3": {
+   "say": "Noir complet."
+  },
+  "tc05.c1.s4": {
+   "say": "Et tout le village est debout."
+  },
+  "tc05.c1.s5": {
+   "say": "Savais-tu que pendant des siècles, on dormait deux fois par nuit ?"
+  },
+  "tc05.c1.s6": {
+   "say": "Des historiens ont trouvé des centaines de mentions d'un premier et d'un second sommeil."
+  },
+  "tc06.c1.s1": {
+   "say": "Entre les deux, on priait, on discutait, on rendait même visite aux voisins."
+  },
+  "tc06.c1.s2": {
+   "say": "Ta journée commence au lever du soleil et finit à son coucher."
+  },
+  "tc06.c1.s3": {
+   "say": "La cloche de l'église est ta seule horloge."
+  },
+  "tc06.c1.s4": {
+   "say": "L'espérance de vie à la naissance est d'environ trente-cinq ans, abaissée par tous ces enfants qui ne grandissent pas.",
+   "show": "L'espérance de vie à la naissance est d'environ 35 ans, abaissée par tous ces enfants qui ne grandissent pas."
+  },
+  "tc06.c1.s5": {
+   "say": "Si tu atteins la vieillesse, tu mourras presque dans le monde où tu es né."
+  },
+  "tc06.c1.s6": {
+   "say": "Les mêmes outils, les mêmes routes, les mêmes nouvelles, qui arrivent des semaines en retard, au pas d'un cheval."
+  },
+  "tc07.c1.s1": {
+   "say": "Le temps, tu ne le dépenses pas."
+  },
+  "tc07.c1.s2": {
+   "say": "Il t'arrive, tout simplement."
+  },
+  "tc07.c1.s3": {
+   "say": "Mais dans cent cinquante ans, une étrange boisson nouvelle arrivera.",
+   "show": "Mais dans 150 ans, une étrange boisson nouvelle arrivera."
+  },
+  "tc07.c1.s4": {
+   "say": "Et elle changera la façon de parler de la journée."
+  },
+  "tc08.c1.s1": {
+   "say": "Tu te réveilles en seize cent cinquante-deux, à Londres.",
+   "show": "Tu te réveilles en 1652, à Londres."
+  },
+  "tc08.c1.s2": {
+   "say": "L'air sent la fumée, et quelque chose de nouveau."
+  },
+  "tc08.c1.s3": {
+   "say": "Le café."
+  },
+  "tc08.c1.s4": {
+   "say": "Savais-tu que les premiers cafés s'appelaient les universités à un penny ?"
+  },
+  "tc08.c1.s5": {
+   "say": "Pour un penny, tu entrais, tu lisais les nouvelles et tu discutais des heures avec des inconnus."
+  },
+  "tc08.c1.s6": {
+   "say": "Le premier journal était apparu en seize cent cinq, à Strasbourg.",
+   "show": "Le premier journal était apparu en 1605, à Strasbourg."
+  },
+  "tc09.c1.s1": {
+   "say": "Les nouvelles devenaient une habitude : on voulait savoir ce qui se passait aujourd'hui, pas le mois dernier."
+  },
+  "tc09.c1.s2": {
+   "say": "Puis, en seize cent cinquante-six, Christiaan Huygens suspend un pendule dans une horloge.",
+   "show": "Puis, en 1656, Christiaan Huygens suspend un pendule dans une horloge."
+  },
+  "tc09.c1.s3": {
+   "say": "Les meilleures horloges perdaient un quart d'heure par jour."
+  },
+  "tc09.c1.s4": {
+   "say": "La sienne dérive de quelques secondes."
+  },
+  "tc09.c1.s5": {
+   "say": "Pour la première fois, une journée ordinaire se découpe en minutes."
+  },
+  "tc09.c1.s6": {
+   "say": "Personne n'a vu la portée de ça."
+  },
+  "tc10.c1.s1": {
+   "say": "En moins de cent ans, la minute cesserait d'être une curiosité pour devenir ton patron."
+  },
+  "tc11.c1.s1": {
+   "say": "Tu te réveilles en dix-sept cent soixante.",
+   "show": "Tu te réveilles en 1760."
+  },
+  "tc11.c1.s2": {
+   "say": "Lundi matin : la moitié de l'atelier est vide."
+  },
+  "tc11.c1.s3": {
+   "say": "Savais-tu que pendant des générations, les ouvriers prenaient simplement leur lundi ?"
+  },
+  "tc11.c1.s4": {
+   "say": "On appelait ça la Saint-Lundi."
+  },
+  "tc11.c1.s5": {
+   "say": "Avant, tu travaillais dur quand il y avait de l'ouvrage, et tu te reposais sinon."
+  },
+  "tc11.c1.s6": {
+   "say": "Mais le travail quitte les champs pour entrer dans l'usine."
+  },
+  "tc12.c1.s1": {
+   "say": "La cloche remplace le soleil."
+  },
+  "tc12.c1.s2": {
+   "say": "Puis l'horloge remplace la cloche."
+  },
+  "tc12.c1.s3": {
+   "say": "Les historiens parlent de discipline du temps."
+  },
+  "tc12.c1.s4": {
+   "say": "Tu ne t'arrêtes plus quand le travail est fini."
+  },
+  "tc12.c1.s5": {
+   "say": "Tu t'arrêtes quand l'horloge le dit."
+  },
+  "tc12.c1.s6": {
+   "say": "La Saint-Lundi commence à disparaître."
+  },
+  "tc13.c1.s1": {
+   "say": "Et en dix-sept cent soixante et un, la montre de marine de John Harrison navigue jusqu'à la Jamaïque et n'arrive qu'avec environ cinq secondes de retard.",
+   "show": "Et en 1761, la montre de marine de John Harrison navigue jusqu'à la Jamaïque et n'arrive qu'avec environ cinq secondes de retard."
+  },
+  "tc13.c1.s2": {
+   "say": "Le temps, désormais, on peut l'emporter, et on peut le vendre."
+  },
+  "tc13.c1.s3": {
+   "say": "Les ouvriers avaient perdu leur lundi."
+  },
+  "tc13.c1.s4": {
+   "say": "Au siècle suivant, la vapeur lancée sur des rails de fer prendrait quelque chose de plus grand encore."
+  },
+  "tc13.c1.s5": {
+   "say": "Midi lui-même."
+  },
+  "tc14.c1.s1": {
+   "say": "Tu te réveilles en dix-huit cent quatre-vingt-trois, dans une petite ville américaine.",
+   "show": "Tu te réveilles en 1883, dans une petite ville américaine."
+  },
+  "tc14.c1.s2": {
+   "say": "À midi, l'horloge de l'église sonne douze coups."
+  },
+  "tc14.c1.s3": {
+   "say": "Puis le chemin de fer te dit qu'il est de nouveau midi."
+  },
+  "tc14.c1.s4": {
+   "say": "Des villes ont entendu midi deux fois."
+  },
+  "tc14.c1.s5": {
+   "say": "Le rail avait remis à l'heure tout un continent."
+  },
+  "tc14.c1.s6": {
+   "say": "Savais-tu que le week-end a commencé par un demi-samedi ?"
+  },
+  "tc15.c1.s1": {
+   "say": "En dix-huit cent cinquante, une loi britannique libère femmes et enfants des filatures à deux heures, le samedi.",
+   "show": "En 1850, une loi britannique libère femmes et enfants des filatures à 2 heures, le samedi."
+  },
+  "tc15.c1.s2": {
+   "say": "Bientôt, les hommes l'obtiennent aussi."
+  },
+  "tc15.c1.s3": {
+   "say": "Même le temps libre a dû entrer dans la loi."
+  },
+  "tc15.c1.s4": {
+   "say": "En dix-huit cent cinquante-huit, on pose un câble au fond de l'Atlantique.",
+   "show": "En 1858, on pose un câble au fond de l'Atlantique."
+  },
+  "tc15.c1.s5": {
+   "say": "Le premier message a mis seize heures, contre dix jours en bateau.",
+   "show": "Le premier message a mis 16 heures, contre 10 jours en bateau."
+  },
+  "tc15.c1.s6": {
+   "say": "Et en dix-huit cent quatre-vingt-un, un médecin new-yorkais, George Beard, alerte sur une nouvelle épidémie d'épuisement nerveux.",
+   "show": "Et en 1881, un médecin new-yorkais, George Beard, alerte sur une nouvelle épidémie d'épuisement nerveux."
+  },
+  "tc16.c1.s1": {
+   "say": "Ses suspects ?"
+  },
+  "tc16.c1.s2": {
+   "say": "La vapeur."
+  },
+  "tc16.c1.s3": {
+   "say": "Le télégraphe."
+  },
+  "tc16.c1.s4": {
+   "say": "La presse quotidienne."
+  },
+  "tc16.c1.s5": {
+   "say": "Ça te dit quelque chose ?"
+  },
+  "tc16.c1.s6": {
+   "say": "On se plaignait déjà que la vie allait trop vite, plus d'un siècle avant ton téléphone."
+  },
+  "tc17.c1.s1": {
+   "say": "Et au siècle suivant, un homme allait transformer une demi-journée de travail en quatre-vingt-treize minutes.",
+   "show": "Et au siècle suivant, un homme allait transformer une demi-journée de travail en 93 minutes."
+  },
+  "tc18.c1.s1": {
+   "say": "Tu te réveilles en dix-neuf cent quatorze, près de Détroit.",
+   "show": "Tu te réveilles en 1914, près de Détroit."
+  },
+  "tc18.c1.s2": {
+   "say": "Devant l'usine Ford, la file de ceux qui cherchent du travail s'étire dans la rue."
+  },
+  "tc18.c1.s3": {
+   "say": "Savais-tu qu'Henry Ford a plus que doublé le salaire de ses ouvriers, à cinq dollars par jour, et réduit la journée à huit heures ?",
+   "show": "Savais-tu qu'Henry Ford a plus que doublé le salaire de ses ouvriers, à 5 dollars par jour, et réduit la journée à 8 heures ?"
+  },
+  "tc18.c1.s4": {
+   "say": "Cette même année, sa chaîne de montage mobile a transformé douze heures et demie de travail en quatre-vingt-treize minutes.",
+   "show": "Cette même année, sa chaîne de montage mobile a transformé 12 heures et demie de travail en 93 minutes."
+  },
+  "tc18.c1.s5": {
+   "say": "En dix-neuf cent vingt-six, ses ouvriers avaient les samedis.",
+   "show": "En 1926, ses ouvriers avaient les samedis."
+  },
+  "tc18.c1.s6": {
+   "say": "Le week-end moderne était né."
+  },
+  "tc19.c1.s1": {
+   "say": "Un enfant né en dix-neuf cents a trois ans quand les frères Wright volent, et soixante-neuf quand l'homme marche sur la Lune.",
+   "show": "Un enfant né en 1900 a 3 ans quand les frères Wright volent, et 69 ans quand l'homme marche sur la Lune."
+  },
+  "tc19.c1.s2": {
+   "say": "Une vie contient aujourd'hui plus de changements que des siècles entiers autrefois."
+  },
+  "tc19.c1.s3": {
+   "say": "En dix-neuf cent trente, l'économiste John Maynard Keynes fait une prédiction.",
+   "show": "En 1930, l'économiste John Maynard Keynes fait une prédiction."
+  },
+  "tc19.c1.s4": {
+   "say": "À l'époque de ses petits-enfants, on ne travaillera que quinze heures par semaine.",
+   "show": "À l'époque de ses petits-enfants, on ne travaillera que 15 heures par semaine."
+  },
+  "tc19.c1.s5": {
+   "say": "Retiens cette prédiction."
+  },
+  "tc19.c1.s6": {
+   "say": "Elle revient."
+  },
+  "tc20.c1.s1": {
+   "say": "Tu te réveilles aujourd'hui."
+  },
+  "tc20.c1.s2": {
+   "say": "Avant que tes pieds touchent le sol, tu as déjà consulté ton téléphone."
+  },
+  "tc20.c1.s3": {
+   "say": "Savais-tu qu'un internaute passe en moyenne six heures trente-huit en ligne par jour ?",
+   "show": "Savais-tu qu'un internaute passe en moyenne 6 heures 38 en ligne par jour ?"
+  },
+  "tc20.c1.s4": {
+   "say": "En dix-huit cent soixante-dix, dans la plupart des pays industriels, on faisait plus de trois mille heures par an.",
+   "show": "En 1870, dans la plupart des pays industriels, on faisait plus de 3 000 heures par an."
+  },
+  "tc20.c1.s5": {
+   "say": "En Allemagne, récemment, c'était autour de treize cent cinquante.",
+   "show": "En Allemagne, récemment, c'était autour de 1 350."
+  },
+  "tc20.c1.s6": {
+   "say": "Aujourd'hui, on travaille moins que presque toutes les générations d'avant."
+  },
+  "tc21.c1.s1": {
+   "say": "Les messages sont instantanés."
+  },
+  "tc21.c1.s2": {
+   "say": "Les machines soulèvent les charges."
+  },
+  "tc21.c1.s3": {
+   "say": "Sur le papier, nous sommes les gens les plus riches de l'histoire, riches de temps."
+  },
+  "tc21.c1.s4": {
+   "say": "Et pourtant, demande à n'importe qui comment il va, et tu entendras le même mot : occupé."
+  },
+  "tc21.c1.s5": {
+   "say": "Alors, où est passé tout ce temps ?"
+  },
+  "tc22.c1.s1": {
+   "say": "Voici la réponse."
+  },
+  "tc22.c1.s2": {
+   "say": "Le temps n'a pas accéléré."
+  },
+  "tc22.c1.s3": {
+   "say": "Une seconde en quinze cents durait exactement autant qu'une seconde aujourd'hui.",
+   "show": "Une seconde en 1500 durait exactement autant qu'une seconde aujourd'hui."
+  },
+  "tc22.c1.s4": {
+   "say": "Ce qui a changé, c'est tout ce qu'on y entasse, et le peu qu'on en retient."
+  },
+  "tc22.c1.s5": {
+   "say": "Ton cerveau ne mesure pas le temps à l'horloge."
+  },
+  "tc22.c1.s6": {
+   "say": "Il le mesure avec des souvenirs."
+  },
+  "tc23.c1.s1": {
+   "say": "Les psychologues parlent du paradoxe des vacances."
+  },
+  "tc23.c1.s2": {
+   "say": "Une semaine pleine de nouveautés paraît longue quand tu y repenses."
+  },
+  "tc23.c1.s3": {
+   "say": "Des mois de routine s'effondrent en presque rien."
+  },
+  "tc23.c1.s4": {
+   "say": "À chaque siècle, on a trouvé comment caser plus de choses dans une heure."
+  },
+  "tc23.c1.s5": {
+   "say": "L'horloge, l'usine, le télégraphe, la chaîne de montage, et le téléphone."
+  },
+  "tc23.c1.s6": {
+   "say": "Chaque invention nous a fait gagner du temps, et chacune a rendu nos heures de plus en plus semblables."
+  },
+  "tc24.c1.s1": {
+   "say": "Voilà la compression : pas celle de l'horloge, celle de l'expérience."
+  },
+  "tc25.c1.s1": {
+   "say": "Voici l'an deux mille cent. Ce matin n'est pas encore arrivé, mais on suit les indices.",
+   "show": "Voici l'an 2100. Ce matin n'est pas encore arrivé, mais on suit les indices."
+  },
+  "tc25.c1.s2": {
+   "say": "L'ONU prévoit environ dix milliards de personnes, vivant plus longtemps que jamais.",
+   "show": "L'ONU prévoit environ 10 milliards de personnes, vivant plus longtemps que jamais."
+  },
+  "tc25.c1.s3": {
+   "say": "Selon Goldman Sachs, l'IA actuelle pourrait exposer à l'automatisation le travail de trois cents millions d'emplois à temps plein.",
+   "show": "Selon Goldman Sachs, l'IA actuelle pourrait exposer à l'automatisation le travail de 300 millions d'emplois à temps plein."
+  },
+  "tc25.c1.s4": {
+   "say": "Sur soixante et une entreprises testant la semaine de quatre jours, cinquante-six l'ont gardée.",
+   "show": "Sur 61 entreprises britanniques testant la semaine de 4 jours, 56 l'ont gardée."
+  },
+  "tc25.c1.s5": {
+   "say": "Mets ces faits bout à bout : la semaine de quinze heures de Keynes n'a plus rien de fou, elle pourrait arriver avec un siècle de retard.",
+   "show": "Mets ces faits bout à bout : la semaine de 15 heures de Keynes n'a plus rien de fou, elle pourrait arriver avec un siècle de retard."
+  },
+  "tc26.c1.s1": {
+   "say": "Mais si l'histoire se répète, on remplira chaque heure libérée avec quelque chose de plus rapide."
+  },
+  "tc26.c1.s2": {
+   "say": "En deux mille cent, la chose la plus rare sur Terre ne sera peut-être ni l'énergie ni l'argent.",
+   "show": "En 2100, la chose la plus rare sur Terre ne sera peut-être ni l'énergie ni l'argent."
+  },
+  "tc26.c1.s3": {
+   "say": "Ce sera peut-être un jour dont tu te souviens vraiment."
+  },
+  "tc27.c1.s1": {
+   "say": "Le temps ne peut pas ralentir, mais il peut s'étirer, un nouveau souvenir à la fois."
+  },
+  "tc27.c1.s2": {
+   "say": "Alors dis-moi, la dernière fois que tu as fait quelque chose pour la toute première fois, c'était quand ?"
+  },
+  "tc28.c1.s1": {
+   "say": "C'était l'épisode un de Did You Know That !",
+   "show": "C'était l'épisode 1 de Did You Know That !"
+  },
+  "tc28.c1.s2": {
+   "say": "Le temps compressé : à toi de jouer."
+  },
+  "tc28.c1.s3": {
+   "say": "Si tu pouvais te réveiller dans n'importe quel siècle, de quinze cents à deux mille cent, lequel choisirais-tu, et pourquoi ?",
+   "show": "Si tu pouvais te réveiller dans n'importe quel siècle, de 1500 à 2100, lequel choisirais-tu, et pourquoi ?"
+  },
+  "tc28.c1.s4": {
+   "say": "Dis-le-moi en commentaire."
+  },
+  "tc28.c1.s5": {
+   "say": "Voici le deal."
+  },
+  "tc28.c1.s6": {
+   "say": "À la fin de chaque épisode, je lirai le meilleur commentaire, ici, sur cet écran."
+  },
+  "tc29.c1.s1": {
+   "say": "Et le sujet le plus demandé devient un futur épisode."
+  },
+  "tc29.c1.s2": {
+   "say": "Et sur notre site, Dexti point laïve, tu peux voir chaque épisode, collectionner les faits et jouer au jeu des devinettes.",
+   "show": "Et sur notre site, Dexty.live, tu peux voir chaque épisode, collectionner les faits et jouer au jeu des devinettes."
+  },
+  "tc29.c1.s3": {
+   "say": "Si ça a changé ta façon de voir une heure comme celle-ci, partage-le avec un ami toujours à court de temps, et abonne-toi pour que le prochain mystère te trouve."
+  },
+  "tc29.c1.s4": {
+   "say": "Prochain épisode : le soleil que tu vois dans le ciel n'est pas celui d'à présent."
+  },
+  "tc29.c1.s5": {
+   "say": "Demande... Émerveille-toi... Recommence."
+  },
+  "tc30.c1.s1": {
+   "say": "La prochaine fois, ce pourrait être ton commentaire."
+  },
+  "tc30.c1.s2": {
+   "say": "Choisis un mystère, et je te retrouve là-bas."
+  },
+  "tc31.c1.s1": {
+   "say": "Merci."
+  }
+ }
+}

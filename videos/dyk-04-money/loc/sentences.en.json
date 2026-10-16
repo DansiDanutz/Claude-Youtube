@@ -1,0 +1,2288 @@
+{
+ "episode": "04",
+ "slug": "money",
+ "master_s": 620.733,
+ "sentences": 204,
+ "english_chars": 8745,
+ "scenes": [
+  {
+   "id": "mo01-hook",
+   "start": 0.6,
+   "dur": 14.73,
+   "chunks": [
+    {
+     "id": "mo01-hook.c1",
+     "text": "Last time, I left you with a question. Did school ever teach you what money actually is? Take a note out of your wallet. Any note. It's paper, or plastic, and a bit of ink. And still, you'd trade hours of your life for a few of them.",
+     "sentences": [
+      {
+       "id": "mo01-hook.c1.s1",
+       "text": "Last time, I left you with a question.",
+       "start": 0.6,
+       "end": 2.72,
+       "slot_end": 3.232,
+       "slot_s": 2.632,
+       "en_s": 2.12
+      },
+      {
+       "id": "mo01-hook.c1.s2",
+       "text": "Did school ever teach you what money actually is?",
+       "start": 3.352,
+       "end": 5.96,
+       "slot_end": 6.447,
+       "slot_s": 3.095,
+       "en_s": 2.608
+      },
+      {
+       "id": "mo01-hook.c1.s3",
+       "text": "Take a note out of your wallet.",
+       "start": 6.567,
+       "end": 7.87,
+       "slot_end": 8.177,
+       "slot_s": 1.61,
+       "en_s": 1.303
+      },
+      {
+       "id": "mo01-hook.c1.s4",
+       "text": "Any note.",
+       "start": 8.297,
+       "end": 8.83,
+       "slot_end": 9.01,
+       "slot_s": 0.713,
+       "en_s": 0.533
+      },
+      {
+       "id": "mo01-hook.c1.s5",
+       "text": "It's paper, or plastic, and a bit of ink.",
+       "start": 9.13,
+       "end": 11.694,
+       "slot_end": 12.121,
+       "slot_s": 2.991,
+       "en_s": 2.564
+      },
+      {
+       "id": "mo01-hook.c1.s6",
+       "text": "And still, you'd trade hours of your life for a few of them.",
+       "start": 12.241,
+       "end": 15.004,
+       "slot_end": 15.96,
+       "slot_s": 3.719,
+       "en_s": 2.763
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo02-question",
+   "start": 16.08,
+   "dur": 8.824,
+   "chunks": [
+    {
+     "id": "mo02-question.c1",
+     "text": "And here's the strange part. Did you know that most money today isn't paper, or metal, or anything you could ever hold? So what is it, actually?",
+     "sentences": [
+      {
+       "id": "mo02-question.c1.s1",
+       "text": "And here's the strange part.",
+       "start": 16.08,
+       "end": 17.21,
+       "slot_end": 17.469,
+       "slot_s": 1.389,
+       "en_s": 1.13
+      },
+      {
+       "id": "mo02-question.c1.s2",
+       "text": "Did you know that most money today isn't paper, or metal, or anything you could ever hold?",
+       "start": 17.589,
+       "end": 22.84,
+       "slot_end": 23.518,
+       "slot_s": 5.929,
+       "en_s": 5.251
+      },
+      {
+       "id": "mo02-question.c1.s3",
+       "text": "So what is it, actually?",
+       "start": 23.638,
+       "end": 24.66,
+       "slot_end": 33.78,
+       "slot_s": 10.142,
+       "en_s": 1.022
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo00-welcome",
+   "start": 33.9,
+   "dur": 16.771,
+   "chunks": [
+    {
+     "id": "mo00-welcome.c1",
+     "text": "Welcome back to Did You Know That. Episode four. You know the rule. Here's your guess. In Britain, out of every hundred pounds people have, how many exist as real notes and coins? Guess in the comments, right now. Then stay to the end, and check your guess.",
+     "sentences": [
+      {
+       "id": "mo00-welcome.c1.s1",
+       "text": "Welcome back to Did You Know That.",
+       "start": 33.9,
+       "end": 35.42,
+       "slot_end": 35.777,
+       "slot_s": 1.877,
+       "en_s": 1.52
+      },
+      {
+       "id": "mo00-welcome.c1.s2",
+       "text": "Episode four.",
+       "start": 35.897,
+       "end": 36.77,
+       "slot_end": 36.95,
+       "slot_s": 1.053,
+       "en_s": 0.873
+      },
+      {
+       "id": "mo00-welcome.c1.s3",
+       "text": "You know the rule.",
+       "start": 37.07,
+       "end": 37.923,
+       "slot_end": 38.274,
+       "slot_s": 1.204,
+       "en_s": 0.853
+      },
+      {
+       "id": "mo00-welcome.c1.s4",
+       "text": "Here's your guess.",
+       "start": 38.394,
+       "end": 39.323,
+       "slot_end": 39.632,
+       "slot_s": 1.238,
+       "en_s": 0.929
+      },
+      {
+       "id": "mo00-welcome.c1.s5",
+       "text": "In Britain, out of every hundred pounds people have, how many exist as real notes and coins?",
+       "start": 39.752,
+       "end": 44.943,
+       "slot_end": 46.034,
+       "slot_s": 6.282,
+       "en_s": 5.191
+      },
+      {
+       "id": "mo00-welcome.c1.s6",
+       "text": "Guess in the comments, right now.",
+       "start": 46.154,
+       "end": 47.853,
+       "slot_end": 48.101,
+       "slot_s": 1.947,
+       "en_s": 1.699
+      },
+      {
+       "id": "mo00-welcome.c1.s7",
+       "text": "Then stay to the end, and check your guess.",
+       "start": 48.221,
+       "end": 50.343,
+       "slot_end": 51.947,
+       "slot_s": 3.726,
+       "en_s": 2.122
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo03-promise",
+   "start": 52.067,
+   "dur": 16.486,
+   "chunks": [
+    {
+     "id": "mo03-promise.c1",
+     "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up somewhere new, with money in your hand. Or on your phone. You start with money you could drink. You end with money that might be nothing but code. And at the end, you'll find out what money really is.",
+     "sentences": [
+      {
+       "id": "mo03-promise.c1.s1",
+       "text": "Seven mornings, from fifteen hundred to twenty one hundred.",
+       "start": 52.067,
+       "end": 54.917,
+       "slot_end": 55.255,
+       "slot_s": 3.188,
+       "en_s": 2.85
+      },
+      {
+       "id": "mo03-promise.c1.s2",
+       "text": "In each one, you wake up somewhere new, with money in your hand.",
+       "start": 55.375,
+       "end": 58.747,
+       "slot_end": 59.168,
+       "slot_s": 3.793,
+       "en_s": 3.372
+      },
+      {
+       "id": "mo03-promise.c1.s3",
+       "text": "Or on your phone.",
+       "start": 59.288,
+       "end": 60.237,
+       "slot_end": 60.445,
+       "slot_s": 1.157,
+       "en_s": 0.949
+      },
+      {
+       "id": "mo03-promise.c1.s4",
+       "text": "You start with money you could drink.",
+       "start": 60.565,
+       "end": 62.197,
+       "slot_end": 62.442,
+       "slot_s": 1.877,
+       "en_s": 1.632
+      },
+      {
+       "id": "mo03-promise.c1.s5",
+       "text": "You end with money that might be nothing but code.",
+       "start": 62.562,
+       "end": 65.197,
+       "slot_end": 65.472,
+       "slot_s": 2.91,
+       "en_s": 2.635
+      },
+      {
+       "id": "mo03-promise.c1.s6",
+       "text": "And at the end, you'll find out what money really is.",
+       "start": 65.592,
+       "end": 68.317,
+       "slot_end": 70.047,
+       "slot_s": 4.455,
+       "en_s": 2.725
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo04-1500",
+   "start": 70.167,
+   "dur": 59.458,
+   "chunks": [
+    {
+     "id": "mo04-1500.c1",
+     "text": "You wake up in fifteen hundred, in Tenochtitlan, the island city of the Aztecs. Canoes bump along the canals. The market's already loud, and it smells of chilli and wood smoke.",
+     "sentences": [
+      {
+       "id": "mo04-1500.c1.s1",
+       "text": "You wake up in fifteen hundred, in Tenochtitlan, the island city of the Aztecs.",
+       "start": 70.167,
+       "end": 74.627,
+       "slot_end": 74.993,
+       "slot_s": 4.826,
+       "en_s": 4.46
+      },
+      {
+       "id": "mo04-1500.c1.s2",
+       "text": "Canoes bump along the canals.",
+       "start": 75.113,
+       "end": 76.687,
+       "slot_end": 77.013,
+       "slot_s": 1.9,
+       "en_s": 1.574
+      },
+      {
+       "id": "mo04-1500.c1.s3",
+       "text": "The market's already loud, and it smells of chilli and wood smoke.",
+       "start": 77.133,
+       "end": 80.377,
+       "slot_end": 80.992,
+       "slot_s": 3.859,
+       "en_s": 3.244
+      }
+     ]
+    },
+    {
+     "id": "mo04-1500.c2",
+     "text": "Did you know that here, money grows on trees? Cacao beans. The same beans that make chocolate.",
+     "sentences": [
+      {
+       "id": "mo04-1500.c2.s1",
+       "text": "Did you know that here, money grows on trees?",
+       "start": 81.112,
+       "end": 83.312,
+       "slot_end": 84.116,
+       "slot_s": 3.004,
+       "en_s": 2.2
+      },
+      {
+       "id": "mo04-1500.c2.s2",
+       "text": "Cacao beans.",
+       "start": 84.236,
+       "end": 85.072,
+       "slot_end": 85.463,
+       "slot_s": 1.227,
+       "en_s": 0.836
+      },
+      {
+       "id": "mo04-1500.c2.s3",
+       "text": "The same beans that make chocolate.",
+       "start": 85.583,
+       "end": 87.232,
+       "slot_end": 87.676,
+       "slot_s": 2.093,
+       "en_s": 1.649
+      }
+     ]
+    },
+    {
+     "id": "mo04-1500.c3",
+     "text": "A price list from a few decades later says it plainly. One ripe avocado, one bean. A good turkey hen, a hundred. Bigger deals get paid in cotton cloaks. And a Spanish friar wrote about sellers who faked cacao beans. Forgery. With chocolate.",
+     "sentences": [
+      {
+       "id": "mo04-1500.c3.s1",
+       "text": "A price list from a few decades later says it plainly.",
+       "start": 87.796,
+       "end": 90.546,
+       "slot_end": 91.206,
+       "slot_s": 3.41,
+       "en_s": 2.75
+      },
+      {
+       "id": "mo04-1500.c3.s2",
+       "text": "One ripe avocado, one bean.",
+       "start": 91.326,
+       "end": 93.056,
+       "slot_end": 93.272,
+       "slot_s": 1.946,
+       "en_s": 1.73
+      },
+      {
+       "id": "mo04-1500.c3.s3",
+       "text": "A good turkey hen, a hundred.",
+       "start": 93.392,
+       "end": 95.336,
+       "slot_end": 95.687,
+       "slot_s": 2.295,
+       "en_s": 1.944
+      },
+      {
+       "id": "mo04-1500.c3.s4",
+       "text": "Bigger deals get paid in cotton cloaks.",
+       "start": 95.807,
+       "end": 97.576,
+       "slot_end": 97.986,
+       "slot_s": 2.179,
+       "en_s": 1.769
+      },
+      {
+       "id": "mo04-1500.c3.s5",
+       "text": "And a Spanish friar wrote about sellers who faked cacao beans.",
+       "start": 98.106,
+       "end": 101.336,
+       "slot_end": 101.539,
+       "slot_s": 3.433,
+       "en_s": 3.23
+      },
+      {
+       "id": "mo04-1500.c3.s6",
+       "text": "Forgery.",
+       "start": 101.659,
+       "end": 102.216,
+       "slot_end": 102.398,
+       "slot_s": 0.739,
+       "en_s": 0.557
+      },
+      {
+       "id": "mo04-1500.c3.s7",
+       "text": "With chocolate.",
+       "start": 102.518,
+       "end": 103.166,
+       "slot_end": 103.576,
+       "slot_s": 1.058,
+       "en_s": 0.648
+      }
+     ]
+    },
+    {
+     "id": "mo04-1500.c4",
+     "text": "So what is money to you? Something useful. Something you could even drink. You might have heard that money was invented because swapping goats for grain got awkward. Anthropologists say they've never found a whole society that ran on barter alone. People have always found something to count with.",
+     "sentences": [
+      {
+       "id": "mo04-1500.c4.s1",
+       "text": "So what is money to you?",
+       "start": 103.696,
+       "end": 104.976,
+       "slot_end": 105.506,
+       "slot_s": 1.81,
+       "en_s": 1.28
+      },
+      {
+       "id": "mo04-1500.c4.s2",
+       "text": "Something useful.",
+       "start": 105.626,
+       "end": 106.528,
+       "slot_end": 106.806,
+       "slot_s": 1.18,
+       "en_s": 0.902
+      },
+      {
+       "id": "mo04-1500.c4.s3",
+       "text": "Something you could even drink.",
+       "start": 106.926,
+       "end": 108.238,
+       "slot_end": 108.652,
+       "slot_s": 1.726,
+       "en_s": 1.312
+      },
+      {
+       "id": "mo04-1500.c4.s4",
+       "text": "You might have heard that money was invented because swapping goats for grain got awkward.",
+       "start": 108.772,
+       "end": 113.018,
+       "slot_end": 113.574,
+       "slot_s": 4.802,
+       "en_s": 4.246
+      },
+      {
+       "id": "mo04-1500.c4.s5",
+       "text": "Anthropologists say they've never found a whole society that ran on barter alone.",
+       "start": 113.694,
+       "end": 118.318,
+       "slot_end": 118.729,
+       "slot_s": 5.035,
+       "en_s": 4.624
+      },
+      {
+       "id": "mo04-1500.c4.s6",
+       "text": "People have always found something to count with.",
+       "start": 118.849,
+       "end": 121.008,
+       "slot_end": 121.418,
+       "slot_s": 2.569,
+       "en_s": 2.159
+      }
+     ]
+    },
+    {
+     "id": "mo04-1500.c5",
+     "text": "But beans are bulky, and they rot. Across the ocean, one country's money has the opposite problem. It's so heavy, you need a cart.",
+     "sentences": [
+      {
+       "id": "mo04-1500.c5.s1",
+       "text": "But beans are bulky, and they rot.",
+       "start": 121.538,
+       "end": 123.408,
+       "slot_end": 124.054,
+       "slot_s": 2.516,
+       "en_s": 1.87
+      },
+      {
+       "id": "mo04-1500.c5.s2",
+       "text": "Across the ocean, one country's money has the opposite problem.",
+       "start": 124.174,
+       "end": 127.178,
+       "slot_end": 127.358,
+       "slot_s": 3.184,
+       "en_s": 3.004
+      },
+      {
+       "id": "mo04-1500.c5.s3",
+       "text": "It's so heavy, you need a cart.",
+       "start": 127.478,
+       "end": 129.381,
+       "slot_end": 131.213,
+       "slot_s": 3.735,
+       "en_s": 1.903
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo05-1661",
+   "start": 131.333,
+   "dur": 63.658,
+   "chunks": [
+    {
+     "id": "mo05-1661.c1",
+     "text": "You wake up in sixteen sixty one, in Stockholm. The harbour's frozen, and a sledge scrapes past your window, loaded with copper.",
+     "sentences": [
+      {
+       "id": "mo05-1661.c1.s1",
+       "text": "You wake up in sixteen sixty one, in Stockholm.",
+       "start": 131.333,
+       "end": 134.423,
+       "slot_end": 134.8,
+       "slot_s": 3.467,
+       "en_s": 3.09
+      },
+      {
+       "id": "mo05-1661.c1.s2",
+       "text": "The harbour's frozen, and a sledge scrapes past your window, loaded with copper.",
+       "start": 134.92,
+       "end": 139.243,
+       "slot_end": 139.683,
+       "slot_s": 4.763,
+       "en_s": 4.323
+      }
+     ]
+    },
+    {
+     "id": "mo05-1661.c2",
+     "text": "Did you know that Sweden's biggest coin weighed almost twenty kilos? It's a copper plate. You don't put it in your pocket.",
+     "sentences": [
+      {
+       "id": "mo05-1661.c2.s1",
+       "text": "Did you know that Sweden's biggest coin weighed almost twenty kilos?",
+       "start": 139.803,
+       "end": 143.093,
+       "slot_end": 143.797,
+       "slot_s": 3.994,
+       "en_s": 3.29
+      },
+      {
+       "id": "mo05-1661.c2.s2",
+       "text": "It's a copper plate.",
+       "start": 143.917,
+       "end": 145.02,
+       "slot_end": 145.67,
+       "slot_s": 1.753,
+       "en_s": 1.103
+      },
+      {
+       "id": "mo05-1661.c2.s3",
+       "text": "You don't put it in your pocket.",
+       "start": 145.79,
+       "end": 147.067,
+       "slot_end": 147.441,
+       "slot_s": 1.651,
+       "en_s": 1.277
+      }
+     ]
+    },
+    {
+     "id": "mo05-1661.c3",
+     "text": "You put it on a cart. So a banker called Johan Palmstruch has an idea. Leave your copper at his bank, and take a sheet of paper instead. It says your copper is waiting for you. These are the first real banknotes in Europe.",
+     "sentences": [
+      {
+       "id": "mo05-1661.c3.s1",
+       "text": "You put it on a cart.",
+       "start": 147.561,
+       "end": 148.551,
+       "slot_end": 149.017,
+       "slot_s": 1.456,
+       "en_s": 0.99
+      },
+      {
+       "id": "mo05-1661.c3.s2",
+       "text": "So a banker called Johan Palmstruch has an idea.",
+       "start": 149.137,
+       "end": 152.618,
+       "slot_end": 153.438,
+       "slot_s": 4.301,
+       "en_s": 3.481
+      },
+      {
+       "id": "mo05-1661.c3.s3",
+       "text": "Leave your copper at his bank, and take a sheet of paper instead.",
+       "start": 153.558,
+       "end": 157.025,
+       "slot_end": 157.627,
+       "slot_s": 4.069,
+       "en_s": 3.467
+      },
+      {
+       "id": "mo05-1661.c3.s4",
+       "text": "It says your copper is waiting for you.",
+       "start": 157.747,
+       "end": 159.622,
+       "slot_end": 160.178,
+       "slot_s": 2.431,
+       "en_s": 1.875
+      },
+      {
+       "id": "mo05-1661.c3.s5",
+       "text": "These are the first real banknotes in Europe.",
+       "start": 160.298,
+       "end": 162.679,
+       "slot_end": 163.052,
+       "slot_s": 2.754,
+       "en_s": 2.381
+      }
+     ]
+    },
+    {
+     "id": "mo05-1661.c4",
+     "text": "So what is money now? A promise. Written on paper. Remember that word, promise. It comes back at the end.",
+     "sentences": [
+      {
+       "id": "mo05-1661.c4.s1",
+       "text": "So what is money now?",
+       "start": 163.172,
+       "end": 164.182,
+       "slot_end": 164.957,
+       "slot_s": 1.785,
+       "en_s": 1.01
+      },
+      {
+       "id": "mo05-1661.c4.s2",
+       "text": "A promise.",
+       "start": 165.077,
+       "end": 165.722,
+       "slot_end": 166.223,
+       "slot_s": 1.146,
+       "en_s": 0.645
+      },
+      {
+       "id": "mo05-1661.c4.s3",
+       "text": "Written on paper.",
+       "start": 166.343,
+       "end": 167.192,
+       "slot_end": 167.732,
+       "slot_s": 1.389,
+       "en_s": 0.849
+      },
+      {
+       "id": "mo05-1661.c4.s4",
+       "text": "Remember that word, promise.",
+       "start": 167.852,
+       "end": 169.202,
+       "slot_end": 169.439,
+       "slot_s": 1.587,
+       "en_s": 1.35
+      },
+      {
+       "id": "mo05-1661.c4.s5",
+       "text": "It comes back at the end.",
+       "start": 169.559,
+       "end": 170.732,
+       "slot_end": 171.128,
+       "slot_s": 1.569,
+       "en_s": 1.173
+      }
+     ]
+    },
+    {
+     "id": "mo05-1661.c5",
+     "text": "People love the notes. So the bank prints more, and lends more, than it has copper to pay back. When people come for their copper, it isn't there. The bank fails. Palmstruch is sentenced to death. He's spared, and dies a few years later.",
+     "sentences": [
+      {
+       "id": "mo05-1661.c5.s1",
+       "text": "People love the notes.",
+       "start": 171.248,
+       "end": 172.288,
+       "slot_end": 172.748,
+       "slot_s": 1.5,
+       "en_s": 1.04
+      },
+      {
+       "id": "mo05-1661.c5.s2",
+       "text": "So the bank prints more, and lends more, than it has copper to pay back.",
+       "start": 172.868,
+       "end": 177.185,
+       "slot_end": 177.677,
+       "slot_s": 4.809,
+       "en_s": 4.317
+      },
+      {
+       "id": "mo05-1661.c5.s3",
+       "text": "When people come for their copper, it isn't there.",
+       "start": 177.797,
+       "end": 180.372,
+       "slot_end": 180.887,
+       "slot_s": 3.09,
+       "en_s": 2.575
+      },
+      {
+       "id": "mo05-1661.c5.s4",
+       "text": "The bank fails.",
+       "start": 181.007,
+       "end": 181.909,
+       "slot_end": 182.484,
+       "slot_s": 1.477,
+       "en_s": 0.902
+      },
+      {
+       "id": "mo05-1661.c5.s5",
+       "text": "Palmstruch is sentenced to death.",
+       "start": 182.604,
+       "end": 183.936,
+       "slot_end": 184.546,
+       "slot_s": 1.942,
+       "en_s": 1.332
+      },
+      {
+       "id": "mo05-1661.c5.s6",
+       "text": "He's spared, and dies a few years later.",
+       "start": 184.666,
+       "end": 186.523,
+       "slot_end": 186.956,
+       "slot_s": 2.29,
+       "en_s": 1.857
+      }
+     ]
+    },
+    {
+     "id": "mo05-1661.c6",
+     "text": "Paper only works while people believe in it. And in the next century, one man will push that belief further than anyone ever had.",
+     "sentences": [
+      {
+       "id": "mo05-1661.c6.s1",
+       "text": "Paper only works while people believe in it.",
+       "start": 187.076,
+       "end": 189.426,
+       "slot_end": 190.261,
+       "slot_s": 3.185,
+       "en_s": 2.35
+      },
+      {
+       "id": "mo05-1661.c6.s2",
+       "text": "And in the next century, one man will push that belief further than anyone ever had.",
+       "start": 190.381,
+       "end": 194.726,
+       "slot_end": 196.58,
+       "slot_s": 6.199,
+       "en_s": 4.345
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo06-1720",
+   "start": 196.7,
+   "dur": 64.825,
+   "chunks": [
+    {
+     "id": "mo06-1720.c1",
+     "text": "You wake up in seventeen twenty, in Paris. The street smells of horses, and everyone's talking about paper.",
+     "sentences": [
+      {
+       "id": "mo06-1720.c1.s1",
+       "text": "You wake up in seventeen twenty, in Paris.",
+       "start": 196.7,
+       "end": 199.03,
+       "slot_end": 199.331,
+       "slot_s": 2.631,
+       "en_s": 2.33
+      },
+      {
+       "id": "mo06-1720.c1.s2",
+       "text": "The street smells of horses, and everyone's talking about paper.",
+       "start": 199.451,
+       "end": 202.89,
+       "slot_end": 203.285,
+       "slot_s": 3.834,
+       "en_s": 3.439
+      }
+     ]
+    },
+    {
+     "id": "mo06-1720.c2",
+     "text": "Did you know that this year, France made it illegal to own more than five hundred livres in gold or silver? The government wanted you to trust paper. By law.",
+     "sentences": [
+      {
+       "id": "mo06-1720.c2.s1",
+       "text": "Did you know that this year, France made it illegal to own more than five hundred livres in gold or silver?",
+       "start": 203.405,
+       "end": 209.155,
+       "slot_end": 209.986,
+       "slot_s": 6.581,
+       "en_s": 5.75
+      },
+      {
+       "id": "mo06-1720.c2.s2",
+       "text": "The government wanted you to trust paper.",
+       "start": 210.106,
+       "end": 211.985,
+       "slot_end": 212.377,
+       "slot_s": 2.271,
+       "en_s": 1.879
+      },
+      {
+       "id": "mo06-1720.c2.s3",
+       "text": "By law.",
+       "start": 212.497,
+       "end": 213.045,
+       "slot_end": 213.498,
+       "slot_s": 1.001,
+       "en_s": 0.548
+      }
+     ]
+    },
+    {
+     "id": "mo06-1720.c3",
+     "text": "The man behind it is John Law. A Scottish gambler. Like Palmstruch, he was once sentenced to death, for killing a man in a duel. Now he runs France's money.",
+     "sentences": [
+      {
+       "id": "mo06-1720.c3.s1",
+       "text": "The man behind it is John Law.",
+       "start": 213.618,
+       "end": 215.338,
+       "slot_end": 215.704,
+       "slot_s": 2.086,
+       "en_s": 1.72
+      },
+      {
+       "id": "mo06-1720.c3.s2",
+       "text": "A Scottish gambler.",
+       "start": 215.824,
+       "end": 216.998,
+       "slot_end": 217.341,
+       "slot_s": 1.517,
+       "en_s": 1.174
+      },
+      {
+       "id": "mo06-1720.c3.s3",
+       "text": "Like Palmstruch, he was once sentenced to death, for killing a man in a duel.",
+       "start": 217.461,
+       "end": 221.598,
+       "slot_end": 222.008,
+       "slot_s": 4.547,
+       "en_s": 4.137
+      },
+      {
+       "id": "mo06-1720.c3.s4",
+       "text": "Now he runs France's money.",
+       "start": 222.128,
+       "end": 223.578,
+       "slot_end": 223.919,
+       "slot_s": 1.791,
+       "en_s": 1.45
+      }
+     ]
+    },
+    {
+     "id": "mo06-1720.c4",
+     "text": "One narrow street is packed, day and night. People are buying shares in Law's Mississippi Company. In about a year and a half, the price has gone up about forty times. The story goes that a hunchback rents out his back, as a writing desk.",
+     "sentences": [
+      {
+       "id": "mo06-1720.c4.s1",
+       "text": "One narrow street is packed, day and night.",
+       "start": 224.039,
+       "end": 226.219,
+       "slot_end": 227.098,
+       "slot_s": 3.059,
+       "en_s": 2.18
+      },
+      {
+       "id": "mo06-1720.c4.s2",
+       "text": "People are buying shares in Law's Mississippi Company.",
+       "start": 227.218,
+       "end": 229.876,
+       "slot_end": 230.881,
+       "slot_s": 3.663,
+       "en_s": 2.658
+      },
+      {
+       "id": "mo06-1720.c4.s3",
+       "text": "In about a year and a half, the price has gone up about forty times.",
+       "start": 231.001,
+       "end": 234.793,
+       "slot_end": 235.685,
+       "slot_s": 4.684,
+       "en_s": 3.792
+      },
+      {
+       "id": "mo06-1720.c4.s4",
+       "text": "The story goes that a hunchback rents out his back, as a writing desk.",
+       "start": 235.805,
+       "end": 239.64,
+       "slot_end": 240.056,
+       "slot_s": 4.251,
+       "en_s": 3.835
+      }
+     ]
+    },
+    {
+     "id": "mo06-1720.c5",
+     "text": "So what is money now? A belief. It's worth whatever everyone believes it's worth. Until they don't. By December, the shares have crashed. The notes are losing value. And Law escapes France.",
+     "sentences": [
+      {
+       "id": "mo06-1720.c5.s1",
+       "text": "So what is money now?",
+       "start": 240.176,
+       "end": 241.29,
+       "slot_end": 241.72,
+       "slot_s": 1.544,
+       "en_s": 1.114
+      },
+      {
+       "id": "mo06-1720.c5.s2",
+       "text": "A belief.",
+       "start": 241.84,
+       "end": 242.429,
+       "slot_end": 242.649,
+       "slot_s": 0.809,
+       "en_s": 0.589
+      },
+      {
+       "id": "mo06-1720.c5.s3",
+       "text": "It's worth whatever everyone believes it's worth.",
+       "start": 242.769,
+       "end": 245.259,
+       "slot_end": 245.516,
+       "slot_s": 2.747,
+       "en_s": 2.49
+      },
+      {
+       "id": "mo06-1720.c5.s4",
+       "text": "Until they don't.",
+       "start": 245.636,
+       "end": 246.509,
+       "slot_end": 247.084,
+       "slot_s": 1.448,
+       "en_s": 0.873
+      },
+      {
+       "id": "mo06-1720.c5.s5",
+       "text": "By December, the shares have crashed.",
+       "start": 247.204,
+       "end": 248.929,
+       "slot_end": 249.22,
+       "slot_s": 2.016,
+       "en_s": 1.725
+      },
+      {
+       "id": "mo06-1720.c5.s6",
+       "text": "The notes are losing value.",
+       "start": 249.34,
+       "end": 250.749,
+       "slot_end": 250.929,
+       "slot_s": 1.589,
+       "en_s": 1.409
+      },
+      {
+       "id": "mo06-1720.c5.s7",
+       "text": "And Law escapes France.",
+       "start": 251.049,
+       "end": 252.379,
+       "slot_end": 252.758,
+       "slot_s": 1.709,
+       "en_s": 1.33
+      }
+     ]
+    },
+    {
+     "id": "mo06-1720.c6",
+     "text": "For the next hundred years, people want money they don't just have to believe in. Something they can bite. And in London, they get it.",
+     "sentences": [
+      {
+       "id": "mo06-1720.c6.s1",
+       "text": "For the next hundred years, people want money they don't just have to believe in.",
+       "start": 252.878,
+       "end": 256.828,
+       "slot_end": 257.882,
+       "slot_s": 5.004,
+       "en_s": 3.95
+      },
+      {
+       "id": "mo06-1720.c6.s2",
+       "text": "Something they can bite.",
+       "start": 258.002,
+       "end": 259.13,
+       "slot_end": 259.895,
+       "slot_s": 1.893,
+       "en_s": 1.128
+      },
+      {
+       "id": "mo06-1720.c6.s3",
+       "text": "And in London, they get it.",
+       "start": 260.015,
+       "end": 261.212,
+       "slot_end": 263.113,
+       "slot_s": 3.098,
+       "en_s": 1.197
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo07-1821",
+   "start": 263.233,
+   "dur": 52.63,
+   "chunks": [
+    {
+     "id": "mo07-1821.c1",
+     "text": "You wake up in eighteen twenty one, in London. Coal smoke, wet cobbles, and a queue outside the Bank of England.",
+     "sentences": [
+      {
+       "id": "mo07-1821.c1.s1",
+       "text": "You wake up in eighteen twenty one, in London.",
+       "start": 263.233,
+       "end": 265.653,
+       "slot_end": 266.143,
+       "slot_s": 2.91,
+       "en_s": 2.42
+      },
+      {
+       "id": "mo07-1821.c1.s2",
+       "text": "Coal smoke, wet cobbles, and a queue outside the Bank of England.",
+       "start": 266.263,
+       "end": 270.473,
+       "slot_end": 270.84,
+       "slot_s": 4.577,
+       "en_s": 4.21
+      }
+     ]
+    },
+    {
+     "id": "mo07-1821.c2",
+     "text": "Did you know that Bank of England notes still say, I promise to pay the bearer on demand? Back then, that promise meant gold. A five pound note could be swapped for five gold coins. Sovereigns.",
+     "sentences": [
+      {
+       "id": "mo07-1821.c2.s1",
+       "text": "Did you know that Bank of England notes still say, I promise to pay the bearer on demand?",
+       "start": 270.96,
+       "end": 275.78,
+       "slot_end": 276.573,
+       "slot_s": 5.613,
+       "en_s": 4.82
+      },
+      {
+       "id": "mo07-1821.c2.s2",
+       "text": "Back then, that promise meant gold.",
+       "start": 276.693,
+       "end": 278.58,
+       "slot_end": 278.814,
+       "slot_s": 2.121,
+       "en_s": 1.887
+      },
+      {
+       "id": "mo07-1821.c2.s3",
+       "text": "A five pound note could be swapped for five gold coins.",
+       "start": 278.934,
+       "end": 282.16,
+       "slot_end": 282.471,
+       "slot_s": 3.537,
+       "en_s": 3.226
+      },
+      {
+       "id": "mo07-1821.c2.s4",
+       "text": "Sovereigns.",
+       "start": 282.591,
+       "end": 283.19,
+       "slot_end": 283.557,
+       "slot_s": 0.966,
+       "en_s": 0.599
+      }
+     ]
+    },
+    {
+     "id": "mo07-1821.c3",
+     "text": "For twenty four years, through the wars with France, the Bank had stopped paying out gold. Paper took over. So did counterfeiters, and many of them were hanged. Now the Bank is paying gold again. Paper you can turn into metal, any day you like.",
+     "sentences": [
+      {
+       "id": "mo07-1821.c3.s1",
+       "text": "For twenty four years, through the wars with France, the Bank had stopped paying out gold.",
+       "start": 283.677,
+       "end": 288.007,
+       "slot_end": 288.545,
+       "slot_s": 4.868,
+       "en_s": 4.33
+      },
+      {
+       "id": "mo07-1821.c3.s2",
+       "text": "Paper took over.",
+       "start": 288.665,
+       "end": 289.625,
+       "slot_end": 290.421,
+       "slot_s": 1.756,
+       "en_s": 0.96
+      },
+      {
+       "id": "mo07-1821.c3.s3",
+       "text": "So did counterfeiters, and many of them were hanged.",
+       "start": 290.541,
+       "end": 292.933,
+       "slot_end": 293.273,
+       "slot_s": 2.732,
+       "en_s": 2.392
+      },
+      {
+       "id": "mo07-1821.c3.s4",
+       "text": "Now the Bank is paying gold again.",
+       "start": 293.393,
+       "end": 294.941,
+       "slot_end": 295.672,
+       "slot_s": 2.279,
+       "en_s": 1.548
+      },
+      {
+       "id": "mo07-1821.c3.s5",
+       "text": "Paper you can turn into metal, any day you like.",
+       "start": 295.792,
+       "end": 298.299,
+       "slot_end": 298.696,
+       "slot_s": 2.904,
+       "en_s": 2.507
+      }
+     ]
+    },
+    {
+     "id": "mo07-1821.c4",
+     "text": "So what is money now? As good as gold. A promise you can swap for metal. Over the next century, much of the world follows Britain onto gold. Gold becomes the anchor. And anchors feel safe. But in nineteen seventy one, one television speech cuts the rope.",
+     "sentences": [
+      {
+       "id": "mo07-1821.c4.s1",
+       "text": "So what is money now?",
+       "start": 298.816,
+       "end": 299.866,
+       "slot_end": 300.532,
+       "slot_s": 1.716,
+       "en_s": 1.05
+      },
+      {
+       "id": "mo07-1821.c4.s2",
+       "text": "As good as gold.",
+       "start": 300.652,
+       "end": 301.576,
+       "slot_end": 301.844,
+       "slot_s": 1.192,
+       "en_s": 0.924
+      },
+      {
+       "id": "mo07-1821.c4.s3",
+       "text": "A promise you can swap for metal.",
+       "start": 301.964,
+       "end": 303.616,
+       "slot_end": 304.166,
+       "slot_s": 2.202,
+       "en_s": 1.652
+      },
+      {
+       "id": "mo07-1821.c4.s4",
+       "text": "Over the next century, much of the world follows Britain onto gold.",
+       "start": 304.286,
+       "end": 307.396,
+       "slot_end": 307.882,
+       "slot_s": 3.596,
+       "en_s": 3.11
+      },
+      {
+       "id": "mo07-1821.c4.s5",
+       "text": "Gold becomes the anchor.",
+       "start": 308.002,
+       "end": 309.256,
+       "slot_end": 309.554,
+       "slot_s": 1.552,
+       "en_s": 1.254
+      },
+      {
+       "id": "mo07-1821.c4.s6",
+       "text": "And anchors feel safe.",
+       "start": 309.674,
+       "end": 310.906,
+       "slot_end": 311.842,
+       "slot_s": 2.168,
+       "en_s": 1.232
+      },
+      {
+       "id": "mo07-1821.c4.s7",
+       "text": "But in nineteen seventy one, one television speech cuts the rope.",
+       "start": 311.962,
+       "end": 315.616,
+       "slot_end": 317.447,
+       "slot_s": 5.485,
+       "en_s": 3.654
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo08-1971",
+   "start": 317.567,
+   "dur": 52.454,
+   "chunks": [
+    {
+     "id": "mo08-1971.c1",
+     "text": "You wake up in nineteen seventy one, in a suburb of Pittsburgh. It's a Sunday evening in August, and the whole family's in front of the TV.",
+     "sentences": [
+      {
+       "id": "mo08-1971.c1.s1",
+       "text": "You wake up in nineteen seventy one, in a suburb of Pittsburgh.",
+       "start": 317.567,
+       "end": 320.747,
+       "slot_end": 322.021,
+       "slot_s": 4.454,
+       "en_s": 3.18
+      },
+      {
+       "id": "mo08-1971.c1.s2",
+       "text": "It's a Sunday evening in August, and the whole family's in front of the TV.",
+       "start": 322.141,
+       "end": 325.503,
+       "slot_end": 326.105,
+       "slot_s": 3.964,
+       "en_s": 3.362
+      }
+     ]
+    },
+    {
+     "id": "mo08-1971.c2",
+     "text": "Did you know that in nineteen seventy one, it was illegal for most Americans to own gold coins or bars? It had been since nineteen thirty three.",
+     "sentences": [
+      {
+       "id": "mo08-1971.c2.s1",
+       "text": "Did you know that in nineteen seventy one, it was illegal for most Americans to own gold coins or bars?",
+       "start": 326.225,
+       "end": 332.135,
+       "slot_end": 332.885,
+       "slot_s": 6.66,
+       "en_s": 5.91
+      },
+      {
+       "id": "mo08-1971.c2.s2",
+       "text": "It had been since nineteen thirty three.",
+       "start": 333.005,
+       "end": 334.955,
+       "slot_end": 335.318,
+       "slot_s": 2.313,
+       "en_s": 1.95
+      }
+     ]
+    },
+    {
+     "id": "mo08-1971.c3",
+     "text": "Gold was for governments. Since nineteen forty four, they could swap dollars for American gold, at thirty five dollars an ounce. The dollar was tied to gold, and most other money was tied to the dollar.",
+     "sentences": [
+      {
+       "id": "mo08-1971.c3.s1",
+       "text": "Gold was for governments.",
+       "start": 335.438,
+       "end": 336.958,
+       "slot_end": 337.315,
+       "slot_s": 1.877,
+       "en_s": 1.52
+      },
+      {
+       "id": "mo08-1971.c3.s2",
+       "text": "Since nineteen forty four, they could swap dollars for American gold, at thirty five dollars an ounce.",
+       "start": 337.435,
+       "end": 342.798,
+       "slot_end": 343.201,
+       "slot_s": 5.766,
+       "en_s": 5.363
+      },
+      {
+       "id": "mo08-1971.c3.s3",
+       "text": "The dollar was tied to gold, and most other money was tied to the dollar.",
+       "start": 343.321,
+       "end": 346.628,
+       "slot_end": 347.038,
+       "slot_s": 3.717,
+       "en_s": 3.307
+      }
+     ]
+    },
+    {
+     "id": "mo08-1971.c4",
+     "text": "That evening, President Nixon comes on. From now on, foreign governments can't swap their dollars for gold. Within a few years, the whole system's gone.",
+     "sentences": [
+      {
+       "id": "mo08-1971.c4.s1",
+       "text": "That evening, President Nixon comes on.",
+       "start": 347.158,
+       "end": 349.288,
+       "slot_end": 349.615,
+       "slot_s": 2.457,
+       "en_s": 2.13
+      },
+      {
+       "id": "mo08-1971.c4.s2",
+       "text": "From now on, foreign governments can't swap their dollars for gold.",
+       "start": 349.735,
+       "end": 352.738,
+       "slot_end": 353.017,
+       "slot_s": 3.282,
+       "en_s": 3.003
+      },
+      {
+       "id": "mo08-1971.c4.s3",
+       "text": "Within a few years, the whole system's gone.",
+       "start": 353.137,
+       "end": 355.118,
+       "slot_end": 355.462,
+       "slot_s": 2.325,
+       "en_s": 1.981
+      }
+     ]
+    },
+    {
+     "id": "mo08-1971.c5",
+     "text": "So what is money now? A promise backed by trust. Trust in the people who run it.",
+     "sentences": [
+      {
+       "id": "mo08-1971.c5.s1",
+       "text": "So what is money now?",
+       "start": 355.582,
+       "end": 356.652,
+       "slot_end": 357.484,
+       "slot_s": 1.902,
+       "en_s": 1.07
+      },
+      {
+       "id": "mo08-1971.c5.s2",
+       "text": "A promise backed by trust.",
+       "start": 357.604,
+       "end": 359.172,
+       "slot_end": 359.655,
+       "slot_s": 2.051,
+       "en_s": 1.568
+      },
+      {
+       "id": "mo08-1971.c5.s3",
+       "text": "Trust in the people who run it.",
+       "start": 359.775,
+       "end": 361.112,
+       "slot_end": 361.588,
+       "slot_s": 1.813,
+       "en_s": 1.337
+      }
+     ]
+    },
+    {
+     "id": "mo08-1971.c6",
+     "text": "And a generation later, that trust takes a new shape. Money doesn't need paper at all. In Kenya, it moves into a text message.",
+     "sentences": [
+      {
+       "id": "mo08-1971.c6.s1",
+       "text": "And a generation later, that trust takes a new shape.",
+       "start": 361.708,
+       "end": 364.488,
+       "slot_end": 364.909,
+       "slot_s": 3.201,
+       "en_s": 2.78
+      },
+      {
+       "id": "mo08-1971.c6.s2",
+       "text": "Money doesn't need paper at all.",
+       "start": 365.029,
+       "end": 366.708,
+       "slot_end": 367.08,
+       "slot_s": 2.051,
+       "en_s": 1.679
+      },
+      {
+       "id": "mo08-1971.c6.s3",
+       "text": "In Kenya, it moves into a text message.",
+       "start": 367.2,
+       "end": 369.748,
+       "slot_end": 371.613,
+       "slot_s": 4.413,
+       "en_s": 2.548
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo09-today",
+   "start": 371.733,
+   "dur": 54.035,
+   "chunks": [
+    {
+     "id": "mo09-today.c1",
+     "text": "You wake up today, in Nairobi. Matatus honk on the road outside, and your phone buzzes. Your sister just sent you money, from a village far upcountry. It took seconds.",
+     "sentences": [
+      {
+       "id": "mo09-today.c1.s1",
+       "text": "You wake up today, in Nairobi.",
+       "start": 371.733,
+       "end": 373.733,
+       "slot_end": 374.352,
+       "slot_s": 2.619,
+       "en_s": 2.0
+      },
+      {
+       "id": "mo09-today.c1.s2",
+       "text": "Matatus honk on the road outside, and your phone buzzes.",
+       "start": 374.472,
+       "end": 377.063,
+       "slot_end": 377.545,
+       "slot_s": 3.073,
+       "en_s": 2.591
+      },
+      {
+       "id": "mo09-today.c1.s3",
+       "text": "Your sister just sent you money, from a village far upcountry.",
+       "start": 377.665,
+       "end": 381.063,
+       "slot_end": 381.243,
+       "slot_s": 3.578,
+       "en_s": 3.398
+      },
+      {
+       "id": "mo09-today.c1.s4",
+       "text": "It took seconds.",
+       "start": 381.363,
+       "end": 382.229,
+       "slot_end": 382.797,
+       "slot_s": 1.434,
+       "en_s": 0.866
+      }
+     ]
+    },
+    {
+     "id": "mo09-today.c2",
+     "text": "Did you know that about eight in ten adults in Kenya now use mobile money? In two thousand and nine, it was under three in ten. M-Pesa launched here in two thousand and seven. You hand cash to a shopkeeper, and it turns into numbers on your phone. School fees and taxi rides get paid with a text.",
+     "sentences": [
+      {
+       "id": "mo09-today.c2.s1",
+       "text": "Did you know that about eight in ten adults in Kenya now use mobile money?",
+       "start": 382.917,
+       "end": 386.357,
+       "slot_end": 387.302,
+       "slot_s": 4.385,
+       "en_s": 3.44
+      },
+      {
+       "id": "mo09-today.c2.s2",
+       "text": "In two thousand and nine, it was under three in ten.",
+       "start": 387.422,
+       "end": 389.808,
+       "slot_end": 390.785,
+       "slot_s": 3.363,
+       "en_s": 2.386
+      },
+      {
+       "id": "mo09-today.c2.s3",
+       "text": "M-Pesa launched here in two thousand and seven.",
+       "start": 390.905,
+       "end": 393.109,
+       "slot_end": 393.87,
+       "slot_s": 2.965,
+       "en_s": 2.204
+      },
+      {
+       "id": "mo09-today.c2.s4",
+       "text": "You hand cash to a shopkeeper, and it turns into numbers on your phone.",
+       "start": 393.99,
+       "end": 398.068,
+       "slot_end": 398.897,
+       "slot_s": 4.907,
+       "en_s": 4.078
+      },
+      {
+       "id": "mo09-today.c2.s5",
+       "text": "School fees and taxi rides get paid with a text.",
+       "start": 399.017,
+       "end": 401.549,
+       "slot_end": 401.945,
+       "slot_s": 2.928,
+       "en_s": 2.532
+      }
+     ]
+    },
+    {
+     "id": "mo09-today.c3",
+     "text": "And it isn't just Kenya. Across the euro area, cash paid for about eight in ten shop purchases in twenty sixteen. By twenty twenty four, it was about half.",
+     "sentences": [
+      {
+       "id": "mo09-today.c3.s1",
+       "text": "And it isn't just Kenya.",
+       "start": 402.065,
+       "end": 403.515,
+       "slot_end": 403.744,
+       "slot_s": 1.679,
+       "en_s": 1.45
+      },
+      {
+       "id": "mo09-today.c3.s2",
+       "text": "Across the euro area, cash paid for about eight in ten shop purchases in twenty sixteen.",
+       "start": 403.864,
+       "end": 409.295,
+       "slot_end": 409.956,
+       "slot_s": 6.092,
+       "en_s": 5.431
+      },
+      {
+       "id": "mo09-today.c3.s3",
+       "text": "By twenty twenty four, it was about half.",
+       "start": 410.076,
+       "end": 412.265,
+       "slot_end": 412.644,
+       "slot_s": 2.568,
+       "en_s": 2.189
+      }
+     ]
+    },
+    {
+     "id": "mo09-today.c4",
+     "text": "So what is money to you? Numbers on a screen. You almost never touch it. So here's the question you came for. If it isn't paper, and it isn't gold, what is money, actually?",
+     "sentences": [
+      {
+       "id": "mo09-today.c4.s1",
+       "text": "So what is money to you?",
+       "start": 412.764,
+       "end": 414.064,
+       "slot_end": 414.677,
+       "slot_s": 1.913,
+       "en_s": 1.3
+      },
+      {
+       "id": "mo09-today.c4.s2",
+       "text": "Numbers on a screen.",
+       "start": 414.797,
+       "end": 415.964,
+       "slot_end": 416.244,
+       "slot_s": 1.447,
+       "en_s": 1.167
+      },
+      {
+       "id": "mo09-today.c4.s3",
+       "text": "You almost never touch it.",
+       "start": 416.364,
+       "end": 417.884,
+       "slot_end": 418.669,
+       "slot_s": 2.305,
+       "en_s": 1.52
+      },
+      {
+       "id": "mo09-today.c4.s4",
+       "text": "So here's the question you came for.",
+       "start": 418.789,
+       "end": 420.594,
+       "slot_end": 420.944,
+       "slot_s": 2.155,
+       "en_s": 1.805
+      },
+      {
+       "id": "mo09-today.c4.s5",
+       "text": "If it isn't paper, and it isn't gold, what is money, actually?",
+       "start": 421.064,
+       "end": 425.534,
+       "slot_end": 427.347,
+       "slot_s": 6.283,
+       "en_s": 4.47
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo10-reveal",
+   "start": 427.467,
+   "dur": 52.867,
+   "chunks": [
+    {
+     "id": "mo10-reveal.c1",
+     "text": "Here's the answer. The Bank of England puts it plainly. Money today is a type of I-O-U. A special one, because everyone trusts that other people will accept it.",
+     "sentences": [
+      {
+       "id": "mo10-reveal.c1.s1",
+       "text": "Here's the answer.",
+       "start": 427.467,
+       "end": 428.207,
+       "slot_end": 428.437,
+       "slot_s": 0.97,
+       "en_s": 0.74
+      },
+      {
+       "id": "mo10-reveal.c1.s2",
+       "text": "The Bank of England puts it plainly.",
+       "start": 428.557,
+       "end": 430.537,
+       "slot_end": 430.991,
+       "slot_s": 2.434,
+       "en_s": 1.98
+      },
+      {
+       "id": "mo10-reveal.c1.s3",
+       "text": "Money today is a type of I-O-U.",
+       "start": 431.111,
+       "end": 433.357,
+       "slot_end": 433.731,
+       "slot_s": 2.62,
+       "en_s": 2.246
+      },
+      {
+       "id": "mo10-reveal.c1.s4",
+       "text": "A special one, because everyone trusts that other people will accept it.",
+       "start": 433.851,
+       "end": 437.607,
+       "slot_end": 437.987,
+       "slot_s": 4.136,
+       "en_s": 3.756
+      }
+     ]
+    },
+    {
+     "id": "mo10-reveal.c2",
+     "text": "And most of it is made by ordinary banks. When a bank gives you a loan, it doesn't hand you someone else's savings. It types a new deposit into your account. Within limits, a loan creates new money.",
+     "sentences": [
+      {
+       "id": "mo10-reveal.c2.s1",
+       "text": "And most of it is made by ordinary banks.",
+       "start": 438.107,
+       "end": 440.307,
+       "slot_end": 440.588,
+       "slot_s": 2.481,
+       "en_s": 2.2
+      },
+      {
+       "id": "mo10-reveal.c2.s2",
+       "text": "When a bank gives you a loan, it doesn't hand you someone else's savings.",
+       "start": 440.708,
+       "end": 444.157,
+       "slot_end": 444.953,
+       "slot_s": 4.245,
+       "en_s": 3.449
+      },
+      {
+       "id": "mo10-reveal.c2.s3",
+       "text": "It types a new deposit into your account.",
+       "start": 445.073,
+       "end": 447.297,
+       "slot_end": 447.763,
+       "slot_s": 2.69,
+       "en_s": 2.224
+      },
+      {
+       "id": "mo10-reveal.c2.s4",
+       "text": "Within limits, a loan creates new money.",
+       "start": 447.883,
+       "end": 450.287,
+       "slot_end": 450.729,
+       "slot_s": 2.846,
+       "en_s": 2.404
+      }
+     ]
+    },
+    {
+     "id": "mo10-reveal.c3",
+     "text": "And your guess? When the Bank of England checked, about ninety seven out of every hundred pounds were bank deposits. Only about three were notes and coins. How close were you?",
+     "sentences": [
+      {
+       "id": "mo10-reveal.c3.s1",
+       "text": "And your guess?",
+       "start": 450.849,
+       "end": 451.559,
+       "slot_end": 452.167,
+       "slot_s": 1.318,
+       "en_s": 0.71
+      },
+      {
+       "id": "mo10-reveal.c3.s2",
+       "text": "When the Bank of England checked, about ninety seven out of every hundred pounds were bank deposits.",
+       "start": 452.287,
+       "end": 457.469,
+       "slot_end": 457.798,
+       "slot_s": 5.511,
+       "en_s": 5.182
+      },
+      {
+       "id": "mo10-reveal.c3.s3",
+       "text": "Only about three were notes and coins.",
+       "start": 457.918,
+       "end": 459.949,
+       "slot_end": 460.179,
+       "slot_s": 2.261,
+       "en_s": 2.031
+      },
+      {
+       "id": "mo10-reveal.c3.s4",
+       "text": "How close were you?",
+       "start": 460.299,
+       "end": 461.153,
+       "slot_end": 461.843,
+       "slot_s": 1.544,
+       "en_s": 0.854
+      }
+     ]
+    },
+    {
+     "id": "mo10-reveal.c4",
+     "text": "Now climb the ladder again, with me. In fifteen hundred, money was something useful. Then, a promise on paper. Then, a belief. Then, as good as gold. Then, trust, and nothing else. Today, numbers on a screen.",
+     "sentences": [
+      {
+       "id": "mo10-reveal.c4.s1",
+       "text": "Now climb the ladder again, with me.",
+       "start": 461.963,
+       "end": 464.183,
+       "slot_end": 464.855,
+       "slot_s": 2.892,
+       "en_s": 2.22
+      },
+      {
+       "id": "mo10-reveal.c4.s2",
+       "text": "In fifteen hundred, money was something useful.",
+       "start": 464.975,
+       "end": 467.21,
+       "slot_end": 467.577,
+       "slot_s": 2.602,
+       "en_s": 2.235
+      },
+      {
+       "id": "mo10-reveal.c4.s3",
+       "text": "Then, a promise on paper.",
+       "start": 467.697,
+       "end": 469.017,
+       "slot_end": 469.556,
+       "slot_s": 1.859,
+       "en_s": 1.32
+      },
+      {
+       "id": "mo10-reveal.c4.s4",
+       "text": "Then, a belief.",
+       "start": 469.676,
+       "end": 470.396,
+       "slot_end": 470.626,
+       "slot_s": 0.95,
+       "en_s": 0.72
+      },
+      {
+       "id": "mo10-reveal.c4.s5",
+       "text": "Then, as good as gold.",
+       "start": 470.746,
+       "end": 471.659,
+       "slot_end": 472.013,
+       "slot_s": 1.267,
+       "en_s": 0.913
+      },
+      {
+       "id": "mo10-reveal.c4.s6",
+       "text": "Then, trust, and nothing else.",
+       "start": 472.133,
+       "end": 473.536,
+       "slot_end": 473.783,
+       "slot_s": 1.65,
+       "en_s": 1.403
+      },
+      {
+       "id": "mo10-reveal.c4.s7",
+       "text": "Today, numbers on a screen.",
+       "start": 473.903,
+       "end": 475.313,
+       "slot_end": 475.729,
+       "slot_s": 1.826,
+       "en_s": 1.41
+      }
+     ]
+    },
+    {
+     "id": "mo10-reveal.c5",
+     "text": "Remember that word from Stockholm? Promise. It was there all along.",
+     "sentences": [
+      {
+       "id": "mo10-reveal.c5.s1",
+       "text": "Remember that word from Stockholm?",
+       "start": 475.849,
+       "end": 477.389,
+       "slot_end": 477.968,
+       "slot_s": 2.119,
+       "en_s": 1.54
+      },
+      {
+       "id": "mo10-reveal.c5.s2",
+       "text": "Promise.",
+       "start": 478.088,
+       "end": 478.719,
+       "slot_end": 478.949,
+       "slot_s": 0.861,
+       "en_s": 0.631
+      },
+      {
+       "id": "mo10-reveal.c5.s3",
+       "text": "It was there all along.",
+       "start": 479.069,
+       "end": 480.098,
+       "slot_end": 481.913,
+       "slot_s": 2.844,
+       "en_s": 1.029
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo11-2100",
+   "start": 482.033,
+   "dur": 59.477,
+   "chunks": [
+    {
+     "id": "mo11-2100.c1",
+     "text": "So, what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence.",
+     "sentences": [
+      {
+       "id": "mo11-2100.c1.s1",
+       "text": "So, what's the next rung?",
+       "start": 482.033,
+       "end": 483.373,
+       "slot_end": 483.884,
+       "slot_s": 1.851,
+       "en_s": 1.34
+      },
+      {
+       "id": "mo11-2100.c1.s2",
+       "text": "Twenty one hundred.",
+       "start": 484.004,
+       "end": 484.829,
+       "slot_end": 485.009,
+       "slot_s": 1.005,
+       "en_s": 0.825
+      },
+      {
+       "id": "mo11-2100.c1.s3",
+       "text": "That morning hasn't happened yet.",
+       "start": 485.129,
+       "end": 486.38,
+       "slot_end": 486.867,
+       "slot_s": 1.738,
+       "en_s": 1.251
+      },
+      {
+       "id": "mo11-2100.c1.s4",
+       "text": "But we can follow the evidence.",
+       "start": 486.987,
+       "end": 488.5,
+       "slot_end": 488.87,
+       "slot_s": 1.883,
+       "en_s": 1.513
+      }
+     ]
+    },
+    {
+     "id": "mo11-2100.c2",
+     "text": "Cash is shrinking, and central banks have noticed. In a survey published in twenty twenty five, more than nine in ten of the central banks asked were exploring a digital currency of their own.",
+     "sentences": [
+      {
+       "id": "mo11-2100.c2.s1",
+       "text": "Cash is shrinking, and central banks have noticed.",
+       "start": 488.99,
+       "end": 491.83,
+       "slot_end": 492.342,
+       "slot_s": 3.352,
+       "en_s": 2.84
+      },
+      {
+       "id": "mo11-2100.c2.s2",
+       "text": "In a survey published in twenty twenty five, more than nine in ten of the central banks asked were exploring a digital currency of their own.",
+       "start": 492.462,
+       "end": 500.12,
+       "slot_end": 500.451,
+       "slot_s": 7.989,
+       "en_s": 7.658
+      }
+     ]
+    },
+    {
+     "id": "mo11-2100.c3",
+     "text": "In Europe, the central bank is getting ready for a possible digital euro. The first could come as early as twenty twenty nine, if lawmakers agree.",
+     "sentences": [
+      {
+       "id": "mo11-2100.c3.s1",
+       "text": "In Europe, the central bank is getting ready for a possible digital euro.",
+       "start": 500.571,
+       "end": 504.531,
+       "slot_end": 505.643,
+       "slot_s": 5.072,
+       "en_s": 3.96
+      },
+      {
+       "id": "mo11-2100.c3.s2",
+       "text": "The first could come as early as twenty twenty nine, if lawmakers agree.",
+       "start": 505.763,
+       "end": 509.457,
+       "slot_end": 509.875,
+       "slot_s": 4.112,
+       "en_s": 3.694
+      }
+     ]
+    },
+    {
+     "id": "mo11-2100.c4",
+     "text": "And the Bank for International Settlements, the central banks' own bank, has warned that stablecoins, crypto tokens pegged to a currency, fail key tests of good money. It wants the central bank's promise to stay the anchor.",
+     "sentences": [
+      {
+       "id": "mo11-2100.c4.s1",
+       "text": "And the Bank for International Settlements, the central banks' own bank, has warned that stablecoins, crypto tokens pegged to a currency, fail key tests of good money.",
+       "start": 509.995,
+       "end": 520.605,
+       "slot_end": 521.253,
+       "slot_s": 11.258,
+       "en_s": 10.61
+      },
+      {
+       "id": "mo11-2100.c4.s2",
+       "text": "It wants the central bank's promise to stay the anchor.",
+       "start": 521.373,
+       "end": 523.905,
+       "slot_end": 524.289,
+       "slot_s": 2.916,
+       "en_s": 2.532
+      }
+     ]
+    },
+    {
+     "id": "mo11-2100.c5",
+     "text": "So here's one scenario. Not a fact. By twenty one hundred, the note in your wallet could be a museum piece. Money could be code. But it would still be a promise.",
+     "sentences": [
+      {
+       "id": "mo11-2100.c5.s1",
+       "text": "So here's one scenario.",
+       "start": 524.409,
+       "end": 526.059,
+       "slot_end": 526.321,
+       "slot_s": 1.912,
+       "en_s": 1.65
+      },
+      {
+       "id": "mo11-2100.c5.s2",
+       "text": "Not a fact.",
+       "start": 526.441,
+       "end": 527.201,
+       "slot_end": 527.86,
+       "slot_s": 1.419,
+       "en_s": 0.76
+      },
+      {
+       "id": "mo11-2100.c5.s3",
+       "text": "By twenty one hundred, the note in your wallet could be a museum piece.",
+       "start": 527.98,
+       "end": 531.553,
+       "slot_end": 532.017,
+       "slot_s": 4.037,
+       "en_s": 3.573
+      },
+      {
+       "id": "mo11-2100.c5.s4",
+       "text": "Money could be code.",
+       "start": 532.137,
+       "end": 533.205,
+       "slot_end": 533.608,
+       "slot_s": 1.471,
+       "en_s": 1.068
+      },
+      {
+       "id": "mo11-2100.c5.s5",
+       "text": "But it would still be a promise.",
+       "start": 533.728,
+       "end": 535.457,
+       "slot_end": 535.763,
+       "slot_s": 2.035,
+       "en_s": 1.729
+      }
+     ]
+    },
+    {
+     "id": "mo11-2100.c6",
+     "text": "In fifteen hundred, money grew on trees. In twenty one hundred, it might be written in code.",
+     "sentences": [
+      {
+       "id": "mo11-2100.c6.s1",
+       "text": "In fifteen hundred, money grew on trees.",
+       "start": 535.883,
+       "end": 537.953,
+       "slot_end": 538.661,
+       "slot_s": 2.778,
+       "en_s": 2.07
+      },
+      {
+       "id": "mo11-2100.c6.s2",
+       "text": "In twenty one hundred, it might be written in code.",
+       "start": 538.781,
+       "end": 541.272,
+       "slot_end": 542.88,
+       "slot_s": 4.099,
+       "en_s": 2.491
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo12-close",
+   "start": 543.0,
+   "dur": 7.663,
+   "chunks": [
+    {
+     "id": "mo12-close.c1",
+     "text": "You spend so much of your life earning it. So tell me. Who would you trust to keep that promise, in twenty one hundred?",
+     "sentences": [
+      {
+       "id": "mo12-close.c1.s1",
+       "text": "You spend so much of your life earning it.",
+       "start": 543.0,
+       "end": 545.3,
+       "slot_end": 545.701,
+       "slot_s": 2.701,
+       "en_s": 2.3
+      },
+      {
+       "id": "mo12-close.c1.s2",
+       "text": "So tell me.",
+       "start": 545.821,
+       "end": 546.54,
+       "slot_end": 546.839,
+       "slot_s": 1.018,
+       "en_s": 0.719
+      },
+      {
+       "id": "mo12-close.c1.s3",
+       "text": "Who would you trust to keep that promise, in twenty one hundred?",
+       "start": 546.959,
+       "end": 550.38,
+       "slot_end": 552.547,
+       "slot_s": 5.588,
+       "en_s": 3.421
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo13-outro",
+   "start": 552.667,
+   "dur": 36.234,
+   "chunks": [
+    {
+     "id": "mo13-outro.c1",
+     "text": "This was Did You Know That, episode four. Money. Now it's your turn. Which century's money would you have trusted most? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the fact cards, and play the guessing game.",
+     "sentences": [
+      {
+       "id": "mo13-outro.c1.s1",
+       "text": "This was Did You Know That, episode four.",
+       "start": 552.667,
+       "end": 555.557,
+       "slot_end": 556.216,
+       "slot_s": 3.549,
+       "en_s": 2.89
+      },
+      {
+       "id": "mo13-outro.c1.s2",
+       "text": "Money.",
+       "start": 556.336,
+       "end": 556.747,
+       "slot_end": 556.927,
+       "slot_s": 0.591,
+       "en_s": 0.411
+      },
+      {
+       "id": "mo13-outro.c1.s3",
+       "text": "Now it's your turn.",
+       "start": 557.047,
+       "end": 557.904,
+       "slot_end": 558.146,
+       "slot_s": 1.099,
+       "en_s": 0.857
+      },
+      {
+       "id": "mo13-outro.c1.s4",
+       "text": "Which century's money would you have trusted most?",
+       "start": 558.266,
+       "end": 560.684,
+       "slot_end": 561.114,
+       "slot_s": 2.848,
+       "en_s": 2.418
+      },
+      {
+       "id": "mo13-outro.c1.s5",
+       "text": "Tell me in the comments.",
+       "start": 561.234,
+       "end": 562.361,
+       "slot_end": 562.635,
+       "slot_s": 1.401,
+       "en_s": 1.127
+      },
+      {
+       "id": "mo13-outro.c1.s6",
+       "text": "At the end of every episode, I will read the best comment, right here, on this screen.",
+       "start": 562.755,
+       "end": 567.791,
+       "slot_end": 568.08,
+       "slot_s": 5.325,
+       "en_s": 5.036
+      },
+      {
+       "id": "mo13-outro.c1.s7",
+       "text": "And the subject you ask for most becomes a future episode.",
+       "start": 568.2,
+       "end": 571.201,
+       "slot_end": 571.644,
+       "slot_s": 3.444,
+       "en_s": 3.001
+      },
+      {
+       "id": "mo13-outro.c1.s8",
+       "text": "On our website, Dex-tee dot live, you can watch every episode, collect the fact cards, and play the guessing game.",
+       "start": 571.764,
+       "end": 578.151,
+       "slot_end": 578.767,
+       "slot_s": 7.003,
+       "en_s": 6.387
+      }
+     ]
+    },
+    {
+     "id": "mo13-outro.c2",
+     "text": "If this changed how you see the money in your pocket, like it. Share it with the friend who always pays you back. And subscribe, so the next mystery finds you.",
+     "sentences": [
+      {
+       "id": "mo13-outro.c2.s1",
+       "text": "If this changed how you see the money in your pocket, like it.",
+       "start": 578.887,
+       "end": 582.737,
+       "slot_end": 583.298,
+       "slot_s": 4.411,
+       "en_s": 3.85
+      },
+      {
+       "id": "mo13-outro.c2.s2",
+       "text": "Share it with the friend who always pays you back.",
+       "start": 583.418,
+       "end": 585.864,
+       "slot_end": 586.332,
+       "slot_s": 2.914,
+       "en_s": 2.446
+      },
+      {
+       "id": "mo13-outro.c2.s3",
+       "text": "And subscribe, so the next mystery finds you.",
+       "start": 586.452,
+       "end": 588.691,
+       "slot_end": 589.48,
+       "slot_s": 3.028,
+       "en_s": 2.239
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo13b-next",
+   "start": 589.6,
+   "dur": 9.613,
+   "chunks": [
+    {
+     "id": "mo13b-next.c1",
+     "text": "Next time: food. Historians estimate that in fifteen hundred, food took up most of a working family's budget. So what will you be eating in twenty one hundred?",
+     "sentences": [
+      {
+       "id": "mo13b-next.c1.s1",
+       "text": "Next time: food.",
+       "start": 589.6,
+       "end": 591.21,
+       "slot_end": 591.709,
+       "slot_s": 2.109,
+       "en_s": 1.61
+      },
+      {
+       "id": "mo13b-next.c1.s2",
+       "text": "Historians estimate that in fifteen hundred, food took up most of a working family's budget.",
+       "start": 591.829,
+       "end": 596.3,
+       "slot_end": 596.829,
+       "slot_s": 5.0,
+       "en_s": 4.471
+      },
+      {
+       "id": "mo13b-next.c1.s3",
+       "text": "So what will you be eating in twenty one hundred?",
+       "start": 596.949,
+       "end": 598.96,
+       "slot_end": 599.88,
+       "slot_s": 2.931,
+       "en_s": 2.011
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo13c-signoff",
+   "start": 600.0,
+   "dur": 3.326,
+   "chunks": [
+    {
+     "id": "mo13c-signoff.c1",
+     "text": "Ask...",
+     "sentences": [
+      {
+       "id": "mo13c-signoff.c1.s1",
+       "text": "Ask...",
+       "start": 600.0,
+       "end": 600.35,
+       "slot_end": 601.064,
+       "slot_s": 1.064,
+       "en_s": 0.35
+      }
+     ]
+    },
+    {
+     "id": "mo13c-signoff.c2",
+     "text": "Wonder...",
+     "sentences": [
+      {
+       "id": "mo13c-signoff.c2.s1",
+       "text": "Wonder...",
+       "start": 601.184,
+       "end": 601.694,
+       "slot_end": 602.37,
+       "slot_s": 1.186,
+       "en_s": 0.51
+      }
+     ]
+    },
+    {
+     "id": "mo13c-signoff.c3",
+     "text": "Repeat.",
+     "sentences": [
+      {
+       "id": "mo13c-signoff.c3.s1",
+       "text": "Repeat.",
+       "start": 602.49,
+       "end": 603.03,
+       "slot_end": 604.48,
+       "slot_s": 1.99,
+       "en_s": 0.54
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo14-endscreen",
+   "start": 604.6,
+   "dur": 5.108,
+   "chunks": [
+    {
+     "id": "mo14-endscreen.c1",
+     "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+     "sentences": [
+      {
+       "id": "mo14-endscreen.c1.s1",
+       "text": "Next time...",
+       "start": 604.6,
+       "end": 605.28,
+       "slot_end": 605.58,
+       "slot_s": 0.98,
+       "en_s": 0.68
+      },
+      {
+       "id": "mo14-endscreen.c1.s2",
+       "text": "this could be your comment.",
+       "start": 605.7,
+       "end": 606.732,
+       "slot_end": 607.032,
+       "slot_s": 1.332,
+       "en_s": 1.032
+      },
+      {
+       "id": "mo14-endscreen.c1.s3",
+       "text": "Pick a mystery.",
+       "start": 607.152,
+       "end": 607.941,
+       "slot_end": 608.241,
+       "slot_s": 1.089,
+       "en_s": 0.789
+      },
+      {
+       "id": "mo14-endscreen.c1.s4",
+       "text": "And I will see you there.",
+       "start": 608.361,
+       "end": 609.488,
+       "slot_end": 620.733,
+       "slot_s": 12.372,
+       "en_s": 1.127
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
