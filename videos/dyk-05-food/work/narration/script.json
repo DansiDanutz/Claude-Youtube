@@ -1,0 +1,683 @@
+{
+  "voice": "Brian (nPczCjzI2devNBz1zQrb), eleven_flash_v2_5 \u00b7 stability .32 / similarity .85 / style .45",
+  "version": "v1 2026-10-13 (No. 05 Food)",
+  "risky_words": [
+    "Flanders",
+    "rye",
+    "porridge",
+    "Lent",
+    "Advent",
+    "HMS",
+    "Salisbury",
+    "scurvy",
+    "Lind",
+    "Cider",
+    "Shinagawa",
+    "Tsukuba",
+    "Ryujo",
+    "beriberi",
+    "Takaki",
+    "Kanehiro",
+    "barley",
+    "pellagra",
+    "grits",
+    "Molasses",
+    "Goldberger",
+    "Niacin",
+    "Punjab",
+    "Lal",
+    "Bahadur",
+    "Shastri",
+    "Borlaug",
+    "tonnes",
+    "tonne",
+    "S\u00e3o",
+    "Paulo",
+    "McKeown",
+    "EAT",
+    "Lancet",
+    "Dex-tee",
+    "ate",
+    "flour",
+    "fewer"
+  ],
+  "scenes": [
+    {
+      "id": "fd01-hook",
+      "shot": "FdHook",
+      "text": "Last time, I left you with a question. What will you be eating in twenty one hundred? In fifteen hundred, historians estimate food took up most of a working family's budget. Today, there's more food than ever.",
+      "chunks": [
+        {
+          "text": "Last time, I left you with a question. What will you be eating in twenty one hundred? In fifteen hundred, historians estimate food took up most of a working family's budget. Today, there's more food than ever.",
+          "pace": 3.2,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "fd02-question",
+      "shot": "FdHook",
+      "text": "And yet, here's the strange part. Did you know that today, about one in five deaths around the world is linked to diet? So did food give us our longer lives? Or is it taking some of those years back?",
+      "chunks": [
+        {
+          "text": "And yet, here's the strange part. Did you know that today, about one in five deaths around the world is linked to diet? So did food give us our longer lives? Or is it taking some of those years back?",
+          "pace": 3.5,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "diet?",
+            "nth": 1,
+            "add": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd00-welcome",
+      "shot": "FdWelcome",
+      "text": "Welcome back to Did You Know That. Episode five. You know the rule. Here's your guess. In eighteen hundred, life expectancy at birth, worldwide, was about twenty nine years. What about a baby born today? Guess in the comments, right now. Then stay to the end, and check your guess.",
+      "chunks": [
+        {
+          "text": "Welcome back to Did You Know That. Episode five. You know the rule. Here's your guess. In eighteen hundred, life expectancy at birth, worldwide, was about twenty nine years. What about a baby born today? Guess in the comments, right now. Then stay to the end, and check your guess.",
+          "pace": 2.9,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "today?",
+            "nth": 1,
+            "add": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd03-promise",
+      "shot": "FdPromise",
+      "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up somewhere new. You'll see what's on your plate, what it does to your body, and how long you get to live. And at the end, you'll find out what really gave us our extra years.",
+      "chunks": [
+        {
+          "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up somewhere new. You'll see what's on your plate, what it does to your body, and how long you get to live. And at the end, you'll find out what really gave us our extra years.",
+          "pace": 3.1,
+          "speed": 1.0
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "fd04-1500",
+      "shot": "Fd1500",
+      "text": "You wake up in fifteen hundred, in a village in Flanders. The bread oven's warm, and the kitchen smells of rye and smoke. Did you know that here, on up to four days in ten, eating meat is against the rules? Fridays. Lent. Advent. The Church calls them fast days. Here's your plate. Bread at almost every meal. Porridge, peas and beans. Beer to drink. Dried fish on fast days. Most of what your family spends goes on food. Seventy to eighty percent. When the harvest fails, bread prices jump, and people go hungry. How long do you live? In England, just across the sea, a newborn could expect about thirty five years. Mostly because so many children died. If you made it to thirty, you had a fair chance of reaching sixty. So what is food to you? Fuel. Enough to survive the day. Remember those fast days. They come back at the end. And at sea, on the longest voyages, sailors start falling apart.",
+      "chunks": [
+        {
+          "text": "You wake up in fifteen hundred, in a village in Flanders. The bread oven's warm, and the kitchen smells of rye and smoke.",
+          "pace": 3.0,
+          "speed": 0.9
+        },
+        {
+          "text": "Did you know that here, on up to four days in ten, eating meat is against the rules? Fridays. Lent. Advent. The Church calls them fast days.",
+          "pace": 2.9,
+          "speed": 0.98,
+          "floor": 0.85
+        },
+        {
+          "text": "Here's your plate. Bread at almost every meal. Porridge, peas and beans. Beer to drink. Dried fish on fast days. Most of what your family spends goes on food. Seventy to eighty percent. When the harvest fails, bread prices jump, and people go hungry.",
+          "pace": 3.0,
+          "speed": 1.06
+        },
+        {
+          "text": "How long do you live? In England, just across the sea, a newborn could expect about thirty five years. Mostly because so many children died. If you made it to thirty, you had a fair chance of reaching sixty.",
+          "pace": 3.0,
+          "speed": 0.9800000000000001
+        },
+        {
+          "text": "So what is food to you? Fuel. Enough to survive the day. Remember those fast days. They come back at the end. And at sea, on the longest voyages, sailors start falling apart.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "rules?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "live?",
+            "nth": 1,
+            "add": 0.25
+          },
+          {
+            "word": "you?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd05-1747",
+      "shot": "Fd1747",
+      "text": "You wake up in seventeen forty seven, aboard HMS Salisbury, a British warship on patrol. Did you know that the cure for sailors' worst disease was found this year, and the navy waited almost fifty years to use it? Here's your plate. Every day, a pound of hard biscuit and a gallon of beer. Salt beef or pork, dried peas, oatmeal, a little cheese. Almost nothing fresh. After weeks at sea, men get scurvy. Bleeding gums. Old wounds opening up. The ship's surgeon, James Lind, splits twelve sailors with scurvy into pairs, and gives each pair something different. Cider. Vinegar. And one pair gets two oranges and a lemon a day. So what is food now? Medicine. The right food can cure you. On land in Britain, a newborn could still expect fewer than forty years. The navy finally handed out lemon juice in seventeen ninety five. A century later, in Japan, another missing piece is making sailors sick.",
+      "chunks": [
+        {
+          "text": "You wake up in seventeen forty seven, aboard HMS Salisbury, a British warship on patrol.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that the cure for sailors' worst disease was found this year, and the navy waited almost fifty years to use it?",
+          "pace": 3.4,
+          "speed": 0.92,
+          "floor": 0.85
+        },
+        {
+          "text": "Here's your plate. Every day, a pound of hard biscuit and a gallon of beer. Salt beef or pork, dried peas, oatmeal, a little cheese. Almost nothing fresh. After weeks at sea, men get scurvy. Bleeding gums. Old wounds opening up.",
+          "pace": 2.6,
+          "speed": 1.0
+        },
+        {
+          "text": "The ship's surgeon, James Lind, splits twelve sailors with scurvy into pairs, and gives each pair something different. Cider. Vinegar. And one pair gets two oranges and a lemon a day.",
+          "pace": 2.7,
+          "speed": 1.0
+        },
+        {
+          "text": "So what is food now? Medicine. The right food can cure you. On land in Britain, a newborn could still expect fewer than forty years.",
+          "pace": 3.2,
+          "speed": 1.0
+        },
+        {
+          "text": "The navy finally handed out lemon juice in seventeen ninety five. A century later, in Japan, another missing piece is making sailors sick.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "it?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "now?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd06-1884",
+      "shot": "Fd1884",
+      "text": "You wake up in eighteen eighty four, at Shinagawa, on Tokyo Bay. A training ship called the Tsukuba is getting ready to sail. Did you know that on a voyage like this one, the year before, almost half the crew got sick from what they ate? On the ship Ryujo, a hundred and sixty nine men got beriberi. Twenty five died. Here's a sailor's plate. White rice. Rice was free. Everything else cost money. A navy doctor, Takaki Kanehiro, measures what the men eat, and changes the menu. More barley, meat, milk, bread and vegetables. On the Tsukuba, fourteen men get sick. None die. And the fourteen? They had not eaten the new food. So what is food now? Something to measure. What's inside it matters. Japan's first life tables give a newborn about forty three years. And Japanese men born back then? About fifteen centimetres shorter than men born a century later. Decades later, it gets a name. A vitamin. But knowing what's missing doesn't put it on a poor family's plate.",
+      "chunks": [
+        {
+          "text": "You wake up in eighteen eighty four, at Shinagawa, on Tokyo Bay. A training ship called the Tsukuba is getting ready to sail.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that on a voyage like this one, the year before, almost half the crew got sick from what they ate? On the ship Ryujo, a hundred and sixty nine men got beriberi. Twenty five died.",
+          "pace": 3.3,
+          "speed": 1.0,
+          "floor": 0.85
+        },
+        {
+          "text": "Here's a sailor's plate. White rice. Rice was free. Everything else cost money. A navy doctor, Takaki Kanehiro, measures what the men eat, and changes the menu. More barley, meat, milk, bread and vegetables.",
+          "pace": 2.7,
+          "speed": 1.08
+        },
+        {
+          "text": "On the Tsukuba, fourteen men get sick. None die. And the fourteen? They had not eaten the new food.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "So what is food now? Something to measure. What's inside it matters. Japan's first life tables give a newborn about forty three years. And Japanese men born back then? About fifteen centimetres shorter than men born a century later.",
+          "pace": 2.9,
+          "speed": 1.0
+        },
+        {
+          "text": "Decades later, it gets a name. A vitamin. But knowing what's missing doesn't put it on a poor family's plate.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "ate?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "fourteen?",
+            "nth": 1,
+            "add": 0.3
+          },
+          {
+            "word": "now?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd07-1915",
+      "shot": "Fd1915",
+      "text": "You wake up in nineteen fifteen, on a prison farm in Mississippi. Eleven men are lining up for breakfast. Did you know that doctors made healthy men sick here, on purpose, by feeding them a poor Southern family's ordinary diet? The volunteers were promised a pardon. Here's the plate. Cornbread and grits. Fatty salt pork. Molasses. Hardly any milk, fresh meat or greens. After about five months, around half of the men have pellagra. Rashes, stomach trouble, confusion, even death. By one widely quoted estimate, it killed around a hundred thousand people across the South. The doctor, Joseph Goldberger, shows pellagra isn't caught like a germ. It comes from something missing in the diet. Later, it's named. Niacin, a B vitamin. In the nineteen forties, it's added to flour and bread across much of America. With that, better wages and more varied food, pellagra fades. So what is food now? Something we fix. Add what's missing, and a disease disappears. In America that year, a newborn could expect about fifty five years. But fixing food only helps if there's enough of it. And in India, there isn't.",
+      "chunks": [
+        {
+          "text": "You wake up in nineteen fifteen, on a prison farm in Mississippi. Eleven men are lining up for breakfast.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Did you know that doctors made healthy men sick here, on purpose, by feeding them a poor Southern family's ordinary diet? The volunteers were promised a pardon.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        },
+        {
+          "text": "Here's the plate. Cornbread and grits. Fatty salt pork. Molasses. Hardly any milk, fresh meat or greens. After about five months, around half of the men have pellagra. Rashes, stomach trouble, confusion, even death.",
+          "pace": 2.5,
+          "speed": 1.08
+        },
+        {
+          "text": "By one widely quoted estimate, it killed around a hundred thousand people across the South. The doctor, Joseph Goldberger, shows pellagra isn't caught like a germ. It comes from something missing in the diet.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "Later, it's named. Niacin, a B vitamin. In the nineteen forties, it's added to flour and bread across much of America. With that, better wages and more varied food, pellagra fades.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "So what is food now? Something we fix. Add what's missing, and a disease disappears. In America that year, a newborn could expect about fifty five years. But fixing food only helps if there's enough of it. And in India, there isn't.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "diet?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "now?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd08-1966",
+      "shot": "Fd1966",
+      "text": "You wake up in nineteen sixty six, in a village in Punjab. Everyone's watching the sky for rain. Did you know that the year before, India's prime minister asked the whole country to skip one meal a week? Lal Bahadur Shastri. War and drought had left too little grain. Here's your plate. Flatbread, lentils, maybe some vegetables. Across India, there's only enough food for about two thousand calories a person a day. A newborn here could expect about forty six years. So India imports eighteen thousand tonnes of wheat seed from Mexico. Short, sturdy plants, bred by Norman Borlaug's team. They need water, and lots of fertiliser, made in factories from nitrogen in the air. Within a few years, India's wheat harvest jumps to seventeen million tonnes. So what is food now? Enough, at last. Grown by the tonne. Today, a newborn in India can expect about seventy two years. And around the world, food has never been more plentiful. Which brings a brand new problem.",
+      "chunks": [
+        {
+          "text": "You wake up in nineteen sixty six, in a village in Punjab. Everyone's watching the sky for rain.",
+          "pace": 3.0,
+          "speed": 0.9000000000000001
+        },
+        {
+          "text": "Did you know that the year before, India's prime minister asked the whole country to skip one meal a week? Lal Bahadur Shastri. War and drought had left too little grain.",
+          "pace": 2.9,
+          "speed": 0.9,
+          "floor": 0.85
+        },
+        {
+          "text": "Here's your plate. Flatbread, lentils, maybe some vegetables. Across India, there's only enough food for about two thousand calories a person a day. A newborn here could expect about forty six years.",
+          "pace": 2.6,
+          "speed": 0.98
+        },
+        {
+          "text": "So India imports eighteen thousand tonnes of wheat seed from Mexico. Short, sturdy plants, bred by Norman Borlaug's team. They need water, and lots of fertiliser, made in factories from nitrogen in the air. Within a few years, India's wheat harvest jumps to seventeen million tonnes.",
+          "pace": 3.0,
+          "speed": 1.06
+        },
+        {
+          "text": "So what is food now? Enough, at last. Grown by the tonne. Today, a newborn in India can expect about seventy two years. And around the world, food has never been more plentiful. Which brings a brand new problem.",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "week?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "now?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd09-today",
+      "shot": "FdToday",
+      "text": "You wake up today, in S\u00e3o Paulo. Motorbikes buzz past with food deliveries. Did you know that Brazil's official food guide tells people to eat at regular times, and, whenever they can, with other people? Here's your plate. Rice and beans, still on most plates in Brazil. And more and more ultra-processed food. Soft drinks. Packaged snacks. In Brazil, it's about a fifth of the calories people eat. In the United States, more than half. The guide's golden rule? Choose fresh food and home-made meals over ultra-processed food. And in most countries now, more adults live with obesity than are underweight. In Brazil, a newborn can expect about seventy six years. So what is food to you? Too much of some things. Too little of others. So here's the question you came for. Food helped us live longer. Is it now taking some of those years back?",
+      "chunks": [
+        {
+          "text": "You wake up today, in S\u00e3o Paulo. Motorbikes buzz past with food deliveries.",
+          "pace": 3.0,
+          "speed": 1.08
+        },
+        {
+          "text": "Did you know that Brazil's official food guide tells people to eat at regular times, and, whenever they can, with other people?",
+          "pace": 2.9,
+          "speed": 1.0,
+          "floor": 0.85
+        },
+        {
+          "text": "Here's your plate. Rice and beans, still on most plates in Brazil. And more and more ultra-processed food. Soft drinks. Packaged snacks. In Brazil, it's about a fifth of the calories people eat. In the United States, more than half.",
+          "pace": 3.0,
+          "speed": 1.08
+        },
+        {
+          "text": "The guide's golden rule? Choose fresh food and home-made meals over ultra-processed food. And in most countries now, more adults live with obesity than are underweight. In Brazil, a newborn can expect about seventy six years.",
+          "pace": 3.0,
+          "speed": 1.0
+        },
+        {
+          "text": "So what is food to you? Too much of some things. Too little of others. So here's the question you came for. Food helped us live longer. Is it now taking some of those years back?",
+          "pace": 2.9,
+          "speed": 0.92,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "people?",
+            "nth": 1,
+            "add": 0.35
+          },
+          {
+            "word": "rule?",
+            "nth": 1,
+            "add": 0.25
+          },
+          {
+            "word": "you?",
+            "nth": 1,
+            "add": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd10-reveal",
+      "shot": "FdReveal",
+      "text": "Here's the answer. Food gave us years. But it didn't do it alone. And now, the danger has flipped. Enough calories and the right nutrients beat scurvy, beriberi and pellagra, and helped us grow taller. A doctor, Thomas McKeown, argued that better food was the main reason we started living longer. Many historians disagree. In big American cities, one study found clean water alone was behind nearly half the drop in deaths, in the early nineteen hundreds. Sewers, vaccines and medicine did much of the rest. And today? About one in five deaths worldwide is linked to diet. The biggest risks? Too much salt. Too few whole grains. Too little fruit. And your guess? In eighteen hundred, about twenty nine years. Today, worldwide, about seventy three. How close were you? Now walk down the ladder with me. In fifteen hundred, food was fuel. Then, medicine. Then, something to measure. Then, something we fix. Then, enough, at last. Today, too much. In fifteen hundred, food took most of your money, and hunger was the danger. Today, the danger is what we choose to eat.",
+      "chunks": [
+        {
+          "text": "Here's the answer. Food gave us years. But it didn't do it alone. And now, the danger has flipped.",
+          "pace": 3.1,
+          "speed": 0.9
+        },
+        {
+          "text": "Enough calories and the right nutrients beat scurvy, beriberi and pellagra, and helped us grow taller. A doctor, Thomas McKeown, argued that better food was the main reason we started living longer. Many historians disagree.",
+          "pace": 3.0,
+          "speed": 0.98
+        },
+        {
+          "text": "In big American cities, one study found clean water alone was behind nearly half the drop in deaths, in the early nineteen hundreds. Sewers, vaccines and medicine did much of the rest.",
+          "pace": 2.8,
+          "speed": 1.0
+        },
+        {
+          "text": "And today? About one in five deaths worldwide is linked to diet. The biggest risks? Too much salt. Too few whole grains. Too little fruit.",
+          "pace": 2.6,
+          "speed": 1.0
+        },
+        {
+          "text": "And your guess? In eighteen hundred, about twenty nine years. Today, worldwide, about seventy three. How close were you?",
+          "pace": 2.6,
+          "speed": 1.0
+        },
+        {
+          "text": "Now walk down the ladder with me. In fifteen hundred, food was fuel. Then, medicine. Then, something to measure. Then, something we fix. Then, enough, at last. Today, too much.",
+          "pace": 2.75,
+          "speed": 1.0,
+          "payoff": true
+        },
+        {
+          "text": "In fifteen hundred, food took most of your money, and hunger was the danger. Today, the danger is what we choose to eat.",
+          "pace": 2.8,
+          "speed": 0.92,
+          "payoff": true
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.35,
+        "after": [
+          {
+            "word": "today?",
+            "nth": 1,
+            "add": 0.3
+          },
+          {
+            "word": "risks?",
+            "nth": 1,
+            "add": 0.25
+          },
+          {
+            "word": "guess?",
+            "nth": 1,
+            "add": 0.3
+          },
+          {
+            "word": "you?",
+            "nth": 1,
+            "add": 0.45
+          },
+          {
+            "word": "danger.",
+            "nth": 1,
+            "add": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd11-2100",
+      "shot": "Fd2100",
+      "text": "So what will you be eating in twenty one hundred? That morning hasn't happened yet. But we can follow the evidence. The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. Its climate panel says warming has already slowed the growth of farm productivity, over the past fifty years. And the EAT Lancet Commission says a diet that's mostly plants with red meat about once a week, could prevent around fifteen million early deaths a year. So here's one scenario. Not a fact. By twenty one hundred, your plate could be mostly plants. Meat could be a once a week treat. And if the harvests hold, the average life could stretch past eighty. In fifteen hundred, the Church decided which days you couldn't eat meat. In twenty one hundred, the reason might be your heart. And the planet.",
+      "chunks": [
+        {
+          "text": "So what will you be eating in twenty one hundred? That morning hasn't happened yet. But we can follow the evidence.",
+          "pace": 3.0,
+          "speed": 0.9
+        },
+        {
+          "text": "The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. Its climate panel says warming has already slowed the growth of farm productivity, over the past fifty years.",
+          "pace": 2.9,
+          "speed": 0.98
+        },
+        {
+          "text": "And the EAT Lancet Commission says a diet that's mostly plants with red meat about once a week, could prevent around fifteen million early deaths a year.",
+          "pace": 2.9,
+          "speed": 0.9
+        },
+        {
+          "text": "So here's one scenario. Not a fact. By twenty one hundred, your plate could be mostly plants. Meat could be a once a week treat. And if the harvests hold, the average life could stretch past eighty.",
+          "pace": 3.2,
+          "speed": 0.98
+        },
+        {
+          "text": "In fifteen hundred, the Church decided which days you couldn't eat meat. In twenty one hundred, the reason might be your heart. And the planet.",
+          "pace": 3.0,
+          "speed": 0.9,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "hundred?",
+            "nth": 1,
+            "add": 0.3
+          },
+          {
+            "word": "fact.",
+            "nth": 1,
+            "add": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd12-close",
+      "shot": "FdClose",
+      "text": "Tonight, look at your plate. Which part of it is buying you more years?",
+      "chunks": [
+        {
+          "text": "Tonight, look at your plate. Which part of it is buying you more years?",
+          "pace": 3.3,
+          "speed": 1.0,
+          "floor": 0.85
+        }
+      ],
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "fd13-outro",
+      "shot": "FdOutro",
+      "text": "This was Did You Know That, episode five. Food. Now it's your turn. Which century's kitchen would you eat in? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the fact cards, and play the guessing game. If this changed how you see what's on your plate, like it. Share it with the friend who always cooks for you. And subscribe, so the next mystery finds you.",
+      "chunks": [
+        {
+          "text": "This was Did You Know That, episode five. Food. Now it's your turn. Which century's kitchen would you eat in? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the fact cards, and play the guessing game.",
+          "pace": 3.15,
+          "speed": 1.0
+        },
+        {
+          "text": "If this changed how you see what's on your plate, like it. Share it with the friend who always cooks for you. And subscribe, so the next mystery finds you.",
+          "pace": 3.15,
+          "speed": 0.95
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "in?",
+            "nth": 1,
+            "add": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd13b-next",
+      "shot": "FdOutro",
+      "text": "Next time: medicine. In seventeen ninety nine, George Washington's doctors drained, by some estimates, around two fifths of his blood. So how did we find out what really heals us?",
+      "chunks": [
+        {
+          "text": "Next time: medicine. In seventeen ninety nine, George Washington's doctors drained, by some estimates, around two fifths of his blood. So how did we find out what really heals us?",
+          "pace": 3.0,
+          "speed": 1.08
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3
+      }
+    },
+    {
+      "id": "fd13c-signoff",
+      "shot": "FdOutro",
+      "text": "Ask... Wonder... Repeat.",
+      "chunks": [
+        {
+          "text": "Ask...",
+          "pace": 0,
+          "speed": 1.0
+        },
+        {
+          "text": "Wonder...",
+          "pace": 0,
+          "speed": 1.0
+        },
+        {
+          "text": "Repeat.",
+          "pace": 0,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.3,
+        "after": [
+          {
+            "word": "Ask...",
+            "nth": 1,
+            "add": 0.33
+          },
+          {
+            "word": "Wonder...",
+            "nth": 1,
+            "add": 0.36
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd14-endscreen",
+      "shot": "FdOutro",
+      "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+      "chunks": [
+        {
+          "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+          "pace": 3.1,
+          "speed": 1.0
+        }
+      ],
+      "floor": 0.95,
+      "pauses": {
+        "min_sentence_gap": 0.42
+      }
+    }
+  ]
+}

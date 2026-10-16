@@ -1,0 +1,35 @@
+{
+"dur": 4.116,
+"words": [
+{
+"w": "\u00centreab\u0103...",
+"s": 0.0,
+"e": 0.83
+},
+{
+"w": "Uime\u0219te-te.",
+"s": 1.602,
+"e": 2.242
+},
+{
+"w": "Repet\u0103.",
+"s": 3.233,
+"e": 3.923
+}
+],
+"pauses": {
+"min_sentence_gap": 0.3,
+"after": [
+{
+"word": "\u00centreab\u0103...",
+"nth": 1,
+"add": 0.33
+},
+{
+"word": "Uime\u0219te-te.",
+"nth": 1,
+"add": 0.36
+}
+]
+}
+}

@@ -1,0 +1,17 @@
+  fd01-hook: 0 pauses, +0.00s → 15.88s
+  fd02-question: 1 pauses, +0.40s → 12.01s
+  fd00-welcome: 2 pauses, +0.43s → 23.32s
+  fd03-promise: 0 pauses, +0.00s → 15.56s
+  fd04-1500: 5 pauses, +1.06s → 71.03s
+  fd05-1747: 4 pauses, +0.93s → 76.67s
+  fd06-1884: 7 pauses, +1.37s → 76.37s
+  fd07-1915: 4 pauses, +1.10s → 86.92s
+  fd08-1966: 2 pauses, +0.98s → 70.06s
+  fd09-today: 7 pauses, +1.35s → 63.75s
+  fd10-reveal: 13 pauses, +2.80s → 89.98s
+  fd11-2100: 3 pauses, +0.84s → 64.40s
+  fd12-close: 0 pauses, +0.00s → 5.34s
+  fd13-outro: 3 pauses, +0.36s → 41.57s
+  fd13b-next: 0 pauses, +0.00s → 12.12s
+  fd13c-signoff: 2 pauses, +0.69s → 4.07s
+  fd14-endscreen: 3 pauses, +0.54s → 5.79s

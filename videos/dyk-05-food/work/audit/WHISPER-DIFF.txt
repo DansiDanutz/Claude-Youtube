@@ -1,0 +1,80 @@
+WHISPER DIFF: PASS
+
+== fd01-hook  ratio 1.000
+== fd02-question  ratio 1.000
+== fd00-welcome  ratio 1.000
+   LISTEN   low-p   [('Episode', 0.26)]
+== fd03-promise  ratio 1.000
+== fd04-1500  ratio 1.000
+   LISTEN   low-p   [('to', 0.34), ('sailors', 0.15)]
+== fd05-1747  ratio 0.974
+   LISTEN   listen  'lind' heard as 'lynn'
+   diff ('replace', 'beef or', 'be for')
+   diff ('replace', 'lind', 'lynn')
+   diff ('replace', 'and', 'in')
+   LISTEN   low-p   [('be', 0.24), ('old', 0.3)]
+   LISTEN   gaps    [('beer.', 1.2)]
+== fd06-1884  ratio 0.973
+   LISTEN   listen  'beriberi' heard as 'barry barry'
+   LISTEN   listen  'kanehiro' heard as 'kanahiro'
+   diff ('replace', 'beriberi', 'barry barry')
+   diff ('replace', 'kanehiro', 'kanahiro')
+   diff ('replace', 'centimetres', 'centimeter')
+   diff ('replace', 'a', 'of')
+   LISTEN   low-p   [('Barry', 0.32), ('More', 0.13), ('centimeter', 0.32), ('But', 0.29)]
+== fd07-1915  ratio 0.970
+   LISTEN   listen  'pellagra' heard as 'pelagra'
+   LISTEN   listen  'pellagra' heard as 'pelagra'
+   accepted number  '#19 forties' heard as '#1940'
+   LISTEN   listen  'pellagra' heard as 'pelagra'
+   diff ('replace', 'pellagra', 'pelagra')
+   diff ('replace', 'pellagra', 'pelagra')
+   diff ('replace', '#19 forties', '#1940')
+   diff ('replace', 'pellagra', 'pelagra')
+   diff ('replace', 'add', 'at')
+   LISTEN   low-p   [('stomach', 0.23), ('b', 0.33), ('and', 0.28)]
+   LISTEN   gaps    [('now?', 1.18)]
+== fd08-1966  ratio 0.956
+   LISTEN   listen  'lal' heard as 'laal'
+   LISTEN   listen  'tonnes' heard as 'tons'
+   LISTEN   listen  'borlaugs' heard as 'borlogs'
+   LISTEN   listen  'tonnes' heard as 'tons'
+   LISTEN   listen  'tonne' heard as 'tone'
+   diff ('replace', 'lal', 'laal')
+   diff ('replace', 'tonnes', 'tons')
+   diff ('replace', 'borlaugs', 'borlogs')
+   diff ('replace', 'fertiliser', 'fertilizer')
+   diff ('replace', 'tonnes', 'tons')
+   diff ('replace', 'is', 'does')
+   diff ('replace', 'tonne', 'tone')
+   LISTEN   low-p   [('does', 0.32)]
+== fd09-today  ratio 0.976
+   LISTEN   listen  'so' heard as 'sao'
+   diff ('replace', 'so', 'sao')
+   diff ('replace', 'past', 'passed')
+   diff ('replace', 'home made', 'homemade')
+   LISTEN   low-p   [('passed', 0.3)]
+   LISTEN   gaps    [('you?', 1.12)]
+== fd10-reveal  ratio 0.966
+   LISTEN   listen  'beriberi' heard as 'berry berry'
+   LISTEN   listen  'pellagra' heard as 'palagra'
+   LISTEN   listen  'mckeown' heard as 'mccone'
+   accepted number  '#19 hundreds sewers' heard as '#1900 suers'
+   diff ('replace', 'beriberi', 'berry berry')
+   diff ('replace', 'pellagra', 'palagra')
+   diff ('replace', 'mckeown', 'mccone')
+   diff ('replace', '#19 hundreds sewers', '#1900 suers')
+   LISTEN   low-p   [('then', 0.1)]
+   LISTEN   gaps    [('danger.', 1.12)]
+== fd11-2100  ratio 0.985
+   LISTEN   listen  'eat' heard as '#8'
+   diff ('replace', 'eat', '#8')
+   diff ('replace', 'harvests', 'harvest')
+== fd12-close  ratio 1.000
+== fd13-outro  ratio 0.966
+   diff ('replace', 'dex tee dot live', 'dexteelive')
+   diff ('replace', 'the', 'a')
+== fd13b-next  ratio 1.000
+== fd13c-signoff  ratio 1.000
+   LISTEN   low-p   [('wonder,', 0.25)]
+== fd14-endscreen  ratio 1.000

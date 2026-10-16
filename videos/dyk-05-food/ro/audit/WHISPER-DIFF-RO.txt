@@ -1,0 +1,224 @@
+WHISPER ROUND-TRIP (ro, whisper base): FAIL — 39 FAIL row(s), 132 LISTEN row(s), 0 accepted after a listen
+
+## fd01-hook
+  script : Data trecută, te-am lăsat cu o întrebare. Ce o să mănânci în anul două mii o sută? În anul o mie cinci sute, istoricii estimează că mâncarea înghițea cea mai mare parte din bugetul unei familii de muncitori. Azi, avem mai multă mâncare ca oricând.
+  whisper: Data trecută, te-am lasat cu întrebare. Ce o să mananci în anul 200? În anul 1500, historici este mea ză că mâncare angiția cea mai mare parte din budgetul unui familii de mâncitori. Azi avem mai multă mâncare ca oricând.
+  FAIL   (number) '#2100' heard as '#200'
+  FAIL   (hedge) 'istoricii estimeaza' heard as 'historici este mea za' — hedge ['estimeaza'] lost
+  LISTEN (listen) low probability 0.32: 'Data' at 0.00
+## fd02-question
+  script : Și totuși, uite partea ciudată. Știai că azi, cam unul din cinci decese din lume e legat de alimentație? Deci mâncarea ne-a lungit viața? Sau ne ia înapoi o parte din anii ăștia?
+  whisper: și totuși uite partea ciudată. Știai că aazit că am unul din cinci de ce se din lume ielegat de alimentație, deci mâncarea nealunjit viața sau ne iana pui o parte din ania știa?
+  FAIL   (hedge) 'azi cam' heard as 'aazit ca am' — hedge ['cam'] lost
+  LISTEN (listen) low probability 0.30: 'și' at 0.00
+  LISTEN (listen) low probability 0.30: 'că' at 3.18
+  LISTEN (listen) low probability 0.30: 'ania' at 10.74
+## fd00-welcome
+  script : Bine ai revenit la Did You Know That. Episodul cinci. Știi regula. Uite ce ai de ghicit. În anul o mie opt sute, speranța de viață la naștere, la nivel mondial, era de vreo douăzeci și nouă de ani. Dar un bebeluș născut azi? Scrie-ți răspunsul în comentarii, chiar acum. Apoi rămâi până la final și vezi dacă ai ghicit.
+  whisper: Bine airevenit la Didiuneu Dead. Episodul 5, știi regula. Uite ce ai de gicit. În anulomie 800, speranța de viață la naștere, la nivel mondial, iar adevrou 20 și 9 ani. Dar un bebe lușnă scutazii, schrieți răspunsul în comentarii, chiar acum. Apoi rămâi până la final și văzi dacă ai gicit...
+  LISTEN (listen) 'did you know that' heard as 'didiuneu dead' (risky/name)
+  FAIL   (number) 'anul #1800' heard as 'anulomie #800'
+  FAIL   (hedge) 'era de vreo' heard as 'iar adevrou' — hedge ['vreo'] lost
+## fd03-promise
+  script : Șapte dimineți, de la o mie cinci sute până la două mii o sută. În fiecare, te trezești în alt loc. O să vezi ce ai în farfurie, ce-i face corpului tău și cât apuci să trăiești. Iar la final, o să afli ce ne-a dat, de fapt, anii în plus.
+  whisper: 7 dimineți de la 1500 până la 2000 o suta. În fiecare de 30.000 loc, o să văzi ce ai în farfurie, cei face corpului tău și cât apuci să treiesti. Iar la final o să aflici ne-a dat, de fapt ani în plus.
+  FAIL   (number) '#2100' heard as '#200100'
+  LISTEN (listen) low probability 0.26: '2000' at 2.84
+  LISTEN (listen) low probability 0.34: '.000' at 5.94
+## fd04-1500
+  script : Te trezești în anul o mie cinci sute, într-un sat din Flandra. Cuptorul de pâine e cald, iar bucătăria miroase a secară și a fum. Știai că aici, în până la patru zile din zece, e interzis să mănânci carne? Vinerea. Postul Mare. Postul Crăciunului. Biserica le spune zile de post. Uite ce ai în farfurie. Pâine aproape la fiecare masă. Terci, mazăre și fasole. Bere de băut. Pește uscat în zilele de post. Cea mai mare parte din ce cheltuie familia ta se duce pe mâncare. Șaptezeci până la optzeci la sută. Când recolta nu iese, pâinea se scumpește brusc, iar oamenii flămânzesc. Cât trăiești? În Anglia, chiar peste mare, un nou-născut putea spera la vreo treizeci și cinci de ani. Mai ales pentru că mureau foarte mulți copii. Dacă apucai treizeci de ani, aveai șanse destul de bune să ajungi la șaizeci. Deci ce e mâncarea pentru tine? Combustibil. Cât să supraviețuiești ziua. Ține minte zilele de post. Revin la final. Iar pe mare, în cele mai lungi călătorii, marinarii încep să se destrame.
+  whisper: Te trezești în anul 1500 în trunța din flandra. Cuptorul de pâine Cald, iar bucăteria miroasea secară și afum. Știai ca ii ce înpână la 4 zile din zice, e interzit să manășcare, vinerea, postumare, postu crăciunului, biserica le spune zile de post. 8 ceaim farfurie, pâinea proape la fiecare masă. Terci mazăre și fasole, bere de băut, pește uscat în zilele de post. Cea mai mare parte din ce cheltu e familia ta se duce pe mâncare? 7 zice până la 80 la suta. Când recolta nu e se, pâinea se scum pește brusc, iar oamenii flământ zesc. Cât treiești, în anglie chiar pe este mare un nou născut puteasperal avră 30 și 5 de ani. Mai ales pentru că mureau foarte mânscopii. Dacă apucai 30 de ani, aveai şan se destul de bune să ajungi la 60. Deci ce e mâncarea pentru tine? Combustibil. Cât să supravieți o ești ziua. Sine minte zilele de post. Revin la final. Iar pe mare în cele mai lunge călători, marinari încep să se destrame.
+  FAIL   (number) '#10' heard as 'zice'
+  LISTEN (listen) 'postul mare postul' heard as 'postumare postu' (risky/name)
+  FAIL   (number) '#70' heard as '#7 zice'
+  LISTEN (listen) 'anglia' heard as 'anglie' (risky/name)
+  FAIL   (hedge) 'putea spera la vreo' heard as 'puteasperal avra' — hedge ['vreo'] lost
+  LISTEN (listen) low probability 0.14: 'ce' at 9.74
+  LISTEN (listen) low probability 0.29: 'se' at 32.88
+  LISTEN (listen) low probability 0.09: 'zice' at 34.94
+## fd05-1747
+  script : Te trezești în anul o mie șapte sute patruzeci și șapte, la bordul HMS Salisbury, un vas de război britanic în patrulare. Știai că leacul pentru cea mai cumplită boală a marinarilor a fost găsit chiar anul ăsta, iar marina a așteptat aproape cincizeci de ani să-l folosească? Uite ce ai în farfurie. În fiecare zi, o livră de pesmet tare și un galon de bere. Carne sărată de vită sau de porc, mazăre uscată, făină de ovăz, puțină brânză. Aproape nimic proaspăt. După câteva săptămâni pe mare, oamenii fac scorbut. Gingii care sângerează. Răni vechi care se redeschid. Chirurgul navei, James Lind, împarte doisprezece marinari bolnavi de scorbut în perechi și dă fiecărei perechi altceva. Cidru. Oțet. Iar o pereche primește două portocale și o lămâie pe zi. Deci ce e mâncarea acum? Un leac. Mâncarea potrivită te poate vindeca. Pe uscat, în Marea Britanie, un nou-născut putea spera tot la mai puțin de patruzeci de ani. Marina a dat, în sfârșit, suc de lămâie abia în anul o mie șapte sute nouăzeci și cinci. Un secol mai târziu, în Japonia, o altă piesă lipsă îi îmbolnăvește pe marinari.
+  whisper: Te trezești în anul 1747, la bordul Haleme Seltzbury, un vast de război britannic în patrulare. Știai că leacul pentru cea mai completă boalea marinarilor, a fost găsit chiar anul ăsta, iar Marina așteptat aproape 50 de ani săl folosească, uite cea în farfurie. În fiecare zi o livra de pesmetare și un galon de băre, care ne sărată de vita sau de porc, mazăre uscată, făină de o văz, puțină brânză, apropie nimic prospăd. După câteva săptămâni pe mare, oamenii fac scorbut, gingii care sunt gerează, răni vec care se redesquid. Chirurgul navei James Lind, împarte 12 marinar bolnav de scorbut împerec și dă fiecarei perec el ceva, cidru. Oțet, iar o pereche primește două portocale și o lămăie pe zi. Deci ce în care va acum au înleac, în care a potrivită de poate vinde ca? Pe uscat în mare abritanie un nou născut putea spera tot la mai puțin de 40 de ani. Marina adată însvășit sug de lămăie abiananul 1795, un secul mai trăziu în Japonia, o altă piesă lip să îi îi îmbol în vește pe marinarilor.
+  LISTEN (listen) 'hms salisbury' heard as 'haleme seltzbury' (risky/name)
+  FAIL   (hedge) 'aproape' heard as 'apropie' — hedge ['aproape'] lost
+  LISTEN (listen) 'marea britanie' heard as 'mare abritanie' (risky/name)
+  LISTEN (listen) low probability 0.30: 'Te' at 0.00
+  LISTEN (listen) low probability 0.34: 'în' at 19.70
+  LISTEN (listen) low probability 0.02: 'care' at 24.62
+  LISTEN (listen) low probability 0.33: '12' at 44.74
+  LISTEN (listen) low probability 0.23: 'el' at 49.24
+  LISTEN (listen) low probability 0.28: 'va' at 56.28
+  LISTEN (listen) low probability 0.29: 'de' at 64.56
+  LISTEN (listen) low probability 0.32: 'îi' at 74.24
+  LISTEN (listen) low probability 0.16: 'marinarilor.' at 74.94
+  LISTEN (listen) gap 1.28 s after '1795,' at 69.74
+## fd06-1884
+  script : Te trezești în anul o mie opt sute optzeci și patru, la Shinagawa, în Golful Tokyo. O navă-școală pe nume Tsukuba se pregătește de plecare. Știai că într-o călătorie ca asta, cu un an înainte, aproape jumătate din echipaj s-a îmbolnăvit din cauza a ceea ce mânca? Pe nava Ryujo, o sută șaizeci și nouă de oameni au făcut beriberi. Douăzeci și cinci au murit. Uite farfuria unui marinar. Orez alb. Orezul era gratuit. Tot restul costa bani. Un medic al marinei, Takaki Kanehiro, măsoară ce mănâncă oamenii și schimbă meniul. Mai mult orz, carne, lapte, pâine și legume. Pe Tsukuba, se îmbolnăvesc paisprezece oameni. Nu moare niciunul. Iar cei paisprezece? Nu mâncaseră din noua hrană. Deci ce e mâncarea acum? Ceva de măsurat. Contează ce e înăuntru. Primele tabele de mortalitate ale Japoniei îi dau unui nou-născut vreo patruzeci și trei de ani. Și bărbații japonezi născuți atunci? Cu aproximativ cincisprezece centimetri mai scunzi decât cei născuți un secol mai târziu. Peste câteva decenii, primește un nume. O vitamină. Dar să știi ce lipsește nu o pune în farfuria unei familii sărace.
+  whisper: Te trezești in nanul 1884, la Shinagawa, în golfutociu. O navă școală pe numețucuba se pregătește de plecare. Știai că într-o călătorie ca asta, cu un an înainte, aproape jumătate din echipaj, s-am bolnavit din cauza aceea ce mâncă, pe navăriu jo, o 160 și 9 de oamenii au făcut băriberii, 20 și 5 au murit. Uite farfuria unui marinar. Orez alb, o rezul era gratuit, tot restul costa băni. Un medical marinei, tăcachii, canehiro, măsoară ce mânâncă oamenii și schimbă meniu, mai mult orz carne, lapte, pâine și legume. Pețucuba se înbolnavesc paiți prezece oamenii. Numără niciunul, iar cei paiți prezece, numă în casera din nou a hrană. Deci, cei e mâncare acum, ceva de măsurat? Contează cei înăuntru. Primele tabele de mortalitate ale japoniei, îi dau unui nou născut vreo, 40 și 3 de ani. Și bărbați și japonez născuțiatunci cu aproximativ 15 cm mai scuns de cât cei născuți un secol mai târziu. Peste câteva de cei nii primește un nume. O vitamina, dar să știce l-i psește, nu apunem farfuria unui familiei sărace.
+  LISTEN (listen) 'golful tokyo' heard as 'golfutociu' (risky/name)
+  LISTEN (listen) 'nume tsukuba' heard as 'numetucuba' (risky/name)
+  LISTEN (listen) 'nava ryujo' heard as 'navariu jo o' (risky/name)
+  LISTEN (listen) 'beriberi' heard as 'bariberii' (risky/name)
+  LISTEN (listen) 'takaki kanehiro' heard as 'tacachii canehiro' (risky/name)
+  LISTEN (listen) 'pe tsukuba' heard as 'petucuba' (risky/name)
+  FAIL   (number) 'imbolnavesc #14 oameni nu moare' heard as 'inbolnavesc paiti prezece oamenii numara'
+  FAIL   (flip) 'imbolnavesc #14 oameni nu moare' heard as 'inbolnavesc paiti prezece oamenii numara' — negation changed
+  FAIL   (number) '#14 nu mancasera' heard as 'paiti prezece numa in casera'
+  FAIL   (flip) '#14 nu mancasera' heard as 'paiti prezece numa in casera' — negation changed
+  FAIL   (number) '#9' heard as 'nou a'
+  LISTEN (listen) low probability 0.29: 'Te' at 0.00
+  LISTEN (listen) low probability 0.33: 'O' at 6.02
+  LISTEN (listen) low probability 0.15: 'jo,' at 18.98
+  LISTEN (listen) low probability 0.33: 'era' at 29.24
+  LISTEN (listen) low probability 0.30: 'orz' at 37.24
+  LISTEN (listen) low probability 0.20: 'carne,' at 37.72
+  LISTEN (listen) low probability 0.31: 'se' at 40.56
+  LISTEN (listen) low probability 0.27: 'japonez' at 60.12
+  LISTEN (listen) low probability 0.26: 'l' at 71.26
+  LISTEN (listen) low probability 0.27: 'familiei' at 73.60
+## fd07-1915
+  script : Te trezești în anul o mie nouă sute cincisprezece, la o fermă-închisoare din Mississippi. Unsprezece oameni stau la coadă la micul dejun. Știai că aici, niște medici au îmbolnăvit oameni sănătoși, intenționat, hrănindu-i cu mâncarea obișnuită a unei familii sărace din Sud? Voluntarilor li s-a promis grațierea. Uite farfuria. Pâine de mălai și terci de porumb. Porc sărat și gras. Melasă. Aproape deloc lapte, carne proaspătă sau verdețuri. După vreo cinci luni, cam jumătate dintre ei fac pelagră. Erupții pe piele, probleme cu stomacul, confuzie, chiar moarte. După o estimare des citată, a ucis în jur de o sută de mii de oameni în tot Sudul. Medicul, Joseph Goldberger, arată că pelagra nu se ia ca un microb. Vine din ceva ce lipsește din alimentație. Mai târziu, primește un nume. Niacina, o vitamină B. În anii o mie nouă sute patruzeci, e adăugată în făină și în pâine în mare parte din America. Cu asta, cu salarii mai bune și mâncare mai variată, pelagra dispare treptat. Deci ce e mâncarea acum? Ceva ce reparăm. Adaugi ce lipsește și o boală dispare. În America, în anul acela, un nou-născut putea spera la vreo cincizeci și cinci de ani. Dar să repari mâncarea ajută doar dacă e destulă. Iar în India, nu e.
+  whisper: Te trezești în anulomie 915, la o fermă în chisoare din Mrs. Epi. Unspreze ce oameni stau la cuada la micul de Jun. Știai că aici, niște medicea un bol navit oameni sănătoși, intenționat chranindu-i cum încarea obișnuita unei familii sărace din sud, voluntarii lor licea promis grațierea. Uite farfuria, pâine de malai și teși de porum, porc sărat și gras, melasă, a proape de loc lapte care ne prospătă sau verdețuri. După vreo 5 luni, cam jumătate din treiei fac pelagra, erupții pe piele, probleme cu stomacul, confuzie chiar moarte. După o esti mare descitată au cisi în jur de o suta de mi de oamenii în tot sudu. Medicul Joseph Goldberger, arată că pelagra nu se iacă un microb. Vine din ceva ce lipsește din alimentație. Mai târziu primește un nume, ni acina o vitamina B. În anii 1940, ia dăugat în făină și în pâine în mare parte din Amerika. Cu asta, cu salari mai bune și în care mai variată, pe lagra despară treptat. Deci ce în care acum ceva ce reparăm? Adăuși ce lipsește și oboala despară. În Amerika, în anul acela un nou născut, putea spera la vră 5-10 și 5 de ani. Dar să reparăm în care ajuta doar dacă e destulă. Iar în India, nu e.
+  FAIL   (number) 'anul #1915' heard as 'anulomie #915'
+  FAIL   (number) 'mississippi #11' heard as 'mrs epi unspreze ce'
+  LISTEN (listen) 'mississippi #11' heard as 'mrs epi unspreze ce' (risky/name)
+  FAIL   (number) '#1000' heard as 'mi'
+  LISTEN (listen) 'sudul' heard as 'sudu' (risky/name)
+  LISTEN (listen) 'niacina' heard as 'ni acina' (risky/name)
+  LISTEN (listen) 'america' heard as 'amerika' (risky/name)
+  LISTEN (listen) 'pelagra dispare' heard as 'pe lagra despara' (risky/name)
+  LISTEN (listen) 'america' heard as 'amerika' (risky/name)
+  FAIL   (hedge) 'vreo #55' heard as 'vra #5 #15' — hedge ['vreo'] lost
+  FAIL   (number) 'vreo #55' heard as 'vra #5 #15'
+  LISTEN (listen) low probability 0.30: 'Te' at 0.00
+  LISTEN (listen) low probability 0.24: 'Mrs.' at 4.34
+  LISTEN (listen) low probability 0.22: 'a' at 27.12
+  LISTEN (listen) low probability 0.28: 'care' at 28.28
+  LISTEN (listen) low probability 0.28: 'cisi' at 42.48
+  LISTEN (listen) low probability 0.27: 'mi' at 44.12
+  LISTEN (listen) low probability 0.33: 'iacă' at 49.64
+  LISTEN (listen) low probability 0.08: '1940,' at 59.46
+  LISTEN (listen) low probability 0.29: 'mai' at 66.38
+  LISTEN (listen) low probability 0.22: '5' at 79.46
+  LISTEN (listen) gap 1.12 s after '1940,' at 60.78
+## fd08-1966
+  script : Te trezești în anul o mie nouă sute șaizeci și șase, într-un sat din Punjab. Toată lumea se uită la cer, după ploaie. Știai că, cu un an înainte, prim-ministrul Indiei a cerut întregii țări să sară peste o masă pe săptămână? Lal Bahadur Shastri. Războiul și seceta lăsaseră prea puține cereale. Uite ce ai în farfurie. Lipie, linte, poate niște legume. În toată India, mâncarea ajunge doar pentru cam două mii de calorii de om pe zi. Un nou-născut de aici putea spera la vreo patruzeci și șase de ani. Așa că India importă din Mexic optsprezece mii de tone de semințe de grâu. Plante scunde și rezistente, create de echipa lui Norman Borlaug. Au nevoie de apă și de mult îngrășământ, făcut în fabrici din azotul din aer. În câțiva ani, recolta de grâu a Indiei sare la șaptesprezece milioane de tone. Deci ce e mâncarea acum? Destulă, în sfârșit. Produsă la tonă. Azi, un nou-născut din India poate spera la vreo șaptezeci și doi de ani. Și peste tot în lume, mâncarea n-a fost niciodată mai din belșug. Ceea ce aduce o problemă complet nouă.
+  whisper: Te trezești în anul 1926, într-un sad din punjab. Totălumea se uită la Cer, după ploie, știai că, cu un an înainte, prin ministul lindiei, acerut întrejit să-ri să s-ară peste o masă pe săptămâna, lal băhadur și astrii, războil și seceta, lăsase răpreapuține cereale. Uite ce ai în farfurie, lipie, linte, poate niște legume. În toată india, în care ajunge doar pentru ca am 2.000 de calorii de oampezii, un nou născut de aici putea spera la vră 40 și 6 de ani. Așa că india importă din mecsic, obspre 10.000 de tonă de semințe de grău. Plantă scunde și resistente, create de echipa lui Norma in Borlaug. Au nevoie de apă și de mult îngrașămând, facut în fabric din azotul din aier. În căzva ani, recolta de grău a indiei sare la 7-10 milioane de tonă. Teștei în care acum, destulă, însfârșit. Produse la tonă. Azi un nou născut din india, poate spera la vră 70-2 de ani și peste tot în lume, în care n-a fost niciodată mai din bel șug. Ce aci aduce o problemă complet nouă?
+  FAIL   (number) '#1966' heard as '#1926'
+  LISTEN (listen) 'prim ministrul indiei a cerut intregii tari' heard as 'prin ministul lindiei acerut intrejit' (risky/name)
+  LISTEN (listen) 'shastri razboiul' heard as 'si astrii razboil' (risky/name)
+  FAIL   (hedge) 'cam' heard as 'ca am' — hedge ['cam'] lost
+  FAIL   (hedge) 'vreo' heard as 'vra' — hedge ['vreo'] lost
+  FAIL   (number) 'mexic #18000' heard as 'mecsic obspre #10000'
+  LISTEN (listen) 'mexic #18000' heard as 'mecsic obspre #10000' (risky/name)
+  LISTEN (listen) 'norman' heard as 'norma in' (risky/name)
+  FAIL   (number) '#17000000' heard as '#7 #10000000'
+  FAIL   (hedge) 'vreo #72' heard as 'vra #70 #2' — hedge ['vreo'] lost
+  FAIL   (number) 'vreo #72' heard as 'vra #70 #2'
+  LISTEN (listen) low probability 0.21: 'Te' at 0.00
+  LISTEN (listen) low probability 0.31: '1926,' at 0.96
+  LISTEN (listen) low probability 0.33: 'sad' at 3.76
+  LISTEN (listen) low probability 0.30: '-ri' at 11.72
+  LISTEN (listen) low probability 0.19: 's' at 11.96
+  LISTEN (listen) low probability 0.05: 'un' at 28.52
+  LISTEN (listen) low probability 0.35: 'vră' at 30.82
+  LISTEN (listen) low probability 0.30: 'de' at 36.66
+  LISTEN (listen) low probability 0.13: 'in' at 42.14
+  LISTEN (listen) low probability 0.29: 'Au' at 43.28
+  LISTEN (listen) low probability 0.34: 'în' at 53.58
+  LISTEN (listen) low probability 0.27: '70' at 60.66
+  LISTEN (listen) low probability 0.25: 'și' at 61.98
+  LISTEN (listen) low probability 0.31: 'în' at 63.84
+  LISTEN (listen) low probability 0.27: 'bel' at 65.40
+  LISTEN (listen) low probability 0.22: 'aci' at 66.60
+## fd09-today
+  script : Te trezești azi, în São Paulo. Pe lângă tine trec în viteză motociclete cu livrări de mâncare. Știai că ghidul oficial de alimentație al Braziliei le spune oamenilor să mănânce la ore regulate și, ori de câte ori pot, împreună cu alții? Uite ce ai în farfurie. Orez cu fasole, încă în cele mai multe farfurii din Brazilia. Și tot mai multă mâncare ultraprocesată. Sucuri. Gustări ambalate. În Brazilia, asta înseamnă cam o cincime din caloriile pe care le mănâncă oamenii. În Statele Unite, mai mult de jumătate. Regula de aur a ghidului? Alege mâncare proaspătă și mese gătite acasă în locul celei ultraprocesate. Iar în cele mai multe țări, acum sunt mai mulți adulți care trăiesc cu obezitate decât adulți subponderali. În Brazilia, un nou-născut poate spera la vreo șaptezeci și șase de ani. Deci ce e mâncarea pentru tine? Prea mult din unele. Prea puțin din altele. Așa că uite întrebarea pentru care ai venit. Mâncarea ne-a ajutat să trăim mai mult. Acum ne ia înapoi o parte din anii ăștia?
+  whisper: Te trezește azi în sau paulu. Pe lângătine trec în viteza motociclete cu livrăr de mâncare. Știai că gidul oficial de alimentație al Brasiliei le spune oameniilor să mă înce la ore regulate și ori de câteor pot împreună cu alții, uite ce ai în farfurie, o rest cu fasole încă în cele mai multe farfurii din Brasilia. Și tot mai multă mâncare ultra procesată, sucuri, gustării ambalate, în Brasilia asta înseamnă că am o cinciime din calorile pe care le mă încă oameni. În statele unite mai mult de jumătate. Regula de au răgidului, alege mâncare prospătă și mese gătite acasă în locul celai ultra procesată. Iar în cele mai multe tsări, acum sunt mai multe adulti care treesc o bezitate de câtă adulti sub ponderalii. În Brasilia un nou născut poate spera la vră 70 și 6 de ani. Deci ce mâncarea pentru tine, prea mult din unele, prea puțin din altele. Așa că uite întrebarea pentru care ai venit, mâncarea ne-a ajutat să trei mai mult. Acum ne iana pui o parte din ani aștia.
+  LISTEN (listen) 'sao paulo' heard as 'sau paulu' (risky/name)
+  LISTEN (listen) 'braziliei' heard as 'brasiliei' (risky/name)
+  LISTEN (listen) 'brazilia' heard as 'brasilia' (risky/name)
+  LISTEN (listen) 'brazilia' heard as 'brasilia' (risky/name)
+  FAIL   (hedge) 'cam' heard as 'ca am' — hedge ['cam'] lost
+  LISTEN (listen) 'brazilia' heard as 'brasilia' (risky/name)
+  FAIL   (hedge) 'vreo' heard as 'vra' — hedge ['vreo'] lost
+  LISTEN (listen) low probability 0.18: 'rest' at 16.66
+  LISTEN (listen) low probability 0.29: 'în' at 25.22
+  LISTEN (listen) low probability 0.28: 'asta' at 25.84
+  LISTEN (listen) low probability 0.21: 'au' at 33.10
+  LISTEN (listen) low probability 0.08: 'ultra' at 38.12
+  LISTEN (listen) low probability 0.33: 'o' at 43.14
+  LISTEN (listen) low probability 0.34: 'sub' at 44.68
+  LISTEN (listen) low probability 0.34: 'și' at 48.76
+  LISTEN (listen) low probability 0.35: '6' at 49.10
+  LISTEN (listen) low probability 0.25: 'ani' at 61.56
+## fd10-reveal
+  script : Uite răspunsul. Mâncarea ne-a dat ani. Dar n-a făcut-o singură. Iar acum, pericolul s-a inversat. Destule calorii și nutrienții potriviți au învins scorbutul, beriberi și pelagra, și ne-au ajutat să creștem mai înalți. Un medic, Thomas McKeown, a susținut că mâncarea mai bună a fost motivul principal pentru care am început să trăim mai mult. Mulți istorici nu sunt de acord. În marile orașe americane, un studiu a descoperit că doar apa curată a stat în spatele a aproape jumătate din scăderea deceselor, la începutul anilor o mie nouă sute. Canalizarea, vaccinurile și medicina au făcut mare parte din rest. Și azi? Cam unul din cinci decese din lume e legat de alimentație. Cele mai mari riscuri? Prea multă sare. Prea puține cereale integrale. Prea puține fructe. Și ce-ai ghicit? În anul o mie opt sute, vreo douăzeci și nouă de ani. Azi, la nivel mondial, vreo șaptezeci și trei. Cât de aproape ai fost? Acum coboară scara cu mine. În anul o mie cinci sute, mâncarea era combustibil. Apoi, leac. Apoi, ceva de măsurat. Apoi, ceva ce reparăm. Apoi, destulă, în sfârșit. Azi, prea multă. În anul o mie cinci sute, mâncarea îți lua cei mai mulți bani, iar foamea era pericolul. Azi, pericolul e ce alegem să mâncăm.
+  whisper: Uite, răspunsu, mâncarea ne-a dat ani. Dar n-a făcut o singură, iar acum pericolo s-a inversat. Destul e calorii și nutrienții potriviția, un vins scorbutul, bereiber și pelagra, și ne-au ajutat să crește mai în alt. Un medic Tomas Mechion, asustinut că, mâncarea mai bună, a fost motivul principal pentru care am început să trai mai mult. Multi historici nu sunt de acord. În mari le orașa americane, un studioa descoperit că doar apacurat, a stat în spatele a proape jumătate din scăderea de ceaselor. L-anceputul anilor 1900. Canalizarea, vaccinurile și medicina, a făcut mai reparte din rest. Și azi, camunul din 5 de cease din lume, ilegat de alimentație, cele mai mari riscuri, prea multă sare, prea puține cereale integrale, prea puține fructe. Și ce ai giciit? În anul a omie 800, 20 și 9 de ani. Azi, la nivel mondial, vreo 73, câtea proape ai fost. Acum coboară scara cumine, în anul 1500, mâncarea era combustibil. Apoi leac, apoi ceva de măsurat, apoi ceva ce reparăm, apoi destul însfârșit. Azi, prea multă. În anul 1500, mâncarea s-loa cei mai mulți bani, iar fomea era pericolul. Azi, pericolul, ii ce alegem să mâncăm.
+  LISTEN (listen) 'beriberi' heard as 'bereiber' (risky/name)
+  LISTEN (listen) 'thomas mckeown a sustinut' heard as 'tomas mechion asustinut' (risky/name)
+  FAIL   (hedge) 'aproape' heard as 'proape' — hedge ['aproape'] lost
+  FAIL   (number) 'cam #1' heard as 'camunul'
+  FAIL   (hedge) 'vreo' heard as '(nothing)' — hedge ['vreo'] lost
+  LISTEN (listen) low probability 0.16: 'Dar' at 3.06
+  LISTEN (listen) low probability 0.17: 'e' at 7.48
+  LISTEN (listen) low probability 0.27: 'historici' at 23.40
+  LISTEN (listen) low probability 0.35: 'mari' at 25.32
+  LISTEN (listen) low probability 0.21: 'a' at 30.10
+  LISTEN (listen) low probability 0.32: 'a' at 40.44
+  LISTEN (listen) low probability 0.34: '5' at 44.32
+  LISTEN (listen) low probability 0.30: 'ilegat' at 46.24
+  LISTEN (listen) low probability 0.06: 'Și' at 55.08
+  LISTEN (listen) low probability 0.21: 'a' at 56.76
+  LISTEN (listen) low probability 0.13: '20' at 57.98
+  LISTEN (listen) low probability 0.10: 'Azi,' at 83.64
+  LISTEN (listen) low probability 0.28: 'ii' at 85.58
+  LISTEN (listen) low probability 0.04: 'ce' at 85.60
+  LISTEN (listen) low probability 0.32: 'să' at 86.14
+  LISTEN (listen) gap 1.46 s after '1900.' at 36.14
+## fd11-2100
+  script : Deci ce o să mănânci în anul două mii o sută? Dimineața aia încă n-a venit. Dar putem urmări dovezile. Națiunile Unite se așteaptă ca speranța de viață la nivel mondial să ajungă la vreo optzeci și doi de ani până în două mii o sută. Grupul lor de experți pentru climă spune că încălzirea a încetinit deja creșterea productivității agricole, în ultimii cincizeci de ani. Iar Comisia EAT Lancet spune că o alimentație mai ales din plante, cu carne roșie cam o dată pe săptămână, ar putea preveni în jur de cincisprezece milioane de decese premature pe an. Așa că uite un scenariu. Nu un fapt. Până în două mii o sută, farfuria ta ar putea fi mai ales din plante. Carnea ar putea fi un răsfăț de o dată pe săptămână. Și dacă recoltele rezistă, viața medie ar putea trece de optzeci de ani. În anul o mie cinci sute, Biserica hotăra în ce zile nu aveai voie să mănânci carne. În anul două mii o sută, motivul ar putea fi inima ta. Și planeta.
+  whisper: Deci ce o s-am manancit in anul 200, dimineața ea încănavenit, dar putem urmării dovezile. Națeunile unite se așteaptă că asperanța deviața la nivel mondial să ajungă la vreo 80 și 2 de ani până în 200. Grupul Lor de Experse pentru clima, spune că încălzirea încetinit de joa crește reaproductivității agricole în ultimie 50 de ani. Iar Comisia ea te lanset, spune că o alimentație mai ales din plante, cu carne roșie că am odată pe săptămâna, arputea preveni în jur de 15 milioane de ce se premature pe an. Așa că oite un scenariu, nu înfapt. Până în 200, farfuriată arputea fi mai ales din plante, carne arputea fi un răsfăț de odată pe săptămâna. Și dacă recoltele resistă, viata media arputea trece de 80 de ani, în anul 1500, biserica jotăra în cezile nu aveai voie să manăși carne, în anul 200, motivul arputea fi inimata, și planeta.
+  FAIL   (number) '#2100' heard as '#200'
+  FAIL   (flip) 'aia inca n a venit' heard as 'ea incanavenit' — negation changed
+  FAIL   (number) '#2100' heard as '#200'
+  LISTEN (listen) 'eat lancet' heard as 'ea te lanset' (risky/name)
+  FAIL   (hedge) 'cam o data' heard as 'ca am odata' — hedge ['cam'] lost
+  FAIL   (number) '#2100 farfuria ta ar putea' heard as '#200 farfuriata arputea'
+  FAIL   (number) '#2100' heard as '#200'
+  LISTEN (listen) low probability 0.33: 'ce' at 0.32
+  LISTEN (listen) low probability 0.13: 's' at 0.48
+  LISTEN (listen) low probability 0.28: 'in' at 1.10
+  LISTEN (listen) low probability 0.28: '80' at 11.12
+  LISTEN (listen) low probability 0.26: 'Lor' at 15.14
+  LISTEN (listen) low probability 0.14: 'cu' at 27.20
+  LISTEN (listen) low probability 0.33: 'carne' at 28.08
+  LISTEN (listen) low probability 0.04: 'că' at 28.74
+  LISTEN (listen) low probability 0.22: 'ce' at 33.32
+  LISTEN (listen) low probability 0.27: 'media' at 49.52
+  LISTEN (listen) low probability 0.19: 'de' at 51.22
+  LISTEN (listen) low probability 0.09: 'în' at 52.14
+## fd12-close
+  script : Diseară, uită-te în farfurie. Ce parte din ea îți cumpără mai mulți ani?
+  whisper: Dice-are uite timp far furie, ce parte din iați cum prea mai mulți ani?
+  LISTEN (listen) low probability 0.29: 'iați' at 3.42
+  LISTEN (listen) low probability 0.30: 'mulți' at 4.50
+## fd13-outro
+  script : Acesta a fost Did You Know That, episodul cinci. Mâncarea. Acum e rândul tău. Din bucătăria cărui secol ai mânca? Spune-mi în comentarii. La finalul fiecărui episod, o să citesc cel mai bun comentariu, chiar aici, pe ecranul ăsta. Iar subiectul pe care îl cereți cel mai des devine un episod viitor. Pe site-ul nostru, Dexti punct laiv, poți vedea toate episoadele, poți colecționa cartonașele cu fapte și poți juca jocul de ghicit. Dacă asta ți-a schimbat felul în care te uiți la ce ai în farfurie, dă-i like. Trimite-l prietenului care îți gătește mereu. Și abonează-te, ca următorul mister să te găsească.
+  whisper: Acesta a fost Did You Know That episodul 5. Mâncarea, acum e rândul tău, din bucătăriea cărui secul ai mânca. Spune mi-n comentarii, la finalul fie cărui episod o să citesc cel mai bun comentariu, chiar aici, pe ekranul ăsta. Iar subiectul pe care el ceres cel mai des devine un episod viitor. Pe siteul nostru, dexty.live, poți vedea toate episodele, poți colecționa cartonasele cu faptă și poți jucă a jocul de giciid. Dacă asteați ați schimbat felul în care te uiți la ceai în farfurie, dă-i laic. Trimite-l prietenului care îți gătește mereu. Și abonează-te, ca următorul mistere să te găsească.
+  FAIL   (flip) 'in' heard as 'n' — negation changed
+  LISTEN (listen) 'dexti punct laiv' heard as 'dexty.live' (risky/name)
+  LISTEN (listen) 'like' heard as 'laic' (risky/name)
+## fd13b-next
+  script : Data viitoare: medicina. În anul o mie șapte sute nouăzeci și nouă, medicii lui George Washington i-au scos, după unele estimări, în jur de două cincimi din sânge. Deci cum am aflat ce ne vindecă, de fapt?
+  whisper: data viitoare, medicina. În anul 1799, medici lui George Washington e au scos după unele estimări, în jur de 2-5 din sânge. Deci cum am aflat ce ne vinde că de fapt?
+  LISTEN (listen) low probability 0.31: 'e' at 5.92
+  LISTEN (listen) low probability 0.21: 'au' at 6.16
+  LISTEN (listen) low probability 0.12: 'din' at 8.80
+## fd13c-signoff
+  script : Întreabă... Uimește-te. Repetă.
+  whisper: Treaba-m, uimește-te. Repet-o.
+## fd14-endscreen
+  script : Data viitoare... ăsta ar putea fi comentariul tău. Alege un mister. Și ne vedem acolo.
+  whisper: data viitoare îsta ar putea fi comentariu tău a legi un mister și ne vedem acolo.
+  LISTEN (listen) low probability 0.20: 'îsta' at 0.78
+  LISTEN (listen) low probability 0.07: 'a' at 2.82

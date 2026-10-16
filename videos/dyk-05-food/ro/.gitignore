@@ -1,0 +1,9 @@
+# Paid Romanian takes, chunk cache, mix stems and renders stay out of Git (regenerable only by paying again:
+# keep them in this main-checkout folder). Word timings (*.json) ARE committed.
+narration/*.mp3
+narration/chunks/*.mp3
+mix/
+out/
+bus/
+*.mp4
+narration-ro-preview.mp3

@@ -1,0 +1,39 @@
+quota: creator 267611/363000 used, 95389 left; this run needs <= 1588
+  fd06-1884 chunk 1: pace target 2.9
+    chunk 1: cached passing take (no API call)
+  fd06-1884 chunk 2: pace target 2.62
+    chunk 2: cached passing take (no API call)
+  fd06-1884 chunk 3: pace target 2.59
+    chunk 3: cached passing take (no API call)
+  fd06-1884 chunk 4: pace target 2.04
+    chunk 4: cached passing take (no API call)
+  fd06-1884 chunk 5: pace target 2.58
+    chunk 5: cached passing take (no API call)
+  fd06-1884 chunk 6: pace target 2.7
+    try 1 speed 1.00: pace 2.99 w/s (target 2.7) ['pace 2.99 w/s (target 2.7±10%)']
+    try 2 speed 0.92: pace 2.62 w/s (target 2.7) OK
+  ~ fd06-1884 chunks 1->2: speech rate 5.99 -> 5.27 syl/s (listen)
+  ~ fd06-1884 chunks 2->3: speech rate 5.27 -> 6.10 syl/s (listen)
+  fd06-1884: 75.00s, 183 words, tail 0.26s
+  fd07-1915 chunk 1: pace target 2.84
+    chunk 1: cached passing take (no API call)
+  fd07-1915 chunk 2: pace target 2.36
+    chunk 2: cached passing take (no API call)
+  fd07-1915 chunk 3: pace target 2.39
+    chunk 3: cached passing take (no API call)
+  fd07-1915 chunk 4: pace target 2.6
+    try 1 speed 1.00: pace 3.20 w/s (target 2.6) ['pace 3.20 w/s (target 2.6±10%)']
+    try 2 speed 1.00: pace 3.02 w/s (target 2.6) ['pace 3.02 w/s (target 2.6±10%)']
+    try 3 speed 1.00: pace 3.16 w/s (target 2.6) ['pace 3.16 w/s (target 2.6±10%)']
+    try 4 speed 1.00: pace 3.02 w/s (target 2.6) ['pace 3.02 w/s (target 2.6±10%)']
+  fd07-1915 chunk 5: pace target 2.98
+    chunk 5: cached passing take (no API call)
+  fd07-1915 chunk 6: pace target 2.8
+    chunk 6: cached passing take (no API call)
+  ~ fd07-1915 chunks 3->4: speech rate 5.33 -> 6.43 syl/s (listen)
+  !! fd07-1915 chunk 4 REJECTED after 4 tries: ['pace 3.20 w/s (target 2.6±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+    try 1 speed 0.95: pace 3.01 w/s (target 2.8) OK
+  fd14-endscreen: 5.25s, 15 words, tail 0.27s
+voice done: 728.1 s total
+hard gate failed for: fd07-1915
+EXIT 1

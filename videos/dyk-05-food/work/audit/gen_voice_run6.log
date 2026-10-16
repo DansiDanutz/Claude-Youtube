@@ -1,0 +1,15 @@
+quota: creator 255882/363000 used, 107118 left; this run needs <= 844
+  fd11-2100 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  fd11-2100 chunk 2: pace target 2.9
+    try 1 speed 0.98: pace 2.86 w/s (target 2.9) OK
+  fd11-2100 chunk 3: pace target 2.9
+    chunk 3: cached passing take (no API call)
+  fd11-2100 chunk 4: pace target 3.2
+    chunk 4: cached passing take (no API call)
+  fd11-2100 chunk 5: pace target 3.0
+    chunk 5: cached passing take (no API call)
+  ~ fd11-2100 chunks 2->3: speech rate 5.42 -> 4.67 syl/s (listen)
+    chunk 1: level -2.0 dB to the scene median
+  fd11-2100: 48.18s, 144 words, tail 0.28s
+voice done: 603.4 s total

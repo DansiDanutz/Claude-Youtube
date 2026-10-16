@@ -1,0 +1,32 @@
+quota: creator 253749/363000 used, 109251 left; this run needs <= 1128
+  fd05-1747 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  fd05-1747 chunk 2: pace target 3.4
+    chunk 2: cached passing take (no API call)
+  fd05-1747 chunk 3: pace target 2.6
+    chunk 3: cached passing take (no API call)
+  fd05-1747 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 2.66 w/s (target 3.0) ['pace 2.66 w/s (target 3.0±10%)']
+    try 2 speed 1.08: pace 2.79 w/s (target 3.0) OK
+  fd05-1747 chunk 5: pace target 3.2
+    chunk 5: cached passing take (no API call)
+  fd05-1747 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ fd05-1747 chunks 2->3: speech rate 4.82 -> 4.15 syl/s (listen)
+  ~ fd05-1747 chunks 5->6: speech rate 4.97 -> 5.70 syl/s (listen)
+  !! fd05-1747 REJECTED by the continuity gate: ['chunks 3->4 speech rate 4.15 -> 5.20 syl/s'] (passing chunk takes stay cached; retune pace/text)
+  fd06-1884 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  fd06-1884 chunk 2: pace target 3.3
+    chunk 2: cached passing take (no API call)
+  fd06-1884 chunk 3: pace target 3.0
+    chunk 3: cached passing take (no API call)
+  fd06-1884 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 3.04 w/s (target 3.0) OK
+  fd06-1884 chunk 5: pace target 2.9
+    chunk 5: cached passing take (no API call)
+  fd06-1884 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  fd06-1884: 59.86s, 173 words, tail 0.23s
+voice done: 607.7 s total
+hard gate failed for: fd05-1747

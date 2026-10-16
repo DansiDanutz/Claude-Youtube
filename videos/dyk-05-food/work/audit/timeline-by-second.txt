@@ -1,0 +1,651 @@
+sec | shot | narration in this second | SFX starting in this second
+0:00 | FdHook | Last time, | scan-hum, pop-reveal
+0:01 | FdHook | I left you with a question. | 
+0:02 | FdHook | What | 
+0:03 | FdHook | will you be eating in | ui-click-soft
+0:04 | FdHook | twenty one hundred? | chime-magic
+0:05 | FdHook | In fifteen | 
+0:06 | FdHook | hundred, historians | whoosh-soft, ui-click-soft
+0:07 | FdHook | estimate | 
+0:08 | FdHook | food took | ui-click-soft
+0:09 | FdHook | up most of a working | pop-reveal
+0:10 | FdHook | family's budget. | ui-click-soft
+0:11 | FdHook | Today, there's | 
+0:12 | FdHook | more food than ever. | pop-reveal, ui-click-soft, ui-click-soft
+0:13 | FdHook |  | ui-click-soft, ui-click-soft
+0:14 | FdHook | And yet, here's | ui-click-soft, ui-click-soft
+0:15 | FdHook | the strange part. | whoosh-reverse
+0:16 | FdHook | Did you know that | ui-toggle-on, chime-magic
+0:17 | FdHook | today, about one | ui-click-soft
+0:18 | FdHook | in five deaths around | trap-snap
+0:19 | FdHook | the world is linked | ui-click-soft
+0:20 | FdHook | to diet? | ui-click-soft
+0:21 | FdHook | So did food | whoosh-soft
+0:22 | FdHook | give us our longer lives? | ui-click-soft
+0:23 | FdHook | Or is it | ui-click-soft
+0:24 | FdHook | taking some of those | riser-soft
+0:25 | FdHook | years back? | impact-soft
+0:26 | FdHook |  | scan-hum
+0:27 | FdIntro |  | ui-toggle-on, sparkle-soft
+0:28 | FdIntro |  | whoosh-soft, knock-solid, knock-solid, knock-solid, impact-deep-soft
+0:29 | FdIntro |  | chime-magic
+0:30 | FdIntro |  | 
+0:31 | FdIntro |  | whoosh-soft
+0:32 | FdIntro |  | 
+0:33 | FdIntro |  | 
+0:34 | FdIntro | Welcome | whoosh-soft
+0:35 | FdWelcome | back to Did | pop-reveal
+0:36 | FdWelcome | You Know That. Episode | ui-click-soft
+0:37 | FdWelcome | five. | 
+0:38 | FdWelcome | You know the rule. | whoosh-soft
+0:39 | FdWelcome | Here's your | ui-click-soft
+0:40 | FdWelcome | guess. In | 
+0:41 | FdWelcome | eighteen hundred, life | pop-reveal, ui-click-soft
+0:42 | FdWelcome | expectancy at | 
+0:43 | FdWelcome | birth, worldwide, | ui-click-soft, ui-click-soft
+0:44 | FdWelcome | was about twenty | chime-reward
+0:45 | FdWelcome | nine years. | 
+0:46 | FdWelcome | What about a baby | pop-reveal
+0:47 | FdWelcome | born today? | impact-soft
+0:48 | FdWelcome | Guess | pop-reveal
+0:49 | FdWelcome | in the comments, right | ui-send
+0:50 | FdWelcome | now. | 
+0:51 | FdWelcome | Then stay to the end, | pop-reveal
+0:52 | FdWelcome | and check your guess. | pop-reveal, chime-reward
+0:53 | FdWelcome |  | 
+0:54 | FdWelcome | Seven | whoosh-soft, ui-click-soft
+0:55 | FdPromise | mornings, from | ui-click-soft, ui-click-soft, ui-click-soft
+0:56 | FdPromise | fifteen hundred to | ui-click-soft, ui-click-soft
+0:57 | FdPromise | twenty one hundred. | ui-click-soft
+0:58 | FdPromise | In each one, | 
+0:59 | FdPromise | you wake up somewhere | warm-shimmer, ui-click-soft
+1:00 | FdPromise | new. You'll | 
+1:01 | FdPromise | see what's on your | 
+1:02 | FdPromise | plate, what | pop-reveal
+1:03 | FdPromise | it does to your body, | pop-reveal
+1:04 | FdPromise | and how long | pop-reveal
+1:05 | FdPromise | you get to live. | 
+1:06 | FdPromise | And at the end, | whoosh-soft
+1:07 | FdPromise | you'll find | 
+1:08 | FdPromise | out what really | riser-soft, ui-click-soft
+1:09 | FdPromise | gave us our extra years. | impact-soft
+1:10 | FdPromise |  | 
+1:11 | FdPromise |  | whoosh-wind, impact-soft
+1:12 | Fd1500 | You wake | 
+1:13 | Fd1500 | up in fifteen hundred, | whoosh-soft
+1:14 | Fd1500 | in a village in Flanders. | pop-reveal
+1:15 | Fd1500 |  | 
+1:16 | Fd1500 | The bread oven's warm, | whoosh-soft, warm-shimmer
+1:17 | Fd1500 | and the kitchen | ui-click-soft
+1:18 | Fd1500 | smells of rye | wind-soft
+1:19 | Fd1500 | and smoke. | ui-click-soft
+1:20 | Fd1500 | Did you know that | ui-toggle-on
+1:21 | Fd1500 | here, on up | chime-magic, ui-click-soft
+1:22 | Fd1500 | to four days in ten, | ui-click-soft
+1:23 | Fd1500 | eating meat | stamp-hit
+1:24 | Fd1500 | is against the rules? | ui-click-soft
+1:25 | Fd1500 | Fridays. | ui-click-soft
+1:26 | Fd1500 | Lent. | ui-click-soft
+1:27 | Fd1500 | Advent. | ui-click-soft
+1:28 | Fd1500 | The Church calls | ui-click-soft
+1:29 | Fd1500 | them fast | chime-reward
+1:30 | Fd1500 | days. | 
+1:31 | Fd1500 | Here's your plate. | whoosh-soft
+1:32 | Fd1500 | Bread at almost every | pop-reveal
+1:33 | Fd1500 | meal. Porridge, | pop-reveal
+1:34 | Fd1500 | peas and beans. | pop-reveal
+1:35 | Fd1500 | Beer to drink. | pop-reveal
+1:36 | Fd1500 | Dried | 
+1:37 | Fd1500 | fish on fast days. | pop-reveal, chime-magic
+1:38 | Fd1500 | Most | 
+1:39 | Fd1500 | of what your family spends | whoosh-soft
+1:40 | Fd1500 | goes on food. | ui-click-soft
+1:41 | Fd1500 | Seventy | sparkle-soft
+1:42 | Fd1500 | to eighty percent. | ui-click-soft
+1:43 | Fd1500 | When the harvest fails, | wind-soft
+1:44 | Fd1500 | bread prices | whoosh-soft, ui-click-soft
+1:45 | Fd1500 | jump, and people | pop-reveal
+1:46 | Fd1500 | go hungry. | stamp-hit
+1:47 | Fd1500 | How long do you live? | 
+1:48 | Fd1500 | In | whoosh-soft
+1:49 | Fd1500 | England, just across | ui-click-soft
+1:50 | Fd1500 | the sea, | stream-soft
+1:51 | Fd1500 | a newborn could expect | pop-reveal
+1:52 | Fd1500 | about thirty five | ui-click-soft, chime-reward
+1:53 | Fd1500 | years. | 
+1:54 | Fd1500 | Mostly because so | ui-click-soft
+1:55 | Fd1500 | many children died. | trap-snap
+1:56 | Fd1500 | If you made | ui-click-soft
+1:57 | Fd1500 | it to thirty, you had | ui-click-soft
+1:58 | Fd1500 | a fair chance of | 
+1:59 | Fd1500 | reaching sixty. | pop-reveal
+2:00 | Fd1500 | So what is food | 
+2:01 | Fd1500 | to you? | whoosh-soft, ui-click-soft
+2:02 | Fd1500 | Fuel. | chime-reward
+2:03 | Fd1500 | Enough to | 
+2:04 | Fd1500 | survive the day. | ui-click-soft
+2:05 | Fd1500 | Remember those | whoosh-soft
+2:06 | Fd1500 | fast days. | page-flip
+2:07 | Fd1500 | They come back at the end. | ui-click-soft
+2:08 | Fd1500 | And at sea, | 
+2:09 | Fd1500 | on the longest voyages, | piano-a-min, stream-soft
+2:10 | Fd1500 | sailors start | ui-click-soft
+2:11 | Fd1500 | falling apart. | whoosh-reverse
+2:12 | Fd1500 |  | whoosh-reverse
+2:13 | Fd1500 | You | whoosh-wind, impact-soft
+2:14 | Fd1747 | wake up in seventeen | whoosh-soft
+2:15 | Fd1747 | forty seven, aboard | pop-reveal
+2:16 | Fd1747 | HMS Salisbury, | 
+2:17 | Fd1747 | a British warship | stream-soft
+2:18 | Fd1747 | on patrol. | ui-click-soft
+2:19 | Fd1747 | Did you know | ui-toggle-on
+2:20 | Fd1747 | that the cure for sailors' | chime-magic, ui-click-soft
+2:21 | Fd1747 | worst disease | 
+2:22 | Fd1747 | was found this year, | ui-click-soft
+2:23 | Fd1747 | and the navy | 
+2:24 | Fd1747 | waited almost | whoosh-soft, pop-reveal
+2:25 | Fd1747 | fifty years to use | 
+2:26 | Fd1747 | it? | 
+2:27 | Fd1747 | Here's your plate. | whoosh-soft
+2:28 | Fd1747 | Every day, | pop-reveal
+2:29 | Fd1747 | a pound of hard | ui-click-soft
+2:30 | Fd1747 | biscuit and a | 
+2:31 | Fd1747 | gallon of beer. | ui-click-soft
+2:32 | Fd1747 | Salt | pop-reveal
+2:33 | Fd1747 | beef or pork, | pop-reveal
+2:34 | Fd1747 | dried peas, | pop-reveal
+2:35 | Fd1747 | oatmeal, | pop-reveal
+2:36 | Fd1747 | a little cheese. | pop-reveal
+2:37 | Fd1747 | Almost | 
+2:38 | Fd1747 | nothing fresh. | stamp-hit
+2:39 | Fd1747 | After weeks | 
+2:40 | Fd1747 | at sea, men get scurvy. | whoosh-soft, stamp-hit
+2:41 | Fd1747 | Bleeding | 
+2:42 | Fd1747 | gums. | ui-click-soft
+2:43 | Fd1747 | Old wounds opening | ui-click-soft
+2:44 | Fd1747 | up. The | 
+2:45 | Fd1747 | ship's surgeon, | whoosh-soft
+2:46 | Fd1747 | James Lind, | ui-click-soft
+2:47 | Fd1747 | splits twelve | ui-click-soft
+2:48 | Fd1747 | sailors with scurvy | ui-click-soft, ui-click-soft, ui-click-soft
+2:49 | Fd1747 | into pairs, | ui-click-soft, ui-click-soft
+2:50 | Fd1747 | and gives each | ui-click-soft
+2:51 | Fd1747 | pair something different. | 
+2:52 | Fd1747 | Cider. | pop-reveal
+2:53 | Fd1747 | Vinegar. | pop-reveal
+2:54 | Fd1747 | And one pair | 
+2:55 | Fd1747 | gets two oranges | pop-reveal
+2:56 | Fd1747 | and a lemon a day. | chime-reward, stamp-hit
+2:57 | Fd1747 | So what is food now? | ui-click-soft
+2:58 | Fd1747 |  | whoosh-soft
+2:59 | Fd1747 | Medicine. | chime-reward
+3:00 | Fd1747 | The right food can cure you. | ui-click-soft
+3:01 | Fd1747 | On land | whoosh-soft
+3:02 | Fd1747 | in Britain, a newborn | pop-reveal
+3:03 | Fd1747 | could still expect | chime-reward
+3:04 | Fd1747 | fewer than forty years. | 
+3:05 | Fd1747 | The navy | ui-click-soft
+3:06 | Fd1747 | finally handed | 
+3:07 | Fd1747 | out lemon juice in seventeen | pop-reveal
+3:08 | Fd1747 | ninety five. | chime-magic
+3:09 | Fd1747 | A century | 
+3:10 | Fd1747 | later, in Japan, | piano-a-min, pop-reveal
+3:11 | Fd1747 | another missing piece | ui-click-soft
+3:12 | Fd1747 | is making sailors | 
+3:13 | Fd1747 | sick. | whoosh-reverse, whoosh-reverse
+3:14 | Fd1747 |  | whoosh-wind, impact-soft
+3:15 | Fd1884 | You wake up | 
+3:16 | Fd1884 | in eighteen eighty four, | whoosh-soft
+3:17 | Fd1884 | at Shinagawa, | pop-reveal
+3:18 | Fd1884 | on Tokyo | 
+3:19 | Fd1884 | Bay. | 
+3:20 | Fd1884 | A training ship | stream-soft
+3:21 | Fd1884 | called the Tsukuba | ui-click-soft
+3:22 | Fd1884 | is getting ready to sail. | wind-soft
+3:23 | Fd1884 | Did you know | ui-toggle-on
+3:24 | Fd1884 | that on a voyage like | chime-magic, ui-click-soft
+3:25 | Fd1884 | this one, the year before, | ui-click-soft
+3:26 | Fd1884 | almost | 
+3:27 | Fd1884 | half the crew got | trap-snap
+3:28 | Fd1884 | sick from what they ate? | ui-click-soft
+3:29 | Fd1884 |  | 
+3:30 | Fd1884 | On the ship Ryujo, | ui-click-soft
+3:31 | Fd1884 | a hundred and sixty | pop-reveal
+3:32 | Fd1884 | nine men got beriberi. | ui-click-soft
+3:33 | Fd1884 | Twenty | ui-click-soft
+3:34 | Fd1884 | five died. | 
+3:35 | Fd1884 | Here's a sailor's plate. | 
+3:36 | Fd1884 | White rice. | whoosh-soft, pop-reveal
+3:37 | Fd1884 | Rice was free. | stamp-hit
+3:38 | Fd1884 | Everything | 
+3:39 | Fd1884 | else cost money. | ui-click-soft
+3:40 | Fd1884 | A navy doctor, | 
+3:41 | Fd1884 | Takaki Kanehiro, | whoosh-soft, ui-click-soft
+3:42 | Fd1884 | measures | ui-click-soft
+3:43 | Fd1884 | what the men eat, | 
+3:44 | Fd1884 | and changes the menu. | ui-click-soft
+3:45 | Fd1884 | More barley, | pop-reveal
+3:46 | Fd1884 | meat, milk, bread | pop-reveal, pop-reveal, pop-reveal
+3:47 | Fd1884 | and vegetables. | pop-reveal
+3:48 | Fd1884 | On the Tsukuba, | 
+3:49 | Fd1884 | fourteen men get | pop-reveal, whoosh-soft
+3:50 | Fd1884 | sick. None | chime-reward
+3:51 | Fd1884 | die. | 
+3:52 | Fd1884 | And the fourteen? | ui-click-soft
+3:53 | Fd1884 | They had not | stamp-hit
+3:54 | Fd1884 | eaten the new food. | 
+3:55 | Fd1884 | So what is food | whoosh-soft
+3:56 | Fd1884 | now? | ui-click-soft
+3:57 | Fd1884 | Something to measure. | chime-reward
+3:58 | Fd1884 | What's inside | ui-click-soft
+3:59 | Fd1884 | it matters. | 
+4:00 | Fd1884 | Japan's | whoosh-soft
+4:01 | Fd1884 | first life tables | whoosh-soft
+4:02 | Fd1884 | give a newborn about | pop-reveal
+4:03 | Fd1884 | forty three years. | chime-reward
+4:04 | Fd1884 | And Japanese | ui-click-soft
+4:05 | Fd1884 | men born back then? | 
+4:06 | Fd1884 | About | 
+4:07 | Fd1884 | fifteen centimetres | pop-reveal
+4:08 | Fd1884 | shorter than men born | ui-click-soft
+4:09 | Fd1884 | a century later. | 
+4:10 | Fd1884 | Decades later, | whoosh-soft
+4:11 | Fd1884 | it gets a name. | ui-click-soft
+4:12 | Fd1884 | A vitamin. | chime-magic
+4:13 | Fd1884 | But knowing | 
+4:14 | Fd1884 | what's missing doesn't | piano-a-min, ui-click-soft, ui-click-soft
+4:15 | Fd1884 | put it on a poor | 
+4:16 | Fd1884 | family's plate. | whoosh-reverse
+4:17 | Fd1884 |  | whoosh-reverse
+4:18 | Fd1884 |  | whoosh-wind, impact-soft
+4:19 | Fd1915 | You wake up in nineteen | whoosh-soft
+4:20 | Fd1915 | fifteen, | 
+4:21 | Fd1915 | on a prison farm | pop-reveal
+4:22 | Fd1915 | in Mississippi. | 
+4:23 | Fd1915 | Eleven | ui-click-soft
+4:24 | Fd1915 | men are lining up for | 
+4:25 | Fd1915 | breakfast. | ui-click-soft, ui-toggle-on
+4:26 | Fd1915 | Did you know that doctors | chime-magic, ui-click-soft
+4:27 | Fd1915 | made healthy | ui-click-soft
+4:28 | Fd1915 | men sick here, | trap-snap
+4:29 | Fd1915 | on purpose, | ui-click-soft
+4:30 | Fd1915 | by feeding them a poor | 
+4:31 | Fd1915 | Southern family's ordinary | ui-click-soft
+4:32 | Fd1915 | diet? | 
+4:33 | Fd1915 | The volunteers | ui-click-soft
+4:34 | Fd1915 | were promised a pardon. | ui-click-soft
+4:35 | Fd1915 | Here's the plate. | 
+4:36 | Fd1915 | Cornbread | whoosh-soft, pop-reveal
+4:37 | Fd1915 | and grits. | pop-reveal
+4:38 | Fd1915 | Fatty salt pork. | pop-reveal
+4:39 | Fd1915 | Molasses. | pop-reveal
+4:40 | Fd1915 |  | 
+4:41 | Fd1915 | Hardly any milk, | ui-click-soft, trap-snap
+4:42 | Fd1915 | fresh meat or | trap-snap, trap-snap
+4:43 | Fd1915 | greens. After | 
+4:44 | Fd1915 | about five months, around | whoosh-soft, ui-click-soft
+4:45 | Fd1915 | half of the men have pellagra. | ui-click-soft, stamp-hit
+4:46 | Fd1915 |  | 
+4:47 | Fd1915 | Rashes, stomach trouble, | ui-click-soft, ui-click-soft
+4:48 | Fd1915 | confusion, | ui-click-soft
+4:49 | Fd1915 | even death. | ui-click-soft
+4:50 | Fd1915 | By one widely quoted | whoosh-soft
+4:51 | Fd1915 | estimate, | 
+4:52 | Fd1915 | it killed around a | ui-click-soft
+4:53 | Fd1915 | hundred thousand people | impact-soft, ui-click-soft
+4:54 | Fd1915 | across the South. | ui-click-soft
+4:55 | Fd1915 | The doctor, | 
+4:56 | Fd1915 | Joseph Goldberger, | ui-click-soft, whoosh-soft
+4:57 | Fd1915 | shows pellagra | ui-click-soft
+4:58 | Fd1915 | isn't caught | ui-click-soft
+4:59 | Fd1915 | like a germ. | trap-snap
+5:00 | Fd1915 | It comes from something | 
+5:01 | Fd1915 | missing in the diet. | stamp-hit
+5:02 | Fd1915 | Later, | 
+5:03 | Fd1915 | it's named. | whoosh-soft, ui-click-soft
+5:04 | Fd1915 | Niacin, | chime-magic
+5:05 | Fd1915 | a B vitamin. | ui-click-soft
+5:06 | Fd1915 | In the nineteen | 
+5:07 | Fd1915 | forties, it's added | ui-click-soft
+5:08 | Fd1915 | to flour and bread | pop-reveal
+5:09 | Fd1915 | across much of America. | ui-click-soft
+5:10 | Fd1915 | With that, | 
+5:11 | Fd1915 | better wages | ui-click-soft
+5:12 | Fd1915 | and more varied food, | ui-click-soft
+5:13 | Fd1915 | pellagra fades. | whoosh-reverse
+5:14 | Fd1915 | So what | 
+5:15 | Fd1915 | is food now? | ui-click-soft, whoosh-soft
+5:16 | Fd1915 |  | 
+5:17 | Fd1915 | Something we fix. | ui-click-soft, chime-reward
+5:18 | Fd1915 | Add what's missing, | ui-click-soft
+5:19 | Fd1915 | and a disease | 
+5:20 | Fd1915 | disappears. | whoosh-soft, ui-click-soft
+5:21 | Fd1915 | In America | 
+5:22 | Fd1915 | that year, a | whoosh-soft, pop-reveal
+5:23 | Fd1915 | newborn could expect | 
+5:24 | Fd1915 | about fifty five years. | chime-reward
+5:25 | Fd1915 | But fixing | ui-click-soft
+5:26 | Fd1915 | food only | piano-a-min
+5:27 | Fd1915 | helps if there's | 
+5:28 | Fd1915 | enough of it. | ui-click-soft
+5:29 | Fd1915 | And in India, there isn't. | pop-reveal, whoosh-reverse
+5:30 | Fd1915 |  | whoosh-reverse
+5:31 | Fd1915 |  | whoosh-wind, impact-soft
+5:32 | Fd1966 | You wake up | 
+5:33 | Fd1966 | in nineteen sixty | whoosh-soft
+5:34 | Fd1966 | six, in a village | pop-reveal
+5:35 | Fd1966 | in Punjab. | 
+5:36 | Fd1966 | Everyone's | 
+5:37 | Fd1966 | watching the sky for | whoosh-soft, wind-soft
+5:38 | Fd1966 | rain. Did | ui-click-soft, ui-toggle-on
+5:39 | Fd1966 | you know that the | chime-magic
+5:40 | Fd1966 | year before, India's | ui-click-soft
+5:41 | Fd1966 | prime minister | ui-click-soft
+5:42 | Fd1966 | asked the whole country | 
+5:43 | Fd1966 | to skip one meal | trap-snap
+5:44 | Fd1966 | a week? | ui-click-soft
+5:45 | Fd1966 | Lal | ui-click-soft
+5:46 | Fd1966 | Bahadur Shastri. | 
+5:47 | Fd1966 | War | ui-click-soft
+5:48 | Fd1966 | and drought had left | ui-click-soft
+5:49 | Fd1966 | too little grain. | ui-click-soft
+5:50 | Fd1966 | Here's your plate. | 
+5:51 | Fd1966 | Flatbread, | whoosh-soft, pop-reveal
+5:52 | Fd1966 | lentils, | pop-reveal
+5:53 | Fd1966 | maybe some vegetables. | pop-reveal
+5:54 | Fd1966 | Across | ui-click-soft
+5:55 | Fd1966 | India, there's only | 
+5:56 | Fd1966 | enough food for about | 
+5:57 | Fd1966 | two thousand calories | chime-reward, ui-click-soft
+5:58 | Fd1966 | a person a day. | 
+5:59 | Fd1966 | A newborn here | ui-click-soft
+6:00 | Fd1966 | could expect about | chime-reward
+6:01 | Fd1966 | forty six years. | 
+6:02 | Fd1966 | So India | 
+6:03 | Fd1966 | imports eighteen | whoosh-soft, ui-click-soft
+6:04 | Fd1966 | thousand tonnes | ui-click-soft
+6:05 | Fd1966 | of wheat seed from | 
+6:06 | Fd1966 | Mexico. | whoosh-soft
+6:07 | Fd1966 | Short, sturdy | pop-reveal, ui-click-soft
+6:08 | Fd1966 | plants, bred | 
+6:09 | Fd1966 | by Norman Borlaug's | ui-click-soft
+6:10 | Fd1966 | team. | 
+6:11 | Fd1966 | They need water, and lots | whoosh-soft, stream-soft
+6:12 | Fd1966 | of fertiliser, | pop-reveal
+6:13 | Fd1966 | made in factories from | knock-solid
+6:14 | Fd1966 | nitrogen in the air. | ui-click-soft, ui-click-soft
+6:15 | Fd1966 | Within a | 
+6:16 | Fd1966 | few years, India's | whoosh-soft
+6:17 | Fd1966 | wheat harvest jumps to | ui-click-soft
+6:18 | Fd1966 | seventeen million | pop-reveal, sparkle-soft
+6:19 | Fd1966 | tonnes. So | whoosh-soft
+6:20 | Fd1966 | what is food now? | ui-click-soft
+6:21 | Fd1966 | Enough, | chime-reward
+6:22 | Fd1966 | at last. Grown | ui-click-soft
+6:23 | Fd1966 | by the tonne. | 
+6:24 | Fd1966 | Today, a | whoosh-soft
+6:25 | Fd1966 | newborn in India | whoosh-soft
+6:26 | Fd1966 | can expect about seventy | chime-reward
+6:27 | Fd1966 | two years. | 
+6:28 | Fd1966 | And around the | 
+6:29 | Fd1966 | world, food has | ui-click-soft, piano-a-min
+6:30 | Fd1966 | never been more plentiful. | ui-click-soft
+6:31 | Fd1966 | Which brings | ui-click-soft, ui-click-soft
+6:32 | Fd1966 | a brand new problem. | ui-click-soft, impact-soft
+6:33 | Fd1966 |  | whoosh-reverse
+6:34 | Fd1966 |  | whoosh-wind, impact-soft
+6:35 | FdToday | You wake up | 
+6:36 | FdToday | today, in São | whoosh-soft, pop-reveal
+6:37 | FdToday | Paulo. Motorbikes | whoosh-soft
+6:38 | FdToday | buzz past | 
+6:39 | FdToday | with food deliveries. | ui-click-soft
+6:40 | FdToday | Did you know that | ui-toggle-on
+6:41 | FdToday | Brazil's official | chime-magic, ui-click-soft
+6:42 | FdToday | food guide | ui-click-soft
+6:43 | FdToday | tells people to eat | 
+6:44 | FdToday | at regular times, | clock-tick-soft
+6:45 | FdToday | and, whenever | 
+6:46 | FdToday | they can, with | 
+6:47 | FdToday | other people? | ui-click-soft
+6:48 | FdToday | Here's your | 
+6:49 | FdToday | plate. Rice and | whoosh-soft, pop-reveal
+6:50 | FdToday | beans, still on | 
+6:51 | FdToday | most plates in Brazil. | ui-click-soft
+6:52 | FdToday | And more | 
+6:53 | FdToday | and more ultra-processed | ui-click-soft
+6:54 | FdToday | food. | 
+6:55 | FdToday | Soft drinks. | pop-reveal
+6:56 | FdToday | Packaged snacks. | pop-reveal
+6:57 | FdToday |  | 
+6:58 | FdToday | In Brazil, it's about | 
+6:59 | FdToday | a fifth of the calories | pop-reveal
+7:00 | FdToday | people eat. | 
+7:01 | FdToday | In the United States, | 
+7:02 | FdToday | more than half. | pop-reveal
+7:03 | FdToday | The guide's golden | whoosh-soft
+7:04 | FdToday | rule? Choose | ui-click-soft
+7:05 | FdToday | fresh food and | pop-reveal
+7:06 | FdToday | home-made meals | pop-reveal
+7:07 | FdToday | over ultra-processed | trap-snap
+7:08 | FdToday | food. | 
+7:09 | FdToday | And in most countries | whoosh-soft
+7:10 | FdToday | now, more adults live | pop-reveal
+7:11 | FdToday | with obesity than | 
+7:12 | FdToday | are underweight. | ui-click-soft
+7:13 | FdToday | In Brazil, a | 
+7:14 | FdToday | newborn can expect about | whoosh-soft, pop-reveal
+7:15 | FdToday | seventy six years. | chime-reward
+7:16 | FdToday | So what | 
+7:17 | FdToday | is food to you? | whoosh-soft, ui-click-soft
+7:18 | FdToday |  | 
+7:19 | FdToday | Too much of some | chime-reward
+7:20 | FdToday | things. | 
+7:21 | FdToday | Too little | ui-click-soft
+7:22 | FdToday | of others. | whoosh-soft, ui-click-soft
+7:23 | FdToday | So here's | piano-a-min
+7:24 | FdToday | the question you came for. | pop-reveal
+7:25 | FdToday | Food | 
+7:26 | FdToday | helped us live | ui-click-soft
+7:27 | FdToday | longer. Is | 
+7:28 | FdToday | it now taking | riser-soft, ui-click-soft
+7:29 | FdToday | some of those years | impact-soft
+7:30 | FdToday | back? | 
+7:31 | FdToday |  | 
+7:32 | FdReveal | Here's | whoosh-reverse
+7:33 | FdReveal | the answer. Food | impact-deep-soft
+7:34 | FdReveal | gave us years. | riser-soft
+7:35 | FdReveal | But it didn't | 
+7:36 | FdReveal | do it alone. | impact-soft
+7:37 | FdReveal | And now, the | 
+7:38 | FdReveal | danger has flipped. | ui-click-soft, whoosh-reverse
+7:39 | FdReveal | Enough calories | 
+7:40 | FdReveal | and the right nutrients | whoosh-soft
+7:41 | FdReveal | beat scurvy, | ui-click-soft, stamp-hit
+7:42 | FdReveal | beriberi | stamp-hit
+7:43 | FdReveal | and pellagra, | stamp-hit
+7:44 | FdReveal | and helped us grow | 
+7:45 | FdReveal | taller. | pop-reveal
+7:46 | FdReveal | A doctor, Thomas | 
+7:47 | FdReveal | McKeown, argued | whoosh-soft, ui-click-soft
+7:48 | FdReveal | that better food was the | 
+7:49 | FdReveal | main reason we started living | ui-click-soft
+7:50 | FdReveal | longer. | 
+7:51 | FdReveal | Many historians disagree. | ui-click-soft, stamp-hit
+7:52 | FdReveal | In | 
+7:53 | FdReveal | big American cities, | whoosh-soft
+7:54 | FdReveal | one study found | 
+7:55 | FdReveal | clean water alone | stream-soft
+7:56 | FdReveal | was behind nearly | 
+7:57 | FdReveal | half the drop | chime-reward
+7:58 | FdReveal | in deaths, | 
+7:59 | FdReveal | in the early nineteen hundreds. | ui-click-soft
+8:00 | FdReveal | Sewers, | ui-click-soft
+8:01 | FdReveal | vaccines | ui-click-soft
+8:02 | FdReveal | and medicine did much | ui-click-soft, ui-click-soft
+8:03 | FdReveal | of the rest. | 
+8:04 | FdReveal | And today? | whoosh-soft
+8:05 | FdReveal | About one | ui-click-soft
+8:06 | FdReveal | in five deaths | trap-snap
+8:07 | FdReveal | worldwide is linked to diet. | ui-click-soft
+8:08 | FdReveal | The biggest | 
+8:09 | FdReveal | risks? | ui-click-soft
+8:10 | FdReveal | Too much salt. | pop-reveal
+8:11 | FdReveal | Too few | 
+8:12 | FdReveal | whole grains. | pop-reveal
+8:13 | FdReveal | Too little fruit. | pop-reveal
+8:14 | FdReveal | And your guess? | 
+8:15 | FdReveal | In | whoosh-soft
+8:16 | FdReveal | eighteen hundred, about | ui-click-soft
+8:17 | FdReveal | twenty nine years. | ui-click-soft
+8:18 | FdReveal | Today, | ui-click-soft
+8:19 | FdReveal | worldwide, | 
+8:20 | FdReveal | about seventy three. | chime-reward
+8:21 | FdReveal | How close were you? | ui-click-soft
+8:22 | FdReveal |  | 
+8:23 | FdReveal | Now walk down the ladder | whoosh-soft
+8:24 | FdReveal | with me. | ui-click-soft
+8:25 | FdReveal | In fifteen hundred, | ui-click-soft
+8:26 | FdReveal | food was fuel. | 
+8:27 | FdReveal | Then, medicine. | ui-click-soft
+8:28 | FdReveal | Then, something | ui-click-soft
+8:29 | FdReveal | to measure. | 
+8:30 | FdReveal | Then, something | ui-click-soft
+8:31 | FdReveal | we fix. | 
+8:32 | FdReveal | Then, enough, at last. | ui-click-soft
+8:33 | FdReveal | Today, | ui-click-soft
+8:34 | FdReveal | too much. | 
+8:35 | FdReveal | In fifteen hundred, | ui-click-soft
+8:36 | FdReveal | food took most of your | 
+8:37 | FdReveal | money, and | ui-click-soft
+8:38 | FdReveal | hunger was the danger. | ui-click-soft
+8:39 | FdReveal |  | 
+8:40 | FdReveal | Today, | ui-click-soft
+8:41 | FdReveal | the danger | riser-soft
+8:42 | FdReveal | is what we choose to eat. | impact-deep-soft
+8:43 | FdReveal |  | 
+8:44 | FdReveal |  | whoosh-soft
+8:45 | Fd2100 | So what | 
+8:46 | Fd2100 | will you be eating in twenty | impact-soft
+8:47 | Fd2100 | one hundred? | 
+8:48 | Fd2100 | That morning | warm-shimmer
+8:49 | Fd2100 | hasn't happened | 
+8:50 | Fd2100 | yet. But | 
+8:51 | Fd2100 | we can follow the evidence. | ui-click-soft
+8:52 | Fd2100 |  | 
+8:53 | Fd2100 | The United Nations expects | ui-click-soft, ui-click-soft
+8:54 | Fd2100 | life expectancy | stream-soft
+8:55 | Fd2100 | worldwide | 
+8:56 | Fd2100 | to reach about eighty | chime-reward
+8:57 | Fd2100 | two by twenty | 
+8:58 | Fd2100 | one hundred. | 
+8:59 | Fd2100 | Its climate panel | whoosh-soft
+9:00 | Fd2100 | says warming has | ui-click-soft
+9:01 | Fd2100 | already slowed the growth | whoosh-reverse
+9:02 | Fd2100 | of farm productivity, | 
+9:03 | Fd2100 | over the past | 
+9:04 | Fd2100 | fifty years. | ui-click-soft
+9:05 | Fd2100 | And the EAT | whoosh-soft
+9:06 | Fd2100 | Lancet Commission says | 
+9:07 | Fd2100 | a diet that's mostly | ui-click-soft
+9:08 | Fd2100 | plants with red | pop-reveal, pop-reveal
+9:09 | Fd2100 | meat about once a | 
+9:10 | Fd2100 | week, could | ui-click-soft
+9:11 | Fd2100 | prevent around fifteen | ui-click-soft, chime-reward
+9:12 | Fd2100 | million early | ui-click-soft
+9:13 | Fd2100 | deaths a year. | 
+9:14 | Fd2100 | So here's one scenario. | whoosh-soft, stamp-hit
+9:15 | Fd2100 | Not | 
+9:16 | Fd2100 | a fact. | ui-click-soft
+9:17 | Fd2100 | By twenty one hundred, | whoosh-soft
+9:18 | Fd2100 | your plate could be mostly | 
+9:19 | Fd2100 | plants. | pop-reveal
+9:20 | Fd2100 | Meat could be a once | ui-click-soft
+9:21 | Fd2100 | a week treat. | ui-click-soft
+9:22 | Fd2100 | And if the harvests | riser-soft, ui-click-soft
+9:23 | Fd2100 | hold, the average | ui-click-soft
+9:24 | Fd2100 | life could stretch | chime-reward
+9:25 | Fd2100 | past eighty. | ui-click-soft
+9:26 | Fd2100 | In fifteen hundred, | whoosh-soft
+9:27 | Fd2100 | the Church decided | 
+9:28 | Fd2100 | which days you couldn't | ui-click-soft
+9:29 | Fd2100 | eat meat. | 
+9:30 | Fd2100 | In twenty one | pop-reveal
+9:31 | Fd2100 | hundred, the reason | ui-click-soft
+9:32 | Fd2100 | might be your heart. | pop-reveal
+9:33 | Fd2100 | And the planet. | warm-shimmer
+9:34 | Fd2100 |  | 
+9:35 | Fd2100 |  | whoosh-soft
+9:36 | FdClose | Tonight, look | 
+9:37 | FdClose | at your plate. | pop-reveal
+9:38 | FdClose | Which part of it | ui-click-soft
+9:39 | FdClose | is buying you more | ui-click-soft
+9:40 | FdClose | years? | chime-magic
+9:41 | FdClose |  | 
+9:42 | FdClose | This was | whoosh-wind, pop-reveal, ui-toggle-on
+9:43 | FdOutro | Did You Know That, | 
+9:44 | FdOutro | episode five. | ui-click-soft
+9:45 | FdOutro | Food. | pop-reveal
+9:46 | FdOutro | Now it's your turn. | whoosh-soft
+9:47 | FdOutro | Which century's | ui-click-soft
+9:48 | FdOutro | kitchen would you eat | ui-click-soft, ui-click-soft
+9:49 | FdOutro | in? Tell | ui-click-soft, ui-click-soft, ui-click-soft
+9:50 | FdOutro | me in the comments. | ui-click-soft, pop-reveal
+9:51 | FdOutro | At the end of | ui-click-soft
+9:52 | FdOutro | every episode, I | 
+9:53 | FdOutro | will read the best comment, | impact-soft, ui-click-soft
+9:54 | FdOutro | right here, on this | ui-click-soft
+9:55 | FdOutro | screen. | ui-click-soft
+9:56 | FdOutro | And the subject you | sparkle-soft
+9:57 | FdOutro | ask for most becomes | ui-click-soft
+9:58 | FdOutro | a future episode. | pop-reveal
+9:59 | FdOutro | On our website, | whoosh-soft
+10:00 | FdOutro | Dex-tee dot | sparkle-soft
+10:01 | FdOutro | live, | 
+10:02 | FdOutro | you can watch every | ui-click-soft
+10:03 | FdOutro | episode, collect | ui-click-soft
+10:04 | FdOutro | the fact cards, | 
+10:05 | FdOutro | and play the | ui-click-soft
+10:06 | FdOutro | guessing game. | pop-reveal
+10:07 | FdOutro | If this changed | ui-click-soft
+10:08 | FdOutro | how you see what's | 
+10:09 | FdOutro | on your plate, | ui-click-soft
+10:10 | FdOutro | like it. | ui-click-soft
+10:11 | FdOutro | Share it with the | ui-send
+10:12 | FdOutro | friend who always | ui-click-soft
+10:13 | FdOutro | cooks for you. | pop-reveal
+10:14 | FdOutro | And subscribe, | chime-reward
+10:15 | FdOutro | so the next mystery finds | sparkle-soft
+10:16 | FdOutro | you. | 
+10:17 | FdOutro | Next time: | whoosh-wind
+10:18 | FdOutro | medicine. | impact-soft
+10:19 | FdOutro | In seventeen | ui-click-soft
+10:20 | FdOutro | ninety nine, George | ui-click-soft
+10:21 | FdOutro | Washington's doctors | 
+10:22 | FdOutro | drained, | ui-click-soft
+10:23 | FdOutro | by some estimates, | ui-click-soft
+10:24 | FdOutro | around two | 
+10:25 | FdOutro | fifths of his blood. | pop-reveal, ui-click-soft
+10:26 | FdOutro | So how did we find | ui-click-soft
+10:27 | FdOutro | out what really heals | ui-click-soft
+10:28 | FdOutro | us? | piano-a-min
+10:29 | FdOutro | Ask... | chess-piece-thock
+10:30 | FdOutro | Wonder... | 
+10:31 | FdOutro | Repeat. | chess-piece-thock
+10:32 | FdOutro |  | chess-piece-thock
+10:33 | FdOutro |  | 
+10:34 | FdOutro | Next | 
+10:35 | FdOutro | time... this | pencil-scribble
+10:36 | FdOutro | could be your comment. | pop-reveal
+10:37 | FdOutro | Pick a mystery. | 
+10:38 | FdOutro | And I will | 
+10:39 | FdOutro | see you there. | sparkle-soft
+10:40 | FdOutro |  | 
+10:41 | FdOutro |  | 
+10:42 | FdOutro |  | 
+10:43 | FdOutro |  | 
+10:44 | FdOutro |  | 
+10:45 | FdOutro |  | 
+10:46 | FdOutro |  | 
+10:47 | FdOutro |  | 
+10:48 | FdOutro |  | 
+10:49 | FdOutro |  | 
