@@ -171,10 +171,11 @@ if __name__ == '__main__':
     if len(args) < 2 or any(a not in LANGUAGES for a in args[1:]):
         sys.exit(__doc__)
     ep = episode(args[0])
-    for lg in args[1:]:
-        build(args[0], lg)
-    if '--keep-bed' not in sys.argv:
-        for name in ('sfx_raw.wav', 'music_raw.wav'):
-            p = os.path.join(bedmix.bed_dir(ep), name)
-            if os.path.exists(p):
-                os.remove(p)
+    with bedmix.episode_lock(ep):
+        for lg in args[1:]:
+            build(args[0], lg)
+        if '--keep-bed' not in sys.argv:
+            for name in ('sfx_raw.wav', 'music_raw.wav'):
+                p = os.path.join(bedmix.bed_dir(ep), name)
+                if os.path.exists(p):
+                    os.remove(p)

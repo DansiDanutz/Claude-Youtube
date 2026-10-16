@@ -95,6 +95,21 @@ CJK_BREAK = re.compile(r'(?<=[，、；：。？！…,.?!])')
 MIN_CUE_S = 1.0
 
 
+PUNCT_AFTER = {'?', '!', ':', ';', '»', '%', '…', '.', ','}      # French sets these after a space: never leave one alone on a line
+OPEN_BEFORE = {'«', '¿', '¡'}
+
+
+def glue_punctuation(words):
+    """Words with a lone closing mark joined to the word before it and a lone opening mark to the word after it."""
+    out = []
+    for w in words:
+        if out and (w in PUNCT_AFTER or out[-1] in OPEN_BEFORE):
+            out[-1] = f'{out[-1]} {w}'
+        else:
+            out.append(w)
+    return out
+
+
 def wrap(text, lang):
     """Lines no longer than the language's limit (Chinese breaks after punctuation, else anywhere at the limit)."""
     limit = LINE_MAX[lang]
@@ -114,7 +129,7 @@ def wrap(text, lang):
         if cur:
             lines.append(cur)
         return lines
-    words, lines, cur = text.split(), [], ''
+    words, lines, cur = glue_punctuation(text.split()), [], ''
     for w in words:
         if cur and len(cur) + 1 + len(w) > limit:
             lines.append(cur)
@@ -147,11 +162,17 @@ def cues_for(text, start, end, lang):
     if lang != 'zh':
         lines = balance(lines) if len(lines) == 2 else lines
     groups = [lines[i:i + CUE_MAX_LINES] for i in range(0, len(lines), CUE_MAX_LINES)]
-    total = sum(len(' '.join(g)) for g in groups) or 1
+    span = end - start
+    weights = [len(' '.join(g)) or 1 for g in groups]
+    floor = min(MIN_CUE_S, span / len(groups))
+    durs = [max(span * w / sum(weights), floor) for w in weights]
+    excess = sum(durs) - span
+    if excess > 1e-9:                       # the minimums took more than the window has: take it back from the longer cues
+        flex = [d - floor for d in durs]
+        durs = [d - excess * f / sum(flex) for d, f in zip(durs, flex)]
     out, t = [], start
-    for i, g in enumerate(groups):
-        share = (end - start) * len(' '.join(g)) / total
-        e = end if i == len(groups) - 1 else max(t + min(MIN_CUE_S, end - t), t + share)
+    for i, (g, d) in enumerate(zip(groups, durs)):
+        e = end if i == len(groups) - 1 else t + d
         out.append((round(t, 3), round(e, 3), '\n'.join(g)))
         t = e
     return out

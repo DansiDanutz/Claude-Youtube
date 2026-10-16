@@ -12,7 +12,7 @@ The Blob token is read with `vercel env pull` into a temporary file OUTSIDE the 
 and the file is deleted straight away. The token is never printed. Audio is versioned in the path (dub/v1/...): re-voiced audio
 needs a new version, because the files are cached for a year.
 """
-import json, os, re, shutil, subprocess, sys, tempfile, urllib.request
+import contextlib, fcntl, hashlib, json, os, re, shutil, subprocess, sys, tempfile, urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from episodes import LANGUAGES, episode, loc_dir  # noqa: E402
@@ -20,6 +20,19 @@ from episodes import LANGUAGES, episode, loc_dir  # noqa: E402
 BLOB_API = 'https://vercel.com/api/blob/'
 VERSION = 'v1'
 CACHE_SECONDS = 31536000
+
+
+@contextlib.contextmanager
+def catalog_lock(ep_file):
+    """Publishing reads episodes.json, changes one episode and writes it back: two publishers for different episodes must not
+    overlap, or the second write would drop the first one's entry."""
+    path = os.path.join(tempfile.gettempdir(), 'dexty-catalog-' + hashlib.sha1(os.path.abspath(ep_file).encode()).hexdigest()[:12] + '.lock')
+    handle = open(path, 'w')
+    try:
+        fcntl.flock(handle, fcntl.LOCK_EX)
+        yield
+    finally:
+        handle.close()
 
 
 def pull_token(site):
@@ -91,21 +104,22 @@ def main(argv):
             urls[l] = url
         token = None
     ep_file = os.path.join(site, 'website', 'data', 'episodes.json')
-    data = json.load(open(ep_file, encoding='utf-8'))
-    items = data if isinstance(data, list) else data['episodes']
-    item = next(e for e in items if e['slug'] == ep['slug'])
-    loc = dict(item.get('localizations') or {})
-    for l in langs:
-        entry = {'subtitles': f"/assets/captions/{ep['slug']}/{l}.vtt"}
-        if l in urls:
-            entry['audio'] = urls[l]
-        elif l in loc and 'audio' in loc[l]:
-            entry['audio'] = loc[l]['audio']
-        loc[l] = entry
-    item['localizations'] = {l: loc[l] for l in LANGUAGES if l in loc}
-    with open(ep_file, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-        f.write('\n')
+    with catalog_lock(ep_file):
+        data = json.load(open(ep_file, encoding='utf-8'))
+        items = data if isinstance(data, list) else data['episodes']
+        item = next(e for e in items if e['slug'] == ep['slug'])
+        loc = dict(item.get('localizations') or {})
+        for l in langs:
+            entry = {'subtitles': f"/assets/captions/{ep['slug']}/{l}.vtt"}
+            if l in urls:
+                entry['audio'] = urls[l]
+            elif l in loc and 'audio' in loc[l]:
+                entry['audio'] = loc[l]['audio']
+            loc[l] = entry
+        item['localizations'] = {l: loc[l] for l in LANGUAGES if l in loc}
+        with open(ep_file, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+            f.write('\n')
     print(f"episodes.json: {ep['slug']} localizations = {sorted(item['localizations'])}")
     return 0
 

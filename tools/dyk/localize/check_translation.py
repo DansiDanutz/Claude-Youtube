@@ -11,7 +11,7 @@ A translation is videos/<episode>/loc/script.<lang>.json:
 
 Errors (exit 1): missing/extra ids, empty text, `say` more than twice its time budget plus 4 characters (a smaller overrun is a warning; the cascade lag check is the real gate), ASCII digits in `say`, no sentence-final
 punctuation, a chunk that falls more than MAX_LAG_S behind its English timing when sentences are placed one after the other.
-Warnings: Latin words inside Chinese `say`, a `show` that is wildly longer than `say`.
+`show` replaces the WHOLE subtitle: spoken words that are neither in it nor number words are an error (two or more) or a warning (one). Warnings: Latin words inside Chinese `say`.
 """
 import json, os, re, sys
 
@@ -20,6 +20,29 @@ from episodes import LANGUAGES, episode, loc_dir  # noqa: E402
 import lang as L  # noqa: E402
 
 DIGIT = re.compile(r'[0-9]')
+WORD = re.compile(r"[\w'’\-]+", re.UNICODE)
+# Number words (fr, es, ro) that a subtitle legitimately replaces with digits. Anything else missing from `show` is lost text.
+NUMBER_PARTS = set('''un une uno una unu o doi doua două deux dos trois tres trei quatre cuatro patru cinq cinco cinci six seis sase șase sept siete
+şapte șapte huit ocho opt neuf nueve noua nouă dix diez zece onze once unsprezece douze doce doisprezece treize trece treisprezece
+quatorze catorce paisprezece quinze quince cincisprezece seize dieciseis dieciséis saisprezece șaisprezece dixsept diecisiete
+saptesprezece șaptesprezece dixhuit dieciocho optsprezece dixneuf diecinueve nouasprezece nouăsprezece vingt vingts veinte douazeci
+douăzeci veinti veintiuno trente treinta treizeci quarante cuarenta patruzeci cinquante cincuenta cincizeci soixante sesenta saizeci
+șaizeci septante setenta saptezeci șaptezeci octante ochenta optzeci nonante noventa nouazeci nouăzeci cent cents cien ciento cientos
+sute sută suta doscientos trescientos cuatrocientos quinientos quinientas seiscientos setecientos ochocientos novecientos trescientas
+mille mil mie mii million millions millón millones milioane milion et y și de la per cu virgule coma virgulă point punto punct pour por
+cent demi demie medio media jumătate jumatate quart cuarto sfert moins menos fără fara heures heure horas ore oră an ans años ani anul
+année en în într din până entre mille dexti laiv laïve'''.split())
+
+
+def number_like(token):
+    parts = [t for t in re.split(r'[-’\']', token.lower()) if t]
+    return bool(parts) and all(p in NUMBER_PARTS or p.startswith('veinti') for p in parts)
+
+
+def lost_words(say, show):
+    """Words of the spoken sentence that are neither in the subtitle nor number words (a `show` must be the WHOLE sentence)."""
+    shown = {w.lower() for w in WORD.findall(show)}
+    return [w for w in WORD.findall(say) if w.lower() not in shown and not number_like(w)]
 LATIN_WORD = re.compile(r'[A-Za-z]{2,}')
 ALLOWED_LATIN_ZH = {'Dexty', 'live', 'AI', 'IPCC', 'UN', 'BIS', 'GDP', 'EAT', 'Lancet', 'HMS'}
 
@@ -80,6 +103,12 @@ def check(num, lang):
         show = sents[sid].get('show') if isinstance(sents[sid], dict) else None
         if show is not None and (not str(show).strip() or '<' in show):
             errors.append(f'{sid}: `show` empty or contains markup')
+        elif show is not None and lang != 'zh':
+            lost = lost_words(say, str(show))
+            if len(lost) >= 2 and len(WORD.findall(str(show))) < 0.6 * len(WORD.findall(say)):
+                errors.append(f'{sid}: `show` is a fragment (drops {lost[:4]}) — it replaces the whole subtitle, so it must contain the full sentence (digits for numbers)')
+            elif lost:
+                warnings.append(f'{sid}: `show` words differ from `say`: leaves out {lost}')
     # cascade: sentences placed one after another inside their chunk; lag = predicted end - English slot end
     by_chunk = {}
     for scene_id, chunk_id, s in sentences_flat(doc):

@@ -3,12 +3,14 @@
 
   python3 tools/dyk/localize/run.py 05 ro fr es zh [--reserve 22000]
 
-For each language in order: gen_dub.py (paid, cached), then, once ALL requested languages that fit are voiced, build_dub.py for
-them (free). A quota stop (exit 3) ends voicing; languages already voiced are still built. Progress is printed one line per step.
+For each language in order: gen_dub.py (paid, cached), then, for every language that was voiced, build_dub.py (free).
+Exit status: 0 everything requested was voiced and built; 3 the quota gate stopped the voicing (what was voiced is still built);
+anything else is a failure of a voicing or of the build, reported after the languages that did succeed were built.
 """
-import os, subprocess, sys
+import argparse, os, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+QUOTA_STOP = 3
 
 
 def step(script, *args):
@@ -16,30 +18,32 @@ def step(script, *args):
 
 
 def main(argv):
-    flags = [a for a in argv if a.startswith('--')]
-    args = [a for a in argv if not a.startswith('--')]
-    if len(args) < 2:
-        sys.exit(__doc__)
-    ep, langs = args[0], args[1:]
-    extra = []
-    if '--reserve' in argv:
-        extra = ['--reserve', argv[argv.index('--reserve') + 1]]
-        flags = [f for f in flags if f != '--reserve']
-    voiced = []
-    for lang in langs:
-        print(f'=== voicing No. {ep} {lang}', flush=True)
-        rc = step('gen_dub.py', ep, lang, *extra)
-        if rc == 3:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument('episode')
+    ap.add_argument('languages', nargs='+')
+    ap.add_argument('--reserve', type=int, default=None, help='credits to keep on the plan (default: gen_dub.py default)')
+    opts = ap.parse_args(argv)
+    extra = ['--reserve', str(opts.reserve)] if opts.reserve is not None else []
+    voiced, status = [], 0
+    for lang in opts.languages:
+        print(f'=== voicing No. {opts.episode} {lang}', flush=True)
+        rc = step('gen_dub.py', opts.episode, lang, *extra)
+        if rc == QUOTA_STOP:
             print(f'=== quota gate reached at {lang}; stopping the voicing', flush=True)
+            status = QUOTA_STOP
             break
         if rc != 0:
             print(f'=== gen_dub {lang} failed (exit {rc}); stopping', flush=True)
+            status = rc
             break
         voiced.append(lang)
     if voiced:
-        print(f'=== building No. {ep}: {" ".join(voiced)}', flush=True)
-        return step('build_dub.py', ep, *voiced)
-    return 0
+        print(f'=== building No. {opts.episode}: {" ".join(voiced)}', flush=True)
+        build_rc = step('build_dub.py', opts.episode, *voiced)
+        if build_rc != 0:
+            print(f'=== build failed (exit {build_rc})', flush=True)
+            status = status or build_rc
+    return status
 
 
 if __name__ == '__main__':

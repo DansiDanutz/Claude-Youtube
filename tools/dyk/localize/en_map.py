@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Build videos/<episode>/loc/sentences.en.json: the English narration cut into sentences with MASTER-time stamps.
+"""Needs the episode's English files (script.json, vo.json, timeline.json, build_final.py, cuesheet.json). Run it where they exist; it
+writes loc/sentences.en.json and loc/bed.json, and everything after it (translation check, gen_dub, build_dub, build_vtt, publish)
+works from the committed loc/ files only, so an episode whose branch is not merged still builds.
+
+Build videos/<episode>/loc/sentences.en.json: the English narration cut into sentences with MASTER-time stamps.
 
 This is the contract every translation, dub and subtitle file hangs on. A translation is one text per sentence id; a
 dub places each translated sentence at its English sentence start; a subtitle cue uses the English sentence window.
@@ -15,6 +19,7 @@ import json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from episodes import EPISODES, episode, loc_dir, read_json, shot_order  # noqa: E402
+import bedmix  # noqa: E402
 
 SENTENCE_END = re.compile(r"[.?!…][\"'’”)\]]*$")
 GUARD_S = 0.12
@@ -69,6 +74,9 @@ def chunk_split(scene_id, words, script_scene, problems):
 
 def build(num):
     ep = episode(num)
+    if ep.get('from_whisper'):
+        print(f"No. {num}: its tracked files do not match the published video; use en_from_whisper.py (skipped)")
+        return None
     order, timeline = shot_order(ep)
     script = read_json(f"videos/{ep['dir']}/work/narration/script.json")
     vo = read_json(f"remotion/src/shots/{ep['shots']}/vo.json")
@@ -105,6 +113,7 @@ def build(num):
     doc = {'episode': num, 'slug': ep['slug'], 'master_s': round(total, 3), 'sentences': len(flat),
            'english_chars': sum(len(s['text']) for s in flat), 'scenes': out_scenes}
     os.makedirs(loc_dir(ep), exist_ok=True)
+    bedmix.write_bed_spec(ep)
     path = os.path.join(loc_dir(ep), 'sentences.en.json')
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(doc, f, ensure_ascii=False, indent=1)

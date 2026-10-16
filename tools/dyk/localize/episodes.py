@@ -8,9 +8,10 @@ import ast, json, os, subprocess
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 
-# number -> videos dir, site slug, remotion shots dir, YouTube id of the English episode
+# number -> videos dir, site slug, remotion shots dir, YouTube id of the English episode.
+# from_whisper: the tracked script/timeline do not match the published video, so en_from_whisper.py builds its sentence map.
 EPISODES = {
-    '01': dict(dir='dyk-01-time-compressed', slug='time-compressed', shots='dyk-01', youtube='Sw1xP57TNTk'),
+    '01': dict(dir='dyk-01-time-compressed', slug='time-compressed', shots='dyk-01', youtube='Sw1xP57TNTk', from_whisper=True),
     '02': dict(dir='dyk-02-the-sun', slug='the-sun', shots='dyk-02', youtube='WlClbKXSdSo'),
     '03': dict(dir='dyk-03-school', slug='school', shots='dyk-03', youtube='rchexCb48LM'),
     '04': dict(dir='dyk-04-money', slug='money', shots='dyk-04', youtube='GkEBiDLa1WY'),

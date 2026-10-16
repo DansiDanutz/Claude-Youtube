@@ -12,6 +12,7 @@ import json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from episodes import episode, loc_dir  # noqa: E402
+import bedmix  # noqa: E402
 
 SENTENCE_END = re.compile(r"[.?!…][\"'’”)\]]*$")
 ABBREVIATIONS = {'St.', 'Mr.', 'Mrs.', 'Ms.', 'Dr.', 'vs.', 'No.'}   # a full stop here does not end a sentence
@@ -88,6 +89,7 @@ def build(num, whisper_path, master_s):
     doc = {'episode': num, 'slug': ep['slug'], 'master_s': round(master_s, 3), 'sentences': len(flat),
            'english_chars': sum(len(s['text']) for s in flat), 'source': 'whisper transcript of the published master', 'scenes': scenes}
     os.makedirs(loc_dir(ep), exist_ok=True)
+    bedmix.write_bed_spec(ep)
     path = os.path.join(loc_dir(ep), 'sentences.en.json')
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(doc, f, ensure_ascii=False, indent=1)

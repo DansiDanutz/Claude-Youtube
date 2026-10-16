@@ -92,6 +92,26 @@ class SubtitleTest(unittest.TestCase):
         self.assertEqual(cues[-1][1], 18.0)
         self.assertTrue(all(a[1] <= b[0] + 1e-9 for a, b in zip(cues, cues[1:])))
 
+    def test_a_closing_mark_never_sits_alone_on_a_line(self):
+        text = 'Savais-tu que huit Kényans adultes sur dix utilisent désormais vraiment l\'argent mobile ?'
+        lines = C.wrap(text, 'fr')
+        self.assertTrue(all(line != '?' for line in lines))
+        self.assertEqual(' '.join(lines), text)
+
+    def test_every_cue_of_a_split_sentence_keeps_its_minimum_time(self):
+        text = ' '.join(['mot'] * 60)
+        cues = C.cues_for(text, 0.0, 6.0, 'fr')
+        self.assertGreater(len(cues), 2)
+        self.assertTrue(all(e - s >= C.MIN_CUE_S - 1e-6 for s, e, _ in cues), cues)
+        self.assertEqual(cues[-1][1], 6.0)
+
+    def test_a_window_too_short_for_the_minimums_is_shared_out(self):
+        text = ' '.join(['mot'] * 60)
+        cues = C.cues_for(text, 0.0, 2.0, 'fr')
+        self.assertEqual(cues[0][0], 0.0)
+        self.assertEqual(cues[-1][1], 2.0)
+        self.assertTrue(all(b[0] >= a[1] - 1e-9 for a, b in zip(cues, cues[1:])))
+
     def test_vtt_format_and_escaping(self):
         vtt = C.to_vtt([(1.5, 3.25, 'a < b & c')])
         self.assertTrue(vtt.startswith('WEBVTT'))

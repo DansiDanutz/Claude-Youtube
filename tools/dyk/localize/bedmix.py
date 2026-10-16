@@ -5,7 +5,7 @@ The mix copies work/build_final.py: SFX ducked 5:1 and music 12:1 under the voic
 limiter at -2.6 dB (sample) so the true peak stays under -1 dBTP, measured again on the result (up to three passes).
 Intermediates are large WAVs: they live in ~/.cache/video-editor/loc/<episode>/ and are deleted as soon as they are consumed.
 """
-import json, os, re, subprocess, sys
+import contextlib, fcntl, json, os, re, subprocess, sys, tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from episodes import ROOT, read_json, read_text  # noqa: E402
@@ -46,11 +46,11 @@ def delayed_mix(items, out, total_s):
 
 
 def episode_constants(ep):
-    """(music clip path, music level) from the episode's own build_final.py, with the series defaults as fallback."""
+    """(music clip file name, music level) from the episode's own build_final.py, with the series defaults as fallback."""
     src = read_text(f"videos/{ep['dir']}/work/build_final.py")
     clip = re.search(r"'clips',\s*'([\w.-]+\.mp3)'", src)
     level = re.search(r'^MUSIC_LEVEL\s*=\s*([\d.]+)', src, re.M)
-    return os.path.join(MUSIC_DIR, clip.group(1) if clip else 'cinematic-min.mp3'), float(level.group(1)) if level else 0.32
+    return (clip.group(1) if clip else 'cinematic-min.mp3'), float(level.group(1)) if level else 0.32
 
 
 def cue_list(ep):
@@ -59,6 +59,39 @@ def cue_list(ep):
         return read_json(f"videos/{ep['dir']}/work/cuesheet.json")
     except SystemExit:
         return []
+
+
+def bed_spec_path(ep):
+    return os.path.join(ROOT, 'videos', ep['dir'], 'loc', 'bed.json')
+
+
+def write_bed_spec(ep):
+    """Freeze what the sound bed needs (music clip, level, SFX cue list) into loc/bed.json, so building a dub never needs the
+    English work files again (a fresh checkout, or an episode whose branch is not merged, can still build)."""
+    clip, level = episode_constants(ep)
+    spec = {'music': clip, 'music_level': level, 'cues': cue_list(ep)}
+    with open(bed_spec_path(ep), 'w', encoding='utf-8') as f:
+        json.dump(spec, f, ensure_ascii=False, indent=0)
+    return spec
+
+
+def load_bed_spec(ep):
+    path = bed_spec_path(ep)
+    if not os.path.exists(path):
+        raise SystemExit(f'{path}: missing — run en_map.py (or en_from_whisper.py) for this episode once, where its English files exist')
+    return json.load(open(path, encoding='utf-8'))
+
+
+@contextlib.contextmanager
+def episode_lock(ep):
+    """One build per episode at a time: the bed files are shared, and a finished build may delete them."""
+    os.makedirs(CACHE, exist_ok=True)
+    handle = open(os.path.join(CACHE, f"build-{ep['num']}.lock"), 'w')
+    try:
+        fcntl.flock(handle, fcntl.LOCK_EX)    # waits for a running build of the same episode
+        yield
+    finally:
+        handle.close()
 
 
 def bed_dir(ep):
@@ -70,7 +103,8 @@ def ensure_bed(ep, total_s):
     d = bed_dir(ep)
     os.makedirs(d, exist_ok=True)
     sfx_path, music_path = os.path.join(d, 'sfx_raw.wav'), os.path.join(d, 'music_raw.wav')
-    cues = cue_list(ep)
+    spec = load_bed_spec(ep)
+    cues = spec['cues']
     if cues and not os.path.exists(sfx_path):
         groups = []
         for g in range(0, len(cues), SFX_GROUP):
@@ -81,7 +115,7 @@ def ensure_bed(ep, total_s):
         for p, _, _ in groups:
             os.remove(p)
     if not os.path.exists(music_path):
-        clip, level = episode_constants(ep)
+        clip, level = os.path.join(MUSIC_DIR, spec['music']), spec['music_level']
         clip_d = probe_duration(clip)
         copies = int(total_s // (clip_d - XFADE_S)) + 2
         inputs, chain, label = [], [], '[0:a]'
@@ -98,7 +132,8 @@ def ensure_bed(ep, total_s):
 
 def mix_master(voice_wav, sfx_raw, music_raw, out_m4a, workdir):
     """Duck the bed under the dub voice, level to -14 LUFS with the limiter, encode AAC. Returns (lufs, peak)."""
-    pre, master = os.path.join(workdir, 'master_pre.wav'), os.path.join(workdir, 'master.wav')
+    tag = os.path.splitext(os.path.basename(out_m4a))[0] + '-' + os.path.basename(os.path.dirname(out_m4a))   # unique per language
+    pre, master = os.path.join(workdir, f'master_pre_{tag}.wav'), os.path.join(workdir, f'master_{tag}.wav')
     inputs, chain = ['-i', voice_wav], []
     if sfx_raw:
         inputs += ['-i', sfx_raw]
