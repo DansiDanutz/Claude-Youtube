@@ -25,7 +25,7 @@ def main():
     work = os.path.dirname(os.path.abspath(__file__))
     proj = os.path.abspath(os.path.join(work, '..'))
     src, out = os.path.join(proj, 'dyk-05-food-1080P.mp4'), os.path.join(proj, 'dyk-05-food-720p-preview.mp4')
-    expected = estimate_mb(master_duration(work))
+    expected = estimate_mb(master_duration(work), VIDEO_KBPS, AUDIO_KBPS)   # read at call time, not frozen as default arguments
     if expected > LIMIT_MB:
         sys.exit(f'the bit rates would give about {expected:.1f} MB, over the {LIMIT_MB:.0f} MB preview limit: lower them')
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-nostdin', '-i', src, '-vf', 'scale=1280:720', '-c:v', 'libx264', '-preset', 'medium',
