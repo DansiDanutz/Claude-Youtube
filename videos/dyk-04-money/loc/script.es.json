@@ -342,34 +342,37 @@
    "say": "Desde mil novecientos treinta y tres."
   },
   "mo08-1971.c3.s1": {
-   "say": "El oro era de los gobiernos."
+   "say": "El oro era para gobiernos."
   },
   "mo08-1971.c3.s2": {
-   "say": "Desde mil novecientos cuarenta y cuatro, cambiaban dólares por oro estadounidense, a treinta y cinco la onza."
+   "say": "Desde el cuarenta y cuatro, el dólar se cambiaba por oro: treinta y cinco por onza.",
+   "show": "Desde 1944, el dólar se cambiaba por oro: 35 por onza."
   },
   "mo08-1971.c3.s3": {
-   "say": "El dólar estaba atado al oro, y casi todo el dinero, al dólar."
+   "say": "El dólar atado al oro, y casi todo el dinero, al dólar.",
+   "show": "El dólar estaba atado al oro, y casi todo el dinero, al dólar."
   },
   "mo08-1971.c4.s1": {
    "say": "Esa noche habla el presidente Nixon."
   },
   "mo08-1971.c4.s2": {
-   "say": "Desde hoy, otros gobiernos no pueden cambiar sus dólares por oro."
+   "say": "Los gobiernos extranjeros ya no cambian dólares por oro."
   },
   "mo08-1971.c4.s3": {
-   "say": "En pocos años, todo el sistema desaparece."
+   "say": "En pocos años, el sistema cae."
   },
   "mo08-1971.c5.s1": {
    "say": "¿Y ahora qué es el dinero?"
   },
   "mo08-1971.c5.s2": {
-   "say": "Una promesa respaldada por confianza."
+   "say": "Promesa basada en confianza."
   },
   "mo08-1971.c5.s3": {
-   "say": "Confianza en quienes lo manejan."
+   "say": "Fe en quienes lo manejan.",
+   "show": "Confianza en quienes lo manejan."
   },
   "mo08-1971.c6.s1": {
-   "say": "Y una generación después, esa confianza toma otra forma."
+   "say": "Una generación después, la confianza cambia de forma."
   },
   "mo08-1971.c6.s2": {
    "say": "El dinero ya no necesita papel."

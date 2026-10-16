@@ -506,10 +506,11 @@
    "say": "Un maestro, un niño."
   },
   "sc11-2100.c2.s3": {
-   "say": "En mil novecientos ochenta y cuatro, el investigador Benjamin Bloom informó que con tutor se superaba al noventa y ocho por ciento de una clase normal."
+   "say": "En mil novecientos ochenta y cuatro, Bloom halló que con tutor se superaba al noventa y ocho por ciento de una clase.",
+   "show": "En 1984, Bloom halló que con tutor se superaba al 98 % de una clase normal."
   },
   "sc11-2100.c3.s1": {
-   "say": "Estudios posteriores vieron menos efecto."
+   "say": "Estudios posteriores: menos efecto."
   },
   "sc11-2100.c3.s2": {
    "say": "Pero es real."
@@ -518,7 +519,7 @@
    "say": "El problema siempre fue el costo."
   },
   "sc11-2100.c3.s4": {
-   "say": "Nadie puede pagar un tutor para cada niño."
+   "say": "Nadie paga un tutor por niño."
   },
   "sc11-2100.c4.s1": {
    "say": "En dos mil veinticuatro, un piloto del Banco Mundial en Nigeria dio a estudiantes un tutor de IA, dos veces por semana, guiados por sus maestros.",
