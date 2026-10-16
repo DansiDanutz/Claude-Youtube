@@ -1,0 +1,2414 @@
+{
+ "episode": "05",
+ "slug": "food",
+ "master_s": 649.933,
+ "sentences": 216,
+ "english_chars": 9216,
+ "scenes": [
+  {
+   "id": "fd01-hook",
+   "start": 0.6,
+   "dur": 12.957,
+   "chunks": [
+    {
+     "id": "fd01-hook.c1",
+     "text": "Last time, I left you with a question. What will you be eating in twenty one hundred? In fifteen hundred, historians estimate food took up most of a working family's budget. Today, there's more food than ever.",
+     "sentences": [
+      {
+       "id": "fd01-hook.c1.s1",
+       "text": "Last time, I left you with a question.",
+       "start": 0.6,
+       "end": 2.42,
+       "slot_end": 2.814,
+       "slot_s": 2.214,
+       "en_s": 1.82
+      },
+      {
+       "id": "fd01-hook.c1.s2",
+       "text": "What will you be eating in twenty one hundred?",
+       "start": 2.934,
+       "end": 4.92,
+       "slot_end": 5.415,
+       "slot_s": 2.481,
+       "en_s": 1.986
+      },
+      {
+       "id": "fd01-hook.c1.s3",
+       "text": "In fifteen hundred, historians estimate food took up most of a working family's budget.",
+       "start": 5.535,
+       "end": 10.86,
+       "slot_end": 11.173,
+       "slot_s": 5.638,
+       "en_s": 5.325
+      },
+      {
+       "id": "fd01-hook.c1.s4",
+       "text": "Today, there's more food than ever.",
+       "start": 11.293,
+       "end": 13.33,
+       "slot_end": 14.187,
+       "slot_s": 2.894,
+       "en_s": 2.037
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd02-question",
+   "start": 14.307,
+   "dur": 11.592,
+   "chunks": [
+    {
+     "id": "fd02-question.c1",
+     "text": "And yet, here's the strange part. Did you know that today, about one in five deaths around the world is linked to diet? So did food give us our longer lives? Or is it taking some of those years back?",
+     "sentences": [
+      {
+       "id": "fd02-question.c1.s1",
+       "text": "And yet, here's the strange part.",
+       "start": 14.307,
+       "end": 15.897,
+       "slot_end": 16.312,
+       "slot_s": 2.005,
+       "en_s": 1.59
+      },
+      {
+       "id": "fd02-question.c1.s2",
+       "text": "Did you know that today, about one in five deaths around the world is linked to diet?",
+       "start": 16.432,
+       "end": 20.517,
+       "slot_end": 21.332,
+       "slot_s": 4.9,
+       "en_s": 4.085
+      },
+      {
+       "id": "fd02-question.c1.s3",
+       "text": "So did food give us our longer lives?",
+       "start": 21.452,
+       "end": 23.347,
+       "slot_end": 23.561,
+       "slot_s": 2.109,
+       "en_s": 1.895
+      },
+      {
+       "id": "fd02-question.c1.s4",
+       "text": "Or is it taking some of those years back?",
+       "start": 23.681,
+       "end": 25.667,
+       "slot_end": 34.78,
+       "slot_s": 11.099,
+       "en_s": 1.986
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd00-welcome",
+   "start": 34.9,
+   "dur": 18.463,
+   "chunks": [
+    {
+     "id": "fd00-welcome.c1",
+     "text": "Welcome back to Did You Know That. Episode five. You know the rule. Here's your guess. In eighteen hundred, life expectancy at birth, worldwide, was about twenty nine years. What about a baby born today? Guess in the comments, right now. Then stay to the end, and check your guess.",
+     "sentences": [
+      {
+       "id": "fd00-welcome.c1.s1",
+       "text": "Welcome back to Did You Know That.",
+       "start": 34.9,
+       "end": 36.69,
+       "slot_end": 36.87,
+       "slot_s": 1.97,
+       "en_s": 1.79
+      },
+      {
+       "id": "fd00-welcome.c1.s2",
+       "text": "Episode five.",
+       "start": 36.99,
+       "end": 38.035,
+       "slot_end": 38.215,
+       "slot_s": 1.225,
+       "en_s": 1.045
+      },
+      {
+       "id": "fd00-welcome.c1.s3",
+       "text": "You know the rule.",
+       "start": 38.335,
+       "end": 39.099,
+       "slot_end": 39.503,
+       "slot_s": 1.168,
+       "en_s": 0.764
+      },
+      {
+       "id": "fd00-welcome.c1.s4",
+       "text": "Here's your guess.",
+       "start": 39.623,
+       "end": 40.439,
+       "slot_end": 40.746,
+       "slot_s": 1.123,
+       "en_s": 0.816
+      },
+      {
+       "id": "fd00-welcome.c1.s5",
+       "text": "In eighteen hundred, life expectancy at birth, worldwide, was about twenty nine years.",
+       "start": 40.866,
+       "end": 46.049,
+       "slot_end": 46.318,
+       "slot_s": 5.452,
+       "en_s": 5.183
+      },
+      {
+       "id": "fd00-welcome.c1.s6",
+       "text": "What about a baby born today?",
+       "start": 46.438,
+       "end": 47.839,
+       "slot_end": 48.878,
+       "slot_s": 2.44,
+       "en_s": 1.401
+      },
+      {
+       "id": "fd00-welcome.c1.s7",
+       "text": "Guess in the comments, right now.",
+       "start": 48.998,
+       "end": 50.489,
+       "slot_end": 50.898,
+       "slot_s": 1.9,
+       "en_s": 1.491
+      },
+      {
+       "id": "fd00-welcome.c1.s8",
+       "text": "Then stay to the end, and check your guess.",
+       "start": 51.018,
+       "end": 53.049,
+       "slot_end": 54.647,
+       "slot_s": 3.629,
+       "en_s": 2.031
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd03-promise",
+   "start": 54.767,
+   "dur": 15.697,
+   "chunks": [
+    {
+     "id": "fd03-promise.c1",
+     "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up somewhere new. You'll see what's on your plate, what it does to your body, and how long you get to live. And at the end, you'll find out what really gave us our extra years.",
+     "sentences": [
+      {
+       "id": "fd03-promise.c1.s1",
+       "text": "Seven mornings, from fifteen hundred to twenty one hundred.",
+       "start": 54.767,
+       "end": 57.847,
+       "slot_end": 58.258,
+       "slot_s": 3.491,
+       "en_s": 3.08
+      },
+      {
+       "id": "fd03-promise.c1.s2",
+       "text": "In each one, you wake up somewhere new.",
+       "start": 58.378,
+       "end": 60.407,
+       "slot_end": 60.673,
+       "slot_s": 2.295,
+       "en_s": 2.029
+      },
+      {
+       "id": "fd03-promise.c1.s3",
+       "text": "You'll see what's on your plate, what it does to your body, and how long you get to live.",
+       "start": 60.793,
+       "end": 66.107,
+       "slot_end": 66.303,
+       "slot_s": 5.51,
+       "en_s": 5.314
+      },
+      {
+       "id": "fd03-promise.c1.s4",
+       "text": "And at the end, you'll find out what really gave us our extra years.",
+       "start": 66.423,
+       "end": 70.227,
+       "slot_end": 72.447,
+       "slot_s": 6.024,
+       "en_s": 3.804
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd04-1500",
+   "start": 72.567,
+   "dur": 59.598,
+   "chunks": [
+    {
+     "id": "fd04-1500.c1",
+     "text": "You wake up in fifteen hundred, in a village in Flanders. The bread oven's warm, and the kitchen smells of rye and smoke.",
+     "sentences": [
+      {
+       "id": "fd04-1500.c1.s1",
+       "text": "You wake up in fifteen hundred, in a village in Flanders.",
+       "start": 72.567,
+       "end": 75.547,
+       "slot_end": 76.104,
+       "slot_s": 3.537,
+       "en_s": 2.98
+      },
+      {
+       "id": "fd04-1500.c1.s2",
+       "text": "The bread oven's warm, and the kitchen smells of rye and smoke.",
+       "start": 76.224,
+       "end": 79.857,
+       "slot_end": 80.267,
+       "slot_s": 4.043,
+       "en_s": 3.633
+      }
+     ]
+    },
+    {
+     "id": "fd04-1500.c2",
+     "text": "Did you know that here, on up to four days in ten, eating meat is against the rules? Fridays. Lent. Advent. The Church calls them fast days.",
+     "sentences": [
+      {
+       "id": "fd04-1500.c2.s1",
+       "text": "Did you know that here, on up to four days in ten, eating meat is against the rules?",
+       "start": 80.387,
+       "end": 85.027,
+       "slot_end": 85.818,
+       "slot_s": 5.431,
+       "en_s": 4.64
+      },
+      {
+       "id": "fd04-1500.c2.s2",
+       "text": "Fridays.",
+       "start": 85.938,
+       "end": 86.617,
+       "slot_end": 86.829,
+       "slot_s": 0.891,
+       "en_s": 0.679
+      },
+      {
+       "id": "fd04-1500.c2.s3",
+       "text": "Lent.",
+       "start": 86.949,
+       "end": 87.337,
+       "slot_end": 87.525,
+       "slot_s": 0.576,
+       "en_s": 0.388
+      },
+      {
+       "id": "fd04-1500.c2.s4",
+       "text": "Advent.",
+       "start": 87.645,
+       "end": 88.177,
+       "slot_end": 88.357,
+       "slot_s": 0.712,
+       "en_s": 0.532
+      },
+      {
+       "id": "fd04-1500.c2.s5",
+       "text": "The Church calls them fast days.",
+       "start": 88.477,
+       "end": 90.515,
+       "slot_end": 90.952,
+       "slot_s": 2.475,
+       "en_s": 2.038
+      }
+     ]
+    },
+    {
+     "id": "fd04-1500.c3",
+     "text": "Here's your plate. Bread at almost every meal. Porridge, peas and beans. Beer to drink. Dried fish on fast days. Most of what your family spends goes on food. Seventy to eighty percent. When the harvest fails, bread prices jump, and people go hungry.",
+     "sentences": [
+      {
+       "id": "fd04-1500.c3.s1",
+       "text": "Here's your plate.",
+       "start": 91.072,
+       "end": 91.722,
+       "slot_end": 92.009,
+       "slot_s": 0.937,
+       "en_s": 0.65
+      },
+      {
+       "id": "fd04-1500.c3.s2",
+       "text": "Bread at almost every meal.",
+       "start": 92.129,
+       "end": 93.372,
+       "slot_end": 93.681,
+       "slot_s": 1.552,
+       "en_s": 1.243
+      },
+      {
+       "id": "fd04-1500.c3.s3",
+       "text": "Porridge, peas and beans.",
+       "start": 93.801,
+       "end": 95.172,
+       "slot_end": 95.457,
+       "slot_s": 1.656,
+       "en_s": 1.371
+      },
+      {
+       "id": "fd04-1500.c3.s4",
+       "text": "Beer to drink.",
+       "start": 95.577,
+       "end": 96.382,
+       "slot_end": 96.641,
+       "slot_s": 1.064,
+       "en_s": 0.805
+      },
+      {
+       "id": "fd04-1500.c3.s5",
+       "text": "Dried fish on fast days.",
+       "start": 96.761,
+       "end": 98.312,
+       "slot_end": 98.661,
+       "slot_s": 1.9,
+       "en_s": 1.551
+      },
+      {
+       "id": "fd04-1500.c3.s6",
+       "text": "Most of what your family spends goes on food.",
+       "start": 98.781,
+       "end": 100.872,
+       "slot_end": 101.494,
+       "slot_s": 2.713,
+       "en_s": 2.091
+      },
+      {
+       "id": "fd04-1500.c3.s7",
+       "text": "Seventy to eighty percent.",
+       "start": 101.614,
+       "end": 102.892,
+       "slot_end": 103.072,
+       "slot_s": 1.458,
+       "en_s": 1.278
+      },
+      {
+       "id": "fd04-1500.c3.s8",
+       "text": "When the harvest fails, bread prices jump, and people go hungry.",
+       "start": 103.192,
+       "end": 106.544,
+       "slot_end": 106.967,
+       "slot_s": 3.775,
+       "en_s": 3.352
+      }
+     ]
+    },
+    {
+     "id": "fd04-1500.c4",
+     "text": "How long do you live? In England, just across the sea, a newborn could expect about thirty five years. Mostly because so many children died. If you made it to thirty, you had a fair chance of reaching sixty.",
+     "sentences": [
+      {
+       "id": "fd04-1500.c4.s1",
+       "text": "How long do you live?",
+       "start": 107.087,
+       "end": 108.007,
+       "slot_end": 108.692,
+       "slot_s": 1.605,
+       "en_s": 0.92
+      },
+      {
+       "id": "fd04-1500.c4.s2",
+       "text": "In England, just across the sea, a newborn could expect about thirty five years.",
+       "start": 108.812,
+       "end": 113.697,
+       "slot_end": 114.021,
+       "slot_s": 5.209,
+       "en_s": 4.885
+      },
+      {
+       "id": "fd04-1500.c4.s3",
+       "text": "Mostly because so many children died.",
+       "start": 114.141,
+       "end": 115.897,
+       "slot_end": 116.448,
+       "slot_s": 2.307,
+       "en_s": 1.756
+      },
+      {
+       "id": "fd04-1500.c4.s4",
+       "text": "If you made it to thirty, you had a fair chance of reaching sixty.",
+       "start": 116.568,
+       "end": 119.847,
+       "slot_end": 120.285,
+       "slot_s": 3.717,
+       "en_s": 3.279
+      }
+     ]
+    },
+    {
+     "id": "fd04-1500.c5",
+     "text": "So what is food to you? Fuel. Enough to survive the day. Remember those fast days. They come back at the end. And at sea, on the longest voyages, sailors start falling apart.",
+     "sentences": [
+      {
+       "id": "fd04-1500.c5.s1",
+       "text": "So what is food to you?",
+       "start": 120.405,
+       "end": 121.635,
+       "slot_end": 122.701,
+       "slot_s": 2.296,
+       "en_s": 1.23
+      },
+      {
+       "id": "fd04-1500.c5.s2",
+       "text": "Fuel.",
+       "start": 122.821,
+       "end": 123.345,
+       "slot_end": 123.56,
+       "slot_s": 0.739,
+       "en_s": 0.524
+      },
+      {
+       "id": "fd04-1500.c5.s3",
+       "text": "Enough to survive the day.",
+       "start": 123.68,
+       "end": 125.035,
+       "slot_end": 125.267,
+       "slot_s": 1.587,
+       "en_s": 1.355
+      },
+      {
+       "id": "fd04-1500.c5.s4",
+       "text": "Remember those fast days.",
+       "start": 125.387,
+       "end": 126.792,
+       "slot_end": 126.972,
+       "slot_s": 1.585,
+       "en_s": 1.405
+      },
+      {
+       "id": "fd04-1500.c5.s5",
+       "text": "They come back at the end.",
+       "start": 127.092,
+       "end": 128.21,
+       "slot_end": 128.481,
+       "slot_s": 1.389,
+       "en_s": 1.118
+      },
+      {
+       "id": "fd04-1500.c5.s6",
+       "text": "And at sea, on the longest voyages, sailors start falling apart.",
+       "start": 128.601,
+       "end": 131.9,
+       "slot_end": 133.747,
+       "slot_s": 5.146,
+       "en_s": 3.299
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd05-1747",
+   "start": 133.867,
+   "dur": 59.918,
+   "chunks": [
+    {
+     "id": "fd05-1747.c1",
+     "text": "You wake up in seventeen forty seven, aboard HMS Salisbury, a British warship on patrol.",
+     "sentences": [
+      {
+       "id": "fd05-1747.c1.s1",
+       "text": "You wake up in seventeen forty seven, aboard HMS Salisbury, a British warship on patrol.",
+       "start": 133.867,
+       "end": 138.987,
+       "slot_end": 139.338,
+       "slot_s": 5.471,
+       "en_s": 5.12
+      }
+     ]
+    },
+    {
+     "id": "fd05-1747.c2",
+     "text": "Did you know that the cure for sailors' worst disease was found this year, and the navy waited almost fifty years to use it?",
+     "sentences": [
+      {
+       "id": "fd05-1747.c2.s1",
+       "text": "Did you know that the cure for sailors' worst disease was found this year, and the navy waited almost fifty years to use it?",
+       "start": 139.458,
+       "end": 146.278,
+       "slot_end": 147.089,
+       "slot_s": 7.631,
+       "en_s": 6.82
+      }
+     ]
+    },
+    {
+     "id": "fd05-1747.c3",
+     "text": "Here's your plate. Every day, a pound of hard biscuit and a gallon of beer. Salt beef or pork, dried peas, oatmeal, a little cheese. Almost nothing fresh. After weeks at sea, men get scurvy. Bleeding gums. Old wounds opening up.",
+     "sentences": [
+      {
+       "id": "fd05-1747.c3.s1",
+       "text": "Here's your plate.",
+       "start": 147.209,
+       "end": 147.869,
+       "slot_end": 148.049,
+       "slot_s": 0.84,
+       "en_s": 0.66
+      },
+      {
+       "id": "fd05-1747.c3.s2",
+       "text": "Every day, a pound of hard biscuit and a gallon of beer.",
+       "start": 148.169,
+       "end": 151.756,
+       "slot_end": 152.774,
+       "slot_s": 4.605,
+       "en_s": 3.587
+      },
+      {
+       "id": "fd05-1747.c3.s3",
+       "text": "Salt beef or pork, dried peas, oatmeal, a little cheese.",
+       "start": 152.894,
+       "end": 157.076,
+       "slot_end": 157.488,
+       "slot_s": 4.594,
+       "en_s": 4.182
+      },
+      {
+       "id": "fd05-1747.c3.s4",
+       "text": "Almost nothing fresh.",
+       "start": 157.608,
+       "end": 158.896,
+       "slot_end": 159.287,
+       "slot_s": 1.679,
+       "en_s": 1.288
+      },
+      {
+       "id": "fd05-1747.c3.s5",
+       "text": "After weeks at sea, men get scurvy.",
+       "start": 159.407,
+       "end": 161.546,
+       "slot_end": 161.737,
+       "slot_s": 2.33,
+       "en_s": 2.139
+      },
+      {
+       "id": "fd05-1747.c3.s6",
+       "text": "Bleeding gums.",
+       "start": 161.857,
+       "end": 162.796,
+       "slot_end": 163.084,
+       "slot_s": 1.227,
+       "en_s": 0.939
+      },
+      {
+       "id": "fd05-1747.c3.s7",
+       "text": "Old wounds opening up.",
+       "start": 163.204,
+       "end": 164.416,
+       "slot_end": 164.808,
+       "slot_s": 1.604,
+       "en_s": 1.212
+      }
+     ]
+    },
+    {
+     "id": "fd05-1747.c4",
+     "text": "The ship's surgeon, James Lind, splits twelve sailors with scurvy into pairs, and gives each pair something different. Cider. Vinegar. And one pair gets two oranges and a lemon a day.",
+     "sentences": [
+      {
+       "id": "fd05-1747.c4.s1",
+       "text": "The ship's surgeon, James Lind, splits twelve sailors with scurvy into pairs, and gives each pair something different.",
+       "start": 164.928,
+       "end": 172.198,
+       "slot_end": 172.714,
+       "slot_s": 7.786,
+       "en_s": 7.27
+      },
+      {
+       "id": "fd05-1747.c4.s2",
+       "text": "Cider.",
+       "start": 172.834,
+       "end": 173.378,
+       "slot_end": 173.558,
+       "slot_s": 0.724,
+       "en_s": 0.544
+      },
+      {
+       "id": "fd05-1747.c4.s3",
+       "text": "Vinegar.",
+       "start": 173.678,
+       "end": 174.2,
+       "slot_end": 174.38,
+       "slot_s": 0.702,
+       "en_s": 0.522
+      },
+      {
+       "id": "fd05-1747.c4.s4",
+       "text": "And one pair gets two oranges and a lemon a day.",
+       "start": 174.5,
+       "end": 176.791,
+       "slot_end": 177.173,
+       "slot_s": 2.673,
+       "en_s": 2.291
+      }
+     ]
+    },
+    {
+     "id": "fd05-1747.c5",
+     "text": "So what is food now? Medicine. The right food can cure you. On land in Britain, a newborn could still expect fewer than forty years.",
+     "sentences": [
+      {
+       "id": "fd05-1747.c5.s1",
+       "text": "So what is food now?",
+       "start": 177.293,
+       "end": 178.293,
+       "slot_end": 179.102,
+       "slot_s": 1.809,
+       "en_s": 1.0
+      },
+      {
+       "id": "fd05-1747.c5.s2",
+       "text": "Medicine.",
+       "start": 179.222,
+       "end": 179.71,
+       "slot_end": 179.89,
+       "slot_s": 0.668,
+       "en_s": 0.488
+      },
+      {
+       "id": "fd05-1747.c5.s3",
+       "text": "The right food can cure you.",
+       "start": 180.01,
+       "end": 181.16,
+       "slot_end": 181.34,
+       "slot_s": 1.33,
+       "en_s": 1.15
+      },
+      {
+       "id": "fd05-1747.c5.s4",
+       "text": "On land in Britain, a newborn could still expect fewer than forty years.",
+       "start": 181.46,
+       "end": 185.241,
+       "slot_end": 185.631,
+       "slot_s": 4.171,
+       "en_s": 3.781
+      }
+     ]
+    },
+    {
+     "id": "fd05-1747.c6",
+     "text": "The navy finally handed out lemon juice in seventeen ninety five. A century later, in Japan, another missing piece is making sailors sick.",
+     "sentences": [
+      {
+       "id": "fd05-1747.c6.s1",
+       "text": "The navy finally handed out lemon juice in seventeen ninety five.",
+       "start": 185.751,
+       "end": 189.071,
+       "slot_end": 189.509,
+       "slot_s": 3.758,
+       "en_s": 3.32
+      },
+      {
+       "id": "fd05-1747.c6.s2",
+       "text": "A century later, in Japan, another missing piece is making sailors sick.",
+       "start": 189.629,
+       "end": 193.501,
+       "slot_end": 195.38,
+       "slot_s": 5.751,
+       "en_s": 3.872
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd06-1884",
+   "start": 195.5,
+   "dur": 61.774,
+   "chunks": [
+    {
+     "id": "fd06-1884.c1",
+     "text": "You wake up in eighteen eighty four, at Shinagawa, on Tokyo Bay. A training ship called the Tsukuba is getting ready to sail.",
+     "sentences": [
+      {
+       "id": "fd06-1884.c1.s1",
+       "text": "You wake up in eighteen eighty four, at Shinagawa, on Tokyo Bay.",
+       "start": 195.5,
+       "end": 199.63,
+       "slot_end": 200.221,
+       "slot_s": 4.721,
+       "en_s": 4.13
+      },
+      {
+       "id": "fd06-1884.c1.s2",
+       "text": "A training ship called the Tsukuba is getting ready to sail.",
+       "start": 200.341,
+       "end": 203.1,
+       "slot_end": 203.478,
+       "slot_s": 3.137,
+       "en_s": 2.759
+      }
+     ]
+    },
+    {
+     "id": "fd06-1884.c2",
+     "text": "Did you know that on a voyage like this one, the year before, almost half the crew got sick from what they ate? On the ship Ryujo, a hundred and sixty nine men got beriberi. Twenty five died.",
+     "sentences": [
+      {
+       "id": "fd06-1884.c2.s1",
+       "text": "Did you know that on a voyage like this one, the year before, almost half the crew got sick from what they ate?",
+       "start": 203.598,
+       "end": 209.138,
+       "slot_end": 209.888,
+       "slot_s": 6.29,
+       "en_s": 5.54
+      },
+      {
+       "id": "fd06-1884.c2.s2",
+       "text": "On the ship Ryujo, a hundred and sixty nine men got beriberi.",
+       "start": 210.008,
+       "end": 213.428,
+       "slot_end": 213.708,
+       "slot_s": 3.7,
+       "en_s": 3.42
+      },
+      {
+       "id": "fd06-1884.c2.s3",
+       "text": "Twenty five died.",
+       "start": 213.828,
+       "end": 214.698,
+       "slot_end": 215.038,
+       "slot_s": 1.21,
+       "en_s": 0.87
+      }
+     ]
+    },
+    {
+     "id": "fd06-1884.c3",
+     "text": "Here's a sailor's plate. White rice. Rice was free. Everything else cost money. A navy doctor, Takaki Kanehiro, measures what the men eat, and changes the menu. More barley, meat, milk, bread and vegetables.",
+     "sentences": [
+      {
+       "id": "fd06-1884.c3.s1",
+       "text": "Here's a sailor's plate.",
+       "start": 215.158,
+       "end": 216.268,
+       "slot_end": 216.448,
+       "slot_s": 1.29,
+       "en_s": 1.11
+      },
+      {
+       "id": "fd06-1884.c3.s2",
+       "text": "White rice.",
+       "start": 216.568,
+       "end": 217.239,
+       "slot_end": 217.419,
+       "slot_s": 0.851,
+       "en_s": 0.671
+      },
+      {
+       "id": "fd06-1884.c3.s3",
+       "text": "Rice was free.",
+       "start": 217.539,
+       "end": 218.375,
+       "slot_end": 218.555,
+       "slot_s": 1.016,
+       "en_s": 0.836
+      },
+      {
+       "id": "fd06-1884.c3.s4",
+       "text": "Everything else cost money.",
+       "start": 218.675,
+       "end": 219.938,
+       "slot_end": 220.331,
+       "slot_s": 1.656,
+       "en_s": 1.263
+      },
+      {
+       "id": "fd06-1884.c3.s5",
+       "text": "A navy doctor, Takaki Kanehiro, measures what the men eat, and changes the menu.",
+       "start": 220.451,
+       "end": 225.208,
+       "slot_end": 225.463,
+       "slot_s": 5.012,
+       "en_s": 4.757
+      },
+      {
+       "id": "fd06-1884.c3.s6",
+       "text": "More barley, meat, milk, bread and vegetables.",
+       "start": 225.583,
+       "end": 227.848,
+       "slot_end": 228.268,
+       "slot_s": 2.685,
+       "en_s": 2.265
+      }
+     ]
+    },
+    {
+     "id": "fd06-1884.c4",
+     "text": "On the Tsukuba, fourteen men get sick. None die. And the fourteen? They had not eaten the new food.",
+     "sentences": [
+      {
+       "id": "fd06-1884.c4.s1",
+       "text": "On the Tsukuba, fourteen men get sick.",
+       "start": 228.388,
+       "end": 230.428,
+       "slot_end": 230.81,
+       "slot_s": 2.422,
+       "en_s": 2.04
+      },
+      {
+       "id": "fd06-1884.c4.s2",
+       "text": "None die.",
+       "start": 230.93,
+       "end": 231.538,
+       "slot_end": 231.913,
+       "slot_s": 0.983,
+       "en_s": 0.608
+      },
+      {
+       "id": "fd06-1884.c4.s3",
+       "text": "And the fourteen?",
+       "start": 232.033,
+       "end": 232.908,
+       "slot_end": 233.537,
+       "slot_s": 1.504,
+       "en_s": 0.875
+      },
+      {
+       "id": "fd06-1884.c4.s4",
+       "text": "They had not eaten the new food.",
+       "start": 233.657,
+       "end": 234.928,
+       "slot_end": 235.273,
+       "slot_s": 1.616,
+       "en_s": 1.271
+      }
+     ]
+    },
+    {
+     "id": "fd06-1884.c5",
+     "text": "So what is food now? Something to measure. What's inside it matters. Japan's first life tables give a newborn about forty three years. And Japanese men born back then? About fifteen centimetres shorter than men born a century later.",
+     "sentences": [
+      {
+       "id": "fd06-1884.c5.s1",
+       "text": "So what is food now?",
+       "start": 235.393,
+       "end": 236.393,
+       "slot_end": 237.062,
+       "slot_s": 1.669,
+       "en_s": 1.0
+      },
+      {
+       "id": "fd06-1884.c5.s2",
+       "text": "Something to measure.",
+       "start": 237.182,
+       "end": 238.013,
+       "slot_end": 238.444,
+       "slot_s": 1.262,
+       "en_s": 0.831
+      },
+      {
+       "id": "fd06-1884.c5.s3",
+       "text": "What's inside it matters.",
+       "start": 238.564,
+       "end": 239.883,
+       "slot_end": 240.499,
+       "slot_s": 1.935,
+       "en_s": 1.319
+      },
+      {
+       "id": "fd06-1884.c5.s4",
+       "text": "Japan's first life tables give a newborn about forty three years.",
+       "start": 240.619,
+       "end": 244.303,
+       "slot_end": 244.483,
+       "slot_s": 3.864,
+       "en_s": 3.684
+      },
+      {
+       "id": "fd06-1884.c5.s5",
+       "text": "And Japanese men born back then?",
+       "start": 244.603,
+       "end": 246.283,
+       "slot_end": 246.759,
+       "slot_s": 2.156,
+       "en_s": 1.68
+      },
+      {
+       "id": "fd06-1884.c5.s6",
+       "text": "About fifteen centimetres shorter than men born a century later.",
+       "start": 246.879,
+       "end": 249.733,
+       "slot_end": 250.097,
+       "slot_s": 3.218,
+       "en_s": 2.854
+      }
+     ]
+    },
+    {
+     "id": "fd06-1884.c6",
+     "text": "Decades later, it gets a name. A vitamin. But knowing what's missing doesn't put it on a poor family's plate.",
+     "sentences": [
+      {
+       "id": "fd06-1884.c6.s1",
+       "text": "Decades later, it gets a name.",
+       "start": 250.217,
+       "end": 252.098,
+       "slot_end": 252.278,
+       "slot_s": 2.061,
+       "en_s": 1.881
+      },
+      {
+       "id": "fd06-1884.c6.s2",
+       "text": "A vitamin.",
+       "start": 252.398,
+       "end": 252.954,
+       "slot_end": 253.439,
+       "slot_s": 1.041,
+       "en_s": 0.556
+      },
+      {
+       "id": "fd06-1884.c6.s3",
+       "text": "But knowing what's missing doesn't put it on a poor family's plate.",
+       "start": 253.559,
+       "end": 257.044,
+       "slot_end": 259.213,
+       "slot_s": 5.654,
+       "en_s": 3.485
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd07-1915",
+   "start": 259.333,
+   "dur": 71.162,
+   "chunks": [
+    {
+     "id": "fd07-1915.c1",
+     "text": "You wake up in nineteen fifteen, on a prison farm in Mississippi. Eleven men are lining up for breakfast.",
+     "sentences": [
+      {
+       "id": "fd07-1915.c1.s1",
+       "text": "You wake up in nineteen fifteen, on a prison farm in Mississippi.",
+       "start": 259.333,
+       "end": 263.043,
+       "slot_end": 263.439,
+       "slot_s": 4.106,
+       "en_s": 3.71
+      },
+      {
+       "id": "fd07-1915.c1.s2",
+       "text": "Eleven men are lining up for breakfast.",
+       "start": 263.559,
+       "end": 265.593,
+       "slot_end": 266.011,
+       "slot_s": 2.452,
+       "en_s": 2.034
+      }
+     ]
+    },
+    {
+     "id": "fd07-1915.c2",
+     "text": "Did you know that doctors made healthy men sick here, on purpose, by feeding them a poor Southern family's ordinary diet? The volunteers were promised a pardon.",
+     "sentences": [
+      {
+       "id": "fd07-1915.c2.s1",
+       "text": "Did you know that doctors made healthy men sick here, on purpose, by feeding them a poor Southern family's ordinary diet?",
+       "start": 266.131,
+       "end": 272.861,
+       "slot_end": 273.391,
+       "slot_s": 7.26,
+       "en_s": 6.73
+      },
+      {
+       "id": "fd07-1915.c2.s2",
+       "text": "The volunteers were promised a pardon.",
+       "start": 273.511,
+       "end": 275.152,
+       "slot_end": 275.522,
+       "slot_s": 2.011,
+       "en_s": 1.641
+      }
+     ]
+    },
+    {
+     "id": "fd07-1915.c3",
+     "text": "Here's the plate. Cornbread and grits. Fatty salt pork. Molasses. Hardly any milk, fresh meat or greens. After about five months, around half of the men have pellagra. Rashes, stomach trouble, confusion, even death.",
+     "sentences": [
+      {
+       "id": "fd07-1915.c3.s1",
+       "text": "Here's the plate.",
+       "start": 275.642,
+       "end": 276.242,
+       "slot_end": 276.636,
+       "slot_s": 0.994,
+       "en_s": 0.6
+      },
+      {
+       "id": "fd07-1915.c3.s2",
+       "text": "Cornbread and grits.",
+       "start": 276.756,
+       "end": 277.742,
+       "slot_end": 278.25,
+       "slot_s": 1.494,
+       "en_s": 0.986
+      },
+      {
+       "id": "fd07-1915.c3.s3",
+       "text": "Fatty salt pork.",
+       "start": 278.37,
+       "end": 279.302,
+       "slot_end": 279.794,
+       "slot_s": 1.424,
+       "en_s": 0.932
+      },
+      {
+       "id": "fd07-1915.c3.s4",
+       "text": "Molasses.",
+       "start": 279.914,
+       "end": 280.572,
+       "slot_end": 280.955,
+       "slot_s": 1.041,
+       "en_s": 0.658
+      },
+      {
+       "id": "fd07-1915.c3.s5",
+       "text": "Hardly any milk, fresh meat or greens.",
+       "start": 281.075,
+       "end": 283.432,
+       "slot_end": 283.649,
+       "slot_s": 2.574,
+       "en_s": 2.357
+      },
+      {
+       "id": "fd07-1915.c3.s6",
+       "text": "After about five months, around half of the men have pellagra.",
+       "start": 283.769,
+       "end": 286.372,
+       "slot_end": 286.992,
+       "slot_s": 3.223,
+       "en_s": 2.603
+      },
+      {
+       "id": "fd07-1915.c3.s7",
+       "text": "Rashes, stomach trouble, confusion, even death.",
+       "start": 287.112,
+       "end": 289.502,
+       "slot_end": 289.936,
+       "slot_s": 2.824,
+       "en_s": 2.39
+      }
+     ]
+    },
+    {
+     "id": "fd07-1915.c4",
+     "text": "By one widely quoted estimate, it killed around a hundred thousand people across the South. The doctor, Joseph Goldberger, shows pellagra isn't caught like a germ. It comes from something missing in the diet.",
+     "sentences": [
+      {
+       "id": "fd07-1915.c4.s1",
+       "text": "By one widely quoted estimate, it killed around a hundred thousand people across the South.",
+       "start": 290.056,
+       "end": 294.866,
+       "slot_end": 295.276,
+       "slot_s": 5.22,
+       "en_s": 4.81
+      },
+      {
+       "id": "fd07-1915.c4.s2",
+       "text": "The doctor, Joseph Goldberger, shows pellagra isn't caught like a germ.",
+       "start": 295.396,
+       "end": 299.846,
+       "slot_end": 300.118,
+       "slot_s": 4.722,
+       "en_s": 4.45
+      },
+      {
+       "id": "fd07-1915.c4.s3",
+       "text": "It comes from something missing in the diet.",
+       "start": 300.238,
+       "end": 302.326,
+       "slot_end": 302.725,
+       "slot_s": 2.487,
+       "en_s": 2.088
+      }
+     ]
+    },
+    {
+     "id": "fd07-1915.c5",
+     "text": "Later, it's named. Niacin, a B vitamin. In the nineteen forties, it's added to flour and bread across much of America. With that, better wages and more varied food, pellagra fades.",
+     "sentences": [
+      {
+       "id": "fd07-1915.c5.s1",
+       "text": "Later, it's named.",
+       "start": 302.845,
+       "end": 303.985,
+       "slot_end": 304.385,
+       "slot_s": 1.54,
+       "en_s": 1.14
+      },
+      {
+       "id": "fd07-1915.c5.s2",
+       "text": "Niacin, a B vitamin.",
+       "start": 304.505,
+       "end": 306.015,
+       "slot_end": 306.278,
+       "slot_s": 1.773,
+       "en_s": 1.51
+      },
+      {
+       "id": "fd07-1915.c5.s3",
+       "text": "In the nineteen forties, it's added to flour and bread across much of America.",
+       "start": 306.398,
+       "end": 310.295,
+       "slot_end": 310.515,
+       "slot_s": 4.117,
+       "en_s": 3.897
+      },
+      {
+       "id": "fd07-1915.c5.s4",
+       "text": "With that, better wages and more varied food, pellagra fades.",
+       "start": 310.635,
+       "end": 314.205,
+       "slot_end": 314.585,
+       "slot_s": 3.95,
+       "en_s": 3.57
+      }
+     ]
+    },
+    {
+     "id": "fd07-1915.c6",
+     "text": "So what is food now? Something we fix. Add what's missing, and a disease disappears. In America that year, a newborn could expect about fifty five years. But fixing food only helps if there's enough of it. And in India, there isn't.",
+     "sentences": [
+      {
+       "id": "fd07-1915.c6.s1",
+       "text": "So what is food now?",
+       "start": 314.705,
+       "end": 315.665,
+       "slot_end": 316.978,
+       "slot_s": 2.273,
+       "en_s": 0.96
+      },
+      {
+       "id": "fd07-1915.c6.s2",
+       "text": "Something we fix.",
+       "start": 317.098,
+       "end": 318.213,
+       "slot_end": 318.393,
+       "slot_s": 1.295,
+       "en_s": 1.115
+      },
+      {
+       "id": "fd07-1915.c6.s3",
+       "text": "Add what's missing, and a disease disappears.",
+       "start": 318.513,
+       "end": 321.169,
+       "slot_end": 321.377,
+       "slot_s": 2.864,
+       "en_s": 2.656
+      },
+      {
+       "id": "fd07-1915.c6.s4",
+       "text": "In America that year, a newborn could expect about fifty five years.",
+       "start": 321.497,
+       "end": 325.229,
+       "slot_end": 325.557,
+       "slot_s": 4.06,
+       "en_s": 3.732
+      },
+      {
+       "id": "fd07-1915.c6.s5",
+       "text": "But fixing food only helps if there's enough of it.",
+       "start": 325.677,
+       "end": 328.589,
+       "slot_end": 328.924,
+       "slot_s": 3.247,
+       "en_s": 2.912
+      },
+      {
+       "id": "fd07-1915.c6.s6",
+       "text": "And in India, there isn't.",
+       "start": 329.044,
+       "end": 330.209,
+       "slot_end": 332.413,
+       "slot_s": 3.369,
+       "en_s": 1.165
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd08-1966",
+   "start": 332.533,
+   "dur": 60.949,
+   "chunks": [
+    {
+     "id": "fd08-1966.c1",
+     "text": "You wake up in nineteen sixty six, in a village in Punjab. Everyone's watching the sky for rain.",
+     "sentences": [
+      {
+       "id": "fd08-1966.c1.s1",
+       "text": "You wake up in nineteen sixty six, in a village in Punjab.",
+       "start": 332.533,
+       "end": 335.983,
+       "slot_end": 336.407,
+       "slot_s": 3.874,
+       "en_s": 3.45
+      },
+      {
+       "id": "fd08-1966.c1.s2",
+       "text": "Everyone's watching the sky for rain.",
+       "start": 336.527,
+       "end": 338.363,
+       "slot_end": 338.793,
+       "slot_s": 2.266,
+       "en_s": 1.836
+      }
+     ]
+    },
+    {
+     "id": "fd08-1966.c2",
+     "text": "Did you know that the year before, India's prime minister asked the whole country to skip one meal a week? Lal Bahadur Shastri. War and drought had left too little grain.",
+     "sentences": [
+      {
+       "id": "fd08-1966.c2.s1",
+       "text": "Did you know that the year before, India's prime minister asked the whole country to skip one meal a week?",
+       "start": 338.913,
+       "end": 344.443,
+       "slot_end": 345.506,
+       "slot_s": 6.593,
+       "en_s": 5.53
+      },
+      {
+       "id": "fd08-1966.c2.s2",
+       "text": "Lal Bahadur Shastri.",
+       "start": 345.626,
+       "end": 347.323,
+       "slot_end": 347.63,
+       "slot_s": 2.004,
+       "en_s": 1.697
+      },
+      {
+       "id": "fd08-1966.c2.s3",
+       "text": "War and drought had left too little grain.",
+       "start": 347.75,
+       "end": 349.823,
+       "slot_end": 350.26,
+       "slot_s": 2.51,
+       "en_s": 2.073
+      }
+     ]
+    },
+    {
+     "id": "fd08-1966.c3",
+     "text": "Here's your plate. Flatbread, lentils, maybe some vegetables. Across India, there's only enough food for about two thousand calories a person a day. A newborn here could expect about forty six years.",
+     "sentences": [
+      {
+       "id": "fd08-1966.c3.s1",
+       "text": "Here's your plate.",
+       "start": 350.38,
+       "end": 351.03,
+       "slot_end": 351.305,
+       "slot_s": 0.925,
+       "en_s": 0.65
+      },
+      {
+       "id": "fd08-1966.c3.s2",
+       "text": "Flatbread, lentils, maybe some vegetables.",
+       "start": 351.425,
+       "end": 354.14,
+       "slot_end": 354.683,
+       "slot_s": 3.258,
+       "en_s": 2.715
+      },
+      {
+       "id": "fd08-1966.c3.s3",
+       "text": "Across India, there's only enough food for about two thousand calories a person a day.",
+       "start": 354.803,
+       "end": 358.76,
+       "slot_end": 359.281,
+       "slot_s": 4.478,
+       "en_s": 3.957
+      },
+      {
+       "id": "fd08-1966.c3.s4",
+       "text": "A newborn here could expect about forty six years.",
+       "start": 359.401,
+       "end": 362.07,
+       "slot_end": 362.492,
+       "slot_s": 3.091,
+       "en_s": 2.669
+      }
+     ]
+    },
+    {
+     "id": "fd08-1966.c4",
+     "text": "So India imports eighteen thousand tonnes of wheat seed from Mexico. Short, sturdy plants, bred by Norman Borlaug's team. They need water, and lots of fertiliser, made in factories from nitrogen in the air. Within a few years, India's wheat harvest jumps to seventeen million tonnes.",
+     "sentences": [
+      {
+       "id": "fd08-1966.c4.s1",
+       "text": "So India imports eighteen thousand tonnes of wheat seed from Mexico.",
+       "start": 362.612,
+       "end": 366.572,
+       "slot_end": 367.078,
+       "slot_s": 4.466,
+       "en_s": 3.96
+      },
+      {
+       "id": "fd08-1966.c4.s2",
+       "text": "Short, sturdy plants, bred by Norman Borlaug's team.",
+       "start": 367.198,
+       "end": 370.332,
+       "slot_end": 370.933,
+       "slot_s": 3.735,
+       "en_s": 3.134
+      },
+      {
+       "id": "fd08-1966.c4.s3",
+       "text": "They need water, and lots of fertiliser, made in factories from nitrogen in the air.",
+       "start": 371.053,
+       "end": 375.112,
+       "slot_end": 375.507,
+       "slot_s": 4.454,
+       "en_s": 4.059
+      },
+      {
+       "id": "fd08-1966.c4.s4",
+       "text": "Within a few years, India's wheat harvest jumps to seventeen million tonnes.",
+       "start": 375.627,
+       "end": 379.422,
+       "slot_end": 379.831,
+       "slot_s": 4.204,
+       "en_s": 3.795
+      }
+     ]
+    },
+    {
+     "id": "fd08-1966.c5",
+     "text": "So what is food now? Enough, at last. Grown by the tonne. Today, a newborn in India can expect about seventy two years. And around the world, food has never been more plentiful. Which brings a brand new problem.",
+     "sentences": [
+      {
+       "id": "fd08-1966.c5.s1",
+       "text": "So what is food now?",
+       "start": 379.951,
+       "end": 381.081,
+       "slot_end": 381.611,
+       "slot_s": 1.66,
+       "en_s": 1.13
+      },
+      {
+       "id": "fd08-1966.c5.s2",
+       "text": "Enough, at last.",
+       "start": 381.731,
+       "end": 382.668,
+       "slot_end": 382.854,
+       "slot_s": 1.123,
+       "en_s": 0.937
+      },
+      {
+       "id": "fd08-1966.c5.s3",
+       "text": "Grown by the tonne.",
+       "start": 382.974,
+       "end": 384.048,
+       "slot_end": 384.328,
+       "slot_s": 1.354,
+       "en_s": 1.074
+      },
+      {
+       "id": "fd08-1966.c5.s4",
+       "text": "Today, a newborn in India can expect about seventy two years.",
+       "start": 384.448,
+       "end": 388.038,
+       "slot_end": 388.322,
+       "slot_s": 3.874,
+       "en_s": 3.59
+      },
+      {
+       "id": "fd08-1966.c5.s5",
+       "text": "And around the world, food has never been more plentiful.",
+       "start": 388.442,
+       "end": 391.188,
+       "slot_end": 391.527,
+       "slot_s": 3.085,
+       "en_s": 2.746
+      },
+      {
+       "id": "fd08-1966.c5.s6",
+       "text": "Which brings a brand new problem.",
+       "start": 391.647,
+       "end": 393.198,
+       "slot_end": 395.413,
+       "slot_s": 3.766,
+       "en_s": 1.551
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd09-today",
+   "start": 395.533,
+   "dur": 55.217,
+   "chunks": [
+    {
+     "id": "fd09-today.c1",
+     "text": "You wake up today, in São Paulo. Motorbikes buzz past with food deliveries.",
+     "sentences": [
+      {
+       "id": "fd09-today.c1.s1",
+       "text": "You wake up today, in São Paulo.",
+       "start": 395.533,
+       "end": 397.393,
+       "slot_end": 397.77,
+       "slot_s": 2.237,
+       "en_s": 1.86
+      },
+      {
+       "id": "fd09-today.c1.s2",
+       "text": "Motorbikes buzz past with food deliveries.",
+       "start": 397.89,
+       "end": 399.843,
+       "slot_end": 400.214,
+       "slot_s": 2.324,
+       "en_s": 1.953
+      }
+     ]
+    },
+    {
+     "id": "fd09-today.c2",
+     "text": "Did you know that Brazil's official food guide tells people to eat at regular times, and, whenever they can, with other people?",
+     "sentences": [
+      {
+       "id": "fd09-today.c2.s1",
+       "text": "Did you know that Brazil's official food guide tells people to eat at regular times, and, whenever they can, with other people?",
+       "start": 400.334,
+       "end": 407.814,
+       "slot_end": 408.523,
+       "slot_s": 8.189,
+       "en_s": 7.48
+      }
+     ]
+    },
+    {
+     "id": "fd09-today.c3",
+     "text": "Here's your plate. Rice and beans, still on most plates in Brazil. And more and more ultra-processed food. Soft drinks. Packaged snacks. In Brazil, it's about a fifth of the calories people eat. In the United States, more than half.",
+     "sentences": [
+      {
+       "id": "fd09-today.c3.s1",
+       "text": "Here's your plate.",
+       "start": 408.643,
+       "end": 409.313,
+       "slot_end": 409.51,
+       "slot_s": 0.867,
+       "en_s": 0.67
+      },
+      {
+       "id": "fd09-today.c3.s2",
+       "text": "Rice and beans, still on most plates in Brazil.",
+       "start": 409.63,
+       "end": 412.223,
+       "slot_end": 412.401,
+       "slot_s": 2.771,
+       "en_s": 2.593
+      },
+      {
+       "id": "fd09-today.c3.s3",
+       "text": "And more and more ultra-processed food.",
+       "start": 412.521,
+       "end": 414.633,
+       "slot_end": 414.978,
+       "slot_s": 2.457,
+       "en_s": 2.112
+      },
+      {
+       "id": "fd09-today.c3.s4",
+       "text": "Soft drinks.",
+       "start": 415.098,
+       "end": 415.853,
+       "slot_end": 416.302,
+       "slot_s": 1.204,
+       "en_s": 0.755
+      },
+      {
+       "id": "fd09-today.c3.s5",
+       "text": "Packaged snacks.",
+       "start": 416.422,
+       "end": 417.493,
+       "slot_end": 417.951,
+       "slot_s": 1.529,
+       "en_s": 1.071
+      },
+      {
+       "id": "fd09-today.c3.s6",
+       "text": "In Brazil, it's about a fifth of the calories people eat.",
+       "start": 418.071,
+       "end": 420.703,
+       "slot_end": 421.074,
+       "slot_s": 3.003,
+       "en_s": 2.632
+      },
+      {
+       "id": "fd09-today.c3.s7",
+       "text": "In the United States, more than half.",
+       "start": 421.194,
+       "end": 422.713,
+       "slot_end": 423.123,
+       "slot_s": 1.929,
+       "en_s": 1.519
+      }
+     ]
+    },
+    {
+     "id": "fd09-today.c4",
+     "text": "The guide's golden rule? Choose fresh food and home-made meals over ultra-processed food. And in most countries now, more adults live with obesity than are underweight. In Brazil, a newborn can expect about seventy six years.",
+     "sentences": [
+      {
+       "id": "fd09-today.c4.s1",
+       "text": "The guide's golden rule?",
+       "start": 423.243,
+       "end": 424.333,
+       "slot_end": 424.824,
+       "slot_s": 1.581,
+       "en_s": 1.09
+      },
+      {
+       "id": "fd09-today.c4.s2",
+       "text": "Choose fresh food and home-made meals over ultra-processed food.",
+       "start": 424.944,
+       "end": 428.683,
+       "slot_end": 428.969,
+       "slot_s": 4.025,
+       "en_s": 3.739
+      },
+      {
+       "id": "fd09-today.c4.s3",
+       "text": "And in most countries now, more adults live with obesity than are underweight.",
+       "start": 429.089,
+       "end": 432.683,
+       "slot_end": 433.125,
+       "slot_s": 4.036,
+       "en_s": 3.594
+      },
+      {
+       "id": "fd09-today.c4.s4",
+       "text": "In Brazil, a newborn can expect about seventy six years.",
+       "start": 433.245,
+       "end": 436.283,
+       "slot_end": 436.626,
+       "slot_s": 3.381,
+       "en_s": 3.038
+      }
+     ]
+    },
+    {
+     "id": "fd09-today.c5",
+     "text": "So what is food to you? Too much of some things. Too little of others. So here's the question you came for. Food helped us live longer. Is it now taking some of those years back?",
+     "sentences": [
+      {
+       "id": "fd09-today.c5.s1",
+       "text": "So what is food to you?",
+       "start": 436.746,
+       "end": 438.086,
+       "slot_end": 439.194,
+       "slot_s": 2.448,
+       "en_s": 1.34
+      },
+      {
+       "id": "fd09-today.c5.s2",
+       "text": "Too much of some things.",
+       "start": 439.314,
+       "end": 440.616,
+       "slot_end": 441.423,
+       "slot_s": 2.109,
+       "en_s": 1.302
+      },
+      {
+       "id": "fd09-today.c5.s3",
+       "text": "Too little of others.",
+       "start": 441.543,
+       "end": 442.616,
+       "slot_end": 443.42,
+       "slot_s": 1.877,
+       "en_s": 1.073
+      },
+      {
+       "id": "fd09-today.c5.s4",
+       "text": "So here's the question you came for.",
+       "start": 443.54,
+       "end": 445.186,
+       "slot_end": 445.87,
+       "slot_s": 2.33,
+       "en_s": 1.646
+      },
+      {
+       "id": "fd09-today.c5.s5",
+       "text": "Food helped us live longer.",
+       "start": 445.99,
+       "end": 447.616,
+       "slot_end": 447.809,
+       "slot_s": 1.819,
+       "en_s": 1.626
+      },
+      {
+       "id": "fd09-today.c5.s6",
+       "text": "Is it now taking some of those years back?",
+       "start": 447.929,
+       "end": 450.476,
+       "slot_end": 452.68,
+       "slot_s": 4.751,
+       "en_s": 2.547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd10-reveal",
+   "start": 452.8,
+   "dur": 70.741,
+   "chunks": [
+    {
+     "id": "fd10-reveal.c1",
+     "text": "Here's the answer. Food gave us years. But it didn't do it alone. And now, the danger has flipped.",
+     "sentences": [
+      {
+       "id": "fd10-reveal.c1.s1",
+       "text": "Here's the answer.",
+       "start": 452.8,
+       "end": 453.648,
+       "slot_end": 453.878,
+       "slot_s": 1.078,
+       "en_s": 0.848
+      },
+      {
+       "id": "fd10-reveal.c1.s2",
+       "text": "Food gave us years.",
+       "start": 453.998,
+       "end": 455.31,
+       "slot_end": 455.54,
+       "slot_s": 1.542,
+       "en_s": 1.312
+      },
+      {
+       "id": "fd10-reveal.c1.s3",
+       "text": "But it didn't do it alone.",
+       "start": 455.66,
+       "end": 456.861,
+       "slot_end": 457.153,
+       "slot_s": 1.493,
+       "en_s": 1.201
+      },
+      {
+       "id": "fd10-reveal.c1.s4",
+       "text": "And now, the danger has flipped.",
+       "start": 457.273,
+       "end": 458.991,
+       "slot_end": 459.388,
+       "slot_s": 2.115,
+       "en_s": 1.718
+      }
+     ]
+    },
+    {
+     "id": "fd10-reveal.c2",
+     "text": "Enough calories and the right nutrients beat scurvy, beriberi and pellagra, and helped us grow taller. A doctor, Thomas McKeown, argued that better food was the main reason we started living longer. Many historians disagree.",
+     "sentences": [
+      {
+       "id": "fd10-reveal.c2.s1",
+       "text": "Enough calories and the right nutrients beat scurvy, beriberi and pellagra, and helped us grow taller.",
+       "start": 459.508,
+       "end": 465.578,
+       "slot_end": 466.134,
+       "slot_s": 6.626,
+       "en_s": 6.07
+      },
+      {
+       "id": "fd10-reveal.c2.s2",
+       "text": "A doctor, Thomas McKeown, argued that better food was the main reason we started living longer.",
+       "start": 466.254,
+       "end": 470.488,
+       "slot_end": 470.975,
+       "slot_s": 4.721,
+       "en_s": 4.234
+      },
+      {
+       "id": "fd10-reveal.c2.s3",
+       "text": "Many historians disagree.",
+       "start": 471.095,
+       "end": 472.458,
+       "slot_end": 472.874,
+       "slot_s": 1.779,
+       "en_s": 1.363
+      }
+     ]
+    },
+    {
+     "id": "fd10-reveal.c3",
+     "text": "In big American cities, one study found clean water alone was behind nearly half the drop in deaths, in the early nineteen hundreds. Sewers, vaccines and medicine did much of the rest.",
+     "sentences": [
+      {
+       "id": "fd10-reveal.c3.s1",
+       "text": "In big American cities, one study found clean water alone was behind nearly half the drop in deaths, in the early nineteen hundreds.",
+       "start": 472.994,
+       "end": 480.374,
+       "slot_end": 480.711,
+       "slot_s": 7.717,
+       "en_s": 7.38
+      },
+      {
+       "id": "fd10-reveal.c3.s2",
+       "text": "Sewers, vaccines and medicine did much of the rest.",
+       "start": 480.831,
+       "end": 483.674,
+       "slot_end": 484.037,
+       "slot_s": 3.206,
+       "en_s": 2.843
+      }
+     ]
+    },
+    {
+     "id": "fd10-reveal.c4",
+     "text": "And today? About one in five deaths worldwide is linked to diet. The biggest risks? Too much salt. Too few whole grains. Too little fruit.",
+     "sentences": [
+      {
+       "id": "fd10-reveal.c4.s1",
+       "text": "And today?",
+       "start": 484.157,
+       "end": 484.981,
+       "slot_end": 485.511,
+       "slot_s": 1.354,
+       "en_s": 0.824
+      },
+      {
+       "id": "fd10-reveal.c4.s2",
+       "text": "About one in five deaths worldwide is linked to diet.",
+       "start": 485.631,
+       "end": 488.272,
+       "slot_end": 488.588,
+       "slot_s": 2.957,
+       "en_s": 2.641
+      },
+      {
+       "id": "fd10-reveal.c4.s3",
+       "text": "The biggest risks?",
+       "start": 488.708,
+       "end": 489.702,
+       "slot_end": 490.182,
+       "slot_s": 1.474,
+       "en_s": 0.994
+      },
+      {
+       "id": "fd10-reveal.c4.s4",
+       "text": "Too much salt.",
+       "start": 490.302,
+       "end": 491.157,
+       "slot_end": 491.387,
+       "slot_s": 1.085,
+       "en_s": 0.855
+      },
+      {
+       "id": "fd10-reveal.c4.s5",
+       "text": "Too few whole grains.",
+       "start": 491.507,
+       "end": 492.684,
+       "slot_end": 492.914,
+       "slot_s": 1.407,
+       "en_s": 1.177
+      },
+      {
+       "id": "fd10-reveal.c4.s6",
+       "text": "Too little fruit.",
+       "start": 493.034,
+       "end": 493.849,
+       "slot_end": 494.302,
+       "slot_s": 1.268,
+       "en_s": 0.815
+      }
+     ]
+    },
+    {
+     "id": "fd10-reveal.c5",
+     "text": "And your guess? In eighteen hundred, about twenty nine years. Today, worldwide, about seventy three. How close were you?",
+     "sentences": [
+      {
+       "id": "fd10-reveal.c5.s1",
+       "text": "And your guess?",
+       "start": 494.422,
+       "end": 495.182,
+       "slot_end": 495.712,
+       "slot_s": 1.29,
+       "en_s": 0.76
+      },
+      {
+       "id": "fd10-reveal.c5.s2",
+       "text": "In eighteen hundred, about twenty nine years.",
+       "start": 495.832,
+       "end": 498.241,
+       "slot_end": 498.521,
+       "slot_s": 2.689,
+       "en_s": 2.409
+      },
+      {
+       "id": "fd10-reveal.c5.s3",
+       "text": "Today, worldwide, about seventy three.",
+       "start": 498.641,
+       "end": 500.991,
+       "slot_end": 501.221,
+       "slot_s": 2.58,
+       "en_s": 2.35
+      },
+      {
+       "id": "fd10-reveal.c5.s4",
+       "text": "How close were you?",
+       "start": 501.341,
+       "end": 502.123,
+       "slot_end": 502.955,
+       "slot_s": 1.614,
+       "en_s": 0.782
+      }
+     ]
+    },
+    {
+     "id": "fd10-reveal.c6",
+     "text": "Now walk down the ladder with me. In fifteen hundred, food was fuel. Then, medicine. Then, something to measure. Then, something we fix. Then, enough, at last. Today, too much.",
+     "sentences": [
+      {
+       "id": "fd10-reveal.c6.s1",
+       "text": "Now walk down the ladder with me.",
+       "start": 503.075,
+       "end": 504.625,
+       "slot_end": 504.952,
+       "slot_s": 1.877,
+       "en_s": 1.55
+      },
+      {
+       "id": "fd10-reveal.c6.s2",
+       "text": "In fifteen hundred, food was fuel.",
+       "start": 505.072,
+       "end": 506.855,
+       "slot_end": 507.085,
+       "slot_s": 2.013,
+       "en_s": 1.783
+      },
+      {
+       "id": "fd10-reveal.c6.s3",
+       "text": "Then, medicine.",
+       "start": 507.205,
+       "end": 507.945,
+       "slot_end": 508.328,
+       "slot_s": 1.123,
+       "en_s": 0.74
+      },
+      {
+       "id": "fd10-reveal.c6.s4",
+       "text": "Then, something to measure.",
+       "start": 508.448,
+       "end": 509.655,
+       "slot_end": 509.885,
+       "slot_s": 1.437,
+       "en_s": 1.207
+      },
+      {
+       "id": "fd10-reveal.c6.s5",
+       "text": "Then, something we fix.",
+       "start": 510.005,
+       "end": 511.955,
+       "slot_end": 512.185,
+       "slot_s": 2.18,
+       "en_s": 1.95
+      },
+      {
+       "id": "fd10-reveal.c6.s6",
+       "text": "Then, enough, at last.",
+       "start": 512.305,
+       "end": 513.298,
+       "slot_end": 513.528,
+       "slot_s": 1.223,
+       "en_s": 0.993
+      },
+      {
+       "id": "fd10-reveal.c6.s7",
+       "text": "Today, too much.",
+       "start": 513.648,
+       "end": 514.568,
+       "slot_end": 514.915,
+       "slot_s": 1.267,
+       "en_s": 0.92
+      }
+     ]
+    },
+    {
+     "id": "fd10-reveal.c7",
+     "text": "In fifteen hundred, food took most of your money, and hunger was the danger. Today, the danger is what we choose to eat.",
+     "sentences": [
+      {
+       "id": "fd10-reveal.c7.s1",
+       "text": "In fifteen hundred, food took most of your money, and hunger was the danger.",
+       "start": 515.035,
+       "end": 519.195,
+       "slot_end": 520.762,
+       "slot_s": 5.727,
+       "en_s": 4.16
+      },
+      {
+       "id": "fd10-reveal.c7.s2",
+       "text": "Today, the danger is what we choose to eat.",
+       "start": 520.882,
+       "end": 523.275,
+       "slot_end": 525.48,
+       "slot_s": 4.598,
+       "en_s": 2.393
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd11-2100",
+   "start": 525.6,
+   "dur": 48.805,
+   "chunks": [
+    {
+     "id": "fd11-2100.c1",
+     "text": "So what will you be eating in twenty one hundred? That morning hasn't happened yet. But we can follow the evidence.",
+     "sentences": [
+      {
+       "id": "fd11-2100.c1.s1",
+       "text": "So what will you be eating in twenty one hundred?",
+       "start": 525.6,
+       "end": 527.73,
+       "slot_end": 528.392,
+       "slot_s": 2.792,
+       "en_s": 2.13
+      },
+      {
+       "id": "fd11-2100.c1.s2",
+       "text": "That morning hasn't happened yet.",
+       "start": 528.512,
+       "end": 530.27,
+       "slot_end": 530.691,
+       "slot_s": 2.179,
+       "en_s": 1.758
+      },
+      {
+       "id": "fd11-2100.c1.s3",
+       "text": "But we can follow the evidence.",
+       "start": 530.811,
+       "end": 532.5,
+       "slot_end": 532.903,
+       "slot_s": 2.092,
+       "en_s": 1.689
+      }
+     ]
+    },
+    {
+     "id": "fd11-2100.c2",
+     "text": "The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred. Its climate panel says warming has already slowed the growth of farm productivity, over the past fifty years.",
+     "sentences": [
+      {
+       "id": "fd11-2100.c2.s1",
+       "text": "The United Nations expects life expectancy worldwide to reach about eighty two by twenty one hundred.",
+       "start": 533.023,
+       "end": 538.673,
+       "slot_end": 539.172,
+       "slot_s": 6.149,
+       "en_s": 5.65
+      },
+      {
+       "id": "fd11-2100.c2.s2",
+       "text": "Its climate panel says warming has already slowed the growth of farm productivity, over the past fifty years.",
+       "start": 539.292,
+       "end": 544.893,
+       "slot_end": 545.228,
+       "slot_s": 5.936,
+       "en_s": 5.601
+      }
+     ]
+    },
+    {
+     "id": "fd11-2100.c3",
+     "text": "And the EAT Lancet Commission says a diet that's mostly plants with red meat about once a week, could prevent around fifteen million early deaths a year.",
+     "sentences": [
+      {
+       "id": "fd11-2100.c3.s1",
+       "text": "And the EAT Lancet Commission says a diet that's mostly plants with red meat about once a week, could prevent around fifteen million early deaths a year.",
+       "start": 545.348,
+       "end": 553.848,
+       "slot_end": 554.208,
+       "slot_s": 8.86,
+       "en_s": 8.5
+      }
+     ]
+    },
+    {
+     "id": "fd11-2100.c4",
+     "text": "So here's one scenario. Not a fact. By twenty one hundred, your plate could be mostly plants. Meat could be a once a week treat. And if the harvests hold, the average life could stretch past eighty.",
+     "sentences": [
+      {
+       "id": "fd11-2100.c4.s1",
+       "text": "So here's one scenario.",
+       "start": 554.328,
+       "end": 555.598,
+       "slot_end": 555.778,
+       "slot_s": 1.45,
+       "en_s": 1.27
+      },
+      {
+       "id": "fd11-2100.c4.s2",
+       "text": "Not a fact.",
+       "start": 555.898,
+       "end": 556.56,
+       "slot_end": 556.992,
+       "slot_s": 1.094,
+       "en_s": 0.662
+      },
+      {
+       "id": "fd11-2100.c4.s3",
+       "text": "By twenty one hundred, your plate could be mostly plants.",
+       "start": 557.112,
+       "end": 559.66,
+       "slot_end": 559.975,
+       "slot_s": 2.863,
+       "en_s": 2.548
+      },
+      {
+       "id": "fd11-2100.c4.s4",
+       "text": "Meat could be a once a week treat.",
+       "start": 560.095,
+       "end": 561.9,
+       "slot_end": 562.135,
+       "slot_s": 2.04,
+       "en_s": 1.805
+      },
+      {
+       "id": "fd11-2100.c4.s5",
+       "text": "And if the harvests hold, the average life could stretch past eighty.",
+       "start": 562.255,
+       "end": 565.67,
+       "slot_end": 566.065,
+       "slot_s": 3.81,
+       "en_s": 3.415
+      }
+     ]
+    },
+    {
+     "id": "fd11-2100.c5",
+     "text": "In fifteen hundred, the Church decided which days you couldn't eat meat. In twenty one hundred, the reason might be your heart. And the planet.",
+     "sentences": [
+      {
+       "id": "fd11-2100.c5.s1",
+       "text": "In fifteen hundred, the Church decided which days you couldn't eat meat.",
+       "start": 566.185,
+       "end": 569.505,
+       "slot_end": 570.094,
+       "slot_s": 3.909,
+       "en_s": 3.32
+      },
+      {
+       "id": "fd11-2100.c5.s2",
+       "text": "In twenty one hundred, the reason might be your heart.",
+       "start": 570.214,
+       "end": 572.795,
+       "slot_end": 573.275,
+       "slot_s": 3.061,
+       "en_s": 2.581
+      },
+      {
+       "id": "fd11-2100.c5.s3",
+       "text": "And the planet.",
+       "start": 573.395,
+       "end": 574.125,
+       "slot_end": 576.147,
+       "slot_s": 2.752,
+       "en_s": 0.73
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd12-close",
+   "start": 576.267,
+   "dur": 4.412,
+   "chunks": [
+    {
+     "id": "fd12-close.c1",
+     "text": "Tonight, look at your plate. Which part of it is buying you more years?",
+     "sentences": [
+      {
+       "id": "fd12-close.c1.s1",
+       "text": "Tonight, look at your plate.",
+       "start": 576.267,
+       "end": 577.847,
+       "slot_end": 578.109,
+       "slot_s": 1.842,
+       "en_s": 1.58
+      },
+      {
+       "id": "fd12-close.c1.s2",
+       "text": "Which part of it is buying you more years?",
+       "start": 578.229,
+       "end": 580.517,
+       "slot_end": 582.547,
+       "slot_s": 4.318,
+       "en_s": 2.288
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd13-outro",
+   "start": 582.667,
+   "dur": 34.042,
+   "chunks": [
+    {
+     "id": "fd13-outro.c1",
+     "text": "This was Did You Know That, episode five. Food. Now it's your turn. Which century's kitchen would you eat in? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the fact cards, and play the guessing game.",
+     "sentences": [
+      {
+       "id": "fd13-outro.c1.s1",
+       "text": "This was Did You Know That, episode five.",
+       "start": 582.667,
+       "end": 584.957,
+       "slot_end": 585.333,
+       "slot_s": 2.666,
+       "en_s": 2.29
+      },
+      {
+       "id": "fd13-outro.c1.s2",
+       "text": "Food.",
+       "start": 585.453,
+       "end": 585.897,
+       "slot_end": 586.077,
+       "slot_s": 0.624,
+       "en_s": 0.444
+      },
+      {
+       "id": "fd13-outro.c1.s3",
+       "text": "Now it's your turn.",
+       "start": 586.197,
+       "end": 587.149,
+       "slot_end": 587.329,
+       "slot_s": 1.132,
+       "en_s": 0.952
+      },
+      {
+       "id": "fd13-outro.c1.s4",
+       "text": "Which century's kitchen would you eat in?",
+       "start": 587.449,
+       "end": 589.379,
+       "slot_end": 589.866,
+       "slot_s": 2.417,
+       "en_s": 1.93
+      },
+      {
+       "id": "fd13-outro.c1.s5",
+       "text": "Tell me in the comments.",
+       "start": 589.986,
+       "end": 591.049,
+       "slot_end": 591.398,
+       "slot_s": 1.412,
+       "en_s": 1.063
+      },
+      {
+       "id": "fd13-outro.c1.s6",
+       "text": "At the end of every episode, I will read the best comment, right here, on this screen.",
+       "start": 591.518,
+       "end": 595.669,
+       "slot_end": 596.019,
+       "slot_s": 4.501,
+       "en_s": 4.151
+      },
+      {
+       "id": "fd13-outro.c1.s7",
+       "text": "And the subject you ask for most becomes a future episode.",
+       "start": 596.139,
+       "end": 598.989,
+       "slot_end": 599.293,
+       "slot_s": 3.154,
+       "en_s": 2.85
+      },
+      {
+       "id": "fd13-outro.c1.s8",
+       "text": "On our website, Dex-tee dot live, you can watch every episode, collect the fact cards, and play the guessing game.",
+       "start": 599.413,
+       "end": 606.689,
+       "slot_end": 607.171,
+       "slot_s": 7.758,
+       "en_s": 7.276
+      }
+     ]
+    },
+    {
+     "id": "fd13-outro.c2",
+     "text": "If this changed how you see what's on your plate, like it. Share it with the friend who always cooks for you. And subscribe, so the next mystery finds you.",
+     "sentences": [
+      {
+       "id": "fd13-outro.c2.s1",
+       "text": "If this changed how you see what's on your plate, like it.",
+       "start": 607.291,
+       "end": 610.721,
+       "slot_end": 611.292,
+       "slot_s": 4.001,
+       "en_s": 3.43
+      },
+      {
+       "id": "fd13-outro.c2.s2",
+       "text": "Share it with the friend who always cooks for you.",
+       "start": 611.412,
+       "end": 613.831,
+       "slot_end": 614.011,
+       "slot_s": 2.599,
+       "en_s": 2.419
+      },
+      {
+       "id": "fd13-outro.c2.s3",
+       "text": "And subscribe, so the next mystery finds you.",
+       "start": 614.131,
+       "end": 616.454,
+       "slot_end": 617.28,
+       "slot_s": 3.149,
+       "en_s": 2.323
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd13b-next",
+   "start": 617.4,
+   "dur": 11.101,
+   "chunks": [
+    {
+     "id": "fd13b-next.c1",
+     "text": "Next time: medicine. In seventeen ninety nine, George Washington's doctors drained, by some estimates, around two fifths of his blood. So how did we find out what really heals us?",
+     "sentences": [
+      {
+       "id": "fd13b-next.c1.s1",
+       "text": "Next time: medicine.",
+       "start": 617.4,
+       "end": 618.84,
+       "slot_end": 619.23,
+       "slot_s": 1.83,
+       "en_s": 1.44
+      },
+      {
+       "id": "fd13b-next.c1.s2",
+       "text": "In seventeen ninety nine, George Washington's doctors drained, by some estimates, around two fifths of his blood.",
+       "start": 619.35,
+       "end": 625.96,
+       "slot_end": 626.14,
+       "slot_s": 6.79,
+       "en_s": 6.61
+      },
+      {
+       "id": "fd13b-next.c1.s3",
+       "text": "So how did we find out what really heals us?",
+       "start": 626.26,
+       "end": 628.228,
+       "slot_end": 629.18,
+       "slot_s": 2.92,
+       "en_s": 1.968
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd13c-signoff",
+   "start": 629.3,
+   "dur": 3.233,
+   "chunks": [
+    {
+     "id": "fd13c-signoff.c1",
+     "text": "Ask...",
+     "sentences": [
+      {
+       "id": "fd13c-signoff.c1.s1",
+       "text": "Ask...",
+       "start": 629.3,
+       "end": 629.67,
+       "slot_end": 630.364,
+       "slot_s": 1.064,
+       "en_s": 0.37
+      }
+     ]
+    },
+    {
+     "id": "fd13c-signoff.c2",
+     "text": "Wonder...",
+     "sentences": [
+      {
+       "id": "fd13c-signoff.c2.s1",
+       "text": "Wonder...",
+       "start": 630.484,
+       "end": 631.014,
+       "slot_end": 631.67,
+       "slot_s": 1.186,
+       "en_s": 0.53
+      }
+     ]
+    },
+    {
+     "id": "fd13c-signoff.c3",
+     "text": "Repeat.",
+     "sentences": [
+      {
+       "id": "fd13c-signoff.c3.s1",
+       "text": "Repeat.",
+       "start": 631.79,
+       "end": 632.33,
+       "slot_end": 634.68,
+       "slot_s": 2.89,
+       "en_s": 0.54
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd14-endscreen",
+   "start": 634.8,
+   "dur": 5.108,
+   "chunks": [
+    {
+     "id": "fd14-endscreen.c1",
+     "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+     "sentences": [
+      {
+       "id": "fd14-endscreen.c1.s1",
+       "text": "Next time...",
+       "start": 634.8,
+       "end": 635.48,
+       "slot_end": 635.78,
+       "slot_s": 0.98,
+       "en_s": 0.68
+      },
+      {
+       "id": "fd14-endscreen.c1.s2",
+       "text": "this could be your comment.",
+       "start": 635.9,
+       "end": 636.932,
+       "slot_end": 637.232,
+       "slot_s": 1.332,
+       "en_s": 1.032
+      },
+      {
+       "id": "fd14-endscreen.c1.s3",
+       "text": "Pick a mystery.",
+       "start": 637.352,
+       "end": 638.141,
+       "slot_end": 638.441,
+       "slot_s": 1.089,
+       "en_s": 0.789
+      },
+      {
+       "id": "fd14-endscreen.c1.s4",
+       "text": "And I will see you there.",
+       "start": 638.561,
+       "end": 639.688,
+       "slot_end": 649.933,
+       "slot_s": 11.372,
+       "en_s": 1.127
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

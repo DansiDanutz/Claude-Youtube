@@ -1,0 +1,703 @@
+{
+ "lang": "fr",
+ "episode": "05",
+ "sentences": {
+  "fd01-hook.c1.s1": {
+   "say": "Dernière fois, je t'ai laissé une question."
+  },
+  "fd01-hook.c1.s2": {
+   "say": "Que mangeras-tu en deux mille cent ?",
+   "show": "en 2100 ?"
+  },
+  "fd01-hook.c1.s3": {
+   "say": "En quinze cents, selon les historiens, la nourriture mangeait l'essentiel du budget d'une famille d'ouvriers.",
+   "show": "En 1500, selon les historiens, la nourriture mangeait l'essentiel du budget d'une famille d'ouvriers."
+  },
+  "fd01-hook.c1.s4": {
+   "say": "Aujourd'hui, il y a plus à manger que jamais."
+  },
+  "fd02-question.c1.s1": {
+   "say": "Et pourtant, voilà l'étrange."
+  },
+  "fd02-question.c1.s2": {
+   "say": "Savais-tu qu'aujourd'hui, environ un décès sur cinq dans le monde est lié à l'alimentation ?"
+  },
+  "fd02-question.c1.s3": {
+   "say": "Donc la nourriture a allongé nos vies ?"
+  },
+  "fd02-question.c1.s4": {
+   "say": "Ou nous reprend-elle une partie de ces années ?"
+  },
+  "fd00-welcome.c1.s1": {
+   "say": "Re-bienvenue dans Did You Know That."
+  },
+  "fd00-welcome.c1.s2": {
+   "say": "Épisode cinq.",
+   "show": "Épisode 5."
+  },
+  "fd00-welcome.c1.s3": {
+   "say": "Tu connais le principe."
+  },
+  "fd00-welcome.c1.s4": {
+   "say": "Voici ton pari."
+  },
+  "fd00-welcome.c1.s5": {
+   "say": "En dix-huit cents, l'espérance de vie à la naissance, dans le monde, était d'environ vingt-neuf ans.",
+   "show": "En 1800, l'espérance de vie à la naissance, dans le monde, était d'environ 29 ans."
+  },
+  "fd00-welcome.c1.s6": {
+   "say": "Et pour un bébé né aujourd'hui ?"
+  },
+  "fd00-welcome.c1.s7": {
+   "say": "Réponds en commentaire, maintenant."
+  },
+  "fd00-welcome.c1.s8": {
+   "say": "Puis reste jusqu'à la fin, et vérifie ta réponse."
+  },
+  "fd03-promise.c1.s1": {
+   "say": "Sept matins, de quinze cents à deux mille cent.",
+   "show": "Sept matins, de 1500 à 2100."
+  },
+  "fd03-promise.c1.s2": {
+   "say": "Chaque fois, tu te réveilles ailleurs."
+  },
+  "fd03-promise.c1.s3": {
+   "say": "Tu verras ce qu'il y a dans ton assiette, ce que ça fait à ton corps, et combien de temps tu vis."
+  },
+  "fd03-promise.c1.s4": {
+   "say": "Et à la fin, tu sauras ce qui nous a vraiment donné ces années en plus."
+  },
+  "fd04-1500.c1.s1": {
+   "say": "Tu te réveilles en quinze cents, dans un village de Flandre.",
+   "show": "Tu te réveilles en 1500, dans un village de Flandre."
+  },
+  "fd04-1500.c1.s2": {
+   "say": "Le four à pain est chaud, et la cuisine sent le seigle et la fumée."
+  },
+  "fd04-1500.c2.s1": {
+   "say": "Savais-tu qu'ici, jusqu'à quatre jours sur dix, manger de la viande est interdit ?"
+  },
+  "fd04-1500.c2.s2": {
+   "say": "Vendredis."
+  },
+  "fd04-1500.c2.s3": {
+   "say": "Carême."
+  },
+  "fd04-1500.c2.s4": {
+   "say": "L'Avent."
+  },
+  "fd04-1500.c2.s5": {
+   "say": "L'Église appelle ça des jours de jeûne."
+  },
+  "fd04-1500.c3.s1": {
+   "say": "Ton assiette."
+  },
+  "fd04-1500.c3.s2": {
+   "say": "Du pain à presque chaque repas.",
+   "show": "Du pain presque à chaque repas."
+  },
+  "fd04-1500.c3.s3": {
+   "say": "Bouillie, pois et fèves."
+  },
+  "fd04-1500.c3.s4": {
+   "say": "Bière à boire."
+  },
+  "fd04-1500.c3.s5": {
+   "say": "Poisson séché les jours de jeûne."
+  },
+  "fd04-1500.c3.s6": {
+   "say": "Presque tout ton budget part en nourriture.",
+   "show": "Presque tout le budget de ta famille part en nourriture."
+  },
+  "fd04-1500.c3.s7": {
+   "say": "Soixante-dix à quatre-vingts %.",
+   "show": "70 à 80 %."
+  },
+  "fd04-1500.c3.s8": {
+   "say": "Quand la récolte rate, le pain flambe, et les gens ont faim."
+  },
+  "fd04-1500.c4.s1": {
+   "say": "Combien de temps vis-tu ?"
+  },
+  "fd04-1500.c4.s2": {
+   "say": "En Angleterre, juste de l'autre côté de la mer, un nouveau-né pouvait espérer environ trente-cinq ans.",
+   "show": "En Angleterre, juste de l'autre côté de la mer, un nouveau-né pouvait espérer environ 35 ans."
+  },
+  "fd04-1500.c4.s3": {
+   "say": "Surtout parce que tant d'enfants mouraient."
+  },
+  "fd04-1500.c4.s4": {
+   "say": "Si tu atteignais trente ans, tu pouvais viser soixante.",
+   "show": "Si tu atteignais 30 ans, tu avais de bonnes chances d'atteindre 60 ans."
+  },
+  "fd04-1500.c5.s1": {
+   "say": "Et la nourriture, pour toi ?"
+  },
+  "fd04-1500.c5.s2": {
+   "say": "Carburant."
+  },
+  "fd04-1500.c5.s3": {
+   "say": "Juste de quoi tenir le jour."
+  },
+  "fd04-1500.c5.s4": {
+   "say": "Souviens-toi des jours maigres."
+  },
+  "fd04-1500.c5.s5": {
+   "say": "Ils reviennent à la fin."
+  },
+  "fd04-1500.c5.s6": {
+   "say": "Et en mer, sur les plus longs voyages, les marins commencent à s'effondrer."
+  },
+  "fd05-1747.c1.s1": {
+   "say": "Tu te réveilles en dix-sept cent quarante-sept, à bord du HMS Salisbury, navire de guerre britannique en patrouille.",
+   "show": "Tu te réveilles en 1747, à bord du HMS Salisbury, navire de guerre britannique en patrouille."
+  },
+  "fd05-1747.c2.s1": {
+   "say": "Savais-tu que le remède à la pire maladie des marins fut trouvé cette année-là, et que la marine a attendu presque cinquante ans pour l'utiliser ?"
+  },
+  "fd05-1747.c3.s1": {
+   "say": "Ton assiette."
+  },
+  "fd05-1747.c3.s2": {
+   "say": "Chaque jour, une livre de biscuit dur et un gallon de bière."
+  },
+  "fd05-1747.c3.s3": {
+   "say": "Bœuf ou porc salé, pois secs, flocons d'avoine, un peu de fromage."
+  },
+  "fd05-1747.c3.s4": {
+   "say": "Presque rien de frais."
+  },
+  "fd05-1747.c3.s5": {
+   "say": "Après des semaines en mer, c'est le scorbut."
+  },
+  "fd05-1747.c3.s6": {
+   "say": "Gencives qui saignent."
+  },
+  "fd05-1747.c3.s7": {
+   "say": "Vieilles plaies rouvertes."
+  },
+  "fd05-1747.c4.s1": {
+   "say": "Le chirurgien du bord, James Lind, répartit douze marins scorbutiques en paires, et donne à chaque paire un traitement différent."
+  },
+  "fd05-1747.c4.s2": {
+   "say": "Du cidre."
+  },
+  "fd05-1747.c4.s3": {
+   "say": "Vinaigre."
+  },
+  "fd05-1747.c4.s4": {
+   "say": "Et une paire reçoit deux oranges et un citron par jour."
+  },
+  "fd05-1747.c5.s1": {
+   "say": "Et la nourriture, maintenant ?"
+  },
+  "fd05-1747.c5.s2": {
+   "say": "Remède."
+  },
+  "fd05-1747.c5.s3": {
+   "say": "Bien manger peut te guérir."
+  },
+  "fd05-1747.c5.s4": {
+   "say": "À terre, en Grande-Bretagne, un nouveau-né pouvait encore espérer moins de quarante ans."
+  },
+  "fd05-1747.c6.s1": {
+   "say": "La marine distribue enfin du jus de citron en dix-sept cent quatre-vingt-quinze.",
+   "show": "La marine distribue enfin du jus de citron en 1795."
+  },
+  "fd05-1747.c6.s2": {
+   "say": "Un siècle plus tard, au Japon, un autre élément manquant rend des marins malades."
+  },
+  "fd06-1884.c1.s1": {
+   "say": "Tu te réveilles en dix-huit cent quatre-vingt-quatre, à Shinagawa, sur la baie de Tokyo.",
+   "show": "Tu te réveilles en 1884, à Shinagawa, sur la baie de Tokyo."
+  },
+  "fd06-1884.c1.s2": {
+   "say": "Un navire-école, le Tsukuba, s'apprête à appareiller."
+  },
+  "fd06-1884.c2.s1": {
+   "say": "Savais-tu que lors d'un voyage pareil, l'année d'avant, presque la moitié de l'équipage est tombée malade à cause de son repas ?"
+  },
+  "fd06-1884.c2.s2": {
+   "say": "Sur le Ryujo, cent soixante-neuf hommes ont eu le béribéri.",
+   "show": "Sur le Ryujo, 169 hommes ont eu le béribéri."
+  },
+  "fd06-1884.c2.s3": {
+   "say": "Vingt-cinq sont morts.",
+   "show": "25 sont morts."
+  },
+  "fd06-1884.c3.s1": {
+   "say": "L'assiette d'un marin."
+  },
+  "fd06-1884.c3.s2": {
+   "say": "Riz blanc."
+  },
+  "fd06-1884.c3.s3": {
+   "say": "Le riz est gratuit."
+  },
+  "fd06-1884.c3.s4": {
+   "say": "Le reste coûte de l'argent."
+  },
+  "fd06-1884.c3.s5": {
+   "say": "Un médecin de la marine, Takaki Kanehiro, mesure ce que mangent les hommes, et change le menu."
+  },
+  "fd06-1884.c3.s6": {
+   "say": "Plus d'orge, de viande, de lait, de pain, de légumes."
+  },
+  "fd06-1884.c4.s1": {
+   "say": "Sur le Tsukuba, quatorze hommes tombent malades.",
+   "show": "Sur le Tsukuba, 14 hommes tombent malades."
+  },
+  "fd06-1884.c4.s2": {
+   "say": "Aucun ne meurt."
+  },
+  "fd06-1884.c4.s3": {
+   "say": "Et les quatorze ?",
+   "show": "Et les 14 ?"
+  },
+  "fd06-1884.c4.s4": {
+   "say": "Pas touché au nouveau menu."
+  },
+  "fd06-1884.c5.s1": {
+   "say": "Et la nourriture, maintenant ?"
+  },
+  "fd06-1884.c5.s2": {
+   "say": "À mesurer."
+  },
+  "fd06-1884.c5.s3": {
+   "say": "Ce qu'il y a dedans compte."
+  },
+  "fd06-1884.c5.s4": {
+   "say": "Premières tables de vie du Japon : environ quarante-trois ans pour un nouveau-né.",
+   "show": "Premières tables de vie du Japon : environ 43 ans pour un nouveau-né."
+  },
+  "fd06-1884.c5.s5": {
+   "say": "Et les Japonais nés à l'époque ?"
+  },
+  "fd06-1884.c5.s6": {
+   "say": "Environ quinze centimètres de moins qu'un siècle plus tard.",
+   "show": "Environ 15 centimètres de moins que ceux nés un siècle plus tard."
+  },
+  "fd06-1884.c6.s1": {
+   "say": "Des décennies après, ça reçoit un nom."
+  },
+  "fd06-1884.c6.s2": {
+   "say": "Une vitamine."
+  },
+  "fd06-1884.c6.s3": {
+   "say": "Mais savoir ce qui manque ne le met pas dans l'assiette d'une famille pauvre."
+  },
+  "fd07-1915.c1.s1": {
+   "say": "Tu te réveilles en dix-neuf cent quinze, dans une ferme-prison du Mississippi.",
+   "show": "Tu te réveilles en 1915, dans une ferme-prison du Mississippi."
+  },
+  "fd07-1915.c1.s2": {
+   "say": "Onze hommes font la queue pour le petit-déjeuner."
+  },
+  "fd07-1915.c2.s1": {
+   "say": "Savais-tu qu'ici, des médecins rendaient des hommes sains malades, exprès, avec l'ordinaire d'une famille pauvre du Sud ?"
+  },
+  "fd07-1915.c2.s2": {
+   "say": "On promet une grâce aux volontaires."
+  },
+  "fd07-1915.c3.s1": {
+   "say": "L'assiette."
+  },
+  "fd07-1915.c3.s2": {
+   "say": "Pain de maïs et gruau."
+  },
+  "fd07-1915.c3.s3": {
+   "say": "Porc salé bien gras."
+  },
+  "fd07-1915.c3.s4": {
+   "say": "De la mélasse."
+  },
+  "fd07-1915.c3.s5": {
+   "say": "Presque pas de lait, de viande fraîche, de verdure."
+  },
+  "fd07-1915.c3.s6": {
+   "say": "En cinq mois environ, près de la moitié des hommes ont la pellagre.",
+   "show": "En cinq mois environ, près de la moitié des hommes ont la pellagre."
+  },
+  "fd07-1915.c3.s7": {
+   "say": "Éruptions, ventre malade, confusion, parfois la mort."
+  },
+  "fd07-1915.c4.s1": {
+   "say": "Selon une estimation très citée, elle a tué environ cent mille personnes dans le Sud.",
+   "show": "Selon une estimation très citée, elle a tué environ 100 000 personnes dans le Sud."
+  },
+  "fd07-1915.c4.s2": {
+   "say": "Le médecin Joseph Goldberger montre que la pellagre ne s'attrape pas comme un microbe."
+  },
+  "fd07-1915.c4.s3": {
+   "say": "Elle vient d'un manque dans l'alimentation."
+  },
+  "fd07-1915.c5.s1": {
+   "say": "Plus tard, elle a un nom."
+  },
+  "fd07-1915.c5.s2": {
+   "say": "La niacine, une vitamine B."
+  },
+  "fd07-1915.c5.s3": {
+   "say": "Années quarante : farine et pain en reçoivent, dans une bonne partie de l'Amérique.",
+   "show": "Dans les années 1940, farine et pain en reçoivent, dans une bonne partie de l'Amérique."
+  },
+  "fd07-1915.c5.s4": {
+   "say": "Avec de meilleurs salaires et plus de variété, la pellagre recule."
+  },
+  "fd07-1915.c6.s1": {
+   "say": "Et la nourriture, maintenant ?"
+  },
+  "fd07-1915.c6.s2": {
+   "say": "Ça se corrige."
+  },
+  "fd07-1915.c6.s3": {
+   "say": "Ajoute ce qui manque, et une maladie disparaît."
+  },
+  "fd07-1915.c6.s4": {
+   "say": "Cette année-là, en Amérique, un nouveau-né pouvait espérer environ cinquante-cinq ans.",
+   "show": "Cette année-là, en Amérique, un nouveau-né pouvait espérer environ 55 ans."
+  },
+  "fd07-1915.c6.s5": {
+   "say": "Mais réparer la nourriture n'aide que s'il y en a assez."
+  },
+  "fd07-1915.c6.s6": {
+   "say": "Et en Inde, il n'y en a pas."
+  },
+  "fd08-1966.c1.s1": {
+   "say": "Tu te réveilles en dix-neuf cent soixante-six, dans un village du Pendjab.",
+   "show": "Tu te réveilles en 1966, dans un village du Pendjab."
+  },
+  "fd08-1966.c1.s2": {
+   "say": "Tout le monde scrute le ciel, attendant la pluie."
+  },
+  "fd08-1966.c2.s1": {
+   "say": "Savais-tu que l'année d'avant, le Premier ministre indien a demandé à tout le pays de sauter un repas par semaine ?"
+  },
+  "fd08-1966.c2.s2": {
+   "say": "Lal Bahadur Shastri."
+  },
+  "fd08-1966.c2.s3": {
+   "say": "Guerre et sécheresse avaient laissé trop peu de grain."
+  },
+  "fd08-1966.c3.s1": {
+   "say": "Ton assiette."
+  },
+  "fd08-1966.c3.s2": {
+   "say": "Galettes, lentilles, peut-être quelques légumes."
+  },
+  "fd08-1966.c3.s3": {
+   "say": "Dans toute l'Inde, il y a de quoi manger pour environ deux mille calories par personne et par jour.",
+   "show": "Dans toute l'Inde, il y a de quoi manger pour environ 2 000 calories par personne et par jour."
+  },
+  "fd08-1966.c3.s4": {
+   "say": "Ici, un nouveau-né pouvait espérer environ quarante-six ans.",
+   "show": "Ici, un nouveau-né pouvait espérer environ 46 ans."
+  },
+  "fd08-1966.c4.s1": {
+   "say": "Alors l'Inde importe du Mexique dix-huit mille tonnes de semences de blé.",
+   "show": "Alors l'Inde importe du Mexique 18 000 tonnes de semences de blé."
+  },
+  "fd08-1966.c4.s2": {
+   "say": "Des plants courts et solides, créés par l'équipe de Norman Borlaug."
+  },
+  "fd08-1966.c4.s3": {
+   "say": "Il leur faut de l'eau, et beaucoup d'engrais, fabriqué en usine à partir de l'azote de l'air."
+  },
+  "fd08-1966.c4.s4": {
+   "say": "En quelques années, la récolte de blé indienne bondit à dix-sept millions de tonnes.",
+   "show": "En quelques années, la récolte de blé de l'Inde bondit à 17 millions de tonnes."
+  },
+  "fd08-1966.c5.s1": {
+   "say": "Et la nourriture, maintenant ?"
+  },
+  "fd08-1966.c5.s2": {
+   "say": "Assez, enfin."
+  },
+  "fd08-1966.c5.s3": {
+   "say": "Produite à la tonne."
+  },
+  "fd08-1966.c5.s4": {
+   "say": "Aujourd'hui, un nouveau-né indien peut espérer environ soixante-douze ans.",
+   "show": "Aujourd'hui, un nouveau-né indien peut espérer environ 72 ans."
+  },
+  "fd08-1966.c5.s5": {
+   "say": "Et dans le monde, jamais il n'y a eu autant à manger."
+  },
+  "fd08-1966.c5.s6": {
+   "say": "Ce qui apporte un tout nouveau problème."
+  },
+  "fd09-today.c1.s1": {
+   "say": "Tu te réveilles à São Paulo, aujourd'hui."
+  },
+  "fd09-today.c1.s2": {
+   "say": "Des motos filent, chargées de repas livrés."
+  },
+  "fd09-today.c2.s1": {
+   "say": "Savais-tu que le guide alimentaire officiel du Brésil conseille de manger à heures régulières, et, dès que possible, en compagnie ?"
+  },
+  "fd09-today.c3.s1": {
+   "say": "Ton assiette."
+  },
+  "fd09-today.c3.s2": {
+   "say": "Riz et haricots, toujours là au Brésil."
+  },
+  "fd09-today.c3.s3": {
+   "say": "Et de plus en plus d'ultra-transformé."
+  },
+  "fd09-today.c3.s4": {
+   "say": "Sodas."
+  },
+  "fd09-today.c3.s5": {
+   "say": "Snacks en paquet."
+  },
+  "fd09-today.c3.s6": {
+   "say": "Au Brésil, environ un cinquième des calories mangées."
+  },
+  "fd09-today.c3.s7": {
+   "say": "Aux États-Unis, plus de la moitié."
+  },
+  "fd09-today.c4.s1": {
+   "say": "La règle d'or du guide ?"
+  },
+  "fd09-today.c4.s2": {
+   "say": "Choisis du frais et du fait maison plutôt que de l'ultra-transformé."
+  },
+  "fd09-today.c4.s3": {
+   "say": "Désormais, presque partout, les adultes obèses sont plus nombreux que ceux en sous-poids.",
+   "show": "Désormais, dans la plupart des pays, les adultes obèses sont plus nombreux que ceux en sous-poids."
+  },
+  "fd09-today.c4.s4": {
+   "say": "Au Brésil, un nouveau-né peut espérer environ soixante-seize ans.",
+   "show": "Au Brésil, un nouveau-né peut espérer environ 76 ans."
+  },
+  "fd09-today.c5.s1": {
+   "say": "Et la nourriture, pour toi ?"
+  },
+  "fd09-today.c5.s2": {
+   "say": "Trop de certaines choses."
+  },
+  "fd09-today.c5.s3": {
+   "say": "Pas assez d'autres."
+  },
+  "fd09-today.c5.s4": {
+   "say": "Voici la question qui t'a amené ici."
+  },
+  "fd09-today.c5.s5": {
+   "say": "La nourriture a allongé nos vies."
+  },
+  "fd09-today.c5.s6": {
+   "say": "Nous reprend-elle aujourd'hui une partie de ces années ?"
+  },
+  "fd10-reveal.c1.s1": {
+   "say": "Voici la réponse."
+  },
+  "fd10-reveal.c1.s2": {
+   "say": "La nourriture a donné des années."
+  },
+  "fd10-reveal.c1.s3": {
+   "say": "Mais pas toute seule."
+  },
+  "fd10-reveal.c1.s4": {
+   "say": "Et là, le danger s'est inversé."
+  },
+  "fd10-reveal.c2.s1": {
+   "say": "Assez de calories et les bons nutriments ont vaincu le scorbut, le béribéri et la pellagre, et nous ont aidés à grandir."
+  },
+  "fd10-reveal.c2.s2": {
+   "say": "Le médecin Thomas McKeown disait que mieux manger expliquait surtout notre longévité."
+  },
+  "fd10-reveal.c2.s3": {
+   "say": "Beaucoup d'historiens contestent."
+  },
+  "fd10-reveal.c3.s1": {
+   "say": "Dans les grandes villes américaines, une étude trouve que l'eau propre seule expliquait près de la moitié de la baisse des décès du début du vingtième siècle.",
+   "show": "Dans les grandes villes américaines, une étude trouve que l'eau propre seule expliquait près de la moitié de la baisse des décès du début des années 1900."
+  },
+  "fd10-reveal.c3.s2": {
+   "say": "Égouts, vaccins, médicaments : l'essentiel du reste."
+  },
+  "fd10-reveal.c4.s1": {
+   "say": "Et aujourd'hui ?"
+  },
+  "fd10-reveal.c4.s2": {
+   "say": "Environ un décès sur cinq dans le monde est lié à l'alimentation."
+  },
+  "fd10-reveal.c4.s3": {
+   "say": "Les plus gros risques ?"
+  },
+  "fd10-reveal.c4.s4": {
+   "say": "Trop de sel."
+  },
+  "fd10-reveal.c4.s5": {
+   "say": "Peu de céréales complètes."
+  },
+  "fd10-reveal.c4.s6": {
+   "say": "Trop peu de fruits."
+  },
+  "fd10-reveal.c5.s1": {
+   "say": "Et ton pari ?"
+  },
+  "fd10-reveal.c5.s2": {
+   "say": "En dix-huit cents, environ vingt-neuf ans.",
+   "show": "En 1800, environ 29 ans."
+  },
+  "fd10-reveal.c5.s3": {
+   "say": "Aujourd'hui, dans le monde, environ soixante-treize.",
+   "show": "Aujourd'hui, dans le monde, environ 73."
+  },
+  "fd10-reveal.c5.s4": {
+   "say": "Tu étais proche ?"
+  },
+  "fd10-reveal.c6.s1": {
+   "say": "Descends l'échelle avec moi."
+  },
+  "fd10-reveal.c6.s2": {
+   "say": "En quinze cents, un carburant.",
+   "show": "En 1500, un carburant."
+  },
+  "fd10-reveal.c6.s3": {
+   "say": "Puis, un remède."
+  },
+  "fd10-reveal.c6.s4": {
+   "say": "Puis, à mesurer."
+  },
+  "fd10-reveal.c6.s5": {
+   "say": "Puis, quelque chose qu'on répare."
+  },
+  "fd10-reveal.c6.s6": {
+   "say": "Puis, assez, enfin."
+  },
+  "fd10-reveal.c6.s7": {
+   "say": "Aujourd'hui, trop."
+  },
+  "fd10-reveal.c7.s1": {
+   "say": "En quinze cents, la nourriture engloutissait ton argent, et le danger, c'était la faim.",
+   "show": "En 1500, la nourriture engloutissait ton argent, et le danger, c'était la faim."
+  },
+  "fd10-reveal.c7.s2": {
+   "say": "Aujourd'hui, le danger, c'est ce qu'on choisit de manger."
+  },
+  "fd11-2100.c1.s1": {
+   "say": "Alors, que mangeras-tu en deux mille cent ?",
+   "show": "Alors, que mangeras-tu en 2100 ?"
+  },
+  "fd11-2100.c1.s2": {
+   "say": "Ce matin-là n'est pas encore arrivé."
+  },
+  "fd11-2100.c1.s3": {
+   "say": "Mais on peut suivre les preuves."
+  },
+  "fd11-2100.c2.s1": {
+   "say": "L'ONU s'attend à ce que l'espérance de vie mondiale atteigne environ quatre-vingt-deux ans d'ici deux mille cent.",
+   "show": "L'ONU s'attend à ce que l'espérance de vie mondiale atteigne environ 82 ans d'ici 2100."
+  },
+  "fd11-2100.c2.s2": {
+   "say": "Son groupe climat dit que le réchauffement a déjà freiné la hausse de la productivité agricole, depuis cinquante ans.",
+   "show": "Son groupe climat dit que le réchauffement a déjà freiné la hausse de la productivité agricole, depuis 50 ans."
+  },
+  "fd11-2100.c3.s1": {
+   "say": "Et la commission EAT-Lancet dit qu'un régime surtout végétal, avec de la viande rouge environ une fois par semaine, pourrait éviter environ quinze millions de morts précoces par an.",
+   "show": "Et la commission EAT-Lancet dit qu'un régime surtout végétal, avec de la viande rouge environ une fois par semaine, pourrait éviter environ 15 millions de morts précoces par an."
+  },
+  "fd11-2100.c4.s1": {
+   "say": "Voici donc un scénario."
+  },
+  "fd11-2100.c4.s2": {
+   "say": "Pas un fait."
+  },
+  "fd11-2100.c4.s3": {
+   "say": "En deux mille cent, ton assiette serait surtout végétale.",
+   "show": "En 2100, ton assiette serait surtout végétale."
+  },
+  "fd11-2100.c4.s4": {
+   "say": "Viande : un extra hebdomadaire."
+  },
+  "fd11-2100.c4.s5": {
+   "say": "Et si les récoltes tiennent, la vie moyenne pourrait dépasser quatre-vingts ans.",
+   "show": "Et si les récoltes tiennent, la vie moyenne pourrait dépasser 80 ans."
+  },
+  "fd11-2100.c5.s1": {
+   "say": "En quinze cents, l'Église décidait des jours sans viande.",
+   "show": "En 1500, l'Église décidait des jours sans viande."
+  },
+  "fd11-2100.c5.s2": {
+   "say": "En deux mille cent, la raison pourrait être ton cœur.",
+   "show": "En 2100, la raison pourrait être ton cœur."
+  },
+  "fd11-2100.c5.s3": {
+   "say": "Et la planète."
+  },
+  "fd12-close.c1.s1": {
+   "say": "Ce soir, regarde ton assiette."
+  },
+  "fd12-close.c1.s2": {
+   "say": "Quelle partie t'offre le plus d'années ?"
+  },
+  "fd13-outro.c1.s1": {
+   "say": "C'était Did You Know That, épisode cinq.",
+   "show": "C'était Did You Know That, épisode 5."
+  },
+  "fd13-outro.c1.s2": {
+   "say": "Nourriture."
+  },
+  "fd13-outro.c1.s3": {
+   "say": "À ton tour."
+  },
+  "fd13-outro.c1.s4": {
+   "say": "Dans la cuisine de quel siècle mangerais-tu ?"
+  },
+  "fd13-outro.c1.s5": {
+   "say": "Dis-le en commentaire."
+  },
+  "fd13-outro.c1.s6": {
+   "say": "À la fin de chaque épisode, je lis le meilleur commentaire, ici, sur cet écran."
+  },
+  "fd13-outro.c1.s7": {
+   "say": "Et le sujet le plus demandé devient un futur épisode."
+  },
+  "fd13-outro.c1.s8": {
+   "say": "Sur notre site, Dexti point laïve, tu peux voir tous les épisodes, collectionner les cartes de faits et jouer au jeu des devinettes.",
+   "show": "Sur notre site, Dexty.live, tu peux voir tous les épisodes, collectionner les cartes de faits et jouer au jeu des devinettes."
+  },
+  "fd13-outro.c2.s1": {
+   "say": "Si ça a changé ton regard sur ton assiette, mets un like."
+  },
+  "fd13-outro.c2.s2": {
+   "say": "Partage-le avec l'ami qui cuisine pour toi."
+  },
+  "fd13-outro.c2.s3": {
+   "say": "Et abonne-toi, pour que le prochain mystère te trouve."
+  },
+  "fd13b-next.c1.s1": {
+   "say": "Prochain thème : la médecine."
+  },
+  "fd13b-next.c1.s2": {
+   "say": "En dix-sept cent quatre-vingt-dix-neuf, les médecins de Washington lui ôtent, selon certaines estimations, environ deux cinquièmes de son sang.",
+   "show": "En 1799, les médecins de George Washington lui ôtent, selon certaines estimations, environ deux cinquièmes de son sang."
+  },
+  "fd13b-next.c1.s3": {
+   "say": "Comment a-t-on découvert ce qui soigne vraiment ?"
+  },
+  "fd13c-signoff.c1.s1": {
+   "say": "Demande..."
+  },
+  "fd13c-signoff.c2.s1": {
+   "say": "Émerveille-toi..."
+  },
+  "fd13c-signoff.c3.s1": {
+   "say": "Recommence."
+  },
+  "fd14-endscreen.c1.s1": {
+   "say": "Prochain épisode..."
+  },
+  "fd14-endscreen.c1.s2": {
+   "say": "ce sera ton commentaire."
+  },
+  "fd14-endscreen.c1.s3": {
+   "say": "Choisis un mystère."
+  },
+  "fd14-endscreen.c1.s4": {
+   "say": "Et on se retrouve là-bas."
+  }
+ }
+}

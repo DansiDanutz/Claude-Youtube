@@ -1,0 +1,704 @@
+{
+ "lang": "es",
+ "episode": "05",
+ "sentences": {
+  "fd01-hook.c1.s1": {
+   "say": "La última vez te dejé una pregunta."
+  },
+  "fd01-hook.c1.s2": {
+   "say": "¿Qué comerás en dos mil cien?",
+   "show": "¿Qué comerás en 2100?"
+  },
+  "fd01-hook.c1.s3": {
+   "say": "En mil quinientos, calculan los historiadores, la comida absorbía la mayor parte del gasto familiar obrero.",
+   "show": "En 1500, calculan los historiadores, la comida absorbía la mayor parte del gasto familiar obrero."
+  },
+  "fd01-hook.c1.s4": {
+   "say": "Hoy hay más comida que nunca."
+  },
+  "fd02-question.c1.s1": {
+   "say": "Y sin embargo, aquí está lo raro."
+  },
+  "fd02-question.c1.s2": {
+   "say": "¿Sabías que hoy, en el mundo, cerca de una de cada cinco muertes se relaciona con la dieta?"
+  },
+  "fd02-question.c1.s3": {
+   "say": "¿Nos dio la comida vidas más largas?"
+  },
+  "fd02-question.c1.s4": {
+   "say": "¿O nos quita parte de esos años?"
+  },
+  "fd00-welcome.c1.s1": {
+   "say": "De vuelta en Did You Know That."
+  },
+  "fd00-welcome.c1.s2": {
+   "say": "Episodio cinco."
+  },
+  "fd00-welcome.c1.s3": {
+   "say": "Ya sabes la regla."
+  },
+  "fd00-welcome.c1.s4": {
+   "say": "Haz tu apuesta."
+  },
+  "fd00-welcome.c1.s5": {
+   "say": "En mil ochocientos, la esperanza de vida al nacer en el mundo era de unos veintinueve años.",
+   "show": "En 1800, la esperanza de vida al nacer en el mundo era de unos 29 años."
+  },
+  "fd00-welcome.c1.s6": {
+   "say": "¿Y para un bebé nacido hoy?"
+  },
+  "fd00-welcome.c1.s7": {
+   "say": "Adivina en los comentarios, ahora."
+  },
+  "fd00-welcome.c1.s8": {
+   "say": "Luego quédate hasta el final y comprueba tu respuesta."
+  },
+  "fd03-promise.c1.s1": {
+   "say": "Siete mañanas, de mil quinientos a dos mil cien.",
+   "show": "Siete mañanas, de 1500 a 2100."
+  },
+  "fd03-promise.c1.s2": {
+   "say": "En cada una despiertas en otro lugar."
+  },
+  "fd03-promise.c1.s3": {
+   "say": "Verás qué hay en tu plato, qué le hace a tu cuerpo y cuánto llegas a vivir."
+  },
+  "fd03-promise.c1.s4": {
+   "say": "Y al final descubrirás qué nos dio de verdad esos años extra."
+  },
+  "fd04-1500.c1.s1": {
+   "say": "Despiertas en mil quinientos, en un pueblo de Flandes.",
+   "show": "Despiertas en 1500, en un pueblo de Flandes."
+  },
+  "fd04-1500.c1.s2": {
+   "say": "El horno de pan está caliente y la cocina huele a centeno y humo."
+  },
+  "fd04-1500.c2.s1": {
+   "say": "¿Sabías que aquí, hasta cuatro días de cada diez, comer carne va contra las normas?",
+   "show": "¿Sabías que aquí, hasta 4 días de cada 10, comer carne va contra las normas?"
+  },
+  "fd04-1500.c2.s2": {
+   "say": "Los viernes."
+  },
+  "fd04-1500.c2.s3": {
+   "say": "Cuaresma."
+  },
+  "fd04-1500.c2.s4": {
+   "say": "Adviento."
+  },
+  "fd04-1500.c2.s5": {
+   "say": "La Iglesia los llama días de ayuno."
+  },
+  "fd04-1500.c3.s1": {
+   "say": "Este es tu plato."
+  },
+  "fd04-1500.c3.s2": {
+   "say": "Pan casi en cada comida."
+  },
+  "fd04-1500.c3.s3": {
+   "say": "Gachas, guisantes y habas."
+  },
+  "fd04-1500.c3.s4": {
+   "say": "Cerveza para beber."
+  },
+  "fd04-1500.c3.s5": {
+   "say": "Pescado seco en días de ayuno."
+  },
+  "fd04-1500.c3.s6": {
+   "say": "Casi todo lo que gasta tu familia se va en comida."
+  },
+  "fd04-1500.c3.s7": {
+   "say": "Setenta, ochenta por ciento.",
+   "show": "Del 70 al 80 %."
+  },
+  "fd04-1500.c3.s8": {
+   "say": "Si fallan las cosechas, el pan se dispara y la gente pasa hambre."
+  },
+  "fd04-1500.c4.s1": {
+   "say": "¿Cuánto vives?"
+  },
+  "fd04-1500.c4.s2": {
+   "say": "En Inglaterra, al otro lado del mar, un recién nacido podía esperar unos treinta y cinco años.",
+   "show": "En Inglaterra, al otro lado del mar, un recién nacido podía esperar unos 35 años."
+  },
+  "fd04-1500.c4.s3": {
+   "say": "Sobre todo porque morían muchos niños."
+  },
+  "fd04-1500.c4.s4": {
+   "say": "Si llegabas a los treinta, tenías buenas opciones de llegar a los sesenta.",
+   "show": "Si llegabas a los 30, tenías buenas opciones de llegar a los 60."
+  },
+  "fd04-1500.c5.s1": {
+   "say": "¿Qué es la comida para ti?"
+  },
+  "fd04-1500.c5.s2": {
+   "say": "Combustible."
+  },
+  "fd04-1500.c5.s3": {
+   "say": "Para sobrevivir el día."
+  },
+  "fd04-1500.c5.s4": {
+   "say": "Recuerda esos días de ayuno."
+  },
+  "fd04-1500.c5.s5": {
+   "say": "Vuelven al final."
+  },
+  "fd04-1500.c5.s6": {
+   "say": "Y en el mar, en los viajes más largos, los marineros empiezan a desmoronarse."
+  },
+  "fd05-1747.c1.s1": {
+   "say": "Despiertas en mil setecientos cuarenta y siete, en el HMS Salisbury, buque de guerra británico en patrulla.",
+   "show": "Despiertas en 1747, en el HMS Salisbury, buque de guerra británico en patrulla."
+  },
+  "fd05-1747.c2.s1": {
+   "say": "¿Sabías que la cura de la peor enfermedad de los marineros se halló este año, y la armada esperó casi cincuenta años para usarla?",
+   "show": "¿Sabías que la cura de la peor enfermedad de los marineros se halló este año, y la armada esperó casi 50 años para usarla?"
+  },
+  "fd05-1747.c3.s1": {
+   "say": "Tu plato."
+  },
+  "fd05-1747.c3.s2": {
+   "say": "Cada día, una libra de galleta dura y un galón de cerveza."
+  },
+  "fd05-1747.c3.s3": {
+   "say": "Ternera o cerdo en salazón, guisantes secos, avena, un poco de queso."
+  },
+  "fd05-1747.c3.s4": {
+   "say": "Casi nada fresco."
+  },
+  "fd05-1747.c3.s5": {
+   "say": "Tras semanas en el mar, aparece el escorbuto."
+  },
+  "fd05-1747.c3.s6": {
+   "say": "Encías sangrantes."
+  },
+  "fd05-1747.c3.s7": {
+   "say": "Heridas viejas que se abren."
+  },
+  "fd05-1747.c4.s1": {
+   "say": "El cirujano del barco, James Lind, divide a doce marineros con escorbuto en parejas y da algo distinto a cada pareja.",
+   "show": "El cirujano del barco, James Lind, divide a 12 marineros con escorbuto en parejas y da algo distinto a cada pareja."
+  },
+  "fd05-1747.c4.s2": {
+   "say": "Sidra."
+  },
+  "fd05-1747.c4.s3": {
+   "say": "Vinagre."
+  },
+  "fd05-1747.c4.s4": {
+   "say": "Una pareja recibe dos naranjas y un limón al día.",
+   "show": "Una pareja recibe 2 naranjas y un limón al día."
+  },
+  "fd05-1747.c5.s1": {
+   "say": "¿Y ahora qué es la comida?"
+  },
+  "fd05-1747.c5.s2": {
+   "say": "Medicina."
+  },
+  "fd05-1747.c5.s3": {
+   "say": "Comer bien puede curar."
+  },
+  "fd05-1747.c5.s4": {
+   "say": "En tierra, en Gran Bretaña, un recién nacido aún podía esperar menos de cuarenta años.",
+   "show": "En tierra, en Gran Bretaña, un recién nacido aún podía esperar menos de 40 años."
+  },
+  "fd05-1747.c6.s1": {
+   "say": "La armada repartió por fin jugo de limón en mil setecientos noventa y cinco.",
+   "show": "La armada repartió por fin jugo de limón en 1795."
+  },
+  "fd05-1747.c6.s2": {
+   "say": "Un siglo después, en Japón, otra pieza que falta enferma a los marineros."
+  },
+  "fd06-1884.c1.s1": {
+   "say": "Despiertas en mil ochocientos ochenta y cuatro, en Shinagawa, en la bahía de Tokio.",
+   "show": "Despiertas en 1884, en Shinagawa, en la bahía de Tokio."
+  },
+  "fd06-1884.c1.s2": {
+   "say": "Un buque escuela llamado Tsukuba se prepara para zarpar."
+  },
+  "fd06-1884.c2.s1": {
+   "say": "¿Sabías que en un viaje como este, el año anterior, casi la mitad de la tripulación enfermó por lo que comía?"
+  },
+  "fd06-1884.c2.s2": {
+   "say": "En el barco Ryujo, ciento sesenta y nueve hombres tuvieron beriberi.",
+   "show": "En el barco Ryujo, 169 hombres tuvieron beriberi."
+  },
+  "fd06-1884.c2.s3": {
+   "say": "Veinticinco murieron.",
+   "show": "25 murieron."
+  },
+  "fd06-1884.c3.s1": {
+   "say": "El plato de un marinero."
+  },
+  "fd06-1884.c3.s2": {
+   "say": "Arroz blanco."
+  },
+  "fd06-1884.c3.s3": {
+   "say": "El arroz, gratis."
+  },
+  "fd06-1884.c3.s4": {
+   "say": "Todo lo demás costaba dinero."
+  },
+  "fd06-1884.c3.s5": {
+   "say": "Un médico de la armada, Takaki Kanehiro, mide lo que comen los hombres y cambia el menú."
+  },
+  "fd06-1884.c3.s6": {
+   "say": "Más cebada, carne, leche, pan y verduras."
+  },
+  "fd06-1884.c4.s1": {
+   "say": "En el Tsukuba, catorce hombres enferman.",
+   "show": "En el Tsukuba, 14 hombres enferman."
+  },
+  "fd06-1884.c4.s2": {
+   "say": "Ninguno muere."
+  },
+  "fd06-1884.c4.s3": {
+   "say": "¿Y los catorce?",
+   "show": "¿Y los 14?"
+  },
+  "fd06-1884.c4.s4": {
+   "say": "No habían comido el menú nuevo."
+  },
+  "fd06-1884.c5.s1": {
+   "say": "¿Y ahora qué es la comida?"
+  },
+  "fd06-1884.c5.s2": {
+   "say": "Algo que medir."
+  },
+  "fd06-1884.c5.s3": {
+   "say": "Importa lo que lleva dentro."
+  },
+  "fd06-1884.c5.s4": {
+   "say": "Las primeras tablas de vida de Japón: unos cuarenta y tres años al nacer.",
+   "show": "Las primeras tablas de vida de Japón: unos 43 años al nacer."
+  },
+  "fd06-1884.c5.s5": {
+   "say": "¿Y los japoneses nacidos entonces?"
+  },
+  "fd06-1884.c5.s6": {
+   "say": "Unos quince centímetros menos que los nacidos un siglo después.",
+   "show": "Unos 15 centímetros menos que los nacidos un siglo después."
+  },
+  "fd06-1884.c6.s1": {
+   "say": "Décadas después, recibe un nombre."
+  },
+  "fd06-1884.c6.s2": {
+   "say": "Una vitamina."
+  },
+  "fd06-1884.c6.s3": {
+   "say": "Pero saber qué falta no lo pone en el plato de una familia pobre."
+  },
+  "fd07-1915.c1.s1": {
+   "say": "Despiertas en mil novecientos quince, en una granja penitenciaria de Misisipi.",
+   "show": "Despiertas en 1915, en una granja penitenciaria de Misisipi."
+  },
+  "fd07-1915.c1.s2": {
+   "say": "Once hombres hacen fila para desayunar.",
+   "show": "11 hombres hacen fila para desayunar."
+  },
+  "fd07-1915.c2.s1": {
+   "say": "¿Sabías que aquí los médicos enfermaban a propósito a hombres sanos, dándoles la dieta normal de una familia pobre del Sur?"
+  },
+  "fd07-1915.c2.s2": {
+   "say": "Prometían indulto a los voluntarios."
+  },
+  "fd07-1915.c3.s1": {
+   "say": "Este es el plato."
+  },
+  "fd07-1915.c3.s2": {
+   "say": "Pan de maíz y sémola."
+  },
+  "fd07-1915.c3.s3": {
+   "say": "Tocino salado y graso."
+  },
+  "fd07-1915.c3.s4": {
+   "say": "Melaza."
+  },
+  "fd07-1915.c3.s5": {
+   "say": "Casi nada de leche, carne fresca ni verduras."
+  },
+  "fd07-1915.c3.s6": {
+   "say": "Tras unos cinco meses, cerca de la mitad tiene pelagra.",
+   "show": "Tras unos 5 meses, cerca de la mitad tiene pelagra."
+  },
+  "fd07-1915.c3.s7": {
+   "say": "Sarpullidos, mal de estómago, confusión, hasta la muerte."
+  },
+  "fd07-1915.c4.s1": {
+   "say": "Según una estimación muy citada, mató a unas cien mil personas en el Sur.",
+   "show": "Según una estimación muy citada, mató a unas 100.000 personas en el Sur."
+  },
+  "fd07-1915.c4.s2": {
+   "say": "El médico Joseph Goldberger demuestra que la pelagra no se contagia como un germen."
+  },
+  "fd07-1915.c4.s3": {
+   "say": "Viene de algo que falta en la dieta."
+  },
+  "fd07-1915.c5.s1": {
+   "say": "Más tarde, recibe nombre."
+  },
+  "fd07-1915.c5.s2": {
+   "say": "Niacina, una vitamina B."
+  },
+  "fd07-1915.c5.s3": {
+   "say": "En los años cuarenta se añade a la harina y al pan en buena parte de Estados Unidos.",
+   "show": "En los años 1940 se añade a la harina y al pan en buena parte de Estados Unidos."
+  },
+  "fd07-1915.c5.s4": {
+   "say": "Con eso, mejores sueldos y comida más variada, la pelagra se apaga."
+  },
+  "fd07-1915.c6.s1": {
+   "say": "¿Y ahora qué es la comida?"
+  },
+  "fd07-1915.c6.s2": {
+   "say": "Algo que arreglamos."
+  },
+  "fd07-1915.c6.s3": {
+   "say": "Añade lo que falta y una enfermedad desaparece."
+  },
+  "fd07-1915.c6.s4": {
+   "say": "Ese año, en Estados Unidos, un bebé podía esperar unos cincuenta y cinco años.",
+   "show": "Ese año, en Estados Unidos, un bebé podía esperar unos 55 años."
+  },
+  "fd07-1915.c6.s5": {
+   "say": "Pero arreglar la comida solo ayuda si hay suficiente."
+  },
+  "fd07-1915.c6.s6": {
+   "say": "Y en la India no la hay."
+  },
+  "fd08-1966.c1.s1": {
+   "say": "Despiertas en mil novecientos sesenta y seis, en un pueblo del Punyab.",
+   "show": "Despiertas en 1966, en un pueblo del Punyab."
+  },
+  "fd08-1966.c1.s2": {
+   "say": "Todos vigilan el cielo, esperando lluvia."
+  },
+  "fd08-1966.c2.s1": {
+   "say": "¿Sabías que el año anterior el primer ministro de la India pidió a todo el país que se saltara una comida a la semana?"
+  },
+  "fd08-1966.c2.s2": {
+   "say": "Lal Bahadur Shastri."
+  },
+  "fd08-1966.c2.s3": {
+   "say": "La guerra y la sequía habían dejado poco grano."
+  },
+  "fd08-1966.c3.s1": {
+   "say": "Tu plato."
+  },
+  "fd08-1966.c3.s2": {
+   "say": "Pan plano, lentejas, quizá algo de verdura."
+  },
+  "fd08-1966.c3.s3": {
+   "say": "En toda la India hay comida para solo unas dos mil calorías por persona al día.",
+   "show": "En toda la India hay comida para solo unas 2000 calorías por persona al día."
+  },
+  "fd08-1966.c3.s4": {
+   "say": "Un recién nacido aquí podía esperar unos cuarenta y seis años.",
+   "show": "Un recién nacido aquí podía esperar unos 46 años."
+  },
+  "fd08-1966.c4.s1": {
+   "say": "Así que India importa de México dieciocho mil toneladas de semilla de trigo.",
+   "show": "Así que India importa de México 18.000 toneladas de semilla de trigo."
+  },
+  "fd08-1966.c4.s2": {
+   "say": "Plantas bajas y fuertes, obra del equipo de Norman Borlaug."
+  },
+  "fd08-1966.c4.s3": {
+   "say": "Necesitan agua y mucho fertilizante, hecho en fábricas con nitrógeno del aire."
+  },
+  "fd08-1966.c4.s4": {
+   "say": "En pocos años, la cosecha de trigo india salta a diecisiete millones de toneladas.",
+   "show": "En pocos años, la cosecha de trigo india salta a 17 millones de toneladas."
+  },
+  "fd08-1966.c5.s1": {
+   "say": "¿Y ahora qué es la comida?"
+  },
+  "fd08-1966.c5.s2": {
+   "say": "Suficiente, por fin."
+  },
+  "fd08-1966.c5.s3": {
+   "say": "Cultivada por toneladas."
+  },
+  "fd08-1966.c5.s4": {
+   "say": "Hoy, un recién nacido en la India puede esperar unos setenta y dos años.",
+   "show": "Hoy, un recién nacido en la India puede esperar unos 72 años."
+  },
+  "fd08-1966.c5.s5": {
+   "say": "Y en todo el mundo, la comida nunca ha sido tan abundante."
+  },
+  "fd08-1966.c5.s6": {
+   "say": "Y eso trae un problema nuevo."
+  },
+  "fd09-today.c1.s1": {
+   "say": "Despiertas hoy, en São Paulo."
+  },
+  "fd09-today.c1.s2": {
+   "say": "Las motos zumban con repartos de comida."
+  },
+  "fd09-today.c2.s1": {
+   "say": "¿Sabías que la guía alimentaria oficial de Brasil recomienda comer a horas regulares y, siempre que se pueda, con otras personas?"
+  },
+  "fd09-today.c3.s1": {
+   "say": "Tu plato."
+  },
+  "fd09-today.c3.s2": {
+   "say": "Arroz y frijoles, aún en la mayoría de platos de Brasil."
+  },
+  "fd09-today.c3.s3": {
+   "say": "Y cada vez más comida ultraprocesada."
+  },
+  "fd09-today.c3.s4": {
+   "say": "Refrescos."
+  },
+  "fd09-today.c3.s5": {
+   "say": "Snacks envasados."
+  },
+  "fd09-today.c3.s6": {
+   "say": "En Brasil, cerca de una quinta parte de las calorías."
+  },
+  "fd09-today.c3.s7": {
+   "say": "En Estados Unidos, más de la mitad."
+  },
+  "fd09-today.c4.s1": {
+   "say": "¿La regla de oro de la guía?"
+  },
+  "fd09-today.c4.s2": {
+   "say": "Elige comida fresca y platos caseros antes que ultraprocesados."
+  },
+  "fd09-today.c4.s3": {
+   "say": "En la mayoría de países, ya hay más adultos con obesidad que con bajo peso."
+  },
+  "fd09-today.c4.s4": {
+   "say": "En Brasil, un recién nacido puede esperar unos setenta y seis años.",
+   "show": "En Brasil, un recién nacido puede esperar unos 76 años."
+  },
+  "fd09-today.c5.s1": {
+   "say": "¿Y qué es la comida para ti?"
+  },
+  "fd09-today.c5.s2": {
+   "say": "Demasiado de unas cosas."
+  },
+  "fd09-today.c5.s3": {
+   "say": "Demasiado poco de otras."
+  },
+  "fd09-today.c5.s4": {
+   "say": "Esta es la pregunta que te trajo."
+  },
+  "fd09-today.c5.s5": {
+   "say": "La comida nos dio más vida."
+  },
+  "fd09-today.c5.s6": {
+   "say": "¿Nos quita ahora parte de esos años?"
+  },
+  "fd10-reveal.c1.s1": {
+   "say": "Aquí, la respuesta."
+  },
+  "fd10-reveal.c1.s2": {
+   "say": "La comida nos dio años."
+  },
+  "fd10-reveal.c1.s3": {
+   "say": "Pero no lo hizo sola."
+  },
+  "fd10-reveal.c1.s4": {
+   "say": "Y ahora, el peligro se invirtió."
+  },
+  "fd10-reveal.c2.s1": {
+   "say": "Calorías suficientes y nutrientes adecuados vencieron al escorbuto, el beriberi y la pelagra, y nos hicieron crecer."
+  },
+  "fd10-reveal.c2.s2": {
+   "say": "El médico Thomas McKeown sostuvo que comer mejor fue la causa principal de vivir más."
+  },
+  "fd10-reveal.c2.s3": {
+   "say": "Muchos historiadores discrepan."
+  },
+  "fd10-reveal.c3.s1": {
+   "say": "Un estudio de grandes urbes estadounidenses halló que solo el agua limpia explicó casi la mitad de la caída de muertes a inicios del siglo veinte.",
+   "show": "Un estudio de grandes urbes estadounidenses halló que solo el agua limpia explicó casi la mitad de la caída de muertes a inicios del siglo XX."
+  },
+  "fd10-reveal.c3.s2": {
+   "say": "Alcantarillas, vacunas y medicina, mucho del resto."
+  },
+  "fd10-reveal.c4.s1": {
+   "say": "¿Y hoy?"
+  },
+  "fd10-reveal.c4.s2": {
+   "say": "Alrededor de una de cada cinco muertes, ligada a la dieta."
+  },
+  "fd10-reveal.c4.s3": {
+   "say": "¿Los mayores riesgos?"
+  },
+  "fd10-reveal.c4.s4": {
+   "say": "Demasiada sal."
+  },
+  "fd10-reveal.c4.s5": {
+   "say": "Pocos cereales integrales."
+  },
+  "fd10-reveal.c4.s6": {
+   "say": "Poca fruta."
+  },
+  "fd10-reveal.c5.s1": {
+   "say": "¿Y tu apuesta?"
+  },
+  "fd10-reveal.c5.s2": {
+   "say": "En mil ochocientos, unos veintinueve años.",
+   "show": "En 1800, unos 29 años."
+  },
+  "fd10-reveal.c5.s3": {
+   "say": "Hoy, en el mundo, unos setenta y tres.",
+   "show": "Hoy, en el mundo, unos 73."
+  },
+  "fd10-reveal.c5.s4": {
+   "say": "¿Cuánto te acercaste?"
+  },
+  "fd10-reveal.c6.s1": {
+   "say": "Ahora baja la escalera conmigo."
+  },
+  "fd10-reveal.c6.s2": {
+   "say": "En mil quinientos, era combustible.",
+   "show": "En 1500, la comida era combustible."
+  },
+  "fd10-reveal.c6.s3": {
+   "say": "Luego, medicina."
+  },
+  "fd10-reveal.c6.s4": {
+   "say": "Luego, algo que medir."
+  },
+  "fd10-reveal.c6.s5": {
+   "say": "Luego, algo que arreglar."
+  },
+  "fd10-reveal.c6.s6": {
+   "say": "Por fin, suficiente."
+  },
+  "fd10-reveal.c6.s7": {
+   "say": "Hoy, demasiada."
+  },
+  "fd10-reveal.c7.s1": {
+   "say": "En mil quinientos, la comida se llevaba la mayor parte de tu dinero, y el peligro era el hambre.",
+   "show": "En 1500, la comida se llevaba la mayor parte de tu dinero, y el peligro era el hambre."
+  },
+  "fd10-reveal.c7.s2": {
+   "say": "Hoy, el peligro es lo que elegimos comer."
+  },
+  "fd11-2100.c1.s1": {
+   "say": "Entonces, ¿qué comerás en el año dos mil cien?",
+   "show": "Entonces, ¿qué comerás en el año 2100?"
+  },
+  "fd11-2100.c1.s2": {
+   "say": "Esa mañana aún no ha llegado."
+  },
+  "fd11-2100.c1.s3": {
+   "say": "Pero podemos seguir la evidencia."
+  },
+  "fd11-2100.c2.s1": {
+   "say": "La ONU espera una esperanza de vida mundial de unos ochenta y dos años en dos mil cien.",
+   "show": "La ONU espera una esperanza de vida mundial de unos 82 años en 2100."
+  },
+  "fd11-2100.c2.s2": {
+   "say": "Su panel climático dice que el calentamiento ya frenó el alza de la productividad agrícola en cincuenta años.",
+   "show": "Su panel climático dice que el calentamiento ya frenó el alza de la productividad agrícola en 50 años."
+  },
+  "fd11-2100.c3.s1": {
+   "say": "Según la Comisión EAT-Lancet, una dieta mayormente vegetal, con carne roja cerca de una vez por semana, podría evitar unos quince millones de muertes precoces al año.",
+   "show": "Según la Comisión EAT-Lancet, una dieta mayormente vegetal, con carne roja cerca de una vez por semana, podría evitar unos 15 millones de muertes precoces al año."
+  },
+  "fd11-2100.c4.s1": {
+   "say": "He aquí un escenario."
+  },
+  "fd11-2100.c4.s2": {
+   "say": "No un hecho."
+  },
+  "fd11-2100.c4.s3": {
+   "say": "Para dos mil cien, tu plato podría ser casi todo vegetal.",
+   "show": "Para 2100, tu plato podría ser casi todo vegetal."
+  },
+  "fd11-2100.c4.s4": {
+   "say": "La carne podría ser un lujo semanal."
+  },
+  "fd11-2100.c4.s5": {
+   "say": "Y si las cosechas aguantan, la vida media podría pasar de ochenta años.",
+   "show": "Y si las cosechas aguantan, la vida media podría pasar de 80 años."
+  },
+  "fd11-2100.c5.s1": {
+   "say": "En mil quinientos, la Iglesia decidía qué días no podías comer carne.",
+   "show": "En 1500, la Iglesia decidía qué días no podías comer carne."
+  },
+  "fd11-2100.c5.s2": {
+   "say": "En dos mil cien, la razón podría ser tu corazón.",
+   "show": "En 2100, la razón podría ser tu corazón."
+  },
+  "fd11-2100.c5.s3": {
+   "say": "Y el planeta."
+  },
+  "fd12-close.c1.s1": {
+   "say": "Esta noche, mira tu plato."
+  },
+  "fd12-close.c1.s2": {
+   "say": "¿Qué parte de él te está comprando más años?"
+  },
+  "fd13-outro.c1.s1": {
+   "say": "Este fue Did You Know That, episodio cinco."
+  },
+  "fd13-outro.c1.s2": {
+   "say": "Comida."
+  },
+  "fd13-outro.c1.s3": {
+   "say": "Ahora te toca a ti."
+  },
+  "fd13-outro.c1.s4": {
+   "say": "¿En la cocina de qué siglo comerías?"
+  },
+  "fd13-outro.c1.s5": {
+   "say": "Dímelo en los comentarios."
+  },
+  "fd13-outro.c1.s6": {
+   "say": "Al final de cada episodio, leeré el mejor comentario, aquí mismo, en esta pantalla."
+  },
+  "fd13-outro.c1.s7": {
+   "say": "Y el tema que más pidas se convierte en un episodio futuro."
+  },
+  "fd13-outro.c1.s8": {
+   "say": "En nuestra web, Dexti punto laiv, puedes ver cada episodio, coleccionar las tarjetas de datos y jugar al juego de adivinar.",
+   "show": "En nuestra web, Dexty.live, puedes ver cada episodio, coleccionar las tarjetas de datos y jugar al juego de adivinar."
+  },
+  "fd13-outro.c2.s1": {
+   "say": "Si esto cambió cómo ves lo que hay en tu plato, dale like."
+  },
+  "fd13-outro.c2.s2": {
+   "say": "Compártelo con el amigo que siempre cocina para ti."
+  },
+  "fd13-outro.c2.s3": {
+   "say": "Y suscríbete, para que el próximo misterio te encuentre."
+  },
+  "fd13b-next.c1.s1": {
+   "say": "Próxima vez: medicina."
+  },
+  "fd13b-next.c1.s2": {
+   "say": "En mil setecientos noventa y nueve, los médicos de George Washington le sacaron, según unos cálculos, unos dos quintos de sangre.",
+   "show": "En 1799, los médicos de George Washington le sacaron, según unos cálculos, unos dos quintos de sangre."
+  },
+  "fd13b-next.c1.s3": {
+   "say": "¿Cómo descubrimos qué nos cura de verdad?"
+  },
+  "fd13c-signoff.c1.s1": {
+   "say": "Pregunta..."
+  },
+  "fd13c-signoff.c2.s1": {
+   "say": "Asómbrate..."
+  },
+  "fd13c-signoff.c3.s1": {
+   "say": "Repite."
+  },
+  "fd14-endscreen.c1.s1": {
+   "say": "La próxima vez..."
+  },
+  "fd14-endscreen.c1.s2": {
+   "say": "podría ser tu comentario."
+  },
+  "fd14-endscreen.c1.s3": {
+   "say": "Elige un misterio."
+  },
+  "fd14-endscreen.c1.s4": {
+   "say": "Y nos vemos allí."
+  }
+ }
+}

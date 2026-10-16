@@ -1,0 +1,646 @@
+{
+ "lang": "ro",
+ "episode": "02",
+ "sentences": {
+  "su01-hook.c1.s1": {
+   "say": "Sunt ora opt.",
+   "show": "Sunt ora 8."
+  },
+  "su01-hook.c1.s2": {
+   "say": "Soarele e cald pe fața ta."
+  },
+  "su01-hook.c1.s3": {
+   "say": "Dar e lumină veche."
+  },
+  "su01-hook.c1.s4": {
+   "say": "A plecat din Soare acum opt minute și douăzeci de secunde.",
+   "show": "A plecat din Soare acum 8 minute și 20 de secunde."
+  },
+  "su01-hook.c2.s1": {
+   "say": "Dacă Soarele ar dispărea acum, n-ai ști."
+  },
+  "su01-hook.c2.s2": {
+   "say": "Tot l-ai vedea."
+  },
+  "su01-hook.c2.s3": {
+   "say": "Tot l-ai simți."
+  },
+  "su01-hook.c2.s4": {
+   "say": "Încă opt minute.",
+   "show": "Încă 8 minute."
+  },
+  "su02-question.c1.s1": {
+   "say": "Acum cinci sute de ani, Soarele îți spunea când să te scoli și când să dormi.",
+   "show": "Acum 500 de ani, Soarele îți spunea când să te scoli și când să dormi."
+  },
+  "su02-question.c1.s2": {
+   "say": "Azi facem din el electricitate."
+  },
+  "su02-question.c2.s1": {
+   "say": "Și totuși, știai că nu ai văzut niciodată Soarele așa cum este..."
+  },
+  "su02-question.c2.s2": {
+   "say": "chiar acum?"
+  },
+  "su00-welcome.c1.s1": {
+   "say": "Bine ai revenit la Did You Know That."
+  },
+  "su00-welcome.c1.s2": {
+   "say": "Episodul doi.",
+   "show": "Episodul 2."
+  },
+  "su00-welcome.c1.s3": {
+   "say": "Știi regula."
+  },
+  "su00-welcome.c1.s4": {
+   "say": "Lumina de pe fața ta are opt minute.",
+   "show": "Lumina de pe fața ta are 8 minute."
+  },
+  "su00-welcome.c1.s5": {
+   "say": "Dar energia din ea?"
+  },
+  "su00-welcome.c1.s6": {
+   "say": "Cât de veche e?"
+  },
+  "su00-welcome.c1.s7": {
+   "say": "Ghicește în comentarii, chiar acum."
+  },
+  "su00-welcome.c1.s8": {
+   "say": "Apoi rămâi până la final și verifică-ți răspunsul."
+  },
+  "su03-promise.c1.s1": {
+   "say": "Șapte dimineți, din o mie cinci sute până în două mii o sută.",
+   "show": "Șapte dimineți, din 1500 până în 2100."
+  },
+  "su03-promise.c1.s2": {
+   "say": "În fiecare te trezești altcineva, sub același Soare."
+  },
+  "su03-promise.c1.s3": {
+   "say": "Soarele nu se schimbă."
+  },
+  "su03-promise.c1.s4": {
+   "say": "Tu, da."
+  },
+  "su03-promise.c1.s5": {
+   "say": "Începi mergând la culcare la apus."
+  },
+  "su03-promise.c1.s6": {
+   "say": "Ajungi într-o lume care poate că merge pe el."
+  },
+  "su03-promise.c1.s7": {
+   "say": "Iar la final, afli adevărata vârstă a luminii soarelui."
+  },
+  "su04-1500.c1.s1": {
+   "say": "Londra, în o mie cinci sute.",
+   "show": "Londra, în 1500."
+  },
+  "su04-1500.c1.s2": {
+   "say": "E Ajunul Verii."
+  },
+  "su04-1500.c1.s3": {
+   "say": "Miroase a fum de lemne, iar străzile strălucesc de focuri."
+  },
+  "su04-1500.c2.s1": {
+   "say": "Știai că aproape toți cred că Soarele se învârte în jurul Pământului?"
+  },
+  "su04-1500.c2.s2": {
+   "say": "Așa a învățat Ptolemeu, acum vreo o mie patru sute de ani.",
+   "show": "Așa a învățat Ptolemeu, acum vreo 1400 de ani."
+  },
+  "su04-1500.c3.s1": {
+   "say": "Deci ce e Soarele pentru tine?"
+  },
+  "su04-1500.c3.s2": {
+   "say": "Simplu."
+  },
+  "su04-1500.c3.s3": {
+   "say": "E diferența dintre zi și noapte."
+  },
+  "su04-1500.c3.s4": {
+   "say": "Ziua e pentru muncă."
+  },
+  "su04-1500.c3.s5": {
+   "say": "Noaptea e pentru somn și rugăciune."
+  },
+  "su04-1500.c3.s6": {
+   "say": "Dar în seara asta, nu doarme nimeni."
+  },
+  "su04-1500.c3.s7": {
+   "say": "Uși cu mesteacăn verde și flori."
+  },
+  "su04-1500.c3.s8": {
+   "say": "Lămpi ard toată noaptea."
+  },
+  "su04-1500.c3.s9": {
+   "say": "Vecinii împart pâinea și beau lângă focuri."
+  },
+  "su04-1500.c3.s10": {
+   "say": "De ce?"
+  },
+  "su04-1500.c3.s11": {
+   "say": "Londonezul John Stow scria mai târziu că un foc mare putea purifica aerul de infecție."
+  },
+  "su04-1500.c4.s1": {
+   "say": "Departe, un tânăr astronom polonez, Copernic, studiază cerul."
+  },
+  "su04-1500.c4.s2": {
+   "say": "În o mie cinci sute patruzeci și trei, anul morții lui, cartea sa pune Soarele în centru și Pământul în mișcare.",
+   "show": "În 1543, anul morții lui, cartea sa pune Soarele în centru și Pământul în mișcare."
+  },
+  "su04-1500.c5.s1": {
+   "say": "În sub șaptezeci de ani, un instrument nou arată ceva șocant.",
+   "show": "În sub 70 de ani, un instrument nou arată ceva șocant."
+  },
+  "su04-1500.c5.s2": {
+   "say": "Soarele nu e perfect."
+  },
+  "su05-1610.c1.s1": {
+   "say": "Te trezești în o mie șase sute zece, lângă Tamisa.",
+   "show": "Te trezești în 1610, lângă Tamisa."
+  },
+  "su05-1610.c1.s2": {
+   "say": "E o dimineață rece și ceață de decembrie, iar Soarele stă jos și palid."
+  },
+  "su05-1610.c1.s3": {
+   "say": "Un tip, Thomas Harriot, își îndreaptă telescopul spre el."
+  },
+  "su05-1610.c1.s4": {
+   "say": "Să nu încerci."
+  },
+  "su05-1610.c1.s5": {
+   "say": "Te poate orbi."
+  },
+  "su05-1610.c2.s1": {
+   "say": "Știai că primul desen cu pete solare făcut la telescop nu e al lui Galileo?"
+  },
+  "su05-1610.c2.s2": {
+   "say": "Era al acestui englez."
+  },
+  "su05-1610.c2.s3": {
+   "say": "Și nu l-a publicat niciodată."
+  },
+  "su05-1610.c3.s1": {
+   "say": "Doi ani mai târziu, la Florența, Galileo urmărește petele plutind pe Soare, zi după zi."
+  },
+  "su05-1610.c3.s2": {
+   "say": "Alt astronom spune că sunt planete mici care trec prin față."
+  },
+  "su05-1610.c3.s3": {
+   "say": "Galileo spune că nu."
+  },
+  "su05-1610.c3.s4": {
+   "say": "Sunt chiar pe Soare, iar Soarele se rotește."
+  },
+  "su05-1610.c3.s5": {
+   "say": "În o mie șase sute treisprezece, își publică scrisorile.",
+   "show": "În 1613, își publică scrisorile."
+  },
+  "su05-1610.c3.s6": {
+   "say": "Corpul ceresc perfect are pete."
+  },
+  "su05-1610.c4.s1": {
+   "say": "Pe câmp, lumina zilei încă îți conduce ziua."
+  },
+  "su05-1610.c4.s2": {
+   "say": "Dar pentru câțiva oameni cu telescoape, Soarele a devenit ceva de urmărit."
+  },
+  "su05-1610.c4.s3": {
+   "say": "De aproape."
+  },
+  "su05-1610.c5.s1": {
+   "say": "Și curând, cineva va întreba ce e de fapt în lumina aceea."
+  },
+  "su06-1700.c1.s1": {
+   "say": "Anglia, în o mie șapte sute șaptezeci și nouă.",
+   "show": "Anglia, în 1779."
+  },
+  "su06-1700.c1.s2": {
+   "say": "E o dimineață de vară strălucitoare, iar doamnele la modă de afară se ascund de ea sub umbrele."
+  },
+  "su06-1700.c2.s1": {
+   "say": "Știai că o față palidă era atât de prețuită, încât doamnele la modă își pictau fața cu alb de plumb?"
+  },
+  "su06-1700.c3.s1": {
+   "say": "O frumusețe faimoasă, Maria Gunning, contesă de Coventry, a murit la douăzeci și șapte de ani.",
+   "show": "O frumusețe faimoasă, Maria Gunning, contesă de Coventry, a murit la 27 de ani."
+  },
+  "su06-1700.c3.s2": {
+   "say": "Moartea i-a fost pusă, măcar în parte, pe seama plumbului din pudră."
+  },
+  "su06-1700.c3.s3": {
+   "say": "Dacă ești bogat, ocolești Soarele."
+  },
+  "su06-1700.c3.s4": {
+   "say": "Dacă ești sărac, muncești în el, iar bronzul te dă de gol."
+  },
+  "su06-1700.c3.s5": {
+   "say": "Dar vara asta, Soarele devine ceva nou."
+  },
+  "su06-1700.c3.s6": {
+   "say": "Ceva de explicat."
+  },
+  "su06-1700.c4.s1": {
+   "say": "Un medic olandez, Jan Ingenhousz, face peste cinci sute de experimente cu plante.",
+   "show": "Un medic olandez, Jan Ingenhousz, face peste 500 de experimente cu plante."
+  },
+  "su06-1700.c4.s2": {
+   "say": "Scufundă frunze în apă."
+  },
+  "su06-1700.c4.s3": {
+   "say": "La soare, scot bule de aer proaspăt."
+  },
+  "su06-1700.c4.s4": {
+   "say": "La umbră, se opresc."
+  },
+  "su06-1700.c4.s5": {
+   "say": "Doar părțile verzi fac asta."
+  },
+  "su06-1700.c4.s6": {
+   "say": "Au nevoie de Soare."
+  },
+  "su06-1700.c5.s1": {
+   "say": "Dar în lumina aceea e mai mult decât pot folosi frunzele."
+  },
+  "su06-1700.c5.s2": {
+   "say": "Sau decât pot vedea ochii tăi."
+  },
+  "su07-1800.c1.s1": {
+   "say": "Lângă Windsor, în o mie opt sute.",
+   "show": "Lângă Windsor, în 1800."
+  },
+  "su07-1800.c1.s2": {
+   "say": "E februarie."
+  },
+  "su07-1800.c1.s3": {
+   "say": "Un astronom, William Herschel, desparte o rază de soare cu o prismă și pune termometre în culori, cu bulbii înnegriți."
+  },
+  "su07-1800.c2.s1": {
+   "say": "Știai că cel mai fierbinte loc nu era deloc în curcubeu?"
+  },
+  "su07-1800.c2.s2": {
+   "say": "Era chiar după roșu, unde nu se vedea nimic."
+  },
+  "su07-1800.c3.s1": {
+   "say": "Descoperise infraroșul."
+  },
+  "su07-1800.c3.s2": {
+   "say": "Lumină pe care n-o vezi."
+  },
+  "su07-1800.c3.s3": {
+   "say": "Acum Soarele e ceva ce măsori, chiar și unde ochii dau greș."
+  },
+  "su07-1800.c3.s4": {
+   "say": "Curând, lămpile cu gaz alungă noaptea din Londra."
+  },
+  "su07-1800.c3.s5": {
+   "say": "În o mie opt sute treizeci și nouă, la Paris, un tânăr de nouăsprezece ani, Edmond Becquerel, luminează o celulă, iar ea produce electricitate.",
+   "show": "În 1839, la Paris, un tânăr de 19 ani, Edmond Becquerel, luminează o celulă, iar ea produce electricitate."
+  },
+  "su07-1800.c3.s6": {
+   "say": "Puțină."
+  },
+  "su07-1800.c3.s7": {
+   "say": "Dar electricitate adevărată."
+  },
+  "su07-1800.c4.s1": {
+   "say": "Iar în o mie opt sute cincizeci și nouă, Richard Carrington vede o sclipire albă pe Soare.",
+   "show": "Iar în 1859, Richard Carrington vede o sclipire albă pe Soare."
+  },
+  "su07-1800.c4.s2": {
+   "say": "Într-o zi, firele de telegraf scânteiază și operatorii iau șocuri."
+  },
+  "su07-1800.c4.s3": {
+   "say": "Soarele ajunge până la mașinile noastre."
+  },
+  "su07-1800.c5.s1": {
+   "say": "Scânteia devenea curent abia peste un secol."
+  },
+  "su07-1800.c5.s2": {
+   "say": "Dar mai întâi, aveam să aflăm ce mâncasem tot timpul."
+  },
+  "su08-1900.c1.s1": {
+   "say": "Plajă americană plină, o mie nouă sute douăzeci și opt.",
+   "show": "Plajă americană plină, 1928."
+  },
+  "su08-1900.c1.s2": {
+   "say": "Nisip fierbinte."
+  },
+  "su08-1900.c1.s3": {
+   "say": "Aer sărat."
+  },
+  "su08-1900.c1.s4": {
+   "say": "Și toți stau întinși la soare, cu intenție."
+  },
+  "su08-1900.c2.s1": {
+   "say": "Știai că celebra poveste, cum că Coco Chanel a lansat moda bronzului, e probabil un mit?"
+  },
+  "su08-1900.c3.s1": {
+   "say": "Un istoric: un articol nesemnat din o mie nouă sute șaptezeci și unu.",
+   "show": "Un istoric: un articol nesemnat din 1971."
+  },
+  "su08-1900.c3.s2": {
+   "say": "Adevăratul motiv: munca."
+  },
+  "su08-1900.c3.s3": {
+   "say": "Munca s-a mutat înăuntru, bronzul nu mai însemna câmp."
+  },
+  "su08-1900.c3.s4": {
+   "say": "A însemnat o zi liberă."
+  },
+  "su08-1900.c4.s1": {
+   "say": "Acum uită-te în coșul de picnic."
+  },
+  "su08-1900.c4.s2": {
+   "say": "Pâine."
+  },
+  "su08-1900.c4.s3": {
+   "say": "Un măr."
+  },
+  "su08-1900.c4.s4": {
+   "say": "Procesul, numit în o mie opt sute nouăzeci și trei.",
+   "show": "Procesul, numit în 1893."
+  },
+  "su08-1900.c4.s5": {
+   "say": "Fotosinteza."
+  },
+  "su08-1900.c4.s6": {
+   "say": "Frunzele prind lumina soarelui și o fac zahăr, iar aproape toată viața merge pe asta."
+  },
+  "su08-1900.c4.s7": {
+   "say": "Prânzul tău e lumină stocată."
+  },
+  "su08-1900.c4.s8": {
+   "say": "Deci, într-un fel, și tu."
+  },
+  "su08-1900.c4.s9": {
+   "say": "Soarele era ceva de măsurat."
+  },
+  "su08-1900.c4.s10": {
+   "say": "Acum e sursa fiecărei mese pe care o mănânci."
+  },
+  "su08-1900.c5.s1": {
+   "say": "În o mie nouă sute cincizeci și patru, la Bell Laboratories, o celulă de siliciu schimbă în curent cam șase la sută din soare.",
+   "show": "În 1954, la Bell Laboratories, o celulă de siliciu schimbă în curent cam 6% din lumina soarelui."
+  },
+  "su08-1900.c6.s1": {
+   "say": "Aflasem că trăim din lumina soarelui."
+  },
+  "su08-1900.c6.s2": {
+   "say": "Urma să învățăm s-o recoltăm."
+  },
+  "su09-2000.c1.s1": {
+   "say": "Te trezești azi."
+  },
+  "su09-2000.c1.s2": {
+   "say": "Telefonul ți-e încărcat."
+  },
+  "su09-2000.c1.s3": {
+   "say": "Luminile se aprind."
+  },
+  "su09-2000.c1.s4": {
+   "say": "Și undeva, un câmp de panouri solare e treaz de la răsărit."
+  },
+  "su09-2000.c2.s1": {
+   "say": "Știai că în două mii douăzeci și cinci, energia solară a produs de aproape unsprezece ori mai multă electricitate decât cu zece ani înainte?",
+   "show": "Știai că în 2025, energia solară a produs de aproape 11 ori mai multă electricitate decât cu zece ani înainte?"
+  },
+  "su09-2000.c3.s1": {
+   "say": "Asta înseamnă aproape nouă la sută din toată electricitatea lumii.",
+   "show": "Asta înseamnă aproape 9% din toată electricitatea lumii."
+  },
+  "su09-2000.c3.s2": {
+   "say": "Conform Agenției Internaționale pentru Energie, cele mai bune proiecte solare sunt printre cele mai ieftine surse."
+  },
+  "su09-2000.c3.s3": {
+   "say": "Deci ce e Soarele pentru tine acum?"
+  },
+  "su09-2000.c3.s4": {
+   "say": "Putere."
+  },
+  "su09-2000.c3.s5": {
+   "say": "Ceva ce recoltezi, ca pe o cultură."
+  },
+  "su09-2000.c3.s6": {
+   "say": "În decembrie două mii douăzeci și patru, Parker Solar Probe de la NASA a trecut prin atmosfera exterioară a Soarelui, mai rapid decât orice făcut de oameni.",
+   "show": "În decembrie 2024, Parker Solar Probe de la NASA a trecut prin atmosfera exterioară a Soarelui, mai rapid decât orice făcut de oameni."
+  },
+  "su09-2000.c4.s1": {
+   "say": "Și totuși, îți petreci cea mai mare parte a zilei înăuntru, în spatele ecranelor și ferestrelor."
+  },
+  "su09-2000.c4.s2": {
+   "say": "Am atins Soarele."
+  },
+  "su09-2000.c4.s3": {
+   "say": "Ne conectăm la el."
+  },
+  "su09-2000.c4.s4": {
+   "say": "Așa că de ce nu l-ai văzut încă așa cum e azi?"
+  },
+  "su10-reveal.c1.s1": {
+   "say": "Iată răspunsul."
+  },
+  "su10-reveal.c1.s2": {
+   "say": "Lumina e rapidă."
+  },
+  "su10-reveal.c1.s3": {
+   "say": "Dar nu e instantanee."
+  },
+  "su10-reveal.c1.s4": {
+   "say": "Cam opt minute și douăzeci de secunde pentru o sută cincizeci de milioane de kilometri.",
+   "show": "Cam 8 minute și 20 de secunde pentru 150 de milioane de kilometri."
+  },
+  "su10-reveal.c1.s5": {
+   "say": "Fiecare răsărit pe care l-ai văzut era deja vechi."
+  },
+  "su10-reveal.c2.s1": {
+   "say": "Și energia din ea?"
+  },
+  "su10-reveal.c2.s2": {
+   "say": "S-a format adânc în miezul Soarelui și a petrecut foarte mult timp luptând să iasă."
+  },
+  "su10-reveal.c2.s3": {
+   "say": "NASA estimează cam o sută șaptezeci de mii de ani.",
+   "show": "NASA estimează cam 170 000 de ani."
+  },
+  "su10-reveal.c2.s4": {
+   "say": "Când a pornit, nimeni de pe Pământ nu avea ferme, orașe sau scris."
+  },
+  "su10-reveal.c3.s1": {
+   "say": "Cât de aproape a fost răspunsul tău?"
+  },
+  "su10-reveal.c3.s2": {
+   "say": "Acum urcă scara din nou, cu mine."
+  },
+  "su10-reveal.c4.s1": {
+   "say": "În o mie cinci sute, Soarele era zi și noapte.",
+   "show": "În 1500, Soarele era zi și noapte."
+  },
+  "su10-reveal.c4.s2": {
+   "say": "Apoi ceva de urmărit."
+  },
+  "su10-reveal.c4.s3": {
+   "say": "De explicat."
+  },
+  "su10-reveal.c4.s4": {
+   "say": "De măsurat."
+  },
+  "su10-reveal.c4.s5": {
+   "say": "Apoi a fost prânzul tău."
+  },
+  "su10-reveal.c4.s6": {
+   "say": "Azi, e putere."
+  },
+  "su10-reveal.c5.s1": {
+   "say": "Soarele nu s-a schimbat."
+  },
+  "su10-reveal.c5.s2": {
+   "say": "Noi, da."
+  },
+  "su10-reveal.c5.s3": {
+   "say": "Nu ai văzut niciodată Soarele așa cum e."
+  },
+  "su10-reveal.c5.s4": {
+   "say": "Doar așa cum era, acum opt minute.",
+   "show": "Doar așa cum era, acum 8 minute."
+  },
+  "su11-2100.c1.s1": {
+   "say": "Deci care e următoarea treaptă a scării?"
+  },
+  "su11-2100.c1.s2": {
+   "say": "Două mii o sută.",
+   "show": "2100."
+  },
+  "su11-2100.c1.s3": {
+   "say": "Dimineața aceea n-a venit încă."
+  },
+  "su11-2100.c1.s4": {
+   "say": "Dar putem urma dovezile."
+  },
+  "su11-2100.c2.s1": {
+   "say": "Fiecare video pe care îl vezi, fiecare întrebare pusă unui AI, rulează într-un centru de date."
+  },
+  "su11-2100.c2.s2": {
+   "say": "În două mii douăzeci și patru, ele au luat cam unu și jumătate la sută din curentul lumii.",
+   "show": "În 2024, ele au luat cam 1,5% din curentul lumii."
+  },
+  "su11-2100.c2.s3": {
+   "say": "Aceeași agenție așteaptă mai mult decât dublu până în două mii treizeci.",
+   "show": "Aceeași agenție așteaptă mai mult decât dublu până în 2030."
+  },
+  "su11-2100.c2.s4": {
+   "say": "E ceva mai mult decât consumă azi toată Japonia."
+  },
+  "su11-2100.c3.s1": {
+   "say": "În două mii douăzeci și trei, un mic satelit Caltech, Maple, a transmis energie fără fir în spațiu și a țintit un acoperiș din Pasadena.",
+   "show": "În 2023, un mic satelit Caltech, Maple, a transmis energie fără fir în spațiu și a țintit un acoperiș din Pasadena."
+  },
+  "su11-2100.c3.s2": {
+   "say": "Puțină."
+  },
+  "su11-2100.c3.s3": {
+   "say": "Dar a mers."
+  },
+  "su11-2100.c4.s1": {
+   "say": "Iată un scenariu."
+  },
+  "su11-2100.c4.s2": {
+   "say": "Nu un fapt."
+  },
+  "su11-2100.c4.s3": {
+   "say": "Internetul, AI-ul și orașe întregi tot mai mult pe lumina soarelui."
+  },
+  "su11-2100.c4.s4": {
+   "say": "O parte, poate, adunată pe orbită, unde Soarele nu apune niciodată."
+  },
+  "su11-2100.c4.s5": {
+   "say": "În o mie cinci sute, Soarele hotăra când te culci.",
+   "show": "În 1500, Soarele hotăra când te culci."
+  },
+  "su11-2100.c4.s6": {
+   "say": "În două mii o sută, ar putea hotărî dacă AI-ul tău se trezește.",
+   "show": "În 2100, ar putea hotărî dacă AI-ul tău se trezește."
+  },
+  "su11-2100.c5.s1": {
+   "say": "Soarele nu va observa."
+  },
+  "su11-2100.c5.s2": {
+   "say": "NASA estimează că mai are cam cinci miliarde de ani.",
+   "show": "NASA estimează că mai are cam 5 miliarde de ani."
+  },
+  "su11-2100.c5.s3": {
+   "say": "Întrebarea e ce vom fi învățat să facem cu el."
+  },
+  "su12-close.c1.s1": {
+   "say": "Soarele a răsărit în fiecare dimineață din viața ta."
+  },
+  "su12-close.c1.s2": {
+   "say": "Deci spune-mi."
+  },
+  "su12-close.c1.s3": {
+   "say": "Când ai privit ultima oară cum răsare, cu intenție?"
+  },
+  "su13-outro.c1.s1": {
+   "say": "Did You Know That, episodul doi.",
+   "show": "Did You Know That, episodul 2."
+  },
+  "su13-outro.c1.s2": {
+   "say": "Soarele."
+  },
+  "su13-outro.c1.s3": {
+   "say": "Acum e rândul tău."
+  },
+  "su13-outro.c1.s4": {
+   "say": "În ce secol ai prefera să vezi Soarele răsărind?"
+  },
+  "su13-outro.c1.s5": {
+   "say": "Scrie în comentarii."
+  },
+  "su13-outro.c1.s6": {
+   "say": "La final, citesc cel mai bun comentariu, chiar aici, pe ecran."
+  },
+  "su13-outro.c1.s7": {
+   "say": "Cel mai cerut subiect devine un episod nou."
+  },
+  "su13-outro.c1.s8": {
+   "say": "Pe site-ul nostru, Dexti punct laiv, poți vedea fiecare episod, strânge faptele și juca jocul ghicitorilor.",
+   "show": "Pe site-ul nostru, Dexty.live, poți vedea fiecare episod, strânge faptele și juca jocul ghicitorilor."
+  },
+  "su13-outro.c2.s1": {
+   "say": "Dacă ți-a schimbat felul în care vezi un răsărit, dă like."
+  },
+  "su13-outro.c2.s2": {
+   "say": "Trimite-l prietenului care nu ratează niciunul."
+  },
+  "su13-outro.c2.s3": {
+   "say": "Abonează-te: următorul mister te caută."
+  },
+  "su13-outro.c3.s1": {
+   "say": "Data viitoare: școala."
+  },
+  "su13-outro.c3.s2": {
+   "say": "Cum s-a schimbat o zi de școală din o mie cinci sute până azi, și vor mai exista sălile de clasă din două mii o sută?",
+   "show": "Cum s-a schimbat o zi de școală din 1500 până azi, și vor mai exista sălile de clasă din 2100?"
+  },
+  "su13-outro.c4.s1": {
+   "say": "Întreabă..."
+  },
+  "su13-outro.c5.s1": {
+   "say": "Uimește-te."
+  },
+  "su13-outro.c6.s1": {
+   "say": "Repetă."
+  },
+  "su14-endscreen.c1.s1": {
+   "say": "Data viitoare..."
+  },
+  "su14-endscreen.c1.s2": {
+   "say": "poate fi al tău."
+  },
+  "su14-endscreen.c1.s3": {
+   "say": "Alege un mister."
+  },
+  "su14-endscreen.c1.s4": {
+   "say": "Și ne vedem acolo."
+  }
+ }
+}

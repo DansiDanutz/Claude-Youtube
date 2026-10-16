@@ -1,0 +1,2352 @@
+{
+ "episode": "03",
+ "slug": "school",
+ "master_s": 650.867,
+ "sentences": 210,
+ "english_chars": 9350,
+ "scenes": [
+  {
+   "id": "sc01-hook",
+   "start": 0.6,
+   "dur": 17.518,
+   "chunks": [
+    {
+     "id": "sc01-hook.c1",
+     "text": "It's seven forty five. Somewhere near you, a school bell's about to ring. Right now, about one point four billion children are in school. More than ever before.",
+     "sentences": [
+      {
+       "id": "sc01-hook.c1.s1",
+       "text": "It's seven forty five.",
+       "start": 0.6,
+       "end": 1.81,
+       "slot_end": 2.244,
+       "slot_s": 1.644,
+       "en_s": 1.21
+      },
+      {
+       "id": "sc01-hook.c1.s2",
+       "text": "Somewhere near you, a school bell's about to ring.",
+       "start": 2.364,
+       "end": 4.85,
+       "slot_end": 5.286,
+       "slot_s": 2.922,
+       "en_s": 2.486
+      },
+      {
+       "id": "sc01-hook.c1.s3",
+       "text": "Right now, about one point four billion children are in school.",
+       "start": 5.406,
+       "end": 8.86,
+       "slot_end": 9.04,
+       "slot_s": 3.634,
+       "en_s": 3.454
+      },
+      {
+       "id": "sc01-hook.c1.s4",
+       "text": "More than ever before.",
+       "start": 9.16,
+       "end": 10.149,
+       "slot_end": 10.475,
+       "slot_s": 1.315,
+       "en_s": 0.989
+      }
+     ]
+    },
+    {
+     "id": "sc01-hook.c2",
+     "text": "Five hundred years ago, most children never saw a classroom. They worked. Today, most of them spend every weekday at a desk.",
+     "sentences": [
+      {
+       "id": "sc01-hook.c2.s1",
+       "text": "Five hundred years ago, most children never saw a classroom.",
+       "start": 10.595,
+       "end": 13.575,
+       "slot_end": 13.842,
+       "slot_s": 3.247,
+       "en_s": 2.98
+      },
+      {
+       "id": "sc01-hook.c2.s2",
+       "text": "They worked.",
+       "start": 13.962,
+       "end": 14.585,
+       "slot_end": 14.898,
+       "slot_s": 0.936,
+       "en_s": 0.623
+      },
+      {
+       "id": "sc01-hook.c2.s3",
+       "text": "Today, most of them spend every weekday at a desk.",
+       "start": 15.018,
+       "end": 17.855,
+       "slot_end": 18.748,
+       "slot_s": 3.73,
+       "en_s": 2.837
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc02-question",
+   "start": 18.868,
+   "dur": 6.362,
+   "chunks": [
+    {
+     "id": "sc02-question.c1",
+     "text": "And still, did you know that the word school first meant... the one thing school seems to take away from you?",
+     "sentences": [
+      {
+       "id": "sc02-question.c1.s1",
+       "text": "And still, did you know that the word school first meant...",
+       "start": 18.868,
+       "end": 21.938,
+       "slot_end": 22.3,
+       "slot_s": 3.432,
+       "en_s": 3.07
+      },
+      {
+       "id": "sc02-question.c1.s2",
+       "text": "the one thing school seems to take away from you?",
+       "start": 22.42,
+       "end": 24.968,
+       "slot_end": 34.113,
+       "slot_s": 11.693,
+       "en_s": 2.548
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc00-welcome",
+   "start": 34.233,
+   "dur": 15.574,
+   "chunks": [
+    {
+     "id": "sc00-welcome.c1",
+     "text": "Welcome back to Did You Know That. Episode three. You know the rule. Here's your guess. Two hundred years ago, out of every ten people on Earth, how many could read? Guess in the comments, right now. Then stay to the end, and check your guess.",
+     "sentences": [
+      {
+       "id": "sc00-welcome.c1.s1",
+       "text": "Welcome back to Did You Know That.",
+       "start": 34.233,
+       "end": 36.173,
+       "slot_end": 36.353,
+       "slot_s": 2.12,
+       "en_s": 1.94
+      },
+      {
+       "id": "sc00-welcome.c1.s2",
+       "text": "Episode three.",
+       "start": 36.473,
+       "end": 37.46,
+       "slot_end": 37.688,
+       "slot_s": 1.215,
+       "en_s": 0.987
+      },
+      {
+       "id": "sc00-welcome.c1.s3",
+       "text": "You know the rule.",
+       "start": 37.808,
+       "end": 38.74,
+       "slot_end": 39.058,
+       "slot_s": 1.25,
+       "en_s": 0.932
+      },
+      {
+       "id": "sc00-welcome.c1.s4",
+       "text": "Here's your guess.",
+       "start": 39.178,
+       "end": 40.03,
+       "slot_end": 40.335,
+       "slot_s": 1.157,
+       "en_s": 0.852
+      },
+      {
+       "id": "sc00-welcome.c1.s5",
+       "text": "Two hundred years ago, out of every ten people on Earth, how many could read?",
+       "start": 40.455,
+       "end": 44.51,
+       "slot_end": 45.588,
+       "slot_s": 5.133,
+       "en_s": 4.055
+      },
+      {
+       "id": "sc00-welcome.c1.s6",
+       "text": "Guess in the comments, right now.",
+       "start": 45.708,
+       "end": 47.27,
+       "slot_end": 47.55,
+       "slot_s": 1.842,
+       "en_s": 1.562
+      },
+      {
+       "id": "sc00-welcome.c1.s7",
+       "text": "Then stay to the end, and check your guess.",
+       "start": 47.67,
+       "end": 49.51,
+       "slot_end": 51.08,
+       "slot_s": 3.41,
+       "en_s": 1.84
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc03-promise",
+   "start": 51.2,
+   "dur": 20.712,
+   "chunks": [
+    {
+     "id": "sc03-promise.c1",
+     "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up as a different kid, on a school day. Or a day with no school at all. You start out learning a trade with your hands. You end up somewhere your tutor might not even be human. And at the end, you'll find out what the word school really means.",
+     "sentences": [
+      {
+       "id": "sc03-promise.c1.s1",
+       "text": "Seven mornings, from fifteen hundred to twenty one hundred.",
+       "start": 51.2,
+       "end": 54.65,
+       "slot_end": 55.027,
+       "slot_s": 3.827,
+       "en_s": 3.45
+      },
+      {
+       "id": "sc03-promise.c1.s2",
+       "text": "In each one, you wake up as a different kid, on a school day.",
+       "start": 55.147,
+       "end": 58.67,
+       "slot_end": 59.322,
+       "slot_s": 4.175,
+       "en_s": 3.523
+      },
+      {
+       "id": "sc03-promise.c1.s3",
+       "text": "Or a day with no school at all.",
+       "start": 59.442,
+       "end": 61.03,
+       "slot_end": 61.366,
+       "slot_s": 1.924,
+       "en_s": 1.588
+      },
+      {
+       "id": "sc03-promise.c1.s4",
+       "text": "You start out learning a trade with your hands.",
+       "start": 61.486,
+       "end": 63.59,
+       "slot_end": 63.99,
+       "slot_s": 2.504,
+       "en_s": 2.104
+      },
+      {
+       "id": "sc03-promise.c1.s5",
+       "text": "You end up somewhere your tutor might not even be human.",
+       "start": 64.11,
+       "end": 67.27,
+       "slot_end": 68.134,
+       "slot_s": 4.024,
+       "en_s": 3.16
+      },
+      {
+       "id": "sc03-promise.c1.s6",
+       "text": "And at the end, you'll find out what the word school really means.",
+       "start": 68.254,
+       "end": 71.6,
+       "slot_end": 73.38,
+       "slot_s": 5.126,
+       "en_s": 3.346
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc04-1500",
+   "start": 73.5,
+   "dur": 68.731,
+   "chunks": [
+    {
+     "id": "sc04-1500.c1",
+     "text": "You wake up in fifteen hundred, in London. It's still dark. Next door, a hammer's already going, and the street smells of wet straw and wood smoke.",
+     "sentences": [
+      {
+       "id": "sc04-1500.c1.s1",
+       "text": "You wake up in fifteen hundred, in London.",
+       "start": 73.5,
+       "end": 75.58,
+       "slot_end": 75.946,
+       "slot_s": 2.446,
+       "en_s": 2.08
+      },
+      {
+       "id": "sc04-1500.c1.s2",
+       "text": "It's still dark.",
+       "start": 76.066,
+       "end": 76.86,
+       "slot_end": 77.119,
+       "slot_s": 1.053,
+       "en_s": 0.794
+      },
+      {
+       "id": "sc04-1500.c1.s3",
+       "text": "Next door, a hammer's already going, and the street smells of wet straw and wood smoke.",
+       "start": 77.239,
+       "end": 82.21,
+       "slot_end": 82.793,
+       "slot_s": 5.554,
+       "en_s": 4.971
+      }
+     ]
+    },
+    {
+     "id": "sc04-1500.c2",
+     "text": "Did you know that historians estimate only about one woman in a hundred in England could even write her own name?",
+     "sentences": [
+      {
+       "id": "sc04-1500.c2.s1",
+       "text": "Did you know that historians estimate only about one woman in a hundred in England could even write her own name?",
+       "start": 82.913,
+       "end": 89.953,
+       "slot_end": 90.295,
+       "slot_s": 7.382,
+       "en_s": 7.04
+      }
+     ]
+    },
+    {
+     "id": "sc04-1500.c3",
+     "text": "So what is school to you? Something for other people. For priests, and rich boys. Most children learn by working. If you're a craftsman's son, you're apprenticed. Usually seven years, living in your master's house, learning his trade by doing it.",
+     "sentences": [
+      {
+       "id": "sc04-1500.c3.s1",
+       "text": "So what is school to you?",
+       "start": 90.415,
+       "end": 91.565,
+       "slot_end": 92.28,
+       "slot_s": 1.865,
+       "en_s": 1.15
+      },
+      {
+       "id": "sc04-1500.c3.s2",
+       "text": "Something for other people.",
+       "start": 92.4,
+       "end": 93.475,
+       "slot_end": 94.161,
+       "slot_s": 1.761,
+       "en_s": 1.075
+      },
+      {
+       "id": "sc04-1500.c3.s3",
+       "text": "For priests, and rich boys.",
+       "start": 94.281,
+       "end": 95.835,
+       "slot_end": 96.552,
+       "slot_s": 2.271,
+       "en_s": 1.554
+      },
+      {
+       "id": "sc04-1500.c3.s4",
+       "text": "Most children learn by working.",
+       "start": 96.672,
+       "end": 98.123,
+       "slot_end": 98.253,
+       "slot_s": 1.581,
+       "en_s": 1.451
+      },
+      {
+       "id": "sc04-1500.c3.s5",
+       "text": "If you're a craftsman's son, you're apprenticed.",
+       "start": 98.373,
+       "end": 101.168,
+       "slot_end": 101.376,
+       "slot_s": 3.003,
+       "en_s": 2.795
+      },
+      {
+       "id": "sc04-1500.c3.s6",
+       "text": "Usually seven years, living in your master's house, learning his trade by doing it.",
+       "start": 101.496,
+       "end": 105.548,
+       "slot_end": 105.934,
+       "slot_s": 4.438,
+       "en_s": 4.052
+      }
+     ]
+    },
+    {
+     "id": "sc04-1500.c4",
+     "text": "If you're lucky enough for grammar school, lessons often start at six in the morning. In Latin. And if you're a prince? Nine year old Prince Henry, the future Henry the Eighth, has a teacher all to himself, the poet John Skelton. One teacher. One child. Remember that.",
+     "sentences": [
+      {
+       "id": "sc04-1500.c4.s1",
+       "text": "If you're lucky enough for grammar school, lessons often start at six in the morning.",
+       "start": 106.054,
+       "end": 109.834,
+       "slot_end": 110.276,
+       "slot_s": 4.222,
+       "en_s": 3.78
+      },
+      {
+       "id": "sc04-1500.c4.s2",
+       "text": "In Latin.",
+       "start": 110.396,
+       "end": 111.044,
+       "slot_end": 111.174,
+       "slot_s": 0.778,
+       "en_s": 0.648
+      },
+      {
+       "id": "sc04-1500.c4.s3",
+       "text": "And if you're a prince?",
+       "start": 111.294,
+       "end": 112.312,
+       "slot_end": 112.867,
+       "slot_s": 1.573,
+       "en_s": 1.018
+      },
+      {
+       "id": "sc04-1500.c4.s4",
+       "text": "Nine year old Prince Henry, the future Henry the Eighth, has a teacher all to himself, the poet John Skelton.",
+       "start": 112.987,
+       "end": 119.942,
+       "slot_end": 120.599,
+       "slot_s": 7.612,
+       "en_s": 6.955
+      },
+      {
+       "id": "sc04-1500.c4.s5",
+       "text": "One teacher.",
+       "start": 120.719,
+       "end": 121.392,
+       "slot_end": 121.644,
+       "slot_s": 0.925,
+       "en_s": 0.673
+      },
+      {
+       "id": "sc04-1500.c4.s6",
+       "text": "One child.",
+       "start": 121.764,
+       "end": 122.422,
+       "slot_end": 122.62,
+       "slot_s": 0.856,
+       "en_s": 0.658
+      },
+      {
+       "id": "sc04-1500.c4.s7",
+       "text": "Remember that.",
+       "start": 122.74,
+       "end": 123.362,
+       "slot_end": 123.799,
+       "slot_s": 1.059,
+       "en_s": 0.622
+      }
+     ]
+    },
+    {
+     "id": "sc04-1500.c5",
+     "text": "In fifteen twenty four, a rebel preacher, Martin Luther, writes to the leaders of German cities. Build schools, he says. For boys, and for girls. Partly so everyone can read the Bible.",
+     "sentences": [
+      {
+       "id": "sc04-1500.c5.s1",
+       "text": "In fifteen twenty four, a rebel preacher, Martin Luther, writes to the leaders of German cities.",
+       "start": 123.919,
+       "end": 128.589,
+       "slot_end": 129.235,
+       "slot_s": 5.316,
+       "en_s": 4.67
+      },
+      {
+       "id": "sc04-1500.c5.s2",
+       "text": "Build schools, he says.",
+       "start": 129.355,
+       "end": 130.668,
+       "slot_end": 130.933,
+       "slot_s": 1.578,
+       "en_s": 1.313
+      },
+      {
+       "id": "sc04-1500.c5.s3",
+       "text": "For boys, and for girls.",
+       "start": 131.053,
+       "end": 132.247,
+       "slot_end": 132.573,
+       "slot_s": 1.52,
+       "en_s": 1.194
+      },
+      {
+       "id": "sc04-1500.c5.s4",
+       "text": "Partly so everyone can read the Bible.",
+       "start": 132.693,
+       "end": 134.516,
+       "slot_end": 134.855,
+       "slot_s": 2.162,
+       "en_s": 1.823
+      }
+     ]
+    },
+    {
+     "id": "sc04-1500.c6",
+     "text": "Why would a whole town care if a farmer's daughter can read? Soon, a colony across the ocean will write it into law.",
+     "sentences": [
+      {
+       "id": "sc04-1500.c6.s1",
+       "text": "Why would a whole town care if a farmer's daughter can read?",
+       "start": 134.975,
+       "end": 137.915,
+       "slot_end": 138.954,
+       "slot_s": 3.979,
+       "en_s": 2.94
+      },
+      {
+       "id": "sc04-1500.c6.s2",
+       "text": "Soon, a colony across the ocean will write it into law.",
+       "start": 139.074,
+       "end": 141.968,
+       "slot_end": 143.813,
+       "slot_s": 4.739,
+       "en_s": 2.894
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc05-1647",
+   "start": 143.933,
+   "dur": 58.723,
+   "chunks": [
+    {
+     "id": "sc05-1647.c1",
+     "text": "You wake up in sixteen forty seven, in a farming town in Massachusetts. There's frost on the window, and the cows need milking before breakfast.",
+     "sentences": [
+      {
+       "id": "sc05-1647.c1.s1",
+       "text": "You wake up in sixteen forty seven, in a farming town in Massachusetts.",
+       "start": 143.933,
+       "end": 147.623,
+       "slot_end": 147.922,
+       "slot_s": 3.989,
+       "en_s": 3.69
+      },
+      {
+       "id": "sc05-1647.c1.s2",
+       "text": "There's frost on the window, and the cows need milking before breakfast.",
+       "start": 148.042,
+       "end": 151.583,
+       "slot_end": 152.204,
+       "slot_s": 4.162,
+       "en_s": 3.541
+      }
+     ]
+    },
+    {
+     "id": "sc05-1647.c2",
+     "text": "Did you know that one of America's first school laws begins by blaming the devil? It says it's a chief project of that old deluder, Satan, to keep men from the knowledge of the Scriptures.",
+     "sentences": [
+      {
+       "id": "sc05-1647.c2.s1",
+       "text": "Did you know that one of America's first school laws begins by blaming the devil?",
+       "start": 152.324,
+       "end": 156.414,
+       "slot_end": 157.149,
+       "slot_s": 4.825,
+       "en_s": 4.09
+      },
+      {
+       "id": "sc05-1647.c2.s2",
+       "text": "It says it's a chief project of that old deluder, Satan, to keep men from the knowledge of the Scriptures.",
+       "start": 157.269,
+       "end": 163.804,
+       "slot_end": 164.157,
+       "slot_s": 6.888,
+       "en_s": 6.535
+      }
+     ]
+    },
+    {
+     "id": "sc05-1647.c3",
+     "text": "So, what is school to you now? A way to read God's word, with your own eyes. Five years earlier, a law told parents and masters to teach their children to read. Lots of them didn't bother.",
+     "sentences": [
+      {
+       "id": "sc05-1647.c3.s1",
+       "text": "So, what is school to you now?",
+       "start": 164.277,
+       "end": 165.557,
+       "slot_end": 166.499,
+       "slot_s": 2.222,
+       "en_s": 1.28
+      },
+      {
+       "id": "sc05-1647.c3.s2",
+       "text": "A way to read God's word, with your own eyes.",
+       "start": 166.619,
+       "end": 168.775,
+       "slot_end": 169.305,
+       "slot_s": 2.686,
+       "en_s": 2.156
+      },
+      {
+       "id": "sc05-1647.c3.s3",
+       "text": "Five years earlier, a law told parents and masters to teach their children to read.",
+       "start": 169.425,
+       "end": 173.353,
+       "slot_end": 174.142,
+       "slot_s": 4.717,
+       "en_s": 3.928
+      },
+      {
+       "id": "sc05-1647.c3.s4",
+       "text": "Lots of them didn't bother.",
+       "start": 174.262,
+       "end": 175.421,
+       "slot_end": 175.797,
+       "slot_s": 1.535,
+       "en_s": 1.159
+      }
+     ]
+    },
+    {
+     "id": "sc05-1647.c4",
+     "text": "So now, any town with fifty households has to hire someone to teach reading and writing. A hundred households? A grammar school too, or the town pays a fine. You learn your letters between the chores, and on Sunday, you hear why they matter.",
+     "sentences": [
+      {
+       "id": "sc05-1647.c4.s1",
+       "text": "So now, any town with fifty households has to hire someone to teach reading and writing.",
+       "start": 175.917,
+       "end": 180.627,
+       "slot_end": 181.23,
+       "slot_s": 5.313,
+       "en_s": 4.71
+      },
+      {
+       "id": "sc05-1647.c4.s2",
+       "text": "A hundred households?",
+       "start": 181.35,
+       "end": 182.347,
+       "slot_end": 182.885,
+       "slot_s": 1.535,
+       "en_s": 0.997
+      },
+      {
+       "id": "sc05-1647.c4.s3",
+       "text": "A grammar school too, or the town pays a fine.",
+       "start": 183.005,
+       "end": 185.657,
+       "slot_end": 186.043,
+       "slot_s": 3.038,
+       "en_s": 2.652
+      },
+      {
+       "id": "sc05-1647.c4.s4",
+       "text": "You learn your letters between the chores, and on Sunday, you hear why they matter.",
+       "start": 186.163,
+       "end": 189.747,
+       "slot_end": 190.136,
+       "slot_s": 3.973,
+       "en_s": 3.584
+      }
+     ]
+    },
+    {
+     "id": "sc05-1647.c5",
+     "text": "All over Protestant Europe, churches want people reading. But a church can only ask. In the next century, a king will order it. And he'll ban one thing every kid on Earth looks forward to.",
+     "sentences": [
+      {
+       "id": "sc05-1647.c5.s1",
+       "text": "All over Protestant Europe, churches want people reading.",
+       "start": 190.256,
+       "end": 193.876,
+       "slot_end": 194.362,
+       "slot_s": 4.106,
+       "en_s": 3.62
+      },
+      {
+       "id": "sc05-1647.c5.s2",
+       "text": "But a church can only ask.",
+       "start": 194.482,
+       "end": 196.386,
+       "slot_end": 196.753,
+       "slot_s": 2.271,
+       "en_s": 1.904
+      },
+      {
+       "id": "sc05-1647.c5.s3",
+       "text": "In the next century, a king will order it.",
+       "start": 196.873,
+       "end": 198.886,
+       "slot_end": 199.145,
+       "slot_s": 2.272,
+       "en_s": 2.013
+      },
+      {
+       "id": "sc05-1647.c5.s4",
+       "text": "And he'll ban one thing every kid on Earth looks forward to.",
+       "start": 199.265,
+       "end": 202.456,
+       "slot_end": 204.247,
+       "slot_s": 4.982,
+       "en_s": 3.191
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc06-1763",
+   "start": 204.367,
+   "dur": 70.813,
+   "chunks": [
+    {
+     "id": "sc06-1763.c1",
+     "text": "You wake up in seventeen sixty three, in a village in Prussia. It's autumn. The war's just over, the harvest's in, and the pastor has news from the king.",
+     "sentences": [
+      {
+       "id": "sc06-1763.c1.s1",
+       "text": "You wake up in seventeen sixty three, in a village in Prussia.",
+       "start": 204.367,
+       "end": 207.777,
+       "slot_end": 208.194,
+       "slot_s": 3.827,
+       "en_s": 3.41
+      },
+      {
+       "id": "sc06-1763.c1.s2",
+       "text": "It's autumn.",
+       "start": 208.314,
+       "end": 208.967,
+       "slot_end": 209.227,
+       "slot_s": 0.913,
+       "en_s": 0.653
+      },
+      {
+       "id": "sc06-1763.c1.s3",
+       "text": "The war's just over, the harvest's in, and the pastor has news from the king.",
+       "start": 209.347,
+       "end": 214.137,
+       "slot_end": 214.682,
+       "slot_s": 5.335,
+       "en_s": 4.79
+      }
+     ]
+    },
+    {
+     "id": "sc06-1763.c2",
+     "text": "Did you know that Frederick the Great's new school law banned school holidays? Not even at harvest time.",
+     "sentences": [
+      {
+       "id": "sc06-1763.c2.s1",
+       "text": "Did you know that Frederick the Great's new school law banned school holidays?",
+       "start": 214.802,
+       "end": 218.432,
+       "slot_end": 219.954,
+       "slot_s": 5.152,
+       "en_s": 3.63
+      },
+      {
+       "id": "sc06-1763.c2.s2",
+       "text": "Not even at harvest time.",
+       "start": 220.074,
+       "end": 221.312,
+       "slot_end": 221.69,
+       "slot_s": 1.616,
+       "en_s": 1.238
+      }
+     ]
+    },
+    {
+     "id": "sc06-1763.c3",
+     "text": "So what is school now? An order. From the king. Every boy and girl, from the age of five until about thirteen. Skip it, and your parents can be fined.",
+     "sentences": [
+      {
+       "id": "sc06-1763.c3.s1",
+       "text": "So what is school now?",
+       "start": 221.81,
+       "end": 222.84,
+       "slot_end": 223.457,
+       "slot_s": 1.647,
+       "en_s": 1.03
+      },
+      {
+       "id": "sc06-1763.c3.s2",
+       "text": "An order.",
+       "start": 223.577,
+       "end": 224.13,
+       "slot_end": 224.78,
+       "slot_s": 1.203,
+       "en_s": 0.553
+      },
+      {
+       "id": "sc06-1763.c3.s3",
+       "text": "From the king.",
+       "start": 224.9,
+       "end": 225.64,
+       "slot_end": 225.848,
+       "slot_s": 0.948,
+       "en_s": 0.74
+      },
+      {
+       "id": "sc06-1763.c3.s4",
+       "text": "Every boy and girl, from the age of five until about thirteen.",
+       "start": 225.968,
+       "end": 229.06,
+       "slot_end": 229.541,
+       "slot_s": 3.573,
+       "en_s": 3.092
+      },
+      {
+       "id": "sc06-1763.c3.s5",
+       "text": "Skip it, and your parents can be fined.",
+       "start": 229.661,
+       "end": 231.78,
+       "slot_end": 232.089,
+       "slot_s": 2.428,
+       "en_s": 2.119
+      }
+     ]
+    },
+    {
+     "id": "sc06-1763.c4",
+     "text": "In winter, you're in class from eight to eleven, and one to four. In summer, just a few hours, because there are cows to herd. The law even says, hire a shepherd, so the children can go to school. Your teacher might be an old soldier. Many early village teachers were.",
+     "sentences": [
+      {
+       "id": "sc06-1763.c4.s1",
+       "text": "In winter, you're in class from eight to eleven, and one to four.",
+       "start": 232.209,
+       "end": 235.579,
+       "slot_end": 235.804,
+       "slot_s": 3.595,
+       "en_s": 3.37
+      },
+      {
+       "id": "sc06-1763.c4.s2",
+       "text": "In summer, just a few hours, because there are cows to herd.",
+       "start": 235.924,
+       "end": 239.139,
+       "slot_end": 239.426,
+       "slot_s": 3.502,
+       "en_s": 3.215
+      },
+      {
+       "id": "sc06-1763.c4.s3",
+       "text": "The law even says, hire a shepherd, so the children can go to school.",
+       "start": 239.546,
+       "end": 243.559,
+       "slot_end": 243.919,
+       "slot_s": 4.373,
+       "en_s": 4.013
+      },
+      {
+       "id": "sc06-1763.c4.s4",
+       "text": "Your teacher might be an old soldier.",
+       "start": 244.039,
+       "end": 245.749,
+       "slot_end": 246.59,
+       "slot_s": 2.551,
+       "en_s": 1.71
+      },
+      {
+       "id": "sc06-1763.c4.s5",
+       "text": "Many early village teachers were.",
+       "start": 246.71,
+       "end": 248.329,
+       "slot_end": 248.732,
+       "slot_s": 2.022,
+       "en_s": 1.619
+      }
+     ]
+    },
+    {
+     "id": "sc06-1763.c5",
+     "text": "You might have heard school was invented to make obedient factory workers. Historians say it's not that simple. Prussia was still a land of farms. The king and his church wanted loyal, God fearing, disciplined subjects. And plenty of families just ignored the rules.",
+     "sentences": [
+      {
+       "id": "sc06-1763.c5.s1",
+       "text": "You might have heard school was invented to make obedient factory workers.",
+       "start": 248.852,
+       "end": 252.162,
+       "slot_end": 252.448,
+       "slot_s": 3.596,
+       "en_s": 3.31
+      },
+      {
+       "id": "sc06-1763.c5.s2",
+       "text": "Historians say it's not that simple.",
+       "start": 252.568,
+       "end": 254.492,
+       "slot_end": 254.886,
+       "slot_s": 2.318,
+       "en_s": 1.924
+      },
+      {
+       "id": "sc06-1763.c5.s3",
+       "text": "Prussia was still a land of farms.",
+       "start": 255.006,
+       "end": 256.642,
+       "slot_end": 256.859,
+       "slot_s": 1.853,
+       "en_s": 1.636
+      },
+      {
+       "id": "sc06-1763.c5.s4",
+       "text": "The king and his church wanted loyal, God fearing, disciplined subjects.",
+       "start": 256.979,
+       "end": 261.012,
+       "slot_end": 261.411,
+       "slot_s": 4.432,
+       "en_s": 4.033
+      },
+      {
+       "id": "sc06-1763.c5.s5",
+       "text": "And plenty of families just ignored the rules.",
+       "start": 261.531,
+       "end": 263.562,
+       "slot_end": 263.983,
+       "slot_s": 2.452,
+       "en_s": 2.031
+      }
+     ]
+    },
+    {
+     "id": "sc06-1763.c6",
+     "text": "But one teacher per village is slow, and expensive. In London, a young man thinks he can teach the poor for almost nothing. His trick? Make the children the teachers.",
+     "sentences": [
+      {
+       "id": "sc06-1763.c6.s1",
+       "text": "But one teacher per village is slow, and expensive.",
+       "start": 264.103,
+       "end": 267.273,
+       "slot_end": 267.559,
+       "slot_s": 3.456,
+       "en_s": 3.17
+      },
+      {
+       "id": "sc06-1763.c6.s2",
+       "text": "In London, a young man thinks he can teach the poor for almost nothing.",
+       "start": 267.679,
+       "end": 271.623,
+       "slot_end": 271.889,
+       "slot_s": 4.21,
+       "en_s": 3.944
+      },
+      {
+       "id": "sc06-1763.c6.s3",
+       "text": "His trick?",
+       "start": 272.009,
+       "end": 272.593,
+       "slot_end": 273.296,
+       "slot_s": 1.287,
+       "en_s": 0.584
+      },
+      {
+       "id": "sc06-1763.c6.s4",
+       "text": "Make the children the teachers.",
+       "start": 273.416,
+       "end": 274.893,
+       "slot_end": 276.747,
+       "slot_s": 3.331,
+       "en_s": 1.477
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc07-1810",
+   "start": 276.867,
+   "dur": 64.696,
+   "chunks": [
+    {
+     "id": "sc07-1810.c1",
+     "text": "You wake up in eighteen ten, in London, on Borough Road. You walk into one enormous hall. Hundreds of children, in long rows. And just one master.",
+     "sentences": [
+      {
+       "id": "sc07-1810.c1.s1",
+       "text": "You wake up in eighteen ten, in London, on Borough Road.",
+       "start": 276.867,
+       "end": 280.557,
+       "slot_end": 280.799,
+       "slot_s": 3.932,
+       "en_s": 3.69
+      },
+      {
+       "id": "sc07-1810.c1.s2",
+       "text": "You walk into one enormous hall.",
+       "start": 280.919,
+       "end": 282.607,
+       "slot_end": 282.842,
+       "slot_s": 1.923,
+       "en_s": 1.688
+      },
+      {
+       "id": "sc07-1810.c1.s3",
+       "text": "Hundreds of children, in long rows.",
+       "start": 282.962,
+       "end": 284.937,
+       "slot_end": 285.246,
+       "slot_s": 2.284,
+       "en_s": 1.975
+      },
+      {
+       "id": "sc07-1810.c1.s4",
+       "text": "And just one master.",
+       "start": 285.366,
+       "end": 286.467,
+       "slot_end": 287.042,
+       "slot_s": 1.676,
+       "en_s": 1.101
+      }
+     ]
+    },
+    {
+     "id": "sc07-1810.c2",
+     "text": "Did you know that this school's founder, Joseph Lancaster, claimed one master could run a school of more than a thousand children?",
+     "sentences": [
+      {
+       "id": "sc07-1810.c2.s1",
+       "text": "Did you know that this school's founder, Joseph Lancaster, claimed one master could run a school of more than a thousand children?",
+       "start": 287.162,
+       "end": 294.548,
+       "slot_end": 294.854,
+       "slot_s": 7.692,
+       "en_s": 7.386
+      }
+     ]
+    },
+    {
+     "id": "sc07-1810.c3",
+     "text": "Older kids teach the younger ones, in small groups. You write your letters in sand, with your finger, because paper costs money. Misbehave, and you might be hoisted above the classroom, in a cage. Really. Lancaster thought it beat the cane.",
+     "sentences": [
+      {
+       "id": "sc07-1810.c3.s1",
+       "text": "Older kids teach the younger ones, in small groups.",
+       "start": 294.974,
+       "end": 297.974,
+       "slot_end": 298.326,
+       "slot_s": 3.352,
+       "en_s": 3.0
+      },
+      {
+       "id": "sc07-1810.c3.s2",
+       "text": "You write your letters in sand, with your finger, because paper costs money.",
+       "start": 298.446,
+       "end": 302.464,
+       "slot_end": 303.098,
+       "slot_s": 4.652,
+       "en_s": 4.018
+      },
+      {
+       "id": "sc07-1810.c3.s3",
+       "text": "Misbehave, and you might be hoisted above the classroom, in a cage.",
+       "start": 303.218,
+       "end": 306.774,
+       "slot_end": 307.616,
+       "slot_s": 4.398,
+       "en_s": 3.556
+      },
+      {
+       "id": "sc07-1810.c3.s4",
+       "text": "Really.",
+       "start": 307.736,
+       "end": 308.144,
+       "slot_end": 308.475,
+       "slot_s": 0.739,
+       "en_s": 0.408
+      },
+      {
+       "id": "sc07-1810.c3.s5",
+       "text": "Lancaster thought it beat the cane.",
+       "start": 308.595,
+       "end": 310.114,
+       "slot_end": 310.5,
+       "slot_s": 1.905,
+       "en_s": 1.519
+      }
+     ]
+    },
+    {
+     "id": "sc07-1810.c4",
+     "text": "So, what is school to you? A machine. For teaching the poor, by the hundred, as cheaply as possible. By the time Lancaster dies, more than twelve hundred schools are said to have used his system.",
+     "sentences": [
+      {
+       "id": "sc07-1810.c4.s1",
+       "text": "So, what is school to you?",
+       "start": 310.62,
+       "end": 312.09,
+       "slot_end": 312.789,
+       "slot_s": 2.169,
+       "en_s": 1.47
+      },
+      {
+       "id": "sc07-1810.c4.s2",
+       "text": "A machine.",
+       "start": 312.909,
+       "end": 313.78,
+       "slot_end": 314.124,
+       "slot_s": 1.215,
+       "en_s": 0.871
+      },
+      {
+       "id": "sc07-1810.c4.s3",
+       "text": "For teaching the poor, by the hundred, as cheaply as possible.",
+       "start": 314.244,
+       "end": 317.58,
+       "slot_end": 318.002,
+       "slot_s": 3.758,
+       "en_s": 3.336
+      },
+      {
+       "id": "sc07-1810.c4.s4",
+       "text": "By the time Lancaster dies, more than twelve hundred schools are said to have used his system.",
+       "start": 318.122,
+       "end": 323.13,
+       "slot_end": 323.5,
+       "slot_s": 5.378,
+       "en_s": 5.008
+      }
+     ]
+    },
+    {
+     "id": "sc07-1810.c5",
+     "text": "Then the law steps in. In eighteen eighty, school becomes compulsory in England, from five to ten. In eighteen ninety one, for most families, it becomes free.",
+     "sentences": [
+      {
+       "id": "sc07-1810.c5.s1",
+       "text": "Then the law steps in.",
+       "start": 323.62,
+       "end": 324.66,
+       "slot_end": 324.986,
+       "slot_s": 1.366,
+       "en_s": 1.04
+      },
+      {
+       "id": "sc07-1810.c5.s2",
+       "text": "In eighteen eighty, school becomes compulsory in England, from five to ten.",
+       "start": 325.106,
+       "end": 329.25,
+       "slot_end": 329.583,
+       "slot_s": 4.477,
+       "en_s": 4.144
+      },
+      {
+       "id": "sc07-1810.c5.s3",
+       "text": "In eighteen ninety one, for most families, it becomes free.",
+       "start": 329.703,
+       "end": 332.87,
+       "slot_end": 333.13,
+       "slot_s": 3.427,
+       "en_s": 3.167
+      }
+     ]
+    },
+    {
+     "id": "sc07-1810.c6",
+     "text": "Now every child has to go. But in the next century, school stops being something you're forced into. It turns into something people fight for.",
+     "sentences": [
+      {
+       "id": "sc07-1810.c6.s1",
+       "text": "Now every child has to go.",
+       "start": 333.25,
+       "end": 335.08,
+       "slot_end": 335.348,
+       "slot_s": 2.098,
+       "en_s": 1.83
+      },
+      {
+       "id": "sc07-1810.c6.s2",
+       "text": "But in the next century, school stops being something you're forced into.",
+       "start": 335.468,
+       "end": 339.01,
+       "slot_end": 339.272,
+       "slot_s": 3.804,
+       "en_s": 3.542
+      },
+      {
+       "id": "sc07-1810.c6.s3",
+       "text": "It turns into something people fight for.",
+       "start": 339.392,
+       "end": 341.3,
+       "slot_end": 343.147,
+       "slot_s": 3.755,
+       "en_s": 1.908
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc08-1948",
+   "start": 343.267,
+   "dur": 51.379,
+   "chunks": [
+    {
+     "id": "sc08-1948.c1",
+     "text": "You wake up in nineteen forty eight, in a small American town. It's June. Graduation day. Your mum's ironing your gown, and the radio's on.",
+     "sentences": [
+      {
+       "id": "sc08-1948.c1.s1",
+       "text": "You wake up in nineteen forty eight, in a small American town.",
+       "start": 343.267,
+       "end": 346.347,
+       "slot_end": 346.607,
+       "slot_s": 3.34,
+       "en_s": 3.08
+      },
+      {
+       "id": "sc08-1948.c1.s2",
+       "text": "It's June.",
+       "start": 346.727,
+       "end": 347.389,
+       "slot_end": 347.569,
+       "slot_s": 0.842,
+       "en_s": 0.662
+      },
+      {
+       "id": "sc08-1948.c1.s3",
+       "text": "Graduation day.",
+       "start": 347.689,
+       "end": 348.663,
+       "slot_end": 349.079,
+       "slot_s": 1.39,
+       "en_s": 0.974
+      },
+      {
+       "id": "sc08-1948.c1.s4",
+       "text": "Your mum's ironing your gown, and the radio's on.",
+       "start": 349.199,
+       "end": 351.633,
+       "slot_end": 352.222,
+       "slot_s": 3.023,
+       "en_s": 2.434
+      }
+     ]
+    },
+    {
+     "id": "sc08-1948.c2",
+     "text": "Did you know that in nineteen ten, fewer than one in five American teenagers went to high school? By nineteen forty, it was about seven in ten.",
+     "sentences": [
+      {
+       "id": "sc08-1948.c2.s1",
+       "text": "Did you know that in nineteen ten, fewer than one in five American teenagers went to high school?",
+       "start": 352.342,
+       "end": 356.942,
+       "slot_end": 357.851,
+       "slot_s": 5.509,
+       "en_s": 4.6
+      },
+      {
+       "id": "sc08-1948.c2.s2",
+       "text": "By nineteen forty, it was about seven in ten.",
+       "start": 357.971,
+       "end": 360.639,
+       "slot_end": 360.993,
+       "slot_s": 3.022,
+       "en_s": 2.668
+      }
+     ]
+    },
+    {
+     "id": "sc08-1948.c3",
+     "text": "Your grandad probably left school young, to work. You're staying to the end, because a diploma opens doors. So what is school to you now? A ladder. Every year you climb gets you closer to a better job.",
+     "sentences": [
+      {
+       "id": "sc08-1948.c3.s1",
+       "text": "Your grandad probably left school young, to work.",
+       "start": 361.113,
+       "end": 363.543,
+       "slot_end": 363.861,
+       "slot_s": 2.748,
+       "en_s": 2.43
+      },
+      {
+       "id": "sc08-1948.c3.s2",
+       "text": "You're staying to the end, because a diploma opens doors.",
+       "start": 363.981,
+       "end": 366.883,
+       "slot_end": 367.181,
+       "slot_s": 3.2,
+       "en_s": 2.902
+      },
+      {
+       "id": "sc08-1948.c3.s3",
+       "text": "So what is school to you now?",
+       "start": 367.301,
+       "end": 368.693,
+       "slot_end": 369.586,
+       "slot_s": 2.285,
+       "en_s": 1.392
+      },
+      {
+       "id": "sc08-1948.c3.s4",
+       "text": "A ladder.",
+       "start": 369.706,
+       "end": 370.213,
+       "slot_end": 370.596,
+       "slot_s": 0.89,
+       "en_s": 0.507
+      },
+      {
+       "id": "sc08-1948.c3.s5",
+       "text": "Every year you climb gets you closer to a better job.",
+       "start": 370.716,
+       "end": 373.163,
+       "slot_end": 373.574,
+       "slot_s": 2.858,
+       "en_s": 2.447
+      }
+     ]
+    },
+    {
+     "id": "sc08-1948.c4",
+     "text": "And that December, in Paris, the United Nations writes it down for the whole world. Everyone has the right to education. Free, at least in the early years.",
+     "sentences": [
+      {
+       "id": "sc08-1948.c4.s1",
+       "text": "And that December, in Paris, the United Nations writes it down for the whole world.",
+       "start": 373.694,
+       "end": 377.944,
+       "slot_end": 378.949,
+       "slot_s": 5.255,
+       "en_s": 4.25
+      },
+      {
+       "id": "sc08-1948.c4.s2",
+       "text": "Everyone has the right to education.",
+       "start": 379.069,
+       "end": 380.994,
+       "slot_end": 381.457,
+       "slot_s": 2.388,
+       "en_s": 1.925
+      },
+      {
+       "id": "sc08-1948.c4.s3",
+       "text": "Free, at least in the early years.",
+       "start": 381.577,
+       "end": 383.264,
+       "slot_end": 383.577,
+       "slot_s": 2.0,
+       "en_s": 1.687
+      }
+     ]
+    },
+    {
+     "id": "sc08-1948.c5",
+     "text": "So now school is a right. And a ladder. And a building you walk to every morning. But about seventy years later, most of the world's schools would close. Almost at once.",
+     "sentences": [
+      {
+       "id": "sc08-1948.c5.s1",
+       "text": "So now school is a right.",
+       "start": 383.697,
+       "end": 385.267,
+       "slot_end": 385.447,
+       "slot_s": 1.75,
+       "en_s": 1.57
+      },
+      {
+       "id": "sc08-1948.c5.s2",
+       "text": "And a ladder.",
+       "start": 385.567,
+       "end": 386.262,
+       "slot_end": 386.48,
+       "slot_s": 0.913,
+       "en_s": 0.695
+      },
+      {
+       "id": "sc08-1948.c5.s3",
+       "text": "And a building you walk to every morning.",
+       "start": 386.6,
+       "end": 388.412,
+       "slot_end": 388.861,
+       "slot_s": 2.261,
+       "en_s": 1.812
+      },
+      {
+       "id": "sc08-1948.c5.s4",
+       "text": "But about seventy years later, most of the world's schools would close.",
+       "start": 388.981,
+       "end": 392.402,
+       "slot_end": 393.11,
+       "slot_s": 4.129,
+       "en_s": 3.421
+      },
+      {
+       "id": "sc08-1948.c5.s5",
+       "text": "Almost at once.",
+       "start": 393.23,
+       "end": 394.382,
+       "slot_end": 396.213,
+       "slot_s": 2.983,
+       "en_s": 1.152
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc09-today",
+   "start": 396.333,
+   "dur": 43.829,
+   "chunks": [
+    {
+     "id": "sc09-today.c1",
+     "text": "You wake up today. Your phone buzzes. Homework's due at midnight. And any question you've got, you can ask a screen.",
+     "sentences": [
+      {
+       "id": "sc09-today.c1.s1",
+       "text": "You wake up today.",
+       "start": 396.333,
+       "end": 397.313,
+       "slot_end": 397.548,
+       "slot_s": 1.215,
+       "en_s": 0.98
+      },
+      {
+       "id": "sc09-today.c1.s2",
+       "text": "Your phone buzzes.",
+       "start": 397.668,
+       "end": 398.573,
+       "slot_end": 398.753,
+       "slot_s": 1.085,
+       "en_s": 0.905
+      },
+      {
+       "id": "sc09-today.c1.s3",
+       "text": "Homework's due at midnight.",
+       "start": 398.873,
+       "end": 400.092,
+       "slot_end": 400.402,
+       "slot_s": 1.529,
+       "en_s": 1.219
+      },
+      {
+       "id": "sc09-today.c1.s4",
+       "text": "And any question you've got, you can ask a screen.",
+       "start": 400.522,
+       "end": 403.052,
+       "slot_end": 403.639,
+       "slot_s": 3.117,
+       "en_s": 2.53
+      }
+     ]
+    },
+    {
+     "id": "sc09-today.c2",
+     "text": "Did you know that in April twenty twenty, about one point six billion learners were sent home from school? That's more than nine in ten students on Earth.",
+     "sentences": [
+      {
+       "id": "sc09-today.c2.s1",
+       "text": "Did you know that in April twenty twenty, about one point six billion learners were sent home from school?",
+       "start": 403.759,
+       "end": 409.519,
+       "slot_end": 410.395,
+       "slot_s": 6.636,
+       "en_s": 5.76
+      },
+      {
+       "id": "sc09-today.c2.s2",
+       "text": "That's more than nine in ten students on Earth.",
+       "start": 410.515,
+       "end": 412.891,
+       "slot_end": 413.292,
+       "slot_s": 2.777,
+       "en_s": 2.376
+      }
+     ]
+    },
+    {
+     "id": "sc09-today.c3",
+     "text": "Lessons moved into kitchens and bedrooms, onto laptops and phones. But at least four hundred and sixty three million kids couldn't get remote lessons at all. So what's school to you now? Always on. A classroom, plus a screen that never closes.",
+     "sentences": [
+      {
+       "id": "sc09-today.c3.s1",
+       "text": "Lessons moved into kitchens and bedrooms, onto laptops and phones.",
+       "start": 413.412,
+       "end": 417.552,
+       "slot_end": 418.064,
+       "slot_s": 4.652,
+       "en_s": 4.14
+      },
+      {
+       "id": "sc09-today.c3.s2",
+       "text": "But at least four hundred and sixty three million kids couldn't get remote lessons at all.",
+       "start": 418.184,
+       "end": 422.212,
+       "slot_end": 422.894,
+       "slot_s": 4.71,
+       "en_s": 4.028
+      },
+      {
+       "id": "sc09-today.c3.s3",
+       "text": "So what's school to you now?",
+       "start": 423.014,
+       "end": 424.432,
+       "slot_end": 424.962,
+       "slot_s": 1.948,
+       "en_s": 1.418
+      },
+      {
+       "id": "sc09-today.c3.s4",
+       "text": "Always on.",
+       "start": 425.082,
+       "end": 425.749,
+       "slot_end": 425.972,
+       "slot_s": 0.89,
+       "en_s": 0.667
+      },
+      {
+       "id": "sc09-today.c3.s5",
+       "text": "A classroom, plus a screen that never closes.",
+       "start": 426.092,
+       "end": 428.479,
+       "slot_end": 428.904,
+       "slot_s": 2.812,
+       "en_s": 2.387
+      }
+     ]
+    },
+    {
+     "id": "sc09-today.c4",
+     "text": "And when the buildings shut, a lot of us found out how much we'd miss them. So here's the question you came for. What did the word school mean, before any of this?",
+     "sentences": [
+      {
+       "id": "sc09-today.c4.s1",
+       "text": "And when the buildings shut, a lot of us found out how much we'd miss them.",
+       "start": 429.024,
+       "end": 432.524,
+       "slot_end": 433.858,
+       "slot_s": 4.834,
+       "en_s": 3.5
+      },
+      {
+       "id": "sc09-today.c4.s2",
+       "text": "So here's the question you came for.",
+       "start": 433.978,
+       "end": 435.544,
+       "slot_end": 436.955,
+       "slot_s": 2.977,
+       "en_s": 1.566
+      },
+      {
+       "id": "sc09-today.c4.s3",
+       "text": "What did the word school mean, before any of this?",
+       "start": 437.075,
+       "end": 439.894,
+       "slot_end": 441.747,
+       "slot_s": 4.672,
+       "en_s": 2.819
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc10-reveal",
+   "start": 441.867,
+   "dur": 52.049,
+   "chunks": [
+    {
+     "id": "sc10-reveal.c1",
+     "text": "Here's the answer. School comes from an ancient Greek word, skoh-LAY. And it meant... free time. Leisure.",
+     "sentences": [
+      {
+       "id": "sc10-reveal.c1.s1",
+       "text": "Here's the answer.",
+       "start": 441.867,
+       "end": 442.564,
+       "slot_end": 442.794,
+       "slot_s": 0.927,
+       "en_s": 0.697
+      },
+      {
+       "id": "sc10-reveal.c1.s2",
+       "text": "School comes from an ancient Greek word, skoh-LAY.",
+       "start": 442.914,
+       "end": 446.324,
+       "slot_end": 446.59,
+       "slot_s": 3.676,
+       "en_s": 3.41
+      },
+      {
+       "id": "sc10-reveal.c1.s3",
+       "text": "And it meant...",
+       "start": 446.71,
+       "end": 447.264,
+       "slot_end": 447.882,
+       "slot_s": 1.172,
+       "en_s": 0.554
+      },
+      {
+       "id": "sc10-reveal.c1.s4",
+       "text": "free time.",
+       "start": 448.002,
+       "end": 448.71,
+       "slot_end": 448.94,
+       "slot_s": 0.938,
+       "en_s": 0.708
+      },
+      {
+       "id": "sc10-reveal.c1.s5",
+       "text": "Leisure.",
+       "start": 449.06,
+       "end": 449.51,
+       "slot_end": 449.84,
+       "slot_s": 0.78,
+       "en_s": 0.45
+      }
+     ]
+    },
+    {
+     "id": "sc10-reveal.c2",
+     "text": "In Athens, people with free time often spent it talking, arguing, learning. So the word for free time became the word for the place you learn.",
+     "sentences": [
+      {
+       "id": "sc10-reveal.c2.s1",
+       "text": "In Athens, people with free time often spent it talking, arguing, learning.",
+       "start": 449.96,
+       "end": 454.64,
+       "slot_end": 455.832,
+       "slot_s": 5.872,
+       "en_s": 4.68
+      },
+      {
+       "id": "sc10-reveal.c2.s2",
+       "text": "So the word for free time became the word for the place you learn.",
+       "start": 455.952,
+       "end": 459.186,
+       "slot_end": 459.554,
+       "slot_s": 3.602,
+       "en_s": 3.234
+      }
+     ]
+    },
+    {
+     "id": "sc10-reveal.c3",
+     "text": "And your guess? Two hundred years ago, only about one in ten people on Earth could read. Today, it's almost nine in ten.",
+     "sentences": [
+      {
+       "id": "sc10-reveal.c3.s1",
+       "text": "And your guess?",
+       "start": 459.674,
+       "end": 460.434,
+       "slot_end": 460.964,
+       "slot_s": 1.29,
+       "en_s": 0.76
+      },
+      {
+       "id": "sc10-reveal.c3.s2",
+       "text": "Two hundred years ago, only about one in ten people on Earth could read.",
+       "start": 461.084,
+       "end": 465.283,
+       "slot_end": 465.678,
+       "slot_s": 4.594,
+       "en_s": 4.199
+      },
+      {
+       "id": "sc10-reveal.c3.s3",
+       "text": "Today, it's almost nine in ten.",
+       "start": 465.798,
+       "end": 467.783,
+       "slot_end": 468.157,
+       "slot_s": 2.359,
+       "en_s": 1.985
+      }
+     ]
+    },
+    {
+     "id": "sc10-reveal.c4",
+     "text": "How close were you? Now climb that ladder again, with me.",
+     "sentences": [
+      {
+       "id": "sc10-reveal.c4.s1",
+       "text": "How close were you?",
+       "start": 468.277,
+       "end": 469.357,
+       "slot_end": 469.887,
+       "slot_s": 1.61,
+       "en_s": 1.08
+      },
+      {
+       "id": "sc10-reveal.c4.s2",
+       "text": "Now climb that ladder again, with me.",
+       "start": 470.007,
+       "end": 472.379,
+       "slot_end": 472.76,
+       "slot_s": 2.753,
+       "en_s": 2.372
+      }
+     ]
+    },
+    {
+     "id": "sc10-reveal.c5",
+     "text": "In fifteen hundred, school was for the few. Then, a way to read the Bible. Then, the king's order. Then, a machine for hundreds. Then, your right, and your ladder. Today, it never switches off.",
+     "sentences": [
+      {
+       "id": "sc10-reveal.c5.s1",
+       "text": "In fifteen hundred, school was for the few.",
+       "start": 472.88,
+       "end": 475.23,
+       "slot_end": 475.965,
+       "slot_s": 3.085,
+       "en_s": 2.35
+      },
+      {
+       "id": "sc10-reveal.c5.s2",
+       "text": "Then, a way to read the Bible.",
+       "start": 476.085,
+       "end": 478.01,
+       "slot_end": 478.24,
+       "slot_s": 2.155,
+       "en_s": 1.925
+      },
+      {
+       "id": "sc10-reveal.c5.s3",
+       "text": "Then, the king's order.",
+       "start": 478.36,
+       "end": 479.705,
+       "slot_end": 480.017,
+       "slot_s": 1.657,
+       "en_s": 1.345
+      },
+      {
+       "id": "sc10-reveal.c5.s4",
+       "text": "Then, a machine for hundreds.",
+       "start": 480.137,
+       "end": 481.865,
+       "slot_end": 482.316,
+       "slot_s": 2.179,
+       "en_s": 1.728
+      },
+      {
+       "id": "sc10-reveal.c5.s5",
+       "text": "Then, your right, and your ladder.",
+       "start": 482.436,
+       "end": 484.275,
+       "slot_end": 484.568,
+       "slot_s": 2.132,
+       "en_s": 1.839
+      },
+      {
+       "id": "sc10-reveal.c5.s6",
+       "text": "Today, it never switches off.",
+       "start": 484.688,
+       "end": 486.205,
+       "slot_end": 486.652,
+       "slot_s": 1.964,
+       "en_s": 1.517
+      }
+     ]
+    },
+    {
+     "id": "sc10-reveal.c6",
+     "text": "School started as free time, for a lucky few. Now it's where most children on Earth spend their weekdays.",
+     "sentences": [
+      {
+       "id": "sc10-reveal.c6.s1",
+       "text": "School started as free time, for a lucky few.",
+       "start": 486.772,
+       "end": 489.442,
+       "slot_end": 491.033,
+       "slot_s": 4.261,
+       "en_s": 2.67
+      },
+      {
+       "id": "sc10-reveal.c6.s2",
+       "text": "Now it's where most children on Earth spend their weekdays.",
+       "start": 491.153,
+       "end": 493.626,
+       "slot_end": 495.48,
+       "slot_s": 4.327,
+       "en_s": 2.473
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc11-2100",
+   "start": 495.6,
+   "dur": 78.001,
+   "chunks": [
+    {
+     "id": "sc11-2100.c1",
+     "text": "So, what's the next rung? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence.",
+     "sentences": [
+      {
+       "id": "sc11-2100.c1.s1",
+       "text": "So, what's the next rung?",
+       "start": 495.6,
+       "end": 496.76,
+       "slot_end": 497.382,
+       "slot_s": 1.782,
+       "en_s": 1.16
+      },
+      {
+       "id": "sc11-2100.c1.s2",
+       "text": "Twenty one hundred.",
+       "start": 497.502,
+       "end": 498.396,
+       "slot_end": 498.576,
+       "slot_s": 1.074,
+       "en_s": 0.894
+      },
+      {
+       "id": "sc11-2100.c1.s3",
+       "text": "That morning hasn't happened yet.",
+       "start": 498.696,
+       "end": 499.947,
+       "slot_end": 500.445,
+       "slot_s": 1.749,
+       "en_s": 1.251
+      },
+      {
+       "id": "sc11-2100.c1.s4",
+       "text": "But we can follow the evidence.",
+       "start": 500.565,
+       "end": 502.127,
+       "slot_end": 502.53,
+       "slot_s": 1.965,
+       "en_s": 1.562
+      }
+     ]
+    },
+    {
+     "id": "sc11-2100.c2",
+     "text": "Remember Prince Henry's tutor? One teacher, one child. In nineteen eighty four, an American researcher, Benjamin Bloom, reported that tutored students did better than ninety eight percent of students taught in a normal class.",
+     "sentences": [
+      {
+       "id": "sc11-2100.c2.s1",
+       "text": "Remember Prince Henry's tutor?",
+       "start": 502.65,
+       "end": 504.21,
+       "slot_end": 504.742,
+       "slot_s": 2.092,
+       "en_s": 1.56
+      },
+      {
+       "id": "sc11-2100.c2.s2",
+       "text": "One teacher, one child.",
+       "start": 504.862,
+       "end": 506.08,
+       "slot_end": 506.612,
+       "slot_s": 1.75,
+       "en_s": 1.218
+      },
+      {
+       "id": "sc11-2100.c2.s3",
+       "text": "In nineteen eighty four, an American researcher, Benjamin Bloom, reported that tutored students did better than ninety eight percent of students taught in a normal class.",
+       "start": 506.732,
+       "end": 514.46,
+       "slot_end": 514.826,
+       "slot_s": 8.094,
+       "en_s": 7.728
+      }
+     ]
+    },
+    {
+     "id": "sc11-2100.c3",
+     "text": "Later studies found the effect is smaller. But it's real. The problem was always the cost. Nobody can pay a tutor for every child.",
+     "sentences": [
+      {
+       "id": "sc11-2100.c3.s1",
+       "text": "Later studies found the effect is smaller.",
+       "start": 514.946,
+       "end": 516.946,
+       "slot_end": 517.194,
+       "slot_s": 2.248,
+       "en_s": 2.0
+      },
+      {
+       "id": "sc11-2100.c3.s2",
+       "text": "But it's real.",
+       "start": 517.314,
+       "end": 518.086,
+       "slot_end": 518.367,
+       "slot_s": 1.053,
+       "en_s": 0.772
+      },
+      {
+       "id": "sc11-2100.c3.s3",
+       "text": "The problem was always the cost.",
+       "start": 518.487,
+       "end": 520.146,
+       "slot_end": 520.375,
+       "slot_s": 1.888,
+       "en_s": 1.659
+      },
+      {
+       "id": "sc11-2100.c3.s4",
+       "text": "Nobody can pay a tutor for every child.",
+       "start": 520.495,
+       "end": 522.576,
+       "slot_end": 522.924,
+       "slot_s": 2.429,
+       "en_s": 2.081
+      }
+     ]
+    },
+    {
+     "id": "sc11-2100.c4",
+     "text": "Then, in twenty twenty four, a World Bank pilot in Nigeria gave students an AI tutor, twice a week, with their teachers guiding them. After six weeks, the World Bank estimated nearly two years of typical learning. One small study. Short. But it's a start.",
+     "sentences": [
+      {
+       "id": "sc11-2100.c4.s1",
+       "text": "Then, in twenty twenty four, a World Bank pilot in Nigeria gave students an AI tutor, twice a week, with their teachers guiding them.",
+       "start": 523.044,
+       "end": 530.674,
+       "slot_end": 531.063,
+       "slot_s": 8.019,
+       "en_s": 7.63
+      },
+      {
+       "id": "sc11-2100.c4.s2",
+       "text": "After six weeks, the World Bank estimated nearly two years of typical learning.",
+       "start": 531.183,
+       "end": 535.264,
+       "slot_end": 535.858,
+       "slot_s": 4.675,
+       "en_s": 4.081
+      },
+      {
+       "id": "sc11-2100.c4.s3",
+       "text": "One small study.",
+       "start": 535.978,
+       "end": 536.844,
+       "slot_end": 537.112,
+       "slot_s": 1.134,
+       "en_s": 0.866
+      },
+      {
+       "id": "sc11-2100.c4.s4",
+       "text": "Short.",
+       "start": 537.232,
+       "end": 537.534,
+       "slot_end": 537.982,
+       "slot_s": 0.75,
+       "en_s": 0.302
+      },
+      {
+       "id": "sc11-2100.c4.s5",
+       "text": "But it's a start.",
+       "start": 538.102,
+       "end": 538.834,
+       "slot_end": 539.242,
+       "slot_s": 1.14,
+       "en_s": 0.732
+      }
+     ]
+    },
+    {
+     "id": "sc11-2100.c5",
+     "text": "So here's one scenario. Not a fact. By twenty one hundred, every child could have a tutor. Not a prince's poet. A patient machine, awake at any hour.",
+     "sentences": [
+      {
+       "id": "sc11-2100.c5.s1",
+       "text": "So here's one scenario.",
+       "start": 539.362,
+       "end": 540.682,
+       "slot_end": 540.862,
+       "slot_s": 1.5,
+       "en_s": 1.32
+      },
+      {
+       "id": "sc11-2100.c5.s2",
+       "text": "Not a fact.",
+       "start": 540.982,
+       "end": 541.725,
+       "slot_end": 542.155,
+       "slot_s": 1.173,
+       "en_s": 0.743
+      },
+      {
+       "id": "sc11-2100.c5.s3",
+       "text": "By twenty one hundred, every child could have a tutor.",
+       "start": 542.275,
+       "end": 544.945,
+       "slot_end": 545.125,
+       "slot_s": 2.85,
+       "en_s": 2.67
+      },
+      {
+       "id": "sc11-2100.c5.s4",
+       "text": "Not a prince's poet.",
+       "start": 545.245,
+       "end": 546.255,
+       "slot_end": 546.564,
+       "slot_s": 1.319,
+       "en_s": 1.01
+      },
+      {
+       "id": "sc11-2100.c5.s5",
+       "text": "A patient machine, awake at any hour.",
+       "start": 546.684,
+       "end": 548.985,
+       "slot_end": 549.175,
+       "slot_s": 2.491,
+       "en_s": 2.301
+      }
+     ]
+    },
+    {
+     "id": "sc11-2100.c6",
+     "text": "And the classroom? The O E C D has imagined futures where school becomes a learning hub, and even one where it fades away. But UNESCO says schools should be protected. If they didn't exist, we'd have to invent them.",
+     "sentences": [
+      {
+       "id": "sc11-2100.c6.s1",
+       "text": "And the classroom?",
+       "start": 549.295,
+       "end": 550.085,
+       "slot_end": 550.764,
+       "slot_s": 1.469,
+       "en_s": 0.79
+      },
+      {
+       "id": "sc11-2100.c6.s2",
+       "text": "The O E C D has imagined futures where school becomes a learning hub, and even one where it fades away.",
+       "start": 550.884,
+       "end": 557.225,
+       "slot_end": 557.707,
+       "slot_s": 6.823,
+       "en_s": 6.341
+      },
+      {
+       "id": "sc11-2100.c6.s3",
+       "text": "But UNESCO says schools should be protected.",
+       "start": 557.827,
+       "end": 560.085,
+       "slot_end": 560.366,
+       "slot_s": 2.539,
+       "en_s": 2.258
+      },
+      {
+       "id": "sc11-2100.c6.s4",
+       "text": "If they didn't exist, we'd have to invent them.",
+       "start": 560.486,
+       "end": 562.855,
+       "slot_end": 563.239,
+       "slot_s": 2.753,
+       "en_s": 2.369
+      }
+     ]
+    },
+    {
+     "id": "sc11-2100.c7",
+     "text": "In fifteen hundred, a private teacher was for a prince. In twenty one hundred, it might be for everyone. And school might get a little closer to what its name first meant.",
+     "sentences": [
+      {
+       "id": "sc11-2100.c7.s1",
+       "text": "In fifteen hundred, a private teacher was for a prince.",
+       "start": 563.359,
+       "end": 566.099,
+       "slot_end": 566.758,
+       "slot_s": 3.399,
+       "en_s": 2.74
+      },
+      {
+       "id": "sc11-2100.c7.s2",
+       "text": "In twenty one hundred, it might be for everyone.",
+       "start": 566.878,
+       "end": 569.2,
+       "slot_end": 569.87,
+       "slot_s": 2.992,
+       "en_s": 2.322
+      },
+      {
+       "id": "sc11-2100.c7.s3",
+       "text": "And school might get a little closer to what its name first meant.",
+       "start": 569.99,
+       "end": 573.321,
+       "slot_end": 574.98,
+       "slot_s": 4.99,
+       "en_s": 3.331
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc12-close",
+   "start": 575.1,
+   "dur": 6.966,
+   "chunks": [
+    {
+     "id": "sc12-close.c1",
+     "text": "You've spent years of your life in school. So tell me. What's the one thing it taught you that no screen ever could?",
+     "sentences": [
+      {
+       "id": "sc12-close.c1.s1",
+       "text": "You've spent years of your life in school.",
+       "start": 575.1,
+       "end": 577.24,
+       "slot_end": 577.825,
+       "slot_s": 2.725,
+       "en_s": 2.14
+      },
+      {
+       "id": "sc12-close.c1.s2",
+       "text": "So tell me.",
+       "start": 577.945,
+       "end": 578.6,
+       "slot_end": 578.835,
+       "slot_s": 0.89,
+       "en_s": 0.655
+      },
+      {
+       "id": "sc12-close.c1.s3",
+       "text": "What's the one thing it taught you that no screen ever could?",
+       "start": 578.955,
+       "end": 581.85,
+       "slot_end": 583.947,
+       "slot_s": 4.992,
+       "en_s": 2.895
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc13-outro",
+   "start": 584.067,
+   "dur": 49.395,
+   "chunks": [
+    {
+     "id": "sc13-outro.c1",
+     "text": "This was Did You Know That, episode three. School. Now it's your turn. Which century's classroom would you survive? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the facts, and play the guessing game.",
+     "sentences": [
+      {
+       "id": "sc13-outro.c1.s1",
+       "text": "This was Did You Know That, episode three.",
+       "start": 584.067,
+       "end": 585.887,
+       "slot_end": 586.338,
+       "slot_s": 2.271,
+       "en_s": 1.82
+      },
+      {
+       "id": "sc13-outro.c1.s2",
+       "text": "School.",
+       "start": 586.458,
+       "end": 586.865,
+       "slot_end": 587.045,
+       "slot_s": 0.587,
+       "en_s": 0.407
+      },
+      {
+       "id": "sc13-outro.c1.s3",
+       "text": "Now it's your turn.",
+       "start": 587.165,
+       "end": 588.133,
+       "slot_end": 588.313,
+       "slot_s": 1.148,
+       "en_s": 0.968
+      },
+      {
+       "id": "sc13-outro.c1.s4",
+       "text": "Which century's classroom would you survive?",
+       "start": 588.433,
+       "end": 590.587,
+       "slot_end": 591.199,
+       "slot_s": 2.766,
+       "en_s": 2.154
+      },
+      {
+       "id": "sc13-outro.c1.s5",
+       "text": "Tell me in the comments.",
+       "start": 591.319,
+       "end": 592.257,
+       "slot_end": 592.72,
+       "slot_s": 1.401,
+       "en_s": 0.938
+      },
+      {
+       "id": "sc13-outro.c1.s6",
+       "text": "At the end of every episode, I will read the best comment, right here, on this screen.",
+       "start": 592.84,
+       "end": 596.947,
+       "slot_end": 597.306,
+       "slot_s": 4.466,
+       "en_s": 4.107
+      },
+      {
+       "id": "sc13-outro.c1.s7",
+       "text": "And the subject you ask for most becomes a future episode.",
+       "start": 597.426,
+       "end": 600.027,
+       "slot_end": 600.603,
+       "slot_s": 3.177,
+       "en_s": 2.601
+      },
+      {
+       "id": "sc13-outro.c1.s8",
+       "text": "On our website, Dex-tee dot live, you can watch every episode, collect the facts, and play the guessing game.",
+       "start": 600.723,
+       "end": 607.287,
+       "slot_end": 607.715,
+       "slot_s": 6.992,
+       "en_s": 6.564
+      }
+     ]
+    },
+    {
+     "id": "sc13-outro.c2",
+     "text": "If this changed how you see a school day, like it. Share it with the friend who always did the homework. And subscribe, so the next mystery finds you.",
+     "sentences": [
+      {
+       "id": "sc13-outro.c2.s1",
+       "text": "If this changed how you see a school day, like it.",
+       "start": 607.835,
+       "end": 610.925,
+       "slot_end": 612.019,
+       "slot_s": 4.184,
+       "en_s": 3.09
+      },
+      {
+       "id": "sc13-outro.c2.s2",
+       "text": "Share it with the friend who always did the homework.",
+       "start": 612.139,
+       "end": 614.492,
+       "slot_end": 615.359,
+       "slot_s": 3.22,
+       "en_s": 2.353
+      },
+      {
+       "id": "sc13-outro.c2.s3",
+       "text": "And subscribe, so the next mystery finds you.",
+       "start": 615.479,
+       "end": 617.549,
+       "slot_end": 617.895,
+       "slot_s": 2.416,
+       "en_s": 2.07
+      }
+     ]
+    },
+    {
+     "id": "sc13-outro.c3",
+     "text": "Next time: money. Around the world, each extra year of school adds, on average, about nine percent to what people earn. But did school ever teach you what money actually is?",
+     "sentences": [
+      {
+       "id": "sc13-outro.c3.s1",
+       "text": "Next time: money.",
+       "start": 618.015,
+       "end": 619.625,
+       "slot_end": 619.805,
+       "slot_s": 1.79,
+       "en_s": 1.61
+      },
+      {
+       "id": "sc13-outro.c3.s2",
+       "text": "Around the world, each extra year of school adds, on average, about nine percent to what people earn.",
+       "start": 619.925,
+       "end": 625.968,
+       "slot_end": 626.631,
+       "slot_s": 6.706,
+       "en_s": 6.043
+      },
+      {
+       "id": "sc13-outro.c3.s3",
+       "text": "But did school ever teach you what money actually is?",
+       "start": 626.751,
+       "end": 629.438,
+       "slot_end": 630.119,
+       "slot_s": 3.368,
+       "en_s": 2.687
+      }
+     ]
+    },
+    {
+     "id": "sc13-outro.c4",
+     "text": "Ask...",
+     "sentences": [
+      {
+       "id": "sc13-outro.c4.s1",
+       "text": "Ask...",
+       "start": 630.239,
+       "end": 630.619,
+       "slot_end": 631.303,
+       "slot_s": 1.064,
+       "en_s": 0.38
+      }
+     ]
+    },
+    {
+     "id": "sc13-outro.c5",
+     "text": "Wonder...",
+     "sentences": [
+      {
+       "id": "sc13-outro.c5.s1",
+       "text": "Wonder...",
+       "start": 631.423,
+       "end": 631.923,
+       "slot_end": 632.599,
+       "slot_s": 1.176,
+       "en_s": 0.5
+      }
+     ]
+    },
+    {
+     "id": "sc13-outro.c6",
+     "text": "Repeat.",
+     "sentences": [
+      {
+       "id": "sc13-outro.c6.s1",
+       "text": "Repeat.",
+       "start": 632.719,
+       "end": 633.139,
+       "slot_end": 634.614,
+       "slot_s": 1.895,
+       "en_s": 0.42
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sc14-endscreen",
+   "start": 634.734,
+   "dur": 5.108,
+   "chunks": [
+    {
+     "id": "sc14-endscreen.c1",
+     "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+     "sentences": [
+      {
+       "id": "sc14-endscreen.c1.s1",
+       "text": "Next time...",
+       "start": 634.734,
+       "end": 635.414,
+       "slot_end": 635.714,
+       "slot_s": 0.98,
+       "en_s": 0.68
+      },
+      {
+       "id": "sc14-endscreen.c1.s2",
+       "text": "this could be your comment.",
+       "start": 635.834,
+       "end": 636.866,
+       "slot_end": 637.166,
+       "slot_s": 1.332,
+       "en_s": 1.032
+      },
+      {
+       "id": "sc14-endscreen.c1.s3",
+       "text": "Pick a mystery.",
+       "start": 637.286,
+       "end": 638.075,
+       "slot_end": 638.375,
+       "slot_s": 1.089,
+       "en_s": 0.789
+      },
+      {
+       "id": "sc14-endscreen.c1.s4",
+       "text": "And I will see you there.",
+       "start": 638.495,
+       "end": 639.622,
+       "slot_end": 650.867,
+       "slot_s": 12.372,
+       "en_s": 1.127
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

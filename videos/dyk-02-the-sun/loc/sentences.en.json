@@ -1,0 +1,2238 @@
+{
+ "episode": "02",
+ "slug": "the-sun",
+ "master_s": 616.7,
+ "sentences": 200,
+ "english_chars": 8870,
+ "scenes": [
+  {
+   "id": "su01-hook",
+   "start": 0.6,
+   "dur": 15.166,
+   "chunks": [
+    {
+     "id": "su01-hook.c1",
+     "text": "It's eight o'clock. The Sun's warm on your face. But that light is old. It left the Sun eight minutes and twenty seconds ago.",
+     "sentences": [
+      {
+       "id": "su01-hook.c1.s1",
+       "text": "It's eight o'clock.",
+       "start": 0.6,
+       "end": 1.517,
+       "slot_end": 1.697,
+       "slot_s": 1.097,
+       "en_s": 0.917
+      },
+      {
+       "id": "su01-hook.c1.s2",
+       "text": "The Sun's warm on your face.",
+       "start": 1.817,
+       "end": 3.477,
+       "slot_end": 3.657,
+       "slot_s": 1.84,
+       "en_s": 1.66
+      },
+      {
+       "id": "su01-hook.c1.s3",
+       "text": "But that light is old.",
+       "start": 3.777,
+       "end": 4.868,
+       "slot_end": 5.048,
+       "slot_s": 1.271,
+       "en_s": 1.091
+      },
+      {
+       "id": "su01-hook.c1.s4",
+       "text": "It left the Sun eight minutes and twenty seconds ago.",
+       "start": 5.168,
+       "end": 8.024,
+       "slot_end": 8.204,
+       "slot_s": 3.036,
+       "en_s": 2.856
+      }
+     ]
+    },
+    {
+     "id": "su01-hook.c2",
+     "text": "So if the Sun vanished right now, you wouldn't know. You'd still see it. You'd still feel it. For eight more minutes.",
+     "sentences": [
+      {
+       "id": "su01-hook.c2.s1",
+       "text": "So if the Sun vanished right now, you wouldn't know.",
+       "start": 8.324,
+       "end": 10.974,
+       "slot_end": 11.365,
+       "slot_s": 3.041,
+       "en_s": 2.65
+      },
+      {
+       "id": "su01-hook.c2.s2",
+       "text": "You'd still see it.",
+       "start": 11.485,
+       "end": 12.507,
+       "slot_end": 12.687,
+       "slot_s": 1.202,
+       "en_s": 1.022
+      },
+      {
+       "id": "su01-hook.c2.s3",
+       "text": "You'd still feel it.",
+       "start": 12.807,
+       "end": 14.015,
+       "slot_end": 14.195,
+       "slot_s": 1.388,
+       "en_s": 1.208
+      },
+      {
+       "id": "su01-hook.c2.s4",
+       "text": "For eight more minutes.",
+       "start": 14.315,
+       "end": 15.767,
+       "slot_end": 16.396,
+       "slot_s": 2.081,
+       "en_s": 1.452
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su02-question",
+   "start": 16.516,
+   "dur": 11.49,
+   "chunks": [
+    {
+     "id": "su02-question.c1",
+     "text": "Five hundred years ago, the Sun told you when to get up and when to sleep. Today, we make electricity from it.",
+     "sentences": [
+      {
+       "id": "su02-question.c1.s1",
+       "text": "Five hundred years ago, the Sun told you when to get up and when to sleep.",
+       "start": 16.516,
+       "end": 20.255,
+       "slot_end": 20.831,
+       "slot_s": 4.315,
+       "en_s": 3.739
+      },
+      {
+       "id": "su02-question.c1.s2",
+       "text": "Today, we make electricity from it.",
+       "start": 20.951,
+       "end": 22.832,
+       "slot_end": 23.012,
+       "slot_s": 2.061,
+       "en_s": 1.881
+      }
+     ]
+    },
+    {
+     "id": "su02-question.c2",
+     "text": "And still, did you know that you have never once seen the Sun as it is... right now?",
+     "sentences": [
+      {
+       "id": "su02-question.c2.s1",
+       "text": "And still, did you know that you have never once seen the Sun as it is...",
+       "start": 23.132,
+       "end": 26.952,
+       "slot_end": 27.132,
+       "slot_s": 4.0,
+       "en_s": 3.82
+      },
+      {
+       "id": "su02-question.c2.s2",
+       "text": "right now?",
+       "start": 27.252,
+       "end": 28.006,
+       "slot_end": 36.88,
+       "slot_s": 9.628,
+       "en_s": 0.754
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su00-welcome",
+   "start": 37.0,
+   "dur": 15.369,
+   "chunks": [
+    {
+     "id": "su00-welcome.c1",
+     "text": "Welcome back to Did You Know That. Episode two. You know the rule. That light on your face is eight minutes old. But the energy inside it? How old is that? Guess in the comments, right now. Then stay to the end, and check your answer.",
+     "sentences": [
+      {
+       "id": "su00-welcome.c1.s1",
+       "text": "Welcome back to Did You Know That.",
+       "start": 37.0,
+       "end": 38.811,
+       "slot_end": 38.991,
+       "slot_s": 1.991,
+       "en_s": 1.811
+      },
+      {
+       "id": "su00-welcome.c1.s2",
+       "text": "Episode two.",
+       "start": 39.111,
+       "end": 40.11,
+       "slot_end": 40.29,
+       "slot_s": 1.179,
+       "en_s": 0.999
+      },
+      {
+       "id": "su00-welcome.c1.s3",
+       "text": "You know the rule.",
+       "start": 40.41,
+       "end": 41.246,
+       "slot_end": 41.509,
+       "slot_s": 1.099,
+       "en_s": 0.836
+      },
+      {
+       "id": "su00-welcome.c1.s4",
+       "text": "That light on your face is eight minutes old.",
+       "start": 41.629,
+       "end": 43.685,
+       "slot_end": 44.006,
+       "slot_s": 2.377,
+       "en_s": 2.056
+      },
+      {
+       "id": "su00-welcome.c1.s5",
+       "text": "But the energy inside it?",
+       "start": 44.126,
+       "end": 45.554,
+       "slot_end": 45.817,
+       "slot_s": 1.691,
+       "en_s": 1.428
+      },
+      {
+       "id": "su00-welcome.c1.s6",
+       "text": "How old is that?",
+       "start": 45.937,
+       "end": 46.924,
+       "slot_end": 47.851,
+       "slot_s": 1.914,
+       "en_s": 0.987
+      },
+      {
+       "id": "su00-welcome.c1.s7",
+       "text": "Guess in the comments, right now.",
+       "start": 47.971,
+       "end": 49.619,
+       "slot_end": 49.799,
+       "slot_s": 1.828,
+       "en_s": 1.648
+      },
+      {
+       "id": "su00-welcome.c1.s8",
+       "text": "Then stay to the end, and check your answer.",
+       "start": 49.919,
+       "end": 52.369,
+       "slot_end": 53.647,
+       "slot_s": 3.728,
+       "en_s": 2.45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su03-promise",
+   "start": 53.767,
+   "dur": 18.572,
+   "chunks": [
+    {
+     "id": "su03-promise.c1",
+     "text": "Seven mornings, from fifteen hundred to twenty one hundred. In each one, you wake up as someone else, under the same Sun. The Sun won't change. You will. You start out going to bed at sunset. You end up in a world that might run on it. And at the end, you'll find out the true age of sunlight.",
+     "sentences": [
+      {
+       "id": "su03-promise.c1.s1",
+       "text": "Seven mornings, from fifteen hundred to twenty one hundred.",
+       "start": 53.767,
+       "end": 56.716,
+       "slot_end": 57.107,
+       "slot_s": 3.34,
+       "en_s": 2.949
+      },
+      {
+       "id": "su03-promise.c1.s2",
+       "text": "In each one, you wake up as someone else, under the same Sun.",
+       "start": 57.227,
+       "end": 60.849,
+       "slot_end": 61.054,
+       "slot_s": 3.827,
+       "en_s": 3.622
+      },
+      {
+       "id": "su03-promise.c1.s3",
+       "text": "The Sun won't change.",
+       "start": 61.174,
+       "end": 62.417,
+       "slot_end": 62.738,
+       "slot_s": 1.564,
+       "en_s": 1.243
+      },
+      {
+       "id": "su03-promise.c1.s4",
+       "text": "You will.",
+       "start": 62.858,
+       "end": 63.485,
+       "slot_end": 64.176,
+       "slot_s": 1.318,
+       "en_s": 0.627
+      },
+      {
+       "id": "su03-promise.c1.s5",
+       "text": "You start out going to bed at sunset.",
+       "start": 64.296,
+       "end": 66.339,
+       "slot_end": 66.519,
+       "slot_s": 2.223,
+       "en_s": 2.043
+      },
+      {
+       "id": "su03-promise.c1.s6",
+       "text": "You end up in a world that might run on it.",
+       "start": 66.639,
+       "end": 68.821,
+       "slot_end": 69.026,
+       "slot_s": 2.387,
+       "en_s": 2.182
+      },
+      {
+       "id": "su03-promise.c1.s7",
+       "text": "And at the end, you'll find out the true age of sunlight.",
+       "start": 69.146,
+       "end": 72.339,
+       "slot_end": 73.813,
+       "slot_s": 4.667,
+       "en_s": 3.193
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su04-1500",
+   "start": 73.933,
+   "dur": 58.13,
+   "chunks": [
+    {
+     "id": "su04-1500.c1",
+     "text": "You wake up in fifteen hundred, in London. It's Midsummer Eve. You can smell wood smoke, and the streets are glowing with firelight.",
+     "sentences": [
+      {
+       "id": "su04-1500.c1.s1",
+       "text": "You wake up in fifteen hundred, in London.",
+       "start": 73.933,
+       "end": 76.069,
+       "slot_end": 76.249,
+       "slot_s": 2.316,
+       "en_s": 2.136
+      },
+      {
+       "id": "su04-1500.c1.s2",
+       "text": "It's Midsummer Eve.",
+       "start": 76.369,
+       "end": 77.588,
+       "slot_end": 77.768,
+       "slot_s": 1.399,
+       "en_s": 1.219
+      },
+      {
+       "id": "su04-1500.c1.s3",
+       "text": "You can smell wood smoke, and the streets are glowing with firelight.",
+       "start": 77.888,
+       "end": 81.197,
+       "slot_end": 81.577,
+       "slot_s": 3.689,
+       "en_s": 3.309
+      }
+     ]
+    },
+    {
+     "id": "su04-1500.c2",
+     "text": "Did you know that almost everyone you'll ever meet believes the Sun goes around the Earth? That's what Ptolemy taught, about fourteen hundred years ago.",
+     "sentences": [
+      {
+       "id": "su04-1500.c2.s1",
+       "text": "Did you know that almost everyone you'll ever meet believes the Sun goes around the Earth?",
+       "start": 81.697,
+       "end": 85.946,
+       "slot_end": 86.151,
+       "slot_s": 4.454,
+       "en_s": 4.249
+      },
+      {
+       "id": "su04-1500.c2.s2",
+       "text": "That's what Ptolemy taught, about fourteen hundred years ago.",
+       "start": 86.271,
+       "end": 89.916,
+       "slot_end": 90.096,
+       "slot_s": 3.825,
+       "en_s": 3.645
+      }
+     ]
+    },
+    {
+     "id": "su04-1500.c3",
+     "text": "So what is the Sun to you? Simple. It's the difference between day and night. Daylight is for work. Darkness is for sleep, and prayer. But tonight, nobody sleeps. Doors are hung with green birch and flowers. Glass lamps burn all night. Neighbours share bread and drink by the bonfires. Why? A London writer, John Stow, later wrote that a great fire could purge the infection of the air.",
+     "sentences": [
+      {
+       "id": "su04-1500.c3.s1",
+       "text": "So what is the Sun to you?",
+       "start": 90.216,
+       "end": 91.517,
+       "slot_end": 92.234,
+       "slot_s": 2.018,
+       "en_s": 1.301
+      },
+      {
+       "id": "su04-1500.c3.s2",
+       "text": "Simple.",
+       "start": 92.354,
+       "end": 92.888,
+       "slot_end": 93.082,
+       "slot_s": 0.728,
+       "en_s": 0.534
+      },
+      {
+       "id": "su04-1500.c3.s3",
+       "text": "It's the difference between day and night.",
+       "start": 93.202,
+       "end": 94.978,
+       "slot_end": 95.171,
+       "slot_s": 1.969,
+       "en_s": 1.776
+      },
+      {
+       "id": "su04-1500.c3.s4",
+       "text": "Daylight is for work.",
+       "start": 95.291,
+       "end": 96.441,
+       "slot_end": 96.621,
+       "slot_s": 1.33,
+       "en_s": 1.15
+      },
+      {
+       "id": "su04-1500.c3.s5",
+       "text": "Darkness is for sleep, and prayer.",
+       "start": 96.741,
+       "end": 98.97,
+       "slot_end": 99.28,
+       "slot_s": 2.539,
+       "en_s": 2.229
+      },
+      {
+       "id": "su04-1500.c3.s6",
+       "text": "But tonight, nobody sleeps.",
+       "start": 99.4,
+       "end": 101.153,
+       "slot_end": 101.333,
+       "slot_s": 1.933,
+       "en_s": 1.753
+      },
+      {
+       "id": "su04-1500.c3.s7",
+       "text": "Doors are hung with green birch and flowers.",
+       "start": 101.453,
+       "end": 103.636,
+       "slot_end": 103.888,
+       "slot_s": 2.435,
+       "en_s": 2.183
+      },
+      {
+       "id": "su04-1500.c3.s8",
+       "text": "Glass lamps burn all night.",
+       "start": 104.008,
+       "end": 105.436,
+       "slot_end": 105.687,
+       "slot_s": 1.679,
+       "en_s": 1.428
+      },
+      {
+       "id": "su04-1500.c3.s9",
+       "text": "Neighbours share bread and drink by the bonfires.",
+       "start": 105.807,
+       "end": 108.199,
+       "slot_end": 108.45,
+       "slot_s": 2.643,
+       "en_s": 2.392
+      },
+      {
+       "id": "su04-1500.c3.s10",
+       "text": "Why?",
+       "start": 108.57,
+       "end": 109.081,
+       "slot_end": 109.691,
+       "slot_s": 1.121,
+       "en_s": 0.511
+      },
+      {
+       "id": "su04-1500.c3.s11",
+       "text": "A London writer, John Stow, later wrote that a great fire could purge the infection of the air.",
+       "start": 109.811,
+       "end": 114.652,
+       "slot_end": 114.832,
+       "slot_s": 5.021,
+       "en_s": 4.841
+      }
+     ]
+    },
+    {
+     "id": "su04-1500.c4",
+     "text": "Far away, a young Polish astronomer, Copernicus, is studying the sky. In fifteen forty three, the year he dies, his book puts the Sun at the centre, and sets the Earth in motion.",
+     "sentences": [
+      {
+       "id": "su04-1500.c4.s1",
+       "text": "Far away, a young Polish astronomer, Copernicus, is studying the sky.",
+       "start": 114.952,
+       "end": 119.434,
+       "slot_end": 119.801,
+       "slot_s": 4.849,
+       "en_s": 4.482
+      },
+      {
+       "id": "su04-1500.c4.s2",
+       "text": "In fifteen forty three, the year he dies, his book puts the Sun at the centre, and sets the Earth in motion.",
+       "start": 119.921,
+       "end": 126.144,
+       "slot_end": 126.324,
+       "slot_s": 6.403,
+       "en_s": 6.223
+      }
+     ]
+    },
+    {
+     "id": "su04-1500.c5",
+     "text": "And within seventy years, a new instrument will show you something shocking. The Sun isn't perfect.",
+     "sentences": [
+      {
+       "id": "su04-1500.c5.s1",
+       "text": "And within seventy years, a new instrument will show you something shocking.",
+       "start": 126.444,
+       "end": 129.985,
+       "slot_end": 130.306,
+       "slot_s": 3.862,
+       "en_s": 3.541
+      },
+      {
+       "id": "su04-1500.c5.s2",
+       "text": "The Sun isn't perfect.",
+       "start": 130.426,
+       "end": 132.063,
+       "slot_end": 133.647,
+       "slot_s": 3.221,
+       "en_s": 1.637
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su05-1610",
+   "start": 133.767,
+   "dur": 56.216,
+   "chunks": [
+    {
+     "id": "su05-1610.c1",
+     "text": "You wake up in sixteen ten, beside the River Thames. It's a cold, misty December morning, and the Sun hangs low and dim. A man named Thomas Harriot points a telescope straight at it. Don't try this. It can blind you.",
+     "sentences": [
+      {
+       "id": "su05-1610.c1.s1",
+       "text": "You wake up in sixteen ten, beside the River Thames.",
+       "start": 133.767,
+       "end": 136.693,
+       "slot_end": 136.961,
+       "slot_s": 3.194,
+       "en_s": 2.926
+      },
+      {
+       "id": "su05-1610.c1.s2",
+       "text": "It's a cold, misty December morning, and the Sun hangs low and dim.",
+       "start": 137.081,
+       "end": 141.272,
+       "slot_end": 141.494,
+       "slot_s": 4.413,
+       "en_s": 4.191
+      },
+      {
+       "id": "su05-1610.c1.s3",
+       "text": "A man named Thomas Harriot points a telescope straight at it.",
+       "start": 141.614,
+       "end": 144.679,
+       "slot_end": 144.947,
+       "slot_s": 3.333,
+       "en_s": 3.065
+      },
+      {
+       "id": "su05-1610.c1.s4",
+       "text": "Don't try this.",
+       "start": 145.067,
+       "end": 146.042,
+       "slot_end": 146.245,
+       "slot_s": 1.178,
+       "en_s": 0.975
+      },
+      {
+       "id": "su05-1610.c1.s5",
+       "text": "It can blind you.",
+       "start": 146.365,
+       "end": 147.433,
+       "slot_end": 147.773,
+       "slot_s": 1.408,
+       "en_s": 1.068
+      }
+     ]
+    },
+    {
+     "id": "su05-1610.c2",
+     "text": "Did you know that the first telescope drawing of sunspots wasn't made by Galileo? It was this Englishman. And he never published it.",
+     "sentences": [
+      {
+       "id": "su05-1610.c2.s1",
+       "text": "Did you know that the first telescope drawing of sunspots wasn't made by Galileo?",
+       "start": 147.893,
+       "end": 152.386,
+       "slot_end": 152.98,
+       "slot_s": 5.087,
+       "en_s": 4.493
+      },
+      {
+       "id": "su05-1610.c2.s2",
+       "text": "It was this Englishman.",
+       "start": 153.1,
+       "end": 154.586,
+       "slot_end": 154.837,
+       "slot_s": 1.737,
+       "en_s": 1.486
+      },
+      {
+       "id": "su05-1610.c2.s3",
+       "text": "And he never published it.",
+       "start": 154.957,
+       "end": 156.327,
+       "slot_end": 156.467,
+       "slot_s": 1.51,
+       "en_s": 1.37
+      }
+     ]
+    },
+    {
+     "id": "su05-1610.c3",
+     "text": "Two years later, in Florence, Galileo watches the spots drift across the Sun, day after day. Another astronomer says they're tiny planets passing in front. Galileo says no. They're on the Sun itself, and the Sun is turning. In sixteen thirteen, he publishes his letters. The perfect heavenly body has blemishes.",
+     "sentences": [
+      {
+       "id": "su05-1610.c3.s1",
+       "text": "Two years later, in Florence, Galileo watches the spots drift across the Sun, day after day.",
+       "start": 156.587,
+       "end": 162.124,
+       "slot_end": 162.608,
+       "slot_s": 6.021,
+       "en_s": 5.537
+      },
+      {
+       "id": "su05-1610.c3.s2",
+       "text": "Another astronomer says they're tiny planets passing in front.",
+       "start": 162.728,
+       "end": 165.897,
+       "slot_end": 166.474,
+       "slot_s": 3.746,
+       "en_s": 3.169
+      },
+      {
+       "id": "su05-1610.c3.s3",
+       "text": "Galileo says no.",
+       "start": 166.594,
+       "end": 167.976,
+       "slot_end": 168.134,
+       "slot_s": 1.54,
+       "en_s": 1.382
+      },
+      {
+       "id": "su05-1610.c3.s4",
+       "text": "They're on the Sun itself, and the Sun is turning.",
+       "start": 168.254,
+       "end": 170.576,
+       "slot_end": 170.716,
+       "slot_s": 2.462,
+       "en_s": 2.322
+      },
+      {
+       "id": "su05-1610.c3.s5",
+       "text": "In sixteen thirteen, he publishes his letters.",
+       "start": 170.836,
+       "end": 173.622,
+       "slot_end": 174.199,
+       "slot_s": 3.363,
+       "en_s": 2.786
+      },
+      {
+       "id": "su05-1610.c3.s6",
+       "text": "The perfect heavenly body has blemishes.",
+       "start": 174.319,
+       "end": 177.175,
+       "slot_end": 177.315,
+       "slot_s": 2.996,
+       "en_s": 2.856
+      }
+     ]
+    },
+    {
+     "id": "su05-1610.c4",
+     "text": "Out in the fields, daylight still runs your day. But for a few people with telescopes, the Sun has become something to watch. Closely.",
+     "sentences": [
+      {
+       "id": "su05-1610.c4.s1",
+       "text": "Out in the fields, daylight still runs your day.",
+       "start": 177.435,
+       "end": 180.105,
+       "slot_end": 180.347,
+       "slot_s": 2.912,
+       "en_s": 2.67
+      },
+      {
+       "id": "su05-1610.c4.s2",
+       "text": "But for a few people with telescopes, the Sun has become something to watch.",
+       "start": 180.467,
+       "end": 184.89,
+       "slot_end": 185.306,
+       "slot_s": 4.839,
+       "en_s": 4.423
+      },
+      {
+       "id": "su05-1610.c4.s3",
+       "text": "Closely.",
+       "start": 185.426,
+       "end": 186.332,
+       "slot_end": 186.472,
+       "slot_s": 1.046,
+       "en_s": 0.906
+      }
+     ]
+    },
+    {
+     "id": "su05-1610.c5",
+     "text": "And soon, someone will ask what's actually inside that light.",
+     "sentences": [
+      {
+       "id": "su05-1610.c5.s1",
+       "text": "And soon, someone will ask what's actually inside that light.",
+       "start": 186.592,
+       "end": 189.982,
+       "slot_end": 191.547,
+       "slot_s": 4.955,
+       "en_s": 3.39
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su06-1700",
+   "start": 191.667,
+   "dur": 56.337,
+   "chunks": [
+    {
+     "id": "su06-1700.c1",
+     "text": "You wake up in seventeen seventy nine, in England. It's a bright summer morning, and the fashionable ladies outside are hiding from it, under parasols.",
+     "sentences": [
+      {
+       "id": "su06-1700.c1.s1",
+       "text": "You wake up in seventeen seventy nine, in England.",
+       "start": 191.667,
+       "end": 194.372,
+       "slot_end": 194.636,
+       "slot_s": 2.969,
+       "en_s": 2.705
+      },
+      {
+       "id": "su06-1700.c1.s2",
+       "text": "It's a bright summer morning, and the fashionable ladies outside are hiding from it, under parasols.",
+       "start": 194.756,
+       "end": 200.073,
+       "slot_end": 200.453,
+       "slot_s": 5.697,
+       "en_s": 5.317
+      }
+     ]
+    },
+    {
+     "id": "su06-1700.c2",
+     "text": "Did you know that a pale face was so prized that fashionable women painted theirs with white lead?",
+     "sentences": [
+      {
+       "id": "su06-1700.c2.s1",
+       "text": "Did you know that a pale face was so prized that fashionable women painted theirs with white lead?",
+       "start": 200.573,
+       "end": 206.132,
+       "slot_end": 206.312,
+       "slot_s": 5.739,
+       "en_s": 5.559
+      }
+     ]
+    },
+    {
+     "id": "su06-1700.c3",
+     "text": "One famous beauty, Maria Gunning, Countess of Coventry, died at twenty seven. Her death was blamed, at least in part, on the lead in her face powder. If you're rich, you stay out of the Sun. If you're poor, you work in it, and your tan tells everyone. But this summer, the Sun is turning into something new. Something to explain.",
+     "sentences": [
+      {
+       "id": "su06-1700.c3.s1",
+       "text": "One famous beauty, Maria Gunning, Countess of Coventry, died at twenty seven.",
+       "start": 206.432,
+       "end": 210.692,
+       "slot_end": 211.202,
+       "slot_s": 4.77,
+       "en_s": 4.26
+      },
+      {
+       "id": "su06-1700.c3.s2",
+       "text": "Her death was blamed, at least in part, on the lead in her face powder.",
+       "start": 211.322,
+       "end": 215.211,
+       "slot_end": 215.579,
+       "slot_s": 4.257,
+       "en_s": 3.889
+      },
+      {
+       "id": "su06-1700.c3.s3",
+       "text": "If you're rich, you stay out of the Sun.",
+       "start": 215.699,
+       "end": 217.94,
+       "slot_end": 218.308,
+       "slot_s": 2.609,
+       "en_s": 2.241
+      },
+      {
+       "id": "su06-1700.c3.s4",
+       "text": "If you're poor, you work in it, and your tan tells everyone.",
+       "start": 218.428,
+       "end": 221.725,
+       "slot_end": 222.234,
+       "slot_s": 3.806,
+       "en_s": 3.297
+      },
+      {
+       "id": "su06-1700.c3.s5",
+       "text": "But this summer, the Sun is turning into something new.",
+       "start": 222.354,
+       "end": 225.036,
+       "slot_end": 225.615,
+       "slot_s": 3.261,
+       "en_s": 2.682
+      },
+      {
+       "id": "su06-1700.c3.s6",
+       "text": "Something to explain.",
+       "start": 225.735,
+       "end": 227.081,
+       "slot_end": 227.561,
+       "slot_s": 1.826,
+       "en_s": 1.346
+      }
+     ]
+    },
+    {
+     "id": "su06-1700.c4",
+     "text": "A Dutch doctor, Jan Ingen-house, runs more than five hundred experiments on plants. He sinks leaves under water. In sunlight, they bubble out fresh air. In the shade, they stop. Only the green parts do it. Plants need the Sun.",
+     "sentences": [
+      {
+       "id": "su06-1700.c4.s1",
+       "text": "A Dutch doctor, Jan Ingen-house, runs more than five hundred experiments on plants.",
+       "start": 227.681,
+       "end": 232.987,
+       "slot_end": 233.273,
+       "slot_s": 5.592,
+       "en_s": 5.306
+      },
+      {
+       "id": "su06-1700.c4.s2",
+       "text": "He sinks leaves under water.",
+       "start": 233.393,
+       "end": 234.984,
+       "slot_end": 235.34,
+       "slot_s": 1.947,
+       "en_s": 1.591
+      },
+      {
+       "id": "su06-1700.c4.s3",
+       "text": "In sunlight, they bubble out fresh air.",
+       "start": 235.46,
+       "end": 237.561,
+       "slot_end": 237.741,
+       "slot_s": 2.281,
+       "en_s": 2.101
+      },
+      {
+       "id": "su06-1700.c4.s4",
+       "text": "In the shade, they stop.",
+       "start": 237.861,
+       "end": 239.231,
+       "slot_end": 239.413,
+       "slot_s": 1.552,
+       "en_s": 1.37
+      },
+      {
+       "id": "su06-1700.c4.s5",
+       "text": "Only the green parts do it.",
+       "start": 239.533,
+       "end": 240.949,
+       "slot_end": 241.236,
+       "slot_s": 1.703,
+       "en_s": 1.416
+      },
+      {
+       "id": "su06-1700.c4.s6",
+       "text": "Plants need the Sun.",
+       "start": 241.356,
+       "end": 242.575,
+       "slot_end": 242.755,
+       "slot_s": 1.399,
+       "en_s": 1.219
+      }
+     ]
+    },
+    {
+     "id": "su06-1700.c5",
+     "text": "But there's more in that light than leaves can use. Or your eyes can detect.",
+     "sentences": [
+      {
+       "id": "su06-1700.c5.s1",
+       "text": "But there's more in that light than leaves can use.",
+       "start": 242.875,
+       "end": 245.197,
+       "slot_end": 246.166,
+       "slot_s": 3.291,
+       "en_s": 2.322
+      },
+      {
+       "id": "su06-1700.c5.s2",
+       "text": "Or your eyes can detect.",
+       "start": 246.286,
+       "end": 248.004,
+       "slot_end": 249.58,
+       "slot_s": 3.294,
+       "en_s": 1.718
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su07-1800",
+   "start": 249.7,
+   "dur": 57.962,
+   "chunks": [
+    {
+     "id": "su07-1800.c1",
+     "text": "You wake up in eighteen hundred, near Windsor. It's February. An astronomer, William Herschel, splits a sunbeam with a prism, and puts thermometers in the colours, their bulbs blackened.",
+     "sentences": [
+      {
+       "id": "su07-1800.c1.s1",
+       "text": "You wake up in eighteen hundred, near Windsor.",
+       "start": 249.7,
+       "end": 251.778,
+       "slot_end": 251.918,
+       "slot_s": 2.218,
+       "en_s": 2.078
+      },
+      {
+       "id": "su07-1800.c1.s2",
+       "text": "It's February.",
+       "start": 252.038,
+       "end": 252.863,
+       "slot_end": 253.021,
+       "slot_s": 0.983,
+       "en_s": 0.825
+      },
+      {
+       "id": "su07-1800.c1.s3",
+       "text": "An astronomer, William Herschel, splits a sunbeam with a prism, and puts thermometers in the colours, their bulbs blackened.",
+       "start": 253.141,
+       "end": 260.281,
+       "slot_end": 260.621,
+       "slot_s": 7.48,
+       "en_s": 7.14
+      }
+     ]
+    },
+    {
+     "id": "su07-1800.c2",
+     "text": "Did you know that the hottest spot wasn't in the rainbow at all? It was just past the red, where nothing was visible.",
+     "sentences": [
+      {
+       "id": "su07-1800.c2.s1",
+       "text": "Did you know that the hottest spot wasn't in the rainbow at all?",
+       "start": 260.741,
+       "end": 264.386,
+       "slot_end": 265.278,
+       "slot_s": 4.537,
+       "en_s": 3.645
+      },
+      {
+       "id": "su07-1800.c2.s2",
+       "text": "It was just past the red, where nothing was visible.",
+       "start": 265.398,
+       "end": 268.58,
+       "slot_end": 268.72,
+       "slot_s": 3.322,
+       "en_s": 3.182
+      }
+     ]
+    },
+    {
+     "id": "su07-1800.c3",
+     "text": "He'd found infrared. Light you can't see. Now the Sun is something you measure, even where your eyes give up. Soon, gas lamps push back the night in London. In eighteen thirty nine, in Paris, a nineteen year old named Edmond Becquerel shines light on a cell, and it makes electricity. Tiny. But real electricity.",
+     "sentences": [
+      {
+       "id": "su07-1800.c3.s1",
+       "text": "He'd found infrared.",
+       "start": 268.84,
+       "end": 270.036,
+       "slot_end": 270.206,
+       "slot_s": 1.366,
+       "en_s": 1.196
+      },
+      {
+       "id": "su07-1800.c3.s2",
+       "text": "Light you can't see.",
+       "start": 270.326,
+       "end": 271.499,
+       "slot_end": 271.82,
+       "slot_s": 1.494,
+       "en_s": 1.173
+      },
+      {
+       "id": "su07-1800.c3.s3",
+       "text": "Now the Sun is something you measure, even where your eyes give up.",
+       "start": 271.94,
+       "end": 275.122,
+       "slot_end": 275.512,
+       "slot_s": 3.572,
+       "en_s": 3.182
+      },
+      {
+       "id": "su07-1800.c3.s4",
+       "text": "Soon, gas lamps push back the night in London.",
+       "start": 275.632,
+       "end": 278.338,
+       "slot_end": 278.728,
+       "slot_s": 3.096,
+       "en_s": 2.706
+      },
+      {
+       "id": "su07-1800.c3.s5",
+       "text": "In eighteen thirty nine, in Paris, a nineteen year old named Edmond Becquerel shines light on a cell, and it makes electricity.",
+       "start": 278.848,
+       "end": 286.708,
+       "slot_end": 286.971,
+       "slot_s": 8.123,
+       "en_s": 7.86
+      },
+      {
+       "id": "su07-1800.c3.s6",
+       "text": "Tiny.",
+       "start": 287.091,
+       "end": 287.707,
+       "slot_end": 287.865,
+       "slot_s": 0.774,
+       "en_s": 0.616
+      },
+      {
+       "id": "su07-1800.c3.s7",
+       "text": "But real electricity.",
+       "start": 287.985,
+       "end": 289.46,
+       "slot_end": 289.6,
+       "slot_s": 1.615,
+       "en_s": 1.475
+      }
+     ]
+    },
+    {
+     "id": "su07-1800.c4",
+     "text": "And in eighteen fifty nine, Richard Carrington sees a white flash on the Sun. Within a day, telegraph wires spark, and operators get shocks. The Sun can reach down and touch our machines.",
+     "sentences": [
+      {
+       "id": "su07-1800.c4.s1",
+       "text": "And in eighteen fifty nine, Richard Carrington sees a white flash on the Sun.",
+       "start": 289.72,
+       "end": 293.656,
+       "slot_end": 294.282,
+       "slot_s": 4.562,
+       "en_s": 3.936
+      },
+      {
+       "id": "su07-1800.c4.s2",
+       "text": "Within a day, telegraph wires spark, and operators get shocks.",
+       "start": 294.402,
+       "end": 298.024,
+       "slot_end": 298.487,
+       "slot_s": 4.085,
+       "en_s": 3.622
+      },
+      {
+       "id": "su07-1800.c4.s3",
+       "text": "The Sun can reach down and touch our machines.",
+       "start": 298.607,
+       "end": 301.08,
+       "slot_end": 301.22,
+       "slot_s": 2.613,
+       "en_s": 2.473
+      }
+     ]
+    },
+    {
+     "id": "su07-1800.c5",
+     "text": "Turning that spark into power would take another century. But first, we'd find out what we'd been eating all along.",
+     "sentences": [
+      {
+       "id": "su07-1800.c5.s1",
+       "text": "Turning that spark into power would take another century.",
+       "start": 301.34,
+       "end": 304.115,
+       "slot_end": 304.559,
+       "slot_s": 3.219,
+       "en_s": 2.775
+      },
+      {
+       "id": "su07-1800.c5.s2",
+       "text": "But first, we'd find out what we'd been eating all along.",
+       "start": 304.679,
+       "end": 307.663,
+       "slot_end": 309.247,
+       "slot_s": 4.568,
+       "en_s": 2.984
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su08-1900",
+   "start": 309.367,
+   "dur": 61.823,
+   "chunks": [
+    {
+     "id": "su08-1900.c1",
+     "text": "You wake up in nineteen twenty eight, on a crowded American beach. Hot sand. Salt air. And everyone's lying in the Sun, on purpose.",
+     "sentences": [
+      {
+       "id": "su08-1900.c1.s1",
+       "text": "You wake up in nineteen twenty eight, on a crowded American beach.",
+       "start": 309.367,
+       "end": 312.71,
+       "slot_end": 312.89,
+       "slot_s": 3.523,
+       "en_s": 3.343
+      },
+      {
+       "id": "su08-1900.c1.s2",
+       "text": "Hot sand.",
+       "start": 313.01,
+       "end": 313.811,
+       "slot_end": 313.991,
+       "slot_s": 0.981,
+       "en_s": 0.801
+      },
+      {
+       "id": "su08-1900.c1.s3",
+       "text": "Salt air.",
+       "start": 314.111,
+       "end": 314.865,
+       "slot_end": 315.045,
+       "slot_s": 0.934,
+       "en_s": 0.754
+      },
+      {
+       "id": "su08-1900.c1.s4",
+       "text": "And everyone's lying in the Sun, on purpose.",
+       "start": 315.165,
+       "end": 317.499,
+       "slot_end": 317.879,
+       "slot_s": 2.714,
+       "en_s": 2.334
+      }
+     ]
+    },
+    {
+     "id": "su08-1900.c2",
+     "text": "Did you know that the famous story, that Coco Chanel started the suntan craze, is probably a myth?",
+     "sentences": [
+      {
+       "id": "su08-1900.c2.s1",
+       "text": "Did you know that the famous story, that Coco Chanel started the suntan craze, is probably a myth?",
+       "start": 317.999,
+       "end": 323.668,
+       "slot_end": 323.848,
+       "slot_s": 5.849,
+       "en_s": 5.669
+      }
+     ]
+    },
+    {
+     "id": "su08-1900.c3",
+     "text": "A historian traced it to an unsigned magazine article from nineteen seventy one. The real reason was work. Jobs moved indoors, so a tan stopped meaning the fields. It meant a day off.",
+     "sentences": [
+      {
+       "id": "su08-1900.c3.s1",
+       "text": "A historian traced it to an unsigned magazine article from nineteen seventy one.",
+       "start": 323.968,
+       "end": 328.194,
+       "slot_end": 328.515,
+       "slot_s": 4.547,
+       "en_s": 4.226
+      },
+      {
+       "id": "su08-1900.c3.s2",
+       "text": "The real reason was work.",
+       "start": 328.635,
+       "end": 330.005,
+       "slot_end": 330.697,
+       "slot_s": 2.062,
+       "en_s": 1.37
+      },
+      {
+       "id": "su08-1900.c3.s3",
+       "text": "Jobs moved indoors, so a tan stopped meaning the fields.",
+       "start": 330.817,
+       "end": 334.033,
+       "slot_end": 334.213,
+       "slot_s": 3.396,
+       "en_s": 3.216
+      },
+      {
+       "id": "su08-1900.c3.s4",
+       "text": "It meant a day off.",
+       "start": 334.333,
+       "end": 335.401,
+       "slot_end": 335.581,
+       "slot_s": 1.248,
+       "en_s": 1.068
+      }
+     ]
+    },
+    {
+     "id": "su08-1900.c4",
+     "text": "Now look in your picnic basket. Bread. An apple. The process that made them got its name in eighteen ninety three. Photosynthesis. Leaves catch sunlight and turn it into sugar, and nearly all life runs on that. Your lunch is stored sunlight. So, in a way, are you. The Sun used to be something to measure. Now, it's the source of every meal you eat.",
+     "sentences": [
+      {
+       "id": "su08-1900.c4.s1",
+       "text": "Now look in your picnic basket.",
+       "start": 335.701,
+       "end": 337.338,
+       "slot_end": 337.613,
+       "slot_s": 1.912,
+       "en_s": 1.637
+      },
+      {
+       "id": "su08-1900.c4.s2",
+       "text": "Bread.",
+       "start": 337.733,
+       "end": 338.255,
+       "slot_end": 338.435,
+       "slot_s": 0.702,
+       "en_s": 0.522
+      },
+      {
+       "id": "su08-1900.c4.s3",
+       "text": "An apple.",
+       "start": 338.555,
+       "end": 339.251,
+       "slot_end": 339.584,
+       "slot_s": 1.029,
+       "en_s": 0.696
+      },
+      {
+       "id": "su08-1900.c4.s4",
+       "text": "The process that made them got its name in eighteen ninety three.",
+       "start": 339.704,
+       "end": 342.7,
+       "slot_end": 342.974,
+       "slot_s": 3.27,
+       "en_s": 2.996
+      },
+      {
+       "id": "su08-1900.c4.s5",
+       "text": "Photosynthesis.",
+       "start": 343.094,
+       "end": 344.162,
+       "slot_end": 344.592,
+       "slot_s": 1.498,
+       "en_s": 1.068
+      },
+      {
+       "id": "su08-1900.c4.s6",
+       "text": "Leaves catch sunlight and turn it into sugar, and nearly all life runs on that.",
+       "start": 344.712,
+       "end": 349.344,
+       "slot_end": 349.619,
+       "slot_s": 4.907,
+       "en_s": 4.632
+      },
+      {
+       "id": "su08-1900.c4.s7",
+       "text": "Your lunch is stored sunlight.",
+       "start": 349.739,
+       "end": 351.794,
+       "slot_end": 352.011,
+       "slot_s": 2.272,
+       "en_s": 2.055
+      },
+      {
+       "id": "su08-1900.c4.s8",
+       "text": "So, in a way, are you.",
+       "start": 352.131,
+       "end": 353.721,
+       "slot_end": 354.054,
+       "slot_s": 1.923,
+       "en_s": 1.59
+      },
+      {
+       "id": "su08-1900.c4.s9",
+       "text": "The Sun used to be something to measure.",
+       "start": 354.174,
+       "end": 356.043,
+       "slot_end": 356.26,
+       "slot_s": 2.086,
+       "en_s": 1.869
+      },
+      {
+       "id": "su08-1900.c4.s10",
+       "text": "Now, it's the source of every meal you eat.",
+       "start": 356.38,
+       "end": 358.969,
+       "slot_end": 359.149,
+       "slot_s": 2.769,
+       "en_s": 2.589
+      }
+     ]
+    },
+    {
+     "id": "su08-1900.c5",
+     "text": "Then, in nineteen fifty four, at Bell Laboratories, a silicon cell turns about six percent of sunlight into electricity.",
+     "sentences": [
+      {
+       "id": "su08-1900.c5.s1",
+       "text": "Then, in nineteen fifty four, at Bell Laboratories, a silicon cell turns about six percent of sunlight into electricity.",
+       "start": 359.269,
+       "end": 366.421,
+       "slot_end": 366.601,
+       "slot_s": 7.332,
+       "en_s": 7.152
+      }
+     ]
+    },
+    {
+     "id": "su08-1900.c6",
+     "text": "We'd learned that we live on sunlight. Next, we'd learn to harvest it.",
+     "sentences": [
+      {
+       "id": "su08-1900.c6.s1",
+       "text": "We'd learned that we live on sunlight.",
+       "start": 366.721,
+       "end": 368.625,
+       "slot_end": 369.351,
+       "slot_s": 2.63,
+       "en_s": 1.904
+      },
+      {
+       "id": "su08-1900.c6.s2",
+       "text": "Next, we'd learn to harvest it.",
+       "start": 369.471,
+       "end": 371.19,
+       "slot_end": 372.78,
+       "slot_s": 3.309,
+       "en_s": 1.719
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su09-2000",
+   "start": 372.9,
+   "dur": 53.364,
+   "chunks": [
+    {
+     "id": "su09-2000.c1",
+     "text": "You wake up today. Your phone's charged. The lights come on. And somewhere, a field of solar panels has been awake since sunrise.",
+     "sentences": [
+      {
+       "id": "su09-2000.c1.s1",
+       "text": "You wake up today.",
+       "start": 372.9,
+       "end": 373.898,
+       "slot_end": 374.078,
+       "slot_s": 1.178,
+       "en_s": 0.998
+      },
+      {
+       "id": "su09-2000.c1.s2",
+       "text": "Your phone's charged.",
+       "start": 374.198,
+       "end": 375.266,
+       "slot_end": 375.471,
+       "slot_s": 1.273,
+       "en_s": 1.068
+      },
+      {
+       "id": "su09-2000.c1.s3",
+       "text": "The lights come on.",
+       "start": 375.591,
+       "end": 376.601,
+       "slot_end": 376.922,
+       "slot_s": 1.331,
+       "en_s": 1.01
+      },
+      {
+       "id": "su09-2000.c1.s4",
+       "text": "And somewhere, a field of solar panels has been awake since sunrise.",
+       "start": 377.042,
+       "end": 380.444,
+       "slot_end": 380.824,
+       "slot_s": 3.782,
+       "en_s": 3.402
+      }
+     ]
+    },
+    {
+     "id": "su09-2000.c2",
+     "text": "Did you know that in twenty twenty five, solar power made almost eleven times more electricity than it did ten years earlier?",
+     "sentences": [
+      {
+       "id": "su09-2000.c2.s1",
+       "text": "Did you know that in twenty twenty five, solar power made almost eleven times more electricity than it did ten years earlier?",
+       "start": 380.944,
+       "end": 388.75,
+       "slot_end": 388.93,
+       "slot_s": 7.986,
+       "en_s": 7.806
+      }
+     ]
+    },
+    {
+     "id": "su09-2000.c3",
+     "text": "That's almost nine percent of all the world's electricity. The International Energy Agency has said the best solar projects offer some of the cheapest electricity ever seen. So what's the Sun to you now? Power. Something you harvest, like a crop. And in December twenty twenty four, NASA's Parker Solar Probe flew through the Sun's outer atmosphere, faster than anything humans have ever built.",
+     "sentences": [
+      {
+       "id": "su09-2000.c3.s1",
+       "text": "That's almost nine percent of all the world's electricity.",
+       "start": 389.05,
+       "end": 392.975,
+       "slot_end": 393.296,
+       "slot_s": 4.246,
+       "en_s": 3.925
+      },
+      {
+       "id": "su09-2000.c3.s2",
+       "text": "The International Energy Agency has said the best solar projects offer some of the cheapest electricity ever seen.",
+       "start": 393.416,
+       "end": 399.082,
+       "slot_end": 399.566,
+       "slot_s": 6.15,
+       "en_s": 5.666
+      },
+      {
+       "id": "su09-2000.c3.s3",
+       "text": "So what's the Sun to you now?",
+       "start": 399.686,
+       "end": 401.172,
+       "slot_end": 402.164,
+       "slot_s": 2.478,
+       "en_s": 1.486
+      },
+      {
+       "id": "su09-2000.c3.s4",
+       "text": "Power.",
+       "start": 402.284,
+       "end": 402.737,
+       "slot_end": 402.917,
+       "slot_s": 0.633,
+       "en_s": 0.453
+      },
+      {
+       "id": "su09-2000.c3.s5",
+       "text": "Something you harvest, like a crop.",
+       "start": 403.037,
+       "end": 405.267,
+       "slot_end": 405.472,
+       "slot_s": 2.435,
+       "en_s": 2.23
+      },
+      {
+       "id": "su09-2000.c3.s6",
+       "text": "And in December twenty twenty four, NASA's Parker Solar Probe flew through the Sun's outer atmosphere, faster than anything humans have ever built.",
+       "start": 405.592,
+       "end": 414.101,
+       "slot_end": 414.281,
+       "slot_s": 8.689,
+       "en_s": 8.509
+      }
+     ]
+    },
+    {
+     "id": "su09-2000.c4",
+     "text": "And yet, you spend most of your day indoors, behind screens and windows. We've touched the Sun. We plug into it. So why have you still never seen it as it is today?",
+     "sentences": [
+      {
+       "id": "su09-2000.c4.s1",
+       "text": "And yet, you spend most of your day indoors, behind screens and windows.",
+       "start": 414.401,
+       "end": 418.395,
+       "slot_end": 419.285,
+       "slot_s": 4.884,
+       "en_s": 3.994
+      },
+      {
+       "id": "su09-2000.c4.s2",
+       "text": "We've touched the Sun.",
+       "start": 419.405,
+       "end": 420.566,
+       "slot_end": 421.315,
+       "slot_s": 1.91,
+       "en_s": 1.161
+      },
+      {
+       "id": "su09-2000.c4.s3",
+       "text": "We plug into it.",
+       "start": 421.435,
+       "end": 422.538,
+       "slot_end": 423.287,
+       "slot_s": 1.852,
+       "en_s": 1.103
+      },
+      {
+       "id": "su09-2000.c4.s4",
+       "text": "So why have you still never seen it as it is today?",
+       "start": 423.407,
+       "end": 426.263,
+       "slot_end": 427.847,
+       "slot_s": 4.44,
+       "en_s": 2.856
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su10-reveal",
+   "start": 427.967,
+   "dur": 51.0,
+   "chunks": [
+    {
+     "id": "su10-reveal.c1",
+     "text": "Here's the answer. Light is fast. But it's not instant. It takes about eight minutes and twenty seconds to cross a hundred and fifty million kilometres. Every sunrise you've ever watched was already old.",
+     "sentences": [
+      {
+       "id": "su10-reveal.c1.s1",
+       "text": "Here's the answer.",
+       "start": 427.967,
+       "end": 428.698,
+       "slot_end": 428.928,
+       "slot_s": 0.961,
+       "en_s": 0.731
+      },
+      {
+       "id": "su10-reveal.c1.s2",
+       "text": "Light is fast.",
+       "start": 429.048,
+       "end": 429.895,
+       "slot_end": 430.125,
+       "slot_s": 1.077,
+       "en_s": 0.847
+      },
+      {
+       "id": "su10-reveal.c1.s3",
+       "text": "But it's not instant.",
+       "start": 430.245,
+       "end": 431.301,
+       "slot_end": 431.531,
+       "slot_s": 1.286,
+       "en_s": 1.056
+      },
+      {
+       "id": "su10-reveal.c1.s4",
+       "text": "It takes about eight minutes and twenty seconds to cross a hundred and fifty million kilometres.",
+       "start": 431.651,
+       "end": 436.214,
+       "slot_end": 436.802,
+       "slot_s": 5.151,
+       "en_s": 4.563
+      },
+      {
+       "id": "su10-reveal.c1.s5",
+       "text": "Every sunrise you've ever watched was already old.",
+       "start": 436.922,
+       "end": 439.709,
+       "slot_end": 439.939,
+       "slot_s": 3.017,
+       "en_s": 2.787
+      }
+     ]
+    },
+    {
+     "id": "su10-reveal.c2",
+     "text": "And the energy inside it? It was made deep in the Sun's core, and it spent a very long time struggling to get out. NASA estimates about a hundred and seventy thousand years. When it set out, nobody on Earth had farms, or cities, or writing.",
+     "sentences": [
+      {
+       "id": "su10-reveal.c2.s1",
+       "text": "And the energy inside it?",
+       "start": 440.059,
+       "end": 441.348,
+       "slot_end": 441.986,
+       "slot_s": 1.927,
+       "en_s": 1.289
+      },
+      {
+       "id": "su10-reveal.c2.s2",
+       "text": "It was made deep in the Sun's core, and it spent a very long time struggling to get out.",
+       "start": 442.106,
+       "end": 446.773,
+       "slot_end": 447.415,
+       "slot_s": 5.309,
+       "en_s": 4.667
+      },
+      {
+       "id": "su10-reveal.c2.s3",
+       "text": "NASA estimates about a hundred and seventy thousand years.",
+       "start": 447.535,
+       "end": 450.542,
+       "slot_end": 450.93,
+       "slot_s": 3.395,
+       "en_s": 3.007
+      },
+      {
+       "id": "su10-reveal.c2.s4",
+       "text": "When it set out, nobody on Earth had farms, or cities, or writing.",
+       "start": 451.05,
+       "end": 455.508,
+       "slot_end": 455.738,
+       "slot_s": 4.688,
+       "en_s": 4.458
+      }
+     ]
+    },
+    {
+     "id": "su10-reveal.c3",
+     "text": "How close was your answer? Now climb that ladder again, with me.",
+     "sentences": [
+      {
+       "id": "su10-reveal.c3.s1",
+       "text": "How close was your answer?",
+       "start": 455.858,
+       "end": 457.124,
+       "slot_end": 457.745,
+       "slot_s": 1.887,
+       "en_s": 1.266
+      },
+      {
+       "id": "su10-reveal.c3.s2",
+       "text": "Now climb that ladder again, with me.",
+       "start": 457.865,
+       "end": 460.291,
+       "slot_end": 460.521,
+       "slot_s": 2.656,
+       "en_s": 2.426
+      }
+     ]
+    },
+    {
+     "id": "su10-reveal.c4",
+     "text": "In fifteen hundred, the Sun was day and night. Then something to watch. To explain. To measure. Then it was your lunch. Today, it's power.",
+     "sentences": [
+      {
+       "id": "su10-reveal.c4.s1",
+       "text": "In fifteen hundred, the Sun was day and night.",
+       "start": 460.641,
+       "end": 462.789,
+       "slot_end": 463.019,
+       "slot_s": 2.378,
+       "en_s": 2.148
+      },
+      {
+       "id": "su10-reveal.c4.s2",
+       "text": "Then something to watch.",
+       "start": 463.139,
+       "end": 464.416,
+       "slot_end": 464.737,
+       "slot_s": 1.598,
+       "en_s": 1.277
+      },
+      {
+       "id": "su10-reveal.c4.s3",
+       "text": "To explain.",
+       "start": 464.857,
+       "end": 465.856,
+       "slot_end": 466.34,
+       "slot_s": 1.483,
+       "en_s": 0.999
+      },
+      {
+       "id": "su10-reveal.c4.s4",
+       "text": "To measure.",
+       "start": 466.46,
+       "end": 467.203,
+       "slot_end": 467.433,
+       "slot_s": 0.973,
+       "en_s": 0.743
+      },
+      {
+       "id": "su10-reveal.c4.s5",
+       "text": "Then it was your lunch.",
+       "start": 467.553,
+       "end": 468.679,
+       "slot_end": 469.07,
+       "slot_s": 1.517,
+       "en_s": 1.126
+      },
+      {
+       "id": "su10-reveal.c4.s6",
+       "text": "Today, it's power.",
+       "start": 469.19,
+       "end": 470.583,
+       "slot_end": 470.813,
+       "slot_s": 1.623,
+       "en_s": 1.393
+      }
+     ]
+    },
+    {
+     "id": "su10-reveal.c5",
+     "text": "The Sun didn't change. We did. You have never seen the Sun as it is. Only as it was, eight minutes ago.",
+     "sentences": [
+      {
+       "id": "su10-reveal.c5.s1",
+       "text": "The Sun didn't change.",
+       "start": 470.933,
+       "end": 472.419,
+       "slot_end": 472.996,
+       "slot_s": 2.063,
+       "en_s": 1.486
+      },
+      {
+       "id": "su10-reveal.c5.s2",
+       "text": "We did.",
+       "start": 473.116,
+       "end": 473.709,
+       "slot_end": 474.455,
+       "slot_s": 1.339,
+       "en_s": 0.593
+      },
+      {
+       "id": "su10-reveal.c5.s3",
+       "text": "You have never seen the Sun as it is.",
+       "start": 474.575,
+       "end": 476.491,
+       "slot_end": 476.827,
+       "slot_s": 2.252,
+       "en_s": 1.916
+      },
+      {
+       "id": "su10-reveal.c5.s4",
+       "text": "Only as it was, eight minutes ago.",
+       "start": 476.947,
+       "end": 478.967,
+       "slot_end": 480.547,
+       "slot_s": 3.6,
+       "en_s": 2.02
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su11-2100",
+   "start": 480.667,
+   "dur": 63.366,
+   "chunks": [
+    {
+     "id": "su11-2100.c1",
+     "text": "So what's the next step on the ladder? Twenty one hundred. That morning hasn't happened yet. But we can follow the evidence.",
+     "sentences": [
+      {
+       "id": "su11-2100.c1.s1",
+       "text": "So what's the next step on the ladder?",
+       "start": 480.667,
+       "end": 482.409,
+       "slot_end": 482.902,
+       "slot_s": 2.235,
+       "en_s": 1.742
+      },
+      {
+       "id": "su11-2100.c1.s2",
+       "text": "Twenty one hundred.",
+       "start": 483.022,
+       "end": 484.032,
+       "slot_end": 484.212,
+       "slot_s": 1.19,
+       "en_s": 1.01
+      },
+      {
+       "id": "su11-2100.c1.s3",
+       "text": "That morning hasn't happened yet.",
+       "start": 484.332,
+       "end": 485.934,
+       "slot_end": 486.244,
+       "slot_s": 1.912,
+       "en_s": 1.602
+      },
+      {
+       "id": "su11-2100.c1.s4",
+       "text": "But we can follow the evidence.",
+       "start": 486.364,
+       "end": 488.013,
+       "slot_end": 488.193,
+       "slot_s": 1.829,
+       "en_s": 1.649
+      }
+     ]
+    },
+    {
+     "id": "su11-2100.c2",
+     "text": "Every video you watch, every question you ask an AI, runs in a data centre. In twenty twenty four, data centres used about one and a half percent of the world's electricity. The International Energy Agency expects that to more than double by twenty thirty. That's slightly more than all of Japan uses today.",
+     "sentences": [
+      {
+       "id": "su11-2100.c2.s1",
+       "text": "Every video you watch, every question you ask an AI, runs in a data centre.",
+       "start": 488.313,
+       "end": 493.34,
+       "slot_end": 493.557,
+       "slot_s": 5.244,
+       "en_s": 5.027
+      },
+      {
+       "id": "su11-2100.c2.s2",
+       "text": "In twenty twenty four, data centres used about one and a half percent of the world's electricity.",
+       "start": 493.677,
+       "end": 498.518,
+       "slot_end": 499.014,
+       "slot_s": 5.337,
+       "en_s": 4.841
+      },
+      {
+       "id": "su11-2100.c2.s3",
+       "text": "The International Energy Agency expects that to more than double by twenty thirty.",
+       "start": 499.134,
+       "end": 503.429,
+       "slot_end": 503.646,
+       "slot_s": 4.512,
+       "en_s": 4.295
+      },
+      {
+       "id": "su11-2100.c2.s4",
+       "text": "That's slightly more than all of Japan uses today.",
+       "start": 503.766,
+       "end": 506.657,
+       "slot_end": 506.837,
+       "slot_s": 3.071,
+       "en_s": 2.891
+      }
+     ]
+    },
+    {
+     "id": "su11-2100.c3",
+     "text": "Meanwhile, in twenty twenty three, a small Caltech satellite called Maple transmitted power wirelessly in space, and aimed a signal at a rooftop in Pasadena. Tiny. But it worked.",
+     "sentences": [
+      {
+       "id": "su11-2100.c3.s1",
+       "text": "Meanwhile, in twenty twenty three, a small Caltech satellite called Maple transmitted power wirelessly in space, and aimed a signal at a rooftop in Pasadena.",
+       "start": 506.957,
+       "end": 515.63,
+       "slot_end": 515.836,
+       "slot_s": 8.879,
+       "en_s": 8.673
+      },
+      {
+       "id": "su11-2100.c3.s2",
+       "text": "Tiny.",
+       "start": 515.956,
+       "end": 516.466,
+       "slot_end": 516.646,
+       "slot_s": 0.69,
+       "en_s": 0.51
+      },
+      {
+       "id": "su11-2100.c3.s3",
+       "text": "But it worked.",
+       "start": 516.766,
+       "end": 517.556,
+       "slot_end": 517.736,
+       "slot_s": 0.97,
+       "en_s": 0.79
+      }
+     ]
+    },
+    {
+     "id": "su11-2100.c4",
+     "text": "So here's one scenario. Not a fact. The internet, AI, and whole cities running more and more on sunlight. Some of it, maybe, collected in orbit, where the Sun never sets. In fifteen hundred, the Sun decided when you went to sleep. In twenty one hundred, it might decide whether your AI wakes up.",
+     "sentences": [
+      {
+       "id": "su11-2100.c4.s1",
+       "text": "So here's one scenario.",
+       "start": 517.856,
+       "end": 519.4,
+       "slot_end": 519.619,
+       "slot_s": 1.763,
+       "en_s": 1.544
+      },
+      {
+       "id": "su11-2100.c4.s2",
+       "text": "Not a fact.",
+       "start": 519.739,
+       "end": 520.54,
+       "slot_end": 521.009,
+       "slot_s": 1.27,
+       "en_s": 0.801
+      },
+      {
+       "id": "su11-2100.c4.s3",
+       "text": "The internet, AI, and whole cities running more and more on sunlight.",
+       "start": 521.129,
+       "end": 524.948,
+       "slot_end": 525.308,
+       "slot_s": 4.179,
+       "en_s": 3.819
+      },
+      {
+       "id": "su11-2100.c4.s4",
+       "text": "Some of it, maybe, collected in orbit, where the Sun never sets.",
+       "start": 525.428,
+       "end": 528.725,
+       "slot_end": 529.248,
+       "slot_s": 3.82,
+       "en_s": 3.297
+      },
+      {
+       "id": "su11-2100.c4.s5",
+       "text": "In fifteen hundred, the Sun decided when you went to sleep.",
+       "start": 529.368,
+       "end": 532.143,
+       "slot_end": 532.387,
+       "slot_s": 3.019,
+       "en_s": 2.775
+      },
+      {
+       "id": "su11-2100.c4.s6",
+       "text": "In twenty one hundred, it might decide whether your AI wakes up.",
+       "start": 532.507,
+       "end": 535.978,
+       "slot_end": 536.158,
+       "slot_s": 3.651,
+       "en_s": 3.471
+      }
+     ]
+    },
+    {
+     "id": "su11-2100.c5",
+     "text": "The Sun won't notice. NASA estimates it has another five billion years or so. The question is what we'll have learned to do with it.",
+     "sentences": [
+      {
+       "id": "su11-2100.c5.s1",
+       "text": "The Sun won't notice.",
+       "start": 536.278,
+       "end": 537.439,
+       "slot_end": 537.76,
+       "slot_s": 1.482,
+       "en_s": 1.161
+      },
+      {
+       "id": "su11-2100.c5.s2",
+       "text": "NASA estimates it has another five billion years or so.",
+       "start": 537.88,
+       "end": 540.968,
+       "slot_end": 541.289,
+       "slot_s": 3.409,
+       "en_s": 3.088
+      },
+      {
+       "id": "su11-2100.c5.s3",
+       "text": "The question is what we'll have learned to do with it.",
+       "start": 541.409,
+       "end": 544.033,
+       "slot_end": 545.413,
+       "slot_s": 4.004,
+       "en_s": 2.624
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su12-close",
+   "start": 545.533,
+   "dur": 8.035,
+   "chunks": [
+    {
+     "id": "su12-close.c1",
+     "text": "The Sun has risen on every single morning of your life. So tell me. When was the last time you watched it rise, on purpose?",
+     "sentences": [
+      {
+       "id": "su12-close.c1.s1",
+       "text": "The Sun has risen on every single morning of your life.",
+       "start": 545.533,
+       "end": 548.935,
+       "slot_end": 549.165,
+       "slot_s": 3.632,
+       "en_s": 3.402
+      },
+      {
+       "id": "su12-close.c1.s2",
+       "text": "So tell me.",
+       "start": 549.285,
+       "end": 550.097,
+       "slot_end": 550.407,
+       "slot_s": 1.122,
+       "en_s": 0.812
+      },
+      {
+       "id": "su12-close.c1.s3",
+       "text": "When was the last time you watched it rise, on purpose?",
+       "start": 550.527,
+       "end": 553.569,
+       "slot_end": 555.447,
+       "slot_s": 4.92,
+       "en_s": 3.042
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su13-outro",
+   "start": 555.567,
+   "dur": 43.733,
+   "chunks": [
+    {
+     "id": "su13-outro.c1",
+     "text": "This was Did You Know That, episode two. The Sun. Now it is your turn. In which century would you rather watch the Sun rise? Tell me in the comments. At the end of every episode, I will read the best comment, right here, on this screen. And the subject you ask for most becomes a future episode. On our website, Dex-tee dot live, you can watch every episode, collect the facts and play the guessing game.",
+     "sentences": [
+      {
+       "id": "su13-outro.c1.s1",
+       "text": "This was Did You Know That, episode two.",
+       "start": 555.567,
+       "end": 557.61,
+       "slot_end": 557.792,
+       "slot_s": 2.225,
+       "en_s": 2.043
+      },
+      {
+       "id": "su13-outro.c1.s2",
+       "text": "The Sun.",
+       "start": 557.912,
+       "end": 558.585,
+       "slot_end": 558.765,
+       "slot_s": 0.853,
+       "en_s": 0.673
+      },
+      {
+       "id": "su13-outro.c1.s3",
+       "text": "Now it is your turn.",
+       "start": 558.885,
+       "end": 559.895,
+       "slot_end": 560.135,
+       "slot_s": 1.25,
+       "en_s": 1.01
+      },
+      {
+       "id": "su13-outro.c1.s4",
+       "text": "In which century would you rather watch the Sun rise?",
+       "start": 560.255,
+       "end": 562.971,
+       "slot_end": 563.211,
+       "slot_s": 2.956,
+       "en_s": 2.716
+      },
+      {
+       "id": "su13-outro.c1.s5",
+       "text": "Tell me in the comments.",
+       "start": 563.331,
+       "end": 564.387,
+       "slot_end": 564.627,
+       "slot_s": 1.296,
+       "en_s": 1.056
+      },
+      {
+       "id": "su13-outro.c1.s6",
+       "text": "At the end of every episode, I will read the best comment, right here, on this screen.",
+       "start": 564.747,
+       "end": 568.567,
+       "slot_end": 568.853,
+       "slot_s": 4.106,
+       "en_s": 3.82
+      },
+      {
+       "id": "su13-outro.c1.s7",
+       "text": "And the subject you ask for most becomes a future episode.",
+       "start": 568.973,
+       "end": 571.667,
+       "slot_end": 571.847,
+       "slot_s": 2.874,
+       "en_s": 2.694
+      },
+      {
+       "id": "su13-outro.c1.s8",
+       "text": "On our website, Dex-tee dot live, you can watch every episode, collect the facts and play the guessing game.",
+       "start": 571.967,
+       "end": 578.167,
+       "slot_end": 578.347,
+       "slot_s": 6.38,
+       "en_s": 6.2
+      }
+     ]
+    },
+    {
+     "id": "su13-outro.c2",
+     "text": "If this changed how you see a sunrise, like it. Share it with the friend who never misses one. And subscribe, so the next mystery finds you.",
+     "sentences": [
+      {
+       "id": "su13-outro.c2.s1",
+       "text": "If this changed how you see a sunrise, like it.",
+       "start": 578.467,
+       "end": 581.091,
+       "slot_end": 581.44,
+       "slot_s": 2.973,
+       "en_s": 2.624
+      },
+      {
+       "id": "su13-outro.c2.s2",
+       "text": "Share it with the friend who never misses one.",
+       "start": 581.56,
+       "end": 583.813,
+       "slot_end": 584.104,
+       "slot_s": 2.544,
+       "en_s": 2.253
+      },
+      {
+       "id": "su13-outro.c2.s3",
+       "text": "And subscribe, so the next mystery finds you.",
+       "start": 584.224,
+       "end": 586.766,
+       "slot_end": 586.946,
+       "slot_s": 2.722,
+       "en_s": 2.542
+      }
+     ]
+    },
+    {
+     "id": "su13-outro.c3",
+     "text": "Next time: school. How did a day in class change from fifteen hundred to today, and will the classrooms of twenty one hundred even exist?",
+     "sentences": [
+      {
+       "id": "su13-outro.c3.s1",
+       "text": "Next time: school.",
+       "start": 587.066,
+       "end": 588.645,
+       "slot_end": 589.001,
+       "slot_s": 1.935,
+       "en_s": 1.579
+      },
+      {
+       "id": "su13-outro.c3.s2",
+       "text": "How did a day in class change from fifteen hundred to today, and will the classrooms of twenty one hundred even exist?",
+       "start": 589.121,
+       "end": 595.518,
+       "slot_end": 595.698,
+       "slot_s": 6.577,
+       "en_s": 6.397
+      }
+     ]
+    },
+    {
+     "id": "su13-outro.c4",
+     "text": "Ask...",
+     "sentences": [
+      {
+       "id": "su13-outro.c4.s1",
+       "text": "Ask...",
+       "start": 595.818,
+       "end": 596.171,
+       "slot_end": 597.054,
+       "slot_s": 1.236,
+       "en_s": 0.353
+      }
+     ]
+    },
+    {
+     "id": "su13-outro.c5",
+     "text": "Wonder...",
+     "sentences": [
+      {
+       "id": "su13-outro.c5.s1",
+       "text": "Wonder...",
+       "start": 597.174,
+       "end": 597.511,
+       "slot_end": 598.394,
+       "slot_s": 1.22,
+       "en_s": 0.337
+      }
+     ]
+    },
+    {
+     "id": "su13-outro.c6",
+     "text": "Repeat.",
+     "sentences": [
+      {
+       "id": "su13-outro.c6.s1",
+       "text": "Repeat.",
+       "start": 598.514,
+       "end": 599.095,
+       "slot_end": 600.447,
+       "slot_s": 1.933,
+       "en_s": 0.581
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su14-endscreen",
+   "start": 600.567,
+   "dur": 5.094,
+   "chunks": [
+    {
+     "id": "su14-endscreen.c1",
+     "text": "Next time... this could be your comment. Pick a mystery. And I will see you there.",
+     "sentences": [
+      {
+       "id": "su14-endscreen.c1.s1",
+       "text": "Next time...",
+       "start": 600.567,
+       "end": 601.333,
+       "slot_end": 601.538,
+       "slot_s": 0.971,
+       "en_s": 0.766
+      },
+      {
+       "id": "su14-endscreen.c1.s2",
+       "text": "this could be your comment.",
+       "start": 601.658,
+       "end": 602.935,
+       "slot_end": 603.115,
+       "slot_s": 1.457,
+       "en_s": 1.277
+      },
+      {
+       "id": "su14-endscreen.c1.s3",
+       "text": "Pick a mystery.",
+       "start": 603.235,
+       "end": 604.083,
+       "slot_end": 604.263,
+       "slot_s": 1.028,
+       "en_s": 0.848
+      },
+      {
+       "id": "su14-endscreen.c1.s4",
+       "text": "And I will see you there.",
+       "start": 604.383,
+       "end": 605.66,
+       "slot_end": 616.7,
+       "slot_s": 12.317,
+       "en_s": 1.277
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,650 @@
+{
+ "lang": "ro",
+ "episode": "03",
+ "sentences": {
+  "sc01-hook.c1.s1": {
+   "say": "Opt fără un sfert.",
+   "show": "7:45."
+  },
+  "sc01-hook.c1.s2": {
+   "say": "Undeva aproape, o să sune clopoțelul de școală."
+  },
+  "sc01-hook.c1.s3": {
+   "say": "Acum, cam unu virgulă patru miliarde de copii sunt la școală.",
+   "show": "Acum, cam 1,4 miliarde de copii sunt la școală."
+  },
+  "sc01-hook.c1.s4": {
+   "say": "Mai mulți ca oricând."
+  },
+  "sc01-hook.c2.s1": {
+   "say": "Acum cinci sute de ani, cei mai mulți copii nu vedeau o clasă."
+  },
+  "sc01-hook.c2.s2": {
+   "say": "Munceau."
+  },
+  "sc01-hook.c2.s3": {
+   "say": "Azi, cei mai mulți stau în bancă în fiecare zi de școală."
+  },
+  "sc02-question.c1.s1": {
+   "say": "Și totuși, știai că la început cuvântul școală însemna..."
+  },
+  "sc02-question.c1.s2": {
+   "say": "chiar lucrul pe care școala pare să ți-l fure?"
+  },
+  "sc00-welcome.c1.s1": {
+   "say": "Bine ai revenit la Did You Know That."
+  },
+  "sc00-welcome.c1.s2": {
+   "say": "Episodul trei."
+  },
+  "sc00-welcome.c1.s3": {
+   "say": "Știi regula."
+  },
+  "sc00-welcome.c1.s4": {
+   "say": "Ghicitoarea ta."
+  },
+  "sc00-welcome.c1.s5": {
+   "say": "Acum două sute de ani, din zece oameni de pe Pământ, câți știau să citească?"
+  },
+  "sc00-welcome.c1.s6": {
+   "say": "Ghicește în comentarii, acum."
+  },
+  "sc00-welcome.c1.s7": {
+   "say": "Apoi rămâi până la final și verifică-ți ghicitul."
+  },
+  "sc03-promise.c1.s1": {
+   "say": "Șapte dimineți, din o mie cinci sute până în două mii o sută.",
+   "show": "Șapte dimineți, din 1500 până în 2100."
+  },
+  "sc03-promise.c1.s2": {
+   "say": "În fiecare te trezești alt copil, într-o zi de școală."
+  },
+  "sc03-promise.c1.s3": {
+   "say": "Sau într-o zi fără școală."
+  },
+  "sc03-promise.c1.s4": {
+   "say": "Începi învățând o meserie cu mâinile tale."
+  },
+  "sc03-promise.c1.s5": {
+   "say": "Ajungi unde profesorul tău poate nici nu e om."
+  },
+  "sc03-promise.c1.s6": {
+   "say": "Iar la sfârșit afli ce înseamnă de fapt cuvântul școală."
+  },
+  "sc04-1500.c1.s1": {
+   "say": "Te trezești în o mie cinci sute, la Londra.",
+   "show": "Te trezești în 1500, la Londra."
+  },
+  "sc04-1500.c1.s2": {
+   "say": "Încă e întuneric."
+  },
+  "sc04-1500.c1.s3": {
+   "say": "Alături, un ciocan bate deja, iar strada miroase a paie ude și a fum de lemne."
+  },
+  "sc04-1500.c2.s1": {
+   "say": "Știai că, estimează istoricii, doar cam una din o sută de femei din Anglia putea măcar să-și scrie numele?"
+  },
+  "sc04-1500.c3.s1": {
+   "say": "Deci ce e școala pentru tine?"
+  },
+  "sc04-1500.c3.s2": {
+   "say": "Ceva pentru alții."
+  },
+  "sc04-1500.c3.s3": {
+   "say": "Pentru preoți și băieți bogați."
+  },
+  "sc04-1500.c3.s4": {
+   "say": "Cei mai mulți învață muncind."
+  },
+  "sc04-1500.c3.s5": {
+   "say": "Ești fiu de meșteșugar? Ești ucenic."
+  },
+  "sc04-1500.c3.s6": {
+   "say": "De obicei șapte ani, în casa maestrului, învățând meseria chiar făcând-o."
+  },
+  "sc04-1500.c4.s1": {
+   "say": "Dacă ai norocul unei școli de gramatică, orele încep adesea la șase."
+  },
+  "sc04-1500.c4.s2": {
+   "say": "În latină."
+  },
+  "sc04-1500.c4.s3": {
+   "say": "Iar dacă ești prinț?"
+  },
+  "sc04-1500.c4.s4": {
+   "say": "Prințul Henric, de nouă ani, viitorul Henric al optulea, are un profesor numai al lui, poetul John Skelton."
+  },
+  "sc04-1500.c4.s5": {
+   "say": "Un profesor."
+  },
+  "sc04-1500.c4.s6": {
+   "say": "Un copil."
+  },
+  "sc04-1500.c4.s7": {
+   "say": "Ține minte."
+  },
+  "sc04-1500.c5.s1": {
+   "say": "În o mie cinci sute douăzeci și patru, predicatorul rebel Martin Luther scrie orașelor germane."
+  },
+  "sc04-1500.c5.s2": {
+   "say": "Construiți școli, spune."
+  },
+  "sc04-1500.c5.s3": {
+   "say": "Pentru băieți și fete."
+  },
+  "sc04-1500.c5.s4": {
+   "say": "În parte, ca toți să citească Biblia."
+  },
+  "sc04-1500.c6.s1": {
+   "say": "De ce i-ar păsa unui oraș întreg dacă fata unui fermier citește?"
+  },
+  "sc04-1500.c6.s2": {
+   "say": "Curând, o colonie de peste ocean o va scrie în lege."
+  },
+  "sc05-1647.c1.s1": {
+   "say": "Te trezești în o mie șase sute patruzeci și șapte, la țară, în Massachusetts.",
+   "show": "Te trezești în 1647, la țară, în Massachusetts."
+  },
+  "sc05-1647.c1.s2": {
+   "say": "E chiciură pe geam, iar vacile trebuie mulse până la mic dejun."
+  },
+  "sc05-1647.c2.s1": {
+   "say": "Știai că una dintre primele legi școlare ale Americii începe dând vina pe diavol?"
+  },
+  "sc05-1647.c2.s2": {
+   "say": "Spune că e un plan de bază al bătrânului înșelător, Satana, să-i țină pe oameni departe de cunoașterea Scripturilor."
+  },
+  "sc05-1647.c3.s1": {
+   "say": "Deci ce e școala pentru tine acum?"
+  },
+  "sc05-1647.c3.s2": {
+   "say": "Cu ochii tăi citești cuvântul lui Dumnezeu."
+  },
+  "sc05-1647.c3.s3": {
+   "say": "Cu cinci ani înainte, o lege cerea părinților și stăpânilor să-i învețe pe copii să citească."
+  },
+  "sc05-1647.c3.s4": {
+   "say": "Mulți nu s-au obosit."
+  },
+  "sc05-1647.c4.s1": {
+   "say": "Acum orice oraș cu cincizeci de case angajează pe cineva să predea citit și scris."
+  },
+  "sc05-1647.c4.s2": {
+   "say": "O sută de case?"
+  },
+  "sc05-1647.c4.s3": {
+   "say": "Și o școală de gramatică, sau plătește amendă."
+  },
+  "sc05-1647.c4.s4": {
+   "say": "Înveți literele între treburi, iar duminică afli de ce contează."
+  },
+  "sc05-1647.c5.s1": {
+   "say": "În toată Europa protestantă, bisericile vor oameni care citesc."
+  },
+  "sc05-1647.c5.s2": {
+   "say": "Dar o biserică doar poate cere."
+  },
+  "sc05-1647.c5.s3": {
+   "say": "Veacul următor, un rege va porunci."
+  },
+  "sc05-1647.c5.s4": {
+   "say": "Și va interzice un lucru la care se bucură orice copil de pe Pământ."
+  },
+  "sc06-1763.c1.s1": {
+   "say": "Te trezești în o mie șapte sute șaizeci și trei, într-un sat din Prusia.",
+   "show": "Te trezești în 1763, într-un sat din Prusia."
+  },
+  "sc06-1763.c1.s2": {
+   "say": "E toamnă."
+  },
+  "sc06-1763.c1.s3": {
+   "say": "Războiul s-a încheiat, recolta e strânsă, iar pastorul are vești de la rege."
+  },
+  "sc06-1763.c2.s1": {
+   "say": "Știai că noua lege a lui Frederic cel Mare a interzis vacanțele școlare?"
+  },
+  "sc06-1763.c2.s2": {
+   "say": "Nici măcar la recoltă."
+  },
+  "sc06-1763.c3.s1": {
+   "say": "Deci ce e școala acum?"
+  },
+  "sc06-1763.c3.s2": {
+   "say": "O poruncă."
+  },
+  "sc06-1763.c3.s3": {
+   "say": "De la rege."
+  },
+  "sc06-1763.c3.s4": {
+   "say": "Fiecare băiat și fată, de la cinci ani până pe la treisprezece."
+  },
+  "sc06-1763.c3.s5": {
+   "say": "Dacă lipsești, părinții pot fi amendați."
+  },
+  "sc06-1763.c4.s1": {
+   "say": "Iarna ai ore de la opt la unsprezece și de la unu la patru."
+  },
+  "sc06-1763.c4.s2": {
+   "say": "Vara, doar câteva ore, că trebuie păzite vacile."
+  },
+  "sc06-1763.c4.s3": {
+   "say": "Legea spune chiar: angajați un cioban, ca să poată copiii merge la școală."
+  },
+  "sc06-1763.c4.s4": {
+   "say": "Învățătorul tău poate fi un soldat bătrân."
+  },
+  "sc06-1763.c4.s5": {
+   "say": "Așa erau mulți învățători de la început."
+  },
+  "sc06-1763.c5.s1": {
+   "say": "Se zice că școala a fost făcută pentru muncitori de fabrică ascultători."
+  },
+  "sc06-1763.c5.s2": {
+   "say": "Istoricii spun că nu-i așa simplu."
+  },
+  "sc06-1763.c5.s3": {
+   "say": "Prusia era tot o țară de ferme."
+  },
+  "sc06-1763.c5.s4": {
+   "say": "Regele și biserica voiau supuși loiali, cu frică de Dumnezeu, disciplinați."
+  },
+  "sc06-1763.c5.s5": {
+   "say": "Iar multe familii ignorau regulile."
+  },
+  "sc06-1763.c6.s1": {
+   "say": "Dar un învățător pe sat e lent și scump."
+  },
+  "sc06-1763.c6.s2": {
+   "say": "La Londra, un tânăr crede că îi poate învăța pe săraci aproape fără bani."
+  },
+  "sc06-1763.c6.s3": {
+   "say": "Trucul lui?"
+  },
+  "sc06-1763.c6.s4": {
+   "say": "Copiii să devină profesori."
+  },
+  "sc07-1810.c1.s1": {
+   "say": "Te trezești în o mie opt sute zece, la Londra, pe Borough Road.",
+   "show": "Te trezești în 1810, la Londra, pe Borough Road."
+  },
+  "sc07-1810.c1.s2": {
+   "say": "Intri într-o sală uriașă."
+  },
+  "sc07-1810.c1.s3": {
+   "say": "Sute de copii, în rânduri lungi."
+  },
+  "sc07-1810.c1.s4": {
+   "say": "Și un singur maestru."
+  },
+  "sc07-1810.c2.s1": {
+   "say": "Știai că fondatorul școlii, Joseph Lancaster, susținea că un singur maestru poate conduce o școală de peste o mie de copii?"
+  },
+  "sc07-1810.c3.s1": {
+   "say": "Cei mari îi învață pe cei mici, în grupuri mici."
+  },
+  "sc07-1810.c3.s2": {
+   "say": "Scrii literele în nisip, cu degetul, fiindcă hârtia costă bani."
+  },
+  "sc07-1810.c3.s3": {
+   "say": "Te porți urât? Poți fi ridicat deasupra clasei, într-o cușcă."
+  },
+  "sc07-1810.c3.s4": {
+   "say": "Pe bune."
+  },
+  "sc07-1810.c3.s5": {
+   "say": "Mai bună ca nuiaua, credea Lancaster."
+  },
+  "sc07-1810.c4.s1": {
+   "say": "Deci ce e școala pentru tine?"
+  },
+  "sc07-1810.c4.s2": {
+   "say": "O mașinărie."
+  },
+  "sc07-1810.c4.s3": {
+   "say": "Pentru a-i învăța pe săraci, cu sutele, cât mai ieftin."
+  },
+  "sc07-1810.c4.s4": {
+   "say": "Până moare Lancaster, peste o mie două sute de școli ar fi folosit sistemul lui."
+  },
+  "sc07-1810.c5.s1": {
+   "say": "Apoi intervine legea."
+  },
+  "sc07-1810.c5.s2": {
+   "say": "În o mie opt sute optzeci, în Anglia școala e obligatorie, de la cinci la zece ani."
+  },
+  "sc07-1810.c5.s3": {
+   "say": "În o mie opt sute nouăzeci și unu, e gratis pentru cei mai mulți."
+  },
+  "sc07-1810.c6.s1": {
+   "say": "Acum orice copil trebuie să meargă."
+  },
+  "sc07-1810.c6.s2": {
+   "say": "Dar în secolul următor, școala nu mai e o obligație."
+  },
+  "sc07-1810.c6.s3": {
+   "say": "Devine ceva pentru care oamenii luptă."
+  },
+  "sc08-1948.c1.s1": {
+   "say": "Anul o mie nouă sute patruzeci și opt, un orășel american.",
+   "show": "Anul 1948, un orășel american."
+  },
+  "sc08-1948.c1.s2": {
+   "say": "E iunie."
+  },
+  "sc08-1948.c1.s3": {
+   "say": "Ziua absolvirii."
+  },
+  "sc08-1948.c1.s4": {
+   "say": "Mama îți calcă roba, iar radioul merge."
+  },
+  "sc08-1948.c2.s1": {
+   "say": "Știai că în o mie nouă sute zece, sub unul din cinci adolescenți americani ajungea la liceu?"
+  },
+  "sc08-1948.c2.s2": {
+   "say": "Până în o mie nouă sute patruzeci, cam șapte din zece."
+  },
+  "sc08-1948.c3.s1": {
+   "say": "Bunicul tău a lăsat probabil școala, la muncă."
+  },
+  "sc08-1948.c3.s2": {
+   "say": "Tu rămâi până la capăt, fiindcă o diplomă deschide uși."
+  },
+  "sc08-1948.c3.s3": {
+   "say": "Deci ce e școala pentru tine acum?"
+  },
+  "sc08-1948.c3.s4": {
+   "say": "O scară."
+  },
+  "sc08-1948.c3.s5": {
+   "say": "Fiecare an urcat te apropie de o slujbă mai bună."
+  },
+  "sc08-1948.c4.s1": {
+   "say": "Iar în decembrie, la Paris, Națiunile Unite o scriu pentru toată lumea."
+  },
+  "sc08-1948.c4.s2": {
+   "say": "Orice om are dreptul la educație."
+  },
+  "sc08-1948.c4.s3": {
+   "say": "Gratis, măcar în primii ani."
+  },
+  "sc08-1948.c5.s1": {
+   "say": "Acum școala e un drept."
+  },
+  "sc08-1948.c5.s2": {
+   "say": "Și o scară."
+  },
+  "sc08-1948.c5.s3": {
+   "say": "Și o clădire spre care mergi dimineața."
+  },
+  "sc08-1948.c5.s4": {
+   "say": "Dar peste vreo șaptezeci de ani, majoritatea școlilor lumii se închid."
+  },
+  "sc08-1948.c5.s5": {
+   "say": "Aproape deodată."
+  },
+  "sc09-today.c1.s1": {
+   "say": "Te trezești azi."
+  },
+  "sc09-today.c1.s2": {
+   "say": "Vibrează telefonul."
+  },
+  "sc09-today.c1.s3": {
+   "say": "Tema, la miezul nopții."
+  },
+  "sc09-today.c1.s4": {
+   "say": "Și orice întrebare ai, o poți pune unui ecran."
+  },
+  "sc09-today.c2.s1": {
+   "say": "Știai că în aprilie două mii douăzeci, cam unu virgulă șase miliarde de elevi au fost trimiși acasă?",
+   "show": "Știai că în aprilie 2020, cam 1,6 miliarde de elevi au fost trimiși acasă?"
+  },
+  "sc09-today.c2.s2": {
+   "say": "E mai mult de nouă din zece elevi de pe Pământ."
+  },
+  "sc09-today.c3.s1": {
+   "say": "Lecțiile s-au mutat în bucătării și dormitoare, pe laptopuri și telefoane."
+  },
+  "sc09-today.c3.s2": {
+   "say": "Dar cel puțin patru sute șaizeci și trei de milioane de copii n-au avut lecții la distanță."
+  },
+  "sc09-today.c3.s3": {
+   "say": "Deci ce e școala acum?"
+  },
+  "sc09-today.c3.s4": {
+   "say": "Mereu activă."
+  },
+  "sc09-today.c3.s5": {
+   "say": "O clasă, plus un ecran mereu deschis."
+  },
+  "sc09-today.c4.s1": {
+   "say": "Iar când clădirile s-au închis, mulți am aflat cât ne vor lipsi."
+  },
+  "sc09-today.c4.s2": {
+   "say": "Deci iată întrebarea pentru care ai venit."
+  },
+  "sc09-today.c4.s3": {
+   "say": "Ce însemna cuvântul școală înainte de toate astea?"
+  },
+  "sc10-reveal.c1.s1": {
+   "say": "Iată răspunsul."
+  },
+  "sc10-reveal.c1.s2": {
+   "say": "Școala vine dintr-un cuvânt grecesc vechi, scoh-LEI."
+  },
+  "sc10-reveal.c1.s3": {
+   "say": "Și însemna..."
+  },
+  "sc10-reveal.c1.s4": {
+   "say": "timp liber."
+  },
+  "sc10-reveal.c1.s5": {
+   "say": "Răgaz."
+  },
+  "sc10-reveal.c2.s1": {
+   "say": "În Atena, oamenii cu timp liber îl petreceau discutând, certându-se, învățând."
+  },
+  "sc10-reveal.c2.s2": {
+   "say": "Cuvântul pentru timp liber a devenit cuvântul pentru locul de învățat."
+  },
+  "sc10-reveal.c3.s1": {
+   "say": "Și ghicitul tău?"
+  },
+  "sc10-reveal.c3.s2": {
+   "say": "Acum două sute de ani, doar cam unul din zece de pe Pământ știa să citească."
+  },
+  "sc10-reveal.c3.s3": {
+   "say": "Azi, sunt aproape nouă din zece."
+  },
+  "sc10-reveal.c4.s1": {
+   "say": "Cât de aproape ai fost?"
+  },
+  "sc10-reveal.c4.s2": {
+   "say": "Acum urcă din nou scara, cu mine."
+  },
+  "sc10-reveal.c5.s1": {
+   "say": "În o mie cinci sute, școala era pentru puțini.",
+   "show": "În 1500, școala era pentru puțini."
+  },
+  "sc10-reveal.c5.s2": {
+   "say": "Apoi, o cale să citești Biblia."
+  },
+  "sc10-reveal.c5.s3": {
+   "say": "Apoi, porunca regelui."
+  },
+  "sc10-reveal.c5.s4": {
+   "say": "Apoi, o mașinărie pentru sute."
+  },
+  "sc10-reveal.c5.s5": {
+   "say": "Apoi, dreptul și scara ta."
+  },
+  "sc10-reveal.c5.s6": {
+   "say": "Azi, nu se oprește niciodată."
+  },
+  "sc10-reveal.c6.s1": {
+   "say": "Școala a început ca timp liber, pentru câțiva norocoși."
+  },
+  "sc10-reveal.c6.s2": {
+   "say": "Acum, acolo își petrec săptămâna cei mai mulți copii de pe Pământ."
+  },
+  "sc11-2100.c1.s1": {
+   "say": "Ce treaptă urmează?"
+  },
+  "sc11-2100.c1.s2": {
+   "say": "Două mii o sută.",
+   "show": "2100."
+  },
+  "sc11-2100.c1.s3": {
+   "say": "N-a venit încă dimineața aceea."
+  },
+  "sc11-2100.c1.s4": {
+   "say": "Dar putem urma dovezile."
+  },
+  "sc11-2100.c2.s1": {
+   "say": "Ții minte tutorul lui Henric?"
+  },
+  "sc11-2100.c2.s2": {
+   "say": "Un tutor, un copil."
+  },
+  "sc11-2100.c2.s3": {
+   "say": "În o mie nouă sute optzeci și patru, cercetătorul american Bloom a raportat: elevii cu tutor au depășit nouăzeci și opt la sută din clasa normală."
+  },
+  "sc11-2100.c3.s1": {
+   "say": "Studii mai noi au găsit un efect mai mic."
+  },
+  "sc11-2100.c3.s2": {
+   "say": "Dar e real."
+  },
+  "sc11-2100.c3.s3": {
+   "say": "Problema a fost mereu costul."
+  },
+  "sc11-2100.c3.s4": {
+   "say": "Nu poate nimeni plăti un tutor per copil."
+  },
+  "sc11-2100.c4.s1": {
+   "say": "În două mii douăzeci și patru, un pilot al Băncii Mondiale în Nigeria a dat elevilor un tutor ei-ai, de două ori pe săptămână, cu profesori.",
+   "show": "În 2024, un pilot al Băncii Mondiale în Nigeria a dat elevilor un tutor AI, de două ori pe săptămână, cu profesori."
+  },
+  "sc11-2100.c4.s2": {
+   "say": "După șase săptămâni, Banca Mondială estimează aproape doi ani de învățare tipică."
+  },
+  "sc11-2100.c4.s3": {
+   "say": "Un studiu mic."
+  },
+  "sc11-2100.c4.s4": {
+   "say": "Scurt."
+  },
+  "sc11-2100.c4.s5": {
+   "say": "Dar e un început."
+  },
+  "sc11-2100.c5.s1": {
+   "say": "Iată un scenariu."
+  },
+  "sc11-2100.c5.s2": {
+   "say": "Nu un fapt."
+  },
+  "sc11-2100.c5.s3": {
+   "say": "Pe la două mii o sută, orice copil ar putea avea tutor."
+  },
+  "sc11-2100.c5.s4": {
+   "say": "Nu poetul unui prinț."
+  },
+  "sc11-2100.c5.s5": {
+   "say": "O mașină răbdătoare, trează la orice oră."
+  },
+  "sc11-2100.c6.s1": {
+   "say": "Și clasa?"
+  },
+  "sc11-2100.c6.s2": {
+   "say": "OCDE a imaginat viitoruri în care școala devine un centru de învățare, și chiar unul în care dispare."
+  },
+  "sc11-2100.c6.s3": {
+   "say": "Dar UNESCO spune că școlile trebuie protejate."
+  },
+  "sc11-2100.c6.s4": {
+   "say": "Dacă nu ar exista, ar trebui să le inventăm."
+  },
+  "sc11-2100.c7.s1": {
+   "say": "În o mie cinci sute, un profesor privat era pentru un prinț."
+  },
+  "sc11-2100.c7.s2": {
+   "say": "În două mii o sută, ar putea fi pentru toți."
+  },
+  "sc11-2100.c7.s3": {
+   "say": "Iar școala s-ar putea apropia de ce însemna numele ei la început."
+  },
+  "sc12-close.c1.s1": {
+   "say": "Ai petrecut ani din viață la școală."
+  },
+  "sc12-close.c1.s2": {
+   "say": "Deci spune-mi."
+  },
+  "sc12-close.c1.s3": {
+   "say": "Ce lucru ți-a dat școala pe care niciun ecran nu l-ar putea da?"
+  },
+  "sc13-outro.c1.s1": {
+   "say": "Asta a fost Did You Know That, episodul trei.",
+   "show": "Asta a fost Did You Know That, episodul 3."
+  },
+  "sc13-outro.c1.s2": {
+   "say": "Școala."
+  },
+  "sc13-outro.c1.s3": {
+   "say": "Acum e rândul tău."
+  },
+  "sc13-outro.c1.s4": {
+   "say": "Clasa din ce secol ai supraviețui?"
+  },
+  "sc13-outro.c1.s5": {
+   "say": "Spune-mi în comentarii."
+  },
+  "sc13-outro.c1.s6": {
+   "say": "La finalul fiecărui episod citesc cel mai bun comentariu, chiar aici, pe ecran."
+  },
+  "sc13-outro.c1.s7": {
+   "say": "Iar subiectul cerut cel mai des devine un episod viitor."
+  },
+  "sc13-outro.c1.s8": {
+   "say": "Pe site-ul nostru, Dexti punct laiv, poți vedea toate episoadele, strânge faptele și juca jocul ghicitului.",
+   "show": "Pe site-ul nostru, Dexty.live, poți vedea toate episoadele, strânge faptele și juca jocul ghicitului."
+  },
+  "sc13-outro.c2.s1": {
+   "say": "Dacă ți-a schimbat felul în care vezi o zi de școală, dă like."
+  },
+  "sc13-outro.c2.s2": {
+   "say": "Trimite-l prietenului care făcea mereu temele."
+  },
+  "sc13-outro.c2.s3": {
+   "say": "Abonează-te, să te găsească următorul mister."
+  },
+  "sc13-outro.c3.s1": {
+   "say": "Data viitoare: banii."
+  },
+  "sc13-outro.c3.s2": {
+   "say": "În lume, fiecare an în plus de școală adaugă, în medie, cam nouă la sută la venituri."
+  },
+  "sc13-outro.c3.s3": {
+   "say": "Dar te-a învățat școala ce sunt de fapt banii?"
+  },
+  "sc13-outro.c4.s1": {
+   "say": "Întreabă..."
+  },
+  "sc13-outro.c5.s1": {
+   "say": "Uimește-te."
+  },
+  "sc13-outro.c6.s1": {
+   "say": "Repetă."
+  },
+  "sc14-endscreen.c1.s1": {
+   "say": "Data viitoare..."
+  },
+  "sc14-endscreen.c1.s2": {
+   "say": "Ar putea fi al tău."
+  },
+  "sc14-endscreen.c1.s3": {
+   "say": "Alege un mister."
+  },
+  "sc14-endscreen.c1.s4": {
+   "say": "Și ne vedem acolo."
+  }
+ }
+}

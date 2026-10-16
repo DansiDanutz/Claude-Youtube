@@ -1,0 +1,625 @@
+{
+ "lang": "ro",
+ "episode": "04",
+ "sentences": {
+  "mo01-hook.c1.s1": {
+   "say": "Data trecută ți-am lăsat o întrebare."
+  },
+  "mo01-hook.c1.s2": {
+   "say": "Te-a învățat școala ce este banul, de fapt?"
+  },
+  "mo01-hook.c1.s3": {
+   "say": "Scoate o bancnotă din portofel."
+  },
+  "mo01-hook.c1.s4": {
+   "say": "Oricare."
+  },
+  "mo01-hook.c1.s5": {
+   "say": "E hârtie, sau plastic, și puțină cerneală."
+  },
+  "mo01-hook.c1.s6": {
+   "say": "Și totuși, ai da ore din viața ta pentru câteva."
+  },
+  "mo02-question.c1.s1": {
+   "say": "Iată partea ciudată."
+  },
+  "mo02-question.c1.s2": {
+   "say": "Știai că cei mai mulți bani de azi nu sunt hârtie, nici metal, nimic ce ai putea ține în mână?"
+  },
+  "mo02-question.c1.s3": {
+   "say": "Deci ce sunt, de fapt?"
+  },
+  "mo00-welcome.c1.s1": {
+   "say": "Bine ai revenit la Did You Know That."
+  },
+  "mo00-welcome.c1.s2": {
+   "say": "Episodul patru."
+  },
+  "mo00-welcome.c1.s3": {
+   "say": "Știi regula."
+  },
+  "mo00-welcome.c1.s4": {
+   "say": "Ai de ghicit."
+  },
+  "mo00-welcome.c1.s5": {
+   "say": "În Marea Britanie, din fiecare sută de lire pe care le au oamenii, câte sunt bancnote și monede adevărate?"
+  },
+  "mo00-welcome.c1.s6": {
+   "say": "Ghicește în comentarii, acum."
+  },
+  "mo00-welcome.c1.s7": {
+   "say": "Apoi rămâi până la final și verifică-ți răspunsul."
+  },
+  "mo03-promise.c1.s1": {
+   "say": "Șapte dimineți: din o mie cinci sute în două mii o sută.",
+   "show": "Șapte dimineți: din 1500 în 2100."
+  },
+  "mo03-promise.c1.s2": {
+   "say": "În fiecare te trezești altundeva, cu bani în mână."
+  },
+  "mo03-promise.c1.s3": {
+   "say": "Sau în telefon."
+  },
+  "mo03-promise.c1.s4": {
+   "say": "Începi cu bani de băut."
+  },
+  "mo03-promise.c1.s5": {
+   "say": "Sfârșești cu bani care ar putea fi doar cod."
+  },
+  "mo03-promise.c1.s6": {
+   "say": "Iar la final, afli ce sunt banii cu adevărat."
+  },
+  "mo04-1500.c1.s1": {
+   "say": "Te trezești în anul o mie cinci sute, în Tenochtitlan, orașul-insulă al aztecilor.",
+   "show": "Te trezești în anul 1500, în Tenochtitlan, orașul-insulă al aztecilor."
+  },
+  "mo04-1500.c1.s2": {
+   "say": "Canoe se lovesc pe canale."
+  },
+  "mo04-1500.c1.s3": {
+   "say": "Piața e deja gălăgioasă și miroase a ardei iute și fum de lemne."
+  },
+  "mo04-1500.c2.s1": {
+   "say": "Știai că aici banii cresc în copaci?"
+  },
+  "mo04-1500.c2.s2": {
+   "say": "Boabe de cacao."
+  },
+  "mo04-1500.c2.s3": {
+   "say": "Cele din care se face ciocolata."
+  },
+  "mo04-1500.c3.s1": {
+   "say": "O listă de prețuri de peste câteva decenii o spune clar."
+  },
+  "mo04-1500.c3.s2": {
+   "say": "Un avocado copt, o boabă."
+  },
+  "mo04-1500.c3.s3": {
+   "say": "O curcă bună, o sută."
+  },
+  "mo04-1500.c3.s4": {
+   "say": "Afaceri mari, plătite în mantii de bumbac."
+  },
+  "mo04-1500.c3.s5": {
+   "say": "Un frate spaniol scria despre vânzători de cacao falsă."
+  },
+  "mo04-1500.c3.s6": {
+   "say": "Falsuri."
+  },
+  "mo04-1500.c3.s7": {
+   "say": "Cu ciocolată."
+  },
+  "mo04-1500.c4.s1": {
+   "say": "Ce sunt banii pentru tine?"
+  },
+  "mo04-1500.c4.s2": {
+   "say": "Ceva util."
+  },
+  "mo04-1500.c4.s3": {
+   "say": "Ceva ce poți și bea."
+  },
+  "mo04-1500.c4.s4": {
+   "say": "Poate ai auzit: banii au apărut fiindcă schimbul de capre pe grâu era incomod."
+  },
+  "mo04-1500.c4.s5": {
+   "say": "Antropologii spun că n-au găsit niciodată o societate întreagă care trăiește doar din troc."
+  },
+  "mo04-1500.c4.s6": {
+   "say": "Oamenii au socotit dintotdeauna cu ceva."
+  },
+  "mo04-1500.c5.s1": {
+   "say": "Dar boabele sunt voluminoase și se strică."
+  },
+  "mo04-1500.c5.s2": {
+   "say": "Peste ocean, banii unei țări au problema opusă."
+  },
+  "mo04-1500.c5.s3": {
+   "say": "Sunt atât de grei, că ai nevoie de o căruță."
+  },
+  "mo05-1661.c1.s1": {
+   "say": "Te trezești în anul o mie șase sute șaizeci și unu, la Stockholm.",
+   "show": "Te trezești în anul 1661, la Stockholm."
+  },
+  "mo05-1661.c1.s2": {
+   "say": "Portul e înghețat, iar pe lângă fereastra ta trece o sanie încărcată cu cupru."
+  },
+  "mo05-1661.c2.s1": {
+   "say": "Știai că cea mai mare monedă suedeză cântărea aproape douăzeci de kilo?"
+  },
+  "mo05-1661.c2.s2": {
+   "say": "E o placă de cupru."
+  },
+  "mo05-1661.c2.s3": {
+   "say": "Nu o pui în buzunar."
+  },
+  "mo05-1661.c3.s1": {
+   "say": "O pui pe o căruță."
+  },
+  "mo05-1661.c3.s2": {
+   "say": "Așa că un bancher, Johan Palmstruch, are o idee."
+  },
+  "mo05-1661.c3.s3": {
+   "say": "Lași cuprul la banca lui și iei în schimb o foaie de hârtie."
+  },
+  "mo05-1661.c3.s4": {
+   "say": "Scrie că cuprul tău te așteaptă."
+  },
+  "mo05-1661.c3.s5": {
+   "say": "Sunt primele adevărate bancnote din Europa."
+  },
+  "mo05-1661.c4.s1": {
+   "say": "Deci ce sunt banii acum?"
+  },
+  "mo05-1661.c4.s2": {
+   "say": "O promisiune."
+  },
+  "mo05-1661.c4.s3": {
+   "say": "Scrisă pe hârtie."
+  },
+  "mo05-1661.c4.s4": {
+   "say": "Ține minte: promisiune."
+  },
+  "mo05-1661.c4.s5": {
+   "say": "Se întoarce la final."
+  },
+  "mo05-1661.c5.s1": {
+   "say": "Bancnotele au succes."
+  },
+  "mo05-1661.c5.s2": {
+   "say": "Așa că banca tipărește și împrumută mai mult decât are cupru de returnat."
+  },
+  "mo05-1661.c5.s3": {
+   "say": "Când oamenii vin după cupru, nu mai e acolo."
+  },
+  "mo05-1661.c5.s4": {
+   "say": "Banca dă faliment."
+  },
+  "mo05-1661.c5.s5": {
+   "say": "Palmstruch e condamnat la moarte."
+  },
+  "mo05-1661.c5.s6": {
+   "say": "E iertat, dar moare peste câțiva ani."
+  },
+  "mo05-1661.c6.s1": {
+   "say": "Hârtia merge doar cât timp oamenii cred în ea."
+  },
+  "mo05-1661.c6.s2": {
+   "say": "Iar în secolul următor, un om va împinge credința asta mai departe decât oricine."
+  },
+  "mo06-1720.c1.s1": {
+   "say": "Te trezești în o mie șapte sute douăzeci, la Paris.",
+   "show": "Te trezești în anul 1720, la Paris."
+  },
+  "mo06-1720.c1.s2": {
+   "say": "Pe stradă miroase a cai, și toți vorbesc despre hârtie."
+  },
+  "mo06-1720.c2.s1": {
+   "say": "Știai că în anul ăsta Franța a declarat ilegal să deții peste cinci sute de livre în aur sau argint?"
+  },
+  "mo06-1720.c2.s2": {
+   "say": "Guvernul voia să ai încredere în hârtie."
+  },
+  "mo06-1720.c2.s3": {
+   "say": "Prin lege."
+  },
+  "mo06-1720.c3.s1": {
+   "say": "Omul din spatele lui e John Law."
+  },
+  "mo06-1720.c3.s2": {
+   "say": "Un jucător scoțian."
+  },
+  "mo06-1720.c3.s3": {
+   "say": "Ca și Palmstruch, a fost condamnat la moarte, pentru că a ucis un om în duel."
+  },
+  "mo06-1720.c3.s4": {
+   "say": "Acum conduce banii Franței."
+  },
+  "mo06-1720.c4.s1": {
+   "say": "O stradă îngustă e plină zi și noapte."
+  },
+  "mo06-1720.c4.s2": {
+   "say": "Oamenii cumpără acțiuni la Compania Mississippi a lui Law."
+  },
+  "mo06-1720.c4.s3": {
+   "say": "În vreun an și jumătate, prețul a crescut de vreo patruzeci de ori."
+  },
+  "mo06-1720.c4.s4": {
+   "say": "Se spune că un cocoșat își închiriază spatele drept birou."
+  },
+  "mo06-1720.c5.s1": {
+   "say": "Deci ce sunt banii acum?"
+  },
+  "mo06-1720.c5.s2": {
+   "say": "O credință."
+  },
+  "mo06-1720.c5.s3": {
+   "say": "Valorează cât crede toată lumea că valorează."
+  },
+  "mo06-1720.c5.s4": {
+   "say": "Până nu mai cred."
+  },
+  "mo06-1720.c5.s5": {
+   "say": "În decembrie, acțiunile se prăbușesc."
+  },
+  "mo06-1720.c5.s6": {
+   "say": "Bancnotele se devalorizează."
+  },
+  "mo06-1720.c5.s7": {
+   "say": "Iar Law fuge din Franța."
+  },
+  "mo06-1720.c6.s1": {
+   "say": "În următorii o sută de ani, oamenii vor bani în care să nu trebuiască doar să creadă."
+  },
+  "mo06-1720.c6.s2": {
+   "say": "Ceva ce poți mușca."
+  },
+  "mo06-1720.c6.s3": {
+   "say": "Iar la Londra, îl primesc."
+  },
+  "mo07-1821.c1.s1": {
+   "say": "Te trezești în o mie opt sute douăzeci și unu, la Londra.",
+   "show": "Te trezești în anul 1821, la Londra."
+  },
+  "mo07-1821.c1.s2": {
+   "say": "Fum de cărbune, pietre ude și o coadă în fața Băncii Angliei."
+  },
+  "mo07-1821.c2.s1": {
+   "say": "Știai că bancnotele Băncii Angliei spun și azi: Promit să plătesc purtătorului, la cerere?"
+  },
+  "mo07-1821.c2.s2": {
+   "say": "Atunci, promisiunea însemna aur."
+  },
+  "mo07-1821.c2.s3": {
+   "say": "O bancnotă de cinci lire se schimba pe cinci monede de aur."
+  },
+  "mo07-1821.c2.s4": {
+   "say": "Suverani."
+  },
+  "mo07-1821.c3.s1": {
+   "say": "Timp de douăzeci și patru de ani, în războaiele cu Franța, Banca nu mai plătise aur."
+  },
+  "mo07-1821.c3.s2": {
+   "say": "Hârtia a luat locul."
+  },
+  "mo07-1821.c3.s3": {
+   "say": "La fel și falsificatorii, mulți fiind spânzurați."
+  },
+  "mo07-1821.c3.s4": {
+   "say": "Acum Banca plătește iar în aur."
+  },
+  "mo07-1821.c3.s5": {
+   "say": "Hârtie pe care o faci metal, oricând vrei."
+  },
+  "mo07-1821.c4.s1": {
+   "say": "Deci ce sunt banii acum?"
+  },
+  "mo07-1821.c4.s2": {
+   "say": "Buni ca aurul."
+  },
+  "mo07-1821.c4.s3": {
+   "say": "O promisiune de schimbat în metal."
+  },
+  "mo07-1821.c4.s4": {
+   "say": "În următorul secol, mare parte din lume urmează Marea Britanie la aur."
+  },
+  "mo07-1821.c4.s5": {
+   "say": "Aurul devine ancora."
+  },
+  "mo07-1821.c4.s6": {
+   "say": "Iar ancorele dau siguranță."
+  },
+  "mo07-1821.c4.s7": {
+   "say": "Dar în anul o mie nouă sute șaptezeci și unu, un discurs televizat taie funia."
+  },
+  "mo08-1971.c1.s1": {
+   "say": "Te trezești în o mie nouă sute șaptezeci și unu, într-o suburbie din Pittsburgh."
+  },
+  "mo08-1971.c1.s2": {
+   "say": "E duminică seara, în august, și toată familia stă în fața televizorului."
+  },
+  "mo08-1971.c2.s1": {
+   "say": "Știai că în o mie nouă sute șaptezeci și unu, cei mai mulți americani nu aveau voie să dețină monede sau lingouri de aur?"
+  },
+  "mo08-1971.c2.s2": {
+   "say": "Încă din o mie nouă sute treizeci și trei."
+  },
+  "mo08-1971.c3.s1": {
+   "say": "Aurul era pentru guverne."
+  },
+  "mo08-1971.c3.s2": {
+   "say": "Din o mie nouă sute patruzeci și patru, schimbau dolari pe aur american, la treizeci și cinci de dolari uncia."
+  },
+  "mo08-1971.c3.s3": {
+   "say": "Dolarul era legat de aur, iar restul banilor, de dolar."
+  },
+  "mo08-1971.c4.s1": {
+   "say": "În seara aceea apare președintele Nixon."
+  },
+  "mo08-1971.c4.s2": {
+   "say": "De acum, guvernele străine nu mai pot schimba dolari pe aur."
+  },
+  "mo08-1971.c4.s3": {
+   "say": "În câțiva ani, tot sistemul dispare."
+  },
+  "mo08-1971.c5.s1": {
+   "say": "Deci ce sunt banii acum?"
+  },
+  "mo08-1971.c5.s2": {
+   "say": "O promisiune bazată pe încredere."
+  },
+  "mo08-1971.c5.s3": {
+   "say": "Încredere în cei care o conduc."
+  },
+  "mo08-1971.c6.s1": {
+   "say": "Iar o generație mai târziu, încrederea ia o formă nouă."
+  },
+  "mo08-1971.c6.s2": {
+   "say": "Banii nu mai au nevoie de hârtie."
+  },
+  "mo08-1971.c6.s3": {
+   "say": "În Kenya, se mută într-un mesaj text."
+  },
+  "mo09-today.c1.s1": {
+   "say": "Te trezești azi, la Nairobi."
+  },
+  "mo09-today.c1.s2": {
+   "say": "Afară claxonează matatu-uri, iar telefonul vibrează."
+  },
+  "mo09-today.c1.s3": {
+   "say": "Sora ta ți-a trimis bani dintr-un sat din interior."
+  },
+  "mo09-today.c1.s4": {
+   "say": "A durat câteva secunde."
+  },
+  "mo09-today.c2.s1": {
+   "say": "Știai că vreo opt din zece adulți din Kenya folosesc acum mobile money?"
+  },
+  "mo09-today.c2.s2": {
+   "say": "În două mii nouă, erau sub trei din zece."
+  },
+  "mo09-today.c2.s3": {
+   "say": "M-Pesa a fost lansat aici în două mii șapte."
+  },
+  "mo09-today.c2.s4": {
+   "say": "Îi dai bani lichizi unui negustor, și se transformă în cifre pe telefon."
+  },
+  "mo09-today.c2.s5": {
+   "say": "Taxele școlare și taxiul se plătesc cu un mesaj."
+  },
+  "mo09-today.c3.s1": {
+   "say": "Și nu doar în Kenya."
+  },
+  "mo09-today.c3.s2": {
+   "say": "În zona euro, numerarul a plătit vreo opt din zece cumpărături din magazine în două mii șaisprezece."
+  },
+  "mo09-today.c3.s3": {
+   "say": "Până în două mii douăzeci și patru, cam jumătate."
+  },
+  "mo09-today.c4.s1": {
+   "say": "Deci ce sunt banii pentru tine?"
+  },
+  "mo09-today.c4.s2": {
+   "say": "Cifre pe un ecran."
+  },
+  "mo09-today.c4.s3": {
+   "say": "Aproape niciodată nu-i atingi."
+  },
+  "mo09-today.c4.s4": {
+   "say": "Iată ce ai venit să afli."
+  },
+  "mo09-today.c4.s5": {
+   "say": "Dacă nu e hârtie și nu e aur, ce sunt banii, de fapt?"
+  },
+  "mo10-reveal.c1.s1": {
+   "say": "Iată răspunsul."
+  },
+  "mo10-reveal.c1.s2": {
+   "say": "Banca Angliei o spune simplu."
+  },
+  "mo10-reveal.c1.s3": {
+   "say": "Azi, banii sunt un fel de recunoaștere de datorie."
+  },
+  "mo10-reveal.c1.s4": {
+   "say": "Una specială, pentru că toți au încredere că ceilalți o vor accepta."
+  },
+  "mo10-reveal.c2.s1": {
+   "say": "Și cei mai mulți îi fac băncile obișnuite."
+  },
+  "mo10-reveal.c2.s2": {
+   "say": "Când o bancă îți dă un credit, nu îți dă economiile altcuiva."
+  },
+  "mo10-reveal.c2.s3": {
+   "say": "Tastează un depozit nou în contul tău."
+  },
+  "mo10-reveal.c2.s4": {
+   "say": "În anumite limite, un credit creează bani noi."
+  },
+  "mo10-reveal.c3.s1": {
+   "say": "Și ghicitul tău?"
+  },
+  "mo10-reveal.c3.s2": {
+   "say": "Când a verificat Banca Angliei, vreo nouăzeci și șapte din o sută de lire erau depozite bancare."
+  },
+  "mo10-reveal.c3.s3": {
+   "say": "Doar vreo trei erau bancnote și monede."
+  },
+  "mo10-reveal.c3.s4": {
+   "say": "Cât de aproape ai fost?"
+  },
+  "mo10-reveal.c4.s1": {
+   "say": "Acum urcă din nou scara, cu mine."
+  },
+  "mo10-reveal.c4.s2": {
+   "say": "În o mie cinci sute, banii erau ceva util."
+  },
+  "mo10-reveal.c4.s3": {
+   "say": "Apoi, o promisiune pe hârtie."
+  },
+  "mo10-reveal.c4.s4": {
+   "say": "Apoi, credință."
+  },
+  "mo10-reveal.c4.s5": {
+   "say": "Apoi, buni ca aurul."
+  },
+  "mo10-reveal.c4.s6": {
+   "say": "Apoi, încredere, și atât."
+  },
+  "mo10-reveal.c4.s7": {
+   "say": "Azi, cifre pe un ecran."
+  },
+  "mo10-reveal.c5.s1": {
+   "say": "Ții minte cuvântul din Stockholm?"
+  },
+  "mo10-reveal.c5.s2": {
+   "say": "Promisiune."
+  },
+  "mo10-reveal.c5.s3": {
+   "say": "A fost acolo tot timpul."
+  },
+  "mo11-2100.c1.s1": {
+   "say": "Deci, următoarea treaptă?"
+  },
+  "mo11-2100.c1.s2": {
+   "say": "Două mii o sută."
+  },
+  "mo11-2100.c1.s3": {
+   "say": "Dimineața aia n-a venit încă."
+  },
+  "mo11-2100.c1.s4": {
+   "say": "Dar putem urma dovezile."
+  },
+  "mo11-2100.c2.s1": {
+   "say": "Numerarul scade, iar băncile centrale au observat."
+  },
+  "mo11-2100.c2.s2": {
+   "say": "Într-un sondaj publicat în două mii douăzeci și cinci, mai mult de nouă din zece bănci centrale întrebate explorau propria monedă digitală."
+  },
+  "mo11-2100.c3.s1": {
+   "say": "În Europa, banca centrală se pregătește pentru un posibil euro digital."
+  },
+  "mo11-2100.c3.s2": {
+   "say": "Primul, cel mai devreme în două mii douăzeci și nouă, dacă legiuitorii aprobă."
+  },
+  "mo11-2100.c4.s1": {
+   "say": "Iar Banca Reglementelor Internaționale, banca băncilor centrale, a avertizat că stablecoin-urile, criptomonede legate de o monedă, nu trec testele esențiale ale banilor buni."
+  },
+  "mo11-2100.c4.s2": {
+   "say": "Vrea ca promisiunea băncii centrale să rămână ancora."
+  },
+  "mo11-2100.c5.s1": {
+   "say": "Iată deci un scenariu."
+  },
+  "mo11-2100.c5.s2": {
+   "say": "Nu un fapt."
+  },
+  "mo11-2100.c5.s3": {
+   "say": "Până în două mii o sută, bancnota din portofel ar putea ajunge la muzeu."
+  },
+  "mo11-2100.c5.s4": {
+   "say": "Banii ar putea fi cod."
+  },
+  "mo11-2100.c5.s5": {
+   "say": "Dar tot o promisiune ar fi."
+  },
+  "mo11-2100.c6.s1": {
+   "say": "În o mie cinci sute, banii creșteau în copaci."
+  },
+  "mo11-2100.c6.s2": {
+   "say": "În două mii o sută, ar putea fi scriși în cod."
+  },
+  "mo12-close.c1.s1": {
+   "say": "Îți petreci atâta din viață câștigându-i."
+  },
+  "mo12-close.c1.s2": {
+   "say": "Deci spune-mi."
+  },
+  "mo12-close.c1.s3": {
+   "say": "În cine ai avea încredere să respecte promisiunea asta, în anul două mii o sută?"
+  },
+  "mo13-outro.c1.s1": {
+   "say": "Acesta a fost Did You Know That, episodul patru."
+  },
+  "mo13-outro.c1.s2": {
+   "say": "Banii."
+  },
+  "mo13-outro.c1.s3": {
+   "say": "E rândul tău."
+  },
+  "mo13-outro.c1.s4": {
+   "say": "În banii cărui secol ai fi crezut cel mai mult?"
+  },
+  "mo13-outro.c1.s5": {
+   "say": "Spune-mi în comentarii."
+  },
+  "mo13-outro.c1.s6": {
+   "say": "La finalul fiecărui episod, citesc cel mai bun comentariu, chiar aici, pe ecran."
+  },
+  "mo13-outro.c1.s7": {
+   "say": "Iar subiectul cerut cel mai des devine un episod viitor."
+  },
+  "mo13-outro.c1.s8": {
+   "say": "Pe site-ul nostru, Dexti punct laiv, poți vedea toate episoadele, colecta cardurile cu fapte și juca jocul de ghicit.",
+   "show": "Pe site-ul nostru, Dexty.live, poți vedea toate episoadele, colecta cardurile cu fapte și juca jocul de ghicit."
+  },
+  "mo13-outro.c2.s1": {
+   "say": "Dacă asta ți-a schimbat felul în care vezi banii din buzunar, dă like."
+  },
+  "mo13-outro.c2.s2": {
+   "say": "Trimite-l prietenului care îți dă mereu banii înapoi."
+  },
+  "mo13-outro.c2.s3": {
+   "say": "Și abonează-te, ca următorul mister să dea de tine."
+  },
+  "mo13b-next.c1.s1": {
+   "say": "Data viitoare: mâncarea."
+  },
+  "mo13b-next.c1.s2": {
+   "say": "Istoricii estimează că în o mie cinci sute mâncarea lua cel mai mult dintr-un buget muncitoresc."
+  },
+  "mo13b-next.c1.s3": {
+   "say": "Deci ce vei mânca în anul două mii o sută?"
+  },
+  "mo13c-signoff.c1.s1": {
+   "say": "Întreabă..."
+  },
+  "mo13c-signoff.c2.s1": {
+   "say": "Uimește-te."
+  },
+  "mo13c-signoff.c3.s1": {
+   "say": "Repetă."
+  },
+  "mo14-endscreen.c1.s1": {
+   "say": "Data viitoare..."
+  },
+  "mo14-endscreen.c1.s2": {
+   "say": "ar putea fi al tău.",
+   "show": "acesta ar putea fi comentariul tău."
+  },
+  "mo14-endscreen.c1.s3": {
+   "say": "Alege un mister."
+  },
+  "mo14-endscreen.c1.s4": {
+   "say": "Ne vedem acolo."
+  }
+ }
+}

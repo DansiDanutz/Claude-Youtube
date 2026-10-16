@@ -1,0 +1,704 @@
+{
+ "lang": "ro",
+ "episode": "05",
+ "sentences": {
+  "fd01-hook.c1.s1": {
+   "say": "Data trecută ți-am lăsat o întrebare."
+  },
+  "fd01-hook.c1.s2": {
+   "say": "Ce vei mânca în anul două mii o sută?",
+   "show": "Ce vei mânca în anul 2100?"
+  },
+  "fd01-hook.c1.s3": {
+   "say": "Într-o mie cinci sute, istoricii estimează că mâncarea lua mare parte din bugetul unei familii de muncitori.",
+   "show": "În 1500, istoricii estimează că mâncarea lua mare parte din bugetul unei familii de muncitori."
+  },
+  "fd01-hook.c1.s4": {
+   "say": "Azi avem mai multă mâncare ca oricând."
+  },
+  "fd02-question.c1.s1": {
+   "say": "Și totuși, uite partea ciudată."
+  },
+  "fd02-question.c1.s2": {
+   "say": "Știai că azi cam unul din cinci decese din lume ține de alimentație?"
+  },
+  "fd02-question.c1.s3": {
+   "say": "Ne-a dat mâncarea o viață mai lungă?"
+  },
+  "fd02-question.c1.s4": {
+   "say": "Sau ne ia înapoi o parte din ani?"
+  },
+  "fd00-welcome.c1.s1": {
+   "say": "Bun revenit la Did You Know That."
+  },
+  "fd00-welcome.c1.s2": {
+   "say": "Episodul cinci."
+  },
+  "fd00-welcome.c1.s3": {
+   "say": "Știi regula."
+  },
+  "fd00-welcome.c1.s4": {
+   "say": "Uite ghicitoarea."
+  },
+  "fd00-welcome.c1.s5": {
+   "say": "În anul o mie opt sute, speranța de viață la naștere, în lume, era de cam douăzeci și nouă de ani.",
+   "show": "În anul 1800, speranța de viață la naștere, în lume, era de cam 29 de ani."
+  },
+  "fd00-welcome.c1.s6": {
+   "say": "Dar pentru un bebeluș de azi?"
+  },
+  "fd00-welcome.c1.s7": {
+   "say": "Ghicește în comentarii, chiar acum."
+  },
+  "fd00-welcome.c1.s8": {
+   "say": "Rămâi până la final și verifică-ți răspunsul."
+  },
+  "fd03-promise.c1.s1": {
+   "say": "Șapte dimineți, din o mie cinci sute până în două mii o sută.",
+   "show": "Șapte dimineți, din 1500 până în 2100."
+  },
+  "fd03-promise.c1.s2": {
+   "say": "În fiecare te trezești altundeva."
+  },
+  "fd03-promise.c1.s3": {
+   "say": "Vei vedea ce ai în farfurie, ce-ți face corpului și cât apuci să trăiești."
+  },
+  "fd03-promise.c1.s4": {
+   "say": "Iar la final, afli ce ne-a dat cu adevărat anii în plus."
+  },
+  "fd04-1500.c1.s1": {
+   "say": "Te trezești în anul o mie cinci sute, într-un sat din Flandra.",
+   "show": "Te trezești în anul 1500, într-un sat din Flandra."
+  },
+  "fd04-1500.c1.s2": {
+   "say": "Cuptorul de pâine e cald, iar bucătăria miroase a secară și fum."
+  },
+  "fd04-1500.c2.s1": {
+   "say": "Știai că aici, în până la patru zile din zece, carnea e interzisă?",
+   "show": "Știai că aici, în până la 4 zile din 10, carnea e interzisă?"
+  },
+  "fd04-1500.c2.s2": {
+   "say": "Vinerile."
+  },
+  "fd04-1500.c2.s3": {
+   "say": "Postul Mare."
+  },
+  "fd04-1500.c2.s4": {
+   "say": "Postul Crăciunului."
+  },
+  "fd04-1500.c2.s5": {
+   "say": "Biserica le numește zile de post."
+  },
+  "fd04-1500.c3.s1": {
+   "say": "Uite farfuria."
+  },
+  "fd04-1500.c3.s2": {
+   "say": "Pâine la aproape fiecare masă."
+  },
+  "fd04-1500.c3.s3": {
+   "say": "Terci, mazăre și fasole."
+  },
+  "fd04-1500.c3.s4": {
+   "say": "Bere de băut."
+  },
+  "fd04-1500.c3.s5": {
+   "say": "Pește uscat în zilele de post."
+  },
+  "fd04-1500.c3.s6": {
+   "say": "Mâncarea înghite cea mai mare parte din bani."
+  },
+  "fd04-1500.c3.s7": {
+   "say": "Șaptezeci, optzeci la sută.",
+   "show": "70-80 la sută."
+  },
+  "fd04-1500.c3.s8": {
+   "say": "Când recolta eșuează, pâinea se scumpește și oamenii flămânzesc."
+  },
+  "fd04-1500.c4.s1": {
+   "say": "Cât trăiești?"
+  },
+  "fd04-1500.c4.s2": {
+   "say": "În Anglia, peste mare, un nou-născut putea spera la cam treizeci și cinci de ani.",
+   "show": "În Anglia, peste mare, un nou-născut putea spera la cam 35 de ani."
+  },
+  "fd04-1500.c4.s3": {
+   "say": "Mai ales pentru că mureau atâția copii."
+  },
+  "fd04-1500.c4.s4": {
+   "say": "Dacă ajungeai la treizeci, aveai șanse bune să prinzi șaizeci.",
+   "show": "Dacă ajungeai la 30, aveai șanse bune să prinzi 60."
+  },
+  "fd04-1500.c5.s1": {
+   "say": "Deci ce e mâncarea pentru tine?"
+  },
+  "fd04-1500.c5.s2": {
+   "say": "Combustibil."
+  },
+  "fd04-1500.c5.s3": {
+   "say": "Cât să reziști până seara."
+  },
+  "fd04-1500.c5.s4": {
+   "say": "Ține minte zilele de post."
+  },
+  "fd04-1500.c5.s5": {
+   "say": "Se întorc la final."
+  },
+  "fd04-1500.c5.s6": {
+   "say": "Iar pe mare, în cele mai lungi călătorii, marinarii încep să se destrame."
+  },
+  "fd05-1747.c1.s1": {
+   "say": "Te trezești în o mie șapte sute patruzeci și șapte, pe HMS Salisbury, vas de război în patrulare.",
+   "show": "Te trezești în 1747, pe HMS Salisbury, vas de război în patrulare."
+  },
+  "fd05-1747.c2.s1": {
+   "say": "Știai că leacul celei mai cumplite boli a marinarilor a apărut anul acesta, iar marina a așteptat aproape cincizeci de ani să-l folosească?",
+   "show": "Știai că leacul celei mai cumplite boli a marinarilor a apărut anul acesta, iar marina a așteptat aproape 50 de ani să-l folosească?"
+  },
+  "fd05-1747.c3.s1": {
+   "say": "Uite farfuria."
+  },
+  "fd05-1747.c3.s2": {
+   "say": "Zilnic, o livră de pesmet tare și un galon de bere."
+  },
+  "fd05-1747.c3.s3": {
+   "say": "Carne sărată de vită sau porc, mazăre uscată, făină de ovăz, puțină brânză."
+  },
+  "fd05-1747.c3.s4": {
+   "say": "Aproape nimic proaspăt."
+  },
+  "fd05-1747.c3.s5": {
+   "say": "După săptămâni pe mare, apare scorbutul."
+  },
+  "fd05-1747.c3.s6": {
+   "say": "Gingii care sângerează."
+  },
+  "fd05-1747.c3.s7": {
+   "say": "Răni vechi care se redeschid."
+  },
+  "fd05-1747.c4.s1": {
+   "say": "Chirurgul navei, James Lind, împarte doisprezece marinari cu scorbut în perechi și dă fiecărei perechi altceva.",
+   "show": "Chirurgul navei, James Lind, împarte 12 marinari cu scorbut în perechi și dă fiecărei perechi altceva."
+  },
+  "fd05-1747.c4.s2": {
+   "say": "Cidru."
+  },
+  "fd05-1747.c4.s3": {
+   "say": "Oțet."
+  },
+  "fd05-1747.c4.s4": {
+   "say": "O pereche primește două portocale și o lămâie pe zi.",
+   "show": "O pereche primește 2 portocale și o lămâie pe zi."
+  },
+  "fd05-1747.c5.s1": {
+   "say": "Deci ce e mâncarea acum?"
+  },
+  "fd05-1747.c5.s2": {
+   "say": "Leac."
+  },
+  "fd05-1747.c5.s3": {
+   "say": "Hrana bună poate vindeca."
+  },
+  "fd05-1747.c5.s4": {
+   "say": "În Marea Britanie, pe uscat, un nou-născut tot putea spera la sub patruzeci de ani.",
+   "show": "În Marea Britanie, pe uscat, un nou-născut tot putea spera la sub 40 de ani."
+  },
+  "fd05-1747.c6.s1": {
+   "say": "Marina a dat în sfârșit suc de lămâie în o mie șapte sute nouăzeci și cinci.",
+   "show": "Marina a dat în sfârșit suc de lămâie în 1795."
+  },
+  "fd05-1747.c6.s2": {
+   "say": "Un secol mai târziu, în Japonia, încă o piesă lipsă îmbolnăvește marinarii."
+  },
+  "fd06-1884.c1.s1": {
+   "say": "Te trezești în anul o mie opt sute optzeci și patru, la Shinagawa, pe Golful Tokyo.",
+   "show": "Te trezești în anul 1884, la Shinagawa, pe Golful Tokyo."
+  },
+  "fd06-1884.c1.s2": {
+   "say": "O navă-școală numită Tsukuba se pregătește de plecare."
+  },
+  "fd06-1884.c2.s1": {
+   "say": "Știai că, anul dinainte, într-o călătorie ca aceasta, aproape jumătate din echipaj s-a îmbolnăvit de la ce mânca?"
+  },
+  "fd06-1884.c2.s2": {
+   "say": "Pe Ryujo, o sută șaizeci și nouă au făcut beriberi.",
+   "show": "Pe Ryujo, 169 au făcut beriberi."
+  },
+  "fd06-1884.c2.s3": {
+   "say": "Douăzeci și cinci mor.",
+   "show": "25 mor."
+  },
+  "fd06-1884.c3.s1": {
+   "say": "Farfuria unui marinar."
+  },
+  "fd06-1884.c3.s2": {
+   "say": "Orez alb."
+  },
+  "fd06-1884.c3.s3": {
+   "say": "Orezul era gratis."
+  },
+  "fd06-1884.c3.s4": {
+   "say": "Restul costa bani."
+  },
+  "fd06-1884.c3.s5": {
+   "say": "Un medic al marinei, Takaki Kanehiro, măsoară ce mănâncă oamenii și schimbă meniul."
+  },
+  "fd06-1884.c3.s6": {
+   "say": "Mai mult orz, carne, lapte, pâine și legume."
+  },
+  "fd06-1884.c4.s1": {
+   "say": "Pe Tsukuba se îmbolnăvesc paisprezece oameni.",
+   "show": "Pe Tsukuba se îmbolnăvesc 14 oameni."
+  },
+  "fd06-1884.c4.s2": {
+   "say": "Niciunul nu moare."
+  },
+  "fd06-1884.c4.s3": {
+   "say": "Și cei paisprezece?",
+   "show": "Și cei 14?"
+  },
+  "fd06-1884.c4.s4": {
+   "say": "Nu mâncaseră mâncarea nouă."
+  },
+  "fd06-1884.c5.s1": {
+   "say": "Deci ce e mâncarea acum?"
+  },
+  "fd06-1884.c5.s2": {
+   "say": "Ceva de măsurat."
+  },
+  "fd06-1884.c5.s3": {
+   "say": "Contează ce are în ea."
+  },
+  "fd06-1884.c5.s4": {
+   "say": "Primele tabele din Japonia dau cam patruzeci și trei de ani la naștere.",
+   "show": "Primele tabele din Japonia dau cam 43 de ani la naștere."
+  },
+  "fd06-1884.c5.s5": {
+   "say": "Iar japonezii născuți atunci?"
+  },
+  "fd06-1884.c5.s6": {
+   "say": "Cam cincisprezece centimetri mai scunzi decât după un secol.",
+   "show": "Cam 15 centimetri mai scunzi decât după un secol."
+  },
+  "fd06-1884.c6.s1": {
+   "say": "Zeci de ani mai târziu, capătă un nume."
+  },
+  "fd06-1884.c6.s2": {
+   "say": "O vitamină."
+  },
+  "fd06-1884.c6.s3": {
+   "say": "Dar a ști ce lipsește nu pune asta în farfuria unei familii sărace."
+  },
+  "fd07-1915.c1.s1": {
+   "say": "Te trezești în o mie nouă sute cincisprezece, pe o fermă-închisoare din Mississippi.",
+   "show": "Te trezești în 1915, pe o fermă-închisoare din Mississippi."
+  },
+  "fd07-1915.c1.s2": {
+   "say": "Unsprezece bărbați la coadă la mic dejun.",
+   "show": "11 bărbați la coadă la mic dejun."
+  },
+  "fd07-1915.c2.s1": {
+   "say": "Știai că aici medicii au îmbolnăvit intenționat bărbați sănătoși, dându-le mâncarea obișnuită a unei familii sărace din Sud?"
+  },
+  "fd07-1915.c2.s2": {
+   "say": "Voluntarilor li s-a promis grațierea."
+  },
+  "fd07-1915.c3.s1": {
+   "say": "Uite farfuria."
+  },
+  "fd07-1915.c3.s2": {
+   "say": "Pâine și terci de porumb."
+  },
+  "fd07-1915.c3.s3": {
+   "say": "Slănină grasă, sărată."
+  },
+  "fd07-1915.c3.s4": {
+   "say": "Melasă."
+  },
+  "fd07-1915.c3.s5": {
+   "say": "Aproape fără lapte, carne proaspătă, verdețuri."
+  },
+  "fd07-1915.c3.s6": {
+   "say": "După vreo cinci luni, cam jumătate fac pelagră.",
+   "show": "După vreo 5 luni, cam jumătate fac pelagră."
+  },
+  "fd07-1915.c3.s7": {
+   "say": "Erupții, dureri de stomac, confuzie, chiar moarte."
+  },
+  "fd07-1915.c4.s1": {
+   "say": "După o estimare des citată, a ucis în jur de o sută de mii de oameni în tot Sudul.",
+   "show": "După o estimare des citată, a ucis în jur de 100.000 de oameni în tot Sudul."
+  },
+  "fd07-1915.c4.s2": {
+   "say": "Medicul Joseph Goldberger arată că pelagra nu se ia ca un microb."
+  },
+  "fd07-1915.c4.s3": {
+   "say": "Vine de la ceva ce lipsește din alimentație."
+  },
+  "fd07-1915.c5.s1": {
+   "say": "Mai târziu primește un nume."
+  },
+  "fd07-1915.c5.s2": {
+   "say": "Niacina, o vitamină B."
+  },
+  "fd07-1915.c5.s3": {
+   "say": "În anii patruzeci, e adăugată în făină și pâine în mare parte din America.",
+   "show": "În anii 1940, e adăugată în făină și pâine în mare parte din America."
+  },
+  "fd07-1915.c5.s4": {
+   "say": "Cu asta, cu salarii mai bune și mâncare mai variată, pelagra dispare."
+  },
+  "fd07-1915.c6.s1": {
+   "say": "Deci ce e mâncarea acum?"
+  },
+  "fd07-1915.c6.s2": {
+   "say": "Ceva ce reparăm."
+  },
+  "fd07-1915.c6.s3": {
+   "say": "Adaugi ce lipsește și o boală dispare."
+  },
+  "fd07-1915.c6.s4": {
+   "say": "În America, în acel an, un nou-născut putea spera la cam cincizeci și cinci de ani.",
+   "show": "În America, în acel an, un nou-născut putea spera la cam 55 de ani."
+  },
+  "fd07-1915.c6.s5": {
+   "say": "Dar să repari mâncarea ajută doar dacă ai destulă."
+  },
+  "fd07-1915.c6.s6": {
+   "say": "Iar în India, nu ajunge."
+  },
+  "fd08-1966.c1.s1": {
+   "say": "Te trezești în anul o mie nouă sute șaizeci și șase, într-un sat din Punjab.",
+   "show": "Te trezești în anul 1966, într-un sat din Punjab."
+  },
+  "fd08-1966.c1.s2": {
+   "say": "Toți se uită la cer, după ploaie."
+  },
+  "fd08-1966.c2.s1": {
+   "say": "Știai că în anul dinainte, premierul Indiei a cerut întregii țări să sară peste o masă pe săptămână?"
+  },
+  "fd08-1966.c2.s2": {
+   "say": "Lal Bahadur Shastri."
+  },
+  "fd08-1966.c2.s3": {
+   "say": "Războiul și seceta lăsaseră prea puține cereale."
+  },
+  "fd08-1966.c3.s1": {
+   "say": "Uite farfuria."
+  },
+  "fd08-1966.c3.s2": {
+   "say": "Pâine plată, linte, poate niște legume."
+  },
+  "fd08-1966.c3.s3": {
+   "say": "În toată India, hrana ajunge pentru doar vreo două mii de calorii pe om pe zi.",
+   "show": "În toată India, hrana ajunge pentru doar vreo 2.000 de calorii pe om pe zi."
+  },
+  "fd08-1966.c3.s4": {
+   "say": "Un nou-născut putea spera aici la cam patruzeci și șase de ani.",
+   "show": "Un nou-născut putea spera aici la cam 46 de ani."
+  },
+  "fd08-1966.c4.s1": {
+   "say": "Așa că India importă din Mexic optsprezece mii de tone de semințe de grâu.",
+   "show": "Așa că India importă din Mexic 18.000 de tone de semințe de grâu."
+  },
+  "fd08-1966.c4.s2": {
+   "say": "Plante scunde și rezistente, create de echipa lui Norman Borlaug."
+  },
+  "fd08-1966.c4.s3": {
+   "say": "Au nevoie de apă și de mult îngrășământ, făcut în fabrici din azotul din aer."
+  },
+  "fd08-1966.c4.s4": {
+   "say": "În câțiva ani, recolta de grâu a Indiei sare la șaptesprezece milioane de tone.",
+   "show": "În câțiva ani, recolta de grâu a Indiei sare la 17 milioane de tone."
+  },
+  "fd08-1966.c5.s1": {
+   "say": "Deci ce e mâncarea acum?"
+  },
+  "fd08-1966.c5.s2": {
+   "say": "Destulă, în sfârșit."
+  },
+  "fd08-1966.c5.s3": {
+   "say": "Produsă la tonă."
+  },
+  "fd08-1966.c5.s4": {
+   "say": "Azi, un nou-născut din India poate spera la cam șaptezeci și doi de ani.",
+   "show": "Azi, un nou-născut din India poate spera la cam 72 de ani."
+  },
+  "fd08-1966.c5.s5": {
+   "say": "Iar în lume, hrana n-a fost niciodată mai îmbelșugată."
+  },
+  "fd08-1966.c5.s6": {
+   "say": "Ceea ce aduce o problemă cu totul nouă."
+  },
+  "fd09-today.c1.s1": {
+   "say": "Te trezești azi, în São Paulo."
+  },
+  "fd09-today.c1.s2": {
+   "say": "Motoretele zumzăie cu livrări de mâncare."
+  },
+  "fd09-today.c2.s1": {
+   "say": "Știai că ghidul alimentar oficial al Braziliei îndeamnă oamenii să mănânce la ore fixe și, ori de câte ori pot, în compania altora?"
+  },
+  "fd09-today.c3.s1": {
+   "say": "Uite farfuria."
+  },
+  "fd09-today.c3.s2": {
+   "say": "Orez cu fasole, încă pe cele mai multe mese braziliene."
+  },
+  "fd09-today.c3.s3": {
+   "say": "Și tot mai multă mâncare ultraprocesată."
+  },
+  "fd09-today.c3.s4": {
+   "say": "Sucuri."
+  },
+  "fd09-today.c3.s5": {
+   "say": "Gustări ambalate."
+  },
+  "fd09-today.c3.s6": {
+   "say": "În Brazilia, e cam o cincime din caloriile consumate."
+  },
+  "fd09-today.c3.s7": {
+   "say": "În Statele Unite, peste jumătate."
+  },
+  "fd09-today.c4.s1": {
+   "say": "Regula de aur a ghidului?"
+  },
+  "fd09-today.c4.s2": {
+   "say": "Alege mâncare proaspătă și mese gătite acasă, nu ultraprocesate."
+  },
+  "fd09-today.c4.s3": {
+   "say": "În majoritatea țărilor, mai mulți adulți sunt obezi decât subponderali."
+  },
+  "fd09-today.c4.s4": {
+   "say": "Un nou-născut brazilian poate spera la vreo șaptezeci și șase de ani.",
+   "show": "Un nou-născut brazilian poate spera la vreo 76 de ani."
+  },
+  "fd09-today.c5.s1": {
+   "say": "Deci ce e mâncarea pentru tine?"
+  },
+  "fd09-today.c5.s2": {
+   "say": "Prea mult din unele."
+  },
+  "fd09-today.c5.s3": {
+   "say": "Prea puțin din altele."
+  },
+  "fd09-today.c5.s4": {
+   "say": "Iată întrebarea pentru care ai venit."
+  },
+  "fd09-today.c5.s5": {
+   "say": "Mâncarea ne-a lungit viața."
+  },
+  "fd09-today.c5.s6": {
+   "say": "Ne ia acum înapoi o parte din ani?"
+  },
+  "fd10-reveal.c1.s1": {
+   "say": "Iată răspunsul."
+  },
+  "fd10-reveal.c1.s2": {
+   "say": "Mâncarea ne-a dat ani."
+  },
+  "fd10-reveal.c1.s3": {
+   "say": "Dar n-a făcut-o singură."
+  },
+  "fd10-reveal.c1.s4": {
+   "say": "Iar acum, pericolul s-a inversat."
+  },
+  "fd10-reveal.c2.s1": {
+   "say": "Destule calorii și nutrienții potriviți au învins scorbutul, beriberiul și pelagra și ne-au făcut mai înalți."
+  },
+  "fd10-reveal.c2.s2": {
+   "say": "Medicul Thomas McKeown susținea că hrana e motivul principal al vieții mai lungi."
+  },
+  "fd10-reveal.c2.s3": {
+   "say": "Mulți istorici contestă."
+  },
+  "fd10-reveal.c3.s1": {
+   "say": "Un studiu din marile orașe americane: doar apa curată explică aproape jumătate din scăderea deceselor, la începutul secolului douăzeci.",
+   "show": "Un studiu din marile orașe americane: doar apa curată explică aproape jumătate din scăderea deceselor, la începutul secolului XX."
+  },
+  "fd10-reveal.c3.s2": {
+   "say": "Canalizarea, vaccinurile și medicina au făcut mult din rest."
+  },
+  "fd10-reveal.c4.s1": {
+   "say": "Și azi?"
+  },
+  "fd10-reveal.c4.s2": {
+   "say": "Cam unul din cinci decese din lume e legat de alimentație."
+  },
+  "fd10-reveal.c4.s3": {
+   "say": "Cele mai mari riscuri?"
+  },
+  "fd10-reveal.c4.s4": {
+   "say": "Prea multă sare."
+  },
+  "fd10-reveal.c4.s5": {
+   "say": "Puține cereale integrale."
+  },
+  "fd10-reveal.c4.s6": {
+   "say": "Prea puține fructe."
+  },
+  "fd10-reveal.c5.s1": {
+   "say": "Și ce-ai ghicit?"
+  },
+  "fd10-reveal.c5.s2": {
+   "say": "În anul o mie opt sute, cam douăzeci și nouă de ani.",
+   "show": "În anul 1800, cam 29 de ani."
+  },
+  "fd10-reveal.c5.s3": {
+   "say": "Azi, în lume, cam șaptezeci și trei.",
+   "show": "Azi, în lume, cam 73."
+  },
+  "fd10-reveal.c5.s4": {
+   "say": "Cât de aproape ai fost?"
+  },
+  "fd10-reveal.c6.s1": {
+   "say": "Hai să coborâm împreună pe scară."
+  },
+  "fd10-reveal.c6.s2": {
+   "say": "Într-o mie cinci sute, combustibil.",
+   "show": "În 1500, mâncarea era combustibil."
+  },
+  "fd10-reveal.c6.s3": {
+   "say": "Apoi, leac."
+  },
+  "fd10-reveal.c6.s4": {
+   "say": "Apoi, ceva de măsurat."
+  },
+  "fd10-reveal.c6.s5": {
+   "say": "Apoi, ceva ce reparăm."
+  },
+  "fd10-reveal.c6.s6": {
+   "say": "În sfârșit, destulă."
+  },
+  "fd10-reveal.c6.s7": {
+   "say": "Azi, prea multă."
+  },
+  "fd10-reveal.c7.s1": {
+   "say": "Într-o mie cinci sute, mâncarea lua cei mai mulți bani, iar pericolul era foamea.",
+   "show": "În 1500, mâncarea lua cei mai mulți bani, iar pericolul era foamea."
+  },
+  "fd10-reveal.c7.s2": {
+   "say": "Azi, pericolul e ce alegem să mâncăm."
+  },
+  "fd11-2100.c1.s1": {
+   "say": "Deci ce vei mânca în anul două mii o sută?",
+   "show": "Deci ce vei mânca în anul 2100?"
+  },
+  "fd11-2100.c1.s2": {
+   "say": "Dimineața aceea n-a venit încă."
+  },
+  "fd11-2100.c1.s3": {
+   "say": "Dar putem urma dovezile."
+  },
+  "fd11-2100.c2.s1": {
+   "say": "ONU se așteaptă la o speranță de viață în lume de cam optzeci și doi de ani până în două mii o sută.",
+   "show": "ONU se așteaptă la o speranță de viață în lume de cam 82 de ani până în 2100."
+  },
+  "fd11-2100.c2.s2": {
+   "say": "Grupul său climatic spune că încălzirea a frânat deja creșterea randamentului agricol în ultimii cincizeci de ani.",
+   "show": "Grupul său climatic spune că încălzirea a frânat deja creșterea randamentului agricol în ultimii 50 de ani."
+  },
+  "fd11-2100.c3.s1": {
+   "say": "Comisia EAT-Lancet spune că o dietă mai ales vegetală, cu carne roșie cam o dată pe săptămână, ar putea evita cam cincisprezece milioane de morți premature anual.",
+   "show": "Comisia EAT-Lancet spune că o dietă mai ales vegetală, cu carne roșie cam o dată pe săptămână, ar putea evita cam 15 milioane de morți premature anual."
+  },
+  "fd11-2100.c4.s1": {
+   "say": "Iată deci un scenariu."
+  },
+  "fd11-2100.c4.s2": {
+   "say": "Nu un fapt."
+  },
+  "fd11-2100.c4.s3": {
+   "say": "Farfuria din două mii o sută poate fi mai ales vegetală.",
+   "show": "Farfuria din 2100 poate fi mai ales vegetală."
+  },
+  "fd11-2100.c4.s4": {
+   "say": "Carnea ar putea fi răsfățul săptămânii."
+  },
+  "fd11-2100.c4.s5": {
+   "say": "Iar dacă recoltele țin, viața medie ar putea trece de optzeci.",
+   "show": "Iar dacă recoltele țin, viața medie ar putea trece de 80 de ani."
+  },
+  "fd11-2100.c5.s1": {
+   "say": "Într-o mie cinci sute, Biserica hotăra zilele în care nu mâncai carne.",
+   "show": "În 1500, Biserica hotăra zilele în care nu mâncai carne."
+  },
+  "fd11-2100.c5.s2": {
+   "say": "În două mii o sută, motivul ar putea fi inima ta.",
+   "show": "În 2100, motivul ar putea fi inima ta."
+  },
+  "fd11-2100.c5.s3": {
+   "say": "Și planeta."
+  },
+  "fd12-close.c1.s1": {
+   "say": "Diseară, uită-te la farfuria ta."
+  },
+  "fd12-close.c1.s2": {
+   "say": "Care parte din ea îți aduce mai mulți ani?"
+  },
+  "fd13-outro.c1.s1": {
+   "say": "Acesta a fost Did You Know That, episodul cinci."
+  },
+  "fd13-outro.c1.s2": {
+   "say": "Mâncarea."
+  },
+  "fd13-outro.c1.s3": {
+   "say": "Acum e rândul tău."
+  },
+  "fd13-outro.c1.s4": {
+   "say": "În bucătăria cărui secol ai mânca?"
+  },
+  "fd13-outro.c1.s5": {
+   "say": "Spune-mi în comentarii."
+  },
+  "fd13-outro.c1.s6": {
+   "say": "La finalul fiecărui episod citesc cel mai bun comentariu, chiar aici, pe ecran."
+  },
+  "fd13-outro.c1.s7": {
+   "say": "Iar subiectul cerut cel mai des devine un episod viitor."
+  },
+  "fd13-outro.c1.s8": {
+   "say": "Pe site-ul nostru, Dexti punct laiv, poți vedea fiecare episod, colecta cardurile cu fapte și juca jocul ghicitului.",
+   "show": "Pe site-ul nostru, Dexty.live, poți vedea fiecare episod, colecta cardurile cu fapte și juca jocul ghicitului."
+  },
+  "fd13-outro.c2.s1": {
+   "say": "Dacă ți-a schimbat felul în care vezi farfuria, dă-i like."
+  },
+  "fd13-outro.c2.s2": {
+   "say": "Trimite-l prietenului care îți gătește mereu."
+  },
+  "fd13-outro.c2.s3": {
+   "say": "Și abonează-te, ca următorul mister să te găsească."
+  },
+  "fd13b-next.c1.s1": {
+   "say": "Data viitoare: medicina."
+  },
+  "fd13b-next.c1.s2": {
+   "say": "Într-o mie șapte sute nouăzeci și nouă, medicii lui George Washington i-au scos, după unele estimări, cam două cincimi din sânge.",
+   "show": "În 1799, medicii lui George Washington i-au scos, după unele estimări, cam două cincimi din sânge."
+  },
+  "fd13b-next.c1.s3": {
+   "say": "Deci cum am aflat ce ne vindecă cu adevărat?"
+  },
+  "fd13c-signoff.c1.s1": {
+   "say": "Întreabă..."
+  },
+  "fd13c-signoff.c2.s1": {
+   "say": "Uimește-te."
+  },
+  "fd13c-signoff.c3.s1": {
+   "say": "Repetă."
+  },
+  "fd14-endscreen.c1.s1": {
+   "say": "Data viitoare..."
+  },
+  "fd14-endscreen.c1.s2": {
+   "say": "poate fi comentariul tău."
+  },
+  "fd14-endscreen.c1.s3": {
+   "say": "Alege un mister."
+  },
+  "fd14-endscreen.c1.s4": {
+   "say": "Ne vedem acolo."
+  }
+ }
+}
