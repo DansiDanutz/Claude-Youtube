@@ -7,6 +7,7 @@ from unittest import mock
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'tools', 'dyk', 'localize'))
 import check_translation as CT  # noqa: E402
 import en_from_whisper as W  # noqa: E402
+import build_dub  # noqa: E402
 import gen_dub  # noqa: E402
 import lang as L  # noqa: E402
 import run  # noqa: E402
@@ -84,9 +85,30 @@ class DriverTest(unittest.TestCase):
         with mock.patch.object(run, 'step', side_effect=lambda script, *a: 3 if (script == 'gen_dub.py' and a[1] == 'es') else 0):
             self.assertEqual(run.main(['05', 'ro', 'es']), 3)
 
+    def test_unusable_chunks_stop_the_run_with_their_own_status(self):
+        with mock.patch.object(run, 'step', side_effect=lambda script, *a: gen_dub.UNUSABLE if (script == 'gen_dub.py' and a[1] == 'fr') else 0):
+            self.assertEqual(run.main(['05', 'ro', 'fr']), gen_dub.UNUSABLE)
+
     def test_a_failed_build_makes_the_run_fail(self):
         with mock.patch.object(run, 'step', side_effect=lambda script, *a: 2 if script == 'build_dub.py' else 0):
             self.assertEqual(run.main(['05', 'ro']), 2)
+
+
+class TakeCacheTest(unittest.TestCase):
+    def test_a_rejected_take_is_never_a_candidate_even_when_it_is_newer(self):
+        with tempfile.TemporaryDirectory() as d:
+            good = os.path.join(d, 'sc1.c1.aaaa.json')
+            bad = os.path.join(d, 'sc1.c1.bbbb.rejected.json')
+            for path in (good, bad):
+                open(path, 'w').write('{}')
+            os.utime(good, (1, 1))
+            os.utime(bad, (2, 2))
+            self.assertEqual(build_dub.take_candidates(d, 'sc1.c1'), [good])
+
+    def test_other_chunks_are_not_candidates(self):
+        with tempfile.TemporaryDirectory() as d:
+            open(os.path.join(d, 'sc1.c10.aaaa.json'), 'w').write('{}')
+            self.assertEqual(build_dub.take_candidates(d, 'sc1.c1'), [])
 
 
 class LockTest(unittest.TestCase):

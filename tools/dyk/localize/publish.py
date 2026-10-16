@@ -117,9 +117,11 @@ def main(argv):
                 entry['audio'] = loc[l]['audio']
             loc[l] = entry
         item['localizations'] = {l: loc[l] for l in LANGUAGES if l in loc}
-        with open(ep_file, 'w', encoding='utf-8') as f:
+        tmp = ep_file + '.tmp'
+        with open(tmp, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
             f.write('\n')
+        os.replace(tmp, ep_file)           # atomic: a reader or a crash never sees a half-written catalog
     print(f"episodes.json: {ep['slug']} localizations = {sorted(item['localizations'])}")
     return 0
 

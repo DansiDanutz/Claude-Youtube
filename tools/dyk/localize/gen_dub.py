@@ -20,6 +20,7 @@ from check_translation import check, load_english  # noqa: E402
 from episodes import episode, loc_dir  # noqa: E402
 
 DEFAULT_RESERVE = 22000
+UNUSABLE = 4            # exit status: chunks remain whose paid take was rejected (alignment mismatch)
 LOCK_DIR = os.path.expanduser('~/.cache/video-editor')
 SPEND_LOCK = os.path.join(LOCK_DIR, 'loc-spend.lock')
 POLL_EVERY_S = 10        # the plan endpoint answers 429 when polled harder (two runs in parallel did)
@@ -102,8 +103,10 @@ def main(argv=None):
     print(f"No. {args.episode} {args.lang}: {len(units)} chunks, {len(units) - len(todo) - len(skipped)} cached, {len(todo)} to voice = {need} characters")
     if skipped:
         print(f"  {len(skipped)} chunk(s) were voiced before but their alignment did not match the text (kept as .rejected files, not paid again): {', '.join(skipped[:5])}; use --retry-rejected to voice them again")
-    if args.dry_run or not todo:
+    if args.dry_run:
         return 0
+    if not todo:
+        return UNUSABLE if skipped else 0
     with exclusive(os.path.join(LOCK_DIR, f'loc-gen-{args.episode}-{args.lang}.lock'), f'No. {args.episode} {args.lang}'):
         return voice(args, todo, cdir, need)
 
@@ -117,7 +120,7 @@ def voice(args, todo, cdir, need):
     # most every POLL_EVERY_S seconds, and always when another run has spent since our last poll (the shared ledger changed);
     # between polls each call is charged 1 credit per character, so the estimate is pessimistic. Paid calls of all runs are
     # serialised by one lock, so two runs never approve the same quota snapshot at once.
-    calls, total_spent, last_poll = 0, 0, time.time()
+    calls, total_spent, last_poll, rejected = 0, 0, time.time(), 0
     for u in todo:
         n = len(u['text'])
         with exclusive(SPEND_LOCK, 'plan spend', wait=True):
@@ -145,6 +148,7 @@ def voice(args, todo, cdir, need):
             with open(js, 'w', encoding='utf-8') as f:
                 json.dump({'text': u['text'], 'speed': args.speed, 'alignment': al, 'problem': bad}, f, ensure_ascii=False)
             print(f"  !! {u['id']}: {bad} — take kept as {os.path.basename(js)} for inspection, not used", flush=True)
+            rejected += 1
             continue
         times = C.sentence_times(al, [s['span'] for s in u['sentences']])
         push, over = lag_of(u, times)
@@ -162,6 +166,9 @@ def voice(args, todo, cdir, need):
         print(f"done: {calls} call(s), {total_spent} characters sent, {q1['used'] - q0['used']} credits used (x{ratio:.2f}; other runs in parallel distort it), {q1['remaining']} credits left")
     except RuntimeError:
         print(f'done: {calls} call(s), {total_spent} characters sent (plan lookup failed at the end)')
+    if rejected:
+        print(f'INCOMPLETE: {rejected} chunk(s) have no usable take (rejected alignment); a dub cannot be built until they are fixed')
+        return UNUSABLE
     return 0
 
 

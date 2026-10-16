@@ -42,11 +42,17 @@ def stretch(samples, tempo):
     return np.frombuffer(out, dtype=np.int16).astype(np.float32) / 32768.0
 
 
+def take_candidates(cdir, unit_id):
+    """Accepted takes of a chunk, newest first. Rejected takes (alignment mismatch, kept only for inspection) are never candidates."""
+    found = [p for p in glob.glob(os.path.join(cdir, f'{unit_id}.*.json')) if not p.endswith('.rejected.json')]
+    return sorted(found, key=os.path.getmtime, reverse=True)
+
+
 def load_take(cdir, unit):
-    """(samples, json) of the cached take whose text equals the chunk's text, else None."""
-    for js in sorted(glob.glob(os.path.join(cdir, f"{unit['id']}.*.json")), key=os.path.getmtime, reverse=True):
+    """(samples, json) of the accepted take whose text equals the chunk's text, else None."""
+    for js in take_candidates(cdir, unit['id']):
         meta = json.load(open(js, encoding='utf-8'))
-        if meta['text'] == unit['text']:
+        if meta.get('text') == unit['text'] and 'sentences' in meta:
             return decode_mp3(js[:-5] + '.mp3'), meta
     return None
 
