@@ -75,13 +75,16 @@ def main(argv):
     ap.add_argument('episode')
     ap.add_argument('--site', default='~/Projects/Did-You-Know-That')
     ap.add_argument('--no-audio', action='store_true')
+    ap.add_argument('--langs', default='', help='only these languages, comma separated (default: all that exist)')
+    ap.add_argument('--version', default=VERSION, help='Blob folder version: re-voiced audio needs a new one, the files are cached for a year')
     ap.add_argument('--dry-run', action='store_true')
     opts = ap.parse_args(argv)
     site = os.path.expanduser(opts.site)
     args = [opts.episode]
     ep = episode(args[0])
     dry, no_audio = opts.dry_run, opts.no_audio
-    langs = [l for l in LANGUAGES if os.path.exists(os.path.join(loc_dir(ep), 'vtt', f'{l}.vtt'))]
+    only = [x for x in opts.langs.split(',') if x] or list(LANGUAGES)
+    langs = [l for l in LANGUAGES if l in only and os.path.exists(os.path.join(loc_dir(ep), 'vtt', f'{l}.vtt'))]
     audio = [l for l in langs if os.path.exists(os.path.join(loc_dir(ep), l, 'dub.m4a'))] if not no_audio else []
     print(f"No. {ep['num']} {ep['slug']}: subtitles {langs}, voice-over {audio}")
     if dry:
@@ -95,7 +98,7 @@ def main(argv):
         token = pull_token(site)
         for l in audio:
             body = open(os.path.join(loc_dir(ep), l, 'dub.m4a'), 'rb').read()
-            pathname = f"dub/{VERSION}/{ep['slug']}/{l}.m4a"
+            pathname = f"dub/{opts.version}/{ep['slug']}/{l}.m4a"
             url = put_blob(token, pathname, body)
             size = remote_size(url)
             print(f'  {l}: {len(body) / 1e6:.1f} MB uploaded -> {url.split("/dub/")[0].split("//")[1].split(".")[0][:6]}…/{pathname} (remote size {size})')

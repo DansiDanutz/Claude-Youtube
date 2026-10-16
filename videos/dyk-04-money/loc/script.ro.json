@@ -338,19 +338,23 @@
    "say": "E duminică seara, în august, și toată familia stă în fața televizorului."
   },
   "mo08-1971.c2.s1": {
-   "say": "Știai că în o mie nouă sute șaptezeci și unu, cei mai mulți americani nu aveau voie să dețină monede sau lingouri de aur?"
+   "say": "Știai că în o mie nouă sute șaptezeci și unu, majoritatea americanilor nu puteau deține monede sau lingouri de aur?",
+   "show": "Știai că în 1971 majoritatea americanilor nu puteau deține monede sau lingouri de aur?"
   },
   "mo08-1971.c2.s2": {
-   "say": "Încă din o mie nouă sute treizeci și trei."
+   "say": "Din o mie nouă sute treizeci și trei.",
+   "show": "Din 1933."
   },
   "mo08-1971.c3.s1": {
    "say": "Aurul era pentru guverne."
   },
   "mo08-1971.c3.s2": {
-   "say": "Din o mie nouă sute patruzeci și patru, schimbau dolari pe aur american, la treizeci și cinci de dolari uncia."
+   "say": "Din patruzeci și patru, dolarii se schimbau pe aur, treizeci și cinci pe uncie.",
+   "show": "Din 1944, dolarii se schimbau pe aur, 35 de dolari uncia."
   },
   "mo08-1971.c3.s3": {
-   "say": "Dolarul era legat de aur, iar restul banilor, de dolar."
+   "say": "Dolarul, legat de aur, iar restul banilor, de dolar.",
+   "show": "Dolarul era legat de aur, iar restul banilor, de dolar."
   },
   "mo08-1971.c4.s1": {
    "say": "În seara aceea apare președintele Nixon."
