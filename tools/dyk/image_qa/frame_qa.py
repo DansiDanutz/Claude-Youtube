@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """PROTOTYPE: image QA of rendered frames with TypeSafe (Jev 1.14, images are "danger zone"). Dry run by default.
 
-  python3 tools/dyk/image_qa/frame_qa.py                       # show the requests, the headers and the token/cost estimate
-  python3 tools/dyk/image_qa/frame_qa.py --frames a.png b.png  # other frames
-  python3 tools/dyk/image_qa/frame_qa.py --send --i-approve-spend   # needs TYPESAFE_API_KEY in the environment; NOT used yet
+  python3 tools/dyk/image_qa/frame_qa.py --frames a.png b.png         # dry run: the requests, the headers and the token/cost estimate
+  python3 tools/dyk/image_qa/frame_qa.py --frames a.png --send --i-approve-spend   # needs TYPESAFE_API_KEY in the environment
+Without --frames the four Episode 5 stills are used; they live on the video/dyk-05-food branch (git-ignored audit folder), so on any other
+checkout pass --frames (make_defects.py also writes frames to test with).
 
 Per frame, one request with the image once in `state` and the questions asked in parallel over it:
   text_cut_off         noul  any text clipped by the frame edge or the box that holds it
@@ -16,7 +17,7 @@ TypeSafe-Danger-Zone-Images: true, multipart/form-data with a `request` JSON par
 280-1568 px per side, 78,400-2,458,624 pixels in total, never resized by the service. Output tokens are free, input $0.042 per Mtok.
 Measured on the first run (4 Episode 5 stills, 960x540): 1,792 to 1,864 input tokens per request, 7,241 in all, about $0.0003.
 Nothing here calls the API unless --send AND --i-approve-spend are both given and a key is present.
-With --send each yes/no answer is compared with its threshold (THRESHOLDS); the exit status is 2 when any frame was flagged.
+With --send each yes/no answer is compared with its threshold (THRESHOLDS); for end-screen frames the ring is checked against the Subscribe circle; the exit status is 2 when anything was flagged.
 """
 import argparse, io, json, math, os, sys, urllib.request, uuid
 
@@ -92,7 +93,17 @@ def estimate_request(request, size):
     return {'text_tokens': text_tokens, 'image_tokens': image_tokens, 'input_tokens': total, 'usd': total * PRICE_PER_MTOK / 1e6}
 
 
-def multipart_body(request, part_name, filename, data, content_type='image/png'):
+def content_type_for(data):
+    """image/png or image/jpeg from the file's own first bytes (the service accepts only these); anything else is an error."""
+    if data[:8] == b'\x89PNG\r\n\x1a\n':
+        return 'image/png'
+    if data[:3] == b'\xff\xd8\xff':
+        return 'image/jpeg'
+    raise ValueError('not a PNG or JPEG file (the service accepts only these two)')
+
+
+def multipart_body(request, part_name, filename, data, content_type=None):
+    content_type = content_type or content_type_for(data)
     boundary = uuid.uuid4().hex
     out = io.BytesIO()
     out.write(f'--{boundary}\r\nContent-Disposition: form-data; name="request"\r\nContent-Type: application/json\r\n\r\n'.encode())
@@ -131,6 +142,13 @@ def flags(answers, thresholds=None):
             continue
         out[name] = {'value': answer['noul'], 'threshold': limit, 'flag': answer['noul'] >= limit}
     return out
+
+
+def ring_report(answers):
+    """OK / MOVED / ABSENT for an end-screen frame's answers, or None when the frame had no ring questions."""
+    if not answers or 'ring_box' not in answers or 'ring_present' not in answers:
+        return None
+    return ring_verdict(answers['ring_box']['box'], answers['ring_present']['noul'])
 
 
 def send(request, part_name, filename, data, key):
@@ -177,6 +195,12 @@ def main(argv=None):
         for name, f in flags(answers.get('answers')).items():
             flagged += f['flag']
             print(f"  {'FLAG' if f['flag'] else 'ok  '} {name}: {f['value']:.2f} (threshold {f['threshold']:.2f})")
+        ring = ring_report(answers.get('answers'))
+        if ring:
+            flagged += ring != 'OK'
+            box = answers['answers']['ring_box']['box']
+            print(f"  {'ok  ' if ring == 'OK' else 'FLAG'} ring {ring}: centre ({(box['left'] + box['right']) / 2:.3f}, {(box['top'] + box['bottom']) / 2:.3f}), "
+                  f"target ({RING_TARGET[0]:.3f}, {RING_TARGET[1]:.3f}) +/- {RING_TOLERANCE}")
     print(f'\ntotal ~{total["input_tokens"]} input tokens, ~${total["usd"]:.5f} (output tokens are free); image tokens estimated from one measurement, see the docstring')
     return 2 if flagged else 0
 
