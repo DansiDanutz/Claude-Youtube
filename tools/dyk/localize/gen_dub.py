@@ -42,6 +42,14 @@ def exclusive(path, what, wait=False):
         handle.close()
 
 
+def write_atomic(path, data):
+    """Write bytes next to the target and rename: a reader never sees a half-written take."""
+    tmp = path + '.tmp'
+    with open(tmp, 'wb') as f:
+        f.write(data)
+    os.replace(tmp, path)
+
+
 def take_key(unit, lang, speed):
     raw = f"{unit['text']}|{speed}|{lang}|{eleven.VOICE}|{eleven.MODEL}|{sorted(eleven.VOICE_SETTINGS.items())}"
     return hashlib.sha1(raw.encode('utf-8')).hexdigest()[:12]
@@ -123,7 +131,10 @@ def voice(args, todo, cdir, need):
     calls, total_spent, last_poll, rejected = 0, 0, time.time(), 0
     for u in todo:
         n = len(u['text'])
+        take_id = take_key(u, args.lang, args.speed)
         with exclusive(SPEND_LOCK, 'plan spend', wait=True):
+            if os.path.exists(chunk_paths(cdir, u, take_id)[1]):
+                continue                    # another run published this take while we waited for the lock
             other_spent = os.path.exists(eleven.LEDGER) and os.path.getmtime(eleven.LEDGER) > last_poll
             if other_spent or time.time() - last_poll >= POLL_EVERY_S:
                 try:
@@ -136,28 +147,24 @@ def voice(args, todo, cdir, need):
                 return 3
             res = eleven.tts_with_timestamps(u['text'], args.lang, speed=args.speed, key=key, purpose=f"dub {args.episode} {args.lang}")
             remaining -= n              # until the next poll the call is counted 1:1 (the real cost is lower; the poll corrects it)
-        total_spent += n
-        calls += 1
-        al = res['alignment']
-        take_id = take_key(u, args.lang, args.speed)
-        bad = C.check_alignment(u['text'], al)
-        if bad:
-            mp3, js = rejected_paths(cdir, u, take_id)
-            with open(mp3, 'wb') as f:
-                f.write(base64.b64decode(res['audio_base64']))
-            with open(js, 'w', encoding='utf-8') as f:
-                json.dump({'text': u['text'], 'speed': args.speed, 'alignment': al, 'problem': bad}, f, ensure_ascii=False)
-            print(f"  !! {u['id']}: {bad} — take kept as {os.path.basename(js)} for inspection, not used", flush=True)
-            rejected += 1
-            continue
-        times = C.sentence_times(al, [s['span'] for s in u['sentences']])
-        push, over = lag_of(u, times)
-        mp3, js = chunk_paths(cdir, u, take_id)
-        with open(mp3, 'wb') as f:
-            f.write(base64.b64decode(res['audio_base64']))
-        with open(js, 'w', encoding='utf-8') as f:
-            json.dump({'text': u['text'], 'speed': args.speed, 'alignment': al,
-                       'sentences': [{'id': s['id'], 'start': round(a, 3), 'end': round(b, 3)} for s, (a, b) in zip(u['sentences'], times)]}, f, ensure_ascii=False)
+            total_spent += n
+            calls += 1
+            al = res['alignment']
+            bad = C.check_alignment(u['text'], al)
+            if bad:
+                mp3, js = rejected_paths(cdir, u, take_id)
+                write_atomic(mp3, base64.b64decode(res['audio_base64']))
+                write_atomic(js, json.dumps({'text': u['text'], 'speed': args.speed, 'alignment': al, 'problem': bad}, ensure_ascii=False).encode('utf-8'))
+                print(f"  !! {u['id']}: {bad} — take kept as {os.path.basename(js)} for inspection, not used", flush=True)
+                rejected += 1
+                continue
+            times = C.sentence_times(al, [s['span'] for s in u['sentences']])
+            push, over = lag_of(u, times)
+            mp3, js = chunk_paths(cdir, u, take_id)
+            write_atomic(mp3, base64.b64decode(res['audio_base64']))      # audio first: the json marks the take as complete
+            write_atomic(js, json.dumps({'text': u['text'], 'speed': args.speed, 'alignment': al,
+                                         'sentences': [{'id': s['id'], 'start': round(a, 3), 'end': round(b, 3)} for s, (a, b) in zip(u['sentences'], times)]},
+                                        ensure_ascii=False).encode('utf-8'))
         flag = '  <-- LONG: shorten the translation' if push > L.MAX_LAG_S else ''
         print(f"  {u['id']}: {n} chars, speech {times[-1][1] - times[0][0]:.1f}s, push {push:.2f}s, end {over:+.2f}s vs slot{flag}", flush=True)
     try:

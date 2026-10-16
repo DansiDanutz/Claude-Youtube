@@ -1,5 +1,8 @@
 import os
 import sys
+import argparse
+import base64
+import json
 import tempfile
 import unittest
 from unittest import mock
@@ -109,6 +112,66 @@ class TakeCacheTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             open(os.path.join(d, 'sc1.c10.aaaa.json'), 'w').write('{}')
             self.assertEqual(build_dub.take_candidates(d, 'sc1.c1'), [])
+
+
+def unit(text='Bonjour. Salut.'):
+    sentences = [{'id': 'sc1.c1.s1', 'span': (0, 8), 'en': {'start': 0.0, 'slot_end': 3.0}},
+                 {'id': 'sc1.c1.s2', 'span': (9, 14), 'en': {'start': 3.0, 'slot_end': 6.0}}]
+    return {'id': 'sc1.c1', 'text': text, 'sentences': sentences}
+
+
+def alignment(text, per_char=0.1):
+    return {'characters': list(text), 'character_start_times_seconds': [i * per_char for i in range(len(text))],
+            'character_end_times_seconds': [(i + 1) * per_char for i in range(len(text))]}
+
+
+def response(text, aligned_text=None):
+    return {'audio_base64': base64.b64encode(b'ID3fake').decode(), 'alignment': alignment(aligned_text or text)}
+
+
+def voicing_args(reserve=100):
+    return argparse.Namespace(episode='05', lang='fr', speed=1.06, reserve=reserve)
+
+
+class PaidStepTest(unittest.TestCase):
+    def run_voice(self, cdir, units, tts, remaining=10000, reserve=100):
+        quota = {'used': 0, 'limit': remaining, 'remaining': remaining, 'resets': 0, 'tier': 'creator'}
+        with mock.patch.object(gen_dub.eleven, 'api_key', return_value='k'), \
+                mock.patch.object(gen_dub.eleven, 'quota', return_value=quota), \
+                mock.patch.object(gen_dub.eleven, 'tts_with_timestamps', side_effect=tts) as paid, \
+                mock.patch.object(gen_dub, 'SPEND_LOCK', os.path.join(cdir, 'spend.lock')):
+            status = gen_dub.voice(voicing_args(reserve), units, cdir, sum(len(u['text']) for u in units))
+        return status, paid
+
+    def test_a_good_take_is_cached_and_a_second_run_does_not_pay_again(self):
+        with tempfile.TemporaryDirectory() as d:
+            u = unit()
+            status, paid = self.run_voice(d, [u], lambda text, lang, **kw: response(text))
+            self.assertEqual((status, paid.call_count), (0, 1))
+            key = gen_dub.take_key(u, 'fr', 1.06)
+            mp3, js = gen_dub.chunk_paths(d, u, key)
+            self.assertTrue(os.path.exists(mp3) and os.path.exists(js))
+            self.assertEqual([s['id'] for s in json.load(open(js))['sentences']], ['sc1.c1.s1', 'sc1.c1.s2'])
+            status, paid = self.run_voice(d, [u], lambda text, lang, **kw: response(text))     # same take already published under the lock
+            self.assertEqual(paid.call_count, 0)
+
+    def test_a_rejected_take_is_kept_beside_the_cache_and_the_run_reports_it(self):
+        with tempfile.TemporaryDirectory() as d:
+            u = unit()
+            status, paid = self.run_voice(d, [u], lambda text, lang, **kw: response(text, aligned_text='something else'))
+            self.assertEqual(status, gen_dub.UNUSABLE)
+            key = gen_dub.take_key(u, 'fr', 1.06)
+            mp3, js = gen_dub.rejected_paths(d, u, key)
+            self.assertTrue(os.path.exists(mp3) and os.path.exists(js))
+            self.assertIn('problem', json.load(open(js)))
+            self.assertFalse(os.path.exists(gen_dub.chunk_paths(d, u, key)[1]), 'a rejected take must not look like an accepted one')
+            self.assertEqual(build_dub.take_candidates(d, 'sc1.c1'), [])
+
+    def test_the_quota_gate_stops_before_the_call_that_would_pass_the_reserve(self):
+        with tempfile.TemporaryDirectory() as d:
+            status, paid = self.run_voice(d, [unit()], lambda text, lang, **kw: response(text), remaining=110, reserve=100)
+            self.assertEqual(status, 3)
+            self.assertEqual(paid.call_count, 0)
 
 
 class LockTest(unittest.TestCase):
