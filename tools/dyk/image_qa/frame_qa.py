@@ -16,6 +16,7 @@ TypeSafe-Danger-Zone-Images: true, multipart/form-data with a `request` JSON par
 280-1568 px per side, 78,400-2,458,624 pixels in total, never resized by the service. Output tokens are free, input $0.042 per Mtok.
 Measured on the first run (4 Episode 5 stills, 960x540): 1,792 to 1,864 input tokens per request, 7,241 in all, about $0.0003.
 Nothing here calls the API unless --send AND --i-approve-spend are both given and a key is present.
+With --send each yes/no answer is compared with its threshold (THRESHOLDS); the exit status is 2 when any frame was flagged.
 """
 import argparse, io, json, math, os, sys, urllib.request, uuid
 
@@ -28,6 +29,10 @@ MIN_SIDE, MAX_SIDE, MIN_PIXELS, MAX_PIXELS = 280, 1568, 78_400, 2_458_624
 PRICE_PER_MTOK = 0.042
 PIXELS_PER_IMAGE_TOKEN = 318         # MEASURED 2026-10-17 (jev-1.14.0): a 960x540 still cost about 1,630 image tokens; the docs give no formula, so this assumes tokens scale with pixels
 CHARS_PER_TOKEN = 4
+# A yes/no answer counts as a FLAG at or above its threshold. Measured on 2026-10-17 with clean frames and frames with known defects
+# (make_defects.py): clean stills score 0.12 / 0.27, so 0.5 would miss subtle cases; these catch what the questions can see.
+# Known miss: a caption dropped onto the HUD scores only 0.30 on caption_hud_overlap (the strip variant scores 0.64).
+THRESHOLDS = {'text_cut_off': 0.30, 'caption_hud_overlap': 0.45}
 RING_TARGET = (0.500, 0.710)         # centre of YouTube's Subscribe circle as a fraction of the frame
 RING_TOLERANCE = 0.02
 
@@ -117,6 +122,17 @@ def ring_verdict(box, present_probability, tolerance=RING_TOLERANCE):
     return 'OK' if abs(cx - RING_TARGET[0]) <= tolerance and abs(cy - RING_TARGET[1]) <= tolerance else 'MOVED'
 
 
+def flags(answers, thresholds=None):
+    """{question: {value, threshold, flag}} for the yes/no questions that have a threshold (a missing answer is skipped)."""
+    out = {}
+    for name, limit in (thresholds or THRESHOLDS).items():
+        answer = (answers or {}).get(name)
+        if answer is None or 'noul' not in answer:
+            continue
+        out[name] = {'value': answer['noul'], 'threshold': limit, 'flag': answer['noul'] >= limit}
+    return out
+
+
 def send(request, part_name, filename, data, key):
     body, ctype = multipart_body(request, part_name, filename, data)
     req = urllib.request.Request(ENDPOINT, data=body, method='POST', headers={
@@ -137,8 +153,11 @@ def main(argv=None):
     if opts.send and not key:
         sys.exit('refusing to send: TYPESAFE_API_KEY is not set')
     total = {'input_tokens': 0, 'usd': 0.0}
+    flagged = 0
     for name in opts.frames:
         path = name if os.path.isabs(name) or os.path.exists(name) else os.path.join(AUDIT, name)
+        if not os.path.exists(path):
+            sys.exit(f'frame not found: {path} (the default Episode 5 stills are on the video/dyk-05-food branch; pass --frames)')
         w, h = image_size(path)
         problems = validate_size(w, h)
         request = build_request(os.path.basename(path), f'{os.path.splitext(os.path.basename(path))[0]}-asset', 'frame-png')
@@ -152,10 +171,14 @@ def main(argv=None):
             continue
         if problems:
             sys.exit('not sending: ' + '; '.join(problems))
-        answers = send(request, 'frame-png', os.path.basename(path), open(path, 'rb').read(), key)
+        with open(path, 'rb') as f:
+            answers = send(request, 'frame-png', os.path.basename(path), f.read(), key)
         print(json.dumps(answers, indent=1, ensure_ascii=False))
+        for name, f in flags(answers.get('answers')).items():
+            flagged += f['flag']
+            print(f"  {'FLAG' if f['flag'] else 'ok  '} {name}: {f['value']:.2f} (threshold {f['threshold']:.2f})")
     print(f'\ntotal ~{total["input_tokens"]} input tokens, ~${total["usd"]:.5f} (output tokens are free); image tokens estimated from one measurement, see the docstring')
-    return 0
+    return 2 if flagged else 0
 
 
 if __name__ == '__main__':

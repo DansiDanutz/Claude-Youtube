@@ -1,10 +1,32 @@
 import os
 import sys
+import tempfile
 import unittest
 from unittest import mock
 
+import numpy as np
+from PIL import Image
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'tools', 'dyk', 'image_qa'))
 import frame_qa as Q  # noqa: E402
+import make_defects as D  # noqa: E402
+
+def make_frame(folder, name='frame.png', size=(960, 540)):
+    path = os.path.join(folder, name)
+    Image.fromarray(np.random.default_rng(1).integers(0, 255, (size[1], size[0], 3), dtype=np.uint8)).save(path)
+    return path
+
+
+# What the questions answered on 2026-10-17 (frame_qa.py --send): text_cut_off, caption_hud_overlap
+MEASURED = {
+    'zoomed-clipped': (0.98, 0.15), 'cropped-left': (0.36, 0.17), 'strip-on-hud': (0.50, 0.64),
+    'caption-on-hud': (0.68, 0.30), 'clean-1500': (0.12, 0.27), 'clean-1884': (0.12, 0.27),
+}
+
+
+def answers_of(cut, overlap):
+    return {'text_cut_off': {'type': 'noul', 'noul': cut}, 'caption_hud_overlap': {'type': 'noul', 'noul': overlap}}
+
 
 BOX = {'left': 0.442, 'right': 0.558, 'top': 0.683, 'bottom': 0.891}      # measured on the pre-fix Episode 5 end screen
 
@@ -86,6 +108,83 @@ class AnswerReadingTest(unittest.TestCase):
         self.assertEqual(Q.ring_verdict(BOX, 0.1), 'ABSENT')
 
 
+class ThresholdTest(unittest.TestCase):
+    def fired(self, question):
+        return {name for name, (cut, overlap) in MEASURED.items() if Q.flags(answers_of(cut, overlap))[question]['flag']}
+
+    def test_the_thresholds_are_the_agreed_ones(self):
+        self.assertEqual(Q.THRESHOLDS, {'text_cut_off': 0.30, 'caption_hud_overlap': 0.45})
+
+    def test_text_cut_off_fires_on_the_clipped_frames_and_never_on_the_clean_ones(self):
+        fired = self.fired('text_cut_off')
+        self.assertTrue({'zoomed-clipped', 'cropped-left'} <= fired)
+        self.assertFalse({'clean-1500', 'clean-1884'} & fired)
+
+    def test_caption_overlap_fires_on_the_strip_and_not_on_the_clean_or_clipped_frames(self):
+        fired = self.fired('caption_hud_overlap')
+        self.assertIn('strip-on-hud', fired)
+        self.assertFalse({'clean-1500', 'clean-1884', 'zoomed-clipped', 'cropped-left'} & fired)
+
+    def test_known_miss_a_caption_dropped_on_the_hud_stays_under_the_threshold(self):
+        # documented limitation: this is why the overlap check should become two Box questions compared in code
+        self.assertNotIn('caption-on-hud', self.fired('caption_hud_overlap'))
+
+    def test_a_value_exactly_at_the_threshold_flags(self):
+        self.assertTrue(Q.flags(answers_of(0.30, 0.0))['text_cut_off']['flag'])
+        self.assertFalse(Q.flags(answers_of(0.29, 0.0))['text_cut_off']['flag'])
+
+    def test_missing_or_non_noul_answers_are_skipped(self):
+        self.assertEqual(Q.flags({}), {})
+        self.assertEqual(Q.flags(None), {})
+        self.assertEqual(Q.flags({'text_cut_off': {'type': 'box', 'box': {}}}), {})
+
+
+def solid(color=(10, 10, 10), size=(960, 540)):
+    return Image.new('RGB', size, color)
+
+
+class DefectGeneratorTest(unittest.TestCase):
+    def test_slide_left_loses_the_left_edge_and_leaves_the_right_edge_empty(self):
+        src = Image.fromarray(np.random.default_rng(2).integers(0, 255, (540, 960, 3), dtype=np.uint8))
+        out = np.asarray(D.slide_left(src, 120))
+        self.assertEqual(out.shape, (540, 960, 3))
+        self.assertTrue((out[:, -120:] == D.BACKGROUND).all())
+        self.assertTrue((out[:, :-120] == np.asarray(src)[:, 120:]).all())
+
+    def test_zoom_clip_keeps_the_frame_size_and_enlarges_the_centre(self):
+        src = solid((0, 0, 0))
+        src.paste((255, 255, 255), (470, 270, 490, 290))                  # a 20x20 white square at the centre
+        out = np.asarray(D.zoom_clip(src, factor=2.0, dy=0).convert('L'))
+        self.assertEqual(out.shape, (540, 960))
+        self.assertAlmostEqual((out > 200).sum() / 400, 4.0, delta=0.6)
+
+    def test_overlay_text_erases_the_source_and_draws_its_text_over_the_target(self):
+        src = solid((0, 0, 0))
+        src.paste((255, 255, 255), (100, 100, 140, 110))                  # the "text"
+        src.paste((0, 0, 200), (100, 200, 300, 230))                      # something already at the target (the HUD)
+        out = np.asarray(D.overlay_text(src, (90, 95, 400, 120), 205))
+        self.assertTrue((out[100:110, 100:140] == D.BACKGROUND).all())    # erased where it was
+        self.assertTrue((out[210:220, 100:140] == 255).all())             # drawn at the new place (offset 205 - 95 + 5)
+        self.assertTrue((out[225, 200:300] == (0, 0, 200)).all())         # the HUD is still there where the text is not
+
+    def test_paste_box_moves_a_rectangle_over_the_target(self):
+        src = solid((0, 0, 0))
+        src.paste((255, 0, 0), (50, 50, 150, 80))
+        out = np.asarray(D.paste_box(src, (50, 50, 150, 80), 400, (9, 9, 9)))
+        self.assertTrue((out[400:430, 50:150] == (255, 0, 0)).all())
+        self.assertTrue((out[50:80, 50:150] == (9, 9, 9)).all())
+
+    def test_make_all_writes_four_frames_of_the_same_size(self):
+        with tempfile.TemporaryDirectory() as stills, tempfile.TemporaryDirectory() as out:
+            make_frame(stills, 'Fd1500-540.png')
+            make_frame(stills, 'Fd1884-1330.png')
+            paths = D.make_all(out, stills)
+            self.assertEqual(sorted(os.path.basename(p) for p in paths),
+                             ['defect-caption-on-hud.png', 'defect-cropped-left.png', 'defect-strip-on-hud.png', 'defect-zoomed-clipped.png'])
+            self.assertTrue(all(Image.open(p).size == (960, 540) for p in paths))
+            self.assertEqual(Q.validate_size(*Image.open(paths[0]).size), [])
+
+
 class SpendGuardTest(unittest.TestCase):
     def test_sending_needs_the_explicit_approval_flag(self):
         with mock.patch.object(Q, 'send') as sent, self.assertRaises(SystemExit):
@@ -99,9 +198,29 @@ class SpendGuardTest(unittest.TestCase):
         sent.assert_not_called()
 
     def test_a_dry_run_never_sends(self):
-        with mock.patch.object(Q, 'send') as sent, mock.patch('builtins.print'):
-            self.assertEqual(Q.main([]), 0)
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(Q, 'send') as sent, mock.patch('builtins.print'):
+            self.assertEqual(Q.main(['--frames', make_frame(d)]), 0)
         sent.assert_not_called()
+
+    def test_a_missing_frame_is_a_clear_error(self):
+        with self.assertRaises(SystemExit) as caught:
+            Q.main(['--frames', '/nonexistent/frame.png'])
+        self.assertIn('frame not found', str(caught.exception))
+
+    def run_send(self, answers):
+        with tempfile.TemporaryDirectory() as d, mock.patch.dict(os.environ, {'TYPESAFE_API_KEY': 'k'}), \
+                mock.patch.object(Q, 'send', return_value={'answers': answers}) as sent, mock.patch('builtins.print') as printed:
+            status = Q.main(['--send', '--i-approve-spend', '--frames', make_frame(d)])
+        return status, sent, printed
+
+    def test_a_flagged_answer_gives_exit_status_2_and_is_reported(self):
+        status, sent, printed = self.run_send({'text_cut_off': {'type': 'noul', 'noul': 0.98}, 'caption_hud_overlap': {'type': 'noul', 'noul': 0.1}})
+        self.assertEqual((status, sent.call_count), (2, 1))
+        self.assertTrue(any('FLAG text_cut_off' in str(c) for c in printed.call_args_list))
+
+    def test_clean_answers_give_exit_status_0(self):
+        status, _, _ = self.run_send({'text_cut_off': {'type': 'noul', 'noul': 0.12}, 'caption_hud_overlap': {'type': 'noul', 'noul': 0.27}})
+        self.assertEqual(status, 0)
 
 
 if __name__ == '__main__':
