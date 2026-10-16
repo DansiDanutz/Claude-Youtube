@@ -49,7 +49,7 @@ TOTAL = t
 VO_AT = {scene: START[sid] + off for sid, _, vos in SHOTS for scene, off in vos}
 DUR = {sid: dur for sid, dur, _ in SHOTS}
 # end screen (FdOutro): starts 24 frames after the sign-off ends — same rule as make_timeline.py and the shot
-ES_S = (round((_TL['FdOutro'][1]['fd13c-signoff'] + VO['fd13c-signoff']['dur']) * FPS) + 24) / FPS
+ES_S = (round((_TL['FdOutro'][1]['fd13c-signoff'] + VO['fd13c-signoff']['dur']) * FPS) + 54) / FPS
 
 
 def narration_fit_problems(shots, vo, min_tail=MIN_TAIL_S):
@@ -112,6 +112,9 @@ def resolve(when):
         return w_end(*when[1:])
     if kind == 'after_did':
         return after_did(when[1])
+    if kind == 'hold':
+        _, scene, prev, nxt, extra, hold_s = when
+        return max(w(scene, *nxt), w(scene, *prev) + hold_s) + extra
     raise ValueError(when)
 
 

@@ -13,9 +13,27 @@ import { DL, DL_SERIF, DL_MONO, DL_SANS } from './danslab';
 import { DYT } from './dytbrand';
 import { ease } from './dykkit';
 export {
-  EpisodeHud, WakePlace, win, SunCliffhanger, OnWord, SchoolChip as FoodChip, SchoolLadder as FoodLadder, SCHOOL_FULL as LADDER_FULL,
-  StampText, Label, Source, Kid, PeopleRow, BigWord, Panel, AskMark, QGRAD, INK,
+  EpisodeHud, WakePlace, win, SunCliffhanger, SchoolChip as FoodChip, SchoolLadder as FoodLadder, SCHOOL_FULL as LADDER_FULL,
+  StampText, Kid, PeopleRow, BigWord, Panel, AskMark, QGRAD, INK,
 } from './dykkit-school';
+
+// a small source line (≥ 24 px) — fully visible 4 f after its word (round 5: the shared one took 12 f)
+export const Source: React.FC<{ at: number; children: React.ReactNode; style?: React.CSSProperties }> = ({ at, children, style }) => {
+  const f = useCurrentFrame();
+  return <div style={{ fontFamily: DL_MONO, fontSize: 24, lineHeight: 1.3, color: DL.muted, opacity: ease(f, at - 2, at + 4), ...style }}>{children}</div>;
+};
+
+// No. 05 audit round 3: a held panel is legible only between the end of each caption's fade-in and the start of the
+// panel's fade-out. The shared Label (12-frame rise) and OnWord (10-frame fade) ate a third of a 1.5 s hold, so this
+// kit's captions are fully visible 4 frames after their word (same look; the older kits are untouched).
+export const Label: React.FC<{ at: number; children: React.ReactNode; color?: string; size?: number; style?: React.CSSProperties }> = ({ at, children, color = DL.dim, size = 26, style }) => {
+  const f = useCurrentFrame();
+  return <div style={{ fontFamily: DL_MONO, fontSize: size, letterSpacing: 3, color, opacity: ease(f, at - 2, at + 4), transform: `translateY(${ease(f, at - 2, at + 6, 10, 0)}px)`, ...style }}>{children}</div>;
+};
+export const OnWord: React.FC<{ at: number; children: React.ReactNode }> = ({ at, children }) => {
+  const f = useCurrentFrame();
+  return <span style={{ opacity: ease(f, at - 2, at + 4) }}>{children}</span>;
+};
 
 // ── the arc (STORY §1, approved): chip text on its word, short label in the docked ladder
 export type FoodRung = { year: string; label: string; at: number };
@@ -122,7 +140,7 @@ export const Food: React.FC<{ kind: FoodKind; size?: number; dim?: number; glow?
 export const FoodTag: React.FC<{ kind: FoodKind; at: number; size?: number; color?: string; name?: string; dim?: number; row?: boolean }> = ({ kind, at, size = 110, color = DL.text, name, dim = 0, row = false }) => {
   const f = useCurrentFrame();
   return (
-    <div style={{ display: 'flex', flexDirection: row ? 'row' : 'column', alignItems: 'center', gap: row ? 14 : 6, opacity: ease(f, at - 2, at + 6), transform: `translateY(${ease(f, at - 2, at + 10, 18, 0)}px) scale(${ease(f, at - 2, at + 8, 1.2, 1)})` }}>
+    <div style={{ display: 'flex', flexDirection: row ? 'row' : 'column', alignItems: 'center', gap: row ? 14 : 6, opacity: ease(f, at - 2, at + 4), transform: `translateY(${ease(f, at - 2, at + 8, 18, 0)}px) scale(${ease(f, at - 2, at + 8, 1.2, 1)})` }}>
       <Food kind={kind} size={size} dim={dim} />
       <span style={{ fontFamily: DL_MONO, fontSize: 24, letterSpacing: 2, color, whiteSpace: 'nowrap' }}>{name ?? FOOD_NAME[kind]}</span>
     </div>
@@ -131,7 +149,8 @@ export const FoodTag: React.FC<{ kind: FoodKind; at: number; size?: number; colo
 
 // ── a week of plates: 7 columns, each a stack of food icons; `shade` days are tinted and tagged (fast days)
 export type PlateDay = { d: string; foods: FoodKind[]; tag?: string; shade?: boolean };
-export const PlateWeek: React.FC<{ title: React.ReactNode; days: PlateDay[]; at: number; step?: number; tagAt?: number; tagColor?: string; foot: string; icon?: number }> = ({ title, days, at, step = 4, tagAt = 1e9, tagColor = DL.sky, foot, icon = 56 }) => {
+// reveal: a food kind → the frame its icons appear in every column (on the word that names it); kinds not listed show with the day.
+export const PlateWeek: React.FC<{ title: React.ReactNode; days: PlateDay[]; at: number; step?: number; tagAt?: number; tagColor?: string; foot: string; icon?: number; reveal?: Partial<Record<FoodKind, number>> }> = ({ title, days, at, step = 4, tagAt = 1e9, tagColor = DL.sky, foot, icon = 56, reveal = {} }) => {
   const f = useCurrentFrame();
   return (
     <div style={{ opacity: ease(f, at - 6, at + 6) }}>
@@ -139,12 +158,12 @@ export const PlateWeek: React.FC<{ title: React.ReactNode; days: PlateDay[]; at:
       <div style={{ display: 'flex', gap: 14, marginTop: 18 }}>
         {days.map((d, i) => {
           const g = ease(f, at + i * step, at + i * step + 10);
-          const tagOn = d.shade ? ease(f, tagAt - 2, tagAt + 8) : 0;
+          const tagOn = d.shade ? ease(f, tagAt - 2, tagAt + 4) : 0;
           return (
             <div key={d.d} style={{ width: 132, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: g }}>
               <div style={{ height: 34, fontFamily: DL_MONO, fontSize: 24, letterSpacing: 1, color: tagColor, opacity: tagOn, whiteSpace: 'nowrap' }}>{d.tag ?? ''}</div>
               <div style={{ width: 132, height: 300, boxSizing: 'border-box', borderRadius: 14, border: `2px solid ${tagOn > 0.5 ? tagColor : DL.border}`, background: tagOn > 0.5 ? `${tagColor}22` : DL.panel2, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', gap: 6, paddingTop: 12 }}>
-                {d.foods.map((k, j) => <Food key={j} kind={k} size={icon} />)}
+                {d.foods.map((k, j) => <div key={j} style={{ opacity: reveal[k] === undefined ? 1 : ease(f, reveal[k]! - 2, reveal[k]! + 8), transform: `scale(${reveal[k] === undefined ? 1 : ease(f, reveal[k]! - 2, reveal[k]! + 10, 1.25, 1)})` }}><Food kind={k} size={icon} /></div>)}
               </div>
               <span style={{ fontFamily: DL_MONO, fontSize: 26, color: DL.muted }}>{d.d}</span>
             </div>
@@ -155,6 +174,70 @@ export const PlateWeek: React.FC<{ title: React.ReactNode; days: PlateDay[]; at:
     </div>
   );
 };
+
+// ── a newborn (THE YEARS beat: "a newborn could expect…")
+export const Baby: React.FC<{ size?: number }> = ({ size = 110 }) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <ellipse cx={50} cy={64} rx={34} ry={26} fill="#f4efe0" stroke="#c8c0b0" strokeWidth={3} />
+    <circle cx={50} cy={34} r={20} fill="#e8c0a0" stroke="#b8906a" strokeWidth={3} />
+    <path d="M40 34 q4 4 8 0 M52 34 q4 4 8 0" stroke="#6a4a3a" strokeWidth={2} fill="none" />
+  </svg>
+);
+
+// a number that counts up from 0 to `to` between frames a and b (THE YEARS figures land on the spoken number)
+export const CountUp: React.FC<{ to: number; a: number; b: number; prefix?: string; suffix?: string; style?: React.CSSProperties }> = ({ to, a, b, prefix = '', suffix = '', style }) => {
+  const f = useCurrentFrame();
+  const v = Math.round(to * ease(f, a, b));
+  return <span style={{ fontVariantNumeric: 'tabular-nums', opacity: ease(f, a - 2, a + 6), ...style }}>{prefix}{v.toLocaleString('en-US')}{suffix}</span>;
+};
+
+// ── a 24 h day clock whose segments AND legend rows each appear on their own word (`at` per segment) — the kit
+// DayClock draws every row at the shot's step, which shows a row's label before Brian names it.
+export type ClockSeg = { from: number; to: number; label: string; color: string; at: number; hot?: boolean };
+export const FoodClock: React.FC<{ year: string; segs: ClockSeg[]; at: number; size?: number }> = ({ year, segs, at, size = 400 }) => {
+  const f = useCurrentFrame();
+  const c = size / 2, r = c - 30, sw = 44;
+  const arc = (a0: number, a1: number) => {
+    const p = (a: number) => [c + Math.sin((a / 24) * Math.PI * 2) * r, c - Math.cos((a / 24) * Math.PI * 2) * r];
+    const [x0, y0] = p(a0), [x1, y1] = p(a1);
+    const span = (a1 - a0 + 24) % 24 || 24;
+    return `M${x0} ${y0} A${r} ${r} 0 ${span > 12 ? 1 : 0} 1 ${x1} ${y1}`;
+  };
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 40, opacity: ease(f, at - 6, at + 6) }}>
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+        <circle cx={c} cy={c} r={r} fill="none" stroke={DL.panel2} strokeWidth={sw} />
+        {segs.map((s, i) => {
+          const g = ease(f, s.at, s.at + 14);
+          const to = s.from + (((s.to - s.from + 24) % 24) || 24) * g;
+          const pulse = s.hot && f > s.at ? 0.5 + 0.5 * Math.cos((f - s.at) / 5) : 0;
+          return g > 0.001 ? <path key={i} d={arc(s.from, to)} fill="none" stroke={s.color} strokeWidth={sw - 4 + 8 * pulse} style={{ filter: s.hot ? `drop-shadow(0 0 ${12 * pulse}px ${s.color})` : undefined }} /> : null;
+        })}
+        {[0, 6, 12, 18].map((h) => { const a = (h / 24) * Math.PI * 2, rr = r - sw / 2 - 22; return <text key={h} x={c + Math.sin(a) * rr} y={c - Math.cos(a) * rr + 8} textAnchor="middle" fill={DL.muted} fontFamily={DL_MONO} fontSize={22}>{String(h).padStart(2, '0')}</text>; })}
+        <text x={c} y={c - 6} textAnchor="middle" fill={DL.dim} fontFamily={DL_MONO} fontSize={22} letterSpacing={4}>A DAY IN</text>
+        <text x={c} y={c + 44} textAnchor="middle" fill={DL.gold} fontFamily={DL_SERIF} fontSize={48}>{year}</text>
+      </svg>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        {segs.map((s, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 14, opacity: ease(f, s.at - 2, s.at + 8) }}>
+            <div style={{ width: 20, height: 20, borderRadius: 5, background: s.color }} />
+            <span style={{ fontFamily: DL_MONO, fontSize: 24, color: DL.muted, width: 110 }}>{String(s.from).padStart(2, '0')}–{String(s.to).padStart(2, '0')}</span>
+            <span style={{ fontFamily: DL_SANS, fontSize: 28, color: s.hot ? DL.text : DL.warm, fontWeight: s.hot ? 600 : 400, whiteSpace: 'nowrap' }}>{s.label}</span>
+          </div>
+        ))}
+        <div style={{ marginTop: 6, fontFamily: DL_MONO, fontSize: 24, color: DL.muted }}>ILLUSTRATION · HISTORICAL ACCOUNTS</div>
+      </div>
+    </div>
+  );
+};
+
+// hold(prevLast, nextStart): a panel stays up ≥ 1.5 s after its last reveal before the next panel replaces it
+export const HOLD_F = 53; // from the word onset: 4 f caption fade-in + 45 f (1.5 s) fully legible + 4 f panel fade-out (`pane`)
+// a panel window with the short exit that HOLD_F assumes: in 6 f, out 4 f
+export const pane = (f: number, a: number, b: number) => ease(f, a - 6, a) * (1 - ease(f, b - 4, b));
+export const hold = (prevLast: number, nextStart: number, min = HOLD_F) => Math.max(nextStart, prevLast + min);
+// the DYK card (kit DidYouKnowThat) fades out over 10 f, not 4: its `out` needs 6 more frames (round 4)
+export const cardOut = (prevLast: number, nextStart: number) => hold(prevLast, nextStart) + 6;
 
 // ── props ─────────────────────────────────────────────────────────────────────────────────────────
 export const Ship: React.FC<{ w?: number; f: number; sails?: string; flag?: string }> = ({ w = 520, f, sails = '#e8e0cc', flag = '#c0392b' }) => (

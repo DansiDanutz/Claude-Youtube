@@ -4,7 +4,7 @@ import { DL, DL_SERIF, DL_SANS, DL_MONO, SiteBg } from '../../lib/danslab';
 import { makeCue, ease, useShotFade, EraHeader, Vignette, DidYouKnowThat, EraExit } from '../../lib/dykkit';
 import {
   EpisodeHud, WakePlace, win, SunCliffhanger, FoodChip, FoodLadder, foodRungs, Label, Source, StampText, AskMark, OnWord, PeopleRow, Kid,
-  Food, FoodTag, YearsStrip, YEARS_PAST, yearsUpTo, Ship, Waves,
+  Food, FoodTag, YearsStrip, YEARS_PAST, yearsUpTo, Ship, Waves, Baby, hold, pane,
 } from '../../lib/dykkit-food';
 import vo from './vo.json';
 
@@ -25,8 +25,9 @@ const DUR = 1849;
 
 const C = makeCue(vo, 'fd05-1747', 0.8);
 const SEVENTEEN = C.at('seventeen', 1);
+const ABOARD = C.at('aboard');
 const SALISBURY = C.at('Salisbury,');
-const DOCK = SALISBURY + 46;
+const DOCK = SALISBURY + 34; // round 5: the warship label waits for the dock — dock earlier so it lands on its word
 const WARSHIP = C.at('warship');
 const PATROL = C.at('patrol.');
 const DID = C.at('Did');
@@ -66,6 +67,7 @@ const NOW = C.at('now?');
 const MEDICINE = C.at('Medicine.');
 const CHIP_DOCK = MEDICINE + 80;
 const CURE2 = C.at('cure', 2);
+const RIGHT = C.at('right');
 const LAND = C.at('land');
 const NEWBORN = C.at('newborn');
 const FEWER = C.at('fewer');
@@ -76,6 +78,11 @@ const NINETY = C.at('ninety');
 const CENTURY = C.at('century');
 const LATER = C.at('later,');
 const PIECE = C.at('piece');
+const MAKING = C.at('making');
+// audit round 1: each panel holds ≥ 1.5 s after its last reveal
+const PLATE_END = hold(FRESH, AFTER);
+const TRIAL_END = hold(DAY_END, SO);
+const YEARS_END = hold(NINETY, CENTURY);
 const JAPAN = C.at('Japan,');
 const MISSING = C.at('missing');
 const SICK = C.at('sick.');
@@ -90,7 +97,7 @@ const WaitBar: React.FC<{ run: number; endAt: number; label?: string }> = ({ run
       <div style={{ position: 'absolute', left: 0, top: 40, width: 1000, height: 10, borderRadius: 5, background: '#2a2f5a' }} />
       <div style={{ position: 'absolute', left: 0, top: 40, width: 1000 * run, height: 10, borderRadius: 5, background: '#ffd23f' }} />
       <div style={{ position: 'absolute', left: -6, top: 0, fontFamily: DL_MONO, fontSize: 30, color: '#ffd23f' }}>1747</div>
-      <div style={{ position: 'absolute', right: -6, top: 0, fontFamily: DL_MONO, fontSize: 30, color: '#5ad08a', opacity: ease(f, endAt - 2, endAt + 6) }}>1795</div>
+      <div style={{ position: 'absolute', right: -6, top: 0, fontFamily: DL_MONO, fontSize: 30, color: '#5ad08a', opacity: ease(f, endAt - 2, endAt + 4) }}>1795</div>
       {label && <div style={{ position: 'absolute', left: 380, top: 56, fontFamily: DL_MONO, fontSize: 30, color: '#ffffff' }}>{label}</div>}
     </div>
   );
@@ -99,15 +106,16 @@ const WaitBar: React.FC<{ run: number; endAt: number; label?: string }> = ({ run
 const Fd1747: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
-  const ship = win(f, DOCK + 10, DID - 2, 10, 8);
-  const plate = win(f, PLATE - 4, AFTER, 6, 8);
-  const body = win(f, AFTER - 4, SURGEON, 6, 8);
-  const trial = win(f, SURGEON - 4, SO + 2, 6, 8);
-  const medicine = win(f, MEDICINE - 2, LAND, 4, 10);
-  const years = win(f, LAND - 4, CENTURY, 6, 8);
-  const cliff = ease(f, CENTURY - 2, CENTURY + 10);
-  const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, CENTURY - 2, CENTURY + 8));
-  const strip = (1 - ease(f, CENTURY - 6, CENTURY + 2)) * ease(f, DOCK, DOCK + 10);
+  // the ship stays under the DYK card's scrim (round 2: it flashed for 1.2 s before the card)
+  const ship = Math.max(0.35 * ease(f, 0, 12), ease(f, DOCK + 4, DOCK + 14)) * (1 - ease(f, PLATE - 14, PLATE - 6));
+  const plate = pane(f, PLATE - 4, PLATE_END);
+  const body = pane(f, PLATE_END, hold(WOUNDS, SURGEON));
+  const trial = pane(f, hold(WOUNDS, SURGEON) + 2, TRIAL_END);
+  const medicine = pane(f, MEDICINE - 2, hold(RIGHT, LAND));
+  const years = pane(f, hold(RIGHT, LAND), YEARS_END);
+  const cliff = ease(f, YEARS_END - 2, YEARS_END + 10);
+  const ladder = ease(f, CHIP_DOCK, CHIP_DOCK + 12) * (1 - ease(f, CENTURY - 2, CENTURY + 4));
+  const strip = (1 - ease(f, CENTURY - 6, CENTURY + 2)) * ease(f, DOCK - 2, DOCK + 4);
   const grey = ease(f, SICK - 4, SICK + 20);
 
   return (
@@ -116,23 +124,23 @@ const Fd1747: React.FC = () => {
       <Vignette />
       <EraExit dur={DUR}>
         <EraHeader year="1747" idx={2} label="HMS SALISBURY" dockAt={DOCK} />
-        <WakePlace place="aboard HMS Salisbury" at={SALISBURY} dockAt={DOCK} yearAt={SEVENTEEN} />
+        <WakePlace place="aboard HMS Salisbury" at={ABOARD} dockAt={DOCK} yearAt={SEVENTEEN} />
 
         {/* the warship on patrol */}
         <AbsoluteFill style={{ opacity: ship }}>
           <div style={{ position: 'absolute', left: 160, top: 660, width: 1600, height: 200, overflow: 'hidden' }}><Waves f={f} w={1600} y={20} /></div>
-          <div style={{ position: 'absolute', left: 560, top: 260, opacity: ease(f, WARSHIP - 4, WARSHIP + 8), transform: `translateX(${(f - WARSHIP) * 0.5}px)` }}><Ship w={720} f={f} /></div>
-          <div style={{ position: 'absolute', left: 160, top: 230 }}><Label at={WARSHIP} color={DL.sky} size={32}>A BRITISH WARSHIP<OnWord at={PATROL}> · ON PATROL</OnWord></Label></div>
+          <div style={{ position: 'absolute', left: 560, top: 260, opacity: ease(f, WARSHIP - 2, WARSHIP + 4), transform: `translateX(${(f - WARSHIP) * 0.5}px)` }}><Ship w={720} f={f} /></div>
+          <div style={{ position: 'absolute', left: 160, top: 230 }}><Label at={Math.max(WARSHIP, DOCK + 18)} color={DL.sky} size={32}>A BRITISH WARSHIP<OnWord at={Math.max(PATROL, DOCK + 18)}> · ON PATROL</OnWord></Label></div>
         </AbsoluteFill>
 
         {/* THE PLATE: the official ration */}
         <AbsoluteFill style={{ opacity: plate }}>
           <div style={{ position: 'absolute', left: 160, top: 200 }}><Label at={PLATE} color={DL.gold} size={34}>THE PLATE · A SAILOR'S RATION</Label></div>
-          <div style={{ position: 'absolute', left: 160, top: 280, width: 760, padding: '26px 34px', boxSizing: 'border-box', borderRadius: 18, background: '#0e0b0af0', border: `2px solid ${DL.gold}`, opacity: ease(f, EVERY - 2, EVERY + 8) }}>
+          <div style={{ position: 'absolute', left: 160, top: 280, width: 760, padding: '26px 34px', boxSizing: 'border-box', borderRadius: 18, background: '#0e0b0af0', border: `2px solid ${DL.gold}`, opacity: ease(f, EVERY - 2, EVERY + 4) }}>
             <Label at={EVERY} color={DL.dim} size={30}>EVERY DAY</Label>
             <div style={{ display: 'flex', gap: 60, marginTop: 20 }}>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: ease(f, POUND - 2, POUND + 8) }}><Food kind="biscuit" size={150} /><span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.text }}>1 lb<OnWord at={BISCUIT}> HARD BISCUIT</OnWord></span></div>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: ease(f, GALLON - 2, GALLON + 8) }}><Food kind="beer" size={150} /><span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.text }}>1 GALLON<OnWord at={BEER}> BEER</OnWord></span></div>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: ease(f, EVERY - 2, EVERY + 4) }}><div style={{ opacity: ease(f, POUND - 2, POUND + 4) }}><Food kind="biscuit" size={150} /></div><span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.text, opacity: ease(f, POUND - 2, POUND + 4) }}>1 lb<OnWord at={BISCUIT}> HARD BISCUIT</OnWord></span></div>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: ease(f, EVERY + 4, EVERY + 12) }}><div style={{ opacity: ease(f, GALLON - 2, GALLON + 4) }}><Food kind="beer" size={150} /></div><span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.text, opacity: ease(f, GALLON - 2, GALLON + 4) }}>1 GALLON<OnWord at={BEER}> BEER</OnWord></span></div>
             </div>
           </div>
           <div style={{ position: 'absolute', left: 980, top: 280, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 24 }}>
@@ -143,7 +151,7 @@ const Fd1747: React.FC = () => {
             <FoodTag kind="cheese" at={CHEESE} size={100} name="A LITTLE CHEESE" />
           </div>
           <div style={{ position: 'absolute', left: 980, top: 700 }}><StampText text="ALMOST NOTHING FRESH" at={FRESH} color={DL.red} size={38} /></div>
-          <div style={{ position: 'absolute', left: 160, top: 640, width: 760 }}><Source at={SALT}>Royal Navy victualling scale (1733 Regulations), per man per week: 7 lb biscuit · 7 gal beer · 4 lb beef · 2 lb pork · 2 pt pease · 3 pt oatmeal · 6 oz butter · 12 oz cheese</Source></div>
+          <div style={{ position: 'absolute', left: 160, top: 640, width: 760 }}><Source at={CHEESE}>Royal Navy victualling scale (1733 Regulations), per man per week: 7 lb biscuit · 7 gal beer · 4 lb beef · 2 lb pork · 2 pt pease · 3 pt oatmeal · 6 oz butter · 12 oz cheese</Source></div>
         </AbsoluteFill>
 
         {/* THE BODY: scurvy */}
@@ -164,36 +172,36 @@ const Fd1747: React.FC = () => {
           <div style={{ position: 'absolute', left: 160, top: 290, display: 'grid', gridTemplateColumns: 'repeat(3, 520px)', gap: 20 }}>
             {PAIR_LABELS.map((lab, i) => {
               const citrus = i === 4;
-              const named = i === 0 ? CIDER : i === 2 ? VINEGAR : citrus ? ORANGES : DIFFERENT;
+              const named = i === 0 ? CIDER : i === 2 ? VINEGAR : citrus ? ORANGES : C.at('each');
               const glow = citrus ? ease(f, LEMON1 - 2, LEMON1 + 10) : 0;
               return (
-                <div key={i} style={{ height: 230, boxSizing: 'border-box', padding: '18px 22px', borderRadius: 16, border: `2px solid ${citrus && glow > 0.3 ? '#ffd23f' : DL.border}`, background: citrus && glow > 0.3 ? '#2a2006f0' : '#0e0b0af0', boxShadow: citrus ? `0 0 ${50 * glow}px #ffd23f88` : undefined, opacity: ease(f, PAIRS - 2 + i * 12, PAIRS + 8 + i * 12) }}>
+                <div key={i} style={{ height: 230, boxSizing: 'border-box', padding: '18px 22px', borderRadius: 16, border: `2px solid ${citrus && glow > 0.3 ? '#ffd23f' : DL.border}`, background: citrus && glow > 0.3 ? '#2a2006f0' : '#0e0b0af0', boxShadow: citrus ? `0 0 ${50 * glow}px #ffd23f88` : undefined, opacity: ease(f, SURGEON + i * 4, SURGEON + 10 + i * 4) }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                    <PeopleRow n={2} lit={() => (f >= TWELVE ? 1 : 0)} size={48} gap={8} color={citrus && glow > 0.3 ? '#ffd23f' : DL.warm} />
+                    <PeopleRow n={2} lit={() => ease(f, TWELVE + i * 10, TWELVE + 6 + i * 10)} size={48} gap={8} color={citrus && glow > 0.3 ? '#ffd23f' : DL.warm} />
                     <span style={{ fontFamily: DL_MONO, fontSize: 26, color: DL.muted }}>PAIR {i + 1}</span>
                   </div>
-                  <div style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 14, opacity: ease(f, named - 2, named + 8) }}>
+                  <div style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 14, opacity: ease(f, named - 2, named + 4) }}>
                     {i === 0 && <Food kind="cider" size={70} />}
                     {i === 2 && <Food kind="vinegar" size={70} />}
-                    {citrus && <><Food kind="orange" size={70} /><Food kind="orange" size={70} /><div style={{ opacity: ease(f, LEMON1 - 2, LEMON1 + 6) }}><Food kind="lemon" size={70} /></div></>}
+                    {citrus && <><Food kind="orange" size={70} /><Food kind="orange" size={70} /><div style={{ opacity: ease(f, LEMON1 - 2, LEMON1 + 4) }}><Food kind="lemon" size={70} /></div></>}
                     <span style={{ fontFamily: DL_MONO, fontSize: citrus || i % 2 === 0 ? 28 : 24, color: citrus ? '#ffd23f' : i % 2 === 0 ? DL.text : DL.dim }}>{lab}</span>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div style={{ position: 'absolute', left: 160, top: 790, display: 'flex', gap: 30, alignItems: 'center' }}>
+          <div style={{ position: 'absolute', left: 160, top: 805, display: 'flex', gap: 30, alignItems: 'center' }}>
             <StampText text="ONE FIT FOR DUTY AFTER SIX DAYS" at={DAY_END} color={DL.green} size={34} tilt={-2} />
-            <Source at={DAY_END}>Lind 1753 · James Lind Library · the fruit ran out after six days</Source>
+            <div style={{ width: 620 }}><Source at={DAY_END}>Lind 1753 · James Lind Library · the fruit ran out after six days</Source></div>
           </div>
         </AbsoluteFill>
 
         {/* "So what is food now?" — Medicine. The right food can cure you. */}
-        <AskMark at={SO} out={MEDICINE + 2} left={760} top={250} pulseAt={NOW} />
+        <AskMark at={TRIAL_END} out={MEDICINE + 2} left={760} top={250} pulseAt={NOW} />
         <AbsoluteFill style={{ opacity: medicine }}>
           <div style={{ position: 'absolute', left: 260, top: 300, display: 'flex', alignItems: 'center', gap: 30 }}>
             <Food kind="orange" size={170} glow={0.6} /><Food kind="lemon" size={150} glow={0.6} />
-            <div style={{ fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 64, color: DL.gold, opacity: ease(f, CURE2 - 2, CURE2 + 8), marginLeft: 30 }}>the right food can cure you</div>
+            <div style={{ fontFamily: DL_SERIF, fontStyle: 'italic', fontSize: 64, color: DL.gold, opacity: ease(f, RIGHT - 2, RIGHT + 4), marginLeft: 30 }}>the right food can cure you</div>
           </div>
         </AbsoluteFill>
         <FoodChip text="MEDICINE" at={MEDICINE} dockAt={CHIP_DOCK} slot={1} left={260} top={720} />
@@ -201,33 +209,34 @@ const Fd1747: React.FC = () => {
         {/* THE YEARS on land + the navy waits */}
         <AbsoluteFill style={{ opacity: years }}>
           <div style={{ position: 'absolute', left: 160, top: 220 }}><Label at={LAND} color={DL.gold} size={34}>THE YEARS · ON LAND IN BRITAIN<OnWord at={NEWBORN}> · A NEWBORN</OnWord></Label></div>
-          <div style={{ position: 'absolute', left: 160, top: 290, display: 'flex', flexDirection: 'column', gap: 10, opacity: ease(f, FEWER - 2, FEWER + 8) }}>
-            <span style={{ fontFamily: DL_SERIF, fontSize: 140, lineHeight: 1, color: DL.gold }}>&lt; 40<span style={{ opacity: ease(f, FORTY2 - 2, FORTY2 + 6) }}> years</span></span>
+          <div style={{ position: 'absolute', left: 900, top: 290, opacity: ease(f, NEWBORN - 2, NEWBORN + 4), transform: `scale(${ease(f, NEWBORN - 2, NEWBORN + 10, 1.25, 1)})` }}><Baby size={140} /></div>
+          <div style={{ position: 'absolute', left: 160, top: 290, display: 'flex', flexDirection: 'column', gap: 10, opacity: ease(f, FEWER - 2, FEWER + 4) }}>
+            <span style={{ fontFamily: DL_SERIF, fontSize: 140, lineHeight: 1, color: DL.gold }}>&lt; 40<span style={{ opacity: ease(f, FORTY2 - 2, FORTY2 + 4) }}> years</span></span>
             <span style={{ fontFamily: DL_MONO, fontSize: 30, color: DL.dim }}>England 1748 ≈ 36 · at birth · average</span>
           </div>
-          <div style={{ position: 'absolute', left: 160, top: 520, display: 'flex', alignItems: 'center', gap: 40, opacity: ease(f, NAVY3 - 2, NAVY3 + 8) }}>
+          <div style={{ position: 'absolute', left: 160, top: 520, display: 'flex', alignItems: 'center', gap: 40, opacity: ease(f, NAVY3 - 2, NAVY3 + 4) }}>
             <WaitBar run={ease(f, NAVY3, NINETY + 6)} endAt={NINETY} />
-            <div style={{ opacity: ease(f, LEMON2 - 2, LEMON2 + 8), display: 'flex', alignItems: 'center', gap: 14 }}><Food kind="cider" size={90} /><Label at={LEMON2} color="#ffd23f" size={30}>LEMON JUICE<br />FOR EVERY SAILOR</Label></div>
+            <div style={{ opacity: ease(f, LEMON2 - 2, LEMON2 + 4), display: 'flex', alignItems: 'center', gap: 14 }}><Food kind="lemon" size={90} /><Label at={LEMON2} color="#ffd23f" size={30}>LEMON JUICE<br />FOR EVERY SAILOR</Label></div>
           </div>
           <div style={{ position: 'absolute', left: 160, top: 660 }}><Source at={NINETY}>Admiralty order, 1795: ¾ oz of lemon juice a day · 48 years after Lind's trial · OWID (England 1748: 36.5)</Source></div>
         </AbsoluteFill>
 
         {/* cliffhanger: a century later, in Japan */}
         <AbsoluteFill style={{ opacity: cliff }}>
-          <div style={{ position: 'absolute', left: 300, top: 280, opacity: ease(f, JAPAN - 4, JAPAN + 8) }}><Food kind="rice" size={240} /></div>
-          <div style={{ position: 'absolute', left: 700, top: 360, opacity: ease(f, MISSING - 2, MISSING + 8), fontFamily: DL_SERIF, fontSize: 200, color: DL.red }}>?</div>
-          <div style={{ position: 'absolute', left: 940, top: 380, opacity: ease(f, JAPAN - 2, JAPAN + 8) }}><PeopleRow n={5} lit={() => 1 - 0.7 * grey} size={70} color={DL.warm} /></div>
+          <div style={{ position: 'absolute', left: 300, top: 280, opacity: ease(f, JAPAN - 2, JAPAN + 4) }}><Food kind="rice" size={240} /></div>
+          <div style={{ position: 'absolute', left: 700, top: 360, opacity: ease(f, MISSING - 2, MISSING + 4), fontFamily: DL_SERIF, fontSize: 200, color: DL.red }}>?</div>
+          <div style={{ position: 'absolute', left: 940, top: 380, opacity: ease(f, JAPAN - 2, JAPAN + 4) }}><PeopleRow n={5} lit={() => 1 - 0.7 * grey} size={70} color={DL.warm} /></div>
         </AbsoluteFill>
 
         <YearsStrip items={[...yearsUpTo(1), { ...YEARS_PAST[1], at: FORTY2 }]} show={strip} />
         <FoodLadder rungs={[...foodRungs(1), { year: '1747', label: 'MEDICINE', at: CHIP_DOCK + 10 }]} show={ladder} />
         <DidYouKnowThat at={DID} out={PLATE - 6}>
-          <OnWord at={CURE1}>the cure for </OnWord><OnWord at={WORST}>sailors' worst disease </OnWord><span style={{ opacity: ease(f, FOUND - 4, FOUND + 6), color: '#ffd23f' }}>was found this year</span>
-          <OnWord at={WAITED}>, and the navy <span style={{ color: '#ff9a1f', fontStyle: 'italic' }}>waited</span></OnWord><span style={{ opacity: ease(f, FIFTY - 4, FIFTY + 6), color: '#ff9a1f', fontStyle: 'italic' }}> almost fifty years to use it?</span>
-          <div style={{ marginTop: 30, opacity: ease(f, WAITED - 4, WAITED + 6) }}><WaitBar run={ease(f, WAITED, FIFTY + 20) * 0.98} endAt={1e9} label={f >= FIFTY ? '≈ 50 YEARS' : undefined} /></div>
+          <OnWord at={CURE1}>the cure for </OnWord><OnWord at={WORST}>sailors' worst disease </OnWord><span style={{ opacity: ease(f, FOUND - 2, FOUND + 4), color: '#ffd23f' }}>was found this year</span>
+          <OnWord at={WAITED}>, and the navy <span style={{ color: '#ff9a1f', fontStyle: 'italic' }}>waited</span></OnWord><span style={{ opacity: ease(f, FIFTY - 2, FIFTY + 4), color: '#ff9a1f', fontStyle: 'italic' }}> almost fifty years to use it?</span>
+          <div style={{ marginTop: 30, opacity: ease(f, WAITED - 2, WAITED + 4) }}><WaitBar run={ease(f, WAITED, FIFTY + 20) * 0.98} endAt={1e9} label={f >= FIFTY ? '≈ 50 YEARS' : undefined} /></div>
         </DidYouKnowThat>
       </EraExit>
-      <SunCliffhanger next="1884" parts={[{ text: 'A century later,', at: LATER }, { text: 'in Japan,', at: JAPAN }, { text: 'another missing piece', at: PIECE }, { text: 'is making sailors sick.', at: SICK }]} />
+      <SunCliffhanger next="1884" parts={[{ text: 'A century later,', at: CENTURY }, { text: 'in Japan,', at: JAPAN }, { text: 'another missing piece', at: C.at('another') }, { text: 'is making sailors sick.', at: MAKING }]} />
       <EpisodeHud year={1747} episode="05" />
     </AbsoluteFill>
   );

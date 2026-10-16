@@ -32,6 +32,12 @@ def S(shot, sec):
     return ('s', shot, sec)
 
 
+def H(scene, prev, nxt, extra=0.0, hold_s=53 / 30):   # = kit HOLD_F (53 f)
+    """A panel boundary held >= hold_s after the previous panel's last reveal (audit round 1, kit `hold`):
+    max(start of nxt word, start of prev word + hold_s) + extra. prev/nxt = (token, nth)."""
+    return ('hold', scene, prev, nxt, extra, hold_s)
+
+
 C = []   # (when, clip, gain, visual)
 T = []   # ticks
 
