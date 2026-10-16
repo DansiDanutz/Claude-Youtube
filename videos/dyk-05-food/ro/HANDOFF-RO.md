@@ -33,7 +33,9 @@ python3 ro/make_timeline_ro.py
 python3 ro/build_final_ro.py --cuesheet-only
 ```
 
-## Render path (2026-10-16, after David's approval) — ready, NOT rendered
+## Render path (2026-10-16, after David's approval) — RENDERED, QA PASS, awaiting upload
+
+Rendered 2026-10-16 (14 shots, 91 MB in `ro/out/`, log `ro/audit/render-ro.log`). Master `ro/dyk-05-food-ro-1080P.mp4`: 779.27 s (12:59), 1080p30, -14.0 LUFS, true peak -2.3 dBTP, A/V diff 3 ms, 0 pts gaps, `work/qa_final.py` PASS (sweep in `ro/audit/sweep/`). Preview `ro/dyk-05-food-ro-720p-preview.mp4` 26.8 MB (`ro/make_preview_ro.py`). Packaging in `ro/packaging/` (title 58 chars, description 3 k chars with Romanian chapters from `timeline.ro.json`, tags), `tools/dyk/packaging_check.py` PASS. Upload plan: unlisted, Romanian title/description/tags, language Română, no end screen, no cards; then Dexty.live `narrations.ro` on the food episode (site PR #41 merged) and redeploy.
 
 - `ro/make_shots_ro.py` generates `remotion/src/shots/dyk-05-ro/FdRo*.tsx` (+ `vo.json` = `ro/vo.ro.json`) from the
   English `dyk-05/Fd*.tsx`: only the composition id, `durationInSeconds`, `DUR` and the `makeCue` offsets change (from
