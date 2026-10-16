@@ -65,7 +65,7 @@ def number_value(run):
     for tok in run:
         if tok in ARTICLE_ONE:
             current += 1
-        elif tok == "si":
+        elif tok in ("si", "de"):            # "o suta de mii": "de" only ever sits inside a run, before a scale word
             continue
         elif DIGITS.match(tok):
             current += _digit_value(tok)
@@ -88,7 +88,7 @@ def tokens(text):
     out, run = [], []
     for i, t in enumerate(toks + [""]):
         nxt = toks[i + 1] if i + 1 < len(toks) else ""
-        joins = t == "si" and run and is_number_word(nxt)
+        joins = (t == "si" and run and is_number_word(nxt)) or (t == "de" and run and nxt in SCALES)   # "o suta de mii" = 100,000
         article = t in ARTICLE_ONE and (nxt in HUNDRED or nxt in SCALES)
         percent = t in HUNDRED and not run and i and toks[i - 1] == "la"     # "la sută" = percent, not 100
         if percent:

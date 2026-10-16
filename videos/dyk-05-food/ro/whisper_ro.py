@@ -67,7 +67,7 @@ def diff_scene(ref_text, whisper_words, risky):
         if changed:
             flags.append(("number" if hs else "listen", f"'{said}' heard as '{heard}'", changed))
         if sum(t in NEGATIONS for t in rs) != sum(t in NEGATIONS for t in hs) and \
-                "".join(rs).replace("n", "") != glued.replace("n", ""):        # "n a venit" vs "navenit": same sounds
+                "".join(rs) != glued:        # "n a venit" vs "navenit" (same letters, other word boundaries) is no flip; a vanished "n" is
             flags.append(("flip", f"'{said}' heard as '{heard}' — negation changed",
                           [t for t in rs + hs if t in NEGATIONS]))
         hit = set(rs) & risky
