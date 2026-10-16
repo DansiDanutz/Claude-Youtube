@@ -13,6 +13,7 @@ import en_from_whisper as W  # noqa: E402
 import build_dub  # noqa: E402
 import gen_dub  # noqa: E402
 import lang as L  # noqa: E402
+import publish  # noqa: E402
 import run  # noqa: E402
 
 
@@ -172,6 +173,29 @@ class PaidStepTest(unittest.TestCase):
             status, paid = self.run_voice(d, [unit()], lambda text, lang, **kw: response(text), remaining=110, reserve=100)
             self.assertEqual(status, 3)
             self.assertEqual(paid.call_count, 0)
+
+
+class PublishOptionsTest(unittest.TestCase):
+    AVAILABLE = ['ro', 'fr', 'es', 'zh']
+
+    def test_a_spaced_list_is_accepted_and_kept_in_series_order(self):
+        self.assertEqual(publish.select_languages('zh, ro', self.AVAILABLE), ['ro', 'zh'])
+
+    def test_empty_means_every_language(self):
+        self.assertEqual(publish.select_languages('', self.AVAILABLE), self.AVAILABLE)
+
+    def test_an_unknown_code_is_an_error_not_a_silent_skip(self):
+        with self.assertRaises(SystemExit) as caught:
+            publish.select_languages('ro,de', self.AVAILABLE)
+        self.assertIn('unknown', str(caught.exception))
+
+    def test_a_language_without_subtitles_is_an_error(self):
+        with self.assertRaises(SystemExit) as caught:
+            publish.select_languages('ro,zh', ['ro'])
+        self.assertIn('no subtitle file', str(caught.exception))
+
+    def test_the_blob_path_carries_the_version(self):
+        self.assertEqual(publish.blob_path('v2', 'money', 'ro'), 'dub/v2/money/ro.m4a')
 
 
 class LockTest(unittest.TestCase):

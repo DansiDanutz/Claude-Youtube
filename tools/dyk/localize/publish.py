@@ -68,6 +68,23 @@ def remote_size(url):
         return None
 
 
+def select_languages(requested, available):
+    """The languages to publish: `requested` is the --langs text (comma separated, spaces allowed, empty = all). A code that is not a
+    known language, or has no subtitle file yet, is an error: a typo must not silently publish less than asked for."""
+    wanted = [x.strip() for x in requested.split(',') if x.strip()] or list(LANGUAGES)
+    unknown = [x for x in wanted if x not in LANGUAGES]
+    if unknown:
+        raise SystemExit(f'unknown language(s) {unknown}; choose from {", ".join(LANGUAGES)}')
+    missing = [x for x in wanted if x not in available]
+    if missing:
+        raise SystemExit(f'no subtitle file yet for {missing}; run build_vtt.py first')
+    return [x for x in LANGUAGES if x in wanted]
+
+
+def blob_path(version, slug, lang):
+    return f'dub/{version}/{slug}/{lang}.m4a'
+
+
 def main(argv):
     import argparse
     import urllib.parse  # noqa: F401  (used by put_blob)
@@ -83,8 +100,8 @@ def main(argv):
     args = [opts.episode]
     ep = episode(args[0])
     dry, no_audio = opts.dry_run, opts.no_audio
-    only = [x for x in opts.langs.split(',') if x] or list(LANGUAGES)
-    langs = [l for l in LANGUAGES if l in only and os.path.exists(os.path.join(loc_dir(ep), 'vtt', f'{l}.vtt'))]
+    available = [l for l in LANGUAGES if os.path.exists(os.path.join(loc_dir(ep), 'vtt', f'{l}.vtt'))]
+    langs = select_languages(opts.langs, available) if opts.langs.strip() else available
     audio = [l for l in langs if os.path.exists(os.path.join(loc_dir(ep), l, 'dub.m4a'))] if not no_audio else []
     print(f"No. {ep['num']} {ep['slug']}: subtitles {langs}, voice-over {audio}")
     if dry:
@@ -98,7 +115,7 @@ def main(argv):
         token = pull_token(site)
         for l in audio:
             body = open(os.path.join(loc_dir(ep), l, 'dub.m4a'), 'rb').read()
-            pathname = f"dub/{opts.version}/{ep['slug']}/{l}.m4a"
+            pathname = blob_path(opts.version, ep['slug'], l)
             url = put_blob(token, pathname, body)
             size = remote_size(url)
             print(f'  {l}: {len(body) / 1e6:.1f} MB uploaded -> {url.split("/dub/")[0].split("//")[1].split(".")[0][:6]}…/{pathname} (remote size {size})')
