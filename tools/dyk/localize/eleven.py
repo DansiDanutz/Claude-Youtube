@@ -27,12 +27,19 @@ def api_key():
 
 
 def quota(key=None):
-    """{'used', 'limit', 'remaining', 'resets'} for the live plan."""
+    """{'used', 'limit', 'remaining', 'resets'} for the live plan. Retries a few times: the endpoint answers 429/5xx now and then."""
     req = urllib.request.Request('https://api.elevenlabs.io/v1/user/subscription', headers={'xi-api-key': key or api_key()})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        d = json.load(r)
-    return {'used': d['character_count'], 'limit': d['character_limit'], 'remaining': d['character_limit'] - d['character_count'],
-            'resets': d['next_character_count_reset_unix'], 'tier': d.get('tier')}
+    last = None
+    for attempt in range(6):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            return {'used': d['character_count'], 'limit': d['character_limit'], 'remaining': d['character_limit'] - d['character_count'],
+                    'resets': d['next_character_count_reset_unix'], 'tier': d.get('tier')}
+        except (urllib.error.URLError, TimeoutError) as e:
+            last = e
+            time.sleep(min(30, 3 * 2 ** attempt))
+    raise RuntimeError(f'quota lookup failed: {last}')
 
 
 def log_spend(chars, lang, purpose):

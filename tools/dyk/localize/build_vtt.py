@@ -45,6 +45,7 @@ def build(num, lang, timing='auto'):
         end = max(end, min(start + need, max(slot_end, end)))
         end = min(end, next_start - GAP_S) if next_start - GAP_S > start else end
         cues += C.cues_for(text, start, end, lang)
+    cues = C.merge_short(cues, lang)
     out_dir = os.path.join(loc_dir(ep), 'vtt')
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, f'{lang}.vtt')

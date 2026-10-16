@@ -1,0 +1,1709 @@
+{
+ "episode": "01",
+ "slug": "time-compressed",
+ "master_s": 562.033,
+ "sentences": 144,
+ "english_chars": 7922,
+ "source": "whisper transcript of the published master",
+ "scenes": [
+  {
+   "id": "tc01",
+   "start": 0.0,
+   "dur": 20.14,
+   "chunks": [
+    {
+     "id": "tc01.c1",
+     "text": "In the year 1500, the fastest any message could travel was the speed of a horse. Today, a message crosses the Atlantic in less than a tenth of a second. We have saved more time than any generation in history. So why does every one of us feel like we are running out of it? Did you know that time itself has been compressing for 500 years?",
+     "sentences": [
+      {
+       "id": "tc01.c1.s1",
+       "text": "In the year 1500, the fastest any message could travel was the speed of a horse.",
+       "start": 0.0,
+       "end": 4.56,
+       "slot_end": 5.28,
+       "slot_s": 5.28,
+       "en_s": 4.56
+      },
+      {
+       "id": "tc01.c1.s2",
+       "text": "Today, a message crosses the Atlantic in less than a tenth of a second.",
+       "start": 5.4,
+       "end": 8.7,
+       "slot_end": 9.32,
+       "slot_s": 3.92,
+       "en_s": 3.3
+      },
+      {
+       "id": "tc01.c1.s3",
+       "text": "We have saved more time than any generation in history.",
+       "start": 9.44,
+       "end": 12.52,
+       "slot_end": 13.1,
+       "slot_s": 3.66,
+       "en_s": 3.08
+      },
+      {
+       "id": "tc01.c1.s4",
+       "text": "So why does every one of us feel like we are running out of it?",
+       "start": 13.22,
+       "end": 16.3,
+       "slot_end": 16.72,
+       "slot_s": 3.5,
+       "en_s": 3.08
+      },
+      {
+       "id": "tc01.c1.s5",
+       "text": "Did you know that time itself has been compressing for 500 years?",
+       "start": 16.84,
+       "end": 20.14,
+       "slot_end": 28.86,
+       "slot_s": 12.02,
+       "en_s": 3.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc02",
+   "start": 28.98,
+   "dur": 20.22,
+   "chunks": [
+    {
+     "id": "tc02.c1",
+     "text": "Welcome to Did You Know That? Every video here starts with a question you have never asked and ends with an answer you will never forget. Science, history, space, the human mind. The things nobody taught you and the things that make your day a little better. And here is the rule. Before the answer, make your guess in the comments.",
+     "sentences": [
+      {
+       "id": "tc02.c1.s1",
+       "text": "Welcome to Did You Know That?",
+       "start": 28.98,
+       "end": 30.84,
+       "slot_end": 31.18,
+       "slot_s": 2.2,
+       "en_s": 1.86
+      },
+      {
+       "id": "tc02.c1.s2",
+       "text": "Every video here starts with a question you have never asked and ends with an answer you will never forget.",
+       "start": 31.3,
+       "end": 36.4,
+       "slot_end": 36.8,
+       "slot_s": 5.5,
+       "en_s": 5.1
+      },
+      {
+       "id": "tc02.c1.s3",
+       "text": "Science, history, space, the human mind.",
+       "start": 36.92,
+       "end": 40.6,
+       "slot_end": 41.06,
+       "slot_s": 4.14,
+       "en_s": 3.68
+      },
+      {
+       "id": "tc02.c1.s4",
+       "text": "The things nobody taught you and the things that make your day a little better.",
+       "start": 41.18,
+       "end": 44.52,
+       "slot_end": 45.08,
+       "slot_s": 3.9,
+       "en_s": 3.34
+      },
+      {
+       "id": "tc02.c1.s5",
+       "text": "And here is the rule.",
+       "start": 45.2,
+       "end": 46.36,
+       "slot_end": 46.7,
+       "slot_s": 1.5,
+       "en_s": 1.16
+      },
+      {
+       "id": "tc02.c1.s6",
+       "text": "Before the answer, make your guess in the comments.",
+       "start": 46.82,
+       "end": 49.2,
+       "slot_end": 49.08,
+       "slot_s": 2.26,
+       "en_s": 2.38
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc03",
+   "start": 49.2,
+   "dur": 5.36,
+   "chunks": [
+    {
+     "id": "tc03.c1",
+     "text": "Then stay to the end and find out if you were right. Ready? Let's begin.",
+     "sentences": [
+      {
+       "id": "tc03.c1.s1",
+       "text": "Then stay to the end and find out if you were right.",
+       "start": 49.2,
+       "end": 52.5,
+       "slot_end": 52.92,
+       "slot_s": 3.72,
+       "en_s": 3.3
+      },
+      {
+       "id": "tc03.c1.s2",
+       "text": "Ready?",
+       "start": 53.04,
+       "end": 53.46,
+       "slot_end": 53.84,
+       "slot_s": 0.8,
+       "en_s": 0.42
+      },
+      {
+       "id": "tc03.c1.s3",
+       "text": "Let's begin.",
+       "start": 53.96,
+       "end": 54.56,
+       "slot_end": 55.92,
+       "slot_s": 1.96,
+       "en_s": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc04",
+   "start": 56.04,
+   "dur": 17.54,
+   "chunks": [
+    {
+     "id": "tc04.c1",
+     "text": "Here is the experiment. Seven centuries. Six mornings in one that has not happened yet. In each one, you will wake up as someone else and see how people really lived with time. By the end, you will know exactly where the time went and what could be taken next in the year 2100.",
+     "sentences": [
+      {
+       "id": "tc04.c1.s1",
+       "text": "Here is the experiment.",
+       "start": 56.04,
+       "end": 57.3,
+       "slot_end": 57.82,
+       "slot_s": 1.78,
+       "en_s": 1.26
+      },
+      {
+       "id": "tc04.c1.s2",
+       "text": "Seven centuries.",
+       "start": 57.94,
+       "end": 58.86,
+       "slot_end": 59.3,
+       "slot_s": 1.36,
+       "en_s": 0.92
+      },
+      {
+       "id": "tc04.c1.s3",
+       "text": "Six mornings in one that has not happened yet.",
+       "start": 59.42,
+       "end": 62.06,
+       "slot_end": 62.42,
+       "slot_s": 3.0,
+       "en_s": 2.64
+      },
+      {
+       "id": "tc04.c1.s4",
+       "text": "In each one, you will wake up as someone else and see how people really lived with time.",
+       "start": 62.54,
+       "end": 67.26,
+       "slot_end": 67.86,
+       "slot_s": 5.32,
+       "en_s": 4.72
+      },
+      {
+       "id": "tc04.c1.s5",
+       "text": "By the end, you will know exactly where the time went and what could be taken next in the year 2100.",
+       "start": 67.98,
+       "end": 73.58,
+       "slot_end": 74.88,
+       "slot_s": 6.9,
+       "en_s": 5.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc05",
+   "start": 75.0,
+   "dur": 14.38,
+   "chunks": [
+    {
+     "id": "tc05.c1",
+     "text": "You wake up in 1500. It is midnight. Pitch black. And the whole village is awake. Did you know that for centuries people slept twice a night? Historians have found hundreds of references to a first sleep and a second sleep.",
+     "sentences": [
+      {
+       "id": "tc05.c1.s1",
+       "text": "You wake up in 1500.",
+       "start": 75.0,
+       "end": 76.44,
+       "slot_end": 77.16,
+       "slot_s": 2.16,
+       "en_s": 1.44
+      },
+      {
+       "id": "tc05.c1.s2",
+       "text": "It is midnight.",
+       "start": 77.28,
+       "end": 77.88,
+       "slot_end": 78.38,
+       "slot_s": 1.1,
+       "en_s": 0.6
+      },
+      {
+       "id": "tc05.c1.s3",
+       "text": "Pitch black.",
+       "start": 78.5,
+       "end": 79.14,
+       "slot_end": 79.72,
+       "slot_s": 1.22,
+       "en_s": 0.64
+      },
+      {
+       "id": "tc05.c1.s4",
+       "text": "And the whole village is awake.",
+       "start": 79.84,
+       "end": 81.14,
+       "slot_end": 81.76,
+       "slot_s": 1.92,
+       "en_s": 1.3
+      },
+      {
+       "id": "tc05.c1.s5",
+       "text": "Did you know that for centuries people slept twice a night?",
+       "start": 81.88,
+       "end": 84.56,
+       "slot_end": 85.0,
+       "slot_s": 3.12,
+       "en_s": 2.68
+      },
+      {
+       "id": "tc05.c1.s6",
+       "text": "Historians have found hundreds of references to a first sleep and a second sleep.",
+       "start": 85.12,
+       "end": 89.38,
+       "slot_end": 89.86,
+       "slot_s": 4.74,
+       "en_s": 4.26
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc06",
+   "start": 89.98,
+   "dur": 28.56,
+   "chunks": [
+    {
+     "id": "tc06.c1",
+     "text": "In between, people prayed, talked, even visited neighbors. Your day begins when the sun rises and ends when it sets. The church bell is the only clock you will ever hear. Life expectancy at birth is around 35 years, lowered by the many children who never grow up. If you reach old age, you will die in almost exactly the world you were born into. The same tools, the same roads, the same news, arriving weeks late at the pace of a horse.",
+     "sentences": [
+      {
+       "id": "tc06.c1.s1",
+       "text": "In between, people prayed, talked, even visited neighbors.",
+       "start": 89.98,
+       "end": 93.48,
+       "slot_end": 94.28,
+       "slot_s": 4.3,
+       "en_s": 3.5
+      },
+      {
+       "id": "tc06.c1.s2",
+       "text": "Your day begins when the sun rises and ends when it sets.",
+       "start": 94.4,
+       "end": 97.48,
+       "slot_end": 98.02,
+       "slot_s": 3.62,
+       "en_s": 3.08
+      },
+      {
+       "id": "tc06.c1.s3",
+       "text": "The church bell is the only clock you will ever hear.",
+       "start": 98.14,
+       "end": 100.48,
+       "slot_end": 100.36,
+       "slot_s": 2.22,
+       "en_s": 2.34
+      },
+      {
+       "id": "tc06.c1.s4",
+       "text": "Life expectancy at birth is around 35 years, lowered by the many children who never grow up.",
+       "start": 100.48,
+       "end": 106.42,
+       "slot_end": 106.9,
+       "slot_s": 6.42,
+       "en_s": 5.94
+      },
+      {
+       "id": "tc06.c1.s5",
+       "text": "If you reach old age, you will die in almost exactly the world you were born into.",
+       "start": 107.02,
+       "end": 111.34,
+       "slot_end": 111.86,
+       "slot_s": 4.84,
+       "en_s": 4.32
+      },
+      {
+       "id": "tc06.c1.s6",
+       "text": "The same tools, the same roads, the same news, arriving weeks late at the pace of a horse.",
+       "start": 111.98,
+       "end": 118.54,
+       "slot_end": 119.16,
+       "slot_s": 7.18,
+       "en_s": 6.56
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc07",
+   "start": 119.28,
+   "dur": 10.08,
+   "chunks": [
+    {
+     "id": "tc07.c1",
+     "text": "Time is not something you spend. It simply happens to you. But 150 years from now, a strange new drink will arrive. And it will change how people talk about the day.",
+     "sentences": [
+      {
+       "id": "tc07.c1.s1",
+       "text": "Time is not something you spend.",
+       "start": 119.28,
+       "end": 120.78,
+       "slot_end": 121.02,
+       "slot_s": 1.74,
+       "en_s": 1.5
+      },
+      {
+       "id": "tc07.c1.s2",
+       "text": "It simply happens to you.",
+       "start": 121.14,
+       "end": 122.34,
+       "slot_end": 122.72,
+       "slot_s": 1.58,
+       "en_s": 1.2
+      },
+      {
+       "id": "tc07.c1.s3",
+       "text": "But 150 years from now, a strange new drink will arrive.",
+       "start": 122.84,
+       "end": 126.66,
+       "slot_end": 126.94,
+       "slot_s": 4.1,
+       "en_s": 3.82
+      },
+      {
+       "id": "tc07.c1.s4",
+       "text": "And it will change how people talk about the day.",
+       "start": 127.06,
+       "end": 129.36,
+       "slot_end": 130.72,
+       "slot_s": 3.66,
+       "en_s": 2.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc08",
+   "start": 130.84,
+   "dur": 20.72,
+   "chunks": [
+    {
+     "id": "tc08.c1",
+     "text": "You wake up in 1652 in London. The air smells of smoke and of something new. Coffee. Did you know that the first coffee houses were called penny universities? For one penny, you could walk in, read the news and argue with strangers for hours. The first newspaper had appeared in 1605 in Strasbourg.",
+     "sentences": [
+      {
+       "id": "tc08.c1.s1",
+       "text": "You wake up in 1652 in London.",
+       "start": 130.84,
+       "end": 133.5,
+       "slot_end": 134.18,
+       "slot_s": 3.34,
+       "en_s": 2.66
+      },
+      {
+       "id": "tc08.c1.s2",
+       "text": "The air smells of smoke and of something new.",
+       "start": 134.3,
+       "end": 137.06,
+       "slot_end": 137.96,
+       "slot_s": 3.66,
+       "en_s": 2.76
+      },
+      {
+       "id": "tc08.c1.s3",
+       "text": "Coffee.",
+       "start": 138.08,
+       "end": 138.64,
+       "slot_end": 139.04,
+       "slot_s": 0.96,
+       "en_s": 0.56
+      },
+      {
+       "id": "tc08.c1.s4",
+       "text": "Did you know that the first coffee houses were called penny universities?",
+       "start": 139.16,
+       "end": 142.22,
+       "slot_end": 142.68,
+       "slot_s": 3.52,
+       "en_s": 3.06
+      },
+      {
+       "id": "tc08.c1.s5",
+       "text": "For one penny, you could walk in, read the news and argue with strangers for hours.",
+       "start": 142.8,
+       "end": 147.26,
+       "slot_end": 147.92,
+       "slot_s": 5.12,
+       "en_s": 4.46
+      },
+      {
+       "id": "tc08.c1.s6",
+       "text": "The first newspaper had appeared in 1605 in Strasbourg.",
+       "start": 148.04,
+       "end": 151.56,
+       "slot_end": 152.34,
+       "slot_s": 4.3,
+       "en_s": 3.52
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc09",
+   "start": 152.46,
+   "dur": 21.34,
+   "chunks": [
+    {
+     "id": "tc09.c1",
+     "text": "Now news was a habit and people wanted to know what happened today, not last month. Then in 1656, Christiaan Huygens hangs a pendulum inside a clock. The best clocks had drifted by a quarter of an hour a day. His drifts by seconds. For the first time, an ordinary day can be cut into minutes. Nobody noticed what that meant.",
+     "sentences": [
+      {
+       "id": "tc09.c1.s1",
+       "text": "Now news was a habit and people wanted to know what happened today, not last month.",
+       "start": 152.46,
+       "end": 157.3,
+       "slot_end": 157.72,
+       "slot_s": 5.26,
+       "en_s": 4.84
+      },
+      {
+       "id": "tc09.c1.s2",
+       "text": "Then in 1656, Christiaan Huygens hangs a pendulum inside a clock.",
+       "start": 157.84,
+       "end": 163.02,
+       "slot_end": 163.7,
+       "slot_s": 5.86,
+       "en_s": 5.18
+      },
+      {
+       "id": "tc09.c1.s3",
+       "text": "The best clocks had drifted by a quarter of an hour a day.",
+       "start": 163.82,
+       "end": 166.6,
+       "slot_end": 166.96,
+       "slot_s": 3.14,
+       "en_s": 2.78
+      },
+      {
+       "id": "tc09.c1.s4",
+       "text": "His drifts by seconds.",
+       "start": 167.08,
+       "end": 168.26,
+       "slot_end": 168.96,
+       "slot_s": 1.88,
+       "en_s": 1.18
+      },
+      {
+       "id": "tc09.c1.s5",
+       "text": "For the first time, an ordinary day can be cut into minutes.",
+       "start": 169.08,
+       "end": 171.86,
+       "slot_end": 172.5,
+       "slot_s": 3.42,
+       "en_s": 2.78
+      },
+      {
+       "id": "tc09.c1.s6",
+       "text": "Nobody noticed what that meant.",
+       "start": 172.62,
+       "end": 173.8,
+       "slot_end": 174.34,
+       "slot_s": 1.72,
+       "en_s": 1.18
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc10",
+   "start": 174.46,
+   "dur": 4.62,
+   "chunks": [
+    {
+     "id": "tc10.c1",
+     "text": "Within a hundred years, the minute would stop being a curiosity and start being your boss.",
+     "sentences": [
+      {
+       "id": "tc10.c1.s1",
+       "text": "Within a hundred years, the minute would stop being a curiosity and start being your boss.",
+       "start": 174.46,
+       "end": 179.08,
+       "slot_end": 180.52,
+       "slot_s": 6.06,
+       "en_s": 4.62
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc11",
+   "start": 180.64,
+   "dur": 19.92,
+   "chunks": [
+    {
+     "id": "tc11.c1",
+     "text": "You wake up in 1760. It is Monday morning and half the workshop is empty. Did you know that for generations, workers simply took Mondays off? They called it St. Monday. Back then, you worked hard when there was work to do and you rested when there was not. But work is leaving the field and entering the factory.",
+     "sentences": [
+      {
+       "id": "tc11.c1.s1",
+       "text": "You wake up in 1760.",
+       "start": 180.64,
+       "end": 182.78,
+       "slot_end": 183.2,
+       "slot_s": 2.56,
+       "en_s": 2.14
+      },
+      {
+       "id": "tc11.c1.s2",
+       "text": "It is Monday morning and half the workshop is empty.",
+       "start": 183.32,
+       "end": 185.92,
+       "slot_end": 185.8,
+       "slot_s": 2.48,
+       "en_s": 2.6
+      },
+      {
+       "id": "tc11.c1.s3",
+       "text": "Did you know that for generations, workers simply took Mondays off?",
+       "start": 185.92,
+       "end": 190.56,
+       "slot_end": 191.06,
+       "slot_s": 5.14,
+       "en_s": 4.64
+      },
+      {
+       "id": "tc11.c1.s4",
+       "text": "They called it St. Monday.",
+       "start": 191.18,
+       "end": 192.66,
+       "slot_end": 193.24,
+       "slot_s": 2.06,
+       "en_s": 1.48
+      },
+      {
+       "id": "tc11.c1.s5",
+       "text": "Back then, you worked hard when there was work to do and you rested when there was not.",
+       "start": 193.36,
+       "end": 197.34,
+       "slot_end": 197.84,
+       "slot_s": 4.48,
+       "en_s": 3.98
+      },
+      {
+       "id": "tc11.c1.s6",
+       "text": "But work is leaving the field and entering the factory.",
+       "start": 197.96,
+       "end": 200.56,
+       "slot_end": 201.32,
+       "slot_s": 3.36,
+       "en_s": 2.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc12",
+   "start": 201.44,
+   "dur": 14.14,
+   "chunks": [
+    {
+     "id": "tc12.c1",
+     "text": "The sun is replaced by the bell. Then the bell is replaced by the clock. Historians call it time discipline. You no longer stop when the work is done. You stop when the clock says so. St. Monday begins to disappear.",
+     "sentences": [
+      {
+       "id": "tc12.c1.s1",
+       "text": "The sun is replaced by the bell.",
+       "start": 201.44,
+       "end": 203.0,
+       "slot_end": 203.5,
+       "slot_s": 2.06,
+       "en_s": 1.56
+      },
+      {
+       "id": "tc12.c1.s2",
+       "text": "Then the bell is replaced by the clock.",
+       "start": 203.62,
+       "end": 205.56,
+       "slot_end": 206.3,
+       "slot_s": 2.68,
+       "en_s": 1.94
+      },
+      {
+       "id": "tc12.c1.s3",
+       "text": "Historians call it time discipline.",
+       "start": 206.42,
+       "end": 208.1,
+       "slot_end": 208.8,
+       "slot_s": 2.38,
+       "en_s": 1.68
+      },
+      {
+       "id": "tc12.c1.s4",
+       "text": "You no longer stop when the work is done.",
+       "start": 208.92,
+       "end": 210.84,
+       "slot_end": 211.28,
+       "slot_s": 2.36,
+       "en_s": 1.92
+      },
+      {
+       "id": "tc12.c1.s5",
+       "text": "You stop when the clock says so.",
+       "start": 211.4,
+       "end": 213.14,
+       "slot_end": 213.02,
+       "slot_s": 1.62,
+       "en_s": 1.74
+      },
+      {
+       "id": "tc12.c1.s6",
+       "text": "St. Monday begins to disappear.",
+       "start": 213.14,
+       "end": 215.58,
+       "slot_end": 215.9,
+       "slot_s": 2.76,
+       "en_s": 2.44
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc13",
+   "start": 216.02,
+   "dur": 20.12,
+   "chunks": [
+    {
+     "id": "tc13.c1",
+     "text": "And in 1761, John Harrison's sea watch sails all the way to Jamaica and arrives only about five seconds slow. Time is now something you can carry and something you can sell. Workers had lost their Monday. In the next century, the steam engine racing on iron rails would take something even bigger. Noon itself.",
+     "sentences": [
+      {
+       "id": "tc13.c1.s1",
+       "text": "And in 1761, John Harrison's sea watch sails all the way to Jamaica and arrives only about five seconds slow.",
+       "start": 216.02,
+       "end": 223.32,
+       "slot_end": 223.72,
+       "slot_s": 7.7,
+       "en_s": 7.3
+      },
+      {
+       "id": "tc13.c1.s2",
+       "text": "Time is now something you can carry and something you can sell.",
+       "start": 223.84,
+       "end": 227.54,
+       "slot_end": 228.18,
+       "slot_s": 4.34,
+       "en_s": 3.7
+      },
+      {
+       "id": "tc13.c1.s3",
+       "text": "Workers had lost their Monday.",
+       "start": 228.3,
+       "end": 229.54,
+       "slot_end": 229.94,
+       "slot_s": 1.64,
+       "en_s": 1.24
+      },
+      {
+       "id": "tc13.c1.s4",
+       "text": "In the next century, the steam engine racing on iron rails would take something even bigger.",
+       "start": 230.06,
+       "end": 234.76,
+       "slot_end": 235.28,
+       "slot_s": 5.22,
+       "en_s": 4.7
+      },
+      {
+       "id": "tc13.c1.s5",
+       "text": "Noon itself.",
+       "start": 235.4,
+       "end": 236.14,
+       "slot_end": 237.66,
+       "slot_s": 2.26,
+       "en_s": 0.74
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc14",
+   "start": 237.78,
+   "dur": 17.96,
+   "chunks": [
+    {
+     "id": "tc14.c1",
+     "text": "You wake up in 1883 in a small American town. At midday, the church clock strikes twelve. Then the railroad tells you it is noon again. Some towns heard noon twice that day. The railroads had reset the clocks of an entire continent. Did you know that the weekend began with half a Saturday?",
+     "sentences": [
+      {
+       "id": "tc14.c1.s1",
+       "text": "You wake up in 1883 in a small American town.",
+       "start": 237.78,
+       "end": 241.4,
+       "slot_end": 241.86,
+       "slot_s": 4.08,
+       "en_s": 3.62
+      },
+      {
+       "id": "tc14.c1.s2",
+       "text": "At midday, the church clock strikes twelve.",
+       "start": 241.98,
+       "end": 244.38,
+       "slot_end": 244.98,
+       "slot_s": 3.0,
+       "en_s": 2.4
+      },
+      {
+       "id": "tc14.c1.s3",
+       "text": "Then the railroad tells you it is noon again.",
+       "start": 245.1,
+       "end": 246.9,
+       "slot_end": 247.28,
+       "slot_s": 2.18,
+       "en_s": 1.8
+      },
+      {
+       "id": "tc14.c1.s4",
+       "text": "Some towns heard noon twice that day.",
+       "start": 247.4,
+       "end": 249.06,
+       "slot_end": 249.58,
+       "slot_s": 2.18,
+       "en_s": 1.66
+      },
+      {
+       "id": "tc14.c1.s5",
+       "text": "The railroads had reset the clocks of an entire continent.",
+       "start": 249.7,
+       "end": 252.86,
+       "slot_end": 253.34,
+       "slot_s": 3.64,
+       "en_s": 3.16
+      },
+      {
+       "id": "tc14.c1.s6",
+       "text": "Did you know that the weekend began with half a Saturday?",
+       "start": 253.46,
+       "end": 255.74,
+       "slot_end": 256.38,
+       "slot_s": 2.92,
+       "en_s": 2.28
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc15",
+   "start": 256.5,
+   "dur": 25.88,
+   "chunks": [
+    {
+     "id": "tc15.c1",
+     "text": "In 1850, a British law stopped women and children working in the mills after two o'clock on Saturday. Soon the men got the same. Even free time had to be written into law. In 1858, a cable was laid across the floor of the Atlantic. The first message took sixteen hours to send instead of ten days by ship. And in 1881, a New York doctor, George Beard, warned of a new epidemic of nervous exhaustion.",
+     "sentences": [
+      {
+       "id": "tc15.c1.s1",
+       "text": "In 1850, a British law stopped women and children working in the mills after two o'clock on Saturday.",
+       "start": 256.5,
+       "end": 261.68,
+       "slot_end": 262.22,
+       "slot_s": 5.72,
+       "en_s": 5.18
+      },
+      {
+       "id": "tc15.c1.s2",
+       "text": "Soon the men got the same.",
+       "start": 262.34,
+       "end": 264.04,
+       "slot_end": 264.34,
+       "slot_s": 2.0,
+       "en_s": 1.7
+      },
+      {
+       "id": "tc15.c1.s3",
+       "text": "Even free time had to be written into law.",
+       "start": 264.46,
+       "end": 266.66,
+       "slot_end": 267.02,
+       "slot_s": 2.56,
+       "en_s": 2.2
+      },
+      {
+       "id": "tc15.c1.s4",
+       "text": "In 1858, a cable was laid across the floor of the Atlantic.",
+       "start": 267.14,
+       "end": 270.58,
+       "slot_end": 271.2,
+       "slot_s": 4.06,
+       "en_s": 3.44
+      },
+      {
+       "id": "tc15.c1.s5",
+       "text": "The first message took sixteen hours to send instead of ten days by ship.",
+       "start": 271.32,
+       "end": 275.56,
+       "slot_end": 276.1,
+       "slot_s": 4.78,
+       "en_s": 4.24
+      },
+      {
+       "id": "tc15.c1.s6",
+       "text": "And in 1881, a New York doctor, George Beard, warned of a new epidemic of nervous exhaustion.",
+       "start": 276.22,
+       "end": 282.38,
+       "slot_end": 282.9,
+       "slot_s": 6.68,
+       "en_s": 6.16
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc16",
+   "start": 283.02,
+   "dur": 12.14,
+   "chunks": [
+    {
+     "id": "tc16.c1",
+     "text": "His suspects? Steam power. The Telegraph. The Daily Press. Sound familiar? People were complaining that life moved too fast, more than a century before your phone.",
+     "sentences": [
+      {
+       "id": "tc16.c1.s1",
+       "text": "His suspects?",
+       "start": 283.02,
+       "end": 283.56,
+       "slot_end": 284.2,
+       "slot_s": 1.18,
+       "en_s": 0.54
+      },
+      {
+       "id": "tc16.c1.s2",
+       "text": "Steam power.",
+       "start": 284.32,
+       "end": 285.1,
+       "slot_end": 285.74,
+       "slot_s": 1.42,
+       "en_s": 0.78
+      },
+      {
+       "id": "tc16.c1.s3",
+       "text": "The Telegraph.",
+       "start": 285.86,
+       "end": 286.6,
+       "slot_end": 286.98,
+       "slot_s": 1.12,
+       "en_s": 0.74
+      },
+      {
+       "id": "tc16.c1.s4",
+       "text": "The Daily Press.",
+       "start": 287.1,
+       "end": 287.92,
+       "slot_end": 288.5,
+       "slot_s": 1.4,
+       "en_s": 0.82
+      },
+      {
+       "id": "tc16.c1.s5",
+       "text": "Sound familiar?",
+       "start": 288.62,
+       "end": 289.34,
+       "slot_end": 290.08,
+       "slot_s": 1.46,
+       "en_s": 0.72
+      },
+      {
+       "id": "tc16.c1.s6",
+       "text": "People were complaining that life moved too fast, more than a century before your phone.",
+       "start": 290.2,
+       "end": 295.16,
+       "slot_end": 295.5,
+       "slot_s": 5.3,
+       "en_s": 4.96
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc17",
+   "start": 295.62,
+   "dur": 4.14,
+   "chunks": [
+    {
+     "id": "tc17.c1",
+     "text": "And in the next century, one man would turn half a day of work into ninety-three minutes.",
+     "sentences": [
+      {
+       "id": "tc17.c1.s1",
+       "text": "And in the next century, one man would turn half a day of work into ninety-three minutes.",
+       "start": 295.62,
+       "end": 299.76,
+       "slot_end": 301.64,
+       "slot_s": 6.02,
+       "en_s": 4.14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc18",
+   "start": 301.76,
+   "dur": 26.9,
+   "chunks": [
+    {
+     "id": "tc18.c1",
+     "text": "You wake up in 1914, near Detroit. Outside Ford's factory, the line of people looking for work stretches down the street. Did you know that Henry Ford more than doubled his workers' pay to five dollars a day and cut the day to eight hours? That same year, his moving assembly line turned twelve and a half hours of work into ninety-three minutes. By 1926, his workers had Saturdays off. The modern weekend had arrived.",
+     "sentences": [
+      {
+       "id": "tc18.c1.s1",
+       "text": "You wake up in 1914, near Detroit.",
+       "start": 301.76,
+       "end": 304.52,
+       "slot_end": 305.32,
+       "slot_s": 3.56,
+       "en_s": 2.76
+      },
+      {
+       "id": "tc18.c1.s2",
+       "text": "Outside Ford's factory, the line of people looking for work stretches down the street.",
+       "start": 305.44,
+       "end": 309.48,
+       "slot_end": 310.1,
+       "slot_s": 4.66,
+       "en_s": 4.04
+      },
+      {
+       "id": "tc18.c1.s3",
+       "text": "Did you know that Henry Ford more than doubled his workers' pay to five dollars a day and cut the day to eight hours?",
+       "start": 310.22,
+       "end": 317.06,
+       "slot_end": 316.94,
+       "slot_s": 6.72,
+       "en_s": 6.84
+      },
+      {
+       "id": "tc18.c1.s4",
+       "text": "That same year, his moving assembly line turned twelve and a half hours of work into ninety-three minutes.",
+       "start": 317.06,
+       "end": 323.32,
+       "slot_end": 323.74,
+       "slot_s": 6.68,
+       "en_s": 6.26
+      },
+      {
+       "id": "tc18.c1.s5",
+       "text": "By 1926, his workers had Saturdays off.",
+       "start": 323.86,
+       "end": 326.7,
+       "slot_end": 327.22,
+       "slot_s": 3.36,
+       "en_s": 2.84
+      },
+      {
+       "id": "tc18.c1.s6",
+       "text": "The modern weekend had arrived.",
+       "start": 327.34,
+       "end": 328.66,
+       "slot_end": 329.26,
+       "slot_s": 1.92,
+       "en_s": 1.32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc19",
+   "start": 329.38,
+   "dur": 21.66,
+   "chunks": [
+    {
+     "id": "tc19.c1",
+     "text": "A child born in 1900 is three when the Wright brothers fly, and sixty-nine when men walk on the moon. One lifetime now holds more change than whole centuries once did. And in 1930, the economist John Maynard Keynes makes a prediction. By his grandchildren's time, we will work just fifteen hours a week. Remember that prediction. It is coming back.",
+     "sentences": [
+      {
+       "id": "tc19.c1.s1",
+       "text": "A child born in 1900 is three when the Wright brothers fly, and sixty-nine when men walk on the moon.",
+       "start": 329.38,
+       "end": 335.4,
+       "slot_end": 336.12,
+       "slot_s": 6.74,
+       "en_s": 6.02
+      },
+      {
+       "id": "tc19.c1.s2",
+       "text": "One lifetime now holds more change than whole centuries once did.",
+       "start": 336.24,
+       "end": 339.46,
+       "slot_end": 339.96,
+       "slot_s": 3.72,
+       "en_s": 3.22
+      },
+      {
+       "id": "tc19.c1.s3",
+       "text": "And in 1930, the economist John Maynard Keynes makes a prediction.",
+       "start": 340.08,
+       "end": 344.22,
+       "slot_end": 344.1,
+       "slot_s": 4.02,
+       "en_s": 4.14
+      },
+      {
+       "id": "tc19.c1.s4",
+       "text": "By his grandchildren's time, we will work just fifteen hours a week.",
+       "start": 344.22,
+       "end": 348.82,
+       "slot_end": 348.86,
+       "slot_s": 4.64,
+       "en_s": 4.6
+      },
+      {
+       "id": "tc19.c1.s5",
+       "text": "Remember that prediction.",
+       "start": 348.98,
+       "end": 349.7,
+       "slot_end": 350.14,
+       "slot_s": 1.16,
+       "en_s": 0.72
+      },
+      {
+       "id": "tc19.c1.s6",
+       "text": "It is coming back.",
+       "start": 350.26,
+       "end": 351.04,
+       "slot_end": 353.08,
+       "slot_s": 2.82,
+       "en_s": 0.78
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc20",
+   "start": 353.2,
+   "dur": 25.26,
+   "chunks": [
+    {
+     "id": "tc20.c1",
+     "text": "You wake up today. Before your feet touch the floor, you have already checked your phone. Did you know that the average internet user now spends six hours and thirty-eight minutes online every single day? In 1870, workers in most industrial countries put in more than three thousand hours a year. In Germany recently, it was around thirteen hundred and fifty. Today, we work less than almost any generation before us.",
+     "sentences": [
+      {
+       "id": "tc20.c1.s1",
+       "text": "You wake up today.",
+       "start": 353.2,
+       "end": 353.86,
+       "slot_end": 354.44,
+       "slot_s": 1.24,
+       "en_s": 0.66
+      },
+      {
+       "id": "tc20.c1.s2",
+       "text": "Before your feet touch the floor, you have already checked your phone.",
+       "start": 354.56,
+       "end": 357.6,
+       "slot_end": 358.18,
+       "slot_s": 3.62,
+       "en_s": 3.04
+      },
+      {
+       "id": "tc20.c1.s3",
+       "text": "Did you know that the average internet user now spends six hours and thirty-eight minutes online every single day?",
+       "start": 358.3,
+       "end": 364.3,
+       "slot_end": 365.18,
+       "slot_s": 6.88,
+       "en_s": 6.0
+      },
+      {
+       "id": "tc20.c1.s4",
+       "text": "In 1870, workers in most industrial countries put in more than three thousand hours a year.",
+       "start": 365.3,
+       "end": 370.64,
+       "slot_end": 370.52,
+       "slot_s": 5.22,
+       "en_s": 5.34
+      },
+      {
+       "id": "tc20.c1.s5",
+       "text": "In Germany recently, it was around thirteen hundred and fifty.",
+       "start": 370.64,
+       "end": 374.46,
+       "slot_end": 375.14,
+       "slot_s": 4.5,
+       "en_s": 3.82
+      },
+      {
+       "id": "tc20.c1.s6",
+       "text": "Today, we work less than almost any generation before us.",
+       "start": 375.26,
+       "end": 378.46,
+       "slot_end": 378.8,
+       "slot_s": 3.54,
+       "en_s": 3.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc21",
+   "start": 378.92,
+   "dur": 15.36,
+   "chunks": [
+    {
+     "id": "tc21.c1",
+     "text": "Messages are instant. Machines do the lifting. On paper, we are the richest people in history, rich in time. And yet, ask anyone how they are, and you will hear the same word, busy. So where did all that time go?",
+     "sentences": [
+      {
+       "id": "tc21.c1.s1",
+       "text": "Messages are instant.",
+       "start": 378.92,
+       "end": 379.94,
+       "slot_end": 380.48,
+       "slot_s": 1.56,
+       "en_s": 1.02
+      },
+      {
+       "id": "tc21.c1.s2",
+       "text": "Machines do the lifting.",
+       "start": 380.6,
+       "end": 381.6,
+       "slot_end": 382.42,
+       "slot_s": 1.82,
+       "en_s": 1.0
+      },
+      {
+       "id": "tc21.c1.s3",
+       "text": "On paper, we are the richest people in history, rich in time.",
+       "start": 382.54,
+       "end": 386.78,
+       "slot_end": 387.38,
+       "slot_s": 4.84,
+       "en_s": 4.24
+      },
+      {
+       "id": "tc21.c1.s4",
+       "text": "And yet, ask anyone how they are, and you will hear the same word, busy.",
+       "start": 387.5,
+       "end": 392.24,
+       "slot_end": 392.84,
+       "slot_s": 5.34,
+       "en_s": 4.74
+      },
+      {
+       "id": "tc21.c1.s5",
+       "text": "So where did all that time go?",
+       "start": 392.96,
+       "end": 394.28,
+       "slot_end": 396.34,
+       "slot_s": 3.38,
+       "en_s": 1.32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc22",
+   "start": 396.46,
+   "dur": 15.68,
+   "chunks": [
+    {
+     "id": "tc22.c1",
+     "text": "Here is the answer. Time did not speed up. A second in fifteen hundred lasted exactly as long as a second today. What changed is how much we pack into it, and how little of it we remember. Your brain does not measure time with a clock. It measures it with memories.",
+     "sentences": [
+      {
+       "id": "tc22.c1.s1",
+       "text": "Here is the answer.",
+       "start": 396.46,
+       "end": 397.56,
+       "slot_end": 397.66,
+       "slot_s": 1.2,
+       "en_s": 1.1
+      },
+      {
+       "id": "tc22.c1.s2",
+       "text": "Time did not speed up.",
+       "start": 397.78,
+       "end": 398.7,
+       "slot_end": 398.98,
+       "slot_s": 1.2,
+       "en_s": 0.92
+      },
+      {
+       "id": "tc22.c1.s3",
+       "text": "A second in fifteen hundred lasted exactly as long as a second today.",
+       "start": 399.1,
+       "end": 402.78,
+       "slot_end": 403.52,
+       "slot_s": 4.42,
+       "en_s": 3.68
+      },
+      {
+       "id": "tc22.c1.s4",
+       "text": "What changed is how much we pack into it, and how little of it we remember.",
+       "start": 403.64,
+       "end": 407.48,
+       "slot_end": 408.38,
+       "slot_s": 4.74,
+       "en_s": 3.84
+      },
+      {
+       "id": "tc22.c1.s5",
+       "text": "Your brain does not measure time with a clock.",
+       "start": 408.5,
+       "end": 410.44,
+       "slot_end": 410.92,
+       "slot_s": 2.42,
+       "en_s": 1.94
+      },
+      {
+       "id": "tc22.c1.s6",
+       "text": "It measures it with memories.",
+       "start": 411.04,
+       "end": 412.14,
+       "slot_end": 412.78,
+       "slot_s": 1.74,
+       "en_s": 1.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc23",
+   "start": 412.9,
+   "dur": 24.64,
+   "chunks": [
+    {
+     "id": "tc23.c1",
+     "text": "Psychologists call it the holiday paradox. A week full of new experiences feels long when you look back. Months of the same routine collapse into almost nothing. Every century, we found a way to fit more into an hour. The clock, the factory, the telegraph, the assembly line, and the phone. Each invention saved us time, and each one made our hours look more and more the same.",
+     "sentences": [
+      {
+       "id": "tc23.c1.s1",
+       "text": "Psychologists call it the holiday paradox.",
+       "start": 412.9,
+       "end": 414.74,
+       "slot_end": 415.3,
+       "slot_s": 2.4,
+       "en_s": 1.84
+      },
+      {
+       "id": "tc23.c1.s2",
+       "text": "A week full of new experiences feels long when you look back.",
+       "start": 415.42,
+       "end": 418.48,
+       "slot_end": 419.14,
+       "slot_s": 3.72,
+       "en_s": 3.06
+      },
+      {
+       "id": "tc23.c1.s3",
+       "text": "Months of the same routine collapse into almost nothing.",
+       "start": 419.26,
+       "end": 422.0,
+       "slot_end": 421.88,
+       "slot_s": 2.62,
+       "en_s": 2.74
+      },
+      {
+       "id": "tc23.c1.s4",
+       "text": "Every century, we found a way to fit more into an hour.",
+       "start": 422.0,
+       "end": 425.78,
+       "slot_end": 426.24,
+       "slot_s": 4.24,
+       "en_s": 3.78
+      },
+      {
+       "id": "tc23.c1.s5",
+       "text": "The clock, the factory, the telegraph, the assembly line, and the phone.",
+       "start": 426.36,
+       "end": 431.84,
+       "slot_end": 432.4,
+       "slot_s": 6.04,
+       "en_s": 5.48
+      },
+      {
+       "id": "tc23.c1.s6",
+       "text": "Each invention saved us time, and each one made our hours look more and more the same.",
+       "start": 432.52,
+       "end": 437.54,
+       "slot_end": 438.14,
+       "slot_s": 5.62,
+       "en_s": 5.02
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc24",
+   "start": 438.26,
+   "dur": 3.9,
+   "chunks": [
+    {
+     "id": "tc24.c1",
+     "text": "That is the compression, not of the clock, of the experience.",
+     "sentences": [
+      {
+       "id": "tc24.c1.s1",
+       "text": "That is the compression, not of the clock, of the experience.",
+       "start": 438.26,
+       "end": 442.16,
+       "slot_end": 443.52,
+       "slot_s": 5.26,
+       "en_s": 3.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc25",
+   "start": 443.64,
+   "dur": 30.32,
+   "chunks": [
+    {
+     "id": "tc25.c1",
+     "text": "Now the year 2100, that morning has not happened yet, but we can follow the evidence. The United Nations projects around 10 billion people, living longer than ever. Goldman Sachs estimates that today's AI could expose the work of 300 million full-time jobs to automation. And when 61 British companies tried a four-day week, 56 of them kept it. Put those facts together, and the 15-hour week that Keynes predicted no longer sounds crazy, it could finally arrive a century late.",
+     "sentences": [
+      {
+       "id": "tc25.c1.s1",
+       "text": "Now the year 2100, that morning has not happened yet, but we can follow the evidence.",
+       "start": 443.64,
+       "end": 448.68,
+       "slot_end": 448.56,
+       "slot_s": 4.92,
+       "en_s": 5.04
+      },
+      {
+       "id": "tc25.c1.s2",
+       "text": "The United Nations projects around 10 billion people, living longer than ever.",
+       "start": 448.68,
+       "end": 453.26,
+       "slot_end": 454.02,
+       "slot_s": 5.34,
+       "en_s": 4.58
+      },
+      {
+       "id": "tc25.c1.s3",
+       "text": "Goldman Sachs estimates that today's AI could expose the work of 300 million full-time jobs to automation.",
+       "start": 454.14,
+       "end": 460.0,
+       "slot_end": 460.76,
+       "slot_s": 6.62,
+       "en_s": 5.86
+      },
+      {
+       "id": "tc25.c1.s4",
+       "text": "And when 61 British companies tried a four-day week, 56 of them kept it.",
+       "start": 460.88,
+       "end": 465.14,
+       "slot_end": 465.52,
+       "slot_s": 4.64,
+       "en_s": 4.26
+      },
+      {
+       "id": "tc25.c1.s5",
+       "text": "Put those facts together, and the 15-hour week that Keynes predicted no longer sounds crazy, it could finally arrive a century late.",
+       "start": 465.64,
+       "end": 473.96,
+       "slot_end": 473.84,
+       "slot_s": 8.2,
+       "en_s": 8.32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc26",
+   "start": 473.96,
+   "dur": 11.84,
+   "chunks": [
+    {
+     "id": "tc26.c1",
+     "text": "But if history repeats, we will fill every freed hour with something faster. In 2100, the rarest thing on Earth may not be energy or money. It may be a day you actually remember.",
+     "sentences": [
+      {
+       "id": "tc26.c1.s1",
+       "text": "But if history repeats, we will fill every freed hour with something faster.",
+       "start": 473.96,
+       "end": 478.6,
+       "slot_end": 479.2,
+       "slot_s": 5.24,
+       "en_s": 4.64
+      },
+      {
+       "id": "tc26.c1.s2",
+       "text": "In 2100, the rarest thing on Earth may not be energy or money.",
+       "start": 479.32,
+       "end": 483.42,
+       "slot_end": 483.9,
+       "slot_s": 4.58,
+       "en_s": 4.1
+      },
+      {
+       "id": "tc26.c1.s3",
+       "text": "It may be a day you actually remember.",
+       "start": 484.02,
+       "end": 485.8,
+       "slot_end": 487.4,
+       "slot_s": 3.38,
+       "en_s": 1.78
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc27",
+   "start": 487.52,
+   "dur": 10.44,
+   "chunks": [
+    {
+     "id": "tc27.c1",
+     "text": "Time cannot be slowed down, but it can be stretched, one new memory at a time. So tell me, when was the last time you did something for the very first time?",
+     "sentences": [
+      {
+       "id": "tc27.c1.s1",
+       "text": "Time cannot be slowed down, but it can be stretched, one new memory at a time.",
+       "start": 487.52,
+       "end": 493.12,
+       "slot_end": 493.38,
+       "slot_s": 5.86,
+       "en_s": 5.6
+      },
+      {
+       "id": "tc27.c1.s2",
+       "text": "So tell me, when was the last time you did something for the very first time?",
+       "start": 493.5,
+       "end": 497.96,
+       "slot_end": 499.32,
+       "slot_s": 5.82,
+       "en_s": 4.46
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc28",
+   "start": 499.44,
+   "dur": 19.58,
+   "chunks": [
+    {
+     "id": "tc28.c1",
+     "text": "This was episode one of Did You Know That? Time compressed, now it is your turn. If you could wake up in any century from 1500 to 2100, which would you choose, and why? Tell me in the comments. Here is the deal. At the end of every episode, I will read the best comment right here on this screen.",
+     "sentences": [
+      {
+       "id": "tc28.c1.s1",
+       "text": "This was episode one of Did You Know That?",
+       "start": 499.44,
+       "end": 501.86,
+       "slot_end": 501.74,
+       "slot_s": 2.3,
+       "en_s": 2.42
+      },
+      {
+       "id": "tc28.c1.s2",
+       "text": "Time compressed, now it is your turn.",
+       "start": 501.86,
+       "end": 504.6,
+       "slot_end": 505.02,
+       "slot_s": 3.16,
+       "en_s": 2.74
+      },
+      {
+       "id": "tc28.c1.s3",
+       "text": "If you could wake up in any century from 1500 to 2100, which would you choose, and why?",
+       "start": 505.14,
+       "end": 511.5,
+       "slot_end": 511.92,
+       "slot_s": 6.78,
+       "en_s": 6.36
+      },
+      {
+       "id": "tc28.c1.s4",
+       "text": "Tell me in the comments.",
+       "start": 512.04,
+       "end": 512.96,
+       "slot_end": 513.54,
+       "slot_s": 1.5,
+       "en_s": 0.92
+      },
+      {
+       "id": "tc28.c1.s5",
+       "text": "Here is the deal.",
+       "start": 513.66,
+       "end": 514.22,
+       "slot_end": 514.6,
+       "slot_s": 0.94,
+       "en_s": 0.56
+      },
+      {
+       "id": "tc28.c1.s6",
+       "text": "At the end of every episode, I will read the best comment right here on this screen.",
+       "start": 514.72,
+       "end": 519.02,
+       "slot_end": 519.4,
+       "slot_s": 4.68,
+       "en_s": 4.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc29",
+   "start": 519.52,
+   "dur": 25.24,
+   "chunks": [
+    {
+     "id": "tc29.c1",
+     "text": "And the subject you ask for most becomes a future episode. And on our website, Dexty.live, you can watch every episode, collect the facts, and play the guessing game. If this changed how you see a single hour like it, share it with a friend who is always out of time, and subscribe so the next mystery finds you. Next time, the sun you see in the sky is not the sun as it is right now. Ask, wonder, repeat.",
+     "sentences": [
+      {
+       "id": "tc29.c1.s1",
+       "text": "And the subject you ask for most becomes a future episode.",
+       "start": 519.52,
+       "end": 522.24,
+       "slot_end": 522.46,
+       "slot_s": 2.94,
+       "en_s": 2.72
+      },
+      {
+       "id": "tc29.c1.s2",
+       "text": "And on our website, Dexty.live, you can watch every episode, collect the facts, and play the guessing game.",
+       "start": 522.58,
+       "end": 529.36,
+       "slot_end": 529.24,
+       "slot_s": 6.66,
+       "en_s": 6.78
+      },
+      {
+       "id": "tc29.c1.s3",
+       "text": "If this changed how you see a single hour like it, share it with a friend who is always out of time, and subscribe so the next mystery finds you.",
+       "start": 529.36,
+       "end": 537.2,
+       "slot_end": 537.84,
+       "slot_s": 8.48,
+       "en_s": 7.84
+      },
+      {
+       "id": "tc29.c1.s4",
+       "text": "Next time, the sun you see in the sky is not the sun as it is right now.",
+       "start": 537.96,
+       "end": 542.04,
+       "slot_end": 542.52,
+       "slot_s": 4.56,
+       "en_s": 4.08
+      },
+      {
+       "id": "tc29.c1.s5",
+       "text": "Ask, wonder, repeat.",
+       "start": 542.64,
+       "end": 544.76,
+       "slot_end": 546.12,
+       "slot_s": 3.48,
+       "en_s": 2.12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc30",
+   "start": 546.24,
+   "dur": 4.82,
+   "chunks": [
+    {
+     "id": "tc30.c1",
+     "text": "Next time, this could be your comment. Pick a mystery, and I will see you there.",
+     "sentences": [
+      {
+       "id": "tc30.c1.s1",
+       "text": "Next time, this could be your comment.",
+       "start": 546.24,
+       "end": 548.38,
+       "slot_end": 548.96,
+       "slot_s": 2.72,
+       "en_s": 2.14
+      },
+      {
+       "id": "tc30.c1.s2",
+       "text": "Pick a mystery, and I will see you there.",
+       "start": 549.08,
+       "end": 551.06,
+       "slot_end": 559.24,
+       "slot_s": 10.16,
+       "en_s": 1.98
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tc31",
+   "start": 559.36,
+   "dur": 2.3,
+   "chunks": [
+    {
+     "id": "tc31.c1",
+     "text": "Thank you.",
+     "sentences": [
+      {
+       "id": "tc31.c1.s1",
+       "text": "Thank you.",
+       "start": 559.36,
+       "end": 561.66,
+       "slot_end": 562.033,
+       "slot_s": 2.673,
+       "en_s": 2.3
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

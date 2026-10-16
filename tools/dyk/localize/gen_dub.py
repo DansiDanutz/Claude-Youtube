@@ -6,11 +6,11 @@
   python3 tools/dyk/localize/gen_dub.py 05 ro --only fd04-1500.c2,fd04-1500.c3     # re-voice chosen chunks (delete their cache first)
 
 Safety: refuses to start when check_translation.py reports errors; before EVERY call it requires
-(estimated remaining plan characters) - (this chunk) >= RESERVE (default 22,000, env LOC_RESERVE or --reserve), so a batch stops cleanly
+(live remaining plan credits, minus the last two calls counted at 1:1) - (this chunk, counted 1:1) >= RESERVE (default 22,000, env LOC_RESERVE or --reserve), so a batch stops cleanly
 instead of eating the characters the next English episode needs. Exit code 3 = stopped by the quota gate (resume later).
 Takes are cached by text+speed+language+voice, so a rerun never pays twice for the same chunk.
 """
-import argparse, base64, hashlib, json, os, sys
+import argparse, base64, hashlib, json, os, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dub_core as C  # noqa: E402
@@ -20,7 +20,7 @@ from check_translation import check, load_english  # noqa: E402
 from episodes import episode, loc_dir  # noqa: E402
 
 DEFAULT_RESERVE = 22000
-RECHECK_EVERY = 12
+POLL_EVERY_S = 10        # the plan endpoint answers 429 when polled harder (two runs in parallel did)
 
 
 def take_key(unit, lang, speed):
@@ -74,21 +74,29 @@ def main(argv=None):
     if args.dry_run or not todo:
         return 0
     key = eleven.api_key()
-    q = eleven.quota(key)
-    remaining = q['remaining']
-    print(f"plan: {q['remaining']} characters left, reserve {args.reserve}, this run needs {need}")
-    if remaining - need < args.reserve:
-        print(f"WARNING: finishing this run would leave {remaining - need}, below the reserve; it will stop at the gate")
-    spent, calls, total_spent = 0, 0, 0
+    q0 = eleven.quota(key)
+    remaining = q0['remaining']
+    print(f"plan: {remaining} credits left, reserve {args.reserve}, this run sends {need} characters")
+    # The gate uses the LIVE plan figure, polled at most every POLL_EVERY_S seconds (the real cost per character is below 1: measured
+    # 0.43 on 2026-10-16); between polls each call is charged 1 credit per character, so the estimate is always pessimistic.
+    calls, total_spent, last_poll = 0, 0, time.time()
     for u in todo:
         n = len(u['text'])
-        if remaining - spent - n < args.reserve:
-            print(f"QUOTA GATE: {remaining - spent} left, {n} needed, reserve {args.reserve}: stopping before {u['id']}")
+        if remaining - n < args.reserve:
+            print(f"QUOTA GATE: {remaining} credits left, {n} needed (counted 1:1), reserve {args.reserve}: stopping before {u['id']}")
             return 3
         res = eleven.tts_with_timestamps(u['text'], args.lang, speed=args.speed, key=key, purpose=f"dub {args.episode} {args.lang}")
-        spent += n
         total_spent += n
         calls += 1
+        if time.time() - last_poll >= POLL_EVERY_S:
+            try:
+                remaining = eleven.quota(key)['remaining']
+                last_poll = time.time()
+            except RuntimeError as e:
+                remaining -= n          # cannot read the plan: count this call 1:1 (pessimistic) and carry on
+                print(f'  (plan lookup failed, counting {n} credits locally: {e})', flush=True)
+        else:
+            remaining -= n              # between polls every call is counted 1:1 (the real cost is lower; the next poll corrects it)
         al = res['alignment']
         bad = C.check_alignment(u['text'], al)
         if bad:
@@ -103,11 +111,10 @@ def main(argv=None):
             json.dump({'text': u['text'], 'speed': args.speed, 'alignment': al,
                        'sentences': [{'id': s['id'], 'start': round(a, 3), 'end': round(b, 3)} for s, (a, b) in zip(u['sentences'], times)]}, f, ensure_ascii=False)
         flag = '  <-- LONG: shorten the translation' if push > L.MAX_LAG_S else ''
-        print(f"  {u['id']}: {n} chars, speech {times[-1][1] - times[0][0]:.1f}s, push {push:.2f}s, end {over:+.2f}s vs slot{flag}")
-        if calls % RECHECK_EVERY == 0:
-            remaining = min(remaining - spent, eleven.quota(key)['remaining'])
-            spent = 0
-    print(f"done: {calls} call(s), {total_spent} characters this run")
+        print(f"  {u['id']}: {n} chars, speech {times[-1][1] - times[0][0]:.1f}s, push {push:.2f}s, end {over:+.2f}s vs slot{flag}", flush=True)
+    q1 = eleven.quota(key)
+    ratio = (q1['used'] - q0['used']) / total_spent if total_spent else 0
+    print(f"done: {calls} call(s), {total_spent} characters sent, {q1['used'] - q0['used']} credits used (x{ratio:.2f}), {q1['remaining']} credits left")
     return 0
 
 

@@ -157,6 +157,26 @@ def cues_for(text, start, end, lang):
     return out
 
 
+MIN_SHOW_S = 0.7
+MERGE_GAP_S = 0.35
+
+
+def merge_short(cues, lang):
+    """A cue on screen for less than MIN_SHOW_S is joined with the next one when they are close and the two fit on two lines."""
+    out, i = [], 0
+    while i < len(cues):
+        s, e, t = cues[i]
+        if e - s < MIN_SHOW_S and i + 1 < len(cues):
+            ns, ne, nt = cues[i + 1]
+            if ns - e < MERGE_GAP_S and '\n' not in t and '\n' not in nt:
+                out.append((s, ne, f'{t}\n{nt}'))
+                i += 2
+                continue
+        out.append(cues[i])
+        i += 1
+    return out
+
+
 def vtt_time(t):
     t = max(0.0, t)
     h, rem = divmod(t, 3600)

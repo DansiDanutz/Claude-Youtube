@@ -98,6 +98,16 @@ class SubtitleTest(unittest.TestCase):
         self.assertIn('00:00:01.500 --> 00:00:03.250', vtt)
         self.assertIn('a &lt; b &amp; c', vtt)
 
+    def test_a_very_short_cue_joins_the_next_one_when_close(self):
+        cues = [(1.0, 1.3, 'Fuel.'), (1.4, 3.0, 'Just enough to survive the day.')]
+        self.assertEqual(C.merge_short(cues, 'fr'), [(1.0, 3.0, 'Fuel.\nJust enough to survive the day.')])
+
+    def test_short_cues_stay_apart_when_far_or_already_two_lines(self):
+        far = [(1.0, 1.3, 'Fuel.'), (3.0, 4.0, 'Later.')]
+        self.assertEqual(C.merge_short(far, 'fr'), far)
+        two = [(1.0, 1.3, 'a\nb'), (1.4, 2.0, 'c')]
+        self.assertEqual(C.merge_short(two, 'fr'), two)
+
     def test_vtt_time_handles_hours(self):
         self.assertEqual(C.vtt_time(3725.5), '01:02:05.500')
 
