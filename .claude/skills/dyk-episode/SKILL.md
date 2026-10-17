@@ -74,6 +74,27 @@ the word(s) spoken, the visual event that answers them, the SFX that marks it. R
 - **Text fits**: long lines wrap inside a 160 px side margin; nothing touches the HUD (bottom 54–110 px) or the
   cliffhanger band (bottom 132).
 - **Payoff words appear on the spoken word** (not at sentence start); cliffhanger bands build part by part.
+- **Panels hold their last reveal ≥ 1.5 s FULLY LEGIBLE** (the numbers behind "No flashes"; No. 05: 18 flashes in round 1, more in rounds 2–3). Never end
+  a panel on the next panel's first word: end it at `max(next word, last reveal + HOLD_F)` (kit `hold()` in
+  `dykkit-food.tsx`; the cue table's `H()` must use the same number) and start the next panel there. HOLD_F counts the
+  caption fade-in AND the panel fade-out: with 4 f caption fades (kit Label/OnWord) and 4 f exits (`pane()`), 53 f
+  gives 45 f legible and keeps the next heading ≤ 1 s late. Apply it to EVERY panel boundary, including the DYK card's
+  `out` and the chip/answer panels — round 2 fixed only the flagged ones and the auditors found 14 more.
+- **Shot ends and band lines count too (No. 05 rounds 4–5):** the last cliffhanger line, the reveal's payoff and the
+  sign-off each need ≥ 1.5 s before the cut. Split cliffhanger bands into short parts that land on their FIRST word
+  (a part keyed to its last word arrived 1–2 s late and was cut by the next shot); size the shot tail from the last
+  visible reveal, not from the last spoken word.
+- **After a kit change, re-render every shot that imports it** (No. 05 round 3: the hook kept the old timing because
+  only the era shots were re-rendered).
+- **Legends, day clocks and week strips reveal per word, not per step** (No. 05: "SOFT DRINK + SNACK" 5 s early, every
+  food in a week strip before it was named). Give each row/icon its own word (`FoodClock` segment `at`, PlateWeek
+  `reveal`); a source line splits so each figure's citation lands with that figure (a "(1966: 45.9)" footnote spoiled ≈ 46).
+- **Fill the wake-up and THE YEARS seconds**: the era backdrop sits at ~35 % from frame 0 under the big year, the place
+  line lands on its first word ("aboard", "prison"), and a life-expectancy number counts up on "about … N" with a newborn
+  on "newborn" — No. 05 round 1 had 15 empty/static ≥ 2 s stretches there.
+- **Re-key the sound with the picture (No. 05 round 7):** when a reveal moves to another word, move or drop its cue in
+  `cue_parts/` in the same edit — a click left on "years." fired over an unchanged frame. Likewise, a panel's heading
+  and empty tracks appear with the pane itself (not on a later word), or the pane fades in blank.
 - After the first full render, run ONE full 1 s audit; after fixes, re-check only the changed seconds with a
   fresh reviewer (tile by tile) — do not re-render untouched shots.
 
