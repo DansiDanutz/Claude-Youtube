@@ -52,3 +52,12 @@ Then `insert_pauses.py` and `make_vo_json.py` (copy from No. 05), Whisper round 
 - No. 07 subject: "light" is a placeholder in `me13b-next`.
 - BMJ 1948 table: counts rest on Senn plus Armitage's statistics; glance at the BMJ PDF.
 - Comment of the Week: fallback line until No. 05 has real comments.
+
+## Published (2026-10-22)
+- **YouTube:** public, https://youtu.be/_RD_Qz66FCg (published by David from Studio). Title "Medicine from 1500 to 2100: How We Learned What Heals"; description with 12 chapters, sources and the AI-voice line; 20 tags; thumbnail "WHAT HEALS?"; playlist "Did You Know That? — Every Episode"; not made for kids; Education; English; no paid promotion; AI use "No" (voice disclosed in the description).
+- **End screen:** imported from No. 05; video element → No. 05 Food (a4qHdjL8bok), subscribe element over the ring. Both moved from the imported 10:31:09 to **10:32:03 → 10:47:20** so they don't cover the Light teaser (end-screen shot starts at 632.07 s). Geometry checked at 10:37: video in the WATCH NEXT frame, subscribe circle on the ring.
+- **Card:** 0:40 → No. 05 Food.
+- **Captions:** none on the upload (no subtitle track added). ro/fr/es/zh dubs not made yet (ElevenLabs quota resets 2026-11-06).
+- **Pinned comment:** "Which century's doctor would you trust, and why? The best answer gets read in the next episode." (pinned by @Did-You-Know-that-2026).
+- **Dexty.live:** PR DansiDanutz/Did-You-Know-That#50 merged (c8cf8f9), deployed with `vercel --prod --yes` (dpl_j5siSD7U5131TeC7AyWLVMdXnRQV, READY). Verified live: /data/episodes.json lists 6 episodes with _RD_Qz66FCg; /episodes/medicine/ embeds it, 8 questions / 8 cards, What's next → Light; Food's next tile → /episodes/medicine/; home says "Newest episode · No. 06"; /subject/night/ redirects to /subject/light/. 194 tests pass, 98.8% line coverage. Quiz sources use M-numbers (validator now accepts M).
+- **Still to do:** re-point No. 05's end screen video element and card to No. 06 (waiting for David's go-ahead).
