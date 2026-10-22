@@ -1,0 +1,17 @@
+# MePromise — cues
+s = 'me03-promise'
+c(S('MePromise', 0.0), 'whoosh-soft', 0.24, 'cut to the promise')
+c(W(s, 'Seven'), 'ui-click-soft', 0.16, 'SEVEN MORNINGS; the year chips build')
+ticks(s, 'Seven', 6, 12, 'year chips 2-7 (1537 lights, dashed 2100)', shift=0.4)
+c(W(s, 'each'), 'ui-click-soft', 0.12, 'a light sweeps across the seven chips')
+c(W(s, 'wake'), 'warm-shimmer', 0.18, 'dawn glow; a sun rises under the row')
+c(W(s, 'patient,'), 'pop-reveal', 0.20, 'A PATIENT + one bed per era')
+c(W(s, 'doctor'), 'pop-reveal', 0.20, 'WHAT THE DOCTOR (thought bubble)')
+c(W(s, 'believes,'), 'ui-click-soft', 0.14, 'BELIEVES')
+c(W(s, 'long'), 'pop-reveal', 0.20, 'HOW LONG: an hourglass starts to run')
+c(W(s, 'live.'), 'ui-click-soft', 0.14, 'PEOPLE LIVE')
+c(H(s, ('live.', 1), ('end,', 1)), 'whoosh-soft', 0.22, 'the row clears; AT THE END · How medicine')
+c(W(s, 'works.', shift=-1.22), 'riser-soft', 0.24, '(riser into what works.)')
+c(W(s, 'finally'), 'ui-click-soft', 0.14, 'finally (italic)')
+c(W(s, 'found'), 'ui-click-soft', 0.12, 'found out')
+c(W(s, 'works.'), 'impact-soft', 0.28, 'what works. lands in the gradient')

@@ -1,0 +1,88 @@
+quota: creator 338342/363000 used, 24658 left; this run needs <= 14564
+  me06-1847 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.24 w/s (target 3.0) OK
+  me06-1847 chunk 2: pace target 3.3
+    try 1 speed 1.00: pace 3.38 w/s (target 3.3) OK
+  me06-1847 chunk 3: pace target 2.7
+    try 1 speed 1.00: pace 3.04 w/s (target 2.7) ['pace 3.04 w/s (target 2.7±10%)']
+    try 2 speed 0.92: pace 2.77 w/s (target 2.7) ["stretched 'your' 0.56s"]
+    try 3 speed 0.92: pace 2.95 w/s (target 2.7) OK
+  me06-1847 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 2.47 w/s (target 3.0) ['pace 2.47 w/s (target 3.0±10%)']
+    try 2 speed 1.00: pace 2.66 w/s (target 3.0) ['pace 2.66 w/s (target 3.0±10%)']
+    try 3 speed 1.00: pace 1.77 w/s (target 3.0) ["stretched 'August,' 1.53s", 'pace 1.77 w/s (target 3.0±10%)']
+    try 4 speed 1.00: pace 2.67 w/s (target 3.0) ['pace 2.67 w/s (target 3.0±10%)']
+  me06-1847 chunk 5: pace target 3.0
+    try 1 speed 1.00: pace 3.54 w/s (target 3.0) ['pace 3.54 w/s (target 3.0±10%)']
+    try 2 speed 0.92: pace 3.21 w/s (target 3.0) ["stretched 'years.' 0.59s"]
+    try 3 speed 0.92: pace 3.67 w/s (target 3.0) ['pace 3.67 w/s (target 3.0±10%)']
+    try 4 speed 0.92: pace 3.42 w/s (target 3.0) ['pace 3.42 w/s (target 3.0±10%)']
+  me06-1847 chunk 6: pace target 2.9
+    try 1 speed 1.00: pace 3.21 w/s (target 2.9) ['pace 3.21 w/s (target 2.9±10%)']
+    try 2 speed 0.92: pace 3.00 w/s (target 2.9) OK
+  ~ me06-1847 chunks 3->4: speech rate 5.33 -> 4.69 syl/s (listen)
+  ~ me06-1847 chunks 4->5: speech rate 4.69 -> 5.21 syl/s (listen)
+  ~ me06-1847 chunks 5->6: speech rate 5.21 -> 4.62 syl/s (listen)
+  !! me06-1847 chunk 4 REJECTED after 4 tries: ['pace 2.47 w/s (target 3.0±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  !! me06-1847 chunk 5 REJECTED after 4 tries: ['pace 3.54 w/s (target 3.0±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  me07-1941 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.47 w/s (target 3.0) ['pace 3.47 w/s (target 3.0±10%)']
+    try 2 speed 0.90: pace 3.05 w/s (target 3.0) OK
+  me07-1941 chunk 2: pace target 3.4
+    try 1 speed 0.98: pace 2.95 w/s (target 3.4) ['pace 2.95 w/s (target 3.4±10%)']
+    try 2 speed 0.98: pace 3.41 w/s (target 3.4) OK
+  me07-1941 chunk 3: pace target 2.7
+    try 1 speed 1.00: pace 2.86 w/s (target 2.7) OK
+  me07-1941 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 3.06 w/s (target 3.0) OK
+  me07-1941 chunk 5: pace target 3.0
+    try 1 speed 1.00: pace 3.62 w/s (target 3.0) ['pace 3.62 w/s (target 3.0±10%)']
+    try 2 speed 0.92: pace 3.55 w/s (target 3.0) ['pace 3.55 w/s (target 3.0±10%)']
+    try 3 speed 0.92: pace 3.55 w/s (target 3.0) ['pace 3.55 w/s (target 3.0±10%)']
+    try 4 speed 0.92: pace 3.22 w/s (target 3.0) OK
+  me07-1941 chunk 6: pace target 2.9
+    try 1 speed 1.00: pace 3.80 w/s (target 2.9) ['pace 3.80 w/s (target 2.9±10%)']
+    try 2 speed 0.90: pace 3.12 w/s (target 2.9) OK
+  ~ me07-1941 chunks 4->5: speech rate 4.89 -> 5.45 syl/s (listen)
+  ~ me07-1941 chunks 5->6: speech rate 5.45 -> 4.68 syl/s (listen)
+    chunk 4: level -1.6 dB to the scene median
+    chunk 5: level -1.6 dB to the scene median
+  me07-1941: 54.56s, 159 words, tail 0.34s
+  me08-1948 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 2.99 w/s (target 3.0) OK
+  me08-1948 chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 3.40 w/s (target 2.9) ['pace 3.40 w/s (target 2.9±10%)']
+    try 2 speed 0.92: pace 3.27 w/s (target 2.9) ['pace 3.27 w/s (target 2.9±10%)']
+    try 3 speed 0.92: pace 3.60 w/s (target 2.9) ['pace 3.60 w/s (target 2.9±10%)']
+    try 4 speed 0.92: pace 3.32 w/s (target 2.9) ['pace 3.32 w/s (target 2.9±10%)']
+  me08-1948 chunk 3: pace target 2.7
+    try 1 speed 1.00: pace 2.67 w/s (target 2.7) ["stretched 'statistician,' 1.09s"]
+    try 2 speed 1.01: pace 2.69 w/s (target 2.7) OK
+  me08-1948 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 3.78 w/s (target 3.0) ['pace 3.78 w/s (target 3.0±10%)']
+    try 2 speed 0.93: pace 3.46 w/s (target 3.0) ['pace 3.46 w/s (target 3.0±10%)']
+    try 3 speed 0.93: pace 3.23 w/s (target 3.0) OK
+  me08-1948 chunk 5: pace target 2.9
+    try 1 speed 1.00: pace 2.88 w/s (target 2.9) OK
+  ~ me08-1948 chunks 1->2: speech rate 5.56 -> 4.33 syl/s (listen)
+  ~ me08-1948 chunks 2->3: speech rate 4.33 -> 5.11 syl/s (listen)
+  ~ me08-1948 chunks 3->4: speech rate 5.11 -> 4.31 syl/s (listen)
+  ~ me08-1948 chunks 4->5: speech rate 4.31 -> 5.15 syl/s (listen)
+  !! me08-1948 chunk 2 REJECTED after 4 tries: ['pace 3.40 w/s (target 2.9±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  me09-today chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.13 w/s (target 3.0) OK
+  me09-today chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 3.44 w/s (target 2.9) ['pace 3.44 w/s (target 2.9±10%)']
+    try 2 speed 0.92: pace 2.90 w/s (target 2.9) OK
+  me09-today chunk 3: pace target 3.0
+    try 1 speed 1.00: pace 3.00 w/s (target 3.0) OK
+  me09-today chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 3.26 w/s (target 3.0) OK
+  me09-today chunk 5: pace target 2.9
+    try 1 speed 1.00: pace 2.94 w/s (target 2.9) OK
+  ~ me09-today chunks 2->3: speech rate 5.01 -> 5.62 syl/s (listen)
+    chunk 3: level +1.8 dB to the scene median
+  me09-today: 55.20s, 159 words, tail 0.26s
+voice done: 296.5 s total
+hard gate failed for: me06-1847, me08-1948
+exit 1

@@ -1,0 +1,52 @@
+quota: creator 341049/363000 used, 21951 left; this run needs <= 1792
+  me05-1799 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  me05-1799 chunk 2: pace target 3.6
+    chunk 2: cached passing take (no API call)
+  me05-1799 chunk 3: pace target 2.7
+    chunk 3: cached passing take (no API call)
+  me05-1799 chunk 4: pace target 2.95
+    try 1 speed 1.00: pace 3.85 w/s (target 2.95) ['pace 3.85 w/s (target 2.95±10%)']
+    try 2 speed 1.00: pace 2.96 w/s (target 2.95) OK
+  me05-1799 chunk 5: pace target 3.0
+    chunk 5: cached passing take (no API call)
+  me05-1799 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ me05-1799 chunks 2->3: speech rate 5.32 -> 4.70 syl/s (listen)
+  me05-1799: 58.79s, 170 words, tail 0.23s
+  me06-1847 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  me06-1847 chunk 2: pace target 3.3
+    chunk 2: cached passing take (no API call)
+  me06-1847 chunk 3: pace target 2.7
+    chunk 3: cached passing take (no API call)
+  me06-1847 chunk 4: pace target 2.6
+    chunk 4: cached passing take (no API call)
+  me06-1847 chunk 5: pace target 3.3
+    try 1 speed 0.92: pace 3.42 w/s (target 3.3) OK
+  me06-1847 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ me06-1847 chunks 5->6: speech rate 5.24 -> 4.62 syl/s (listen)
+  me06-1847: 63.99s, 188 words, tail 0.25s
+  me10-reveal chunk 1: pace target 3.1
+    chunk 1: cached passing take (no API call)
+  me10-reveal chunk 2: pace target 3.0
+    chunk 2: cached passing take (no API call)
+  me10-reveal chunk 3: pace target 3.0
+    chunk 3: cached passing take (no API call)
+  me10-reveal chunk 4: pace target 2.75
+    try 1 speed 0.98: pace 3.25 w/s (target 2.75) ['pace 3.25 w/s (target 2.75±10%)']
+    try 2 speed 0.98: pace 3.12 w/s (target 2.75) ['pace 3.12 w/s (target 2.75±10%)']
+    try 3 speed 0.98: pace 3.07 w/s (target 2.75) ['pace 3.07 w/s (target 2.75±10%)']
+    try 4 speed 0.98: pace 3.31 w/s (target 2.75) ['pace 3.31 w/s (target 2.75±10%)']
+  me10-reveal chunk 5: pace target 2.5
+    chunk 5: cached passing take (no API call)
+  me10-reveal chunk 6: pace target 2.8
+    chunk 6: cached passing take (no API call)
+  ~ me10-reveal chunks 2->3: speech rate 5.08 -> 4.29 syl/s (listen)
+  ~ me10-reveal chunks 3->4: speech rate 4.29 -> 5.32 syl/s (listen)
+  ~ me10-reveal chunks 5->6: speech rate 5.03 -> 5.61 syl/s (listen)
+  !! me10-reveal chunk 4 REJECTED after 4 tries: ['pace 3.25 w/s (target 2.75±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+voice done: 598.9 s total
+hard gate failed for: me10-reveal
+exit 1

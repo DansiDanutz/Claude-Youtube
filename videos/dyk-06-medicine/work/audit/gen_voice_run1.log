@@ -1,0 +1,53 @@
+quota: creator 336939/363000 used, 26061 left; this run needs <= 12276
+    try 1 speed 1.00: pace 3.25 w/s (target 3.2) OK
+  me01-hook: 12.07s, 38 words, tail 0.37s
+    try 1 speed 1.00: pace 3.21 w/s (target 3.4) OK
+  me02-question: 13.33s, 42 words, tail 0.23s
+    try 1 speed 1.00: pace 2.90 w/s (target 2.9) OK
+  me00-welcome: 23.36s, 67 words, tail 0.23s
+    try 1 speed 1.00: pace 3.22 w/s (target 3.1) OK
+  me03-promise: 14.58s, 46 words, tail 0.28s
+  me04-1537 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 3.03 w/s (target 3.0) OK
+  me04-1537 chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 3.25 w/s (target 2.9) ['pace 3.25 w/s (target 2.9±10%)']
+    try 2 speed 0.92: pace 2.94 w/s (target 2.9) OK
+  me04-1537 chunk 3: pace target 3.0
+    try 1 speed 1.00: pace 3.33 w/s (target 3.0) ['pace 3.33 w/s (target 3.0±10%)']
+    try 2 speed 0.90: pace 3.24 w/s (target 3.0) ["stretched 'purge.' 0.56s"]
+    try 3 speed 0.90: pace 3.06 w/s (target 3.0) ["stretched 'fluids' 0.45s", "stretched 'purge.' 0.61s"]
+    try 4 speed 0.90: pace 3.37 w/s (target 3.0) ['pace 3.37 w/s (target 3.0±10%)']
+  me04-1537 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 2.80 w/s (target 3.0) OK
+  me04-1537 chunk 5: pace target 3.0
+    try 1 speed 1.00: pace 3.22 w/s (target 3.0) OK
+  me04-1537 chunk 6: pace target 2.9
+    try 1 speed 1.00: pace 3.08 w/s (target 2.9) OK
+  ~ me04-1537 chunks 4->5: speech rate 4.63 -> 5.14 syl/s (listen)
+  !! me04-1537 chunk 3 REJECTED after 4 tries: ['pace 3.33 w/s (target 3.0±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+  me05-1799 chunk 1: pace target 3.0
+    try 1 speed 1.00: pace 2.86 w/s (target 3.0) ["stretched 'Snow' 0.45s"]
+    try 2 speed 1.05: pace 3.11 w/s (target 3.0) OK
+  me05-1799 chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 4.23 w/s (target 2.9) ['pace 4.23 w/s (target 2.9±10%)']
+    try 2 speed 0.97: pace 4.18 w/s (target 2.9) ['pace 4.18 w/s (target 2.9±10%)']
+    try 3 speed 0.97: pace 3.75 w/s (target 2.9) ['pace 3.75 w/s (target 2.9±10%)']
+    try 4 speed 0.97: pace 4.13 w/s (target 2.9) ['pace 4.13 w/s (target 2.9±10%)']
+  me05-1799 chunk 3: pace target 2.7
+    try 1 speed 1.00: pace 2.41 w/s (target 2.7) ['pace 2.41 w/s (target 2.7±10%)']
+    try 2 speed 1.08: pace 2.70 w/s (target 2.7) OK
+  me05-1799 chunk 4: pace target 3.0
+    try 1 speed 1.00: pace 3.41 w/s (target 3.0) ['pace 3.41 w/s (target 3.0±10%)']
+    try 2 speed 1.00: pace 3.53 w/s (target 3.0) ['pace 3.53 w/s (target 3.0±10%)']
+    try 3 speed 1.00: pace 3.10 w/s (target 3.0) ["stretched 'twelve' 0.43s"]
+    try 4 speed 1.00: pace 3.30 w/s (target 3.0) OK
+  me05-1799 chunk 5: pace target 3.0
+    try 1 speed 1.00: pace 3.23 w/s (target 3.0) OK
+  me05-1799 chunk 6: pace target 2.9
+    try 1 speed 1.00: pace 2.85 w/s (target 2.9) OK
+  ~ me05-1799 chunks 1->2: speech rate 5.11 -> 6.27 syl/s (listen)
+  ~ me05-1799 chunks 2->3: speech rate 6.27 -> 4.70 syl/s (listen)
+  ~ me05-1799 chunks 3->4: speech rate 4.70 -> 5.45 syl/s (listen)
+  !! me05-1799 chunk 2 REJECTED after 4 tries: ['pace 4.23 w/s (target 2.9±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+voice done: 63.3 s total
+hard gate failed for: me04-1537, me05-1799

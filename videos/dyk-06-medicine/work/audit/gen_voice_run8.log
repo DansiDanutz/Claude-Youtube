@@ -1,0 +1,20 @@
+quota: creator 340983/363000 used, 22017 left; this run needs <= 604
+  me10-reveal chunk 1: pace target 3.1
+    chunk 1: cached passing take (no API call)
+  me10-reveal chunk 2: pace target 3.0
+    chunk 2: cached passing take (no API call)
+  me10-reveal chunk 3: pace target 3.0
+    try 1 speed 0.92: pace 2.62 w/s (target 3.0) ['pace 2.62 w/s (target 3.0±10%)', 'tail artefact at 11.42 s (0.20 s)']
+    try 2 speed 1.06: pace 3.15 w/s (target 3.0) OK
+  me10-reveal chunk 4: pace target 2.8
+    chunk 4: cached passing take (no API call)
+  me10-reveal chunk 5: pace target 2.75
+    chunk 5: cached passing take (no API call)
+  me10-reveal chunk 6: pace target 2.8
+    chunk 6: cached passing take (no API call)
+  ~ me10-reveal chunks 2->3: speech rate 5.08 -> 4.29 syl/s (listen)
+  ~ me10-reveal chunks 3->4: speech rate 4.29 -> 5.22 syl/s (listen)
+  ~ me10-reveal chunks 5->6: speech rate 5.03 -> 5.61 syl/s (listen)
+  me10-reveal: 60.74s, 166 words, tail 0.26s
+voice done: 585.2 s total
+exit 0

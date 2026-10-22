@@ -1,0 +1,18 @@
+quota: creator 338306/363000 used, 24694 left; this run needs <= 648
+  me05-1799 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  me05-1799 chunk 2: pace target 3.6
+    try 1 speed 1.00: pace 3.68 w/s (target 3.6) OK
+  me05-1799 chunk 3: pace target 2.7
+    chunk 3: cached passing take (no API call)
+  me05-1799 chunk 4: pace target 3.0
+    chunk 4: cached passing take (no API call)
+  me05-1799 chunk 5: pace target 3.0
+    chunk 5: cached passing take (no API call)
+  me05-1799 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ me05-1799 chunks 2->3: speech rate 5.32 -> 4.70 syl/s (listen)
+  ~ me05-1799 chunks 3->4: speech rate 4.70 -> 5.45 syl/s (listen)
+  me05-1799: 57.35s, 170 words, tail 0.23s
+voice done: 186.8 s total
+exit 0
