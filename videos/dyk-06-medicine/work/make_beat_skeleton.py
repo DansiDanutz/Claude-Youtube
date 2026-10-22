@@ -12,17 +12,20 @@ VO = json.load(open(os.path.join(ROOT, "remotion", "src", "shots", "dyk-06", "vo
 
 
 def rows():
-    t0, out = 0.0, []
+    """One row per second. Words are gathered across all shots first, so a second shared by two shots keeps both
+    shots' words and names both shots."""
+    t0, spans, words = 0.0, [], []
     for shot, (dur, offs) in TL.items():
-        words = []
+        spans.append((t0, t0 + dur, shot))
         for sid, off in offs.items():
-            words += [(t0 + off + w["s"], w["w"], sid) for w in VO[sid]["words"]]
-        for sec in range(math.floor(t0), math.ceil(t0 + dur - 1e-6)):
-            if sec < t0 - 1e-6 and out and out[-1][0] == sec:
-                continue
-            said = " ".join(w for s, w, _ in words if sec <= s < sec + 1)
-            out.append((sec, shot, said))
+            words += [(t0 + off + w["s"], w["w"]) for w in VO[sid]["words"]]
         t0 += dur
+    words.sort()
+    out = []
+    for sec in range(math.ceil(t0 - 1e-6)):
+        shots = " / ".join(shot for a, b, shot in spans if a < sec + 1 - 1e-6 and b > sec + 1e-6)
+        said = " ".join(w for s, w in words if sec <= s < sec + 1)
+        out.append((sec, shots, said))
     return out, t0
 
 
