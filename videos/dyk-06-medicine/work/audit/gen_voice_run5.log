@@ -1,0 +1,35 @@
+quota: creator 339836/363000 used, 23164 left; this run needs <= 1132
+  me06-1847 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  me06-1847 chunk 2: pace target 3.3
+    chunk 2: cached passing take (no API call)
+  me06-1847 chunk 3: pace target 2.7
+    chunk 3: cached passing take (no API call)
+  me06-1847 chunk 4: pace target 2.6
+    try 1 speed 1.00: pace 2.84 w/s (target 2.6) OK
+  me06-1847 chunk 5: pace target 3.4
+    try 1 speed 1.00: pace 3.67 w/s (target 3.4) OK
+  me06-1847 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ me06-1847 chunks 4->5: speech rate 4.85 -> 5.46 syl/s (listen)
+  ~ me06-1847 chunks 5->6: speech rate 5.46 -> 4.62 syl/s (listen)
+    chunk 5: level -2.1 dB to the scene median
+  me06-1847: 63.67s, 188 words, tail 0.25s
+  me08-1948 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  me08-1948 chunk 2: pace target 3.4
+    try 1 speed 1.00: pace 3.57 w/s (target 3.4) OK
+  me08-1948 chunk 3: pace target 2.7
+    chunk 3: cached passing take (no API call)
+  me08-1948 chunk 4: pace target 3.0
+    chunk 4: cached passing take (no API call)
+  me08-1948 chunk 5: pace target 2.9
+    chunk 5: cached passing take (no API call)
+  ~ me08-1948 chunks 1->2: speech rate 5.56 -> 4.62 syl/s (listen)
+  ~ me08-1948 chunks 2->3: speech rate 4.62 -> 5.11 syl/s (listen)
+  ~ me08-1948 chunks 3->4: speech rate 5.11 -> 4.31 syl/s (listen)
+  ~ me08-1948 chunks 4->5: speech rate 4.31 -> 5.15 syl/s (listen)
+    chunk 4: level -2.0 dB to the scene median
+  me08-1948: 53.76s, 151 words, tail 0.17s
+voice done: 414.0 s total
+exit 0

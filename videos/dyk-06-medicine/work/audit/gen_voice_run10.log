@@ -1,0 +1,21 @@
+quota: creator 341291/363000 used, 21709 left; this run needs <= 604
+  me10-reveal chunk 1: pace target 3.1
+    chunk 1: cached passing take (no API call)
+  me10-reveal chunk 2: pace target 3.0
+    chunk 2: cached passing take (no API call)
+  me10-reveal chunk 3: pace target 3.15
+    try 1 speed 1.08: pace 3.18 w/s (target 3.15) ['tail artefact at 9.38 s (0.42 s)']
+    try 2 speed 1.07: pace 3.15 w/s (target 3.15) ['tail artefact at 9.47 s (0.32 s)']
+    try 3 speed 1.07: pace 2.90 w/s (target 3.15) OK
+  me10-reveal chunk 4: pace target 2.8
+    chunk 4: cached passing take (no API call)
+  me10-reveal chunk 5: pace target 2.5
+    chunk 5: cached passing take (no API call)
+  me10-reveal chunk 6: pace target 2.8
+    chunk 6: cached passing take (no API call)
+  ~ me10-reveal chunks 2->3: speech rate 5.08 -> 4.15 syl/s (listen)
+  ~ me10-reveal chunks 5->6: speech rate 5.03 -> 5.61 syl/s (listen)
+  !! me10-reveal REJECTED by the continuity gate: ['chunks 3->4 speech rate 4.15 -> 5.22 syl/s'] (passing chunk takes stay cached; retune pace/text)
+voice done: 602.0 s total
+hard gate failed for: me10-reveal
+exit 1

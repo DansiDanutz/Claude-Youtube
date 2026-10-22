@@ -1,0 +1,60 @@
+WHISPER DIFF: FAIL — 1 issue(s)
+
+== me01-hook  ratio 1.000
+   LISTEN   gaps    [('us?', 1.28)]
+== me02-question  ratio 1.000
+== me00-welcome  ratio 1.000
+== me03-promise  ratio 1.000
+== me04-1537  ratio 0.976
+   LISTEN   listen  'ambroise par' heard as 'ambrose paray'
+   diff ('replace', 'ambroise par', 'ambrose paray')
+   diff ('replace', 'and', 'in')
+   diff ('replace', 'adjusts it', 'adjusted')
+   LISTEN   low-p   [('One', 0.25), ('Balance,', 0.35)]
+   LISTEN   gaps    [('oil?', 1.16)]
+== me05-1799  ratio 0.988
+   LISTEN   listen  'litres' heard as 'liters'
+   diff ('replace', 'then', 'than')
+   diff ('replace', 'litres', 'liters')
+== me06-1847  ratio 0.962
+   LISTEN   listen  'ignaz semmelweis' heard as 'ignos semovice'
+   diff ('replace', 'in', 'and')
+   diff ('replace', 'in', 'and')
+   diff ('replace', 'ignaz semmelweis', 'ignos semovice')
+   diff ('replace', 'in', 'and')
+   diff ('replace', 'lime', 'line')
+   diff ('replace', 'in', 'and')
+   LISTEN   low-p   [('that', 0.17)]
+== me07-1941  ratio 0.994
+   diff ('replace', 'twelfth', '#12')
+== me08-1948  ratio 1.000
+== me09-today  ratio 0.987
+   LISTEN   listen  'maow maalin' heard as 'mao mainland'
+   diff ('replace', 'maow maalin', 'mao mainland')
+   LISTEN   low-p   [('mainland.', 0.13)]
+== me10-reveal  ratio 0.955
+   LISTEN   listen  'semmelweis' heard as 'semmelvies'
+   LISTEN   listen  'lind' heard as 'lynn'
+   diff ('replace', 'semmelweis', 'semmelvies')
+   diff ('replace', 'and counted', 'encountered')
+   diff ('replace', 'then it counted', 'than accounted')
+   diff ('replace', 'lind', 'lynn')
+   diff ('replace', 'balance', 'balanced')
+   LISTEN   low-p   [('encountered', 0.11), ('four', 0.04), ('how', 0.13), ('prevention.', 0.3)]
+== me11-2100  ratio 0.985
+   diff ('replace', 'forecasts', 'forecast')
+   diff ('replace', 'a', 'o')
+   LISTEN   low-p   [('without', 0.2)]
+== me12-close  ratio 1.000
+== me13-outro  ratio 0.947
+   LISTEN   listen  'the' heard as 'a'
+   diff ('replace', 'centurys', 'centuries')
+   diff ('replace', 'this', 'the')
+   diff ('replace', 'dex tee dot live', 'dexteelive')
+   diff ('replace', 'the', 'a')
+== me13b-next  ratio 0.889
+   FAIL     number  '#103 thousandth' heard as '#13000'
+   diff ('replace', 'in', 'and a')
+   diff ('replace', '#103 thousandth', '#13000')
+== me13c-signoff  ratio 1.000
+== me14-endscreen  ratio 1.000

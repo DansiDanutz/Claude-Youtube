@@ -1,0 +1,36 @@
+quota: creator 338113/363000 used, 24887 left; this run needs <= 1540
+  me04-1537 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  me04-1537 chunk 2: pace target 2.9
+    chunk 2: cached passing take (no API call)
+  me04-1537 chunk 3: pace target 3.3
+    try 1 speed 1.00: pace 3.35 w/s (target 3.3) OK
+  me04-1537 chunk 4: pace target 3.0
+    chunk 4: cached passing take (no API call)
+  me04-1537 chunk 5: pace target 3.0
+    chunk 5: cached passing take (no API call)
+  me04-1537 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ me04-1537 chunks 4->5: speech rate 4.63 -> 5.14 syl/s (listen)
+  me04-1537: 66.08s, 193 words, tail 0.25s
+  me05-1799 chunk 1: pace target 3.0
+    chunk 1: cached passing take (no API call)
+  me05-1799 chunk 2: pace target 2.9
+    try 1 speed 1.00: pace 3.56 w/s (target 2.9) ['pace 3.56 w/s (target 2.9±10%)']
+    try 2 speed 0.97: pace 3.66 w/s (target 2.9) ['pace 3.66 w/s (target 2.9±10%)']
+    try 3 speed 0.97: pace 3.91 w/s (target 2.9) ['pace 3.91 w/s (target 2.9±10%)']
+    try 4 speed 0.97: pace 3.53 w/s (target 2.9) ['pace 3.53 w/s (target 2.9±10%)']
+  me05-1799 chunk 3: pace target 2.7
+    chunk 3: cached passing take (no API call)
+  me05-1799 chunk 4: pace target 3.0
+    chunk 4: cached passing take (no API call)
+  me05-1799 chunk 5: pace target 3.0
+    chunk 5: cached passing take (no API call)
+  me05-1799 chunk 6: pace target 2.9
+    chunk 6: cached passing take (no API call)
+  ~ me05-1799 chunks 2->3: speech rate 5.61 -> 4.70 syl/s (listen)
+  ~ me05-1799 chunks 3->4: speech rate 4.70 -> 5.45 syl/s (listen)
+  !! me05-1799 chunk 2 REJECTED after 4 tries: ['pace 3.56 w/s (target 2.9±10%)'] (rephrase/shorten, or ALLOW_GATE_FAIL=1)
+voice done: 129.4 s total
+hard gate failed for: me05-1799
+exit 1
