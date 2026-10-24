@@ -86,8 +86,16 @@ certification run is missing. v2 kept at `work/rejected/SCRIPT.v2-2026-10-15.md`
   Whisper 5/5 PASS (`verify/REPORT.md`). Old takes + their transcripts in `work/rejected/` (`*.v2.*`, `verify-v2/`).
   Listen to dol22 ("built"/"matched" heard as "build"/"match" by base) and dol23 ("A company" heard as "to company").
 - **Gotcha:** `verify_voice.py` reuses `verify/<id>.json` if present — move old transcripts aside after any re-voice.
-- **Next (not done):** word timestamps for the 5 new takes → `verify/words/`; build_timing.py PLAN: WOffer→**WLive**
-  (dol22), drop WLands/WFails/EST, give dol23 its plate (WHud two-counter: LIVE TEST $9.00 · REVENUE $0.00);
-  WReceipts shows all five Sept test rows; WNext text. Same changes in assemble.py ORDER and mux_chunked.py SEGS.
+- **Built 2026-10-25:** word timestamps for the 5 new takes (whisper base, beam 5) in `verify/words/`;
+  build_timing.py is single-ending (PLAN: WLive=dol22, WCounter=dol23; no BRANCH/EST; a missing wav now stops it).
+  New shots **WLive** (Dan's real KuCoin capture, address/txid masked to short forms, order/block/tx card, PAID BY
+  DAN stamp) and **WCounter** (LIVE TEST $9.00 vs REVENUE $0.00); WHud gains a muted LIVE TEST $9.00 counter from
+  dol23 "counter" to the end, no POP; WReceipts shows all five Dan-paid tests; WMoment, WAudit (F-2 "live ·
+  certification run pending"), WNext updated. WOffer/WLands/WFails removed. Cut **526.6 s (8:47)**. tsc clean.
+  Stills QA read: WLive, WCounter, WReceipts, WMoment, WAudit, WNext, WHud — fixed a stamp under the rail steps and
+  two orphaned words. Media: `media/projects/danslab-ep12/dan-kucoin-withdrawal-9usdc-2026-10-24.jpg`.
+- **Still to do before render:** assemble.py ORDER/CLICKS/chapters and mux_chunked.py SEGS/CHAPTERS still name
+  WOffer/WLands/WFails and dol23a/b — remap to WLive/WCounter/dol23 (read `timing.json`, which no longer has
+  "branch"). Listen: dol22 ("ours" heard as "hours"), dol23 ("A company"). WNext's pre-existing "worth it." wrap.
 - **Captures needed from Dan:** KuCoin withdrawal screen (have it), PAYMENT CONFIRMED screen, the nervixpay.live
   Fake or Real checkout page.

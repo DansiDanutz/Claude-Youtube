@@ -1,5 +1,4 @@
 {
- "branch": "WLands",
  "shots": {
   "WDollar": 30.3,
   "WIntro": 13.0,
@@ -19,13 +18,12 @@
   "WSetup": 20.3,
   "WScan": 22.3,
   "WReceipts": 28.6,
-  "WAudit": 32.3,
-  "WMoment": 21.6,
-  "WOffer": 22.8,
-  "WLands": 17.0,
-  "WFails": 14.0,
+  "WAudit": 34.9,
+  "WMoment": 18.4,
+  "WLive": 31.5,
+  "WCounter": 21.4,
   "WHuman": 23.5,
-  "WNext": 16.9,
+  "WNext": 19.5,
   "WOutro": 14.2
  },
  "vo": {
@@ -127,27 +125,22 @@
   "dol20": {
    "shot": "WAudit",
    "off": 0.7,
-   "dur": 30.232
+   "dur": 32.833
   },
   "dol21": {
    "shot": "WMoment",
    "off": 0.7,
-   "dur": 19.505
+   "dur": 16.393
   },
   "dol22": {
-   "shot": "WOffer",
+   "shot": "WLive",
    "off": 0.7,
-   "dur": 20.759
+   "dur": 29.443
   },
-  "dol23a": {
-   "shot": "WLands",
+  "dol23": {
+   "shot": "WCounter",
    "off": 0.7,
-   "dur": 15.0
-  },
-  "dol23b": {
-   "shot": "WFails",
-   "off": 0.7,
-   "dur": 12.0
+   "dur": 19.319
   },
   "dol24": {
    "shot": "WHuman",
@@ -157,7 +150,7 @@
   "dol25": {
    "shot": "WNext",
    "off": 0.7,
-   "dur": 14.814
+   "dur": 17.461
   },
   "dol26": {
    "shot": "WOutro",

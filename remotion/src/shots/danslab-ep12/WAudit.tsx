@@ -5,13 +5,13 @@ import { at, voAt } from '../../lib/ep12timing.gen';
 
 // CH5 · the audit. VO dol20. Quote verbatim from NervixPay docs/production-readiness-audit-2026-10-12.md.
 // Blocker state re-checked 2026-10-15: F-1 legal pages live (PRs #113/#123/#124), F-2 witness deferred.
-export const compositionConfig = { id: 'WAudit', durationInSeconds: 32.3, fps: 30, width: 1920, height: 1080 };
+export const compositionConfig = { id: 'WAudit', durationInSeconds: 34.9, fps: 30, width: 1920, height: 1080 };
 
 const WAudit: React.FC = () => {
   const f = useCurrentFrame();
   const rise = useRise();
   const pop = usePop();
-  const LIVE = at('dol20', 'gone'), STILL = at('dol20', 'still');
+  const LIVE = at('dol20', 'gone'), LIVE2 = at('dol20', 'live', 2), STILL = at('dol20', 'still');
   const f1 = interpolate(f, [LIVE, LIVE + 12], [0, 1], DCLAMP);
   return (
     <Stage label="THE AUDIT">
@@ -43,10 +43,11 @@ const WAudit: React.FC = () => {
           <span style={{ fontFamily: DL_MONO, fontSize: 22, color: DL.green, opacity: f1 }}>live · 15 Oct</span>
         </div>
         <div style={{ ...rise(at('dol20', 'second')), display: 'flex', alignItems: 'center', gap: 16, background: DL.panel, borderRadius: 14, padding: '18px 26px',
-          border: `2px solid ${f >= STILL ? DL.gold : DL.border}` }}>
+          border: `2px solid ${f >= LIVE2 ? DL.gold : DL.border}` }}>
           <span style={{ fontFamily: DL_MONO, fontWeight: 700, fontSize: 28, color: DL.gold }}>P0</span>
-          <span style={{ fontFamily: DL_SANS, fontSize: 28, color: DL.text }}>F-2 · second source to double-check the chain</span>
-          <span style={{ fontFamily: DL_MONO, fontSize: 22, color: DL.gold, opacity: f >= STILL ? 1 : 0 }}>still open</span>
+          <span style={{ fontFamily: DL_SANS, fontSize: 28, color: DL.text }}>F-2 · second chain source</span>
+          <span style={{ fontFamily: DL_MONO, fontSize: 22, color: DL.green, opacity: f >= LIVE2 ? 1 : 0 }}>live</span>
+          <span style={{ fontFamily: DL_MONO, fontSize: 22, color: DL.gold, opacity: f >= STILL ? 1 : 0 }}>· certification run pending (audit 20 Oct)</span>
         </div>
       </div>
       <Note at={at('dol20', 'beta', 2)}>For now, the beta stays <span style={{ color: DL.gold }}>invite only.</span></Note>

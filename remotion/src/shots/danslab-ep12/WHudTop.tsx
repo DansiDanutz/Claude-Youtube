@@ -9,7 +9,7 @@ import { abs, at, voEnd } from '../../lib/ep12timing.gen';
 // Panel 640 wide at the canvas right edge → frame x 1190–1830 (clear of the shortened kicker, which ends at x 1120).
 // Canvas 1080×140 incl. the pointer sign; mux places it at x = W − 1080 − 90, y = 60 (owns x>1170, y60–186... see mux).
 export const compositionConfig = {
-  id: 'WHudTop', durationInSeconds: 512.5, fps: 30, width: 1080, height: 140, transparent: true,
+  id: 'WHudTop', durationInSeconds: 527.6, fps: 30, width: 1080, height: 140, transparent: true,
 };
 
 const SEGS: [string, number][] = [
