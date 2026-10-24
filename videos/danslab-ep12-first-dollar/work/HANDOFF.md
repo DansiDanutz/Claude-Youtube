@@ -74,3 +74,20 @@ scoped fades, chunked encodes, ElevenLabs hallucinated tails, and "render stereo
 2. WLands needs the real payment row/amount; WHud `LANDED`/`AMOUNT` flip only after the on-chain verification.
 3. CLICKS table in assemble.py is still placement-only — re-time from `ep12timing.gen.ts` cues.
 4. dol19 ~1.1 s low-confidence token — listen.
+
+## v3 — option A (Dan, 2026-10-24)
+
+The ending is no longer conditional. Dan's own 9 USDC payment (Fake or Real "Subscription", order #35096a88, Polygon
+block 96097042, tx 0x9cbae7ff…, sent from his KuCoin account) is shown as a LIVE TEST, never revenue; REVENUE stays
+$0.00. SCRIPT.md v3: new dol21, dol22, dol23 (single), dol25; dol20 now says the second source is live and only its
+certification run is missing. v2 kept at `work/rejected/SCRIPT.v2-2026-10-15.md`.
+
+- **Voiced 2026-10-24** (ElevenLabs, Brian): dol20 32.8 s, dol21 16.4 s, dol22 29.4 s, dol23 19.3 s, dol25 17.5 s.
+  Whisper 5/5 PASS (`verify/REPORT.md`). Old takes + their transcripts in `work/rejected/` (`*.v2.*`, `verify-v2/`).
+  Listen to dol22 ("built"/"matched" heard as "build"/"match" by base) and dol23 ("A company" heard as "to company").
+- **Gotcha:** `verify_voice.py` reuses `verify/<id>.json` if present — move old transcripts aside after any re-voice.
+- **Next (not done):** word timestamps for the 5 new takes → `verify/words/`; build_timing.py PLAN: WOffer→**WLive**
+  (dol22), drop WLands/WFails/EST, give dol23 its plate (WHud two-counter: LIVE TEST $9.00 · REVENUE $0.00);
+  WReceipts shows all five Sept test rows; WNext text. Same changes in assemble.py ORDER and mux_chunked.py SEGS.
+- **Captures needed from Dan:** KuCoin withdrawal screen (have it), PAYMENT CONFIRMED screen, the nervixpay.live
+  Fake or Real checkout page.

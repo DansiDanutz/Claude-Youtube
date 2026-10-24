@@ -3,10 +3,10 @@
 Season Two, No. 2 · target ~11–12 min · narrator: Brian · shot prefix `W` · VO ids `dol01`–`dol26`
 Spine: **NervixPay** — our own payment rail, in stablecoins, and the moment the first money has to appear.
 Evidence base: TREATMENT.md table (verified 2026-10-14; blockers re-checked 2026-10-15).
-**Status: APPROVED by Dan 2026-10-15 (v2).** dol23a/dol23b are conditional — voice only the one that really happened.
+**Status: APPROVED by Dan 2026-10-15 (v2); CH6 + dol20 + dol25 revised and APPROVED 2026-10-24 (v3, option A).** The ending is no longer conditional: Dan's own 9 USDC payment (order #35096a88) is shown as a live test, not revenue. dol19 kept as voiced; WReceipts shows all five Dan-paid test rows.
 VO lines are TTS-ready (numbers spelled out). Visual notes in [brackets].
 
-**Approved 2026-10-15.** Voice everything except dol23 now if wanted; dol23a/b only after the real attempt.
+**Approved 2026-10-15; v3 approved 2026-10-24.** Re-voice dol20, dol21, dol22, dol25 and voice the new dol23 (old takes kept in work/rejected/).
 
 ---
 
@@ -118,32 +118,27 @@ came from a wallet we control. That's plumbing. Not revenue."
 "On the twelfth of October the fleet audited the whole thing. Nine hundred and twelve tests passing. Zero
 errors in production for a week. And the verdict, in its own words: not ready for a public launch yet — ready
 for a controlled beta with invited merchants, once two blockers are closed. A legal page. And a second source
-to double-check the blockchain. Since then, the legal pages have gone live. The second source is still on the
-list — so for now, the beta stays invite only."
+to double-check the blockchain. Since then, the legal pages have gone live. The second source is now live; its
+certification run is still on the list — so for now, the beta stays invite only."
 
 ## CH6 — THE MOMENT
 
 **dol21** [WMoment — the season so far in one line: products ✓ · rail ✓ · audit ✓ · customer ☐ — the empty box pulses]
 "So this is the moment. Eleven episodes building. A rail we own. A product that works. An audit that says
-we're ready to invite the first merchants. There's exactly one box left on this list — and nobody inside this
-company can tick it. The first money has to come from outside. And it has to come now."
+we're ready to invite the first merchants. But nobody had watched the whole machine run, end to end, on the
+product we actually sell. So I paid for it myself."
 
-**dol22** [WOffer — the offer card: NERVIXPAY STARTER · 10 USDC · INVITED BETA; beta link chip pointing to the description]
-"Here's the offer. A NervixPay Starter plan. Ten dollars, in USDC, paid through NervixPay itself, straight
-into the company wallet. The payment product earns its first money through its own rail. The first merchants
-are invited — if you run a business and want a seat in the beta, the link is in the description. The counter
-is live. Let's see if it moves."
+**dol22** [WLive — real captures in SiteFrame: Fake or Real checkout on nervixpay.live → Dan's exchange withdrawal screen (address + txid shortened, balances hidden) → "PAYMENT CONFIRMED · Order #35096a88" → Polygonscan row, block 96097042. THE RAIL lights LINK → SCAN → VERIFIED → IN THE WALLET. Red stamp lands on the row: PAID BY DAN — TEST, NOT REVENUE]
+"The twenty-fourth of October. Fake or Real — the fact-checking site the fleet built on JEV. A nine dollar
+subscription, through a NervixPay link. I paid it from my own exchange account, in USDC, on Polygon. It
+landed in a single block. NervixPay read the chain, matched the exact amount, and the page said: payment
+confirmed. The site, the rail, the checkout — all of it ours. Working."
 
-**dol23a** [WLands — real dashboard row from an outside wallet; the bottom-bar counter POPS $0.00 → the real invoice amount; chime]
-"And there it is. An invited merchant — not us, not a test wallet — a ten dollar Starter plan, paid in USDC,
-verified on the chain, sitting in the company wallet. Eleven episodes of zero. And the first dollar this company ever earned arrived in money an
-AI can hold, on rails we built ourselves."
-
-**dol23b** [WFails — the counter holds at $0.00; the empty box flashes red]
-"And — not yet. The invitations went out, and no merchant has paid. The rail works, and you've seen it work. What's missing isn't code. It's a
-customer. That's the honest result, and it's the job of the next episode."
-
-> Only ONE of dol23a / dol23b is voiced — the true one, after the real attempt. Do not generate both.
+**dol23** [WHud — the bottom bar splits into two counters: LIVE TEST $9.00 ✓ (soft tick, no chime) · REVENUE $0.00 (holds; the empty "customer" box pulses); beta-link chip pointing to the description]
+"But look at the counter at the bottom. It didn't move — and it shouldn't. That money came from me. A company
+paying itself isn't revenue. It's a rehearsal. The rail is ready. The checkout is ready. What's missing now
+isn't code. It's a stranger. If you run a business and want a seat in the invited beta, the link is in the
+description."
 
 ## HUMAN BEAT
 
@@ -155,9 +150,9 @@ player refusing a table where the house can change the rules mid-hand. The ten p
 ## HONEST CLOSE + NEXT
 
 **dol25** [WNext — the promise card; the counter stays on screen]
-"One dollar isn't a business. It's a door opening. Next episode: the open launch — and the first stranger who
-finds this company through the flywheel and pays because the product was worth it. The counter stays on screen
-from now on. It never resets."
+"Nine dollars from the founder isn't a business. It's a dress rehearsal. Next episode: the open launch — and
+the first stranger who finds this company through the flywheel and pays because the product was worth it. The
+counter stays on screen from now on. It's still at zero. It never resets."
 
 ## OUTRO (narrated, series pattern)
 
@@ -169,19 +164,22 @@ like. You'll be here when it happens. Build. Ship. Repeat."
 
 ## Production notes
 
-- 27 VO entries (26 voiced; dol23 is one of two) ≈ 1,300 words ≈ 11–12 min with breathing room on the UI plates.
+- 26 VO entries, all voiced (v3: dol23 is a single, unconditional line).
 - Never say "no commissions" as an absolute: the honest line is **"a flat fee — never a percentage of your sale"**
   (plans $10/$20/$100; $0.50 per payment on trial/Starter from prepaid credit; customer pays network gas).
-- Never call the three September payments revenue. They are on screen with a TEST stamp.
+- Never call any Dan-paid payment revenue. WReceipts shows all five September test rows (21 Sep 9 USDC Fake or Real
+  Starter; 24 Sep 0.01 TON ×2; 26 Sep 3 USDC; 26 Sep 10.30 USDC plan) with a TEST stamp; dol22's 24 Oct 9 USDC
+  order #35096a88 carries PAID BY DAN — TEST, NOT REVENUE.
 - Do not name TON or TRON as live networks in VO (kept off until cross-checked, audit F-2). Polygon, Ethereum and
   BNB Chain only.
 - The "around three percent" card figure is a general industry figure — re-check on render day and keep "around".
 - All UI plates are real captures of nervixpay.live; the promo's demo merchant "Maya Studio" is fine for the how-it-works
-  chapter, but the dol23a dashboard row must be the real payment.
+  chapter, but WLive (dol22) must show the real 24 Oct order #35096a88 captures.
 - Audit F-1 (legal surface) is closed: nervixpay.live/docs/legal/terms and /privacy return 200 (checked 2026-10-15;
-  PRs #113, #123, #124). F-2 (second RPC witness) was deferred in #113 — dol20 says so. Re-check both on render day.
-- dol23a says "a ten dollar Starter plan" (true whatever the cents); the counter shows the exact invoice amount, which
-  carries randomized cents (the September test invoice was 10.301262 USDC).
+  PRs #113, #123, #124). F-2: witnesses live, certification run not yet recorded (audit 2026-10-20) — dol20 v3 says
+  so. Re-check both on render day.
+- dol22 says "a nine dollar subscription"; the order price is 9 USDC and 9.002511 USDC arrived on chain (the extra
+  cents identify the order). The LIVE TEST counter shows $9.00; REVENUE stays $0.00.
 - Fleet facts in CH0 (dol05–dol07): Memo and Sienna droplets closed 2026-10-11 → fleet is 2 droplets, Dexter + Nano
   (`~/Desktop/DavidAi/SYSTEM.md` line 3). OpenClaw → Hermes and the tool list are from Dan (2026-10-14). Do not
   show Sienna as a current worker anywhere in this episode; paper trading is retired (`~/AGENTS.md`).

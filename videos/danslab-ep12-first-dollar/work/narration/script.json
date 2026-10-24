@@ -101,29 +101,22 @@
   {
    "id": "dol20",
    "visual": "WAudit — SiteFrame: the 12 October audit, verdict line highlighted; nine-row grade table",
-   "text": "On the twelfth of October the fleet audited the whole thing. Nine hundred and twelve tests passing. Zero errors in production for a week. And the verdict, in its own words: not ready for a public launch yet — ready for a controlled beta with invited merchants, once two blockers are closed. A legal page. And a second source to double-check the blockchain. Since then, the legal pages have gone live. The second source is still on the list — so for now, the beta stays invite only."
+   "text": "On the twelfth of October the fleet audited the whole thing. Nine hundred and twelve tests passing. Zero errors in production for a week. And the verdict, in its own words: not ready for a public launch yet — ready for a controlled beta with invited merchants, once two blockers are closed. A legal page. And a second source to double-check the blockchain. Since then, the legal pages have gone live. The second source is now live; its certification run is still on the list — so for now, the beta stays invite only."
   },
   {
    "id": "dol21",
    "visual": "WMoment — the season so far in one line: products ✓ · rail ✓ · audit ✓ · customer ☐ — the empty box pulses",
-   "text": "So this is the moment. Eleven episodes building. A rail we own. A product that works. An audit that says we're ready to invite the first merchants. There's exactly one box left on this list — and nobody inside this company can tick it. The first money has to come from outside. And it has to come now."
+   "text": "So this is the moment. Eleven episodes building. A rail we own. A product that works. An audit that says we're ready to invite the first merchants. But nobody had watched the whole machine run, end to end, on the product we actually sell. So I paid for it myself."
   },
   {
    "id": "dol22",
-   "visual": "WOffer — the offer card: NERVIXPAY STARTER · 10 USDC · INVITED BETA; beta link chip pointing to the description",
-   "text": "Here's the offer. A NervixPay Starter plan. Ten dollars, in USDC, paid through NervixPay itself, straight into the company wallet. The payment product earns its first money through its own rail. The first merchants are invited — if you run a business and want a seat in the beta, the link is in the description. The counter is live. Let's see if it moves."
+   "visual": "WLive — real captures in SiteFrame: Fake or Real checkout on nervixpay.live → Dan's exchange withdrawal screen (address + txid shortened, balances hidden) → \"PAYMENT CONFIRMED · Order #35096a88\" → Polygonscan row, block 96097042. THE RAIL lights LINK → SCAN → VERIFIED → IN THE WALLET. Red stamp lands on the row: PAID BY DAN — TEST, NOT REVENUE",
+   "text": "The twenty-fourth of October. Fake or Real — the fact-checking site the fleet built on JEV. A nine dollar subscription, through a NervixPay link. I paid it from my own exchange account, in USDC, on Polygon. It landed in a single block. NervixPay read the chain, matched the exact amount, and the page said: payment confirmed. The site, the rail, the checkout — all of it ours. Working."
   },
   {
-   "id": "dol23a",
-   "visual": "WLands — real dashboard row from an outside wallet; the bottom-bar counter POPS $0.00 → the real invoice amount; chime",
-   "text": "And there it is. An invited merchant — not us, not a test wallet — a ten dollar Starter plan, paid in USDC, verified on the chain, sitting in the company wallet. Eleven episodes of zero. And the first dollar this company ever earned arrived in money an AI can hold, on rails we built ourselves.",
-   "conditional": true
-  },
-  {
-   "id": "dol23b",
-   "visual": "WFails — the counter holds at $0.00; the empty box flashes red",
-   "text": "And — not yet. The invitations went out, and no merchant has paid. The rail works, and you've seen it work. What's missing isn't code. It's a customer. That's the honest result, and it's the job of the next episode.",
-   "conditional": true
+   "id": "dol23",
+   "visual": "WHud — the bottom bar splits into two counters: LIVE TEST $9.00 ✓ (soft tick, no chime) · REVENUE $0.00 (holds; the empty \"customer\" box pulses); beta-link chip pointing to the description",
+   "text": "But look at the counter at the bottom. It didn't move — and it shouldn't. That money came from me. A company paying itself isn't revenue. It's a rehearsal. The rail is ready. The checkout is ready. What's missing now isn't code. It's a stranger. If you run a business and want a seat in the invited beta, the link is in the description."
   },
   {
    "id": "dol24",
@@ -133,7 +126,7 @@
   {
    "id": "dol25",
    "visual": "WNext — the promise card; the counter stays on screen",
-   "text": "One dollar isn't a business. It's a door opening. Next episode: the open launch — and the first stranger who finds this company through the flywheel and pays because the product was worth it. The counter stays on screen from now on. It never resets."
+   "text": "Nine dollars from the founder isn't a business. It's a dress rehearsal. Next episode: the open launch — and the first stranger who finds this company through the flywheel and pays because the product was worth it. The counter stays on screen from now on. It's still at zero. It never resets."
   },
   {
    "id": "dol26",

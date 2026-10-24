@@ -26,10 +26,13 @@ Goal: the true ending for `dol23a`. If nobody pays, `dol23b` is the true ending 
 1. Have a wallet such as MetaMask or Trust Wallet on **Polygon**, with **at least 11 USDC** plus a little POL
    for gas (≈0.05 POL).
 2. Open **https://nervixpay.live/signup** and create an account (their own email or Google).
-3. Go to **Settings → Billing**. If the app first asks them to finish onboarding (business name, receiving
-   wallet), they do that with their own details. Nobody has walked a brand-new account through this on
-   production yet, so do a dry run with a throwaway account up to the checkout screen first, without paying.
-4. Choose network **Polygon** and token **USDC**, then **Starter ($10)**.
+3. Complete the **one-time business profile** (mandatory; checkout refuses with "Complete NervixPay merchant
+   onboarding" until it is done): business name, category, country, description, support email, support phone,
+   street address, city, postcode. No KYC and no wallet connection are needed for this. Once submitted it can
+   only be corrected later in Profile, not undone — tell the merchant this is real data for their account and
+   that none of it appears on screen.
+4. Go to **Settings → Billing**. Network defaults to **Polygon** but the token defaults to **POL** — switch the
+   token to **USDC**, then choose **Starter ($10)**.
 5. The checkout shows the exact amount, QR code and receiving address. Pay that **exact** amount from their
    own wallet within the time shown (scan the QR or use "Open wallet").
 6. Wait on the page until it says the payment is confirmed (usually under a minute on Polygon). Their plan
@@ -61,7 +64,11 @@ Give Claude the transaction hash. Claude then checks, without touching productio
 2. **On-chain** (public Polygon RPC): the transaction succeeded, it is a USDC (`0x3c499c…3359`) transfer to
    `0x0aa08528…61DF` of exactly the invoiced amount, with enough confirmations.
 3. **Outside money**: the payer address is not one of Dan's known addresses, and the USDC it spent did not come
-   from any of Dan's wallets (Claude traces the payer's incoming USDC/POL before the payment).
+   from any of Dan's wallets (Claude traces the payer's incoming USDC/POL before the payment). If the merchant
+   pays **from an exchange** (KuCoin, Binance…), the on-chain sender is the exchange's shared hot wallet, and
+   Dan's own KuCoin withdrawals come from `0xee7ae85f…4055` too. Then the address proves nothing either way:
+   get the merchant's withdrawal screenshot (with the tx hash) as the evidence, and ideally have them pay
+   from a personal wallet instead.
 4. **No refund**: no transfer from the subscription wallet or Dan's wallets back to the payer afterwards (re-checked
    on render day).
 
