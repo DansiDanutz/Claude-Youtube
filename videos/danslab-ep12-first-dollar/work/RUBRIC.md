@@ -14,18 +14,23 @@ QA evidence:
   fixed: the WReceipts stamp's 1.6× slam ran off the right edge for ~1 s (smaller, moved left; re-rendered,
   re-muxed with --force, re-checked at 359.6 s).
 - Whisper: 26/26 lines pass (5 v3 lines 2026-10-24); dol22/dol23 listened to by Dan 2026-10-25.
-- Loudness (ebur128): **−15.9 LUFS integrated, −4.4 dBTP true peak, LRA 4.1 LU** — below the −14 target.
+- Loudness (ebur128), master: −15.9 LUFS integrated, −4.4 dBTP, LRA 4.1 LU — below the −14 target.
+- **Delivery pass 2026-10-25** (make_delivery.py method run on the LOCAL master, never iCloud): flat +1.90 dB measured
+  by ebur128, alimiter at −1 dBTP, AAC 256k stereo 48 kHz, video stream-copied, +faststart →
+  `delivery/danslab-episode-12-first-dollar-4K-v1.mp4`. Re-measured independently: **−14.0 LUFS, −2.4 dBTP,
+  LRA 4.1 LU**; 15,837 frames == master; 527.915 s; video/audio pts gaps 0; moov before mdat.
 
 | Dimension | Score | Evidence |
 |---|---|---|
 | Story | 5/5 | Hook on the zero counter → why own rails → receipts → audit → Dan pays live → "a company paying itself isn't revenue" → the stranger is EP13. The ending is honest and still lands. |
 | Visual craft | 4/5 | Real captures framed (checkout, Dan's KuCoin withdrawal with address/txid masked); token-consistent. −1: WNewCrew holds a title-only frame ~7 s before its tool reveals (52–60 s); the bottom bar is already on screen over the logo intro. |
 | Motion | 4/5 | Brand easings, staggered rows, reveals on spoken words (timing generated from whisper word stamps). −1: the same WNewCrew title-only hold, and WWhy reads as one line for most of its 12.8 s. |
-| Sound | **3/5** | Stated reason: the master is −15.9 LUFS / −4.4 dBTP, ~1.9 LU under the −14 spec (the known loudnorm-vs-ebur128 gap). `tools/make_delivery.py` (measure → flat gain → verify with ebur128, limiter at −1 dBTP) is the standard fix and has not been run. CLICKS for the v3 shots sit on word cues; the v2 shots' CLICKS are still placements, not measurements. No clipping; one riser into WLive; no win chime on the test. |
+| Sound | 4/5 | Delivery file at spec: −14.0 LUFS / −2.4 dBTP / stereo 48 kHz (ebur128, re-measured). CLICKS for the v3 shots sit on word cues; one riser into WLive; no win chime on the test; no clipping. −1: the v2 shots' CLICKS are still placements, not measurements. |
 | Truth | 4/5 | Every on-screen number traced to the NervixPay DB or Polygon (checked 24 Oct); Dan's payment stamped PAID BY DAN — TEST, NOT REVENUE; REVENUE never moves. −1: dol19 says "three times" while WReceipts shows all five tests (Dan's choice, 2026-10-24). |
 | Series craft | 5/5 | Classic intro, bottom bar with the live counter (+ LIVE TEST from dol23), top-right RAIL panel with pointer sign, outro motto on his words. |
 
-**Total: 25/30 → A** (S = 28+, A = 24–27 per the design system; this file's gate is ≥ 25).
+**Total: 26/30 → A** (S = 28+, A = 24–27 per the design system; this file's gate is ≥ 25). Was 25 before the delivery pass.
 
-Before upload: run the delivery pass (−14.0 LUFS, ≤ −1 dBTP, stereo 48 kHz, faststart) and re-measure with ebur128 —
-that lifts Sound to 4 and the total to 26. Optional polish: fill the WNewCrew opening hold; re-time the v2 CLICKS.
+Upload candidate: `delivery/danslab-episode-12-first-dollar-4K-v1.mp4`. Still open before upload: the upload package
+(thumbnail, `youtube-metadata.md`, the beta link for the description), the 1080p derivative if wanted, and the
+`episodes-v1` release asset. Optional polish: fill the WNewCrew opening hold; re-time the v2 CLICKS.
