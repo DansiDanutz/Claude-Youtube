@@ -19,18 +19,25 @@ QA evidence:
   by ebur128, alimiter at −1 dBTP, AAC 256k stereo 48 kHz, video stream-copied, +faststart →
   `delivery/danslab-episode-12-first-dollar-4K-v1.mp4`. Re-measured independently: **−14.0 LUFS, −2.4 dBTP,
   LRA 4.1 LU**; 15,837 frames == master; 527.915 s; video/audio pts gaps 0; moov before mdat.
+- **WNewCrew fix 2026-10-25:** the title no longer holds alone 52–60 s — dol05's opening line lands on "last" and
+  "faster". Re-rendered 4K (3840×2160, 630 frames), reassembled, re-muxed with --force, delivery pass re-run
+  (−14.0 LUFS / −2.4 dBTP, 15,837 frames, pts gaps 0). Checked in the delivery file at 53.5 / 55.8 / 57.5 s.
+- **Upload package 2026-10-25:** `~/Desktop/claudeYouTube/danslab-episode-12-first-dollar/` — `youtube-upload.mp4`
+  (byte-identical to the delivery file, SHA-256 da346ae6…c646, full decode clean), `youtube-metadata.md` (chapters
+  from the rendered shot starts; placeholders for the previous-video URL and the beta link),
+  `danslab-first-dollar-thumbnail.jpg` (1280×720, from the `WThumb` composition — no paid image model).
 
 | Dimension | Score | Evidence |
 |---|---|---|
 | Story | 5/5 | Hook on the zero counter → why own rails → receipts → audit → Dan pays live → "a company paying itself isn't revenue" → the stranger is EP13. The ending is honest and still lands. |
-| Visual craft | 4/5 | Real captures framed (checkout, Dan's KuCoin withdrawal with address/txid masked); token-consistent. −1: WNewCrew holds a title-only frame ~7 s before its tool reveals (52–60 s); the bottom bar is already on screen over the logo intro. |
-| Motion | 4/5 | Brand easings, staggered rows, reveals on spoken words (timing generated from whisper word stamps). −1: the same WNewCrew title-only hold, and WWhy reads as one line for most of its 12.8 s. |
+| Visual craft | 4/5 | Real captures framed (checkout, Dan's KuCoin withdrawal with address/txid masked); token-consistent. −1: the bottom bar is already on screen over the logo intro. (The WNewCrew title-only hold at 52–60 s was fixed 2026-10-25.) |
+| Motion | 4/5 | Brand easings, staggered rows, reveals on spoken words (timing generated from whisper word stamps). −1: WWhy reads as one line for most of its 12.8 s. (WNewCrew's hold fixed 2026-10-25: nothing there is static > 4 s now.) |
 | Sound | 4/5 | Delivery file at spec: −14.0 LUFS / −2.4 dBTP / stereo 48 kHz (ebur128, re-measured). CLICKS for the v3 shots sit on word cues; one riser into WLive; no win chime on the test; no clipping. −1: the v2 shots' CLICKS are still placements, not measurements. |
 | Truth | 4/5 | Every on-screen number traced to the NervixPay DB or Polygon (checked 24 Oct); Dan's payment stamped PAID BY DAN — TEST, NOT REVENUE; REVENUE never moves. −1: dol19 says "three times" while WReceipts shows all five tests (Dan's choice, 2026-10-24). |
 | Series craft | 5/5 | Classic intro, bottom bar with the live counter (+ LIVE TEST from dol23), top-right RAIL panel with pointer sign, outro motto on his words. |
 
 **Total: 26/30 → A** (S = 28+, A = 24–27 per the design system; this file's gate is ≥ 25). Was 25 before the delivery pass.
 
-Upload candidate: `delivery/danslab-episode-12-first-dollar-4K-v1.mp4`. Still open before upload: the upload package
-(thumbnail, `youtube-metadata.md`, the beta link for the description), the 1080p derivative if wanted, and the
-`episodes-v1` release asset. Optional polish: fill the WNewCrew opening hold; re-time the v2 CLICKS.
+Upload package built (see above). Still open before publishing: paste the previous-video URL and the beta link into
+the description and pinned comment; upload the `episodes-v1` release asset; a 1080p derivative if wanted.
+Optional polish: hide the bottom bar during the logo intro; give WWhy a second beat; re-time the v2 CLICKS.
