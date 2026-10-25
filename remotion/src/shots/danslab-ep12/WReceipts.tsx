@@ -35,9 +35,10 @@ const WReceipts: React.FC = () => {
           </div>
         ))}
       </div>
-      {/* one stamp for all five — never over the amounts/blocks (they are the evidence) */}
-      <div style={{ position: 'absolute', top: 172, left: 1250 }}>
-        <Stamp at={CTRL} size={28} rot={-4}>ALL FIVE: TEST — NOT REVENUE</Stamp>
+      {/* one stamp for all five — never over the amounts/blocks (they are the evidence). Placed so the 1.6× slam
+          (Stamp's spring start) stays inside the frame and above the first row: centre x≈1420, ≤1880 at 1.6×. */}
+      <div style={{ position: 'absolute', top: 176, left: 1150 }}>
+        <Stamp at={CTRL} size={24} rot={-4}>ALL FIVE: TEST — NOT REVENUE</Stamp>
       </div>
       <div style={{ position: 'absolute', top: 730, left: 120, ...rise(at('dol19', 'counter')), fontFamily: DL_SANS, fontSize: 34, color: DL.text }}>
         Why the counter didn't move: <span style={{ color: DL.red }}>every one was paid by us.</span>
