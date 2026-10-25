@@ -1,9 +1,11 @@
 import React from 'react';
-import { Stage, Title, Note, usePop, DL, DL_MONO, DL_SANS } from '../../lib/ep12kit';
+import { Stage, Title, Note, usePop, useRise, DL, DL_MONO, DL_SANS } from '../../lib/ep12kit';
 import { at, voAt } from '../../lib/ep12timing.gen';
 
 // CH0 · what changed. VO dol05: Dan's workbench today — each card lands ON its spoken name.
 // Names only: roles are not claimed beyond what the VO says (Dan, 2026-10-14).
+// The VO's opening line ("in the LAST few months, AI moved FASTER than this channel could film it") lands in two
+// parts so the title never holds alone for more than ~2.5 s before the workbench (RUBRIC 2026-10-25).
 export const compositionConfig = { id: 'WNewCrew', durationInSeconds: 21, fps: 30, width: 1920, height: 1080 };
 
 const TOOLS: [string, string][] = [
@@ -13,11 +15,16 @@ const TOOLS: [string, string][] = [
 
 const WNewCrew: React.FC = () => {
   const pop = usePop();
+  const rise = useRise();
   return (
     <Stage label="WHAT CHANGED">
       <div style={{ position: 'absolute', top: 150, left: 120, width: 1600 }}>
         <Title at={voAt('dol05')}>Before the money — <span style={{ color: DL.gold, fontStyle: 'italic' }}>what changed.</span></Title>
-        <div style={{ marginTop: 18, fontFamily: DL_MONO, fontSize: 26, letterSpacing: 3, color: DL.dim, ...pop(at('dol05', 'workbench'), 0.9) }}>
+        <div style={{ marginTop: 12, fontFamily: DL_SANS, fontSize: 34, color: DL.dim }}>
+          <span style={{ display: 'inline-block', ...rise(at('dol05', 'last')) }}>In the last few months,&nbsp;</span>
+          <span style={{ display: 'inline-block', color: DL.text, ...rise(at('dol05', 'faster')) }}>AI moved faster than this channel could film it.</span>
+        </div>
+        <div style={{ marginTop: 16, fontFamily: DL_MONO, fontSize: 26, letterSpacing: 3, color: DL.dim, ...pop(at('dol05', 'workbench'), 0.9) }}>
           DAN'S WORKBENCH · OCTOBER 2026
         </div>
       </div>
