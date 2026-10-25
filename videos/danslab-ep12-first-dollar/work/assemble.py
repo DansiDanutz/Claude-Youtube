@@ -16,7 +16,7 @@ TAG = "4k" if "--tag" in sys.argv and sys.argv[sys.argv.index("--tag") + 1] == "
 
 # (shotId | ("CLIP", path), [(voId, offset_in_shot_s), ...])
 ORDER = [
-    # Offsets are placeholders — set from ffprobe of the real wavs once voiced. dol23: ONLY the true branch.
+    # v3 (Dan 2026-10-24): one unconditional ending. Offsets below are overwritten from timing.json (real wavs).
     ("WDollar",      [("dol01", 0.7), ("dol02", 12.5), ("dol03", 21.0)]),
     ("WIntro",       []),
     ("WStakes",      [("dol04", 0.7)]),
@@ -37,8 +37,8 @@ ORDER = [
     ("WReceipts",    [("dol19", 0.7)]),
     ("WAudit",       [("dol20", 0.7)]),
     ("WMoment",      [("dol21", 0.7)]),
-    ("WOffer",       [("dol22", 0.7)]),
-    ("WLands",       [("dol23a", 0.7)]),   # or ("WFails", [("dol23b", 0.7)]) — whichever really happened
+    ("WLive",        [("dol22", 0.7)]),
+    ("WCounter",     [("dol23", 0.7)]),
     ("WHuman",       [("dol24", 0.7)]),
     ("WNext",        [("dol25", 0.7)]),
     ("WOutro",       [("dol26", 0.6)]),
@@ -47,8 +47,12 @@ ORDER = [
 # VO offsets come from the single timing source (work/build_timing.py → timing.json), the same one the shots use
 _TJ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "timing.json")
 if os.path.exists(_TJ):
-    _T = json.load(open(_TJ))["vo"]
+    _TJD = json.load(open(_TJ))
+    _T = _TJD["vo"]
     ORDER = [(s, [(v, _T[v]["off"]) for v, _ in vos]) for s, vos in ORDER]
+    # the cut must match the timing source the shots were built from — fail loudly on drift
+    if [s for s, _ in ORDER] != list(_TJD["shots"]):
+        raise SystemExit("assemble.ORDER != timing.json shots — update ORDER to match build_timing.PLAN")
 
 def dur(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -114,8 +118,8 @@ print(f"voice.wav {dur(f'{WORK}/mix/voice.wav'):.1f}s (target {TOTAL:.1f}s)")
 
 # SFX — whoosh on scene cuts, impacts on the slams, chime on the lock + end card
 SFX = os.path.expanduser("~/Projects/Claude-Youtube/media/library/sfx/clips")
-IMPACT = ("WDollar", "WLands", "WFails")
-CHIME = ("WOutro", "WLands")
+IMPACT = ("WDollar",)
+CHIME = ("WOutro",)   # v3: no win chime anywhere near the LIVE TEST — a test is not revenue
 sfx_events = []  # (time, file, vol)
 for i, (s, _) in enumerate(ORDER):
     if i == 0 or isinstance(s, tuple):
@@ -128,8 +132,8 @@ for i, (s, _) in enumerate(ORDER):
         sfx_events.append((starts[i], f"{SFX}/whoosh-wind.mp3", 0.42))
     else:
         sfx_events.append((starts[i], f"{SFX}/whoosh-soft.mp3", 0.3))
-slam159_at = starts[[s for s, _ in ORDER].index("WLands" if "WLands" in [x for x, _ in ORDER] else "WFails")]
-sfx_events.append((max(0, slam159_at - 3.0), f"{SFX}/riser-soft.mp3", 0.45))
+live_at = starts[[s for s, _ in ORDER].index("WLive")]   # one riser into the live test
+sfx_events.append((max(0, live_at - 3.0), f"{SFX}/riser-soft.mp3", 0.45))
 # intro sound design: ticking under the payroll record, riser into the title stamp
 sfx_events.append((0.6, f"{SFX}/clock-tick-soft.mp3", 0.35))
 sfx_events.append((5.0, f"{SFX}/riser-soft.mp3", 0.4))
@@ -162,14 +166,18 @@ CLICKS = [
     ("WHonestDeps", 4.0, "ui-click-soft", .28), ("WHonestDeps", 7.0, "ui-click-soft", .28), ("WHonestDeps", 12.0, "chess-piece-thock", .4),
     ("WSetup", 6.0, "ui-click-soft", .3), ("WSetup", 9.0, "warm-shimmer", .3), ("WSetup", 15.0, "ui-toggle-on", .34),
     ("WScan", 5.0, "ui-toggle-on", .32), ("WScan", 11.0, "ui-toggle-on", .32), ("WScan", 16.0, "ui-toggle-on", .34),
-    ("WReceipts", 6.0, "stamp-hit", .4), ("WReceipts", 9.0, "stamp-hit", .4), ("WReceipts", 13.0, "stamp-hit", .42), ("WReceipts", 18.0, "trap-snap", .38),
+    # v3 entries below are timed to the real word cues (verify/words + 0.7 s line offset), not placements
+    ("WReceipts", 5.4, "ui-click-soft", .32), ("WReceipts", 6.6, "stamp-hit", .38), ("WReceipts", 6.9, "stamp-hit", .36),
+    ("WReceipts", 10.5, "stamp-hit", .4), ("WReceipts", 15.5, "stamp-hit", .42), ("WReceipts", 24.0, "trap-snap", .38),
     ("WAudit", 8.0, "ui-click-soft", .3), ("WAudit", 14.0, "piano-a-min", .3),
-    ("WMoment", 4.0, "ui-toggle-on", .3), ("WMoment", 5.5, "ui-toggle-on", .3), ("WMoment", 7.0, "ui-toggle-on", .3), ("WMoment", 12.0, "piano-a-min", .32),
-    ("WOffer", 3.0, "pop-reveal", .38),
-    ("WLands", 2.0, "riser-soft", .4), ("WLands", 3.0, "warm-shimmer", .4), ("WLands", 3.2, "chime-reward", .42),
-    ("WFails", 2.0, "glitch-zap", .4), ("WFails", 3.0, "trap-snap", .4),
+    ("WMoment", 2.4, "ui-toggle-on", .3), ("WMoment", 3.7, "ui-toggle-on", .3), ("WMoment", 4.7, "ui-toggle-on", .3),
+    ("WMoment", 6.4, "ui-toggle-on", .3), ("WMoment", 9.5, "piano-a-min", .3), ("WMoment", 15.7, "chess-piece-thock", .38),
+    ("WLive", 7.4, "pop-reveal", .36), ("WLive", 10.0, "ui-toggle-on", .3), ("WLive", 12.3, "stamp-hit", .4),
+    ("WLive", 17.2, "ui-toggle-on", .32), ("WLive", 23.7, "ui-toggle-on", .34),
+    ("WCounter", 1.2, "ui-click-soft", .3), ("WCounter", 2.4, "trap-snap", .34), ("WCounter", 9.5, "ui-toggle-on", .3),
+    ("WCounter", 10.7, "ui-toggle-on", .3), ("WCounter", 14.3, "piano-a-min", .32), ("WCounter", 17.1, "pop-reveal", .36),
     ("WHuman", 6.7, "ui-click-soft", .28), ("WHuman", 14.3, "stamp-hit", .4),
-    ("WNext", 8.7, "pop-reveal", .38),
+    ("WNext", 5.0, "pop-reveal", .38), ("WNext", 16.0, "ui-click-soft", .3),
     ("WOutro", 7.5, "ui-toggle-on", .4), ("WOutro", 11.5, "chess-piece-thock", .45), ("WOutro", 12.5, "chess-piece-thock", .45), ("WOutro", 13.5, "chess-piece-thock", .45),
 ]
 sidx = {sh: i for i, (sh, _) in enumerate(ORDER) if not isinstance(sh, tuple)}

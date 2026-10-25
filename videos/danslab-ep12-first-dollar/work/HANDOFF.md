@@ -94,8 +94,11 @@ certification run is missing. v2 kept at `work/rejected/SCRIPT.v2-2026-10-15.md`
   certification run pending"), WNext updated. WOffer/WLands/WFails removed. Cut **526.6 s (8:47)**. tsc clean.
   Stills QA read: WLive, WCounter, WReceipts, WMoment, WAudit, WNext, WHud — fixed a stamp under the rail steps and
   two orphaned words. Media: `media/projects/danslab-ep12/dan-kucoin-withdrawal-9usdc-2026-10-24.jpg`.
-- **Still to do before render:** assemble.py ORDER/CLICKS/chapters and mux_chunked.py SEGS/CHAPTERS still name
-  WOffer/WLands/WFails and dol23a/b — remap to WLive/WCounter/dol23 (read `timing.json`, which no longer has
-  "branch"). Listen: dol22 ("ours" heard as "hours"), dol23 ("A company"). WNext's pre-existing "worth it." wrap.
+- **Remapped 2026-10-25:** assemble.py ORDER uses WLive/WCounter/dol23 and refuses to run if it drifts from
+  `timing.json`; no win chime/impact near the live test (one riser into WLive); CLICKS for WReceipts, WMoment, WLive,
+  WCounter and WNext are timed to the real word cues. mux_chunked.py reads SEGS from `timing.json`. Checked: ORDER ==
+  timing shots, every VO timed, every CLICK inside its shot, every SFX file present. Nothing rendered yet.
+- **Still to do before render:** listen to dol22 ("ours" heard as "hours") and dol23 ("A company"); WNext's
+  pre-existing "worth it." wrap; then the 4K render (ffprobe every width == 3840) → assemble --no-mux → mux.
 - **Captures needed from Dan:** KuCoin withdrawal screen (have it), PAYMENT CONFIRMED screen, the nervixpay.live
   Fake or Real checkout page.

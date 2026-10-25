@@ -29,7 +29,8 @@ TOTAL = dur(VID)
 # fades at chapter starts, computed from the concat's actual segment durations
 import json as _json
 CHAPTERS = ["WStakes", "WNewCrew", "WTurn", "WOwnRail", "WStable", "WSetup", "WReceipts", "WMoment", "WHuman", "WOutro"]
-SEGS = ["WDollar", "WIntro", "WStakes", "WNewCrew", "WRebuilt", "WWhy", "WTurn", "WLandlord", "WOwnRail", "WInstant", "WForYou", "WStable", "WNoBank", "WAgentMoney", "WHonestDeps", "WSetup", "WScan", "WReceipts", "WAudit", "WMoment", "WOffer", "WLands", "WHuman", "WNext", "WOutro"]  # swap WLands→WFails to match assemble.ORDER
+# the cut comes from the single timing source (build_timing.py → timing.json), so it can't drift from the shots
+SEGS = list(_json.load(open(os.path.join(WORK, "timing.json")))["shots"])
 _starts, _t = {}, 0.0
 for _s in SEGS:
     _starts[_s] = _t
