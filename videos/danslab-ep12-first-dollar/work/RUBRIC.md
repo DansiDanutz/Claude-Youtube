@@ -23,7 +23,7 @@ QA evidence:
   "faster". Re-rendered 4K (3840×2160, 630 frames), reassembled, re-muxed with --force, delivery pass re-run
   (−14.0 LUFS / −2.4 dBTP, 15,837 frames, pts gaps 0). Checked in the delivery file at 53.5 / 55.8 / 57.5 s.
 - **Upload package 2026-10-25:** `~/Desktop/claudeYouTube/danslab-episode-12-first-dollar/` — `youtube-upload.mp4`
-  (byte-identical to the delivery file, SHA-256 da346ae6…c646, full decode clean), `youtube-metadata.md` (chapters
+  (byte-identical to the 4K delivery file, SHA-256 15c33331…d4c0 after the masked rebuild below, full decode clean), `youtube-metadata.md` (chapters
   from the rendered shot starts; placeholders for the previous-video URL and the beta link),
   `danslab-first-dollar-thumbnail.jpg` (1280×720, from the `WThumb` composition — no paid image model).
 
@@ -38,6 +38,12 @@ QA evidence:
 
 **Total: 26/30 → A** (S = 28+, A = 24–27 per the design system; this file's gate is ≥ 25). Was 25 before the delivery pass.
 
+- **Masked rebuild 2026-10-25:** before the public push, the KuCoin capture in the repo was replaced (history rewritten
+  on the unpushed commits) by a copy with the status bar, full address and full txid filled; WLive re-rendered from it
+  (3840×2160, 945 frames); 4K master re-muxed with --force; 1080p master derived from it in 110 s chunks (Lanczos,
+  CFR 30, audio stream-copied). Both delivery files re-verified: −14.0 LUFS / −2.4 dBTP, 15,837 frames, 527.915 s,
+  pts gaps 0, faststart, full decode clean — 4K 124 MB, 1080p 53 MB (`delivery/…-1080P-v1.mp4`).
+
 Upload package built (see above). Still open before publishing: paste the previous-video URL and the beta link into
-the description and pinned comment; upload the `episodes-v1` release asset; a 1080p derivative if wanted.
+the description and pinned comment; upload the `episodes-v1` release asset (4K + 1080p delivery files).
 Optional polish: hide the bottom bar during the logo intro; give WWhy a second beat; re-time the v2 CLICKS.
