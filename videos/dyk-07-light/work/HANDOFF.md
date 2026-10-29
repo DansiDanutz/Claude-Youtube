@@ -81,3 +81,6 @@ Branch `feat/dyk-07-light` (cut from `feat/dyk-06-medicine`, which is not merged
   joins silent (rms ≤ 1) · stills audit/sheet-recut.png · master 9:40.2, qa_final PASS (A/V 33 ms, 0 pts gaps, −14.1 LUFS, TP −2.3).
   Pre-flight: new pace flag lt01-cold c2 2.36 w/s = the approved "We didn't… disappearing." audio measured alone; waived by David after watching the recut opening (2026-10-29).
   Chapters (for YOUTUBE.md): 0:00 cold open · 0:34 1500 · 1:49 1807 · 2:46 1859 · 3:51 1882 · 4:53 1993 · 5:48 today · 6:44 answer · 7:30 2100 · 8:29 outro.
+- Packaging (2026-10-29): `packaging/` title "Why Is Light Pollution Bad? The History of Light (1500–2100)" (60, autocomplete-checked),
+  keyword-first description (3,503 chars), tags 390, thumbnail = the live-series Light thumbnail from the VidNinjas kit (04:44 version).
+  packaging_check PASS (`audit/PACKAGING-CHECK.md`). Copied with the master to `~/Downloads/DYK-07-Light/`. Not committed. Upload waits for David.
