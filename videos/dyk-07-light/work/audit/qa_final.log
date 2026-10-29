@@ -1,0 +1,7 @@
+stream {'codec_name': 'h264', 'codec_type': 'video', 'width': 1920, 'height': 1080, 'r_frame_rate': '30/1', 'duration': '622.000000'}
+stream {'codec_name': 'aac', 'codec_type': 'audio', 'sample_rate': '48000', 'channels': 2, 'r_frame_rate': '0/0', 'duration': '622.000000'}
+duration video 622.000s audio 622.000s diff 0 ms
+video packets 18660, pts gaps > 50 ms: 0
+loudness -14.1 LUFS | true peak -2.4 dBFS
+sweep: 28 frames -> audit/qa_final
+QA PASS

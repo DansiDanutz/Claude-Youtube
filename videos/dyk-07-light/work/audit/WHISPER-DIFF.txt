@@ -1,0 +1,62 @@
+WHISPER DIFF: PASS
+
+== lt01-hook  ratio 0.951
+   accepted number  '#103 thousandth' heard as '#1 #3000'
+   diff ('replace', '#103 thousandth', '#1 #3000')
+   LISTEN   low-p   [('3', 0.09)]
+== lt02-question  ratio 1.000
+== lt00-welcome  ratio 1.000
+== lt03-promise  ratio 0.980
+   diff ('replace', 'costs', 'cost')
+   LISTEN   low-p   [('six', 0.32)]
+== lt04-1500  ratio 0.963
+   LISTEN   listen  'rushlight' heard as 'rush light'
+   diff ('replace', 'rushlight', 'rush light')
+   diff ('replace', 'it lasts', 'at last')
+   diff ('replace', 'beeswax is', 'bees waxes')
+   diff ('replace', 'in', 'an')
+   diff ('replace', 'wins', 'winds')
+   LISTEN   low-p   [('1', 0.33), ('So', 0.22), ('An', 0.24), ('and', 0.3), ('In', 0.26), ('then', 0.18)]
+== lt05-1807  ratio 0.962
+   accepted number  '#18 oh #7' heard as '#1807'
+   LISTEN   listen  'pall' heard as 'paul'
+   LISTEN   listen  'frederick winsor' heard as 'fredricich windsor'
+   LISTEN   listen  'coke' heard as 'co'
+   diff ('replace', '#18 oh #7', '#1807')
+   diff ('replace', 'pall', 'paul')
+   diff ('replace', 'frederick winsor', 'fredricich windsor')
+   diff ('replace', 'coke', 'co')
+   LISTEN   low-p   [('Fredricich', 0.32), ('Burns', 0.3)]
+== lt06-1859  ratio 0.982
+   LISTEN   listen  'gesner' heard as 'gezzner'
+   diff ('replace', 'whalers', 'whaler')
+   diff ('replace', 'gesner', 'gezzner')
+   diff ('replace', 'sew', 'sow')
+   LISTEN   low-p   [('A', 0.17)]
+== lt07-1882  ratio 0.988
+   diff ('replace', 'fourth', '#4')
+   diff ('replace', 'colour', 'color')
+   LISTEN   low-p   [('JP', 0.26), ('about', 0.28)]
+== lt08-1993  ratio 0.993
+   diff ('replace', 'colour', 'color')
+   LISTEN   low-p   [('Very', 0.09)]
+== lt09-today  ratio 0.977
+   diff ('replace', 'streetlights', 'street lights')
+   diff ('replace', 'in', 'and')
+   diff ('replace', 'in', 'an')
+   LISTEN   low-p   [('In', 0.26)]
+== lt10-reveal  ratio 0.992
+   diff ('replace', 'our', 'hour')
+   LISTEN   low-p   [('then', 0.12)]
+== lt11-2100  ratio 0.989
+   LISTEN   listen  'france has' heard as 'francis'
+   diff ('replace', 'france has', 'francis')
+   LISTEN   low-p   [('something', 0.06), ('in', 0.29)]
+== lt12-close  ratio 1.000
+== lt13-outro  ratio 0.946
+   diff ('replace', 'streetlights or', 'street lights are')
+   diff ('replace', 'dex tee dot live', 'dextelive')
+   diff ('replace', 'the', 'a')
+== lt13b-next  ratio 0.969
+   diff ('replace', 'weight', 'wait')
+== lt14-endscreen  ratio 1.000

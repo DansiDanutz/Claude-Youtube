@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No. 07 Light audit</title>
+<style>
+  :root { --bg:#fbfaf7; --ink:#20261f; --soft:#55604f; --line:#d9d8cd; --card:#ffffff;
+    --crit:#b3261e; --high:#a05a12; --med:#8a6d00; --low:#5c675e; --go:#1e6f4c; --go-bg:#e4efe7; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#15171a; --ink:#e8e8e2; --soft:#a9b0a6; --line:#33373a; --card:#1d2023; --go-bg:#1d3328; } }
+  :root[data-theme="dark"] { --bg:#15171a; --ink:#e8e8e2; --soft:#a9b0a6; --line:#33373a; --card:#1d2023; --go-bg:#1d3328; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:1100px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; } h2 { font-size:20px; margin:36px 0 10px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+  .sub { color:var(--soft); margin:0 0 20px; }
+  .verdict { background:var(--go-bg); border-left:4px solid var(--go); padding:12px 16px; border-radius:6px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:16px 0; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+  .stat b { display:block; font-size:22px; } .stat span { color:var(--soft); font-size:13px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); font-size:14px; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--soft); }
+  .sev { font-weight:700; font-size:12px; } .H { color:var(--high); } .M { color:var(--med); } .L { color:var(--low); } .C { color:var(--crit); }
+  .ok { color:var(--go); font-weight:600; } .open { color:var(--soft); font-weight:600; }
+  .wrap { overflow-x:auto; }
+  figure { margin:12px 0; } figure img { width:100%; height:auto; border:1px solid var(--line); border-radius:6px; }
+  figcaption { color:var(--soft); font-size:13px; }
+  code { font-family: ui-monospace, Menlo, monospace; font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Did You Know That? No. 07 · “Light”: audit</h1>
+<p class="sub">2026-10-29 · master <code>dyk-07-light-1080P.mp4</code> · 10:22.0 · 1080p30 · branch <code>feat/dyk-07-light</code> (not committed)</p>
+
+<p class="verdict"><b>Verdict: ready for David's watch.</b> 0 CRITICAL, 0 HIGH and 0 MEDIUM open. Every CRITICAL, HIGH and MEDIUM finding is fixed and was re-checked on the rebuilt master. 7 accepted LOW items remain. Rubric 26/30 (A−). Not uploaded, nothing public.</p>
+
+<div class="grid">
+  <div class="stat"><b>0 / 0 / 0</b><span>CRITICAL / HIGH / MEDIUM open</span></div>
+  <div class="stat"><b>5 / 5</b><span>HIGH + MEDIUM + timing fixed</span></div>
+  <div class="stat"><b>7</b><span>LOW accepted (open)</span></div>
+  <div class="stat"><b>PASS</b><span>qa_final: A/V 0 ms, 0 gaps</span></div>
+  <div class="stat"><b>−14.1</b><span>LUFS · true peak −2.4 dBTP</span></div>
+  <div class="stat"><b>623 / 0</b><span>BEATMAP rows / gaps ≥ 2 s</span></div>
+</div>
+
+<h2>How it was audited</h2>
+<table>
+<tr><th>Pass</th><th>What</th><th>Result</th></tr>
+<tr><td>Voice</td><td>Whisper round-trip on every take, voice pre-flight (pace, drag, run-ons, SFX on words), David's listen of full passages</td><td class="ok">PASS · 5 pre-flight items waived by David by ear</td></tr>
+<tr><td>Build gates</td><td><code>tsc</code>, <code>check_cues.py</code> (every cue resolves to a word), <code>make_beatmap.py</code></td><td class="ok">0 errors · all cues resolve · 0 gaps</td></tr>
+<tr><td>Stills</td><td>121 stills at the cue frames of all 15 shots, viewed on 8 contact sheets before the render</td><td>2 HIGH found → fixed</td></tr>
+<tr><td>Frames</td><td>2 independent read-only auditors, the full master sampled every 2 s (26 sheets), against the per-second transcript, RESEARCH L1–L18 and the shot brief</td><td>0 C · 1 H · 1 M · 15 L → H and M fixed</td></tr>
+<tr><td>Mix</td><td>Cuesheet check: DYK click before “Did”, chime after “that” (7 cards), click density, end-screen stack</td><td class="ok">all 7 correct · ≤ 3 clicks/s · 4 spaced cues</td></tr>
+<tr><td>Master</td><td><code>qa_final.py</code>, <code>qa_sweep.py</code> after the last re-render</td><td class="ok">PASS · loudness flags none</td></tr>
+</table>
+
+<h2>Findings</h2>
+<div class="wrap"><table>
+<tr><th>#</th><th>Sev</th><th>Where</th><th>Finding</th><th>Fix</th><th>Status</th></tr>
+<tr><td>1</td><td class="sev H">HIGH</td><td>2100 · 8:33</td><td>France card: the decree source line printed over “SHOP WINDOWS”.</td><td>Source moved to the empty top-right of the card.</td><td class="ok">fixed · checked in mp4</td></tr>
+<tr><td>2</td><td class="sev H">HIGH</td><td>2100 · 8:36</td><td>Tucson card: “TO KEEP THE SKY DARK” wrapped and its source line overlapped “DARK”.</td><td>Text column 400 → 470 px, card 300 → 330 px.</td><td class="ok">fixed · checked in mp4</td></tr>
+<tr><td>3</td><td class="sev H">HIGH</td><td>1882 · 5:34</td><td>“NOBODY CAN MAKE” touched the HOW WE SAW IT ladder (auditor 1).</td><td>Colour group re-laid (swatch 120 px, labels 28 px); ~70 px clear of the ladder, ~40 px clear of “MOST OF ITS POWER”.</td><td class="ok">fixed · checked in master at 334 s</td></tr>
+<tr><td>4</td><td class="sev M">MEDIUM</td><td>1500 · 2:18</td><td>“THE PRICE BARELY MOVED” stamp ended ~60 px from the right edge (margin 160).</td><td>Bar 1100 → 1000 px, stamp moved left and 30 → 26 px.</td><td class="ok">fixed · checked in master at 138 s</td></tr>
+<tr><td>5</td><td class="sev M">MEDIUM</td><td>Hook · 0:16</td><td>TONIGHT label arrived 0.37 s after “tonight,” (held behind the 1.5 s “We didn't.” rule).</td><td>“We didn't.” holds 1 s alone then docks (stays legible); house layer fades in on the word; whoosh moved.</td><td class="ok">fixed · still 497</td></tr>
+<tr><td>6</td><td class="sev M">MEDIUM</td><td>1807 · 2:39</td><td>“A ROW OF POSTS” legible 1.43 s before the DYK card covered it (rule ≥ 1.5 s).</td><td>+0.4 s pause after “posts.” (no re-voice) → 1.83 s.</td><td class="ok">fixed · still 306</td></tr>
+<tr><td>7</td><td class="sev L">LOW</td><td>1500 · 1:52</td><td>Source line said “beeswax cost several times more” ~4 s before “Beeswax”.</td><td>That clause now appears on “Beeswax”.</td><td class="ok">fixed</td></tr>
+<tr><td>8</td><td class="sev L">LOW</td><td>all eras</td><td>NEXT ▸ year chip shows with the cliffhanger band, before the year is spoken.</td><td>Series convention (Nos. 01–06).</td><td class="open">accepted</td></tr>
+<tr><td>9</td><td class="sev L">LOW</td><td>1882 · 5:26</td><td>Cliffhanger part “…into heat.” shows ~3 s before “heat”.</td><td>Skill rule: band parts land on their first word.</td><td class="open">accepted</td></tr>
+<tr><td>10</td><td class="sev L">LOW</td><td>1859 · 4:16; 1500 · 1:28</td><td>Near-static beats (lamp; curfew card) up to 4 s.</td><td>Flame/star motion continues; no gap ≥ 2 s in BEATMAP.</td><td class="open">accepted</td></tr>
+<tr><td>11</td><td class="sev L">LOW</td><td>Today · 6:40</td><td>Scene fragments visible at the DYK card's edges.</td><td>—</td><td class="open">open</td></tr>
+<tr><td>12</td><td class="sev L">LOW</td><td>1993 · 5:38</td><td>“Tokushima, Shikoku” touches a shelf prop.</td><td>—</td><td class="open">open</td></tr>
+<tr><td>13</td><td class="sev L">LOW</td><td>7:26</td><td>One dark frame at the Today → Answer cut.</td><td>Deliberate beat before THE ANSWER.</td><td class="open">accepted</td></tr>
+<tr><td>14</td><td class="sev L">LOW</td><td>1882 · 4:24</td><td>“A LIQUID” rung possibly 1–2 s after the word (2 s sampling).</td><td>Not frame-checked.</td><td class="open">open</td></tr>
+</table></div>
+<p class="sub">Auditor items checked and not counted: 1500/1807/1993 headers looking cut off (an artefact of the contact-sheet label box; full frames are intact); ~1 s leads at 0:46/0:50 (within 2 s sampling; chips are keyed to their words); the Shikoku outline under the table (intended, “island” beat); “07” arriving just after “seven” (correct order).</p>
+
+<h2>Evidence</h2>
+<figure><img src="sheet-fix.png" alt="Hook and 1807 stills after the timing fixes"><figcaption>Hook frames 484/497/502/525 (“We didn't.” docks, TONIGHT on its word) and 1807 frames 290/306 (A ROW OF POSTS still up before the card).</figcaption></figure>
+<figure><img src="verify2100.png" alt="2100 evidence cards after the fix"><figcaption>2100 from the re-rendered mp4: France source top-right, Tucson on one line, nothing overlaps.</figcaption></figure>
+<figure><img src="verify-r2.png" alt="Master frames at 138 s and 334 s"><figcaption>Rebuilt master at 138 s (stamp inside the margin) and 334 s (NOBODY CAN MAKE clear of the ladder).</figcaption></figure>
+
+<h2>Verification of the final master</h2>
+<table>
+<tr><th>Check</th><th>Result</th></tr>
+<tr><td>Duration</td><td>video 622.000 s · audio 622.000 s · diff 0 ms</td></tr>
+<tr><td>Frames</td><td>18,660 packets, 0 pts gaps &gt; 50 ms, 1920×1080 h264 30 fps</td></tr>
+<tr><td>Loudness</td><td>−14.1 LUFS, true peak −2.4 dBTP (limit −1), sweep flags none</td></tr>
+<tr><td>SFX</td><td>664 cues in 19 groups; pre-flight: none on a word onset</td></tr>
+<tr><td>Facts</td><td>every on-screen number traced to RESEARCH L1–L18 by both auditors</td></tr>
+</table>
+
+<h2>Not verified / next</h2>
+<ul>
+  <li>David's full watch and listen of the master (the real gate).</li>
+  <li>Frame-exact timing between 2 s samples; LOW items 11, 12 and 14 are not fixed.</li>
+  <li>Packaging (thumbnail, YOUTUBE.md, <code>packaging_check.py</code>) not started.</li>
+  <li>Deployment checks: not applicable yet. Nothing is uploaded, and Dexty.live and YouTube are untouched. Upload waits for David and the numbered order (07 first).</li>
+  <li>Nothing committed; the branch is <code>feat/dyk-07-light</code> on top of the unmerged No. 06 branch.</li>
+</ul>
+</main>
+</body>
+</html>
