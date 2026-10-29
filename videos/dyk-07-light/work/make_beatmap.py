@@ -11,8 +11,7 @@ import build_final as B  # noqa: E402  (pure timing; main() is not run)
 GAP_S = 2.0   # v2 skill gate: no static ≥ 2 s while Brian talks — every narrated 2 s gets a visual event
 # continuous motion that carries the picture between discrete events (checked on stills)
 MOTION = {
-    'LtWelcome': 'logo glow, lockup docking, guess card building, ten people popping', 'LtIntro': 'sting (fixed)',
-    'LtHook': 'candle flicker, price line falling, stars thinning', 'LtPromise': 'chips building, mornings popping, dawn glow',
+    'LtHook': 'candle flicker, price line falling, house window glow, guess card building, ten people popping, brand flash',
     'Lt1500': 'dusk darkening, bell swinging, rushlight and tallow flicker, price pills', 'Lt1807': 'gas lamps igniting along the street, gas flowing in the pipe',
     'Lt1859': 'derrick pumping, oil rising, kerosene flame, whale', 'Lt1882': 'street bustle, generator turning, blocks of bulbs lighting, meter needle',
     'Lt1993': 'chip glow pulsing blue, blue + yellow mixing to white', 'LtToday': 'window lights twinkling, skyglow rising, stars thinning',

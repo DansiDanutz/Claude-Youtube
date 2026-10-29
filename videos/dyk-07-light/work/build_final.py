@@ -36,7 +36,7 @@ SFX_GROUP = 35
 VOICE_GAIN_DB = {'lt13c-signoff': -4.0, 'lt14-endscreen': -2.5}
 FPS = 30
 MIN_TAIL_S = 0.5           # a voice line must end at least this long before its shot cuts
-SHOT_ORDER = ['LtHook', 'LtIntro', 'LtWelcome', 'LtPromise', 'Lt1500', 'Lt1807', 'Lt1859', 'Lt1882',
+SHOT_ORDER = ['LtHook', 'Lt1500', 'Lt1807', 'Lt1859', 'Lt1882',
               'Lt1993', 'LtToday', 'LtReveal', 'Lt2100', 'LtClose', 'LtOutro']
 
 _TL = json.load(open(os.path.join(WORK, 'timeline.json')))

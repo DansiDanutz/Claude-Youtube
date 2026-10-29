@@ -4,6 +4,8 @@ A scene with a `pauses` block uses insert_pauses.py's output (shifted words + lo
 the SFX cues and timeline.json all follow the breaths."""
 import json, os, wave
 
+import splice_coldopen
+
 WORK = os.path.dirname(os.path.abspath(__file__))
 NARR = os.path.join(WORK, 'narration')
 MIX = os.path.join(WORK, 'mix')
@@ -41,6 +43,7 @@ def main():
     script = json.load(open(os.path.join(NARR, 'script.json')))
     durations = json.load(open(os.path.join(NARR, 'durations.json')))
     vo = {sc['id']: scene_vo(sc, durations) for sc in script['scenes']}
+    vo.update(splice_coldopen.build(vo))   # the recut cold open, cut from the paused takes above
     json.dump(vo, open(DEST, 'w'), separators=(',', ':'))
     # make_timeline.py reads durations.json: keep it in step with the paused takes
     json.dump({**durations, **{k: v['dur'] for k, v in vo.items()}}, open(os.path.join(NARR, 'durations.json'), 'w'), indent=2)

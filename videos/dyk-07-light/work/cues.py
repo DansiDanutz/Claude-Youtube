@@ -60,7 +60,7 @@ for scene in ERA_VO:
 
 
 # ── per-shot parts (v2)
-PART_ORDER = ['LtHook', 'LtIntro', 'LtWelcome', 'LtPromise', 'Lt1500', 'Lt1807', 'Lt1859', 'Lt1882',
+PART_ORDER = ['LtHook', 'Lt1500', 'Lt1807', 'Lt1859', 'Lt1882',
               'Lt1993', 'LtToday', 'LtReveal', 'Lt2100', 'LtClose', 'LtOutro']
 _PARTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cue_parts')
 for _shot in PART_ORDER:

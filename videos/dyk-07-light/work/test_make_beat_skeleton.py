@@ -5,8 +5,9 @@ import make_beat_skeleton as m
 def test_words_in_a_shared_boundary_second_are_kept():
     table, _ = m.rows()
     by_sec = {sec: (shot, said) for sec, shot, said in table}
-    assert "Six" in by_sec[57][1].split(), by_sec[57]
-    assert "Here's" in by_sec[446][1].split(), by_sec[446]
+    # recut 2026-10-29 timeline: 1882's first word and the outro's first word both fall in a shared second
+    assert "You" in by_sec[231][1].split(), by_sec[231]
+    assert "This" in by_sec[509][1].split(), by_sec[509]
 
 
 def test_one_row_per_second_and_every_spoken_word_kept():
@@ -19,4 +20,4 @@ def test_one_row_per_second_and_every_spoken_word_kept():
 
 def test_a_shared_second_names_both_shots():
     table, _ = m.rows()
-    assert dict((sec, shot) for sec, shot, _ in table)[57] == "LtWelcome / LtPromise"
+    assert dict((sec, shot) for sec, shot, _ in table)[34] == "LtHook / Lt1500"

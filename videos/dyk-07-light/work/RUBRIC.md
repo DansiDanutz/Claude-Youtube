@@ -28,3 +28,8 @@ All CRITICAL/HIGH/MEDIUM fixed and re-verified on master frames (138 s, 334 s) a
 - Near-static beats: lamp 4:16–4:20, curfew card 1:28–1:30 (≤ 4 s, motion continues in flame/stars).
 - One dark frame at the Today → Answer cut (7:26), the deliberate beat before THE ANSWER.
 - Builder note: Lt1993 shows "Nobel Prize 2014", which Brian does not say (sourced, L12).
+
+## Recut (2026-10-29, Option B)
+- Opening cut to the VidNinjas pre-roll rule: 89 words / 34.6 s before 1500 (was 190 words / 77 s). Master 9:40.2, qa_final PASS.
+- Not re-scored by independent auditors; the cold-open stills (audit/sheet-recut.png) and master frames at the 1500 cut (audit/verify-recut.png) were checked by me.
+- lt01-cold c2 pace flag waived by David after watching the recut opening. Open: the brand flash wordmark is fully legible only ~0.6 s (a logo mnemonic, not a caption).

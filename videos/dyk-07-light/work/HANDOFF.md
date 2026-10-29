@@ -71,3 +71,13 @@ Branch `feat/dyk-07-light` (cut from `feat/dyk-06-medicine`, which is not merged
 - Committed as 8ef1c48, PR DansiDanutz/Claude-Youtube#28 (stacked on #26).
 - Round 2 LOW fixes (2026-10-29): LtToday window fades under the DYK card (no edge fragments); Lt1993 lab props +120 px (clear of the place line).
   A LIQUID chip (Lt1859) frame-checked on the master: on time. Re-rendered LtToday/Lt1993, master rebuilt, qa_final PASS. RUBRIC A 27/30.
+- **Recut of the opening, Option B (David, 2026-10-29)**, VidNinjas pre-roll rule (≤ ~90 words / 35 s; now in the skill).
+  `splice_coldopen.py` cuts ONE scene `lt01-cold` (89 words, 31.91 s) from the existing paused takes, called by `make_vo_json.py`:
+  lt01 from "What happened" (drops "Last time…") · lt02 "We didn't… slowly disappearing." (drops the stars DYK card) · lt00 from
+  "Here's your guess." (drops "Welcome back… the rule."). lt03 promise and the LtIntro sting are out of the master. 0 credits.
+  LtHook rebuilt: premise → We didn't → house → guess card (TenPeople, 3 neutral options, steps + tick) → 1.8 s brand flash.
+  Pre-roll 34.57 s; "You wake up in 1500" at ~35.4 s. LtIntro/LtWelcome/LtPromise TSX + cue parts stay on disk, unused.
+  Checks: check_cues all resolve · BEATMAP 581 rows 0 gaps · tests 3 pass · Whisper on lt01-cold PASS (same two number accepts) ·
+  joins silent (rms ≤ 1) · stills audit/sheet-recut.png · master 9:40.2, qa_final PASS (A/V 33 ms, 0 pts gaps, −14.1 LUFS, TP −2.3).
+  Pre-flight: new pace flag lt01-cold c2 2.36 w/s = the approved "We didn't… disappearing." audio measured alone; waived by David after watching the recut opening (2026-10-29).
+  Chapters (for YOUTUBE.md): 0:00 cold open · 0:34 1500 · 1:49 1807 · 2:46 1859 · 3:51 1882 · 4:53 1993 · 5:48 today · 6:44 answer · 7:30 2100 · 8:29 outro.

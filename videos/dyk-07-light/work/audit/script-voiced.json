@@ -31,81 +31,27 @@
  ],
  "scenes": [
   {
-   "id": "lt01-hook",
+   "id": "lt01-cold",
    "shot": "LtHook",
-   "text": "Last time, I left you with a question. What happened when we switched the night off? Here's what we know. In Britain, light now costs less than one three-thousandth of what it did in eighteen hundred. You'd think we'd pocket the savings.",
+   "text": "What happened when we switched the night off? Here's what we know. In Britain, light now costs less than one three-thousandth of what it did in eighteen hundred. You'd think we'd pocket the savings. We didn't. And tonight, above your house, something is slowly disappearing. Here's your guess. Think of ten people, anywhere on Earth. How many of them live under a night sky that our lights have brightened? Two? Five? More than eight? Guess in the comments, right now. Then stay to the end, and check your guess.",
    "chunks": [
     {
-     "text": "Last time, I left you with a question. What happened when we switched the night off? Here's what we know. In Britain, light now costs less than one three-thousandth of what it did in eighteen hundred. You'd think we'd pocket the savings.",
+     "text": "What happened when we switched the night off? Here's what we know. In Britain, light now costs less than one three-thousandth of what it did in eighteen hundred. You'd think we'd pocket the savings.",
      "pace": 3.2,
      "speed": 1.0
-    }
-   ],
-   "floor": 0.95,
-   "pauses": {
-    "min_sentence_gap": 0.3
-   }
-  },
-  {
-   "id": "lt02-question",
-   "shot": "LtHook",
-   "text": "We didn't. And tonight, above your house, something is slowly disappearing. Did you know that, at today's rate, a child born under two hundred and fifty stars will see about a hundred by the time they're eighteen?",
-   "chunks": [
+    },
     {
-     "text": "We didn't. And tonight, above your house, something is slowly disappearing. Did you know that, at today's rate, a child born under two hundred and fifty stars will see about a hundred by the time they're eighteen?",
+     "text": "We didn't. And tonight, above your house, something is slowly disappearing.",
      "pace": 3.1,
      "speed": 1.0
-    }
-   ],
-   "floor": 0.95,
-   "pauses": {
-    "min_sentence_gap": 0.3,
-    "after": [
-     {
-      "word": "didn't.",
-      "nth": 1,
-      "add": 0.4
-     }
-    ]
-   }
-  },
-  {
-   "id": "lt00-welcome",
-   "shot": "LtWelcome",
-   "text": "Welcome back to Did You Know That. Episode seven. You know the rule. Here's your guess. Think of ten people, anywhere on Earth. How many of them live under a night sky that our lights have brightened? Two? Five? More than eight? Guess in the comments, right now. Then stay to the end, and check your guess.",
-   "chunks": [
+    },
     {
-     "text": "Welcome back to Did You Know That. Episode seven. You know the rule. Here's your guess. Think of ten people, anywhere on Earth. How many of them live under a night sky that our lights have brightened? Two? Five? More than eight? Guess in the comments, right now. Then stay to the end, and check your guess.",
+     "text": "Here's your guess. Think of ten people, anywhere on Earth. How many of them live under a night sky that our lights have brightened? Two? Five? More than eight? Guess in the comments, right now. Then stay to the end, and check your guess.",
      "pace": 2.9,
      "speed": 0.992
     }
    ],
-   "floor": 0.95,
-   "pauses": {
-    "min_sentence_gap": 0.3,
-    "after": [
-     {
-      "word": "eight?",
-      "nth": 1,
-      "add": 0.4
-     }
-    ]
-   }
-  },
-  {
-   "id": "lt03-promise",
-   "shot": "LtPromise",
-   "text": "Six mornings, from fifteen hundred to today, and then one more, in twenty one hundred. In each one, you wake up and someone has found a new way to beat the dark. You'll see what one hour of light costs you. And at the end, you'll find out what we lost when we won.",
-   "chunks": [
-    {
-     "text": "Six mornings, from fifteen hundred to today, and then one more, in twenty one hundred. In each one, you wake up and someone has found a new way to beat the dark. You'll see what one hour of light costs you. And at the end, you'll find out what we lost when we won.",
-     "pace": 3.1,
-     "speed": 0.9
-    }
-   ],
-   "pauses": {
-    "min_sentence_gap": 0.3
-   }
+   "floor": 0.95
   },
   {
    "id": "lt04-1500",

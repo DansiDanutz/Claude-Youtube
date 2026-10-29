@@ -8,7 +8,6 @@ import json, os
 WORK = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(WORK, 'narration', 'durations.json')))
 FPS = 30
-INTRO_S = 7.5          # DytSting (4.5 s) + episode title card — fixed, no VO
 END_SCREEN_S = 16.6    # 15 s of FULL end screen + its 1.0 s build-in + the 0.6 s final fade (reviewer 2026-10-12)
 
 
@@ -25,11 +24,12 @@ def shot(lines, lead, gap=0.7, tail=0.8):
     return [frames(t) / FPS, offs]
 
 
+# Recut 2026-10-29 (VidNinjas pre-roll rule ≤ ~90 words / 35 s): ONE cold-open scene spliced from the existing takes
+# (splice_coldopen.py) replaces hook + sting + welcome + promise. Its tail holds CHECK YOUR GUESS's tick 1 s, then
+# the 1.8 s brand flash that stands in for the 7.5 s sting, then straight into 1500.
+COLD_TAIL = 2.04    # = the tick held 0.8 s + FLASH_F 54 f in LtHook.tsx
 TL = {
-    'LtHook': shot(['lt01-hook', 'lt02-question'], lead=0.6, gap=0.75, tail=0.9),
-    'LtIntro': [INTRO_S, {}],
-    'LtWelcome': shot(['lt00-welcome'], lead=0.6, tail=0.8),
-    'LtPromise': shot(['lt03-promise'], lead=0.6, tail=1.3),   # audit round 1: the closing question needs ≥ 1.5 s on screen
+    'LtHook': shot(['lt01-cold'], lead=0.6, tail=COLD_TAIL),
 }
 for sid, vo in [('Lt1500', 'lt04-1500'), ('Lt1807', 'lt05-1807'), ('Lt1859', 'lt06-1859'), ('Lt1882', 'lt07-1882'),
                 ('Lt1993', 'lt08-1993'), ('LtToday', 'lt09-today')]:

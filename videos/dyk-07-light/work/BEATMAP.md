@@ -2,630 +2,588 @@
 
 One row per second of the master: words → visual event → SFX. Source of truth: `cues.py` (the same table `build_final.py` mixes), `timeline.json`, `remotion/src/shots/dyk-07/vo.json`.
 
-Total 622.0 s · 664 cues · gaps ≥ 2.0 s between visual events while narrating: 0
+Total 580.2 s · 617 cues · gaps ≥ 2.0 s between visual events while narrating: 0
 
 | t | shot | words | visual event (SFX) |
 |---|---|---|---|
-| 0:00 | LtHook | Last time, | one candle flame flickers in the dark (scan-hum); the candle slides left; LAST TIME · NO. 06 ASKED card (pop-reveal) |
-| 0:01 | LtHook | I left you with |  |
-| 0:02 | LtHook | a question. | A QUESTION (ui-click-soft) |
-| 0:03 | LtHook | What happened when | What happened when (ui-click-soft) |
-| 0:04 | LtHook | we switched the night off? | we switched (ui-click-soft); the night off? (gold) (chime-magic) |
-| 0:05 | LtHook | Here's | HERE'S WHAT WE KNOW ▸ (in the question card) (ui-click-soft) |
-| 0:06 | LtHook | what we know. |  |
-| 0:07 | LtHook | In Britain, | BRITAIN (pop-reveal); card out; the Britain panel (whoosh-soft) |
-| 0:08 | LtHook | light now costs | LIGHT NOW COSTS (ui-click-soft) |
-| 0:09 | LtHook | less than one three-thousandth | LESS THAN (ui-click-soft); < 1/3,000 lands (impact-soft) |
-| 0:10 | LtHook | of what it did |  |
-| 0:11 | LtHook | in eighteen hundred. | OF WHAT IT COST IN 1800 (ui-click-soft); Fouquet & Pearson source line (ui-click-soft) |
-| 0:12 | LtHook | You'd think we'd pocket | You'd think we'd (ui-click-soft); pocket the savings. · a coin stack drops in (pop-reveal) |
-| 0:13 | LtHook | the savings. |  |
-| 0:14 | LtHook | We | the Britain panel clears; We (whoosh-soft) |
-| 0:15 | LtHook | didn't. | didn't. (red) · its own beat (impact-soft) |
-| 0:16 | LtHook | And tonight, above | the candle flame sinks low (warm-shimmer); We didn't. docks up; TONIGHT (whoosh-soft) |
-| 0:17 | LtHook | your house, | a dark house, one lit window · ABOVE YOUR HOUSE (pop-reveal) |
-| 0:18 | LtHook | something is slowly disappearing. | something is slowly (ui-click-soft); disappearing. (keeps fading) (whoosh-soft) |
-| 0:19 | LtHook |  | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 0:20 | LtHook | Did you know that, | (chime after "that") (chime-magic) |
-| 0:21 | LtHook | at today's rate, | at today's rate, (italic) (ui-click-soft) |
-| 0:22 | LtHook | a child | a child born · a baby (pop-reveal) |
-| 0:23 | LtHook | born under two hundred | under (ui-click-soft) |
-| 0:24 | LtHook | and fifty stars will | 250 (ui-click-soft); stars · a sky of 250 stars fades in · AT TODAY'S RATE (sparkle-soft) |
-| 0:25 | LtHook | see about a hundred | will see (ui-click-soft); about 100 · the stars count down 250 → ≈ 100 · Kyba source (stream-soft) |
-| 0:26 | LtHook | by the time they're eighteen? | by the time they're 18? · BY AGE 18 (impact-soft) |
-| 0:27 | LtHook |  |  |
-| 0:28 | LtHook |  | sting: hum (scan-hum); bulb switches on (ui-toggle-on); glow + sparks (sparkle-soft) |
-| 0:29 | LtIntro |  | logo slides, wordmark (whoosh-soft); DID (knock-solid) |
-| 0:30 | LtIntro |  | YOU (knock-solid); KNOW (knock-solid); THAT? (impact-deep-soft) |
-| 0:31 | LtIntro |  | tagline (chime-magic) |
-| 0:32 | LtIntro |  | episode card: EPISODE 07 · Light (whoosh-soft) |
-| 0:33 | LtIntro |  |  |
-| 0:34 | LtIntro |  |  |
-| 0:35 | LtIntro |  | cut to the welcome lockup (whoosh-soft) |
-| 0:36 | LtWelcome | Welcome back |  |
-| 0:37 | LtWelcome | to Did You Know | wordmark DID YOU KNOW THAT? (pop-reveal) |
-| 0:38 | LtWelcome | That. Episode | NO. 07 · LIGHT (ui-click-soft) |
-| 0:39 | LtWelcome | seven. | the 07 in NO. 07 · LIGHT pulses (ui-click-soft) |
-| 0:40 | LtWelcome | You know the rule. | the lockup docks; THE RULE; YOUR GUESS card (whoosh-soft) |
-| 0:41 | LtWelcome | Here's your guess. | a pulsing ? holds the guess slot (ui-click-soft) |
-| 0:42 | LtWelcome | Think of | · THINK OF TEN PEOPLE (ui-click-soft); ten figures build (none lit) (pop-reveal) |
-| 0:43 | LtWelcome | ten people, |  |
-| 0:44 | LtWelcome | anywhere on Earth. | · ANYWHERE ON EARTH (ui-click-soft) |
-| 0:45 | LtWelcome | How many | How many of them (ui-click-soft) |
-| 0:46 | LtWelcome | of them live under a night | live under a (ui-click-soft); night sky that our lights have (ui-click-soft) |
-| 0:47 | LtWelcome | sky that our lights |  |
-| 0:48 | LtWelcome | have brightened? | brightened? glows · Falchi 2016 source line (impact-soft); option Two? (pop-reveal) |
-| 0:49 | LtWelcome | Two? Five? | option Five? (pop-reveal) |
-| 0:50 | LtWelcome | More than | option More than eight? (same neutral style) (pop-reveal) |
-| 0:51 | LtWelcome | eight? |  |
-| 0:52 | LtWelcome | Guess in the comments, | step 1 GUESS IN THE COMMENTS (pop-reveal); comment bubble: My guess: … (ui-send) |
-| 0:53 | LtWelcome | right now. |  |
-| 0:54 | LtWelcome | Then stay to the | step 2 STAY TO THE END (pop-reveal) |
-| 0:55 | LtWelcome | end, and check your guess. | step 3 CHECK YOUR GUESS (pop-reveal); step 3 ticks green (chime-reward) |
-| 0:56 | LtWelcome |  |  |
-| 0:57 | LtWelcome | Six | cut to the promise (whoosh-soft); SIX MORNINGS; the year chips build (ui-click-soft) |
-| 0:58 | LtPromise | mornings, | year chips 2-6 (1500 lights on "fifteen") (1/5) (ui-click-soft); year chips 2-6 (1500 lights on "fifteen") (2/5) (ui-click-soft) |
-| 0:59 | LtPromise | from fifteen | year chips 2-6 (1500 lights on "fifteen") (3/5) (ui-click-soft); year chips 2-6 (1500 lights on "fifteen") (4/5) (ui-click-soft); year chips 2-6 (1500 lights on "fifteen") (5/5) (ui-click-soft) |
-| 1:00 | LtPromise | hundred to today, | the TODAY chip lights (warm-shimmer) |
-| 1:01 | LtPromise | and then one | a dashed ? chip (ui-click-soft) |
-| 1:02 | LtPromise | more, in twenty one hundred. | + ONE MORE (ui-click-soft); the dashed chip becomes 2100 (pop-reveal) |
-| 1:03 | LtPromise |  |  |
-| 1:04 | LtPromise | In each one, you | a light sweeps across the seven chips (ui-click-soft) |
-| 1:05 | LtPromise | wake up and someone | dawn glow; a sun rises under the row (warm-shimmer); Someone has found (ui-click-soft) |
-| 1:06 | LtPromise | has found a |  |
-| 1:07 | LtPromise | new way to beat the dark. | a new way (ui-click-soft); to beat the dark. (gold) · a glow over each chip (pop-reveal) |
-| 1:08 | LtPromise | You'll |  |
-| 1:09 | LtPromise | see what one hour | line out; You'll see (whoosh-soft); what one hour · a clock starts to turn (pop-reveal) |
-| 1:10 | LtPromise | of light costs you. | of light costs you. (gold) · 1 HOUR OF LIGHT · WORK strip (ui-click-soft) |
-| 1:11 | LtPromise | And at the |  |
-| 1:12 | LtPromise | end, you'll find | the row clears; AT THE END (whoosh-soft) |
-| 1:13 | LtPromise | out what we lost | (riser into won.) (riser-soft); What we (ui-click-soft); lost (italic) (ui-click-soft) |
-| 1:14 | LtPromise | when we won. | when we (ui-click-soft); won. lands in the gradient (impact-soft) |
-| 1:15 | LtPromise |  |  |
-| 1:16 | LtPromise |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 1:17 | Lt1500 | You wake up in fifteen | gold underline under 1500 (whoosh-soft) |
-| 1:18 | Lt1500 | hundred, in |  |
-| 1:19 | Lt1500 | a market town in Flanders. | place line: a market town in Flanders (pop-reveal) |
-| 1:20 | Lt1500 |  | header docks; the town at dusk comes up full (wind-soft) |
-| 1:21 | Lt1500 | It's late autumn. | LATE AUTUMN (ui-click-soft) |
-| 1:22 | Lt1500 | The light is going, | THE LIGHT (ui-click-soft); the dusk sky darkens · IS GOING (whoosh-reverse) |
-| 1:23 | Lt1500 | and the church | THE CHURCH (ui-click-soft) |
-| 1:24 | Lt1500 | bell starts to | the bell in the tower + the big bell · BELL (pop-reveal) |
-| 1:25 | Lt1500 | ring. Did | both bells swing (the toll) (impact-deep-soft); DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 1:26 | Lt1500 | you know that this bell | (chime after "that") (chime-magic); card: this bell + the bell swings (ui-click-soft) |
-| 1:27 | Lt1500 | has a name, | card: has a name, (ui-click-soft) |
-| 1:28 | Lt1500 | and the name is curfew? | card: and the name is (ui-click-soft); card: curfew? (gold) (stamp-hit) |
-| 1:29 | Lt1500 |  |  |
-| 1:30 | Lt1500 | It comes from | card: a gold underline sweeps under curfew? (whoosh-soft) |
-| 1:31 | Lt1500 | the old French for | card: FROM OLD FRENCH: (ui-click-soft) |
-| 1:32 | Lt1500 | cover the fire. | card: COVER THE FIRE + the burning hearth (warm-shimmer); card: covrefeu · Merriam-Webster · Etymonline source (ui-click-soft) |
-| 1:33 | Lt1500 | When |  |
-| 1:34 | Lt1500 | you hear it, you | card: WHEN YOU HEAR IT, (ui-click-soft) |
-| 1:35 | Lt1500 | bank the hearth | card: the lid covers the hearth · BANK THE HEARTH (knock-solid) |
-| 1:36 | Lt1500 | and the day is over. | card: THE DAY IS OVER (red) (trap-snap) |
-| 1:37 | Lt1500 | Here's your evening. |  |
-| 1:38 | Lt1500 | Work | card out; YOUR EVENING (whoosh-soft); · WORK STOPS (ui-click-soft) |
-| 1:39 | Lt1500 | stops at sunset. | the sun sinks · AT SUNSET (whoosh-reverse) |
-| 1:40 | Lt1500 | A tallow | a smoking tallow candle · TALLOW CANDLE (pop-reveal) |
-| 1:41 | Lt1500 | candle, made from |  |
-| 1:42 | Lt1500 | sheep fat, | SHEEP FAT (ui-click-soft) |
-| 1:43 | Lt1500 | smokes and stinks, | SMOKES (wind-soft); · STINKS (ui-click-soft) |
-| 1:44 | Lt1500 | and it costs | COSTS TOO MUCH (red) (ui-click-soft) |
-| 1:45 | Lt1500 | too much to burn for | TO BURN FOR LONG (ui-click-soft) |
-| 1:46 | Lt1500 | long. So |  |
-| 1:47 | Lt1500 | most nights you use | MOST NIGHTS (ui-click-soft) |
-| 1:48 | Lt1500 | a rushlight, a | a rushlight · RUSHLIGHT (pop-reveal) |
-| 1:49 | Lt1500 | dried rush dipped | A DRIED RUSH (ui-click-soft); · DIPPED IN GREASE (ui-click-soft) |
-| 1:50 | Lt1500 | in grease. |  |
-| 1:51 | Lt1500 | Depending | DEPENDING ON ITS LENGTH, IT LASTS (ui-click-soft) |
-| 1:52 | Lt1500 | on its length, it lasts | the empty burn bar + rushlight source line (ui-click-soft) |
-| 1:53 | Lt1500 | a few minutes, | the bar fills a little · A FEW MINUTES (ui-click-soft) |
-| 1:54 | Lt1500 | or an hour at most. | the bar runs long · … AN HOUR AT MOST (stream-soft) |
-| 1:55 | Lt1500 |  |  |
-| 1:56 | Lt1500 | Beeswax is | a glowing beeswax candle · BEESWAX (warm-shimmer) |
-| 1:57 | Lt1500 | for the church and | FOR THE CHURCH (ui-click-soft) |
-| 1:58 | Lt1500 | the rich. | & THE RICH (gold) (sparkle-soft) |
-| 1:59 | Lt1500 | What does one hour | evening out; WHAT DOES ONE HOUR (whoosh-soft) |
-| 2:00 | Lt1500 | of light cost | OF LIGHT (ui-click-soft); COST YOU? (ui-click-soft) |
-| 2:01 | Lt1500 | you? |  |
-| 2:02 | Lt1500 | One ordinary | = 1 ORDINARY (ui-click-soft) |
-| 2:03 | Lt1500 | bulb's worth, | a lit bulb · BULB (pop-reveal) |
-| 2:04 | Lt1500 | for one hour. | · FOR 1 HOUR (ui-click-soft) |
-| 2:05 | Lt1500 | An economist, | AN ECONOMIST (ui-click-soft) |
-| 2:06 | Lt1500 | William Nordhaus, | · WILLIAM NORDHAUS + the Nordhaus 1997 source line (page-flip) |
-| 2:07 | Lt1500 | worked it out. |  |
-| 2:08 | Lt1500 | In ancient Babylon, | a clay oil lamp · ANCIENT (pop-reveal); BABYLON (ui-click-soft) |
-| 2:09 | Lt1500 | about forty | ≈ 41 counts up + strip pill BABYLON ≈41 H (chime-reward) |
-| 2:10 | Lt1500 | one hours of work. | HOURS OF WORK (ui-click-soft) |
-| 2:11 | Lt1500 | And by eighteen | a tallow candle · 1800 (pop-reveal) |
-| 2:12 | Lt1500 | hundred, in America, | · AMERICA (ui-click-soft) |
-| 2:13 | Lt1500 | still more than | STILL (ui-click-soft) |
-| 2:14 | Lt1500 | five. | > 5 HOURS OF WORK + strip pill 1800 >5 H (chime-reward) |
-| 2:15 | Lt1500 | In more than three | the BABYLON → 1800 bar runs · 3,000+ YEARS (stream-soft) |
-| 2:16 | Lt1500 | thousand years, the |  |
-| 2:17 | Lt1500 | price barely moved. | THE PRICE BARELY MOVED stamp (stamp-hit) |
-| 2:18 | Lt1500 | So what |  |
-| 2:19 | Lt1500 | is light to you? | price out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
-| 2:20 | Lt1500 | A luxury. | HOW WE SAW IT · A LUXURY chip + the glowing rushlight (chime-reward) |
-| 2:21 | Lt1500 | You |  |
-| 2:22 | Lt1500 | make it yourself, | you make it yourself, (ui-click-soft) |
-| 2:23 | Lt1500 | and you make it last. | the chip docks into the ladder (whoosh-soft); and you make it (ui-click-soft); last (ui-click-soft) |
-| 2:24 | Lt1500 |  |  |
-| 2:25 | Lt1500 | For three hundred years, | cliffhanger band: For three hundred years, · NEXT ▸ 1807; price strip fades (piano-a-min); FOR 300 YEARS · eight candles · the bar runs 1500 → 1800 (whoosh-soft) |
-| 2:26 | Lt1500 | the dark wins. | the candles go out one by one · THE DARK; band: the dark wins. (whoosh-reverse); WINS (ui-click-soft) |
-| 2:27 | Lt1500 | Then a man | band: Then a man in London (ui-click-soft) |
-| 2:28 | Lt1500 | in London sets the | the London skyline · LONDON (pop-reveal); band: sets the air on fire. (ui-click-soft) |
-| 2:29 | Lt1500 | air on fire. | a flame with no wick lights in the air over London (warm-shimmer) |
-| 2:30 | Lt1500 |  | era exit pull-in (whoosh-reverse) |
-| 2:31 | Lt1500 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 2:32 | Lt1807 | You wake up in eighteen | gold underline under 1807 (whoosh-soft) |
-| 2:33 | Lt1807 | oh seven, |  |
-| 2:34 | Lt1807 | on Pall | place line: Pall Mall, London (pop-reveal) |
-| 2:35 | Lt1807 | Mall, in London. |  |
-| 2:36 | Lt1807 | It's a | header docks; Pall Mall at evening comes up full (wind-soft) |
-| 2:37 | Lt1807 | warm June evening, | A WARM (ui-click-soft); JUNE EVENING (ui-click-soft) |
-| 2:38 | Lt1807 | and a crowd is staring | a crowd · A CROWD (pop-reveal); STARING AT… (ui-click-soft) |
-| 2:39 | Lt1807 | at a row of iron | a row of cold iron posts · A ROW OF POSTS (knock-solid) |
-| 2:40 | Lt1807 | posts. |  |
-| 2:41 | Lt1807 | Did you know | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 2:42 | Lt1807 | that the first gas | (chime after "that") (chime-magic); card: the first gas lights (ui-click-soft) |
-| 2:43 | Lt1807 | lights on a London | card: on a London street + three dark posts (ui-click-soft) |
-| 2:44 | Lt1807 | street were lit for the king's | card: were lit · the three posts light one by one (warm-shimmer); card: for the king's birthday? + a crown (pop-reveal) |
-| 2:45 | Lt1807 | birthday? | card: George III's birthday, 4 June 1807 source line (ui-click-soft) |
-| 2:46 | Lt1807 | A |  |
-| 2:47 | Lt1807 | German-born businessman | card: GERMAN-BORN · (ui-click-soft) |
-| 2:48 | Lt1807 | named Frederick | card: FREDERICK WINSOR (ui-click-soft) |
-| 2:49 | Lt1807 | Winsor burns gas | card: BURNS GAS (ui-click-soft) |
-| 2:50 | Lt1807 | made from coal, | card: MADE FROM COAL (ui-click-soft) |
-| 2:51 | Lt1807 | piped along the street. | card: PIPED ALONG THE STREET + a flowing pipe (stream-soft) |
-| 2:52 | Lt1807 | No wick. | card: NO WICK. (red) (stamp-hit) |
-| 2:53 | Lt1807 | No wax. | card: NO WAX. (red) (stamp-hit) |
-| 2:54 | Lt1807 | Here's your |  |
-| 2:55 | Lt1807 | evening. The shops | card out; YOUR EVENING · the posts burn along the street (whoosh-soft); THE SHOPS (ui-click-soft) |
-| 2:56 | Lt1807 | stay open after | shop windows glow · STAY OPEN (warm-shimmer); AFTER DARK (ui-click-soft) |
-| 2:57 | Lt1807 | dark. |  |
-| 2:58 | Lt1807 | Mill owners start | a mill owner · MILL OWNERS (pop-reveal) |
-| 2:59 | Lt1807 | to see something new. | SEE SOMETHING NEW (ui-click-soft) |
-| 3:00 | Lt1807 | A factory | a factory, its windows lit · A FACTORY THAT (pop-reveal) |
-| 3:01 | Lt1807 | that never has to stop | NEVER HAS TO (ui-click-soft) |
-| 3:02 | Lt1807 | at sunset. | the sun sinks behind the lit factory · STOP AT SUNSET (whoosh-reverse) |
-| 3:03 | Lt1807 | Five years later, | evening out; FIVE YEARS LATER (whoosh-soft) |
-| 3:04 | Lt1807 | in eighteen |  |
-| 3:05 | Lt1807 | twelve, Parliament | · 1812 (ui-click-soft); PARLIAMENT (ui-click-soft) |
-| 3:06 | Lt1807 | grants a charter | a sealed charter · GRANTS A CHARTER (page-flip) |
-| 3:07 | Lt1807 | to the Gas Light | THE GAS LIGHT (ui-click-soft) |
-| 3:08 | Lt1807 | and Coke Company, | AND COKE COMPANY (ui-click-soft) |
-| 3:09 | Lt1807 | the first gas | THE FIRST GAS COMPANY (ui-click-soft) |
-| 3:10 | Lt1807 | company in the | IN THE WORLD + Museum of London source line (chime-reward) |
-| 3:11 | Lt1807 | world. |  |
-| 3:12 | Lt1807 | Light runs under the | the street cross-section · LIGHT RUNS (stream-soft); gas flows along the main · UNDER THE STREET (ui-click-soft) |
-| 3:13 | Lt1807 | street, to |  |
-| 3:14 | Lt1807 | your door, and | a branch rises to a door and its lamp lights · TO YOUR DOOR (knock-solid) |
-| 3:15 | Lt1807 | arrives with a bill. | AND ARRIVES WITH (ui-click-soft); a bill drops in · A BILL stamp (stamp-hit) |
-| 3:16 | Lt1807 | So what is |  |
-| 3:17 | Lt1807 | light now? | charter out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
-| 3:18 | Lt1807 | A service. | HOW WE SAW IT · A SERVICE chip + a burning lamp (chime-reward) |
-| 3:19 | Lt1807 | It comes | it comes to you, (ui-click-soft) |
-| 3:20 | Lt1807 | to you, through a pipe. | a pipe flows into the lamp · through (stream-soft); a pipe (ui-click-soft) |
-| 3:21 | Lt1807 | But | the chip docks into the ladder (whoosh-soft); cliffhanger band: But across the ocean, · NEXT ▸ 1859; price strip fades (piano-a-min) |
-| 3:22 | Lt1807 | across the ocean, | ACROSS THE OCEAN · waves (whoosh-soft) |
-| 3:23 | Lt1807 | the best light | THE BEST LIGHT; band: the best light in America (ui-click-soft) |
-| 3:24 | Lt1807 | in America still | · AMERICA (ui-click-soft); STILL COMES FROM…; band: still comes from the head (ui-click-soft) |
-| 3:25 | Lt1807 | comes from the |  |
-| 3:26 | Lt1807 | head of a whale. | a whale rises in; band: of a whale. (pop-reveal) |
-| 3:27 | Lt1807 |  | era exit pull-in (whoosh-reverse) |
-| 3:28 | Lt1807 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 3:29 | Lt1859 | You wake up in eighteen | gold underline under 1859 (whoosh-soft) |
-| 3:30 | Lt1859 | fifty nine, in |  |
-| 3:31 | Lt1859 | Titusville, Pennsylvania. | place line: Titusville, Pennsylvania (pop-reveal); the August sun rises over the field (ui-click-soft) |
-| 3:32 | Lt1859 | It's |  |
-| 3:33 | Lt1859 | August. | header docks; AUGUST (whoosh-soft) |
-| 3:34 | Lt1859 | The air smells of |  |
-| 3:35 | Lt1859 | mud and tar, | the muddy field · MUD (stream-soft); tar pools shimmer · AND TAR (ui-click-soft) |
-| 3:36 | Lt1859 | and men are | six men · MEN CHEERING (pop-reveal) |
-| 3:37 | Lt1859 | cheering around a wooden | the men bob, cheering (ui-click-soft) |
-| 3:38 | Lt1859 | derrick. Did | the wooden derrick · A WOODEN DERRICK (impact-soft); DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 3:39 | Lt1859 | you know that a historian | (chime after "that") (chime-magic); card: a historian later wrote that (ui-click-soft) |
-| 3:40 | Lt1859 | later wrote that | card: oil (gold) (pop-reveal) |
-| 3:41 | Lt1859 | oil gave kerosene | card: “gave + Stotz 1938, quoted by Nordhaus 1997 (ui-click-soft); card: kerosene to the world (orange) (ui-click-soft) |
-| 3:42 | Lt1859 | to the world, |  |
-| 3:43 | Lt1859 | and life | card: and life to the few remaining (ui-click-soft) |
-| 3:44 | Lt1859 | to the few remaining | card: whales” + a whale (pop-reveal) |
-| 3:45 | Lt1859 | whales? |  |
-| 3:46 | Lt1859 | Before | card: BEFORE THIS: (ui-click-soft) |
-| 3:47 | Lt1859 | this, whalers sailed | card: WHALERS SAIL (ui-click-soft); card: a whaling ship rocks (wind-soft) |
-| 3:48 | Lt1859 | for years to fill their | card: FOR YEARS (ui-click-soft) |
-| 3:49 | Lt1859 | lamps. Here's | card: → LAMPS (ui-click-soft) |
-| 3:50 | Lt1859 | your evening. | card out; YOUR EVENING (whoosh-soft) |
-| 3:51 | Lt1859 | A Canadian doctor, | a doctor figure · A CANADIAN DOCTOR (pop-reveal) |
-| 3:52 | Lt1859 | Abraham Gesner, | Abraham Gesner (ui-click-soft) |
-| 3:53 | Lt1859 | has already |  |
-| 3:54 | Lt1859 | shown how to make a lamp | HAS SHOWN HOW TO MAKE (ui-click-soft) |
-| 3:55 | Lt1859 | fuel called | a drop of fuel · A LAMP FUEL (pop-reveal); → kerosene (chime-reward) |
-| 3:56 | Lt1859 | kerosene. |  |
-| 3:57 | Lt1859 | Now Edwin | Edwin Drake (ui-click-soft) |
-| 3:58 | Lt1859 | Drake has struck oil, | the derrick · STRUCK (impact-soft); oil rises in the derrick · OIL (stream-soft) |
-| 3:59 | Lt1859 | sixty | the drill line descends; 69 counts up (whoosh-reverse) |
-| 4:00 | Lt1859 | nine feet down, | ft (ui-click-soft); down (ui-click-soft) |
-| 4:01 | Lt1859 | just before | …JUST BEFORE (ui-click-soft) |
-| 4:02 | Lt1859 | his money ran out. | coins drain · HIS MONEY (red) (trap-snap); RAN OUT + source (ui-click-soft) |
-| 4:03 | Lt1859 | Kerosene | a barrel · KEROSENE (pop-reveal) |
-| 4:04 | Lt1859 | floods the shops. | two more barrels · FLOODS (stream-soft); a shop front · THE SHOPS (pop-reveal) |
-| 4:05 | Lt1859 | On your |  |
-| 4:06 | Lt1859 | table there's a lamp | ON YOUR TABLE + the table (whoosh-soft); the kerosene lamp · A LAMP (pop-reveal) |
-| 4:07 | Lt1859 | with a glass chimney | · A GLASS CHIMNEY (ui-click-soft) |
-| 4:08 | Lt1859 | and a steady flame, | the flame rises and steadies · A STEADY FLAME (chime-magic) |
-| 4:09 | Lt1859 | and |  |
-| 4:10 | Lt1859 | the evening gets hours | THE EVENING GETS + the evening bar (ui-click-soft); the bar fills with lamplight · HOURS (stream-soft) |
-| 4:11 | Lt1859 | back. | BACK (chime-reward) |
-| 4:12 | Lt1859 | You read. | a reader · YOU READ (pop-reveal) |
-| 4:13 | Lt1859 | You sew. | a figure with needle and thread · YOU SEW (pop-reveal) |
-| 4:14 | Lt1859 | The children do their | two children with books · THE CHILDREN (pop-reveal) |
-| 4:15 | Lt1859 | lessons. | · LESSONS (ui-click-soft) |
-| 4:16 | Lt1859 | What does one hour | ONE HOUR OF LIGHT · HOW MUCH WORK? + a lamp (whoosh-soft) |
-| 4:17 | Lt1859 | of light cost you now? | · WHAT DOES IT COST? (ui-click-soft) |
-| 4:18 | Lt1859 | By |  |
-| 4:19 | Lt1859 | eighteen seventy, | · 1870 (ui-click-soft) |
-| 4:20 | Lt1859 | in America, | · AMERICA (ui-click-soft) |
-| 4:21 | Lt1859 | about twenty minutes | ≈ 20 counts up + source + the 1870 strip pill (chime-reward); min · OF WORK (ui-click-soft) |
-| 4:22 | Lt1859 | of work. So |  |
-| 4:23 | Lt1859 | what is light now? | price out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
-| 4:24 | Lt1859 | A |  |
-| 4:25 | Lt1859 | liquid. | HOW WE SAW IT · A LIQUID chip + a drop (chime-reward) |
-| 4:26 | Lt1859 | Something you buy in | something (ui-click-soft); you buy (ui-click-soft) |
-| 4:27 | Lt1859 | a can. | a kerosene can · IN A CAN (pop-reveal); the chip docks into the ladder (whoosh-soft); band: Twenty three years later; the price strip fades (whoosh-soft) |
-| 4:28 | Lt1859 | Twenty three years later, | cliffhanger: + 23 years, the lamp still lit (piano-a-min) |
-| 4:29 | Lt1859 | someone takes the | a figure + ? · band: someone takes the flame away completely. (ui-click-soft); TAKES THE FLAME (ui-click-soft) |
-| 4:30 | Lt1859 | flame away completely. | the lamp goes out, smoke · AWAY (whoosh-reverse); · COMPLETELY (ui-click-soft) |
-| 4:31 | Lt1859 |  | era exit pull-in (whoosh-reverse) |
-| 4:32 | Lt1859 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 4:33 | Lt1882 | You wake |  |
-| 4:34 | Lt1882 | up in eighteen eighty two, | gold underline under 1882 (whoosh-soft) |
-| 4:35 | Lt1882 | in lower Manhattan. | place line: Lower Manhattan (pop-reveal) |
-| 4:36 | Lt1882 | It's the fourth | a calendar page: SEPT 4 (ui-click-soft) |
-| 4:37 | Lt1882 | of September, |  |
-| 4:38 | Lt1882 | a Monday afternoon. | header docks; the street of office blocks · MONDAY 4 SEPTEMBER (stream-soft); · AFTERNOON (ui-click-soft) |
-| 4:39 | Lt1882 |  |  |
-| 4:40 | Lt1882 | Horses, | a horse and cart rolls in · HORSES (pop-reveal) |
-| 4:41 | Lt1882 | newspapers, | newspapers · NEWSPAPERS (ui-click-soft) |
-| 4:42 | Lt1882 | the clatter of the street. | the cart wheels bounce · THE CLATTER OF THE STREET (trap-snap); cobbles (ui-click-soft) |
-| 4:43 | Lt1882 | Did you | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 4:44 | Lt1882 | know that when Thomas Edison's | (chime after "that") (chime-magic); card: when (ui-click-soft); card: Thomas Edison's (gold) (ui-click-soft) |
-| 4:45 | Lt1882 | lights came on, | card: lights came on (ui-click-soft) |
-| 4:46 | Lt1882 | he wasn't | card: he wasn't (red) (trap-snap) |
-| 4:47 | Lt1882 | at the power station? | card: at the power station? + a generator (pop-reveal); card: ✗ over the generator (ui-click-soft) |
-| 4:48 | Lt1882 |  |  |
-| 4:49 | Lt1882 | He was standing in the | card: → (ui-click-soft) |
-| 4:50 | Lt1882 | office of the banker | card: an office block · THE OFFICE OF (pop-reveal); card: THE BANKER (ui-click-soft) |
-| 4:51 | Lt1882 | J. P. |  |
-| 4:52 | Lt1882 | Morgan. | card: J. P. Morgan + source (chime-reward) |
-| 4:53 | Lt1882 | Here's your afternoon. | card: the banker's office windows light up (ui-click-soft) |
-| 4:54 | Lt1882 | At | card out; YOUR AFTERNOON (whoosh-soft) |
-| 4:55 | Lt1882 | about three o'clock, | a clock at three · ≈ 3 p.m. (pop-reveal) |
-| 4:56 | Lt1882 | an engineer | an engineer · AN ENGINEER (pop-reveal) |
-| 4:57 | Lt1882 | on Pearl Street closes | · PEARL STREET (ui-click-soft); the switch · CLOSES A SWITCH (ui-click-soft) |
-| 4:58 | Lt1882 | a switch. | the switch lever flips (impact-soft) |
-| 4:59 | Lt1882 | A few blocks of | office blocks, windows dark · A FEW BLOCKS (pop-reveal) |
-| 5:00 | Lt1882 | offices light up, | OF OFFICES (ui-click-soft); the windows light up block by block · LIGHT UP (chime-magic) |
-| 5:01 | Lt1882 | about four | ≈ 400 counts up (whoosh-soft) |
-| 5:02 | Lt1882 | hundred lamps, and | lamps + source (pop-reveal) |
-| 5:03 | Lt1882 | not one of them has | NOT ONE (ui-click-soft) |
-| 5:04 | Lt1882 | a flame. | a flame struck out · HAS A FLAME (trap-snap) |
-| 5:05 | Lt1882 | The glowing bulb | the glowing bulb · THE GLOWING BULB (whoosh-soft) |
-| 5:06 | Lt1882 | was the easy part. | = the easy part (ui-click-soft) |
-| 5:07 | Lt1882 | Edison sold | EDISON (ui-click-soft); SOLD (ui-click-soft) |
-| 5:08 | Lt1882 | the rest. Generators, | THE REST: (ui-click-soft); a generator spins · GENERATORS (pop-reveal) |
-| 5:09 | Lt1882 | copper | a copper cable draws in · COPPER (stream-soft) |
-| 5:10 | Lt1882 | under the street, | the street on top · UNDER THE STREET (ui-click-soft) |
-| 5:11 | Lt1882 | meters, | a meter, needle turning · METERS (pop-reveal) |
-| 5:12 | Lt1882 | and investors | three investors with money bags · INVESTORS (pop-reveal) |
-| 5:13 | Lt1882 | willing to bet a fortune | BET A FORTUNE stamp (stamp-hit) |
-| 5:14 | Lt1882 | on it. What |  |
-| 5:15 | Lt1882 | does one hour of | ONE HOUR OF LIGHT · HOW MUCH WORK? + a bulb (whoosh-soft) |
-| 5:16 | Lt1882 | light cost you now? | · WHAT DOES IT COST? (ui-click-soft) |
-| 5:17 | Lt1882 |  |  |
-| 5:18 | Lt1882 | By nineteen hundred, | · 1900 (ui-click-soft) |
-| 5:19 | Lt1882 | about thirteen minutes | ≈ 13 counts up + source + the 1900 strip pill (chime-reward); min · OF WORK (ui-click-soft) |
-| 5:20 | Lt1882 | of work. |  |
-| 5:21 | Lt1882 | So what is light now? | price out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
-| 5:22 | Lt1882 | A |  |
-| 5:23 | Lt1882 | network. | HOW WE SAW IT · A NETWORK chip + the network of copper lines (chime-reward) |
-| 5:24 | Lt1882 | You plug into a system | a plug and socket · YOU PLUG INTO (pop-reveal); A SYSTEM (ui-click-soft) |
-| 5:25 | Lt1882 | you'll never see. | the network sinks out of sight · YOU'LL NEVER SEE (whoosh-reverse); the chip docks into the ladder (whoosh-soft) |
-| 5:26 | Lt1882 | But that | band: But that bulb turns most of its power into heat.; the price strip fades (whoosh-soft) |
-| 5:27 | Lt1882 | bulb turns | cliffhanger: the bulb (piano-a-min) |
-| 5:28 | Lt1882 | most of its power into | MOST OF ITS POWER (ui-click-soft) |
-| 5:29 | Lt1882 | heat. The | heat waves rise · → heat (trap-snap); band: The fix takes more than a hundred years, (ui-click-soft) |
-| 5:30 | Lt1882 | fix takes more | THE FIX (ui-click-soft); more than (ui-click-soft) |
-| 5:31 | Lt1882 | than a hundred years, | 100 years (pop-reveal) |
-| 5:32 | Lt1882 | and one colour | band: and one colour nobody can make. (ui-click-soft); an empty dashed swatch with ? · ONE COLOUR (pop-reveal) |
-| 5:33 | Lt1882 | nobody can make. | NOBODY CAN MAKE (ui-click-soft) |
-| 5:34 | Lt1882 |  | era exit pull-in (whoosh-reverse) |
-| 5:35 | Lt1882 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 5:36 | Lt1993 | You wake up in |  |
-| 5:37 | Lt1993 | nineteen ninety three, | gold underline under 1993 (whoosh-soft) |
-| 5:38 | Lt1993 | in Tokushima, | place line: Tokushima, Shikoku (pop-reveal) |
-| 5:39 | Lt1993 | on Japan's |  |
-| 5:40 | Lt1993 | island of Shikoku. | Shikoku's outline draws under the place line, a pin on Tokushima (ui-click-soft) |
-| 5:41 | Lt1993 | Inside | header docks; the dark lab bench comes up (whoosh-soft) |
-| 5:42 | Lt1993 | a small company | A SMALL (ui-click-soft); COMPANY LAB + source (ui-click-soft) |
-| 5:43 | Lt1993 | lab, an engineer is | an engineer at the bench · AN ENGINEER (pop-reveal) |
-| 5:44 | Lt1993 | staring at a chip. | a dim chip on the bench · AT A CHIP (pop-reveal) |
-| 5:45 | Lt1993 | Did you know that | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 5:46 | Lt1993 | the missing colour of | (chime after "that") (chime-magic); card: the missing colour of light (ui-click-soft) |
-| 5:47 | Lt1993 | light was blue? | card: was blue? (ui-click-soft) |
-| 5:48 | Lt1993 | Red | card: a red chip glows · RED (pop-reveal) |
-| 5:49 | Lt1993 | and green glowing | card: a green chip glows · + GREEN (pop-reveal) |
-| 5:50 | Lt1993 | chips had been around for |  |
-| 5:51 | Lt1993 | decades. | card: · FOR DECADES (ui-click-soft) |
-| 5:52 | Lt1993 | Without blue, you couldn't | card: an empty dashed blue slot · WITHOUT BLUE (ui-click-soft) |
-| 5:53 | Lt1993 | make white. | card: · NO WHITE. + source (trap-snap) |
-| 5:54 | Lt1993 | Here's your morning. | card: the empty blue slot pulses and glows (ui-click-soft) |
-| 5:55 | Lt1993 | The engineer, | card out; THE ENGINEER + a dark chip (whoosh-soft) |
-| 5:56 | Lt1993 | Shuji Nakamura, | · SHUJI NAKAMURA (ui-click-soft) |
-| 5:57 | Lt1993 | has made |  |
-| 5:58 | Lt1993 | a bright blue light from | the chip glows blue · A BRIGHT BLUE LIGHT (sparkle-soft) |
-| 5:59 | Lt1993 | a crystal. | a crystal · FROM A CRYSTAL (pop-reveal) |
-| 6:00 | Lt1993 | Add a yellow coating, | ADD A (ui-click-soft); a yellow coating rings the chip · YELLOW COATING (pop-reveal) |
-| 6:01 | Lt1993 | and you get white | the light turns white · = WHITE LIGHT (chime-reward) |
-| 6:02 | Lt1993 | light from a chip. | FROM A CHIP (ui-click-soft) |
-| 6:03 | Lt1993 | No fire. | a candle · NO (pop-reveal); the candle struck through · FIRE (trap-snap) |
-| 6:04 | Lt1993 | No glowing | a bulb · NO GLOWING (pop-reveal) |
-| 6:05 | Lt1993 | wire. | the bulb struck through · WIRE (trap-snap) |
-| 6:06 | Lt1993 | Very little heat. | a thermometer · VERY LITTLE (pop-reveal); the thermometer drops · HEAT (ui-click-soft) |
-| 6:07 | Lt1993 | Twenty |  |
-| 6:08 | Lt1993 | one years later, | +21 years later; a figure (whoosh-soft) |
-| 6:09 | Lt1993 | he and two Japanese | two more figures · HE + TWO (pop-reveal); JAPANESE SCIENTISTS (ui-click-soft) |
-| 6:10 | Lt1993 | scientists share | SHARE (ui-click-soft) |
-| 6:11 | Lt1993 | the Nobel Prize for | a medal · THE NOBEL PRIZE · 2014 + source (chime-reward) |
-| 6:12 | Lt1993 | it. What does | the three figures light gold; the medal glints (sparkle-soft) |
-| 6:13 | Lt1993 | one hour of light | ONE HOUR OF LIGHT (whoosh-soft) |
-| 6:14 | Lt1993 | cost you now? | · WHAT DOES IT COST? (ui-click-soft) |
-| 6:15 | Lt1993 | In nineteen | 1992 (pop-reveal) |
-| 6:16 | Lt1993 | ninety two, with |  |
-| 6:17 | Lt1993 | an energy-saving | a spiral bulb · AN ENERGY-SAVING BULB (pop-reveal) |
-| 6:18 | Lt1993 | bulb, less | less than (ui-click-soft) |
-| 6:19 | Lt1993 | than half a second | ½ second + the 1992 strip pill + source (chime-reward) |
-| 6:20 | Lt1993 | of work. | OF WORK + a worker (ui-click-soft) |
-| 6:21 | Lt1993 | So what is light now? | the ? pulses (ui-click-soft) |
-| 6:22 | Lt1993 | A | the big ? (whoosh-soft) |
-| 6:23 | Lt1993 | crystal. | HOW WE SAW IT · A CRYSTAL chip + a white chip (chime-reward) |
-| 6:24 | Lt1993 | Light without fire. | Light without (ui-click-soft); fire. + a candle struck through (trap-snap) |
-| 6:25 | Lt1993 | So when light | cliffhanger band; price strip fades (piano-a-min); the chip docks into the ladder (whoosh-soft) |
-| 6:26 | Lt1993 | costs almost nothing, | WHEN LIGHT COSTS (whoosh-soft); tiny lights multiply · ALMOST NOTHING… (sparkle-soft) |
-| 6:27 | Lt1993 | what do we |  |
-| 6:28 | Lt1993 | do with it? | a gradient ? (impact-soft) |
-| 6:29 | Lt1993 |  | era exit pull-in (whoosh-reverse) |
-| 6:30 | LtToday | You wake | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
-| 6:31 | LtToday | up today. | gold underline under TODAY (whoosh-soft) |
-| 6:32 | LtToday | Well, tonight. | a crescent moon rises top right (ui-click-soft) |
-| 6:33 | LtToday | Go to your window | place line: your window (pop-reveal) |
-| 6:34 | LtToday | and count the lights you can |  |
-| 6:35 | LtToday | see. Streetlights, | header docks; the window onto the city · COUNT THE LIGHTS + the count (whoosh-soft); six streetlights come on, the count ticks · STREETLIGHTS (stream-soft) |
-| 6:36 | LtToday | signs, | three neon signs glow · SIGNS (pop-reveal) |
-| 6:37 | LtToday | the office | an office block, its windows light one by one · THE OFFICE (stream-soft) |
-| 6:38 | LtToday | that never switches off. | THAT NEVER (ui-click-soft); SWITCHES OFF (ui-click-soft) |
-| 6:39 | LtToday | Did you | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
-| 6:40 | LtToday | know that more than | (chime after "that") (chime-magic); card: more than (ui-click-soft) |
-| 6:41 | LtToday | a third of all people | card: a third (ui-click-soft) |
-| 6:42 | LtToday | can't see the Milky | card: can't see (ui-click-soft); card: the Milky Way (ui-click-soft) |
-| 6:43 | LtToday | Way from home? |  |
-| 6:44 | LtToday | In Europe, | card: EUROPE + ten figures (pop-reveal) |
-| 6:45 | LtToday | six in ten. | card: six figures light · 6 (ui-click-soft); card: IN 10 (ui-click-soft) |
-| 6:46 | LtToday | In North America, | card: NORTH AMERICA + ten figures (pop-reveal) |
-| 6:47 | LtToday | nearly |  |
-| 6:48 | LtToday | eight in ten. | card: eight figures light · NEARLY 8 (ui-click-soft); card: IN 10 + source (chime-reward) |
-| 6:49 | LtToday | Here's your night. |  |
-| 6:50 | LtToday | Nobody decided | card out; YOUR NIGHT (whoosh-soft); · NOBODY (ui-click-soft); DECIDED THIS (ui-click-soft) |
-| 6:51 | LtToday | this. In |  |
-| 6:52 | LtToday | Britain, by the year two thousand, | IN BRITAIN (ui-click-soft); · BY 2000 (ui-click-soft) |
-| 6:53 | LtToday | each person | one person · EACH PERSON (pop-reveal) |
-| 6:54 | LtToday | was using about |  |
-| 6:55 | LtToday | six and a half thousand | 6,500× + the person glows (chime-reward) |
-| 6:56 | LtToday | times more light | MORE LIGHT (ui-click-soft) |
-| 6:57 | LtToday | than in eighteen hundred. | a candle · 1800 · THAN IN 1800 + source (pop-reveal); a block of lights fills in · 2000 (stream-soft) |
-| 6:58 | LtToday | Every |  |
-| 6:59 | LtToday | time the price fell, | EVERY TIME (whoosh-soft); THE PRICE + an arrow (ui-click-soft); the arrow falls · FELL (whoosh-soft) |
-| 7:00 | LtToday | we bought | we bought more. (pop-reveal) |
-| 7:01 | LtToday | more. More |  |
-| 7:02 | LtToday | rooms, more | a house, its rooms light · MORE ROOMS (pop-reveal); a clock · MORE HOURS (pop-reveal) |
-| 7:03 | LtToday | hours, more streets. | three streetlights · MORE STREETS (pop-reveal) |
-| 7:04 | LtToday | And |  |
-| 7:05 | LtToday | it's speeding up. | AND IT'S SPEEDING UP (whoosh-soft) |
-| 7:06 | LtToday | In twenty twenty | 20 (ui-click-soft) |
-| 7:07 | LtToday | three, scientists | 23 (ui-click-soft); · SCIENTISTS USED (ui-click-soft) |
-| 7:08 | LtToday | used more than fifty | 50,000+ + source (pop-reveal) |
-| 7:09 | LtToday | thousand reports | REPORTS (ui-click-soft) |
-| 7:10 | LtToday | from ordinary people | FROM ORDINARY PEOPLE + three figures (ui-click-soft) |
-| 7:11 | LtToday | counting stars. | a night sky full of stars · COUNTING STARS (sparkle-soft) |
-| 7:12 | LtToday | They | THE NIGHT SKY (ui-click-soft) |
-| 7:13 | LtToday | found the night sky |  |
-| 7:14 | LtToday | getting brighter by almost | the sky glows orange, stars thin out · GETS BRIGHTER (whoosh-soft) |
-| 7:15 | LtToday | ten percent a year. | ≈ 9.6 % (chime-reward); A YEAR (ui-click-soft) |
-| 7:16 | LtToday | So what is |  |
-| 7:17 | LtToday | light now? | the ? pulses (ui-click-soft); the big ? (whoosh-soft) |
-| 7:18 | LtToday | Too cheap | HOW WE SAW IT · TOO CHEAP TO SWITCH OFF chip + a switch that stays on (chime-reward) |
-| 7:19 | LtToday | to switch off. | to switch off. (ui-click-soft) |
-| 7:20 | LtToday | So, | cliffhanger band; price strip fades (piano-a-min) |
-| 7:21 | LtToday | what happened when | the chip docks into the ladder (whoosh-soft); a window at night · WHAT HAPPENED (pop-reveal) |
-| 7:22 | LtToday | we switched the night | WHEN WE SWITCHED + the window lights up (ui-click-soft); orange skyglow rises in the window · THE NIGHT (whoosh-soft); a gradient ? · OFF? (impact-soft) |
-| 7:23 | LtToday | off? You're about | band: You're about to find out.; the ? swells (ui-click-soft) |
-| 7:24 | LtToday | to find out. | a gold ▸ slides out of the ? (whoosh-soft) |
-| 7:25 | LtToday |  |  |
-| 7:26 | LtToday |  | cut to THE ANSWER (whoosh-reverse) |
-| 7:27 | LtReveal | Here's the answer. | THE ANSWER pulses (impact-deep-soft) |
-| 7:28 | LtReveal | We didn't save the | We didn't (red) (ui-click-soft); save the (ui-click-soft) |
-| 7:29 | LtReveal | light. We spent | light. + a small candle flame (pop-reveal); We spent it. (gold) (ui-click-soft) |
-| 7:30 | LtReveal | it. All | All of it. (ui-click-soft) |
-| 7:31 | LtReveal | of it. Every time | EVERY TIME LIGHT GOT CHEAPER (ui-click-soft) |
-| 7:32 | LtReveal | light got cheaper, | the price line falls ↓ (whoosh-reverse) |
-| 7:33 | LtReveal | we used | WE USED (ui-click-soft) |
-| 7:34 | LtReveal | more, until it filled | MORE · twelve bulbs multiply (one per 3 f) (stream-soft); until it (ui-click-soft); filled (ui-click-soft) |
-| 7:35 | LtReveal | the sky. | the sky. (orange) · a night sky with an orange skyglow rises (warm-shimmer) |
-| 7:36 | LtReveal | So, your guess. |  |
-| 7:37 | LtReveal | Out of | YOUR GUESS (whoosh-soft); OUT OF EVERY (ui-click-soft) |
-| 7:38 | LtReveal | every ten people on | TEN PEOPLE · ten figures appear (stream-soft) |
-| 7:39 | LtReveal | Earth, more than | ON EARTH (ui-click-soft) |
-| 7:40 | LtReveal | eight now live under | MORE THAN 8 IN 10 stamp + Falchi source (stamp-hit); eight figures light up under the glow (warm-shimmer); LIVE UNDER A SKY (ui-click-soft) |
-| 7:41 | LtReveal | a sky our |  |
-| 7:42 | LtReveal | lights have brightened. | OUR LIGHTS HAVE BRIGHTENED · the skyglow brightens (sparkle-soft) |
-| 7:43 | LtReveal | In the United | IN THE UNITED STATES (ui-click-soft) |
-| 7:44 | LtReveal | States and Europe, | AND EUROPE (ui-click-soft) |
-| 7:45 | LtReveal | almost everyone. | almost (orange) (pop-reveal); everyone + > 99 % + · US and Europe more than 99 % (ui-click-soft) |
-| 7:46 | LtReveal | How close were | How close were you? (ui-click-soft) |
-| 7:47 | LtReveal | you? |  |
-| 7:48 | LtReveal | Now walk down the ladder | the sky leaves; six rungs appear dim (whoosh-soft); NOW WALK DOWN THE LADDER (ui-click-soft) |
-| 7:49 | LtReveal | with me. | WITH ME (ui-click-soft) |
-| 7:50 | LtReveal | In fifteen hundred, light | a gold marker appears at the 1500 rung (ui-click-soft) |
-| 7:51 | LtReveal | was a luxury. | rung A LUXURY lights gold · a candle (pop-reveal) |
-| 7:52 | LtReveal | Then a |  |
-| 7:53 | LtReveal | service, through a pipe. | rung A SERVICE lights, the marker steps up (ui-click-soft); a gas pipe (pop-reveal) |
-| 7:54 | LtReveal |  |  |
-| 7:55 | LtReveal | Then a liquid, | rung A LIQUID lights, the marker steps up (ui-click-soft) |
-| 7:56 | LtReveal | in a can. | a kerosene can (pop-reveal) |
-| 7:57 | LtReveal | Then |  |
-| 7:58 | LtReveal | a network. | rung A NETWORK lights, the marker steps up · a bulb (pop-reveal) |
-| 7:59 | LtReveal | Then a crystal, | rung A CRYSTAL lights, the marker steps up · a blue LED (pop-reveal) |
-| 8:00 | LtReveal | light without | LIGHT WITHOUT (ui-click-soft) |
-| 8:01 | LtReveal | fire. | FIRE (ui-click-soft) |
-| 8:02 | LtReveal | And today, | the marker steps up to TODAY (ui-click-soft) |
-| 8:03 | LtReveal | light is too |  |
-| 8:04 | LtReveal | cheap to switch off. | rung TOO CHEAP lights gold (chime-reward); a switch, on (ui-toggle-on) |
-| 8:05 | LtReveal | In fifteen | In 1500, (the marker leaves, the props dim) (ui-click-soft) |
-| 8:06 | LtReveal | hundred, the scarce | the scarce thing was (ui-click-soft) |
-| 8:07 | LtReveal | thing was light. | light. glows warm · the ladder glows (chime-reward) |
-| 8:08 | LtReveal | Today, | Today, (ui-click-soft) |
-| 8:09 | LtReveal | the scarce | (riser into the dark) (riser-soft); the scarce thing is (ui-click-soft) |
-| 8:10 | LtReveal | thing is the dark. | the dark. · the night sky returns, dark, with its stars (impact-deep-soft) |
-| 8:11 | LtReveal |  |  |
-| 8:12 | LtReveal |  | cut: a night sky with an orange skyglow; the docked ladder with the dashed 2100 "?" rung (whoosh-soft) |
-| 8:13 | Lt2100 | So what could the night | So what could the night (gold) look like… (ui-click-soft) |
-| 8:14 | Lt2100 | look like in | 2100 header slams · PREDICTION tag (impact-soft) |
-| 8:15 | Lt2100 | twenty one hundred? |  |
-| 8:16 | Lt2100 | That morning | header docks; a dawn line glows on the horizon (warm-shimmer) |
-| 8:17 | Lt2100 | hasn't happened |  |
-| 8:18 | Lt2100 | yet. But | hasn't happened yet (ui-click-soft) |
-| 8:19 | Lt2100 | we can follow the |  |
-| 8:20 | Lt2100 | evidence. | THE EVIDENCE → (ui-click-soft) |
-| 8:21 | Lt2100 | Some places have already | SOME PLACES (ui-click-soft) |
-| 8:22 | Lt2100 | started protecting | ARE ALREADY PROTECTING (ui-click-soft) |
-| 8:23 | Lt2100 | the dark. | THE DARK (ui-click-soft) |
-| 8:24 | Lt2100 | Since twenty thirteen, | France card · SINCE (pop-reveal); 2013 (ui-click-soft) |
-| 8:25 | Lt2100 | France has told | · FRANCE (ui-click-soft) |
-| 8:26 | Lt2100 | shops to switch | a lit shop window · SHOP WINDOWS (pop-reveal); SWITCH · the window lights go off (whoosh-reverse) |
-| 8:27 | Lt2100 | off their window lights by | OFF (ui-click-soft) |
-| 8:28 | Lt2100 | one in the morning. | BY 1 + a clock at one + decree source (pop-reveal); A.M. (ui-click-soft) |
-| 8:29 | Lt2100 | Tucson, | Tucson card · TUCSON (pop-reveal) |
-| 8:30 | Lt2100 | in Arizona, has | , ARIZONA (ui-click-soft) |
-| 8:31 | Lt2100 | had rules on outdoor | a streetlight · RULES (pop-reveal) |
-| 8:32 | Lt2100 | lighting since | ON OUTDOOR LIGHTING (ui-click-soft) |
-| 8:33 | Lt2100 | nineteen seventy two, | SINCE 1972 + code source (ui-click-soft) |
-| 8:34 | Lt2100 | to keep the sky | TO KEEP THE SKY (ui-click-soft) |
-| 8:35 | Lt2100 | dark for its | DARK (ui-click-soft); an observatory · OBSERVATORIES (pop-reveal) |
-| 8:36 | Lt2100 | observatories. |  |
-| 8:37 | Lt2100 | So here's one scenario. | the evidence leaves · ONE SCENARIO stamp (stamp-hit) |
-| 8:38 | Lt2100 | Not |  |
-| 8:39 | Lt2100 | a fact. | · NOT A FACT (stamp-hit) |
-| 8:40 | Lt2100 | If the sky keeps | IF THE SKY (ui-click-soft) |
-| 8:41 | Lt2100 | brightening, darkness | KEEPS BRIGHTENING · the skyglow rises, the stars fade (warm-shimmer); darkness (big) · the 2100 rung fills DARKNESS IS THE LUXURY? (chime-reward) |
-| 8:42 | Lt2100 | becomes | becomes something (ui-click-soft) |
-| 8:43 | Lt2100 | something we have to protect, | we have to protect, (ui-click-soft) |
-| 8:44 | Lt2100 | the way |  |
-| 8:45 | Lt2100 | we once protected | THE WAY WE ONCE PROTECTED (ui-click-soft); a tree · FORESTS (pop-reveal) |
-| 8:46 | Lt2100 | forests and coasts. | waves · COASTS (pop-reveal) |
-| 8:47 | Lt2100 |  |  |
-| 8:48 | Lt2100 | A child in twenty | a child looks up · A CHILD (pop-reveal); IN 2100 (ui-click-soft) |
-| 8:49 | Lt2100 | one hundred might | MIGHT SEE (ui-click-soft) |
-| 8:50 | Lt2100 | see the Milky Way for | THE MILKY WAY · the band rises in the sky, the skyglow falls (chime-magic) |
-| 8:51 | Lt2100 | the first time on a school | FOR THE FIRST TIME (ui-click-soft); · ON A SCHOOL TRIP (ui-click-soft) |
-| 8:52 | Lt2100 | trip, in |  |
-| 8:53 | Lt2100 | a place kept dark | IN A PLACE KEPT DARK (ui-click-soft) |
-| 8:54 | Lt2100 | on purpose. | ON PURPOSE (ui-click-soft) |
-| 8:55 | Lt2100 | And remember the bell | the bell from 1500 returns and swings · THE BELL (chime-reward) |
-| 8:56 | Lt2100 | from fifteen hundred? | FROM 1500 (ui-click-soft) |
-| 8:57 | Lt2100 | Cover the fire. | card 1500 · Cover (a candle) (pop-reveal); the fire. · the cover comes down, the flame goes out (whoosh-reverse) |
-| 8:58 | Lt2100 | In |  |
-| 8:59 | Lt2100 | twenty one hundred, it | card 2100 (red dashed) · a streetlight (pop-reveal) |
-| 9:00 | Lt2100 | might ring again. | · IT MIGHT (ui-click-soft); RING AGAIN · the bell swings again (chime-reward) |
-| 9:01 | Lt2100 | Only this time, | ONLY THIS TIME, (ui-click-soft); (riser into cover the light) (riser-soft) |
-| 9:02 | Lt2100 | it means cover the light. | IT MEANS (ui-click-soft); cover (gradient) (ui-click-soft); the light. (gradient) · the streetlight dims (impact-deep-soft) |
-| 9:03 | Lt2100 |  |  |
-| 9:04 | Lt2100 |  | cut: a room at night, a lamp on, a wall switch · Tonight, (whoosh-soft) |
-| 9:05 | LtClose | Tonight, |  |
-| 9:06 | LtClose | switch off one light | switch · the switch flips, the lamp goes out, the warm room light falls away (ui-toggle-on); off one light (ui-click-soft) |
-| 9:07 | LtClose | and look up. | and look up. · the room slides down, the dark sky opens (no stars yet) (whoosh-soft) |
-| 9:08 | LtClose | How many stars can | How many (ui-click-soft); stars (glowing) · the stars come out across the sky (sparkle-soft) |
-| 9:09 | LtClose | you count? | can you count? (gradient) (chime-magic) |
-| 9:10 | LtClose |  |  |
-| 9:11 | LtClose | This was | cut to the outro (whoosh-wind); EPISODE (pop-reveal) |
-| 9:12 | LtOutro | Did You Know That, | logo switches on; wordmark (ui-toggle-on) |
-| 9:13 | LtOutro | episode seven. | "07" pulses (ui-click-soft) |
-| 9:14 | LtOutro |  |  |
-| 9:15 | LtOutro | Light. Now | "Light" title (pop-reveal) |
-| 9:16 | LtOutro | it's your turn. | lockup shrinks; prompt card (whoosh-soft); Streetlights tile (a lit streetlight) (pop-reveal) |
-| 9:17 | LtOutro | Streetlights or stars. | "or" + stars tile (a starry sky) (sparkle-soft) |
-| 9:18 | LtOutro | If you had to |  |
-| 9:19 | LtOutro | give one up, | "If you had to give one up," (ui-click-soft) |
-| 9:20 | LtOutro | which would it be, | "which would it be," (gold) (ui-click-soft) |
-| 9:21 | LtOutro | and why? | "and why?" (ui-click-soft) |
-| 9:22 | LtOutro | Tell me in the |  |
-| 9:23 | LtOutro | comments. | COMMENTS ↓ (pop-reveal) |
-| 9:24 | LtOutro | At the end of every episode, | "end of every episode:" (ui-click-soft) |
-| 9:25 | LtOutro | I will read the | COMMENT OF THE WEEK pill (impact-soft) |
-| 9:26 | LtOutro | best comment, right | "best comment" (ui-click-soft); card flash ("right here") (ui-click-soft) |
-| 9:27 | LtOutro | here, on this screen. | "read on screen" (ui-click-soft) |
-| 9:28 | LtOutro | And |  |
-| 9:29 | LtOutro | the subject | "the subject" (sparkle-soft) |
-| 9:30 | LtOutro | you ask for most | "you ask for most" (ui-click-soft) |
-| 9:31 | LtOutro | becomes a future episode. | → a future episode (pop-reveal) |
-| 9:32 | LtOutro | On |  |
-| 9:33 | LtOutro | our website, Dex-tee | website pill slides in (whoosh-soft); Dexty.live lights in the pill (sparkle-soft) |
-| 9:34 | LtOutro | dot live, you can |  |
-| 9:35 | LtOutro | watch every episode, | WATCH (ui-click-soft) |
-| 9:36 | LtOutro | collect the | COLLECT (ui-click-soft) |
-| 9:37 | LtOutro | fact cards, and play | PLAY (ui-click-soft) |
-| 9:38 | LtOutro | the guessing game. | Dexty.live pulses (pop-reveal) |
-| 9:39 | LtOutro | If this changed | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
-| 9:40 | LtOutro | how you see your light switch, | YOUR LIGHT SWITCH + a switch icon (ui-toggle-on) |
-| 9:41 | LtOutro | like | Like (ui-click-soft) |
-| 9:42 | LtOutro | it. |  |
-| 9:43 | LtOutro | Share it with the friend | Share (ui-send); THE FRIEND (ui-click-soft) |
-| 9:44 | LtOutro | who leaves every light | "WHO LEAVES" (ui-click-soft); "EVERY LIGHT ON" (ui-click-soft); a glowing bulb; friend chip pulses cyan (pop-reveal) |
-| 9:45 | LtOutro | on. |  |
-| 9:46 | LtOutro | And subscribe, so | Subscribe (chime-reward) |
-| 9:47 | LtOutro | the next mystery finds you. | ? THE NEXT MYSTERY (sparkle-soft) |
-| 9:48 | LtOutro |  |  |
-| 9:49 | LtOutro | Next time: | NEXT · NO. 08 (whoosh-wind) |
-| 9:50 | LtOutro | weight. | the NEXT_EP subject WEIGHT + a bathroom scale (impact-soft) |
-| 9:51 | LtOutro | In fifteen | In 1500, (ui-click-soft) |
-| 9:52 | LtOutro | hundred, a heavy body could | a heavy body; the scale needle swings up (ui-click-soft); could be (ui-click-soft) |
-| 9:53 | LtOutro | be a sign of wealth. | a sign of wealth. (gold) + coin stack + Bruegel source (pop-reveal) |
-| 9:54 | LtOutro | Today, | Today, (ui-click-soft) |
-| 9:55 | LtOutro | one in seven | one in seven + seven figures (ui-click-soft) |
-| 9:56 | LtOutro | people on Earth lives | people on Earth (ui-click-soft) |
-| 9:57 | LtOutro | with obesity. | lives with obesity. (orange); one figure lights; WHO source (pop-reveal) |
-| 9:58 | LtOutro | So how did plenty | So how did (ui-click-soft); plenty (ui-click-soft) |
-| 9:59 | LtOutro | turn into a problem? | turn into a problem? (red); the scale red zone lights (whoosh-reverse) |
-| 10:00 | LtOutro |  | "problem?" settles (piano-a-min) |
-| 10:01 | LtOutro | Ask... | ASK. (thock in the beat after the word) (chess-piece-thock) |
-| 10:02 | LtOutro | Wonder... | WONDER. (thock in the beat after the word) (chess-piece-thock) |
-| 10:03 | LtOutro | Repeat. |  |
-| 10:04 | LtOutro |  | REPEAT. (thock in the beat after the word) (chess-piece-thock) |
-| 10:05 | LtOutro |  |  |
-| 10:06 | LtOutro | Next | end screen builds in: COMMENT OF THE WEEK card, WATCH NEXT slot, ring (ES = END + 54 f) (whoosh-soft) |
-| 10:07 | LtOutro | time... this | end screen: READ ON THIS SCREEN writes on (pencil-scribble) |
-| 10:08 | LtOutro | could be your comment. | end screen: COMMENT OF THE WEEK (EXAMPLE) card flares + Comment below ↓ (pop-reveal) |
-| 10:09 | LtOutro | Pick a mystery. | end screen: WATCH NEXT slot glows cyan ("Pick a mystery") (sparkle-soft) |
-| 10:10 | LtOutro | And I will |  |
-| 10:11 | LtOutro | see you there. | end screen: subscribe ring pulses (sparkle-soft) |
-| 10:12 | LtOutro |  |  |
-| 10:13 | LtOutro |  |  |
-| 10:14 | LtOutro |  |  |
-| 10:15 | LtOutro |  |  |
-| 10:16 | LtOutro |  |  |
-| 10:17 | LtOutro |  |  |
-| 10:18 | LtOutro |  |  |
-| 10:19 | LtOutro |  |  |
-| 10:20 | LtOutro |  |  |
-| 10:21 | LtOutro |  |  |
-| 10:22 | LtOutro |  |  |
+| 0:00 | LtHook | What | one candle flame flickers in the dark (scan-hum); the candle slides left; THE QUESTION card, What happened when (pop-reveal) |
+| 0:01 | LtHook | happened when we switched | we switched (ui-click-soft) |
+| 0:02 | LtHook | the night off? | the night off? (gold) (chime-magic) |
+| 0:03 | LtHook | Here's what we know. | HERE'S WHAT WE KNOW ▸ (in the question card) (ui-click-soft) |
+| 0:04 | LtHook |  |  |
+| 0:05 | LtHook | In Britain, light now | BRITAIN (pop-reveal); card out; the Britain panel (whoosh-soft); LIGHT NOW COSTS (ui-click-soft) |
+| 0:06 | LtHook | costs less than one | LESS THAN (ui-click-soft) |
+| 0:07 | LtHook | three-thousandth of | < 1/3,000 lands (impact-soft) |
+| 0:08 | LtHook | what it did in eighteen hundred. | OF WHAT IT COST IN 1800 (ui-click-soft); Fouquet & Pearson source line (ui-click-soft) |
+| 0:09 | LtHook | You'd | You'd think we'd (ui-click-soft) |
+| 0:10 | LtHook | think we'd pocket the savings. | pocket the savings. · a coin stack drops in (pop-reveal) |
+| 0:11 | LtHook |  |  |
+| 0:12 | LtHook | We didn't. | the Britain panel clears; We (whoosh-soft); didn't. (red) · its own beat (impact-soft) |
+| 0:13 | LtHook | And tonight, | the candle flame sinks low (warm-shimmer); We didn't. docks up; TONIGHT (whoosh-soft) |
+| 0:14 | LtHook | above your house, | a dark house, one lit window · ABOVE YOUR HOUSE (pop-reveal) |
+| 0:15 | LtHook | something is slowly | something is slowly (ui-click-soft) |
+| 0:16 | LtHook | disappearing. | disappearing. (keeps fading) (whoosh-soft) |
+| 0:17 | LtHook | Here's your guess. | the street gives way to the YOUR GUESS card; a pulsing ? (whoosh-soft) |
+| 0:18 | LtHook | Think of ten | · THINK OF TEN PEOPLE (ui-click-soft); ten figures build (none lit) (pop-reveal) |
+| 0:19 | LtHook | people, |  |
+| 0:20 | LtHook | anywhere on Earth. | · ANYWHERE ON EARTH (ui-click-soft) |
+| 0:21 | LtHook | How many | How many of them (ui-click-soft) |
+| 0:22 | LtHook | of them live under a night | live under a (ui-click-soft); night sky that our lights have (ui-click-soft) |
+| 0:23 | LtHook | sky that our lights |  |
+| 0:24 | LtHook | have brightened? | brightened? glows · Falchi 2016 source line (impact-soft); option Two? (pop-reveal) |
+| 0:25 | LtHook | Two? Five? | option Five? (pop-reveal) |
+| 0:26 | LtHook | More than | option More than eight? (same neutral style) (pop-reveal) |
+| 0:27 | LtHook | eight? |  |
+| 0:28 | LtHook | Guess in the comments, | step 1 GUESS IN THE COMMENTS (pop-reveal); comment bubble: My guess: … (ui-send) |
+| 0:29 | LtHook | right now. |  |
+| 0:30 | LtHook | Then stay to the | step 2 STAY TO THE END (pop-reveal) |
+| 0:31 | LtHook | end, and check your guess. | step 3 CHECK YOUR GUESS (pop-reveal); step 3 ticks green (chime-reward) |
+| 0:32 | LtHook |  | brand flash: the guess fades, the logo arrives (whoosh-soft) |
+| 0:33 | LtHook |  | the logo bulb switches on (ui-toggle-on); glow ring + sparks (sparkle-soft); wordmark THAT? slams in (impact-deep-soft); NO. 07 · LIGHT (chime-magic) |
+| 0:34 | LtHook |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 0:35 | Lt1500 | You wake up |  |
+| 0:36 | Lt1500 | in fifteen hundred, | gold underline under 1500 (whoosh-soft) |
+| 0:37 | Lt1500 | in a market town | place line: a market town in Flanders (pop-reveal) |
+| 0:38 | Lt1500 | in Flanders. | header docks; the town at dusk comes up full (wind-soft) |
+| 0:39 | Lt1500 | It's late autumn. | LATE AUTUMN (ui-click-soft) |
+| 0:40 | Lt1500 | The light is | THE LIGHT (ui-click-soft) |
+| 0:41 | Lt1500 | going, and | the dusk sky darkens · IS GOING (whoosh-reverse) |
+| 0:42 | Lt1500 | the church bell starts | THE CHURCH (ui-click-soft); the bell in the tower + the big bell · BELL (pop-reveal) |
+| 0:43 | Lt1500 | to ring. | both bells swing (the toll) (impact-deep-soft); DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 0:44 | Lt1500 | Did you know that this | (chime after "that") (chime-magic) |
+| 0:45 | Lt1500 | bell has a name, | card: this bell + the bell swings (ui-click-soft); card: has a name, (ui-click-soft) |
+| 0:46 | Lt1500 | and the name is curfew? | card: and the name is (ui-click-soft); card: curfew? (gold) (stamp-hit) |
+| 0:47 | Lt1500 |  |  |
+| 0:48 | Lt1500 | It comes from | card: a gold underline sweeps under curfew? (whoosh-soft) |
+| 0:49 | Lt1500 | the old French | card: FROM OLD FRENCH: (ui-click-soft) |
+| 0:50 | Lt1500 | for cover | card: COVER THE FIRE + the burning hearth (warm-shimmer) |
+| 0:51 | Lt1500 | the fire. | card: covrefeu · Merriam-Webster · Etymonline source (ui-click-soft) |
+| 0:52 | Lt1500 | When you hear it, | card: WHEN YOU HEAR IT, (ui-click-soft) |
+| 0:53 | Lt1500 | you bank the hearth | card: the lid covers the hearth · BANK THE HEARTH (knock-solid) |
+| 0:54 | Lt1500 | and the day is over. | card: THE DAY IS OVER (red) (trap-snap) |
+| 0:55 | Lt1500 | Here's |  |
+| 0:56 | Lt1500 | your evening. | card out; YOUR EVENING (whoosh-soft) |
+| 0:57 | Lt1500 | Work stops at sunset. | · WORK STOPS (ui-click-soft); the sun sinks · AT SUNSET (whoosh-reverse) |
+| 0:58 | Lt1500 | A |  |
+| 0:59 | Lt1500 | tallow candle, made | a smoking tallow candle · TALLOW CANDLE (pop-reveal) |
+| 1:00 | Lt1500 | from sheep fat, | SHEEP FAT (ui-click-soft) |
+| 1:01 | Lt1500 | smokes and stinks, | SMOKES (wind-soft); · STINKS (ui-click-soft) |
+| 1:02 | Lt1500 | and it |  |
+| 1:03 | Lt1500 | costs too much to burn | COSTS TOO MUCH (red) (ui-click-soft); TO BURN FOR LONG (ui-click-soft) |
+| 1:04 | Lt1500 | for long. |  |
+| 1:05 | Lt1500 | So most nights | MOST NIGHTS (ui-click-soft) |
+| 1:06 | Lt1500 | you use a rushlight, | a rushlight · RUSHLIGHT (pop-reveal) |
+| 1:07 | Lt1500 | a dried rush | A DRIED RUSH (ui-click-soft) |
+| 1:08 | Lt1500 | dipped in grease. | · DIPPED IN GREASE (ui-click-soft) |
+| 1:09 | Lt1500 | Depending | DEPENDING ON ITS LENGTH, IT LASTS (ui-click-soft) |
+| 1:10 | Lt1500 | on its length, it |  |
+| 1:11 | Lt1500 | lasts a few minutes, | the empty burn bar + rushlight source line (ui-click-soft); the bar fills a little · A FEW MINUTES (ui-click-soft) |
+| 1:12 | Lt1500 | or an hour at | the bar runs long · … AN HOUR AT MOST (stream-soft) |
+| 1:13 | Lt1500 | most. |  |
+| 1:14 | Lt1500 | Beeswax | a glowing beeswax candle · BEESWAX (warm-shimmer) |
+| 1:15 | Lt1500 | is for the church | FOR THE CHURCH (ui-click-soft) |
+| 1:16 | Lt1500 | and the rich. | & THE RICH (gold) (sparkle-soft) |
+| 1:17 | Lt1500 | What does one |  |
+| 1:18 | Lt1500 | hour of light | evening out; WHAT DOES ONE HOUR (whoosh-soft); OF LIGHT (ui-click-soft) |
+| 1:19 | Lt1500 | cost you? | COST YOU? (ui-click-soft) |
+| 1:20 | Lt1500 | One ordinary | = 1 ORDINARY (ui-click-soft) |
+| 1:21 | Lt1500 | bulb's worth, | a lit bulb · BULB (pop-reveal) |
+| 1:22 | Lt1500 | for one hour. | · FOR 1 HOUR (ui-click-soft) |
+| 1:23 | Lt1500 | An economist, | AN ECONOMIST (ui-click-soft) |
+| 1:24 | Lt1500 | William | · WILLIAM NORDHAUS + the Nordhaus 1997 source line (page-flip) |
+| 1:25 | Lt1500 | Nordhaus, worked it out. |  |
+| 1:26 | Lt1500 | In ancient | a clay oil lamp · ANCIENT (pop-reveal) |
+| 1:27 | Lt1500 | Babylon, about forty | BABYLON (ui-click-soft); ≈ 41 counts up + strip pill BABYLON ≈41 H (chime-reward) |
+| 1:28 | Lt1500 | one hours of work. | HOURS OF WORK (ui-click-soft) |
+| 1:29 | Lt1500 | And by | a tallow candle · 1800 (pop-reveal) |
+| 1:30 | Lt1500 | eighteen hundred, in America, | · AMERICA (ui-click-soft) |
+| 1:31 | Lt1500 | still | STILL (ui-click-soft) |
+| 1:32 | Lt1500 | more than five. | > 5 HOURS OF WORK + strip pill 1800 >5 H (chime-reward) |
+| 1:33 | Lt1500 | In more than three | the BABYLON → 1800 bar runs · 3,000+ YEARS (stream-soft) |
+| 1:34 | Lt1500 | thousand years, |  |
+| 1:35 | Lt1500 | the price barely | THE PRICE BARELY MOVED stamp (stamp-hit) |
+| 1:36 | Lt1500 | moved. So |  |
+| 1:37 | Lt1500 | what is light to you? | price out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
+| 1:38 | Lt1500 | A |  |
+| 1:39 | Lt1500 | luxury. | HOW WE SAW IT · A LUXURY chip + the glowing rushlight (chime-reward) |
+| 1:40 | Lt1500 | You make it yourself, | you make it yourself, (ui-click-soft) |
+| 1:41 | Lt1500 | and you make it | the chip docks into the ladder (whoosh-soft); and you make it (ui-click-soft) |
+| 1:42 | Lt1500 | last. | last (ui-click-soft) |
+| 1:43 | Lt1500 | For three hundred | cliffhanger band: For three hundred years, · NEXT ▸ 1807; price strip fades (piano-a-min); FOR 300 YEARS · eight candles · the bar runs 1500 → 1800 (whoosh-soft) |
+| 1:44 | Lt1500 | years, the dark | the candles go out one by one · THE DARK; band: the dark wins. (whoosh-reverse) |
+| 1:45 | Lt1500 | wins. Then a | WINS (ui-click-soft); band: Then a man in London (ui-click-soft) |
+| 1:46 | Lt1500 | man in London sets | the London skyline · LONDON (pop-reveal); band: sets the air on fire. (ui-click-soft) |
+| 1:47 | Lt1500 | the air on fire. | a flame with no wick lights in the air over London (warm-shimmer) |
+| 1:48 | Lt1500 |  | era exit pull-in (whoosh-reverse) |
+| 1:49 | Lt1500 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 1:50 | Lt1807 | You wake up |  |
+| 1:51 | Lt1807 | in eighteen oh seven, | gold underline under 1807 (whoosh-soft) |
+| 1:52 | Lt1807 | on | place line: Pall Mall, London (pop-reveal) |
+| 1:53 | Lt1807 | Pall Mall, in London. |  |
+| 1:54 | Lt1807 | It's | header docks; Pall Mall at evening comes up full (wind-soft) |
+| 1:55 | Lt1807 | a warm June evening, | A WARM (ui-click-soft); JUNE EVENING (ui-click-soft) |
+| 1:56 | Lt1807 | and a crowd | a crowd · A CROWD (pop-reveal) |
+| 1:57 | Lt1807 | is staring at a row of | STARING AT… (ui-click-soft); a row of cold iron posts · A ROW OF POSTS (knock-solid) |
+| 1:58 | Lt1807 | iron posts. |  |
+| 1:59 | Lt1807 | Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 2:00 | Lt1807 | you know that the first gas | (chime after "that") (chime-magic); card: the first gas lights (ui-click-soft) |
+| 2:01 | Lt1807 | lights on a London | card: on a London street + three dark posts (ui-click-soft) |
+| 2:02 | Lt1807 | street were lit for | card: were lit · the three posts light one by one (warm-shimmer) |
+| 2:03 | Lt1807 | the king's birthday? | card: for the king's birthday? + a crown (pop-reveal); card: George III's birthday, 4 June 1807 source line (ui-click-soft) |
+| 2:04 | Lt1807 |  |  |
+| 2:05 | Lt1807 | A German-born businessman | card: GERMAN-BORN · (ui-click-soft) |
+| 2:06 | Lt1807 | named Frederick | card: FREDERICK WINSOR (ui-click-soft) |
+| 2:07 | Lt1807 | Winsor burns | card: BURNS GAS (ui-click-soft) |
+| 2:08 | Lt1807 | gas made from coal, | card: MADE FROM COAL (ui-click-soft) |
+| 2:09 | Lt1807 | piped along | card: PIPED ALONG THE STREET + a flowing pipe (stream-soft) |
+| 2:10 | Lt1807 | the street. No |  |
+| 2:11 | Lt1807 | wick. No wax. | card: NO WICK. (red) (stamp-hit); card: NO WAX. (red) (stamp-hit) |
+| 2:12 | Lt1807 | Here's |  |
+| 2:13 | Lt1807 | your evening. The | card out; YOUR EVENING · the posts burn along the street (whoosh-soft) |
+| 2:14 | Lt1807 | shops stay open | THE SHOPS (ui-click-soft); shop windows glow · STAY OPEN (warm-shimmer) |
+| 2:15 | Lt1807 | after dark. | AFTER DARK (ui-click-soft) |
+| 2:16 | Lt1807 | Mill owners start | a mill owner · MILL OWNERS (pop-reveal) |
+| 2:17 | Lt1807 | to see something new. | SEE SOMETHING NEW (ui-click-soft) |
+| 2:18 | Lt1807 | A factory | a factory, its windows lit · A FACTORY THAT (pop-reveal) |
+| 2:19 | Lt1807 | that never has | NEVER HAS TO (ui-click-soft) |
+| 2:20 | Lt1807 | to stop at sunset. | the sun sinks behind the lit factory · STOP AT SUNSET (whoosh-reverse) |
+| 2:21 | Lt1807 | Five years |  |
+| 2:22 | Lt1807 | later, in eighteen | evening out; FIVE YEARS LATER (whoosh-soft) |
+| 2:23 | Lt1807 | twelve, | · 1812 (ui-click-soft) |
+| 2:24 | Lt1807 | Parliament grants a | PARLIAMENT (ui-click-soft) |
+| 2:25 | Lt1807 | charter to the Gas Light | a sealed charter · GRANTS A CHARTER (page-flip); THE GAS LIGHT (ui-click-soft) |
+| 2:26 | Lt1807 | and Coke Company, | AND COKE COMPANY (ui-click-soft) |
+| 2:27 | Lt1807 | the first | THE FIRST GAS COMPANY (ui-click-soft) |
+| 2:28 | Lt1807 | gas company |  |
+| 2:29 | Lt1807 | in the world. | IN THE WORLD + Museum of London source line (chime-reward) |
+| 2:30 | Lt1807 | Light runs under | the street cross-section · LIGHT RUNS (stream-soft); gas flows along the main · UNDER THE STREET (ui-click-soft) |
+| 2:31 | Lt1807 | the street, |  |
+| 2:32 | Lt1807 | to your door, | a branch rises to a door and its lamp lights · TO YOUR DOOR (knock-solid) |
+| 2:33 | Lt1807 | and arrives with a bill. | AND ARRIVES WITH (ui-click-soft); a bill drops in · A BILL stamp (stamp-hit) |
+| 2:34 | Lt1807 | So what |  |
+| 2:35 | Lt1807 | is light now? | charter out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
+| 2:36 | Lt1807 | A service. | HOW WE SAW IT · A SERVICE chip + a burning lamp (chime-reward) |
+| 2:37 | Lt1807 | It |  |
+| 2:38 | Lt1807 | comes to you, through | it comes to you, (ui-click-soft); a pipe flows into the lamp · through (stream-soft) |
+| 2:39 | Lt1807 | a pipe. | a pipe (ui-click-soft); the chip docks into the ladder (whoosh-soft) |
+| 2:40 | Lt1807 | But across the ocean, | cliffhanger band: But across the ocean, · NEXT ▸ 1859; price strip fades (piano-a-min); ACROSS THE OCEAN · waves (whoosh-soft) |
+| 2:41 | Lt1807 | the best light | THE BEST LIGHT; band: the best light in America (ui-click-soft) |
+| 2:42 | Lt1807 | in America | · AMERICA (ui-click-soft) |
+| 2:43 | Lt1807 | still comes from | STILL COMES FROM…; band: still comes from the head (ui-click-soft) |
+| 2:44 | Lt1807 | the head of a whale. | a whale rises in; band: of a whale. (pop-reveal) |
+| 2:45 | Lt1807 |  | era exit pull-in (whoosh-reverse) |
+| 2:46 | Lt1807 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 2:47 | Lt1859 | You wake up in eighteen | gold underline under 1859 (whoosh-soft) |
+| 2:48 | Lt1859 | fifty nine, |  |
+| 2:49 | Lt1859 | in Titusville, | place line: Titusville, Pennsylvania (pop-reveal) |
+| 2:50 | Lt1859 | Pennsylvania. | the August sun rises over the field (ui-click-soft) |
+| 2:51 | Lt1859 | It's August. | header docks; AUGUST (whoosh-soft) |
+| 2:52 | Lt1859 | The air smells |  |
+| 2:53 | Lt1859 | of mud and tar, | the muddy field · MUD (stream-soft); tar pools shimmer · AND TAR (ui-click-soft) |
+| 2:54 | Lt1859 | and men | six men · MEN CHEERING (pop-reveal) |
+| 2:55 | Lt1859 | are cheering around | the men bob, cheering (ui-click-soft) |
+| 2:56 | Lt1859 | a wooden derrick. | the wooden derrick · A WOODEN DERRICK (impact-soft); DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 2:57 | Lt1859 | Did you know that a | (chime after "that") (chime-magic) |
+| 2:58 | Lt1859 | historian later wrote | card: a historian later wrote that (ui-click-soft) |
+| 2:59 | Lt1859 | that oil gave kerosene | card: oil (gold) (pop-reveal); card: “gave + Stotz 1938, quoted by Nordhaus 1997 (ui-click-soft); card: kerosene to the world (orange) (ui-click-soft) |
+| 3:00 | Lt1859 | to the world, |  |
+| 3:01 | Lt1859 | and | card: and life to the few remaining (ui-click-soft) |
+| 3:02 | Lt1859 | life to the few remaining |  |
+| 3:03 | Lt1859 | whales? | card: whales” + a whale (pop-reveal) |
+| 3:04 | Lt1859 | Before | card: BEFORE THIS: (ui-click-soft) |
+| 3:05 | Lt1859 | this, whalers | card: WHALERS SAIL (ui-click-soft) |
+| 3:06 | Lt1859 | sailed for years to fill | card: a whaling ship rocks (wind-soft); card: FOR YEARS (ui-click-soft) |
+| 3:07 | Lt1859 | their lamps. | card: → LAMPS (ui-click-soft) |
+| 3:08 | Lt1859 | Here's your evening. |  |
+| 3:09 | Lt1859 | A Canadian | card out; YOUR EVENING (whoosh-soft); a doctor figure · A CANADIAN DOCTOR (pop-reveal) |
+| 3:10 | Lt1859 | doctor, Abraham Gesner, | Abraham Gesner (ui-click-soft) |
+| 3:11 | Lt1859 | has |  |
+| 3:12 | Lt1859 | already shown how to make | HAS SHOWN HOW TO MAKE (ui-click-soft) |
+| 3:13 | Lt1859 | a lamp fuel called | a drop of fuel · A LAMP FUEL (pop-reveal) |
+| 3:14 | Lt1859 | kerosene. | → kerosene (chime-reward) |
+| 3:15 | Lt1859 | Now |  |
+| 3:16 | Lt1859 | Edwin Drake has struck | Edwin Drake (ui-click-soft); the derrick · STRUCK (impact-soft) |
+| 3:17 | Lt1859 | oil, sixty | oil rises in the derrick · OIL (stream-soft); the drill line descends; 69 counts up (whoosh-reverse) |
+| 3:18 | Lt1859 | nine feet down, | ft (ui-click-soft); down (ui-click-soft) |
+| 3:19 | Lt1859 | just before | …JUST BEFORE (ui-click-soft) |
+| 3:20 | Lt1859 | his money ran out. | coins drain · HIS MONEY (red) (trap-snap); RAN OUT + source (ui-click-soft) |
+| 3:21 | Lt1859 | Kerosene | a barrel · KEROSENE (pop-reveal) |
+| 3:22 | Lt1859 | floods the shops. | two more barrels · FLOODS (stream-soft); a shop front · THE SHOPS (pop-reveal) |
+| 3:23 | Lt1859 |  |  |
+| 3:24 | Lt1859 | On your table there's a lamp | ON YOUR TABLE + the table (whoosh-soft); the kerosene lamp · A LAMP (pop-reveal) |
+| 3:25 | Lt1859 | with a glass | · A GLASS CHIMNEY (ui-click-soft) |
+| 3:26 | Lt1859 | chimney and a steady | the flame rises and steadies · A STEADY FLAME (chime-magic) |
+| 3:27 | Lt1859 | flame, |  |
+| 3:28 | Lt1859 | and the evening gets | THE EVENING GETS + the evening bar (ui-click-soft) |
+| 3:29 | Lt1859 | hours back. | the bar fills with lamplight · HOURS (stream-soft); BACK (chime-reward) |
+| 3:30 | Lt1859 | You read. | a reader · YOU READ (pop-reveal) |
+| 3:31 | Lt1859 | You sew. | a figure with needle and thread · YOU SEW (pop-reveal) |
+| 3:32 | Lt1859 | The children | two children with books · THE CHILDREN (pop-reveal) |
+| 3:33 | Lt1859 | do their lessons. | · LESSONS (ui-click-soft) |
+| 3:34 | Lt1859 | What does one hour |  |
+| 3:35 | Lt1859 | of light cost you | ONE HOUR OF LIGHT · HOW MUCH WORK? + a lamp (whoosh-soft) |
+| 3:36 | Lt1859 | now? | · WHAT DOES IT COST? (ui-click-soft) |
+| 3:37 | Lt1859 | By eighteen seventy, | · 1870 (ui-click-soft) |
+| 3:38 | Lt1859 | in America, | · AMERICA (ui-click-soft) |
+| 3:39 | Lt1859 | about twenty | ≈ 20 counts up + source + the 1870 strip pill (chime-reward) |
+| 3:40 | Lt1859 | minutes of work. | min · OF WORK (ui-click-soft) |
+| 3:41 | Lt1859 | So what is light now? | price out; the big ? (whoosh-soft); the ? pulses (ui-click-soft) |
+| 3:42 | Lt1859 |  |  |
+| 3:43 | Lt1859 | A liquid. | HOW WE SAW IT · A LIQUID chip + a drop (chime-reward) |
+| 3:44 | Lt1859 | Something you buy | something (ui-click-soft); you buy (ui-click-soft) |
+| 3:45 | Lt1859 | in a can. | a kerosene can · IN A CAN (pop-reveal) |
+| 3:46 | Lt1859 | Twenty three years | the chip docks into the ladder (whoosh-soft); band: Twenty three years later; the price strip fades (whoosh-soft) |
+| 3:47 | Lt1859 | later, someone takes | cliffhanger: + 23 years, the lamp still lit (piano-a-min); a figure + ? · band: someone takes the flame away completely. (ui-click-soft); TAKES THE FLAME (ui-click-soft) |
+| 3:48 | Lt1859 | the flame away completely. | the lamp goes out, smoke · AWAY (whoosh-reverse); · COMPLETELY (ui-click-soft) |
+| 3:49 | Lt1859 |  |  |
+| 3:50 | Lt1859 |  | era exit pull-in (whoosh-reverse) |
+| 3:51 | Lt1859 | You | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 3:52 | Lt1882 | wake up in eighteen eighty | gold underline under 1882 (whoosh-soft) |
+| 3:53 | Lt1882 | two, in lower Manhattan. | place line: Lower Manhattan (pop-reveal) |
+| 3:54 | Lt1882 | It's the |  |
+| 3:55 | Lt1882 | fourth of September, | a calendar page: SEPT 4 (ui-click-soft) |
+| 3:56 | Lt1882 | a Monday | header docks; the street of office blocks · MONDAY 4 SEPTEMBER (stream-soft) |
+| 3:57 | Lt1882 | afternoon. | · AFTERNOON (ui-click-soft) |
+| 3:58 | Lt1882 | Horses, | a horse and cart rolls in · HORSES (pop-reveal) |
+| 3:59 | Lt1882 | newspapers, | newspapers · NEWSPAPERS (ui-click-soft) |
+| 4:00 | Lt1882 | the clatter of the | the cart wheels bounce · THE CLATTER OF THE STREET (trap-snap) |
+| 4:01 | Lt1882 | street. Did | cobbles (ui-click-soft); DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 4:02 | Lt1882 | you know that when Thomas | (chime after "that") (chime-magic); card: when (ui-click-soft); card: Thomas Edison's (gold) (ui-click-soft) |
+| 4:03 | Lt1882 | Edison's lights came | card: lights came on (ui-click-soft) |
+| 4:04 | Lt1882 | on, |  |
+| 4:05 | Lt1882 | he wasn't at the power | card: he wasn't (red) (trap-snap); card: at the power station? + a generator (pop-reveal) |
+| 4:06 | Lt1882 | station? | card: ✗ over the generator (ui-click-soft) |
+| 4:07 | Lt1882 | He was standing | card: → (ui-click-soft) |
+| 4:08 | Lt1882 | in the office of the | card: an office block · THE OFFICE OF (pop-reveal) |
+| 4:09 | Lt1882 | banker J. | card: THE BANKER (ui-click-soft) |
+| 4:10 | Lt1882 | P. Morgan. | card: J. P. Morgan + source (chime-reward) |
+| 4:11 | Lt1882 | Here's your afternoon. | card: the banker's office windows light up (ui-click-soft) |
+| 4:12 | Lt1882 |  | card out; YOUR AFTERNOON (whoosh-soft) |
+| 4:13 | Lt1882 | At about three o'clock, | a clock at three · ≈ 3 p.m. (pop-reveal) |
+| 4:14 | Lt1882 | an engineer | an engineer · AN ENGINEER (pop-reveal) |
+| 4:15 | Lt1882 | on Pearl Street | · PEARL STREET (ui-click-soft) |
+| 4:16 | Lt1882 | closes a switch. | the switch · CLOSES A SWITCH (ui-click-soft); the switch lever flips (impact-soft) |
+| 4:17 | Lt1882 | A few blocks | office blocks, windows dark · A FEW BLOCKS (pop-reveal) |
+| 4:18 | Lt1882 | of offices light | OF OFFICES (ui-click-soft); the windows light up block by block · LIGHT UP (chime-magic) |
+| 4:19 | Lt1882 | up, about | ≈ 400 counts up (whoosh-soft) |
+| 4:20 | Lt1882 | four hundred lamps, | lamps + source (pop-reveal) |
+| 4:21 | Lt1882 | and not one of them | NOT ONE (ui-click-soft) |
+| 4:22 | Lt1882 | has a flame. | a flame struck out · HAS A FLAME (trap-snap) |
+| 4:23 | Lt1882 | The glowing bulb |  |
+| 4:24 | Lt1882 | was the easy part. | the glowing bulb · THE GLOWING BULB (whoosh-soft); = the easy part (ui-click-soft) |
+| 4:25 | Lt1882 | Edison | EDISON (ui-click-soft) |
+| 4:26 | Lt1882 | sold the rest. | SOLD (ui-click-soft); THE REST: (ui-click-soft) |
+| 4:27 | Lt1882 | Generators, | a generator spins · GENERATORS (pop-reveal) |
+| 4:28 | Lt1882 | copper under the street, | a copper cable draws in · COPPER (stream-soft); the street on top · UNDER THE STREET (ui-click-soft) |
+| 4:29 | Lt1882 | meters, | a meter, needle turning · METERS (pop-reveal) |
+| 4:30 | Lt1882 | and investors | three investors with money bags · INVESTORS (pop-reveal) |
+| 4:31 | Lt1882 | willing to bet a fortune | BET A FORTUNE stamp (stamp-hit) |
+| 4:32 | Lt1882 | on it. |  |
+| 4:33 | Lt1882 | What does one hour | ONE HOUR OF LIGHT · HOW MUCH WORK? + a bulb (whoosh-soft) |
+| 4:34 | Lt1882 | of light cost you now? | · WHAT DOES IT COST? (ui-click-soft) |
+| 4:35 | Lt1882 |  |  |
+| 4:36 | Lt1882 | By nineteen | · 1900 (ui-click-soft) |
+| 4:37 | Lt1882 | hundred, about thirteen | ≈ 13 counts up + source + the 1900 strip pill (chime-reward) |
+| 4:38 | Lt1882 | minutes of work. | min · OF WORK (ui-click-soft) |
+| 4:39 | Lt1882 | So what is light | price out; the big ? (whoosh-soft) |
+| 4:40 | Lt1882 | now? | the ? pulses (ui-click-soft) |
+| 4:41 | Lt1882 | A network. | HOW WE SAW IT · A NETWORK chip + the network of copper lines (chime-reward) |
+| 4:42 | Lt1882 | You plug into a | a plug and socket · YOU PLUG INTO (pop-reveal) |
+| 4:43 | Lt1882 | system you'll never see. | A SYSTEM (ui-click-soft); the network sinks out of sight · YOU'LL NEVER SEE (whoosh-reverse) |
+| 4:44 | Lt1882 | But | the chip docks into the ladder (whoosh-soft); band: But that bulb turns most of its power into heat.; the price strip fades (whoosh-soft) |
+| 4:45 | Lt1882 | that bulb turns | cliffhanger: the bulb (piano-a-min) |
+| 4:46 | Lt1882 | most of its power | MOST OF ITS POWER (ui-click-soft) |
+| 4:47 | Lt1882 | into heat. | heat waves rise · → heat (trap-snap) |
+| 4:48 | Lt1882 | The fix takes | band: The fix takes more than a hundred years, (ui-click-soft); THE FIX (ui-click-soft) |
+| 4:49 | Lt1882 | more than a hundred years, | more than (ui-click-soft); 100 years (pop-reveal) |
+| 4:50 | Lt1882 | and one | band: and one colour nobody can make. (ui-click-soft) |
+| 4:51 | Lt1882 | colour nobody can | an empty dashed swatch with ? · ONE COLOUR (pop-reveal); NOBODY CAN MAKE (ui-click-soft) |
+| 4:52 | Lt1882 | make. | era exit pull-in (whoosh-reverse) |
+| 4:53 | Lt1882 |  | era cut: YOU WAKE UP IN · year (whoosh-wind) |
+| 4:54 | Lt1993 | You wake | year slams in (impact-soft) |
+| 4:55 | Lt1993 | up in nineteen ninety | gold underline under 1993 (whoosh-soft) |
+| 4:56 | Lt1993 | three, in Tokushima, | place line: Tokushima, Shikoku (pop-reveal) |
+| 4:57 | Lt1993 | on Japan's |  |
+| 4:58 | Lt1993 | island of Shikoku. | Shikoku's outline draws under the place line, a pin on Tokushima (ui-click-soft) |
+| 4:59 | Lt1993 |  | header docks; the dark lab bench comes up (whoosh-soft) |
+| 5:00 | Lt1993 | Inside a small company | A SMALL (ui-click-soft); COMPANY LAB + source (ui-click-soft) |
+| 5:01 | Lt1993 | lab, an engineer | an engineer at the bench · AN ENGINEER (pop-reveal) |
+| 5:02 | Lt1993 | is staring at a chip. | a dim chip on the bench · AT A CHIP (pop-reveal) |
+| 5:03 | Lt1993 | Did you | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 5:04 | Lt1993 | know that the missing colour | (chime after "that") (chime-magic); card: the missing colour of light (ui-click-soft) |
+| 5:05 | Lt1993 | of light was blue? | card: was blue? (ui-click-soft) |
+| 5:06 | Lt1993 |  |  |
+| 5:07 | Lt1993 | Red and green glowing | card: a red chip glows · RED (pop-reveal); card: a green chip glows · + GREEN (pop-reveal) |
+| 5:08 | Lt1993 | chips had been around |  |
+| 5:09 | Lt1993 | for decades. | card: · FOR DECADES (ui-click-soft) |
+| 5:10 | Lt1993 | Without blue, | card: an empty dashed blue slot · WITHOUT BLUE (ui-click-soft) |
+| 5:11 | Lt1993 | you couldn't make white. | card: · NO WHITE. + source (trap-snap) |
+| 5:12 | Lt1993 | Here's your morning. | card: the empty blue slot pulses and glows (ui-click-soft) |
+| 5:13 | Lt1993 | The | card out; THE ENGINEER + a dark chip (whoosh-soft) |
+| 5:14 | Lt1993 | engineer, Shuji | · SHUJI NAKAMURA (ui-click-soft) |
+| 5:15 | Lt1993 | Nakamura, has |  |
+| 5:16 | Lt1993 | made a bright blue light | the chip glows blue · A BRIGHT BLUE LIGHT (sparkle-soft) |
+| 5:17 | Lt1993 | from a crystal. | a crystal · FROM A CRYSTAL (pop-reveal) |
+| 5:18 | Lt1993 | Add a yellow coating, | ADD A (ui-click-soft); a yellow coating rings the chip · YELLOW COATING (pop-reveal) |
+| 5:19 | Lt1993 | and you get |  |
+| 5:20 | Lt1993 | white light from a chip. | the light turns white · = WHITE LIGHT (chime-reward); FROM A CHIP (ui-click-soft) |
+| 5:21 | Lt1993 | No | a candle · NO (pop-reveal); the candle struck through · FIRE (trap-snap) |
+| 5:22 | Lt1993 | fire. No | a bulb · NO GLOWING (pop-reveal) |
+| 5:23 | Lt1993 | glowing wire. | the bulb struck through · WIRE (trap-snap) |
+| 5:24 | Lt1993 | Very little | a thermometer · VERY LITTLE (pop-reveal) |
+| 5:25 | Lt1993 | heat. Twenty | the thermometer drops · HEAT (ui-click-soft) |
+| 5:26 | Lt1993 | one years later, |  |
+| 5:27 | Lt1993 | he and two Japanese | +21 years later; a figure (whoosh-soft); two more figures · HE + TWO (pop-reveal); JAPANESE SCIENTISTS (ui-click-soft) |
+| 5:28 | Lt1993 | scientists share | SHARE (ui-click-soft) |
+| 5:29 | Lt1993 | the Nobel Prize | a medal · THE NOBEL PRIZE · 2014 + source (chime-reward) |
+| 5:30 | Lt1993 | for it. What | the three figures light gold; the medal glints (sparkle-soft) |
+| 5:31 | Lt1993 | does one hour of | ONE HOUR OF LIGHT (whoosh-soft) |
+| 5:32 | Lt1993 | light cost you now? | · WHAT DOES IT COST? (ui-click-soft) |
+| 5:33 | Lt1993 | In | 1992 (pop-reveal) |
+| 5:34 | Lt1993 | nineteen ninety two, |  |
+| 5:35 | Lt1993 | with an energy-saving | a spiral bulb · AN ENERGY-SAVING BULB (pop-reveal) |
+| 5:36 | Lt1993 | bulb, |  |
+| 5:37 | Lt1993 | less than half a | less than (ui-click-soft); ½ second + the 1992 strip pill + source (chime-reward) |
+| 5:38 | Lt1993 | second of work. | OF WORK + a worker (ui-click-soft) |
+| 5:39 | Lt1993 | So what is light |  |
+| 5:40 | Lt1993 | now? | the ? pulses (ui-click-soft); the big ? (whoosh-soft) |
+| 5:41 | Lt1993 | A crystal. | HOW WE SAW IT · A CRYSTAL chip + a white chip (chime-reward) |
+| 5:42 | Lt1993 | Light without fire. | Light without (ui-click-soft); fire. + a candle struck through (trap-snap) |
+| 5:43 | Lt1993 | So when | cliffhanger band; price strip fades (piano-a-min); the chip docks into the ladder (whoosh-soft) |
+| 5:44 | Lt1993 | light costs almost | WHEN LIGHT COSTS (whoosh-soft) |
+| 5:45 | Lt1993 | nothing, what | tiny lights multiply · ALMOST NOTHING… (sparkle-soft) |
+| 5:46 | Lt1993 | do we do with it? | a gradient ? (impact-soft) |
+| 5:47 | Lt1993 |  | era exit pull-in (whoosh-reverse) |
+| 5:48 | Lt1993 |  | era cut: YOU WAKE UP IN · year (whoosh-wind); year slams in (impact-soft) |
+| 5:49 | LtToday | You wake up today. | gold underline under TODAY (whoosh-soft) |
+| 5:50 | LtToday | Well, tonight. | a crescent moon rises top right (ui-click-soft) |
+| 5:51 | LtToday | Go to your |  |
+| 5:52 | LtToday | window and count the lights | place line: your window (pop-reveal) |
+| 5:53 | LtToday | you can see. | header docks; the window onto the city · COUNT THE LIGHTS + the count (whoosh-soft) |
+| 5:54 | LtToday | Streetlights, | six streetlights come on, the count ticks · STREETLIGHTS (stream-soft) |
+| 5:55 | LtToday | signs, the | three neon signs glow · SIGNS (pop-reveal) |
+| 5:56 | LtToday | office that never switches | an office block, its windows light one by one · THE OFFICE (stream-soft); THAT NEVER (ui-click-soft); SWITCHES OFF (ui-click-soft) |
+| 5:57 | LtToday | off. Did | DID YOU KNOW THAT… card switches on (ui-toggle-on) |
+| 5:58 | LtToday | you know that more | (chime after "that") (chime-magic); card: more than (ui-click-soft) |
+| 5:59 | LtToday | than a third of all | card: a third (ui-click-soft) |
+| 6:00 | LtToday | people can't see the Milky | card: can't see (ui-click-soft); card: the Milky Way (ui-click-soft) |
+| 6:01 | LtToday | Way from home? |  |
+| 6:02 | LtToday | In | card: EUROPE + ten figures (pop-reveal) |
+| 6:03 | LtToday | Europe, six in ten. | card: six figures light · 6 (ui-click-soft); card: IN 10 (ui-click-soft) |
+| 6:04 | LtToday | In North | card: NORTH AMERICA + ten figures (pop-reveal) |
+| 6:05 | LtToday | America, nearly |  |
+| 6:06 | LtToday | eight in ten. | card: eight figures light · NEARLY 8 (ui-click-soft); card: IN 10 + source (chime-reward) |
+| 6:07 | LtToday | Here's your |  |
+| 6:08 | LtToday | night. Nobody | card out; YOUR NIGHT (whoosh-soft); · NOBODY (ui-click-soft) |
+| 6:09 | LtToday | decided this. | DECIDED THIS (ui-click-soft) |
+| 6:10 | LtToday | In Britain, by the year | IN BRITAIN (ui-click-soft) |
+| 6:11 | LtToday | two thousand, each | · BY 2000 (ui-click-soft) |
+| 6:12 | LtToday | person was using | one person · EACH PERSON (pop-reveal) |
+| 6:13 | LtToday | about six and a half |  |
+| 6:14 | LtToday | thousand times more | 6,500× + the person glows (chime-reward); MORE LIGHT (ui-click-soft) |
+| 6:15 | LtToday | light than in eighteen hundred. | a candle · 1800 · THAN IN 1800 + source (pop-reveal); a block of lights fills in · 2000 (stream-soft) |
+| 6:16 | LtToday |  |  |
+| 6:17 | LtToday | Every time the price | EVERY TIME (whoosh-soft); THE PRICE + an arrow (ui-click-soft); the arrow falls · FELL (whoosh-soft) |
+| 6:18 | LtToday | fell, we bought | we bought more. (pop-reveal) |
+| 6:19 | LtToday | more. More |  |
+| 6:20 | LtToday | rooms, more | a house, its rooms light · MORE ROOMS (pop-reveal) |
+| 6:21 | LtToday | hours, more | a clock · MORE HOURS (pop-reveal) |
+| 6:22 | LtToday | streets. | three streetlights · MORE STREETS (pop-reveal) |
+| 6:23 | LtToday | And it's speeding up. | AND IT'S SPEEDING UP (whoosh-soft) |
+| 6:24 | LtToday | In twenty | 20 (ui-click-soft) |
+| 6:25 | LtToday | twenty three, scientists | 23 (ui-click-soft); · SCIENTISTS USED (ui-click-soft) |
+| 6:26 | LtToday | used more than |  |
+| 6:27 | LtToday | fifty thousand | 50,000+ + source (pop-reveal) |
+| 6:28 | LtToday | reports from ordinary | REPORTS (ui-click-soft); FROM ORDINARY PEOPLE + three figures (ui-click-soft) |
+| 6:29 | LtToday | people counting stars. | a night sky full of stars · COUNTING STARS (sparkle-soft) |
+| 6:30 | LtToday | They | THE NIGHT SKY (ui-click-soft) |
+| 6:31 | LtToday | found the night sky |  |
+| 6:32 | LtToday | getting brighter by | the sky glows orange, stars thin out · GETS BRIGHTER (whoosh-soft) |
+| 6:33 | LtToday | almost ten percent | ≈ 9.6 % (chime-reward) |
+| 6:34 | LtToday | a year. So | A YEAR (ui-click-soft) |
+| 6:35 | LtToday | what is light now? | the ? pulses (ui-click-soft); the big ? (whoosh-soft) |
+| 6:36 | LtToday | Too cheap | HOW WE SAW IT · TOO CHEAP TO SWITCH OFF chip + a switch that stays on (chime-reward) |
+| 6:37 | LtToday | to switch off. | to switch off. (ui-click-soft) |
+| 6:38 | LtToday |  |  |
+| 6:39 | LtToday | So, what happened | cliffhanger band; price strip fades (piano-a-min); the chip docks into the ladder (whoosh-soft); a window at night · WHAT HAPPENED (pop-reveal) |
+| 6:40 | LtToday | when we switched the | WHEN WE SWITCHED + the window lights up (ui-click-soft); orange skyglow rises in the window · THE NIGHT (whoosh-soft) |
+| 6:41 | LtToday | night off? You're | a gradient ? · OFF? (impact-soft); band: You're about to find out.; the ? swells (ui-click-soft) |
+| 6:42 | LtToday | about to find out. | a gold ▸ slides out of the ? (whoosh-soft) |
+| 6:43 | LtToday |  |  |
+| 6:44 | LtToday |  | cut to THE ANSWER (whoosh-reverse) |
+| 6:45 | LtReveal | Here's the answer. | THE ANSWER pulses (impact-deep-soft) |
+| 6:46 | LtReveal | We didn't save | We didn't (red) (ui-click-soft); save the (ui-click-soft) |
+| 6:47 | LtReveal | the light. We | light. + a small candle flame (pop-reveal) |
+| 6:48 | LtReveal | spent it. | We spent it. (gold) (ui-click-soft) |
+| 6:49 | LtReveal | All of it. Every | All of it. (ui-click-soft); EVERY TIME LIGHT GOT CHEAPER (ui-click-soft) |
+| 6:50 | LtReveal | time light got cheaper, | the price line falls ↓ (whoosh-reverse) |
+| 6:51 | LtReveal | we |  |
+| 6:52 | LtReveal | used more, until it | WE USED (ui-click-soft); MORE · twelve bulbs multiply (one per 3 f) (stream-soft); until it (ui-click-soft) |
+| 6:53 | LtReveal | filled the sky. | filled (ui-click-soft); the sky. (orange) · a night sky with an orange skyglow rises (warm-shimmer) |
+| 6:54 | LtReveal | So, your |  |
+| 6:55 | LtReveal | guess. Out | YOUR GUESS (whoosh-soft); OUT OF EVERY (ui-click-soft) |
+| 6:56 | LtReveal | of every ten people | TEN PEOPLE · ten figures appear (stream-soft) |
+| 6:57 | LtReveal | on Earth, more | ON EARTH (ui-click-soft) |
+| 6:58 | LtReveal | than eight now live | MORE THAN 8 IN 10 stamp + Falchi source (stamp-hit); eight figures light up under the glow (warm-shimmer) |
+| 6:59 | LtReveal | under a sky | LIVE UNDER A SKY (ui-click-soft) |
+| 7:00 | LtReveal | our lights have brightened. | OUR LIGHTS HAVE BRIGHTENED · the skyglow brightens (sparkle-soft) |
+| 7:01 | LtReveal | In the United | IN THE UNITED STATES (ui-click-soft) |
+| 7:02 | LtReveal | States and Europe, | AND EUROPE (ui-click-soft) |
+| 7:03 | LtReveal | almost everyone. | almost (orange) (pop-reveal); everyone + > 99 % + · US and Europe more than 99 % (ui-click-soft) |
+| 7:04 | LtReveal | How close | How close were you? (ui-click-soft) |
+| 7:05 | LtReveal | were you? |  |
+| 7:06 | LtReveal | Now walk down | the sky leaves; six rungs appear dim (whoosh-soft); NOW WALK DOWN THE LADDER (ui-click-soft) |
+| 7:07 | LtReveal | the ladder with me. | WITH ME (ui-click-soft) |
+| 7:08 | LtReveal | In fifteen hundred, | a gold marker appears at the 1500 rung (ui-click-soft) |
+| 7:09 | LtReveal | light was a luxury. | rung A LUXURY lights gold · a candle (pop-reveal) |
+| 7:10 | LtReveal | Then |  |
+| 7:11 | LtReveal | a service, through | rung A SERVICE lights, the marker steps up (ui-click-soft) |
+| 7:12 | LtReveal | a pipe. | a gas pipe (pop-reveal) |
+| 7:13 | LtReveal | Then a liquid, | rung A LIQUID lights, the marker steps up (ui-click-soft) |
+| 7:14 | LtReveal | in a can. | a kerosene can (pop-reveal) |
+| 7:15 | LtReveal |  |  |
+| 7:16 | LtReveal | Then a network. | rung A NETWORK lights, the marker steps up · a bulb (pop-reveal) |
+| 7:17 | LtReveal | Then a crystal, | rung A CRYSTAL lights, the marker steps up · a blue LED (pop-reveal) |
+| 7:18 | LtReveal | light |  |
+| 7:19 | LtReveal | without fire. | LIGHT WITHOUT (ui-click-soft); FIRE (ui-click-soft) |
+| 7:20 | LtReveal | And today, | the marker steps up to TODAY (ui-click-soft) |
+| 7:21 | LtReveal | light |  |
+| 7:22 | LtReveal | is too cheap to switch | rung TOO CHEAP lights gold (chime-reward); a switch, on (ui-toggle-on) |
+| 7:23 | LtReveal | off. In | In 1500, (the marker leaves, the props dim) (ui-click-soft) |
+| 7:24 | LtReveal | fifteen hundred, the scarce | the scarce thing was (ui-click-soft) |
+| 7:25 | LtReveal | thing was light. | light. glows warm · the ladder glows (chime-reward) |
+| 7:26 | LtReveal |  |  |
+| 7:27 | LtReveal | Today, the scarce | Today, (ui-click-soft); (riser into the dark) (riser-soft); the scarce thing is (ui-click-soft) |
+| 7:28 | LtReveal | thing is the dark. | the dark. · the night sky returns, dark, with its stars (impact-deep-soft) |
+| 7:29 | LtReveal |  |  |
+| 7:30 | LtReveal |  | cut: a night sky with an orange skyglow; the docked ladder with the dashed 2100 "?" rung (whoosh-soft) |
+| 7:31 | Lt2100 | So what could |  |
+| 7:32 | Lt2100 | the night look like | So what could the night (gold) look like… (ui-click-soft) |
+| 7:33 | Lt2100 | in twenty one hundred? | 2100 header slams · PREDICTION tag (impact-soft) |
+| 7:34 | Lt2100 | That |  |
+| 7:35 | Lt2100 | morning hasn't happened | header docks; a dawn line glows on the horizon (warm-shimmer) |
+| 7:36 | Lt2100 | yet. | hasn't happened yet (ui-click-soft) |
+| 7:37 | Lt2100 | But we can follow |  |
+| 7:38 | Lt2100 | the evidence. | THE EVIDENCE → (ui-click-soft) |
+| 7:39 | Lt2100 | Some places have | SOME PLACES (ui-click-soft) |
+| 7:40 | Lt2100 | already started protecting | ARE ALREADY PROTECTING (ui-click-soft) |
+| 7:41 | Lt2100 | the dark. | THE DARK (ui-click-soft) |
+| 7:42 | Lt2100 | Since twenty | France card · SINCE (pop-reveal) |
+| 7:43 | Lt2100 | thirteen, France | 2013 (ui-click-soft); · FRANCE (ui-click-soft) |
+| 7:44 | Lt2100 | has told shops to switch | a lit shop window · SHOP WINDOWS (pop-reveal); SWITCH · the window lights go off (whoosh-reverse) |
+| 7:45 | Lt2100 | off their window lights | OFF (ui-click-soft) |
+| 7:46 | Lt2100 | by one in the morning. | BY 1 + a clock at one + decree source (pop-reveal); A.M. (ui-click-soft) |
+| 7:47 | Lt2100 | Tucson, | Tucson card · TUCSON (pop-reveal) |
+| 7:48 | Lt2100 | in Arizona, | , ARIZONA (ui-click-soft) |
+| 7:49 | Lt2100 | has had rules on | a streetlight · RULES (pop-reveal) |
+| 7:50 | Lt2100 | outdoor lighting since | ON OUTDOOR LIGHTING (ui-click-soft) |
+| 7:51 | Lt2100 | nineteen seventy | SINCE 1972 + code source (ui-click-soft) |
+| 7:52 | Lt2100 | two, to keep |  |
+| 7:53 | Lt2100 | the sky dark for | TO KEEP THE SKY (ui-click-soft); DARK (ui-click-soft) |
+| 7:54 | Lt2100 | its observatories. | an observatory · OBSERVATORIES (pop-reveal) |
+| 7:55 | Lt2100 | So here's one |  |
+| 7:56 | Lt2100 | scenario. | the evidence leaves · ONE SCENARIO stamp (stamp-hit) |
+| 7:57 | Lt2100 | Not a fact. | · NOT A FACT (stamp-hit) |
+| 7:58 | Lt2100 | If the sky | IF THE SKY (ui-click-soft) |
+| 7:59 | Lt2100 | keeps brightening, | KEEPS BRIGHTENING · the skyglow rises, the stars fade (warm-shimmer) |
+| 8:00 | Lt2100 | darkness becomes | darkness (big) · the 2100 rung fills DARKNESS IS THE LUXURY? (chime-reward); becomes something (ui-click-soft) |
+| 8:01 | Lt2100 | something we have |  |
+| 8:02 | Lt2100 | to protect, | we have to protect, (ui-click-soft) |
+| 8:03 | Lt2100 | the way we once protected | THE WAY WE ONCE PROTECTED (ui-click-soft) |
+| 8:04 | Lt2100 | forests and | a tree · FORESTS (pop-reveal); waves · COASTS (pop-reveal) |
+| 8:05 | Lt2100 | coasts. |  |
+| 8:06 | Lt2100 | A child in | a child looks up · A CHILD (pop-reveal) |
+| 8:07 | Lt2100 | twenty one hundred | IN 2100 (ui-click-soft) |
+| 8:08 | Lt2100 | might see the Milky Way | MIGHT SEE (ui-click-soft); THE MILKY WAY · the band rises in the sky, the skyglow falls (chime-magic) |
+| 8:09 | Lt2100 | for the first time on a | FOR THE FIRST TIME (ui-click-soft) |
+| 8:10 | Lt2100 | school trip, | · ON A SCHOOL TRIP (ui-click-soft) |
+| 8:11 | Lt2100 | in a place kept dark | IN A PLACE KEPT DARK (ui-click-soft) |
+| 8:12 | Lt2100 | on purpose. | ON PURPOSE (ui-click-soft) |
+| 8:13 | Lt2100 | And remember the |  |
+| 8:14 | Lt2100 | bell from fifteen hundred? | the bell from 1500 returns and swings · THE BELL (chime-reward); FROM 1500 (ui-click-soft) |
+| 8:15 | Lt2100 | Cover | card 1500 · Cover (a candle) (pop-reveal) |
+| 8:16 | Lt2100 | the fire. | the fire. · the cover comes down, the flame goes out (whoosh-reverse) |
+| 8:17 | Lt2100 | In twenty one hundred, | card 2100 (red dashed) · a streetlight (pop-reveal) |
+| 8:18 | Lt2100 | it might ring again. | · IT MIGHT (ui-click-soft); RING AGAIN · the bell swings again (chime-reward) |
+| 8:19 | Lt2100 | Only this | ONLY THIS TIME, (ui-click-soft); (riser into cover the light) (riser-soft) |
+| 8:20 | Lt2100 | time, it means cover | IT MEANS (ui-click-soft); cover (gradient) (ui-click-soft) |
+| 8:21 | Lt2100 | the light. | the light. (gradient) · the streetlight dims (impact-deep-soft) |
+| 8:22 | Lt2100 |  |  |
+| 8:23 | LtClose | Tonight, | cut: a room at night, a lamp on, a wall switch · Tonight, (whoosh-soft) |
+| 8:24 | LtClose | switch off one | switch · the switch flips, the lamp goes out, the warm room light falls away (ui-toggle-on); off one light (ui-click-soft) |
+| 8:25 | LtClose | light and look up. | and look up. · the room slides down, the dark sky opens (no stars yet) (whoosh-soft) |
+| 8:26 | LtClose | How many stars | How many (ui-click-soft); stars (glowing) · the stars come out across the sky (sparkle-soft) |
+| 8:27 | LtClose | can you count? | can you count? (gradient) (chime-magic) |
+| 8:28 | LtClose |  |  |
+| 8:29 | LtClose | This | cut to the outro (whoosh-wind); EPISODE (pop-reveal) |
+| 8:30 | LtOutro | was Did You Know | logo switches on; wordmark (ui-toggle-on) |
+| 8:31 | LtOutro | That, episode |  |
+| 8:32 | LtOutro | seven. | "07" pulses (ui-click-soft) |
+| 8:33 | LtOutro | Light. | "Light" title (pop-reveal) |
+| 8:34 | LtOutro | Now it's your turn. | lockup shrinks; prompt card (whoosh-soft) |
+| 8:35 | LtOutro | Streetlights or stars. | Streetlights tile (a lit streetlight) (pop-reveal); "or" + stars tile (a starry sky) (sparkle-soft) |
+| 8:36 | LtOutro | If you |  |
+| 8:37 | LtOutro | had to give one up, | "If you had to give one up," (ui-click-soft) |
+| 8:38 | LtOutro | which would it be, | "which would it be," (gold) (ui-click-soft) |
+| 8:39 | LtOutro | and why? | "and why?" (ui-click-soft) |
+| 8:40 | LtOutro | Tell me |  |
+| 8:41 | LtOutro | in the comments. | COMMENTS ↓ (pop-reveal) |
+| 8:42 | LtOutro | At the end of every | "end of every episode:" (ui-click-soft) |
+| 8:43 | LtOutro | episode, I will read |  |
+| 8:44 | LtOutro | the best comment, | COMMENT OF THE WEEK pill (impact-soft); "best comment" (ui-click-soft) |
+| 8:45 | LtOutro | right here, on this | card flash ("right here") (ui-click-soft) |
+| 8:46 | LtOutro | screen. | "read on screen" (ui-click-soft) |
+| 8:47 | LtOutro | And the subject | "the subject" (sparkle-soft) |
+| 8:48 | LtOutro | you ask for most | "you ask for most" (ui-click-soft) |
+| 8:49 | LtOutro | becomes a future | → a future episode (pop-reveal) |
+| 8:50 | LtOutro | episode. |  |
+| 8:51 | LtOutro | On our website, Dex-tee | website pill slides in (whoosh-soft); Dexty.live lights in the pill (sparkle-soft) |
+| 8:52 | LtOutro | dot live, |  |
+| 8:53 | LtOutro | you can watch every episode, | WATCH (ui-click-soft) |
+| 8:54 | LtOutro | collect | COLLECT (ui-click-soft) |
+| 8:55 | LtOutro | the fact cards, and |  |
+| 8:56 | LtOutro | play the guessing game. | PLAY (ui-click-soft); Dexty.live pulses (pop-reveal) |
+| 8:57 | LtOutro | If this changed | IF THIS CHANGED HOW YOU SEE (ui-click-soft) |
+| 8:58 | LtOutro | how you see your light |  |
+| 8:59 | LtOutro | switch, | YOUR LIGHT SWITCH + a switch icon (ui-toggle-on) |
+| 9:00 | LtOutro | like it. | Like (ui-click-soft) |
+| 9:01 | LtOutro | Share it with the friend | Share (ui-send); THE FRIEND (ui-click-soft) |
+| 9:02 | LtOutro | who leaves every | "WHO LEAVES" (ui-click-soft); "EVERY LIGHT ON" (ui-click-soft) |
+| 9:03 | LtOutro | light on. | a glowing bulb; friend chip pulses cyan (pop-reveal) |
+| 9:04 | LtOutro | And subscribe, | Subscribe (chime-reward) |
+| 9:05 | LtOutro | so the next mystery finds | ? THE NEXT MYSTERY (sparkle-soft) |
+| 9:06 | LtOutro | you. |  |
+| 9:07 | LtOutro | Next time: | NEXT · NO. 08 (whoosh-wind) |
+| 9:08 | LtOutro | weight. | the NEXT_EP subject WEIGHT + a bathroom scale (impact-soft) |
+| 9:09 | LtOutro | In fifteen | In 1500, (ui-click-soft) |
+| 9:10 | LtOutro | hundred, a heavy body | a heavy body; the scale needle swings up (ui-click-soft) |
+| 9:11 | LtOutro | could be a sign of wealth. | could be (ui-click-soft); a sign of wealth. (gold) + coin stack + Bruegel source (pop-reveal) |
+| 9:12 | LtOutro | Today, | Today, (ui-click-soft) |
+| 9:13 | LtOutro | one in seven | one in seven + seven figures (ui-click-soft) |
+| 9:14 | LtOutro | people on Earth | people on Earth (ui-click-soft) |
+| 9:15 | LtOutro | lives with obesity. | lives with obesity. (orange); one figure lights; WHO source (pop-reveal) |
+| 9:16 | LtOutro | So how did | So how did (ui-click-soft) |
+| 9:17 | LtOutro | plenty turn into a problem? | plenty (ui-click-soft); turn into a problem? (red); the scale red zone lights (whoosh-reverse) |
+| 9:18 | LtOutro |  | "problem?" settles (piano-a-min) |
+| 9:19 | LtOutro | Ask... | ASK. (thock in the beat after the word) (chess-piece-thock) |
+| 9:20 | LtOutro | Wonder... |  |
+| 9:21 | LtOutro |  | WONDER. (thock in the beat after the word) (chess-piece-thock) |
+| 9:22 | LtOutro | Repeat. | REPEAT. (thock in the beat after the word) (chess-piece-thock) |
+| 9:23 | LtOutro |  |  |
+| 9:24 | LtOutro |  | end screen builds in: COMMENT OF THE WEEK card, WATCH NEXT slot, ring (ES = END + 54 f) (whoosh-soft) |
+| 9:25 | LtOutro | Next time... | end screen: READ ON THIS SCREEN writes on (pencil-scribble) |
+| 9:26 | LtOutro | this could be your comment. | end screen: COMMENT OF THE WEEK (EXAMPLE) card flares + Comment below ↓ (pop-reveal) |
+| 9:27 | LtOutro | Pick | end screen: WATCH NEXT slot glows cyan ("Pick a mystery") (sparkle-soft) |
+| 9:28 | LtOutro | a mystery. And |  |
+| 9:29 | LtOutro | I will see you there. | end screen: subscribe ring pulses (sparkle-soft) |
+| 9:30 | LtOutro |  |  |
+| 9:31 | LtOutro |  |  |
+| 9:32 | LtOutro |  |  |
+| 9:33 | LtOutro |  |  |
+| 9:34 | LtOutro |  |  |
+| 9:35 | LtOutro |  |  |
+| 9:36 | LtOutro |  |  |
+| 9:37 | LtOutro |  |  |
+| 9:38 | LtOutro |  |  |
+| 9:39 | LtOutro |  |  |
+| 9:40 | LtOutro |  |  |
