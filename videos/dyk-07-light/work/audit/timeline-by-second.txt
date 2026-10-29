@@ -1,0 +1,582 @@
+sec | shot | narration in this second | SFX starting in this second
+0:00 | LtHook | What | scan-hum, pop-reveal
+0:01 | LtHook | happened when we switched | ui-click-soft
+0:02 | LtHook | the night off? | chime-magic
+0:03 | LtHook | Here's what we know. | ui-click-soft
+0:04 | LtHook |  | 
+0:05 | LtHook | In Britain, light now | pop-reveal, whoosh-soft, ui-click-soft
+0:06 | LtHook | costs less than one | ui-click-soft
+0:07 | LtHook | three-thousandth of | impact-soft
+0:08 | LtHook | what it did in eighteen hundred. | ui-click-soft, ui-click-soft
+0:09 | LtHook | You'd | ui-click-soft
+0:10 | LtHook | think we'd pocket the savings. | pop-reveal
+0:11 | LtHook |  | 
+0:12 | LtHook | We didn't. | whoosh-soft, impact-soft
+0:13 | LtHook | And tonight, | warm-shimmer, whoosh-soft
+0:14 | LtHook | above your house, | pop-reveal
+0:15 | LtHook | something is slowly | ui-click-soft
+0:16 | LtHook | disappearing. | whoosh-soft
+0:17 | LtHook | Here's your guess. | whoosh-soft
+0:18 | LtHook | Think of ten | ui-click-soft, pop-reveal
+0:19 | LtHook | people, | 
+0:20 | LtHook | anywhere on Earth. | ui-click-soft
+0:21 | LtHook | How many | ui-click-soft
+0:22 | LtHook | of them live under a night | ui-click-soft, ui-click-soft
+0:23 | LtHook | sky that our lights | 
+0:24 | LtHook | have brightened? | impact-soft, pop-reveal
+0:25 | LtHook | Two? Five? | pop-reveal
+0:26 | LtHook | More than | pop-reveal
+0:27 | LtHook | eight? | 
+0:28 | LtHook | Guess in the comments, | pop-reveal, ui-send
+0:29 | LtHook | right now. | 
+0:30 | LtHook | Then stay to the | pop-reveal
+0:31 | LtHook | end, and check your guess. | pop-reveal, chime-reward
+0:32 | LtHook |  | whoosh-soft
+0:33 | LtHook |  | ui-toggle-on, sparkle-soft, impact-deep-soft, chime-magic
+0:34 | LtHook |  | whoosh-wind, impact-soft
+0:35 | Lt1500 | You wake up | 
+0:36 | Lt1500 | in fifteen hundred, | whoosh-soft
+0:37 | Lt1500 | in a market town | pop-reveal
+0:38 | Lt1500 | in Flanders. | wind-soft
+0:39 | Lt1500 | It's late autumn. | ui-click-soft
+0:40 | Lt1500 | The light is | ui-click-soft
+0:41 | Lt1500 | going, and | whoosh-reverse
+0:42 | Lt1500 | the church bell starts | ui-click-soft, pop-reveal
+0:43 | Lt1500 | to ring. | impact-deep-soft, ui-toggle-on
+0:44 | Lt1500 | Did you know that this | chime-magic
+0:45 | Lt1500 | bell has a name, | ui-click-soft, ui-click-soft
+0:46 | Lt1500 | and the name is curfew? | ui-click-soft, stamp-hit
+0:47 | Lt1500 |  | 
+0:48 | Lt1500 | It comes from | whoosh-soft
+0:49 | Lt1500 | the old French | ui-click-soft
+0:50 | Lt1500 | for cover | warm-shimmer
+0:51 | Lt1500 | the fire. | ui-click-soft
+0:52 | Lt1500 | When you hear it, | ui-click-soft
+0:53 | Lt1500 | you bank the hearth | knock-solid
+0:54 | Lt1500 | and the day is over. | trap-snap
+0:55 | Lt1500 | Here's | 
+0:56 | Lt1500 | your evening. | whoosh-soft
+0:57 | Lt1500 | Work stops at sunset. | ui-click-soft, whoosh-reverse
+0:58 | Lt1500 | A | 
+0:59 | Lt1500 | tallow candle, made | pop-reveal
+1:00 | Lt1500 | from sheep fat, | ui-click-soft
+1:01 | Lt1500 | smokes and stinks, | wind-soft, ui-click-soft
+1:02 | Lt1500 | and it | 
+1:03 | Lt1500 | costs too much to burn | ui-click-soft, ui-click-soft
+1:04 | Lt1500 | for long. | 
+1:05 | Lt1500 | So most nights | ui-click-soft
+1:06 | Lt1500 | you use a rushlight, | pop-reveal
+1:07 | Lt1500 | a dried rush | ui-click-soft
+1:08 | Lt1500 | dipped in grease. | ui-click-soft
+1:09 | Lt1500 | Depending | ui-click-soft
+1:10 | Lt1500 | on its length, it | 
+1:11 | Lt1500 | lasts a few minutes, | ui-click-soft, ui-click-soft
+1:12 | Lt1500 | or an hour at | stream-soft
+1:13 | Lt1500 | most. | 
+1:14 | Lt1500 | Beeswax | warm-shimmer
+1:15 | Lt1500 | is for the church | ui-click-soft
+1:16 | Lt1500 | and the rich. | sparkle-soft
+1:17 | Lt1500 | What does one | 
+1:18 | Lt1500 | hour of light | whoosh-soft, ui-click-soft
+1:19 | Lt1500 | cost you? | ui-click-soft
+1:20 | Lt1500 | One ordinary | ui-click-soft
+1:21 | Lt1500 | bulb's worth, | pop-reveal
+1:22 | Lt1500 | for one hour. | ui-click-soft
+1:23 | Lt1500 | An economist, | ui-click-soft
+1:24 | Lt1500 | William | page-flip
+1:25 | Lt1500 | Nordhaus, worked it out. | 
+1:26 | Lt1500 | In ancient | pop-reveal
+1:27 | Lt1500 | Babylon, about forty | ui-click-soft, chime-reward
+1:28 | Lt1500 | one hours of work. | ui-click-soft
+1:29 | Lt1500 | And by | pop-reveal
+1:30 | Lt1500 | eighteen hundred, in America, | ui-click-soft
+1:31 | Lt1500 | still | ui-click-soft
+1:32 | Lt1500 | more than five. | chime-reward
+1:33 | Lt1500 | In more than three | stream-soft
+1:34 | Lt1500 | thousand years, | 
+1:35 | Lt1500 | the price barely | stamp-hit
+1:36 | Lt1500 | moved. So | 
+1:37 | Lt1500 | what is light to you? | whoosh-soft, ui-click-soft
+1:38 | Lt1500 | A | 
+1:39 | Lt1500 | luxury. | chime-reward
+1:40 | Lt1500 | You make it yourself, | ui-click-soft
+1:41 | Lt1500 | and you make it | whoosh-soft, ui-click-soft
+1:42 | Lt1500 | last. | ui-click-soft
+1:43 | Lt1500 | For three hundred | piano-a-min, whoosh-soft
+1:44 | Lt1500 | years, the dark | whoosh-reverse
+1:45 | Lt1500 | wins. Then a | ui-click-soft, ui-click-soft
+1:46 | Lt1500 | man in London sets | pop-reveal, ui-click-soft
+1:47 | Lt1500 | the air on fire. | warm-shimmer
+1:48 | Lt1500 |  | whoosh-reverse
+1:49 | Lt1500 |  | whoosh-wind, impact-soft
+1:50 | Lt1807 | You wake up | 
+1:51 | Lt1807 | in eighteen oh seven, | whoosh-soft
+1:52 | Lt1807 | on | pop-reveal
+1:53 | Lt1807 | Pall Mall, in London. | 
+1:54 | Lt1807 | It's | wind-soft
+1:55 | Lt1807 | a warm June evening, | ui-click-soft, ui-click-soft
+1:56 | Lt1807 | and a crowd | pop-reveal
+1:57 | Lt1807 | is staring at a row of | ui-click-soft, knock-solid
+1:58 | Lt1807 | iron posts. | 
+1:59 | Lt1807 | Did | ui-toggle-on
+2:00 | Lt1807 | you know that the first gas | chime-magic, ui-click-soft
+2:01 | Lt1807 | lights on a London | ui-click-soft
+2:02 | Lt1807 | street were lit for | warm-shimmer
+2:03 | Lt1807 | the king's birthday? | pop-reveal, ui-click-soft
+2:04 | Lt1807 |  | 
+2:05 | Lt1807 | A German-born businessman | ui-click-soft
+2:06 | Lt1807 | named Frederick | ui-click-soft
+2:07 | Lt1807 | Winsor burns | ui-click-soft
+2:08 | Lt1807 | gas made from coal, | ui-click-soft
+2:09 | Lt1807 | piped along | stream-soft
+2:10 | Lt1807 | the street. No | 
+2:11 | Lt1807 | wick. No wax. | stamp-hit, stamp-hit
+2:12 | Lt1807 | Here's | 
+2:13 | Lt1807 | your evening. The | whoosh-soft
+2:14 | Lt1807 | shops stay open | ui-click-soft, warm-shimmer
+2:15 | Lt1807 | after dark. | ui-click-soft
+2:16 | Lt1807 | Mill owners start | pop-reveal
+2:17 | Lt1807 | to see something new. | ui-click-soft
+2:18 | Lt1807 | A factory | pop-reveal
+2:19 | Lt1807 | that never has | ui-click-soft
+2:20 | Lt1807 | to stop at sunset. | whoosh-reverse
+2:21 | Lt1807 | Five years | 
+2:22 | Lt1807 | later, in eighteen | whoosh-soft
+2:23 | Lt1807 | twelve, | ui-click-soft
+2:24 | Lt1807 | Parliament grants a | ui-click-soft
+2:25 | Lt1807 | charter to the Gas Light | page-flip, ui-click-soft
+2:26 | Lt1807 | and Coke Company, | ui-click-soft
+2:27 | Lt1807 | the first | ui-click-soft
+2:28 | Lt1807 | gas company | 
+2:29 | Lt1807 | in the world. | chime-reward
+2:30 | Lt1807 | Light runs under | stream-soft, ui-click-soft
+2:31 | Lt1807 | the street, | 
+2:32 | Lt1807 | to your door, | knock-solid
+2:33 | Lt1807 | and arrives with a bill. | ui-click-soft, stamp-hit
+2:34 | Lt1807 | So what | 
+2:35 | Lt1807 | is light now? | whoosh-soft, ui-click-soft
+2:36 | Lt1807 | A service. | chime-reward
+2:37 | Lt1807 | It | 
+2:38 | Lt1807 | comes to you, through | ui-click-soft, stream-soft
+2:39 | Lt1807 | a pipe. | ui-click-soft, whoosh-soft
+2:40 | Lt1807 | But across the ocean, | piano-a-min, whoosh-soft
+2:41 | Lt1807 | the best light | ui-click-soft
+2:42 | Lt1807 | in America | ui-click-soft
+2:43 | Lt1807 | still comes from | ui-click-soft
+2:44 | Lt1807 | the head of a whale. | pop-reveal
+2:45 | Lt1807 |  | whoosh-reverse
+2:46 | Lt1807 |  | whoosh-wind, impact-soft
+2:47 | Lt1859 | You wake up in eighteen | whoosh-soft
+2:48 | Lt1859 | fifty nine, | 
+2:49 | Lt1859 | in Titusville, | pop-reveal
+2:50 | Lt1859 | Pennsylvania. | ui-click-soft
+2:51 | Lt1859 | It's August. | whoosh-soft
+2:52 | Lt1859 | The air smells | 
+2:53 | Lt1859 | of mud and tar, | stream-soft, ui-click-soft
+2:54 | Lt1859 | and men | pop-reveal
+2:55 | Lt1859 | are cheering around | ui-click-soft
+2:56 | Lt1859 | a wooden derrick. | impact-soft, ui-toggle-on
+2:57 | Lt1859 | Did you know that a | chime-magic
+2:58 | Lt1859 | historian later wrote | ui-click-soft
+2:59 | Lt1859 | that oil gave kerosene | pop-reveal, ui-click-soft, ui-click-soft
+3:00 | Lt1859 | to the world, | 
+3:01 | Lt1859 | and | ui-click-soft
+3:02 | Lt1859 | life to the few remaining | 
+3:03 | Lt1859 | whales? | pop-reveal
+3:04 | Lt1859 | Before | ui-click-soft
+3:05 | Lt1859 | this, whalers | ui-click-soft
+3:06 | Lt1859 | sailed for years to fill | wind-soft, ui-click-soft
+3:07 | Lt1859 | their lamps. | ui-click-soft
+3:08 | Lt1859 | Here's your evening. | 
+3:09 | Lt1859 | A Canadian | whoosh-soft, pop-reveal
+3:10 | Lt1859 | doctor, Abraham Gesner, | ui-click-soft
+3:11 | Lt1859 | has | 
+3:12 | Lt1859 | already shown how to make | ui-click-soft
+3:13 | Lt1859 | a lamp fuel called | pop-reveal
+3:14 | Lt1859 | kerosene. | chime-reward
+3:15 | Lt1859 | Now | 
+3:16 | Lt1859 | Edwin Drake has struck | ui-click-soft, impact-soft
+3:17 | Lt1859 | oil, sixty | stream-soft, whoosh-reverse
+3:18 | Lt1859 | nine feet down, | ui-click-soft, ui-click-soft
+3:19 | Lt1859 | just before | ui-click-soft
+3:20 | Lt1859 | his money ran out. | trap-snap, ui-click-soft
+3:21 | Lt1859 | Kerosene | pop-reveal
+3:22 | Lt1859 | floods the shops. | stream-soft, pop-reveal
+3:23 | Lt1859 |  | 
+3:24 | Lt1859 | On your table there's a lamp | whoosh-soft, pop-reveal
+3:25 | Lt1859 | with a glass | ui-click-soft
+3:26 | Lt1859 | chimney and a steady | chime-magic
+3:27 | Lt1859 | flame, | 
+3:28 | Lt1859 | and the evening gets | ui-click-soft
+3:29 | Lt1859 | hours back. | stream-soft, chime-reward
+3:30 | Lt1859 | You read. | pop-reveal
+3:31 | Lt1859 | You sew. | pop-reveal
+3:32 | Lt1859 | The children | pop-reveal
+3:33 | Lt1859 | do their lessons. | ui-click-soft
+3:34 | Lt1859 | What does one hour | 
+3:35 | Lt1859 | of light cost you | whoosh-soft
+3:36 | Lt1859 | now? | ui-click-soft
+3:37 | Lt1859 | By eighteen seventy, | ui-click-soft
+3:38 | Lt1859 | in America, | ui-click-soft
+3:39 | Lt1859 | about twenty | chime-reward
+3:40 | Lt1859 | minutes of work. | ui-click-soft
+3:41 | Lt1859 | So what is light now? | whoosh-soft, ui-click-soft
+3:42 | Lt1859 |  | 
+3:43 | Lt1859 | A liquid. | chime-reward
+3:44 | Lt1859 | Something you buy | ui-click-soft, ui-click-soft
+3:45 | Lt1859 | in a can. | pop-reveal
+3:46 | Lt1859 | Twenty three years | whoosh-soft, whoosh-soft
+3:47 | Lt1859 | later, someone takes | piano-a-min, ui-click-soft, ui-click-soft
+3:48 | Lt1859 | the flame away completely. | whoosh-reverse, ui-click-soft
+3:49 | Lt1859 |  | 
+3:50 | Lt1859 |  | whoosh-reverse
+3:51 | Lt1859 | You | whoosh-wind, impact-soft
+3:52 | Lt1882 | wake up in eighteen eighty | whoosh-soft
+3:53 | Lt1882 | two, in lower Manhattan. | pop-reveal
+3:54 | Lt1882 | It's the | 
+3:55 | Lt1882 | fourth of September, | ui-click-soft
+3:56 | Lt1882 | a Monday | stream-soft
+3:57 | Lt1882 | afternoon. | ui-click-soft
+3:58 | Lt1882 | Horses, | pop-reveal
+3:59 | Lt1882 | newspapers, | ui-click-soft
+4:00 | Lt1882 | the clatter of the | trap-snap
+4:01 | Lt1882 | street. Did | ui-click-soft, ui-toggle-on
+4:02 | Lt1882 | you know that when Thomas | chime-magic, ui-click-soft, ui-click-soft
+4:03 | Lt1882 | Edison's lights came | ui-click-soft
+4:04 | Lt1882 | on, | 
+4:05 | Lt1882 | he wasn't at the power | trap-snap, pop-reveal
+4:06 | Lt1882 | station? | ui-click-soft
+4:07 | Lt1882 | He was standing | ui-click-soft
+4:08 | Lt1882 | in the office of the | pop-reveal
+4:09 | Lt1882 | banker J. | ui-click-soft
+4:10 | Lt1882 | P. Morgan. | chime-reward
+4:11 | Lt1882 | Here's your afternoon. | ui-click-soft
+4:12 | Lt1882 |  | whoosh-soft
+4:13 | Lt1882 | At about three o'clock, | pop-reveal
+4:14 | Lt1882 | an engineer | pop-reveal
+4:15 | Lt1882 | on Pearl Street | ui-click-soft
+4:16 | Lt1882 | closes a switch. | ui-click-soft, impact-soft
+4:17 | Lt1882 | A few blocks | pop-reveal
+4:18 | Lt1882 | of offices light | ui-click-soft, chime-magic
+4:19 | Lt1882 | up, about | whoosh-soft
+4:20 | Lt1882 | four hundred lamps, | pop-reveal
+4:21 | Lt1882 | and not one of them | ui-click-soft
+4:22 | Lt1882 | has a flame. | trap-snap
+4:23 | Lt1882 | The glowing bulb | 
+4:24 | Lt1882 | was the easy part. | whoosh-soft, ui-click-soft
+4:25 | Lt1882 | Edison | ui-click-soft
+4:26 | Lt1882 | sold the rest. | ui-click-soft, ui-click-soft
+4:27 | Lt1882 | Generators, | pop-reveal
+4:28 | Lt1882 | copper under the street, | stream-soft, ui-click-soft
+4:29 | Lt1882 | meters, | pop-reveal
+4:30 | Lt1882 | and investors | pop-reveal
+4:31 | Lt1882 | willing to bet a fortune | stamp-hit
+4:32 | Lt1882 | on it. | 
+4:33 | Lt1882 | What does one hour | whoosh-soft
+4:34 | Lt1882 | of light cost you now? | ui-click-soft
+4:35 | Lt1882 |  | 
+4:36 | Lt1882 | By nineteen | ui-click-soft
+4:37 | Lt1882 | hundred, about thirteen | chime-reward
+4:38 | Lt1882 | minutes of work. | ui-click-soft
+4:39 | Lt1882 | So what is light | whoosh-soft
+4:40 | Lt1882 | now? | ui-click-soft
+4:41 | Lt1882 | A network. | chime-reward
+4:42 | Lt1882 | You plug into a | pop-reveal
+4:43 | Lt1882 | system you'll never see. | ui-click-soft, whoosh-reverse
+4:44 | Lt1882 | But | whoosh-soft, whoosh-soft
+4:45 | Lt1882 | that bulb turns | piano-a-min
+4:46 | Lt1882 | most of its power | ui-click-soft
+4:47 | Lt1882 | into heat. | trap-snap
+4:48 | Lt1882 | The fix takes | ui-click-soft, ui-click-soft
+4:49 | Lt1882 | more than a hundred years, | ui-click-soft, pop-reveal
+4:50 | Lt1882 | and one | ui-click-soft
+4:51 | Lt1882 | colour nobody can | pop-reveal, ui-click-soft
+4:52 | Lt1882 | make. | whoosh-reverse
+4:53 | Lt1882 |  | whoosh-wind
+4:54 | Lt1993 | You wake | impact-soft
+4:55 | Lt1993 | up in nineteen ninety | whoosh-soft
+4:56 | Lt1993 | three, in Tokushima, | pop-reveal
+4:57 | Lt1993 | on Japan's | 
+4:58 | Lt1993 | island of Shikoku. | ui-click-soft
+4:59 | Lt1993 |  | whoosh-soft
+5:00 | Lt1993 | Inside a small company | ui-click-soft, ui-click-soft
+5:01 | Lt1993 | lab, an engineer | pop-reveal
+5:02 | Lt1993 | is staring at a chip. | pop-reveal
+5:03 | Lt1993 | Did you | ui-toggle-on
+5:04 | Lt1993 | know that the missing colour | chime-magic, ui-click-soft
+5:05 | Lt1993 | of light was blue? | ui-click-soft
+5:06 | Lt1993 |  | 
+5:07 | Lt1993 | Red and green glowing | pop-reveal, pop-reveal
+5:08 | Lt1993 | chips had been around | 
+5:09 | Lt1993 | for decades. | ui-click-soft
+5:10 | Lt1993 | Without blue, | ui-click-soft
+5:11 | Lt1993 | you couldn't make white. | trap-snap
+5:12 | Lt1993 | Here's your morning. | ui-click-soft
+5:13 | Lt1993 | The | whoosh-soft
+5:14 | Lt1993 | engineer, Shuji | ui-click-soft
+5:15 | Lt1993 | Nakamura, has | 
+5:16 | Lt1993 | made a bright blue light | sparkle-soft
+5:17 | Lt1993 | from a crystal. | pop-reveal
+5:18 | Lt1993 | Add a yellow coating, | ui-click-soft, pop-reveal
+5:19 | Lt1993 | and you get | 
+5:20 | Lt1993 | white light from a chip. | chime-reward, ui-click-soft
+5:21 | Lt1993 | No | pop-reveal, trap-snap
+5:22 | Lt1993 | fire. No | pop-reveal
+5:23 | Lt1993 | glowing wire. | trap-snap
+5:24 | Lt1993 | Very little | pop-reveal
+5:25 | Lt1993 | heat. Twenty | ui-click-soft
+5:26 | Lt1993 | one years later, | 
+5:27 | Lt1993 | he and two Japanese | whoosh-soft, pop-reveal, ui-click-soft
+5:28 | Lt1993 | scientists share | ui-click-soft
+5:29 | Lt1993 | the Nobel Prize | chime-reward
+5:30 | Lt1993 | for it. What | sparkle-soft
+5:31 | Lt1993 | does one hour of | whoosh-soft
+5:32 | Lt1993 | light cost you now? | ui-click-soft
+5:33 | Lt1993 | In | pop-reveal
+5:34 | Lt1993 | nineteen ninety two, | 
+5:35 | Lt1993 | with an energy-saving | pop-reveal
+5:36 | Lt1993 | bulb, | 
+5:37 | Lt1993 | less than half a | ui-click-soft, chime-reward
+5:38 | Lt1993 | second of work. | ui-click-soft
+5:39 | Lt1993 | So what is light | 
+5:40 | Lt1993 | now? | ui-click-soft, whoosh-soft
+5:41 | Lt1993 | A crystal. | chime-reward
+5:42 | Lt1993 | Light without fire. | ui-click-soft, trap-snap
+5:43 | Lt1993 | So when | piano-a-min, whoosh-soft
+5:44 | Lt1993 | light costs almost | whoosh-soft
+5:45 | Lt1993 | nothing, what | sparkle-soft
+5:46 | Lt1993 | do we do with it? | impact-soft
+5:47 | Lt1993 |  | whoosh-reverse
+5:48 | Lt1993 |  | whoosh-wind, impact-soft
+5:49 | LtToday | You wake up today. | whoosh-soft
+5:50 | LtToday | Well, tonight. | ui-click-soft
+5:51 | LtToday | Go to your | 
+5:52 | LtToday | window and count the lights | pop-reveal
+5:53 | LtToday | you can see. | whoosh-soft
+5:54 | LtToday | Streetlights, | stream-soft
+5:55 | LtToday | signs, the | pop-reveal
+5:56 | LtToday | office that never switches | stream-soft, ui-click-soft, ui-click-soft
+5:57 | LtToday | off. Did | ui-toggle-on
+5:58 | LtToday | you know that more | chime-magic, ui-click-soft
+5:59 | LtToday | than a third of all | ui-click-soft
+6:00 | LtToday | people can't see the Milky | ui-click-soft, ui-click-soft
+6:01 | LtToday | Way from home? | 
+6:02 | LtToday | In | pop-reveal
+6:03 | LtToday | Europe, six in ten. | ui-click-soft, ui-click-soft
+6:04 | LtToday | In North | pop-reveal
+6:05 | LtToday | America, nearly | 
+6:06 | LtToday | eight in ten. | ui-click-soft, chime-reward
+6:07 | LtToday | Here's your | 
+6:08 | LtToday | night. Nobody | whoosh-soft, ui-click-soft
+6:09 | LtToday | decided this. | ui-click-soft
+6:10 | LtToday | In Britain, by the year | ui-click-soft
+6:11 | LtToday | two thousand, each | ui-click-soft
+6:12 | LtToday | person was using | pop-reveal
+6:13 | LtToday | about six and a half | 
+6:14 | LtToday | thousand times more | chime-reward, ui-click-soft
+6:15 | LtToday | light than in eighteen hundred. | pop-reveal, stream-soft
+6:16 | LtToday |  | 
+6:17 | LtToday | Every time the price | whoosh-soft, ui-click-soft, whoosh-soft
+6:18 | LtToday | fell, we bought | pop-reveal
+6:19 | LtToday | more. More | 
+6:20 | LtToday | rooms, more | pop-reveal
+6:21 | LtToday | hours, more | pop-reveal
+6:22 | LtToday | streets. | pop-reveal
+6:23 | LtToday | And it's speeding up. | whoosh-soft
+6:24 | LtToday | In twenty | ui-click-soft
+6:25 | LtToday | twenty three, scientists | ui-click-soft, ui-click-soft
+6:26 | LtToday | used more than | 
+6:27 | LtToday | fifty thousand | pop-reveal
+6:28 | LtToday | reports from ordinary | ui-click-soft, ui-click-soft
+6:29 | LtToday | people counting stars. | sparkle-soft
+6:30 | LtToday | They | ui-click-soft
+6:31 | LtToday | found the night sky | 
+6:32 | LtToday | getting brighter by | whoosh-soft
+6:33 | LtToday | almost ten percent | chime-reward
+6:34 | LtToday | a year. So | ui-click-soft
+6:35 | LtToday | what is light now? | ui-click-soft, whoosh-soft
+6:36 | LtToday | Too cheap | chime-reward
+6:37 | LtToday | to switch off. | ui-click-soft
+6:38 | LtToday |  | 
+6:39 | LtToday | So, what happened | piano-a-min, whoosh-soft, pop-reveal
+6:40 | LtToday | when we switched the | ui-click-soft, whoosh-soft
+6:41 | LtToday | night off? You're | impact-soft, ui-click-soft
+6:42 | LtToday | about to find out. | whoosh-soft
+6:43 | LtToday |  | 
+6:44 | LtToday |  | whoosh-reverse
+6:45 | LtReveal | Here's the answer. | impact-deep-soft
+6:46 | LtReveal | We didn't save | ui-click-soft, ui-click-soft
+6:47 | LtReveal | the light. We | pop-reveal
+6:48 | LtReveal | spent it. | ui-click-soft
+6:49 | LtReveal | All of it. Every | ui-click-soft, ui-click-soft
+6:50 | LtReveal | time light got cheaper, | whoosh-reverse
+6:51 | LtReveal | we | 
+6:52 | LtReveal | used more, until it | ui-click-soft, stream-soft, ui-click-soft
+6:53 | LtReveal | filled the sky. | ui-click-soft, warm-shimmer
+6:54 | LtReveal | So, your | 
+6:55 | LtReveal | guess. Out | whoosh-soft, ui-click-soft
+6:56 | LtReveal | of every ten people | stream-soft
+6:57 | LtReveal | on Earth, more | ui-click-soft
+6:58 | LtReveal | than eight now live | stamp-hit, warm-shimmer
+6:59 | LtReveal | under a sky | ui-click-soft
+7:00 | LtReveal | our lights have brightened. | sparkle-soft
+7:01 | LtReveal | In the United | ui-click-soft
+7:02 | LtReveal | States and Europe, | ui-click-soft
+7:03 | LtReveal | almost everyone. | pop-reveal, ui-click-soft
+7:04 | LtReveal | How close | ui-click-soft
+7:05 | LtReveal | were you? | 
+7:06 | LtReveal | Now walk down | whoosh-soft, ui-click-soft
+7:07 | LtReveal | the ladder with me. | ui-click-soft
+7:08 | LtReveal | In fifteen hundred, | ui-click-soft
+7:09 | LtReveal | light was a luxury. | pop-reveal
+7:10 | LtReveal | Then | 
+7:11 | LtReveal | a service, through | ui-click-soft
+7:12 | LtReveal | a pipe. | pop-reveal
+7:13 | LtReveal | Then a liquid, | ui-click-soft
+7:14 | LtReveal | in a can. | pop-reveal
+7:15 | LtReveal |  | 
+7:16 | LtReveal | Then a network. | pop-reveal
+7:17 | LtReveal | Then a crystal, | pop-reveal
+7:18 | LtReveal | light | 
+7:19 | LtReveal | without fire. | ui-click-soft, ui-click-soft
+7:20 | LtReveal | And today, | ui-click-soft
+7:21 | LtReveal | light | 
+7:22 | LtReveal | is too cheap to switch | chime-reward, ui-toggle-on
+7:23 | LtReveal | off. In | ui-click-soft
+7:24 | LtReveal | fifteen hundred, the scarce | ui-click-soft
+7:25 | LtReveal | thing was light. | chime-reward
+7:26 | LtReveal |  | 
+7:27 | LtReveal | Today, the scarce | ui-click-soft, riser-soft, ui-click-soft
+7:28 | LtReveal | thing is the dark. | impact-deep-soft
+7:29 | LtReveal |  | 
+7:30 | LtReveal |  | whoosh-soft
+7:31 | Lt2100 | So what could | 
+7:32 | Lt2100 | the night look like | ui-click-soft
+7:33 | Lt2100 | in twenty one hundred? | impact-soft
+7:34 | Lt2100 | That | 
+7:35 | Lt2100 | morning hasn't happened | warm-shimmer
+7:36 | Lt2100 | yet. | ui-click-soft
+7:37 | Lt2100 | But we can follow | 
+7:38 | Lt2100 | the evidence. | ui-click-soft
+7:39 | Lt2100 | Some places have | ui-click-soft
+7:40 | Lt2100 | already started protecting | ui-click-soft
+7:41 | Lt2100 | the dark. | ui-click-soft
+7:42 | Lt2100 | Since twenty | pop-reveal
+7:43 | Lt2100 | thirteen, France | ui-click-soft, ui-click-soft
+7:44 | Lt2100 | has told shops to switch | pop-reveal, whoosh-reverse
+7:45 | Lt2100 | off their window lights | ui-click-soft
+7:46 | Lt2100 | by one in the morning. | pop-reveal, ui-click-soft
+7:47 | Lt2100 | Tucson, | pop-reveal
+7:48 | Lt2100 | in Arizona, | ui-click-soft
+7:49 | Lt2100 | has had rules on | pop-reveal
+7:50 | Lt2100 | outdoor lighting since | ui-click-soft
+7:51 | Lt2100 | nineteen seventy | ui-click-soft
+7:52 | Lt2100 | two, to keep | 
+7:53 | Lt2100 | the sky dark for | ui-click-soft, ui-click-soft
+7:54 | Lt2100 | its observatories. | pop-reveal
+7:55 | Lt2100 | So here's one | 
+7:56 | Lt2100 | scenario. | stamp-hit
+7:57 | Lt2100 | Not a fact. | stamp-hit
+7:58 | Lt2100 | If the sky | ui-click-soft
+7:59 | Lt2100 | keeps brightening, | warm-shimmer
+8:00 | Lt2100 | darkness becomes | chime-reward, ui-click-soft
+8:01 | Lt2100 | something we have | 
+8:02 | Lt2100 | to protect, | ui-click-soft
+8:03 | Lt2100 | the way we once protected | ui-click-soft
+8:04 | Lt2100 | forests and | pop-reveal, pop-reveal
+8:05 | Lt2100 | coasts. | 
+8:06 | Lt2100 | A child in | pop-reveal
+8:07 | Lt2100 | twenty one hundred | ui-click-soft
+8:08 | Lt2100 | might see the Milky Way | ui-click-soft, chime-magic
+8:09 | Lt2100 | for the first time on a | ui-click-soft
+8:10 | Lt2100 | school trip, | ui-click-soft
+8:11 | Lt2100 | in a place kept dark | ui-click-soft
+8:12 | Lt2100 | on purpose. | ui-click-soft
+8:13 | Lt2100 | And remember the | 
+8:14 | Lt2100 | bell from fifteen hundred? | chime-reward, ui-click-soft
+8:15 | Lt2100 | Cover | pop-reveal
+8:16 | Lt2100 | the fire. | whoosh-reverse
+8:17 | Lt2100 | In twenty one hundred, | pop-reveal
+8:18 | Lt2100 | it might ring again. | ui-click-soft, chime-reward
+8:19 | Lt2100 | Only this | ui-click-soft, riser-soft
+8:20 | Lt2100 | time, it means cover | ui-click-soft, ui-click-soft
+8:21 | Lt2100 | the light. | impact-deep-soft
+8:22 | Lt2100 |  | 
+8:23 | LtClose | Tonight, | whoosh-soft
+8:24 | LtClose | switch off one | ui-toggle-on, ui-click-soft
+8:25 | LtClose | light and look up. | whoosh-soft
+8:26 | LtClose | How many stars | ui-click-soft, sparkle-soft
+8:27 | LtClose | can you count? | chime-magic
+8:28 | LtClose |  | 
+8:29 | LtClose | This | whoosh-wind, pop-reveal
+8:30 | LtOutro | was Did You Know | ui-toggle-on
+8:31 | LtOutro | That, episode | 
+8:32 | LtOutro | seven. | ui-click-soft
+8:33 | LtOutro | Light. | pop-reveal
+8:34 | LtOutro | Now it's your turn. | whoosh-soft
+8:35 | LtOutro | Streetlights or stars. | pop-reveal, sparkle-soft
+8:36 | LtOutro | If you | 
+8:37 | LtOutro | had to give one up, | ui-click-soft
+8:38 | LtOutro | which would it be, | ui-click-soft
+8:39 | LtOutro | and why? | ui-click-soft
+8:40 | LtOutro | Tell me | 
+8:41 | LtOutro | in the comments. | pop-reveal
+8:42 | LtOutro | At the end of every | ui-click-soft
+8:43 | LtOutro | episode, I will read | 
+8:44 | LtOutro | the best comment, | impact-soft, ui-click-soft
+8:45 | LtOutro | right here, on this | ui-click-soft
+8:46 | LtOutro | screen. | ui-click-soft
+8:47 | LtOutro | And the subject | sparkle-soft
+8:48 | LtOutro | you ask for most | ui-click-soft
+8:49 | LtOutro | becomes a future | pop-reveal
+8:50 | LtOutro | episode. | 
+8:51 | LtOutro | On our website, Dex-tee | whoosh-soft, sparkle-soft
+8:52 | LtOutro | dot live, | 
+8:53 | LtOutro | you can watch every episode, | ui-click-soft
+8:54 | LtOutro | collect | ui-click-soft
+8:55 | LtOutro | the fact cards, and | 
+8:56 | LtOutro | play the guessing game. | ui-click-soft, pop-reveal
+8:57 | LtOutro | If this changed | ui-click-soft
+8:58 | LtOutro | how you see your light | 
+8:59 | LtOutro | switch, | ui-toggle-on
+9:00 | LtOutro | like it. | ui-click-soft
+9:01 | LtOutro | Share it with the friend | ui-send, ui-click-soft
+9:02 | LtOutro | who leaves every | ui-click-soft, ui-click-soft
+9:03 | LtOutro | light on. | pop-reveal
+9:04 | LtOutro | And subscribe, | chime-reward
+9:05 | LtOutro | so the next mystery finds | sparkle-soft
+9:06 | LtOutro | you. | 
+9:07 | LtOutro | Next time: | whoosh-wind
+9:08 | LtOutro | weight. | impact-soft
+9:09 | LtOutro | In fifteen | ui-click-soft
+9:10 | LtOutro | hundred, a heavy body | ui-click-soft
+9:11 | LtOutro | could be a sign of wealth. | ui-click-soft, pop-reveal
+9:12 | LtOutro | Today, | ui-click-soft
+9:13 | LtOutro | one in seven | ui-click-soft
+9:14 | LtOutro | people on Earth | ui-click-soft
+9:15 | LtOutro | lives with obesity. | pop-reveal
+9:16 | LtOutro | So how did | ui-click-soft
+9:17 | LtOutro | plenty turn into a problem? | ui-click-soft, whoosh-reverse
+9:18 | LtOutro |  | piano-a-min
+9:19 | LtOutro | Ask... | chess-piece-thock
+9:20 | LtOutro | Wonder... | 
+9:21 | LtOutro |  | chess-piece-thock
+9:22 | LtOutro | Repeat. | chess-piece-thock
+9:23 | LtOutro |  | 
+9:24 | LtOutro |  | whoosh-soft
+9:25 | LtOutro | Next time... | pencil-scribble
+9:26 | LtOutro | this could be your comment. | pop-reveal
+9:27 | LtOutro | Pick | sparkle-soft
+9:28 | LtOutro | a mystery. And | 
+9:29 | LtOutro | I will see you there. | sparkle-soft
+9:30 | LtOutro |  | 
+9:31 | LtOutro |  | 
+9:32 | LtOutro |  | 
+9:33 | LtOutro |  | 
+9:34 | LtOutro |  | 
+9:35 | LtOutro |  | 
+9:36 | LtOutro |  | 
+9:37 | LtOutro |  | 
+9:38 | LtOutro |  | 
+9:39 | LtOutro |  | 
+9:40 | LtOutro |  | 
