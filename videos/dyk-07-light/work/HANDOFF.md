@@ -68,3 +68,6 @@ Branch `feat/dyk-07-light` (cut from `feat/dyk-06-medicine`, which is not merged
   Fixed: Lt1882 colour group (left 790, swatch 120, labels 28), Lt1500 bar 1000 px + stamp left 1200 size 26, beeswax source clause on "Beeswax". Re-rendered Lt1500/Lt1882,
   rebuilt master, qa_final PASS, sweep re-run; fixes checked on master frames 138 s / 334 s. RUBRIC.md A− 26/30; audit/AUDIT-REPORT.html; tracker row added
   (~/Desktop/DavidAi/audit-dashboard.html, backup in session scratchpad). Next: David's watch → packaging.
+- Committed as 8ef1c48, PR DansiDanutz/Claude-Youtube#28 (stacked on #26).
+- Round 2 LOW fixes (2026-10-29): LtToday window fades under the DYK card (no edge fragments); Lt1993 lab props +120 px (clear of the place line).
+  A LIQUID chip (Lt1859) frame-checked on the master: on time. Re-rendered LtToday/Lt1993, master rebuilt, qa_final PASS. RUBRIC A 27/30.

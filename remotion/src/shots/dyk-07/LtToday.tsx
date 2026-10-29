@@ -156,7 +156,8 @@ const LtToday: React.FC = () => {
   const f = useCurrentFrame();
   const fade = useShotFade(DUR);
   // the window stays behind the DYK card's scrim so the office line is not a flash
-  const view = Math.max(0.35 * ease(f, 0, 12), ease(f, DOCK - 2, DOCK + 4)) * (1 - ease(f, CARD_END - 8, CARD_END));
+  // the window fades under the DYK card's fade-in so no fragments show at the card's edges
+  const view = Math.max(0.35 * ease(f, 0, 12), ease(f, DOCK - 2, DOCK + 4)) * (1 - ease(f, DID - 2, DID + 10));
   const night = pane(f, CARD_END, NIGHT_END);
   const bought = pane(f, NIGHT_END, BOUGHT_END);
   const stars = pane(f, BOUGHT_END, STARS_END);

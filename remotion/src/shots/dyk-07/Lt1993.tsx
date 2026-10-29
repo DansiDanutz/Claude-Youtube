@@ -203,7 +203,7 @@ const Lt1993: React.FC = () => {
           <div style={{ position: 'absolute', left: 160, top: 700, width: 1600, height: 26, borderRadius: 6, background: '#2a2f3a' }} />
           <div style={{ position: 'absolute', left: 220, top: 726, width: 20, height: 140, background: '#22262f' }} />
           <div style={{ position: 'absolute', left: 1680, top: 726, width: 20, height: 140, background: '#22262f' }} />
-          {[0, 1, 2].map((k) => <div key={k} style={{ position: 'absolute', left: 1180 + k * 150, top: 580 + (k % 2) * 30, width: 60, height: 120 - (k % 2) * 30, borderRadius: '6px 6px 14px 14px', border: '3px solid #6a7484', background: `rgba(140,160,190,${0.12 + 0.05 * Math.sin(f / 14 + k)})` }} />)}
+          {[0, 1, 2].map((k) => <div key={k} style={{ position: 'absolute', left: 1300 + k * 140, top: 580 + (k % 2) * 30, width: 60, height: 120 - (k % 2) * 30, borderRadius: '6px 6px 14px 14px', border: '3px solid #6a7484', background: `rgba(140,160,190,${0.12 + 0.05 * Math.sin(f / 14 + k)})` }} />)}
           <div style={{ position: 'absolute', left: 760, top: 470, opacity: ease(f, ENGINEER1 - 2, ENGINEER1 + 6) }}><Kid size={150} adult color="#c8ccd6" /></div>
           <div style={{ position: 'absolute', left: 950, top: 560, opacity: ease(f, CHIP1 - 2, CHIP1 + 4), transform: `scale(${ease(f, CHIP1 - 2, CHIP1 + 10, 1.25, 1)})` }}><Chip size={150} glow={0} f={f} /></div>
           <div style={{ position: 'absolute', left: 940, top: 540, width: 170, height: 170, borderRadius: '50%', background: 'radial-gradient(#ffffff14, transparent 70%)', opacity: 0.6 + 0.4 * Math.sin(f / 11) }} />

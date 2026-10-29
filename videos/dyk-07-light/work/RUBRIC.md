@@ -10,19 +10,21 @@ All CRITICAL/HIGH/MEDIUM fixed and re-verified on master frames (138 s, 334 s) a
 | # | Dimension | Score | Evidence |
 |---|---|---|---|
 | 1 | Token fidelity | 4 | DansLab + DYK tokens; new `dykkit-light.tsx` re-exports No. 05/06 kit; −1: subject hues (flame, LED blue, skyglow) outside the token set |
-| 2 | Typography & legibility | 4 | text ≥ 24 px, 160 px margins, nothing in HUD/band after the fixes; −1: two cards leak scene fragments at their edges (6:40), "Tokushima, Shikoku" touches a shelf prop (5:38) |
+| 2 | Typography & legibility | 5 | text ≥ 24 px, 160 px margins, nothing in HUD/band; round 2 fixed the last edge clutter (window fades under the 6:40 card, lab props clear of "Tokushima, Shikoku") |
 | 3 | Narrative sync | 5 | every reveal keyed with `makeCue`; arc chip on each era word; ladder walk-down one rung per pause; payoffs on their words; no spoilers found by either auditor |
 | 4 | Motion craft | 4 | 664 word-synced cues; BEATMAP 623 rows, 0 gaps ≥ 2 s; −1: a near-static lamp beat 4:16–4:20 and the curfew card 1:28–1:30 |
 | 5 | Sound | 4 | ducked bed, SFX off word onsets (pre-flight clean), DYK click/chime order right on all 7; −1: three slow chunks and two dragged words waived rather than re-voiced |
 | 6 | Evidence & truth | 5 | every on-screen number traced to RESEARCH L1–L18 by auditor 1 and 2; whales quote credited "Stotz 1938, quoted by Nordhaus 1997"; 2100 labelled PREDICTION throughout, only France 2013 / Tucson 1972 as fact; Comment of the Week card labelled EXAMPLE |
 
-**Total: 26/30 → A−.** David's watch/listen is the real gate.
+**Total: 27/30 → A.** David's watch/listen is the real gate.
+
+## Round 2 (2026-10-29, LOW fixes)
+- Fixed: LtToday window panel fades under the DYK card (no fragments at 6:40–6:46); Lt1993 lab props moved right, clear of "Tokushima, Shikoku" (5:38). Re-rendered both, master rebuilt, qa_final PASS, checked on master frames 338.7 s / 404 s.
+- Frame-checked, no fix: the "A LIQUID" chip (1859, not 1882) is absent on "A" (264.90 s), fades in on "liquid." (265.14 s) and is fully legible at 265.30 s; the auditor's "late" was 2 s sampling.
 
 ## Open (LOW, accepted)
 - NEXT ▸ year chips come with the cliffhanger band (same convention as Nos. 01–06), so the next year shows before it is spoken.
 - The cliffhanger band at 5:26 lands part by part on each part's first word (skill rule); "heat" shows ~3 s before he says it.
-- 1882 "A LIQUID" rung ~1–2 s after the word (2 s sampling, not frame-checked).
 - Near-static beats: lamp 4:16–4:20, curfew card 1:28–1:30 (≤ 4 s, motion continues in flame/stars).
-- DYK card edges show clipped scene fragments behind them (6:40–6:46); "Tokushima, Shikoku" touches a shelf prop (5:38).
 - One dark frame at the Today → Answer cut (7:26), the deliberate beat before THE ANSWER.
 - Builder note: Lt1993 shows "Nobel Prize 2014", which Brian does not say (sourced, L12).

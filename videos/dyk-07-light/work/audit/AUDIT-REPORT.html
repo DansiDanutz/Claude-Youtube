@@ -33,12 +33,12 @@
 <h1>Did You Know That? No. 07 · “Light”: audit</h1>
 <p class="sub">2026-10-29 · master <code>dyk-07-light-1080P.mp4</code> · 10:22.0 · 1080p30 · branch <code>feat/dyk-07-light</code> (not committed)</p>
 
-<p class="verdict"><b>Verdict: ready for David's watch.</b> 0 CRITICAL, 0 HIGH and 0 MEDIUM open. Every CRITICAL, HIGH and MEDIUM finding is fixed and was re-checked on the rebuilt master. 7 accepted LOW items remain. Rubric 26/30 (A−). Not uploaded, nothing public.</p>
+<p class="verdict"><b>Verdict: ready for David's watch.</b> 0 CRITICAL, 0 HIGH and 0 MEDIUM open. Every CRITICAL, HIGH and MEDIUM finding is fixed and was re-checked on the rebuilt master. 4 LOW items remain, all accepted by design. Rubric 27/30 (A). Not uploaded, nothing public.</p>
 
 <div class="grid">
   <div class="stat"><b>0 / 0 / 0</b><span>CRITICAL / HIGH / MEDIUM open</span></div>
   <div class="stat"><b>5 / 5</b><span>HIGH + MEDIUM + timing fixed</span></div>
-  <div class="stat"><b>7</b><span>LOW accepted (open)</span></div>
+  <div class="stat"><b>4</b><span>LOW accepted (by design)</span></div>
   <div class="stat"><b>PASS</b><span>qa_final: A/V 0 ms, 0 gaps</span></div>
   <div class="stat"><b>−14.1</b><span>LUFS · true peak −2.4 dBTP</span></div>
   <div class="stat"><b>623 / 0</b><span>BEATMAP rows / gaps ≥ 2 s</span></div>
@@ -68,16 +68,17 @@
 <tr><td>8</td><td class="sev L">LOW</td><td>all eras</td><td>NEXT ▸ year chip shows with the cliffhanger band, before the year is spoken.</td><td>Series convention (Nos. 01–06).</td><td class="open">accepted</td></tr>
 <tr><td>9</td><td class="sev L">LOW</td><td>1882 · 5:26</td><td>Cliffhanger part “…into heat.” shows ~3 s before “heat”.</td><td>Skill rule: band parts land on their first word.</td><td class="open">accepted</td></tr>
 <tr><td>10</td><td class="sev L">LOW</td><td>1859 · 4:16; 1500 · 1:28</td><td>Near-static beats (lamp; curfew card) up to 4 s.</td><td>Flame/star motion continues; no gap ≥ 2 s in BEATMAP.</td><td class="open">accepted</td></tr>
-<tr><td>11</td><td class="sev L">LOW</td><td>Today · 6:40</td><td>Scene fragments visible at the DYK card's edges.</td><td>—</td><td class="open">open</td></tr>
-<tr><td>12</td><td class="sev L">LOW</td><td>1993 · 5:38</td><td>“Tokushima, Shikoku” touches a shelf prop.</td><td>—</td><td class="open">open</td></tr>
+<tr><td>11</td><td class="sev L">LOW</td><td>Today · 6:40</td><td>Scene fragments visible at the DYK card's edges.</td><td>Window panel fades out under the card's fade-in.</td><td class="ok">fixed · checked in master at 404 s</td></tr>
+<tr><td>12</td><td class="sev L">LOW</td><td>1993 · 5:38</td><td>“Tokushima, Shikoku” touches a shelf prop.</td><td>Lab props moved 120 px right.</td><td class="ok">fixed · checked in master at 338.7 s</td></tr>
 <tr><td>13</td><td class="sev L">LOW</td><td>7:26</td><td>One dark frame at the Today → Answer cut.</td><td>Deliberate beat before THE ANSWER.</td><td class="open">accepted</td></tr>
-<tr><td>14</td><td class="sev L">LOW</td><td>1882 · 4:24</td><td>“A LIQUID” rung possibly 1–2 s after the word (2 s sampling).</td><td>Not frame-checked.</td><td class="open">open</td></tr>
+<tr><td>14</td><td class="sev L">LOW</td><td>1859 · 4:25</td><td>“A LIQUID” chip possibly 1–2 s after the word (auditor said 1882).</td><td>Frame-checked: absent on “A” 264.90 s, fades in on “liquid.” 265.14 s, legible 265.30 s. On time.</td><td class="ok">no fix needed</td></tr>
 </table></div>
 <p class="sub">Auditor items checked and not counted: 1500/1807/1993 headers looking cut off (an artefact of the contact-sheet label box; full frames are intact); ~1 s leads at 0:46/0:50 (within 2 s sampling; chips are keyed to their words); the Shikoku outline under the table (intended, “island” beat); “07” arriving just after “seven” (correct order).</p>
 
 <h2>Evidence</h2>
 <figure><img src="sheet-fix.png" alt="Hook and 1807 stills after the timing fixes"><figcaption>Hook frames 484/497/502/525 (“We didn't.” docks, TONIGHT on its word) and 1807 frames 290/306 (A ROW OF POSTS still up before the card).</figcaption></figure>
 <figure><img src="verify2100.png" alt="2100 evidence cards after the fix"><figcaption>2100 from the re-rendered mp4: France source top-right, Tucson on one line, nothing overlaps.</figcaption></figure>
+<figure><img src="verify-low.png" alt="Master frames at 5:38 and 6:44"><figcaption>Round 2 in the master: 1993 place line clear of the lab props (338.7 s); the Today card with no fragments at its edges (404 s).</figcaption></figure>
 <figure><img src="verify-r2.png" alt="Master frames at 138 s and 334 s"><figcaption>Rebuilt master at 138 s (stamp inside the margin) and 334 s (NOBODY CAN MAKE clear of the ladder).</figcaption></figure>
 
 <h2>Verification of the final master</h2>
@@ -93,7 +94,7 @@
 <h2>Not verified / next</h2>
 <ul>
   <li>David's full watch and listen of the master (the real gate).</li>
-  <li>Frame-exact timing between 2 s samples; LOW items 11, 12 and 14 are not fixed.</li>
+  <li>Frame-exact timing between 2 s samples (only the flagged moments were frame-checked).</li>
   <li>Packaging (thumbnail, YOUTUBE.md, <code>packaging_check.py</code>) not started.</li>
   <li>Deployment checks: not applicable yet. Nothing is uploaded, and Dexty.live and YouTube are untouched. Upload waits for David and the numbered order (07 first).</li>
   <li>Nothing committed; the branch is <code>feat/dyk-07-light</code> on top of the unmerged No. 06 branch.</li>
