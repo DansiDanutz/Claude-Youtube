@@ -17,7 +17,7 @@ Alternatives:
 2. What Is Light Pollution? The History of Light (1500–2100) (57)
 3. Why Can't We See Stars Anymore? The History of Light (1500–2100) (64): the closest fit to the story, but over the skill's 60-character cap (packaging_check fails it)
 
-## Description (3503 characters — max 5,000)
+## Description (3634 characters — max 5,000)
 Paste the whole of `description.txt`. Keyword-first opening (playbook rule 6); the guess is asked but not answered.
 Chapters come from `timeline.json` shot starts (the 6 s close is folded into the last chapter);
 `tools/dyk/packaging_check.py --core Light`: PASS (`work/audit/PACKAGING-CHECK.md`).

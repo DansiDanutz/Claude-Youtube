@@ -84,3 +84,15 @@ Branch `feat/dyk-07-light` (cut from `feat/dyk-06-medicine`, which is not merged
 - Packaging (2026-10-29): `packaging/` title "Why Is Light Pollution Bad? The History of Light (1500–2100)" (60, autocomplete-checked),
   keyword-first description (3,503 chars), tags 390, thumbnail = the live-series Light thumbnail from the VidNinjas kit (04:44 version).
   packaging_check PASS (`audit/PACKAGING-CHECK.md`). Copied with the master to `~/Downloads/DYK-07-Light/`. Not committed. Upload waits for David.
+
+## Published (2026-10-29)
+- YouTube `HbsIy38RGvI`, public (David clicked Publish). Title "Why Is Light Pollution Bad? The History of Light (1500–2100)";
+  description opener widened (3,634 chars, packaging check PASS); 20 tags; English, Education, not made for kids, AI disclosure no;
+  playlist "Did You Know That? — Every Episode".
+- End screen → No. 06 Medicine `_RD_Qz66FCg` + subscribe; card at 0:40 → No. 06. Captions: en ASR only.
+- Pinned comment by @Did-You-Know-that-2026: "Streetlights or stars: if you had to give one up, which would it be, and why? …"
+- No. 06 re-pointed: end-screen video and 0:40 card → No. 07 `HbsIy38RGvI`; verified on No. 06's watch page
+  (VIDEO element left .570 top .214 w .323; CHANNEL .423/.573/.154) and in Studio (card "Video: Why Is Light Pollution Bad?…").
+- Dexty.live: DansiDanutz/Did-You-Know-That#51 merged (d77f9f5, 195 tests pass, build check clean). Production deploy NOT done:
+  the Vercel CLI on this Mac has no login. After `vercel login`: `vercel --cwd ~/Projects/Did-You-Know-That/website --prod --yes`,
+  then check /episodes/light/ embeds HbsIy38RGvI and /data/episodes.json lists 7 episodes.
